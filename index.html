@@ -233,6 +233,46 @@
       font-weight: 500;
     }
 
+    .hero-partners {
+      margin-top: 1.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+    }
+    .partners-label {
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.28);
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .partners-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.55rem 1.1rem;
+    }
+    .partners-list a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.66);
+      text-decoration: none;
+      transition: color 0.15s;
+      white-space: nowrap;
+    }
+    .partners-list a:hover { color: var(--teal-light); }
+    .partners-list .sep {
+      color: rgba(255, 255, 255, 0.16);
+      font-size: 0.75rem;
+      user-select: none;
+    }
+    @media (max-width: 640px) {
+      .partners-list .sep { display: none; }
+    }
+
     /* ── LAYOUT UTILS ── */
     section { padding: 5.5rem 2rem; }
     .container       { max-width: 1080px; margin: 0 auto; }
@@ -658,7 +698,7 @@
       <li><a href="#domains">Domains</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#related">Related</a></li>
-      <li><a href="https://github.com/alethicresearch/bioethics-bench" class="nav-cta">GitHub ↗</a></li>
+      <li><a href="https://github.com/alethicresearch/bioethics-bench" class="nav-cta" target="_blank" rel="noopener">GitHub ↗</a></li>
     </ul>
   </nav>
 
@@ -678,7 +718,7 @@
       <div class="hero-actions">
         <a href="#about" class="btn btn-green">Learn More</a>
         <a href="#pipeline" class="btn btn-ghost">How It Works</a>
-        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="hero-provenance">
         <div class="prov-item">
@@ -689,21 +729,17 @@
           <span class="prov-label">Built on</span>
           <span class="prov-value">SACRE · Alethic-ISM</span>
         </div>
-        <div class="prov-item">
-          <span class="prov-label">Initiative for Medical AI</span>
-          <span class="prov-value"><a href="https://im-ai.org" style="color:inherit;text-decoration:none;">im-ai.org</a></span>
-        </div>
-        <div class="prov-item">
-          <span class="prov-label">Centre for Biomedical Ethics, NUS</span>
-          <span class="prov-value"><a href="https://medicine.nus.edu.sg/cbme/" style="color:inherit;text-decoration:none;">medicine.nus.edu.sg/cbme</a></span>
-        </div>
-        <div class="prov-item">
-          <span class="prov-label">OpenTelemed</span>
-          <span class="prov-value"><a href="https://opentelemed.org" style="color:inherit;text-decoration:none;">opentelemed.org</a></span>
-        </div>
-        <div class="prov-item">
-          <span class="prov-label">Alethic Research</span>
-          <span class="prov-value"><a href="https://alethic.ai" style="color:inherit;text-decoration:none;">alethic.ai</a></span>
+      </div>
+      <div class="hero-partners">
+        <span class="partners-label">In Collaboration With</span>
+        <div class="partners-list">
+          <a href="https://im-ai.org" target="_blank" rel="noopener">Initiative for Medical AI</a>
+          <span class="sep">·</span>
+          <a href="https://medicine.nus.edu.sg/cbme/" target="_blank" rel="noopener">Centre for Biomedical Ethics, NUS</a>
+          <span class="sep">·</span>
+          <a href="https://opentelemed.org" target="_blank" rel="noopener">OpenTelemed</a>
+          <span class="sep">·</span>
+          <a href="https://alethic.ai" target="_blank" rel="noopener">Alethic Research</a>
         </div>
       </div>
     </div>
@@ -957,7 +993,7 @@
         Bioethics Bench is part of a connected set of instruments and platforms for doing ethics with AI.
       </p>
       <div class="related-grid">
-        <a href="https://reflectiveequilibrium.ai" class="related-card">
+        <a href="https://reflectiveequilibrium.ai" class="related-card" target="_blank" rel="noopener">
           <div class="related-label">Application</div>
           <div class="related-title">ReflectiveEquilibrium.AI</div>
           <div class="related-desc">
@@ -1001,8 +1037,8 @@
         to engage with the project.
       </p>
       <div class="cta-actions">
-        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-green">GitHub Repository ↗</a>
-        <a href="https://reflectiveequilibrium.ai" class="btn btn-ghost">ReflectiveEquilibrium.AI ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-green" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <a href="https://reflectiveequilibrium.ai" class="btn btn-ghost" target="_blank" rel="noopener">ReflectiveEquilibrium.AI ↗</a>
       </div>
     </div>
   </section>
@@ -1017,8 +1053,8 @@
         </div>
       </div>
       <div class="footer-links">
-        <a href="https://github.com/alethicresearch/bioethics-bench">GitHub</a>
-        <a href="https://reflectiveequilibrium.ai">ReflectiveEquilibrium.AI</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">ReflectiveEquilibrium.AI</a>
       </div>
     </div>
   </footer>
