@@ -353,6 +353,8 @@
       font-size: 1.125rem;
       margin-bottom: 1.1rem;
     }
+    .card h3 { font-size: 1rem; }
+    .card p { font-size: 0.855rem; line-height: 1.6; }
 
     /* ── PIPELINE ── */
     .pipeline-bg {
@@ -1132,40 +1134,29 @@
       <span class="eyebrow">What It Provides</span>
       <h2>A shared infrastructure for normative evaluation</h2>
       <p class="lead">
-        Bioethics Bench is a large-scale structured dataset and benchmark for bioethical reasoning.
-        It is generated through the SACRE normative computation pipeline and Alethic-ISM research
-        workbench, and designed to be a shared experimental resource for the research community.
+        Beyond any single benchmark or fine-tuning run, the Bench is built on a few
+        design commitments that make it a durable resource for the field.
       </p>
       <div class="cards-grid">
         <div class="card">
-          <div class="card-icon">📐</div>
-          <h3>Structured Evaluation Records</h3>
-          <p>Each corpus entry contains a bioethical scenario, policy candidates drawn from public preferences, expert judgments, and ethical frameworks — alongside full SACRE convergence matrices and justification traces.</p>
+          <div class="card-icon">📚</div>
+          <h3>Large-Scale Corpus</h3>
+          <p>Bioethical scenarios at scale in a consistent, structured format — built for systematic study rather than isolated cases.</p>
         </div>
         <div class="card">
           <div class="card-icon">⚖️</div>
-          <h3>Normative Convergence Scoring</h3>
-          <p>Evaluations are produced by SACRE's formal convergence-testing procedure, which measures the degree of normative alignment between policy candidates across all source combinations to determine the most coherently justified position.</p>
+          <h3>Multi-Source Grounding</h3>
+          <p>Each scenario weighs policy candidates from public preferences, expert judgment, and ethical frameworks — never a single viewpoint.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🔬</div>
-          <h3>Multi-Mode Benchmarking</h3>
-          <p>Performance is assessed across three modes: unaided practitioners, AI models operating alone, and practitioners working with AI assistance — enabling direct comparison of human vs. model vs. human-AI reasoning.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🧠</div>
-          <h3>Fine-Tuning Infrastructure</h3>
-          <p>The corpus serves as training data for SACRE-FT, a supervised fine-tuning pipeline for developing domain-adapted AI models with improved normative performance in bioethical contexts.</p>
+          <div class="card-icon">📐</div>
+          <h3>Transparent Scoring</h3>
+          <p>Every record carries its SACRE convergence scores and justification traces, so results stay inspectable rather than black-box.</p>
         </div>
         <div class="card">
           <div class="card-icon">🤝</div>
-          <h3>Community Resource</h3>
-          <p>Built through careful scenario construction, expert consultation, and institutional collaboration, the Bench is designed to give computational bioethics a shared resource for testing methods, models, and normative claims.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔁</div>
-          <h3>Scalable Generation</h3>
-          <p>Scenarios and evaluations are generated at scale via Alethic-ISM's computable graph architecture, enabling systematic execution across many scenario configurations, models, and repeated runs with full auditability.</p>
+          <h3>Open Research Resource</h3>
+          <p>A shared base for benchmarking models, comparing them against human judgment, and fine-tuning domain-adapted systems.</p>
         </div>
       </div>
     </div>
