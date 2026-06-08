@@ -8,6 +8,7 @@
   <meta property="og:title" content="Bioethics Bench" />
   <meta property="og:description" content="A structured evaluation corpus for benchmarking AI performance in bioethical reasoning." />
   <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -619,6 +620,48 @@
       flex-wrap: wrap;
     }
 
+    .signup-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.625rem;
+      max-width: 460px;
+      margin: 0 auto 0.85rem;
+      flex-wrap: wrap;
+    }
+    .signup-form input[type="email"] {
+      flex: 1 1 240px;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      font-family: var(--font);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .signup-form input[type="email"]::placeholder { color: rgba(255, 255, 255, 0.38); }
+    .signup-form input[type="email"]:focus {
+      border-color: rgba(16, 185, 129, 0.55);
+      background: rgba(255, 255, 255, 0.09);
+    }
+    .signup-note {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.38);
+      margin: 0 auto 2.25rem;
+    }
+    .cta-contact {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.42);
+    }
+    .cta-contact a {
+      color: var(--teal-light);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .cta-contact a:hover { text-decoration: underline; }
+
     /* ── FOOTER ── */
     footer {
       background: var(--gray-900);
@@ -647,6 +690,13 @@
       font-size: 0.78rem;
       color: rgba(255, 255, 255, 0.25);
       line-height: 1.55;
+    }
+    .footer-logo {
+      display: block;
+      height: 30px;
+      width: auto;
+      margin-top: 0.6rem;
+      opacity: 0.85;
     }
     .footer-links {
       display: flex;
@@ -988,10 +1038,16 @@
         and institutional collaboration. We invite researchers, practitioners, and institutions
         to engage with the project.
       </p>
+      <form class="signup-form" id="updates-form">
+        <input type="email" name="email" placeholder="you@institution.edu" required aria-label="Email address" />
+        <button type="submit" class="btn btn-green">Stay Updated</button>
+      </form>
+      <p class="signup-note">Get notified about releases, the dataset, and ways to contribute.</p>
       <div class="cta-actions">
-        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-green" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repository ↗</a>
         <a href="https://reflectiveequilibrium.ai" class="btn btn-ghost" target="_blank" rel="noopener">ReflectiveEquilibrium.AI ↗</a>
       </div>
+      <p class="cta-contact">Questions or collaboration: <a href="mailto:research@alethic.ai">research@alethic.ai</a></p>
     </div>
   </section>
 
@@ -1000,16 +1056,26 @@
     <div class="footer-inner">
       <div>
         <div class="footer-brand">Bioethics<em>Bench</em></div>
-        <div class="footer-text">
-          Part of the <em>Doing Ethics with AI</em> research program · Alethic Research · 2026
-        </div>
+        <img src="assets/logo.png" alt="Bioethics Bench" class="footer-logo" />
       </div>
       <div class="footer-links">
+        <a href="mailto:research@alethic.ai">Contact</a>
         <a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub</a>
         <a href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">ReflectiveEquilibrium.AI</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('updates-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = this.email.value;
+      window.location.href =
+        'mailto:research@alethic.ai' +
+        '?subject=' + encodeURIComponent('Bioethics Bench — Stay Updated') +
+        '&body=' + encodeURIComponent('Please add this address to Bioethics Bench updates: ' + email);
+    });
+  </script>
 
 </body>
 </html>
