@@ -1,84 +1,102 @@
 # Bioethics Bench
 
-A structured evaluation corpus for benchmarking and improving AI performance in
-**normative reasoning** across clinical, research, public health, and other
+A developing, versioned evaluation corpus and benchmark framework for studying
+**normative computation** across clinical, research, public health, and other
 bioethical domains.
 
 🌐 **Live site:** [bioethicsbench.com](https://bioethicsbench.com)
 &nbsp;·&nbsp; [alethicresearch.github.io/bioethics-bench](https://alethicresearch.github.io/bioethics-bench)
 
-> **Status: In Development.** Bioethics Bench is being built through careful
-> scenario construction, expert consultation, and institutional collaboration.
+> **Status: In Development.** Bioethics Bench is being constructed prospectively.
+> No current repository release should be treated as a validated benchmark or a
+> source of morally correct answers.
 
 ---
 
 ## About
 
-Bioethics Bench is a large-scale, structured dataset and benchmark for bioethical
-reasoning. Each record pairs a bioethical scenario with candidate policies — drawn
-from public preferences, expert judgment, and ethical frameworks — and a full
-**SACRE** evaluation that scores their normative convergence and identifies the
-most justified position.
+Bioethics Bench is the prospective empirical corpus for the broader normative-
+computation research program around **SACRE** (Structurally Analyzed Collective
+Reflective Equilibrium). Future released records will pair a bioethical scenario
+with versioned policy candidates drawn from public preferences, expert judgments,
+and ethical frameworks, together with explicit provenance and declared evaluation
+conditions.
 
-The Bench sits within a broader normative-computation pipeline:
+SACRE compares represented policy candidates through pairwise normative convergence
+and aggregates those relations into candidate coherence profiles under a declared
+procedure. The highest-ranked represented candidate is the provisional Final Policy
+for that analysis; neither a SACRE score nor agreement with a benchmark establishes
+moral truth by itself.
 
-| Stage | Component | Role |
-|-------|-----------|------|
-| Formal procedure | **SACRE** | Structurally Analyzed Collective Reflective Equilibrium — integrates public preferences, expert judgments, and ethical frameworks through pairwise convergence testing. |
-| Research workbench | **Alethic-ISM** | Composes analytic workflows as computable directed graphs, running SACRE at scale with full auditability. |
-| Evaluation corpus | **Bioethics Bench** | A validated dataset of scenarios and SACRE evaluations for benchmarking normative reasoning. |
-| AI model | **SACRE-FT** | Supervised fine-tuning on Bench outputs for domain-adapted normative models. |
+The repository is being organized so that tutorial material, protocol-development
+cases, stress tests, and future released benchmark records are not silently mixed.
+Historical SACRE application examples are preserved in the SACRE repository archive
+and are **not** being promoted into the active Bioethics Bench dataset.
 
-## Repository
+## Repository structure
 
-This repository hosts the project's landing and explanation page, served via
-**GitHub Pages**.
-
-```
+```text
 .
-├── index.html              # The landing page (self-contained HTML + CSS)
-├── assets/                 # Images (logo / favicon)
-├── CNAME                   # Custom domain (bioethicsbench.com)
-├── .nojekyll               # Disable Jekyll processing
-└── .github/workflows/      # GitHub Pages deployment workflow
-    └── deploy.yml
+├── schemas/                # Versioned case / manifest / result schemas
+├── docs/                   # Data card, governance, construction and release rules
+├── data/
+│   ├── tutorial/           # Optional non-benchmark teaching objects
+│   ├── development/        # Prospective protocol-development cases
+│   └── stress-tests/       # Deliberate perturbation / robustness cases
+├── releases/               # Immutable public releases when ready
+├── analyses/               # Reproducible release analyses when available
+├── index.html              # Project landing page
+├── assets/
+├── CNAME
+└── .github/workflows/
 ```
 
-## Local development
+A confirmatory holdout is intentionally **not** stored publicly before confirmatory
+execution is complete.
 
-The page is a single self-contained `index.html` with no build step. To preview
-locally:
+## Record principles
 
-```bash
-# Open directly
-open index.html
+Every empirical record should ultimately have stable identifiers, versions, content
+hashes, scenario and candidate provenance, source-pool labels, exposure history,
+review status, and an explicit intended-use designation. Substantive changes to a
+frozen or released record create a new version rather than overwriting the old one.
 
-# …or serve over http
-python3 -m http.server 8000   # then visit http://localhost:8000
-```
+See [`docs/CASE_CONSTRUCTION.md`](docs/CASE_CONSTRUCTION.md),
+[`docs/GOVERNANCE.md`](docs/GOVERNANCE.md), and
+[`docs/VERSIONING.md`](docs/VERSIONING.md).
 
-## Deployment
+## Relationship to the research program
 
-Every push to `main` triggers the **Deploy to GitHub Pages** workflow
-(`.github/workflows/deploy.yml`), which publishes the site automatically.
+| Component | Role |
+|---|---|
+| **SACRE** | Formal procedure for representing candidates, eliciting pairwise normative convergence, aggregating coherence, and returning a provisional Final Policy under a declared procedure. |
+| **ReflectiveEquilibrium.AI** | Interactive research application for running, inspecting, comparing, revising, sharing, and fielding SACRE evaluations. |
+| **Alethic-ISM** | Computation substrate/workbench for inspectable, provenance-preserving analytic execution. |
+| **Bioethics Bench** | Prospective versioned corpus and benchmark framework for empirical study of normative computation. |
+| **SACRE-FT** | Model-development layer that may use suitably released evaluation outputs as training objects. |
+
+## Current phase
+
+The immediate research sequence is:
+
+1. finalize the current QCS/QCCS and SACRE specification;
+2. finalize the clean P1 tutorial and P2 demonstration objects;
+3. freeze the executable research object;
+4. construct and pilot fresh Bioethics Bench development cases;
+5. freeze a separate confirmatory design/holdout;
+6. conduct P3 reliability, human-comparison, perturbation, and iteration studies;
+7. release appropriate data, protocols, analyses, and checksums.
 
 ## Related projects
 
-- **[ReflectiveEquilibrium.AI](https://reflectiveequilibrium.ai)** — the deployed SACRE application
-- **[Alethic-ISM](https://github.com/alethicresearch/alethic-ism)** — AI research workbench
-- **[Doing Ethics with AI](https://alethicresearch.github.io/doing-ethics-with-ai/)** — the introducing paper
-
-## In collaboration with
-
-- [Initiative for Medical AI](https://im-ai.org)
-- [Centre for Biomedical Ethics, NUS](https://medicine.nus.edu.sg/cbme/)
-- [OpenTelemed](https://opentelemed.org)
-- [Alethic Research](https://alethic.ai)
+- **[ReflectiveEquilibrium.AI](https://reflectiveequilibrium.ai)** — deployed SACRE application
+- **[Alethic-ISM](https://github.com/alethicresearch/alethic-ism)** — analytic computation workbench
+- **[Doing Ethics with AI](https://alethicresearch.github.io/doing-ethics-with-ai/)** — research program companion
 
 ## Citation
 
-If you use Bioethics Bench or the SACRE methodology in your research, please cite
-the introducing paper:
+Bioethics Bench is not yet a frozen benchmark release. For the current research
+program, cite the introducing work as appropriate:
 
 ```bibtex
 @article{ghose2026doingethics,
