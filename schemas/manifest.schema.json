@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioethicsbench.com/schemas/manifest.schema.json",
+  "title": "Bioethics Bench manifest",
+  "type": "object",
+  "required": ["manifest_version", "release_id", "records", "created_at"],
+  "properties": {
+    "manifest_version": {"type": "string"},
+    "release_id": {"type": "string"},
+    "release_status": {"enum": ["development", "release-candidate", "released"]},
+    "created_at": {"type": "string"},
+    "qccs_protocol_id": {"type": ["string", "null"]},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["record_id", "version", "content_hash", "path"],
+        "properties": {
+          "record_id": {"type": "string"},
+          "version": {"type": "string"},
+          "content_hash": {"type": "string"},
+          "path": {"type": "string"},
+          "collection": {"type": "string"}
+        }
+      }
+    },
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
