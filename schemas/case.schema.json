@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioethicsbench.com/schemas/case.schema.json",
+  "title": "Bioethics Bench case",
+  "type": "object",
+  "required": [
+    "record_id",
+    "case_id",
+    "version",
+    "title",
+    "scenario",
+    "candidate_pools",
+    "collection",
+    "status",
+    "schema_version",
+    "content_hash"
+  ],
+  "properties": {
+    "record_id": {"type": "string"},
+    "case_id": {"type": "string"},
+    "version": {"type": "string"},
+    "title": {"type": "string"},
+    "domain": {"type": ["string", "null"]},
+    "scenario": {"type": "string"},
+    "scenario_provenance": {"type": ["object", "null"]},
+    "candidate_pools": {
+      "type": "object",
+      "required": ["public", "expert", "framework"],
+      "properties": {
+        "public": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+        "expert": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+        "framework": {"type": "array", "items": {"$ref": "#/$defs/candidate"}}
+      },
+      "additionalProperties": false
+    },
+    "collection": {
+      "enum": ["tutorial", "development", "stress-test", "released-benchmark"]
+    },
+    "status": {
+      "enum": ["draft", "reviewed-development", "frozen-development", "release-candidate", "released"]
+    },
+    "intended_use": {"type": ["string", "null"]},
+    "exposure_history": {"type": "array", "items": {"type": "string"}},
+    "paper_usage": {"type": "array", "items": {"type": "string"}},
+    "review": {"type": ["object", "null"]},
+    "parent_record_id": {"type": ["string", "null"]},
+    "perturbation_metadata": {"type": ["object", "null"]},
+    "schema_version": {"type": "string"},
+    "content_hash": {"type": "string"}
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": ["id", "text", "source_pool"],
+      "properties": {
+        "id": {"type": "string"},
+        "text": {"type": "string"},
+        "source_pool": {"enum": ["public", "expert", "framework"]},
+        "provenance": {"type": ["object", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
