@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Validate every committed Bench record against schema, content hash, and the
- * cross-record invariants that make a Featured case a reproducible research object.
+ * cross-record invariants that make a Bench case a reproducible research object.
  */
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -27,7 +27,6 @@ function jsonFilesUnder(dir) {
   return readdirSync(dir).flatMap((entry) => {
     const full = join(dir, entry);
     if (statSync(full).isDirectory()) return jsonFilesUnder(full);
-    // index.json files are generated corpus indexes for the static site, not records.
     if (entry === 'index.json') return [];
     return full.endsWith('.json') ? [full] : [];
   });
@@ -45,16 +44,7 @@ function candidateSignature(record) {
 }
 
 const PROFILES = JSON.parse(readFileSync(join(root, 'schemas/benchmark-profiles.json'), 'utf8')).profiles;
-
-/**
- * Which collections carry evidential weight.
- *
- * `tutorial` objects are teaching material and are never benchmark evidence, so they may
- * carry editorial candidates and stipulated values. Every other collection makes a claim
- * about what some source recommends, and has to be able to show where its text came from.
- */
 const EVIDENTIAL_COLLECTIONS = new Set(['featured', 'development', 'stress-test', 'benchmark']);
-
 const POOLS = ['public', 'expert', 'framework'];
 
 function crossSourcePairCount(record) {
@@ -66,14 +56,56 @@ function crossSourcePairCount(record) {
   return n;
 }
 
+function profileStructure(profile) {
+  const entries = POOLS.flatMap((pool) => (profile.pools?.[pool] || []).map((id) => ({ id, pool })));
+  const partnerCounts = entries.map((entry) => entries.filter((other) => other.pool !== entry.pool).length);
+  let pairCount = 0;
+  for (let i = 0; i < entries.length; i += 1) {
+    for (let j = i + 1; j < entries.length; j += 1) if (entries[i].pool !== entries[j].pool) pairCount += 1;
+  }
+  return {
+    entries,
+    pairCount,
+    partnerCounts,
+    asymmetric: new Set(partnerCounts).size > 1,
+  };
+}
+
+function profileRegistryProblems(profiles) {
+  const issues = [];
+  for (const [name, profile] of Object.entries(profiles)) {
+    const structure = profileStructure(profile);
+    if (!structure.entries.length) {
+      issues.push(`benchmark profile ${name}: no candidate ids are declared`);
+      continue;
+    }
+    if (typeof profile.cross_source_pairs !== 'number' || profile.cross_source_pairs !== structure.pairCount) {
+      issues.push(
+        `benchmark profile ${name}: cross_source_pairs must equal the pool-derived count ${structure.pairCount}; `
+        + `found ${profile.cross_source_pairs ?? 'missing'}`,
+      );
+    }
+    if (profile.required_aggregation && !['sum', 'mean'].includes(profile.required_aggregation)) {
+      issues.push(`benchmark profile ${name}: required_aggregation must be "sum" or "mean"; found ${profile.required_aggregation}`);
+    }
+    if (structure.asymmetric && profile.required_aggregation !== 'mean') {
+      issues.push(
+        `benchmark profile ${name}: unequal cross-source partner counts [${[...new Set(structure.partnerCounts)].sort((a, b) => a - b).join(', ')}] `
+        + 'require required_aggregation "mean"; Sum would rank candidates partly by pool shape.',
+      );
+    }
+  }
+  return issues;
+}
+
 function allCandidates(record) {
-  return ['public', 'expert', 'framework'].flatMap(
+  return POOLS.flatMap(
     (pool) => (record.candidate_pools?.[pool] || []).map((c) => ({ pool, candidate: c })),
   );
 }
 
 let checked = 0;
-const problems = [];
+const problems = profileRegistryProblems(PROFILES);
 const caseRecords = [];
 const files = [...jsonFilesUnder(join(root, 'data')), ...jsonFilesUnder(join(root, 'releases'))];
 
@@ -96,9 +128,7 @@ for (const file of files) {
   checked += 1;
   const validate = validators[kind];
   if (!validate(record)) {
-    for (const e of validate.errors) {
-      problems.push(`${rel}: ${e.instancePath || '/'} ${e.message}`);
-    }
+    for (const e of validate.errors) problems.push(`${rel}: ${e.instancePath || '/'} ${e.message}`);
   }
 
   if (kind === 'case') {
@@ -115,11 +145,6 @@ for (const file of files) {
       }
     }
 
-    // ── Universal: true of every committed case record, whatever its collection ──
-
-    // Governance: a confirmatory holdout is not committed publicly before execution. This
-    // repository is public, so a holdout record here is already spent — the exposure it is
-    // supposed to avoid has happened by the act of committing it.
     if (record.exposure === 'confirmatory-holdout') {
       problems.push(
         `${rel}: exposure is confirmatory-holdout, which must never be committed to this repository.\n`
@@ -130,7 +155,6 @@ for (const file of files) {
 
     for (const { pool, candidate } of allCandidates(record)) {
       const method = candidate.provenance?.construction_method;
-      // Definitional, not editorial: a framework candidate is one derived from a framework.
       if (pool === 'framework' && method !== 'derived-from-framework') {
         problems.push(`${rel}: framework candidate ${candidate.id} must use construction_method derived-from-framework; found ${method}`);
       }
@@ -139,8 +163,6 @@ for (const file of files) {
       }
     }
 
-    // A stipulation that is not marked in the scenario is a fact the record claims and the
-    // executed text does not carry. SACRE scores the scenario, not the metadata.
     if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
       problems.push(
         `${rel}: the record carries ${record.stipulations.length} benchmark stipulation(s) but the scenario does not mark any.\n`
@@ -149,12 +171,9 @@ for (const file of files) {
       );
     }
 
-    // A released record is public from that moment, whatever collection it belongs to.
     if (record.status === 'released' && !(record.exposure_history || []).length) {
       problems.push(`${rel}: a released record must record its public exposure in exposure_history`);
     }
-
-    // ── Evidential collections: the record claims something about a source ──
 
     if (EVIDENTIAL_COLLECTIONS.has(record.collection)) {
       for (const { pool, candidate } of allCandidates(record)) {
@@ -176,13 +195,9 @@ for (const file of files) {
       }
     }
 
-    // ── Structural: driven by the declared profile, for any profile ──
-
     if (record.benchmark_profile) {
       const profile = PROFILES[record.benchmark_profile];
       if (!profile) {
-        // An unregistered profile used to mean no structural checks at all. That is the
-        // wrong default: a typo, or a new profile nobody described, would pass silently.
         problems.push(
           `${rel}: benchmark_profile "${record.benchmark_profile}" is not registered in schemas/benchmark-profiles.json.\n`
           + '    Register it with its pools, candidate ids and representation forms, or correct the record.\n'
@@ -214,11 +229,6 @@ for (const file of files) {
   }
 }
 
-// Cross-record invariants for companion representations of one case family.
-//
-// Driven by the declared profile rather than by collection: any corpus whose profile
-// declares representation forms inherits these, so a later collection built to a different
-// profile is checked the same way rather than silently unchecked.
 const byCase = new Map();
 for (const entry of caseRecords) {
   if (!entry.record.representation?.form) continue;
@@ -230,8 +240,6 @@ for (const entry of caseRecords) {
 for (const [caseId, entries] of byCase.entries()) {
   const profileName = entries[0].record.benchmark_profile;
   const forms = PROFILES[profileName]?.representations;
-  // No declared forms means no companion contract to enforce. The unregistered-profile
-  // check above has already flagged the case where a profile was named but not described.
   if (!forms || forms.length < 2) continue;
 
   const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
@@ -249,8 +257,6 @@ for (const [caseId, entries] of byCase.entries()) {
     }
   }
 
-  // Draft work may be committed incrementally. Once any representation is frozen or
-  // released, the full companion set must be present and internally matched.
   const requiresCompleteSet = entries.some(({ record }) => ['frozen', 'released'].includes(record.status));
   const present = forms.filter((f) => byForm.has(f));
   if (requiresCompleteSet && present.length !== forms.length) {
@@ -259,8 +265,6 @@ for (const [caseId, entries] of byCase.entries()) {
   }
   if (present.length !== forms.length) continue;
 
-  // Every representation is compared against the first: what must match, must match across
-  // the whole set, not just between two of them.
   const [baseForm, ...others] = forms;
   const base = byForm.get(baseForm);
   for (const other of others.map((f) => byForm.get(f))) {
@@ -296,4 +300,4 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log(`✓ ${checked} record(s) valid against schema, content hash, and Featured invariants.`);
+console.log(`✓ ${checked} record(s) valid against schema, content hash, profile registry, and corpus invariants.`);
