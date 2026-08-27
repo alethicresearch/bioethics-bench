@@ -14,5 +14,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      # Every committed record, against its schema and its own recorded content hash.
+      # Every committed record, against its schema, content hash, profile registry and dossier invariants.
       - run: npm run validate
+      # Demonstrate each guard on a deliberately broken non-Featured record or profile entry.
+      - run: node scripts/validate-selftest.mjs
