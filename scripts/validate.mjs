@@ -44,10 +44,26 @@ function candidateSignature(record) {
   return JSON.stringify(record.candidate_pools || null);
 }
 
-function expectedIds(poolName) {
-  if (poolName === 'public') return ['pub1', 'pub2'];
-  if (poolName === 'expert') return ['exp1', 'exp2'];
-  return ['fw1', 'fw2'];
+const PROFILES = JSON.parse(readFileSync(join(root, 'schemas/benchmark-profiles.json'), 'utf8')).profiles;
+
+/**
+ * Which collections carry evidential weight.
+ *
+ * `tutorial` objects are teaching material and are never benchmark evidence, so they may
+ * carry editorial candidates and stipulated values. Every other collection makes a claim
+ * about what some source recommends, and has to be able to show where its text came from.
+ */
+const EVIDENTIAL_COLLECTIONS = new Set(['featured', 'development', 'stress-test', 'benchmark']);
+
+const POOLS = ['public', 'expert', 'framework'];
+
+function crossSourcePairCount(record) {
+  const ids = POOLS.flatMap((pool) => (record.candidate_pools?.[pool] || []).map((c) => [c.id, pool]));
+  let n = 0;
+  for (let i = 0; i < ids.length; i += 1) {
+    for (let j = i + 1; j < ids.length; j += 1) if (ids[i][1] !== ids[j][1]) n += 1;
+  }
+  return n;
 }
 
 function allCandidates(record) {
@@ -99,117 +115,177 @@ for (const file of files) {
       }
     }
 
-    if (record.collection === 'featured') {
-      // A Featured record is a public research object. These three are the properties a
-      // reader has to be able to rely on without opening the provenance: it is not a
-      // held-out evaluation item, its public candidates are grounded in evidence rather
-      // than an editor's intuition, and every candidate says where its text came from.
-      if (record.exposure === 'confirmatory-holdout') {
-        problems.push(`${rel}: a Featured record is public and can never be a confirmatory holdout`);
+    // ── Universal: true of every committed case record, whatever its collection ──
+
+    // Governance: a confirmatory holdout is not committed publicly before execution. This
+    // repository is public, so a holdout record here is already spent — the exposure it is
+    // supposed to avoid has happened by the act of committing it.
+    if (record.exposure === 'confirmatory-holdout') {
+      problems.push(
+        `${rel}: exposure is confirmatory-holdout, which must never be committed to this repository.\n`
+        + '    Committing it here is the exposure it exists to avoid; the record is spent as holdout\n'
+        + '    material the moment it lands. See docs/GOVERNANCE.md and docs/CASE_CONSTRUCTION.md.',
+      );
+    }
+
+    for (const { pool, candidate } of allCandidates(record)) {
+      const method = candidate.provenance?.construction_method;
+      // Definitional, not editorial: a framework candidate is one derived from a framework.
+      if (pool === 'framework' && method !== 'derived-from-framework') {
+        problems.push(`${rel}: framework candidate ${candidate.id} must use construction_method derived-from-framework; found ${method}`);
       }
+      if (candidate.source_pool !== pool) {
+        problems.push(`${rel}: candidate ${candidate.id} sits in the ${pool} pool but declares source_pool ${candidate.source_pool}`);
+      }
+    }
+
+    // A stipulation that is not marked in the scenario is a fact the record claims and the
+    // executed text does not carry. SACRE scores the scenario, not the metadata.
+    if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
+      problems.push(
+        `${rel}: the record carries ${record.stipulations.length} benchmark stipulation(s) but the scenario does not mark any.\n`
+        + '    A stipulated fact must appear in the executed scenario text, introduced by a sentence\n'
+        + '    beginning "For this benchmark, assume" so a reader can tell it apart from a reported fact.',
+      );
+    }
+
+    // A released record is public from that moment, whatever collection it belongs to.
+    if (record.status === 'released' && !(record.exposure_history || []).length) {
+      problems.push(`${rel}: a released record must record its public exposure in exposure_history`);
+    }
+
+    // ── Evidential collections: the record claims something about a source ──
+
+    if (EVIDENTIAL_COLLECTIONS.has(record.collection)) {
       for (const { pool, candidate } of allCandidates(record)) {
         const method = candidate.provenance?.construction_method;
         if (pool === 'public' && method === 'editorial') {
           problems.push(
-            `${rel}: public candidate ${candidate.id} has construction_method "editorial".\n`
-            + '    A Featured public candidate must be extracted-from-evidence or adapted-from-source;\n'
-            + "    the Bench must never imply that an editor's plausible intuition is an empirical public preference.",
+            `${rel}: public candidate ${candidate.id} has construction_method "editorial", in collection "${record.collection}".\n`
+            + '    A public candidate in an evidential collection must be extracted-from-evidence or\n'
+            + "    adapted-from-source; the Bench must never imply that an editor's plausible intuition\n"
+            + '    is an empirical public preference. Only `tutorial` records may carry editorial candidates.',
           );
         }
-        if (pool === 'framework' && method !== 'derived-from-framework') {
-          problems.push(`${rel}: framework candidate ${candidate.id} must use construction_method derived-from-framework; found ${method}`);
-        }
         if ((candidate.provenance?.sources || []).length === 0) {
-          problems.push(`${rel}: candidate ${candidate.id} has no provenance sources`);
-        }
-        if (candidate.source_pool !== pool) {
-          problems.push(`${rel}: candidate ${candidate.id} sits in the ${pool} pool but declares source_pool ${candidate.source_pool}`);
+          problems.push(`${rel}: candidate ${candidate.id} has no provenance sources (collection "${record.collection}")`);
         }
       }
       if ((record.scenario_provenance?.sources || []).length === 0) {
-        problems.push(`${rel}: Featured scenario_provenance has no sources`);
-      }
-      // A stipulation that is not marked in the scenario is a fact the record claims and
-      // the executed text does not carry. SACRE scores the scenario, not the metadata.
-      // A released Featured record is public forever; the record has to say so itself.
-      if (record.status === 'released' && !(record.exposure_history || []).length) {
-        problems.push(`${rel}: a released Featured record must record its public exposure in exposure_history`);
-      }
-      if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
-        problems.push(
-          `${rel}: the record carries ${record.stipulations.length} benchmark stipulation(s) but the scenario does not mark any.\n`
-          + '    A stipulated fact must appear in the executed scenario text, introduced by a sentence\n'
-          + '    beginning "For this benchmark, assume" so a reader can tell it apart from a reported fact.',
-        );
+        problems.push(`${rel}: scenario_provenance has no sources (collection "${record.collection}")`);
       }
     }
 
-    if (record.benchmark_profile === 'featured-core-2x2x2-v1') {
-      for (const poolName of ['public', 'expert', 'framework']) {
-        const pool = record.candidate_pools?.[poolName] || [];
-        if (pool.length !== 2) {
-          problems.push(`${rel}: benchmark_profile featured-core-2x2x2-v1 requires exactly 2 ${poolName} candidates; found ${pool.length}`);
-          continue;
+    // ── Structural: driven by the declared profile, for any profile ──
+
+    if (record.benchmark_profile) {
+      const profile = PROFILES[record.benchmark_profile];
+      if (!profile) {
+        // An unregistered profile used to mean no structural checks at all. That is the
+        // wrong default: a typo, or a new profile nobody described, would pass silently.
+        problems.push(
+          `${rel}: benchmark_profile "${record.benchmark_profile}" is not registered in schemas/benchmark-profiles.json.\n`
+          + '    Register it with its pools, candidate ids and representation forms, or correct the record.\n'
+          + `    Known profiles: ${Object.keys(PROFILES).join(', ') || '(none)'}.`,
+        );
+      } else {
+        for (const poolName of POOLS) {
+          const pool = record.candidate_pools?.[poolName] || [];
+          const expected = profile.pools?.[poolName] || [];
+          const ids = pool.map((c) => c.id);
+          if (JSON.stringify(ids) !== JSON.stringify(expected)) {
+            problems.push(
+              `${rel}: profile ${record.benchmark_profile} requires ${poolName} candidates `
+              + `[${expected.join(', ')}]; found [${ids.join(', ') || 'none'}]`,
+            );
+          }
         }
-        const ids = pool.map((c) => c.id);
-        const expected = expectedIds(poolName);
-        if (JSON.stringify(ids) !== JSON.stringify(expected)) {
-          problems.push(`${rel}: ${poolName} candidate ids/order must be ${expected.join(', ')}; found ${ids.join(', ')}`);
+        if (typeof profile.cross_source_pairs === 'number') {
+          const actual = crossSourcePairCount(record);
+          if (actual !== profile.cross_source_pairs) {
+            problems.push(
+              `${rel}: profile ${record.benchmark_profile} declares ${profile.cross_source_pairs} cross-source `
+              + `pairs; this candidate set yields ${actual}`,
+            );
+          }
         }
       }
     }
   }
 }
 
-// Cross-record invariants for Featured concise/detailed companion representations.
-const featuredByCase = new Map();
-for (const entry of caseRecords.filter(({ record }) => record.collection === 'featured')) {
-  const bucket = featuredByCase.get(entry.record.case_id) || [];
+// Cross-record invariants for companion representations of one case family.
+//
+// Driven by the declared profile rather than by collection: any corpus whose profile
+// declares representation forms inherits these, so a later collection built to a different
+// profile is checked the same way rather than silently unchecked.
+const byCase = new Map();
+for (const entry of caseRecords) {
+  if (!entry.record.representation?.form) continue;
+  const bucket = byCase.get(entry.record.case_id) || [];
   bucket.push(entry);
-  featuredByCase.set(entry.record.case_id, bucket);
+  byCase.set(entry.record.case_id, bucket);
 }
 
-for (const [caseId, entries] of featuredByCase.entries()) {
-  const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
-  const concise = byForm.get('concise');
-  const detailed = byForm.get('detailed');
+for (const [caseId, entries] of byCase.entries()) {
+  const profileName = entries[0].record.benchmark_profile;
+  const forms = PROFILES[profileName]?.representations;
+  // No declared forms means no companion contract to enforce. The unregistered-profile
+  // check above has already flagged the case where a profile was named but not described.
+  if (!forms || forms.length < 2) continue;
 
-  for (const form of ['concise', 'detailed']) {
+  const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
+
+  for (const form of forms) {
     const count = entries.filter(({ record }) => record.representation?.form === form).length;
     if (count > 1) {
-      problems.push(`${caseId}: ${count} ${form} representations; a Featured family has exactly one of each`);
+      problems.push(`${caseId}: ${count} ${form} representations; profile ${profileName} allows exactly one of each`);
+    }
+  }
+  for (const entry of entries) {
+    const form = entry.record.representation.form;
+    if (!forms.includes(form)) {
+      problems.push(`${caseId}: representation form "${form}" is not one of [${forms.join(', ')}] for profile ${profileName}`);
     }
   }
 
-  // Draft/editorial work may be committed incrementally. Once either companion is
-  // frozen/released, both representations must be present and internally matched.
-  const requiresCompletePair = entries.some(({ record }) => ['frozen', 'released'].includes(record.status));
-  if (requiresCompletePair && (!concise || !detailed)) {
-    problems.push(`${caseId}: frozen/released Featured case requires both concise and detailed representations`);
+  // Draft work may be committed incrementally. Once any representation is frozen or
+  // released, the full companion set must be present and internally matched.
+  const requiresCompleteSet = entries.some(({ record }) => ['frozen', 'released'].includes(record.status));
+  const present = forms.filter((f) => byForm.has(f));
+  if (requiresCompleteSet && present.length !== forms.length) {
+    problems.push(`${caseId}: a frozen/released case requires all representations [${forms.join(', ')}]; found [${present.join(', ')}]`);
     continue;
   }
-  if (!concise || !detailed) continue;
+  if (present.length !== forms.length) continue;
 
-  if (concise.record.decision_question !== detailed.record.decision_question) {
-    problems.push(`${caseId}: concise/detailed decision_question must be byte-identical`);
-  }
-  if (concise.record.benchmark_profile !== detailed.record.benchmark_profile) {
-    problems.push(`${caseId}: concise/detailed benchmark_profile must match`);
-  }
-  if (JSON.stringify(concise.record.stipulations || []) !== JSON.stringify(detailed.record.stipulations || [])) {
-    problems.push(`${caseId}: concise/detailed stipulations must be identical - the companions represent the same factual state`);
-  }
-  if (candidateSignature(concise.record) !== candidateSignature(detailed.record)) {
-    problems.push(`${caseId}: concise/detailed candidate_pools must be byte-identical for the v1 representation comparison`);
-  }
-
-  const cCompanions = concise.record.representation?.companion_record_ids || [];
-  const dCompanions = detailed.record.representation?.companion_record_ids || [];
-  if (!cCompanions.includes(detailed.record.record_id)) {
-    problems.push(`${caseId}: concise representation does not name detailed companion ${detailed.record.record_id}`);
-  }
-  if (!dCompanions.includes(concise.record.record_id)) {
-    problems.push(`${caseId}: detailed representation does not name concise companion ${concise.record.record_id}`);
+  // Every representation is compared against the first: what must match, must match across
+  // the whole set, not just between two of them.
+  const [baseForm, ...others] = forms;
+  const base = byForm.get(baseForm);
+  for (const other of others.map((f) => byForm.get(f))) {
+    const pair = `${baseForm}/${other.record.representation.form}`;
+    if (base.record.decision_question !== other.record.decision_question) {
+      problems.push(`${caseId}: ${pair} decision_question must be byte-identical`);
+    }
+    if (base.record.benchmark_profile !== other.record.benchmark_profile) {
+      problems.push(`${caseId}: ${pair} benchmark_profile must match`);
+    }
+    if (JSON.stringify(base.record.stipulations || []) !== JSON.stringify(other.record.stipulations || [])) {
+      problems.push(`${caseId}: ${pair} stipulations must be identical - companions represent the same factual state`);
+    }
+    if (candidateSignature(base.record) !== candidateSignature(other.record)) {
+      problems.push(`${caseId}: ${pair} candidate_pools must be byte-identical for the representation comparison`);
+    }
+    if (base.record.scenario === other.record.scenario) {
+      problems.push(`${caseId}: ${pair} share a scenario — they would be the same represented object under two ids`);
+    }
+    for (const [a, b] of [[base, other], [other, base]]) {
+      const companions = a.record.representation?.companion_record_ids || [];
+      if (!companions.includes(b.record.record_id)) {
+        problems.push(`${caseId}: ${a.record.representation.form} does not name companion ${b.record.record_id}`);
+      }
+    }
   }
 }
 

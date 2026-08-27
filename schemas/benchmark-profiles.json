@@ -1,0 +1,16 @@
+{
+  "$comment": "Named executable profiles. A record's `benchmark_profile` says what shape its candidate set has; this file says what that shape is, so the validator can check it. Registering a profile here is what makes it checkable — a record declaring a profile that is not registered fails validation rather than passing unchecked, because an unrecognised profile used to mean no structural checks at all, which is the wrong default for a corpus that is meant to be reproducible.",
+  "profiles": {
+    "featured-core-2x2x2-v1": {
+      "description": "Two public, two expert and two framework candidates: the Featured v1 pilot standard. Yields 12 unordered cross-source QCCS pairs per complete execution.",
+      "pools": {
+        "public": ["pub1", "pub2"],
+        "expert": ["exp1", "exp2"],
+        "framework": ["fw1", "fw2"]
+      },
+      "cross_source_pairs": 12,
+      "representations": ["concise", "detailed"],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    }
+  }
+}
