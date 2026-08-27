@@ -1,5 +1,5 @@
 {
-  "$comment": "Named executable profiles. A record's `benchmark_profile` says what shape its candidate set has; this file says what that shape is, so the validator can check it. Registering a profile here is what makes it checkable — a record declaring a profile that is not registered fails validation rather than passing unchecked, because an unrecognised profile used to mean no structural checks at all, which is the wrong default for a corpus that is meant to be reproducible.",
+  "$comment": "Named executable profiles. A record's `benchmark_profile` says what shape its candidate set has; this file says what that shape is, so the validator can check it. Registering a profile here is what makes it checkable — a record declaring a profile that is not registered fails validation rather than passing unchecked. Asymmetric profiles must also declare the aggregation procedure required to avoid pool-shape bias.",
   "profiles": {
     "featured-core-2x2x2-v1": {
       "description": "Two public, two expert and two framework candidates: the Featured v1 pilot standard. Yields 12 unordered cross-source QCCS pairs per complete execution.",
@@ -11,6 +11,30 @@
       "cross_source_pairs": 12,
       "representations": ["concise", "detailed"],
       "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-1x2x2-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with one public, two expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "pools": {
+        "public": ["pub1"],
+        "expert": ["exp1", "exp2"],
+        "framework": ["fw1", "fw2"]
+      },
+      "cross_source_pairs": 8,
+      "required_aggregation": "mean",
+      "representations": ["concise", "detailed"],
+      "representation_note": "Companion representations of one case family. The asymmetric candidate shape is evidence-driven; Mean aggregation is required because Sum would favor the singleton pool on partner count alone."
+    },
+    "full-corpus-2x1x2-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with two public, one expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "pools": {
+        "public": ["pub1", "pub2"],
+        "expert": ["exp1"],
+        "framework": ["fw1", "fw2"]
+      },
+      "cross_source_pairs": 8,
+      "required_aggregation": "mean",
+      "representations": ["concise", "detailed"],
+      "representation_note": "Companion representations of one case family. The asymmetric candidate shape is evidence-driven; Mean aggregation is required because Sum would favor the singleton pool on partner count alone."
     }
   }
 }
