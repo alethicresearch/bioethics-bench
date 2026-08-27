@@ -36,6 +36,37 @@ M002, M004, M005 and M010 now have concise/detailed records in `data/benchmark` 
 
 These are research-state judgments, not final release classifications. A case may become executable if later evidence closes a source-class gap; it need not do so to remain a complete Full Corpus case.
 
+## Batch B — M011–M020
+
+| Inventory | Case family / working title | Domain | Source packet | Deep case file | Concise | Detailed | Public / affected evidence | Expert evidence | Framework map | Executable eligibility | Review | Notes / blocker |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| M011 | Expanded access to an investigational intervention | clinical/research translation | audited | drafted | drafted | drafted | substantive patient evidence but not two direct institutional policies | strong conditional FDA/professional architecture | strong | `needs-additional-evidence` | oncology/regulatory/affected-community review pending | Do not turn interest in discussing expanded access into unconditional-access policy. Trial unavailability and non-depletion of enrolled-trial supply are explicit. |
+| M012 | Clinician assistance for unproven commercial stem-cell treatment abroad | emerging therapy/medical tourism | audited | drafted | drafted | drafted | strong qualitative heterogeneity; two policy translations appear supportable | professional guidance converges on one non-endorsement + continuity/harm-reduction architecture | strong | provisional `executable-other-profile`: `full-corpus-2x1x2-mean-v1` | independent candidate/provenance review required before transcription | Candidate audit supports 2 public ×1 expert×2 framework; do not equate ordinary records/follow-up with referral or endorsement. |
+| M013 | Consent to material trainee participation | consent/medical education | audited | drafted | drafted | drafted | strong role-sensitive patient preferences but no clean institutional-policy split | strong disclosure/opportunity-to-decline architecture | strong | `needs-additional-evidence` | surgical-education/consent review pending | Material supervised resident role; intimate examination deliberately excluded so the case remains nontrivial. |
+| M014 | Pregnant patient refuses recommended treatment intended primarily to benefit fetus | reproductive/clinical ethics | audited | drafted | drafted | drafted | respectful-maternity/coercion evidence strong contextually but direct policy comparison limited | very strong consensus to respect capable refusal and avoid coercion | strong/plural frameworks | `needs-additional-evidence` | obstetric/reproductive-justice/legal review pending | Do not manufacture an expert override candidate from philosophical dissent. Capacity, fetal benefit, maternal burden and time are fixed. |
+| M015 | Pediatric practice policy after persistent routine-vaccine refusal | pediatrics/public health | audited | drafted | drafted | drafted | vaccine-hesitancy/trust evidence strong; direct dismissal-policy preference limited | genuine professional-practice variation; AAP permits guarded dismissal | strong | `needs-additional-evidence` | pediatrics/affected-community/access review pending | Separate practice relationship from school/state mandate; no current outbreak; safe transfer is stipulated. |
+| M016 | Parents refuse high-benefit curative cancer therapy for child | pediatric oncology | audited | drafted | drafted | drafted | strong family decision-making evidence but indirect for state-intervention policy | strong harm-threshold/last-resort architecture | strong | `needs-additional-evidence` | pediatric-oncology/child-ethics/legal review pending | Approx. 85–90% cure is a constructed case parameter, not a universal cancer claim; short safe negotiation window fixed. |
+| M017 | Reserve antimicrobial for present patient versus stewardship | infectious disease/One Health | audited | drafted | drafted | drafted | public AMR concern directly relevant but restriction-policy translation still indirect | strong stewardship/preauthorization architecture | strong | `needs-additional-evidence` | ID/stewardship/One Health review pending | Reserve drug has meaningful but non-overwhelming individual advantage; alternative remains real; no precise one-course future harm invented. |
+| M018 | Patient-requested antibiotics under genuine diagnostic uncertainty | outpatient stewardship | audited | drafted | drafted | drafted | strong heterogeneous expectations; delayed prescribing has direct patient-acceptability evidence | two distinct defensible strategies: no immediate vs delayed prescription | strong | provisional `executable-2x2x2` | primary-care/candidate-provenance review required before transcription | Candidate audit supports 2×2×2; no expert immediate-antibiotic candidate is manufactured. |
+| M019 | Telemedicine access versus in-person diagnostic safety | digital health/rural access | audited | drafted | drafted | drafted | strong context-sensitive access vs examination preferences | professional guidance converges on risk-triggered hybrid | strong | provisional `executable-other-profile`: `full-corpus-2x1x2-mean-v1` | clinical/telemedicine/affected-patient review required before transcription | Concrete rural wrist-injury presentation; candidate audit supports 2 public ×1 expert×2 framework. |
+| M020 | Clinician duty to work during dangerous outbreak | professional/public-health ethics | audited | drafted | drafted | drafted | strong affected-worker heterogeneity in duty/risk/family obligations | distinguishable strong-duty and individualized-limit architectures within reciprocal-protection boundary | strong | provisional `executable-2x2x2` | occupational-health/affected-worker candidate review required before transcription | Strongest Batch-B symmetric candidate; appropriate PPE/protection and real residual risk are both stipulated. |
+
+## Batch B eligibility snapshot
+
+Batch B now has a source packet, ten complete deep-case drafts, matched concise/detailed representations, and a candidate-level audit for the four families whose evidence appears executable. **No Batch-B machine-readable record has been created.** This is deliberate: the partner/reviewer should independently audit the candidate translations before transcription.
+
+Provisional structure after candidate audit:
+
+- **M012:** `2 public × 1 expert × 2 framework` → existing `full-corpus-2x1x2-mean-v1` profile;
+- **M018:** `2 × 2 × 2` appears supportable;
+- **M019:** `2 public × 1 expert × 2 framework` → existing `full-corpus-2x1x2-mean-v1` profile;
+- **M020:** `2 × 2 × 2` appears supportable;
+- **M011, M013, M014, M015, M016, M017:** retain as `needs-additional-evidence` rather than manufacturing source-class disagreement.
+
+No new profile is required by Batch B. The only asymmetric shape identified is already registered and Mean-pinned. The candidate audit is at `docs/full-corpus/batch-b/M012-M018-M019-M020-candidate-audit.md` and should be the partner's principal review target before any JSON transcription.
+
+The pattern is methodologically useful: several philosophically rich cases have strong professional consensus and therefore remain non-executable under the present source architecture. Executable status is not treated as a measure of philosophical importance or research completeness.
+
 ## Evidence-status vocabulary
 
 - **strong** — multiple credible sources directly support construction in that source class.
