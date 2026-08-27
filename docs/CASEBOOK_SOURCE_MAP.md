@@ -67,6 +67,34 @@ Case studies addressing difficult practical questions in human uses of animals.
 
 Use for: animal research, food systems, companion/wild animals and the methodological question of representing nonhuman interests in SACRE.
 
+## B09 — WHO, *Casebook on Ethical Issues in International Health Research* (2009/2010)
+
+A major open global-health research-ethics source containing **64 cases** on planning, reviewing and conducting health-related research. The cases span study design, harm and benefit, informed consent, standards of care, obligations to participants and communities, privacy/confidentiality and professional ethics.
+
+Use for: expanding the research-ethics inventory beyond familiar US IRB cases; identifying genuinely international decision structures; tracing cases into WHO/CIOMS guidance and the literature.
+
+The WHO/PAHO publication terms are unusually useful for teaching use, but Bench records should still be independently reconstructed and rights/provenance documented case by case.
+
+## B10 — Barrett et al. (eds.), *Public Health Ethics: Cases Spanning the Globe* (Springer/CDC, 2016; open access)
+
+Global public-health ethics casebook designed for practitioners and teaching. It includes sections on resource allocation, disease prevention/control, chronic-disease prevention and health promotion, environmental/occupational public health, marginalized populations, international collaboration and public-health research.
+
+Use for: correcting clinical/hospital bias; geographically diverse population-policy cases; institutional and government decision-makers; identifying public-health problems that are not simply clinical dilemmas scaled up.
+
+## B11 — Hastings Center, *Clinical Ethics Case Studies* series
+
+Ongoing case series written by clinical ethicists involved in real consultations, with editorial commentary highlighting agreement, disagreement and unresolved questions. The series explicitly seeks cases with ethical complexity rather than one obvious answer.
+
+Use for: contemporary real-world clinical problem structures, ethics-consultation process, and spotting underrepresented recurring cases. Recent examples include DNR orders after suicidal behavior, repeated self-injury, refusal shaped by distrust, homelessness/addiction and lifesaving treatment.
+
+Because the narratives concern real consultations, Bench use should be discovery/triangulation unless permission and de-identification support more direct adaptation.
+
+## B12 — NIH, *Annual Review of Ethics Case Studies*
+
+An ongoing research-ethics/scientific-integrity case series intended to confront readers with problems that do not have easy answers. Recent themes include responsible AI use, ethical conduct of clinical trials, collaboration, mentoring, recordkeeping and laboratory safety.
+
+Use for: research-practice and scientific-integrity boundary cases, especially where AI and data systems change ordinary responsibilities of investigators.
+
 ---
 
 # How casebooks enter provenance
