@@ -1,0 +1,223 @@
+{
+  "record_id": "f13-international-health-worker-recruitment-concise-v1",
+  "case_id": "f13-international-health-worker-recruitment",
+  "version": "1.0.0",
+  "title": "International recruitment of health workers from shortage countries",
+  "short_description": "A high-income health system wants to recruit nurses from a country with a critical workforce deficit. It must decide whether active recruitment is acceptable and what co-investment or worker-rights safeguards should govern it.",
+  "decision_question": "Should a destination health system actively recruit health workers from a country with a critical workforce shortage, and what co-investment or migration-right safeguards should govern recruitment?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f13-international-health-worker-recruitment-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "global-structural"
+  ],
+  "tags": [
+    "health workforce",
+    "migration",
+    "WHO Global Code",
+    "co-investment",
+    "employer responsibility"
+  ],
+  "scenario": "A high-income health system has severe staffing shortages and wants to recruit nurses from a country with a critical health-workforce deficit. It must decide whether active recruitment is acceptable and whether it should require bilateral co-investment, training support, or other source-country safeguards.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "World Health Organization, WHO Global Code of Practice on the International Recruitment of Health Personnel, as amended 29 May 2026.",
+        "type": "policy-document",
+        "url": "https://www.who.int/publications/i/item/wha68.32"
+      },
+      {
+        "citation": "World Health Organization, WHO Health Workforce Support and Safeguards List and accompanying implementation guidance (current as of August 2026).",
+        "type": "policy-document",
+        "url": "https://www.who.int/publications/i/item/9789240072105"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Allow individual nurses to accept overseas jobs they choose, but prohibit destination employers from aggressive recruitment campaigns that target health systems already facing critical shortages.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from qualitative and stakeholder studies of migrant health workers, which consistently foreground worker freedom and career opportunity alongside concern about exploitation and source-system effects. The separation of worker choice from employer conduct is Bench editorial translation of that pattern.",
+          "sources": [
+            {
+              "citation": "Qualitative and stakeholder studies of international health-worker migration across several corridors (including Colombia, Indonesia, Jordan, the Philippines, and sub-Saharan Africa to Canada), reporting worker interests in mobility and career opportunity alongside exploitation risk and source-country health-system effects.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit active recruitment only through a bilateral agreement that funds additional training or health-system capacity in the source country and protects recruited workers from exploitative contracts.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from source- and destination-country stakeholder evidence across several migration corridors, in which participants raise both contractual exploitation and the depletion of publicly funded training. The bilateral co-investment condition is Bench editorial translation of those concerns.",
+          "sources": [
+            {
+              "citation": "Qualitative and stakeholder studies of international health-worker migration across several corridors (including Colombia, Indonesia, Jordan, the Philippines, and sub-Saharan Africa to Canada), reporting worker interests in mobility and career opportunity alongside exploitation risk and source-country health-system effects.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Follow the WHO Code and Support and Safeguards List: avoid active recruitment from vulnerable health systems unless a government-to-government arrangement supports mutual benefit, worker rights, and source-system strengthening.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the WHO Global Code as amended 29 May 2026 and the Health Workforce Support and Safeguards List, which discourage active recruitment from listed countries except under government-to-government arrangements meeting these conditions.",
+          "sources": [
+            {
+              "citation": "World Health Organization, WHO Global Code of Practice on the International Recruitment of Health Personnel, as amended 29 May 2026.",
+              "type": "policy-document",
+              "url": "https://www.who.int/publications/i/item/wha68.32"
+            },
+            {
+              "citation": "World Health Organization, WHO Health Workforce Support and Safeguards List and accompanying implementation guidance (current as of August 2026).",
+              "type": "policy-document",
+              "url": "https://www.who.int/publications/i/item/9789240072105"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Meet destination staffing needs through a workforce strategy that prioritizes domestic retention and training, using international recruitment only when transparent agreements prevent systematic harm to source-country services.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the Code’s provisions on destination-country responsibility for workforce sustainability and self-sufficiency, which treat domestic training and retention as the primary instrument.",
+          "sources": [
+            {
+              "citation": "World Health Organization, WHO Global Code of Practice on the International Recruitment of Health Personnel, as amended 29 May 2026.",
+              "type": "policy-document",
+              "url": "https://www.who.int/publications/i/item/wha68.32"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Respect health workers as persons with rights to migrate and pursue better lives; justice may regulate recruiting institutions, but it should not treat workers as resources owned by their country of origin.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from liberty of movement and respect for persons: the reasoning bridge is that the duty at issue binds institutions that benefit from recruitment, so any remedy must fall on them rather than on the worker’s freedom to leave. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+              "type": "book"
+            },
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Institutions benefiting from migration should not externalize the cost of training and workforce depletion onto populations with worse health access; recruitment is permissible only with fair compensation or co-investment.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from global-justice and reciprocity accounts: the reasoning bridge is that the destination system captures a benefit financed by the source population, so fairness requires returning value rather than merely refraining from misconduct. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+              "type": "book"
+            },
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, WHO Global Code of Practice on the International Recruitment of Health Personnel, as amended 29 May 2026.",
+      "type": "policy-document",
+      "url": "https://www.who.int/publications/i/item/wha68.32"
+    },
+    {
+      "citation": "World Health Organization, WHO Health Workforce Support and Safeguards List and accompanying implementation guidance (current as of August 2026).",
+      "type": "policy-document",
+      "url": "https://www.who.int/publications/i/item/9789240072105"
+    },
+    {
+      "citation": "Qualitative and stakeholder studies of international health-worker migration across several corridors (including Colombia, Indonesia, Jordan, the Philippines, and sub-Saharan Africa to Canada), reporting worker interests in mobility and career opportunity alongside exploitation risk and source-country health-system effects.",
+      "type": "survey"
+    },
+    {
+      "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+      "type": "book"
+    },
+    {
+      "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+      "type": "book"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:27bbaa14a7a334bbd2dfd0dca787b327192d959f1d9795142e39377608c30894"
+}

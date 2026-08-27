@@ -1,0 +1,200 @@
+{
+  "record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
+  "case_id": "f01-elective-surgery-transfusion-refusal",
+  "version": "1.0.0",
+  "title": "High-risk surgery when a competent adult refuses blood transfusion",
+  "short_description": "A competent adult refuses allogeneic transfusion but accepts blood-conservation methods before elective surgery with a meaningful bleeding risk. The hospital must decide whether to proceed and under what safeguards.",
+  "decision_question": "Should the hospital undertake the elective operation under a bloodless-management plan when the competent patient refuses transfusion, and what risk threshold or safeguards should govern that decision?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f01-elective-surgery-transfusion-refusal-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "informed refusal",
+    "religious belief",
+    "professional integrity",
+    "surgery",
+    "institutional policy"
+  ],
+  "scenario": "A competent adult needs elective surgery with a meaningful risk of major bleeding and refuses allogeneic blood transfusion, while accepting evidence-based blood-conservation methods. The hospital must decide whether to proceed and what safety threshold or safeguards should apply.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Royal College of Surgeons of England, Caring for Patients who Refuse Blood: A Guide to Good Practice (London: RCS England, 2016).",
+        "type": "guideline",
+        "url": "https://www.rcseng.ac.uk/standards-and-research/standards-and-guidance/good-practice-guides/caring-for-patients-who-refuse-blood/"
+      },
+      {
+        "citation": "Affected-community materials on refusal of allogeneic blood and acceptance of individually specified blood-conservation alternatives, published by Jehovah’s Witnesses hospital liaison / patient-information services.",
+        "type": "other"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Proceed if the patient gives informed refusal of transfusion and the team offers a feasible bloodless plan, because the patient's treatment choices should be respected.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from affected-community materials in which refusal of allogeneic blood is explicit and longstanding while individually specified blood-conservation alternatives are accepted. The community evidence establishes the refusal and the acceptance of alternatives directly; converting that into a hospital rule about proceeding with elective surgery is Bench editorial translation, and no surveyed community risk threshold is claimed.",
+          "sources": [
+            {
+              "citation": "Affected-community materials on refusal of allogeneic blood and acceptance of individually specified blood-conservation alternatives, published by Jehovah’s Witnesses hospital liaison / patient-information services.",
+              "type": "other"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme; refer the patient to a centre experienced in bloodless medicine before scheduling the operation.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from affected-community practice and the bloodless-medicine programme literature, in which patients who refuse allogeneic blood are directed to centres with an established transfusion-free surgical programme rather than treated wherever they present. This states a different decision from pub1 - refer rather than proceed here - not the same decision with an added safeguard.",
+          "sources": [
+            {
+              "citation": "Affected-community materials on refusal of allogeneic blood and acceptance of individually specified blood-conservation alternatives, published by Jehovah’s Witnesses hospital liaison / patient-information services.",
+              "type": "other"
+            },
+            {
+              "citation": "Patient-blood-management and bloodless-medicine programme literature and affected-community hospital-liaison materials, describing referral of patients who refuse allogeneic blood to centres with an established transfusion-free surgical programme rather than proceeding at a centre without one.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Proceed when the multidisciplinary team judges that the operation can be performed to an acceptable professional standard using agreed blood-conservation strategies and documented informed refusal.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from Royal College of Surgeons good-practice guidance on caring for patients who refuse blood, which requires advance planning, multidisciplinary involvement, documented refusal and application of blood-conservation techniques.",
+          "sources": [
+            {
+              "citation": "Royal College of Surgeons of England, Caring for Patients who Refuse Blood: A Guide to Good Practice (London: RCS England, 2016).",
+              "type": "guideline",
+              "url": "https://www.rcseng.ac.uk/standards-and-research/standards-and-guidance/good-practice-guides/caring-for-patients-who-refuse-blood/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Postpone, modify, or decline the elective operation when refusal of transfusion makes the residual perioperative risk exceed the team's defensible safety threshold; facilitate referral where feasible.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same professional guidance and perioperative bloodless-management literature, which recognize that surgeons may decline an elective procedure they cannot perform to an acceptable standard and should then support referral rather than abandon the patient.",
+          "sources": [
+            {
+              "citation": "Royal College of Surgeons of England, Caring for Patients who Refuse Blood: A Guide to Good Practice (London: RCS England, 2016).",
+              "type": "guideline",
+              "url": "https://www.rcseng.ac.uk/standards-and-research/standards-and-guidance/good-practice-guides/caring-for-patients-who-refuse-blood/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Honor the patient's autonomous refusal and offer the operation when it remains within the ordinary range of professionally acceptable risk; do not make acceptance of transfusion a condition by itself.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from respect for autonomy as developed in principlism: a capacitated refusal of a specific intervention is authoritative over that intervention, so the reasoning bridge is that refusal of one rescue modality does not by itself withdraw the patient from care otherwise within accepted professional risk. The policy sentence is a Bench construction, not a quotation.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Do not undertake an elective procedure when the foreseeable risk created by unavailable rescue treatment exceeds a reasonable nonmaleficence threshold, while preserving referral and alternative-care options.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence and professional integrity: where the elective character of the procedure means the harm can be avoided without loss of a necessary benefit, the reasoning bridge is that a foreseeable increase in serious harm can defeat the reason to operate, with referral preserving the patient’s access. The policy sentence is a Bench construction, not a quotation.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "Royal College of Surgeons of England, Caring for Patients who Refuse Blood: A Guide to Good Practice (London: RCS England, 2016).",
+      "type": "guideline",
+      "url": "https://www.rcseng.ac.uk/standards-and-research/standards-and-guidance/good-practice-guides/caring-for-patients-who-refuse-blood/"
+    },
+    {
+      "citation": "Affected-community materials on refusal of allogeneic blood and acceptance of individually specified blood-conservation alternatives, published by Jehovah’s Witnesses hospital liaison / patient-information services.",
+      "type": "other"
+    },
+    {
+      "citation": "Patient-blood-management and bloodless-medicine programme literature and affected-community hospital-liaison materials, describing referral of patients who refuse allogeneic blood to centres with an established transfusion-free surgical programme rather than proceeding at a centre without one.",
+      "type": "article"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:4889a6907dfedd6aae21478aefd4179bfcf483a9e99ed042a4c13823447aa34e"
+}

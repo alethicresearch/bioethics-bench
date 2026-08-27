@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioethicsbench.com/schemas/case.schema.json",
+  "title": "Bioethics Bench case",
+  "description": "A versioned bioethics case record. `case_id` identifies an underlying decision problem; `record_id` identifies one represented executable object. Collection, exposure, editorial status, and representation form are independent axes.",
+  "type": "object",
+  "required": [
+    "record_id",
+    "case_id",
+    "version",
+    "title",
+    "short_description",
+    "scenario",
+    "scenario_provenance",
+    "candidate_pools",
+    "collection",
+    "exposure",
+    "status",
+    "schema_version",
+    "content_hash"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Identifies this specific represented record.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "case_id": {
+      "type": "string",
+      "description": "Identifies the underlying decision-problem family across representations and versions.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of this represented record. Any substantive change to scenario, decision question, candidates, ordering, or provenance creates a new version.",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "short_description": {
+      "type": "string",
+      "description": "One or two sentences, for case listings and cards.",
+      "minLength": 1,
+      "maxLength": 400
+    },
+    "decision_question": {
+      "type": "string",
+      "description": "The singular actionable question every executable policy candidate answers.",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "representation": {
+      "type": "object",
+      "description": "How this record represents its case family. Concise and detailed Featured companions are distinct research objects, not interchangeable formatting.",
+      "required": ["form"],
+      "properties": {
+        "form": { "enum": ["concise", "standard", "detailed"] },
+        "companion_record_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "uniqueItems": true
+        },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "benchmark_profile": {
+      "type": ["string", "null"],
+      "description": "Named executable profile, e.g. featured-core-2x2x2-v1."
+    },
+    "jurisdiction_context": {
+      "type": ["string", "null"],
+      "description": "Named legal/regulatory setting when required; null for a deliberately jurisdiction-neutral scenario."
+    },
+    "as_of_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date at which time-sensitive factual, legal, or professional assumptions were checked."
+    },
+    "stipulations": {
+      "type": "array",
+      "description": "Editorial benchmark stipulations: constructed numerical or contextual assumptions that make the decision problem determinate enough to execute and to perturb. A stipulation is a property of the benchmark, not a claim about the world, and must also be marked in the scenario text. Companion representations must carry identical stipulations, because they represent the same factual state.",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "statement", "rationale"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "kind": { "enum": ["numerical", "contextual", "legal", "scientific"] },
+          "statement": { "type": "string", "minLength": 1 },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Why the benchmark needs this fixed, and why this value rather than another. A stipulation without a stated reason is indistinguishable from an invented fact."
+          }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "position_families": {
+      "type": "array",
+      "description": "Optional scholarly map of documented policy-position families; not the executable candidate set and not scored by SACRE.",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "domains": {
+      "type": "array",
+      "description": "Controlled bioethical domains. Plural because one case may genuinely span several fields.",
+      "items": {
+        "enum": [
+          "consent-capacity-refusal",
+          "pediatric-neonatal",
+          "end-of-life",
+          "assisted-dying",
+          "allocation-transplantation",
+          "reproduction-genetics",
+          "research-ethics",
+          "public-health",
+          "disability-mental-health",
+          "clinical-innovation",
+          "medical-ai-data",
+          "global-structural",
+          "animal-one-health",
+          "climate-planetary",
+          "neuroethics",
+          "biosecurity-dual-use"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Free-form editorial tags for browsing/filtering. Not a controlled vocabulary; `domains` is.",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "scenario": { "type": "string", "minLength": 1 },
+    "scenario_provenance": { "$ref": "#/$defs/provenance" },
+    "candidate_pools": {
+      "type": "object",
+      "required": ["public", "expert", "framework"],
+      "properties": {
+        "public": { "$ref": "#/$defs/pool" },
+        "expert": { "$ref": "#/$defs/pool" },
+        "framework": { "$ref": "#/$defs/pool" }
+      },
+      "additionalProperties": false
+    },
+    "collection": {
+      "description": "The record's role in the research program.",
+      "enum": ["tutorial", "featured", "development", "stress-test", "benchmark"]
+    },
+    "exposure": {
+      "description": "Who has seen this record. A Featured record is public and can never later become a confirmatory holdout.",
+      "enum": ["public", "internal-development", "confirmatory-holdout"]
+    },
+    "status": {
+      "description": "Editorial lifecycle position.",
+      "enum": ["draft", "editorial-review", "reviewed", "frozen", "released"]
+    },
+    "intended_use": {
+      "type": "array",
+      "description": "What this record is for.",
+      "items": {
+        "enum": [
+          "teaching",
+          "application-demonstration",
+          "paper-illustration",
+          "protocol-development",
+          "robustness-testing",
+          "released-evaluation"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "exposure_history": {
+      "type": "array",
+      "description": "Every prior public/development use, recorded prospectively.",
+      "items": {
+        "type": "object",
+        "required": ["date", "use"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "use": { "type": "string", "minLength": 1 },
+          "reference": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "paper_usage": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "rights": {
+      "type": "object",
+      "description": "Licensing of this record's own text. Source materials keep their own rights, recorded per source.",
+      "required": ["license"],
+      "properties": {
+        "license": { "type": "string", "minLength": 1 },
+        "holder": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "references": {
+      "type": "array",
+      "description": "Literature and source documents behind this case.",
+      "items": { "$ref": "#/$defs/reference" }
+    },
+    "review": {
+      "type": ["object", "null"],
+      "properties": {
+        "reviewed_by": { "type": "array", "items": { "type": "string" } },
+        "reviewed_at": { "type": ["string", "null"], "format": "date" },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "parent_record_id": { "type": ["string", "null"] },
+    "perturbation_metadata": {
+      "type": ["object", "null"],
+      "description": "For stress-test records: what was perturbed relative to the parent, and why.",
+      "properties": {
+        "perturbation_type": { "type": "string" },
+        "relative_to": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "content_hash": {
+      "type": "string",
+      "description": "Algorithm-prefixed canonical hash; see docs/VERSIONING.md.",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "collection": { "const": "featured" } }, "required": ["collection"] },
+      "then": {
+        "properties": { "exposure": { "const": "public" } },
+        "required": [
+          "decision_question",
+          "representation",
+          "benchmark_profile",
+          "domains",
+          "references",
+          "rights"
+        ],
+        "description": "Featured records are public, explicitly represented research objects with a decision question and benchmark profile."
+      }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["frozen", "released"] } }, "required": ["status"] },
+      "then": {
+        "required": ["review", "intended_use"],
+        "description": "A record cannot be frozen or released without a review record and declared use."
+      }
+    },
+    {
+      "if": { "properties": { "collection": { "const": "stress-test" } }, "required": ["collection"] },
+      "then": { "required": ["parent_record_id", "perturbation_metadata"] }
+    }
+  ],
+  "$defs": {
+    "pool": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" },
+      "minItems": 1
+    },
+    "candidate": {
+      "type": "object",
+      "required": ["id", "text", "source_pool", "provenance"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^(pub|exp|fw)[0-9]+$" },
+        "text": { "type": "string", "minLength": 1 },
+        "source_pool": { "enum": ["public", "expert", "framework"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Where represented text came from and how it was constructed.",
+      "required": ["construction_method"],
+      "properties": {
+        "construction_method": {
+          "enum": [
+            "editorial",
+            "adapted-from-source",
+            "extracted-from-evidence",
+            "derived-from-framework",
+            "model-assisted",
+            "unknown"
+          ]
+        },
+        "summary": { "type": ["string", "null"] },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
+        "adapted_not_reproduced": { "type": ["boolean", "null"] },
+        "model_assistance": {
+          "type": ["object", "null"],
+          "properties": {
+            "model": { "type": "string" },
+            "role": { "type": "string" },
+            "reviewed_by_human": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "required": ["citation"],
+      "properties": {
+        "citation": { "type": "string", "minLength": 1 },
+        "type": {
+          "enum": ["article", "book", "guideline", "statute", "court-decision", "policy-document", "survey", "teaching-case", "other"]
+        },
+        "doi": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "accessed": { "type": ["string", "null"], "format": "date" },
+        "rights": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Featured Cases — Bioethics Bench</title>
+  <meta name="description" content="The twenty Featured v1 case families of Bioethics Bench. Each family has a concise and a detailed representation of the same decision problem, with six executable policy candidates drawn from public, expert and framework sources." />
+  <meta property="og:title" content="Featured Cases — Bioethics Bench" />
+  <meta property="og:description" content="Twenty Featured case families, each with concise and detailed representations of one decision problem." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0c1445;
+      --navy-dark:  #080e30;
+      --navy-mid:   #162060;
+      --teal:       #10b981;
+      --teal-light: #34d399;
+      --teal-dim:   #065f46;
+      --white:      #ffffff;
+      --off-white:  #f8fafc;
+      --gray-100:   #f1f5f9;
+      --gray-200:   #e2e8f0;
+      --gray-400:   #94a3b8;
+      --gray-500:   #64748b;
+      --gray-600:   #475569;
+      --gray-800:   #1e293b;
+      --gray-900:   #0f172a;
+      --font:       'Inter', system-ui, -apple-system, sans-serif;
+      --mono:       'JetBrains Mono', 'Fira Code', monospace;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--gray-800);
+      background: var(--off-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(8, 14, 48, 0.97);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0 2rem; height: 58px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 0.9375rem; font-weight: 700; color: var(--white);
+      text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo em { font-style: normal; color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 1.25rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.72); text-decoration: none;
+      font-size: 0.8125rem; font-weight: 500;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+
+    header.page {
+      background: linear-gradient(160deg, var(--navy-dark), var(--navy-mid));
+      color: var(--white); padding: 3rem 0 2.5rem;
+    }
+    .eyebrow {
+      display: inline-block; font-size: 0.6875rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--teal-light); margin-bottom: 0.75rem;
+    }
+    header.page h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800;
+      letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 0.75rem;
+    }
+    header.page p.lead {
+      max-width: 60ch; color: rgba(255,255,255,0.78); font-size: 0.9375rem;
+    }
+    .status-note {
+      margin-top: 1.5rem; padding: 0.875rem 1rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px; font-size: 0.8125rem;
+      color: rgba(255,255,255,0.82); max-width: 78ch;
+    }
+    .status-note strong { color: var(--white); }
+
+    .controls {
+      position: sticky; top: 58px; z-index: 50;
+      background: rgba(248,250,252,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 1rem 0;
+    }
+    .controls-inner { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+    input[type="search"] {
+      flex: 1 1 240px; min-width: 200px;
+      padding: 0.5rem 0.75rem; font-family: var(--font); font-size: 0.875rem;
+      border: 1px solid var(--gray-200); border-radius: 8px; background: var(--white);
+      color: var(--gray-800);
+    }
+    input[type="search"]:focus { outline: 2px solid var(--teal); outline-offset: -1px; }
+    select {
+      padding: 0.5rem 0.75rem; font-family: var(--font); font-size: 0.875rem;
+      border: 1px solid var(--gray-200); border-radius: 8px; background: var(--white);
+      color: var(--gray-800);
+    }
+    .seg {
+      display: inline-flex; border: 1px solid var(--gray-200);
+      border-radius: 8px; overflow: hidden; background: var(--white);
+    }
+    .seg button {
+      font-family: var(--font); font-size: 0.8125rem; font-weight: 600;
+      padding: 0.5rem 0.875rem; border: 0; background: transparent;
+      color: var(--gray-500); cursor: pointer;
+    }
+    .seg button[aria-pressed="true"] { background: var(--navy); color: var(--white); }
+    .count { font-size: 0.8125rem; color: var(--gray-500); margin-left: auto; }
+
+    main { padding: 2rem 0 4rem; }
+    .family {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: 14px; margin-bottom: 1rem; overflow: hidden;
+    }
+    .family-head {
+      width: 100%; text-align: left; background: transparent; border: 0;
+      font-family: var(--font); cursor: pointer; padding: 1.25rem 1.25rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .family-head:hover { background: var(--gray-100); }
+    .fam-index {
+      font-family: var(--mono); font-size: 0.75rem; font-weight: 500;
+      color: var(--teal-dim); background: #ecfdf5; border-radius: 6px;
+      padding: 0.25rem 0.5rem; flex-shrink: 0; margin-top: 0.125rem;
+    }
+    .fam-body { flex: 1; min-width: 0; }
+    .fam-body { display: block; }
+    .fam-title {
+      display: block;
+      font-size: 1.0625rem; font-weight: 700; color: var(--gray-900);
+      letter-spacing: -0.015em; margin-bottom: 0.25rem;
+    }
+    .fam-desc { display: block; font-size: 0.875rem; color: var(--gray-600); }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.375rem; margin-top: 0.625rem; }
+    .chip {
+      font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em;
+      padding: 0.1875rem 0.5rem; border-radius: 999px;
+      background: var(--gray-100); color: var(--gray-600);
+    }
+    .chip.domain { background: #eef2ff; color: #4338ca; }
+    .caret { color: var(--gray-400); flex-shrink: 0; font-size: 0.875rem; margin-top: 0.25rem; }
+
+    .detail { border-top: 1px solid var(--gray-200); padding: 1.25rem; display: none; }
+    .family.open .detail { display: block; }
+    .family.open .caret { transform: rotate(90deg); }
+    .caret { display: inline-block; transition: transform 0.15s; }
+
+    .rep-bar {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .rep-label {
+      font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--gray-500);
+    }
+    .btn-load {
+      margin-left: auto; display: inline-flex; align-items: center; gap: 0.375rem;
+      background: var(--teal); color: var(--white); text-decoration: none;
+      font-size: 0.8125rem; font-weight: 700; padding: 0.5rem 0.9375rem;
+      border-radius: 8px;
+    }
+    .btn-load:hover { background: var(--teal-light); }
+
+    .block { margin-bottom: 1.25rem; }
+    .block h4 {
+      font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--gray-500); margin-bottom: 0.5rem;
+    }
+    .scenario {
+      font-size: 0.9375rem; color: var(--gray-800);
+      background: var(--off-white); border-left: 3px solid var(--teal);
+      border-radius: 0 8px 8px 0; padding: 0.875rem 1rem;
+    }
+    .question {
+      font-size: 0.9375rem; font-weight: 600; color: var(--gray-900);
+      background: #fffbeb; border-left: 3px solid #f59e0b;
+      border-radius: 0 8px 8px 0; padding: 0.875rem 1rem;
+    }
+    .stips {
+      background: #fffbeb; border: 1px solid #fde68a;
+      border-radius: 10px; padding: 0.875rem 1rem;
+    }
+    .stips li { margin-left: 1rem; margin-bottom: 0.5rem; font-size: 0.8125rem; }
+    .stips .why { display: block; color: var(--gray-500); font-size: 0.75rem; margin-top: 0.125rem; }
+    .stips .kind {
+      font-family: var(--mono); font-size: 0.625rem; text-transform: uppercase;
+      letter-spacing: 0.06em; color: #92400e; background: #fef3c7;
+      padding: 0.0625rem 0.375rem; border-radius: 4px; margin-right: 0.375rem;
+    }
+    .stips-note { font-size: 0.75rem; color: var(--gray-600); margin-bottom: 0.5rem; }
+    .pools { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.875rem; }
+    .pool {
+      border: 1px solid var(--gray-200); border-radius: 10px;
+      padding: 0.875rem; background: var(--white);
+    }
+    .pool h5 {
+      font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 0.625rem;
+    }
+    .pool.public h5 { color: #1d4ed8; }
+    .pool.expert h5 { color: #047857; }
+    .pool.framework h5 { color: #7c3aed; }
+    .cand { padding: 0.625rem 0; border-top: 1px solid var(--gray-100); }
+    .cand:first-of-type { border-top: 0; padding-top: 0; }
+    .cand-id {
+      font-family: var(--mono); font-size: 0.6875rem; color: var(--gray-400);
+      display: block; margin-bottom: 0.1875rem;
+    }
+    .cand-text { font-size: 0.8125rem; color: var(--gray-800); }
+    .prov {
+      margin-top: 0.375rem; font-size: 0.75rem; color: var(--gray-500);
+    }
+    .prov summary { cursor: pointer; color: var(--gray-500); font-weight: 600; }
+    .prov summary:hover { color: var(--gray-800); }
+    .prov .method {
+      font-family: var(--mono); font-size: 0.6875rem;
+      color: var(--teal-dim); background: #ecfdf5;
+      padding: 0.0625rem 0.375rem; border-radius: 4px;
+    }
+    .prov ul { margin: 0.375rem 0 0 1rem; }
+    .prov li { margin-bottom: 0.25rem; }
+    .prov a { color: #1d4ed8; }
+
+    .meta {
+      margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--gray-200);
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem; font-size: 0.75rem;
+    }
+    .meta-k {
+      font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--gray-400); font-size: 0.625rem; display: block;
+    }
+    .meta-v { font-family: var(--mono); color: var(--gray-600); word-break: break-all; }
+
+    .empty { padding: 3rem 1rem; text-align: center; color: var(--gray-500); }
+
+    footer {
+      background: var(--navy-dark); color: rgba(255,255,255,0.6);
+      padding: 2rem 0; font-size: 0.8125rem;
+    }
+    footer a { color: var(--teal-light); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1rem; }
+      .nav-links { gap: 0.75rem; }
+      .count { margin-left: 0; width: 100%; }
+      .btn-load { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../" class="nav-logo">Bioethics<em>Bench</em></a>
+    <ul class="nav-links">
+      <li><a href="../#domains">Domains</a></li>
+      <li><a href="../#evaluation">Evaluation</a></li>
+      <li><a href="./">Featured Cases</a></li>
+      <li><a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a></li>
+    </ul>
+  </nav>
+
+  <header class="page">
+    <div class="container">
+      <span class="eyebrow">Featured v1</span>
+      <h1>Twenty Featured case families</h1>
+      <p class="lead">
+        Each family represents one bioethical decision problem. Every family has two
+        companion representations — <strong>concise</strong> and <strong>detailed</strong> —
+        that state the same decision question and the same six executable policy candidates,
+        and differ only in how much scenario context they carry.
+      </p>
+      <div class="status-note">
+        <strong>Status: released, Featured v1.</strong> These records are frozen and
+        content-addressed: a substantive change creates a new version rather than editing one
+        in place. Released does <strong>not</strong> mean validated. They are curated research
+        objects, not answers. The six candidates in a family are an executable set chosen to be
+        defensible and comparable — they do not exhaust the real debate, neither representation
+        is the correct one, and the public candidates represent evidence about what people and
+        affected communities prefer, not moral ground truth. <strong>No human or model
+        evaluation has been executed against this corpus</strong>, so no results are shown.
+      </div>
+      <div class="status-note">
+        <strong>Bench-authored case content is <a href="https://creativecommons.org/licenses/by/4.0/" style="color:var(--teal-light)" target="_blank" rel="noopener">CC BY 4.0</a></strong>,
+        copyright Alethic Research — scenario text, decision questions, policy candidates, provenance summaries and
+        benchmark stipulations. This does <strong>not</strong> relicense the cited sources, which keep their own rights and
+        are recorded per source; Bench case text adapts and summarizes rather than reproduces third-party prose. When
+        citing a record, give its id, version and content hash.
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="container controls-inner">
+      <input type="search" id="q" placeholder="Search titles, tags, decision questions…" aria-label="Search cases" />
+      <select id="domain" aria-label="Filter by domain"><option value="">All domains</option></select>
+      <div class="seg" role="group" aria-label="Representation">
+        <button type="button" id="rep-concise" aria-pressed="true">Concise</button>
+        <button type="button" id="rep-detailed" aria-pressed="false">Detailed</button>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+
+  <main>
+    <div class="container" id="list">
+      <div class="empty">Loading the Featured corpus…</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      Bioethics Bench · Featured v1 corpus, editorial review ·
+      <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/featured">Records on GitHub</a> ·
+      <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md">Content license (CC BY 4.0)</a> ·
+      <a href="../#cite">How to cite</a>
+    </div>
+  </footer>
+
+  <script>
+    // The SACRE application loads a Featured representation by record id from its own
+    // vendored copy of this corpus; the link carries the identity, not the content.
+    var SACRE_APP = 'https://reflectiveequilibrium.ai/app';
+
+    var DOMAIN_LABELS = {
+      'consent-capacity-refusal': 'Consent, capacity & refusal',
+      'pediatric-neonatal': 'Pediatric & neonatal',
+      'end-of-life': 'End of life',
+      'assisted-dying': 'Assisted dying',
+      'allocation-transplantation': 'Allocation & transplantation',
+      'reproduction-genetics': 'Reproduction & genetics',
+      'research-ethics': 'Research ethics',
+      'public-health': 'Public health',
+      'disability-mental-health': 'Disability & mental health',
+      'clinical-innovation': 'Clinical innovation',
+      'medical-ai-data': 'Medical AI & data',
+      'global-structural': 'Global & structural',
+      'animal-one-health': 'Animal & One Health',
+      'climate-planetary': 'Climate & planetary',
+      'neuroethics': 'Neuroethics',
+      'biosecurity-dual-use': 'Biosecurity & dual use'
+    };
+    var POOL_LABELS = { public: 'Public-derived', expert: 'Expert-derived', framework: 'Framework-derived' };
+    var METHOD_LABELS = {
+      'extracted-from-evidence': 'extracted from evidence',
+      'adapted-from-source': 'adapted from source',
+      'derived-from-framework': 'derived from framework',
+      'editorial': 'editorial',
+      'model-assisted': 'model-assisted',
+      'unknown': 'unknown'
+    };
+
+    var state = { rep: 'concise', q: '', domain: '', index: null, records: {}, open: {} };
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function recordFor(family, form) {
+      for (var i = 0; i < family.records.length; i++) {
+        if (family.records[i].form === form) return family.records[i];
+      }
+      return family.records[0];
+    }
+
+    function fetchRecord(entry) {
+      if (state.records[entry.record_id]) return Promise.resolve(state.records[entry.record_id]);
+      return fetch('../' + entry.path).then(function (r) {
+        if (!r.ok) throw new Error('could not load ' + entry.record_id);
+        return r.json();
+      }).then(function (json) {
+        state.records[entry.record_id] = json;
+        return json;
+      });
+    }
+
+    function matches(family) {
+      if (state.domain && family.domains.indexOf(state.domain) === -1) return false;
+      if (!state.q) return true;
+      var hay = [family.title, family.short_description, family.decision_question]
+        .concat(family.tags || [])
+        .concat((family.domains || []).map(function (d) { return DOMAIN_LABELS[d] || d; }))
+        .join(' ').toLowerCase();
+      return hay.indexOf(state.q.toLowerCase()) !== -1;
+    }
+
+    function renderProvenance(prov) {
+      var parts = ['<details class="prov"><summary>Provenance</summary>'];
+      parts.push('<div style="margin-top:.375rem"><span class="method">' + esc(METHOD_LABELS[prov.construction_method] || prov.construction_method) + '</span></div>');
+      if (prov.summary) parts.push('<p style="margin-top:.375rem">' + esc(prov.summary) + '</p>');
+      if (prov.sources && prov.sources.length) {
+        parts.push('<ul>');
+        prov.sources.forEach(function (s) {
+          var cite = esc(s.citation);
+          var href = s.url || (s.doi ? 'https://doi.org/' + s.doi : null);
+          parts.push('<li>' + (href ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + cite + '</a>' : cite) + '</li>');
+        });
+        parts.push('</ul>');
+      }
+      parts.push('</details>');
+      return parts.join('');
+    }
+
+    function renderDetail(family, record) {
+      var out = [];
+      var repNote = state.rep === 'concise'
+        ? 'The concise representation is the default the SACRE loader uses.'
+        : 'The detailed representation unpacks context already implicit in the concise companion. It does not change the decision.';
+
+      out.push('<div class="rep-bar">');
+      out.push('<span class="rep-label">Representation</span>');
+      out.push('<span class="chip">' + esc(record.representation.form) + '</span>');
+      out.push('<span style="font-size:.75rem;color:var(--gray-500)">' + esc(repNote) + '</span>');
+      out.push('<a class="btn-load" href="' + esc(SACRE_APP) + '?bench=' + encodeURIComponent(record.record_id) + '" target="_blank" rel="noopener">Load in SACRE →</a>');
+      out.push('</div>');
+
+      out.push('<div class="block"><h4>Decision question</h4><div class="question">' + esc(record.decision_question) + '</div></div>');
+      out.push('<div class="block"><h4>Scenario · ' + esc(record.representation.form) + '</h4><div class="scenario">' + esc(record.scenario) + '</div>');
+      out.push(renderProvenance(record.scenario_provenance) + '</div>');
+
+      if (record.stipulations && record.stipulations.length) {
+        out.push('<div class="block"><h4>Benchmark stipulations</h4><div class="stips">');
+        out.push('<p class="stips-note">Constructed assumptions that make this decision determinate enough to execute and to perturb. '
+          + 'They are properties of the benchmark, <strong>not</strong> claims about the world, and must not be cited as findings. '
+          + 'Both representations carry them identically.</p><ul>');
+        record.stipulations.forEach(function (st) {
+          out.push('<li><span class="kind">' + esc(st.kind) + '</span>' + esc(st.statement)
+            + '<span class="why">Why fixed: ' + esc(st.rationale) + '</span></li>');
+        });
+        out.push('</ul></div></div>');
+      }
+
+      if (record.jurisdiction_context) {
+        out.push('<div class="block"><h4>Jurisdiction context</h4><p style="font-size:.8125rem;color:var(--gray-600)">' + esc(record.jurisdiction_context) + '</p></div>');
+      }
+
+      out.push('<div class="block"><h4>Executable policy candidates</h4><div class="pools">');
+      ['public', 'expert', 'framework'].forEach(function (pool) {
+        out.push('<div class="pool ' + pool + '"><h5>' + esc(POOL_LABELS[pool]) + '</h5>');
+        (record.candidate_pools[pool] || []).forEach(function (c) {
+          out.push('<div class="cand"><span class="cand-id">' + esc(c.id) + '</span>');
+          out.push('<div class="cand-text">' + esc(c.text) + '</div>');
+          out.push(renderProvenance(c.provenance));
+          out.push('</div>');
+        });
+        out.push('</div>');
+      });
+      out.push('</div></div>');
+
+      if (record.references && record.references.length) {
+        out.push('<div class="block"><details class="prov"><summary>References (' + record.references.length + ')</summary><ul>');
+        record.references.forEach(function (s) {
+          var cite = esc(s.citation);
+          var href = s.url || (s.doi ? 'https://doi.org/' + s.doi : null);
+          out.push('<li>' + (href ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + cite + '</a>' : cite) + '</li>');
+        });
+        out.push('</ul></details></div>');
+      }
+
+      var companion = record.representation.companion_record_ids || [];
+      out.push('<div class="meta">');
+      out.push('<div><span class="meta-k">Record</span><span class="meta-v">' + esc(record.record_id) + '</span></div>');
+      out.push('<div><span class="meta-k">Case family</span><span class="meta-v">' + esc(record.case_id) + '</span></div>');
+      out.push('<div><span class="meta-k">Version</span><span class="meta-v">' + esc(record.version) + '</span></div>');
+      out.push('<div><span class="meta-k">Status</span><span class="meta-v">' + esc(record.status) + '</span></div>');
+      out.push('<div><span class="meta-k">Profile</span><span class="meta-v">' + esc(record.benchmark_profile) + '</span></div>');
+      out.push('<div><span class="meta-k">Facts checked</span><span class="meta-v">' + esc(record.as_of_date || '—') + '</span></div>');
+      out.push('<div><span class="meta-k">Case text</span><span class="meta-v">' + esc(record.rights ? record.rights.license : '—')
+        + (record.rights && record.rights.holder ? ' · ' + esc(record.rights.holder) : '') + '</span></div>');
+      out.push('<div><span class="meta-k">Companion</span><span class="meta-v">' + esc(companion.join(', ') || '—') + '</span></div>');
+      out.push('<div style="grid-column:1/-1"><span class="meta-k">Content hash</span><span class="meta-v">' + esc(record.content_hash) + '</span></div>');
+      out.push('</div>');
+
+      return out.join('');
+    }
+
+    function render() {
+      var list = document.getElementById('list');
+      var families = state.index.families.filter(matches);
+      document.getElementById('count').textContent =
+        families.length + ' of ' + state.index.families.length + ' families';
+
+      if (!families.length) {
+        list.innerHTML = '<div class="empty">No families match that filter.</div>';
+        return;
+      }
+
+      list.innerHTML = families.map(function (family, i) {
+        var n = state.index.families.indexOf(family) + 1;
+        var open = state.open[family.case_id];
+        var chips = (family.domains || []).map(function (d) {
+          return '<span class="chip domain">' + esc(DOMAIN_LABELS[d] || d) + '</span>';
+        }).concat((family.tags || []).slice(0, 4).map(function (t) {
+          return '<span class="chip">' + esc(t) + '</span>';
+        })).join('');
+        return '<section class="family' + (open ? ' open' : '') + '" data-case="' + esc(family.case_id) + '">'
+          + '<button class="family-head" type="button" aria-expanded="' + (open ? 'true' : 'false') + '">'
+          + '<span class="fam-index">F' + (n < 10 ? '0' : '') + n + '</span>'
+          + '<span class="fam-body"><span class="fam-title">' + esc(family.title) + '</span>'
+          + '<span class="fam-desc">' + esc(family.short_description) + '</span>'
+          + '<span class="chips">' + chips + '</span></span>'
+          + '<span class="caret">▶</span></button>'
+          + '<div class="detail" data-detail="' + esc(family.case_id) + '">'
+          + (open ? '<div class="empty">Loading representation…</div>' : '')
+          + '</div></section>';
+      }).join('');
+
+      families.forEach(function (family) {
+        if (state.open[family.case_id]) fillDetail(family);
+      });
+    }
+
+    function fillDetail(family) {
+      var host = document.querySelector('[data-detail="' + family.case_id + '"]');
+      if (!host) return;
+      var entry = recordFor(family, state.rep);
+      fetchRecord(entry).then(function (record) {
+        var current = document.querySelector('[data-detail="' + family.case_id + '"]');
+        if (current && state.open[family.case_id]) current.innerHTML = renderDetail(family, record);
+      }).catch(function (err) {
+        var current = document.querySelector('[data-detail="' + family.case_id + '"]');
+        if (current) current.innerHTML = '<div class="empty">' + esc(err.message) + '</div>';
+      });
+    }
+
+    document.getElementById('list').addEventListener('click', function (e) {
+      var head = e.target.closest ? e.target.closest('.family-head') : null;
+      if (!head) return;
+      var section = head.parentNode;
+      var caseId = section.getAttribute('data-case');
+      state.open[caseId] = !state.open[caseId];
+      section.classList.toggle('open', state.open[caseId]);
+      head.setAttribute('aria-expanded', state.open[caseId] ? 'true' : 'false');
+      var family = null;
+      for (var i = 0; i < state.index.families.length; i++) {
+        if (state.index.families[i].case_id === caseId) family = state.index.families[i];
+      }
+      if (state.open[caseId] && family) {
+        section.querySelector('.detail').innerHTML = '<div class="empty">Loading representation…</div>';
+        fillDetail(family);
+      }
+    });
+
+    function setRep(rep) {
+      state.rep = rep;
+      document.getElementById('rep-concise').setAttribute('aria-pressed', rep === 'concise' ? 'true' : 'false');
+      document.getElementById('rep-detailed').setAttribute('aria-pressed', rep === 'detailed' ? 'true' : 'false');
+      state.index.families.forEach(function (family) {
+        if (state.open[family.case_id]) fillDetail(family);
+      });
+    }
+    document.getElementById('rep-concise').addEventListener('click', function () { setRep('concise'); });
+    document.getElementById('rep-detailed').addEventListener('click', function () { setRep('detailed'); });
+    document.getElementById('q').addEventListener('input', function () { state.q = this.value; render(); });
+    document.getElementById('domain').addEventListener('change', function () { state.domain = this.value; render(); });
+
+    fetch('../data/featured/index.json').then(function (r) {
+      if (!r.ok) throw new Error('could not load the Featured corpus index');
+      return r.json();
+    }).then(function (index) {
+      state.index = index;
+      var domains = [];
+      index.families.forEach(function (f) {
+        (f.domains || []).forEach(function (d) { if (domains.indexOf(d) === -1) domains.push(d); });
+      });
+      domains.sort(function (a, b) {
+        return (DOMAIN_LABELS[a] || a).localeCompare(DOMAIN_LABELS[b] || b);
+      });
+      var sel = document.getElementById('domain');
+      domains.forEach(function (d) {
+        var opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = DOMAIN_LABELS[d] || d;
+        sel.appendChild(opt);
+      });
+      render();
+    }).catch(function (err) {
+      document.getElementById('list').innerHTML = '<div class="empty">' + esc(err.message) + '</div>';
+    });
+  </script>
+</body>
+</html>

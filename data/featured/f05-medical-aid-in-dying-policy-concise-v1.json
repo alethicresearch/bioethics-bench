@@ -1,0 +1,230 @@
+{
+  "record_id": "f05-medical-aid-in-dying-policy-concise-v1",
+  "case_id": "f05-medical-aid-in-dying-policy",
+  "version": "1.0.0",
+  "title": "Medical aid in dying for terminal illness",
+  "short_description": "A health system in a jurisdiction where medical aid in dying is legally permitted must decide whether its clinicians may participate, and what safeguards, palliative-care requirements and conscience protections should apply.",
+  "decision_question": "Should a health system permit clinician participation in medical aid in dying for competent adults with terminal illness under specified safeguards, and what alternative or conscience protections should accompany that policy?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f05-medical-aid-in-dying-policy-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": "A jurisdiction in which medical aid in dying is legally permitted for competent adults with terminal illness who meet statutory safeguards. No specific national or state statute is stipulated, and the record does not represent a clinician-administered euthanasia regime.",
+  "stipulations": [],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "assisted-dying",
+    "end-of-life"
+  ],
+  "tags": [
+    "medical aid in dying",
+    "autonomy",
+    "conscientious objection",
+    "palliative care",
+    "institutional policy"
+  ],
+  "scenario": "A health system in a jurisdiction where medical aid in dying is legally permitted is setting policy for competent adults with terminal illness who make sustained voluntary requests. It must decide whether clinicians may participate and what safeguards, palliative-care requirements, and conscience protections should apply.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Contemporary literature on medical aid in dying: statutory safeguards, capacity and voluntariness assessment, conscientious objection and non-abandonment, and the distinction between self-administered assisted dying and clinician-administered euthanasia regimes.",
+        "type": "article"
+      },
+      {
+        "citation": "American Medical Association, Code of Medical Ethics, Opinion 5.7 (Physician-Assisted Suicide) and related end-of-life care opinions.",
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Permit health-system access to medical aid in dying for competent adults with terminal illness who make a voluntary, informed request and satisfy the applicable safeguards.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from public policy-attitude evidence on the legalization of physician-assisted death for terminal illness, not from moral-acceptability polling. Gallup’s end-of-life legalization items — whether doctors should be allowed by law to end a terminally ill patient’s life at the patient’s request, and whether a doctor should be allowed to help such a patient end their life — draw majority support, and the comparative review by Emanuel and colleagues reports majority public support for legal access across most surveyed countries. That evidence establishes support for legal permission; converting it into a health system’s own access policy is Bench editorial translation.",
+          "sources": [
+            {
+              "citation": "Gallup Values and Beliefs poll, end-of-life trend (May 2026 reading): asked whether doctors should be allowed by law to end a terminally ill patient’s life by painless means at the patient’s and family’s request, a clear majority of US adults answer yes; asked separately whether a doctor should be allowed to help a terminally ill patient commit suicide, support is somewhat lower but still majority. Both are policy-permission questions, distinct from the moral-acceptability item.",
+              "type": "survey",
+              "url": "https://news.gallup.com/poll/1684/euthanasia.aspx"
+            },
+            {
+              "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+              "type": "article",
+              "doi": "10.1001/jama.2016.8499"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not make medical aid in dying part of the health system's clinical services; provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the persistent minority opposition recorded in the same policy-attitude evidence — roughly a quarter to a third of respondents across US and European surveys — whose stated reasons concentrate on the clinician’s role and on the adequacy of palliative care rather than on legality alone. The evidence establishes the position; the institutional rule of declining to provide the service while preserving lawful information and transfer pathways is Bench editorial translation. This is a different policy from pub1 rather than pub1 with an added safeguard.",
+          "sources": [
+            {
+              "citation": "Public-opinion and stakeholder research on opposition to legal assisted dying: a persistent minority (roughly a quarter to a third of respondents across US and European surveys) opposes legal access, with reasons concentrated on the clinician’s role, the adequacy and funding of palliative care, and concern about pressure on vulnerable, disabled and older people.",
+              "type": "survey"
+            },
+            {
+              "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+              "type": "article",
+              "doi": "10.1001/jama.2016.8499"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Allow participating clinicians to provide medical aid in dying under a standardized eligibility, capacity, documentation, and independent-review protocol, while protecting conscientious nonparticipation without patient abandonment.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from contemporary practice and safeguard literature in permitting jurisdictions, which describes standardized eligibility and capacity assessment, documentation, independent review, and protection of conscientious nonparticipation coupled with a duty of non-abandonment.",
+          "sources": [
+            {
+              "citation": "Contemporary literature on medical aid in dying: statutory safeguards, capacity and voluntariness assessment, conscientious objection and non-abandonment, and the distinction between self-administered assisted dying and clinician-administered euthanasia regimes.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Do not require clinicians or institutional services to provide medical aid in dying; require truthful information, continuity of symptom care, and a lawful pathway for patients to obtain information or transfer care.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from professional-code positions treating physician-assisted suicide as incompatible with the physician’s role while requiring truthful information, continued symptom management and non-abandonment.",
+          "sources": [
+            {
+              "citation": "American Medical Association, Code of Medical Ethics, Opinion 5.7 (Physician-Assisted Suicide) and related end-of-life care opinions.",
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Permit aid in dying when a competent person's informed and enduring choice concerns their own terminal suffering and the policy contains safeguards against coercion and impaired decision-making.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from respect for autonomy together with the relief of suffering: the reasoning bridge is that a decision about the manner of one’s own imminent death is paradigmatically self-regarding, so the burden falls on safeguards against coercion and impairment rather than on prohibition. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            },
+            {
+              "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Do not make intentional assistance in causing death part of the clinician's therapeutic role; meet suffering through palliation, non-abandonment, and respect for refusals of burdensome treatment.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from deontological accounts of the professional role and of the intention to cause death: the reasoning bridge is that the wrongness attaches to the clinician’s intended end rather than to the patient’s suffering, leaving palliation, non-abandonment and honoring refusals as the available responses. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "Gallup Values and Beliefs poll, end-of-life trend (May 2026 reading): asked whether doctors should be allowed by law to end a terminally ill patient’s life by painless means at the patient’s and family’s request, a clear majority of US adults answer yes; asked separately whether a doctor should be allowed to help a terminally ill patient commit suicide, support is somewhat lower but still majority. Both are policy-permission questions, distinct from the moral-acceptability item.",
+      "type": "survey",
+      "url": "https://news.gallup.com/poll/1684/euthanasia.aspx"
+    },
+    {
+      "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+      "type": "article",
+      "doi": "10.1001/jama.2016.8499"
+    },
+    {
+      "citation": "Public-opinion and stakeholder research on opposition to legal assisted dying: a persistent minority (roughly a quarter to a third of respondents across US and European surveys) opposes legal access, with reasons concentrated on the clinician’s role, the adequacy and funding of palliative care, and concern about pressure on vulnerable, disabled and older people.",
+      "type": "survey"
+    },
+    {
+      "citation": "Gallup Values and Beliefs poll, May 2026: doctor-assisted suicide judged morally acceptable by 49% and morally wrong by 45% of US adults; long-running trend shows persistent pluralism conditioned on terminal illness, suffering and safeguards.",
+      "type": "survey",
+      "url": "https://news.gallup.com/poll/1681/moral-issues.aspx"
+    },
+    {
+      "citation": "American Medical Association, Code of Medical Ethics, Opinion 5.7 (Physician-Assisted Suicide) and related end-of-life care opinions.",
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/"
+    },
+    {
+      "citation": "Contemporary literature on medical aid in dying: statutory safeguards, capacity and voluntariness assessment, conscientious objection and non-abandonment, and the distinction between self-administered assisted dying and clinician-administered euthanasia regimes.",
+      "type": "article"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    },
+    {
+      "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:4e75b754247b48bba44b0c8e232599fd38f1f0724a62a199914d530ce94ac525"
+}

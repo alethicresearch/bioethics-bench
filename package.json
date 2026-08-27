@@ -1,0 +1,16 @@
+{
+  "name": "bioethics-bench",
+  "private": true,
+  "type": "module",
+  "description": "Validation tooling for the Bioethics Bench corpus. The site itself is static.",
+  "scripts": {
+    "build:featured": "node scripts/build-featured-v1.mjs",
+    "audit:granularity": "node scripts/audit-granularity.mjs",
+    "validate": "node scripts/build-featured-v1.mjs --check && node scripts/check-dossier-sync.mjs && node scripts/validate.mjs",
+    "digest": "node scripts/substantive-digest.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

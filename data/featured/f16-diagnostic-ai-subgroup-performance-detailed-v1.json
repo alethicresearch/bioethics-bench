@@ -1,0 +1,239 @@
+{
+  "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
+  "case_id": "f16-diagnostic-ai-subgroup-performance",
+  "version": "1.0.0",
+  "title": "Diagnostic AI with unequal subgroup performance",
+  "short_description": "A diagnostic AI improves overall accuracy but has a materially higher false-negative rate in one minority subgroup. The health system must decide whether and how to deploy it.",
+  "decision_question": "Should a health system deploy a diagnostic AI that has high overall accuracy but materially worse performance for one subgroup, and what threshold or safeguards should govern deployment?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f16-diagnostic-ai-subgroup-performance-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f16-subgroup-error-rates",
+      "kind": "numerical",
+      "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
+      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a deliberately constructed benchmark stipulation and are not an empirical estimate of any named system."
+    },
+    {
+      "id": "f16-retraining-delay",
+      "kind": "numerical",
+      "statement": "Collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months.",
+      "rationale": "The opportunity cost of waiting is decision-relevant — pub1 and pub2 differ precisely on whether to accept it, and exp2 turns on whether the delay is worth the residual disparity — so the length of the delay must be fixed across scorers rather than left for each to imagine. Constructed for the benchmark, not an estimate of any real revalidation programme."
+    }
+  ],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "medical-ai-data"
+  ],
+  "tags": [
+    "algorithmic fairness",
+    "subgroup validation",
+    "clinical deployment",
+    "human oversight",
+    "monitoring"
+  ],
+  "scenario": "A health system is considering a diagnostic AI for detecting a treatable condition on imaging. It has been externally validated and improves overall sensitivity and workflow compared with current practice, but its performance is not equal across groups. For this benchmark, assume a false-negative rate of 8 per cent overall against 14 per cent for current unaided practice, and, in one minority subgroup of about 6 per cent of the screened population, an AI false-negative rate of 13 per cent against 15 per cent for unaided practice in that same subgroup - better than the care those patients receive today, but well short of what the majority group gets from the tool. Retraining may reduce the disparity. For this benchmark, assume that collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months. Patients would not interact directly with the model; clinicians would receive its recommendation and could override it. Public and patient studies consistently raise concerns about discrimination, explainability, and retaining human responsibility in medical AI. The health system must decide whether that benefit justifies deployment and what subgroup threshold, fallback, monitoring, and disclosure rules should apply.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
+    "sources": [
+      {
+        "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: WHO Guidance (Geneva: WHO, 2021).",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789240029200"
+      },
+      {
+        "citation": "Literature on subgroup validation, performance disparity and post-deployment monitoring for clinical machine-learning systems.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Do not deploy the AI until its false-negative rate for the worse-performing subgroup meets the same minimum safety threshold required for the overall population.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from patient and public studies of medical AI in which discrimination and unequal performance are among the most persistent concerns, and from work with minority patient groups on unequal datasets. The equal-threshold rule is Bench editorial translation of that concern into a deployment condition.",
+          "sources": [
+            {
+              "citation": "Patient and public studies of medical AI reporting persistent concerns about discrimination and bias, explainability, privacy, and retaining clinician responsibility, including work with minority patient groups on unequal datasets and subgroup performance.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Deploy only with clear clinician review and an automatic fallback pathway for patients in the worse-performing subgroup until additional validation and retraining reduce the disparity.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same studies, in which retaining human clinical responsibility and explainability are emphasized alongside fairness. The clinician-review and fallback mechanism is Bench editorial translation of that emphasis.",
+          "sources": [
+            {
+              "citation": "Patient and public studies of medical AI reporting persistent concerns about discrimination and bias, explainability, privacy, and retaining clinician responsibility, including work with minority patient groups on unequal datasets and subgroup performance.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use subgroup-specific validation thresholds before deployment and require ongoing performance monitoring, human oversight, incident review, and a remediation plan for material disparities.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from WHO guidance on the ethics and governance of AI for health and on large multi-modal models, together with the subgroup-validation literature, which call for disaggregated validation, human oversight and post-deployment monitoring.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: WHO Guidance (Geneva: WHO, 2021).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240029200"
+            },
+            {
+              "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models (Geneva: WHO, 2024).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240084759"
+            },
+            {
+              "citation": "Literature on subgroup validation, performance disparity and post-deployment monitoring for clinical machine-learning systems.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Deploy when the tool improves outcomes over the actual local baseline for every subgroup, but document residual disparities and use risk-based safeguards rather than requiring identical error rates.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same governance guidance and fairness literature, which evaluate a system against the care it actually replaces and prescribe proportionate risk-based safeguards rather than parity of error rates as a deployment precondition.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: WHO Guidance (Geneva: WHO, 2021).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240029200"
+            },
+            {
+              "citation": "Literature on subgroup validation, performance disparity and post-deployment monitoring for clinical machine-learning systems.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Do not impose a higher avoidable diagnostic risk on a historically disadvantaged group merely because aggregate performance is strong; fair deployment requires a defensible minimum level for each group.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equal protection and anti-discrimination reasoning: the reasoning bridge is that an aggregate gain distributed so that an already disadvantaged group bears the residual risk is a distributive wrong the aggregate cannot answer, so a per-group floor is required. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            },
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Deploy if doing so improves expected health outcomes for each affected group and no feasible alternative creates greater total benefit, while investing in correction of residual inequity.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from a Pareto-constrained consequentialist rule: the reasoning bridge is that withholding a tool that improves every group’s outcomes relative to the real baseline harms the very group the objection is meant to protect, so the remaining duty is corrective investment. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: WHO Guidance (Geneva: WHO, 2021).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240029200"
+    },
+    {
+      "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models (Geneva: WHO, 2024).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240084759"
+    },
+    {
+      "citation": "Patient and public studies of medical AI reporting persistent concerns about discrimination and bias, explainability, privacy, and retaining clinician responsibility, including work with minority patient groups on unequal datasets and subgroup performance.",
+      "type": "survey"
+    },
+    {
+      "citation": "Literature on subgroup validation, performance disparity and post-deployment monitoring for clinical machine-learning systems.",
+      "type": "article"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    },
+    {
+      "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:1354beaf4d1094566b076fec91621e900ac20840cfdcd4745aa5e60413db9a56"
+}

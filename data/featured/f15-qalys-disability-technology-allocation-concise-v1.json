@@ -1,0 +1,214 @@
+{
+  "record_id": "f15-qalys-disability-technology-allocation-concise-v1",
+  "case_id": "f15-qalys-disability-technology-allocation",
+  "version": "1.0.0",
+  "title": "QALYs, disability and health-technology allocation",
+  "short_description": "A health-technology agency must decide whether to retain QALYs unchanged, constrain or modify them, or use another benefit measure where conventional quality weights reduce priority for people with pre-existing disabilities.",
+  "decision_question": "How should a health-technology agency use QALYs or related value measures when conventional quality-of-life weights may reduce priority for people with pre-existing disabilities?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f15-qalys-disability-technology-allocation-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "disability-mental-health",
+    "allocation-transplantation"
+  ],
+  "tags": [
+    "QALY",
+    "cost-effectiveness",
+    "disability discrimination",
+    "severity modifier",
+    "measurement architecture"
+  ],
+  "scenario": "A health-technology agency uses QALYs to compare treatments, but disability advocates argue that conventional quality weights can make gains for people with pre-existing disabilities appear less valuable. The agency must decide whether to retain QALYs unchanged, constrain or modify them, or use another benefit measure in such cases.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "National Institute for Health and Care Excellence, NICE Health Technology Evaluations: The Manual — quality-adjusted life years, opportunity cost, equal weighting of health gains and the severity modifier.",
+        "type": "guideline",
+        "url": "https://www.nice.org.uk/process/pmg36"
+      },
+      {
+        "citation": "US Department of Health and Human Services, Section 1557 nondiscrimination rules addressing the use of value-assessment methods that discriminate on the basis of disability, age or expected length of life.",
+        "type": "statute"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "For life-saving treatments with comparable survival benefit, do not give lower priority merely because a patient has a pre-existing disability that reduces conventional quality-of-life weights.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from public person-tradeoff research reporting equal priority for life-saving treatment of people with pre-existing paraplegia and people returnable to full health — the judgment this candidate states as an allocation rule.",
+          "sources": [
+            {
+              "citation": "Public person-tradeoff research on life-saving treatment for people with pre-existing disability, including studies reporting equal priority for people with pre-existing paraplegia and people returnable to full health, alongside broader evidence of public concern for severity and the worse off.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Keep a common cost-effectiveness framework, but give additional weight to severe illness and allow explicit equity adjustments when standard QALYs would systematically disadvantage already worse-off groups.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from broader public-preference research supporting severity weighting and priority to the worse off. The specific architecture of retaining a common framework with explicit equity adjustment is Bench editorial translation of that preference.",
+          "sources": [
+            {
+              "citation": "Public person-tradeoff research on life-saving treatment for people with pre-existing disability, including studies reporting equal priority for people with pre-existing paraplegia and people returnable to full health, alongside broader evidence of public concern for severity and the worse off.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Continue using QALYs as a common measure of health benefit, but apply validated severity modifiers, transparent sensitivity analyses, and legal anti-discrimination constraints where baseline disability affects measured gains.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the NICE health-technology evaluation manual on QALYs, equal weighting of health gains, the severity modifier and sensitivity analysis, together with nondiscrimination requirements applying to value-assessment methods.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Excellence, NICE Health Technology Evaluations: The Manual — quality-adjusted life years, opportunity cost, equal weighting of health gains and the severity modifier.",
+              "type": "guideline",
+              "url": "https://www.nice.org.uk/process/pmg36"
+            },
+            {
+              "citation": "US Department of Health and Human Services, Section 1557 nondiscrimination rules addressing the use of value-assessment methods that discriminate on the basis of disability, age or expected length of life.",
+              "type": "statute"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "In decisions where a quality weight would make identical survival gains count less solely because of pre-existing disability, use an alternative life-year or equal-survival valuation rather than the conventional QALY calculation.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from nondiscrimination requirements addressing value-assessment methods that discount life extension by disability status, which point toward an alternative valuation in exactly this class of decision.",
+          "sources": [
+            {
+              "citation": "US Department of Health and Human Services, Section 1557 nondiscrimination rules addressing the use of value-assessment methods that discriminate on the basis of disability, age or expected length of life.",
+              "type": "statute"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Allocate scarce resources to produce the greatest total health benefit, but use measures that count changes in health rather than treating a person's baseline disability as evidence of lower moral worth.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from constrained consequentialism: the reasoning bridge is that the quantity to be maximized is the change a treatment produces, so importing the baseline level into the valuation of that change is a measurement error rather than a moral judgment the theory requires. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Give extra priority to people who are worse off in health or opportunity; efficiency measures should be subordinated when they reproduce disadvantage faced by disabled people.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from prioritarian and capabilities accounts: the reasoning bridge is that being worse off strengthens rather than weakens a claim, so a measure that inverts that relation must yield to the priority it violates. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+              "type": "article",
+              "doi": "10.1111/1467-9329.00041"
+            },
+            {
+              "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "National Institute for Health and Care Excellence, NICE Health Technology Evaluations: The Manual — quality-adjusted life years, opportunity cost, equal weighting of health gains and the severity modifier.",
+      "type": "guideline",
+      "url": "https://www.nice.org.uk/process/pmg36"
+    },
+    {
+      "citation": "US Department of Health and Human Services, Section 1557 nondiscrimination rules addressing the use of value-assessment methods that discriminate on the basis of disability, age or expected length of life.",
+      "type": "statute"
+    },
+    {
+      "citation": "Public person-tradeoff research on life-saving treatment for people with pre-existing disability, including studies reporting equal priority for people with pre-existing paraplegia and people returnable to full health, alongside broader evidence of public concern for severity and the worse off.",
+      "type": "survey"
+    },
+    {
+      "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+      "type": "book"
+    },
+    {
+      "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+      "type": "article",
+      "doi": "10.1111/1467-9329.00041"
+    },
+    {
+      "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:fd93c24b7b613ea2b0745e8332add3bab917c92d5c63f6f33c22249845cd3c62"
+}

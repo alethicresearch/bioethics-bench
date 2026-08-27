@@ -1,0 +1,232 @@
+{
+  "record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v1",
+  "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+  "version": "1.0.0",
+  "title": "Ventilator triage during catastrophic scarcity",
+  "short_description": "Ventilators are insufficient for all patients who need them. The health system must adopt a triage rule that uses expected short-term survival while deciding what role disability, age, disadvantage or lottery should play.",
+  "decision_question": "During catastrophic ventilator scarcity, what triage rule should allocate treatment among clinically eligible patients while balancing expected benefit, equality, urgency, and protection against discrimination?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f11-ventilator-triage-catastrophic-scarcity-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "public-health",
+    "allocation-transplantation",
+    "disability-mental-health"
+  ],
+  "tags": [
+    "crisis standards of care",
+    "triage",
+    "disability discrimination",
+    "lottery",
+    "pandemic preparedness"
+  ],
+  "scenario": "A severe respiratory outbreak has produced a temporary but genuine shortage of mechanical ventilators: some patients who would ordinarily receive ventilation cannot be treated. The health system can estimate each patient's probability of surviving the acute episode with moderate uncertainty. Disability advocates warn that quality-of-life judgments, long-term life expectancy, and broad frailty measures can systematically disadvantage people with disabilities without improving the number of acute survivors. Other stakeholders argue that a rule should save as many lives as possible, while some members of the public favor giving additional weight to younger people, the worst off, or equal chance. The hospital can use a lottery among patients with similar priority and can reassess allocation as clinical prognosis changes. It must adopt a transparent triage rule before the next surge.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "World Health Organization, Ethics and COVID-19: Resource Allocation and Priority-Setting (Geneva: WHO, 2020) — equality, best outcomes, priority to the worst off, instrumental value and fair process.",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/ethics-and-covid-19-resource-allocation-and-priority-setting"
+      },
+      {
+        "citation": "Critical-care crisis-standards-of-care triage guidance on short-term prognosis criteria, repeated reassessment, exclusion of social-worth judgments and appeal processes.",
+        "type": "guideline"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Prioritize patients with the highest chance of surviving the acute illness, and use a lottery when differences are too small to justify a confident clinical ranking.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from a representative UK public survey on ventilator allocation (n = 763), in which respondents’ preferences tracked survival probability and a lottery was preferred where cases were close — the two elements this candidate states.",
+          "sources": [
+            {
+              "citation": "Representative UK public survey on ventilator allocation (n = 763), BMJ Open (2020), reporting preferences responsive to survival probability, age, treatment duration and disability/frailty, with a lottery preferred where cases are close.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Use a multiprinciple rule that considers acute survival but gives additional protection to people who are socially disadvantaged or otherwise worse off, without lowering priority for pre-existing disability alone.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from cross-national public triage studies showing pluralism about the worse off and from disability communities’ direct criticism of disability-based criteria, treated here as affected-community evidence. The combined rule is Bench editorial translation of those two strands.",
+          "sources": [
+            {
+              "citation": "Representative UK public survey on ventilator allocation (n = 763), BMJ Open (2020), reporting preferences responsive to survival probability, age, treatment duration and disability/frailty, with a lottery preferred where cases are close.",
+              "type": "survey"
+            },
+            {
+              "citation": "Disability-rights critiques of crisis-standards-of-care triage protocols and empirical studies of disability-related bias in public and clinical allocation judgments.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Base priority on short-term clinical benefit using validated, repeatedly reassessed criteria; exclude judgments about social worth and do not use disability or long-term quality of life unless directly relevant to acute survival.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from critical-care crisis-standards guidance on short-term prognosis criteria, repeated reassessment and the exclusion of social-worth judgments, together with WHO allocation-ethics material on best outcomes.",
+          "sources": [
+            {
+              "citation": "Critical-care crisis-standards-of-care triage guidance on short-term prognosis criteria, repeated reassessment, exclusion of social-worth judgments and appeal processes.",
+              "type": "guideline"
+            },
+            {
+              "citation": "World Health Organization, Ethics and COVID-19: Resource Allocation and Priority-Setting (Geneva: WHO, 2020) — equality, best outcomes, priority to the worst off, instrumental value and fair process.",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/ethics-and-covid-19-resource-allocation-and-priority-setting"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Create broad clinical priority tiers and use a transparent lottery within each tier, with an appeal or review process for criteria that may indirectly disadvantage protected groups.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same triage guidance on broad priority tiers, tie-breaking and appeal processes, and from the documented revision of protocols following disability-rights challenges.",
+          "sources": [
+            {
+              "citation": "Critical-care crisis-standards-of-care triage guidance on short-term prognosis criteria, repeated reassessment, exclusion of social-worth judgments and appeal processes.",
+              "type": "guideline"
+            },
+            {
+              "citation": "Disability-rights critiques of crisis-standards-of-care triage protocols and empirical studies of disability-related bias in public and clinical allocation judgments.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Choose the rule expected to save the greatest number of lives, but count each person’s survival equally and exclude quality-adjusted life-years or social-value judgments from the emergency objective.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from a constrained consequentialist objective: the reasoning bridge is that the emergency good to be maximized is number of survivors, and equal counting of each survival is what keeps the objective from importing judgments about whose life is worth more. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Ethics and COVID-19: Resource Allocation and Priority-Setting (Geneva: WHO, 2020) — equality, best outcomes, priority to the worst off, instrumental value and fair process.",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/ethics-and-covid-19-resource-allocation-and-priority-setting"
+            },
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "When claims are comparably strong, give each eligible person an equal chance; departures from equality require a publicly defensible reason such as materially different short-term benefit or priority to the worst off.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from fairness in the satisfaction of competing claims together with prioritarianism: the reasoning bridge is that comparably strong claims are owed proportional chances rather than a winner-takes-all ranking, so any departure carries a justificatory burden. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "John Broome, “Fairness,” Proceedings of the Aristotelian Society 91 (1990): 87–101.",
+              "type": "article"
+            },
+            {
+              "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+              "type": "article",
+              "doi": "10.1111/1467-9329.00041"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, Ethics and COVID-19: Resource Allocation and Priority-Setting (Geneva: WHO, 2020) — equality, best outcomes, priority to the worst off, instrumental value and fair process.",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/ethics-and-covid-19-resource-allocation-and-priority-setting"
+    },
+    {
+      "citation": "Representative UK public survey on ventilator allocation (n = 763), BMJ Open (2020), reporting preferences responsive to survival probability, age, treatment duration and disability/frailty, with a lottery preferred where cases are close.",
+      "type": "survey"
+    },
+    {
+      "citation": "Disability-rights critiques of crisis-standards-of-care triage protocols and empirical studies of disability-related bias in public and clinical allocation judgments.",
+      "type": "article"
+    },
+    {
+      "citation": "Critical-care crisis-standards-of-care triage guidance on short-term prognosis criteria, repeated reassessment, exclusion of social-worth judgments and appeal processes.",
+      "type": "guideline"
+    },
+    {
+      "citation": "John Broome, “Fairness,” Proceedings of the Aristotelian Society 91 (1990): 87–101.",
+      "type": "article"
+    },
+    {
+      "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+      "type": "article",
+      "doi": "10.1111/1467-9329.00041"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:7fd4f9eb63836cac9774ea9ff9ea9b56803f4bdc1663d8d94157ad7636c5ca33"
+}

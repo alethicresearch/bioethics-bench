@@ -1,0 +1,730 @@
+{
+  "generated_from": "scripts/build-featured-v1.mjs",
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "status": "released",
+  "family_count": 20,
+  "record_count": 40,
+  "families": [
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "title": "High-risk surgery when a competent adult refuses blood transfusion",
+      "short_description": "A competent adult refuses allogeneic transfusion but accepts blood-conservation methods before elective surgery with a meaningful bleeding risk. The hospital must decide whether to proceed and under what safeguards.",
+      "decision_question": "Should the hospital undertake the elective operation under a bloodless-management plan when the competent patient refuses transfusion, and what risk threshold or safeguards should govern that decision?",
+      "domains": [
+        "consent-capacity-refusal"
+      ],
+      "tags": [
+        "informed refusal",
+        "religious belief",
+        "professional integrity",
+        "surgery",
+        "institutional policy"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:4889a6907dfedd6aae21478aefd4179bfcf483a9e99ed042a4c13823447aa34e",
+          "path": "data/featured/f01-elective-surgery-transfusion-refusal-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:8f2c66baeb7a6e7a4ef3ce3dea1b0c4ad413888d56b3f77bed63ca5a4e70d6cb",
+          "path": "data/featured/f01-elective-surgery-transfusion-refusal-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f02-advance-directive-dementia-contentment",
+      "title": "Advance directive versus current contentment in dementia",
+      "short_description": "A person with advanced dementia appears content but signed a directive years earlier refusing life-prolonging treatment. Clinicians must decide how strongly it should control treatment of a serious but reversible infection.",
+      "decision_question": "When a person with advanced dementia lacks decision-making capacity but appears content, how should clinicians weigh a prior directive refusing life-prolonging treatment against the person's current welfare?",
+      "domains": [
+        "end-of-life",
+        "consent-capacity-refusal"
+      ],
+      "tags": [
+        "advance directive",
+        "dementia",
+        "precedent autonomy",
+        "surrogate decision-making",
+        "best interests"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f02-advance-directive-dementia-contentment-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:b458c6d6973ba1d487dd99138d8e7f914214ad15f74fc35ee77126a8f0cab478",
+          "path": "data/featured/f02-advance-directive-dementia-contentment-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f02-advance-directive-dementia-contentment-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:834d53fed2b62058dec2a6c37873243b989e0bbde4c40db226a3cf4932d1e9aa",
+          "path": "data/featured/f02-advance-directive-dementia-contentment-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f03-periviable-resuscitation-default",
+      "title": "Resuscitation at the threshold of viability",
+      "short_description": "Delivery is expected at 23 weeks, where both intensive resuscitation and comfort care are accepted options. The hospital must decide whether policy should set a default or leave the choice to shared decision-making with parents.",
+      "decision_question": "For an anticipated birth in the periviable gray zone, should the hospital default to resuscitation, default to comfort care, or defer the choice to shared decision-making with the parents?",
+      "domains": [
+        "pediatric-neonatal"
+      ],
+      "tags": [
+        "periviability",
+        "shared decision-making",
+        "parental authority",
+        "prognostic uncertainty",
+        "institutional policy"
+      ],
+      "stipulations": [
+        {
+          "id": "f03-outcome-ranges",
+          "kind": "numerical",
+          "statement": "About 30 to 50 per cent of infants actively treated at 23 weeks survive to discharge, and about half of survivors have moderate or severe neurodevelopmental impairment at follow-up.",
+          "rationale": "The case only works if the gray zone is real: outcomes bad enough that comfort care is reasonable and good enough that resuscitation is reasonable. Left as \"possible but uncertain\", each scorer supplies their own figures and the represented decision differs between them. These ranges are set for the benchmark so both pathways stay defensible and later perturbation work has a fixed baseline to move."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f03-periviable-resuscitation-default-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:b058f133f68515d3547cb480bb021f4b459ddf9f75b51c8fa9c02cd874b687ba",
+          "path": "data/featured/f03-periviable-resuscitation-default-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f03-periviable-resuscitation-default-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:7db69bc9d83b4d848f2f6b3c73f4f84a64469b8db8eff79a84e59c777a7699b4",
+          "path": "data/featured/f03-periviable-resuscitation-default-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "title": "Brain death and continued organ support after family objection",
+      "short_description": "A patient has been validly declared dead by neurologic criteria, but the family rejects the determination and asks that organ support continue. The hospital must set its accommodation policy.",
+      "decision_question": "After death by neurologic criteria has been validly determined, what accommodation should a hospital provide when the family objects and asks for continued organ support?",
+      "domains": [
+        "end-of-life"
+      ],
+      "tags": [
+        "brain death",
+        "religious accommodation",
+        "definition of death",
+        "institutional policy",
+        "public trust"
+      ],
+      "stipulations": [
+        {
+          "id": "f04-legal-setting",
+          "kind": "legal",
+          "statement": "The jurisdiction treats a valid determination of death by neurologic criteria as death, and permits but does not require a period of accommodation whose length the hospital may set. No statute fixes a minimum or maximum duration.",
+          "rationale": "The accommodation duty after a BD/DNC determination varies by jurisdiction, and in some it is mandated. Without a stated setting the candidates are not comparable, because one of them may be describing a policy the hospital is not free to adopt. The benchmark stipulates a setting in which the institution genuinely holds the discretion the decision question asks about."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f04-brain-death-accommodation-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:5f94357e71ed2396b6e6a5ebc905b2b033337d988e7a1d6b26141ce06bfd0df2",
+          "path": "data/featured/f04-brain-death-accommodation-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f04-brain-death-accommodation-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:b2743398f78ada388aeb8663a5a7282e7e4dfaed6298b8cae834a58b77033792",
+          "path": "data/featured/f04-brain-death-accommodation-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "title": "Medical aid in dying for terminal illness",
+      "short_description": "A health system in a jurisdiction where medical aid in dying is legally permitted must decide whether its clinicians may participate, and what safeguards, palliative-care requirements and conscience protections should apply.",
+      "decision_question": "Should a health system permit clinician participation in medical aid in dying for competent adults with terminal illness under specified safeguards, and what alternative or conscience protections should accompany that policy?",
+      "domains": [
+        "assisted-dying",
+        "end-of-life"
+      ],
+      "tags": [
+        "medical aid in dying",
+        "autonomy",
+        "conscientious objection",
+        "palliative care",
+        "institutional policy"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f05-medical-aid-in-dying-policy-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:4e75b754247b48bba44b0c8e232599fd38f1f0724a62a199914d530ce94ac525",
+          "path": "data/featured/f05-medical-aid-in-dying-policy-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:f1bd7c1246a518a1c54279680bcf9f46ffbadd2f9a09fbcdf9cd5f6371e08bfe",
+          "path": "data/featured/f05-medical-aid-in-dying-policy-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "title": "Placebo control when effective treatment exists",
+      "short_description": "Investigators propose a placebo-controlled trial although an effective standard treatment exists. The ethics committee must decide whether placebo is permissible and what safeguards or alternative designs are required.",
+      "decision_question": "When an effective treatment exists, under what conditions should a research ethics committee permit a placebo-controlled trial rather than require comparison with the best proven intervention?",
+      "domains": [
+        "research-ethics"
+      ],
+      "tags": [
+        "placebo control",
+        "standard of care",
+        "informed consent",
+        "ethics committee",
+        "trial design"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f06-placebo-control-effective-treatment-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:bbb560d477c52cde5ee5595ab688e20b8420b82ab44699183f736633f208fbae",
+          "path": "data/featured/f06-placebo-control-effective-treatment-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f06-placebo-control-effective-treatment-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:d1069b2c0088e89af32f4d39fc706df07d29c4f19147f8f5ca1a0cded2eaa863",
+          "path": "data/featured/f06-placebo-control-effective-treatment-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f07-lower-resource-trial-standard-of-care",
+      "title": "Standard of care in a lower-resource-country trial",
+      "short_description": "A multinational trial proposes comparing a new intervention with local usual care where the globally best proven treatment is not accessible. The ethics committee must decide the comparator and the fair-benefit conditions.",
+      "decision_question": "What control standard should a multinational trial use when the best proven treatment is not routinely accessible in the host community, and what fair-benefit obligations should accompany the study?",
+      "domains": [
+        "research-ethics",
+        "global-structural"
+      ],
+      "tags": [
+        "standard of care",
+        "exploitation",
+        "community engagement",
+        "post-trial access",
+        "multinational research"
+      ],
+      "stipulations": [
+        {
+          "id": "f07-host-system-access",
+          "kind": "contextual",
+          "statement": "The best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost.",
+          "rationale": "Without this, the claim that the trial is locally responsive is partly supplied by the scorer rather than by the represented case: whether a locally relevant design answers a question the host system can act on depends on facts the scenario did not state, and each scorer would fill them differently. No country is named or implied, and this is a constructed benchmark assumption, not an observation about any actual health system."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:659b09f3d1c419276409e8658cf786f636a13814897ff377520a7d565a717901",
+          "path": "data/featured/f07-lower-resource-trial-standard-of-care-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f07-lower-resource-trial-standard-of-care-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:3b17b43dccbb8062a98fb62a8b3af86b70a74ee12976c0c2ed5f059fe366a61a",
+          "path": "data/featured/f07-lower-resource-trial-standard-of-care-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "title": "Extending the 14-day limit for human embryo research",
+      "short_description": "Culturing human embryos beyond 14 days is now feasible. Regulators must decide whether to retain the bright-line limit, extend it to a new fixed point, or adopt staged case-by-case oversight.",
+      "decision_question": "Should regulators retain the 14-day limit for human embryo research, extend it to a new fixed limit, or replace it with staged case-by-case oversight?",
+      "domains": [
+        "reproduction-genetics",
+        "research-ethics"
+      ],
+      "tags": [
+        "embryo research",
+        "14-day rule",
+        "moral status",
+        "public dialogue",
+        "regulatory limits"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:f2840368d1dbadff2348315f8b6e00da497e18d4a43e50d567040a087ccdc28a",
+          "path": "data/featured/f08-fourteen-day-embryo-research-limit-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:b3be4c3f687121c3e8d47b2e2a46213522bd37dfec24a17f3184032402f7274c",
+          "path": "data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f09-heritable-genome-editing-serious-disease",
+      "title": "Heritable genome editing to prevent serious disease",
+      "short_description": "Assuming a heritable genome-editing technique reaches a high verified safety threshold, regulators must decide whether reproductive use to prevent a serious monogenic disease should remain prohibited or be narrowly permitted.",
+      "decision_question": "If safety and efficacy eventually reach a specified high threshold, under what conditions, if any, should regulators permit heritable genome editing to prevent a serious genetic disease?",
+      "domains": [
+        "reproduction-genetics"
+      ],
+      "tags": [
+        "germline editing",
+        "future generations",
+        "stipulated safety threshold",
+        "international governance",
+        "reproductive alternatives"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f09-heritable-genome-editing-serious-disease-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:cbb9545a554e6516245c411b99818c188ef5dde1526abafa7b7f47d2186e9f67",
+          "path": "data/featured/f09-heritable-genome-editing-serious-disease-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f09-heritable-genome-editing-serious-disease-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:6c499c73fc99f2e82984edf5a0f3677bc7512dd45388478744ce8bc161f8780d",
+          "path": "data/featured/f09-heritable-genome-editing-serious-disease-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "title": "Age as an organ-allocation criterion",
+      "short_description": "Transplant candidates matched on urgency and expected benefit differ in age. The allocation system must decide whether chronological age should have no independent role, act only through prognosis, or serve as a limited tie-breaker.",
+      "decision_question": "When transplant candidates have similar urgency and expected transplant benefit, should chronological age independently influence allocation priority, and if so only as a tie-breaker or more strongly?",
+      "domains": [
+        "allocation-transplantation"
+      ],
+      "tags": [
+        "organ allocation",
+        "fair innings",
+        "age discrimination",
+        "tie-breaking",
+        "allocation policy"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:64004bcb9dde0ef1d0cb9455d28f118e5d2fdac50b05bcabd0a17adf8989e9b0",
+          "path": "data/featured/f10-age-as-organ-allocation-criterion-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:279fe54098ce5d60c24ed11cf22db3ad3de6995432a40923eb93ed2f7736509c",
+          "path": "data/featured/f10-age-as-organ-allocation-criterion-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+      "title": "Ventilator triage during catastrophic scarcity",
+      "short_description": "Ventilators are insufficient for all patients who need them. The health system must adopt a triage rule that uses expected short-term survival while deciding what role disability, age, disadvantage or lottery should play.",
+      "decision_question": "During catastrophic ventilator scarcity, what triage rule should allocate treatment among clinically eligible patients while balancing expected benefit, equality, urgency, and protection against discrimination?",
+      "domains": [
+        "public-health",
+        "allocation-transplantation",
+        "disability-mental-health"
+      ],
+      "tags": [
+        "crisis standards of care",
+        "triage",
+        "disability discrimination",
+        "lottery",
+        "pandemic preparedness"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:e7841b86aa025cd27fec5bd335560f25e1f3cb8e1242cb8fbe5610caa7ee6b38",
+          "path": "data/featured/f11-ventilator-triage-catastrophic-scarcity-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:7fd4f9eb63836cac9774ea9ff9ea9b56803f4bdc1663d8d94157ad7636c5ca33",
+          "path": "data/featured/f11-ventilator-triage-catastrophic-scarcity-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f12-mandatory-vaccination-serious-outbreak",
+      "title": "Mandatory vaccination during a serious outbreak",
+      "short_description": "Voluntary vaccination has plateaued below the level needed to control a serious outbreak. Authorities must decide between continued voluntary measures, targeted requirements in high-risk settings, or a broader mandate.",
+      "decision_question": "When voluntary vaccination remains insufficient during a serious outbreak, under what conditions should a public authority impose a vaccine requirement rather than continue voluntary measures?",
+      "domains": [
+        "public-health"
+      ],
+      "tags": [
+        "vaccine mandate",
+        "harm principle",
+        "bodily autonomy",
+        "proportionality",
+        "public trust"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:2ecaa53d95ebd18dc2ad875e2c8c1aafb2b6855bb4e6f5a11452bebd0b6769e7",
+          "path": "data/featured/f12-mandatory-vaccination-serious-outbreak-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:f1de44391c49d503bf18d5bb63f6eebc64c99444cf7e7152c97524847f2480c4",
+          "path": "data/featured/f12-mandatory-vaccination-serious-outbreak-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f13-international-health-worker-recruitment",
+      "title": "International recruitment of health workers from shortage countries",
+      "short_description": "A high-income health system wants to recruit nurses from a country with a critical workforce deficit. It must decide whether active recruitment is acceptable and what co-investment or worker-rights safeguards should govern it.",
+      "decision_question": "Should a destination health system actively recruit health workers from a country with a critical workforce shortage, and what co-investment or migration-right safeguards should govern recruitment?",
+      "domains": [
+        "global-structural"
+      ],
+      "tags": [
+        "health workforce",
+        "migration",
+        "WHO Global Code",
+        "co-investment",
+        "employer responsibility"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f13-international-health-worker-recruitment-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:27bbaa14a7a334bbd2dfd0dca787b327192d959f1d9795142e39377608c30894",
+          "path": "data/featured/f13-international-health-worker-recruitment-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f13-international-health-worker-recruitment-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:aabf8e93c378bc194588a8891fe3203a6179a6d4e76e87b7c592a53c4e0d7ff9",
+          "path": "data/featured/f13-international-health-worker-recruitment-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "title": "Involuntary psychiatric treatment",
+      "short_description": "A person in a severe psychiatric crisis refuses care and has markedly impaired appreciation of immediate risk. The service must decide whether any involuntary intervention is permissible and under what threshold and safeguards.",
+      "decision_question": "What threshold, if any, should permit involuntary psychiatric hospitalization or treatment when a person refuses care during a severe mental-health crisis?",
+      "domains": [
+        "disability-mental-health",
+        "consent-capacity-refusal"
+      ],
+      "tags": [
+        "coercion",
+        "supported decision-making",
+        "capacity",
+        "crisis care",
+        "least restrictive alternative"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f14-involuntary-psychiatric-treatment-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:2dd5326a755d4e380b58590c1b02241fb71f35fe6b958af7ad2aee438a50555a",
+          "path": "data/featured/f14-involuntary-psychiatric-treatment-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:eb530c62ee0235e7e5c070ed1de043f8463ddd96c5e398edd690fee09ef83994",
+          "path": "data/featured/f14-involuntary-psychiatric-treatment-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f15-qalys-disability-technology-allocation",
+      "title": "QALYs, disability and health-technology allocation",
+      "short_description": "A health-technology agency must decide whether to retain QALYs unchanged, constrain or modify them, or use another benefit measure where conventional quality weights reduce priority for people with pre-existing disabilities.",
+      "decision_question": "How should a health-technology agency use QALYs or related value measures when conventional quality-of-life weights may reduce priority for people with pre-existing disabilities?",
+      "domains": [
+        "disability-mental-health",
+        "allocation-transplantation"
+      ],
+      "tags": [
+        "QALY",
+        "cost-effectiveness",
+        "disability discrimination",
+        "severity modifier",
+        "measurement architecture"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f15-qalys-disability-technology-allocation-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:fd93c24b7b613ea2b0745e8332add3bab917c92d5c63f6f33c22249845cd3c62",
+          "path": "data/featured/f15-qalys-disability-technology-allocation-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f15-qalys-disability-technology-allocation-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:622fe7f534a6f20648ef9d3b31e848976055a209e2c6ef1842e839fa2ca81f8a",
+          "path": "data/featured/f15-qalys-disability-technology-allocation-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f16-diagnostic-ai-subgroup-performance",
+      "title": "Diagnostic AI with unequal subgroup performance",
+      "short_description": "A diagnostic AI improves overall accuracy but has a materially higher false-negative rate in one minority subgroup. The health system must decide whether and how to deploy it.",
+      "decision_question": "Should a health system deploy a diagnostic AI that has high overall accuracy but materially worse performance for one subgroup, and what threshold or safeguards should govern deployment?",
+      "domains": [
+        "medical-ai-data"
+      ],
+      "tags": [
+        "algorithmic fairness",
+        "subgroup validation",
+        "clinical deployment",
+        "human oversight",
+        "monitoring"
+      ],
+      "stipulations": [
+        {
+          "id": "f16-subgroup-error-rates",
+          "kind": "numerical",
+          "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
+          "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a deliberately constructed benchmark stipulation and are not an empirical estimate of any named system."
+        },
+        {
+          "id": "f16-retraining-delay",
+          "kind": "numerical",
+          "statement": "Collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months.",
+          "rationale": "The opportunity cost of waiting is decision-relevant — pub1 and pub2 differ precisely on whether to accept it, and exp2 turns on whether the delay is worth the residual disparity — so the length of the delay must be fixed across scorers rather than left for each to imagine. Constructed for the benchmark, not an estimate of any real revalidation programme."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f16-diagnostic-ai-subgroup-performance-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:8b88bdd854fcab7e260a844c97e8e9ab64fa83aa6d88e9f2a1d2196ab449d212",
+          "path": "data/featured/f16-diagnostic-ai-subgroup-performance-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:1354beaf4d1094566b076fec91621e900ac20840cfdcd4745aa5e60413db9a56",
+          "path": "data/featured/f16-diagnostic-ai-subgroup-performance-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "title": "Biomedical animal research: replacement and harm–benefit review",
+      "short_description": "A proposed study would cause moderate, time-limited harm to laboratory animals while a promising nonanimal method remains unvalidated for the same question. The committee must decide whether animal use is justified.",
+      "decision_question": "Should an animal-research committee approve the proposed study, require the promising nonanimal alternative instead, or demand further validation before permitting animal use?",
+      "domains": [
+        "animal-one-health",
+        "research-ethics"
+      ],
+      "tags": [
+        "3Rs",
+        "replacement",
+        "harm-benefit analysis",
+        "animal welfare",
+        "research oversight"
+      ],
+      "stipulations": [
+        {
+          "id": "f17-species-severity-replacement",
+          "kind": "scientific",
+          "statement": "The study uses mice. The procedures are classified as moderate severity under the applicable regulatory framework. The organ-on-chip and computational replacement has been validated for two related endpoints but not for the endpoint this study addresses.",
+          "rationale": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open; a severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:12956fc1f7298f340a1cf2d73bfa426c6519f3277cb33c03dd187a01ca88397c",
+          "path": "data/featured/f17-animal-research-replacement-harm-benefit-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:0245cd7c9965051d07bde9ce30e570f763ab9fbc5aabdb81c77862ef1e4ed019",
+          "path": "data/featured/f17-animal-research-replacement-harm-benefit-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f18-antimicrobials-food-producing-animals",
+      "title": "Medically important antimicrobials in food-producing animals",
+      "short_description": "A regulator is updating rules for medically important antimicrobials in food-producing animals, balancing resistance risks against veterinary treatment and animal welfare.",
+      "decision_question": "How should regulators restrict medically important antimicrobials in food-producing animals while preserving necessary veterinary treatment and animal welfare?",
+      "domains": [
+        "animal-one-health",
+        "public-health"
+      ],
+      "tags": [
+        "antimicrobial resistance",
+        "One Health",
+        "animal welfare",
+        "stewardship",
+        "agricultural policy"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f18-antimicrobials-food-producing-animals-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:4f0ad48d8e8254812cf0023f36d8fad8ae91dbb183c78517dabf1ac5b3fbafd1",
+          "path": "data/featured/f18-antimicrobials-food-producing-animals-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f18-antimicrobials-food-producing-animals-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:2928da5ecc4ade56023da1db9d8c88b34f91d7851a10a9f14d1c8bc1776e7163",
+          "path": "data/featured/f18-antimicrobials-food-producing-animals-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "title": "Health-system decarbonization versus near-term clinical trade-offs",
+      "short_description": "Lower-carbon care pathways are clinically acceptable but modestly more costly or less convenient. The health system must decide how much weight emissions reduction may carry in clinical and procurement policy.",
+      "decision_question": "When lower-carbon care is clinically acceptable but modestly more costly or less convenient, how much weight should a health system give emissions reduction in procurement and treatment-pathway policy?",
+      "domains": [
+        "climate-planetary",
+        "global-structural"
+      ],
+      "tags": [
+        "decarbonization",
+        "procurement",
+        "life-cycle assessment",
+        "future generations",
+        "clinical trade-offs"
+      ],
+      "stipulations": [
+        {
+          "id": "f19-tradeoff-magnitude",
+          "kind": "numerical",
+          "statement": "The proposed pathway change cuts that pathway’s greenhouse-gas emissions by about 40 per cent. It raises consumable cost by about 8 per cent per procedure, adds about 10 minutes of staff time per case, and lowers one secondary performance measure - patient-reported comfort at 24 hours - by about 3 percentage points. Major clinical outcomes are unchanged.",
+          "rationale": "The dossier requires at least one quantified trade-off, because \"slightly\" means different things to different scorers and the whole case turns on how much clinical ground a large environmental gain may buy. The magnitudes are stipulated so that the emissions gain is clearly large, the clinical cost is clearly real but not on a major outcome, and neither candidate is obviously right."
+        }
+      ],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:5af211035f5d1bd02fe01915083d48b91f908860b6fe061e84819f2501eb7ef2",
+          "path": "data/featured/f19-health-system-decarbonization-tradeoffs-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:bc3a7a99fdd223b4d3689b3541d44cae2a3461d1e4d826807a8d1159346d024b",
+          "path": "data/featured/f19-health-system-decarbonization-tradeoffs-detailed-v1.json"
+        }
+      ]
+    },
+    {
+      "case_id": "f20-neural-organoid-oversight",
+      "title": "Increasingly complex neural organoids",
+      "short_description": "Human neural organoids are becoming more complex with no evidence of consciousness. Regulators must decide whether ordinary research oversight suffices or whether staged precautionary safeguards should begin now.",
+      "decision_question": "What additional oversight should apply to increasingly complex human neural organoid research before there is evidence that organoids are conscious or capable of suffering?",
+      "domains": [
+        "neuroethics",
+        "research-ethics",
+        "clinical-innovation"
+      ],
+      "tags": [
+        "neural organoids",
+        "anticipatory governance",
+        "moral status",
+        "precaution",
+        "research oversight"
+      ],
+      "stipulations": [],
+      "records": [
+        {
+          "form": "concise",
+          "record_id": "f20-neural-organoid-oversight-concise-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:8fe4ffedea3acc999eeb074e39729cd50891c78afc6a33692b13c63a32dd77c9",
+          "path": "data/featured/f20-neural-organoid-oversight-concise-v1.json"
+        },
+        {
+          "form": "detailed",
+          "record_id": "f20-neural-organoid-oversight-detailed-v1",
+          "version": "1.0.0",
+          "content_hash": "sha256:ba7ddc8298327299af93b530891cb6eb1660a054330b544823a8ef19d1d83663",
+          "path": "data/featured/f20-neural-organoid-oversight-detailed-v1.json"
+        }
+      ]
+    }
+  ]
+}

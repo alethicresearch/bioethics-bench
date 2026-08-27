@@ -1,0 +1,224 @@
+{
+  "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
+  "case_id": "f19-health-system-decarbonization-tradeoffs",
+  "version": "1.0.0",
+  "title": "Health-system decarbonization versus near-term clinical trade-offs",
+  "short_description": "Lower-carbon care pathways are clinically acceptable but modestly more costly or less convenient. The health system must decide how much weight emissions reduction may carry in clinical and procurement policy.",
+  "decision_question": "When lower-carbon care is clinically acceptable but modestly more costly or less convenient, how much weight should a health system give emissions reduction in procurement and treatment-pathway policy?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f19-health-system-decarbonization-tradeoffs-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f19-tradeoff-magnitude",
+      "kind": "numerical",
+      "statement": "The proposed pathway change cuts that pathway’s greenhouse-gas emissions by about 40 per cent. It raises consumable cost by about 8 per cent per procedure, adds about 10 minutes of staff time per case, and lowers one secondary performance measure - patient-reported comfort at 24 hours - by about 3 percentage points. Major clinical outcomes are unchanged.",
+      "rationale": "The dossier requires at least one quantified trade-off, because \"slightly\" means different things to different scorers and the whole case turns on how much clinical ground a large environmental gain may buy. The magnitudes are stipulated so that the emissions gain is clearly large, the clinical cost is clearly real but not on a major outcome, and neither candidate is obviously right."
+    }
+  ],
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "climate-planetary",
+    "global-structural"
+  ],
+  "tags": [
+    "decarbonization",
+    "procurement",
+    "life-cycle assessment",
+    "future generations",
+    "clinical trade-offs"
+  ],
+  "scenario": "A health system can substantially cut a care pathway’s emissions by adopting clinically acceptable alternatives that cost more or work less smoothly. For this benchmark, assume the change cuts that pathway’s greenhouse-gas emissions by about 40 per cent, at about 8 per cent higher consumable cost per procedure, about 10 extra minutes of staff time per case, and about 3 percentage points lower patient-reported comfort at 24 hours, with no measurable difference in major clinical outcomes. It must decide when carbon reduction may legitimately influence clinical and procurement policy.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
+    "sources": [
+      {
+        "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789240081888"
+      },
+      {
+        "citation": "Life-cycle assessment and low-carbon clinical-pathway evidence in health care, including inhaled and volatile anaesthetic agents, reusable versus single-use supplies and procurement decision rules.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Prefer the lower-carbon option when major clinical outcomes are equivalent, but do not reduce expected health benefit solely to meet an emissions target without specific patient consent or a public policy rule.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from a patient survey across four US health systems reporting very high support for clinicians making care sustainable together with substantially less willingness to accept restrictions on treatment options or reductions in clinical performance — the boundary this candidate states.",
+          "sources": [
+            {
+              "citation": "Patient survey across four US health systems (2025–26): very high support for clinicians helping make care sustainable, with substantially less willingness to accept restrictions on treatment options or reductions in clinical performance for environmental benefit.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Allow small, transparent trade-offs in cost, convenience, or secondary outcomes when the emissions reduction is large and patients retain access to a higher-benefit alternative when medically important.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same patient survey together with national physician survey work supporting sustainable care, in which the resistance concentrates on major clinical outcomes rather than on cost or convenience. The bounded-trade-off rule is Bench editorial translation of that pattern.",
+          "sources": [
+            {
+              "citation": "Patient survey across four US health systems (2025–26): very high support for clinicians helping make care sustainable, with substantially less willingness to accept restrictions on treatment options or reductions in clinical performance for environmental benefit.",
+              "type": "survey"
+            },
+            {
+              "citation": "National physician survey on sustainability in clinical care (2025–26), reporting broad support for reducing health-care emissions.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Build carbon impact into procurement and pathway design using life-cycle assessment and explicit sustainability targets, while maintaining evidence-based minimum standards for safety and clinical effectiveness.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the WHO operational framework for climate-resilient and low-carbon health systems and from life-cycle-assessment evidence in health care, which locate decarbonization in procurement and pathway design under maintained clinical standards.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240081888"
+            },
+            {
+              "citation": "Life-cycle assessment and low-carbon clinical-pathway evidence in health care, including inhaled and volatile anaesthetic agents, reusable versus single-use supplies and procurement decision rules.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Use a declared carbon shadow price or comparable decision rule so environmental effects are weighed consistently rather than through ad hoc bedside rationing; exempt cases with material expected clinical harm.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same low-carbon health-system material and from decision-rule practice in health-care procurement, which favor an explicit and consistently applied valuation over discretionary case-by-case judgment.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240081888"
+            },
+            {
+              "citation": "Life-cycle assessment and low-carbon clinical-pathway evidence in health care, including inhaled and volatile anaesthetic agents, reusable versus single-use supplies and procurement decision rules.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Count foreseeable climate-related health harms to distant and future people as real consequences of present care; accept modest local costs when they avert substantially greater health harm overall.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from impartial consequentialism extended across time and distance: the reasoning bridge is that a foreseeable health harm does not lose moral weight through remoteness, so the comparison is between a modest present cost and a larger aggregate harm. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "The present patient retains a special claim not to receive materially inferior care for diffuse future benefits; decarbonize primarily through system design and clinically equivalent substitutions.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from fiduciary and role-based obligations to the patient in front of the clinician: the reasoning bridge is that the patient did not consent to bear a concentrated cost for a diffuse benefit, so the duty is discharged through system design rather than at the bedside. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "released",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240081888"
+    },
+    {
+      "citation": "Patient survey across four US health systems (2025–26): very high support for clinicians helping make care sustainable, with substantially less willingness to accept restrictions on treatment options or reductions in clinical performance for environmental benefit.",
+      "type": "survey"
+    },
+    {
+      "citation": "National physician survey on sustainability in clinical care (2025–26), reporting broad support for reducing health-care emissions.",
+      "type": "survey"
+    },
+    {
+      "citation": "Life-cycle assessment and low-carbon clinical-pathway evidence in health care, including inhaled and volatile anaesthetic agents, reusable versus single-use supplies and procurement decision rules.",
+      "type": "article"
+    },
+    {
+      "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+      "type": "article"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:5af211035f5d1bd02fe01915083d48b91f908860b6fe061e84819f2501eb7ef2"
+}
