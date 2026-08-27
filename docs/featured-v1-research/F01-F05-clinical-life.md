@@ -99,7 +99,7 @@ A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts t
 
 **Public-derived**
 - **pub1:** Within the acknowledged gray zone, present resuscitation and comfort care as legitimate options and follow the informed parents' preference unless it falls outside accepted clinical bounds.
-- **pub2:** Use a clear hospital default based on gestational age and individualized prognosis, while allowing parents to choose the alternative within a defined gray zone.
+- **pub2:** Use shared decision-making and, when parents want guidance, provide a clinician recommendation based on individualized prognosis while preserving parental choice within the accepted gray zone.
 
 **Expert-derived**
 - **exp1:** Use individualized shared decision-making at 23 weeks, incorporating prognosis beyond gestational age and the parents' values rather than treating gestational age alone as determinative.
@@ -112,7 +112,7 @@ A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts t
 **Primary source anchors**
 - ACOG, *Periviable Birth*.
 - Krick & Feltman, “Neonatologists' preferences regarding guidelines for periviable deliveries,” *Journal of Perinatology* 2019;39:445–452, DOI 10.1038/s41372-019-0313-1.
-- Periviability shared-decision and counseling literature.
+- *Prospective parents' perspectives on antenatal decision making for the anticipated birth of an extremely premature infant* and subsequent qualitative parent studies of periviable counseling.
 
 **Review risk:** use a genuine gray-zone gestation and avoid outdated outcome estimates. The final factual ranges should be checked against contemporary neonatal outcomes before release.
 
@@ -148,7 +148,8 @@ A patient has suffered catastrophic brain injury and, after all prerequisites an
 
 **Primary source anchors**
 - 2023 AAN/AAP/CNS/SCCM Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline.
-- 2023 consensus implementation guidance on reasonable family accommodation and institutional dispute processes.
+- Empirical surveys of religious leaders, chaplains, and affected communities on accommodation after BD/DNC disagreement.
+- Contemporary guidance on communication, objections, pregnancy, reasonable accommodation, and institutional dispute processes.
 
 **Review risk:** jurisdiction matters. The first Featured record should either stipulate a jurisdiction in which the hospital is legally permitted to choose among these accommodation policies or make the scenario explicitly institution-policy focused within lawful bounds.
 
