@@ -5,7 +5,7 @@
 **Primary domain:** consent/capacity/refusal  
 **Subdomain:** fluctuating decision-making ability; supported decision-making  
 **Tags:** capacity, supported decision-making, surrogate, relational autonomy, mental health  
-**Research status:** deep case draft  
+**Research status:** deep case drafted; executable companion pair transcribed  
 **Evidence date:** 2026-08-27
 
 ## Decision architecture
@@ -58,17 +58,17 @@ Both are present in the paired representations.
 - permit a temporary protective intervention only when the treatment window closes and unresolved impairment creates a grave, otherwise preventable risk;
 - rights-maximizing approaches that resist substitute decision-making more strongly and continue support/interpretation of will and preferences despite substantial impairment.
 
-The final executable slice must distinguish these as operational rules, not abstract slogans.
+The executable slice distinguishes these as operational rules rather than abstract slogans while preserving the source-class consensus identified in the candidate audit.
 
 ## Public / affected-community evidence
 
 Knight et al. interviewed 29 people with experience of mental illness and found heterogeneous expectations for support, dependence, independence and practitioner involvement. The evidence supports individualized support rather than one assumed preference for either maximal independence or surrogate control.
 
-The source packet also includes qualitative and systematic-review evidence from people with intellectual disability, mental-health service users, families and support workers showing recurring preferences for meaningful participation, accessible communication and individualized assistance. These sources can support affected-public-derived policy families, but diagnostic groups must not be collapsed into one homogeneous constituency.
+The source packet also includes qualitative and systematic-review evidence from people with intellectual disability, mental-health service users, families and support workers showing recurring preferences for meaningful participation, accessible communication and individualized assistance. These sources support one affected-public-derived policy family; diagnostic groups are not collapsed into one homogeneous constituency.
 
 ## Expert / professional recommendations
 
-AMA Opinion 2.1.2 recommends involving patients whose capacity is impaired to the greatest extent possible and using an appropriate surrogate when capacity is absent. WHO QualityRights materials emphasize supported decision-making and advance planning. Together they support attempting support before substitution while still requiring an explicit policy for cases in which decision-specific capacity remains absent and urgent harm cannot be deferred.
+AMA Opinion 2.1.2 recommends involving patients whose capacity is impaired to the greatest extent possible and using an appropriate surrogate when capacity is absent. WHO QualityRights materials emphasize supported decision-making and advance planning. Together they support two decision-relevantly distinct expert architectures: stronger continued support for will/preferences versus an explicit threshold for transition to surrogate authority after support.
 
 ## Normative / framework positions and reasoning bridges
 
@@ -113,7 +113,9 @@ SACRE; human/model comparison of support versus substitution policies; represent
 
 ## Executable-eligibility judgment
 
-`executable-2x2x2` is likely, subject to candidate-level provenance and distinctness audit. The affected-public layer is substantive, but the final two public candidates must be grounded in observed preferences/experiences rather than constructed from CRPD theory.
+`executable-other-profile`: **`full-corpus-1x2x2-mean-v1`**. The affected-public evidence supports one individualized supported-participation candidate, not two opposing fixed policies; the expert layer supports two distinct architectures and the framework layer supports two. The paired draft records are transcribed and structurally valid. Mean aggregation is required by profile and enforced by SACRE because unequal cross-source partner counts would make Sum shape-biased.
+
+This is an executable-construction judgment, not substantive validation or release.
 
 ## Review requirements
 
@@ -121,4 +123,4 @@ Mental-health/service-user review; capacity-law review if a named jurisdiction i
 
 ## Downstream record rule
 
-No executable record yet. Candidate construction must keep the same scenario facts, stipulations and policy granularity across both representations.
+Draft executable records now exist in `data/benchmark`. Any substantive change to scenario, decision question, candidates, ordering or provenance requires a new record version and canonical hash. Concise/detailed must continue to share decision question, stipulations and candidate pools exactly.
