@@ -86,7 +86,7 @@
         "string",
         "null"
       ],
-      "description": "Which scoring operationalization. conv+ and conv\u00b1 are different measurements, not display scales."
+      "description": "Which operationalization produced the release's results. QCCS v1 has one: conv+ 0-100. A result produced under any other operationalization carries that operationalization's own versioned protocol identity and is not pooled with QCCS v1 results."
     },
     "content_hash_algorithm": {
       "type": "string",

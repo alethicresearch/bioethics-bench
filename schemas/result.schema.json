@@ -80,7 +80,7 @@
     },
     "scoring_mode": {
       "type": "string",
-      "description": "The operationalization that produced these scores. Required: a score whose scale is unrecorded is not interpretable, and conv+ vs conv\u00b1 changes rankings."
+      "description": "The operationalization that produced these scores. Required: a score whose operationalization is unrecorded is not interpretable. QCCS v1 is conv+ 0-100; anything else is a different measurement with its own protocol identity."
     },
     "aggregation_mode": {
       "type": [
