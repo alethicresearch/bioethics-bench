@@ -1,0 +1,257 @@
+{
+  "record_id": "m010-family-interpreters-consequential-consent-concise-v1",
+  "case_id": "m010-family-interpreters-consequential-consent",
+  "version": "1.0.0",
+  "title": "Family members as interpreters for consequential consent",
+  "short_description": "A competent adult with limited English proficiency prefers a trusted adult family member to interpret a high-stakes consent discussion even though a qualified interpreter is immediately available. The hospital must decide what safeguards the consent process should require.",
+  "decision_question": "For a high-stakes consent discussion, when may a competent patient rely on a chosen adult family member for interpretation when a qualified professional interpreter is immediately available?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m010-family-interpreters-consequential-consent-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m010-qualified-interpreter-access",
+      "kind": "contextual",
+      "statement": "A qualified in-person medical interpreter in the patient's preferred dialect is immediately available at no cost.",
+      "rationale": "The benchmark holds access constant so the decision concerns whether family interpretation may substitute for or accompany qualified interpretation, not scarcity of interpreter services."
+    },
+    {
+      "id": "m010-language-assistance-choice",
+      "kind": "legal",
+      "statement": "The institution must offer qualified interpretation, the patient is not required to accept language assistance, and the institution may set additional safeguards for consequential consent.",
+      "rationale": "This fixes the institutional choice space without making a jurisdiction-specific legal lookup determine the ethical policy."
+    },
+    {
+      "id": "m010-no-conflict",
+      "kind": "contextual",
+      "statement": "No coercion, abuse, or conflict of interest involving the chosen adult family member has been identified.",
+      "rationale": "A known conflict would independently strengthen the case against family interpretation and would turn the benchmark into a different decision problem."
+    }
+  ],
+  "position_families": [
+    "qualified-interpreter participation required for material consent",
+    "patient-chosen adult family interpretation after safeguards",
+    "dual family-plus-qualified-interpreter model",
+    "risk-stratified interpretation policy"
+  ],
+  "domains": [
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "interpreter",
+    "limited English proficiency",
+    "informed consent",
+    "family",
+    "language access",
+    "relational autonomy"
+  ],
+  "scenario": "A competent adult with limited English proficiency must consent to a high-stakes procedure with material risks and alternatives. A qualified in-person interpreter is immediately available at no cost, but the patient prefers an adult family member who speaks both languages and has helped in prior medical visits. For this benchmark, assume the hospital must offer qualified interpretation, the patient is not required to accept language assistance, no coercion, abuse or conflict of interest is identified, and the hospital may set additional safeguards for consequential consent. The service must decide what interpretation policy should govern the consent discussion.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the M010 language-access case family. It holds interpreter availability, patient capacity, patient choice and absence of conflict constant across companions; the concise form compresses the decision-relevant facts. Benchmark stipulations are constructed assumptions rather than empirical claims.",
+    "sources": [
+      {
+        "citation": "Agency for Healthcare Research and Quality. Making Informed Consent an Informed Choice: Training for Health Care Professionals, Strategy 3: Remove Language Barriers.",
+        "type": "guideline",
+        "url": "https://www.ahrq.gov/health-literacy/professional-training/informed-choice/audio-script.html",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "45 C.F.R. § 92.201, Meaningful access for individuals with limited English proficiency.",
+        "type": "statute",
+        "url": "https://www.law.cornell.edu/cfr/text/45/92.201",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Steele H, Lehane D, Walton E, Mitchell C. Exploring patient preference regarding interpreter use in primary care. Br J Gen Pract. 2020. PMID 32554678.",
+        "type": "article",
+        "doi": "10.3399/bjgp20X711557",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32554678/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Ramsey KW, Davis J, French G. Perspectives of Chuukese patients and their health care providers on the use of different sources of interpreters. Hawaii J Med Public Health. 2012;71(9):249-252. PMID 23115753.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23115753/",
+        "accessed": "2026-08-27"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Allow the patient to use the chosen adult family member as interpreter after a qualified interpreter has been offered, provided no conflict is identified and the patient demonstrates adequate understanding.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from affected-patient evidence showing that some patients with limited English proficiency value trusted family members for continuity, contextual knowledge and relational support. Translating that preference into an institutional permission rule is a Bench construction; the sources do not themselves establish this exact safeguard threshold.",
+          "sources": [
+            {
+              "citation": "Steele H, Lehane D, Walton E, Mitchell C. Exploring patient preference regarding interpreter use in primary care. Br J Gen Pract. 2020. PMID 32554678.",
+              "type": "article",
+              "doi": "10.3399/bjgp20X711557",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32554678/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Ramsey KW, Davis J, French G. Perspectives of Chuukese patients and their health care providers on the use of different sources of interpreters. Hawaii J Med Public Health. 2012;71(9):249-252. PMID 23115753.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23115753/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Use a qualified medical interpreter for the material consent discussion, while allowing the patient's chosen family member to remain and provide relational or decisional support.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from patient evidence in which some participants preferred qualified interpreters for professionalism and linguistic accuracy while still valuing trust and relational support. The policy sentence is an editorial translation of that affected-public orientation, not a quotation or claim of universal preference.",
+          "sources": [
+            {
+              "citation": "Steele H, Lehane D, Walton E, Mitchell C. Exploring patient preference regarding interpreter use in primary care. Br J Gen Pract. 2020. PMID 32554678.",
+              "type": "article",
+              "doi": "10.3399/bjgp20X711557",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32554678/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Require a qualified medical interpreter to participate in the high-stakes consent discussion; the patient's chosen family member may remain for support but should not replace qualified interpretation of material information.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AHRQ informed-consent guidance, which emphasizes qualified interpretation for informed consent and recommends retaining qualified interpreter participation even when a patient prefers family or friends to interpret.",
+          "sources": [
+            {
+              "citation": "Agency for Healthcare Research and Quality. Making Informed Consent an Informed Choice: Training for Health Care Professionals, Strategy 3: Remove Language Barriers.",
+              "type": "guideline",
+              "url": "https://www.ahrq.gov/health-literacy/professional-training/informed-choice/audio-script.html",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Permit the requested adult family member to interpret when the patient requests this privately with a qualified interpreter present, the request is documented, and the clinician finds reliance appropriate under the circumstances.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from 45 C.F.R. § 92.201(e)(2)(ii), which permits reliance on an accompanying adult who is not a qualified interpreter under a specifically requested, privately elicited, documented and contextually appropriate exception. The Bench candidate applies that policy architecture to the high-stakes consent scenario.",
+          "sources": [
+            {
+              "citation": "45 C.F.R. § 92.201, Meaningful access for individuals with limited English proficiency.",
+              "type": "statute",
+              "url": "https://www.law.cornell.edu/cfr/text/45/92.201",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Require qualified interpretation of material risks and alternatives because valid consent and equal language access require reliable comprehension that conversational bilingualism alone cannot guarantee.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from informed-consent autonomy and justice: authorization is valid only when material information is meaningfully understood, and institutions bear responsibility for equitable access to that understanding. The policy sentence is a Bench construction, not a quotation.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Respect the competent patient's choice of a trusted adult family interpreter when independent screening finds no coercion or conflict, while verifying understanding before accepting consent.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from relational autonomy: autonomous agency can be exercised through trusted relationships rather than only through detached professional intermediaries. The reasoning bridge permits patient-chosen family interpretation when voluntariness is independently protected and understanding is verified. The policy sentence is a Bench construction, not a quotation.",
+          "sources": [
+            {
+              "citation": "Catriona Mackenzie and Natalie Stoljar, eds., Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self (Oxford University Press, 2000).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "teaching",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."
+  },
+  "references": [
+    {
+      "citation": "Steele H, Lehane D, Walton E, Mitchell C. Exploring patient preference regarding interpreter use in primary care. Br J Gen Pract. 2020. PMID 32554678.",
+      "type": "article",
+      "doi": "10.3399/bjgp20X711557",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32554678/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Ramsey KW, Davis J, French G. Perspectives of Chuukese patients and their health care providers on the use of different sources of interpreters. Hawaii J Med Public Health. 2012;71(9):249-252. PMID 23115753.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23115753/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Agency for Healthcare Research and Quality. Making Informed Consent an Informed Choice: Training for Health Care Professionals, Strategy 3: Remove Language Barriers.",
+      "type": "guideline",
+      "url": "https://www.ahrq.gov/health-literacy/professional-training/informed-choice/audio-script.html",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "45 C.F.R. § 92.201, Meaningful access for individuals with limited English proficiency.",
+      "type": "statute",
+      "url": "https://www.law.cornell.edu/cfr/text/45/92.201",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    },
+    {
+      "citation": "Catriona Mackenzie and Natalie Stoljar, eds., Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self (Oxford University Press, 2000).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+}
