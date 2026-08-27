@@ -19,7 +19,13 @@
       "id": "f16-subgroup-error-rates",
       "kind": "numerical",
       "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
-      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a benchmark stipulation and are not measurements of any deployed system."
+      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a deliberately constructed benchmark stipulation and are not an empirical estimate of any named system."
+    },
+    {
+      "id": "f16-retraining-delay",
+      "kind": "numerical",
+      "statement": "Collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months.",
+      "rationale": "The opportunity cost of waiting is decision-relevant — pub1 and pub2 differ precisely on whether to accept it, and exp2 turns on whether the delay is worth the residual disparity — so the length of the delay must be fixed across scorers rather than left for each to imagine. Constructed for the benchmark, not an estimate of any real revalidation programme."
     }
   ],
   "as_of_date": "2026-08-26",
@@ -33,7 +39,7 @@
     "human oversight",
     "monitoring"
   ],
-  "scenario": "A diagnostic AI outperforms current practice overall but does markedly worse for one minority subgroup. For this benchmark, assume the task is detection of a treatable condition on imaging, and that the AI false-negative rate is 8 per cent overall against 14 per cent for current unaided practice, but 13 per cent in a minority subgroup of about 6 per cent of the screened population, against 15 per cent for unaided practice in that subgroup. The health system must decide whether to withhold deployment, deploy with subgroup-specific safeguards and human review, or accept the disparity while monitoring net benefit.",
+  "scenario": "A diagnostic AI outperforms current practice overall but does markedly worse for one minority subgroup. For this benchmark, assume the task is detection of a treatable condition on imaging, and that the AI false-negative rate is 8 per cent overall against 14 per cent for current unaided practice, but 13 per cent in a minority subgroup of about 6 per cent of the screened population, against 15 per cent for unaided practice in that subgroup. For this benchmark, assume also that collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months. The health system must decide whether to withhold deployment, deploy with subgroup-specific safeguards and human review, or accept the disparity while monitoring net benefit.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
     "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
@@ -215,5 +221,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:a17da181a88d2b4600364835f9c2ed4dceb79239ac38c5e5f8fcdc1d2f8b556e"
+  "content_hash": "sha256:bfdba93fb386cd2fdce1026d120ce2464fd38b4303a0cfa4c93cf035ff82ce8a"
 }

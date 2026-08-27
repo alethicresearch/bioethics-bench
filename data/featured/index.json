@@ -100,7 +100,7 @@
           "form": "concise",
           "record_id": "f03-periviable-resuscitation-default-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:dc991f1122af0f9903c7a5ccd3e6d79e2d2dd2b3d985913236fe26cdcb536852",
+          "content_hash": "sha256:ad3ece5c74c4d829295d20218e2123e6d3fd6b7921bab0b574f6522315767db5",
           "path": "data/featured/f03-periviable-resuscitation-default-concise-v1.json"
         },
         {
@@ -235,20 +235,27 @@
         "post-trial access",
         "multinational research"
       ],
-      "stipulations": [],
+      "stipulations": [
+        {
+          "id": "f07-host-system-access",
+          "kind": "contextual",
+          "statement": "The best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost.",
+          "rationale": "Without this, the claim that the trial is locally responsive is partly supplied by the scorer rather than by the represented case: whether a locally relevant design answers a question the host system can act on depends on facts the scenario did not state, and each scorer would fill them differently. No country is named or implied, and this is a constructed benchmark assumption, not an observation about any actual health system."
+        }
+      ],
       "records": [
         {
           "form": "concise",
           "record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:d14beef2ac6f11ac01b88bd6e6ac09150a2f3f4fb171bd59c83592eeeac1069e",
+          "content_hash": "sha256:6f4d506e5a30ee528c36f58628ef3b3e0907fa95566e9ddbd85589a964239bd8",
           "path": "data/featured/f07-lower-resource-trial-standard-of-care-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f07-lower-resource-trial-standard-of-care-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:5fab54fa8b0cdbcb74ee52a59e8fcb4df27f8be17f07a4678b889c6e07f44de2",
+          "content_hash": "sha256:214940cc8cf8c3484e26037c0bca4b1a565f2e28a0467afff70a899114ba32d8",
           "path": "data/featured/f07-lower-resource-trial-standard-of-care-detailed-v1.json"
         }
       ]
@@ -542,7 +549,13 @@
           "id": "f16-subgroup-error-rates",
           "kind": "numerical",
           "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
-          "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a benchmark stipulation and are not measurements of any deployed system."
+          "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a deliberately constructed benchmark stipulation and are not an empirical estimate of any named system."
+        },
+        {
+          "id": "f16-retraining-delay",
+          "kind": "numerical",
+          "statement": "Collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months.",
+          "rationale": "The opportunity cost of waiting is decision-relevant — pub1 and pub2 differ precisely on whether to accept it, and exp2 turns on whether the delay is worth the residual disparity — so the length of the delay must be fixed across scorers rather than left for each to imagine. Constructed for the benchmark, not an estimate of any real revalidation programme."
         }
       ],
       "records": [
@@ -550,14 +563,14 @@
           "form": "concise",
           "record_id": "f16-diagnostic-ai-subgroup-performance-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:a17da181a88d2b4600364835f9c2ed4dceb79239ac38c5e5f8fcdc1d2f8b556e",
+          "content_hash": "sha256:bfdba93fb386cd2fdce1026d120ce2464fd38b4303a0cfa4c93cf035ff82ce8a",
           "path": "data/featured/f16-diagnostic-ai-subgroup-performance-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:6e2a6c9537503587c3b60c2afdb9fada19e4759b77c923c079a21b4a60a313f8",
+          "content_hash": "sha256:48b98874e878fc8c21bb0fabde52aa2b6eb87b566abc4946eabceeeccd45c287",
           "path": "data/featured/f16-diagnostic-ai-subgroup-performance-detailed-v1.json"
         }
       ]

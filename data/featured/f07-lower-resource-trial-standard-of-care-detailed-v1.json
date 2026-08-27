@@ -14,7 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
-  "stipulations": [],
+  "stipulations": [
+    {
+      "id": "f07-host-system-access",
+      "kind": "contextual",
+      "statement": "The best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost.",
+      "rationale": "Without this, the claim that the trial is locally responsive is partly supplied by the scorer rather than by the represented case: whether a locally relevant design answers a question the host system can act on depends on facts the scenario did not state, and each scorer would fill them differently. No country is named or implied, and this is a constructed benchmark assumption, not an observation about any actual health system."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "research-ethics",
@@ -27,10 +34,10 @@
     "post-trial access",
     "multinational research"
   ],
-  "scenario": "A multinational sponsor plans a trial in a lower-resource country for a condition with an effective treatment that is routinely available in wealthy health systems but is not reliably accessible in the host community. The proposed trial would compare the investigational intervention with the host system's usual care, making the study feasible and locally relevant. Critics argue that participants should not receive a lower control standard simply because they live in a poorer setting. Local investigators respond that a trial using an unaffordable comparator may answer a question with little relevance to the host health system and could prevent the research from occurring. The sponsor can provide enhanced care during the study and negotiate post-trial access or health-system benefits. The ethics committee must decide what comparator and fair-benefit conditions make the study ethically acceptable.",
+  "scenario": "A multinational sponsor plans a trial in a lower-resource country for a condition with an effective treatment that is routinely available in wealthy health systems but is not reliably accessible in the host community. The proposed trial would compare the investigational intervention with the host system's usual care, making the study feasible and locally relevant. For this benchmark, assume the best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost. Critics argue that participants should not receive a lower control standard simply because they live in a poorer setting. Local investigators respond that a trial using an unaffordable comparator may answer a question with little relevance to the host health system and could prevent the research from occurring. The sponsor can provide enhanced care during the study and negotiate post-trial access or health-system benefits. The ethics committee must decide what comparator and fair-benefit conditions make the study ethically acceptable.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
@@ -199,5 +206,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:5fab54fa8b0cdbcb74ee52a59e8fcb4df27f8be17f07a4678b889c6e07f44de2"
+  "content_hash": "sha256:214940cc8cf8c3484e26037c0bca4b1a565f2e28a0467afff70a899114ba32d8"
 }

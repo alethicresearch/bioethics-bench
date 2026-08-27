@@ -19,7 +19,13 @@
       "id": "f16-subgroup-error-rates",
       "kind": "numerical",
       "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
-      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a benchmark stipulation and are not measurements of any deployed system."
+      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a deliberately constructed benchmark stipulation and are not an empirical estimate of any named system."
+    },
+    {
+      "id": "f16-retraining-delay",
+      "kind": "numerical",
+      "statement": "Collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months.",
+      "rationale": "The opportunity cost of waiting is decision-relevant — pub1 and pub2 differ precisely on whether to accept it, and exp2 turns on whether the delay is worth the residual disparity — so the length of the delay must be fixed across scorers rather than left for each to imagine. Constructed for the benchmark, not an estimate of any real revalidation programme."
     }
   ],
   "as_of_date": "2026-08-26",
@@ -33,7 +39,7 @@
     "human oversight",
     "monitoring"
   ],
-  "scenario": "A health system is considering a diagnostic AI for detecting a treatable condition on imaging. It has been externally validated and improves overall sensitivity and workflow compared with current practice, but its performance is not equal across groups. For this benchmark, assume a false-negative rate of 8 per cent overall against 14 per cent for current unaided practice, and, in one minority subgroup of about 6 per cent of the screened population, an AI false-negative rate of 13 per cent against 15 per cent for unaided practice in that same subgroup - better than the care those patients receive today, but well short of what the majority group gets from the tool. Retraining may reduce the disparity but would delay deployment by an estimated year, and the size of the subgroup means additional validation data will take time to collect. Patients would not interact directly with the model; clinicians would receive its recommendation and could override it. Public and patient studies consistently raise concerns about discrimination, explainability, and retaining human responsibility in medical AI. The health system must decide whether that benefit justifies deployment and what subgroup threshold, fallback, monitoring, and disclosure rules should apply.",
+  "scenario": "A health system is considering a diagnostic AI for detecting a treatable condition on imaging. It has been externally validated and improves overall sensitivity and workflow compared with current practice, but its performance is not equal across groups. For this benchmark, assume a false-negative rate of 8 per cent overall against 14 per cent for current unaided practice, and, in one minority subgroup of about 6 per cent of the screened population, an AI false-negative rate of 13 per cent against 15 per cent for unaided practice in that same subgroup - better than the care those patients receive today, but well short of what the majority group gets from the tool. Retraining may reduce the disparity. For this benchmark, assume that collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months. Patients would not interact directly with the model; clinicians would receive its recommendation and could override it. Public and patient studies consistently raise concerns about discrimination, explainability, and retaining human responsibility in medical AI. The health system must decide whether that benefit justifies deployment and what subgroup threshold, fallback, monitoring, and disclosure rules should apply.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
     "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
@@ -215,5 +221,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:6e2a6c9537503587c3b60c2afdb9fada19e4759b77c923c079a21b4a60a313f8"
+  "content_hash": "sha256:48b98874e878fc8c21bb0fabde52aa2b6eb87b566abc4946eabceeeccd45c287"
 }

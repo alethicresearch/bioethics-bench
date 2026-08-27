@@ -33,7 +33,7 @@
     "prognostic uncertainty",
     "institutional policy"
   ],
-  "scenario": "Delivery is expected at 23 weeks' gestation, where both intensive resuscitation and comfort care are accepted options. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
+  "scenario": "Delivery is expected at 23 weeks' gestation, where both intensive resuscitation and comfort care are accepted options. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up. The parents want to participate in the decision and ask what the clinical team recommends. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
     "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
@@ -190,5 +190,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:dc991f1122af0f9903c7a5ccd3e6d79e2d2dd2b3d985913236fe26cdcb536852"
+  "content_hash": "sha256:ad3ece5c74c4d829295d20218e2123e6d3fd6b7921bab0b574f6522315767db5"
 }

@@ -14,7 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
-  "stipulations": [],
+  "stipulations": [
+    {
+      "id": "f07-host-system-access",
+      "kind": "contextual",
+      "statement": "The best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost.",
+      "rationale": "Without this, the claim that the trial is locally responsive is partly supplied by the scorer rather than by the represented case: whether a locally relevant design answers a question the host system can act on depends on facts the scenario did not state, and each scorer would fill them differently. No country is named or implied, and this is a constructed benchmark assumption, not an observation about any actual health system."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "research-ethics",
@@ -27,10 +34,10 @@
     "post-trial access",
     "multinational research"
   ],
-  "scenario": "A trial is planned in a lower-resource setting where the globally best proven treatment is not routinely available. Investigators propose comparing a new intervention with local standard care; the ethics committee must decide whether that comparator is acceptable and what benefits or post-trial access the sponsor owes the host community.",
+  "scenario": "A trial is planned in a lower-resource setting where the globally best proven treatment is not routinely available. For this benchmark, assume the best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost. Investigators propose comparing a new intervention with local standard care; the ethics committee must decide whether that comparator is acceptable and what benefits or post-trial access the sponsor owes the host community.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
@@ -199,5 +206,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:d14beef2ac6f11ac01b88bd6e6ac09150a2f3f4fb171bd59c83592eeeac1069e"
+  "content_hash": "sha256:6f4d506e5a30ee528c36f58628ef3b3e0907fa95566e9ddbd85589a964239bd8"
 }
