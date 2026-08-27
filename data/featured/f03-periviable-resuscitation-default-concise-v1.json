@@ -1,0 +1,186 @@
+{
+  "record_id": "f03-periviable-resuscitation-default-concise-v1",
+  "case_id": "f03-periviable-resuscitation-default",
+  "version": "1.0.0",
+  "title": "Resuscitation at the threshold of viability",
+  "short_description": "Delivery is expected at 23 weeks, where both intensive resuscitation and comfort care are accepted options. The hospital must decide whether policy should set a default or leave the choice to shared decision-making with parents.",
+  "decision_question": "For an anticipated birth in the periviable gray zone, should the hospital default to resuscitation, default to comfort care, or defer the choice to shared decision-making with the parents?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f03-periviable-resuscitation-default-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "pediatric-neonatal"
+  ],
+  "tags": [
+    "periviability",
+    "shared decision-making",
+    "parental authority",
+    "prognostic uncertainty",
+    "institutional policy"
+  ],
+  "scenario": "Delivery is expected at 23 weeks' gestation, where survival and long-term outcomes remain highly uncertain and both intensive resuscitation and comfort care are accepted options. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "American College of Obstetricians and Gynecologists and Society for Maternal-Fetal Medicine, Periviable Birth, Obstetric Care Consensus.",
+        "type": "guideline",
+        "url": "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2017/10/periviable-birth"
+      },
+      {
+        "citation": "Prospective parents’ perspectives on antenatal decision making for the anticipated birth of an extremely premature infant, and subsequent 2024–25 qualitative studies of periviable counseling — 63% of prospective parents desired a shared decision-making role, and parents frequently wanted a clinician recommendation.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Within the acknowledged gray zone, present resuscitation and comfort care as legitimate options and follow the informed parents' preference unless it falls outside accepted clinical bounds.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from qualitative studies of prospective parents facing periviable delivery, which identify values including giving the infant a chance, future quality of life, suffering, family life and faith, and a strong wish to participate in the decision. The specific institutional rule of following parental preference within accepted bounds is Bench editorial translation of those values.",
+          "sources": [
+            {
+              "citation": "Prospective parents’ perspectives on antenatal decision making for the anticipated birth of an extremely premature infant, and subsequent 2024–25 qualitative studies of periviable counseling — 63% of prospective parents desired a shared decision-making role, and parents frequently wanted a clinician recommendation.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Use shared decision-making and, when parents want guidance, provide a clinician recommendation based on individualized prognosis while preserving parental choice within the accepted gray zone.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from prospective-parent studies reporting that 63% desired a shared decision-making role and that parents frequently want a clinician recommendation within that shared process. This candidate represents that reported preference rather than a public preference for a rigid gestational default.",
+          "sources": [
+            {
+              "citation": "Prospective parents’ perspectives on antenatal decision making for the anticipated birth of an extremely premature infant, and subsequent 2024–25 qualitative studies of periviable counseling — 63% of prospective parents desired a shared decision-making role, and parents frequently wanted a clinician recommendation.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use individualized shared decision-making at 23 weeks, incorporating prognosis beyond gestational age and the parents' values rather than treating gestational age alone as determinative.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the ACOG/SMFM Periviable Birth obstetric care consensus and allied neonatal counseling guidance, which direct that gestational age alone should not determine management and that individualized prognosis and family values be incorporated.",
+          "sources": [
+            {
+              "citation": "American College of Obstetricians and Gynecologists and Society for Maternal-Fetal Medicine, Periviable Birth, Obstetric Care Consensus.",
+              "type": "guideline",
+              "url": "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2017/10/periviable-birth"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Adopt transparent lower and upper thresholds with a parent-preference zone between them, because clinicians favor standardization but also defer to parental choice within uncertainty.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from Krick and Feltman’s survey of neonatologists’ guideline preferences, which found simultaneous support for standardized thresholds and for parental choice within a gray zone — the structure this candidate states as policy.",
+          "sources": [
+            {
+              "citation": "Krick J. A. and Feltman D. M., “Neonatologists’ preferences regarding guidelines for periviable deliveries: do we really know what we want?” Journal of Perinatology 39 (2019): 445–452.",
+              "type": "article",
+              "doi": "10.1038/s41372-019-0313-1"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Give parents broad decisional authority where both pathways are medically reasonable, because they bear special responsibility for interpreting the child's best interests under uncertainty.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from accounts of parental authority and the best-interests standard: the reasoning bridge is that where reasonable clinicians disagree and outcomes are genuinely uncertain, the party who will bear and interpret the consequences of the choice has the stronger claim to make it. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Use a fair, consistently applied prognosis threshold to protect newborn interests and reduce arbitrary variation, while permitting parental choice only where expected burdens and benefits are closely balanced.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from formal justice and the requirement to treat like cases alike: the reasoning bridge is that arbitrary institutional variation is itself a harm to newborns whose treatment then depends on where they are born, so a published threshold constrains parental choice to the genuinely balanced range. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            },
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "American College of Obstetricians and Gynecologists and Society for Maternal-Fetal Medicine, Periviable Birth, Obstetric Care Consensus.",
+      "type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2017/10/periviable-birth"
+    },
+    {
+      "citation": "Krick J. A. and Feltman D. M., “Neonatologists’ preferences regarding guidelines for periviable deliveries: do we really know what we want?” Journal of Perinatology 39 (2019): 445–452.",
+      "type": "article",
+      "doi": "10.1038/s41372-019-0313-1"
+    },
+    {
+      "citation": "Prospective parents’ perspectives on antenatal decision making for the anticipated birth of an extremely premature infant, and subsequent 2024–25 qualitative studies of periviable counseling — 63% of prospective parents desired a shared decision-making role, and parents frequently wanted a clinician recommendation.",
+      "type": "survey"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:48de32a243a6f99d14ab24876f65a0b1eb805fec97733d7a7f84e762c2f7ccb0"
+}

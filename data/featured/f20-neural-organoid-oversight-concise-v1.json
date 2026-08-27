@@ -1,0 +1,204 @@
+{
+  "record_id": "f20-neural-organoid-oversight-concise-v1",
+  "case_id": "f20-neural-organoid-oversight",
+  "version": "1.0.0",
+  "title": "Increasingly complex neural organoids",
+  "short_description": "Human neural organoids are becoming more complex with no evidence of consciousness. Regulators must decide whether ordinary research oversight suffices or whether staged precautionary safeguards should begin now.",
+  "decision_question": "What additional oversight should apply to increasingly complex human neural organoid research before there is evidence that organoids are conscious or capable of suffering?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f20-neural-organoid-oversight-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "neuroethics",
+    "research-ethics",
+    "clinical-innovation"
+  ],
+  "tags": [
+    "neural organoids",
+    "anticipatory governance",
+    "moral status",
+    "precaution",
+    "research oversight"
+  ],
+  "scenario": "Human neural organoids are becoming more complex, but there is no evidence that current models are conscious or capable of suffering. Regulators must decide whether ordinary research oversight remains sufficient or whether precautionary, staged safeguards should begin before any credible welfare threshold is reached.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Nuffield Council on Bioethics, Neural Organoids: Ethical and Governance Considerations (2026), including its anticipatory-governance recommendations.",
+        "type": "policy-document",
+        "url": "https://www.nuffieldbioethics.org/"
+      },
+      {
+        "citation": "Review of empirical stakeholder studies on human neural organoids (2026), finding that governance, consent, commercialization and transplantation concerns are often at least as prominent as consciousness.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Continue neural-organoid research but require transparent public reporting and enhanced review for transplantation, unusually long maturation, or experiments designed to increase integrated neural complexity.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from emerging stakeholder and public studies, including a 2026 Japanese survey reporting broad support for organoid research alongside concern about unanticipated risk and commercialization, and from an empirical review finding governance and transplantation concerns as prominent as consciousness. The reporting and enhanced-review triggers are Bench editorial translation of those concerns.",
+          "sources": [
+            {
+              "citation": "Japanese public survey on neural-organoid research (2026), reporting broad support alongside concern about unanticipated risk and commercialization.",
+              "type": "survey"
+            },
+            {
+              "citation": "Review of empirical stakeholder studies on human neural organoids (2026), finding that governance, consent, commercialization and transplantation concerns are often at least as prominent as consciousness.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Pause the most complex neural-organoid experiments until researchers can explain what evidence would count as a credible welfare concern and what protections would follow if that threshold were approached.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same stakeholder evidence, in which concern about unanticipated risk and about the absence of agreed thresholds is prominent. The pause condition is Bench editorial translation and does not claim that current organoids are believed to be sentient.",
+          "sources": [
+            {
+              "citation": "Review of empirical stakeholder studies on human neural organoids (2026), finding that governance, consent, commercialization and transplantation concerns are often at least as prominent as consciousness.",
+              "type": "article"
+            },
+            {
+              "citation": "Japanese public survey on neural-organoid research (2026), reporting broad support alongside concern about unanticipated risk and commercialization.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Adopt staged anticipatory governance now, with oversight triggers tied to scientific features such as complexity, functional integration, transplantation, and emerging evidence relevant to welfare or moral status.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the Nuffield Council on Bioethics 2026 report on neural organoids, which recommends anticipatory governance with staged triggers rather than waiting for proof of sentience.",
+          "sources": [
+            {
+              "citation": "Nuffield Council on Bioethics, Neural Organoids: Ethical and Governance Considerations (2026), including its anticipatory-governance recommendations.",
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Do not classify current neural organoids as sentient without evidence; strengthen review proportionately while supporting research and developing validated methods to assess ethically relevant functional capacities.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same report and the surrounding organoid science and governance literature, which are explicit that present evidence does not establish sentience and that assessment methods for ethically relevant capacities remain to be validated.",
+          "sources": [
+            {
+              "citation": "Nuffield Council on Bioethics, Neural Organoids: Ethical and Governance Considerations (2026), including its anticipatory-governance recommendations.",
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/"
+            },
+            {
+              "citation": "Review of empirical stakeholder studies on human neural organoids (2026), finding that governance, consent, commercialization and transplantation concerns are often at least as prominent as consciousness.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "When uncertainty concerns the possibility of morally significant suffering, impose proportionate precautions before proof is available if safeguards are low-cost relative to the potential harm.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from precautionary reasoning under moral uncertainty: the reasoning bridge is that the asymmetry between a low-cost safeguard and an unrecognized capacity to suffer makes acting before proof rational rather than merely cautious. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Nuffield Council on Bioethics, Neural Organoids: Ethical and Governance Considerations (2026), including its anticipatory-governance recommendations.",
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Moral restrictions should track evidence of capacities that ground interests rather than biological resemblance alone; preserve research freedom while creating trigger points for new evidence.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from interest-based accounts of moral status: the reasoning bridge is that what grounds a claim is the capacity to have interests, not tissue of origin, so restriction should follow evidence of that capacity while remaining ready to move when it arrives. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+              "type": "book"
+            },
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Nuffield Council on Bioethics, Neural Organoids: Ethical and Governance Considerations (2026), including its anticipatory-governance recommendations.",
+      "type": "policy-document",
+      "url": "https://www.nuffieldbioethics.org/"
+    },
+    {
+      "citation": "Review of empirical stakeholder studies on human neural organoids (2026), finding that governance, consent, commercialization and transplantation concerns are often at least as prominent as consciousness.",
+      "type": "article"
+    },
+    {
+      "citation": "Japanese public survey on neural-organoid research (2026), reporting broad support alongside concern about unanticipated risk and commercialization.",
+      "type": "survey"
+    },
+    {
+      "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:28c934ccd17949ac34538c846632229a5fbe8c85b16fae6d33e76259fff60887"
+}

@@ -27,6 +27,8 @@ function jsonFilesUnder(dir) {
   return readdirSync(dir).flatMap((entry) => {
     const full = join(dir, entry);
     if (statSync(full).isDirectory()) return jsonFilesUnder(full);
+    // index.json files are generated corpus indexes for the static site, not records.
+    if (entry === 'index.json') return [];
     return full.endsWith('.json') ? [full] : [];
   });
 }
@@ -46,6 +48,12 @@ function expectedIds(poolName) {
   if (poolName === 'public') return ['pub1', 'pub2'];
   if (poolName === 'expert') return ['exp1', 'exp2'];
   return ['fw1', 'fw2'];
+}
+
+function allCandidates(record) {
+  return ['public', 'expert', 'framework'].flatMap(
+    (pool) => (record.candidate_pools?.[pool] || []).map((c) => ({ pool, candidate: c })),
+  );
 }
 
 let checked = 0;
@@ -91,6 +99,38 @@ for (const file of files) {
       }
     }
 
+    if (record.collection === 'featured') {
+      // A Featured record is a public research object. These three are the properties a
+      // reader has to be able to rely on without opening the provenance: it is not a
+      // held-out evaluation item, its public candidates are grounded in evidence rather
+      // than an editor's intuition, and every candidate says where its text came from.
+      if (record.exposure === 'confirmatory-holdout') {
+        problems.push(`${rel}: a Featured record is public and can never be a confirmatory holdout`);
+      }
+      for (const { pool, candidate } of allCandidates(record)) {
+        const method = candidate.provenance?.construction_method;
+        if (pool === 'public' && method === 'editorial') {
+          problems.push(
+            `${rel}: public candidate ${candidate.id} has construction_method "editorial".\n`
+            + '    A Featured public candidate must be extracted-from-evidence or adapted-from-source;\n'
+            + "    the Bench must never imply that an editor's plausible intuition is an empirical public preference.",
+          );
+        }
+        if (pool === 'framework' && method !== 'derived-from-framework') {
+          problems.push(`${rel}: framework candidate ${candidate.id} must use construction_method derived-from-framework; found ${method}`);
+        }
+        if ((candidate.provenance?.sources || []).length === 0) {
+          problems.push(`${rel}: candidate ${candidate.id} has no provenance sources`);
+        }
+        if (candidate.source_pool !== pool) {
+          problems.push(`${rel}: candidate ${candidate.id} sits in the ${pool} pool but declares source_pool ${candidate.source_pool}`);
+        }
+      }
+      if ((record.scenario_provenance?.sources || []).length === 0) {
+        problems.push(`${rel}: Featured scenario_provenance has no sources`);
+      }
+    }
+
     if (record.benchmark_profile === 'featured-core-2x2x2-v1') {
       for (const poolName of ['public', 'expert', 'framework']) {
         const pool = record.candidate_pools?.[poolName] || [];
@@ -120,6 +160,13 @@ for (const [caseId, entries] of featuredByCase.entries()) {
   const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
   const concise = byForm.get('concise');
   const detailed = byForm.get('detailed');
+
+  for (const form of ['concise', 'detailed']) {
+    const count = entries.filter(({ record }) => record.representation?.form === form).length;
+    if (count > 1) {
+      problems.push(`${caseId}: ${count} ${form} representations; a Featured family has exactly one of each`);
+    }
+  }
 
   // Draft/editorial work may be committed incrementally. Once either companion is
   // frozen/released, both representations must be present and internally matched.

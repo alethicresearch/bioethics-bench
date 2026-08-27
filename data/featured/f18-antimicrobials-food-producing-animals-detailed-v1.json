@@ -1,0 +1,196 @@
+{
+  "record_id": "f18-antimicrobials-food-producing-animals-detailed-v1",
+  "case_id": "f18-antimicrobials-food-producing-animals",
+  "version": "1.0.0",
+  "title": "Medically important antimicrobials in food-producing animals",
+  "short_description": "A regulator is updating rules for medically important antimicrobials in food-producing animals, balancing resistance risks against veterinary treatment and animal welfare.",
+  "decision_question": "How should regulators restrict medically important antimicrobials in food-producing animals while preserving necessary veterinary treatment and animal welfare?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f18-antimicrobials-food-producing-animals-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "animal-one-health",
+    "public-health"
+  ],
+  "tags": [
+    "antimicrobial resistance",
+    "One Health",
+    "animal welfare",
+    "stewardship",
+    "agricultural policy"
+  ],
+  "scenario": "A national regulator is updating rules for medically important antimicrobials in food-producing animals. These drugs remain necessary to treat some bacterial disease and protect animal welfare, but routine population-level use can select for antimicrobial resistance that affects animals, farm workers, consumers, and future patients. WHO recommends stopping routine use for growth promotion and disease prevention in healthy animals, while veterinary guidance emphasizes preserving access for diagnosis and treatment under responsible stewardship. Producers argue that abrupt restrictions without investments in vaccination, biosecurity, housing, and husbandry could increase disease and animal suffering. Regulators can prohibit growth promotion and routine prophylaxis, allow narrowly justified preventive use under veterinary oversight, or retain broader discretion paired with surveillance. The policy must balance present animal health with One Health resistance risks.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "World Health Organization, WHO Guidelines on Use of Medically Important Antimicrobials in Food-Producing Animals (Geneva: WHO, 2017).",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789241550130"
+      },
+      {
+        "citation": "World Organisation for Animal Health (WOAH), Terrestrial Animal Health Code, chapters on responsible and prudent use of antimicrobial agents in veterinary medicine.",
+        "type": "guideline",
+        "url": "https://www.woah.org/en/what-we-do/standards/codes-and-manuals/terrestrial-code-online-access/"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Prohibit medically important antimicrobials for growth promotion and routine prevention in healthy herds, while preserving veterinary treatment for animals that are sick or at clearly documented high risk.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from consumer research — a UK supermarket-panel survey (n = 5,693) and a systematic review of 39 consumer studies — reporting concern about routine farm antibiotic use combined with clear support for treating sick animals. This is human consumer and public attitude about policy, not a proxy for the animals’ own interests.",
+          "sources": [
+            {
+              "citation": "UK supermarket-panel survey of consumer attitudes to antibiotic use in farmed animals (n = 5,693), with a systematic review of 39 consumer studies reporting concern about routine farm antibiotic use alongside support for treating sick animals.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Phase in restrictions together with support for vaccination, housing, hygiene, and husbandry improvements so farms do not reduce antimicrobial use by accepting more untreated animal disease and suffering.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same consumer evidence, in which respondents value both reduced antibiotic use and the welfare of treated animals — a genuine welfare-versus-resistance balance. The phase-in and husbandry-investment mechanism is Bench editorial translation of that balance.",
+          "sources": [
+            {
+              "citation": "UK supermarket-panel survey of consumer attitudes to antibiotic use in farmed animals (n = 5,693), with a systematic review of 39 consumer studies reporting concern about routine farm antibiotic use alongside support for treating sick animals.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "End routine growth-promotion and blanket preventive use of medically important antimicrobials in healthy animals; require veterinary diagnosis, stewardship, surveillance, and targeted treatment when clinically necessary.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the WHO guidelines on the use of medically important antimicrobials in food-producing animals, which recommend ending use for growth promotion and for disease prevention in animals that are not ill.",
+          "sources": [
+            {
+              "citation": "World Health Organization, WHO Guidelines on Use of Medically Important Antimicrobials in Food-Producing Animals (Geneva: WHO, 2017).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789241550130"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Permit therapeutic and exceptional preventive use under veterinary responsibility when justified by epidemiologic risk, while prohibiting antimicrobials from compensating for inadequate husbandry or biosecurity.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from WOAH standards on responsible and prudent antimicrobial use in veterinary medicine, which retain veterinary responsibility for therapeutic and justified preventive use and reject antimicrobials as a substitute for husbandry and biosecurity. Animal-welfare evidence enters the record through this expert pool.",
+          "sources": [
+            {
+              "citation": "World Organisation for Animal Health (WOAH), Terrestrial Animal Health Code, chapters on responsible and prudent use of antimicrobial agents in veterinary medicine.",
+              "type": "guideline",
+              "url": "https://www.woah.org/en/what-we-do/standards/codes-and-manuals/terrestrial-code-online-access/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Minimize total avoidable suffering and health loss across humans and animals over time: preserve effective treatment for sick animals while sharply reducing uses that create resistance without comparable welfare benefit.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from a One Health consequentialist objective that counts human and animal suffering in one calculation across time: the reasoning bridge is that therapeutic use buys a large welfare gain per unit of resistance risk while routine population use does not. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Animals have direct claims to appropriate treatment when ill, while present agricultural convenience does not justify imposing preventable resistance risks on future humans and animals; regulate both duties explicitly.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from capabilities-based accounts of what is owed to animals together with intergenerational justice: the reasoning bridge is that these are two distinct duties — one owed to the animal now, one owed to future humans and animals — so a policy must satisfy both rather than trade one against the other implicitly. This is where the animals’ direct moral claims enter the record. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Martha C. Nussbaum, Justice for Animals: Our Collective Responsibility (Simon & Schuster, 2023).",
+              "type": "book"
+            },
+            {
+              "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, WHO Guidelines on Use of Medically Important Antimicrobials in Food-Producing Animals (Geneva: WHO, 2017).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789241550130"
+    },
+    {
+      "citation": "World Organisation for Animal Health (WOAH), Terrestrial Animal Health Code, chapters on responsible and prudent use of antimicrobial agents in veterinary medicine.",
+      "type": "guideline",
+      "url": "https://www.woah.org/en/what-we-do/standards/codes-and-manuals/terrestrial-code-online-access/"
+    },
+    {
+      "citation": "UK supermarket-panel survey of consumer attitudes to antibiotic use in farmed animals (n = 5,693), with a systematic review of 39 consumer studies reporting concern about routine farm antibiotic use alongside support for treating sick animals.",
+      "type": "survey"
+    },
+    {
+      "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+      "type": "book"
+    },
+    {
+      "citation": "Martha C. Nussbaum, Justice for Animals: Our Collective Responsibility (Simon & Schuster, 2023).",
+      "type": "book"
+    },
+    {
+      "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+      "type": "article"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:b213814c90a29a2132199e35c1bcb89cd5455293f8585a4cb78dbb74a996bb72"
+}

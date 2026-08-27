@@ -1,0 +1,199 @@
+{
+  "record_id": "f06-placebo-control-effective-treatment-detailed-v1",
+  "case_id": "f06-placebo-control-effective-treatment",
+  "version": "1.0.0",
+  "title": "Placebo control when effective treatment exists",
+  "short_description": "Investigators propose a placebo-controlled trial although an effective standard treatment exists. The ethics committee must decide whether placebo is permissible and what safeguards or alternative designs are required.",
+  "decision_question": "When an effective treatment exists, under what conditions should a research ethics committee permit a placebo-controlled trial rather than require comparison with the best proven intervention?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f06-placebo-control-effective-treatment-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "research-ethics"
+  ],
+  "tags": [
+    "placebo control",
+    "standard of care",
+    "informed consent",
+    "ethics committee",
+    "trial design"
+  ],
+  "scenario": "Investigators propose a randomized trial of a new treatment for a chronic condition for which an effective standard therapy already exists. A placebo comparison would yield a clearer estimate of efficacy and require fewer participants than an active-control design. Participants assigned placebo would temporarily forgo the proven treatment and could experience worsening symptoms, but the investigators present evidence that this would not create additional risk of serious or irreversible harm; rescue treatment would be available if prespecified criteria were met. Potential participants would be told that an effective treatment exists outside the trial. The research ethics committee must decide whether the methodological advantage justifies placebo, whether an active-control or add-on design is required, and what safeguards are necessary.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "World Medical Association, Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants, 2024 revision (paragraph 33 on the use of placebo and the best proven intervention).",
+        "type": "guideline",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+      },
+      {
+        "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+        "type": "guideline",
+        "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Allow placebo only if participants are clearly told that effective treatment exists, can leave the trial freely, and have prompt rescue treatment if symptoms worsen.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from public-consultation and trial-participant research in which placebo-controlled trials are regarded as acceptable conditional on disclosure that effective treatment exists, freedom to withdraw, and availability of rescue treatment — the conditions this candidate states.",
+          "sources": [
+            {
+              "citation": "Public consultation and trial-participant research on placebo-controlled trials: conditional acceptance where effective treatment exists, sensitivity to symptom severity and treatment deprivation, and a preference for active-treatment comparators as risk rises.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Prefer an active-control or add-on design when effective treatment exists and placebo would impose more than low incremental risk or meaningful treatment deprivation on participants.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same participant evidence, which shows a preference for active treatment and increasing reluctance as symptom severity and risk rise, without supporting a categorical ban on placebo. The threshold wording is Bench editorial translation of that graded preference.",
+          "sources": [
+            {
+              "citation": "Public consultation and trial-participant research on placebo-controlled trials: conditional acceptance where effective treatment exists, sensitivity to symptom severity and treatment deprivation, and a preference for active-treatment comparators as risk rises.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Permit placebo when compelling scientifically sound reasons make it necessary and withholding the best proven intervention creates no additional risk of serious or irreversible harm.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from paragraph 33 of the 2024 Declaration of Helsinki, which permits placebo or no treatment where a compelling and scientifically sound methodological reason makes it necessary and participants will not be subject to additional risk of serious or irreversible harm.",
+          "sources": [
+            {
+              "citation": "World Medical Association, Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants, 2024 revision (paragraph 33 on the use of placebo and the best proven intervention).",
+              "type": "guideline",
+              "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Prefer an active-control or add-on design whenever it can answer the scientific question adequately; use placebo only after the ethics committee documents why less restrictive designs are insufficient.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from CIOMS guidance on the choice of control and from the methodological-justification literature, which treat the best proven intervention as the default and require documented justification that a less restrictive design cannot answer the question.",
+          "sources": [
+            {
+              "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+              "type": "guideline",
+              "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+            },
+            {
+              "citation": "Joseph Millum and Christine Grady, “The ethics of placebo-controlled trials: methodological justifications,” Contemporary Clinical Trials 36, no. 2 (2013): 510–514.",
+              "type": "article",
+              "doi": "10.1016/j.cct.2013.09.003"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Permit placebo only when the social value and methodological necessity are substantial and the incremental participant risk remains acceptably low; informed consent cannot justify excessive risk.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from the requirements of social value, scientific validity and a favorable risk–benefit ratio in the ethical-research framework: the reasoning bridge is that consent is one requirement among several and does not license risk that fails the independent risk–benefit condition. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Ezekiel J. Emanuel, David Wendler, and Christine Grady, “What Makes Clinical Research Ethical?” JAMA 283, no. 20 (2000): 2701–2711.",
+              "type": "article",
+              "doi": "10.1001/jama.283.20.2701"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Do not deliberately deprive participants of effective treatment merely to make research more efficient when a scientifically adequate design can preserve access to proven care.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence and the prohibition on using persons merely as means: the reasoning bridge is that efficiency gains accrue to the research enterprise while the deprivation falls on the participant, so a design that avoids the deprivation is required where it is scientifically adequate. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "World Medical Association, Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants, 2024 revision (paragraph 33 on the use of placebo and the best proven intervention).",
+      "type": "guideline",
+      "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+    },
+    {
+      "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+      "type": "guideline",
+      "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+    },
+    {
+      "citation": "Public consultation and trial-participant research on placebo-controlled trials: conditional acceptance where effective treatment exists, sensitivity to symptom severity and treatment deprivation, and a preference for active-treatment comparators as risk rises.",
+      "type": "survey"
+    },
+    {
+      "citation": "Joseph Millum and Christine Grady, “The ethics of placebo-controlled trials: methodological justifications,” Contemporary Clinical Trials 36, no. 2 (2013): 510–514.",
+      "type": "article",
+      "doi": "10.1016/j.cct.2013.09.003"
+    },
+    {
+      "citation": "Ezekiel J. Emanuel, David Wendler, and Christine Grady, “What Makes Clinical Research Ethical?” JAMA 283, no. 20 (2000): 2701–2711.",
+      "type": "article",
+      "doi": "10.1001/jama.283.20.2701"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:2e79e518e7c3576ddb62915575636d7f545dbb5b22b2741fd162d7e954d98e81"
+}

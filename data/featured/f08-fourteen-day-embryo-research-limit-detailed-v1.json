@@ -1,0 +1,201 @@
+{
+  "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+  "case_id": "f08-fourteen-day-embryo-research-limit",
+  "version": "1.0.0",
+  "title": "Extending the 14-day limit for human embryo research",
+  "short_description": "Culturing human embryos beyond 14 days is now feasible. Regulators must decide whether to retain the bright-line limit, extend it to a new fixed point, or adopt staged case-by-case oversight.",
+  "decision_question": "Should regulators retain the 14-day limit for human embryo research, extend it to a new fixed limit, or replace it with staged case-by-case oversight?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f08-fourteen-day-embryo-research-limit-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "reproduction-genetics",
+    "research-ethics"
+  ],
+  "tags": [
+    "embryo research",
+    "14-day rule",
+    "moral status",
+    "public dialogue",
+    "regulatory limits"
+  ],
+  "scenario": "Scientific advances have made it increasingly feasible to culture human embryos beyond the longstanding 14-day research limit. Researchers argue that studying the period immediately after 14 days could improve understanding of early development, implantation, miscarriage, and congenital conditions that cannot be directly observed in vivo. The 14-day rule has also served as a clear social and regulatory boundary around embryo research, and changing it raises questions about moral status, public trust, and whether any new endpoint would become similarly unstable. Current international professional guidance allows jurisdictions to reconsider limits only through robust public dialogue and specialized oversight; in the United Kingdom, a major public-dialogue process is underway in 2026 and final findings are not yet available. Regulators must decide whether to retain the bright line, extend it to a later fixed point, or adopt staged review.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "International Society for Stem Cell Research, ISSCR Guidelines for Stem Cell Research and Clinical Translation, version 1.2 (2025).",
+        "type": "guideline",
+        "url": "https://www.isscr.org/guidelines"
+      },
+      {
+        "citation": "Nuffield Council on Bioethics, Reviewing the 14-day rule for human embryo research — project and public dialogue, 2025–26 (final dialogue findings not published as of 26 August 2026).",
+        "type": "policy-document",
+        "url": "https://www.nuffieldbioethics.org/"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from Yui et al. (Stem Cell Reports, 2023), a Japanese national survey (n = 3,000) in which 19.2% disagreed with culture beyond 14 days and 42.9% could not judge — a caution-and-uncertainty majority this candidate represents. No result is attributed to the unfinished 2026 Nuffield public dialogue.",
+          "sources": [
+            {
+              "citation": "Yui H. et al., “Public attitudes in Japan toward the extension of human embryo culture beyond 14 days,” Stem Cell Reports 18, no. 8 (2023) — national survey, n = 3,000: 37.9% agreed with culture beyond 14 days, 42.9% could not judge, 19.2% disagreed.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the same national survey, in which 37.9% agreed with extending culture beyond 14 days, together with 2024 IVF/ICSI patient focus groups (n = 22) in which many participants favored extension while raising conditions and concerns. The oversight conditions represent those stated concerns.",
+          "sources": [
+            {
+              "citation": "Yui H. et al., “Public attitudes in Japan toward the extension of human embryo culture beyond 14 days,” Stem Cell Reports 18, no. 8 (2023) — national survey, n = 3,000: 37.9% agreed with culture beyond 14 days, 42.9% could not judge, 19.2% disagreed.",
+              "type": "survey"
+            },
+            {
+              "citation": "Focus-group study of IVF/ICSI patients (n = 22) on extending the 14-day limit for human embryo research (2024).",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the ISSCR guidelines, which place extended embryo culture in a category requiring specialized scientific and ethical review and justification that the question cannot be answered by less contested means.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research, ISSCR Guidelines for Stem Cell Research and Clinical Translation, version 1.2 (2025).",
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the ISSCR requirement that any change proceed through national processes with public dialogue, and from the Nuffield Council’s ongoing review of the rule, which frames the question as one for accountable national deliberation rather than professional discretion.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research, ISSCR Guidelines for Stem Cell Research and Clinical Translation, version 1.2 (2025).",
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines"
+            },
+            {
+              "citation": "Nuffield Council on Bioethics, Reviewing the 14-day rule for human embryo research — project and public dialogue, 2025–26 (final dialogue findings not published as of 26 August 2026).",
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "A fixed bright line can be justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from public-reason accounts of rule-making under reasonable disagreement: the reasoning bridge is that where a precise moral status cannot be publicly established, a clear and stable boundary can still be justified by the predictability and trust it secures. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from gradualist accounts of moral status together with proportionality: the reasoning bridge is that if moral concern is continuous in development, an absolute discontinuity at one day is unmotivated, so oversight should scale with developmental stage instead. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "International Society for Stem Cell Research, ISSCR Guidelines for Stem Cell Research and Clinical Translation, version 1.2 (2025).",
+      "type": "guideline",
+      "url": "https://www.isscr.org/guidelines"
+    },
+    {
+      "citation": "Yui H. et al., “Public attitudes in Japan toward the extension of human embryo culture beyond 14 days,” Stem Cell Reports 18, no. 8 (2023) — national survey, n = 3,000: 37.9% agreed with culture beyond 14 days, 42.9% could not judge, 19.2% disagreed.",
+      "type": "survey"
+    },
+    {
+      "citation": "Focus-group study of IVF/ICSI patients (n = 22) on extending the 14-day limit for human embryo research (2024).",
+      "type": "survey"
+    },
+    {
+      "citation": "Nuffield Council on Bioethics, Reviewing the 14-day rule for human embryo research — project and public dialogue, 2025–26 (final dialogue findings not published as of 26 August 2026).",
+      "type": "policy-document",
+      "url": "https://www.nuffieldbioethics.org/"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:64f4320e0ad0b604fcd5f4ded379f773f3ec2779afa85454e656b8d62010b627"
+}

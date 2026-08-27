@@ -1,0 +1,215 @@
+{
+  "record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
+  "case_id": "f17-animal-research-replacement-harm-benefit",
+  "version": "1.0.0",
+  "title": "Biomedical animal research: replacement and harm–benefit review",
+  "short_description": "A proposed study would cause moderate, time-limited harm to laboratory animals while a promising nonanimal method remains unvalidated for the same question. The committee must decide whether animal use is justified.",
+  "decision_question": "Should an animal-research committee approve the proposed study, require the promising nonanimal alternative instead, or demand further validation before permitting animal use?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f17-animal-research-replacement-harm-benefit-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "animal-one-health",
+    "research-ethics"
+  ],
+  "tags": [
+    "3Rs",
+    "replacement",
+    "harm-benefit analysis",
+    "animal welfare",
+    "research oversight"
+  ],
+  "scenario": "Researchers propose a medically valuable study that would cause moderate, time-limited harm to laboratory animals; a promising nonanimal method exists but is not yet fully validated for the same question. The committee must decide whether animal use is justified or whether replacement should be required first.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Nuffield Council on Bioethics, The Ethics of Research Involving Animals (London: Nuffield Council on Bioethics, 2005).",
+        "type": "policy-document",
+        "url": "https://www.nuffieldbioethics.org/publications/animal-research"
+      },
+      {
+        "citation": "UK Home Office, Guidance on the Operation of the Animals (Scientific Procedures) Act 1986, including harm–benefit analysis and the application of the 3Rs.",
+        "type": "guideline",
+        "url": "https://www.gov.uk/government/collections/animals-in-science-guidance"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Approve animal use only if independent review finds no sufficiently validated replacement for this specific question and the expected medical benefit is substantial relative to the animal harm.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from UK public-attitude surveys in which acceptance of medical animal research is conditional on purpose and on the absence of an adequate alternative; the 2014 survey reported 68% acceptance where no alternative exists. This is human public attitude about policy and is not a proxy for the animals’ own interests.",
+          "sources": [
+            {
+              "citation": "UK public attitudes to animal research: Ipsos MORI surveys for the Department for Business, Innovation and Skills / Office for Life Sciences (2014, 2018) — acceptance conditional on purpose, welfare safeguards and the absence of an adequate alternative; the 2014 survey reported 68% acceptance of medical animal research where no alternative exists.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Delay approval and fund a defined validation study of the promising nonanimal method first; use animals only if that work shows the replacement cannot answer the question reliably.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same attitude research, which records strong public interest in developing alternatives and in welfare safeguards. The sequencing rule — fund validation first — is Bench editorial translation of that interest, not a surveyed option, and again represents human attitudes rather than animal interests.",
+          "sources": [
+            {
+              "citation": "UK public attitudes to animal research: Ipsos MORI surveys for the Department for Business, Innovation and Skills / Office for Life Sciences (2014, 2018) — acceptance conditional on purpose, welfare safeguards and the absence of an adequate alternative; the 2014 survey reported 68% acceptance of medical animal research where no alternative exists.",
+              "type": "survey"
+            },
+            {
+              "citation": "UK cross-government strategy to accelerate the development and adoption of alternatives to animal testing (2025).",
+              "type": "policy-document"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Approve the study if a formal harm–benefit analysis is favorable and the investigators have demonstrably implemented Replacement, Reduction, and Refinement, including continuing review of emerging alternatives.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from UK ASPA harm–benefit guidance and NC3Rs material on the 3Rs, which condition licensing on a favorable harm–benefit analysis and demonstrated implementation of replacement, reduction and refinement. Animal-welfare evidence enters the record through this expert pool.",
+          "sources": [
+            {
+              "citation": "UK Home Office, Guidance on the Operation of the Animals (Scientific Procedures) Act 1986, including harm–benefit analysis and the application of the 3Rs.",
+              "type": "guideline",
+              "url": "https://www.gov.uk/government/collections/animals-in-science-guidance"
+            },
+            {
+              "citation": "National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs), guidance on Replacement, Reduction and Refinement.",
+              "type": "guideline",
+              "url": "https://nc3rs.org.uk/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Require the investigators to compare the animal model and promising replacement method prospectively before the full study, using the minimum animal numbers needed to establish whether replacement is scientifically adequate.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from NC3Rs and UK replacement-strategy material on the validation of nonanimal methods, which supports prospective comparison under reduction constraints as the route by which replacement becomes scientifically established.",
+          "sources": [
+            {
+              "citation": "National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs), guidance on Replacement, Reduction and Refinement.",
+              "type": "guideline",
+              "url": "https://nc3rs.org.uk/"
+            },
+            {
+              "citation": "UK cross-government strategy to accelerate the development and adoption of alternatives to animal testing (2025).",
+              "type": "policy-document"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Give animal pain and distress direct moral weight rather than treating them only as research costs to humans; use animals only when comparable human benefits cannot reasonably be pursued with less harmful methods.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from the principle of equal consideration of interests: the reasoning bridge is that a sentient animal’s suffering is a moral cost in its own right rather than a discount applied to a human benefit, which raises the threshold for using animals at all. This is where the animals’ direct moral claims enter the record. The policy sentence is a Bench construction, not a quotation.",
+          "sources": [
+            {
+              "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+              "type": "book"
+            },
+            {
+              "citation": "Martha C. Nussbaum, Justice for Animals: Our Collective Responsibility (Simon & Schuster, 2023).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Animal research can be justified for sufficiently important health benefits when harms are minimized and no adequate alternative exists, but the burden of proof rises with animal sentience and severity of harm.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from proportionate harm–benefit reasoning under precaution about sentience: the reasoning bridge is that permissibility scales inversely with the severity of harm and the strength of evidence for the animal’s capacity to suffer. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Nuffield Council on Bioethics, The Ethics of Research Involving Animals (London: Nuffield Council on Bioethics, 2005).",
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/publications/animal-research"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Nuffield Council on Bioethics, The Ethics of Research Involving Animals (London: Nuffield Council on Bioethics, 2005).",
+      "type": "policy-document",
+      "url": "https://www.nuffieldbioethics.org/publications/animal-research"
+    },
+    {
+      "citation": "National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs), guidance on Replacement, Reduction and Refinement.",
+      "type": "guideline",
+      "url": "https://nc3rs.org.uk/"
+    },
+    {
+      "citation": "UK Home Office, Guidance on the Operation of the Animals (Scientific Procedures) Act 1986, including harm–benefit analysis and the application of the 3Rs.",
+      "type": "guideline",
+      "url": "https://www.gov.uk/government/collections/animals-in-science-guidance"
+    },
+    {
+      "citation": "UK public attitudes to animal research: Ipsos MORI surveys for the Department for Business, Innovation and Skills / Office for Life Sciences (2014, 2018) — acceptance conditional on purpose, welfare safeguards and the absence of an adequate alternative; the 2014 survey reported 68% acceptance of medical animal research where no alternative exists.",
+      "type": "survey"
+    },
+    {
+      "citation": "UK cross-government strategy to accelerate the development and adoption of alternatives to animal testing (2025).",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Peter Singer, Animal Liberation Now (Harper Perennial, 2023).",
+      "type": "book"
+    },
+    {
+      "citation": "Martha C. Nussbaum, Justice for Animals: Our Collective Responsibility (Simon & Schuster, 2023).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:bc353c0e4eeeee1ac89cecb040a760121c871e21cf5caa75c3b76e34edb4e423"
+}

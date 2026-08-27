@@ -1,0 +1,177 @@
+{
+  "record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v1",
+  "case_id": "f12-mandatory-vaccination-serious-outbreak",
+  "version": "1.0.0",
+  "title": "Mandatory vaccination during a serious outbreak",
+  "short_description": "Voluntary vaccination has plateaued below the level needed to control a serious outbreak. Authorities must decide between continued voluntary measures, targeted requirements in high-risk settings, or a broader mandate.",
+  "decision_question": "When voluntary vaccination remains insufficient during a serious outbreak, under what conditions should a public authority impose a vaccine requirement rather than continue voluntary measures?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f12-mandatory-vaccination-serious-outbreak-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "public-health"
+  ],
+  "tags": [
+    "vaccine mandate",
+    "harm principle",
+    "bodily autonomy",
+    "proportionality",
+    "public trust"
+  ],
+  "scenario": "A serious contagious outbreak continues because voluntary vaccination remains below the level needed to reduce transmission substantially; the vaccine has strong safety and effectiveness evidence. Public-health authorities must decide whether to mandate vaccination broadly, restrict requirements to high-risk settings, or continue voluntary measures.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "World Health Organization, COVID-19 and Mandatory Vaccination: Ethical Considerations and Caveats — policy brief (Geneva: WHO, 2022).",
+        "type": "policy-document",
+        "url": "https://www.who.int/publications/i/item/WHO-2019-nCoV-Policy-brief-Mandatory-vaccination-2022.1"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Continue voluntary vaccination with easy access, paid time off, and targeted communication rather than a general mandate, unless the outbreak becomes substantially more dangerous or alternatives fail.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from representative public surveys on vaccine mandates in which opponents emphasize bodily liberty and the risk to institutional trust. The specific package of voluntary measures is Bench editorial translation of that position into an actionable policy.",
+          "sources": [
+            {
+              "citation": "Representative German public surveys on vaccine mandates during a serious outbreak, showing a genuine split in which supporters emphasize insufficient voluntary uptake and collective protection while opponents emphasize bodily liberty and institutional trust.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Require vaccination for adults without medical contraindications once transparent evidence shows voluntary uptake is insufficient to prevent serious avoidable harm, with proportionate exemptions and review.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the same surveys, in which mandate supporters gave insufficient voluntary uptake as their stated reason — the trigger condition this candidate makes explicit — alongside collective protection.",
+          "sources": [
+            {
+              "citation": "Representative German public surveys on vaccine mandates during a serious outbreak, showing a genuine split in which supporters emphasize insufficient voluntary uptake and collective protection while opponents emphasize bodily liberty and institutional trust.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use mandates only when vaccination is sufficiently safe and effective, necessary to achieve an important public-health goal, proportionate to the risk, and less restrictive alternatives have been reasonably tried.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the WHO policy brief on mandatory vaccination, which sets out necessity, safety and effectiveness, proportionality and the exhaustion of less restrictive alternatives as the conditions for a justified mandate.",
+          "sources": [
+            {
+              "citation": "World Health Organization, COVID-19 and Mandatory Vaccination: Ethical Considerations and Caveats — policy brief (Geneva: WHO, 2022).",
+              "type": "policy-document",
+              "url": "https://www.who.int/publications/i/item/WHO-2019-nCoV-Policy-brief-Mandatory-vaccination-2022.1"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Prefer targeted requirements in settings where unvaccinated people create especially high risk to others, such as health care, before imposing a population-wide mandate.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same WHO guidance on scope and least-restrictive means, which treats occupational and high-risk-setting requirements as a narrower instrument to be considered before population-wide measures.",
+          "sources": [
+            {
+              "citation": "World Health Organization, COVID-19 and Mandatory Vaccination: Ethical Considerations and Caveats — policy brief (Geneva: WHO, 2022).",
+              "type": "policy-document",
+              "url": "https://www.who.int/publications/i/item/WHO-2019-nCoV-Policy-brief-Mandatory-vaccination-2022.1"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Coercive vaccination is justified when refusal creates a substantial preventable risk to others and a narrowly tailored requirement is necessary; liberty does not include an unlimited claim to impose serious external harm.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from Mill’s harm principle: the reasoning bridge is that transmission makes refusal other-regarding, which removes it from the protected sphere of self-regarding conduct and leaves only the question of narrow tailoring. The policy sentence is a Bench construction, not a quotation from Mill.",
+          "sources": [
+            {
+              "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Preserve voluntary bodily choice unless the expected harm prevented by a mandate clearly outweighs coercion, inequitable burdens, and damage to institutional trust, after access barriers are removed.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from respect for autonomy and bodily integrity weighed against beneficence: the reasoning bridge is that coercion, distributive burden and lost trust are themselves costs to be counted, so the harm-prevention case must clear them rather than merely be positive. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, COVID-19 and Mandatory Vaccination: Ethical Considerations and Caveats — policy brief (Geneva: WHO, 2022).",
+      "type": "policy-document",
+      "url": "https://www.who.int/publications/i/item/WHO-2019-nCoV-Policy-brief-Mandatory-vaccination-2022.1"
+    },
+    {
+      "citation": "Representative German public surveys on vaccine mandates during a serious outbreak, showing a genuine split in which supporters emphasize insufficient voluntary uptake and collective protection while opponents emphasize bodily liberty and institutional trust.",
+      "type": "survey"
+    },
+    {
+      "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:a33d99713136cd0de811027c32df8d5a74593bd50962fecc0a9ce22da35cb506"
+}

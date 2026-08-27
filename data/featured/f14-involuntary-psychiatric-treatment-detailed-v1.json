@@ -1,0 +1,194 @@
+{
+  "record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+  "case_id": "f14-involuntary-psychiatric-treatment",
+  "version": "1.0.0",
+  "title": "Involuntary psychiatric treatment",
+  "short_description": "A person in a severe psychiatric crisis refuses care and has markedly impaired appreciation of immediate risk. The service must decide whether any involuntary intervention is permissible and under what threshold and safeguards.",
+  "decision_question": "What threshold, if any, should permit involuntary psychiatric hospitalization or treatment when a person refuses care during a severe mental-health crisis?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f14-involuntary-psychiatric-treatment-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "disability-mental-health",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "coercion",
+    "supported decision-making",
+    "capacity",
+    "crisis care",
+    "least restrictive alternative"
+  ],
+  "scenario": "An adult in a severe psychiatric crisis refuses hospitalization and medication. The person can repeat information about the proposed treatment but has markedly impaired ability to appreciate the immediate consequences of their current behavior; clinicians believe there is a substantial risk of serious harm over the next several days, although harm is not certain. Voluntary crisis support, involvement of a trusted supporter, and a less restrictive community plan have been offered but are not sufficient to manage the current risk. Rights-based advocates warn that psychiatric systems often overuse coercion and substitute diagnosis for genuine capacity assessment. Clinicians worry that refusing all temporary intervention can allow preventable catastrophic harm. The service must define whether any involuntary intervention is permissible, the threshold for it, and the safeguards for review and supported decision-making.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "World Health Organization and Office of the United Nations High Commissioner for Human Rights, Mental Health, Human Rights and Legislation: Guidance and Practice (Geneva: WHO/OHCHR, 2023).",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789240080737"
+      },
+      {
+        "citation": "Service-user and rights-based advocacy literature on psychiatric coercion, supported decision-making and noncoercive crisis alternatives.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Permit short-term involuntary hospitalization when there is a substantial near-term risk of serious harm and voluntary alternatives have failed, but require rapid independent review and a renewed effort to obtain agreement.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from a representative Norwegian public survey (n = 2,001) and comparable European vignette studies reporting very high public support for involuntary intervention in specified severe-risk scenarios of this kind.",
+          "sources": [
+            {
+              "citation": "Representative Norwegian public survey (n = 2,001) on involuntary psychiatric intervention, reporting very high public support for intervention in specified severe-risk scenarios; comparable vignette studies in Switzerland and elsewhere in Europe report similar patterns.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not impose treatment solely because clinicians believe it is beneficial; use crisis support, trusted supporters, and supported decision-making unless an immediate emergency leaves no less restrictive way to prevent grave harm.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from service-user and rights-based advocacy evidence, treated here as affected-community evidence, which opposes clinician-benefit justifications and favors noncoercive crisis alternatives. The emergency exception wording is Bench editorial translation.",
+          "sources": [
+            {
+              "citation": "Service-user and rights-based advocacy literature on psychiatric coercion, supported decision-making and noncoercive crisis alternatives.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Move law and practice toward free and informed consent, supported decision-making, and noncoercive crisis services; do not use disability or diagnosis alone to justify involuntary treatment.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from the WHO/OHCHR guidance on mental health, human rights and legislation, which directs states toward free and informed consent, supported decision-making and noncoercive services and rejects diagnosis as a basis for involuntary treatment.",
+          "sources": [
+            {
+              "citation": "World Health Organization and Office of the United Nations High Commissioner for Human Rights, Mental Health, Human Rights and Legislation: Guidance and Practice (Geneva: WHO/OHCHR, 2023).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240080737"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "If emergency coercion remains legally available, restrict it to a clearly documented necessity threshold, the least restrictive intervention, the shortest duration, independent review, and active restoration of supported decision-making.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same guidance’s treatment of safeguards where coercive powers persist in law, which requires necessity, least restriction, time limitation, independent review and restoration of supported decision-making.",
+          "sources": [
+            {
+              "citation": "World Health Organization and Office of the United Nations High Commissioner for Human Rights, Mental Health, Human Rights and Legislation: Guidance and Practice (Geneva: WHO/OHCHR, 2023).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240080737"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Respect equal legal and moral agency by maximizing support for the person's own decisions; coercion requires an exceptional justification and cannot rest on a judgment that a disabled life is irrationally lived.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equal-agency and capabilities accounts: the reasoning bridge is that the appropriate response to impaired decision-making is support for the person’s own agency rather than its replacement, so coercion carries an exceptional burden. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Temporary coercion can be justified when decisional abilities are substantially impaired and it is necessary to avert imminent serious harm while preserving the person’s future ability to choose freely.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from soft paternalism within an autonomy-based framework: the reasoning bridge is that substantially impaired appreciation means the refusal is not an exercise of the autonomy the principle protects, and the intervention is justified by its restoration. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            },
+            {
+              "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization and Office of the United Nations High Commissioner for Human Rights, Mental Health, Human Rights and Legislation: Guidance and Practice (Geneva: WHO/OHCHR, 2023).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240080737"
+    },
+    {
+      "citation": "Representative Norwegian public survey (n = 2,001) on involuntary psychiatric intervention, reporting very high public support for intervention in specified severe-risk scenarios; comparable vignette studies in Switzerland and elsewhere in Europe report similar patterns.",
+      "type": "survey"
+    },
+    {
+      "citation": "Service-user and rights-based advocacy literature on psychiatric coercion, supported decision-making and noncoercive crisis alternatives.",
+      "type": "article"
+    },
+    {
+      "citation": "Martha C. Nussbaum, Creating Capabilities: The Human Development Approach (Harvard University Press, 2011).",
+      "type": "book"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    },
+    {
+      "citation": "John Stuart Mill, On Liberty (1859), harm principle, chapter 1.",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:2483967d18638731cc7df4d81273cd0f94d396c4bef49d420c9e7c3fdd1d935a"
+}

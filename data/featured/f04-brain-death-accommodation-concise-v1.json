@@ -1,0 +1,192 @@
+{
+  "record_id": "f04-brain-death-accommodation-concise-v1",
+  "case_id": "f04-brain-death-accommodation",
+  "version": "1.0.0",
+  "title": "Brain death and continued organ support after family objection",
+  "short_description": "A patient has been validly declared dead by neurologic criteria, but the family rejects the determination and asks that organ support continue. The hospital must set its accommodation policy.",
+  "decision_question": "After death by neurologic criteria has been validly determined, what accommodation should a hospital provide when the family objects and asks for continued organ support?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f04-brain-death-accommodation-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": "An institutional-policy decision taken within a jurisdiction whose law permits the hospital to choose among these accommodation options. No specific national or state statute is stipulated; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.",
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "end-of-life"
+  ],
+  "tags": [
+    "brain death",
+    "religious accommodation",
+    "definition of death",
+    "institutional policy",
+    "public trust"
+  ],
+  "scenario": "A patient has been validly declared dead by neurologic criteria, but the family rejects the determination and asks that ventilation and other organ support continue. The hospital must decide how much accommodation, time for transfer, or continued support its policy should provide.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Greer D. M. et al., Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline (AAN, AAP, CNS, SCCM), Neurology 101, no. 24 (2023): 1112–1132.",
+        "type": "guideline",
+        "doi": "10.1212/WNL.0000000000207740"
+      },
+      {
+        "citation": "Contemporary professional guidance (2025–26) on communication, family objections, pregnancy, reasonable accommodation and institutional dispute processes after death by neurologic criteria.",
+        "type": "guideline"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Continue organ support for a short, clearly defined accommodation period so the family can absorb the death determination, involve spiritual advisers, and seek transfer if desired.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from affected religious and pastoral stakeholder evidence documenting families’ reasons for objecting and their need for time, spiritual involvement and the option of transfer. This is affected-community evidence, not a nationally representative public survey; the bounded accommodation period is Bench editorial translation.",
+          "sources": [
+            {
+              "citation": "Surveys of affected religious and pastoral communities on accommodation after death by neurologic criteria: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Continue support longer when a family's sincerely held religious understanding of death conflicts with neurologic criteria, provided transfer is actively pursued and resource burdens remain manageable.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from surveys of affected religious and pastoral communities: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued. This is affected-community evidence about the policy itself, and is not presented as general public opinion.",
+          "sources": [
+            {
+              "citation": "Surveys of affected religious and pastoral communities on accommodation after death by neurologic criteria: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "After valid BD/DNC determination, provide a reasonable, time-limited accommodation and a process for resolving disagreement; discontinue organ support when that process is complete absent a lawful exception.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the 2023 AAN/AAP/CNS/SCCM consensus practice guideline and subsequent professional guidance on family objections, which support reasonable time-limited accommodation together with a defined process for resolving disagreement.",
+          "sources": [
+            {
+              "citation": "Greer D. M. et al., Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline (AAN, AAP, CNS, SCCM), Neurology 101, no. 24 (2023): 1112–1132.",
+              "type": "guideline",
+              "doi": "10.1212/WNL.0000000000207740"
+            },
+            {
+              "citation": "Contemporary professional guidance (2025–26) on communication, family objections, pregnancy, reasonable accommodation and institutional dispute processes after death by neurologic criteria.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Use an institutional escalation process that includes ethics, legal, spiritual care, and transfer efforts, with accommodation duration determined by clinical feasibility, law, and resource impact rather than an open-ended family veto.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same professional guidance on institutional dispute processes, which describes multidisciplinary escalation and transfer efforts and does not treat family disagreement as conferring an indefinite entitlement to organ support.",
+          "sources": [
+            {
+              "citation": "Contemporary professional guidance (2025–26) on communication, family objections, pregnancy, reasonable accommodation and institutional dispute processes after death by neurologic criteria.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Respect pluralism by allowing meaningful but bounded accommodation for families who reject neurologic criteria, while not requiring institutions to sustain organ support indefinitely after death has been validly determined.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from liberal pluralism and respect for persons: the reasoning bridge is that a public institution owes real weight to a sincerely held comprehensive view about what death is, but not an unlimited claim on shared resources or on staff who must act under the public standard. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            },
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Apply the accepted public standard of death consistently after a fair determination process; provide compassionate transition support, but do not treat family disagreement as authority to redefine the patient's status indefinitely.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from public-reason and formal-justice considerations: the reasoning bridge is that a determination of death is a public status established by a fair and consistently applied procedure, so its content cannot vary with the objections of the party most affected without destroying the standard. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Greer D. M. et al., Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline (AAN, AAP, CNS, SCCM), Neurology 101, no. 24 (2023): 1112–1132.",
+      "type": "guideline",
+      "doi": "10.1212/WNL.0000000000207740"
+    },
+    {
+      "citation": "Surveys of affected religious and pastoral communities on accommodation after death by neurologic criteria: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued.",
+      "type": "survey"
+    },
+    {
+      "citation": "Contemporary professional guidance (2025–26) on communication, family objections, pregnancy, reasonable accommodation and institutional dispute processes after death by neurologic criteria.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:2a064f92af00b833881df8a08d52c3b02ae493403b44927b278c8d6ef2335638"
+}

@@ -1,0 +1,202 @@
+{
+  "record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
+  "case_id": "f07-lower-resource-trial-standard-of-care",
+  "version": "1.0.0",
+  "title": "Standard of care in a lower-resource-country trial",
+  "short_description": "A multinational trial proposes comparing a new intervention with local usual care where the globally best proven treatment is not accessible. The ethics committee must decide the comparator and the fair-benefit conditions.",
+  "decision_question": "What control standard should a multinational trial use when the best proven treatment is not routinely accessible in the host community, and what fair-benefit obligations should accompany the study?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f07-lower-resource-trial-standard-of-care-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "research-ethics",
+    "global-structural"
+  ],
+  "tags": [
+    "standard of care",
+    "exploitation",
+    "community engagement",
+    "post-trial access",
+    "multinational research"
+  ],
+  "scenario": "A trial is planned in a lower-resource setting where the globally best proven treatment is not routinely available. Investigators propose comparing a new intervention with local standard care; the ethics committee must decide whether that comparator is acceptable and what benefits or post-trial access the sponsor owes the host community.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+        "type": "guideline",
+        "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+      },
+      {
+        "citation": "Community consultation and stakeholder research on trial standard of care and research benefits in lower-resource settings, including consultations in Mwanza (Tanzania), community dialogue in Nigeria, community and advocacy involvement in South African PrEP standard-of-care decisions, and Kenyan residents’ concerns about insufficient research benefits.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Co-design the control-care package with participant and community representatives, and do not justify a lower standard merely because the host population lacks access to better care.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from community consultations on trial standards of care in lower-resource settings — including work in Mwanza, community dialogue in Nigeria raising concern about lower national versus international standards, and community and advocacy involvement in South African PrEP standard-of-care decisions. The evidence establishes community ownership and objection to deprivation-based justification; the co-design rule is Bench editorial translation.",
+          "sources": [
+            {
+              "citation": "Community consultation and stakeholder research on trial standard of care and research benefits in lower-resource settings, including consultations in Mwanza (Tanzania), community dialogue in Nigeria, community and advocacy involvement in South African PrEP standard-of-care decisions, and Kenyan residents’ concerns about insufficient research benefits.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit a locally relevant design only with community ownership of key decisions and enforceable commitments to sustainable post-trial access or health-system benefits.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from community consultation on trial standards of care and sustainable research benefits in lower-resource settings, including Kenyan residents’ emphasis on the unfairness of too few research benefits. The enforceable post-trial-access condition is Bench editorial translation of that benefit-sharing concern.",
+          "sources": [
+            {
+              "citation": "Community consultation and stakeholder research on trial standard of care and research benefits in lower-resource settings, including consultations in Mwanza (Tanzania), community dialogue in Nigeria, community and advocacy involvement in South African PrEP standard-of-care decisions, and Kenyan residents’ concerns about insufficient research benefits.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use the best proven intervention as the comparator unless a scientifically and ethically justified exception meets international guidance and does not exploit the host population’s lack of access.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the Declaration of Helsinki and CIOMS guidance on choice of control, which retain the best-proven-intervention default and admit exceptions only under stated scientific and ethical conditions.",
+          "sources": [
+            {
+              "citation": "World Medical Association, Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants, 2024 revision (paragraph 33 on the use of placebo and the best proven intervention).",
+              "type": "guideline",
+              "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+            },
+            {
+              "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+              "type": "guideline",
+              "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Permit an enhanced local standard when it answers an important host-country question more responsively than a globally unaffordable comparator, provided risks, fair benefits, and post-trial arrangements are independently reviewed.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from CIOMS guidance on responsiveness to host-community health needs, fair distribution of benefits and burdens, and post-trial provisions, which permits a locally responsive design under independent review rather than treating local practice as self-justifying.",
+          "sources": [
+            {
+              "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+              "type": "guideline",
+              "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Reject a trial design that makes poverty itself the reason participants receive inferior protection; background injustice should not be converted into a research advantage.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from anti-exploitation accounts in global justice: the reasoning bridge is that a background injustice which lowers a population’s bargaining position cannot supply the justification for the terms it makes available, so deprivation-derived comparators are ruled out. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Scholarship on exploitation, responsiveness and fair benefits in international research, including the standard-of-care debate following multinational perinatal HIV trials.",
+              "type": "article"
+            },
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Choose the comparator that produces socially valuable knowledge for the host population while ensuring participants are not made worse off by enrollment and the community receives a fair share of benefits.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from the social-value and fair-benefits requirements of the ethical-research framework: the reasoning bridge is that the wrong in question is unfair distribution of benefit rather than comparator choice as such, so the design is fixed by responsiveness plus a no-worse-off constraint and a benefit share. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Ezekiel J. Emanuel, David Wendler, and Christine Grady, “What Makes Clinical Research Ethical?” JAMA 283, no. 20 (2000): 2701–2711.",
+              "type": "article",
+              "doi": "10.1001/jama.283.20.2701"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Council for International Organizations of Medical Sciences (CIOMS), International Ethical Guidelines for Health-related Research Involving Humans, 4th ed. (Geneva: CIOMS, 2016).",
+      "type": "guideline",
+      "url": "https://cioms.ch/publications/product/international-ethical-guidelines-for-health-related-research-involving-humans/"
+    },
+    {
+      "citation": "World Medical Association, Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants, 2024 revision (paragraph 33 on the use of placebo and the best proven intervention).",
+      "type": "guideline",
+      "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+    },
+    {
+      "citation": "Community consultation and stakeholder research on trial standard of care and research benefits in lower-resource settings, including consultations in Mwanza (Tanzania), community dialogue in Nigeria, community and advocacy involvement in South African PrEP standard-of-care decisions, and Kenyan residents’ concerns about insufficient research benefits.",
+      "type": "survey"
+    },
+    {
+      "citation": "Scholarship on exploitation, responsiveness and fair benefits in international research, including the standard-of-care debate following multinational perinatal HIV trials.",
+      "type": "article"
+    },
+    {
+      "citation": "Ezekiel J. Emanuel, David Wendler, and Christine Grady, “What Makes Clinical Research Ethical?” JAMA 283, no. 20 (2000): 2701–2711.",
+      "type": "article",
+      "doi": "10.1001/jama.283.20.2701"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:e9e652e86865dd322c68e1db28cc495bccb48091184b4bf983dff483c531d7ac"
+}

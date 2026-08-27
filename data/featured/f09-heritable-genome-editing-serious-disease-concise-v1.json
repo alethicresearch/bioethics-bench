@@ -1,0 +1,197 @@
+{
+  "record_id": "f09-heritable-genome-editing-serious-disease-concise-v1",
+  "case_id": "f09-heritable-genome-editing-serious-disease",
+  "version": "1.0.0",
+  "title": "Heritable genome editing to prevent serious disease",
+  "short_description": "Assuming a heritable genome-editing technique reaches a high verified safety threshold, regulators must decide whether reproductive use to prevent a serious monogenic disease should remain prohibited or be narrowly permitted.",
+  "decision_question": "If safety and efficacy eventually reach a specified high threshold, under what conditions, if any, should regulators permit heritable genome editing to prevent a serious genetic disease?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f09-heritable-genome-editing-serious-disease-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "reproduction-genetics"
+  ],
+  "tags": [
+    "germline editing",
+    "future generations",
+    "stipulated safety threshold",
+    "international governance",
+    "reproductive alternatives"
+  ],
+  "scenario": "Assume a heritable genome-editing technique has reached a high, independently verified safety and efficacy threshold for preventing a serious monogenic disease. Regulators must decide whether reproductive use should remain prohibited or be permitted under narrow clinical and governance conditions.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "World Health Organization, Human Genome Editing: A Framework for Governance (Geneva: WHO, 2021).",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789240030060"
+      },
+      {
+        "citation": "International Commission on the Clinical Use of Human Germline Genome Editing, Heritable Human Genome Editing (Washington, DC: National Academies Press, 2020).",
+        "type": "policy-document",
+        "doi": "10.17226/25665"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Permit heritable editing only to prevent a serious genetic disease when no reasonable reproductive alternative can achieve the couple's goal and independent oversight verifies safety and follow-up.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from multinational public-attitude research consistently finding greater support for preventing serious disease than for enhancement, with support conditional on safety, the absence of alternatives and governance. The specific permissive rule is Bench editorial translation of that conditional support.",
+          "sources": [
+            {
+              "citation": "Systematic review and multinational public-attitude studies on human genome editing: consistently greater support for preventing serious disease than for enhancement, with support conditional on safety, heritability, available alternatives and governance.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Keep reproductive heritable editing prohibited even for disease prevention until several generations of broader evidence and international agreement show that risks and inequities can be governed responsibly.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same body of attitude research, in which support is contingent on heritability concerns and governance capacity and a substantial share of respondents remain opposed on those grounds. The generational-evidence condition is Bench editorial translation of that opposition, not a surveyed policy option.",
+          "sources": [
+            {
+              "citation": "Systematic review and multinational public-attitude studies on human genome editing: consistently greater support for preventing serious disease than for enhancement, with support conditional on safety, heritability, available alternatives and governance.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Do not authorize clinical heritable genome editing at present; require international governance, registries, continuing evidence review, and explicit criteria before any future reproductive pathway is considered.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the WHO governance framework and recommendations on human genome editing, which call for registries, international oversight and the absence of any current clinical authorization for heritable applications.",
+          "sources": [
+            {
+              "citation": "World Health Organization, Human Genome Editing: A Framework for Governance (Geneva: WHO, 2021).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240030060"
+            },
+            {
+              "citation": "World Health Organization, Human Genome Editing: Recommendations (Geneva: WHO, 2021).",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240030381"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "If future clinical use is opened, restrict it initially to serious monogenic disease, stringent preclinical thresholds, independent review, long-term follow-up, and cases where established reproductive alternatives are inadequate.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the International Commission report on heritable human genome editing, which sets out an initial-use pathway limited to serious monogenic disease with stringent preclinical evidence thresholds, independent review, long-term follow-up and inadequacy of alternatives.",
+          "sources": [
+            {
+              "citation": "International Commission on the Clinical Use of Human Germline Genome Editing, Heritable Human Genome Editing (Washington, DC: National Academies Press, 2020).",
+              "type": "policy-document",
+              "doi": "10.17226/25665"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Permit disease-preventing heritable editing when expected benefits to future children are large, residual risks are comparable to accepted reproduction, and access and enhancement boundaries are governed fairly.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from beneficence toward future persons together with reproductive liberty: the reasoning bridge is that if the residual risk is comparable to procedures already accepted, the remaining objection must rest on the distribution and scope of use, which governance can address. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Maintain a prohibition where irreversible germline choices impose uncertain risks and social consequences on future persons who cannot consent, unless necessity and legitimacy meet an exceptionally demanding threshold.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from precaution and intergenerational justice: the reasoning bridge is that irreversibility plus the impossibility of consent by the affected parties raises the justificatory burden above what an ordinary risk–benefit comparison would require. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "World Health Organization, Human Genome Editing: A Framework for Governance (Geneva: WHO, 2021).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240030060"
+    },
+    {
+      "citation": "World Health Organization, Human Genome Editing: Recommendations (Geneva: WHO, 2021).",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240030381"
+    },
+    {
+      "citation": "International Commission on the Clinical Use of Human Germline Genome Editing, Heritable Human Genome Editing (Washington, DC: National Academies Press, 2020).",
+      "type": "policy-document",
+      "doi": "10.17226/25665"
+    },
+    {
+      "citation": "Systematic review and multinational public-attitude studies on human genome editing: consistently greater support for preventing serious disease than for enhancement, with support conditional on safety, heritability, available alternatives and governance.",
+      "type": "survey"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    },
+    {
+      "citation": "Scholarship on intergenerational justice and obligations to future people in health and environmental policy.",
+      "type": "article"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:e6165d54ff862a43ce34a32dcbc6ec2232e256a8a31aef715e46a0e2bbf1d716"
+}

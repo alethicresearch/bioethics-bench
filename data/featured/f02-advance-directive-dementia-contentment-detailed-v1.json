@@ -1,0 +1,178 @@
+{
+  "record_id": "f02-advance-directive-dementia-contentment-detailed-v1",
+  "case_id": "f02-advance-directive-dementia-contentment",
+  "version": "1.0.0",
+  "title": "Advance directive versus current contentment in dementia",
+  "short_description": "A person with advanced dementia appears content but signed a directive years earlier refusing life-prolonging treatment. Clinicians must decide how strongly it should control treatment of a serious but reversible infection.",
+  "decision_question": "When a person with advanced dementia lacks decision-making capacity but appears content, how should clinicians weigh a prior directive refusing life-prolonging treatment against the person's current welfare?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "f02-advance-directive-dementia-contentment-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "end-of-life",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "advance directive",
+    "dementia",
+    "precedent autonomy",
+    "surrogate decision-making",
+    "best interests"
+  ],
+  "scenario": "A person with advanced dementia no longer has decision-making capacity, recognizes few people, and cannot understand treatment decisions, but currently appears comfortable, enjoys music and meals, and shows no persistent distress. Years earlier, while fully competent, the person signed an advance directive stating that if severe dementia caused loss of decisional capacity, they did not want life-prolonging treatment. The directive did not name the specific infection now diagnosed, which is serious but likely treatable with hospitalization and intravenous therapy. The surrogate believes the earlier directive should be followed; some caregivers feel the person’s present enjoyment matters morally. The clinical team must decide how strongly the prior directive should control treatment in light of the person’s current welfare.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "sources": [
+      {
+        "citation": "Empirical advance-care-planning research with people living with dementia, their caregivers and clinicians, including studies of clinician responses when a prior directive refusing life-prolonging treatment meets a person who currently appears content.",
+        "type": "article"
+      },
+      {
+        "citation": "Clinical-ethics guidance on the interpretation and application of advance directives by surrogates, including structured best-interpretation review where a directive does not name the present condition.",
+        "type": "guideline"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Give substantial weight to the prior directive, but confirm with the surrogate that it was meant to apply to this kind of treatable illness and this current state.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from advance-care-planning research with people living with dementia and their caregivers, in which participants treat previously expressed values as continuing to carry authority while wanting a surrogate to confirm that a nonspecific directive was meant for the situation that has arisen. The confirmation step is an editorial translation of that value, not a surveyed policy.",
+          "sources": [
+            {
+              "citation": "Empirical advance-care-planning research with people living with dementia, their caregivers and clinicians, including studies of clinician responses when a prior directive refusing life-prolonging treatment meets a person who currently appears content.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Treat the serious reversible illness when treatment is not highly burdensome and the person presently appears content, unless the directive unmistakably anticipated and rejected this situation.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same body of empirical work, which documents caregivers and clinicians giving weight to a person’s present comfort and engagement when a directive does not clearly speak to the current illness. The treatment-burden condition is Bench editorial translation of that concern into an actionable rule.",
+          "sources": [
+            {
+              "citation": "Empirical advance-care-planning research with people living with dementia, their caregivers and clinicians, including studies of clinician responses when a prior directive refusing life-prolonging treatment meets a person who currently appears content.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Follow the valid prior directive when it clearly applies to the present condition, using the surrogate to interpret rather than replace the person's previously expressed values.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from clinical-ethics guidance on advance directives and substituted judgment, under which a valid and applicable directive governs and the surrogate’s role is interpretive rather than substitutive.",
+          "sources": [
+            {
+              "citation": "Clinical-ethics guidance on the interpretation and application of advance directives by surrogates, including structured best-interpretation review where a directive does not name the present condition.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Use a structured best-interpretation review when the directive is nonspecific, weighing its applicability, treatment burden, prognosis, and the person's current signs of welfare before withholding treatment.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same clinical-ethics guidance, which prescribes a structured review of applicability, burden and prognosis where a directive does not name the present condition rather than automatic application or automatic disregard.",
+          "sources": [
+            {
+              "citation": "Clinical-ethics guidance on the interpretation and application of advance directives by surrogates, including structured best-interpretation review where a directive does not name the present condition.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Give priority to precedent autonomy: the competent person's considered plan for the shape of their life should continue to govern after decisional capacity is lost.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from Dworkin’s distinction between critical and experiential interests: the reasoning bridge is that a competent person’s considered judgment about the narrative shape of their own life retains authority over later states in which they can no longer form such judgments. The policy sentence is a Bench construction, not a quotation from Dworkin.",
+          "sources": [
+            {
+              "citation": "Ronald Dworkin, Life’s Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom (Knopf, 1993).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Give independent moral weight to the person’s current experiential interests; a past directive should not automatically defeat substantial present welfare when its application is ambiguous.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from accounts that ground moral claims in a subject’s present capacity for welfare, together with the principlist weighing of beneficence against autonomy: the reasoning bridge is that where the directive’s application is genuinely ambiguous, present welfare is not displaced by a prior judgment that did not address this state. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Ronald Dworkin, Life’s Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom (Knopf, 1993).",
+      "type": "book"
+    },
+    {
+      "citation": "Empirical advance-care-planning research with people living with dementia, their caregivers and clinicians, including studies of clinician responses when a prior directive refusing life-prolonging treatment meets a person who currently appears content.",
+      "type": "article"
+    },
+    {
+      "citation": "Clinical-ethics guidance on the interpretation and application of advance directives by surrogates, including structured best-interpretation review where a directive does not name the present condition.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:ac4e8be49cc2c047d307b064565795fb49eff1203a14428933b5f23734183f38"
+}

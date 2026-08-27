@@ -1,0 +1,199 @@
+{
+  "record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
+  "case_id": "f10-age-as-organ-allocation-criterion",
+  "version": "1.0.0",
+  "title": "Age as an organ-allocation criterion",
+  "short_description": "Transplant candidates matched on urgency and expected benefit differ in age. The allocation system must decide whether chronological age should have no independent role, act only through prognosis, or serve as a limited tie-breaker.",
+  "decision_question": "When transplant candidates have similar urgency and expected transplant benefit, should chronological age independently influence allocation priority, and if so only as a tie-breaker or more strongly?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "f10-age-as-organ-allocation-criterion-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
+  },
+  "benchmark_profile": "featured-core-2x2x2-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-26",
+  "domains": [
+    "allocation-transplantation"
+  ],
+  "tags": [
+    "organ allocation",
+    "fair innings",
+    "age discrimination",
+    "tie-breaking",
+    "allocation policy"
+  ],
+  "scenario": "Two transplant candidates have similar urgency and expected graft benefit but differ substantially in age. The allocation system must decide whether age should have no independent role, operate only through prognosis, or provide limited priority to the younger patient.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "sources": [
+      {
+        "citation": "Organ Procurement and Transplantation Network Ethics Committee, ethical principles of organ allocation (utility, justice and respect for persons) and current ethical-considerations papers.",
+        "type": "policy-document",
+        "url": "https://optn.transplant.hrsa.gov/professionals/by-topic/ethical-considerations/"
+      },
+      {
+        "citation": "Public-preference research on organ-allocation criteria, including German focus groups and a discrete-choice experiment (n = 1,028) in which respondents applied several principles at once and younger age influenced many respondents alongside expected benefit, urgency and waiting time.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "When candidates are otherwise closely matched, give limited priority to the younger patient as a tie-breaker because they have had less opportunity to experience the stages of life.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "extracted-from-evidence",
+          "summary": "Extracted from public-preference research on transplant allocation, including German focus groups and a discrete-choice experiment (n = 1,028) in which younger age influenced many respondents alongside expected benefit, urgency and waiting time.",
+          "sources": [
+            {
+              "citation": "Public-preference research on organ-allocation criteria, including German focus groups and a discrete-choice experiment (n = 1,028) in which respondents applied several principles at once and younger age influenced many respondents alongside expected benefit, urgency and waiting time.",
+              "type": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not give chronological age independent weight; allocate by urgency, expected transplant benefit, and other declared criteria that apply equally across ages.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the equality-focused themes in the same focus-group research, in which participants objected to treating age as a measure of a person’s claim. This candidate represents that theme; it does not claim a majority public preference for excluding age.",
+          "sources": [
+            {
+              "citation": "Public-preference research on organ-allocation criteria, including German focus groups and a discrete-choice experiment (n = 1,028) in which respondents applied several principles at once and younger age influenced many respondents alongside expected benefit, urgency and waiting time.",
+              "type": "survey"
+            }
+          ]
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use age only when it contributes to a validated estimate of medically relevant outcomes; do not add a separate age score that double-counts prognosis or assigns social worth.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from OPTN Ethics Committee statements of the ethical principles of allocation, which admit utility through validated outcome estimation and exclude judgments of social worth.",
+          "sources": [
+            {
+              "citation": "Organ Procurement and Transplantation Network Ethics Committee, ethical principles of organ allocation (utility, justice and respect for persons) and current ethical-considerations papers.",
+              "type": "policy-document",
+              "url": "https://optn.transplant.hrsa.gov/professionals/by-topic/ethical-considerations/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "When clinically relevant criteria leave candidates effectively tied, use a transparent neutral tie-break such as lottery rather than an independent age preference.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same allocation-ethics material, which values transparent and reproducible rules over informal discretion and treats equal chance as a defensible resolution where declared criteria do not discriminate between candidates.",
+          "sources": [
+            {
+              "citation": "Organ Procurement and Transplantation Network Ethics Committee, ethical principles of organ allocation (utility, justice and respect for persons) and current ethical-considerations papers.",
+              "type": "policy-document",
+              "url": "https://optn.transplant.hrsa.gov/professionals/by-topic/ethical-considerations/"
+            }
+          ]
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Allow a modest life-cycle tie-break when all else is equal, because giving someone a chance to reach life stages others have already experienced can express priority to the worse off over a lifetime.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from prioritarian and fair-innings reasoning applied over complete lives: the reasoning bridge is that if the unit of moral concern is a whole life, the candidate with less life so far is the worse off, which grounds a modest priority where other criteria are equal. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+              "type": "article",
+              "doi": "10.1111/1467-9329.00041"
+            },
+            {
+              "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Give persons equal moral status regardless of age; differences in priority should track relevant benefit or need, not the amount of life already lived as an independent value.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equal moral status and fairness in claim-satisfaction: the reasoning bridge is that each candidate’s claim arises from present need and expected benefit, so life already lived is not a difference between the claims themselves. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "John Broome, “Fairness,” Proceedings of the Aristotelian Society 91 (1990): 87–101.",
+              "type": "article"
+            },
+            {
+              "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "featured",
+  "exposure": "public",
+  "status": "editorial-review",
+  "intended_use": [
+    "teaching",
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "rights": {
+    "license": "unresolved-pending-release-decision",
+    "holder": "Alethic Research",
+    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+  },
+  "references": [
+    {
+      "citation": "Organ Procurement and Transplantation Network Ethics Committee, ethical principles of organ allocation (utility, justice and respect for persons) and current ethical-considerations papers.",
+      "type": "policy-document",
+      "url": "https://optn.transplant.hrsa.gov/professionals/by-topic/ethical-considerations/"
+    },
+    {
+      "citation": "Public-preference research on organ-allocation criteria, including German focus groups and a discrete-choice experiment (n = 1,028) in which respondents applied several principles at once and younger age influenced many respondents alongside expected benefit, urgency and waiting time.",
+      "type": "survey"
+    },
+    {
+      "citation": "Derek Parfit, “Equality and Priority,” Ratio 10, no. 3 (1997): 202–221.",
+      "type": "article",
+      "doi": "10.1111/1467-9329.00041"
+    },
+    {
+      "citation": "Norman Daniels, Just Health: Meeting Health Needs Fairly (Cambridge University Press, 2008).",
+      "type": "book"
+    },
+    {
+      "citation": "John Broome, “Fairness,” Proceedings of the Aristotelian Society 91 (1990): 87–101.",
+      "type": "article"
+    },
+    {
+      "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:c44d71ff5652d37aa1894462d49b1dcf216a2f08753ceda6f2106cced5caf287"
+}
