@@ -5,7 +5,7 @@
 **Primary domain:** consent/capacity/refusal  
 **Subdomain:** adolescent privacy and parental involvement  
 **Tags:** adolescent, confidentiality, contraception, STI care, parents, privacy  
-**Research status:** deep case draft  
+**Research status:** deep case drafted; executable companion pair transcribed  
 **Evidence date:** 2026-08-27
 
 ## Decision architecture
@@ -53,17 +53,17 @@ Jurisdiction-neutral institutional policy. Current law varies substantially, so 
 - permit broader parental disclosure under specified welfare concerns even below an imminent-harm threshold;
 - system-level policy combining private adolescent access with segmented records and narrow safety exceptions.
 
-Candidate construction should avoid turning `encourage communication` into a cosmetic add-on to an otherwise identical confidentiality policy.
+Candidate construction avoids turning `encourage communication` into a cosmetic add-on to an otherwise identical professional policy.
 
 ## Public / affected-community evidence
 
 Empirical studies provide a genuinely plural affected-public layer. A nationally representative US survey of 1,209 adolescent-parent dyads found adolescents valued confidentiality more strongly than parents and that endorsement varied by service. A national parent survey found substantial support for private adolescent time alongside substantial support for disclosure of information learned privately. Earlier adolescent surveys found many young people had concerns they wanted kept from parents and some would forgo care if confidentiality could not be protected.
 
-These data support distinct positions about the strength and scope of confidentiality. They do not support treating adolescents or parents as holding one uniform view.
+These data support two distinct affected-public policy translations about the strength and scope of confidentiality. They do not support treating adolescents or parents as holding one uniform view.
 
 ## Expert / professional recommendations
 
-The American Academy of Pediatrics' 2024 policy statement treats confidentiality as central to high-quality adolescent care, recommends respecting confidentiality where legally permitted or required, supports private time and robust system protections, encourages adolescents to share important information with parents where acceptable, and recognizes safety/legal circumstances in which confidentiality may need to be breached.
+The American Academy of Pediatrics' 2024 policy statement treats confidentiality as central to high-quality adolescent care, recommends respecting confidentiality where legally permitted or required, supports private time and robust system protections, encourages adolescents to share important information with parents where acceptable, and recognizes safety/legal circumstances in which confidentiality may need to be breached. SAHM and ACOG guidance substantially converge on the same professional architecture, so the expert pool remains one candidate rather than manufacturing a second near-duplicate.
 
 ## Normative / framework positions and reasoning bridges
 
@@ -83,6 +83,8 @@ The American Academy of Pediatrics' 2024 policy statement treats confidentiality
 **Professional**
 - American Academy of Pediatrics. *Confidentiality in the Care of Adolescents: Policy Statement*. Pediatrics. 2024;153(5):e2024066326.
 - American Academy of Pediatrics. *Confidentiality in the Care of Adolescents: Technical Report*. Pediatrics. 2024;153(5):e2024066327.
+- Society for Adolescent Health and Medicine. *Confidential Healthcare for Adolescent Minors and Young Adults*. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.
+- ACOG Committee Opinion 803. *Confidentiality in Adolescent Health Care*. PMID 32217979.
 
 **Normative**
 - developing-autonomy literature in adolescent medical decision-making;
@@ -108,7 +110,9 @@ SACRE; matched adolescent/parent/professional studies; representation sensitivit
 
 ## Executable-eligibility judgment
 
-`executable-2x2x2` is strongly supported in principle. Final candidate construction still requires provenance mapping so the two public candidates are genuinely distinct and the professional pair does not collapse into near-entailing versions of one recommendation.
+`executable-other-profile`: **`full-corpus-2x1x2-mean-v1`**. The affected-public evidence supports two distinct policy orientations; AAP/SAHM/ACOG professional guidance converges on one confidentiality architecture; the framework layer supports two distinct normative rules. The paired draft records are transcribed and structurally valid. Mean aggregation is required by profile and enforced by SACRE because unequal cross-source partner counts would make Sum shape-biased.
+
+This is an executable-construction judgment, not substantive validation or release.
 
 ## Review requirements
 
@@ -116,4 +120,4 @@ Adolescent-medicine review; adolescent/parent affected-community review if feasi
 
 ## Downstream record rule
 
-Build executable records only after the candidate map is audited. Concise/detailed must retain the same age, service, safety facts, technical confidentiality capability and legal-option stipulation.
+Draft executable records now exist in `data/benchmark`. Any substantive change to scenario, decision question, candidates, ordering or provenance requires a new record version and canonical hash. Concise/detailed must continue to retain the same age, service, safety facts, technical confidentiality capability, decision question, stipulations and candidate pools.
