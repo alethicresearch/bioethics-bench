@@ -1,0 +1,12 @@
+{
+  "$comment": "Registered editorial homes. Each entry says where a collection's prose lives and how to find a case inside it, so scripts/check-dossier-sync.mjs can compare dossier against built record for any collection rather than only for Featured v1. A frozen or released record whose collection has no entry here fails the check: at freeze, 'the dossier and the record agree' has to be a measured fact, and an unregistered collection used to mean the comparison was silently skipped. Draft and editorial-review work needs no entry.",
+  "sources": [
+    {
+      "collection": "featured",
+      "docs_dir": "docs/featured-v1-research",
+      "file_pattern": "^F\\d\\d-F\\d\\d",
+      "section_id_pattern": "^## (F\\d\\d)\\b",
+      "note": "Twenty families across five dossier files, each family a '## Fxx — Title' section; the section id maps to the record whose case_id starts with that id, lowercased."
+    }
+  ]
+}
