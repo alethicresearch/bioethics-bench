@@ -18,20 +18,22 @@ Status in this file describes construction progress only. `released` remains a s
 | M007 | Clinician conscientious objection and referral | professional duty/reproductive ethics | audited | drafted | drafted | drafted | affected-service-user evidence supports transparent access but does not yet yield two robust referral-policy positions | strong/plural | strong | `needs-additional-evidence` | substantive review pending | — | Concrete service is lawful abortion; direct referral versus institution-supplied access pathway must remain distinct. |
 | M008 | Confidentiality versus serious preventable harm to a third party | confidentiality/mental health | audited | drafted | drafted | drafted | historical public evidence is genuinely plural but contemporary direct affected-public evidence remains thin | strong | strong | `needs-additional-evidence` | substantive review pending | — | Keep in full corpus even if non-executable; severity, probability, identifiability and minimum-necessary disclosure are explicit. |
 | M009 | Requested CPR judged medically non-beneficial | end-of-life/professional duty | audited | drafted | drafted | drafted | patient/surrogate CPR evidence is relevant but does not directly compare institutional conflict-resolution policies | strong/plural | strong | `needs-additional-evidence` | substantive review pending | — | Avoid `futile`; outcome probability, agreed treatment goal and process safeguards are explicit. |
-| M010 | Family members as interpreters for consequential consent | language access/consent | audited | drafted | drafted | drafted | strong and genuinely plural patient preference evidence | two distinct professional/policy architectures | strong | `executable-2x2x2` candidate set audited | substantive review + executable-record transcription pending | — | Existing `featured-core-2x2x2-v1` shape is supported; no asymmetric aggregation requirement applies. |
+| M010 | Family members as interpreters for consequential consent | language access/consent | audited | drafted | executable draft + hash valid | executable draft + hash valid | strong and genuinely plural patient preference evidence | two distinct professional/policy architectures | strong | `executable-2x2x2`; draft pair structurally valid | substantive/editorial review pending | — | Draft records in `data/benchmark`; canonical hashes written. CI at `60f4290…`: 42/42 records valid and 18/18 guard probes pass. Existing `featured-core-2x2x2-v1` shape is supported; no asymmetric aggregation requirement applies. Not frozen or released. |
 
 ## Batch A1 eligibility snapshot
 
-After the deep-research, candidate-level audit, and aggregation-shape audit:
+After the deep-research, candidate-level audit, aggregation-shape audit, and first executable transcription:
 
 - already executable/released through Featured crosswalk: **M001**;
-- clean symmetric `2 × 2 × 2` candidate ready for executable-record transcription: **M010**;
+- clean symmetric `2 × 2 × 2` executable draft pair, structurally valid but not yet substantively reviewed/frozen/released: **M010**;
 - evidence-qualified asymmetric executable cases, Mean-pinned by profile: **M002 (`1 × 2 × 2`)**, **M004 and M005 (`2 × 1 × 2`)**;
 - retain as `needs-additional-evidence` rather than forcing an executable profile: **M003, M006, M007, M008, M009**.
 
-The asymmetric profiles are now registered rather than treated as case-specific exceptions. Both yield 8 unordered cross-source QCCS comparisons per representation and declare `required_aggregation: "mean"`. SACRE must not publish an official ranking or provisional Final Policy for an asymmetric candidate set under Sum, because unequal cross-source partner counts can otherwise determine the winner before any QCCS signal is present.
+The asymmetric profiles are registered rather than treated as case-specific exceptions. Both yield 8 unordered cross-source QCCS comparisons per representation and declare `required_aggregation: "mean"`. SACRE must not publish an official ranking or provisional Final Policy for an asymmetric candidate set under Sum, because unequal cross-source partner counts can otherwise determine the winner before any QCCS signal is present.
 
 Mean removes deterministic pool-shape bias but does not make scores from different profile shapes statistically interchangeable. Cross-profile score comparisons therefore require explicit caution in the resource methods and later validation work.
+
+M010 is the first newly transcribed Full Corpus executable family. Its concise and detailed records are `benchmark` / `internal-development` / `draft`; their decision question, stipulations and six candidates are companion-matched, their scenarios differ, and their content hashes are canonical. Automated validity is a shape/provenance/consistency result only. It is not substantive validation, model evaluation, human agreement, or release.
 
 These are research-state judgments, not final release classifications. A case may become executable if later evidence closes a source-class gap; it need not do so to remain a complete Full Corpus case.
 
