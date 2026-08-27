@@ -154,7 +154,7 @@
   },
   "collection": "featured",
   "exposure": "public",
-  "status": "frozen",
+  "status": "released",
   "intended_use": [
     "teaching",
     "application-demonstration",
@@ -169,6 +169,13 @@
     "reviewed_at": "2026-08-27",
     "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
   },
+  "exposure_history": [
+    {
+      "date": "2026-08-27",
+      "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+      "reference": "https://bioethicsbench.com/cases/"
+    }
+  ],
   "rights": {
     "license": "CC-BY-4.0",
     "holder": "Alethic Research",
@@ -203,5 +210,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:28c386ea13f648fc612471a09fa6087a436f65fdb8a4b87bbbbd984f0166e45b"
+  "content_hash": "sha256:622fe7f534a6f20648ef9d3b31e848976055a209e2c6ef1842e839fa2ca81f8a"
 }

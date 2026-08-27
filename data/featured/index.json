@@ -1,7 +1,7 @@
 {
   "generated_from": "scripts/build-featured-v1.mjs",
   "benchmark_profile": "featured-core-2x2x2-v1",
-  "status": "frozen",
+  "status": "released",
   "family_count": 20,
   "record_count": 40,
   "families": [
@@ -26,14 +26,14 @@
           "form": "concise",
           "record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:ca43dda156c55a7f7b0261e738655e8baa25cbf92bbda91825c0b44e0e3d498a",
+          "content_hash": "sha256:4889a6907dfedd6aae21478aefd4179bfcf483a9e99ed042a4c13823447aa34e",
           "path": "data/featured/f01-elective-surgery-transfusion-refusal-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:15041d0267bd8088848f047a973c0c33c2b7c2c54b7fbd5aea8671f8f1e53ed9",
+          "content_hash": "sha256:8f2c66baeb7a6e7a4ef3ce3dea1b0c4ad413888d56b3f77bed63ca5a4e70d6cb",
           "path": "data/featured/f01-elective-surgery-transfusion-refusal-detailed-v1.json"
         }
       ]
@@ -60,14 +60,14 @@
           "form": "concise",
           "record_id": "f02-advance-directive-dementia-contentment-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:77e27b0529e79cb16b936591ffbc6ea4bc489a7572d93e79354e899f30e10079",
+          "content_hash": "sha256:b458c6d6973ba1d487dd99138d8e7f914214ad15f74fc35ee77126a8f0cab478",
           "path": "data/featured/f02-advance-directive-dementia-contentment-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f02-advance-directive-dementia-contentment-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:6c4df29fd0550a564c685e1c3c293446be93ff42debdd8513533fb0327971d1b",
+          "content_hash": "sha256:834d53fed2b62058dec2a6c37873243b989e0bbde4c40db226a3cf4932d1e9aa",
           "path": "data/featured/f02-advance-directive-dementia-contentment-detailed-v1.json"
         }
       ]
@@ -100,14 +100,14 @@
           "form": "concise",
           "record_id": "f03-periviable-resuscitation-default-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:fd09292de03817dac93f1ab4e1e24318a57be48a97a05c670507f202b56e8e72",
+          "content_hash": "sha256:b058f133f68515d3547cb480bb021f4b459ddf9f75b51c8fa9c02cd874b687ba",
           "path": "data/featured/f03-periviable-resuscitation-default-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f03-periviable-resuscitation-default-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:823d492183cd4fd911ada597b0138c5b7c21b1e313406db3f84a25e98601031a",
+          "content_hash": "sha256:7db69bc9d83b4d848f2f6b3c73f4f84a64469b8db8eff79a84e59c777a7699b4",
           "path": "data/featured/f03-periviable-resuscitation-default-detailed-v1.json"
         }
       ]
@@ -140,14 +140,14 @@
           "form": "concise",
           "record_id": "f04-brain-death-accommodation-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:0aac33cf6e458d07bd885c3e0003f2ceb42db3acebd390fe47e48f3b913870c0",
+          "content_hash": "sha256:5f94357e71ed2396b6e6a5ebc905b2b033337d988e7a1d6b26141ce06bfd0df2",
           "path": "data/featured/f04-brain-death-accommodation-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f04-brain-death-accommodation-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:1b743e97f507ed9d5ef85c71faa816bff0519ff8a8952cae0112f34d35988615",
+          "content_hash": "sha256:b2743398f78ada388aeb8663a5a7282e7e4dfaed6298b8cae834a58b77033792",
           "path": "data/featured/f04-brain-death-accommodation-detailed-v1.json"
         }
       ]
@@ -174,14 +174,14 @@
           "form": "concise",
           "record_id": "f05-medical-aid-in-dying-policy-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:c3a557160f765326c277302229ff641fa60950638f84a5a3c989412459f1eef2",
+          "content_hash": "sha256:4e75b754247b48bba44b0c8e232599fd38f1f0724a62a199914d530ce94ac525",
           "path": "data/featured/f05-medical-aid-in-dying-policy-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:41024772b82c22fad0ce4c1e6cbe1205f962d706c97912dcaf2d28bb982de7a9",
+          "content_hash": "sha256:f1bd7c1246a518a1c54279680bcf9f46ffbadd2f9a09fbcdf9cd5f6371e08bfe",
           "path": "data/featured/f05-medical-aid-in-dying-policy-detailed-v1.json"
         }
       ]
@@ -207,14 +207,14 @@
           "form": "concise",
           "record_id": "f06-placebo-control-effective-treatment-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:cf1bb8bf19928a2fa5ef390c1c06f35c41a31c7585eb62249ae3b517bf6cccff",
+          "content_hash": "sha256:bbb560d477c52cde5ee5595ab688e20b8420b82ab44699183f736633f208fbae",
           "path": "data/featured/f06-placebo-control-effective-treatment-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f06-placebo-control-effective-treatment-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:0eb47e91fd517127c0a2524c3436362ffc7f32977be31bf7d65bff8a33db3d7e",
+          "content_hash": "sha256:d1069b2c0088e89af32f4d39fc706df07d29c4f19147f8f5ca1a0cded2eaa863",
           "path": "data/featured/f06-placebo-control-effective-treatment-detailed-v1.json"
         }
       ]
@@ -248,14 +248,14 @@
           "form": "concise",
           "record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:aad6555f4ba99e226dde1c508fd1b703ae3efef38c14d4411ca81c9445c008c7",
+          "content_hash": "sha256:659b09f3d1c419276409e8658cf786f636a13814897ff377520a7d565a717901",
           "path": "data/featured/f07-lower-resource-trial-standard-of-care-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f07-lower-resource-trial-standard-of-care-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:76f19ec85824f2815805b98d67e7063eb22c6a10a408e8941794b5d3516577f8",
+          "content_hash": "sha256:3b17b43dccbb8062a98fb62a8b3af86b70a74ee12976c0c2ed5f059fe366a61a",
           "path": "data/featured/f07-lower-resource-trial-standard-of-care-detailed-v1.json"
         }
       ]
@@ -282,14 +282,14 @@
           "form": "concise",
           "record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:037aafa7e79791346b7e2293429d2b1e35b66aab498f1024121dbf0f1cabc8b3",
+          "content_hash": "sha256:f2840368d1dbadff2348315f8b6e00da497e18d4a43e50d567040a087ccdc28a",
           "path": "data/featured/f08-fourteen-day-embryo-research-limit-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:733f6617426ba03ca0064864f145186fcab7bcf684163f23ea392cc564fd498a",
+          "content_hash": "sha256:b3be4c3f687121c3e8d47b2e2a46213522bd37dfec24a17f3184032402f7274c",
           "path": "data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json"
         }
       ]
@@ -315,14 +315,14 @@
           "form": "concise",
           "record_id": "f09-heritable-genome-editing-serious-disease-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:3291d629db16b0bc6838ab16e546c54b2fdb3b169d4de3984713ce07fe85cdb5",
+          "content_hash": "sha256:cbb9545a554e6516245c411b99818c188ef5dde1526abafa7b7f47d2186e9f67",
           "path": "data/featured/f09-heritable-genome-editing-serious-disease-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f09-heritable-genome-editing-serious-disease-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:8a12875f1c498e185a3e09f06e402f79ca90b9bd9fb7647e75da17cf42a60651",
+          "content_hash": "sha256:6c499c73fc99f2e82984edf5a0f3677bc7512dd45388478744ce8bc161f8780d",
           "path": "data/featured/f09-heritable-genome-editing-serious-disease-detailed-v1.json"
         }
       ]
@@ -348,14 +348,14 @@
           "form": "concise",
           "record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:b0ab10f0f005649ad0e8d338126c7fa66d2545c452b568d5b3046ec861e0ae44",
+          "content_hash": "sha256:64004bcb9dde0ef1d0cb9455d28f118e5d2fdac50b05bcabd0a17adf8989e9b0",
           "path": "data/featured/f10-age-as-organ-allocation-criterion-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:a562d45bfc22afee1d599bdafc5193a38de46b8dce0a9f822ed5044d394055e6",
+          "content_hash": "sha256:279fe54098ce5d60c24ed11cf22db3ad3de6995432a40923eb93ed2f7736509c",
           "path": "data/featured/f10-age-as-organ-allocation-criterion-detailed-v1.json"
         }
       ]
@@ -383,14 +383,14 @@
           "form": "concise",
           "record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:8e7065f37bbe893fa9d06816cddb68576dcb90a3de7425ac9cdabf9ca1599a0f",
+          "content_hash": "sha256:e7841b86aa025cd27fec5bd335560f25e1f3cb8e1242cb8fbe5610caa7ee6b38",
           "path": "data/featured/f11-ventilator-triage-catastrophic-scarcity-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:1cf0551180c579c7ae3c109558fbedd7086697ce2894676eca0d1d6cfbd2c950",
+          "content_hash": "sha256:7fd4f9eb63836cac9774ea9ff9ea9b56803f4bdc1663d8d94157ad7636c5ca33",
           "path": "data/featured/f11-ventilator-triage-catastrophic-scarcity-detailed-v1.json"
         }
       ]
@@ -416,14 +416,14 @@
           "form": "concise",
           "record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:a5312d6f02f38160302a2bc88522100ad19854e06acbcf0aace4dfa5e0c7bb2e",
+          "content_hash": "sha256:2ecaa53d95ebd18dc2ad875e2c8c1aafb2b6855bb4e6f5a11452bebd0b6769e7",
           "path": "data/featured/f12-mandatory-vaccination-serious-outbreak-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:eae32972d8d77951830262805764c00794e23e27668b6deacec1c01791637d58",
+          "content_hash": "sha256:f1de44391c49d503bf18d5bb63f6eebc64c99444cf7e7152c97524847f2480c4",
           "path": "data/featured/f12-mandatory-vaccination-serious-outbreak-detailed-v1.json"
         }
       ]
@@ -449,14 +449,14 @@
           "form": "concise",
           "record_id": "f13-international-health-worker-recruitment-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:434fe89e5a6569628bb6a67139e2c48ebc03af7b4770b923d23e89fd21213eab",
+          "content_hash": "sha256:27bbaa14a7a334bbd2dfd0dca787b327192d959f1d9795142e39377608c30894",
           "path": "data/featured/f13-international-health-worker-recruitment-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f13-international-health-worker-recruitment-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:6129c2d4efe7481f4ff0722d6c220afbb3afa166c9773cfc15979652dc1c4bef",
+          "content_hash": "sha256:aabf8e93c378bc194588a8891fe3203a6179a6d4e76e87b7c592a53c4e0d7ff9",
           "path": "data/featured/f13-international-health-worker-recruitment-detailed-v1.json"
         }
       ]
@@ -483,14 +483,14 @@
           "form": "concise",
           "record_id": "f14-involuntary-psychiatric-treatment-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:31e83250949b399ee3e6c20a423f08bfcc49506b138a69d2879707af9125fcfd",
+          "content_hash": "sha256:2dd5326a755d4e380b58590c1b02241fb71f35fe6b958af7ad2aee438a50555a",
           "path": "data/featured/f14-involuntary-psychiatric-treatment-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:6582354005688cc0679d3d7a67b78d6132326a932dfe5fc10dcfc7c82440031d",
+          "content_hash": "sha256:eb530c62ee0235e7e5c070ed1de043f8463ddd96c5e398edd690fee09ef83994",
           "path": "data/featured/f14-involuntary-psychiatric-treatment-detailed-v1.json"
         }
       ]
@@ -517,14 +517,14 @@
           "form": "concise",
           "record_id": "f15-qalys-disability-technology-allocation-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:e21e506c6b72e08c67c7702b2d420e70c24b00f100268b37bde3d61236149522",
+          "content_hash": "sha256:fd93c24b7b613ea2b0745e8332add3bab917c92d5c63f6f33c22249845cd3c62",
           "path": "data/featured/f15-qalys-disability-technology-allocation-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f15-qalys-disability-technology-allocation-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:28c386ea13f648fc612471a09fa6087a436f65fdb8a4b87bbbbd984f0166e45b",
+          "content_hash": "sha256:622fe7f534a6f20648ef9d3b31e848976055a209e2c6ef1842e839fa2ca81f8a",
           "path": "data/featured/f15-qalys-disability-technology-allocation-detailed-v1.json"
         }
       ]
@@ -563,14 +563,14 @@
           "form": "concise",
           "record_id": "f16-diagnostic-ai-subgroup-performance-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:4ff77422fd10db058e5fb7294ffb12a7a0224fa212abee01148d39c2be207be7",
+          "content_hash": "sha256:8b88bdd854fcab7e260a844c97e8e9ab64fa83aa6d88e9f2a1d2196ab449d212",
           "path": "data/featured/f16-diagnostic-ai-subgroup-performance-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:e7565526a4735be040c456d4a64720948049242e1fcef4cdf9abc6a169a60ab1",
+          "content_hash": "sha256:1354beaf4d1094566b076fec91621e900ac20840cfdcd4745aa5e60413db9a56",
           "path": "data/featured/f16-diagnostic-ai-subgroup-performance-detailed-v1.json"
         }
       ]
@@ -604,14 +604,14 @@
           "form": "concise",
           "record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:56128d1ce6aaece31e7ca811bc10e919ac1e3eb3f6a83c7f9f63c051e3c41f9c",
+          "content_hash": "sha256:12956fc1f7298f340a1cf2d73bfa426c6519f3277cb33c03dd187a01ca88397c",
           "path": "data/featured/f17-animal-research-replacement-harm-benefit-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:514d9ec66f8e04e5d23451521272c369519b1eac75ac1f704c4202d09ff7da47",
+          "content_hash": "sha256:0245cd7c9965051d07bde9ce30e570f763ab9fbc5aabdb81c77862ef1e4ed019",
           "path": "data/featured/f17-animal-research-replacement-harm-benefit-detailed-v1.json"
         }
       ]
@@ -638,14 +638,14 @@
           "form": "concise",
           "record_id": "f18-antimicrobials-food-producing-animals-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:290711d2d6b93a0444a2699b6d6d1faede715eee2393412bda0f83eeefa8fcf4",
+          "content_hash": "sha256:4f0ad48d8e8254812cf0023f36d8fad8ae91dbb183c78517dabf1ac5b3fbafd1",
           "path": "data/featured/f18-antimicrobials-food-producing-animals-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f18-antimicrobials-food-producing-animals-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:d2c17ee5ef88d1572d19afca47344499f40254dbd0f57db7f4733c7f08ef3a43",
+          "content_hash": "sha256:2928da5ecc4ade56023da1db9d8c88b34f91d7851a10a9f14d1c8bc1776e7163",
           "path": "data/featured/f18-antimicrobials-food-producing-animals-detailed-v1.json"
         }
       ]
@@ -679,14 +679,14 @@
           "form": "concise",
           "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:83456be45c0fdaea09ac62f255b09f502d461c2071ea8e50663adb65495f2c93",
+          "content_hash": "sha256:5af211035f5d1bd02fe01915083d48b91f908860b6fe061e84819f2501eb7ef2",
           "path": "data/featured/f19-health-system-decarbonization-tradeoffs-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:250870e944ecb4da74c081897355d9142b3579619cad48e0a18b52b91e415d97",
+          "content_hash": "sha256:bc3a7a99fdd223b4d3689b3541d44cae2a3461d1e4d826807a8d1159346d024b",
           "path": "data/featured/f19-health-system-decarbonization-tradeoffs-detailed-v1.json"
         }
       ]
@@ -714,14 +714,14 @@
           "form": "concise",
           "record_id": "f20-neural-organoid-oversight-concise-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:a75222c8d157a4eab1d06b23b7dd862384529a95ce70d1895dc466545006c6b2",
+          "content_hash": "sha256:8fe4ffedea3acc999eeb074e39729cd50891c78afc6a33692b13c63a32dd77c9",
           "path": "data/featured/f20-neural-organoid-oversight-concise-v1.json"
         },
         {
           "form": "detailed",
           "record_id": "f20-neural-organoid-oversight-detailed-v1",
           "version": "1.0.0",
-          "content_hash": "sha256:ea9bebe0642974d3b90b0c3c0dbf14d3766c6cd49bd3f20e9c83318703e77e0d",
+          "content_hash": "sha256:ba7ddc8298327299af93b530891cb6eb1660a054330b544823a8ef19d1d83663",
           "path": "data/featured/f20-neural-organoid-oversight-detailed-v1.json"
         }
       ]
