@@ -175,7 +175,7 @@
   },
   "collection": "featured",
   "exposure": "public",
-  "status": "editorial-review",
+  "status": "reviewed",
   "intended_use": [
     "teaching",
     "application-demonstration",
@@ -183,6 +183,13 @@
     "protocol-development",
     "robustness-testing"
   ],
+  "review": {
+    "reviewed_by": [
+      "research/editorial reviewer, Alethic Research"
+    ],
+    "reviewed_at": "2026-08-27",
+    "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+  },
   "rights": {
     "license": "CC-BY-4.0",
     "holder": "Alethic Research",
@@ -221,5 +228,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:bfdba93fb386cd2fdce1026d120ce2464fd38b4303a0cfa4c93cf035ff82ce8a"
+  "content_hash": "sha256:ff10de35e7a3cd0f9083e58352d213e9aebc950293e0c072999004cfc9b728b1"
 }
