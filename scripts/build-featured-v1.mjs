@@ -32,7 +32,7 @@ export const BENCHMARK_PROFILE = 'featured-core-2x2x2-v1';
  * that is correct, and it is why the execution-relevant content is digested separately and
  * checked across the whole sequence.
  */
-export const RECORD_STATUS = 'reviewed';
+export const RECORD_STATUS = 'frozen';
 
 /**
  * The review that moved the corpus past editorial-review. Roles rather than names: this

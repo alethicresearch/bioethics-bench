@@ -160,7 +160,7 @@
   },
   "collection": "featured",
   "exposure": "public",
-  "status": "reviewed",
+  "status": "frozen",
   "intended_use": [
     "teaching",
     "application-demonstration",
@@ -219,5 +219,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:a650eb52bf22b320192fa01e01471cf738b5bef169678b662a3a5145b3301ea5"
+  "content_hash": "sha256:c3a557160f765326c277302229ff641fa60950638f84a5a3c989412459f1eef2"
 }
