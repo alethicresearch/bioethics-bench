@@ -131,6 +131,10 @@ for (const file of files) {
       }
       // A stipulation that is not marked in the scenario is a fact the record claims and
       // the executed text does not carry. SACRE scores the scenario, not the metadata.
+      // A released Featured record is public forever; the record has to say so itself.
+      if (record.status === 'released' && !(record.exposure_history || []).length) {
+        problems.push(`${rel}: a released Featured record must record its public exposure in exposure_history`);
+      }
       if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
         problems.push(
           `${rel}: the record carries ${record.stipulations.length} benchmark stipulation(s) but the scenario does not mark any.\n`

@@ -22,6 +22,36 @@ import { F16_F20 } from './featured-v1/f16-f20.mjs';
 export const FAMILIES = [...F01_F05, ...F06_F10, ...F11_F15, ...F16_F20];
 
 export const BENCHMARK_PROFILE = 'featured-core-2x2x2-v1';
+
+/**
+ * Lifecycle position of every record in this build.
+ *
+ * Advanced deliberately, one step at a time, so the corpus passes through each state as a
+ * commit rather than jumping: editorial-review → reviewed → frozen → released. Lifecycle
+ * metadata is part of the research object, so each transition changes every content hash;
+ * that is correct, and it is why the execution-relevant content is digested separately and
+ * checked across the whole sequence.
+ */
+export const RECORD_STATUS = 'editorial-review';
+
+/**
+ * The review that moved the corpus past editorial-review. Roles rather than names: this
+ * records which function signed off, and no individual is attributed a sign-off they did
+ * not personally give.
+ */
+export const REVIEW = Object.freeze({
+  reviewed_by: ['research/editorial reviewer, Alethic Research'],
+  reviewed_at: '2026-08-27',
+  notes: 'Featured v1 editorial review across three iterations: case-by-case source review against '
+    + 'SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance '
+    + 'review, including replacement of the F05 public pair with legalization policy-attitude evidence '
+    + 'and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across '
+    + 'all twenty families; and the addition of provenance-marked benchmark stipulations to six families. '
+    + 'Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, '
+    + 'content hashes, Featured companion invariants, and 1040 corpus pipeline checks. '
+    + 'No model execution formed part of this review: no QCCS results existed for these records at the '
+    + 'time it was given, and the review concerns the represented objects, not any measurement of them.',
+});
 export const SCHEMA_VERSION = '1.0.0';
 export const RECORD_VERSION = '1.0.0';
 export const AS_OF_DATE = '2026-08-26';
@@ -99,8 +129,22 @@ export function buildRecord(family, form) {
     candidate_pools: pools,
     collection: 'featured',
     exposure: 'public',
-    status: 'editorial-review',
+    status: RECORD_STATUS,
     intended_use: ['teaching', 'application-demonstration', 'paper-illustration', 'protocol-development', 'robustness-testing'],
+    // The schema requires a review record before a record may be frozen or released, which
+    // is the point: nothing reaches those states without one.
+    ...(RECORD_STATUS === 'editorial-review' ? {} : { review: REVIEW }),
+    ...(RECORD_STATUS === 'released'
+      ? {
+        exposure_history: [{
+          date: '2026-08-27',
+          use: 'Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ '
+            + 'and loadable in the SACRE application. Public from this date, and therefore permanently ineligible '
+            + 'as confirmatory-holdout material.',
+          reference: 'https://bioethicsbench.com/cases/',
+        }],
+      }
+      : {}),
     rights: RIGHTS,
     references: family.references,
     schema_version: SCHEMA_VERSION,
@@ -152,7 +196,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const index = {
       generated_from: 'scripts/build-featured-v1.mjs',
       benchmark_profile: BENCHMARK_PROFILE,
-      status: 'editorial-review',
+      status: RECORD_STATUS,
       family_count: FAMILIES.length,
       record_count: records.length,
       families: FAMILIES.map((family) => ({
