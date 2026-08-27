@@ -1,24 +1,21 @@
 #!/usr/bin/env node
 /**
- * Self-test for the validator, against collections other than `featured`.
+ * Self-test for the validator, against collections other than `featured` and against the
+ * benchmark-profile registry itself.
  *
- * Every guard here was written while building Featured v1 and was, until now, gated on
- * `collection === 'featured'` or on one hardcoded profile string. A corpus built to any
- * other collection or profile inherited the schema and almost none of the checks. These
- * probes construct records in `development` and `stress-test`, break one thing each, and
- * assert the validator objects — so the guards are demonstrably general rather than
- * generalised in intent only.
- *
- * Each probe is written to data/development/, validated, and removed.
+ * Every guard here is demonstrated on a deliberately broken development object or registry
+ * entry, so broadening the corpus cannot silently narrow the checks again.
  *
  *   node scripts/validate-selftest.mjs
  */
 import { execFileSync } from 'node:child_process';
-import { mkdirSync, writeFileSync, rmSync, existsSync } from 'node:fs';
+import { mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { canonicalContentHash } from './hash-case.mjs';
 
-const dir = join(process.cwd(), 'data/development');
+const root = process.cwd();
+const dir = join(root, 'data/development');
+const profileFile = join(root, 'schemas/benchmark-profiles.json');
 const created = [];
 
 function ref(citation) {
@@ -84,13 +81,31 @@ function cleanup() {
 }
 
 const results = [];
+function recordResult(label, output, expected) {
+  const caught = expected.test(output);
+  results.push({ label, caught, output: caught ? '' : output.split('\n').filter((l) => l.includes('✗')).slice(0, 2).join(' | ') });
+}
+
 function probe(label, records, expected) {
   cleanup();
   for (const r of records) write(r);
   const output = runValidator();
   cleanup();
-  const caught = expected.test(output);
-  results.push({ label, caught, output: caught ? '' : output.split('\n').filter((l) => l.includes('✗')).slice(0, 2).join(' | ') });
+  recordResult(label, output, expected);
+}
+
+function probeProfileRegistry(label, mutate, expected) {
+  cleanup();
+  const original = readFileSync(profileFile, 'utf8');
+  try {
+    const registry = JSON.parse(original);
+    mutate(registry);
+    writeFileSync(profileFile, `${JSON.stringify(registry, null, 2)}\n`);
+    recordResult(label, runValidator(), expected);
+  } finally {
+    writeFileSync(profileFile, original);
+    cleanup();
+  }
 }
 
 // ── the guards, each on a non-featured record ───────────────────────────────────
@@ -175,6 +190,14 @@ probe('a released record with no exposure history',
   })],
   /must record its public exposure in exposure_history/);
 
+// ── profile-registry invariants ─────────────────────────────────────────────────
+
+probeProfileRegistry(
+  'an asymmetric profile without required Mean aggregation',
+  (registry) => { delete registry.profiles['full-corpus-1x2x2-mean-v1'].required_aggregation; },
+  /require required_aggregation "mean"/,
+);
+
 // ── companion invariants, driven by the profile, on a development family ────────
 
 const conciseBase = (overrides = {}) => baseRecord(overrides);
@@ -225,5 +248,5 @@ probe('a representation form the profile does not declare',
 cleanup();
 const failed = results.filter((r) => !r.caught);
 for (const r of results) console.log(`  ${r.caught ? 'ok  ' : 'FAIL'}  ${r.label}${r.output ? `\n        ${r.output}` : ''}`);
-console.log(`\n${results.length - failed.length}/${results.length} guards demonstrated on non-featured records.`);
+console.log(`\n${results.length - failed.length}/${results.length} guards demonstrated across non-featured records and the profile registry.`);
 if (failed.length) process.exit(1);
