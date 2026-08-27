@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bioethicsbench.com/schemas/case.schema.json",
   "title": "Bioethics Bench case",
-  "description": "A versioned bioethics case record. Three independent axes describe a record's place in the research program and must not be collapsed into one another: `collection` is the record's role, `exposure` is who has seen it, and `status` is where it sits in its editorial lifecycle. A Featured v1 case is collection=featured, exposure=public, status=released. Because it is public, it can never become confirmatory-holdout material.",
+  "description": "A versioned bioethics case record. `case_id` identifies an underlying decision problem; `record_id` identifies one represented executable object. Collection, exposure, editorial status, and representation form are independent axes.",
   "type": "object",
   "required": [
     "record_id",
@@ -27,12 +27,12 @@
     },
     "case_id": {
       "type": "string",
-      "description": "Identifies the underlying case family across versions.",
+      "description": "Identifies the underlying decision-problem family across representations and versions.",
       "pattern": "^[a-z0-9][a-z0-9-]*$"
     },
     "version": {
       "type": "string",
-      "description": "Semantic version of this record. Any substantive change to scenario, candidates, ordering, or provenance is a new version, never an edit.",
+      "description": "Semantic version of this represented record. Any substantive change to scenario, decision question, candidates, ordering, or provenance creates a new version.",
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "title": { "type": "string", "minLength": 1 },
@@ -42,10 +42,49 @@
       "minLength": 1,
       "maxLength": 400
     },
-
+    "decision_question": {
+      "type": "string",
+      "description": "The singular actionable question every executable policy candidate answers.",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "representation": {
+      "type": "object",
+      "description": "How this record represents its case family. Concise and detailed Featured companions are distinct research objects, not interchangeable formatting.",
+      "required": ["form"],
+      "properties": {
+        "form": { "enum": ["concise", "standard", "detailed"] },
+        "companion_record_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "uniqueItems": true
+        },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "benchmark_profile": {
+      "type": ["string", "null"],
+      "description": "Named executable profile, e.g. featured-core-2x2x2-v1."
+    },
+    "jurisdiction_context": {
+      "type": ["string", "null"],
+      "description": "Named legal/regulatory setting when required; null for a deliberately jurisdiction-neutral scenario."
+    },
+    "as_of_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date at which time-sensitive factual, legal, or professional assumptions were checked."
+    },
+    "position_families": {
+      "type": "array",
+      "description": "Optional scholarly map of documented policy-position families; not the executable candidate set and not scored by SACRE.",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "domains": {
       "type": "array",
-      "description": "Bioethical domains this case belongs to. Plural: a neonatal end-of-life case is genuinely both, and forcing a single label loses that.",
+      "description": "Controlled bioethical domains. Plural because one case may genuinely span several fields.",
       "items": {
         "enum": [
           "consent-capacity-refusal",
@@ -59,7 +98,11 @@
           "disability-mental-health",
           "clinical-innovation",
           "medical-ai-data",
-          "global-structural"
+          "global-structural",
+          "animal-one-health",
+          "climate-planetary",
+          "neuroethics",
+          "biosecurity-dual-use"
         ]
       },
       "minItems": 1,
@@ -67,14 +110,12 @@
     },
     "tags": {
       "type": "array",
-      "description": "Free-form editorial tags for browsing and filtering. Not a controlled vocabulary; `domains` is.",
+      "description": "Free-form editorial tags for browsing/filtering. Not a controlled vocabulary; `domains` is.",
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
     },
-
     "scenario": { "type": "string", "minLength": 1 },
     "scenario_provenance": { "$ref": "#/$defs/provenance" },
-
     "candidate_pools": {
       "type": "object",
       "required": ["public", "expert", "framework"],
@@ -85,23 +126,21 @@
       },
       "additionalProperties": false
     },
-
     "collection": {
       "description": "The record's role in the research program.",
       "enum": ["tutorial", "featured", "development", "stress-test", "benchmark"]
     },
     "exposure": {
-      "description": "Who has seen this record. Independent of role: a featured case is public, a development case is usually internal, and confirmatory-holdout material is never committed publicly before execution.",
+      "description": "Who has seen this record. A Featured record is public and can never later become a confirmatory holdout.",
       "enum": ["public", "internal-development", "confirmatory-holdout"]
     },
     "status": {
       "description": "Editorial lifecycle position.",
       "enum": ["draft", "editorial-review", "reviewed", "frozen", "released"]
     },
-
     "intended_use": {
       "type": "array",
-      "description": "What this record is for. Recorded so a case cannot drift into a use it was never reviewed for.",
+      "description": "What this record is for.",
       "items": {
         "enum": [
           "teaching",
@@ -116,7 +155,7 @@
     },
     "exposure_history": {
       "type": "array",
-      "description": "Every prior use, recorded as it happens rather than reconstructed later. This is what keeps a public case demonstrably distinct from confirmatory material.",
+      "description": "Every prior public/development use, recorded prospectively.",
       "items": {
         "type": "object",
         "required": ["date", "use"],
@@ -133,10 +172,9 @@
       "items": { "type": "string" },
       "uniqueItems": true
     },
-
     "rights": {
       "type": "object",
-      "description": "Licensing of this record's own text. Source material keeps its own rights, recorded per source.",
+      "description": "Licensing of this record's own text. Source materials keep their own rights, recorded per source.",
       "required": ["license"],
       "properties": {
         "license": { "type": "string", "minLength": 1 },
@@ -150,7 +188,6 @@
       "description": "Literature and source documents behind this case.",
       "items": { "$ref": "#/$defs/reference" }
     },
-
     "review": {
       "type": ["object", "null"],
       "properties": {
@@ -171,29 +208,34 @@
       },
       "additionalProperties": true
     },
-
     "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
     "content_hash": {
       "type": "string",
-      "description": "Algorithm-prefixed canonical hash; see docs/VERSIONING.md for the canonicalization rule and the field set it covers.",
+      "description": "Algorithm-prefixed canonical hash; see docs/VERSIONING.md.",
       "pattern": "^sha256:[0-9a-f]{64}$"
     }
   },
-
   "allOf": [
     {
       "if": { "properties": { "collection": { "const": "featured" } }, "required": ["collection"] },
       "then": {
         "properties": { "exposure": { "const": "public" } },
-        "required": ["domains", "references", "rights"],
-        "description": "The Featured Collection is public by definition, and each of its cases carries domains, sources and licensing."
+        "required": [
+          "decision_question",
+          "representation",
+          "benchmark_profile",
+          "domains",
+          "references",
+          "rights"
+        ],
+        "description": "Featured records are public, explicitly represented research objects with a decision question and benchmark profile."
       }
     },
     {
       "if": { "properties": { "status": { "enum": ["frozen", "released"] } }, "required": ["status"] },
       "then": {
         "required": ["review", "intended_use"],
-        "description": "A record cannot be frozen or released without a review record and a declared use."
+        "description": "A record cannot be frozen or released without a review record and declared use."
       }
     },
     {
@@ -201,7 +243,6 @@
       "then": { "required": ["parent_record_id", "perturbation_metadata"] }
     }
   ],
-
   "$defs": {
     "pool": {
       "type": "array",
@@ -221,7 +262,7 @@
     },
     "provenance": {
       "type": "object",
-      "description": "Where this text came from. Required, and typed: 'provenance recorded' has to mean something checkable, and an untyped object made it unenforceable.",
+      "description": "Where represented text came from and how it was constructed.",
       "required": ["construction_method"],
       "properties": {
         "construction_method": {
@@ -234,15 +275,9 @@
             "unknown"
           ]
         },
-        "summary": {
-          "type": ["string", "null"],
-          "description": "How this text was arrived at, in a sentence."
-        },
+        "summary": { "type": ["string", "null"] },
         "sources": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
-        "adapted_not_reproduced": {
-          "type": ["boolean", "null"],
-          "description": "True when source material was summarised or reconstructed rather than reproduced, which is the default expectation for copyrighted case text."
-        },
+        "adapted_not_reproduced": { "type": ["boolean", "null"] },
         "model_assistance": {
           "type": ["object", "null"],
           "properties": {
@@ -271,6 +306,5 @@
       "additionalProperties": false
     }
   },
-
   "additionalProperties": false
 }
