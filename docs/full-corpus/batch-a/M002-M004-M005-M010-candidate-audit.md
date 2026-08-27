@@ -1,11 +1,12 @@
 # Batch A candidate-level provenance and distinctness audit — M002, M004, M005, M010
 
-**Status:** candidate-construction audit; no executable records created  
-**Evidence date:** 2026-08-27
+**Status:** candidate-construction audit; executable draft pairs now transcribed for all four families  
+**Evidence date:** 2026-08-27  
+**Implementation status:** M002, M004, M005 and M010 now have `benchmark` / `internal-development` / `draft` concise+detailed records. The asymmetric profiles are registered and SACRE enforces Mean for unequal cross-source partner counts at Step 5 and in report/export fallback paths.
 
 This audit applies the case-construction standard after the deep files were drafted. Its purpose is to ask a stricter question than `are there sources in all three layers?`: **does each source layer actually support the number of decision-relevantly distinct actionable policies required by an executable profile?**
 
-A source-class consensus is not a defect. It should remain one candidate if the evidence supports one candidate. The Bench should register a smaller recurring profile rather than manufacture a second position from the same consensus.
+A source-class consensus is not a defect. It should remain one candidate if the evidence supports one candidate. The Bench should use a smaller recurring profile rather than manufacture a second position from the same consensus.
 
 For that reason this file distinguishes:
 
@@ -19,9 +20,10 @@ For that reason this file distinguishes:
 
 ### Audit result
 
-**Provisional executable class:** `executable-other-profile`  
-**Supported shape:** approximately **1 public × 2 expert × 2 framework** (8 unordered cross-source comparisons).  
-**Record status:** do not author yet; wait until recurring non-2×2×2 shapes are reviewed and registered rather than creating one-off profiles case by case.
+**Executable class:** `executable-other-profile`  
+**Supported shape:** **1 public × 2 expert × 2 framework** (8 unordered cross-source comparisons).  
+**Profile:** `full-corpus-1x2x2-mean-v1`  
+**Record status:** concise and detailed executable drafts transcribed; structurally valid; substantive/editorial review still pending.
 
 ### Public / affected-community layer
 
@@ -74,9 +76,10 @@ These are not identical. `exp1` places a stronger burden on continued supported 
 
 ### Audit result
 
-**Provisional executable class:** `executable-other-profile`  
-**Supported shape:** approximately **2 public × 1 expert × 2 framework** (8 unordered cross-source comparisons).  
-**Record status:** do not author yet; hold until a recurring alternative profile is registered.
+**Executable class:** `executable-other-profile`  
+**Supported shape:** **2 public × 1 expert × 2 framework** (8 unordered cross-source comparisons).  
+**Profile:** `full-corpus-2x1x2-mean-v1`  
+**Record status:** concise and detailed executable drafts transcribed; structurally valid; substantive/editorial review still pending.
 
 ### Public / affected-community layer
 
@@ -122,9 +125,10 @@ These are genuinely different rules about presumptive parental access.
 
 ### Audit result
 
-**Provisional executable class:** `executable-other-profile`  
-**Supported shape:** approximately **2 public × 1 expert × 2 framework** (8 unordered cross-source comparisons).  
-**Record status:** do not author yet; hold until a recurring alternative profile is registered.
+**Executable class:** `executable-other-profile`  
+**Supported shape:** **2 public × 1 expert × 2 framework** (8 unordered cross-source comparisons).  
+**Profile:** `full-corpus-2x1x2-mean-v1`  
+**Record status:** concise and detailed executable drafts transcribed; structurally valid; substantive/editorial review still pending.
 
 ### Public / affected-community layer
 
@@ -170,9 +174,10 @@ The difference is direct individual control versus relationally mediated exercis
 
 ### Audit result
 
-**Provisional executable class:** `executable-2x2x2`  
+**Executable class:** `executable-2x2x2`  
 **Supported shape:** **2 public × 2 expert × 2 framework** (12 unordered cross-source comparisons).  
-**Record status:** candidate set can move to executable-record drafting after the generalized corpus guards are present on the full-corpus branch and record/collection conventions are checked.
+**Profile:** `featured-core-2x2x2-v1`  
+**Record status:** concise and detailed executable drafts transcribed; structurally valid; substantive/editorial review still pending.
 
 ### Public / affected-community layer
 
@@ -226,12 +231,14 @@ These differ over whether qualified interpretation must remain part of the subst
 
 ## Profile-design consequence
 
-This four-case audit gives one clean existing-profile case (**M010**) and three cases whose evidence supports a smaller asymmetric profile (**M002, M004, M005**) rather than a second candidate manufactured from consensus.
+This four-case audit established one symmetric case (**M010**) and three evidence-qualified asymmetric cases (**M002, M004, M005**) rather than manufacturing extra candidates from source-class consensus.
 
-Do **not** register three case-specific profiles now. Continue the first clinical batch far enough to see which asymmetric shapes recur. Then register the smallest stable profile vocabulary supported by the corpus. For example, a recurring `2 public × 1 expert × 2 framework` shape would yield 8 unordered cross-source comparisons and may deserve one named profile; it should not be created solely because M004 and M005 happen to need it.
+The recurring shapes are now registered as the smallest stable profile vocabulary needed by this batch:
 
-Until that profile audit is complete:
+- `full-corpus-1x2x2-mean-v1` for M002;
+- `full-corpus-2x1x2-mean-v1` for M004 and M005;
+- existing `featured-core-2x2x2-v1` for symmetric M010.
 
-- M010 may proceed toward a draft executable 2×2×2 record;
-- M002/M004/M005 remain complete paired scholarly cases with a documented path to `executable-other-profile`;
-- no source class receives an invented extra candidate merely to reach six.
+Both asymmetric profiles yield 8 unordered cross-source comparisons and require Mean aggregation. SACRE now derives the same requirement from candidate shape and refuses an official Sum ranking or provisional Final Policy when partner counts differ. This removes the earlier engineering blocker without changing the evidence-qualified candidate sets.
+
+All four families have draft executable companion records. No source class receives an invented extra candidate merely to reach six. Automated record validity is not substantive validation or release.
