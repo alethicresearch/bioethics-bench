@@ -74,6 +74,7 @@ See [`docs/CASE_CONSTRUCTION.md`](docs/CASE_CONSTRUCTION.md),
 | [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md) | Collections, release principles, what may be mixed with what |
 | [`docs/VERSIONING.md`](docs/VERSIONING.md) | Record identity and the canonical JCS + SHA-256 content hash |
 | [`docs/CASE_CONSTRUCTION_STANDARD.md`](docs/CASE_CONSTRUCTION_STANDARD.md) | How a case is built and what makes a candidate executable |
+| [`docs/CORPUS_AUTHORING.md`](docs/CORPUS_AUTHORING.md) | **What the checks enforce.** Read before authoring records outside Featured v1 |
 | [`docs/FEATURED_V1_DECISIONS.md`](docs/FEATURED_V1_DECISIONS.md) | Featured v1 size, representation pairs, required animal ethics |
 | [`docs/FEATURED_V1_SELECTION.md`](docs/FEATURED_V1_SELECTION.md) | The 20 Featured case families and why each is in v1 |
 | [`docs/featured-v1-research/`](docs/featured-v1-research/) | Case dossiers and the source/provenance ledger — the editorial source of truth for case text |
