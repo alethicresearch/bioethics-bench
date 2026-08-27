@@ -10,11 +10,11 @@ The earlier `FEATURED_LONGLIST_v0.md` was intentionally bounded at 56 topics bec
 
 A public Featured release may be curated from the inventory, and may grow across releases. There is no hard cap on the master inventory and no requirement that a later release remain at 24–30 cases.
 
-The three inventory files currently contain **150 provisional decision problems**. Inventory IDs (`M001`, etc.) are editorial handles only; they are **not** final `case_id` values and should not be cited as immutable benchmark identifiers.
+The three inventory files currently contain **175 provisional decision problems**. Inventory IDs (`M001`, etc.) are editorial handles only; they are **not** final `case_id` values and should not be cited as immutable benchmark identifiers.
 
 - [`01-clinical-life-reproduction.md`](01-clinical-life-reproduction.md) — M001–M050
 - [`02-research-public-global.md`](02-research-public-global.md) — M051–M100
-- [`03-emerging-ai-neuro-animal-planetary.md`](03-emerging-ai-neuro-animal-planetary.md) — M101–M150
+- [`03-emerging-ai-neuro-animal-planetary.md`](03-emerging-ai-neuro-animal-planetary.md) — M101–M175
 
 See [`../CASE_CONSTRUCTION_STANDARD.md`](../CASE_CONSTRUCTION_STANDARD.md) for the proposed executable-record design.
 
