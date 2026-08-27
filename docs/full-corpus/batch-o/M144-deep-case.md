@@ -1,0 +1,37 @@
+# M144 — Disclosure of AI involvement to patients
+
+**Case-family identity:** M144  
+**Primary domain:** clinical AI / transparency and consent  
+**Research status:** deep case draft  
+**Evidence date:** 2026-08-27
+
+## Decision architecture
+**Decision-maker:** health-system AI governance committee.  
+**Decision question:** When should patients be told that AI materially contributed to diagnosis, triage or treatment planning?
+
+## Scenario pair
+**Concise:** A health system uses validated AI tools that sometimes materially influence diagnosis or treatment recommendations. Clinicians remain responsible for final decisions. The system must decide whether every material AI contribution should be disclosed specifically to the patient, whether specific disclosure is required only when AI changes risks/options or acts with substantial autonomy, or whether general institutional notice is enough for routine low-risk AI while high-impact uses receive case-specific disclosure.
+
+**Detailed:** A health system uses multiple AI-enabled tools, ranging from routine image triage and documentation support to diagnostic and treatment-recommendation systems. The institution wants a disclosure policy that is informative rather than boilerplate. AMA policy emphasizes transparency to physicians and patients, while WHO emphasizes transparency, explainability and human autonomy. Patient-attitude research generally shows that desire for disclosure increases as AI has a more consequential or autonomous role. The system must decide whether any material AI contribution triggers specific disclosure, whether disclosure should be tied to effects on risks/options and patient choice, or whether a tiered system should combine general notice for low-impact tools with specific disclosure for autonomous/high-impact use.
+
+## Source architecture
+AMA's current AI policy calls for transparency around health-care AI and explainable tools. WHO requires transparency and intelligibility as core AI-governance principles. Empirical patient research supports meaningful disclosure rather than silent use, but the exact threshold and content of disclosure remain unsettled.
+
+## Serious policy families
+- disclose every material AI contribution to diagnosis/triage/treatment;
+- disclose specifically when AI changes meaningful risks, options or decision authority;
+- tiered disclosure: general notice for low-impact routine AI, specific notice for high-impact/autonomous uses.
+
+## Normative bridges
+**Respect for persons:** patients may reasonably care about how consequential judgments were produced.  
+**Materiality:** disclosure should communicate information relevant to choice, not overwhelm patients with invisible infrastructure.  
+**Trust/accountability:** transparency can help patients understand who remains responsible and how to contest decisions.
+
+## Construction risks
+Define “material contribution”; do not equate disclosure with informed consent for every tool; do not make boilerplate transparency count as meaningful notice.
+
+## Executable judgment
+Provisional candidate-audit target. Governance sources clearly support transparency, and empirical patient evidence may support action-distinct universal-versus-material/tiered disclosure rules.
+
+## Principal sources
+AMA 2025–2026 AI transparency/explainability policy; WHO AI governance guidance; patient-attitude studies on disclosure of AI involvement in clinical care.
