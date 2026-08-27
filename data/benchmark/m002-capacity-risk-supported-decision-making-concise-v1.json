@@ -1,0 +1,237 @@
+{
+  "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
+  "case_id": "m002-capacity-risk-supported-decision-making",
+  "version": "1.0.0",
+  "title": "Capacity, risk and supported decision-making",
+  "short_description": "An adult with fluctuating decision-making ability faces an urgent high-stakes treatment decision. The team must decide what support and reassessment are required before shifting authority away from the patient.",
+  "decision_question": "Before relying on a surrogate or temporary protective intervention, what support and reassessment should the clinical team require for this adult's high-stakes treatment decision?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m002-capacity-risk-supported-decision-making-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."
+  },
+  "benchmark_profile": "full-corpus-1x2x2-mean-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m002-legal-options",
+      "kind": "legal",
+      "statement": "The hospital may legally use supported decision-making, a surrogate if capacity is absent, or a temporary protective intervention.",
+      "rationale": "The benchmark holds legal availability constant so the represented decision concerns the ethical and clinical process rather than jurisdictional availability of these mechanisms."
+    }
+  ],
+  "position_families": [
+    "individualized supported participation before substitution",
+    "rights-maximizing support of will and preferences",
+    "functional capacity threshold with surrogate transition",
+    "narrow protective intervention when urgent harm becomes irreversible"
+  ],
+  "domains": [
+    "consent-capacity-refusal",
+    "disability-mental-health"
+  ],
+  "tags": [
+    "capacity",
+    "supported decision-making",
+    "surrogate",
+    "relational autonomy",
+    "mental health"
+  ],
+  "scenario": "An adult with an acute mental-health episode must decide within about six hours whether to undergo urgent surgery for a serious infection. With simplified explanations, the patient can describe the operation, alternatives and major risks and repeatedly says they want to avoid surgery, but during periods of greater symptoms has difficulty applying the risk of life-threatening deterioration to their own situation. The preference remains consistent, a trusted supporter is available, and further communication support and reassessment can occur without using up the treatment window. For this benchmark, assume the hospital may legally use supported decision-making, a surrogate if capacity is absent, or a temporary protective intervention. The team must decide what process to require before moving away from the patient's own decision.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation based on the cited empirical and professional literature. The paired forms hold the decision question, candidate set and benchmark assumptions fixed; only scenario detail differs. Any explicit benchmark stipulations are constructed assumptions rather than empirical claims.",
+    "sources": [
+      {
+        "citation": "Knight F, Kokanović R, Ridge D, et al. Supported Decision-Making: The Expectations Held by People With Experience of Mental Illness. Qual Health Res. 2018;28(6):1002-1015. PMID 29557294.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29557294/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Kokanović R, Brophy L, McSherry B, et al. Supported decision-making from the perspectives of mental health service users, family members supporting them and mental health practitioners. Aust N Z J Psychiatry. 2018. PMID 29952217.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29952217/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "World Health Organization. WHO QualityRights module on supported decision-making & advance planning. 2019.",
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789241516761",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.2, Decisions for Adult Patients Who Lack Capacity.",
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/decisions-adult-patients-who-lack-capacity",
+        "accessed": "2026-08-27"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Use individualized supported decision-making that adapts the form and intensity of help to the patient's expressed preferences, and reassess during the best available period before substituting another decision-maker.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from lived-experience and systematic-review evidence emphasizing individualized support, accessible communication and continued participation rather than a fixed institutional preference for substitution.",
+          "sources": [
+            {
+              "citation": "Knight F, Kokanović R, Ridge D, et al. Supported Decision-Making: The Expectations Held by People With Experience of Mental Illness. Qual Health Res. 2018;28(6):1002-1015. PMID 29557294.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29557294/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Kokanović R, Brophy L, McSherry B, et al. Supported decision-making from the perspectives of mental health service users, family members supporting them and mental health practitioners. Aust N Z J Psychiatry. 2018. PMID 29952217.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29952217/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Casey H, Trayer Á, Desmond D, Coffey L. Systematic review of everyday decision-making in adults with intellectual disability. PMID 37436408.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37436408/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Maximize supported decision-making and interpretation of the patient's own will and preferences throughout the available decision window, using substitute decision-making only as a last resort.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from WHO QualityRights' rights-based supported-decision-making architecture; the scenario-specific time-window formulation is Bench-authored.",
+          "sources": [
+            {
+              "citation": "World Health Organization. WHO QualityRights module on supported decision-making & advance planning. 2019.",
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789241516761",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Provide reasonable support and reassess decision-specific capacity; if the relevant capacity remains absent, use the appropriate surrogate while continuing to involve the patient as much as possible.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA Opinion 2.1.2, which requires participation to the greatest extent possible and use of an appropriate surrogate when capacity is absent.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.2, Decisions for Adult Patients Who Lack Capacity.",
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/decisions-adult-patients-who-lack-capacity",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Preserve the patient's own decision through communication support and a trusted supporter whenever that can make the choice meaningfully theirs; fluctuating symptoms alone should not transfer decisional authority.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from relational autonomy and supported agency: relational and communicative supports can be constitutive of effective autonomous choice, so removable interactional barriers should not be treated as incapacity.",
+          "sources": [
+            {
+              "citation": "Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "If supported reassessment still shows inability to appreciate the grave consequence and the treatment window is closing, permit a narrowly bounded protective or surrogate decision to prevent irreversible harm.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from decision-specific autonomy, beneficence and nonmaleficence under time constraint: persistent impairment of appreciation can undermine authorization while delay can create irreversible harm.",
+          "sources": [
+            {
+              "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "teaching",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."
+  },
+  "references": [
+    {
+      "citation": "Knight F, Kokanović R, Ridge D, et al. Supported Decision-Making: The Expectations Held by People With Experience of Mental Illness. Qual Health Res. 2018;28(6):1002-1015. PMID 29557294.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29557294/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Kokanović R, Brophy L, McSherry B, et al. Supported decision-making from the perspectives of mental health service users, family members supporting them and mental health practitioners. Aust N Z J Psychiatry. 2018. PMID 29952217.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29952217/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Casey H, Trayer Á, Desmond D, Coffey L. Systematic review of everyday decision-making in adults with intellectual disability. PMID 37436408.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37436408/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "World Health Organization. WHO QualityRights module on supported decision-making & advance planning. 2019.",
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789241516761",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.2, Decisions for Adult Patients Who Lack Capacity.",
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/decisions-adult-patients-who-lack-capacity",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.",
+      "type": "book"
+    },
+    {
+      "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:8c237c8945e2de3d0129aa1680f838c6ba30282b2b64f46d7a3da009cc5263b9"
+}
