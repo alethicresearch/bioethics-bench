@@ -67,6 +67,25 @@ See [`docs/CASE_CONSTRUCTION.md`](docs/CASE_CONSTRUCTION.md),
 [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md), and
 [`docs/VERSIONING.md`](docs/VERSIONING.md).
 
+## Documents
+
+| Document | What it settles |
+|---|---|
+| [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md) | Collections, release principles, what may be mixed with what |
+| [`docs/VERSIONING.md`](docs/VERSIONING.md) | Record identity and the canonical JCS + SHA-256 content hash |
+| [`docs/CASE_CONSTRUCTION_STANDARD.md`](docs/CASE_CONSTRUCTION_STANDARD.md) | How a case is built and what makes a candidate executable |
+| [`docs/FEATURED_V1_DECISIONS.md`](docs/FEATURED_V1_DECISIONS.md) | Featured v1 size, representation pairs, required animal ethics |
+| [`docs/FEATURED_V1_SELECTION.md`](docs/FEATURED_V1_SELECTION.md) | The 20 Featured case families and why each is in v1 |
+| [`docs/featured-v1-research/`](docs/featured-v1-research/) | Case dossiers and the source/provenance ledger — the editorial source of truth for case text |
+| [`docs/EXECUTION_PLAN.md`](docs/EXECUTION_PLAN.md) | **Proposal, awaiting review.** How records get executed at corpus scale: architecture, the five guards, phased spend, and the open storage/exposure questions |
+| [`CONTENT-LICENSE.md`](CONTENT-LICENSE.md) | CC BY 4.0 on Bench-authored case text, and what it does not cover |
+
+The review → decision → implementation cycle for this corpus is recorded in the SACRE
+repository, because the two move together. Start at
+[**`docs/research-program/reviews/OPEN_DECISIONS.md`**](https://github.com/xnuxi/sacre-prototype/blob/claude/normative-computation-research-f6zfep/docs/research-program/reviews/OPEN_DECISIONS.md)
+— every question awaiting the research reviewer, what it blocks, and where the current
+work actually lives in each repository.
+
 ## Relationship to the research program
 
 | Component | Role |
