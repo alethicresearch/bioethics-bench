@@ -23,7 +23,7 @@ Investigators propose a randomized trial of a new treatment for a chronic condit
 
 **Public-derived**
 - **pub1:** Allow placebo only if participants are clearly told that effective treatment exists, can leave the trial freely, and have prompt rescue treatment if symptoms worsen.
-- **pub2:** Require every participant to receive the proven treatment, using the experimental therapy as an add-on or comparing it directly with standard care rather than withholding effective treatment.
+- **pub2:** Prefer an active-control or add-on design when effective treatment exists and placebo would impose more than low incremental risk or meaningful treatment deprivation on participants.
 
 **Expert-derived**
 - **exp1:** Permit placebo when compelling scientifically sound reasons make it necessary and withholding the best proven intervention creates no additional risk of serious or irreversible harm.
@@ -36,6 +36,7 @@ Investigators propose a randomized trial of a new treatment for a chronic condit
 **Primary source anchors**
 - World Medical Association, Declaration of Helsinki, 2024 revision, paragraph 33. The current text retains the best-proven-intervention default and permits placebo/no treatment only under a compelling scientifically sound methodological reason plus no additional risk of serious or irreversible harm.
 - CIOMS, *International Ethical Guidelines for Health-related Research Involving Humans*.
+- Public-consultation and trial-participant literature showing conditional acceptance of placebo research, sensitivity to treatment deprivation, and preference for active treatment as risk rises.
 - Emanuel, Wendler & Grady, “What makes clinical research ethical?” *JAMA* 2000.
 
 **Review risk:** the scenario is intentionally constructed inside the Helsinki exception. If the temporary deprivation carries serious or irreversible risk, exp1 stops being defensible and the case becomes too easy.
@@ -59,8 +60,8 @@ A multinational sponsor plans a trial in a lower-resource country for a conditio
 ### Executable candidates
 
 **Public-derived**
-- **pub1:** Do not enroll participants into a control arm that provides less than the best proven treatment unless the host community could not reasonably receive that treatment and the study offers substantial local benefit.
-- **pub2:** Allow a locally relevant control standard only if community representatives and local investigators help design the study and the sponsor commits to meaningful post-trial access or health-system benefit.
+- **pub1:** Co-design the control-care package with participant and community representatives, and do not justify a lower standard merely because the host population lacks access to better care.
+- **pub2:** Permit a locally relevant design only with community ownership of key decisions and enforceable commitments to sustainable post-trial access or health-system benefits.
 
 **Expert-derived**
 - **exp1:** Use the best proven intervention as the comparator unless a scientifically and ethically justified exception meets international guidance and does not exploit the host population's lack of access.
@@ -73,6 +74,7 @@ A multinational sponsor plans a trial in a lower-resource country for a conditio
 **Primary source anchors**
 - CIOMS 2016: responsiveness, fair selection/benefits, choice of control, vulnerable populations and low-resource research.
 - Declaration of Helsinki 2024.
+- Community consultations and stakeholder work in Tanzania, Nigeria, South Africa, and Kenya on standard-of-care packages, research benefits, and community ownership in international research.
 - International standards-of-care and exploitation literature in global research ethics.
 - Emanuel/Wendler/Grady ethical-research framework.
 
@@ -97,8 +99,8 @@ Scientific advances have made it increasingly feasible to culture human embryos 
 ### Executable candidates
 
 **Public-derived**
-- **pub1:** Retain the 14-day limit until the current public-dialogue process shows that a different boundary has durable social legitimacy and clear safeguards.
-- **pub2:** Permit carefully reviewed research beyond 14 days when the purpose is serious health knowledge and participants in deliberative public processes are satisfied that transparent limits and oversight remain.
+- **pub1:** Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.
+- **pub2:** Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.
 
 **Expert-derived**
 - **exp1:** Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.
@@ -110,12 +112,13 @@ Scientific advances have made it increasingly feasible to culture human embryos 
 
 **Primary source anchors**
 - ISSCR Guidelines for Stem Cell Research and Clinical Translation, 2025 v1.2.
+- Yui et al., *Stem Cell Reports* 2023: Japanese public survey (n=3,000) on extending embryo culture beyond 14 days, showing support, opposition, and substantial uncertainty.
+- 2024 IVF/ICSI patient focus-group research on extension of the 14-day rule.
 - Nuffield Council on Bioethics, *Reviewing the 14-day rule for human embryo research*, 2025–26.
-- Nuffield/Ipsos 2026 Citizens' Summit and Community Conversations.
 
 **Important date constraint:** as of 26 August 2026, do **not** attribute a substantive result to the Nuffield public dialogue unless its final report is actually published. Project materials establish that deliberation is occurring and that diverse public values are being gathered; they do not license us to invent the result.
 
-**Review risk:** public-derived candidates are especially provisional until the 2026 dialogue findings can be incorporated accurately.
+**Review risk:** the public layer should preserve the observed combination of support, opposition, and uncertainty rather than implying a settled public mandate in either direction.
 
 ---
 
