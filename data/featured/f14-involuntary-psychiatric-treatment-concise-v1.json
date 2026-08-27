@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "disability-mental-health",
@@ -158,9 +159,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -190,5 +191,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:747b55d61f439fee6e185b78cf3612b9b1b80cb9b147db19c0e3b57695b53384"
+  "content_hash": "sha256:9051e6d80493ef55c90e5e7d1d5bb13628918ec1045dda1fd3d4b18a57bc95d7"
 }

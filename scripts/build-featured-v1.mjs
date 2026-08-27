@@ -58,12 +58,15 @@ function candidatePools(family) {
 }
 
 function scenarioProvenance(family, form) {
+  const stipulated = (family.stipulations || []).length > 0
+    ? ' The scenario states editorial benchmark stipulations, listed in this record\u2019s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.'
+    : '';
   const shape = form === 'concise'
     ? 'The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.'
     : 'The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.';
   return {
     construction_method: 'adapted-from-source',
-    summary: `Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. ${shape}`,
+    summary: `Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. ${shape}${stipulated}`,
     sources: family.scenarioSources,
     adapted_not_reproduced: true,
   };
@@ -85,6 +88,9 @@ export function buildRecord(family, form) {
     },
     benchmark_profile: BENCHMARK_PROFILE,
     jurisdiction_context: family.jurisdictionContext ?? null,
+    // Shared by reference between companions: both representations state the same
+    // factual situation, so a stipulation cannot hold in one and not the other.
+    stipulations: family.stipulations ?? [],
     as_of_date: AS_OF_DATE,
     domains: family.domains,
     tags: family.tags,
@@ -156,6 +162,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         decision_question: family.decisionQuestion,
         domains: family.domains,
         tags: family.tags,
+        stipulations: family.stipulations ?? [],
         records: FORMS.map((form) => {
           const record = records.find((r) => r.record_id === recordId(family.caseId, form));
           return {

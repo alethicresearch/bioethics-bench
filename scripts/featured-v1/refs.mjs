@@ -221,6 +221,24 @@ export const REF = {
     citation: 'Contemporary professional guidance (2025–26) on communication, family objections, pregnancy, reasonable accommodation and institutional dispute processes after death by neurologic criteria.',
     type: 'guideline',
   },
+  gallupEndOfLifeLegalization2026: {
+    citation: 'Gallup Values and Beliefs poll, end-of-life trend (May 2026 reading): asked whether doctors should be allowed by law to end a terminally ill patient\u2019s life by painless means at the patient\u2019s and family\u2019s request, a clear majority of US adults answer yes; asked separately whether a doctor should be allowed to help a terminally ill patient commit suicide, support is somewhat lower but still majority. Both are policy-permission questions, distinct from the moral-acceptability item.',
+    type: 'survey',
+    url: 'https://news.gallup.com/poll/1684/euthanasia.aspx',
+  },
+  emanuel2016AttitudesPractices: {
+    citation: 'Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, \u201CAttitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,\u201D JAMA 316, no. 1 (2016): 79\u201390 \u2014 comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.',
+    type: 'article',
+    doi: '10.1001/jama.2016.8499',
+  },
+  maidPublicOppositionEvidence: {
+    citation: 'Public-opinion and stakeholder research on opposition to legal assisted dying: a persistent minority (roughly a quarter to a third of respondents across US and European surveys) opposes legal access, with reasons concentrated on the clinician\u2019s role, the adequacy and funding of palliative care, and concern about pressure on vulnerable, disabled and older people.',
+    type: 'survey',
+  },
+  bloodlessMedicineProgrammes: {
+    citation: 'Patient-blood-management and bloodless-medicine programme literature and affected-community hospital-liaison materials, describing referral of patients who refuse allogeneic blood to centres with an established transfusion-free surgical programme rather than proceeding at a centre without one.',
+    type: 'article',
+  },
   gallupMoralAcceptability2026: {
     citation: 'Gallup Values and Beliefs poll, May 2026: doctor-assisted suicide judged morally acceptable by 49% and morally wrong by 45% of US adults; long-running trend shows persistent pluralism conditioned on terminal illness, suffering and safeguards.',
     type: 'survey',
@@ -341,7 +359,7 @@ export const REF = {
 };
 
 export const RIGHTS = {
-  license: 'unresolved-pending-release-decision',
+  license: 'CC-BY-4.0',
   holder: 'Alethic Research',
-  notes: 'The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released.',
+  notes: 'Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record\u2019s references and in each candidate\u2019s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash.',
 };

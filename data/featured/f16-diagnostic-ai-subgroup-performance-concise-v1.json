@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f16-subgroup-error-rates",
+      "kind": "numerical",
+      "statement": "The task is detection of a treatable condition on diagnostic imaging. The false-negative rate is 8 per cent overall for the AI against 14 per cent for current unaided practice. In one minority subgroup, about 6 per cent of the screened population, the AI false-negative rate is 13 per cent against 15 per cent for unaided practice in that same subgroup.",
+      "rationale": "The dossier notes that \"materially worse\" is underspecified. Without absolute numbers each scorer supplies their own, and the disparity they are reasoning about is not the same one. These figures are chosen so the case is genuinely hard: the AI is better than current practice for every group, including the subgroup, while the gap between groups is large. They are a benchmark stipulation and are not measurements of any deployed system."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "medical-ai-data"
@@ -25,10 +33,10 @@
     "human oversight",
     "monitoring"
   ],
-  "scenario": "A diagnostic AI outperforms current practice overall but has a meaningfully higher false-negative rate in one minority subgroup. The health system must decide whether to withhold deployment, deploy with subgroup-specific safeguards and human review, or accept the disparity while monitoring net benefit.",
+  "scenario": "A diagnostic AI outperforms current practice overall but does markedly worse for one minority subgroup. For this benchmark, assume the task is detection of a treatable condition on imaging, and that the AI false-negative rate is 8 per cent overall against 14 per cent for current unaided practice, but 13 per cent in a minority subgroup of about 6 per cent of the screened population, against 15 per cent for unaided practice in that subgroup. The health system must decide whether to withhold deployment, deploy with subgroup-specific safeguards and human review, or accept the disparity while monitoring net benefit.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "World Health Organization, Ethics and Governance of Artificial Intelligence for Health: WHO Guidance (Geneva: WHO, 2021).",
@@ -170,9 +178,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -207,5 +215,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:75f6ed8c227c33e85b8b0482d28548f05ad8cd09432cbeb9de05a4b23b60ff67"
+  "content_hash": "sha256:a17da181a88d2b4600364835f9c2ed4dceb79239ac38c5e5f8fcdc1d2f8b556e"
 }

@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "research-ethics",
@@ -118,11 +119,11 @@
     "framework": [
       {
         "id": "fw1",
-        "text": "Reject a trial design that makes poverty itself the reason participants receive inferior protection; background injustice should not be converted into a research advantage.",
+        "text": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.",
         "source_pool": "framework",
         "provenance": {
           "construction_method": "derived-from-framework",
-          "summary": "Derived from anti-exploitation accounts in global justice: the reasoning bridge is that a background injustice which lowers a population’s bargaining position cannot supply the justification for the terms it makes available, so deprivation-derived comparators are ruled out. The policy sentence is a Bench construction.",
+          "summary": "Derived from anti-exploitation accounts in global justice: the reasoning bridge is that a background injustice which lowers a population’s bargaining position cannot supply the justification for the terms it makes available, so the comparator is fixed by what the community would accept absent that deprivation. The policy sentence is a Bench construction.",
           "sources": [
             {
               "citation": "Scholarship on exploitation, responsiveness and fair benefits in international research, including the standard-of-care debate following multinational perinatal HIV trials.",
@@ -164,9 +165,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -198,5 +199,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:2544ec45d7c10a36babfaf4ceb7e76741053a2c6e5d8f5ef324873d77fdc46e2"
+  "content_hash": "sha256:5fab54fa8b0cdbcb74ee52a59e8fcb4df27f8be17f07a4678b889c6e07f44de2"
 }

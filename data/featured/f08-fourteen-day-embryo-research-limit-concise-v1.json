@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "reproduction-genetics",
@@ -123,11 +124,11 @@
     "framework": [
       {
         "id": "fw1",
-        "text": "A fixed bright line can be justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+        "text": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
         "source_pool": "framework",
         "provenance": {
           "construction_method": "derived-from-framework",
-          "summary": "Derived from public-reason accounts of rule-making under reasonable disagreement: the reasoning bridge is that where a precise moral status cannot be publicly established, a clear and stable boundary can still be justified by the predictability and trust it secures. The policy sentence is a Bench construction.",
+          "summary": "Derived from public-reason accounts of rule-making under reasonable disagreement: the reasoning bridge is that where a precise moral status cannot be publicly established, a clear and stable boundary can still be justified by the predictability and trust it secures - which is why the policy has to exclude case-by-case exception, since a line that bends on application is not the rule being defended. The policy sentence is a Bench construction.",
           "sources": [
             {
               "citation": "John Rawls, A Theory of Justice, revised ed. (Harvard University Press, 1999).",
@@ -164,9 +165,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -197,5 +198,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:e63ec4f0872f0fa68f2df7a548402f21dd5c17524afac0ef0532dd60041d58b0"
+  "content_hash": "sha256:67370b7d5d6db7923678772d2d14868e51c4d18a970daf4a82633f31b64b36a9"
 }

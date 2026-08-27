@@ -76,6 +76,26 @@
       "format": "date",
       "description": "Date at which time-sensitive factual, legal, or professional assumptions were checked."
     },
+    "stipulations": {
+      "type": "array",
+      "description": "Editorial benchmark stipulations: constructed numerical or contextual assumptions that make the decision problem determinate enough to execute and to perturb. A stipulation is a property of the benchmark, not a claim about the world, and must also be marked in the scenario text. Companion representations must carry identical stipulations, because they represent the same factual state.",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "statement", "rationale"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "kind": { "enum": ["numerical", "contextual", "legal", "scientific"] },
+          "statement": { "type": "string", "minLength": 1 },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Why the benchmark needs this fixed, and why this value rather than another. A stipulation without a stated reason is indistinguishable from an invented fact."
+          }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
     "position_families": {
       "type": "array",
       "description": "Optional scholarly map of documented policy-position families; not the executable candidate set and not scored by SACRE.",

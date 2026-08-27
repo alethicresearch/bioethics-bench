@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "animal-one-health",
@@ -129,11 +130,11 @@
       },
       {
         "id": "fw2",
-        "text": "Animals have direct claims to appropriate treatment when ill, while present agricultural convenience does not justify imposing preventable resistance risks on future humans and animals; regulate both duties explicitly.",
+        "text": "Guarantee treatment for animals that are ill as a claim they hold directly, and cap by rule the non-therapeutic uses that transfer resistance risk to future humans and animals, rather than trading one duty against the other.",
         "source_pool": "framework",
         "provenance": {
           "construction_method": "derived-from-framework",
-          "summary": "Derived from capabilities-based accounts of what is owed to animals together with intergenerational justice: the reasoning bridge is that these are two distinct duties — one owed to the animal now, one owed to future humans and animals — so a policy must satisfy both rather than trade one against the other implicitly. This is where the animals’ direct moral claims enter the record. The policy sentence is a Bench construction.",
+          "summary": "Derived from capabilities-based accounts of what is owed to animals together with intergenerational justice: the reasoning bridge is that these are two distinct duties — one owed to the animal now, one owed to future humans and animals — so the policy has to discharge each with its own instrument rather than let a single dial trade them off implicitly. This is where the animals’ direct moral claims enter the record. The policy sentence is a Bench construction.",
           "sources": [
             {
               "citation": "Martha C. Nussbaum, Justice for Animals: Our Collective Responsibility (Simon & Schuster, 2023).",
@@ -159,9 +160,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -192,5 +193,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:db90a58015424d1eab94a89ad96eb688b53f0f9ac82b111736c36ded019c9d4f"
+  "content_hash": "sha256:a644019152c374953bb162f7665684174bc6f3d369fe4cc4e8dba8975fb2ca6f"
 }

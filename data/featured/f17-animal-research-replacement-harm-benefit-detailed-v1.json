@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f17-species-severity-replacement",
+      "kind": "scientific",
+      "statement": "The study uses mice. The procedures are classified as moderate severity under the applicable regulatory framework. The organ-on-chip and computational replacement has been validated for two related endpoints but not for the endpoint this study addresses.",
+      "rationale": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open; a severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "animal-one-health",
@@ -26,10 +34,10 @@
     "animal welfare",
     "research oversight"
   ],
-  "scenario": "Researchers propose an experiment intended to answer an important biomedical question that could plausibly improve treatment of a serious disease. The study would use sentient laboratory animals and cause moderate, time-limited pain and distress despite anesthesia, analgesia, refinement, and humane endpoints. The investigators have reduced animal numbers and cannot answer the full question with currently validated nonanimal methods. A newer organ-on-chip and computational approach is promising and could eventually replace the animal model, but its predictive validity for this particular endpoint remains uncertain. Approving the animal study could produce useful evidence sooner; delaying it could accelerate replacement while postponing the research question. The animal-research committee must decide whether the anticipated human benefit justifies the animal harms and what weight to give an incompletely validated replacement pathway.",
+  "scenario": "Researchers propose an experiment intended to answer an important biomedical question that could plausibly improve treatment of a serious disease. For this benchmark, assume the study uses mice and that the procedures are classified as moderate severity under the applicable regulatory framework: time-limited pain and distress despite anesthesia, analgesia, refinement, and humane endpoints. The investigators have reduced animal numbers and cannot answer the full question with currently validated nonanimal methods. A newer organ-on-chip and computational approach could eventually replace the animal model; assume it has been validated for two related endpoints but not for the endpoint this study addresses, so its predictive validity here remains uncertain. Approving the animal study could produce useful evidence sooner; delaying it could accelerate replacement while postponing the research question. The animal-research committee must decide whether the anticipated human benefit justifies the animal harms and what weight to give an incompletely validated replacement pathway.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "Nuffield Council on Bioethics, The Ethics of Research Involving Animals (London: Nuffield Council on Bioethics, 2005).",
@@ -173,9 +181,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -211,5 +219,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:de8e4be00dcb11da6c800b285c45c97667da48fea77b64ab0a115077d038b754"
+  "content_hash": "sha256:b11451d99eae3cddb4514cdff3a66f416dfa1131a1cdcf6645e5f2d03c6b7dfa"
 }

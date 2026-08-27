@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f19-tradeoff-magnitude",
+      "kind": "numerical",
+      "statement": "The proposed pathway change cuts that pathway’s greenhouse-gas emissions by about 40 per cent. It raises consumable cost by about 8 per cent per procedure, adds about 10 minutes of staff time per case, and lowers one secondary performance measure - patient-reported comfort at 24 hours - by about 3 percentage points. Major clinical outcomes are unchanged.",
+      "rationale": "The dossier requires at least one quantified trade-off, because \"slightly\" means different things to different scorers and the whole case turns on how much clinical ground a large environmental gain may buy. The magnitudes are stipulated so that the emissions gain is clearly large, the clinical cost is clearly real but not on a major outcome, and neither candidate is obviously right."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "climate-planetary",
@@ -26,10 +34,10 @@
     "future generations",
     "clinical trade-offs"
   ],
-  "scenario": "A health system can substantially reduce emissions by changing several clinically acceptable care pathways, but the lower-carbon options are modestly more costly or less convenient and may slightly reduce performance on some secondary outcomes. It must decide when carbon reduction may legitimately influence clinical and procurement policy.",
+  "scenario": "A health system can substantially cut a care pathway’s emissions by adopting clinically acceptable alternatives that cost more or work less smoothly. For this benchmark, assume the change cuts that pathway’s greenhouse-gas emissions by about 40 per cent, at about 8 per cent higher consumable cost per procedure, about 10 extra minutes of staff time per case, and about 3 percentage points lower patient-reported comfort at 24 hours, with no measurable difference in major clinical outcomes. It must decide when carbon reduction may legitimately influence clinical and procurement policy.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
@@ -166,9 +174,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -198,5 +206,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:66a15d3f4c3b0e3cc902e21436f05c5b178f17653ebcfd3d4ed09b81122070aa"
+  "content_hash": "sha256:4c62e2554ee24db6d00bd3a369ef822b777777a2df1a92481b3c7dc5cfd7d58e"
 }

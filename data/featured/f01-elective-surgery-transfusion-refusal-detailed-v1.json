@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "consent-capacity-refusal"
@@ -61,20 +62,19 @@
       },
       {
         "id": "pub2",
-        "text": "Proceed only after a second specialist review confirms that blood-conservation options, emergency contingencies, and transfer alternatives have been fully discussed with the patient.",
+        "text": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme; refer the patient to a centre experienced in bloodless medicine before scheduling the operation.",
         "source_pool": "public",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the same affected-community evidence together with patient-information practice emphasizing advance discussion of contingencies and transfer. The process safeguard is an editorial translation of the community preference for informed, individually planned bloodless care, not a directly surveyed policy option.",
+          "summary": "Adapted from affected-community practice and the bloodless-medicine programme literature, in which patients who refuse allogeneic blood are directed to centres with an established transfusion-free surgical programme rather than treated wherever they present. This states a different decision from pub1 - refer rather than proceed here - not the same decision with an added safeguard.",
           "sources": [
             {
               "citation": "Affected-community materials on refusal of allogeneic blood and acceptance of individually specified blood-conservation alternatives, published by Jehovah’s Witnesses hospital liaison / patient-information services.",
               "type": "other"
             },
             {
-              "citation": "Royal College of Surgeons of England, Caring for Patients who Refuse Blood: A Guide to Good Practice (London: RCS England, 2016).",
-              "type": "guideline",
-              "url": "https://www.rcseng.ac.uk/standards-and-research/standards-and-guidance/good-practice-guides/caring-for-patients-who-refuse-blood/"
+              "citation": "Patient-blood-management and bloodless-medicine programme literature and affected-community hospital-liaison materials, describing referral of patients who refuse allogeneic blood to centres with an established transfusion-free surgical programme rather than proceeding at a centre without one.",
+              "type": "article"
             }
           ]
         }
@@ -158,9 +158,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -173,10 +173,14 @@
       "type": "other"
     },
     {
+      "citation": "Patient-blood-management and bloodless-medicine programme literature and affected-community hospital-liaison materials, describing referral of patients who refuse allogeneic blood to centres with an established transfusion-free surgical programme rather than proceeding at a centre without one.",
+      "type": "article"
+    },
+    {
       "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
       "type": "book"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:1c4fc681522f9be4ed39c3e6835bf5890376bde3ade0af815c492438f7d03e4d"
+  "content_hash": "sha256:4e0daf0e72252c43e6bb3b2e0fbbd6eee414bc37f3a442868699197e3ebf404e"
 }

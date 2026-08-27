@@ -115,9 +115,9 @@ export const F06_F10 = [
       framework: [
         {
           id: 'fw1',
-          text: 'Reject a trial design that makes poverty itself the reason participants receive inferior protection; background injustice should not be converted into a research advantage.',
+          text: 'Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.',
           method: 'derived-from-framework',
-          summary: 'Derived from anti-exploitation accounts in global justice: the reasoning bridge is that a background injustice which lowers a population’s bargaining position cannot supply the justification for the terms it makes available, so deprivation-derived comparators are ruled out. The policy sentence is a Bench construction.',
+          summary: 'Derived from anti-exploitation accounts in global justice: the reasoning bridge is that a background injustice which lowers a population’s bargaining position cannot supply the justification for the terms it makes available, so the comparator is fixed by what the community would accept absent that deprivation. The policy sentence is a Bench construction.',
           sources: [REF.exploitationGlobalResearch, REF.rawlsTheoryOfJustice],
         },
         {
@@ -179,9 +179,9 @@ export const F06_F10 = [
       framework: [
         {
           id: 'fw1',
-          text: "A fixed bright line can be justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+          text: "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
           method: 'derived-from-framework',
-          summary: 'Derived from public-reason accounts of rule-making under reasonable disagreement: the reasoning bridge is that where a precise moral status cannot be publicly established, a clear and stable boundary can still be justified by the predictability and trust it secures. The policy sentence is a Bench construction.',
+          summary: 'Derived from public-reason accounts of rule-making under reasonable disagreement: the reasoning bridge is that where a precise moral status cannot be publicly established, a clear and stable boundary can still be justified by the predictability and trust it secures - which is why the policy has to exclude case-by-case exception, since a line that bends on application is not the rule being defended. The policy sentence is a Bench construction.',
           sources: [REF.rawlsTheoryOfJustice],
         },
         {

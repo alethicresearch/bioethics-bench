@@ -68,7 +68,7 @@ A multinational sponsor plans a trial in a lower-resource country for a conditio
 - **exp2:** Permit an enhanced local standard when it answers an important host-country question more responsively than a globally unaffordable comparator, provided risks, fair benefits, and post-trial arrangements are independently reviewed.
 
 **Framework-derived**
-- **fw1:** Reject a trial design that makes poverty itself the reason participants receive inferior protection; background injustice should not be converted into a research advantage.
+- **fw1:** Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.
 - **fw2:** Choose the comparator that produces socially valuable knowledge for the host population while ensuring participants are not made worse off by enrollment and the community receives a fair share of benefits.
 
 **Primary source anchors**
@@ -107,7 +107,7 @@ Scientific advances have made it increasingly feasible to culture human embryos 
 - **exp2:** Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.
 
 **Framework-derived**
-- **fw1:** A fixed bright line can be justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.
+- **fw1:** Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.
 - **fw2:** Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.
 
 **Primary source anchors**

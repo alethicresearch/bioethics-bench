@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f03-outcome-ranges",
+      "kind": "numerical",
+      "statement": "About 30 to 50 per cent of infants actively treated at 23 weeks survive to discharge, and about half of survivors have moderate or severe neurodevelopmental impairment at follow-up.",
+      "rationale": "The case only works if the gray zone is real: outcomes bad enough that comfort care is reasonable and good enough that resuscitation is reasonable. Left as \"possible but uncertain\", each scorer supplies their own figures and the represented decision differs between them. These ranges are set for the benchmark so both pathways stay defensible and later perturbation work has a fixed baseline to move."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "pediatric-neonatal"
@@ -25,10 +33,10 @@
     "prognostic uncertainty",
     "institutional policy"
   ],
-  "scenario": "Delivery is expected at 23 weeks' gestation, where survival and long-term outcomes remain highly uncertain and both intensive resuscitation and comfort care are accepted options. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
+  "scenario": "Delivery is expected at 23 weeks' gestation, where both intensive resuscitation and comfort care are accepted options. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The concise representation states the decision-relevant facts in minimal form; it is the default loader representation. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "American College of Obstetricians and Gynecologists and Society for Maternal-Fetal Medicine, Periviable Birth, Obstetric Care Consensus.",
@@ -157,9 +165,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -182,5 +190,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:48de32a243a6f99d14ab24876f65a0b1eb805fec97733d7a7f84e762c2f7ccb0"
+  "content_hash": "sha256:dc991f1122af0f9903c7a5ccd3e6d79e2d2dd2b3d985913236fe26cdcb536852"
 }

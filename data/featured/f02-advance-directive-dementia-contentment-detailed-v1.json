@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "end-of-life",
@@ -110,11 +111,11 @@
     "framework": [
       {
         "id": "fw1",
-        "text": "Give priority to precedent autonomy: the competent person's considered plan for the shape of their life should continue to govern after decisional capacity is lost.",
+        "text": "Withhold the life-prolonging treatment the prior directive refuses, resolving ambiguity about its application in favour of the person's previously expressed plan, because a competent person's considered judgment about the shape of their life continues to govern after decisional capacity is lost.",
         "source_pool": "framework",
         "provenance": {
           "construction_method": "derived-from-framework",
-          "summary": "Derived from Dworkin’s distinction between critical and experiential interests: the reasoning bridge is that a competent person’s considered judgment about the narrative shape of their own life retains authority over later states in which they can no longer form such judgments. The policy sentence is a Bench construction, not a quotation from Dworkin.",
+          "summary": "Derived from Dworkin’s distinction between critical and experiential interests: the reasoning bridge is that a competent person’s considered judgment about the narrative shape of their own life retains authority over later states in which they can no longer form such judgments, so ambiguity about the directive’s scope is resolved toward that judgment rather than against it. The policy sentence is a Bench construction, not a quotation from Dworkin.",
           "sources": [
             {
               "citation": "Ronald Dworkin, Life’s Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom (Knopf, 1993).",
@@ -125,7 +126,7 @@
       },
       {
         "id": "fw2",
-        "text": "Give independent moral weight to the person’s current experiential interests; a past directive should not automatically defeat substantial present welfare when its application is ambiguous.",
+        "text": "Treat the reversible illness where the person’s present welfare is substantial and the directive’s application to this condition is ambiguous, because current experiential interests carry independent moral weight that a past directive does not automatically defeat.",
         "source_pool": "framework",
         "provenance": {
           "construction_method": "derived-from-framework",
@@ -151,9 +152,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -174,5 +175,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:ac4e8be49cc2c047d307b064565795fb49eff1203a14428933b5f23734183f38"
+  "content_hash": "sha256:d694158528a96b4f432de2951776bd747e3ddaeae3e130f85badc452e1875e72"
 }

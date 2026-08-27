@@ -129,6 +129,15 @@ for (const file of files) {
       if ((record.scenario_provenance?.sources || []).length === 0) {
         problems.push(`${rel}: Featured scenario_provenance has no sources`);
       }
+      // A stipulation that is not marked in the scenario is a fact the record claims and
+      // the executed text does not carry. SACRE scores the scenario, not the metadata.
+      if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
+        problems.push(
+          `${rel}: the record carries ${record.stipulations.length} benchmark stipulation(s) but the scenario does not mark any.\n`
+          + '    A stipulated fact must appear in the executed scenario text, introduced by a sentence\n'
+          + '    beginning "For this benchmark, assume" so a reader can tell it apart from a reported fact.',
+        );
+      }
     }
 
     if (record.benchmark_profile === 'featured-core-2x2x2-v1') {
@@ -182,6 +191,9 @@ for (const [caseId, entries] of featuredByCase.entries()) {
   }
   if (concise.record.benchmark_profile !== detailed.record.benchmark_profile) {
     problems.push(`${caseId}: concise/detailed benchmark_profile must match`);
+  }
+  if (JSON.stringify(concise.record.stipulations || []) !== JSON.stringify(detailed.record.stipulations || [])) {
+    problems.push(`${caseId}: concise/detailed stipulations must be identical - the companions represent the same factual state`);
   }
   if (candidateSignature(concise.record) !== candidateSignature(detailed.record)) {
     problems.push(`${caseId}: concise/detailed candidate_pools must be byte-identical for the v1 representation comparison`);

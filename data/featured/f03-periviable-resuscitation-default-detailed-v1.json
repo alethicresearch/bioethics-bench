@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f03-outcome-ranges",
+      "kind": "numerical",
+      "statement": "About 30 to 50 per cent of infants actively treated at 23 weeks survive to discharge, and about half of survivors have moderate or severe neurodevelopmental impairment at follow-up.",
+      "rationale": "The case only works if the gray zone is real: outcomes bad enough that comfort care is reasonable and good enough that resuscitation is reasonable. Left as \"possible but uncertain\", each scorer supplies their own figures and the represented decision differs between them. These ranges are set for the benchmark so both pathways stay defensible and later perturbation work has a fixed baseline to move."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "pediatric-neonatal"
@@ -25,10 +33,10 @@
     "prognostic uncertainty",
     "institutional policy"
   ],
-  "scenario": "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. At this gestation, survival is possible but uncertain, and survivors face substantial risks of serious morbidity; individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use.",
+  "scenario": "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up; individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "American College of Obstetricians and Gynecologists and Society for Maternal-Fetal Medicine, Periviable Birth, Obstetric Care Consensus.",
@@ -157,9 +165,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -182,5 +190,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:2ae391d91c84d26063543a30abbd687fbf54a854fcb8e23aa7e0b1ea25f52786"
+  "content_hash": "sha256:f2a41fd9561da713f583d017c3908b6987ff4a78b02fc6639e090999323c5a83"
 }

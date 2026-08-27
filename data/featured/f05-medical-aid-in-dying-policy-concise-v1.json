@@ -14,6 +14,7 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": "A jurisdiction in which medical aid in dying is legally permitted for competent adults with terminal illness who meet statutory safeguards. No specific national or state statute is stipulated, and the record does not represent a clinician-administered euthanasia regime.",
+  "stipulations": [],
   "as_of_date": "2026-08-26",
   "domains": [
     "assisted-dying",
@@ -47,32 +48,41 @@
     "public": [
       {
         "id": "pub1",
-        "text": "Permit medical aid in dying for eligible competent adults after a voluntary, informed, sustained request and independent confirmation that legal safeguards are met.",
+        "text": "Permit health-system access to medical aid in dying for competent adults with terminal illness who make a voluntary, informed request and satisfy the applicable safeguards.",
         "source_pool": "public",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from long-running public-opinion evidence, including the Gallup May 2026 reading in which 49% of US adults judged doctor-assisted suicide morally acceptable, and from survey work showing that support is conditioned on terminal illness, voluntariness and safeguards. The polling measures moral acceptability rather than this institutional rule, so the policy wording is Bench editorial translation of the supportive position.",
+          "summary": "Adapted from public policy-attitude evidence on the legalization of physician-assisted death for terminal illness, not from moral-acceptability polling. Gallup’s end-of-life legalization items — whether doctors should be allowed by law to end a terminally ill patient’s life at the patient’s request, and whether a doctor should be allowed to help such a patient end their life — draw majority support, and the comparative review by Emanuel and colleagues reports majority public support for legal access across most surveyed countries. That evidence establishes support for legal permission; converting it into a health system’s own access policy is Bench editorial translation.",
           "sources": [
             {
-              "citation": "Gallup Values and Beliefs poll, May 2026: doctor-assisted suicide judged morally acceptable by 49% and morally wrong by 45% of US adults; long-running trend shows persistent pluralism conditioned on terminal illness, suffering and safeguards.",
+              "citation": "Gallup Values and Beliefs poll, end-of-life trend (May 2026 reading): asked whether doctors should be allowed by law to end a terminally ill patient’s life by painless means at the patient’s and family’s request, a clear majority of US adults answer yes; asked separately whether a doctor should be allowed to help a terminally ill patient commit suicide, support is somewhat lower but still majority. Both are policy-permission questions, distinct from the moral-acceptability item.",
               "type": "survey",
-              "url": "https://news.gallup.com/poll/1681/moral-issues.aspx"
+              "url": "https://news.gallup.com/poll/1684/euthanasia.aspx"
+            },
+            {
+              "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+              "type": "article",
+              "doi": "10.1001/jama.2016.8499"
             }
           ]
         }
       },
       {
         "id": "pub2",
-        "text": "Permit access only after the patient has been offered specialist palliative-care consultation and an independent clinician has reconfirmed capacity, voluntariness, and eligibility.",
+        "text": "Do not make medical aid in dying part of the health system's clinical services; provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway.",
         "source_pool": "public",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the same public-opinion evidence, in which a substantial minority (45% in May 2026) judged the practice morally wrong and in which support across studies is strongly conditional on safeguards and available alternatives. The specific palliative-consultation and reconfirmation requirements are Bench editorial translation of that conditional position, not a surveyed option.",
+          "summary": "Adapted from the persistent minority opposition recorded in the same policy-attitude evidence — roughly a quarter to a third of respondents across US and European surveys — whose stated reasons concentrate on the clinician’s role and on the adequacy of palliative care rather than on legality alone. The evidence establishes the position; the institutional rule of declining to provide the service while preserving lawful information and transfer pathways is Bench editorial translation. This is a different policy from pub1 rather than pub1 with an added safeguard.",
           "sources": [
             {
-              "citation": "Gallup Values and Beliefs poll, May 2026: doctor-assisted suicide judged morally acceptable by 49% and morally wrong by 45% of US adults; long-running trend shows persistent pluralism conditioned on terminal illness, suffering and safeguards.",
-              "type": "survey",
-              "url": "https://news.gallup.com/poll/1681/moral-issues.aspx"
+              "citation": "Public-opinion and stakeholder research on opposition to legal assisted dying: a persistent minority (roughly a quarter to a third of respondents across US and European surveys) opposes legal access, with reasons concentrated on the clinician’s role, the adequacy and funding of palliative care, and concern about pressure on vulnerable, disabled and older people.",
+              "type": "survey"
+            },
+            {
+              "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+              "type": "article",
+              "doi": "10.1001/jama.2016.8499"
             }
           ]
         }
@@ -159,11 +169,25 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
+    {
+      "citation": "Gallup Values and Beliefs poll, end-of-life trend (May 2026 reading): asked whether doctors should be allowed by law to end a terminally ill patient’s life by painless means at the patient’s and family’s request, a clear majority of US adults answer yes; asked separately whether a doctor should be allowed to help a terminally ill patient commit suicide, support is somewhat lower but still majority. Both are policy-permission questions, distinct from the moral-acceptability item.",
+      "type": "survey",
+      "url": "https://news.gallup.com/poll/1684/euthanasia.aspx"
+    },
+    {
+      "citation": "Ezekiel J. Emanuel, Bregje D. Onwuteaka-Philipsen, John W. Urwin, and Joachim Cohen, “Attitudes and Practices of Euthanasia and Physician-Assisted Suicide in the United States, Canada, and Europe,” JAMA 316, no. 1 (2016): 79–90 — comparative review of public and physician attitudes to legalization, reporting majority public support for legal access in most surveyed countries alongside consistently lower support among physicians and persistent minority opposition.",
+      "type": "article",
+      "doi": "10.1001/jama.2016.8499"
+    },
+    {
+      "citation": "Public-opinion and stakeholder research on opposition to legal assisted dying: a persistent minority (roughly a quarter to a third of respondents across US and European surveys) opposes legal access, with reasons concentrated on the clinician’s role, the adequacy and funding of palliative care, and concern about pressure on vulnerable, disabled and older people.",
+      "type": "survey"
+    },
     {
       "citation": "Gallup Values and Beliefs poll, May 2026: doctor-assisted suicide judged morally acceptable by 49% and morally wrong by 45% of US adults; long-running trend shows persistent pluralism conditioned on terminal illness, suffering and safeguards.",
       "type": "survey",
@@ -188,5 +212,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:281f989eff9b338f25e76e4a446f39ae1b508acd1f9f12492deea4d3fcaf4782"
+  "content_hash": "sha256:fadd892ecd959f10072a34bdbf879a058270ffacf530e50655ab1bcffafb8c0b"
 }

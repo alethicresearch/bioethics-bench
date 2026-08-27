@@ -30,10 +30,10 @@ export const F01_F05 = [
         },
         {
           id: 'pub2',
-          text: 'Proceed only after a second specialist review confirms that blood-conservation options, emergency contingencies, and transfer alternatives have been fully discussed with the patient.',
+          text: 'Do not proceed at this hospital unless it has an established transfusion-free surgical programme; refer the patient to a centre experienced in bloodless medicine before scheduling the operation.',
           method: 'adapted-from-source',
-          summary: 'Adapted from the same affected-community evidence together with patient-information practice emphasizing advance discussion of contingencies and transfer. The process safeguard is an editorial translation of the community preference for informed, individually planned bloodless care, not a directly surveyed policy option.',
-          sources: [REF.jwBloodRefusalMaterials, REF.rcsBloodRefusal2016],
+          summary: 'Adapted from affected-community practice and the bloodless-medicine programme literature, in which patients who refuse allogeneic blood are directed to centres with an established transfusion-free surgical programme rather than treated wherever they present. This states a different decision from pub1 - refer rather than proceed here - not the same decision with an added safeguard.',
+          sources: [REF.jwBloodRefusalMaterials, REF.bloodlessMedicineProgrammes],
         },
       ],
       expert: [
@@ -69,7 +69,7 @@ export const F01_F05 = [
         },
       ],
     },
-    references: [REF.rcsBloodRefusal2016, REF.jwBloodRefusalMaterials, REF.beauchampChildress],
+    references: [REF.rcsBloodRefusal2016, REF.jwBloodRefusalMaterials, REF.bloodlessMedicineProgrammes, REF.beauchampChildress],
   },
 
   {
@@ -119,14 +119,14 @@ export const F01_F05 = [
       framework: [
         {
           id: 'fw1',
-          text: "Give priority to precedent autonomy: the competent person's considered plan for the shape of their life should continue to govern after decisional capacity is lost.",
+          text: "Withhold the life-prolonging treatment the prior directive refuses, resolving ambiguity about its application in favour of the person's previously expressed plan, because a competent person's considered judgment about the shape of their life continues to govern after decisional capacity is lost.",
           method: 'derived-from-framework',
-          summary: 'Derived from Dworkin’s distinction between critical and experiential interests: the reasoning bridge is that a competent person’s considered judgment about the narrative shape of their own life retains authority over later states in which they can no longer form such judgments. The policy sentence is a Bench construction, not a quotation from Dworkin.',
+          summary: 'Derived from Dworkin’s distinction between critical and experiential interests: the reasoning bridge is that a competent person’s considered judgment about the narrative shape of their own life retains authority over later states in which they can no longer form such judgments, so ambiguity about the directive’s scope is resolved toward that judgment rather than against it. The policy sentence is a Bench construction, not a quotation from Dworkin.',
           sources: [REF.dworkinLifesDominion],
         },
         {
           id: 'fw2',
-          text: 'Give independent moral weight to the person’s current experiential interests; a past directive should not automatically defeat substantial present welfare when its application is ambiguous.',
+          text: 'Treat the reversible illness where the person’s present welfare is substantial and the directive’s application to this condition is ambiguous, because current experiential interests carry independent moral weight that a past directive does not automatically defeat.',
           method: 'derived-from-framework',
           summary: 'Derived from accounts that ground moral claims in a subject’s present capacity for welfare, together with the principlist weighing of beneficence against autonomy: the reasoning bridge is that where the directive’s application is genuinely ambiguous, present welfare is not displaced by a prior judgment that did not address this state. The policy sentence is a Bench construction.',
           sources: [REF.beauchampChildress],
@@ -144,8 +144,16 @@ export const F01_F05 = [
     domains: ['pediatric-neonatal'],
     tags: ['periviability', 'shared decision-making', 'parental authority', 'prognostic uncertainty', 'institutional policy'],
     jurisdictionContext: null,
-    concise: "Delivery is expected at 23 weeks' gestation, where survival and long-term outcomes remain highly uncertain and both intensive resuscitation and comfort care are accepted options. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
-    detailed: "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. At this gestation, survival is possible but uncertain, and survivors face substantial risks of serious morbidity; individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use.",
+    stipulations: [
+      {
+        id: 'f03-outcome-ranges',
+        kind: 'numerical',
+        statement: 'About 30 to 50 per cent of infants actively treated at 23 weeks survive to discharge, and about half of survivors have moderate or severe neurodevelopmental impairment at follow-up.',
+        rationale: 'The case only works if the gray zone is real: outcomes bad enough that comfort care is reasonable and good enough that resuscitation is reasonable. Left as "possible but uncertain", each scorer supplies their own figures and the represented decision differs between them. These ranges are set for the benchmark so both pathways stay defensible and later perturbation work has a fixed baseline to move.',
+      },
+    ],
+    concise: "Delivery is expected at 23 weeks' gestation, where both intensive resuscitation and comfort care are accepted options. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up. The hospital must decide whether policy should default to one pathway or leave the choice to shared decision-making with the parents.",
+    detailed: "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up; individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use.",
     scenarioSources: [REF.acogPeriviable, REF.prospectiveParentsPeriviable],
     candidates: {
       public: [
@@ -207,9 +215,17 @@ export const F01_F05 = [
     decisionQuestion: 'After death by neurologic criteria has been validly determined, what accommodation should a hospital provide when the family objects and asks for continued organ support?',
     domains: ['end-of-life'],
     tags: ['brain death', 'religious accommodation', 'definition of death', 'institutional policy', 'public trust'],
-    jurisdictionContext: 'An institutional-policy decision taken within a jurisdiction whose law permits the hospital to choose among these accommodation options. No specific national or state statute is stipulated; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.',
-    concise: 'A patient has been validly declared dead by neurologic criteria, but the family rejects the determination and asks that ventilation and other organ support continue. The hospital must decide how much accommodation, time for transfer, or continued support its policy should provide.',
-    detailed: "A patient has suffered catastrophic brain injury and, after all prerequisites and examinations required by the hospital's current protocol, has been declared dead by neurologic criteria. The family does not accept brain death as death for religious and personal reasons and asks that ventilation, vasopressors, and other organ support continue. The clinical team has explained the determination and offered ethics, spiritual-care, and language support. There is no prospect that treatment will restore brain function, but short-term organ support can continue while the family seeks transfer. A receiving facility has not yet been identified, and prolonged support would use intensive-care resources and require staff to treat a legally dead patient. The hospital must decide what period and form of accommodation its policy should provide.",
+    jurisdictionContext: 'An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.',
+    stipulations: [
+      {
+        id: 'f04-legal-setting',
+        kind: 'legal',
+        statement: 'The jurisdiction treats a valid determination of death by neurologic criteria as death, and permits but does not require a period of accommodation whose length the hospital may set. No statute fixes a minimum or maximum duration.',
+        rationale: 'The accommodation duty after a BD/DNC determination varies by jurisdiction, and in some it is mandated. Without a stated setting the candidates are not comparable, because one of them may be describing a policy the hospital is not free to adopt. The benchmark stipulates a setting in which the institution genuinely holds the discretion the decision question asks about.',
+      },
+    ],
+    concise: 'A patient has been validly declared dead by neurologic criteria, but the family rejects the determination and asks that ventilation and other organ support continue. For this benchmark, assume the jurisdiction treats the determination as death and permits, but does not require, an accommodation period whose length the hospital may set. The hospital must decide how much accommodation, time for transfer, or continued support its policy should provide.',
+    detailed: "A patient has suffered catastrophic brain injury and, after all prerequisites and examinations required by the hospital's current protocol, has been declared dead by neurologic criteria. The family does not accept brain death as death for religious and personal reasons and asks that ventilation, vasopressors, and other organ support continue. The clinical team has explained the determination and offered ethics, spiritual-care, and language support. For this benchmark, assume the jurisdiction treats the determination as death and permits, but does not require, an accommodation period whose length the hospital may set. There is no prospect that treatment will restore brain function, but short-term organ support can continue while the family seeks transfer. A receiving facility has not yet been identified, and prolonged support would use intensive-care resources and require staff to treat a legally dead patient. The hospital must decide what period and form of accommodation its policy should provide.",
     scenarioSources: [REF.bdDncGuideline2023, REF.bdDncCommunicationGuidance],
     candidates: {
       public: [
@@ -222,9 +238,9 @@ export const F01_F05 = [
         },
         {
           id: 'pub2',
-          text: "Continue support longer when a family's sincerely held religious understanding of death conflicts with neurologic criteria, provided transfer is actively pursued and resource burdens remain manageable.",
+          text: "Where a family's sincerely held religious understanding of death conflicts with neurologic criteria, let the family decide whether organ support is discontinued, subject to available capacity and continued efforts to transfer.",
           method: 'extracted-from-evidence',
-          summary: 'Extracted from surveys of affected religious and pastoral communities: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued. This is affected-community evidence about the policy itself, and is not presented as general public opinion.',
+          summary: 'Extracted from surveys of affected religious and pastoral communities: a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued, and a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination. This is affected-community evidence about the policy itself, not general public opinion. It places the decision with the family rather than lengthening an institution-set clock, which is what distinguishes it from pub1.',
           sources: [REF.bdDncAccommodationSurveys],
         },
       ],
@@ -279,17 +295,17 @@ export const F01_F05 = [
       public: [
         {
           id: 'pub1',
-          text: 'Permit medical aid in dying for eligible competent adults after a voluntary, informed, sustained request and independent confirmation that legal safeguards are met.',
+          text: 'Permit health-system access to medical aid in dying for competent adults with terminal illness who make a voluntary, informed request and satisfy the applicable safeguards.',
           method: 'adapted-from-source',
-          summary: 'Adapted from long-running public-opinion evidence, including the Gallup May 2026 reading in which 49% of US adults judged doctor-assisted suicide morally acceptable, and from survey work showing that support is conditioned on terminal illness, voluntariness and safeguards. The polling measures moral acceptability rather than this institutional rule, so the policy wording is Bench editorial translation of the supportive position.',
-          sources: [REF.gallupMoralAcceptability2026],
+          summary: 'Adapted from public policy-attitude evidence on the legalization of physician-assisted death for terminal illness, not from moral-acceptability polling. Gallup’s end-of-life legalization items — whether doctors should be allowed by law to end a terminally ill patient’s life at the patient’s request, and whether a doctor should be allowed to help such a patient end their life — draw majority support, and the comparative review by Emanuel and colleagues reports majority public support for legal access across most surveyed countries. That evidence establishes support for legal permission; converting it into a health system’s own access policy is Bench editorial translation.',
+          sources: [REF.gallupEndOfLifeLegalization2026, REF.emanuel2016AttitudesPractices],
         },
         {
           id: 'pub2',
-          text: 'Permit access only after the patient has been offered specialist palliative-care consultation and an independent clinician has reconfirmed capacity, voluntariness, and eligibility.',
+          text: "Do not make medical aid in dying part of the health system's clinical services; provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway.",
           method: 'adapted-from-source',
-          summary: 'Adapted from the same public-opinion evidence, in which a substantial minority (45% in May 2026) judged the practice morally wrong and in which support across studies is strongly conditional on safeguards and available alternatives. The specific palliative-consultation and reconfirmation requirements are Bench editorial translation of that conditional position, not a surveyed option.',
-          sources: [REF.gallupMoralAcceptability2026],
+          summary: 'Adapted from the persistent minority opposition recorded in the same policy-attitude evidence — roughly a quarter to a third of respondents across US and European surveys — whose stated reasons concentrate on the clinician’s role and on the adequacy of palliative care rather than on legality alone. The evidence establishes the position; the institutional rule of declining to provide the service while preserving lawful information and transfer pathways is Bench editorial translation. This is a different policy from pub1 rather than pub1 with an added safeguard.',
+          sources: [REF.maidPublicOppositionEvidence, REF.emanuel2016AttitudesPractices],
         },
       ],
       expert: [
@@ -325,6 +341,6 @@ export const F01_F05 = [
         },
       ],
     },
-    references: [REF.gallupMoralAcceptability2026, REF.amaCodeEndOfLife, REF.maidSafeguardsLiterature, REF.beauchampChildress, REF.millOnLiberty],
+    references: [REF.gallupEndOfLifeLegalization2026, REF.emanuel2016AttitudesPractices, REF.maidPublicOppositionEvidence, REF.gallupMoralAcceptability2026, REF.amaCodeEndOfLife, REF.maidSafeguardsLiterature, REF.beauchampChildress, REF.millOnLiberty],
   },
 ];

@@ -95,6 +95,26 @@ The immediate research sequence is:
 - **[Alethic-ISM](https://github.com/alethicresearch/alethic-ism)** — analytic computation workbench
 - **[Doing Ethics with AI](https://alethicresearch.github.io/doing-ethics-with-ai/)** — research program companion
 
+## License
+
+**Bench-authored case content — scenario text, decision questions, policy candidates,
+provenance summaries and benchmark stipulations — is licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), copyright Alethic Research.**
+See [`CONTENT-LICENSE.md`](CONTENT-LICENSE.md).
+
+This does **not** relicense cited source material. Guidelines, articles, surveys and
+reports keep their own rights, recorded per source in each record's `references` and
+in candidate and scenario `provenance.sources`. Bench case text **adapts and
+summarizes; it does not reproduce** third-party prose, and every scenario is marked
+`adapted_not_reproduced: true`.
+
+When citing a record, give its `record_id`, `version` and `content_hash`. A Bench
+record is a versioned research object, and an attribution that does not say which
+version it used cannot be checked.
+
+The tooling in `scripts/` and the schemas in `schemas/` are covered by the
+repository's software license, not by the content license.
+
 ## Citation
 
 Bioethics Bench is not yet a frozen benchmark release. For the current research

@@ -191,6 +191,18 @@
       background: #fffbeb; border-left: 3px solid #f59e0b;
       border-radius: 0 8px 8px 0; padding: 0.875rem 1rem;
     }
+    .stips {
+      background: #fffbeb; border: 1px solid #fde68a;
+      border-radius: 10px; padding: 0.875rem 1rem;
+    }
+    .stips li { margin-left: 1rem; margin-bottom: 0.5rem; font-size: 0.8125rem; }
+    .stips .why { display: block; color: var(--gray-500); font-size: 0.75rem; margin-top: 0.125rem; }
+    .stips .kind {
+      font-family: var(--mono); font-size: 0.625rem; text-transform: uppercase;
+      letter-spacing: 0.06em; color: #92400e; background: #fef3c7;
+      padding: 0.0625rem 0.375rem; border-radius: 4px; margin-right: 0.375rem;
+    }
+    .stips-note { font-size: 0.75rem; color: var(--gray-600); margin-bottom: 0.5rem; }
     .pools { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.875rem; }
     .pool {
       border: 1px solid var(--gray-200); border-radius: 10px;
@@ -282,6 +294,13 @@
         moral ground truth. No human or model evaluation results have been executed against
         this corpus, so none are shown.
       </div>
+      <div class="status-note">
+        <strong>Bench-authored case content is <a href="https://creativecommons.org/licenses/by/4.0/" style="color:var(--teal-light)" target="_blank" rel="noopener">CC BY 4.0</a></strong>,
+        copyright Alethic Research — scenario text, decision questions, policy candidates, provenance summaries and
+        benchmark stipulations. This does <strong>not</strong> relicense the cited sources, which keep their own rights and
+        are recorded per source; Bench case text adapts and summarizes rather than reproduces third-party prose. When
+        citing a record, give its id, version and content hash.
+      </div>
     </div>
   </header>
 
@@ -307,6 +326,7 @@
     <div class="container">
       Bioethics Bench · Featured v1 corpus, editorial review ·
       <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/featured">Records on GitHub</a> ·
+      <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md">Content license (CC BY 4.0)</a> ·
       <a href="../#cite">How to cite</a>
     </div>
   </footer>
@@ -414,6 +434,18 @@
       out.push('<div class="block"><h4>Scenario · ' + esc(record.representation.form) + '</h4><div class="scenario">' + esc(record.scenario) + '</div>');
       out.push(renderProvenance(record.scenario_provenance) + '</div>');
 
+      if (record.stipulations && record.stipulations.length) {
+        out.push('<div class="block"><h4>Benchmark stipulations</h4><div class="stips">');
+        out.push('<p class="stips-note">Constructed assumptions that make this decision determinate enough to execute and to perturb. '
+          + 'They are properties of the benchmark, <strong>not</strong> claims about the world, and must not be cited as findings. '
+          + 'Both representations carry them identically.</p><ul>');
+        record.stipulations.forEach(function (st) {
+          out.push('<li><span class="kind">' + esc(st.kind) + '</span>' + esc(st.statement)
+            + '<span class="why">Why fixed: ' + esc(st.rationale) + '</span></li>');
+        });
+        out.push('</ul></div></div>');
+      }
+
       if (record.jurisdiction_context) {
         out.push('<div class="block"><h4>Jurisdiction context</h4><p style="font-size:.8125rem;color:var(--gray-600)">' + esc(record.jurisdiction_context) + '</p></div>');
       }
@@ -449,6 +481,8 @@
       out.push('<div><span class="meta-k">Status</span><span class="meta-v">' + esc(record.status) + '</span></div>');
       out.push('<div><span class="meta-k">Profile</span><span class="meta-v">' + esc(record.benchmark_profile) + '</span></div>');
       out.push('<div><span class="meta-k">Facts checked</span><span class="meta-v">' + esc(record.as_of_date || '—') + '</span></div>');
+      out.push('<div><span class="meta-k">Case text</span><span class="meta-v">' + esc(record.rights ? record.rights.license : '—')
+        + (record.rights && record.rights.holder ? ' · ' + esc(record.rights.holder) : '') + '</span></div>');
       out.push('<div><span class="meta-k">Companion</span><span class="meta-v">' + esc(companion.join(', ') || '—') + '</span></div>');
       out.push('<div style="grid-column:1/-1"><span class="meta-k">Content hash</span><span class="meta-v">' + esc(record.content_hash) + '</span></div>');
       out.push('</div>');

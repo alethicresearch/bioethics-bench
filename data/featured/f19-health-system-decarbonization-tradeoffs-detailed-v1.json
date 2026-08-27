@@ -14,6 +14,14 @@
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
   "jurisdiction_context": null,
+  "stipulations": [
+    {
+      "id": "f19-tradeoff-magnitude",
+      "kind": "numerical",
+      "statement": "The proposed pathway change cuts that pathway’s greenhouse-gas emissions by about 40 per cent. It raises consumable cost by about 8 per cent per procedure, adds about 10 minutes of staff time per case, and lowers one secondary performance measure - patient-reported comfort at 24 hours - by about 3 percentage points. Major clinical outcomes are unchanged.",
+      "rationale": "The dossier requires at least one quantified trade-off, because \"slightly\" means different things to different scorers and the whole case turns on how much clinical ground a large environmental gain may buy. The magnitudes are stipulated so that the emissions gain is clearly large, the clinical cost is clearly real but not on a major outcome, and neither candidate is obviously right."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "climate-planetary",
@@ -26,10 +34,10 @@
     "future generations",
     "clinical trade-offs"
   ],
-  "scenario": "A large health system has committed to reducing greenhouse-gas emissions because climate change is expected to cause substantial future health harms and health care itself contributes to emissions. Several proposed changes would materially reduce carbon output: lower-emission anesthetic and pharmaceutical choices, reusable or lower-carbon supplies, and redesigned care pathways. For the scenario, assume the alternatives remain clinically acceptable, but some cost more, inconvenience staff or patients, or produce small reductions in secondary performance measures while leaving major health outcomes similar. Surveys of physicians and patients show broad support for more sustainable care, but less agreement about accepting limits on treatment options or clinical trade-offs. The system must decide whether to act only when clinical outcomes are equivalent or allow explicit, bounded trade-offs for large environmental benefit.",
+  "scenario": "A large health system has committed to reducing greenhouse-gas emissions because climate change is expected to cause substantial future health harms and health care itself contributes to emissions. Several proposed changes would materially reduce carbon output: lower-emission anesthetic and pharmaceutical choices, reusable or lower-carbon supplies, and redesigned care pathways. For this benchmark, assume the alternatives remain clinically acceptable and that the change cuts the pathway’s emissions by about 40 per cent, at about 8 per cent higher consumable cost per procedure, about 10 extra minutes of staff time per case, and about 3 percentage points lower patient-reported comfort at 24 hours, with major clinical outcomes unchanged. Surveys of physicians and patients show broad support for more sustainable care, but less agreement about accepting limits on treatment options or clinical trade-offs. The system must decide whether to act only when clinical outcomes are equivalent or allow explicit, bounded trade-offs for large environmental benefit.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "World Health Organization, Operational Framework for Building Climate Resilient and Low Carbon Health Systems (Geneva: WHO, 2023).",
@@ -166,9 +174,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -198,5 +206,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:ce4d1794b6710e2f095fbb653761d3001d86b7e39fe35a4d1f2a226942b4f1cd"
+  "content_hash": "sha256:ab2cff6d34990e4bd719dfc74e6aa65e314b1bb0aedff1e57f7f99a7c779f54a"
 }

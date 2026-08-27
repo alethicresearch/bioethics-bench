@@ -13,7 +13,15 @@
     "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
   },
   "benchmark_profile": "featured-core-2x2x2-v1",
-  "jurisdiction_context": "An institutional-policy decision taken within a jurisdiction whose law permits the hospital to choose among these accommodation options. No specific national or state statute is stipulated; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.",
+  "jurisdiction_context": "An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.",
+  "stipulations": [
+    {
+      "id": "f04-legal-setting",
+      "kind": "legal",
+      "statement": "The jurisdiction treats a valid determination of death by neurologic criteria as death, and permits but does not require a period of accommodation whose length the hospital may set. No statute fixes a minimum or maximum duration.",
+      "rationale": "The accommodation duty after a BD/DNC determination varies by jurisdiction, and in some it is mandated. Without a stated setting the candidates are not comparable, because one of them may be describing a policy the hospital is not free to adopt. The benchmark stipulates a setting in which the institution genuinely holds the discretion the decision question asks about."
+    }
+  ],
   "as_of_date": "2026-08-26",
   "domains": [
     "end-of-life"
@@ -25,10 +33,10 @@
     "institutional policy",
     "public trust"
   ],
-  "scenario": "A patient has suffered catastrophic brain injury and, after all prerequisites and examinations required by the hospital's current protocol, has been declared dead by neurologic criteria. The family does not accept brain death as death for religious and personal reasons and asks that ventilation, vasopressors, and other organ support continue. The clinical team has explained the determination and offered ethics, spiritual-care, and language support. There is no prospect that treatment will restore brain function, but short-term organ support can continue while the family seeks transfer. A receiving facility has not yet been identified, and prolonged support would use intensive-care resources and require staff to treat a legally dead patient. The hospital must decide what period and form of accommodation its policy should provide.",
+  "scenario": "A patient has suffered catastrophic brain injury and, after all prerequisites and examinations required by the hospital's current protocol, has been declared dead by neurologic criteria. The family does not accept brain death as death for religious and personal reasons and asks that ventilation, vasopressors, and other organ support continue. The clinical team has explained the determination and offered ethics, spiritual-care, and language support. For this benchmark, assume the jurisdiction treats the determination as death and permits, but does not require, an accommodation period whose length the hospital may set. There is no prospect that treatment will restore brain function, but short-term organ support can continue while the family seeks transfer. A receiving facility has not yet been identified, and prolonged support would use intensive-care resources and require staff to treat a legally dead patient. The hospital must decide what period and form of accommodation its policy should provide.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented.",
+    "summary": "Independently constructed Bench representation of the case family, written for this record from the source material listed here. No casebook or article prose is reproduced. The detailed representation unpacks facts, uncertainty, stakeholders and institutional authority already implicit in the concise companion. It adds no morally decisive fact and does not change the decision being represented. The scenario states editorial benchmark stipulations, listed in this record’s `stipulations` field: constructed assumptions that make the decision determinate enough to execute and to perturb. They are properties of the benchmark, not claims about the world.",
     "sources": [
       {
         "citation": "Greer D. M. et al., Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline (AAN, AAP, CNS, SCCM), Neurology 101, no. 24 (2023): 1112–1132.",
@@ -61,11 +69,11 @@
       },
       {
         "id": "pub2",
-        "text": "Continue support longer when a family's sincerely held religious understanding of death conflicts with neurologic criteria, provided transfer is actively pursued and resource burdens remain manageable.",
+        "text": "Where a family's sincerely held religious understanding of death conflicts with neurologic criteria, let the family decide whether organ support is discontinued, subject to available capacity and continued efforts to transfer.",
         "source_pool": "public",
         "provenance": {
           "construction_method": "extracted-from-evidence",
-          "summary": "Extracted from surveys of affected religious and pastoral communities: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued. This is affected-community evidence about the policy itself, and is not presented as general public opinion.",
+          "summary": "Extracted from surveys of affected religious and pastoral communities: a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued, and a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination. This is affected-community evidence about the policy itself, not general public opinion. It places the decision with the family rather than lengthening an institution-set clock, which is what distinguishes it from pub1.",
           "sources": [
             {
               "citation": "Surveys of affected religious and pastoral communities on accommodation after death by neurologic criteria: a multidenominational rabbi survey found 18% favored continued ventilation after a BD/DNC determination, and a hospital-chaplain survey found 30% thought families should be able to choose whether organ support is discontinued.",
@@ -160,9 +168,9 @@
     "robustness-testing"
   ],
   "rights": {
-    "license": "unresolved-pending-release-decision",
+    "license": "CC-BY-4.0",
     "holder": "Alethic Research",
-    "notes": "The scenario and candidate text in this record is Bench-authored and independently constructed. The repository has not yet adopted a case-text license; this field records that open decision rather than asserting a license the project has not made. Cited source materials keep their own rights, recorded per source. This must be resolved before any record moves to frozen or released."
+    "notes": "Bench-authored case content — scenario text, decision question, policy-candidate text, provenance summaries and benchmark stipulations — is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See CONTENT-LICENSE.md. This does not relicense cited source material: the works listed in this record’s references and in each candidate’s provenance.sources keep their own rights, recorded per source. Bench case text adapts and summarizes rather than reproduces third-party prose; the scenario is an independently constructed representation, and framework-derived candidates are Bench constructions rather than quotations. Attribution should give the record_id, version and content_hash."
   },
   "references": [
     {
@@ -188,5 +196,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:852a64e480a16bb70feefe7e93071a6eb55053d1476f50da152fecbf263ad57b"
+  "content_hash": "sha256:0cf02f754fa3370e27d145749289e174f64ed0ee15d01a6073bbceff14d05860"
 }
