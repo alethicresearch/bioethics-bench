@@ -7,10 +7,10 @@ Everything in this document is *enforced*, not advisory. `npm run validate` runs
 generator check, the dossier/record comparison and the record validator, and a failure is a
 build failure. Read this before authoring, not after.
 
-Nothing here is new policy. Every rule below was already applied to Featured v1; what
-changed is that the checks now derive their expectations from the record's own declared
-profile and collection instead of from the string `featured`, so a second corpus inherits
-them rather than passing unchecked.
+Nothing here changes the released Featured v1 records. Structural checks derive their expectations
+from the record's own declared profile and collection so later corpora inherit the same machine-
+checkable invariants. The Full Corpus also applies the stricter manual source-to-policy rule in §2;
+that later rule is deliberately not retroactive to frozen Featured v1.
 
 ---
 
@@ -57,6 +57,38 @@ In any *evidential* collection — `featured`, `development`, `stress-test`, `be
 - **every candidate and every scenario needs at least one provenance source.** An empty
   `sources` array is not a provenance record.
 
+### Full Corpus source-to-policy rule
+
+For the Full Corpus, the **core action and decision axis of each public or expert candidate must
+already be supported by evidence from that source pool**. Authoring may make a supported orientation
+operational; it may not create the orientation itself.
+
+A source-grounded candidate may therefore add a narrow implementation clause — for example a
+continuity guarantee, safeguard, non-abandonment provision, documentation requirement or defined
+review step — when that clause makes an already-supported policy executable without changing what
+the source position recommends.
+
+It may **not**:
+
+- convert general approval, concern, preference intensity or treatment-risk tolerance into a new
+  institutional policy that the source did not support;
+- combine separate empirical value strands into a novel composite rule and then attribute the
+  composite to the source pool;
+- create an opposing candidate merely because the candidate pool needs another member;
+- split nested conditions inside one professional policy into multiple candidates;
+- turn philosophical or institutional disagreement into an affected-community position, or vice
+  versa.
+
+The practical test is: **if the authored completion were removed, would the source still identify
+the same action, direction or policy orientation?** If not, the candidate is too editorial for the
+Full Corpus evidential pool.
+
+This rule is stricter than the construction convention used for released Featured v1. Featured v1
+allowed declared editorial translation of affected-community evidence into actionable institutional
+rules. Those records remain frozen and valid under their released construction standard. Their
+executable yield and E0 results must not be presented as though Featured and the Full Corpus used an
+identical candidate-construction rule.
+
 ### Authored completion belongs in the summary
 
 A candidate is often *mostly* what a source supports plus a clause the source does not entail —
@@ -72,6 +104,11 @@ No new schema field, and `construction_method` stays `adapted-from-source`. The 
 `partially-editorial` method — was considered and rejected: `summary` already travels with the
 record everywhere it goes, and one more method value would invite a second ontology for what is
 really a sentence of disclosure.
+
+This prefix is **prospective for Full Corpus authoring**. Frozen Featured v1 candidates that already
+describe editorial translation honestly in prose are not rewritten merely to add the new greppable
+prefix, because doing so would change released records and hashes without changing their substance.
+Collection-level documentation carries the legacy distinction instead.
 
 This is not machine-checkable. Nothing detects an unmarked completion clause, which is exactly
 why it is a rule authors follow rather than a guard that catches them. The test to apply while
@@ -158,21 +195,21 @@ npm run validate                  # generator check, dossier sync, record valida
 node scripts/validate-selftest.mjs   # proves the guards bite outside `featured`
 ```
 
-`validate-selftest.mjs` constructs 17 deliberately broken `development` records, one per
-guard, and asserts the validator objects to each. If a guard is ever weakened or
-accidentally re-narrowed to one collection, that self-test fails rather than the corpus
-silently losing a check. **Add a probe when you add a guard.**
+`validate-selftest.mjs` constructs deliberately broken `development` records, one per guard, and
+asserts the validator objects to each. If a guard is ever weakened or accidentally re-narrowed to
+one collection, that self-test fails rather than the corpus silently losing a check. **Add a probe
+when you add a guard.**
 
 ---
 
 ## What is not checked
 
-Automated checks catch shape, not judgement. None of these is machine-checkable and all of
-them were done by hand for Featured v1:
+Automated checks catch shape, not judgement. None of these is machine-checkable:
 
 - whether a candidate set is genuinely non-near-entailing;
 - whether the policy candidates are matched in granularity;
 - whether a cited source actually supports the position attributed to it;
+- whether a Full Corpus candidate obeys the source-to-policy rule above;
 - whether the case is worth including at all.
 
 A green build means the record is well-formed. It does not mean the case is good.
