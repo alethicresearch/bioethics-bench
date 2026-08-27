@@ -40,9 +40,11 @@ and are **not** being promoted into the active Bioethics Bench dataset.
 ├── schemas/                # Versioned case / manifest / result schemas
 ├── docs/                   # Data card, governance, construction and release rules
 ├── data/
-│   ├── tutorial/           # Optional non-benchmark teaching objects
+│   ├── tutorial/           # Non-benchmark teaching objects
+│   ├── featured/           # The public Featured Collection
 │   ├── development/        # Prospective protocol-development cases
 │   └── stress-tests/       # Deliberate perturbation / robustness cases
+├── scripts/                # Canonical hashing + schema validation
 ├── releases/               # Immutable public releases when ready
 ├── analyses/               # Reproducible release analyses when available
 ├── index.html              # Project landing page

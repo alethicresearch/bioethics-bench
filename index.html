@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bioethics Bench — A Benchmark for Computational Bioethics</title>
-  <meta name="description" content="A structured evaluation corpus for benchmarking AI performance in normative reasoning across clinical, research, public health, and other bioethical domains. Built on SACRE and Alethic-ISM." />
+  <meta name="description" content="A developing, versioned evaluation corpus and benchmark framework for studying normative computation across clinical, research, public health, and other bioethical domains. In development; no release is yet a validated benchmark." />
   <meta property="og:title" content="Bioethics Bench" />
-  <meta property="og:description" content="A structured evaluation corpus for benchmarking AI performance in bioethical reasoning." />
+  <meta property="og:description" content="A developing, versioned evaluation corpus for studying normative computation in bioethics." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -928,9 +928,9 @@
       </div>
       <h1>A Benchmark for<br /><em>Computational Bioethics</em></h1>
       <p class="hero-lead">
-        Bioethics Bench is a structured evaluation corpus for testing, benchmarking, and improving
-        AI performance in normative reasoning across clinical, research, public health,
-        and other domains where ethical judgment matters most.
+        Bioethics Bench is a developing, versioned evaluation corpus and benchmark framework for
+        studying normative computation across clinical, research, public health, and other domains
+        where ethical judgment matters most. It is being built prospectively and in the open.
       </p>
       <div class="hero-actions">
         <a href="#about" class="btn btn-green">Learn More</a>
@@ -1046,27 +1046,37 @@
   <!-- ── EVALUATION MODES ── -->
   <section id="evaluation">
     <div class="container">
-      <span class="eyebrow">Evaluation Approach</span>
-      <h2>Three modes of performance testing</h2>
+      <span class="eyebrow">What the Infrastructure Supports</span>
+      <h2>Investigations the Bench is built for</h2>
       <p class="lead">
-        Bioethics Bench is designed to benchmark normative reasoning across three evaluation conditions,
-        enabling direct comparison of AI performance alongside human judgment.
+        Bioethics Bench is designed so that normative computations can be run, repeated, compared
+        and inspected as research objects. The validation study design is not yet fixed, and this
+        page does not announce one.
       </p>
       <div class="modes-grid">
         <div class="mode-card">
-          <div class="mode-num">Mode 01</div>
-          <h3>Unaided Practitioners</h3>
-          <p>Human experts evaluate bioethical scenarios without AI assistance, establishing a human baseline for normative reasoning performance across domains and scenario types.</p>
+          <h3>Repetition and stability</h3>
+          <p>The same represented case executed repeatedly under the same declared protocol, so that variation in the measurement can be observed rather than assumed away.</p>
         </div>
         <div class="mode-card">
-          <div class="mode-num">Mode 02</div>
-          <h3>AI Models Alone</h3>
-          <p>Language models are evaluated directly on structured scenario-based normative tasks, measuring autonomous performance in bioethical reasoning and policy selection against the benchmark.</p>
+          <h3>Cross-model comparison</h3>
+          <p>The same case and procedure executed across models and providers, with the protocol, scale and aggregation recorded on every run so comparisons stay commensurable.</p>
         </div>
         <div class="mode-card">
-          <div class="mode-num">Mode 03</div>
-          <h3>AI-Assisted Practitioners</h3>
-          <p>Practitioners using AI normative guidance are evaluated, testing whether computer-aided ethics measurably improves the quality of bioethical judgment compared to unaided performance.</p>
+          <h3>Human comparison</h3>
+          <p>People asked the same pairwise convergence question the model is asked, kept distinct from policy endorsement and from best-policy preference, which are different constructs.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Perturbation and robustness</h3>
+          <p>Deliberate variations — paraphrase, pair-order reversal, near-ties, source-pool asymmetry — to test which results are properties of the case and which of the instrument.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Aggregation sensitivity</h3>
+          <p>The same scored relations aggregated under alternative defensible procedures, so the robustness of a ranking is inspectable rather than implied.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Revision and RE-Iteration</h3>
+          <p>Directed revision of candidates followed by re-execution, so movement toward coherence can be tracked across iterations.</p>
         </div>
       </div>
     </div>
@@ -1090,7 +1100,10 @@
           <div class="pipe-desc">
             Structurally Analyzed Collective Reflective Equilibrium. A formally specified decision procedure
             that integrates public preferences, expert judgments, and ethical frameworks through
-            pairwise convergence testing and coherence scoring to determine the most justified policy.
+            pairwise convergence testing and coherence scoring to rank-order the represented
+            candidates. The highest-ranked candidate is reported as the provisional Final Policy for
+            that analysis; this does not by itself establish moral truth or all-things-considered
+            moral justification.
           </div>
         </div>
 
@@ -1112,9 +1125,9 @@
           <div class="pipe-num">03 · Evaluation Corpus</div>
           <div class="pipe-title">Bioethics Bench</div>
           <div class="pipe-desc">
-            A validated dataset of bioethical scenarios and SACRE evaluations, structured for
-            benchmarking AI performance in normative reasoning and enabling iterative improvement
-            of both models and methods across bioethical domains.
+            A developing, versioned collection of bioethical scenarios and SACRE evaluations,
+            structured so that normative computations can be recorded, compared and reproduced.
+            No release is yet a validated benchmark.
           </div>
           <span class="pipe-tag">This project</span>
         </div>
@@ -1125,9 +1138,9 @@
           <div class="pipe-num">04 · AI Model</div>
           <div class="pipe-title">SACRE-FT</div>
           <div class="pipe-desc">
-            Supervised fine-tuning on Bioethics Bench outputs. Convergence scores, ranked policy sets,
-            and justification records are converted into training data for domain-adapted normative
-            models with demonstrably improved bioethical reasoning performance.
+            Supervised fine-tuning on released Bioethics Bench outputs. Convergence scores, ranked
+            candidate sets and justification records become training data for domain-adapted models.
+            Whether this improves normative reasoning is the question, not a result.
           </div>
         </div>
 
@@ -1147,8 +1160,8 @@
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">📚</div>
-          <h3>Large-Scale Corpus</h3>
-          <p>Bioethical scenarios at scale in a consistent, structured format — built for systematic study rather than isolated cases.</p>
+          <h3>Versioned Records</h3>
+          <p>Every case is a versioned object with a stable id and a canonical content hash, so a result can be traced to the exact record version it scored.</p>
         </div>
         <div class="card">
           <div class="card-icon">⚖️</div>
@@ -1158,7 +1171,7 @@
         <div class="card">
           <div class="card-icon">📐</div>
           <h3>Transparent Scoring</h3>
-          <p>Every record carries its SACRE convergence scores and justification traces, so results stay inspectable rather than black-box.</p>
+          <p>Released evaluation results carry their scores, justifications, and the protocol and scale that produced them — so a number can be read as a measurement rather than a verdict.</p>
         </div>
         <div class="card">
           <div class="card-icon">🖼</div>
@@ -1177,7 +1190,8 @@
       <p class="lead">
         Each entry pairs a bioethical scenario with candidate policies — drawn from public
         preferences, expert judgment, and ethical frameworks — and the full SACRE evaluation
-        that scores their normative convergence and selects the most justified position.
+        that scores their normative convergence and rank-orders the candidates by calculated
+        coherence.
       </p>
       <div class="record">
         <div class="record-row">
@@ -1202,19 +1216,12 @@
             <div class="policy-text">Balance autonomy, beneficence, and non-maleficence to minimize net harm.</div>
           </div>
         </div>
-        <div class="record-result">
-          <div class="result-head">
-            <span class="result-label">SACRE Convergence</span>
-            <span class="result-selected">Selected · Comfort-focused care</span>
-          </div>
-          <div class="score-grid">
-            <div class="score"><span class="score-num">0.81</span><span class="score-cap">Expert ↔ Framework</span></div>
-            <div class="score"><span class="score-num">0.43</span><span class="score-cap">Public ↔ Framework</span></div>
-            <div class="score"><span class="score-num">0.36</span><span class="score-cap">Public ↔ Expert</span></div>
-          </div>
+        <div class="record-row">
+          <div class="record-key">Recorded with</div>
+          <div class="record-val">Stable case id and version · scenario and candidate provenance · declared QCCS protocol, scoring scale and aggregation · canonical content hash</div>
         </div>
       </div>
-      <p class="example-note">Illustrative example — scenario text and scores shown for demonstration, not from the released corpus.</p>
+      <p class="example-note">Illustrative structure only. The scenario and candidates are written for this page and are not a Bench record; no evaluation scores are shown, because none has been released. QCCS v1 scores pairwise normative convergence on a 0–100 scale.</p>
     </div>
   </section>
 

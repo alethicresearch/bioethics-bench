@@ -3,23 +3,91 @@
   "$id": "https://bioethicsbench.com/schemas/result.schema.json",
   "title": "Bioethics Bench evaluation result",
   "type": "object",
-  "required": ["result_id", "record_id", "record_version", "qccs_protocol_id", "run_schema_version"],
+  "required": [
+    "result_id",
+    "record_id",
+    "record_version",
+    "qccs_protocol_id",
+    "scoring_mode",
+    "run_schema_version"
+  ],
   "properties": {
-    "result_id": {"type": "string"},
-    "record_id": {"type": "string"},
-    "record_version": {"type": "string"},
-    "record_content_hash": {"type": ["string", "null"]},
-    "qccs_protocol_id": {"type": "string"},
-    "qccs_protocol_version": {"type": ["string", "null"]},
-    "qccs_protocol_hash": {"type": ["string", "null"]},
-    "run_schema_version": {"type": ["string", "integer"]},
-    "execution": {"type": "object"},
-    "pair_scores": {"type": "array"},
-    "candidate_scores": {"type": "array"},
-    "ranking": {"type": "array"},
-    "provisional_final_policy": {"type": ["string", "null"]},
-    "selection_margin": {"type": ["number", "null"]},
-    "deterministic_verification": {"type": ["object", "null"]}
+    "result_id": {
+      "type": "string"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "string"
+    },
+    "record_content_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qccs_protocol_id": {
+      "type": "string"
+    },
+    "qccs_protocol_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qccs_protocol_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_schema_version": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "execution": {
+      "type": "object"
+    },
+    "pair_scores": {
+      "type": "array"
+    },
+    "candidate_scores": {
+      "type": "array"
+    },
+    "ranking": {
+      "type": "array"
+    },
+    "provisional_final_policy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "selection_margin": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "deterministic_verification": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "scoring_mode": {
+      "type": "string",
+      "description": "The operationalization that produced these scores. Required: a score whose scale is unrecorded is not interpretable, and conv+ vs conv\u00b1 changes rankings."
+    },
+    "aggregation_mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   },
   "additionalProperties": true
 }

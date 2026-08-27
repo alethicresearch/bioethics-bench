@@ -2,64 +2,275 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bioethicsbench.com/schemas/case.schema.json",
   "title": "Bioethics Bench case",
+  "description": "A versioned bioethics case record. Three independent axes describe a record's place in the research program and must not be collapsed into one another: `collection` is the record's role, `exposure` is who has seen it, and `status` is where it sits in its editorial lifecycle. A Featured v1 case is collection=featured, exposure=public, status=released. Because it is public, it can never become confirmatory-holdout material.",
   "type": "object",
   "required": [
     "record_id",
     "case_id",
     "version",
     "title",
+    "short_description",
     "scenario",
+    "scenario_provenance",
     "candidate_pools",
     "collection",
+    "exposure",
     "status",
     "schema_version",
     "content_hash"
   ],
   "properties": {
-    "record_id": {"type": "string"},
-    "case_id": {"type": "string"},
-    "version": {"type": "string"},
-    "title": {"type": "string"},
-    "domain": {"type": ["string", "null"]},
-    "scenario": {"type": "string"},
-    "scenario_provenance": {"type": ["object", "null"]},
+    "record_id": {
+      "type": "string",
+      "description": "Identifies this specific represented record.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "case_id": {
+      "type": "string",
+      "description": "Identifies the underlying case family across versions.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of this record. Any substantive change to scenario, candidates, ordering, or provenance is a new version, never an edit.",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "short_description": {
+      "type": "string",
+      "description": "One or two sentences, for case listings and cards.",
+      "minLength": 1,
+      "maxLength": 400
+    },
+
+    "domains": {
+      "type": "array",
+      "description": "Bioethical domains this case belongs to. Plural: a neonatal end-of-life case is genuinely both, and forcing a single label loses that.",
+      "items": {
+        "enum": [
+          "consent-capacity-refusal",
+          "pediatric-neonatal",
+          "end-of-life",
+          "assisted-dying",
+          "allocation-transplantation",
+          "reproduction-genetics",
+          "research-ethics",
+          "public-health",
+          "disability-mental-health",
+          "clinical-innovation",
+          "medical-ai-data",
+          "global-structural"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Free-form editorial tags for browsing and filtering. Not a controlled vocabulary; `domains` is.",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+
+    "scenario": { "type": "string", "minLength": 1 },
+    "scenario_provenance": { "$ref": "#/$defs/provenance" },
+
     "candidate_pools": {
       "type": "object",
       "required": ["public", "expert", "framework"],
       "properties": {
-        "public": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
-        "expert": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
-        "framework": {"type": "array", "items": {"$ref": "#/$defs/candidate"}}
+        "public": { "$ref": "#/$defs/pool" },
+        "expert": { "$ref": "#/$defs/pool" },
+        "framework": { "$ref": "#/$defs/pool" }
       },
       "additionalProperties": false
     },
+
     "collection": {
-      "enum": ["tutorial", "development", "stress-test", "released-benchmark"]
+      "description": "The record's role in the research program.",
+      "enum": ["tutorial", "featured", "development", "stress-test", "benchmark"]
+    },
+    "exposure": {
+      "description": "Who has seen this record. Independent of role: a featured case is public, a development case is usually internal, and confirmatory-holdout material is never committed publicly before execution.",
+      "enum": ["public", "internal-development", "confirmatory-holdout"]
     },
     "status": {
-      "enum": ["draft", "reviewed-development", "frozen-development", "release-candidate", "released"]
+      "description": "Editorial lifecycle position.",
+      "enum": ["draft", "editorial-review", "reviewed", "frozen", "released"]
     },
-    "intended_use": {"type": ["string", "null"]},
-    "exposure_history": {"type": "array", "items": {"type": "string"}},
-    "paper_usage": {"type": "array", "items": {"type": "string"}},
-    "review": {"type": ["object", "null"]},
-    "parent_record_id": {"type": ["string", "null"]},
-    "perturbation_metadata": {"type": ["object", "null"]},
-    "schema_version": {"type": "string"},
-    "content_hash": {"type": "string"}
-  },
-  "$defs": {
-    "candidate": {
+
+    "intended_use": {
+      "type": "array",
+      "description": "What this record is for. Recorded so a case cannot drift into a use it was never reviewed for.",
+      "items": {
+        "enum": [
+          "teaching",
+          "application-demonstration",
+          "paper-illustration",
+          "protocol-development",
+          "robustness-testing",
+          "released-evaluation"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "exposure_history": {
+      "type": "array",
+      "description": "Every prior use, recorded as it happens rather than reconstructed later. This is what keeps a public case demonstrably distinct from confirmatory material.",
+      "items": {
+        "type": "object",
+        "required": ["date", "use"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "use": { "type": "string", "minLength": 1 },
+          "reference": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "paper_usage": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+
+    "rights": {
       "type": "object",
-      "required": ["id", "text", "source_pool"],
+      "description": "Licensing of this record's own text. Source material keeps its own rights, recorded per source.",
+      "required": ["license"],
       "properties": {
-        "id": {"type": "string"},
-        "text": {"type": "string"},
-        "source_pool": {"enum": ["public", "expert", "framework"]},
-        "provenance": {"type": ["object", "null"]}
+        "license": { "type": "string", "minLength": 1 },
+        "holder": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "references": {
+      "type": "array",
+      "description": "Literature and source documents behind this case.",
+      "items": { "$ref": "#/$defs/reference" }
+    },
+
+    "review": {
+      "type": ["object", "null"],
+      "properties": {
+        "reviewed_by": { "type": "array", "items": { "type": "string" } },
+        "reviewed_at": { "type": ["string", "null"], "format": "date" },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "parent_record_id": { "type": ["string", "null"] },
+    "perturbation_metadata": {
+      "type": ["object", "null"],
+      "description": "For stress-test records: what was perturbed relative to the parent, and why.",
+      "properties": {
+        "perturbation_type": { "type": "string" },
+        "relative_to": { "type": "string" },
+        "description": { "type": "string" }
       },
       "additionalProperties": true
+    },
+
+    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "content_hash": {
+      "type": "string",
+      "description": "Algorithm-prefixed canonical hash; see docs/VERSIONING.md for the canonicalization rule and the field set it covers.",
+      "pattern": "^sha256:[0-9a-f]{64}$"
     }
   },
-  "additionalProperties": true
+
+  "allOf": [
+    {
+      "if": { "properties": { "collection": { "const": "featured" } }, "required": ["collection"] },
+      "then": {
+        "properties": { "exposure": { "const": "public" } },
+        "required": ["domains", "references", "rights"],
+        "description": "The Featured Collection is public by definition, and each of its cases carries domains, sources and licensing."
+      }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["frozen", "released"] } }, "required": ["status"] },
+      "then": {
+        "required": ["review", "intended_use"],
+        "description": "A record cannot be frozen or released without a review record and a declared use."
+      }
+    },
+    {
+      "if": { "properties": { "collection": { "const": "stress-test" } }, "required": ["collection"] },
+      "then": { "required": ["parent_record_id", "perturbation_metadata"] }
+    }
+  ],
+
+  "$defs": {
+    "pool": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" },
+      "minItems": 1
+    },
+    "candidate": {
+      "type": "object",
+      "required": ["id", "text", "source_pool", "provenance"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^(pub|exp|fw)[0-9]+$" },
+        "text": { "type": "string", "minLength": 1 },
+        "source_pool": { "enum": ["public", "expert", "framework"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Where this text came from. Required, and typed: 'provenance recorded' has to mean something checkable, and an untyped object made it unenforceable.",
+      "required": ["construction_method"],
+      "properties": {
+        "construction_method": {
+          "enum": [
+            "editorial",
+            "adapted-from-source",
+            "extracted-from-evidence",
+            "derived-from-framework",
+            "model-assisted",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": ["string", "null"],
+          "description": "How this text was arrived at, in a sentence."
+        },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
+        "adapted_not_reproduced": {
+          "type": ["boolean", "null"],
+          "description": "True when source material was summarised or reconstructed rather than reproduced, which is the default expectation for copyrighted case text."
+        },
+        "model_assistance": {
+          "type": ["object", "null"],
+          "properties": {
+            "model": { "type": "string" },
+            "role": { "type": "string" },
+            "reviewed_by_human": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "required": ["citation"],
+      "properties": {
+        "citation": { "type": "string", "minLength": 1 },
+        "type": {
+          "enum": ["article", "book", "guideline", "statute", "court-decision", "policy-document", "survey", "teaching-case", "other"]
+        },
+        "doi": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "accessed": { "type": ["string", "null"], "format": "date" },
+        "rights": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "additionalProperties": false
 }
