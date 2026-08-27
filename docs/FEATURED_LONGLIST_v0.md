@@ -1,5 +1,18 @@
 # Featured Collection — longlist v0
 
+> **CLOSED — SUPERSEDED, 27 August 2026.**
+>
+> This 56-topic longlist is retained as a historical curation artifact. Its review is
+> formally closed: it is superseded by the 200-case master inventory, by
+> [`FEATURED_V1_SELECTION.md`](FEATURED_V1_SELECTION.md), and by the built 20-family
+> Featured v1 corpus in [`../data/featured/`](../data/featured/).
+>
+> The four hard calls flagged during its review — case 9 pediatric gender-affirming care,
+> the end-of-life cluster, case 25 genetic enhancement, case 14 hospice transition — are
+> **not** to be adjudicated further here. Any of them re-enters review only if it is
+> selected for a future release, at which point it is curated afresh under the current
+> construction standard.
+
 **56 topics.** For substantive review by the PI and research/editorial reviewer.
 
 Nothing here is selected, and no scenario or candidate text is drafted. Entries record what a

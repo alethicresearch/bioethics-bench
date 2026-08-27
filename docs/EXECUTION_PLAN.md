@@ -1,6 +1,7 @@
 # Automated execution plan — Bioethics Bench
 
-**Status:** proposal for research-reviewer approval. Nothing here has been run.
+**Status:** decided. Sections 3–5 are governing after the research-reviewer decisions of
+27 August 2026. **E0 is authorized; E1–E4 are not.**
 **Scope:** how Bench records get executed through SACRE at corpus scale, reproducibly, with results that can be cited and re-derived.
 
 This is not a plan to build an execution engine. Most of it exists. It is a plan to close one seam, add five guards, and phase the spend.
@@ -77,9 +78,21 @@ complete  ranking: pub1:280 pub2:280 exp1:280 exp2:280 fw1:280 fw2:280   final: 
 cells scored: 11 — reported as incomplete anywhere? false
 ```
 
-**Half of this is now fixed.** `buildStep5Aggregation` returns a `coverage` block — `expectedPairCount`, `scoredPairCount`, `complete`, `missingPairs` — with an errored cell counted as unscored rather than as a score. The change is purely additive: no ranking moves, nothing that worked stops working, but a partial matrix now declares itself instead of passing as complete.
+**Decided and implemented.** A partial matrix produces no official ranking and no
+provisional Final Policy, under Sum, Mean, weighting or any other aggregation. Noting
+coverage while still naming a winner was insufficient — the winner is the part that gets
+quoted.
 
-**The other half is a research decision, not mine.** Should a partial matrix be permitted to report a ranking and a provisional Final Policy at all, with its incompleteness noted — or should it refuse? Refusing changes behaviour for runs that currently produce output, so it is escalated rather than applied.
+An incomplete execution carries `status: incomplete`, `finalPolicy: null` and empty Step-5
+rankings, in the application, the report, the shared view and every export. Measured cells
+are preserved; failures keep their type; `expectedPairCount`, `scoredPairCount` and
+`missingPairs` are exposed; missing measurements can be retried explicitly, including pairs
+that were never attempted; and a retry is recorded as a new attempt rather than erasing the
+previous one. Partial totals survive only under a `diagnostic` field that says it is not a
+SACRE ranking.
+
+Documented in `SACRE_FLOW.md`: *SACRE identifies a provisional Final Policy only when the
+required represented cross-source QCCS matrix for that execution is complete.*
 
 ### G2 — Failures are preserved, not retried into success
 
@@ -101,11 +114,30 @@ Featured records are `exposure: public` and can never become the confirmatory ho
 
 ---
 
-# 4. Result identity and storage — open governance question
+# 4. Result identity and storage — decided
 
-Results are not records and must not live in `data/`. The schemas already imply the shape; what needs a decision is exposure.
+Results are not records and do not live in `data/`.
 
-Proposed layout:
+**Development results are not committed to this repository.** They remain local and
+content-addressed; manifests and hashes may be reported in review logs; case records stay
+independent of model-result data. Raw model responses are preserved locally for replay and
+audit and are **not** committed in this phase.
+
+When a citable model-results release is wanted, it is packaged as a **separate versioned
+result artifact** — a dedicated results repository, a release asset, a Zenodo artifact or
+equivalent — rather than mixing mutable execution output into the case corpus. Whether raw
+responses are published is decided then, separately.
+
+**Result lifecycle:** `development → reviewed → frozen → released`. Every executed result
+is `development` for now. A result may become `reviewed` only with a complete matrix,
+complete protocol/corpus/model/settings identity, recorded prompt hashes, deterministic
+recomputation agreeing exactly, failures and retries represented honestly, and human
+inspection finding no malformed QCCS response. `frozen` means the result set and manifest
+are immutable and hash-addressed. `released` means it is intentionally published as
+model-output evidence. **None of these statuses implies moral truth, human agreement, or
+validation.**
+
+Local layout:
 
 ```
 results/
@@ -115,13 +147,8 @@ results/
     raw/<result_id>.jsonl             ← raw model responses, for replay
 ```
 
-**Three questions for the reviewer, none of which I should decide:**
-
-1. **Do result files get committed to this repository at all**, or only manifests plus hashes, with the results held elsewhere? Committing them starts a public results corpus with its own versioning and exposure rules.
-2. **Do raw model responses get committed?** They make replay and audit possible; they are also verbose and carry model-identifying text.
-3. **What is a result's release status** as it moves from development toward anything citable, and what gate does it pass?
-
-Until these are answered, results stay local and only the manifest and hashes get reported.
+`results/` is git-ignored in the SACRE repository, so a development run cannot be committed
+by accident.
 
 ---
 
@@ -131,16 +158,36 @@ One representation = **12 QCCS calls**. One family in both representations = **2
 
 | Phase | Scope | Calls | Gate to proceed |
 |---|---|---|---|
-| **P0 — calibration** | 1 family, both representations, 1 model | **24** | A complete 12/12 matrix, provenance intact, verifier clean, measured cost and latency per call reported |
-| **P1 — figures** | diverse subset, 7 families × 2 | **168** | Paper and tutorial figures captured; reviewer sees real output before the corpus is committed to |
-| **P2 — reference pass** | all 20 × 2, 1 model | **480** total, 312 new after P1 | The reference result set at one model |
-| **P3 — stability** | 2 further repetitions of the corpus | **+960** | Repetition and stability analysis |
-| **P4 — cross-model** | 2 further models × corpus | **+960** | Cross-model comparison |
+| **E0 — calibration** *(authorized)* | **F11** ventilator triage, both representations, 1 model | **24** | A complete 12/12 matrix, provenance intact, verifier clean, measured cost and latency per call reported. Hard ceiling **US$3**. |
+| **E1 — figures** *(not authorized)* | diverse subset, 7 families × 2 | **168** | — |
+| **E2 — reference pass** *(not authorized)* | all 20 × 2, 1 model | **480** | — |
+| **E3 — stability** *(not authorized)* | 2 further repetitions of the corpus | **+960** | — |
+| **E4 — cross-model** *(not authorized)* | 2 further models × corpus | **+960** | — |
 | RE-Iteration demo | F11, the designated case | **~40–60** | Revision Ψ, fidelity QCS, diagnostic QCCS, then a fresh full run |
 
-**Full programme ≈ 2,400 calls.** Each phase is gated on the previous returning clean *and* an explicit go. P0 exists specifically so the cost estimate stops being a guess: I report measured tokens and cost per call before anything larger is authorised.
+Phases are named **E**, not P: the publication programme already has Papers P1/P2/P3, and
+calling an execution stage "P3" would collide with confirmatory validation, which is the
+one thing these runs are definitively not.
 
-Every phase is resumable and idempotent. P1's results are reused by P2 rather than re-run, because the work-item key is identical.
+**Only E0 is authorized.** The ~2,400-call full programme remains useful planning, but
+E1–E4 are **not prerequisites for completing Bioethics Bench v1** and belong to the
+subsequent P1/P2 manuscript and P3 validation work. Each would need its own explicit
+authorization.
+
+E0 exists so the cost estimate stops being a guess: measured tokens, latency and cost per
+call are reported before anything larger is proposed. If projected or actual spend would
+exceed US$3, execution stops and reports.
+
+Every phase is resumable and idempotent; results are reused rather than re-run, because
+the work-item key is identical.
+
+**Reference model (decided).** OpenAI `gpt-5.6-sol`, standard service tier, through the
+application's own QCCS prompt path and its actual supported request behaviour — no
+research-only prompt. The explicit identifier is used rather than the mutable `gpt-5.6`
+alias. Each result records the requested model id, the identifier the provider returns if
+it differs, the timestamp, every request parameter actually sent, token usage, cost and
+prompt hashes. SACRE's OpenAI path does not set a reasoning-effort parameter, and no
+result claims that it did.
 
 ---
 
@@ -165,10 +212,18 @@ Only repetition, cross-model comparison, perturbation of new records, and RE-Ite
 
 ---
 
-# 8. To start
+# 8. Running E0
 
-1. **Decide the second half of G1** — a partial matrix now reports its coverage; should it also refuse to name a Final Policy?
-2. **Answer §4** — or defer it and I keep results local.
-3. **Authorise P0**: one family, both representations, 24 calls, one model.
+```
+read -rs OPENAI_API_KEY && export OPENAI_API_KEY     # never on the command line
+node scripts/execute-bench.mjs --dry-run             # work list + sample prompt, spends nothing
+node scripts/execute-bench.mjs                       # 24 calls, stops at US$3
+unset OPENAI_API_KEY
+```
 
-Credentials needed for P0: a session token for the executing account, and either a model API key (unmetered pass-through) or reliance on included usage, which is capped per model. The session is revoked on exit; the key is yours to rotate.
+Preferred credential route: a non-spending SACRE test account plus a model API key supplied
+locally through environment or secret handling. Not an admin session for convenience.
+Neither credential is requested or transmitted in chat, GitHub, review documents, shell
+history or logs, and neither is printed or written into a result. If no authorized key is
+present locally, E0 is prepared and stops at the credential boundary rather than asking for
+the secret.
