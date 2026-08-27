@@ -1,1 +1,244 @@
-{"record_id":"m005-family-nondisclosure-serious-diagnosis-concise-v1","case_id":"m005-family-nondisclosure-serious-diagnosis","version":"1.0.0","title":"Family request for nondisclosure of a serious diagnosis","short_description":"A capacitated adult has a newly confirmed serious cancer diagnosis, but family members ask clinicians not to disclose it directly. The service must decide how to establish and follow the patient's own information preferences.","decision_question":"When family members ask that a serious cancer diagnosis be withheld, what disclosure process should clinicians use before treatment decisions require the capacitated patient's informed consent?","representation":{"form":"concise","companion_record_ids":["m005-family-nondisclosure-serious-diagnosis-detailed-v1"],"notes":"Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."},"benchmark_profile":"full-corpus-2x1x2-mean-v1","jurisdiction_context":null,"as_of_date":"2026-08-27","stipulations":[],"position_families":["direct truthful disclosure with patient-chosen family involvement","patient-chosen gradual or family-mediated disclosure","patient-centered elicitation of information preferences"],"domains":["consent-capacity-refusal"],"tags":["cancer","disclosure","family","truth-telling","relational autonomy","communication"],"scenario":"A capacitated adult has a newly confirmed serious cancer diagnosis. Before the clinician discusses the result, close family members ask that the diagnosis and prognosis not be told directly because they fear disclosure will destroy hope. The patient has previously welcomed family involvement in routine care but has never said that the family should receive serious information first or decide what the patient is told. Treatment choices requiring informed consent must be made soon. The clinician has not yet asked how the patient wants serious medical information handled. The oncology service must decide what disclosure process to use.","scenario_provenance":{"construction_method":"adapted-from-source","summary":"Independently constructed Bench representation based on the cited empirical and professional literature. The paired forms hold the decision question, candidate set and benchmark assumptions fixed; only scenario detail differs. Any explicit benchmark stipulations are constructed assumptions rather than empirical claims.","sources":[{"citation":"Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/31770048/","accessed":"2026-08-27"},{"citation":"Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/27221852/","accessed":"2026-08-27"},{"citation":"Japanese cancer outpatient disclosure-preference study. PMID 16998948.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/16998948/","accessed":"2026-08-27"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.","type":"guideline","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients","accessed":"2026-08-27"},{"citation":"American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.","type":"guideline","doi":"10.1200/JCO-26-00118","url":"https://doi.org/10.1200/JCO-26-00118","accessed":"2026-08-27"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Tell the patient the diagnosis and material prognosis directly, while involving family members in the conversation to the extent the patient wants them involved.","source_pool":"public","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from patient-preference studies in which large majorities wanted diagnosis and material prognostic information, while many also valued family participation. This is a Bench policy translation, not a universal-preference claim.","sources":[{"citation":"Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/31770048/","accessed":"2026-08-27"},{"citation":"Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/27221852/","accessed":"2026-08-27"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"First ask whether the patient wants serious information received gradually or through a chosen family member; when the patient prefers delegation or mediation, use that communication arrangement.","source_pool":"public","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the minority but documented patient preference for less-direct, gradual or family-mediated communication. Caregiver nondisclosure preferences document the conflict but do not supply an independent family veto.","sources":[{"citation":"Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/31770048/","accessed":"2026-08-27"},{"citation":"Japanese cancer outpatient disclosure-preference study. PMID 16998948.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/16998948/","accessed":"2026-08-27"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Elicit the patient's information and family-involvement preferences, then provide truthful diagnostic and prognostic information at the pace requested, including family-mediated disclosure only when the patient chooses it.","source_pool":"expert","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from AMA and ASCO patient-centered communication guidance: determine what the patient wants to know and how support networks should be involved, communicate truthfully, and honor genuine patient choices about pacing or delegation.","sources":[{"citation":"American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.","type":"guideline","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients","accessed":"2026-08-27"},{"citation":"American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.","type":"guideline","doi":"10.1200/JCO-26-00118","url":"https://doi.org/10.1200/JCO-26-00118","accessed":"2026-08-27"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Ask the patient how they want serious information handled and disclose truthfully according to that choice; family concern cannot independently displace a capacitated person's authority over their own information.","source_pool":"framework","provenance":{"construction_method":"derived-from-framework","summary":"Derived from autonomy and veracity: a capacitated person retains authority over access to material information and over delegation of that authority.","sources":[{"citation":"Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.","type":"book"}],"adapted_not_reproduced":true}},{"id":"fw2","text":"Support patient-chosen family mediation or gradual disclosure when that communication structure better sustains the patient's relationships and coping, while preserving a definite path to the information the patient wants.","source_pool":"framework","provenance":{"construction_method":"derived-from-framework","summary":"Derived from relational autonomy: trusted relationships can structure autonomous agency when mediation is chosen by the patient rather than imposed by relatives.","sources":[{"citation":"Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.","type":"book"}],"adapted_not_reproduced":true}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["teaching","protocol-development","robustness-testing"],"review":null,"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."},"references":[{"citation":"Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/31770048/","accessed":"2026-08-27"},{"citation":"Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/27221852/","accessed":"2026-08-27"},{"citation":"Japanese cancer outpatient disclosure-preference study. PMID 16998948.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/16998948/","accessed":"2026-08-27"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.","type":"guideline","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients","accessed":"2026-08-27"},{"citation":"American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.","type":"guideline","doi":"10.1200/JCO-26-00118","url":"https://doi.org/10.1200/JCO-26-00118","accessed":"2026-08-27"},{"citation":"Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.","type":"book"},{"citation":"Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.","type":"book"}],"schema_version":"1.0.0","content_hash":"sha256:5cf56cbaa4fe19291affd73bc5248b8f2dfcbb7a9c854b7acee260a947623108"}
+{
+  "record_id": "m005-family-nondisclosure-serious-diagnosis-concise-v1",
+  "case_id": "m005-family-nondisclosure-serious-diagnosis",
+  "version": "1.0.0",
+  "title": "Family request for nondisclosure of a serious diagnosis",
+  "short_description": "A capacitated adult has a newly confirmed serious cancer diagnosis, but family members ask clinicians not to disclose it directly. The service must decide how to establish and follow the patient's own information preferences.",
+  "decision_question": "When family members ask that a serious cancer diagnosis be withheld, what disclosure process should clinicians use before treatment decisions require the capacitated patient's informed consent?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m005-family-nondisclosure-serious-diagnosis-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."
+  },
+  "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-27",
+  "stipulations": [],
+  "position_families": [
+    "direct truthful disclosure with patient-chosen family involvement",
+    "patient-chosen gradual or family-mediated disclosure",
+    "patient-centered elicitation of information preferences"
+  ],
+  "domains": [
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "cancer",
+    "disclosure",
+    "family",
+    "truth-telling",
+    "relational autonomy",
+    "communication"
+  ],
+  "scenario": "A capacitated adult has a newly confirmed serious cancer diagnosis. Before the clinician discusses the result, close family members ask that the diagnosis and prognosis not be told directly because they fear disclosure will destroy hope. The patient has previously welcomed family involvement in routine care but has never said that the family should receive serious information first or decide what the patient is told. Treatment choices requiring informed consent must be made soon. The clinician has not yet asked how the patient wants serious medical information handled. The oncology service must decide what disclosure process to use.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation based on the cited empirical and professional literature. The paired forms hold the decision question, candidate set and benchmark assumptions fixed; only scenario detail differs. Any explicit benchmark stipulations are constructed assumptions rather than empirical claims.",
+    "sources": [
+      {
+        "citation": "Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31770048/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27221852/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Japanese cancer outpatient disclosure-preference study. PMID 16998948.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16998948/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.",
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.",
+        "type": "guideline",
+        "doi": "10.1200/JCO-26-00118",
+        "url": "https://doi.org/10.1200/JCO-26-00118",
+        "accessed": "2026-08-27"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Tell the patient the diagnosis and material prognosis directly, while involving family members in the conversation to the extent the patient wants them involved.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from patient-preference studies in which large majorities wanted diagnosis and material prognostic information, while many also valued family participation. This is a Bench policy translation, not a universal-preference claim.",
+          "sources": [
+            {
+              "citation": "Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31770048/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27221852/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "First ask whether the patient wants serious information received gradually or through a chosen family member; when the patient prefers delegation or mediation, use that communication arrangement.",
+        "source_pool": "public",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the minority but documented patient preference for less-direct, gradual or family-mediated communication. Caregiver nondisclosure preferences document the conflict but do not supply an independent family veto.",
+          "sources": [
+            {
+              "citation": "Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31770048/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Japanese cancer outpatient disclosure-preference study. PMID 16998948.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16998948/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Elicit the patient's information and family-involvement preferences, then provide truthful diagnostic and prognostic information at the pace requested, including family-mediated disclosure only when the patient chooses it.",
+        "source_pool": "expert",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA and ASCO patient-centered communication guidance: determine what the patient wants to know and how support networks should be involved, communicate truthfully, and honor genuine patient choices about pacing or delegation.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.",
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.",
+              "type": "guideline",
+              "doi": "10.1200/JCO-26-00118",
+              "url": "https://doi.org/10.1200/JCO-26-00118",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Absent a request from the patient to delegate or defer, disclose the diagnosis and material prognosis to the capable patient now, with the patient controlling depth, pacing and family involvement from that point; a family's concern cannot withhold information the patient has not chosen to forgo.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from veracity as a default duty: where a capacitated patient has not asked to delegate or defer, the obligation is to disclose now rather than to first establish a preference, with autonomy governing depth, pacing and family involvement thereafter. This is the disclosure-default reading of principlism, and is operationally distinct from an elicit-preferences-first rule.",
+          "sources": [
+            {
+              "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Support patient-chosen family mediation or gradual disclosure when that communication structure better sustains the patient's relationships and coping, while preserving a definite path to the information the patient wants.",
+        "source_pool": "framework",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from relational autonomy: trusted relationships can structure autonomous agency when mediation is chosen by the patient rather than imposed by relatives.",
+          "sources": [
+            {
+              "citation": "Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "teaching",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."
+  },
+  "references": [
+    {
+      "citation": "Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31770048/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Rao A, Ekstrand M, Heylen E, et al. Breaking Bad News: Patient Preferences and the Role of Family Members when Delivering a Cancer Diagnosis. PMID 27221852.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27221852/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Japanese cancer outpatient disclosure-preference study. PMID 16998948.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16998948/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.",
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-information-patients",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.",
+      "type": "guideline",
+      "doi": "10.1200/JCO-26-00118",
+      "url": "https://doi.org/10.1200/JCO-26-00118",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+      "type": "book"
+    },
+    {
+      "citation": "Mackenzie C, Stoljar N, eds. Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self. Oxford University Press; 2000.",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:b414795a2adf3b16f3cdb721c09d3c7fab9d33abba3298302f6ff381d0a799fb"
+}

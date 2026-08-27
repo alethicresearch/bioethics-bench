@@ -57,6 +57,26 @@ In any *evidential* collection — `featured`, `development`, `stress-test`, `be
 - **every candidate and every scenario needs at least one provenance source.** An empty
   `sources` array is not a provenance record.
 
+### Authored completion belongs in the summary
+
+A candidate is often *mostly* what a source supports plus a clause the source does not entail —
+a continuity guarantee, a safeguard, a non-abandonment commitment — added so the candidate is an
+actionable policy rather than a survey result. That clause is authored, and the record has to say
+so.
+
+It goes in `provenance.summary`, prefixed exactly:
+
+> **Bench-authored policy completion:** …
+
+No new schema field, and `construction_method` stays `adapted-from-source`. The alternative — a
+`partially-editorial` method — was considered and rejected: `summary` already travels with the
+record everywhere it goes, and one more method value would invite a second ontology for what is
+really a sentence of disclosure.
+
+This is not machine-checkable. Nothing detects an unmarked completion clause, which is exactly
+why it is a rule authors follow rather than a guard that catches them. The test to apply while
+writing: *would a reader who went to the cited source find this clause there?* If not, mark it.
+
 Universally, in every collection including `tutorial`:
 
 - **framework candidates must use `derived-from-framework`.** A framework position derived

@@ -155,7 +155,7 @@ AMA and the 2026 ASCO communication guideline converge on one patient-centered a
 
 **Candidates that survive**
 
-- **fw1:** Ask the patient how they want serious information handled and disclose truthfully according to that choice; family concern cannot independently displace a capacitated person's authority over their own information.
+- **fw1:** Absent a request from the patient to delegate or defer, disclose the diagnosis and material prognosis to the capable patient now, with the patient controlling depth, pacing and family involvement from that point; a family's concern cannot withhold information the patient has not chosen to forgo.
 - **fw2:** Support patient-chosen family mediation or gradual disclosure when that communication structure better sustains the patient's relationships and coping, while preserving a definite path to the information the patient wants.
 
 The difference is direct individual control versus relationally mediated exercise of the same underlying agency, not truth versus deception.
@@ -242,3 +242,36 @@ The recurring shapes are now registered as the smallest stable profile vocabular
 Both asymmetric profiles yield 8 unordered cross-source comparisons and require Mean aggregation. SACRE now derives the same requirement from candidate shape and refuses an official Sum ranking or provisional Final Policy when partner counts differ. This removes the earlier engineering blocker without changing the evidence-qualified candidate sets.
 
 All four families have draft executable companion records. No source class receives an invented extra candidate merely to reach six. Automated record validity is not substantive validation or release.
+
+
+---
+
+## Revision — M005 `fw1` re-derived (27 August 2026)
+
+**Raised in independent review.** Applied to M005's own scenario, where the patient has neither
+delegated nor been asked, four of the five candidates recommended the same action: elicit the
+patient's preference, then follow it. `exp1` and the original `fw1` were operatively identical —
+the framework candidate added a *ground* ("family concern cannot independently displace a
+capacitated person's authority") rather than a different action. The case's live axis is
+disclose-by-default against elicit-preference-first, and the framework layer sat entirely on one
+side of it, so QCCS would have reported convergence among `{pub2, exp1, fw1, fw2}` that measured
+paraphrase rather than agreement.
+
+The sources were never the problem: `fw1` is principlist (Beauchamp & Childress) and `fw2` is
+relational autonomy, which are genuinely different traditions. The defect was at derivation — both
+produced the same recommendation.
+
+`fw1` is now the disclosure-default reading of principlism, resting on veracity as a standing duty:
+absent a request to delegate or defer, disclose now, with autonomy governing depth, pacing and
+family involvement thereafter. That is operationally distinct from `exp1`'s ask-first rule and from
+`fw2`'s support-for-mediation, and it puts a framework candidate on each side of the axis.
+
+The case was not demoted and no opposing position was invented: the disclosure-default reading is
+a real position in that literature, and it was already present in the set as `pub1` with nothing
+behind it.
+
+**Resulting action split on the represented scenario:** `pub1` and `fw1` disclose now; `pub2`,
+`exp1` and `fw2` elicit first. Cross-pool convergence between `pub1` and `fw1` is a measurement,
+not a construction fault.
+
+Records re-hashed: concise `sha256:b414795a…`, detailed `sha256:f1d5e62d…`. Both remain `draft`.
