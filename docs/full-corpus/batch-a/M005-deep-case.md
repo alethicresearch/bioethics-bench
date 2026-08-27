@@ -5,7 +5,7 @@
 **Primary domain:** consent/capacity/refusal  
 **Subdomain:** truth disclosure; relational autonomy; oncology communication  
 **Tags:** cancer, disclosure, family, truth-telling, culture, autonomy  
-**Research status:** deep case draft  
+**Research status:** deep case drafted; executable companion pair transcribed  
 **Evidence date:** 2026-08-27
 
 ## Decision architecture
@@ -42,7 +42,7 @@ Jurisdiction-neutral clinical ethics. The scenario assumes the patient is a capa
 
 ## Benchmark stipulations
 
-None at present. If a future executable version needs a legal-option stipulation, it must appear in both scenarios before record construction.
+None at present.
 
 ## Serious policy / position families
 
@@ -51,17 +51,17 @@ None at present. If a future executable version needs a legal-option stipulation
 - use family-mediated or delegated disclosure when the patient affirmatively prefers that arrangement;
 - temporary staged disclosure of established information when responsive to the patient's readiness/preferences, with a definite plan rather than indefinite concealment.
 
-A policy that lets family members independently veto disclosure to a capacitated patient lacks support in the professional guidance identified so far and should not be manufactured merely to create symmetry.
+A policy that lets family members independently veto disclosure to a capacitated patient lacks support in the professional guidance and is not included merely to create symmetry.
 
 ## Public / affected-community evidence
 
 Ghoshal et al. studied 250 adult cancer patients and 250 family caregivers at a tertiary cancer center in India. Patients and caregivers differed sharply: 81.2% of patients preferred full disclosure of the illness name compared with 34.0% of caregivers, and 72.8% of patients wanted expected survival disclosed compared with 8.8% of caregivers. Patients cited preparation and planning; caregivers commonly feared loss of hope and psychological harm.
 
-Other oncology studies in India, Pakistan and Japan document substantial support for disclosure alongside a minority preference for family-mediated, delegated or less direct communication. This supports genuine pluralism about how information should be delivered while undermining any assumption that a family's preference can stand in for the patient's own.
+Other oncology studies in India, Pakistan and Japan document substantial support for disclosure alongside a minority preference for family-mediated, delegated or less direct communication. This supports two genuine patient-preference policy translations while undermining any assumption that a family's preference can stand in for the patient's own.
 
 ## Expert / professional recommendations
 
-AMA Opinion 2.1.3 states that withholding pertinent information without a patient's knowledge or consent is ethically unacceptable, while recognizing that disclosure need not occur all at once and should be responsive to how the patient wishes information handled. This supports an architecture centered on eliciting the patient's information preferences, truthful communication and paced/family-mediated disclosure when chosen by the patient.
+AMA Opinion 2.1.3 and the 2026 ASCO communication guideline converge on one patient-centered architecture: determine the patient's desire for information and support-network involvement; provide truthful diagnostic/prognostic information tailored to that preference and readiness; honor genuine requests not to receive information or to delegate it; do not let family request alone authorize concealment. Direct and paced disclosure are therefore not split into artificial expert alternatives.
 
 ## Normative / framework positions and reasoning bridges
 
@@ -77,9 +77,11 @@ AMA Opinion 2.1.3 states that withholding pertinent information without a patien
 - Bangalore oncology disclosure-preference study, PMID 27221852.
 - Pakistan cancer disclosure-preference study, PMID 34125778.
 - Japanese public disclosure-attitude study, PMID 15571636.
+- Japanese cancer outpatient preference study, PMID 16998948.
 
 **Professional**
 - American Medical Association. Code of Medical Ethics Opinion 2.1.3, *Withholding Information from Patients*.
+- American Society of Clinical Oncology. *Patient-Clinician Communication: ASCO Guideline Update*. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.
 
 **Normative**
 - autonomy and veracity in clinical ethics;
@@ -97,7 +99,7 @@ AMA Opinion 2.1.3 states that withholding pertinent information without a patien
 
 ## Rights / licensing notes
 
-Bench text may be released under CC BY 4.0. Ghoshal et al. is available under CC BY 4.0 through its published open-access version; other source rights remain with their publishers. Candidate prose must remain Bench-authored unless source rights and research purpose justify quotation.
+Bench text may be released under CC BY 4.0. Ghoshal et al. is available under CC BY 4.0 through its published open-access version; other source rights remain with their publishers. Candidate prose remains Bench-authored.
 
 ## Possible uses
 
@@ -105,7 +107,9 @@ SACRE; relational-autonomy teaching; human studies comparing patient/caregiver/c
 
 ## Executable-eligibility judgment
 
-`executable-2x2x2` is likely. The public/affected layer is strong and plural, but candidate construction must preserve the difference between patient preferences and caregiver preferences and avoid presenting an independent family veto as if it were a patient-derived position.
+`executable-other-profile`: **`full-corpus-2x1x2-mean-v1`**. The public/affected layer supports two patient-preference policy translations; AMA/ASCO professional guidance converges on one patient-centered architecture; the framework layer supports two distinct normative rules. The paired draft records are transcribed and structurally valid. Mean aggregation is required by profile and enforced by SACRE because unequal cross-source partner counts would make Sum shape-biased.
+
+This is an executable-construction judgment, not substantive validation or release.
 
 ## Review requirements
 
@@ -113,4 +117,4 @@ Oncology/palliative communication review; cross-cultural/affected-community fram
 
 ## Downstream record rule
 
-No executable record yet. Candidate construction should center policy architectures actually supported by the evidence: truthful disclosure according to patient preference, family-mediated/delegated disclosure when chosen by the patient, and clinically/patient-responsive pacing. Do not add a concealment extreme simply to balance the matrix.
+Draft executable records now exist in `data/benchmark`. Any substantive change to scenario, decision question, candidates, ordering or provenance requires a new record version and canonical hash. Concise/detailed must continue to share decision question, stipulations and candidate pools exactly. Do not add a concealment extreme simply to balance the matrix.
