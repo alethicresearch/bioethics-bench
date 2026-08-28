@@ -30,6 +30,16 @@
       "description": "Identifies the underlying decision-problem family across representations and versions.",
       "pattern": "^[a-z0-9][a-z0-9-]*$"
     },
+    "frame_id": {
+      "type": "string",
+      "description": "Which candidate framing of the case family this record represents: the natural source ecology, a direct-grounding frame, a source-informed frame, a matched comparison frame. One family can support several, each built as its own concise/detailed record pair with its own candidate set and hashes. Absent where a family has only one framing.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "frame_version": {
+      "type": "string",
+      "description": "Semantic version of the framing, versioned independently of the record: a frame's candidate field can be revised without the underlying case family changing.",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
     "version": {
       "type": "string",
       "description": "Semantic version of this represented record. Any substantive change to scenario, decision question, candidates, ordering, or provenance creates a new version.",

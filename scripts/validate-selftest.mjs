@@ -87,7 +87,10 @@ function baseRecord(overrides = {}) {
 
 function write(record) {
   mkdirSync(dir, { recursive: true });
-  const file = join(dir, `${record.record_id}.json`);
+  // Named by record_id, except when a probe deliberately writes two records claiming one id —
+  // that probe needs both files on disk for the validator to see the clash at all.
+  let file = join(dir, `${record.record_id}.json`);
+  for (let n = 2; existsSync(file); n += 1) file = join(dir, `${record.record_id}-dup${n}.json`);
   writeFileSync(file, `${JSON.stringify(record, null, 2)}\n`);
   created.push(file);
   return file;
@@ -299,6 +302,60 @@ probe('a declared synthetic public comparator with no sources passes',
     })(),
   })],
   /^$/);
+
+// ── frames: several candidate framings of one case family ───────────────────────
+
+/** A concise/detailed pair for one frame of one family. */
+function framePair(frameId, frameVersion, shape, overrides = {}) {
+  const ids = frameId ? { frame_id: frameId, frame_version: frameVersion } : {};
+  const suffix = frameId ? `-${frameId}` : '';
+  const concise = naturalRecord(shape, {
+    ...ids,
+    record_id: `probe-case${suffix}-concise-v1`,
+    representation: { form: 'concise', companion_record_ids: [`probe-case${suffix}-detailed-v1`] },
+    ...overrides,
+  });
+  const detailed = naturalRecord(shape, {
+    ...ids,
+    record_id: `probe-case${suffix}-detailed-v1`,
+    scenario: 'A probe scenario, at greater length.',
+    representation: { form: 'detailed', companion_record_ids: [`probe-case${suffix}-concise-v1`] },
+    ...overrides,
+  });
+  return [concise, detailed];
+}
+
+probe('two frames of one family, each a complete pair, pass',
+  [
+    ...framePair('direct', '1.0.0', { public: 2, expert: 1, framework: 2 }, { required_aggregation: 'mean' }),
+    ...framePair('source-informed', '1.0.0', { public: 3, expert: 3, framework: 3 }),
+  ],
+  /^$/);
+
+probe('two concise records inside one frame',
+  [
+    ...framePair('direct', '1.0.0', { public: 3, expert: 3, framework: 3 }),
+    naturalRecord({ public: 3, expert: 3, framework: 3 }, {
+      frame_id: 'direct',
+      frame_version: '1.0.0',
+      record_id: 'probe-case-direct-concise-v2',
+      representation: { form: 'concise', companion_record_ids: ['probe-case-direct-detailed-v1'] },
+    }),
+  ],
+  /2 concise representations/);
+
+probe('a frame named without a version',
+  [naturalRecord({ public: 3, expert: 3, framework: 3 }, { frame_id: 'direct' })],
+  /frame_id and frame_version must be declared together/);
+
+probe('two records claiming one record_id',
+  [
+    naturalRecord({ public: 3, expert: 3, framework: 3 }, { record_id: 'probe-clash', representation: undefined }),
+    naturalRecord({ public: 2, expert: 2, framework: 2 }, {
+      record_id: 'probe-clash', case_id: 'probe-other', representation: undefined,
+    }),
+  ],
+  /record_id "probe-clash" is already used by/);
 
 // ── natural geometry: records that name no registered profile ───────────────────
 

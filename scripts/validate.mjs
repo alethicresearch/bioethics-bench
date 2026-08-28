@@ -267,6 +267,15 @@ for (const file of files) {
       }
     }
 
+    if ((record.frame_id === undefined) !== (record.frame_version === undefined)) {
+      problems.push(
+        `${rel}: frame_id and frame_version must be declared together; found `
+        + `frame_id ${record.frame_id ?? 'missing'}, frame_version ${record.frame_version ?? 'missing'}.\n`
+        + '    A framing that cannot be versioned cannot be cited by a run, and an unnamed version\n'
+        + '    belongs to nothing.',
+      );
+    }
+
     if (record.benchmark_profile) {
       const profile = PROFILES[record.benchmark_profile];
       if (!profile) {
@@ -310,15 +319,49 @@ for (const file of files) {
   }
 }
 
+/**
+ * The companion contract applies per frame, not per family.
+ *
+ * A family can carry several canonical framings — natural ecology, direct-grounding,
+ * source-informed, a matched comparison frame — each built as its own concise/detailed pair
+ * with its own candidate set and hashes. Bucketing on case_id alone would read two frames'
+ * concise records as duplicate representations of one case, and would compare the candidate
+ * pools of frames that are meant to differ.
+ */
+function frameKey(record) {
+  return [record.case_id, record.frame_id ?? '', record.frame_version ?? ''].join('\u001f');
+}
+
+function frameLabel(record) {
+  return record.frame_id
+    ? `${record.case_id} frame ${record.frame_id}@${record.frame_version ?? 'unversioned'}`
+    : record.case_id;
+}
+
+const seenRecordIds = new Map();
+for (const { rel, record } of caseRecords) {
+  const prior = seenRecordIds.get(record.record_id);
+  if (prior) {
+    problems.push(
+      `${rel}: record_id "${record.record_id}" is already used by ${prior}.\n`
+      + '    A run cites a record by this id; two records sharing one is two different executed\n'
+      + '    objects claiming the same identity.',
+    );
+  } else {
+    seenRecordIds.set(record.record_id, rel);
+  }
+}
+
 const byCase = new Map();
 for (const entry of caseRecords) {
   if (!entry.record.representation?.form) continue;
-  const bucket = byCase.get(entry.record.case_id) || [];
+  const bucket = byCase.get(frameKey(entry.record)) || [];
   bucket.push(entry);
-  byCase.set(entry.record.case_id, bucket);
+  byCase.set(frameKey(entry.record), bucket);
 }
 
-for (const [caseId, entries] of byCase.entries()) {
+for (const entries of byCase.values()) {
+  const caseId = frameLabel(entries[0].record);
   const profileName = entries[0].record.benchmark_profile;
   // Without this fallback, a record naming no profile got no companion checks at all — and under
   // natural geometry most records will name no profile. The pair contract is a corpus rule, not a

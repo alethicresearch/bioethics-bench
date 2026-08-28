@@ -36,6 +36,32 @@ To use a different shape, register it first:
 }
 ```
 
+### Frames: several candidate fields for one family
+
+A well-researched family can support more than one defensible candidate field — the natural source
+ecology, a direct-grounding frame, a source-informed frame, a matched `3x3x3` comparison frame.
+Each is built as **its own concise/detailed record pair**, not as several frames inside one record:
+
+```
+case family m097
+  frame  natural           → m097-natural-concise-v1 · m097-natural-detailed-v1
+  frame  source-informed   → m097-source-informed-concise-v1 · …-detailed-v1
+  frame  matched-3x3x3     → m097-matched-3x3x3-concise-v1 · …-detailed-v1
+```
+
+`frame_id` and `frame_version` are declared together or not at all; a framing that cannot be
+versioned cannot be cited by a run, and an unnamed version belongs to nothing. Identity is
+`case_id + frame_id + frame_version + representation`, and `record_id` is unique corpus-wide
+because a run cites a record by it.
+
+The companion contract therefore applies **per frame**. Bucketing on `case_id` alone would read two
+frames' concise records as duplicate representations of one case, and would compare candidate pools
+that are meant to differ. Within a frame the old rules are unchanged: identical decision question,
+identical stipulations, byte-identical candidate pools, different scenarios.
+
+Changing frame is a different represented evaluation, not a filtered view of one. That is why each
+frame carries its own candidate set and hashes, and why a run records which frame it executed.
+
 ### A registered profile is optional
 
 Under the executable-200 architecture the Bench records whatever candidate ecology its sources
