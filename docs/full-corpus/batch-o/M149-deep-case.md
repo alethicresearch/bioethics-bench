@@ -31,7 +31,10 @@ FDA's final PCCP guidance creates a mature real-world governance architecture fo
 Do not call PCCP unrestricted self-modification; define “material update”; distinguish developer validation, regulatory authorization and local monitoring; preserve version provenance.
 
 ## Executable judgment
-Provisional candidate-audit target at the governance level. Professional sources support PCCP and full-review/frozen-version alternatives as recognizable regulatory strategies, but direct patient/public evidence is limited, so source-pool shape may remain non-executable.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target at the governance level. Professional sources support PCCP and full-review/frozen-version alternatives as recognizable regulatory strategies, but direct patient/public evidence is limited, so source-pool shape may remain non-executable.
 
 ## Principal sources
 FDA, *Marketing Submission Recommendations for a Predetermined Change Control Plan for AI-Enabled Device Software Functions* (final guidance, August 2025); FDA/Health Canada/MHRA PCCP guiding principles; FDA AI-device lifecycle guidance.

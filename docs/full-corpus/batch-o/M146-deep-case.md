@@ -31,7 +31,10 @@ The 2025 NYU study explicitly recommends a comprehensive opt-in approach with in
 Separate recording from note generation, retention and model training; do not assume high satisfaction equals consent to every data use; preserve ability to decline without care penalty.
 
 ## Executable judgment
-Strong candidate-audit target. Direct patient/clinician evidence and real institutional practices support distinct consent architectures without needing speculative policy translation.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Strong candidate-audit target. Direct patient/clinician evidence and real institutional practices support distinct consent architectures without needing speculative policy translation.
 
 ## Principal sources
 Lawrence et al., JAMA Network Open 2025, *Informed Consent for Ambient Documentation Using Generative AI*; Stanford patient-perspective study of ambient AI scribes (2026); ambient-scribe implementation literature.

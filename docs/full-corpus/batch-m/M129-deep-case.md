@@ -31,7 +31,10 @@ NICE's current methods treat QALYs as the reference-case outcome while explicitl
 Do not claim every QALY application discriminates; distinguish health-state valuation from clinical effectiveness; distinguish using QALYs to compare treatments from using QALYs to rank individual persons; do not hide modifiers as if they were part of the QALY itself.
 
 ## Executable judgment
-Provisional candidate-audit target. This is unusually strong because current institutions already implement materially different measurement architectures rather than merely arguing abstractly about QALYs. Public/affected disability evidence still needs candidate-level scrutiny before execution.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target. This is unusually strong because current institutions already implement materially different measurement architectures rather than merely arguing abstractly about QALYs. Public/affected disability evidence still needs candidate-level scrutiny before execution.
 
 ## Principal sources
 NICE, health technology evaluations manual and severity modifiers; ICER, QALY and equal-value life-year methods; disability-justice and HTA literature.

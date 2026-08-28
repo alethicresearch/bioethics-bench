@@ -31,7 +31,10 @@ A US Delphi study found strong expert consensus around privacy, transparency, co
 Do not imply prediction is deterministic; separate raw-data collection from derived risk scores; specify false-positive consequences and human review; do not create default monitoring from general enthusiasm for digital care.
 
 ## Executable judgment
-Provisional candidate-audit target. The affected evidence clearly supports opt-in/control concerns; a second public policy orientation requires direct support rather than Bench invention.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target. The affected evidence clearly supports opt-in/control concerns; a second public policy orientation requires direct support rather than Bench invention.
 
 ## Principal sources
 Digital phenotyping ethics Delphi study, PMID 34319252; 2024 patient/caregiver digital behavioral marker consent study; contemporary digital psychiatry ethics literature.

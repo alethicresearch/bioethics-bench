@@ -33,7 +33,9 @@ Do not use long-term life expectancy, social worth or categorical disability exc
 
 ## Executable judgment
 
-Provisional candidate-audit target. This case has unusually mature normative/professional pluralism; direct public/affected triage-rule evidence must still be checked before executable classification.
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target. This case has unusually mature normative/professional pluralism; direct public/affected triage-rule evidence must still be checked before executable classification.
 
 ## Sources
 

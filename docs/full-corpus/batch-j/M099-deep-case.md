@@ -35,7 +35,9 @@ Do not treat rarity alone as moral priority. Make opportunity cost explicit. Sep
 
 ## Executable judgment
 
-Provisional candidate-audit target. Real policy architectures exist (ordinary appraisal, severity/ultra-rare modifiers, conditional evidence development), but public/affected candidate support must be verified rather than inferred from rare-disease advocacy.
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target. Real policy architectures exist (ordinary appraisal, severity/ultra-rare modifiers, conditional evidence development), but public/affected candidate support must be verified rather than inferred from rare-disease advocacy.
 
 ## Sources
 

@@ -31,7 +31,10 @@ AMA currently provides unusually explicit professional guidance: coverage determ
 Do not treat approval and denial symmetrically; specify appeal speed; distinguish recommendation from final determination; do not infer professional acceptance of automated denials from use of AI elsewhere.
 
 ## Executable judgment
-Provisional candidate-audit target, but likely asymmetric: professional guidance strongly supports physician review while patient/clinician evidence may support different procedural thresholds.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target, but likely asymmetric: professional guidance strongly supports physician review while patient/clinician evidence may support different procedural thresholds.
 
 ## Principal sources
 AMA 2026 policy on AI, physician judgment and payer coverage determinations; CMS prior-authorization/interoperability rules; health-law and utilization-management literature.
