@@ -206,6 +206,31 @@
         "detailed"
       ],
       "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-1x2x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with one public, two expert and three framework candidates. A singleton public pool is legitimate where an active competing-policy sweep shows the affected community converging on one action-distinct position. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 11,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
     }
   }
 }

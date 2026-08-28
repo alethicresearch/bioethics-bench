@@ -12,7 +12,7 @@
     "case": "1.0.0",
     "manifest": "1.0.0"
   },
-  "notes": "Full Corpus executable subset: 32 case families, 64 records, two matched representations each. Separate from the Featured v1 release and from the fixed paper regression; a record may not carry a profile of the other lineage. Release status is release-candidate, not released: every record is status \"draft\" with reviewed_by_human false, and independent review of source-to-policy fidelity has not yet happened. The executable count is an output of the disposition process recorded in docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md, not a target that was aimed at. M001 is released separately as Featured F01 and is deliberately not duplicated here.",
+  "notes": "Full Corpus executable subset: 34 case families, 68 records, two matched representations each. Separate from the Featured v1 release and from the fixed paper regression; a record may not carry a profile of the other lineage. Release status is release-candidate, not released: every record is status \"draft\" with reviewed_by_human false, and independent review of source-to-policy fidelity has not yet happened. The executable count is an output of the disposition process recorded in docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md, not a target that was aimed at. M001 is released separately as Featured F01 and is deliberately not duplicated here.",
   "records": [
     {
       "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
@@ -575,6 +575,26 @@
       "required_aggregation": "mean"
     },
     {
+      "record_id": "m129-disability-weights-qalys-coverage-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:10f6759b9aa83a6a2f889bedbf9027a7b883b9a56d50edcd14502e166db8ef5e",
+      "path": "data/benchmark/m129-disability-weights-qalys-coverage-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-1x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m129-disability-weights-qalys-coverage-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:415016337ee7714ae6e4bb5ea8c3a14f5ee2f19dac071321be4176d41f4bf3d5",
+      "path": "data/benchmark/m129-disability-weights-qalys-coverage-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-1x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
       "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
       "version": "1.0.0",
       "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee",
@@ -631,6 +651,26 @@
       "path": "data/benchmark/m144-ai-disclosure-to-patients-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m146-ambient-ai-documentation-consent-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:4b094d37310d6f52a0b38dac9ab7bae59f3ea9159c55219084637c1170caac14",
+      "path": "data/benchmark/m146-ambient-ai-documentation-consent-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m146-ambient-ai-documentation-consent-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:c3dcb45b74cd184bb0d4b9cc66d0979dfc94a261cc85a7649f549dd235be2756",
+      "path": "data/benchmark/m146-ambient-ai-documentation-consent-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
       "required_aggregation": "mean"
     },
