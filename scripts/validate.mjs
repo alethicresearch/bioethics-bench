@@ -67,6 +67,7 @@ const SCHEMES = SCHEME_REGISTRY.schemes;
 const DEFAULT_SCHEME = SCHEME_REGISTRY.default_scheme;
 const schemeOf = (record) => SCHEMES[record?.source_scheme ?? DEFAULT_SCHEME] ?? null;
 const poolsOf = (record) => (schemeOf(record)?.pools ?? []).map((p) => p.name);
+// Retained only for the Featured generator's fixed shape; record-level checks use poolsOf.
 const POOLS = ['public', 'expert', 'framework'];
 /** The standing companion contract, for records that name no registered profile. */
 const DEFAULT_REPRESENTATIONS = ['concise', 'detailed'];
@@ -368,7 +369,7 @@ for (const file of files) {
     // profile; the guard has to bite on the pools themselves or it stops covering the corpus.
     if (allCandidates(record).length > 0) {
       const shape = profileStructure({ pools: Object.fromEntries(
-        POOLS.map((pool) => [pool, (record.candidate_pools?.[pool] || []).map((c) => c.id)]),
+        poolsOf(record).map((pool) => [pool, (record.candidate_pools?.[pool] || []).map((c) => c.id)]),
       ) });
       const declared = record.required_aggregation
         ?? PROFILES[record.benchmark_profile]?.required_aggregation
@@ -402,7 +403,10 @@ for (const file of files) {
           + `    Known profiles: ${Object.keys(PROFILES).join(', ') || '(none)'}.`,
         );
       } else {
-        for (const poolName of POOLS) {
+        // Union of the pools the record has and the pools the profile declares, so a profile
+        // naming a pool the record omits is caught rather than skipped.
+        const comparePools = [...new Set([...poolsOf(record), ...Object.keys(profile.pools ?? {})])];
+        for (const poolName of comparePools) {
           const pool = record.candidate_pools?.[poolName] || [];
           const expected = profile.pools?.[poolName] || [];
           const ids = pool.map((c) => c.id);

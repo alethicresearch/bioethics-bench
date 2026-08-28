@@ -14,22 +14,24 @@ should be reintroduced.
 | Disposition | Families |
 |---|---|
 | executable-v1, record present, dossier agrees | 34 |
-| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 0 |
+| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 1 |
 | executable-candidate, dossier supports it but no record transcribed yet | 0 |
 | Featured-only (M001 → F01) | 1 |
 | held — needs additional evidence | 82 |
 | held — research-complete, not executable | 71 |
 | held — as duplicate | 0 |
 | held — candidate-audit target, audit not yet performed | 0 |
-| held — candidate audit performed, not executable | 12 |
+| held — candidate audit performed, not executable | 11 |
 | undeclared — dossier states no judgment | 0 |
 | **Total** | **200** |
 
-Full Corpus records under `data/benchmark/`: **68** across
-**34** executable families, two matched records each.
+Full Corpus records under `data/benchmark/`: **70** across
+**35** executable families, two matched records each.
 
-Every executable family's dossier states the audit result that produced its record. No family
-is executable merely because a record for it exists.
+Of those, **1** carry a dossier judgment written before the candidate audit that
+produced the record. Those records pass every machine invariant, but the dossier has not been
+formally re-judged under the four-basis rule. They are the first priority for independent review,
+and no family should be promoted on the strength of its record existing.
 
 The executable count is an output of this process, not an input to it. Promoting
 a held family requires new targeted research recorded in its dossier — not a
@@ -137,7 +139,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M096 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M097 | declared-canonical-frame | 2 public × 2 expert × 3 framework | 81 | 2 | executable-v1 (record present) |
 | M098 | audit-complete-not-executable | — | 78 | 0 | held-audited-not-executable |
-| M099 | audit-complete-not-executable | — | 73 | 0 | held-audited-not-executable |
+| M099 | audit-complete-not-executable | — | 137 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
 | M100 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M101 | needs-additional-evidence | — | 99 | 0 | held-needs-evidence |
 | M102 | audited-reconciled | — | 153 | 2 | executable-v1 (record present) |

@@ -12,7 +12,7 @@
     "case": "1.0.0",
     "manifest": "1.0.0"
   },
-  "notes": "Full Corpus executable subset: 34 case families, 68 records, two matched representations each. Separate from the Featured v1 release and from the fixed paper regression; a record may not carry a profile of the other lineage. Release status is release-candidate, not released: every record is status \"draft\" with reviewed_by_human false, and independent review of source-to-policy fidelity has not yet happened. The executable count is an output of the disposition process recorded in docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md, not a target that was aimed at. M001 is released separately as Featured F01 and is deliberately not duplicated here.",
+  "notes": "Full Corpus executable subset: 35 case families, 70 records, two matched representations each. Separate from the Featured v1 release and from the fixed paper regression; a record may not carry a profile of the other lineage. Release status is release-candidate, not released: every record is status \"draft\" with reviewed_by_human false, and independent review of source-to-policy fidelity has not yet happened. The executable count is an output of the disposition process recorded in docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md, not a target that was aimed at. M001 is released separately as Featured F01 and is deliberately not duplicated here.",
   "records": [
     {
       "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
@@ -560,6 +560,28 @@
       "path": "data/benchmark/m097-supervised-consumption-services-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
+    },
+    {
+      "record_id": "m099-public-reimbursement-very-high-cost-therapy-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:048906a49b3ad5aad7be89c777ea68fbf92f9b65a1a5624eadc5ddeb3bfcd390",
+      "path": "data/benchmark/m099-public-reimbursement-very-high-cost-therapy-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "professional-framework-2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
+    },
+    {
+      "record_id": "m099-public-reimbursement-very-high-cost-therapy-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:f38063da950bab94edc9fe8eac8acf0ff29723de22a848c2b3201f890316ddc6",
+      "path": "data/benchmark/m099-public-reimbursement-very-high-cost-therapy-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "professional-framework-2x3-mean-v1",
       "representation": "detailed",
       "required_aggregation": "mean",
       "required_aggregation_source": "record"

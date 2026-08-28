@@ -231,6 +231,29 @@
         "detailed"
       ],
       "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "professional-framework-2x3-mean-v1": {
+      "description": "Two professional architectures against three framework positions, under the professional-framework scheme. For cases whose live disagreement is between institutional guidance and normative argument, with no policy-level affected evidence to represent. Unequal cross-source partner counts require Mean.",
+      "lineage": "full-corpus",
+      "source_scheme": "professional-framework@1.0.0",
+      "pools": {
+        "professional": [
+          "prof1",
+          "prof2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 6,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
     }
   }
 }

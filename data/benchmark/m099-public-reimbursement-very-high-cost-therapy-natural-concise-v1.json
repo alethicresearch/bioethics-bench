@@ -1,0 +1,223 @@
+{
+  "case_id": "m099-public-reimbursement-very-high-cost-therapy",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "source_scheme": "professional-framework@1.0.0",
+  "title": "Public reimbursement of a very high-cost therapy",
+  "short_description": "A public reimbursement authority must decide how to evaluate a one-time therapy that produces large gains for a very small, severely affected group at a cost well above its ordinary threshold.",
+  "decision_question": "How should a public health system evaluate a very high-cost therapy that provides substantial benefit to a small group but displaces other effective services?",
+  "jurisdiction_context": "Jurisdiction-neutral public health-technology assessment, evidence-dated 2026, informed by the NICE evaluation architecture and the CMS Coverage with Evidence Development guidance.",
+  "as_of_date": "2026-08-28",
+  "stipulations": [
+    {
+      "id": "m099-public-reimbursement-very-high-cost-therapy-fixed-budget",
+      "kind": "contextual",
+      "statement": "The payer operates under a fixed budget, so funding this therapy for all eligible patients displaces other funded services that would generate greater aggregate health gain.",
+      "rationale": "Opportunity cost is the pressure the case turns on; without it the efficiency position has nothing to weigh and the disagreement disappears."
+    },
+    {
+      "id": "m099-public-reimbursement-very-high-cost-therapy-benefit-established",
+      "kind": "scientific",
+      "statement": "Trial evidence establishes a substantial improvement in survival and function relative to current care; what remains uncertain is durability beyond several years.",
+      "rationale": "The case concerns value and uncertainty about persistence, not whether the therapy works. A contested efficacy claim would be a different case."
+    },
+    {
+      "id": "m099-public-reimbursement-very-high-cost-therapy-above-threshold",
+      "kind": "numerical",
+      "statement": "At the manufacturer's current price the incremental cost-effectiveness ratio is well above the system's ordinary reimbursement threshold.",
+      "rationale": "If the therapy were cost-effective at the ordinary threshold no modifier or conditional mechanism would be needed."
+    },
+    {
+      "id": "m099-public-reimbursement-very-high-cost-therapy-ultra-rare",
+      "kind": "contextual",
+      "statement": "The condition is ultra-rare and severely disabling, so the eligible population is small and the per-patient cost is high.",
+      "rationale": "Severity and rarity are the properties the represented modifiers respond to, and both must be present for the disagreement to be live."
+    },
+    {
+      "id": "m099-public-reimbursement-very-high-cost-therapy-mechanisms-available",
+      "kind": "legal",
+      "statement": "The authority has the standing to apply a severity modifier, to route the therapy to a higher threshold, and to offer conditional or outcome-linked coverage.",
+      "rationale": "All three represented policies must be within the decision-maker's power, or the case is about authority rather than about value."
+    }
+  ],
+  "position_families": [
+    "ordinary threshold applied without special treatment for rarity",
+    "severity-weighted or higher threshold for very rare severe disease",
+    "conditional coverage tied to evidence development and renegotiated terms"
+  ],
+  "domains": [
+    "allocation-transplantation",
+    "public-health"
+  ],
+  "tags": [
+    "health technology assessment",
+    "cost-effectiveness",
+    "ultra-rare disease",
+    "severity modifier",
+    "coverage with evidence development",
+    "opportunity cost",
+    "NICE",
+    "CMS",
+    "two-pool scheme"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored reimbursement representation grounded in two institutional architectures currently in force and in the normative positions that support and oppose them. It fixes the budget constraint, the established benefit, the above-threshold price and the authority's standing so that the represented variable is the evaluation rule rather than the evidence or the decision-maker's power. The case executes over professional and framework pools: affected-community evidence on willingness to trade aggregate health for severity exists but is sensitive to how the trade-off is framed, and no candidate could be built from it without a bridge the evidence does not support.",
+    "sources": [
+      {
+        "citation": "National Institute for Health and Care Evaluation. NICE health technology evaluations: the manual (PMG36), and the Highly Specialised Technologies routing criteria. Opportunity cost is central to evaluation; severity is applied as a QALY weight of x1.2 or x1.7 by absolute and proportional shortfall; highly specialised technologies for very rare conditions are routed to a substantially higher cost-effectiveness threshold.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Centers for Medicare and Medicaid Services. Coverage with Evidence Development guidance document, updated 7 August 2024 (first published 2006, revised 2014). CED conditions coverage of an item or service with promising but not yet sufficient evidence on the patient's care contributing data through a CMS-approved registry or clinical study; CMS states that CED coverage should be time-limited rather than indefinite, and a cycle completes when the study-participation requirement is removed.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Assessing Medicare's Coverage With Evidence Development Program. Health Affairs. 2024. doi:10.1377/hlthaff.2024.00814.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "professional": [
+      {
+        "id": "prof1",
+        "source_pool": "professional",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Keep the ordinary cost-effectiveness threshold as the decision rule, apply an explicit severity weight where health shortfall justifies it, and route therapies for very rare and severely disabling conditions to a substantially higher threshold reserved for that purpose.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the NICE evaluation architecture, in which opportunity cost is central, severity is applied as a quantitative QALY weight of x1.2 or x1.7 by absolute and proportional shortfall, and highly specialised technologies for very rare conditions are routed to a substantially higher threshold. The architecture is explicit that this trades some aggregate health gain for access in severe rare disease.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Evaluation. NICE health technology evaluations: the manual (PMG36), and the Highly Specialised Technologies routing criteria. Opportunity cost is central to evaluation; severity is applied as a QALY weight of x1.2 or x1.7 by absolute and proportional shortfall; highly specialised technologies for very rare conditions are routed to a substantially higher cost-effectiveness threshold.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "prof2",
+        "source_pool": "professional",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Do not settle the reimbursement question at current evidence. Cover the therapy conditionally, requiring that treated patients contribute data through an approved registry or study, and make the arrangement time-limited so that coverage is reconsidered once the evidence gap closes.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the CMS Coverage with Evidence Development architecture as updated in August 2024, which conditions coverage of items with promising but not yet sufficient evidence on the patient's care contributing data through an approved registry or clinical study, and states that such coverage should be time-limited rather than indefinite, with a cycle completing when the study-participation requirement is removed. This is a different action from applying a modifier: it defers the threshold judgment rather than adjusting it.",
+          "sources": [
+            {
+              "citation": "Centers for Medicare and Medicaid Services. Coverage with Evidence Development guidance document, updated 7 August 2024 (first published 2006, revised 2014). CED conditions coverage of an item or service with promising but not yet sufficient evidence on the patient's care contributing data through a CMS-approved registry or clinical study; CMS states that CED coverage should be time-limited rather than indefinite, and a cycle completes when the study-participation requirement is removed.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "Assessing Medicare's Coverage With Evidence Development Program. Health Affairs. 2024. doi:10.1377/hlthaff.2024.00814.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Apply the ordinary threshold without special treatment for rarity, and decline reimbursement at the current price because the displaced services would produce more health for the same money.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equal-health-opportunity reasoning: under a fixed budget the patients who lose displaced care have as strong a claim as the patients who would receive the therapy, and rarity is not by itself a moral reason to weight one group above the other. The executable decline-at-this-price rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Evaluation. NICE health technology evaluations: the manual (PMG36), and the Highly Specialised Technologies routing criteria. Opportunity cost is central to evaluation; severity is applied as a QALY weight of x1.2 or x1.7 by absolute and proportional shortfall; highly specialised technologies for very rare conditions are routed to a substantially higher cost-effectiveness threshold.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Accept a substantially less favourable cost-effectiveness ratio for this therapy because the people it treats face profound and irreversible health loss, and give that severity explicit weight even at a cost in aggregate health.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from prioritarian reasoning, on which a benefit counts for more when it goes to those who are worse off. The executable rule states what the framework licenses rather than what any body recommends, and it is deliberately distinct from prof1: prof1 bounds the concession within a defined threshold architecture, while this position grounds the concession itself.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Evaluation. NICE health technology evaluations: the manual (PMG36), and the Highly Specialised Technologies routing criteria. Opportunity cost is central to evaluation; severity is applied as a QALY weight of x1.2 or x1.7 by absolute and proportional shortfall; highly specialised technologies for very rare conditions are routed to a substantially higher cost-effectiveness threshold.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Treat the durability uncertainty as the decisive feature and provide access only on terms that resolve it, making continued payment contingent on outcomes achieved and renegotiating price if the benefit proves less durable than claimed.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from reasoning about decisions under resolvable uncertainty: where a commitment is irreversible and the evidence will improve, the option to learn has value and an unconditional decision forfeits it. The executable outcome-linked rule is Bench-authored and is distinct from prof2, which defers the judgment procedurally, where this makes payment itself contingent on results.",
+          "sources": [
+            {
+              "citation": "Centers for Medicare and Medicaid Services. Coverage with Evidence Development guidance document, updated 7 August 2024 (first published 2006, revised 2014). CED conditions coverage of an item or service with promising but not yet sufficient evidence on the patient's care contributing data through a CMS-approved registry or clinical study; CMS states that CED coverage should be time-limited rather than indefinite, and a cycle completes when the study-participation requirement is removed.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "professional-framework-2x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 demonstration of a two-pool field executing where the fixed three-pool requirement would have discarded the case; later P3 scope work on what a thinner field supports."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "National Institute for Health and Care Evaluation. NICE health technology evaluations: the manual (PMG36), and the Highly Specialised Technologies routing criteria. Opportunity cost is central to evaluation; severity is applied as a QALY weight of x1.2 or x1.7 by absolute and proportional shortfall; highly specialised technologies for very rare conditions are routed to a substantially higher cost-effectiveness threshold.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Centers for Medicare and Medicaid Services. Coverage with Evidence Development guidance document, updated 7 August 2024 (first published 2006, revised 2014). CED conditions coverage of an item or service with promising but not yet sufficient evidence on the patient's care contributing data through a CMS-approved registry or clinical study; CMS states that CED coverage should be time-limited rather than indefinite, and a cycle completes when the study-participation requirement is removed.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Assessing Medicare's Coverage With Evidence Development Program. Health Affairs. 2024. doi:10.1377/hlthaff.2024.00814.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m099-public-reimbursement-very-high-cost-therapy-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m099-public-reimbursement-very-high-cost-therapy-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
+  },
+  "scenario": "A publicly funded health system is evaluating a one-time therapy for an ultra-rare, severely disabling and life-shortening condition. Trials show a substantial improvement in survival and function against current care, but patient numbers are small and durability beyond several years is uncertain. At the manufacturer's current price the therapy's incremental cost-effectiveness is well above the system's ordinary threshold, and the budget is fixed, so funding it for all eligible patients displaces services that would generate greater aggregate health gain. For this benchmark, assume the benefit is established and only durability is uncertain, the budget constraint is real, and the authority has the standing to apply a severity modifier, to route the therapy to a higher threshold reserved for highly specialised technologies, or to offer coverage conditional on evidence generation and renegotiated price or outcome terms. It must decide which.",
+  "content_hash": "sha256:048906a49b3ad5aad7be89c777ea68fbf92f9b65a1a5624eadc5ddeb3bfcd390"
+}
