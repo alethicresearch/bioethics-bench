@@ -60,6 +60,8 @@ const POLICY_BASES = [
   'synthetic-author-constructed-policy',
 ];
 const POOLS = ['public', 'expert', 'framework'];
+/** The standing companion contract, for records that name no registered profile. */
+const DEFAULT_REPRESENTATIONS = ['concise', 'detailed'];
 
 function crossSourcePairCount(record) {
   const ids = POOLS.flatMap((pool) => (record.candidate_pools?.[pool] || []).map((c) => [c.id, pool]));
@@ -244,6 +246,27 @@ for (const file of files) {
       }
     }
 
+    // The asymmetry safeguard follows the record, not the registry. The Bench records whatever
+    // candidate ecology its sources support, so most Full Corpus shapes will never be a named
+    // profile; the guard has to bite on the pools themselves or it stops covering the corpus.
+    if (allCandidates(record).length > 0) {
+      const shape = profileStructure({ pools: Object.fromEntries(
+        POOLS.map((pool) => [pool, (record.candidate_pools?.[pool] || []).map((c) => c.id)]),
+      ) });
+      const declared = record.required_aggregation
+        ?? PROFILES[record.benchmark_profile]?.required_aggregation
+        ?? null;
+      if (shape.asymmetric && declared !== 'mean') {
+        problems.push(
+          `${rel}: unequal cross-source partner counts [${[...new Set(shape.partnerCounts)].sort((a, b) => a - b).join(', ')}] `
+          + `require Mean aggregation; the record declares ${declared ?? 'none'}.\n`
+          + '    Under Sum this set is ranked partly by pool size: with identical convergence cells,\n'
+          + '    a candidate from a smaller pool sums over more partners and wins on shape alone.\n'
+          + '    Declare required_aggregation "mean", or name a profile that requires it.',
+        );
+      }
+    }
+
     if (record.benchmark_profile) {
       const profile = PROFILES[record.benchmark_profile];
       if (!profile) {
@@ -297,7 +320,11 @@ for (const entry of caseRecords) {
 
 for (const [caseId, entries] of byCase.entries()) {
   const profileName = entries[0].record.benchmark_profile;
-  const forms = PROFILES[profileName]?.representations;
+  // Without this fallback, a record naming no profile got no companion checks at all — and under
+  // natural geometry most records will name no profile. The pair contract is a corpus rule, not a
+  // profile's rule, so it applies wherever a record declares a representation form.
+  const forms = PROFILES[profileName]?.representations ?? DEFAULT_REPRESENTATIONS;
+  const forSet = profileName ? `profile ${profileName}` : 'the corpus representation contract';
   if (!forms || forms.length < 2) continue;
 
   const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
@@ -305,13 +332,13 @@ for (const [caseId, entries] of byCase.entries()) {
   for (const form of forms) {
     const count = entries.filter(({ record }) => record.representation?.form === form).length;
     if (count > 1) {
-      problems.push(`${caseId}: ${count} ${form} representations; profile ${profileName} allows exactly one of each`);
+      problems.push(`${caseId}: ${count} ${form} representations; ${forSet} allows exactly one of each`);
     }
   }
   for (const entry of entries) {
     const form = entry.record.representation.form;
     if (!forms.includes(form)) {
-      problems.push(`${caseId}: representation form "${form}" is not one of [${forms.join(', ')}] for profile ${profileName}`);
+      problems.push(`${caseId}: representation form "${form}" is not one of [${forms.join(', ')}] for ${forSet}`);
     }
   }
 

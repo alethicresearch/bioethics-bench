@@ -36,6 +36,24 @@ To use a different shape, register it first:
 }
 ```
 
+### A registered profile is optional
+
+Under the executable-200 architecture the Bench records whatever candidate ecology its sources
+support — `3x2x4`, `3x1x4`, `4x3x4` — so most Full Corpus records will name no profile at all.
+Naming one is for canonical, reusable frames (Featured v1, a matched `3x3x3` comparison frame),
+not a precondition for being a valid record.
+
+Two checks therefore follow the **record** rather than the registry, so dropping the profile does
+not drop the guard:
+
+- **Asymmetry requires Mean.** Any record whose pools give unequal cross-source partner counts
+  must declare `required_aggregation: "mean"`, directly or through a profile that requires it.
+  Under Sum such a set is ranked partly by pool size: with identical convergence cells, a
+  candidate from a smaller pool sums over more partners and wins on shape alone.
+- **The companion contract still applies.** Records naming no profile are held to
+  `[concise, detailed]`. Previously a profile-less record got no companion checks whatsoever,
+  which under natural geometry would have meant no companion checks anywhere.
+
 ### Lineage: a profile belongs to one corpus
 
 Featured v1 and the Full Corpus executable subset are built, reviewed and released as

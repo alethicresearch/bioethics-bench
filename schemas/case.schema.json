@@ -228,6 +228,10 @@
       },
       "additionalProperties": true
     },
+    "required_aggregation": {
+      "description": "The aggregation a record's own candidate shape requires. A set with unequal cross-source partner counts must declare \"mean\": under Sum such a set is ranked partly by pool size. Records that name a registered profile may inherit it from there instead.",
+      "enum": ["sum", "mean"]
+    },
     "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
     "content_hash": {
       "type": "string",

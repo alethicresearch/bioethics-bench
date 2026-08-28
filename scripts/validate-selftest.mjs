@@ -300,6 +300,42 @@ probe('a declared synthetic public comparator with no sources passes',
   })],
   /^$/);
 
+// ── natural geometry: records that name no registered profile ───────────────────
+
+/** A `benchmark` record of any shape, naming no profile. Pools are built from a shape spec. */
+function naturalRecord(shape, overrides = {}) {
+  const prefix = { public: 'pub', expert: 'exp', framework: 'fw' };
+  const method = { public: 'adapted-from-source', expert: 'adapted-from-source', framework: 'derived-from-framework' };
+  const pools = Object.fromEntries(Object.entries(shape).map(([pool, n]) => [
+    pool,
+    Array.from({ length: n }, (_, i) => candidate(`${prefix[pool]}${i + 1}`, pool, method[pool], { policy_basis: BASIS[pool] })),
+  ]));
+  const record = benchmarkRecord({ candidate_pools: pools, ...overrides });
+  delete record.benchmark_profile;
+  delete record.content_hash;
+  return { ...record, content_hash: canonicalContentHash(record) };
+}
+
+probe('a 3x2x4 record naming no profile, declaring Mean, passes',
+  [naturalRecord({ public: 3, expert: 2, framework: 4 }, { required_aggregation: 'mean' })], /^$/);
+
+probe('a symmetric 3x3x3 record naming no profile passes without declaring aggregation',
+  [naturalRecord({ public: 3, expert: 3, framework: 3 })], /^$/);
+
+probe('an asymmetric record that declares no aggregation',
+  [naturalRecord({ public: 3, expert: 1, framework: 4 })],
+  /require Mean aggregation; the record declares none/);
+
+probe('an asymmetric record that declares Sum',
+  [naturalRecord({ public: 2, expert: 1, framework: 2 }, { required_aggregation: 'sum' })],
+  /require Mean aggregation; the record declares sum/);
+
+probe('a companion contract still applies with no profile to drive it',
+  [naturalRecord({ public: 3, expert: 3, framework: 3 }, {
+    representation: { form: 'standard', companion_record_ids: [] },
+  })],
+  /is not one of \[concise, detailed\] for the corpus representation contract/);
+
 // ── companion invariants, driven by the profile, on a development family ────────
 
 const conciseBase = (overrides = {}) => baseRecord(overrides);
