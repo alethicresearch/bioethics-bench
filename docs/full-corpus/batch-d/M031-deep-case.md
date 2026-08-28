@@ -112,3 +112,20 @@ Palliative medicine; end-of-life law; disability/vulnerability review; affected-
 ## 18. Downstream record rule
 
 If executable, both representations must stipulate legal permission, terminal prognosis, capacity safeguards and meaningful palliative-care access. Candidates must distinguish institutional participation from an individual clinician's conscience choice.
+
+## 19. Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional 2×2×2 judgment in §16 for the post-strict reconstruction while preserving it as research history.
+
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 3 expert × 3 framework`  
+**Cross-source pairs:** 21  
+**Required aggregation:** Mean.
+
+The two public candidates are **source-informed policy inferences**. Personal willingness to consider MAID and moral acceptability/opposition are relevant public orientations, but they do not directly prescribe a health system's participation architecture. The reconstructed record makes the attitude-to-institutional-policy step explicit.
+
+The natural expert/policy ecology contains three action-distinct positions already visible in this dossier: (1) a safeguard-based lawful participation architecture supplied by the Oregon regulatory model; (2) professional nonparticipation supplied directly by AMA/ACP; and (3) a studied-neutral/conscience-sensitive position grounded in AAHPM. Because AAHPM does not itself specify the exact health-system workflow used in the executable candidate, the third expert candidate is classified as **source-informed policy inference**, not direct policy evidence.
+
+The framework ecology likewise retains all three positions already mapped in §11: autonomy/relief of suffering, professional role/nonmaleficence, and conscience/moral pluralism. Reducing the canonical field to 2×2×2 would remove a serious professional and normative architecture solely to match a preset geometry. A smaller matched frame may later be constructed as a separate experimental object, but it is not the natural representation.
+
+Current machine-readable companions are `m031-medical-aid-in-dying-terminal-illness-natural-concise-v1` and `m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1`. No synthetic candidate is required.
