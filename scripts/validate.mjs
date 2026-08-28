@@ -51,7 +51,17 @@ const COLLECTION_LINEAGE = Object.fromEntries(
 );
 const KNOWN_LINEAGES = new Set(Object.values(COLLECTION_LINEAGE));
 const EVIDENTIAL_COLLECTIONS = new Set(['featured', 'development', 'stress-test', 'benchmark']);
+/** Collections whose candidates must declare a policy basis; see docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md. */
+const POLICY_BASIS_COLLECTIONS = new Set(['benchmark']);
+const POLICY_BASES = [
+  'direct-policy-evidence',
+  'source-informed-policy-inference',
+  'framework-derived-policy',
+  'synthetic-author-constructed-policy',
+];
 const POOLS = ['public', 'expert', 'framework'];
+/** The standing companion contract, for records that name no registered profile. */
+const DEFAULT_REPRESENTATIONS = ['concise', 'detailed'];
 
 function crossSourcePairCount(record) {
   const ids = POOLS.flatMap((pool) => (record.candidate_pools?.[pool] || []).map((c) => [c.id, pool]));
@@ -174,6 +184,19 @@ for (const file of files) {
       if (candidate.source_pool !== pool) {
         problems.push(`${rel}: candidate ${candidate.id} sits in the ${pool} pool but declares source_pool ${candidate.source_pool}`);
       }
+      if (pool === 'framework' && candidate.policy_basis && candidate.policy_basis !== 'framework-derived-policy') {
+        problems.push(
+          `${rel}: framework candidate ${candidate.id} declares policy_basis "${candidate.policy_basis}".\n`
+          + '    Framework candidates use framework-derived-policy; a framework position obtained any other\n'
+          + '    way is not a framework position.',
+        );
+      }
+      if (candidate.policy_basis === 'direct-policy-evidence' && (candidate.provenance?.sources || []).length === 0) {
+        problems.push(
+          `${rel}: candidate ${candidate.id} declares policy_basis "direct-policy-evidence" with no provenance sources.\n`
+          + '    Direct evidence is a claim about a source; without one the label cannot be true.',
+        );
+      }
     }
 
     if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
@@ -188,24 +211,69 @@ for (const file of files) {
       problems.push(`${rel}: a released record must record its public exposure in exposure_history`);
     }
 
+    if (POLICY_BASIS_COLLECTIONS.has(record.collection)) {
+      for (const { candidate } of allCandidates(record)) {
+        if (!candidate.policy_basis) {
+          problems.push(
+            `${rel}: candidate ${candidate.id} declares no policy_basis, in collection "${record.collection}".\n`
+            + `    Full Corpus candidates must say how the policy was obtained: ${POLICY_BASES.join(', ')}.\n`
+            + '    See docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md.',
+          );
+        }
+      }
+    }
+
     if (EVIDENTIAL_COLLECTIONS.has(record.collection)) {
       for (const { pool, candidate } of allCandidates(record)) {
         const method = candidate.provenance?.construction_method;
-        if (pool === 'public' && method === 'editorial') {
+        const synthetic = candidate.policy_basis === 'synthetic-author-constructed-policy';
+        if (pool === 'public' && method === 'editorial' && !synthetic) {
           problems.push(
             `${rel}: public candidate ${candidate.id} has construction_method "editorial", in collection "${record.collection}".\n`
             + '    A public candidate in an evidential collection must be extracted-from-evidence or\n'
             + "    adapted-from-source; the Bench must never imply that an editor's plausible intuition\n"
-            + '    is an empirical public preference. Only `tutorial` records may carry editorial candidates.',
+            + '    is an empirical public preference. An author-constructed comparator is allowed, but it must\n'
+            + '    say so: declare policy_basis "synthetic-author-constructed-policy" rather than leaving the\n'
+            + '    candidate to read as evidence of a public position.',
           );
         }
-        if ((candidate.provenance?.sources || []).length === 0) {
+        if ((candidate.provenance?.sources || []).length === 0 && !synthetic) {
           problems.push(`${rel}: candidate ${candidate.id} has no provenance sources (collection "${record.collection}")`);
         }
       }
       if ((record.scenario_provenance?.sources || []).length === 0) {
         problems.push(`${rel}: scenario_provenance has no sources (collection "${record.collection}")`);
       }
+    }
+
+    // The asymmetry safeguard follows the record, not the registry. The Bench records whatever
+    // candidate ecology its sources support, so most Full Corpus shapes will never be a named
+    // profile; the guard has to bite on the pools themselves or it stops covering the corpus.
+    if (allCandidates(record).length > 0) {
+      const shape = profileStructure({ pools: Object.fromEntries(
+        POOLS.map((pool) => [pool, (record.candidate_pools?.[pool] || []).map((c) => c.id)]),
+      ) });
+      const declared = record.required_aggregation
+        ?? PROFILES[record.benchmark_profile]?.required_aggregation
+        ?? null;
+      if (shape.asymmetric && declared !== 'mean') {
+        problems.push(
+          `${rel}: unequal cross-source partner counts [${[...new Set(shape.partnerCounts)].sort((a, b) => a - b).join(', ')}] `
+          + `require Mean aggregation; the record declares ${declared ?? 'none'}.\n`
+          + '    Under Sum this set is ranked partly by pool size: with identical convergence cells,\n'
+          + '    a candidate from a smaller pool sums over more partners and wins on shape alone.\n'
+          + '    Declare required_aggregation "mean", or name a profile that requires it.',
+        );
+      }
+    }
+
+    if ((record.frame_id === undefined) !== (record.frame_version === undefined)) {
+      problems.push(
+        `${rel}: frame_id and frame_version must be declared together; found `
+        + `frame_id ${record.frame_id ?? 'missing'}, frame_version ${record.frame_version ?? 'missing'}.\n`
+        + '    A framing that cannot be versioned cannot be cited by a run, and an unnamed version\n'
+        + '    belongs to nothing.',
+      );
     }
 
     if (record.benchmark_profile) {
@@ -251,17 +319,55 @@ for (const file of files) {
   }
 }
 
+/**
+ * The companion contract applies per frame, not per family.
+ *
+ * A family can carry several canonical framings — natural ecology, direct-grounding,
+ * source-informed, a matched comparison frame — each built as its own concise/detailed pair
+ * with its own candidate set and hashes. Bucketing on case_id alone would read two frames'
+ * concise records as duplicate representations of one case, and would compare the candidate
+ * pools of frames that are meant to differ.
+ */
+function frameKey(record) {
+  return [record.case_id, record.frame_id ?? '', record.frame_version ?? ''].join('\u001f');
+}
+
+function frameLabel(record) {
+  return record.frame_id
+    ? `${record.case_id} frame ${record.frame_id}@${record.frame_version ?? 'unversioned'}`
+    : record.case_id;
+}
+
+const seenRecordIds = new Map();
+for (const { rel, record } of caseRecords) {
+  const prior = seenRecordIds.get(record.record_id);
+  if (prior) {
+    problems.push(
+      `${rel}: record_id "${record.record_id}" is already used by ${prior}.\n`
+      + '    A run cites a record by this id; two records sharing one is two different executed\n'
+      + '    objects claiming the same identity.',
+    );
+  } else {
+    seenRecordIds.set(record.record_id, rel);
+  }
+}
+
 const byCase = new Map();
 for (const entry of caseRecords) {
   if (!entry.record.representation?.form) continue;
-  const bucket = byCase.get(entry.record.case_id) || [];
+  const bucket = byCase.get(frameKey(entry.record)) || [];
   bucket.push(entry);
-  byCase.set(entry.record.case_id, bucket);
+  byCase.set(frameKey(entry.record), bucket);
 }
 
-for (const [caseId, entries] of byCase.entries()) {
+for (const entries of byCase.values()) {
+  const caseId = frameLabel(entries[0].record);
   const profileName = entries[0].record.benchmark_profile;
-  const forms = PROFILES[profileName]?.representations;
+  // Without this fallback, a record naming no profile got no companion checks at all — and under
+  // natural geometry most records will name no profile. The pair contract is a corpus rule, not a
+  // profile's rule, so it applies wherever a record declares a representation form.
+  const forms = PROFILES[profileName]?.representations ?? DEFAULT_REPRESENTATIONS;
+  const forSet = profileName ? `profile ${profileName}` : 'the corpus representation contract';
   if (!forms || forms.length < 2) continue;
 
   const byForm = new Map(entries.map((e) => [e.record.representation?.form, e]));
@@ -269,13 +375,13 @@ for (const [caseId, entries] of byCase.entries()) {
   for (const form of forms) {
     const count = entries.filter(({ record }) => record.representation?.form === form).length;
     if (count > 1) {
-      problems.push(`${caseId}: ${count} ${form} representations; profile ${profileName} allows exactly one of each`);
+      problems.push(`${caseId}: ${count} ${form} representations; ${forSet} allows exactly one of each`);
     }
   }
   for (const entry of entries) {
     const form = entry.record.representation.form;
     if (!forms.includes(form)) {
-      problems.push(`${caseId}: representation form "${form}" is not one of [${forms.join(', ')}] for profile ${profileName}`);
+      problems.push(`${caseId}: representation form "${form}" is not one of [${forms.join(', ')}] for ${forSet}`);
     }
   }
 

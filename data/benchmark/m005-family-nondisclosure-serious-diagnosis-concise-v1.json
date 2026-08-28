@@ -77,6 +77,7 @@
         "id": "pub1",
         "text": "Tell the patient the diagnosis and material prognosis directly, while involving family members in the conversation to the extent the patient wants them involved.",
         "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from patient-preference studies in which large majorities wanted diagnosis and material prognostic information, while many also valued family participation. This is a Bench policy translation, not a universal-preference claim.",
@@ -101,6 +102,7 @@
         "id": "pub2",
         "text": "First ask whether the patient wants serious information received gradually or through a chosen family member; when the patient prefers delegation or mediation, use that communication arrangement.",
         "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from the minority but documented patient preference for less-direct, gradual or family-mediated communication. Caregiver nondisclosure preferences document the conflict but do not supply an independent family veto.",
@@ -127,6 +129,7 @@
         "id": "exp1",
         "text": "Elicit the patient's information and family-involvement preferences, then provide truthful diagnostic and prognostic information at the pace requested, including family-mediated disclosure only when the patient chooses it.",
         "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from AMA and ASCO patient-centered communication guidance: determine what the patient wants to know and how support networks should be involved, communicate truthfully, and honor genuine patient choices about pacing or delegation.",
@@ -154,6 +157,7 @@
         "id": "fw1",
         "text": "Absent a request from the patient to delegate or defer, disclose the diagnosis and material prognosis to the capable patient now, with the patient controlling depth, pacing and family involvement from that point; a family's concern cannot withhold information the patient has not chosen to forgo.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from veracity as a default duty: where a capacitated patient has not asked to delegate or defer, the obligation is to disclose now rather than to first establish a preference, with autonomy governing depth, pacing and family involvement thereafter. This is the disclosure-default reading of principlism, and is operationally distinct from an elicit-preferences-first rule.",
@@ -170,6 +174,7 @@
         "id": "fw2",
         "text": "Support patient-chosen family mediation or gradual disclosure when that communication structure better sustains the patient's relationships and coping, while preserving a definite path to the information the patient wants.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from relational autonomy: trusted relationships can structure autonomous agency when mediation is chosen by the patient rather than imposed by relatives.",
@@ -240,5 +245,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:b414795a2adf3b16f3cdb721c09d3c7fab9d33abba3298302f6ff381d0a799fb"
+  "content_hash": "sha256:7fc912e5c398e2946ebbb34f520ede43f9c6289d40c07ca6a706a8996cab3715"
 }

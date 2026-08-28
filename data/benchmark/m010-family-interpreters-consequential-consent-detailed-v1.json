@@ -91,6 +91,7 @@
         "id": "pub1",
         "text": "Allow the patient to use the chosen adult family member as interpreter after a qualified interpreter has been offered, provided no conflict is identified and the patient demonstrates adequate understanding.",
         "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from affected-patient evidence showing that some patients with limited English proficiency value trusted family members for continuity, contextual knowledge and relational support. Translating that preference into an institutional permission rule is a Bench construction; the sources do not themselves establish this exact safeguard threshold.",
@@ -116,6 +117,7 @@
         "id": "pub2",
         "text": "Use a qualified medical interpreter for the material consent discussion, while allowing the patient's chosen family member to remain and provide relational or decisional support.",
         "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from patient evidence in which some participants preferred qualified interpreters for professionalism and linguistic accuracy while still valuing trust and relational support. The policy sentence is an editorial translation of that affected-public orientation, not a quotation or claim of universal preference.",
@@ -137,6 +139,7 @@
         "id": "exp1",
         "text": "Require a qualified medical interpreter to participate in the high-stakes consent discussion; the patient's chosen family member may remain for support but should not replace qualified interpretation of material information.",
         "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from AHRQ informed-consent guidance, which emphasizes qualified interpretation for informed consent and recommends retaining qualified interpreter participation even when a patient prefers family or friends to interpret.",
@@ -155,6 +158,7 @@
         "id": "exp2",
         "text": "Permit the requested adult family member to interpret when the patient requests this privately with a qualified interpreter present, the request is documented, and the clinician finds reliance appropriate under the circumstances.",
         "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from 45 C.F.R. § 92.201(e)(2)(ii), which permits reliance on an accompanying adult who is not a qualified interpreter under a specifically requested, privately elicited, documented and contextually appropriate exception. The Bench candidate applies that policy architecture to the high-stakes consent scenario.",
@@ -175,6 +179,7 @@
         "id": "fw1",
         "text": "Require qualified interpretation of material risks and alternatives because valid consent and equal language access require reliable comprehension that conversational bilingualism alone cannot guarantee.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from informed-consent autonomy and justice: authorization is valid only when material information is meaningfully understood, and institutions bear responsibility for equitable access to that understanding. The policy sentence is a Bench construction, not a quotation.",
@@ -190,6 +195,7 @@
         "id": "fw2",
         "text": "Respect the competent patient's choice of a trusted adult family interpreter when independent screening finds no coercion or conflict, while verifying understanding before accepting consent.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from relational autonomy: autonomous agency can be exercised through trusted relationships rather than only through detached professional intermediaries. The reasoning bridge permits patient-chosen family interpretation when voluntariness is independently protected and understanding is verified. The policy sentence is a Bench construction, not a quotation.",
@@ -253,5 +259,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:2823cf13afb763110dd6318e6bf226b45e430dbaf079f858f340ec99fcfce318"
+  "content_hash": "sha256:4216ffee6677e9a17e5c92ae1be25d7feee7deb5c45ce2d18919afc248e345f2"
 }
