@@ -61,3 +61,13 @@ Do not equate “not identical” with “not an alternative”; do not assume N
 ## 11. Executable-eligibility judgment
 
 `research-complete-not-executable`. The case is central to the corpus, but the current source-pool architecture does not yet represent nonhuman affected interests faithfully enough for executable transcription.
+
+## 12. Current reconstruction note — M156 versus Featured F17
+
+The post-strict reconstruction preserves the judgment above. It does **not** solve the nonhuman-representation problem by treating human public attitudes as though they were testimony from the animals whose welfare is at stake.
+
+Featured F17 remains a legitimate but different research object: its public pool explicitly represents **human public policy attitudes** about animal research and states that those attitudes are not proxies for the animals' own interests, while animal moral claims enter through welfare expertise and framework candidates. That architecture could later support an explicitly named `human-policy-attitudes` frame for M156 if a study requires one, but it would measure human policy reasoning rather than supply an affected-interest-faithful public layer.
+
+More importantly, F17 and M156 do not hold the same Scenario fixed. F17 stipulates that the organ-on-chip/computational alternative has been validated for related endpoints but **not for the endpoint the proposed study addresses**. M156 stipulates that a validated human-cell/microphysiological system can reproduce the **primary endpoint and several mechanistic interactions**, though not all systemic responses. The scientific adequacy of the alternative is therefore materially different.
+
+This is a case/scenario distinction, not a candidate-framing distinction. F17 must not be relabeled as an alternative M156 frame or compared with M156 as though only candidate space changed. M156 remains `research-complete-architecture-limited` with no canonical affected-interest-faithful executable record in the present batch.

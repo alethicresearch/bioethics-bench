@@ -1,0 +1,279 @@
+{
+  "record_id": "m050-donor-identity-adult-access-concise-v1",
+  "case_id": "m050-donor-identity-adult-access",
+  "version": "1.0.0",
+  "title": "Donor anonymity and adult access to donor identity",
+  "short_description": "A reproductive-medicine program must choose prospective donor-identity terms before donation, balancing donor-conceived adults' interest in genetic origins against donor privacy and consent in an era when DNA matching undermines practical anonymity.",
+  "decision_question": "What donor-identity policy should a gamete or embryo donation program promise to donors, recipient parents, and donor-conceived people before donation occurs?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m050-donor-identity-adult-access-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x2x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
+  "benchmark_profile": "full-corpus-2x2x2-v1",
+  "jurisdiction_context": "Jurisdiction-neutral prospective program design informed by current UK HFEA open-identity rules and U.S. ASRM consent, disclosure, and recordkeeping guidance.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m050-prospective",
+      "kind": "contextual",
+      "statement": "The policy applies prospectively before donation and is disclosed to all parties before consent.",
+      "rationale": "The benchmark does not test retroactive breach of a historical anonymity promise."
+    },
+    {
+      "id": "m050-legal-options",
+      "kind": "legal",
+      "statement": "Open-identity and consent-governed information-release models are legally available to the program.",
+      "rationale": "The benchmark compares ethical program design rather than jurisdictional legal preemption."
+    },
+    {
+      "id": "m050-records",
+      "kind": "contextual",
+      "statement": "Relevant medical and genetic donor information will be retained permanently under either policy.",
+      "rationale": "Identity access should not be confounded with loss of medical information."
+    },
+    {
+      "id": "m050-dna",
+      "kind": "scientific",
+      "statement": "Consumer DNA matching and related technologies may reveal genetic relationships regardless of the program's formal disclosure policy.",
+      "rationale": "No candidate may promise practical lifelong anonymity that the program cannot control."
+    },
+    {
+      "id": "m050-no-contact-duty",
+      "kind": "contextual",
+      "statement": "Release of identifying information does not create an obligation for donor or donor-conceived adult to communicate or form a relationship.",
+      "rationale": "Identity information and relational contact must remain separate policy questions."
+    }
+  ],
+  "position_families": [
+    "adult open identity",
+    "non-identifying information with consent-governed identity release",
+    "offspring genetic-origin interests",
+    "donor privacy and prospective reliance"
+  ],
+  "domains": [
+    "reproduction-genetics"
+  ],
+  "tags": [
+    "donor conception",
+    "gamete donation",
+    "donor identity",
+    "open identity",
+    "privacy",
+    "genetic origins",
+    "DNA matching",
+    "information rights"
+  ],
+  "scenario": "A fertility program is designing the consent terms for future sperm, oocyte, and embryo donations. Donor-conceived adults may value identifying information about genetic origins, while some donors and recipient parents value privacy and controlled contact. For this benchmark, assume the policy applies prospectively and is disclosed before consent; both open-identity and consent-governed disclosure models are legally available; relevant medical and genetic information will be retained permanently; consumer DNA matching may reveal genetic relationships regardless of formal program policy; and identity release creates no duty of personal contact. The program must decide what donor-identity rule to promise.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored prospective donor-identity case grounded in donor-conceived-adult, donor, and recipient attitude studies plus current HFEA and ASRM policy architectures. It fixes prospective consent, legal availability, permanent medical/genetic records, technological limits on practical anonymity, and separation of identity disclosure from relational contact so open-identity and consent-governed regimes remain action-distinct.",
+    "sources": [
+      {
+        "citation": "HFEA. Donors and donor-conceived information guidance, current through 2026.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "ASRM Practice Committee. Gamete and embryo donation guidance. 2024.",
+        "type": "guideline"
+      },
+      {
+        "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Perspectives on sperm donor anonymity: insights from donor-conceived adults in Belgium. PMID 39008824.",
+        "type": "article"
+      },
+      {
+        "citation": "Anonymous sperm donors' attitude towards donation and the release of identifying information. PMID 31463872.",
+        "type": "article"
+      },
+      {
+        "citation": "Attitudes of anonymous and identity-release oocyte donors towards future contact with donor offspring. PMID 30805634.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Allow a donor-conceived adult to obtain the donor's identifying information at age 18, while making clear that disclosure creates no obligation for either person to communicate or form a relationship.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from donor-conceived-adult evidence showing strong interest in identifying donor information and genetic connections. The age-18 program mechanism is a Bench policy translation informed by the HFEA comparator, not attributed to survey respondents as one exact institutional rule.",
+          "sources": [
+            {
+              "citation": "Perspectives on sperm donor anonymity: insights from donor-conceived adults in Belgium. PMID 39008824.",
+              "type": "article"
+            },
+            {
+              "citation": "The impact of the method of genetic identity disclosure on the donor conceived adult. PMID 35077297.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Provide durable non-identifying medical and background information, but release donor identity or facilitate identifying contact only when the adult donor-conceived person and donor both consent under the program's prospective terms.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from donor and recipient evidence documenting substantial privacy and anonymity preferences. The mutual-consent release mechanism is Bench-authored policy completion and is not presented as the preference of donor-conceived adults as a group.",
+          "sources": [
+            {
+              "citation": "Anonymous sperm donors' attitude towards donation and the release of identifying information. PMID 31463872.",
+              "type": "article"
+            },
+            {
+              "citation": "Attitudes of anonymous and identity-release oocyte donors towards future contact with donor offspring. PMID 30805634.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "For prospective donations, register donors as identifiable so donor-conceived adults can request identifying information at age 18; identity release does not impose any obligation of personal contact.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the current HFEA open-identity architecture for most donations made after 1 April 2005, under which eligible donor-conceived adults may request donor identifying details at age 18. The no-contact-duty clause clarifies the informational scope of the policy.",
+          "sources": [
+            {
+              "citation": "HFEA. Donors; FAQs for donors, donor-conceived people and their parents; rules around releasing donor information. Current through 2026.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Set and disclose durable information-sharing terms prospectively, retain medical and genetic records, provide non-identifying information as authorized, and release identifying information according to the consent terms rather than promising universal identity access; warn all parties that DNA matching makes practical anonymity impossible to guarantee.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed professional policy inference from current ASRM guidance requiring counseling about information disclosure, permanent or durable donor records, confidentiality, and the declining feasibility of anonymity while recognizing variation among U.S. program disclosure arrangements. The consent-governed identity-release sentence is a Bench operationalization of that architecture, not a claim that ASRM mandates one national release threshold.",
+          "sources": [
+            {
+              "citation": "ASRM Practice Committee. Gamete and embryo donation guidance. 2024.",
+              "type": "guideline"
+            },
+            {
+              "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
+              "type": "guideline"
+            },
+            {
+              "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Guarantee donor-conceived adults access to donor identity because information about genetic origins is a significant interest of the person created through donation and should not depend on a donor's later permission.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from identity, informational interests, and intergenerational autonomy. The executable adult-access rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Release identifying information only under the disclosure terms to which donor and recipient consented prospectively, while warning that external genetic matching means practical anonymity cannot be guaranteed.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from privacy, informed consent, reliance, and promise-keeping under technological change. The executable consent-governed rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "ASRM Practice Committee. Gamete and embryo donation guidance. 2024.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 symmetric real-policy architecture comparison and stakeholder-specific provenance; later P3 donor-conception identity and privacy studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External policy, guidance, and empirical studies retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "HFEA. Donors and donor-conceived information guidance, current through 2026.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "ASRM Practice Committee. Gamete and embryo donation guidance. 2024.",
+      "type": "guideline"
+    },
+    {
+      "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
+      "type": "guideline"
+    },
+    {
+      "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Perspectives on sperm donor anonymity: insights from donor-conceived adults in Belgium. PMID 39008824.",
+      "type": "article"
+    },
+    {
+      "citation": "The impact of the method of genetic identity disclosure on the donor conceived adult. PMID 35077297.",
+      "type": "article"
+    },
+    {
+      "citation": "Anonymous sperm donors' attitude towards donation and the release of identifying information. PMID 31463872.",
+      "type": "article"
+    },
+    {
+      "citation": "Attitudes of anonymous and identity-release oocyte donors towards future contact with donor offspring. PMID 30805634.",
+      "type": "article"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:090628e28d8e966b5b79737addaedb66ee9e42584b17e22de13d1b58c8083c09"
+}

@@ -1,0 +1,259 @@
+{
+  "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
+  "case_id": "m018-patient-requested-antibiotics-uncertainty",
+  "version": "1.0.0",
+  "title": "Patient-requested antibiotics under genuine diagnostic uncertainty",
+  "short_description": "A primary-care clinician must choose among no immediate antibiotic, delayed prescribing, and patient-requested immediate treatment when bacterial infection remains possible but expected benefit is low and reliable follow-up is available.",
+  "decision_question": "When bacterial infection is possible but not likely, immediate antibiotics offer low expected benefit, the patient strongly prefers treatment, and reliable follow-up is available, what prescribing strategy should the clinician use?",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m018-patient-requested-antibiotics-uncertainty-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x2x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
+  "benchmark_profile": "full-corpus-2x2x2-v1",
+  "jurisdiction_context": "Jurisdiction-neutral outpatient primary care informed by contemporary antimicrobial-stewardship guidance and delayed-prescribing evidence.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m018-low-risk",
+      "kind": "scientific",
+      "statement": "The patient has no red flags, major immune compromise, or other feature that requires immediate antibacterial treatment.",
+      "rationale": "The benchmark tests bounded prescribing discretion rather than an infection for which antibiotics are clearly indicated."
+    },
+    {
+      "id": "m018-genuine-uncertainty",
+      "kind": "scientific",
+      "statement": "Bacterial infection remains genuinely possible but is not the most likely explanation, and immediate antibiotics have low expected average benefit.",
+      "rationale": "This preserves uncertainty without turning immediate treatment into the professional default."
+    },
+    {
+      "id": "m018-followup",
+      "kind": "contextual",
+      "statement": "Reliable reassessment within 24-48 hours is available and the patient can understand and act on written warning signs or delayed-prescription activation criteria.",
+      "rationale": "No-immediate and delayed strategies are only serious alternatives when safety-net follow-up is credible."
+    },
+    {
+      "id": "m018-patient-preference",
+      "kind": "contextual",
+      "statement": "The patient strongly prefers antibiotics after counseling because of prior perceived benefit and concern about prolonged symptoms and missed work.",
+      "rationale": "The affected-public candidate should represent a real treatment-access preference rather than clinician convenience."
+    }
+  ],
+  "position_families": [
+    "immediate antibiotic access under residual uncertainty",
+    "no immediate antibiotic with safety-net follow-up",
+    "delayed or back-up prescription",
+    "antimicrobial stewardship under shared decision making"
+  ],
+  "domains": [
+    "public-health"
+  ],
+  "tags": [
+    "antibiotics",
+    "antimicrobial stewardship",
+    "delayed prescribing",
+    "respiratory infection",
+    "shared decision making",
+    "diagnostic uncertainty"
+  ],
+  "scenario": "A generally healthy adult presents with several days of an uncomplicated respiratory illness. Examination and available testing show no red flags. Bacterial infection remains possible but is not the most likely explanation, and immediate antibiotics are expected to provide little average benefit. The patient strongly prefers antibiotics because a previous similar illness seemed to improve after treatment and because missing additional work would be difficult. For this benchmark, assume reliable reassessment within 24-48 hours is available, the patient can understand written safety-net instructions, and no high-risk host feature lowers the treatment threshold. The clinician must choose a prescribing strategy.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored outpatient prescribing case synthesized from delayed-antibiotic trials, stewardship guidance, and patient-expectation research. The scenario fixes low clinical risk, genuine but modest diagnostic uncertainty, low expected immediate benefit, strong patient preference, and reliable follow-up so no-immediate, delayed, and immediate-access orientations remain action-distinct.",
+    "sources": [
+      {
+        "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+        "type": "article"
+      },
+      {
+        "citation": "Little P et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care. BMJ. 2014. PMID 24603565.",
+        "type": "article"
+      },
+      {
+        "citation": "de la Poza Abad M et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016. PMID 26719947.",
+        "type": "article"
+      },
+      {
+        "citation": "Tan R et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections. Int J Antimicrob Agents. 2022. PMID 34971727.",
+        "type": "article"
+      },
+      {
+        "citation": "Laytner L et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024. PMID 39313338.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "When bacterial infection remains genuinely possible, offer immediate antibiotics after explaining expected benefits, adverse effects, and resistance concerns if the informed patient strongly prefers treatment and accepts the uncertainty.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from patient-expectation studies showing a treatment-access orientation among some patients who believe antibiotics may help and place high value on prompt access. The institutional permission rule is Bench-authored and is not presented as professional prescribing guidance.",
+          "sources": [
+            {
+              "citation": "Tan R et al. Int J Antimicrob Agents. 2022. PMID 34971727.",
+              "type": "article"
+            },
+            {
+              "citation": "Laytner L et al. Ann Fam Med. 2024. PMID 39313338.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Avoid immediate antibiotics but provide a delayed or back-up prescription with clear activation criteria so the patient retains access if symptoms persist, worsen, or fail to improve as expected.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from delayed-prescribing trials in which many patients accepted a back-up prescription, antibiotic use fell substantially relative to immediate prescribing, and satisfaction remained high. The policy sentence translates that patient-acceptable architecture to the fixed case.",
+          "sources": [
+            {
+              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "type": "article"
+            },
+            {
+              "citation": "Little P et al. BMJ. 2014. PMID 24603565.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Do not prescribe antibiotics now; provide symptomatic treatment and explicit return precautions because expected benefit is low and no current feature requires antibacterial therapy.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from outpatient antimicrobial-stewardship guidance emphasizing evidence-based prescribing and avoidance of unnecessary antibiotics when expected benefit is low.",
+          "sources": [
+            {
+              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Use a delayed prescription with defined timing or symptom triggers, allowing treatment if the illness fails to improve while avoiding routine immediate antibiotic exposure.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from randomized trials and systematic-review evidence treating delayed prescribing as a distinct, professionally defensible strategy for selected uncomplicated respiratory infections when immediate antibiotics are not necessary.",
+          "sources": [
+            {
+              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "type": "article"
+            },
+            {
+              "citation": "de la Poza Abad M et al. JAMA Intern Med. 2016. PMID 26719947.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Withhold immediate antibiotics because low expected individual benefit does not justify avoidable drug harms and cumulative resistance costs when safe follow-up is available.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence, stewardship, and public-health externality reasoning. The executable no-immediate rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Use a delayed prescription because bounded diagnostic uncertainty and reliable follow-up make option-preserving shared decision making preferable to either immediate treatment or categorical refusal.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from shared decision making, proportionality, and option-value reasoning under uncertainty. The executable delayed-prescribing rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 natural symmetric candidate ecology and cross-source convergence around delayed prescribing; later P3 representation and uncertainty-threshold studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External guidance and research retain their own rights; scenario and candidate text are summarized, adapted, or framework-derived rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+      "type": "article"
+    },
+    {
+      "citation": "Little P et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care. BMJ. 2014. PMID 24603565.",
+      "type": "article"
+    },
+    {
+      "citation": "de la Poza Abad M et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016. PMID 26719947.",
+      "type": "article"
+    },
+    {
+      "citation": "Tan R et al. Int J Antimicrob Agents. 2022. PMID 34971727.",
+      "type": "article"
+    },
+    {
+      "citation": "Laytner L et al. Ann Fam Med. 2024. PMID 39313338.",
+      "type": "article"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:a40e608fec49aa2d605c8801ef7fef0d9af1431b90a749b3f972d37b3fa93887"
+}

@@ -83,6 +83,9 @@ Thus professional practice contains a genuine divide between legally available a
 - Euthanasia in advanced dementia: Dutch GP vignette survey. PMID 34789166.
 - Euthanasia and Assisted Suicide of Persons with Dementia in the Netherlands. Published case review.
 - Dutch Supreme Court/advance-directive practice summarized in contemporary dementia-euthanasia reviews.
+- Ronald Dworkin. *Life's Dominion*. 1993.
+- Rebecca Dresser. *Dworkin on Dementia: Elegant Theory, Questionable Policy*. Hastings Center Report. 1995;25(6):32–38.
+- Agnieszka Jaworska. *Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value*. Philosophy & Public Affairs. 1999;28(2):105–138.
 
 ## 13. Construction and representation risks
 
@@ -112,3 +115,18 @@ Dutch euthanasia law/practice; geriatrics/dementia; advance-directive ethics; af
 ## 18. Downstream record rule
 
 Any executable version must remain jurisdiction- and date-stamped. Both representations must preserve the specificity/reaffirmation of the directive and the uncertainty of the current experiential state.
+
+## 19. Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional 2×2×2 geometry in §16 for the post-strict reconstruction while preserving the earlier audit state as research history.
+
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 1 expert × 3 framework`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean.
+
+M033 is a direct-grounding positive control at the public-policy level. Dutch public studies directly ask about eligibility for euthanasia in advanced dementia based on a prior request, supporting permit-versus-do-not-perform orientations with the due-care and ordinary-treatment clauses disclosed as Bench-authored completion. Current RTE guidance supplies one direct expert architecture: an advance directive may replace the oral request, but every other due-care criterion still has to be established. Physician reluctance is relevant evidence about professional disagreement but is not promoted into a second authoritative expert policy merely to balance the pool.
+
+The natural framework ecology contains three action-distinct rules. **Precedent autonomy** permits implementation when the competent prior directive and remaining criteria are satisfied. **Current welfare** permits implementation only if present observable evidence strongly supports the burdensome condition anticipated by the directive, so mixed or indeterminate current welfare means do not proceed. **Irreversibility/contemporaneous confirmation** requires a current communicative request and therefore refuses euthanasia after communicative capacity is lost even if present suffering is strongly evidenced. The last two can therefore diverge and should not be collapsed.
+
+Current machine-readable companions are `m033-advance-request-euthanasia-dementia-natural-concise-v1` and `m033-advance-request-euthanasia-dementia-natural-detailed-v1`. No separate direct-grounding frame is needed because it would duplicate the natural field, and no synthetic candidate is required.

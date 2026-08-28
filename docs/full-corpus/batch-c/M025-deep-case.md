@@ -112,3 +112,20 @@ Deaf/Hard-of-Hearing affected-community review; pediatric audiology/otology; dis
 ## 18. Downstream record rule
 
 If transcribed, both representations must explicitly preserve immediate high-quality sign-language access and the nonabsolute timing effect of delayed implantation. No candidate may imply that Deaf identity itself constitutes harm.
+
+## 19. Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional profile-era geometry in §16 for the post-strict reconstruction while preserving the earlier judgment and independent-review failure as research history.
+
+**Canonical frame:** `source-informed@1.0.0`  
+**Geometry:** `2 public × 1 expert × 3 framework`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean.
+
+The independent review correctly identified two different problems in sequence. The original `pub2` failed scenario/action divergence because it recommended timely implantation only when the family already prioritized spoken/auditory opportunity, an antecedent that is false for the represented parents. The author repair removed that antecedent, so both public candidates now apply to the same parents and direct different first actions. The strict review nevertheless still failed the repaired candidate on source-to-policy fidelity: the empirical anchors concern parents deciding for their own child, not what an implant service should recommend against the represented parents' current choice.
+
+The post-strict reconstruction **does not overturn that finding**. It encodes it. Both public candidates are classified as **source-informed policy inference** because the Bench translates affected-parent values and choices into service-level policy. The professional candidate remains directly grounded in the American Cochlear Implant Alliance family-centered pediatric candidacy architecture.
+
+The natural framework ecology retains all three independent positions already mapped in §11: cultural-linguistic parental authority, open-future/opportunity preservation, and relational autonomy/bilingual capability. The third is not filler: it directs structured deferral with an explicit bilingual language plan, periodic reassessment and increasing participation by the child, rather than either simple deference or a present recommendation to implant. Feinberg's *The Child's Right to an Open Future* is added as an explicit anchor for the opportunity-preservation framework.
+
+Current machine-readable companions are `m025-cochlear-implantation-deaf-child-source-informed-concise-v1` and `m025-cochlear-implantation-deaf-child-source-informed-detailed-v1`. Both preserve immediate fluent sign-language access and the nonabsolute timing effect. No direct-grounding frame is declared and no synthetic candidate is required.

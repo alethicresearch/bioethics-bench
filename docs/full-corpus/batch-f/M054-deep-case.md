@@ -102,3 +102,20 @@ Clinical genomics; genetic counseling; patient-preference methods; candidate pro
 ## 18. Downstream record rule
 
 If candidate audit confirms two affected-public policy translations, use the existing Mean-pinned `2x1x2` profile. Do not split the ACMG opt-out architecture into artificial expert alternatives.
+
+## 19. Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional profile-era eligibility judgment in §§16–18 for the post-strict reconstruction while preserving it as research history.
+
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 1 expert × 3 framework`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean.
+
+Both public candidates are classified as **source-informed policy inference**. High uptake of actionable findings under an offered program is evidence of demand, not direct endorsement of an opt-out default. Likewise, preferences for category choice and observed choices under an existing consent architecture do not directly prescribe an institutional opt-in rule. The reconstructed candidates state those inferential steps explicitly rather than upgrading behavior or preference into policy evidence.
+
+The ACMG minimum-list plus informed-opt-out architecture remains the single direct expert policy family; no second expert alternative is manufactured. The natural framework ecology retains all three action-distinct positions already mapped in §11: prevention/beneficence default, informational autonomy/prior authorization, and proportionality/epistemic restraint through a higher penetrance/actionability threshold. The earlier 2-framework target omitted the third only because the candidate audit was fitting a registered 2×1×2 profile.
+
+No direct-grounding executable frame is declared: once the public candidates are classified consistently, removing source-informed inference leaves no public pool. Current machine-readable companions are `m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1` and `m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1`. No synthetic candidate is required.
+
+Additional framework anchors used in the executable record include Andorno on the right not to know (PMID 15467071), the systematic review of ethical reflection on incidental findings (PMID 22739341), and the systematic review of international secondary-findings policies (PMID 39299240).

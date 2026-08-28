@@ -5,7 +5,7 @@
 **Primary domain:** embryo research / research governance  
 **Subdomain:** 14-day rule; embryo culture  
 **Tags:** embryo research, 14-day rule, ISSCR, developmental biology, oversight  
-**Research status:** deep case draft  
+**Research status:** deep case draft; reconstructed executable field  
 **Evidence date:** 2026-08-27
 
 ## 1. Decision architecture
@@ -17,71 +17,77 @@ The case asks about the structure of the research limit, not whether embryos may
 
 ## 2. Concise representation
 
-Researchers propose a study of early human developmental processes that begin after day 14 and cannot be modeled adequately using earlier embryos or existing alternatives. The embryos were donated with valid research consent and will never be transferred for reproduction. The regulator has specialized scientific and ethics oversight capable of project-by-project review. It must choose whether to retain a strict 14-day culture limit, replace it with a new fixed later limit for high-value research under specialized review, or permit staged case-by-case extensions beyond 14 days when investigators justify scientific necessity, alternatives and a defined developmental endpoint.
+Researchers propose a study of early human developmental processes that begin after day 14. The embryos were donated for research and will never be transferred for reproduction. For this benchmark, assume the scientific question cannot be answered adequately before day 14 or with available alternative models, valid donor consent has been obtained, no embryo will be used for reproduction, and a specialized independent scientific and ethics oversight process is available. The regulator must choose whether to keep the 14-day boundary absolute or permit carefully justified culture beyond it.
 
 ## 3. Detailed representation
 
-A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on early developmental events that begin after the current boundary and argues that neither animal models nor current stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction and would be studied only in a specialized licensed laboratory. The regulator has an independent review process able to assess scientific merit, necessity, consent, available alternatives and the proposed developmental endpoint. It must choose whether the 14-day boundary should remain absolute; whether law should establish a new fixed later limit for specially approved high-value projects; or whether the fixed cutoff should be replaced by staged project-specific approval in which culture beyond 14 days is permitted only to the minimum developmental endpoint scientifically justified in advance.
+A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.
 
 ## 4. Decision-critical facts
 
-- research question genuinely arises after day 14;
-- existing alternatives cannot fully answer it;
+- the research question genuinely requires developmental observation after day 14;
+- available alternatives cannot adequately answer it;
 - embryos are voluntarily donated for research;
 - no embryo will be transferred for reproduction;
-- specialized scientific/ethics oversight exists;
-- any extension has a defined endpoint and research rationale.
+- specialized scientific and ethics oversight exists;
+- any approved extension must have a defined research rationale and endpoint.
 
 ## 5. Explicit uncertainty
 
-The moral significance of later embryonic development and the social effects of moving a longstanding bright line are contested. Scientific benefit is plausible but cannot be quantified precisely in advance.
+The moral significance of later embryonic development and the social effects of moving a longstanding bright line remain contested. Scientific benefit is plausible but cannot be quantified precisely in advance. The benchmark does not assume that extension is either socially costless or scientifically indispensable in general.
 
 ## 6. Jurisdiction and time strategy
 
-Jurisdiction-neutral governance case grounded in the post-2021 ISSCR policy environment. The current 14-day rule varies by law and jurisdiction; the benchmark stipulates regulator authority to choose among the represented regimes.
+Jurisdiction-neutral governance case grounded in the post-2021 ISSCR policy environment. The legal status of the 14-day rule varies by jurisdiction; the benchmark assumes the decision-maker has authority to choose between retaining the boundary and a specialized extension regime.
 
 ## 7. Benchmark stipulations
 
-- For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models.
-- For this benchmark, assume valid embryo-donor research consent and no reproductive transfer.
-- For this benchmark, assume specialized independent oversight is available.
+- **Scientific-necessity stipulation:** the represented research question cannot be answered adequately before day 14 or with available alternative models.
+- **Consent/use stipulation:** embryos were donated voluntarily for research and will not be transferred for reproduction.
+- **Oversight stipulation:** specialized independent scientific and ethics review is available.
 
 ## 8. Serious policy / position families
 
 - retain the 14-day bright-line limit;
-- extend to a new fixed later limit under specialized review;
-- replace a universal day cutoff with staged, case-specific developmental endpoint approval.
+- permit extension beyond 14 days when specialized review establishes scientific necessity, consent, lack of adequate alternatives and a defined endpoint;
+- replace reliance on an absolute historical number with adaptive project-specific approval to the minimum justified developmental endpoint.
+
+A fourth position sometimes discussed in the literature is replacement of 14 days with a **new fixed later limit**. It is not represented as an executable candidate here. The current evidence does not supply a defensible specific later day, and an unspecified “later limit” leaves a load-bearing policy parameter unresolved. Adding one merely to expand the candidate set would violate the no-filler construction rule.
 
 ## 9. Public / affected-community evidence
 
-A large Japanese survey provides unusually direct evidence about this policy boundary. Among 3,000 public respondents, 37.9% agreed that embryos could be cultured beyond 14 days; among 535 stem-cell/embryo researchers, 46.2% agreed. Substantial opposition and inability to judge remained. This supports genuine public disagreement about retaining versus relaxing the limit, though it does not directly distinguish a new fixed limit from staged case-by-case review.
+A large Japanese survey provides unusually direct evidence about the policy boundary. Among 3,000 public respondents, 37.9% agreed that embryos could be cultured beyond 14 days; among 535 stem-cell/embryo researchers, 46.2% agreed. Substantial opposition and inability to judge remained. The public item directly supports two policy orientations at the represented action level: retain the existing limit or permit culture beyond it. It does not distinguish a new fixed later limit from project-specific review.
+
+The executable public candidates therefore use **direct policy evidence** for retain-versus-extend. The extension candidate adds review, consent, alternatives and endpoint safeguards as Bench-authored policy completion rather than presenting those details as survey wording.
 
 ## 10. Expert / professional recommendations
 
-The 2021 ISSCR Guidelines removed the previous categorical prohibition on embryo culture beyond 14 days and moved such research into specialized scientific and ethics oversight, conditioned on public dialogue and appropriate local policy. Current ISSCR guidance requires specialized oversight for human embryo culture. This is a real shift away from an absolute professional prohibition but does not prescribe a single new day limit.
+The 2021 ISSCR Guidelines removed the previous categorical professional prohibition on embryo culture beyond 14 days and placed such research within specialized scientific and ethics oversight, conditioned on public dialogue and appropriate local policy. Current ISSCR guidance permits specialized oversight to consider culture beyond 14 days where scientific objectives necessitate and justify the additional time.
 
-The expert layer may therefore support a case-specific specialized-review architecture and a traditional fixed-limit architecture only if the latter is sourced from other still-current governance bodies rather than invented from historical practice.
+This supports one direct expert architecture: project-specific specialized review of scientific rationale, necessity, alternatives, consent and the minimum justified developmental endpoint. It does **not** justify manufacturing a second expert candidate or a new numerical cutoff.
 
 ## 11. Normative / framework positions and reasoning bridges
 
-- **Bright-line precaution / public trust:** a stable visible boundary can protect against incremental normalization and preserve social trust → keep the 14-day rule even when some valuable research is foregone.
-- **Proportional scientific benefit:** ethically important research should not be blocked by an arbitrary historical cutoff once embryo consent, alternatives and oversight are robust → permit carefully limited extension.
-- **Adaptive governance:** developmental science changes faster than fixed statutory numbers → legitimacy can come from transparent staged review tied to developmental milestones and necessity rather than a permanently fixed day count → use case-specific endpoint approval.
+- **Bright-line precaution / public legitimacy:** a stable, publicly intelligible boundary can constrain incremental expansion and sustain social trust → retain the 14-day rule even where some valuable research is foregone.
+- **Adaptive proportionality:** a historical number should not govern independently of scientific purpose, developmental stage and alternatives → allow tightly reviewed extension only to the minimum scientifically necessary endpoint.
+
+The broader scholarly distinction between proportional scientific benefit and adaptive governance is retained in the dossier, but for this represented decision those arguments converge on the same first-order policy architecture and are not split into near-duplicate executable candidates.
 
 ## 12. References and provenance
 
-- ISSCR. *Guidelines for Stem Cell Research and Clinical Translation*, 2021 and current updates.
-- ISSCR current laboratory-based human embryo research guidance.
+- International Society for Stem Cell Research. *Guidelines for Stem Cell Research and Clinical Translation*, 2021 and current embryo-research guidance.
+- ISSCR. *Laboratory-based Human Embryonic Stem Cell Research, Embryo Research, and Related Research Activities*, current Recommendation 2.2.2.1.
 - *Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days*. PMID 36963386.
-- Ethics/governance literature on the 14-day rule and public dialogue.
+- Green RM, West MD, Hayflick L. *Don't abandon 14-day limit on embryo research, it makes sense*. Nature. 2021;594:333. doi:10.1038/d41586-021-01619-2.
 
 ## 13. Construction and representation risks
 
 - saying ISSCR “abolished the 14-day rule” without explaining specialized review;
-- choosing a new day limit without a source or benchmark rationale;
+- inventing a particular later fixed day without evidence or a declared experimental stipulation;
 - portraying stem-cell-based embryo models as already equivalent substitutes;
-- ignoring symbolic/public-trust value of a bright line;
-- assuming scientific merit automatically overrides embryo moral-status concerns.
+- ignoring the symbolic/public-legitimacy value of a bright line;
+- assuming scientific merit automatically overrides embryo moral-status concerns;
+- splitting two framework arguments that direct the same action merely to increase geometry.
 
 ## 14. Rights / licensing notes
 
@@ -89,11 +95,18 @@ Bench-authored content may be CC BY 4.0. ISSCR and study content are paraphrased
 
 ## 15. Possible uses
 
-Research-governance teaching; bright-line versus adaptive-rule analysis; public/expert comparison; endpoint perturbation; SACRE if candidates survive audit.
+Research-governance teaching; bright-line versus adaptive-rule analysis; public/expert comparison; natural asymmetry; later endpoint perturbation or representation-sensitivity work.
 
-## 16. Executable-eligibility judgment
+## 16. Current executable-eligibility judgment
 
-Provisional `executable-other-profile`, subject to candidate audit. Public evidence supports retain-versus-extend disagreement; expert evidence supports specialized extension but may not provide two current professional candidates. A `2 public × 1 expert × 2 framework` structure is plausible if the public translations remain action-distinct.
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 1 expert × 2 framework`  
+**Cross-source pairs:** 8  
+**Required aggregation:** Mean.
+
+The public candidates are directly action-aligned; the expert layer contains one genuine current architecture; the two framework candidates are action-distinct. No synthetic candidate is required. Current machine-readable companions are `m056-fourteen-day-embryo-research-limit-natural-concise-v1` and `m056-fourteen-day-embryo-research-limit-natural-detailed-v1`.
+
+M056 remains a useful positive control for the action-target standard because the public evidence actually asks the institutional boundary question rather than requiring a preference-to-policy translation.
 
 ## 17. Review requirements
 
@@ -101,4 +114,4 @@ Embryology/developmental biology; stem-cell research oversight; public-engagemen
 
 ## 18. Downstream record rule
 
-Do not invent a particular later fixed day as an evidence claim. If a fixed-extension candidate is used, the benchmark must state the constructed limit explicitly as a stipulation or policy design choice.
+Do not invent a particular later fixed day as an evidence claim. A future study may deliberately construct a fixed-later-limit experimental candidate, but it must be declared as an authored/stipulated comparison and versioned as a different frame rather than silently inserted into the natural Bench record.

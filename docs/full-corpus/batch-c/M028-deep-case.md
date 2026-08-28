@@ -114,3 +114,18 @@ Neurology/neurocritical care; law; religious/pluralism expertise; affected-famil
 ## 18. Downstream record rule
 
 If executable, both representations must state that BD/DNC determination is valid, complete and not under diagnostic dispute. Any candidate must concern accommodation after death, not whether the patient is medically dead.
+
+## 19. Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional 2×1×2 geometry in §16 for the post-strict reconstruction while preserving that earlier candidate-audit state as research history.
+
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 1 expert × 3 framework`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean.
+
+M028 is a direct-grounding positive control. The informed-public survey asks an institutional action-level question about whether a hospital should be required to continue treatment after family rejection of brain death, so the two public orientations can be labeled **direct policy evidence** with their bounded transition/transfer language disclosed as Bench-authored completion. The expert layer remains one direct limited-accommodation/disagreement-process architecture from current AAN/AAP/CNS/SCCM guidance; a second expert candidate is not manufactured from historical institutional variation.
+
+The natural framework ecology contains all three positions already mapped in §11 and the serious-policy map: robust conscience/pluralist accommodation, public-standard/professional-integrity discontinuation after a short transition, and proportional accommodation/distributive justice using a defined reviewable period. The older 2-framework audit collapsed the third position to fit a registered profile; natural ecology restores it because it gives a different rule for the duration and termination of accommodation.
+
+Current machine-readable companions are `m028-brain-death-accommodation-natural-concise-v1` and `m028-brain-death-accommodation-natural-detailed-v1`. No separate direct-grounding frame is needed because it would duplicate this natural candidate field, and no synthetic candidate is required.
