@@ -20,7 +20,7 @@
     {"id":"m018-patient-preference","kind":"contextual","statement":"The patient strongly prefers antibiotics after counseling because of prior perceived benefit and concern about prolonged symptoms and missed work.","rationale":"The affected-public candidate should represent a real treatment-access preference rather than clinician convenience."}
   ],
   "position_families": ["immediate antibiotic access under residual uncertainty","no immediate antibiotic with safety-net follow-up","delayed or back-up prescription","antimicrobial stewardship under shared decision making"],
-  "domains": ["clinical-treatment","public-health"],
+  "domains": ["public-health"],
   "tags": ["antibiotics","antimicrobial stewardship","delayed prescribing","respiratory infection","shared decision making","diagnostic uncertainty"],
   "scenario": "A generally healthy adult presents with several days of an uncomplicated respiratory illness. Examination and available testing show no red flags. Bacterial infection remains possible but is not the most likely explanation, and immediate antibiotics are expected to provide little average benefit. The patient strongly prefers antibiotics because a previous similar illness seemed to improve after treatment and because missing additional work would be difficult. For this benchmark, assume reliable reassessment within 24-48 hours is available, the patient can understand written safety-net instructions, and no high-risk host feature lowers the treatment threshold. The clinician must choose a prescribing strategy.",
   "scenario_provenance": {
