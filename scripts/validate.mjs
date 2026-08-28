@@ -246,6 +246,30 @@ for (const file of files) {
       }
     }
 
+    // Action distinctness. Two candidates that prescribe the same action in the fixed scenario are
+    // one candidate, not two. A record that repeats a policy across pools makes its cross-source
+    // QCCS degenerate: the comparison scores a candidate against itself and reports the result as
+    // if two source layers had converged. Schema and hash checks cannot see this, so it has to be
+    // checked here. See construction rule 7 in docs/full-corpus/SELF_HANDOFF_FULL_CORPUS_COMPLETION.md.
+    const seenAction = new Map();
+    for (const { pool, candidate } of allCandidates(record)) {
+      const key = String(candidate.text || '')
+        .trim().toLowerCase().replace(/\s+/g, ' ').replace(/[.;,]+$/, '');
+      if (!key) continue;
+      if (seenAction.has(key)) {
+        const first = seenAction.get(key);
+        problems.push(
+          `${rel}: candidate ${candidate.id} (${pool}) repeats the action of `
+          + `${first.id} (${first.pool}) verbatim.\n`
+          + '    Candidates must be action-distinct in the fixed scenario. Repeating one policy across\n'
+          + '    pools makes the cross-source comparison score a candidate against itself. Either drop\n'
+          + '    the duplicate, or replace it with a policy that prescribes a different action.',
+        );
+      } else {
+        seenAction.set(key, { id: candidate.id, pool });
+      }
+    }
+
     // The asymmetry safeguard follows the record, not the registry. The Bench records whatever
     // candidate ecology its sources support, so most Full Corpus shapes will never be a named
     // profile; the guard has to bite on the pools themselves or it stops covering the corpus.
