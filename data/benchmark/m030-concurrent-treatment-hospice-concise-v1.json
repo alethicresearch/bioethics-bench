@@ -1,0 +1,67 @@
+{
+  "record_id": "m030-concurrent-treatment-hospice-concise-v1",
+  "case_id": "m030-concurrent-treatment-hospice",
+  "version": "1.0.0",
+  "title": "Concurrent disease-directed treatment and hospice support",
+  "short_description": "A payer or integrated health system must decide whether hospice-level supportive services should remain available to a terminally ill adult who wishes to continue selected noncurative disease-directed treatment.",
+  "decision_question": "Should hospice-level supportive services be available to a terminally ill adult who wishes to continue selected disease-directed treatment for the terminal illness?",
+  "representation": {"form":"concise","companion_record_ids":["m030-concurrent-treatment-hospice-detailed-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x2x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
+  "benchmark_profile": "full-corpus-2x2x2-v1",
+  "jurisdiction_context": "U.S. program-design context informed by current Medicare hospice election policy and Veterans Health Administration concurrent-care practice.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {"id":"m030-eligible","kind":"contextual","statement":"The patient meets clinical hospice prognosis criteria.","rationale":"The case concerns treatment concurrency, not whether the patient is medically hospice eligible."},
+    {"id":"m030-treatment","kind":"scientific","statement":"The selected disease-directed therapy is noncurative, plausibly beneficial, and acceptable in burden to the patient.","rationale":"A clearly futile, curative, or intolerably burdensome treatment would distort the policy comparison."},
+    {"id":"m030-preference","kind":"contextual","statement":"The patient understands the prognosis and wants both hospice-level support and continued selected disease-directed therapy.","rationale":"The program rule should be tested against an informed preference for both forms of care."},
+    {"id":"m030-feasibility","kind":"contextual","statement":"The payer or health system can operationalize either a traditional hospice election or a concurrent-care model.","rationale":"The decision must not be predetermined by administrative impossibility."},
+    {"id":"m030-related-treatment","kind":"contextual","statement":"The continued treatment is related to the terminal illness.","rationale":"The hospice election rule only creates a real conflict if the treatment falls within the terminal-illness scope."}
+  ],
+  "position_families": ["traditional hospice election away from terminal-illness treatment coverage","concurrent hospice plus selected disease-directed treatment","conditional or time-limited concurrent care","comfort-focused program identity versus nonabandonment"],
+  "domains": ["end-of-life"],
+  "tags": ["hospice","concurrent care","cancer","palliative care","Medicare","Veterans Health Administration","treatment choice","program design"],
+  "scenario": "An adult with metastatic lung cancer has an expected prognosis under six months and wants hospice-level home support, symptom management, and caregiver services while continuing a low-frequency cancer-directed therapy that may modestly slow progression but is not expected to cure the disease. For this benchmark, assume the patient meets hospice prognosis criteria, the therapy is noncurative but plausibly beneficial and acceptable in burden, the patient understands the prognosis and wants both forms of care, the payer can operationalize either a traditional hospice election or concurrent-care model, and the continued therapy is related to the terminal illness. The payer or integrated health system must decide what eligibility and coverage policy to adopt.",
+  "scenario_provenance": {
+    "construction_method":"adapted-from-source",
+    "summary":"Bench-authored program-design case grounded in current Medicare hospice election policy, VHA concurrent-care practice, patient preference studies, and observational VA literature. It fixes hospice eligibility, noncurative but plausible treatment benefit, informed patient preference for both services, administrative feasibility, and terminal-illness treatment scope so traditional and concurrent architectures remain action-distinct.",
+    "sources":[
+      {"citation":"Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.","type":"policy-document"},
+      {"citation":"The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.","type":"article"},
+      {"citation":"Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.","type":"article"},
+      {"citation":"The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.","type":"article"},
+      {"citation":"Experimental preference study of supportive care, hospice, chemotherapy, and concurrent chemotherapy plus hospice in advanced lung cancer. PMID 19571331.","type":"article"},
+      {"citation":"Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.","type":"article"}
+    ],
+    "adapted_not_reproduced":true
+  },
+  "candidate_pools": {
+    "public": [
+      {"id":"pub1","text":"Allow hospice-level services without requiring patients to stop selected disease-directed cancer treatment, so patients can pursue symptom support and limited disease control together.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from preference evidence in which concurrent chemotherapy plus hospice was the most commonly selected option and from evidence that willingness to forgo cancer treatment did not track perceived hospice-service need. The program-policy wording is an executable translation of those directly elicited care preferences.","sources":[{"citation":"Advanced lung-cancer treatment and hospice preference study. PMID 19571331.","type":"article"},{"citation":"Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.","type":"article"}],"adapted_not_reproduced":true}},
+      {"id":"pub2","text":"Preserve a distinct comfort-focused hospice pathway rather than combining hospice with ongoing cancer-directed treatment, while allowing patients who prefer continued treatment to remain in palliative or oncology care until they choose hospice.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from respondents who preferred hospice-only or supportive-care pathways and from broader advanced-cancer treatment-preference evidence. The institutional boundary rule is Bench-authored and is not presented as a majority public position.","sources":[{"citation":"Advanced lung-cancer treatment and hospice preference study. PMID 19571331.","type":"article"}],"adapted_not_reproduced":true}}
+    ],
+    "expert": [
+      {"id":"exp1","text":"Use a traditional hospice election model in which beneficiaries waive payer coverage for treatment of the terminal illness and related conditions while hospice assumes responsibility for comfort-focused terminal care.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted directly from the current Medicare hospice benefit architecture. This candidate represents an enacted payer policy, not a claim that the policy is ethically superior.","sources":[{"citation":"Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.","type":"policy-document"}],"adapted_not_reproduced":true}},
+      {"id":"exp2","text":"Permit hospice enrollment while selected disease-directed treatment continues, with coordination to prevent duplicate services and maintain goal-concordant care.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the Veterans Health Administration concurrent-care architecture and implementation literature documenting simultaneous hospice and cancer-directed treatment. Observational outcome associations are not treated as causal proof.","sources":[{"citation":"The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.","type":"article"},{"citation":"Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.","type":"article"},{"citation":"The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.","type":"article"}],"adapted_not_reproduced":true}}
+    ],
+    "framework": [
+      {"id":"fw1","text":"Permit concurrent hospice because patients should not have to surrender a valued, proportionate disease-directed treatment merely to receive symptom, caregiver, and home-support services.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from autonomy, nonabandonment, and proportionality. The executable concurrent-care rule is Bench-authored.","sources":[{"citation":"Beauchamp and Childress. Principles of Biomedical Ethics, 8th ed. 2019.","type":"book"}]}},
+      {"id":"fw2","text":"Maintain a distinct comfort-focused hospice benefit because finite hospice resources and coherent care planning justify a clear program boundary from ongoing disease-directed treatment for the terminal illness.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from stewardship, program integrity, and coordination reasoning. The executable traditional-boundary rule is Bench-authored.","sources":[{"citation":"Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials.","type":"policy-document"}]}}
+    ]
+  },
+  "collection":"benchmark",
+  "exposure":"internal-development",
+  "status":"draft",
+  "intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
+  "review":null,
+  "paper_usage":["P2 symmetric candidate ecology grounded in two real institutional architectures; later P3 program-design and representation studies."],
+  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External policy and empirical sources retain their own rights; source material is summarized and adapted rather than reproduced."},
+  "references":[
+    {"citation":"Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.","type":"policy-document"},
+    {"citation":"The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.","type":"article"},
+    {"citation":"Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.","type":"article"},
+    {"citation":"The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.","type":"article"},
+    {"citation":"Advanced lung-cancer treatment and hospice preference study. PMID 19571331.","type":"article"},
+    {"citation":"Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.","type":"article"}
+  ],
+  "schema_version":"1.0.0",
+  "content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+}
