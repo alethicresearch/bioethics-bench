@@ -29,11 +29,27 @@ To use a different shape, register it first:
 ```json
 "my-profile-v1": {
   "description": "...",
+  "lineage": "full-corpus",
   "pools": { "public": ["pub1"], "expert": ["exp1"], "framework": ["fw1"] },
   "cross_source_pairs": 3,
   "representations": ["concise", "detailed"]
 }
 ```
+
+### Lineage: a profile belongs to one corpus
+
+Featured v1 and the Full Corpus executable subset are built, reviewed and released as
+separate manifests. `lineage` is how a profile says which one it serves, and
+`collection_lineage` in the same file says which lineage each corpus collection belongs to
+(`featured` → `featured`, `benchmark` → `full-corpus`; working collections such as
+`development` are unconstrained).
+
+A record whose collection and profile disagree fails. Without that guard the only thing
+tying a record to a construction lineage is the profile name, and a Featured-lineage
+profile sitting in a Full Corpus record would carry Featured pilot geometry into a manifest
+that is supposed to be independent of it. Two shapes can be identical and still belong to
+different corpora: `featured-core-2x2x2-v1` and `full-corpus-2x2x2-v1` have the same pools
+and the same twelve cross-source pairs, and are not interchangeable.
 
 The registry then drives, for every record declaring it:
 
