@@ -134,6 +134,80 @@ P3 v5 is the validation outline. Confirmatory model and human studies have not b
 6. Featured v1 can support the near-term clean exploratory execution layer without waiting for Full Corpus review; Bench should preserve its frozen input identity while SACRE owns run artifacts.
 7. Do not grow the executable corpus merely to improve n. Promotion requires sufficient action-aligned evidence.
 
+## Bench-lane state — 2026-08-28, after the source-completeness decision
+
+### Generalized source architecture — held, preserved, not in v1
+
+`SACRE_V1_SOURCE_COMPLETENESS_DECISION.md` resolves the question this lane raised. Full Corpus v1
+remains three-source. The work is preserved and out of v1:
+
+| Repository | Track branch | Contents |
+|---|---|---|
+| bioethics-bench | `claude/generalized-source-architecture-track` | `schemas/source-schemes.json`, scheme-aware validator, `SOURCE_SCHEME_DESIGN.md`, M099 as a two-pool case |
+| sacre-prototype | `claude/generalized-source-architecture-track` | generic pool partitioning in step5/step6 and its tests |
+
+Neither is merged into v1. The v1 Bench branch is back at the PR head: **34 executable families / 68
+records**, no scheme artefacts, `npm run validate` green, 36/36 guards. The SACRE integration branch
+has the partitioning reverted and holds at the three-source object.
+
+**The decision corrected a real error in the proposal, and it is worth recording precisely.** The
+proposal treated the fixed triple as an artefact of one experimental design, on the evidence that
+`step5` and `step6` used it only to partition candidates. That is true of those two functions and
+false of the procedure. P1 specifies a public–expert Step-3 state that Step 4 completes into the
+full cross-source graph, and `buildStep5Aggregation` reports that Step-3 ranking. Under a two-pool
+record the generalized partitioning would still have emitted a `step3_publicExpert` entry computed
+over whichever pools occupied those argument positions — a labelled result no longer meaning what
+its name says. Generic partitioning is necessary for a missing-source variant and nowhere near
+sufficient, which is what item 3 of the future-extension list already says.
+
+**What survives as a finding rather than a change.** 8 of the 12 families held by the candidate
+audits were held solely because no defensible public pool could be populated: M022, M036, M043,
+M049, M059, M099, M148, M149. Under the decision these stay held, and they are evidence about the
+representational boundary of canonical SACRE v1 rather than a backlog. P2 should report this as a
+construction finding.
+
+**Two validator holes were found while implementing the proposal**, and both are scheme-only: the
+asymmetry check and the profile pool comparison each built from the fixed triple, so a non-default
+pool set would have bypassed the Mean requirement and the profile comparison. Under three-source v1
+the original code is correct and the fixes are not needed. They are on the track branch and must be
+carried into any future generalized variant, where their absence would be silent.
+
+### SACRE integration reconciled — coordination milestone 2
+
+SACRE `main` merged into the integration branch; the two coexist. Verified at `c7957b5`: 356 unit
+tests, 73 web tests, 44 Full Corpus tests, clean build, harness intact. Vendored pin now Bench
+`8811c0c` (current PR head), content hash unchanged at `f1de242c`.
+
+This does **not** make Full Corpus loading a current-`main` capability — the branch is not merged to
+`main`. The P2 v40 / Program v12 claim still needs either that merge or a softening to "integration
+branch".
+
+### Development tranche — run, authorized, development evidence only
+
+Author-authorized in session. 8 families one per geometry, 16 executions, 216 QCCS calls, all
+complete and verified on recomputation, estimated US$0.63. Plus repeated execution on three
+families at five repetitions and a control varying aggregation mode.
+
+Finding for P3 design: **the gap between the top two candidates relative to run-to-run spread
+predicts whether a Final Policy is reproducible.** M004 at a ratio near 2.3 returns the same Final
+Policy in all five runs; M094 at 0.03–0.20 returns a different ranking every run and up to four
+different Final Policies. A single run is not a reliable output for a closely contested case, and
+the tranche's apparent concise/detailed differences are not separable from run-to-run variation
+without repetition. A hypothesis that Sum aggregation caused the instability was refuted by a
+control under Mean: the ratio is invariant because Mean rescales gap and noise together.
+
+Numbers: `docs/bench-runs/stability-2026-08-28.json` on the SACRE integration branch. This is not
+validation and must not be relabelled as such.
+
+A spend-ceiling defect was found and fixed in the Full Corpus harness: `spentUsd` was declared,
+checked before every call, and never incremented. **`scripts/execute-bench.mjs` still has it**, so
+E0 ran with no working cap. Worth fixing before any further authorized spend.
+
+### Note on the Drive coordination document
+
+It records SACRE `main` at `1b2a5db`; actual `origin/main` at this update is `99b484b`. It also
+predates the Canonical Tutorial Execution Plan landing on SACRE main. Repository state governs.
+
 ## When this file must be updated
 
 Update this file in the same change, or leave an explicit handoff requiring an update, when work changes executable family/record counts, dispositions, profile/geometry set, release/lifecycle status, provenance/inference semantics, source-to-policy review state, manifest/pin/hash, manuscript-relevant facts, or assumptions required by SACRE exploratory/validation designs.
