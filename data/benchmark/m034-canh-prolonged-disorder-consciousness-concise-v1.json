@@ -5,61 +5,243 @@
   "title": "Clinically assisted nutrition and hydration in prolonged disorder of consciousness",
   "short_description": "A patient with a prolonged disorder of consciousness has no reliable prior instruction about clinically assisted nutrition and hydration, residual diagnostic uncertainty remains, and family members disagree about continuation.",
   "decision_question": "When a patient with a prolonged disorder of consciousness has no reliable prior instruction about clinically assisted nutrition and hydration, what policy should govern continuation or withdrawal?",
-  "representation": {"form":"concise","companion_record_ids":["m034-canh-prolonged-disorder-consciousness-detailed-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m034-canh-prolonged-disorder-consciousness-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
   "benchmark_profile": "full-corpus-2x1x2-mean-v1",
   "jurisdiction_context": "Jurisdiction-neutral ethical policy; CANH is treated as a medical intervention that may in principle be continued or withdrawn through an appropriate surrogate or best-interests process.",
   "as_of_date": "2026-08-27",
   "stipulations": [
-    {"id":"m034-assessment","kind":"scientific","statement":"Repeated standardized expert disorder-of-consciousness evaluations have been completed.","rationale":"The case must not rely on a single bedside impression or avoidable diagnostic error."},
-    {"id":"m034-uncertainty","kind":"scientific","statement":"Meaningful recovery is unlikely but not impossible.","rationale":"Residual uncertainty is ethically important but must not itself dictate the treatment decision."},
-    {"id":"m034-no-directive","kind":"contextual","statement":"No reliable treatment-specific prior instruction about CANH exists.","rationale":"A clear applicable advance directive would substantially change the authority structure."},
-    {"id":"m034-treatment","kind":"scientific","statement":"CANH can sustain life long term, does not restore consciousness, and has manageable but real burdens.","rationale":"The intervention must be life-sustaining and non-restorative without being portrayed as either burden-free or intrinsically harmful."},
-    {"id":"m034-palliation","kind":"contextual","statement":"If CANH is withdrawn, appropriate mouth care, symptom treatment, and palliative support will be provided.","rationale":"Withdrawal is evaluated as a treatment decision with ongoing care, not abandonment."}
+    {
+      "id": "m034-assessment",
+      "kind": "scientific",
+      "statement": "Repeated standardized expert disorder-of-consciousness evaluations have been completed.",
+      "rationale": "The case must not rely on a single bedside impression or avoidable diagnostic error."
+    },
+    {
+      "id": "m034-uncertainty",
+      "kind": "scientific",
+      "statement": "Meaningful recovery is unlikely but not impossible.",
+      "rationale": "Residual uncertainty is ethically important but must not itself dictate the treatment decision."
+    },
+    {
+      "id": "m034-no-directive",
+      "kind": "contextual",
+      "statement": "No reliable treatment-specific prior instruction about CANH exists.",
+      "rationale": "A clear applicable advance directive would substantially change the authority structure."
+    },
+    {
+      "id": "m034-treatment",
+      "kind": "scientific",
+      "statement": "CANH can sustain life long term, does not restore consciousness, and has manageable but real burdens.",
+      "rationale": "The intervention must be life-sustaining and non-restorative without being portrayed as either burden-free or intrinsically harmful."
+    },
+    {
+      "id": "m034-palliation",
+      "kind": "contextual",
+      "statement": "If CANH is withdrawn, appropriate mouth care, symptom treatment, and palliative support will be provided.",
+      "rationale": "Withdrawal is evaluated as a treatment decision with ongoing care, not abandonment."
+    }
   ],
-  "position_families": ["continue CANH absent clear refusal","values-based withdrawal through surrogate or best-interests review","serial reassessment under residual uncertainty","independent review when family disagreement persists"],
-  "domains": ["neuroethics","end-of-life"],
-  "tags": ["disorder of consciousness","CANH","feeding tube","surrogate decision making","best interests","diagnostic uncertainty","disability justice"],
+  "position_families": [
+    "continue CANH absent clear refusal",
+    "values-based withdrawal through surrogate or best-interests review",
+    "serial reassessment under residual uncertainty",
+    "independent review when family disagreement persists"
+  ],
+  "domains": [
+    "neuroethics",
+    "end-of-life"
+  ],
+  "tags": [
+    "disorder of consciousness",
+    "CANH",
+    "feeding tube",
+    "surrogate decision making",
+    "best interests",
+    "diagnostic uncertainty",
+    "disability justice"
+  ],
   "scenario": "An adult has remained in a prolonged disorder of consciousness for 14 months after severe nontraumatic brain injury and receives nutrition and hydration through a feeding tube. For this benchmark, assume repeated standardized expert assessments support chronic unresponsive wakefulness syndrome; meaningful recovery is unlikely but not impossible; no reliable treatment-specific prior instruction about CANH exists; CANH can sustain life for years but does not restore consciousness and has manageable burdens; and withdrawal would be accompanied by appropriate palliative symptom care. Family members disagree about whether the patient would regard continued biological survival as worthwhile. The team must decide what policy should govern continuation or withdrawal.",
   "scenario_provenance": {
-    "construction_method":"adapted-from-source",
-    "summary":"Bench-authored prolonged-disorder-of-consciousness case synthesized from AAN/ACRM/NIDILRR diagnostic guidance, nutrition-support ethics guidance, and family interview studies. It fixes serial standardized assessment, residual diagnostic/prognostic uncertainty, absence of a reliable CANH directive, non-restorative but sustaining treatment, and palliative care after withdrawal so preservation and values-based withdrawal orientations remain action-distinct.",
-    "sources":[
-      {"citation":"AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.","type":"guideline"},
-      {"citation":"ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.","type":"guideline"},
-      {"citation":"ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.","type":"guideline"},
-      {"citation":"Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.","type":"article"},
-      {"citation":"Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.","type":"article"}
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored prolonged-disorder-of-consciousness case synthesized from AAN/ACRM/NIDILRR diagnostic guidance, nutrition-support ethics guidance, and family interview studies. It fixes serial standardized assessment, residual diagnostic/prognostic uncertainty, absence of a reliable CANH directive, non-restorative but sustaining treatment, and palliative care after withdrawal so preservation and values-based withdrawal orientations remain action-distinct.",
+    "sources": [
+      {
+        "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.",
+        "type": "guideline"
+      },
+      {
+        "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.",
+        "type": "guideline"
+      },
+      {
+        "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
+        "type": "article"
+      },
+      {
+        "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
+        "type": "article"
+      }
     ],
-    "adapted_not_reproduced":true
+    "adapted_not_reproduced": true
   },
   "candidate_pools": {
     "public": [
-      {"id":"pub1","text":"Continue clinically assisted nutrition and hydration when prior wishes are uncertain and meaningful diagnostic or prognostic uncertainty remains, while maintaining serial specialist reassessment.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from family accounts favoring continued life-prolonging treatment, emphasizing uncertainty, and expressing symbolic or moral concern about withdrawing food and fluids. The serial-reassessment rule is a Bench operationalization rather than a literal interview policy.","sources":[{"citation":"Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.","type":"article"},{"citation":"Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.","type":"article"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Permit withdrawal of clinically assisted nutrition and hydration when a careful surrogate or best-interests process finds that continued non-restorative treatment is inconsistent with the patient's likely values and interests, with full palliative care.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from family accounts in which relatives believed the patient would not have wanted prolonged noninteractive treatment and from diverse family views about proper treatment. The formal surrogate/best-interests process is Bench policy completion.","sources":[{"citation":"Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.","type":"article"},{"citation":"Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.","type":"article"}],"adapted_not_reproduced":true}}
+      {
+        "id": "pub1",
+        "text": "Continue clinically assisted nutrition and hydration when prior wishes are uncertain and meaningful diagnostic or prognostic uncertainty remains, while maintaining serial specialist reassessment.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from family accounts favoring continued life-prolonging treatment, emphasizing uncertainty, and expressing symbolic or moral concern about withdrawing food and fluids. The serial-reassessment rule is a Bench operationalization rather than a literal interview policy.",
+          "sources": [
+            {
+              "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
+              "type": "article"
+            },
+            {
+              "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit withdrawal of clinically assisted nutrition and hydration when a careful surrogate or best-interests process finds that continued non-restorative treatment is inconsistent with the patient's likely values and interests, with full palliative care.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from family accounts in which relatives believed the patient would not have wanted prolonged noninteractive treatment and from diverse family views about proper treatment. The formal surrogate/best-interests process is Bench policy completion.",
+          "sources": [
+            {
+              "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
+              "type": "article"
+            },
+            {
+              "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "expert": [
-      {"id":"exp1","text":"Use serial standardized disorder-of-consciousness assessment and an interdisciplinary benefit, burden, and patient-preference process before continuing or withdrawing clinically assisted nutrition and hydration.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from convergent professional guidance emphasizing diagnostic rigor and serial assessment in prolonged disorders of consciousness and treating artificially administered nutrition and hydration as a clinical intervention subject to collaborative autonomy, benefit/burden, and ethical review. Current sources support one individualized process architecture rather than opposed professional endpoints.","sources":[{"citation":"AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. PMID 30098791.","type":"guideline"},{"citation":"ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.","type":"guideline"},{"citation":"ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.","type":"guideline"}],"adapted_not_reproduced":true}}
+      {
+        "id": "exp1",
+        "text": "Use serial standardized disorder-of-consciousness assessment and an interdisciplinary benefit, burden, and patient-preference process before continuing or withdrawing clinically assisted nutrition and hydration.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from convergent professional guidance emphasizing diagnostic rigor and serial assessment in prolonged disorders of consciousness and treating artificially administered nutrition and hydration as a clinical intervention subject to collaborative autonomy, benefit/burden, and ethical review. Current sources support one individualized process architecture rather than opposed professional endpoints.",
+          "sources": [
+            {
+              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. PMID 30098791.",
+              "type": "guideline"
+            },
+            {
+              "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.",
+              "type": "guideline"
+            },
+            {
+              "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "framework": [
-      {"id":"fw1","text":"Continue nutrition and hydration when prior wishes are unknown because irreversible withdrawal should not rest on uncertain prognosis or assumptions about the value of life with profound disability.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from preservation of life, epistemic humility, and disability-justice reasoning. The executable continuation rule is Bench-authored.","sources":[{"citation":"AAN/ACRM/NIDILRR. Disorders of Consciousness guideline. PMID 30098791.","type":"guideline"}]}},
-      {"id":"fw2","text":"Permit withdrawal when rigorous review finds continued CANH inconsistent with the person's values and unable to provide a benefit they would regard as worthwhile, while ensuring comfort care.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from autonomy, substituted values, proportionality, and nonabandonment. The executable withdrawal rule is Bench-authored.","sources":[{"citation":"ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.","type":"guideline"}]}}
+      {
+        "id": "fw1",
+        "text": "Continue nutrition and hydration when prior wishes are unknown because irreversible withdrawal should not rest on uncertain prognosis or assumptions about the value of life with profound disability.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from preservation of life, epistemic humility, and disability-justice reasoning. The executable continuation rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "AAN/ACRM/NIDILRR. Disorders of Consciousness guideline. PMID 30098791.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Permit withdrawal when rigorous review finds continued CANH inconsistent with the person's values and unable to provide a benefit they would regard as worthwhile, while ensuring comfort care.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from autonomy, substituted values, proportionality, and nonabandonment. The executable withdrawal rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
     ]
   },
-  "collection":"benchmark",
-  "exposure":"internal-development",
-  "status":"draft",
-  "intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
-  "review":null,
-  "paper_usage":["P2 legitimate singleton professional ecology under diagnostic uncertainty; later P3 neuroethics, disability-justice, and surrogate-decision studies."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External guidelines and family studies retain their own rights; source material is summarized and adapted rather than reproduced."},
-  "references":[
-    {"citation":"AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.","type":"guideline"},
-    {"citation":"ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.","type":"guideline"},
-    {"citation":"ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.","type":"guideline"},
-    {"citation":"Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.","type":"article"},
-    {"citation":"Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.","type":"article"}
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
   ],
-  "required_aggregation":"mean",
-  "schema_version":"1.0.0",
-  "content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "review": null,
+  "paper_usage": [
+    "P2 legitimate singleton professional ecology under diagnostic uncertainty; later P3 neuroethics, disability-justice, and surrogate-decision studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External guidelines and family studies retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.",
+      "type": "guideline"
+    },
+    {
+      "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.",
+      "type": "guideline"
+    },
+    {
+      "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
+      "type": "article"
+    },
+    {
+      "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:3a65ec1a2fc5c77d3cb177972fd1961be99e936e746a09ad3d58acafe58d0bd7"
 }

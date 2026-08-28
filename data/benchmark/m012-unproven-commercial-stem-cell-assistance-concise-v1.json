@@ -5,61 +5,242 @@
   "title": "Clinician assistance when a patient seeks an unproven commercial stem-cell intervention abroad",
   "short_description": "A competent patient with progressive ALS plans to pursue an unproven commercial stem-cell intervention abroad and asks the treating neurologist for records, coordination, and other assistance.",
   "decision_question": "When a competent patient intends to pursue an unproven commercial stem-cell intervention abroad, how far should the treating clinician assist without endorsing the intervention as established care?",
-  "representation": {"form":"concise","companion_record_ids":["m012-unproven-commercial-stem-cell-assistance-detailed-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m012-unproven-commercial-stem-cell-assistance-detailed-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
   "benchmark_profile": "full-corpus-2x1x2-mean-v1",
   "jurisdiction_context": "Jurisdiction-neutral clinician-assistance policy informed by current international stem-cell guidance and medical-tourism counseling literature.",
   "as_of_date": "2026-08-27",
   "stipulations": [
-    {"id":"m012-no-proven-benefit","kind":"scientific","statement":"The specific commercial intervention has not been shown to improve survival or meaningful function in ALS.","rationale":"The case concerns an unproven intervention rather than an established therapy available through another jurisdiction."},
-    {"id":"m012-no-regulated-trial","kind":"contextual","statement":"The patient is not entering a well-regulated clinical trial through the commercial clinic.","rationale":"A credible trial would create a different professional assistance architecture."},
-    {"id":"m012-capacity","kind":"contextual","statement":"The patient has decision-making capacity, understands that efficacy is unproven, and does not believe benefit is guaranteed.","rationale":"The benchmark tests assistance boundaries rather than incapacity or therapeutic misconception."},
-    {"id":"m012-continuity","kind":"contextual","statement":"The treating team will continue ordinary evidence-based and supportive care regardless of whether the patient proceeds.","rationale":"Non-abandonment is held constant so candidates differ over facilitation, not withdrawal of care."},
-    {"id":"m012-material-risk","kind":"scientific","statement":"Procedure, infection, product-quality, financial, opportunity, and possible future-trial risks are real but not precisely quantifiable.","rationale":"The intervention must carry meaningful uncertainty and burden without being reduced to obvious fraud."}
+    {
+      "id": "m012-no-proven-benefit",
+      "kind": "scientific",
+      "statement": "The specific commercial intervention has not been shown to improve survival or meaningful function in ALS.",
+      "rationale": "The case concerns an unproven intervention rather than an established therapy available through another jurisdiction."
+    },
+    {
+      "id": "m012-no-regulated-trial",
+      "kind": "contextual",
+      "statement": "The patient is not entering a well-regulated clinical trial through the commercial clinic.",
+      "rationale": "A credible trial would create a different professional assistance architecture."
+    },
+    {
+      "id": "m012-capacity",
+      "kind": "contextual",
+      "statement": "The patient has decision-making capacity, understands that efficacy is unproven, and does not believe benefit is guaranteed.",
+      "rationale": "The benchmark tests assistance boundaries rather than incapacity or therapeutic misconception."
+    },
+    {
+      "id": "m012-continuity",
+      "kind": "contextual",
+      "statement": "The treating team will continue ordinary evidence-based and supportive care regardless of whether the patient proceeds.",
+      "rationale": "Non-abandonment is held constant so candidates differ over facilitation, not withdrawal of care."
+    },
+    {
+      "id": "m012-material-risk",
+      "kind": "scientific",
+      "statement": "Procedure, infection, product-quality, financial, opportunity, and possible future-trial risks are real but not precisely quantifiable.",
+      "rationale": "The intervention must carry meaningful uncertainty and burden without being reduced to obvious fraud."
+    }
   ],
-  "position_families": ["non-endorsement harm-reduction assistance","strong professional boundary against referral or certification","continued ordinary care regardless of patient choice","conditional facilitation only under credible oversight"],
-  "domains": ["clinical-innovation"],
-  "tags": ["stem cells","ALS","medical tourism","unproven intervention","harm reduction","patient autonomy","professional integrity"],
+  "position_families": [
+    "non-endorsement harm-reduction assistance",
+    "strong professional boundary against referral or certification",
+    "continued ordinary care regardless of patient choice",
+    "conditional facilitation only under credible oversight"
+  ],
+  "domains": [
+    "clinical-innovation"
+  ],
+  "tags": [
+    "stem cells",
+    "ALS",
+    "medical tourism",
+    "unproven intervention",
+    "harm reduction",
+    "patient autonomy",
+    "professional integrity"
+  ],
   "scenario": "A 52-year-old adult with progressive ALS plans to travel abroad for an intrathecal autologous mesenchymal-stromal-cell intervention sold by a private clinic for a substantial fee. For this benchmark, assume the specific commercial intervention has not been shown to improve survival or meaningful function in ALS, the patient is not entering a well-regulated clinical trial, the patient has decision-making capacity and understands that efficacy is unproven, the treating team will continue ordinary care regardless of the decision, and procedure, infection, product-quality, financial, opportunity, and future-trial risks are real but not precisely quantifiable. The patient asks the neurologist to send records, communicate with the clinic, and coordinate pre- and post-procedure care. The neurologist must decide how far to assist without falsely legitimizing the intervention.",
   "scenario_provenance": {
-    "construction_method":"adapted-from-source",
-    "summary":"Bench-authored medical-tourism case synthesized from current ISSCR guidance, FDA warnings, professional counseling literature, and qualitative patient-seeker research. It fixes absence of proven clinical benefit, no regulated trial, intact capacity, continued ordinary care, and material uncertainty so non-endorsement harm reduction and stronger facilitation boundaries remain action-distinct.",
-    "sources":[
-      {"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially unproven interventions and communications guidance.","type":"guideline"},
-      {"citation":"U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current FDA warnings.","type":"policy-document"},
-      {"citation":"Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding Stem Cell Tourism. JAMA Neurol. 2015;72:1342-1345.","type":"article"},
-      {"citation":"Master Z et al. Factors that influence unproven stem cell intervention seeking behavior: A qualitative analysis. 2025. PMID 40744777.","type":"article"},
-      {"citation":"Master Z et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. 2026. PMID 42210947.","type":"article"}
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored medical-tourism case synthesized from current ISSCR guidance, FDA warnings, professional counseling literature, and qualitative patient-seeker research. It fixes absence of proven clinical benefit, no regulated trial, intact capacity, continued ordinary care, and material uncertainty so non-endorsement harm reduction and stronger facilitation boundaries remain action-distinct.",
+    "sources": [
+      {
+        "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially unproven interventions and communications guidance.",
+        "type": "guideline"
+      },
+      {
+        "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current FDA warnings.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding Stem Cell Tourism. JAMA Neurol. 2015;72:1342-1345.",
+        "type": "article"
+      },
+      {
+        "citation": "Master Z et al. Factors that influence unproven stem cell intervention seeking behavior: A qualitative analysis. 2025. PMID 40744777.",
+        "type": "article"
+      },
+      {
+        "citation": "Master Z et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. 2026. PMID 42210947.",
+        "type": "article"
+      }
     ],
-    "adapted_not_reproduced":true
+    "adapted_not_reproduced": true
   },
   "candidate_pools": {
     "public": [
-      {"id":"pub1","text":"Provide non-endorsement assistance when a capable patient chooses to proceed, including requested records, risk counseling, independent-verification advice, and follow-up planning, so the patient can reduce avoidable harm without losing ordinary care.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from qualitative patient-seeker evidence emphasizing hope, agency, willingness to accept uncertainty, and concern about abandonment. The concrete clinician-assistance rule is Bench-authored and is not attributed to participants as a surveyed institutional policy.","sources":[{"citation":"Master Z et al. 2025. PMID 40744777.","type":"article"},{"citation":"Master Z et al. 2026. PMID 42210947.","type":"article"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Counsel clearly against the commercial intervention and avoid assistance that could reasonably be understood as referral, certification, or clinical endorsement, while continuing ordinary treatment and follow-up if the patient proceeds independently.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from low-seeking patient orientations that placed greater weight on weak evidence, safety concerns, and distrust of commercial claims. The professional-boundary rule is a Bench translation of those affected-person values, not a claim that respondents themselves issued clinical guidance.","sources":[{"citation":"Master Z et al. 2025. PMID 40744777.","type":"article"},{"citation":"Master Z et al. 2026. PMID 42210947.","type":"article"}],"adapted_not_reproduced":true}}
+      {
+        "id": "pub1",
+        "text": "Provide non-endorsement assistance when a capable patient chooses to proceed, including requested records, risk counseling, independent-verification advice, and follow-up planning, so the patient can reduce avoidable harm without losing ordinary care.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from qualitative patient-seeker evidence emphasizing hope, agency, willingness to accept uncertainty, and concern about abandonment. The concrete clinician-assistance rule is Bench-authored and is not attributed to participants as a surveyed institutional policy.",
+          "sources": [
+            {
+              "citation": "Master Z et al. 2025. PMID 40744777.",
+              "type": "article"
+            },
+            {
+              "citation": "Master Z et al. 2026. PMID 42210947.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Counsel clearly against the commercial intervention and avoid assistance that could reasonably be understood as referral, certification, or clinical endorsement, while continuing ordinary treatment and follow-up if the patient proceeds independently.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from low-seeking patient orientations that placed greater weight on weak evidence, safety concerns, and distrust of commercial claims. The professional-boundary rule is a Bench translation of those affected-person values, not a claim that respondents themselves issued clinical guidance.",
+          "sources": [
+            {
+              "citation": "Master Z et al. 2025. PMID 40744777.",
+              "type": "article"
+            },
+            {
+              "citation": "Master Z et al. 2026. PMID 42210947.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "expert": [
-      {"id":"exp1","text":"Do not refer to, certify, or present the commercial stem-cell intervention as clinically supported; give accurate evidence and risk counseling, provide ordinary records and necessary follow-up, and make clear that continued care or harm reduction is not endorsement.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from convergent current ISSCR guidance condemning commercial use of unproven stem-cell interventions outside rigorous research or tightly constrained compliant innovation, FDA warnings about unapproved regenerative products, and professional counseling literature emphasizing education, non-abandonment, and avoidance of unwarranted legitimization.","sources":[{"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.","type":"guideline"},{"citation":"U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.","type":"policy-document"},{"citation":"Bowman M et al. JAMA Neurol. 2015;72:1342-1345.","type":"article"}],"adapted_not_reproduced":true}}
+      {
+        "id": "exp1",
+        "text": "Do not refer to, certify, or present the commercial stem-cell intervention as clinically supported; give accurate evidence and risk counseling, provide ordinary records and necessary follow-up, and make clear that continued care or harm reduction is not endorsement.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from convergent current ISSCR guidance condemning commercial use of unproven stem-cell interventions outside rigorous research or tightly constrained compliant innovation, FDA warnings about unapproved regenerative products, and professional counseling literature emphasizing education, non-abandonment, and avoidance of unwarranted legitimization.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+              "type": "guideline"
+            },
+            {
+              "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "framework": [
-      {"id":"fw1","text":"Respect the competent patient's authority to accept substantial uncertainty by supporting record transfer, risk reduction, and continuity of care, provided the clinician does not misrepresent the intervention's evidentiary status.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from autonomy, relational autonomy, harm reduction, and non-abandonment. The executable assistance rule is Bench-authored.","sources":[{"citation":"Beauchamp and Childress. Principles of Biomedical Ethics, 8th ed. 2019.","type":"book"}]}},
-      {"id":"fw2","text":"Protect patients and professional epistemic integrity by refusing referral, certification, or other facilitation that would lend clinical legitimacy to a commercial intervention whose meaningful benefit remains unestablished.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from nonmaleficence, professional integrity, and responsible-innovation reasoning. The executable non-facilitation rule is Bench-authored.","sources":[{"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.","type":"guideline"}]}}
+      {
+        "id": "fw1",
+        "text": "Respect the competent patient's authority to accept substantial uncertainty by supporting record transfer, risk reduction, and continuity of care, provided the clinician does not misrepresent the intervention's evidentiary status.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from autonomy, relational autonomy, harm reduction, and non-abandonment. The executable assistance rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Beauchamp and Childress. Principles of Biomedical Ethics, 8th ed. 2019.",
+              "type": "book"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Protect patients and professional epistemic integrity by refusing referral, certification, or other facilitation that would lend clinical legitimacy to a commercial intervention whose meaningful benefit remains unestablished.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence, professional integrity, and responsible-innovation reasoning. The executable non-facilitation rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
     ]
   },
-  "collection":"benchmark",
-  "exposure":"internal-development",
-  "status":"draft",
-  "intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
-  "review":null,
-  "paper_usage":["P2 legitimate singleton professional ecology and source-informed affected-person policies; later P3 assistance-boundary and medical-tourism studies."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External guidance and research retain their own rights; source material is summarized and adapted rather than reproduced."},
-  "references":[
-    {"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.","type":"guideline"},
-    {"citation":"U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.","type":"policy-document"},
-    {"citation":"Bowman M et al. JAMA Neurol. 2015;72:1342-1345.","type":"article"},
-    {"citation":"Master Z et al. 2025. PMID 40744777.","type":"article"},
-    {"citation":"Master Z et al. 2026. PMID 42210947.","type":"article"}
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
   ],
-  "required_aggregation":"mean",
-  "schema_version":"1.0.0",
-  "content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "review": null,
+  "paper_usage": [
+    "P2 legitimate singleton professional ecology and source-informed affected-person policies; later P3 assistance-boundary and medical-tourism studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External guidance and research retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+      "type": "guideline"
+    },
+    {
+      "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
+      "type": "article"
+    },
+    {
+      "citation": "Master Z et al. 2025. PMID 40744777.",
+      "type": "article"
+    },
+    {
+      "citation": "Master Z et al. 2026. PMID 42210947.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:ce3c2cafe149ca44e2a6e06b97f35fa137ea2c31a3654a86404df1ccb4aac9ab"
 }

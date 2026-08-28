@@ -1,41 +1,222 @@
 {
-  "record_id":"m041-publicly-funded-ivf-allocation-detailed-v1",
-  "case_id":"m041-publicly-funded-ivf-allocation",
-  "version":"1.0.0",
-  "title":"Allocation of publicly funded IVF",
-  "short_description":"A public fertility program has fewer funded IVF treatment slots than eligible applicants and must choose a transparent allocation rule.",
-  "decision_question":"When demand for publicly funded IVF exceeds available treatment slots, how should eligible patients be prioritized?",
-  "representation":{"form":"detailed","companion_record_ids":["m041-publicly-funded-ivf-allocation-concise-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
-  "benchmark_profile":"full-corpus-2x1x2-mean-v1",
-  "jurisdiction_context":"Jurisdiction-neutral public IVF allocation informed by NICE NG257/QS73 and contemporary public priority-setting studies.",
-  "as_of_date":"2026-08-27",
-  "stipulations":[
-    {"id":"m041-eligible","kind":"contextual","statement":"All represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy.","rationale":"The case tests prioritization among eligible patients rather than threshold eligibility."},
-    {"id":"m041-scarcity","kind":"contextual","statement":"Annual demand exceeds funded treatment capacity by roughly one third.","rationale":"A real scarcity constraint is necessary for allocation policies to diverge."},
-    {"id":"m041-transparent","kind":"contextual","statement":"The program must use a published rule that is applied consistently to all eligible applicants.","rationale":"The benchmark compares allocation principles rather than discretionary favoritism."},
-    {"id":"m041-legal","kind":"legal","statement":"Equal-opportunity, clinical-priority, and published multifactor allocation rules are legally available.","rationale":"The benchmark tests ethical priority design rather than legal preemption."}
+  "record_id": "m041-publicly-funded-ivf-allocation-detailed-v1",
+  "case_id": "m041-publicly-funded-ivf-allocation",
+  "version": "1.0.0",
+  "title": "Allocation of publicly funded IVF",
+  "short_description": "A public fertility program has fewer funded IVF treatment slots than eligible applicants and must choose a transparent allocation rule.",
+  "decision_question": "When demand for publicly funded IVF exceeds available treatment slots, how should eligible patients be prioritized?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m041-publicly-funded-ivf-allocation-concise-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
+  "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+  "jurisdiction_context": "Jurisdiction-neutral public IVF allocation informed by NICE NG257/QS73 and contemporary public priority-setting studies.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m041-eligible",
+      "kind": "contextual",
+      "statement": "All represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy.",
+      "rationale": "The case tests prioritization among eligible patients rather than threshold eligibility."
+    },
+    {
+      "id": "m041-scarcity",
+      "kind": "contextual",
+      "statement": "Annual demand exceeds funded treatment capacity by roughly one third.",
+      "rationale": "A real scarcity constraint is necessary for allocation policies to diverge."
+    },
+    {
+      "id": "m041-transparent",
+      "kind": "contextual",
+      "statement": "The program must use a published rule that is applied consistently to all eligible applicants.",
+      "rationale": "The benchmark compares allocation principles rather than discretionary favoritism."
+    },
+    {
+      "id": "m041-legal",
+      "kind": "legal",
+      "statement": "Equal-opportunity, clinical-priority, and published multifactor allocation rules are legally available.",
+      "rationale": "The benchmark tests ethical priority design rather than legal preemption."
+    }
   ],
-  "position_families":["equal opportunity after eligibility threshold","multifactor public priority","clinical effectiveness and time sensitivity","benefit maximization versus equal moral opportunity"],
-  "domains":["reproduction-genetics","allocation-transplantation"],
-  "tags":["IVF","infertility","public funding","resource allocation","equity","priority setting","age","lottery"],
-  "scenario":"A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Annual demand is approximately one third greater than funded capacity. For this benchmark, assume all applicants considered here meet the same baseline clinical access requirements and have no contraindication to pregnancy; the program must use a transparent published rule applied consistently; and equal-opportunity, clinical-priority, and multifactor allocation rules are legally available. Some eligible applicants have higher predicted treatment success or more rapidly declining reproductive opportunity; applicants also differ in infertility cause, prior treatment, and whether they already have children. The program must choose whether to prioritize expected clinical benefit and time sensitivity, give every eligible applicant an equal opportunity through lottery or uniform queue, or use a published multifactor allocation rule.",
-  "scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored public-IVF allocation case grounded in 2026 NICE access guidance and public/patient priority studies. It fixes baseline eligibility, scarcity, transparency, and legal availability so equal-opportunity and differential-priority policies generate different assignments without turning descriptive public preferences into professional recommendations.","sources":[{"citation":"NICE. Fertility problems: assessment and treatment, NG257. 2026.","type":"guideline"},{"citation":"NICE. Quality Standard QS73, updated for NG257 in 2026.","type":"guideline"},{"citation":"Van Muylder A et al. Weighing Parenthood Wishes: A Conjoint Analysis of Criteria to Prioritize Infertile Couples for Publicly Funded Fertility Treatment. PMID 40826820.","type":"article"},{"citation":"Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.","type":"article"}],"adapted_not_reproduced":true},
-  "candidate_pools":{
-    "public":[
-      {"id":"pub1","text":"Among applicants who meet minimum IVF eligibility, use a transparent equal-opportunity allocation rule such as a lottery or uniform queue rather than ranking primarily by predicted live-birth yield.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from fertility-patient evidence favoring maximizing access over maximizing live births and demanding consistent allocation policy. The literal lottery or uniform-queue implementation is a Bench-authored operational translation.","sources":[{"citation":"Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.","type":"article"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Use a published multifactor priority score that gives weight to time-sensitive age, infertility cause, and prior biological children when assigning limited funded IVF slots among otherwise eligible applicants.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from a representative Belgian discrete-choice experiment in which maternal age, infertility cause, and prior biological children materially affected public priority judgments. The candidate reports that public-derived allocation orientation; it does not endorse every criterion normatively.","sources":[{"citation":"Van Muylder A et al. PMID 40826820.","type":"article"}],"adapted_not_reproduced":true}}
+  "position_families": [
+    "equal opportunity after eligibility threshold",
+    "multifactor public priority",
+    "clinical effectiveness and time sensitivity",
+    "benefit maximization versus equal moral opportunity"
+  ],
+  "domains": [
+    "reproduction-genetics",
+    "allocation-transplantation"
+  ],
+  "tags": [
+    "IVF",
+    "infertility",
+    "public funding",
+    "resource allocation",
+    "equity",
+    "priority setting",
+    "age",
+    "lottery"
+  ],
+  "scenario": "A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Annual demand is approximately one third greater than funded capacity. For this benchmark, assume all applicants considered here meet the same baseline clinical access requirements and have no contraindication to pregnancy; the program must use a transparent published rule applied consistently; and equal-opportunity, clinical-priority, and multifactor allocation rules are legally available. Some eligible applicants have higher predicted treatment success or more rapidly declining reproductive opportunity; applicants also differ in infertility cause, prior treatment, and whether they already have children. The program must choose whether to prioritize expected clinical benefit and time sensitivity, give every eligible applicant an equal opportunity through lottery or uniform queue, or use a published multifactor allocation rule.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored public-IVF allocation case grounded in 2026 NICE access guidance and public/patient priority studies. It fixes baseline eligibility, scarcity, transparency, and legal availability so equal-opportunity and differential-priority policies generate different assignments without turning descriptive public preferences into professional recommendations.",
+    "sources": [
+      {
+        "citation": "NICE. Fertility problems: assessment and treatment, NG257. 2026.",
+        "type": "guideline"
+      },
+      {
+        "citation": "NICE. Quality Standard QS73, updated for NG257 in 2026.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Van Muylder A et al. Weighing Parenthood Wishes: A Conjoint Analysis of Criteria to Prioritize Infertile Couples for Publicly Funded Fertility Treatment. PMID 40826820.",
+        "type": "article"
+      },
+      {
+        "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
+        "type": "article"
+      }
     ],
-    "expert":[
-      {"id":"exp1","text":"Prioritize publicly funded IVF through consistent clinical criteria tied to treatment effectiveness and time sensitivity, while not excluding an otherwise eligible applicant merely because they already have a living child.","source_pool":"expert","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored policy completion applying current NICE clinical eligibility, age/time-sensitivity, treatment-history, and equality principles to an oversubscribed queue. NICE supplies the clinical criteria and explicitly states that living children should not preclude fertility treatment; it does not itself prescribe one national oversubscription-ranking algorithm.","sources":[{"citation":"NICE NG257. Access criteria for IVF. 2026.","type":"guideline"},{"citation":"NICE QS73. IVF quality statement and equality considerations. Current through 2026.","type":"guideline"}],"adapted_not_reproduced":true}}
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Among applicants who meet minimum IVF eligibility, use a transparent equal-opportunity allocation rule such as a lottery or uniform queue rather than ranking primarily by predicted live-birth yield.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from fertility-patient evidence favoring maximizing access over maximizing live births and demanding consistent allocation policy. The literal lottery or uniform-queue implementation is a Bench-authored operational translation.",
+          "sources": [
+            {
+              "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Use a published multifactor priority score that gives weight to time-sensitive age, infertility cause, and prior biological children when assigning limited funded IVF slots among otherwise eligible applicants.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from a representative Belgian discrete-choice experiment in which maternal age, infertility cause, and prior biological children materially affected public priority judgments. The candidate reports that public-derived allocation orientation; it does not endorse every criterion normatively.",
+          "sources": [
+            {
+              "citation": "Van Muylder A et al. PMID 40826820.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
-    "framework":[
-      {"id":"fw1","text":"Give earlier access to eligible applicants with the greatest expected treatment benefit or most time-sensitive decline in opportunity because scarce funded cycles should generate as much reproductive benefit as possible.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from benefit maximization and opportunity-sensitive resource stewardship. The executable priority rule is Bench-authored.","sources":[{"citation":"NICE NG257 fertility prediction and IVF access evidence review. 2026.","type":"guideline"}]}},
-      {"id":"fw2","text":"Once applicants meet a justified minimum eligibility threshold, distribute scarce IVF slots by an equal-chance rule rather than further ranking their family circumstances or social characteristics.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from equal moral opportunity and anti-social-worth allocation reasoning. The executable equal-chance rule is Bench-authored.","sources":[{"citation":"Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.","type":"article"}]}}
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Prioritize publicly funded IVF through consistent clinical criteria tied to treatment effectiveness and time sensitivity, while not excluding an otherwise eligible applicant merely because they already have a living child.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion applying current NICE clinical eligibility, age/time-sensitivity, treatment-history, and equality principles to an oversubscribed queue. NICE supplies the clinical criteria and explicitly states that living children should not preclude fertility treatment; it does not itself prescribe one national oversubscription-ranking algorithm.",
+          "sources": [
+            {
+              "citation": "NICE NG257. Access criteria for IVF. 2026.",
+              "type": "guideline"
+            },
+            {
+              "citation": "NICE QS73. IVF quality statement and equality considerations. Current through 2026.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Give earlier access to eligible applicants with the greatest expected treatment benefit or most time-sensitive decline in opportunity because scarce funded cycles should generate as much reproductive benefit as possible.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from benefit maximization and opportunity-sensitive resource stewardship. The executable priority rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "NICE NG257 fertility prediction and IVF access evidence review. 2026.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Once applicants meet a justified minimum eligibility threshold, distribute scarce IVF slots by an equal-chance rule rather than further ranking their family circumstances or social characteristics.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equal moral opportunity and anti-social-worth allocation reasoning. The executable equal-chance rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
+              "type": "article"
+            }
+          ]
+        }
+      }
     ]
   },
-  "collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,
-  "paper_usage":["P2 asymmetric candidate ecology and public-priority versus clinical-policy distinction; later P3 distributive-justice studies."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored content is CC BY 4.0. External guidance and studies retain their rights; source content is summarized and adapted rather than reproduced."},
-  "references":[{"citation":"NICE NG257. Fertility problems: assessment and treatment. 2026.","type":"guideline"},{"citation":"NICE QS73. Fertility problems quality standard. Current through 2026.","type":"guideline"},{"citation":"Van Muylder A et al. PMID 40826820.","type":"article"},{"citation":"Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.","type":"article"}],
-  "required_aggregation":"mean","schema_version":"1.0.0","content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 asymmetric candidate ecology and public-priority versus clinical-policy distinction; later P3 distributive-justice studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored content is CC BY 4.0. External guidance and studies retain their rights; source content is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "NICE NG257. Fertility problems: assessment and treatment. 2026.",
+      "type": "guideline"
+    },
+    {
+      "citation": "NICE QS73. Fertility problems quality standard. Current through 2026.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Van Muylder A et al. PMID 40826820.",
+      "type": "article"
+    },
+    {
+      "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:02b91ee0d8802a917c2907fafb79af271cff91d345d4d64a0afff6cae5aafe06"
 }

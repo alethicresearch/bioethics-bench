@@ -5,61 +5,238 @@
   "title": "Telemedicine access versus in-person diagnostic safety",
   "short_description": "A rural patient with a new wrist injury can receive same-day video care, while hands-on examination and radiography require substantial travel and delay. The service must set a modality rule.",
   "decision_question": "When same-day video care substantially improves access but cannot perform a clinically relevant hands-on examination, what rule should determine whether remote evaluation is sufficient or in-person assessment is required?",
-  "representation": {"form":"detailed","companion_record_ids":["m019-telemedicine-access-diagnostic-safety-concise-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m019-telemedicine-access-diagnostic-safety-concise-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
   "benchmark_profile": "full-corpus-2x1x2-mean-v1",
   "jurisdiction_context": "Jurisdiction-neutral outpatient telemedicine policy informed by current ACP and AMA guidance and patient modality-preference evidence.",
   "as_of_date": "2026-08-27",
   "stipulations": [
-    {"id":"m019-access","kind":"contextual","statement":"Video evaluation is available the same day, while routine in-person assessment with examination and radiography requires substantial travel and approximately 48 hours of delay.","rationale":"The benchmark needs a meaningful access advantage for remote care without making in-person care unavailable."},
-    {"id":"m019-no-red-flags","kind":"scientific","statement":"No current emergency warning sign is reported and emergency care remains available if one develops.","rationale":"Emergency features would collapse the modality choice into urgent in-person evaluation."},
-    {"id":"m019-remote-limits","kind":"scientific","statement":"Video can assess history, visible swelling, and active motion but cannot reliably reproduce focal bony tenderness, ligament stability, subtle sensory findings, or vascular examination.","rationale":"The policy dispute requires useful remote information plus clinically meaningful examination limits."},
-    {"id":"m019-management-impact","kind":"scientific","statement":"The missing hands-on findings could materially change whether imaging, immobilization, or further evaluation is recommended.","rationale":"If the missing information could not change management there would be little professional reason to require in-person care."},
-    {"id":"m019-participation","kind":"contextual","statement":"The patient can communicate reliably and participate in remote examination instructions.","rationale":"The case tests modality adequacy rather than communication failure."}
+    {
+      "id": "m019-access",
+      "kind": "contextual",
+      "statement": "Video evaluation is available the same day, while routine in-person assessment with examination and radiography requires substantial travel and approximately 48 hours of delay.",
+      "rationale": "The benchmark needs a meaningful access advantage for remote care without making in-person care unavailable."
+    },
+    {
+      "id": "m019-no-red-flags",
+      "kind": "scientific",
+      "statement": "No current emergency warning sign is reported and emergency care remains available if one develops.",
+      "rationale": "Emergency features would collapse the modality choice into urgent in-person evaluation."
+    },
+    {
+      "id": "m019-remote-limits",
+      "kind": "scientific",
+      "statement": "Video can assess history, visible swelling, and active motion but cannot reliably reproduce focal bony tenderness, ligament stability, subtle sensory findings, or vascular examination.",
+      "rationale": "The policy dispute requires useful remote information plus clinically meaningful examination limits."
+    },
+    {
+      "id": "m019-management-impact",
+      "kind": "scientific",
+      "statement": "The missing hands-on findings could materially change whether imaging, immobilization, or further evaluation is recommended.",
+      "rationale": "If the missing information could not change management there would be little professional reason to require in-person care."
+    },
+    {
+      "id": "m019-participation",
+      "kind": "contextual",
+      "statement": "The patient can communicate reliably and participate in remote examination instructions.",
+      "rationale": "The case tests modality adequacy rather than communication failure."
+    }
   ],
-  "position_families": ["remote-first access with safety-net escalation","direct in-person assessment when examination may change management","risk-triggered hybrid telemedicine policy","patient modality preference within clinically safe bounds"],
-  "domains": ["clinical-innovation"],
-  "tags": ["telemedicine","rural health","physical examination","wrist injury","diagnostic uncertainty","access","digital health"],
+  "position_families": [
+    "remote-first access with safety-net escalation",
+    "direct in-person assessment when examination may change management",
+    "risk-triggered hybrid telemedicine policy",
+    "patient modality preference within clinically safe bounds"
+  ],
+  "domains": [
+    "clinical-innovation"
+  ],
+  "tags": [
+    "telemedicine",
+    "rural health",
+    "physical examination",
+    "wrist injury",
+    "diagnostic uncertainty",
+    "access",
+    "digital health"
+  ],
   "scenario": "An adult living in a rural area falls onto an outstretched hand and develops unilateral wrist pain and moderate swelling. A same-day video appointment is available, while the nearest affiliated clinic with hands-on examination and radiography requires substantial travel and the next routine slot is approximately 48 hours away. For this benchmark, assume there is no gross deformity, severe uncontrolled pain, cool or discolored hand, rapidly progressive numbness, or other current emergency warning sign and emergency care remains available if one develops; video can obtain the history, inspect swelling and bruising, observe active motion, and guide limited self-palpation, but cannot reliably reproduce professional assessment of focal bony tenderness, ligamentous stability, subtle sensory deficits, capillary refill, or other relevant hands-on findings; those missing findings could materially change whether imaging, immobilization, or further evaluation is recommended; and the patient can communicate reliably and follow remote instructions. The health system must decide whether injuries of this kind may begin with telemedicine or should be sent directly for in-person assessment under a risk-triggered modality policy.",
   "scenario_provenance": {
-    "construction_method":"adapted-from-source",
-    "summary":"Bench-authored rural telemedicine case synthesized from current ACP and AMA telemedicine policy plus patient-preference and specialty telemedicine studies. It fixes meaningful access benefit, absence of emergency red flags, real remote-information limits, possible management impact, and reliable participation so access-first and examination-first affected-person orientations remain distinct while professional guidance converges on a risk-triggered safety boundary.",
-    "sources":[
-      {"citation":"Johnson D et al. Telemedicine Policy and Practice: A Position Paper From the American College of Physicians. Ann Intern Med. 2026;179:1030-1032. PMID 42114091.","type":"policy-document"},
-      {"citation":"American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.","type":"guideline"},
-      {"citation":"Patients' perspectives and preferences toward telemedicine versus in-person visits: a mixed-methods study on 1226 patients. 2023. PMID 37968639.","type":"article"},
-      {"citation":"Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.","type":"article"},
-      {"citation":"Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.","type":"article"}
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored rural telemedicine case synthesized from current ACP and AMA telemedicine policy plus patient-preference and specialty telemedicine studies. It fixes meaningful access benefit, absence of emergency red flags, real remote-information limits, possible management impact, and reliable participation so access-first and examination-first affected-person orientations remain distinct while professional guidance converges on a risk-triggered safety boundary.",
+    "sources": [
+      {
+        "citation": "Johnson D et al. Telemedicine Policy and Practice: A Position Paper From the American College of Physicians. Ann Intern Med. 2026;179:1030-1032. PMID 42114091.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits: a mixed-methods study on 1226 patients. 2023. PMID 37968639.",
+        "type": "article"
+      },
+      {
+        "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+        "type": "article"
+      },
+      {
+        "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+        "type": "article"
+      }
     ],
-    "adapted_not_reproduced":true
+    "adapted_not_reproduced": true
   },
   "candidate_pools": {
     "public": [
-      {"id":"pub1","text":"Allow same-day video-first assessment when no emergency red flag is present, with structured remote examination and explicit escalation instructions, so patients can avoid substantial travel and delay when remote evaluation may be sufficient.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from patient studies repeatedly valuing telemedicine for convenience, reduced travel, lower cost, and faster access. The specific remote-first institutional rule is Bench-authored and bounded to the stipulated non-emergent presentation.","sources":[{"citation":"Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.","type":"article"},{"citation":"Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.","type":"article"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Require in-person assessment for a new injury when clinically relevant findings cannot be assessed reliably by video and the patient values examination certainty, even when travel and delay are burdensome.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from patient evidence showing stronger preference for in-person care when symptoms are new or worsening and when physical examination, diagnostic confidence, testing, or procedures are salient. The service-level rule is a Bench translation, not a claim of universal patient preference.","sources":[{"citation":"Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.","type":"article"},{"citation":"Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.","type":"article"}],"adapted_not_reproduced":true}}
+      {
+        "id": "pub1",
+        "text": "Allow same-day video-first assessment when no emergency red flag is present, with structured remote examination and explicit escalation instructions, so patients can avoid substantial travel and delay when remote evaluation may be sufficient.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from patient studies repeatedly valuing telemedicine for convenience, reduced travel, lower cost, and faster access. The specific remote-first institutional rule is Bench-authored and bounded to the stipulated non-emergent presentation.",
+          "sources": [
+            {
+              "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.",
+              "type": "article"
+            },
+            {
+              "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Require in-person assessment for a new injury when clinically relevant findings cannot be assessed reliably by video and the patient values examination certainty, even when travel and delay are burdensome.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from patient evidence showing stronger preference for in-person care when symptoms are new or worsening and when physical examination, diagnostic confidence, testing, or procedures are salient. The service-level rule is a Bench translation, not a claim of universal patient preference.",
+          "sources": [
+            {
+              "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.",
+              "type": "article"
+            },
+            {
+              "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "expert": [
-      {"id":"exp1","text":"Use a risk-triggered hybrid rule: begin remotely only when the clinician judges telemedicine appropriate and sufficient for a safe initial plan, and arrange timely in-person or local examination whenever missing information could materially change diagnosis or treatment.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from convergent current ACP and AMA professional policy: telemedicine can improve access but physicians retain authority to determine appropriateness, must not compromise safety, must recognize technological limitations, and must obtain sufficient information or arrange examination when remote information is inadequate.","sources":[{"citation":"Johnson D et al. ACP Telemedicine Policy and Practice. Ann Intern Med. 2026. PMID 42114091.","type":"policy-document"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.","type":"guideline"}],"adapted_not_reproduced":true}}
+      {
+        "id": "exp1",
+        "text": "Use a risk-triggered hybrid rule: begin remotely only when the clinician judges telemedicine appropriate and sufficient for a safe initial plan, and arrange timely in-person or local examination whenever missing information could materially change diagnosis or treatment.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from convergent current ACP and AMA professional policy: telemedicine can improve access but physicians retain authority to determine appropriateness, must not compromise safety, must recognize technological limitations, and must obtain sufficient information or arrange examination when remote information is inadequate.",
+          "sources": [
+            {
+              "citation": "Johnson D et al. ACP Telemedicine Policy and Practice. Ann Intern Med. 2026. PMID 42114091.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "framework": [
-      {"id":"fw1","text":"Prefer remote-first care for low-risk presentations because long travel and delayed appointments impose unequal burdens, escalating only when the expected diagnostic value of in-person examination justifies those burdens.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from distributive justice, access, and least-burdensome-care reasoning. The executable remote-first rule is Bench-authored.","sources":[{"citation":"Johnson D et al. ACP Telemedicine Policy and Practice. Ann Intern Med. 2026. PMID 42114091.","type":"policy-document"}]}},
-      {"id":"fw2","text":"Require in-person assessment when hands-on findings can materially change management because diagnostic responsibility and avoidance of preventable harm outweigh convenience in that circumstance.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from nonmaleficence, diagnostic responsibility, and professional accountability. The executable examination-first rule is Bench-authored.","sources":[{"citation":"American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.","type":"guideline"}]}}
+      {
+        "id": "fw1",
+        "text": "Prefer remote-first care for low-risk presentations because long travel and delayed appointments impose unequal burdens, escalating only when the expected diagnostic value of in-person examination justifies those burdens.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from distributive justice, access, and least-burdensome-care reasoning. The executable remote-first rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Johnson D et al. ACP Telemedicine Policy and Practice. Ann Intern Med. 2026. PMID 42114091.",
+              "type": "policy-document"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Require in-person assessment when hands-on findings can materially change management because diagnostic responsibility and avoidance of preventable harm outweigh convenience in that circumstance.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence, diagnostic responsibility, and professional accountability. The executable examination-first rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
     ]
   },
-  "collection":"benchmark",
-  "exposure":"internal-development",
-  "status":"draft",
-  "intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
-  "review":null,
-  "paper_usage":["P2 legitimate singleton professional ecology and access-versus-diagnostic-safety comparison; later P3 modality-threshold and representation studies."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External policy and empirical sources retain their own rights; source material is summarized and adapted rather than reproduced."},
-  "references":[
-    {"citation":"Johnson D et al. Telemedicine Policy and Practice: A Position Paper From the American College of Physicians. Ann Intern Med. 2026;179:1030-1032. PMID 42114091.","type":"policy-document"},
-    {"citation":"American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.","type":"guideline"},
-    {"citation":"Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.","type":"article"},
-    {"citation":"Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.","type":"article"},
-    {"citation":"Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.","type":"article"}
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
   ],
-  "required_aggregation":"mean",
-  "schema_version":"1.0.0",
-  "content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "review": null,
+  "paper_usage": [
+    "P2 legitimate singleton professional ecology and access-versus-diagnostic-safety comparison; later P3 modality-threshold and representation studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External policy and empirical sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Johnson D et al. Telemedicine Policy and Practice: A Position Paper From the American College of Physicians. Ann Intern Med. 2026;179:1030-1032. PMID 42114091.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.",
+      "type": "article"
+    },
+    {
+      "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+      "type": "article"
+    },
+    {
+      "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:4358bdff9dca45ff7481d1128879add466d96a1f1049312b33a39ed6911aa609"
 }

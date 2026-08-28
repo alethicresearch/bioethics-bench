@@ -1,43 +1,217 @@
 {
-  "record_id":"m045-posthumous-reproductive-use-detailed-v1",
-  "case_id":"m045-posthumous-reproductive-use",
-  "version":"1.0.0",
-  "title":"Posthumous use of stored reproductive material",
-  "short_description":"A fertility program must decide whether a surviving partner may use stored gametes or embryos after the other genetic contributor dies without a specific signed posthumous-use authorization but with strong evidence of shared reproductive plans.",
-  "decision_question":"When may a fertility program use stored reproductive material after one genetic contributor has died?",
-  "representation":{"form":"detailed","companion_record_ids":["m045-posthumous-reproductive-use-concise-v1"],"notes":"Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."},
-  "benchmark_profile":"full-corpus-2x1x2-mean-v1",
-  "jurisdiction_context":"Jurisdiction-neutral posthumous-reproduction policy informed by current ASRM ethics guidance; legality is stipulated rather than inferred.",
-  "as_of_date":"2026-08-27",
-  "stipulations":[
-    {"id":"m045-stored","kind":"contextual","statement":"The reproductive material was stored for family-building purposes before the contributor's death.","rationale":"The case concerns posthumous reproductive use of already stored material, not emergency retrieval."},
-    {"id":"m045-shared-plan","kind":"contextual","statement":"There is strong reliable evidence that the deceased and surviving partner had a shared plan to have children together.","rationale":"The high-evidence surviving-partner policy must have something more than silence to rely on."},
-    {"id":"m045-no-written","kind":"contextual","statement":"No explicit signed authorization specifically addressing posthumous reproductive use exists.","rationale":"Written-consent and strong-evidence policies only diverge when the formal document is absent."},
-    {"id":"m045-no-opposition","kind":"contextual","statement":"There is no evidence that the deceased opposed posthumous reproduction.","rationale":"A known refusal would defeat the permissive candidate rather than test evidentiary threshold."},
-    {"id":"m045-partner","kind":"contextual","statement":"The request comes from the surviving spouse or partner after adequate grieving time and counseling.","rationale":"ASRM distinguishes surviving-partner requests from requests by other relatives and recommends deliberative safeguards."},
-    {"id":"m045-legal","kind":"legal","statement":"Both explicit-authorization-only and strong-evidence surviving-partner policies are legally available.","rationale":"The benchmark tests ethical consent threshold rather than jurisdiction-specific law."}
+  "record_id": "m045-posthumous-reproductive-use-detailed-v1",
+  "case_id": "m045-posthumous-reproductive-use",
+  "version": "1.0.0",
+  "title": "Posthumous use of stored reproductive material",
+  "short_description": "A fertility program must decide whether a surviving partner may use stored gametes or embryos after the other genetic contributor dies without a specific signed posthumous-use authorization but with strong evidence of shared reproductive plans.",
+  "decision_question": "When may a fertility program use stored reproductive material after one genetic contributor has died?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m045-posthumous-reproductive-use-concise-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one natural 2x1x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
+  },
+  "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+  "jurisdiction_context": "Jurisdiction-neutral posthumous-reproduction policy informed by current ASRM ethics guidance; legality is stipulated rather than inferred.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m045-stored",
+      "kind": "contextual",
+      "statement": "The reproductive material was stored for family-building purposes before the contributor's death.",
+      "rationale": "The case concerns posthumous reproductive use of already stored material, not emergency retrieval."
+    },
+    {
+      "id": "m045-shared-plan",
+      "kind": "contextual",
+      "statement": "There is strong reliable evidence that the deceased and surviving partner had a shared plan to have children together.",
+      "rationale": "The high-evidence surviving-partner policy must have something more than silence to rely on."
+    },
+    {
+      "id": "m045-no-written",
+      "kind": "contextual",
+      "statement": "No explicit signed authorization specifically addressing posthumous reproductive use exists.",
+      "rationale": "Written-consent and strong-evidence policies only diverge when the formal document is absent."
+    },
+    {
+      "id": "m045-no-opposition",
+      "kind": "contextual",
+      "statement": "There is no evidence that the deceased opposed posthumous reproduction.",
+      "rationale": "A known refusal would defeat the permissive candidate rather than test evidentiary threshold."
+    },
+    {
+      "id": "m045-partner",
+      "kind": "contextual",
+      "statement": "The request comes from the surviving spouse or partner after adequate grieving time and counseling.",
+      "rationale": "ASRM distinguishes surviving-partner requests from requests by other relatives and recommends deliberative safeguards."
+    },
+    {
+      "id": "m045-legal",
+      "kind": "legal",
+      "statement": "Both explicit-authorization-only and strong-evidence surviving-partner policies are legally available.",
+      "rationale": "The benchmark tests ethical consent threshold rather than jurisdiction-specific law."
+    }
   ],
-  "position_families":["explicit written authorization threshold","strong-evidence surviving-partner authorization","precedent autonomy and formality","relational reproductive project"],
-  "domains":["reproduction-genetics","consent-capacity-refusal"],
-  "tags":["posthumous reproduction","gametes","embryos","surviving partner","consent","precedent autonomy","relational autonomy"],
-  "scenario":"A fertility program is storing cryopreserved reproductive material originally banked for family building by a couple. One genetic contributor dies unexpectedly before the material is used. The surviving partner asks to use the stored material to attempt pregnancy. For this benchmark, assume the material was stored for reproductive purposes; the deceased repeatedly expressed a plan to have children with this surviving partner and participated in fertility treatment; the clinic's older consent form did not separately obtain signed authorization for posthumous reproductive use; there is no contrary statement suggesting the deceased opposed posthumous reproduction; the request comes from the surviving spouse or partner after adequate grieving time and counseling; and both an explicit-written-authorization rule and a strong-reliable-evidence surviving-partner rule are legally available. The program must decide what evidence of consent is sufficient for posthumous reproductive use.",
-  "scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored posthumous-reproduction case grounded in ASRM ethics guidance and attitude evidence summarized in that literature. It fixes stored reproductive purpose, strong shared-plan evidence, absence of specific written posthumous authorization, absence of contrary wishes, surviving-partner status, and legal availability so formal-consent and high-evidence relational policies diverge on the same facts.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.","type":"guideline"},{"citation":"ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.","type":"guideline"}],"adapted_not_reproduced":true},
-  "candidate_pools":{
-    "public":[
-      {"id":"pub1","text":"Permit posthumous reproductive use only when the deceased left explicit written authorization for that use; a shared wish for children during life is not enough by itself.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from general-population attitude evidence summarized by ASRM placing strong weight on prior informed consent for posthumous reproduction. The written-authorization-only program rule is an executable Bench translation.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018, review of public attitudes.","type":"guideline"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Allow a surviving spouse or partner to use stored reproductive material when strong reliable evidence shows that posthumous reproduction accords with the deceased's shared family-building wishes and there is no contrary evidence.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from fertility and sperm-banking attitude evidence showing that some people intend or accept partner use of stored reproductive material after death. The strong-evidence institutional threshold is Bench-authored policy completion.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018, discussion of attitude evidence and surviving-partner requests.","type":"guideline"}],"adapted_not_reproduced":true}}
+  "position_families": [
+    "explicit written authorization threshold",
+    "strong-evidence surviving-partner authorization",
+    "precedent autonomy and formality",
+    "relational reproductive project"
+  ],
+  "domains": [
+    "reproduction-genetics",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "posthumous reproduction",
+    "gametes",
+    "embryos",
+    "surviving partner",
+    "consent",
+    "precedent autonomy",
+    "relational autonomy"
+  ],
+  "scenario": "A fertility program is storing cryopreserved reproductive material originally banked for family building by a couple. One genetic contributor dies unexpectedly before the material is used. The surviving partner asks to use the stored material to attempt pregnancy. For this benchmark, assume the material was stored for reproductive purposes; the deceased repeatedly expressed a plan to have children with this surviving partner and participated in fertility treatment; the clinic's older consent form did not separately obtain signed authorization for posthumous reproductive use; there is no contrary statement suggesting the deceased opposed posthumous reproduction; the request comes from the surviving spouse or partner after adequate grieving time and counseling; and both an explicit-written-authorization rule and a strong-reliable-evidence surviving-partner rule are legally available. The program must decide what evidence of consent is sufficient for posthumous reproductive use.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored posthumous-reproduction case grounded in ASRM ethics guidance and attitude evidence summarized in that literature. It fixes stored reproductive purpose, strong shared-plan evidence, absence of specific written posthumous authorization, absence of contrary wishes, surviving-partner status, and legal availability so formal-consent and high-evidence relational policies diverge on the same facts.",
+    "sources": [
+      {
+        "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.",
+        "type": "guideline"
+      },
+      {
+        "citation": "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.",
+        "type": "guideline"
+      }
     ],
-    "expert":[
-      {"id":"exp1","text":"Honor explicit written posthumous-use authorization; without it, consider only a surviving spouse or partner and proceed only when reliable evidence supports that use as consistent with the deceased's wishes, after appropriate counseling and deliberation.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from ASRM's conditional professional architecture: written authorization clearly supports posthumous use; where written documentation is absent, programs open to considering use should restrict consideration to surviving spouses/partners, exercise caution, and not proceed when evidence indicates the deceased would have objected. The architecture is kept as one candidate rather than split artificially.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.","type":"guideline"},{"citation":"ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.","type":"guideline"}],"adapted_not_reproduced":true}}
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Permit posthumous reproductive use only when the deceased left explicit written authorization for that use; a shared wish for children during life is not enough by itself.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from general-population attitude evidence summarized by ASRM placing strong weight on prior informed consent for posthumous reproduction. The written-authorization-only program rule is an executable Bench translation.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018, review of public attitudes.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Allow a surviving spouse or partner to use stored reproductive material when strong reliable evidence shows that posthumous reproduction accords with the deceased's shared family-building wishes and there is no contrary evidence.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from fertility and sperm-banking attitude evidence showing that some people intend or accept partner use of stored reproductive material after death. The strong-evidence institutional threshold is Bench-authored policy completion.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018, discussion of attitude evidence and surviving-partner requests.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
-    "framework":[
-      {"id":"fw1","text":"Require explicit prior authorization because posthumous genetic parenthood is irreversible and uncertainty about the deceased's wishes should not be resolved by inference.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from precedent autonomy, reproductive self-determination, and the moral importance of avoiding nonconsensual genetic parenthood. The executable formality rule is Bench-authored.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.","type":"guideline"}]}},
-      {"id":"fw2","text":"Permit use by a surviving partner when strong evidence establishes a shared reproductive project because autonomous family-building intentions can be expressed through sustained joint plans as well as formal documents.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from relational autonomy and shared reproductive-project reasoning. The executable high-evidence rule is Bench-authored.","sources":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.","type":"guideline"}]}}
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Honor explicit written posthumous-use authorization; without it, consider only a surviving spouse or partner and proceed only when reliable evidence supports that use as consistent with the deceased's wishes, after appropriate counseling and deliberation.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from ASRM's conditional professional architecture: written authorization clearly supports posthumous use; where written documentation is absent, programs open to considering use should restrict consideration to surviving spouses/partners, exercise caution, and not proceed when evidence indicates the deceased would have objected. The architecture is kept as one candidate rather than split artificially.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.",
+              "type": "guideline"
+            },
+            {
+              "citation": "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Require explicit prior authorization because posthumous genetic parenthood is irreversible and uncertainty about the deceased's wishes should not be resolved by inference.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from precedent autonomy, reproductive self-determination, and the moral importance of avoiding nonconsensual genetic parenthood. The executable formality rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Permit use by a surviving partner when strong evidence establishes a shared reproductive project because autonomous family-building intentions can be expressed through sustained joint plans as well as formal documents.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from relational autonomy and shared reproductive-project reasoning. The executable high-evidence rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
     ]
   },
-  "collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,
-  "paper_usage":["P2 legitimate singleton expert ecology and consent-evidence threshold comparison; later P3 precedent-versus-relational-autonomy studies."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored content is CC BY 4.0. External guidance retains its rights; source material is summarized and adapted rather than reproduced."},
-  "references":[{"citation":"ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.","type":"guideline"},{"citation":"ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.","type":"guideline"}],
-  "required_aggregation":"mean","schema_version":"1.0.0","content_hash":"sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 legitimate singleton expert ecology and consent-evidence threshold comparison; later P3 precedent-versus-relational-autonomy studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored content is CC BY 4.0. External guidance retains its rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.",
+      "type": "guideline"
+    },
+    {
+      "citation": "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.",
+      "type": "guideline"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:dafcefd7da7aabfa13a2f2e34b595dfcff146b0e080e380c962a6ce05b8ae8f2"
 }

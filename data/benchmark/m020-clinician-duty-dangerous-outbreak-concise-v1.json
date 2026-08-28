@@ -7,63 +7,253 @@
   "decision_question": "During a severe infectious outbreak with staffing shortages, what duty-and-exemption policy should govern clinicians' assignment to higher-risk patient care once appropriate protections are in place?",
   "representation": {
     "form": "concise",
-    "companion_record_ids": ["m020-clinician-duty-dangerous-outbreak-detailed-v1"],
+    "companion_record_ids": [
+      "m020-clinician-duty-dangerous-outbreak-detailed-v1"
+    ],
     "notes": "Concise and detailed are controlled companion representations of one natural 2x2x2 candidate field; decision question, stipulations, candidate pools, and provenance are fixed."
   },
   "benchmark_profile": "full-corpus-2x2x2-v1",
   "jurisdiction_context": "Jurisdiction-neutral health-system workforce policy informed by professional duty-to-care and occupational-health guidance.",
   "as_of_date": "2026-08-27",
   "stipulations": [
-    {"id":"m020-protection","kind":"contextual","statement":"The institution supplies appropriate PPE, infection-control training, vaccination or prophylaxis when available, occupational-health monitoring, exposure management, and paid leave for work-related illness.","rationale":"The benchmark tests residual-risk duty rather than obvious institutional failure to protect workers."},
-    {"id":"m020-residual-risk","kind":"scientific","statement":"Outbreak assignment remains materially riskier than ordinary practice despite the available protections.","rationale":"If residual risk were negligible the professional-duty dispute would collapse into ordinary staffing."},
-    {"id":"m020-staffing-need","kind":"contextual","statement":"Broad exemptions would materially worsen staffing, patient access, or safety in the high-acuity isolation service.","rationale":"The case requires a real patient-care consequence from the exemption rule."},
-    {"id":"m020-vulnerability","kind":"contextual","statement":"Some clinicians have materially greater personal medical, household, or caregiving vulnerability than others.","rationale":"A uniform mandate and a broader exemption policy must impose genuinely different burdens."},
-    {"id":"m020-limited-reassignment","kind":"contextual","statement":"Lower-exposure reassignment exists but is available for only a limited number of clinicians.","rationale":"The institution cannot dissolve the problem by reassigning everyone who prefers lower exposure."}
+    {
+      "id": "m020-protection",
+      "kind": "contextual",
+      "statement": "The institution supplies appropriate PPE, infection-control training, vaccination or prophylaxis when available, occupational-health monitoring, exposure management, and paid leave for work-related illness.",
+      "rationale": "The benchmark tests residual-risk duty rather than obvious institutional failure to protect workers."
+    },
+    {
+      "id": "m020-residual-risk",
+      "kind": "scientific",
+      "statement": "Outbreak assignment remains materially riskier than ordinary practice despite the available protections.",
+      "rationale": "If residual risk were negligible the professional-duty dispute would collapse into ordinary staffing."
+    },
+    {
+      "id": "m020-staffing-need",
+      "kind": "contextual",
+      "statement": "Broad exemptions would materially worsen staffing, patient access, or safety in the high-acuity isolation service.",
+      "rationale": "The case requires a real patient-care consequence from the exemption rule."
+    },
+    {
+      "id": "m020-vulnerability",
+      "kind": "contextual",
+      "statement": "Some clinicians have materially greater personal medical, household, or caregiving vulnerability than others.",
+      "rationale": "A uniform mandate and a broader exemption policy must impose genuinely different burdens."
+    },
+    {
+      "id": "m020-limited-reassignment",
+      "kind": "contextual",
+      "statement": "Lower-exposure reassignment exists but is available for only a limited number of clinicians.",
+      "rationale": "The institution cannot dissolve the problem by reassigning everyone who prefers lower exposure."
+    }
   ],
-  "position_families": ["strong shared outbreak duty with narrow exemptions","individualized risk-threshold duty with broader exemptions","voluntary staffing with reciprocal incentives and support","fair rotation of residual occupational risk"],
-  "domains": ["public-health"],
-  "tags": ["outbreak","pandemic","duty to treat","healthcare workers","PPE","reciprocity","occupational risk","staffing"],
+  "position_families": [
+    "strong shared outbreak duty with narrow exemptions",
+    "individualized risk-threshold duty with broader exemptions",
+    "voluntary staffing with reciprocal incentives and support",
+    "fair rotation of residual occupational risk"
+  ],
+  "domains": [
+    "public-health"
+  ],
+  "tags": [
+    "outbreak",
+    "pandemic",
+    "duty to treat",
+    "healthcare workers",
+    "PPE",
+    "reciprocity",
+    "occupational risk",
+    "staffing"
+  ],
   "scenario": "During a severe contagious respiratory outbreak, a hospital has a sustained shortage of clinicians for a high-acuity isolation unit. For this benchmark, assume appropriate PPE, infection-control training, vaccination or prophylaxis when available, occupational-health monitoring, exposure management, and paid leave are being provided; outbreak assignments still carry materially greater infection risk than ordinary practice; broad exemptions would materially worsen staffing and patient access; some clinicians have materially greater personal, household, or caregiving vulnerability than others; and lower-exposure reassignment is available for only a limited number of clinicians. The hospital must choose a duty-and-exemption policy.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
     "summary": "Bench-authored outbreak-workforce case synthesized from professional duty-to-care guidance, occupational-health reciprocity principles, and healthcare-worker willingness studies. It fixes adequate institutional protection, meaningful residual risk, consequential staffing need, heterogeneous vulnerability, and limited reassignment so stronger-duty and broader-exemption policies remain action-distinct.",
     "sources": [
-      {"citation":"American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.","type":"guideline"},
-      {"citation":"World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.","type":"guideline"},
-      {"citation":"Aitken P et al. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia's First Wave of COVID-19 Community Transmission. 2021. PMID 34496995.","type":"article"},
-      {"citation":"Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.","type":"article"},
-      {"citation":"Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.","type":"article"}
+      {
+        "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+        "type": "guideline"
+      },
+      {
+        "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Aitken P et al. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia's First Wave of COVID-19 Community Transmission. 2021. PMID 34496995.",
+        "type": "article"
+      },
+      {
+        "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
+        "type": "article"
+      },
+      {
+        "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+        "type": "article"
+      }
     ],
     "adapted_not_reproduced": true
   },
   "candidate_pools": {
     "public": [
-      {"id":"pub1","text":"Require qualified clinicians to share outbreak assignments through a fair rotation once appropriate protection is supplied, reserving exemptions for unusually high personal risk or comparably exceptional burdens.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from healthcare-worker studies in which many respondents accepted a substantial duty to care when protections were credible. The fair-rotation and narrow-exemption rule is Bench-authored rather than a literal survey item.","sources":[{"citation":"Aitken P et al. 2021. PMID 34496995.","type":"article"},{"citation":"Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.","type":"article"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Make outbreak assignment voluntary or broadly exemptible for clinicians with serious personal, household, or caregiving vulnerability, using incentives, support, and lower-exposure reassignment where possible to maintain staffing.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from worker evidence showing that family exposure, personal vulnerability, perceived workplace safety, and caregiving obligations materially affect willingness to accept outbreak risk. The executable exemption architecture is Bench-authored.","sources":[{"citation":"Aitken P et al. 2021. PMID 34496995.","type":"article"},{"citation":"Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.","type":"article"}],"adapted_not_reproduced":true}}
+      {
+        "id": "pub1",
+        "text": "Require qualified clinicians to share outbreak assignments through a fair rotation once appropriate protection is supplied, reserving exemptions for unusually high personal risk or comparably exceptional burdens.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from healthcare-worker studies in which many respondents accepted a substantial duty to care when protections were credible. The fair-rotation and narrow-exemption rule is Bench-authored rather than a literal survey item.",
+          "sources": [
+            {
+              "citation": "Aitken P et al. 2021. PMID 34496995.",
+              "type": "article"
+            },
+            {
+              "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Make outbreak assignment voluntary or broadly exemptible for clinicians with serious personal, household, or caregiving vulnerability, using incentives, support, and lower-exposure reassignment where possible to maintain staffing.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from worker evidence showing that family exposure, personal vulnerability, perceived workplace safety, and caregiving obligations materially affect willingness to accept outbreak risk. The executable exemption architecture is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Aitken P et al. 2021. PMID 34496995.",
+              "type": "article"
+            },
+            {
+              "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "expert": [
-      {"id":"exp1","text":"Require appropriately trained clinicians to accept a fair share of elevated outbreak duty once adequate PPE, infection-control measures, and occupational support are in place, with narrow individualized exemptions for extraordinary risk.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from professional duty-to-care guidance treating care during public-health emergencies as a substantial role obligation whose force increases with urgent patient need and adequate reciprocal institutional protection.","sources":[{"citation":"American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.","type":"guideline"}],"adapted_not_reproduced":true}},
-      {"id":"exp2","text":"Require outbreak service only when an individualized risk-and-obligation assessment remains within a reasonable professional threshold, prioritizing reassignment or exemption for significant medical, household, or caregiving vulnerability.","source_pool":"expert","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed professional policy inference from guidance that duty to care is not unlimited and must be bounded by degree of risk, available alternatives, reciprocal protections, and competing obligations, together with occupational-health requirements to reduce unequal hazards. The exact individualized threshold is a Bench operationalization.","sources":[{"citation":"American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.","type":"guideline"},{"citation":"World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.","type":"guideline"}],"adapted_not_reproduced":true}}
+      {
+        "id": "exp1",
+        "text": "Require appropriately trained clinicians to accept a fair share of elevated outbreak duty once adequate PPE, infection-control measures, and occupational support are in place, with narrow individualized exemptions for extraordinary risk.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from professional duty-to-care guidance treating care during public-health emergencies as a substantial role obligation whose force increases with urgent patient need and adequate reciprocal institutional protection.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Require outbreak service only when an individualized risk-and-obligation assessment remains within a reasonable professional threshold, prioritizing reassignment or exemption for significant medical, household, or caregiving vulnerability.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed professional policy inference from guidance that duty to care is not unlimited and must be bounded by degree of risk, available alternatives, reciprocal protections, and competing obligations, together with occupational-health requirements to reduce unequal hazards. The exact individualized threshold is a Bench operationalization.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "type": "guideline"
+            },
+            {
+              "citation": "World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "framework": [
-      {"id":"fw1","text":"Distribute residual outbreak risk across qualified clinicians through a fair mandatory rotation because professional solidarity creates special duties when patient need is severe and the institution has minimized avoidable risk.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from professional-role obligation, solidarity, reciprocity, and fair burden-sharing. The executable mandatory-rotation rule is Bench-authored.","sources":[{"citation":"American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.","type":"guideline"}]}},
-      {"id":"fw2","text":"Use voluntary assignment and broad vulnerability-based exemptions because professional roles do not erase duties to self and dependents, and coercion is disproportionate when incentives, support, and reassignment can reduce the staffing gap.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from proportionality, special obligations to dependents, and occupational justice. The executable voluntary-plus-exemption rule is Bench-authored.","sources":[{"citation":"World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.","type":"guideline"}]}}
+      {
+        "id": "fw1",
+        "text": "Distribute residual outbreak risk across qualified clinicians through a fair mandatory rotation because professional solidarity creates special duties when patient need is severe and the institution has minimized avoidable risk.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from professional-role obligation, solidarity, reciprocity, and fair burden-sharing. The executable mandatory-rotation rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Use voluntary assignment and broad vulnerability-based exemptions because professional roles do not erase duties to self and dependents, and coercion is disproportionate when incentives, support, and reassignment can reduce the staffing gap.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from proportionality, special obligations to dependents, and occupational justice. The executable voluntary-plus-exemption rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
     ]
   },
   "collection": "benchmark",
   "exposure": "internal-development",
   "status": "draft",
-  "intended_use": ["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
   "review": null,
-  "paper_usage": ["P2 symmetric candidate ecology with affected-worker and professional duty divergence; later P3 residual-risk and exemption-threshold studies."],
-  "rights": {"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External guidance and empirical research retain their own rights; source material is summarized and adapted rather than reproduced."},
+  "paper_usage": [
+    "P2 symmetric candidate ecology with affected-worker and professional duty divergence; later P3 residual-risk and exemption-threshold studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External guidance and empirical research retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
   "references": [
-    {"citation":"American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.","type":"guideline"},
-    {"citation":"World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.","type":"guideline"},
-    {"citation":"Aitken P et al. 2021. PMID 34496995.","type":"article"},
-    {"citation":"Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.","type":"article"},
-    {"citation":"Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.","type":"article"}
+    {
+      "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+      "type": "guideline"
+    },
+    {
+      "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Aitken P et al. 2021. PMID 34496995.",
+      "type": "article"
+    },
+    {
+      "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
+      "type": "article"
+    },
+    {
+      "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+      "type": "article"
+    }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  "content_hash": "sha256:5640f9dd85f59598c35e387cce912387146b8b444522c61d818c5081e82ddc6a"
 }
