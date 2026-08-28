@@ -170,6 +170,102 @@ There is one current cross-repo discrepancy to resolve before P2 freeze: P2 v40 
 6. Do not grow the executable corpus merely to improve n. Promotion requires additional evidence sufficient for an action-aligned candidate field.
 7. Preserve the current structural finding: source architecture limits are legitimate reasons for a domain/family to remain non-executable.
 
+## Open change awaiting a decision — declared source schemes
+
+**Status: implemented and green on `claude/bioethics-bench-completion-m0p43e`; deliberately NOT
+merged into `author/full-corpus-completion` or PR #10.**
+
+The fixed `public / expert / framework` requirement has been generalized on the integration branch
+so a case declares a registered source scheme naming the pools it executes over, any number from
+two upward. Cross-source pairing becomes the sum over unordered pool pairs, which reduces to
+`ab + ac + bc` for three pools. The author directed this change in session, on the reasoning that
+the fixed triple is a vestige of one experimental design rather than a property of the method.
+
+Everything load-bearing is unchanged: action-distinctness, four-basis provenance, comparison across
+pools and never within one, Mean wherever partner counts differ, no ranking on an incomplete
+matrix, and a competing-policy sweep before any singleton.
+
+**Why this is flagged rather than merged.** It is in tension with two standing items in this file:
+priority 6 (do not grow the executable corpus merely to improve n) and priority 7 (source
+architecture limits are legitimate reasons for a family to remain non-executable), and with the
+decision rule that the program should optimize for alignment and validation rather than horizontal
+expansion. Those were written before the author's instruction and the conflict is real, so it
+should be resolved deliberately rather than absorbed by a merge.
+
+The specific tension: 8 of the 12 families held by the candidate audits were held **solely**
+because no public pool could be populated honestly. Under a two-pool scheme those become
+executable without weakening any standard — the hold reason was an artefact of the required shape,
+not a finding about the case. That is an argument for the change. The argument against is that the
+executable count would grow substantially at exactly the moment the program has decided to stop
+expanding horizontally.
+
+What exists on the branch:
+
+- `schemas/source-schemes.json` — four registered schemes; `public-expert-framework@1.0.0` remains
+  the default, so every existing record is valid unchanged.
+- `scripts/validate.mjs` — scheme resolution, pool-name and id-prefix checks, and a guard rejecting
+  two empirically warranted pools that rest on an identical citation set.
+- M099 promoted as the first two-pool case (`2 professional × 3 framework`, 6 pairs, Mean),
+  bringing the branch to 35 families / 70 records against the PR head's 34 / 68.
+
+**Two validator holes were found and fixed while doing this**, both of which mattered only for
+non-default schemes and so would have gone unnoticed indefinitely. The asymmetry check built its
+shape from the fixed triple, so a two-pool record produced an empty shape and the Mean requirement
+silently did not apply. The profile pool comparison iterated the same triple, so a non-default pool
+was never compared against its profile. Both fixes are independently worth keeping even if the
+scheme change is rejected.
+
+**If the change is accepted**, P1 gains a specification-level finding about what constitutes a
+source pool, P2 gains the two validator holes as construction evidence, and the executable count
+becomes a moving figure again until the reconstruction batch settles. **If it is rejected**, revert
+the schema and validator changes and demote M099; the two validator fixes should be retained.
+
+## SACRE integration status — reconciled
+
+Coordination milestone 2 is done. The Full Corpus vendor, loader and harness were 80 commits behind
+SACRE `main`; `main` has been merged into the integration branch and the two coexist. Verified on
+SACRE `claude/bioethics-bench-completion-m0p43e` at `ef0becd`: 359 unit tests, 73 web tests, clean
+build, and the Full Corpus harness still enumerating 216 calls across eight geometries.
+
+The vendored pin moved from `d547e05` to `6c86cfd`, the current PR #10 head. The corpus content hash
+is unchanged at `f1de242c`, because every commit between them was documentation.
+
+This makes the reconciliation clean and reviewable. It does **not** make Full Corpus loading a
+current-`main` capability, because the branch is not merged to `main`. The P2 v40 / Program v12
+claim that the Full Corpus is loadable in the deployed application therefore still needs either
+that merge or a softening to "integration branch".
+
+Note for the Drive coordination document: it records SACRE `main` at `1b2a5db`. Actual
+`origin/main` is `4cdad65`. Repository state governs.
+
+## Development tranche — executed, with authorization
+
+A bounded Full Corpus development tranche has been run, on explicit author authorization given in
+session. It is **development evidence and nothing more**: it does not validate QCCS, SACRE, model
+performance, or any case.
+
+- 8 families, one per geometry; 16 executions; 216 QCCS calls; every execution complete with full
+  coverage and verified on recomputation; estimated spend US$0.63.
+- Repeated execution on three families, five repetitions each, plus a control varying aggregation
+  mode on one family.
+
+The finding that matters for P3 design: **the gap between the top two candidates relative to
+run-to-run spread predicts whether a Final Policy is reproducible.** M004 at a ratio near 2.3
+returns the same Final Policy in all five runs; M094 at 0.03–0.20 returns a different ranking on
+every run and up to four different Final Policies. A single run's Final Policy is not a reliable
+output for a closely contested case, and the tranche's apparent concise/detailed differences are
+not separable from run-to-run variation without repetition.
+
+An initial hypothesis that Sum aggregation caused the instability was **refuted** by a control run
+of the same family under Mean: the ratio is invariant because Mean rescales gap and noise together.
+The case for Mean remains about shape bias and gains nothing here.
+
+Numbers are in `docs/bench-runs/stability-2026-08-28.json` on the SACRE integration branch.
+
+A spend-ceiling defect was found and fixed in the Full Corpus harness: `spentUsd` was declared,
+checked before every call, and never incremented. `scripts/execute-bench.mjs` still has it, so E0
+ran with no working cap.
+
 ## When this file must be updated
 
 Update this file in the same change, or leave an explicit handoff requiring an update, when work changes any cross-project fact such as:
