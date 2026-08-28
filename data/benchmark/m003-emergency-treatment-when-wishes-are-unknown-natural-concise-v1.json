@@ -1,0 +1,213 @@
+{
+  "case_id": "m003-emergency-treatment-when-wishes-are-unknown",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Emergency treatment when wishes are unknown",
+  "short_description": "An unconscious adult arrives with internal bleeding that requires an emergency operation.",
+  "decision_question": "Should the emergency team begin the lifesaving intervention immediately under presumed consent, or use the brief remaining window to search for reliable evidence of the patient's wishes?",
+  "jurisdiction_context": "Jurisdiction-neutral emergency ethics.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [],
+  "position_families": [
+    "Begin immediately under presumed consent when delay materially threatens survival and there is no specific evidence of refusal, while continuing to seek wishes in parallel",
+    "Spend a short, predefined portion of the window on high-yield record/surrogate checks before irreversible treatment, then proceed if nothing reliable is found",
+    "If reliable prior refusal evidence becomes available, treat that evidence as controlling rather than continuing to rely on presumed consent"
+  ],
+  "domains": [
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "emergency",
+    "incapacity",
+    "presumed consent",
+    "advance directive",
+    "surrogate"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored case adapted from the completed M003 deep-research dossier. The scenario preserves the dossier's decision architecture and factual divergence band while the candidate field is reconstructed under the four-basis natural-ecology rule.",
+    "sources": [
+      {
+        "citation": "Singer PA, Choudhry S, Armstrong J. *Public opinion regarding consent to treatment*. J Am Geriatr Soc. 1993;41(2):112-116. PMID 8426030",
+        "type": "article"
+      },
+      {
+        "citation": "Chiong W, Kim AS, Huang IA, Farahany NA, Josephson SA. *Testing the Presumption of Consent to Emergency Treatment for Acute Ischemic Stroke*. JAMA. 2014;311(16):1689-1691. PMID 24756520",
+        "type": "article"
+      },
+      {
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.1, *Informed Consent*",
+        "type": "policy-document"
+      },
+      {
+        "citation": "AMA Journal of Ethics. *Opinions Related to Urgent Decision Making* (2018)",
+        "type": "article"
+      },
+      {
+        "citation": "autonomy and advance-wishes literature on prior preferences during incapacity;",
+        "type": "other"
+      },
+      {
+        "citation": "emergency-consent literature on presumed consent, proportionality and necessity",
+        "type": "other"
+      }
+    ],
+    "adapted_not_reproduced": true,
+    "model_assistance": {
+      "model": "GPT-5.6 Sol",
+      "role": "Reconstructed and drafted from the completed source dossier under the four-basis natural-ecology construction rule; candidate ecology and record text require independent editorial review before freeze.",
+      "reviewed_by_human": false
+    }
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "If reliable prior refusal evidence becomes available, treat that evidence as controlling rather than continuing to rely on presumed consent.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the affected/public evidence synthesized in the M003 deep dossier. The source material supports the underlying preference, value, experience, or action orientation; the Bench makes the institutional-policy translation explicit rather than attributing the policy verbatim to respondents.",
+          "sources": [
+            {
+              "citation": "Singer PA, Choudhry S, Armstrong J. *Public opinion regarding consent to treatment*. J Am Geriatr Soc. 1993;41(2):112-116. PMID 8426030",
+              "type": "article"
+            },
+            {
+              "citation": "Chiong W, Kim AS, Huang IA, Farahany NA, Josephson SA. *Testing the Presumption of Consent to Emergency Treatment for Acute Ischemic Stroke*. JAMA. 2014;311(16):1689-1691. PMID 24756520",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true,
+          "model_assistance": {
+            "model": "GPT-5.6 Sol",
+            "role": "Reconstructed and drafted from the completed source dossier under the four-basis natural-ecology construction rule; candidate ecology and record text require independent editorial review before freeze.",
+            "reviewed_by_human": false
+          }
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "If reliable prior refusal evidence becomes available, treat that evidence as controlling rather than continuing to rely on presumed consent.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the professional, regulatory, or institutional guidance synthesized in the M003 deep dossier. The candidate represents the actionable architecture supported by that expert source layer.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.1, *Informed Consent*",
+              "type": "policy-document"
+            },
+            {
+              "citation": "AMA Journal of Ethics. *Opinions Related to Urgent Decision Making* (2018)",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true,
+          "model_assistance": {
+            "model": "GPT-5.6 Sol",
+            "role": "Reconstructed and drafted from the completed source dossier under the four-basis natural-ecology construction rule; candidate ecology and record text require independent editorial review before freeze.",
+            "reviewed_by_human": false
+          }
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Begin immediately under presumed consent when delay materially threatens survival and there is no specific evidence of refusal, while continuing to seek wishes in parallel.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Framework-derived policy from the normative analysis in the M003 deep dossier: Emergency beneficence / least-regret: irreversible harm from untreated emergency is imminent and the patient cannot decide → action can protect the option most people would choose when no contrary evidence exists → begin time-critical treatment while continuing preference search in parallel.",
+          "sources": [],
+          "adapted_not_reproduced": true,
+          "model_assistance": {
+            "model": "GPT-5.6 Sol",
+            "role": "Reconstructed and drafted from the completed source dossier under the four-basis natural-ecology construction rule; candidate ecology and record text require independent editorial review before freeze.",
+            "reviewed_by_human": false
+          }
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Spend a short, predefined portion of the window on high-yield record/surrogate checks before irreversible treatment, then proceed if nothing reliable is found.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Framework-derived policy from the normative analysis in the M003 deep dossier: Precedent autonomy: prior values and refusals remain relevant during incapacity → systems should make a reasonable effort to recover reliable wishes → devote a bounded high-yield interval to preference search when that effort does not consume the therapeutic opportunity.",
+          "sources": [],
+          "adapted_not_reproduced": true,
+          "model_assistance": {
+            "model": "GPT-5.6 Sol",
+            "role": "Reconstructed and drafted from the completed source dossier under the four-basis natural-ecology construction rule; candidate ecology and record text require independent editorial review before freeze.",
+            "reviewed_by_human": false
+          }
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "Full Corpus natural-ecology evaluation and later P2/P3 source-grounded analysis (M003)."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited research, guidance and policy sources retain their own rights; positions are summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Singer PA, Choudhry S, Armstrong J. *Public opinion regarding consent to treatment*. J Am Geriatr Soc. 1993;41(2):112-116. PMID 8426030",
+      "type": "article"
+    },
+    {
+      "citation": "Chiong W, Kim AS, Huang IA, Farahany NA, Josephson SA. *Testing the Presumption of Consent to Emergency Treatment for Acute Ischemic Stroke*. JAMA. 2014;311(16):1689-1691. PMID 24756520",
+      "type": "article"
+    },
+    {
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.1, *Informed Consent*",
+      "type": "policy-document"
+    },
+    {
+      "citation": "AMA Journal of Ethics. *Opinions Related to Urgent Decision Making* (2018)",
+      "type": "article"
+    },
+    {
+      "citation": "autonomy and advance-wishes literature on prior preferences during incapacity;",
+      "type": "other"
+    },
+    {
+      "citation": "emergency-consent literature on presumed consent, proportionality and necessity",
+      "type": "other"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m003-emergency-treatment-when-wishes-are-unknown-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m003-emergency-treatment-when-wishes-are-unknown-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question and candidate pools are fixed."
+  },
+  "scenario": "An unconscious adult arrives with internal bleeding that requires an emergency operation. No advance directive, surrogate or prior refusal is immediately available, and nothing currently suggests that the patient would refuse treatment. A rapid record-and-phone search could plausibly locate a surrogate or prior instruction, but it would consume much of the remaining treatment window. For this benchmark, assume the operation must begin within about ten minutes for a meaningful chance of survival and that delaying through most of that window materially worsens the prognosis. The emergency team must decide whether to begin immediately under presumed consent or spend part of the window searching for reliable evidence of the patient's wishes.",
+  "content_hash": "sha256:d21d1dad89d0ce12fb729ff7ad31909e98406a0ae9fc1d608d526b51a3f23101"
+}
