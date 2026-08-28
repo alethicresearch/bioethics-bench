@@ -1,0 +1,284 @@
+{
+  "case_id": "m033-advance-request-euthanasia-dementia",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Advance request for euthanasia after loss of capacity in dementia",
+  "short_description": "A specific advance euthanasia directive applies after advanced dementia has eliminated current decision-making capacity, while the person's present experiential state is mixed and uncertain.",
+  "decision_question": "When a person made a competent, specific advance euthanasia directive for advanced dementia but can no longer communicate a current request, what policy should govern whether euthanasia may proceed?",
+  "jurisdiction_context": "Netherlands, 2026.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m033-specific-directive",
+      "kind": "contextual",
+      "statement": "The advance euthanasia directive was specific, informed and repeatedly reaffirmed while the person had decisional capacity.",
+      "rationale": "The case tests the authority of a strong prior directive rather than the evidentiary weakness of a vague or stale document."
+    },
+    {
+      "id": "m033-trigger-met",
+      "kind": "contextual",
+      "statement": "The dementia state described in the directive is now present.",
+      "rationale": "If the directive's own trigger were not met, implementation would fail before the deeper precedent-autonomy question arises."
+    },
+    {
+      "id": "m033-no-current-capacity",
+      "kind": "scientific",
+      "statement": "The person lacks current decisional capacity and cannot communicate a coherent euthanasia request or revocation.",
+      "rationale": "Loss of contemporaneous request capacity is the core condition that makes an advance-request policy necessary."
+    },
+    {
+      "id": "m033-mixed-current-state",
+      "kind": "contextual",
+      "statement": "Current behavior and affect are mixed and do not establish continuous unbearable suffering or a stable wish to die.",
+      "rationale": "The scenario must keep current welfare genuinely uncertain so neither precedent autonomy nor present interests wins by stipulation."
+    },
+    {
+      "id": "m033-dutch-law",
+      "kind": "legal",
+      "statement": "Dutch law permits a competent advance directive to replace an oral request in principle but still requires all other due-care criteria.",
+      "rationale": "The case concerns ethical and policy implementation within legal permission rather than a legal-prohibition lookup."
+    }
+  ],
+  "position_families": [
+    "advance-directive due-care pathway",
+    "current-welfare confirmation threshold",
+    "contemporaneous communicative-request requirement",
+    "exceptional review for advance-request dementia cases"
+  ],
+  "domains": [
+    "assisted-dying",
+    "end-of-life"
+  ],
+  "tags": [
+    "dementia",
+    "advance directive",
+    "euthanasia",
+    "precedent autonomy",
+    "current interests",
+    "capacity",
+    "Netherlands",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored Dutch 2026 representation synthesized from RTE guidance and empirical work on public and professional attitudes. It fixes a specific reaffirmed directive and mixed current experiential evidence so the decision concerns how prior authority, current welfare and irreversibility should interact.",
+    "sources": [
+      {
+        "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
+        "type": "survey"
+      },
+      {
+        "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+        "type": "survey"
+      },
+      {
+        "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
+        "type": "article"
+      },
+      {
+        "citation": "Euthanasia in advanced dementia: Dutch general-practitioner vignette survey. PMID 34789166.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Permit euthanasia in advanced dementia when a clear competent advance directive applies and the remaining legal safeguards can independently be established despite loss of current communicative capacity.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion: Dutch public studies directly elicited support for euthanasia in advanced dementia on the basis of a prior competent request; the requirement that remaining legal safeguards be independently established aligns the public orientation with the represented Dutch decision context.",
+          "sources": [
+            {
+              "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
+              "type": "survey"
+            },
+            {
+              "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not perform euthanasia once the person can no longer communicate a current request, even when a prior directive exists; use the directive instead to guide ordinary treatment and comfort decisions.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion: the same public evidence contains substantial opposition to advance-request euthanasia, directly addressing the eligibility rule; the ordinary-treatment clause makes the nonperformance orientation clinically actionable.",
+          "sources": [
+            {
+              "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
+              "type": "survey"
+            },
+            {
+              "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+              "type": "survey"
+            },
+            {
+              "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Allow a competent advance directive to replace the oral request after capacity is lost, but require the physician to establish every other statutory due-care criterion and apply heightened scrutiny before euthanasia is performed.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from current Dutch Regional Euthanasia Review Committees guidance: a competent advance directive may substitute for the oral request after communication is lost, but it does not waive the remaining due-care criteria.",
+          "sources": [
+            {
+              "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Honor the specific and repeatedly affirmed advance request when its stated conditions and the remaining safeguards are satisfied, because later loss of capacity should not erase the person's competent prior authority over how life ends.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from precedent-autonomy reasoning associated with Dworkin: a competent person's critical values and prior decisions can retain authority after decisional capacity is lost. The executable policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Ronald Dworkin. Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom. Alfred A. Knopf, 1993.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Do not act on the directive unless current observable evidence strongly supports that the condition the person sought to avoid is now experienced as seriously burdensome; where current welfare remains mixed or indeterminate, do not proceed.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from present-person/current-welfare accounts that give moral weight to the experiential interests and residual agency of the person now living with dementia. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
+              "type": "article"
+            },
+            {
+              "citation": "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138. doi:10.1111/j.1088-4963.1999.00105.x.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Require a contemporaneous communicative request for assisted death because euthanasia is irreversible and the present person cannot now confirm, revise or revoke the earlier instruction.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from precautionary reasoning about irreversibility and revocation under severe uncertainty: where the person cannot contemporaneously confirm or revoke an assisted-dying request, the evidentiary threshold is nonperformance. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
+              "type": "article"
+            },
+            {
+              "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 provenance/candidate-field demonstration; later P3 direct-grounding and representation-sensitivity analyses."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
+      "type": "survey"
+    },
+    {
+      "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+      "type": "survey"
+    },
+    {
+      "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
+      "type": "article"
+    },
+    {
+      "citation": "Euthanasia in advanced dementia: Dutch general-practitioner vignette survey. PMID 34789166.",
+      "type": "survey"
+    },
+    {
+      "citation": "Ronald Dworkin. Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom. Alfred A. Knopf, 1993.",
+      "type": "book"
+    },
+    {
+      "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
+      "type": "article"
+    },
+    {
+      "citation": "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138. doi:10.1111/j.1088-4963.1999.00105.x.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m033-advance-request-euthanasia-dementia-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m033-advance-request-euthanasia-dementia-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
+  },
+  "scenario": "A person with advanced Alzheimer disease can no longer make or communicate complex decisions. Years earlier, while fully capable, the person completed and repeatedly reaffirmed a specific advance euthanasia directive requesting euthanasia if dementia progressed to permanent inability to recognize close family and make independent decisions. Those conditions are now met. The person sometimes appears calm and at other times fearful or agitated, and clinicians cannot reliably establish a stable current judgment about whether life is experienced as unbearable. For this benchmark, assume the directive was specific and reaffirmed with capacity, its stated trigger is now met, the person cannot communicate a current euthanasia request or revocation, current behavior does not establish continuous unbearable suffering, and Dutch law permits an advance directive to replace an oral request only if all other due-care criteria are met. The physician must decide what policy should govern implementation.",
+  "content_hash": "sha256:528f09bc015ff1f13cf6f601264552dbe7d00ff7c08e7fe5cf629a9e98c86a8f"
+}
