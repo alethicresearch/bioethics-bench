@@ -1,0 +1,48 @@
+name: One-time normalize benchmark hashes
+
+on:
+  push:
+    branches:
+      - author/reconstruction-batch-01
+    paths:
+      - .github/hash-normalize-trigger
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: author/reconstruction-batch-01
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fill zero benchmark hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          zero='sha256:0000000000000000000000000000000000000000000000000000000000000000'
+          count=0
+          for f in data/benchmark/*.json; do
+            if grep -q "$zero" "$f"; then
+              node scripts/hash-case.mjs --write "$f"
+              count=$((count + 1))
+            fi
+          done
+          echo "normalized=$count"
+      - name: Commit normalized hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/benchmark; then
+            echo "No hash changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/benchmark
+          git commit -m "Normalize executable benchmark content hashes"
+          git push origin HEAD:author/reconstruction-batch-01
