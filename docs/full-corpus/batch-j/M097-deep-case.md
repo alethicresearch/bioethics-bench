@@ -38,3 +38,18 @@ Provisional candidate-audit target. The case has genuine affected-community plur
 ## Sources
 
 Gariépy G, et al. *Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024*. PMID 40960731 / corrected 2026; broader supervised-consumption service outcome and community-attitude literature.
+
+## Current reconstruction decision — 2026-08-27
+
+This section supersedes the provisional executable judgment above for the post-strict reconstruction while preserving that earlier judgment as research history.
+
+**Canonical frame:** `natural@1.0.0`  
+**Geometry:** `2 public × 2 expert × 3 framework`  
+**Cross-source pairs:** 16  
+**Required aggregation:** Mean.
+
+The public/affected layer is executable only as **source-informed policy inference**. Willingness to use a supervised consumption service and perceived client-level benefits do not directly establish whether a city should create one; community concerns and predicted acceptance likewise require an explicit step to municipal policy. The reconstructed record therefore states that inference rather than attributing the policy itself to respondents.
+
+The expert layer contains two direct policy architectures at matched action granularity: AMA's monitored/evaluated pilot position and AMERSA's implementation/expansion position. The natural framework ecology contains three distinct rules already present in this dossier: establish under harm-reduction reasoning; decline unless incremental benefit and community effects justify the opportunity cost; or authorize a time-limited pilot to learn under local uncertainty. The older 2-framework candidate audit collapsed the second and third positions because it was targeting a 2×2×2 profile; the natural field retains both.
+
+Current machine-readable companions are `m097-supervised-consumption-services-natural-concise-v1` and `m097-supervised-consumption-services-natural-detailed-v1`. No synthetic candidate is required. The earlier strict-gate demotion remains valid as a finding about **direct action-level grounding**; it is not a finding that M097 cannot be represented executably when source-to-policy inference is declared.
