@@ -13,8 +13,8 @@ should be reintroduced.
 
 | Disposition | Families |
 |---|---|
-| executable-v1, record present, dossier agrees | 23 |
-| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 8 |
+| executable-v1, record present, dossier agrees | 31 |
+| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 0 |
 | executable-candidate, dossier supports it but no record transcribed yet | 8 |
 | Featured-only (M001 → F01) | 1 |
 | held — needs additional evidence | 82 |
@@ -27,11 +27,8 @@ should be reintroduced.
 Full Corpus records under `data/benchmark/`: **62** across
 **31** executable families, two matched records each.
 
-Of those, **8** carry a dossier judgment written before the candidate audit that
-produced the record. Their records are hand-built, carry per-candidate source provenance and pass
-every machine invariant, but the dossier has not been formally re-judged under the four-basis rule.
-These are the first priority for independent review, and no family should be promoted on the
-strength of its record existing.
+Every executable family's dossier states the audit result that produced its record. No family
+is executable merely because a record for it exists.
 
 The executable count is an output of this process, not an input to it. Promoting
 a held family requires new targeted research recorded in its dossier — not a
@@ -115,7 +112,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M072 | needs-additional-evidence | — | 99 | 0 | held-needs-evidence |
 | M073 | needs-additional-evidence | — | 98 | 0 | held-needs-evidence |
 | M074 | needs-additional-evidence | — | 76 | 0 | held-needs-evidence |
-| M075 | needs-additional-evidence | — | 103 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M075 | audited-reconciled | — | 132 | 2 | executable-v1 (record present) |
 | M076 | needs-additional-evidence | — | 80 | 0 | held-needs-evidence |
 | M077 | needs-additional-evidence | — | 76 | 0 | held-needs-evidence |
 | M078 | needs-additional-evidence | — | 77 | 0 | held-needs-evidence |
@@ -134,7 +131,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M091 | research-complete-not-executable | — | 43 | 0 | held-not-executable |
 | M092 | research-complete-not-executable | — | 44 | 0 | held-not-executable |
 | M093 | research-complete-not-executable | — | 44 | 0 | held-not-executable |
-| M094 | — | — | 69 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M094 | audited-reconciled | — | 100 | 2 | executable-v1 (record present) |
 | M095 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M096 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M097 | declared-canonical-frame | 2 public × 2 expert × 3 framework | 81 | 2 | executable-v1 (record present) |
@@ -142,11 +139,11 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M099 | candidate-audit-required | — | 44 | 0 | held-candidate-audit |
 | M100 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M101 | needs-additional-evidence | — | 99 | 0 | held-needs-evidence |
-| M102 | — | — | 124 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M102 | audited-reconciled | — | 153 | 2 | executable-v1 (record present) |
 | M103 | needs-additional-evidence | — | 96 | 0 | held-needs-evidence |
 | M104 | needs-additional-evidence | — | 96 | 0 | held-needs-evidence |
 | M105 | needs-additional-evidence | — | 96 | 0 | held-needs-evidence |
-| M106 | — | — | 123 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M106 | audited-reconciled | — | 153 | 2 | executable-v1 (record present) |
 | M107 | research-complete-not-executable | — | 98 | 0 | held-not-executable |
 | M108 | research-complete-not-executable | — | 96 | 0 | held-not-executable |
 | M109 | research-complete-not-executable | — | 97 | 0 | held-not-executable |
@@ -163,7 +160,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M120 | research-complete-not-executable | — | 95 | 0 | held-not-executable |
 | M121 | needs-additional-evidence | — | 45 | 0 | held-needs-evidence |
 | M122 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
-| M123 | — | — | 64 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M123 | audited-reconciled | — | 94 | 2 | executable-v1 (record present) |
 | M124 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M125 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M126 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
@@ -179,12 +176,12 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M136 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M137 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M138 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
-| M139 | — | — | 64 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M139 | audited-reconciled | — | 93 | 2 | executable-v1 (record present) |
 | M140 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
-| M141 | — | — | 65 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M141 | audited-reconciled | — | 94 | 2 | executable-v1 (record present) |
 | M142 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M143 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
-| M144 | — | — | 63 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M144 | audited-reconciled | — | 93 | 2 | executable-v1 (record present) |
 | M145 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M146 | candidate-audit-required | — | 41 | 0 | held-candidate-audit |
 | M147 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |

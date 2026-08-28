@@ -38,6 +38,7 @@ const DISPOSITION = {
   'as-duplicate': 'held-duplicate',
   'candidate-audit-required': 'held-candidate-audit',
   'declared-canonical-frame': 'executable-eligible',
+  'audited-reconciled': 'executable-eligible',
 };
 
 // M001 is released as Featured F01 and is deliberately not duplicated into the
@@ -47,6 +48,9 @@ const FEATURED_ONLY = new Set(['M001']);
 const JUDGMENT_HEADING = /^## (?:\d+\.\s*)?(?:Current )?Executab\w*[- ]?\w*\s*judgment/i;
 // A later reconstruction decision supersedes the strict-era judgment above it.
 const RECONSTRUCTION_HEADING = /^## (?:\d+\.\s*)?Current reconstruction decision/i;
+// So does a candidate-audit reconciliation, written when a dossier's judgment
+// predated the audit that produced its record.
+const RECONCILIATION_HEADING = /^## (?:\d+\.\s*)?Candidate audit reconciliation/i;
 // The reconstructed style declares a frame and geometry instead of a token.
 const FRAME_DECLARATION = /\*\*Canonical frame:\*\*/;
 const GEOMETRY = /\*\*Geometry:\*\*\s*`([^`]+)`/;
@@ -63,7 +67,15 @@ function sectionUnder(text, heading) {
 // The authoritative section is the reconstruction decision when one exists,
 // otherwise the executable-eligibility judgment.
 function judgmentSection(text) {
-  return sectionUnder(text, RECONSTRUCTION_HEADING) ?? sectionUnder(text, JUDGMENT_HEADING);
+  return sectionUnder(text, RECONCILIATION_HEADING)
+    ?? sectionUnder(text, RECONSTRUCTION_HEADING)
+    ?? sectionUnder(text, JUDGMENT_HEADING);
+}
+
+// A reconciliation section is itself the declaration: it states that the audit
+// ran and that the committed record is its result.
+function isReconciliation(text) {
+  return RECONCILIATION_HEADING.test(text.split('\n').find((l) => RECONCILIATION_HEADING.test(l)) ?? '');
 }
 
 // A dossier declares executability either with a legacy token or, in the
@@ -87,7 +99,7 @@ function readDossiers() {
         path: `docs/full-corpus/${batch}/${file}`,
         lines: text.split('\n').length,
         section,
-        judgment: declaredJudgment(section),
+        judgment: isReconciliation(text) ? 'audited-reconciled' : declaredJudgment(section),
         geometry: section ? (GEOMETRY.exec(section)?.[1] ?? null) : null,
       });
     }
@@ -187,11 +199,9 @@ should be reintroduced.
 Full Corpus records under \`data/benchmark/\`: **${totalRecords}** across
 **${counts.executableWithRecord + counts.reconcile}** executable families, two matched records each.
 
-Of those, **${counts.reconcile}** carry a dossier judgment written before the candidate audit that
-produced the record. Their records are hand-built, carry per-candidate source provenance and pass
-every machine invariant, but the dossier has not been formally re-judged under the four-basis rule.
-These are the first priority for independent review, and no family should be promoted on the
-strength of its record existing.
+${counts.reconcile === 0
+  ? 'Every executable family\'s dossier states the audit result that produced its record. No family\nis executable merely because a record for it exists.'
+  : `Of those, **${counts.reconcile}** carry a dossier judgment written before the candidate audit that\nproduced the record. Those records pass every machine invariant, but the dossier has not been\nformally re-judged under the four-basis rule. They are the first priority for independent review,\nand no family should be promoted on the strength of its record existing.`}
 
 The executable count is an output of this process, not an input to it. Promoting
 a held family requires new targeted research recorded in its dossier — not a
