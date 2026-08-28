@@ -5,7 +5,7 @@ on:
     branches:
       - author/full-corpus-completion
     paths:
-      - .completion/apply-full-corpus-completion-rc3
+      - .completion/apply-full-corpus-completion-rc3-repo
 
 permissions:
   contents: write
@@ -18,12 +18,22 @@ jobs:
         with:
           ref: author/full-corpus-completion
           fetch-depth: 0
-      - name: Download checked completion payload
+      - name: Reconstruct checked completion payload from repo transport
         shell: bash
         run: |
           set -euo pipefail
-          URL='https://drive.usercontent.google.com/download?id=1v9m25o27rtkvbEXNLwluZi-VIcRb85OK&export=download&confirm=t'
-          curl -L --fail --retry 3 --retry-delay 2 "$URL" -o /tmp/full-corpus-rc3.tar.gz
+          cat \
+            .completion/rc3.part-00 \
+            .completion/rc3.part-01 \
+            .completion/rc3.part-02 \
+            .completion/rc3.part-03 \
+            .completion/rc3.part-04 \
+            .completion/rc3.part-05 \
+            .completion/rc3.part-06 \
+            .completion/rc3.part-07 \
+            .completion/rc3.part-08 \
+            .completion/rc3.tail-09-16.b64 \
+            | base64 -d > /tmp/full-corpus-rc3.tar.gz
           echo '2284aac13658b8e26035583eef6a5fcb010cf674ca09be55509a746631397706  /tmp/full-corpus-rc3.tar.gz' | sha256sum -c -
       - name: Apply canonical records and control artifacts
         shell: bash
