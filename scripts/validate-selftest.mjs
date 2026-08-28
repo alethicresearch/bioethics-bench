@@ -22,13 +22,39 @@ function ref(citation) {
   return { citation, type: 'other' };
 }
 
-function candidate(id, pool, method) {
+function candidate(id, pool, method, extra = {}) {
+  const { sources = [ref('A probe source.')], ...rest } = extra;
   return {
     id,
     text: `Represented policy ${id}.`,
     source_pool: pool,
-    provenance: { construction_method: method, summary: 'probe', sources: [ref('A probe source.')] },
+    ...rest,
+    provenance: { construction_method: method, summary: 'probe', sources },
   };
+}
+
+/** The default policy basis for each pool, for probes that only care about one candidate. */
+const BASIS = {
+  public: 'direct-policy-evidence',
+  expert: 'direct-policy-evidence',
+  framework: 'framework-derived-policy',
+};
+
+/** A minimal, valid Full Corpus record: `benchmark` collection, Full Corpus profile, every candidate labelled. */
+function benchmarkRecord(overrides = {}) {
+  const base = baseRecord({ representation: undefined });
+  const pools = Object.fromEntries(Object.entries(base.candidate_pools).map(
+    ([pool, cs]) => [pool, cs.map((c) => ({ ...c, policy_basis: BASIS[pool] }))],
+  ));
+  const record = {
+    ...base,
+    collection: 'benchmark',
+    benchmark_profile: 'full-corpus-2x2x2-v1',
+    candidate_pools: pools,
+    ...overrides,
+  };
+  delete record.content_hash;
+  return { ...record, content_hash: canonicalContentHash(record) };
 }
 
 /** A minimal, valid non-Featured record. Probes mutate a copy of this. */
@@ -211,6 +237,68 @@ probe('a Full Corpus record carrying a Featured-lineage profile',
     benchmark_profile: 'featured-core-2x2x2-v1',
   })],
   /collection "benchmark" is full-corpus lineage, but benchmark_profile "featured-core-2x2x2-v1" is featured lineage/);
+
+// ── policy basis, on Full Corpus records ────────────────────────────────────────
+
+probe('a labelled Full Corpus record passes', [benchmarkRecord()], /^$/);
+
+probe('a Full Corpus candidate with no policy_basis',
+  [benchmarkRecord({
+    candidate_pools: (() => {
+      const pools = benchmarkRecord().candidate_pools;
+      const [, ...rest] = pools.public;
+      const { policy_basis: _drop, ...bare } = pools.public[0];
+      return { ...pools, public: [bare, ...rest] };
+    })(),
+  })],
+  /candidate pub1 declares no policy_basis/);
+
+probe('a framework candidate labelled anything but framework-derived',
+  [benchmarkRecord({
+    candidate_pools: (() => {
+      const pools = benchmarkRecord().candidate_pools;
+      const [first, ...rest] = pools.framework;
+      return { ...pools, framework: [{ ...first, policy_basis: 'direct-policy-evidence' }, ...rest] };
+    })(),
+  })],
+  /framework candidate fw1 declares policy_basis "direct-policy-evidence"/);
+
+probe('a direct-policy-evidence candidate citing no source',
+  [benchmarkRecord({
+    candidate_pools: (() => {
+      const pools = benchmarkRecord().candidate_pools;
+      const [, ...rest] = pools.expert;
+      return {
+        ...pools,
+        expert: [{ ...candidate('exp1', 'expert', 'adapted-from-source', { sources: [], policy_basis: 'direct-policy-evidence' }) }, ...rest],
+      };
+    })(),
+  })],
+  /policy_basis "direct-policy-evidence" with no provenance sources/);
+
+probe('an editorial public candidate that does not declare itself synthetic',
+  [benchmarkRecord({
+    candidate_pools: (() => {
+      const pools = benchmarkRecord().candidate_pools;
+      const [, ...rest] = pools.public;
+      return { ...pools, public: [candidate('pub1', 'public', 'editorial', { policy_basis: 'direct-policy-evidence' }), ...rest] };
+    })(),
+  })],
+  /construction_method "editorial", in collection "benchmark"/);
+
+// The relaxation itself: a declared author-constructed comparator is allowed, sources and all.
+probe('a declared synthetic public comparator with no sources passes',
+  [benchmarkRecord({
+    candidate_pools: (() => {
+      const pools = benchmarkRecord().candidate_pools;
+      const [, ...rest] = pools.public;
+      return {
+        ...pools,
+        public: [candidate('pub1', 'public', 'editorial', { sources: [], policy_basis: 'synthetic-author-constructed-policy' }), ...rest],
+      };
+    })(),
+  })],
+  /^$/);
 
 // ── companion invariants, driven by the profile, on a development family ────────
 

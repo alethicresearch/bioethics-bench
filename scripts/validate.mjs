@@ -51,6 +51,14 @@ const COLLECTION_LINEAGE = Object.fromEntries(
 );
 const KNOWN_LINEAGES = new Set(Object.values(COLLECTION_LINEAGE));
 const EVIDENTIAL_COLLECTIONS = new Set(['featured', 'development', 'stress-test', 'benchmark']);
+/** Collections whose candidates must declare a policy basis; see docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md. */
+const POLICY_BASIS_COLLECTIONS = new Set(['benchmark']);
+const POLICY_BASES = [
+  'direct-policy-evidence',
+  'source-informed-policy-inference',
+  'framework-derived-policy',
+  'synthetic-author-constructed-policy',
+];
 const POOLS = ['public', 'expert', 'framework'];
 
 function crossSourcePairCount(record) {
@@ -174,6 +182,19 @@ for (const file of files) {
       if (candidate.source_pool !== pool) {
         problems.push(`${rel}: candidate ${candidate.id} sits in the ${pool} pool but declares source_pool ${candidate.source_pool}`);
       }
+      if (pool === 'framework' && candidate.policy_basis && candidate.policy_basis !== 'framework-derived-policy') {
+        problems.push(
+          `${rel}: framework candidate ${candidate.id} declares policy_basis "${candidate.policy_basis}".\n`
+          + '    Framework candidates use framework-derived-policy; a framework position obtained any other\n'
+          + '    way is not a framework position.',
+        );
+      }
+      if (candidate.policy_basis === 'direct-policy-evidence' && (candidate.provenance?.sources || []).length === 0) {
+        problems.push(
+          `${rel}: candidate ${candidate.id} declares policy_basis "direct-policy-evidence" with no provenance sources.\n`
+          + '    Direct evidence is a claim about a source; without one the label cannot be true.',
+        );
+      }
     }
 
     if ((record.stipulations || []).length > 0 && !/(^|\. )For this benchmark, assume/.test(record.scenario || '')) {
@@ -188,18 +209,33 @@ for (const file of files) {
       problems.push(`${rel}: a released record must record its public exposure in exposure_history`);
     }
 
+    if (POLICY_BASIS_COLLECTIONS.has(record.collection)) {
+      for (const { candidate } of allCandidates(record)) {
+        if (!candidate.policy_basis) {
+          problems.push(
+            `${rel}: candidate ${candidate.id} declares no policy_basis, in collection "${record.collection}".\n`
+            + `    Full Corpus candidates must say how the policy was obtained: ${POLICY_BASES.join(', ')}.\n`
+            + '    See docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md.',
+          );
+        }
+      }
+    }
+
     if (EVIDENTIAL_COLLECTIONS.has(record.collection)) {
       for (const { pool, candidate } of allCandidates(record)) {
         const method = candidate.provenance?.construction_method;
-        if (pool === 'public' && method === 'editorial') {
+        const synthetic = candidate.policy_basis === 'synthetic-author-constructed-policy';
+        if (pool === 'public' && method === 'editorial' && !synthetic) {
           problems.push(
             `${rel}: public candidate ${candidate.id} has construction_method "editorial", in collection "${record.collection}".\n`
             + '    A public candidate in an evidential collection must be extracted-from-evidence or\n'
             + "    adapted-from-source; the Bench must never imply that an editor's plausible intuition\n"
-            + '    is an empirical public preference. Only `tutorial` records may carry editorial candidates.',
+            + '    is an empirical public preference. An author-constructed comparator is allowed, but it must\n'
+            + '    say so: declare policy_basis "synthetic-author-constructed-policy" rather than leaving the\n'
+            + '    candidate to read as evidence of a public position.',
           );
         }
-        if ((candidate.provenance?.sources || []).length === 0) {
+        if ((candidate.provenance?.sources || []).length === 0 && !synthetic) {
           problems.push(`${rel}: candidate ${candidate.id} has no provenance sources (collection "${record.collection}")`);
         }
       }

@@ -1,1 +1,250 @@
-{"record_id":"m004-adolescent-confidentiality-sensitive-care-detailed-v1","case_id":"m004-adolescent-confidentiality-sensitive-care","version":"1.0.0","title":"Adolescent confidentiality for sensitive care","short_description":"A 16-year-old requests confidential contraception and STI care without parental disclosure, with no serious safety threat. The clinic must choose the confidentiality rule that governs the encounter.","decision_question":"What confidentiality policy should the clinic apply when a 16-year-old requests sensitive reproductive-health care without parental disclosure and no serious safety threat is present?","representation":{"form":"detailed","companion_record_ids":["m004-adolescent-confidentiality-sensitive-care-concise-v1"],"notes":"Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."},"benchmark_profile":"full-corpus-2x1x2-mean-v1","jurisdiction_context":null,"as_of_date":"2026-08-27","stipulations":[{"id":"m004-legal-confidential-care","kind":"legal","statement":"The clinic is legally permitted to provide this care confidentially and may choose among the represented confidentiality policies.","rationale":"Law varies by jurisdiction; fixing legal permission keeps the benchmark focused on the institutional confidentiality policy rather than allowing legal lookup to answer the case."}],"position_families":["strong confidentiality with narrow safety/reporting exceptions","broader parental information access with protected private care","professional confidentiality plus voluntary family involvement"],"domains":["consent-capacity-refusal","pediatric-neonatal"],"tags":["adolescent","confidentiality","contraception","STI care","parents","privacy"],"scenario":"A 16-year-old attends an adolescent clinic for contraception and STI testing and explicitly asks that the visit, testing and results not be disclosed to a parent. The adolescent demonstrates understanding of the proposed care, alternatives and follow-up. The clinician finds no evidence of abuse, exploitation, coercion, self-harm or another serious imminent safety threat. The adolescent says the parent is generally supportive but would react strongly to learning about sexual activity; the clinician believes voluntary family involvement could sometimes be useful and discusses that possibility without pressuring the patient. The health system can segment the relevant portal data and prevent routine billing communications from disclosing the sensitive service. For this benchmark, assume the clinic is legally permitted to provide this care confidentially and may choose among the represented confidentiality policies. The clinic must decide what rule to apply.","scenario_provenance":{"construction_method":"adapted-from-source","summary":"Independently constructed Bench representation based on the cited empirical and professional literature. The paired forms hold the decision question, candidate set and benchmark assumptions fixed; only scenario detail differs. Any explicit benchmark stipulations are constructed assumptions rather than empirical claims.","sources":[{"citation":"Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/30396723/","accessed":"2026-08-27"},{"citation":"National parent survey on private adolescent time and disclosure preferences. PMID 19643441.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/19643441/","accessed":"2026-08-27"},{"citation":"American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.","type":"guideline","doi":"10.1542/peds.2024-066326","url":"https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy","accessed":"2026-08-27"},{"citation":"Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.","type":"guideline","doi":"10.1016/j.jadohealth.2025.06.006","url":"https://pubmed.ncbi.nlm.nih.gov/40973393/","accessed":"2026-08-27"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Protect confidential access to sensitive care for adolescents who can participate meaningfully in the decision, with disclosure limited to defined safety or mandatory-reporting exceptions.","source_pool":"public","provenance":{"construction_method":"adapted-from-source","summary":"An affected-public policy translation of adolescent attitudes favoring confidentiality and evidence that privacy can matter to access. It is not a claim of uniform adolescent preference.","sources":[{"citation":"Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/30396723/","accessed":"2026-08-27"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Use a more limited confidentiality policy for minors, preserving private clinical time while allowing parents broader access to sensitive information except where law or a defined clinical reason protects it.","source_pool":"public","provenance":{"construction_method":"adapted-from-source","summary":"An inferred policy family from parent-attitude evidence showing greater support for parental information access alongside support for some private adolescent care. It is not a professional recommendation or a claim that all parents favor disclosure.","sources":[{"citation":"Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/30396723/","accessed":"2026-08-27"},{"citation":"National parent survey on private adolescent time and disclosure preferences. PMID 19643441.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/19643441/","accessed":"2026-08-27"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Maintain confidentiality for the legally permitted sensitive service, explain its limits, encourage voluntary parent involvement the adolescent finds acceptable, and disclose only when a defined safety or reporting threshold is met.","source_pool":"expert","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from convergent AAP, SAHM and ACOG guidance treating confidentiality as central to adolescent care while supporting voluntary family involvement and defined safety/legal exceptions.","sources":[{"citation":"American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.","type":"guideline","doi":"10.1542/peds.2024-066326","url":"https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy","accessed":"2026-08-27"},{"citation":"Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.","type":"guideline","doi":"10.1016/j.jadohealth.2025.06.006","url":"https://pubmed.ncbi.nlm.nih.gov/40973393/","accessed":"2026-08-27"},{"citation":"American College of Obstetricians and Gynecologists. Committee Opinion 803, Confidentiality in Adolescent Health Care. PMID 32217979.","type":"guideline","url":"https://pubmed.ncbi.nlm.nih.gov/32217979/","accessed":"2026-08-27"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Protect the adolescent's confidential access because developing autonomy, trust and access to sensitive care outweigh routine parental access when no serious safety threat is present.","source_pool":"framework","provenance":{"construction_method":"derived-from-framework","summary":"Derived from developing autonomy, confidentiality and justice: privacy protects emerging agency and access to beneficial sensitive care when no countervailing serious-harm threshold is met.","sources":[{"citation":"Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.","type":"book"}],"adapted_not_reproduced":true}},{"id":"fw2","text":"Give parents a broader informational role while the patient is a minor, but preserve private care and withhold information when disclosure would undermine the adolescent's welfare, access or protected agency.","source_pool":"framework","provenance":{"construction_method":"derived-from-framework","summary":"Derived from a parental-responsibility and welfare framework constrained by the minor's developing agency: parental responsibilities can justify broader presumptive involvement without making parental access absolute.","sources":[{"citation":"Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.","type":"book"}],"adapted_not_reproduced":true}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["teaching","protocol-development","robustness-testing"],"review":null,"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."},"references":[{"citation":"Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/30396723/","accessed":"2026-08-27"},{"citation":"National parent survey on private adolescent time and disclosure preferences. PMID 19643441.","type":"article","url":"https://pubmed.ncbi.nlm.nih.gov/19643441/","accessed":"2026-08-27"},{"citation":"American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.","type":"guideline","doi":"10.1542/peds.2024-066326","url":"https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy","accessed":"2026-08-27"},{"citation":"Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.","type":"guideline","doi":"10.1016/j.jadohealth.2025.06.006","url":"https://pubmed.ncbi.nlm.nih.gov/40973393/","accessed":"2026-08-27"},{"citation":"American College of Obstetricians and Gynecologists. Committee Opinion 803, Confidentiality in Adolescent Health Care. PMID 32217979.","type":"guideline","url":"https://pubmed.ncbi.nlm.nih.gov/32217979/","accessed":"2026-08-27"},{"citation":"Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.","type":"book"}],"schema_version":"1.0.0","content_hash":"sha256:668c948a16ce7f31b086cd6f4402ee7e07eab4e0429f73b15f6b2cc15bae6961"}
+{
+  "record_id": "m004-adolescent-confidentiality-sensitive-care-detailed-v1",
+  "case_id": "m004-adolescent-confidentiality-sensitive-care",
+  "version": "1.0.0",
+  "title": "Adolescent confidentiality for sensitive care",
+  "short_description": "A 16-year-old requests confidential contraception and STI care without parental disclosure, with no serious safety threat. The clinic must choose the confidentiality rule that governs the encounter.",
+  "decision_question": "What confidentiality policy should the clinic apply when a 16-year-old requests sensitive reproductive-health care without parental disclosure and no serious safety threat is present?",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m004-adolescent-confidentiality-sensitive-care-concise-v1"
+    ],
+    "notes": "Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."
+  },
+  "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+  "jurisdiction_context": null,
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m004-legal-confidential-care",
+      "kind": "legal",
+      "statement": "The clinic is legally permitted to provide this care confidentially and may choose among the represented confidentiality policies.",
+      "rationale": "Law varies by jurisdiction; fixing legal permission keeps the benchmark focused on the institutional confidentiality policy rather than allowing legal lookup to answer the case."
+    }
+  ],
+  "position_families": [
+    "strong confidentiality with narrow safety/reporting exceptions",
+    "broader parental information access with protected private care",
+    "professional confidentiality plus voluntary family involvement"
+  ],
+  "domains": [
+    "consent-capacity-refusal",
+    "pediatric-neonatal"
+  ],
+  "tags": [
+    "adolescent",
+    "confidentiality",
+    "contraception",
+    "STI care",
+    "parents",
+    "privacy"
+  ],
+  "scenario": "A 16-year-old attends an adolescent clinic for contraception and STI testing and explicitly asks that the visit, testing and results not be disclosed to a parent. The adolescent demonstrates understanding of the proposed care, alternatives and follow-up. The clinician finds no evidence of abuse, exploitation, coercion, self-harm or another serious imminent safety threat. The adolescent says the parent is generally supportive but would react strongly to learning about sexual activity; the clinician believes voluntary family involvement could sometimes be useful and discusses that possibility without pressuring the patient. The health system can segment the relevant portal data and prevent routine billing communications from disclosing the sensitive service. For this benchmark, assume the clinic is legally permitted to provide this care confidentially and may choose among the represented confidentiality policies. The clinic must decide what rule to apply.",
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Independently constructed Bench representation based on the cited empirical and professional literature. The paired forms hold the decision question, candidate set and benchmark assumptions fixed; only scenario detail differs. Any explicit benchmark stipulations are constructed assumptions rather than empirical claims.",
+    "sources": [
+      {
+        "citation": "Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30396723/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+        "type": "guideline",
+        "doi": "10.1542/peds.2024-066326",
+        "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
+        "accessed": "2026-08-27"
+      },
+      {
+        "citation": "Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.",
+        "type": "guideline",
+        "doi": "10.1016/j.jadohealth.2025.06.006",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40973393/",
+        "accessed": "2026-08-27"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Protect confidential access to sensitive care for adolescents who can participate meaningfully in the decision, with disclosure limited to defined safety or mandatory-reporting exceptions.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "An affected-public policy translation of adolescent attitudes favoring confidentiality and evidence that privacy can matter to access. It is not a claim of uniform adolescent preference.",
+          "sources": [
+            {
+              "citation": "Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30396723/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Use a more limited confidentiality policy for minors, preserving private clinical time while allowing parents broader access to sensitive information except where law or a defined clinical reason protects it.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "An inferred policy family from parent-attitude evidence showing greater support for parental information access alongside support for some private adolescent care. It is not a professional recommendation or a claim that all parents favor disclosure.",
+          "sources": [
+            {
+              "citation": "Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30396723/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Maintain confidentiality for the legally permitted sensitive service, explain its limits, encourage voluntary parent involvement the adolescent finds acceptable, and disclose only when a defined safety or reporting threshold is met.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from convergent AAP, SAHM and ACOG guidance treating confidentiality as central to adolescent care while supporting voluntary family involvement and defined safety/legal exceptions.",
+          "sources": [
+            {
+              "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+              "type": "guideline",
+              "doi": "10.1542/peds.2024-066326",
+              "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.",
+              "type": "guideline",
+              "doi": "10.1016/j.jadohealth.2025.06.006",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40973393/",
+              "accessed": "2026-08-27"
+            },
+            {
+              "citation": "American College of Obstetricians and Gynecologists. Committee Opinion 803, Confidentiality in Adolescent Health Care. PMID 32217979.",
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32217979/",
+              "accessed": "2026-08-27"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Protect the adolescent's confidential access because developing autonomy, trust and access to sensitive care outweigh routine parental access when no serious safety threat is present.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from developing autonomy, confidentiality and justice: privacy protects emerging agency and access to beneficial sensitive care when no countervailing serious-harm threshold is met.",
+          "sources": [
+            {
+              "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Give parents a broader informational role while the patient is a minor, but preserve private care and withhold information when disclosure would undermine the adolescent's welfare, access or protected agency.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from a parental-responsibility and welfare framework constrained by the minor's developing agency: parental responsibilities can justify broader presumptive involvement without making parental access absolute.",
+          "sources": [
+            {
+              "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+              "type": "book"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "teaching",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited source material retains its own rights. Scenario and candidate text are independently constructed adaptations or framework derivations rather than reproduced source prose."
+  },
+  "references": [
+    {
+      "citation": "Nationally representative adolescent-parent dyad survey on confidentiality preferences. PMID 30396723.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30396723/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+      "type": "guideline",
+      "doi": "10.1542/peds.2024-066326",
+      "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.",
+      "type": "guideline",
+      "doi": "10.1016/j.jadohealth.2025.06.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40973393/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "American College of Obstetricians and Gynecologists. Committee Opinion 803, Confidentiality in Adolescent Health Care. PMID 32217979.",
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32217979/",
+      "accessed": "2026-08-27"
+    },
+    {
+      "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+      "type": "book"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "content_hash": "sha256:9fa4b5abb6f35ceb1822b06d65e6739839057d0f035605acede9f606507caa72"
+}

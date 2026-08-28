@@ -102,6 +102,45 @@ status are untouched.
 
 ---
 
+## Legacy Full Corpus labelling under the four-basis taxonomy (2026-08-28)
+
+`policy_basis` is required on every `benchmark` candidate, which made the four already-transcribed
+families — M002, M004, M005, M010, 42 candidates across 8 draft records — invalid until labelled.
+Labels assigned, and the basis for each:
+
+| layer | n | label | why |
+|---|---|---|---|
+| framework | 12 | `framework-derived-policy` | rule, not judgment |
+| expert | 6 | `direct-policy-evidence` | each summary names guidance or regulation addressing the represented action: WHO QualityRights, AMA 2.1.2, AAP/SAHM/ACOG, AMA/ASCO, AHRQ, 45 C.F.R. § 92.201(e)(2)(ii) |
+| public | 7 | `source-informed-policy-inference` | **conservative default — see below** |
+
+**The seven public candidates need the author's ruling.** Their own provenance summaries describe
+a translation step, in the authors' words: M004 `pub2` is "an inferred policy family from
+parent-attitude evidence"; M010 `pub1` says "translating that preference into an institutional
+permission rule is a Bench construction; the sources do not themselves establish this exact
+safeguard threshold"; M010 `pub2` calls its policy sentence "an editorial translation of that
+affected-public orientation"; M004 `pub1` is "an affected-public policy translation of adolescent
+attitudes"; M005 `pub1` says "this is a Bench policy translation". M002 `pub1` and M005 `pub2` are
+the closest to direct and still read as orientation-to-policy translation.
+
+I labelled all seven as inference because the two errors are not symmetric. Calling inference
+direct is the false attribution the taxonomy exists to prevent; calling direct evidence inference
+understates grounding and attributes nothing to anyone. Where the corpus author judges that a
+source addresses the represented action itself, promoting a candidate to `direct-policy-evidence`
+is a one-word change plus a rehash.
+
+**This does not demote the strict 17.** The strict gate asked whether evidence concerned the
+*action* — action-target alignment — not whether the policy sentence was quoted or authored. A
+candidate can be action-aligned and still be a Bench translation into policy text. But it does mean
+the direct-grounding subset is direct at the expert and framework layers, and translated at the
+public layer, in all four transcribed families. That is worth stating plainly wherever the subset
+is described, rather than leaving "direct-grounding" to be read as quotation.
+
+All four families are `draft` / `internal-development`; the eight records were rehashed. Featured
+v1 is untouched and its substantive digest is unchanged at `6bfb77d1…`.
+
+---
+
 ## What review involved
 
 Each needs the same three checks the cleared five passed:

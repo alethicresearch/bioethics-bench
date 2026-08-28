@@ -276,6 +276,15 @@
         "id": { "type": "string", "pattern": "^(pub|exp|fw)[0-9]+$" },
         "text": { "type": "string", "minLength": 1 },
         "source_pool": { "enum": ["public", "expert", "framework"] },
+        "policy_basis": {
+          "description": "How this policy candidate was obtained, per docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md. A different axis from source_pool, which says which perspective layer the candidate is represented in, and from provenance.construction_method, which records textual construction mechanics. Required on Full Corpus (`benchmark`) candidates; not applied retroactively to frozen Featured v1 records.",
+          "enum": [
+            "direct-policy-evidence",
+            "source-informed-policy-inference",
+            "framework-derived-policy",
+            "synthetic-author-constructed-policy"
+          ]
+        },
         "provenance": { "$ref": "#/$defs/provenance" }
       },
       "additionalProperties": false

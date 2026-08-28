@@ -66,18 +66,61 @@ cannot quietly misstate execution cost.
 In any *evidential* collection — `featured`, `development`, `stress-test`, `benchmark`;
 `tutorial` is exempt because it is never benchmark evidence:
 
-- **no public candidate may be `editorial`.** A public-layer position is a claim about what
-  some public actually holds. Writing one ourselves and pooling it with survey-grounded
-  positions is the failure mode this check exists to prevent, and it is invisible in the
-  rendered record.
-- **every candidate and every scenario needs at least one provenance source.** An empty
-  `sources` array is not a provenance record.
+- **no public candidate may be `editorial` unless it declares itself synthetic** (see
+  `policy_basis` below). A public-layer position is a claim about what some public actually
+  holds. Writing one ourselves and pooling it with survey-grounded positions is the failure mode
+  this check exists to prevent, and it is invisible in the rendered record. Declaring the
+  candidate an author-constructed comparator removes the false claim, which is why that is the
+  one way past this guard.
+- **every candidate and every scenario needs at least one provenance source**, again except a
+  declared synthetic candidate, whose sources may motivate the case without being claimed as the
+  source of the policy. An empty `sources` array is otherwise not a provenance record.
 
-### Full Corpus source-to-policy rule
+### `policy_basis`: how the policy was obtained
 
-For the Full Corpus, the **core action and decision axis of each public or expert candidate must
-already be supported by evidence from that source pool**. Authoring may make a supported orientation
-operational; it may not create the orientation itself.
+Every candidate in the `benchmark` collection carries exactly one:
+
+| value | the source … |
+|---|---|
+| `direct-policy-evidence` | addresses substantially the same action the candidate represents |
+| `source-informed-policy-inference` | supplies preferences, attitudes, behaviour or concerns, and the Bench draws the step to a policy |
+| `framework-derived-policy` | is an identified normative framework, and the candidate is its authored implication |
+| `synthetic-author-constructed-policy` | did not supply the policy; it is authored to instantiate a serious action-distinct alternative |
+
+`docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md` is authoritative on what each means.
+Three points that trip people up:
+
+- **It is a different axis from `source_pool`.** The pool says which perspective layer a
+  candidate is represented in; the basis says the relation between the policy and its evidence.
+  A synthetic candidate in a public slot is an author-constructed comparator *for that layer*,
+  never evidence that a public holds it.
+- **It is a different axis from `construction_method`,** which stays as it is and records textual
+  construction mechanics. The usual pairings are in the decision document; they are usual, not
+  enforced.
+- **It is not a credibility ranking.** A synthetic candidate is not a weaker candidate; it is a
+  candidate about which a different thing is being claimed.
+
+What is checked: the enum, its presence on every Full Corpus candidate, that framework-pool
+candidates are `framework-derived-policy`, and that a `direct-policy-evidence` candidate cites at
+least one source — direct evidence is a claim *about a source*, so the label cannot be true
+without one. What is not checked is whether the label is *accurate*. That is the reviewer's first
+job, and no guard substitutes for it.
+
+### Full Corpus source-to-policy rule (superseded as a gate)
+
+Until the executable-200 decision, the Full Corpus required that the **core action and decision
+axis of each public or expert candidate already be supported by evidence from that source pool** —
+authoring could make a supported orientation operational but not create it. Candidates that could
+not meet it were not built.
+
+That is no longer an eligibility gate. It is now the definition of one label:
+`direct-policy-evidence`. A policy the evidence does not supply may be built, and must then say so
+as inference or as construction. The strict rule's real content is preserved, because the thing it
+prevented — an authored orientation presented as an empirical finding — is still prevented, now by
+disclosure rather than by exclusion.
+
+The 17 families that cleared the strict review remain the direct-grounding subset. Failing that
+review is not retroactively described as direct.
 
 A source-grounded candidate may therefore add a narrow implementation clause — for example a
 continuity guarantee, safeguard, non-abandonment provision, documentation requirement or defined

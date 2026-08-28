@@ -78,6 +78,7 @@
         "id": "pub1",
         "text": "Use individualized supported decision-making that adapts the form and intensity of help to the patient's expressed preferences, and reassess during the best available period before substituting another decision-maker.",
         "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from lived-experience and systematic-review evidence emphasizing individualized support, accessible communication and continued participation rather than a fixed institutional preference for substitution.",
@@ -110,6 +111,7 @@
         "id": "exp1",
         "text": "Maximize supported decision-making and interpretation of the patient's own will and preferences throughout the available decision window, using substitute decision-making only as a last resort.",
         "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from WHO QualityRights' rights-based supported-decision-making architecture; the scenario-specific time-window formulation is Bench-authored.",
@@ -128,6 +130,7 @@
         "id": "exp2",
         "text": "Provide reasonable support and reassess decision-specific capacity; if the relevant capacity remains absent, use the appropriate surrogate while continuing to involve the patient as much as possible.",
         "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
           "summary": "Adapted from AMA Opinion 2.1.2, which requires participation to the greatest extent possible and use of an appropriate surrogate when capacity is absent.",
@@ -148,6 +151,7 @@
         "id": "fw1",
         "text": "Preserve the patient's own decision through communication support and a trusted supporter whenever that can make the choice meaningfully theirs; fluctuating symptoms alone should not transfer decisional authority.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from relational autonomy and supported agency: relational and communicative supports can be constitutive of effective autonomous choice, so removable interactional barriers should not be treated as incapacity.",
@@ -164,6 +168,7 @@
         "id": "fw2",
         "text": "If supported reassessment still shows inability to appreciate the grave consequence and the treatment window is closing, permit a narrowly bounded protective or surrogate decision to prevent irreversible harm.",
         "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
         "provenance": {
           "construction_method": "derived-from-framework",
           "summary": "Derived from decision-specific autonomy, beneficence and nonmaleficence under time constraint: persistent impairment of appreciation can undermine authorization while delay can create irreversible harm.",
@@ -233,5 +238,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:76400f5e5dca5d5fba99cfd2e3cf7af4c436b682e9e83484a232e3fb25a386ff"
+  "content_hash": "sha256:18648b177e8b69ab69f9bb6c243a40417162f8de022967aa42ccbedbc8aa2700"
 }
