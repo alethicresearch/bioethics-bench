@@ -18,18 +18,16 @@ jobs:
         with:
           ref: author/full-corpus-completion
           fetch-depth: 0
-      - name: Download checked completion payload
+      - name: Verify checked completion payload
         shell: bash
         run: |
           set -euo pipefail
-          URL='https://drive.usercontent.google.com/download?id=1v9m25o27rtkvbEXNLwluZi-VIcRb85OK&export=download&confirm=t'
-          curl -L --fail --retry 3 --retry-delay 2 "$URL" -o /tmp/full-corpus-rc3.tar.gz
-          echo '2284aac13658b8e26035583eef6a5fcb010cf674ca09be55509a746631397706  /tmp/full-corpus-rc3.tar.gz' | sha256sum -c -
+          echo '2284aac13658b8e26035583eef6a5fcb010cf674ca09be55509a746631397706  .completion/full-corpus-completion-rc3.tar.gz' | sha256sum -c -
       - name: Apply canonical records and control artifacts
         shell: bash
         run: |
           set -euo pipefail
-          tar -xzf /tmp/full-corpus-rc3.tar.gz -C .
+          tar -xzf .completion/full-corpus-completion-rc3.tar.gz -C .
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             git rm -f --ignore-unmatch "$path"
