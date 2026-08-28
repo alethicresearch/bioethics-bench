@@ -123,7 +123,7 @@ Do not invent a particular later fixed day as an evidence claim. A future study 
 **Canonical frame:** `natural@1.0.0`  
 **Geometry:** `2 public × 2 expert × 2 framework`  
 **Cross-source pairs:** 12  
-**Required aggregation:** not declared — partner counts are equal, so Sum would not be shape-biased here.  
+**Required aggregation:** via profile `full-corpus-2x2x2-v1` — partner counts are equal, so Sum would not be shape-biased here.  
 **Records:** `m056-fourteen-day-embryo-research-limit-natural-concise-v1`, `m056-fourteen-day-embryo-research-limit-natural-detailed-v1`
 
 Policy basis of the audited candidate set:

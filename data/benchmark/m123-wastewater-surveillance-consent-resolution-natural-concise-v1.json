@@ -1,1 +1,250 @@
-{"case_id":"m123-wastewater-surveillance-consent-resolution","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Wastewater surveillance without individual consent","short_description":"A public-health agency must decide how far wastewater surveillance may extend without individual consent as monitoring moves from citywide pathogen detection toward smaller catchments and sensitive noninfectious targets.","decision_question":"May a public-health agency monitor wastewater at neighborhood or institutional level without individual consent, and what limits should govern resolution and secondary use?","jurisdiction_context":"Jurisdiction-neutral municipal public-health surveillance informed by National Academies and WHO wastewater/public-health-surveillance guidance.","as_of_date":"2026-08-27","stipulations":[{"id":"m123-no-individual-optout","kind":"contextual","statement":"Individual consent or opt-out cannot practically be obtained for people contributing to a community wastewater sample.","rationale":"The benchmark tests governance of nonconsensual population surveillance rather than an individually consented testing program."},{"id":"m123-resolution-risk","kind":"scientific","statement":"Citywide samples have very low individual re-identification risk, while neighborhood or institutional catchments create materially greater risks of stigma, inference and re-identification.","rationale":"Geographic resolution is the key variable that changes the privacy burden of wastewater surveillance."},{"id":"m123-target-sensitivity","kind":"contextual","statement":"The proposed program includes both infectious-disease targets and more sensitive drug-use markers.","rationale":"Public support and ethical risk differ substantially by surveillance target, so target sensitivity must be represented explicitly."},{"id":"m123-use-limits","kind":"contextual","statement":"The agency can prohibit law-enforcement and commercial secondary use and can implement public transparency, community engagement and ethics-governance processes.","rationale":"The policy comparison should distinguish legitimate public-health surveillance from mission creep and punitive secondary use."}],"position_families":["broad governed public-health wastewater surveillance","routine low-resolution pathogen surveillance with strict purpose limits","special community and ethics approval for small-area or sensitive-target surveillance"],"domains":["public-health","medical-ai-data"],"tags":["wastewater surveillance","privacy","public health","community consent","stigma","secondary use","social licence"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored wastewater-surveillance case grounded in National Academies and WHO governance guidance plus U.S. public-attitude evidence. It fixes the impossibility of individual opt-out, differential resolution risk, target sensitivity and available use restrictions so candidates differ on the scope and approval threshold for nonconsensual surveillance.","sources":[{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"},{"citation":"WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.","type":"guideline"},{"citation":"WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.","type":"guideline"},{"citation":"U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.","type":"article"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Use wastewater surveillance at city or broad community scale for infectious diseases and other clearly health-protective targets when the data are useful for public-health action and strong use limits are in place.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from national public-opinion evidence showing very high support for disease and toxin monitoring and substantially greater support for citywide than highly localized wastewater surveillance. The use-limit clause keeps the candidate within the public-health purpose asked about in the evidence.","sources":[{"citation":"U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.","type":"article"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Do not routinely monitor highly localized catchments or sensitive noninfectious targets such as drug-use or lifestyle markers; require a separate public-health justification and community-governance process before adding them.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from public evidence showing substantially lower support for sensitive targets and smaller surveillance sites. The separate-justification and community-governance threshold is Bench-authored policy completion informed by professional governance guidance.","sources":[{"citation":"U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.","type":"article"},{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Permit community-level wastewater surveillance without individual consent when a legitimate public-health benefit is established, while minimizing resolution and privacy risks, limiting secondary use, and requiring transparent ethics and community governance as surveillance becomes more localized or sensitive.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Synthesizes a convergent professional architecture across the National Academies and WHO: community-level surveillance can be ethically acceptable without individual consent, but ethical acceptability requires proportional benefit, privacy and stigma safeguards, purpose limitation, transparency, stakeholder engagement and stronger scrutiny for hyper-localized or sensitive uses.","sources":[{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"},{"citation":"WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.","type":"guideline"},{"citation":"WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.","type":"guideline"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Authorize nonconsensual wastewater surveillance across useful community scales and targets when expected public-health benefit is substantial and privacy burdens are actively minimized, because population surveillance can prevent harm without testing individuals.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from public-health utility and proportionality reasoning. The executable broad-permission rule is Bench-authored.","sources":[{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"}]}},{"id":"fw2","text":"Keep routine surveillance at sufficiently large catchments and primarily infectious-disease targets, and prohibit sensitive small-area monitoring and non-public-health secondary uses because nonconsensual surveillance should be narrowly purpose-limited where privacy and stigma risks rise sharply.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from privacy, anti-stigma and anti-function-creep reasoning. The executable restriction rule is Bench-authored.","sources":[{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"}]}},{"id":"fw3","text":"Allow small-area or sensitive-target surveillance only after a separate transparent ethics and community-authorization process establishes legitimate purpose, social licence, safeguards and limits, because legitimacy must substitute for infeasible individual consent.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from democratic legitimacy, social-licence and community-governance reasoning. Unlike a categorical low-resolution restriction, this policy permits sensitive surveillance conditionally after a distinct approval process.","sources":[{"citation":"WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.","type":"guideline"},{"citation":"WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.","type":"guideline"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 legitimate singleton professional ecology plus resolution-sensitive framework plurality; later P3 surveillance-governance studies."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source material is summarized and adapted rather than reproduced."},"references":[{"citation":"National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.","type":"guideline"},{"citation":"WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.","type":"guideline"},{"citation":"WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.","type":"guideline"},{"citation":"U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.","type":"article"}],"required_aggregation":"mean","schema_version":"1.0.0","record_id":"m123-wastewater-surveillance-consent-resolution-natural-concise-v1","representation":{"form":"concise","companion_record_ids":["m123-wastewater-surveillance-consent-resolution-natural-detailed-v1"],"notes":"Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."},"scenario":"A city wants to expand wastewater surveillance beyond citywide infectious-disease monitoring toward neighborhood and institutional catchments and sensitive drug-use markers. For this benchmark, assume individual consent or opt-out is impracticable, citywide samples have very low individual re-identification risk while smaller catchments create materially greater stigma and inference risks, and the agency can prohibit law-enforcement or commercial secondary use and implement transparency, community engagement and ethics-governance processes. The agency must choose whether to permit broad governed surveillance, keep routine monitoring at lower-resolution pathogen-focused uses, or require special community and ethics approval before small-area or sensitive-target monitoring.","content_hash":"sha256:bb19df497348b5112c60d864f2ae9e2d3145d3845765bd468162de6209e7d270"}
+{
+  "case_id": "m123-wastewater-surveillance-consent-resolution",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Wastewater surveillance without individual consent",
+  "short_description": "A public-health agency must decide how far wastewater surveillance may extend without individual consent as monitoring moves from citywide pathogen detection toward smaller catchments and sensitive noninfectious targets.",
+  "decision_question": "May a public-health agency monitor wastewater at neighborhood or institutional level without individual consent, and what limits should govern resolution and secondary use?",
+  "jurisdiction_context": "Jurisdiction-neutral municipal public-health surveillance informed by National Academies and WHO wastewater/public-health-surveillance guidance.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m123-no-individual-optout",
+      "kind": "contextual",
+      "statement": "Individual consent or opt-out cannot practically be obtained for people contributing to a community wastewater sample.",
+      "rationale": "The benchmark tests governance of nonconsensual population surveillance rather than an individually consented testing program."
+    },
+    {
+      "id": "m123-resolution-risk",
+      "kind": "scientific",
+      "statement": "Citywide samples have very low individual re-identification risk, while neighborhood or institutional catchments create materially greater risks of stigma, inference and re-identification.",
+      "rationale": "Geographic resolution is the key variable that changes the privacy burden of wastewater surveillance."
+    },
+    {
+      "id": "m123-target-sensitivity",
+      "kind": "contextual",
+      "statement": "The proposed program includes both infectious-disease targets and more sensitive drug-use markers.",
+      "rationale": "Public support and ethical risk differ substantially by surveillance target, so target sensitivity must be represented explicitly."
+    },
+    {
+      "id": "m123-use-limits",
+      "kind": "contextual",
+      "statement": "The agency can prohibit law-enforcement and commercial secondary use and can implement public transparency, community engagement and ethics-governance processes.",
+      "rationale": "The policy comparison should distinguish legitimate public-health surveillance from mission creep and punitive secondary use."
+    }
+  ],
+  "position_families": [
+    "broad governed public-health wastewater surveillance",
+    "routine low-resolution pathogen surveillance with strict purpose limits",
+    "special community and ethics approval for small-area or sensitive-target surveillance"
+  ],
+  "domains": [
+    "public-health",
+    "medical-ai-data"
+  ],
+  "tags": [
+    "wastewater surveillance",
+    "privacy",
+    "public health",
+    "community consent",
+    "stigma",
+    "secondary use",
+    "social licence"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored wastewater-surveillance case grounded in National Academies and WHO governance guidance plus U.S. public-attitude evidence. It fixes the impossibility of individual opt-out, differential resolution risk, target sensitivity and available use restrictions so candidates differ on the scope and approval threshold for nonconsensual surveillance.",
+    "sources": [
+      {
+        "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+        "type": "guideline"
+      },
+      {
+        "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
+        "type": "guideline"
+      },
+      {
+        "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
+        "type": "guideline"
+      },
+      {
+        "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Use wastewater surveillance at city or broad community scale for infectious diseases and other clearly health-protective targets when the data are useful for public-health action and strong use limits are in place.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from national public-opinion evidence showing very high support for disease and toxin monitoring and substantially greater support for citywide than highly localized wastewater surveillance. The use-limit clause keeps the candidate within the public-health purpose asked about in the evidence.",
+          "sources": [
+            {
+              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not routinely monitor highly localized catchments or sensitive noninfectious targets such as drug-use or lifestyle markers; require a separate public-health justification and community-governance process before adding them.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from public evidence showing substantially lower support for sensitive targets and smaller surveillance sites. The separate-justification and community-governance threshold is Bench-authored policy completion informed by professional governance guidance.",
+          "sources": [
+            {
+              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "type": "article"
+            },
+            {
+              "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Permit community-level wastewater surveillance without individual consent when a legitimate public-health benefit is established, while minimizing resolution and privacy risks, limiting secondary use, and requiring transparent ethics and community governance as surveillance becomes more localized or sensitive.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Synthesizes a convergent professional architecture across the National Academies and WHO: community-level surveillance can be ethically acceptable without individual consent, but ethical acceptability requires proportional benefit, privacy and stigma safeguards, purpose limitation, transparency, stakeholder engagement and stronger scrutiny for hyper-localized or sensitive uses.",
+          "sources": [
+            {
+              "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+              "type": "guideline"
+            },
+            {
+              "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.",
+              "type": "guideline"
+            },
+            {
+              "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Authorize nonconsensual wastewater surveillance across useful community scales and targets when expected public-health benefit is substantial and privacy burdens are actively minimized, because population surveillance can prevent harm without testing individuals.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from public-health utility and proportionality reasoning. The executable broad-permission rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Keep routine surveillance at sufficiently large catchments and primarily infectious-disease targets, and prohibit sensitive small-area monitoring and non-public-health secondary uses because nonconsensual surveillance should be narrowly purpose-limited where privacy and stigma risks rise sharply.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from privacy, anti-stigma and anti-function-creep reasoning. The executable restriction rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Allow small-area or sensitive-target surveillance only after a separate transparent ethics and community-authorization process establishes legitimate purpose, social licence, safeguards and limits, because legitimacy must substitute for infeasible individual consent.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from democratic legitimacy, social-licence and community-governance reasoning. Unlike a categorical low-resolution restriction, this policy permits sensitive surveillance conditionally after a distinct approval process.",
+          "sources": [
+            {
+              "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.",
+              "type": "guideline"
+            },
+            {
+              "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 legitimate singleton professional ecology plus resolution-sensitive framework plurality; later P3 surveillance-governance studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
+      "type": "guideline"
+    },
+    {
+      "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
+      "type": "guideline"
+    },
+    {
+      "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
+      "type": "guideline"
+    },
+    {
+      "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m123-wastewater-surveillance-consent-resolution-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m123-wastewater-surveillance-consent-resolution-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
+  },
+  "scenario": "A city wants to expand wastewater surveillance beyond citywide infectious-disease monitoring toward neighborhood and institutional catchments and sensitive drug-use markers. For this benchmark, assume individual consent or opt-out is impracticable, citywide samples have very low individual re-identification risk while smaller catchments create materially greater stigma and inference risks, and the agency can prohibit law-enforcement or commercial secondary use and implement transparency, community engagement and ethics-governance processes. The agency must choose whether to permit broad governed surveillance, keep routine monitoring at lower-resolution pathogen-focused uses, or require special community and ethics approval before small-area or sensitive-target monitoring.",
+  "content_hash": "sha256:d4e3a850515a8bf569af5542568f4a375b99e07392930d419d92c6adc3bac40a"
+}

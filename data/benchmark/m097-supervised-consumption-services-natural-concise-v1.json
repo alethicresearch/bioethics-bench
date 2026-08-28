@@ -217,6 +217,7 @@
     ]
   },
   "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x2x3-mean-v1",
   "exposure": "internal-development",
   "status": "draft",
   "intended_use": [
@@ -268,5 +269,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A city has persistently high fatal overdose rates despite naloxone distribution, medications for opioid use disorder, outreach and emergency treatment. A proposed supervised consumption service would provide monitored use of pre-obtained substances, overdose response, sterile supplies and voluntary linkage to treatment and social services. For this benchmark, assume existing evidence supports prevention of onsite overdose deaths and engagement with health and social services, the effect on population-level overdose mortality remains uncertain, and local neighborhood effects and community acceptance are unresolved. The city must decide whether to establish an ongoing service, decline permanent implementation while prioritizing other interventions, or authorize a time-limited evaluated pilot.",
-  "content_hash": "sha256:9573b9a00d867f5a2f5a76acb33e9fb956657ca7fa6168f139b31163795a720e"
+  "content_hash": "sha256:a597ca5b8805de1b3b7ac5450eeb1683dd2878237b025fd763b8510cf2323665"
 }

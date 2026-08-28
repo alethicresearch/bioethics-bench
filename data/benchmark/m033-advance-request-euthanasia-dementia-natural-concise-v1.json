@@ -218,6 +218,7 @@
     ]
   },
   "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
   "exposure": "internal-development",
   "status": "draft",
   "intended_use": [
@@ -280,5 +281,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A person with advanced Alzheimer disease can no longer make or communicate complex decisions. Years earlier, while fully capable, the person completed and repeatedly reaffirmed a specific advance euthanasia directive requesting euthanasia if dementia progressed to permanent inability to recognize close family and make independent decisions. Those conditions are now met. The person sometimes appears calm and at other times fearful or agitated, and clinicians cannot reliably establish a stable current judgment about whether life is experienced as unbearable. For this benchmark, assume the directive was specific and reaffirmed with capacity, its stated trigger is now met, the person cannot communicate a current euthanasia request or revocation, current behavior does not establish continuous unbearable suffering, and Dutch law permits an advance directive to replace an oral request only if all other due-care criteria are met. The physician must decide what policy should govern implementation.",
-  "content_hash": "sha256:528f09bc015ff1f13cf6f601264552dbe7d00ff7c08e7fe5cf629a9e98c86a8f"
+  "content_hash": "sha256:ebee9f38354e6f709f7438260e9d4eec12bc74ff176be47e65925f07a337426a"
 }

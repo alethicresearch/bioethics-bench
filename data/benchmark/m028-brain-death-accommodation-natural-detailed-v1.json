@@ -206,6 +206,7 @@
     ]
   },
   "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
   "exposure": "internal-development",
   "status": "draft",
   "intended_use": [
@@ -264,5 +265,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; the candidate field and load-bearing facts are fixed."
   },
   "scenario": "An adult sustains catastrophic permanent brain injury and, after prerequisites are satisfied, is evaluated under current multidisciplinary US standards for death by neurologic criteria. The examination and apnea testing are completed correctly and death is declared. The family understands that the medical and legal system treats BD/DNC as death but rejects that definition on sincere religious and moral grounds and asks that mechanical ventilation, vasoactive medication and other organ support continue until circulatory arrest. The hospital has already offered repeated explanation, ethics support and spiritual care. For this benchmark, assume no diagnostic uncertainty remains, organ donation is not planned, continued support cannot restore brain function, and ongoing support uses an ICU bed and intensive clinical resources without an immediate named competing patient or acute scarcity crisis. The hospital must choose the policy governing accommodation, transfer opportunity and eventual discontinuation.",
-  "content_hash": "sha256:a75dcdd1711f70b60abb47d9245e6959ce870197b73b583fe85ef20d9e33d514"
+  "content_hash": "sha256:fe6987dc85769368728e25cf891ab209021e76e5a16736284da3ce9bec81b01d"
 }

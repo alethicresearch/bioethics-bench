@@ -1,1 +1,239 @@
-{"case_id":"m080-post-trial-access-beneficial-intervention","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Post-trial access to a beneficial intervention","short_description":"A trial is ending while some participants still medically need an intervention shown beneficial and reasonably safe, and ordinary access will be delayed. The sponsor and ethics committee must set the post-trial access obligation.","decision_question":"What post-trial access arrangement should be required when participants still need an intervention shown beneficial and reasonably safe during the trial but ordinary access is uncertain?","jurisdiction_context":"Jurisdiction-neutral research-ethics case grounded in the 2024 Declaration of Helsinki and CIOMS Guideline 6.","as_of_date":"2026-08-27","stipulations":[{"id":"m080-beneficial-safe","kind":"scientific","statement":"The intervention has been shown beneficial and reasonably safe in the trial for the represented participants.","rationale":"Professional post-trial-access obligations depend on demonstrated benefit and acceptable safety rather than speculative efficacy."},{"id":"m080-medical-need","kind":"contextual","statement":"The represented participants still medically need the intervention and abrupt discontinuation is likely to worsen their condition.","rationale":"The case tests a real continuing health need rather than preference for convenience."},{"id":"m080-access-delay","kind":"contextual","statement":"Ordinary regulatory, insurance or public-system access will be delayed for approximately nine to twelve months.","rationale":"A concrete access gap makes transition obligations operationally meaningful."},{"id":"m080-sponsor-capacity","kind":"contextual","statement":"The sponsor can provide at least temporary continued supply, although indefinite lifetime provision would create substantial cost and operational burdens.","rationale":"The benchmark preserves a feasible bridge while leaving proportionality of indefinite provision contested."},{"id":"m080-prospective-plan","kind":"contextual","statement":"Participants were told before enrollment that post-trial access would be governed by an ethics-approved plan.","rationale":"Prospective disclosure is part of current professional guidance and avoids surprise as the central issue."}],"position_families":["continued access while medically needed","time-limited sponsor transition to ordinary access","pre-agreed proportional access plan with REC-reviewed exceptions"],"domains":["research-ethics","global-structural"],"tags":["post-trial access","clinical trials","continued treatment","sponsor obligations","reciprocity","transition of care"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored post-trial-access representation grounded in the 2024 Declaration of Helsinki, CIOMS Guideline 6 and direct participant evidence from the EPIC study. It fixes demonstrated benefit, continuing medical need, a temporary ordinary-access gap and sponsor capacity for at least bridging supply so candidate policies differ on duration and responsibility.","sources":[{"citation":"World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.","type":"guideline"},{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.","type":"guideline"},{"citation":"Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.","type":"article"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Ensure participants who benefited and still medically need the intervention can continue receiving it after the trial until a sustainable clinical source or therapeutic equivalent is available.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from EPIC participant evidence in which many current or recent trial participants attributed obligations to researchers, sponsors, insurers or others to facilitate continued access to a beneficial study drug or therapeutic equivalent.","sources":[{"citation":"Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.","type":"article"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Do not guarantee indefinite sponsor-funded treatment after the trial; provide study information and a responsible transition period, then allow ordinary clinical access arrangements to govern once that transition is complete.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from EPIC participants who rejected a continuing post-trial drug or care obligation. The responsible transition language is Bench-authored policy completion so the no-indefinite-obligation orientation does not become abrupt abandonment contrary to the fixed scenario and current guidance.","sources":[{"citation":"Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.","type":"article"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Before enrollment, arrange and disclose meaningful post-trial provision for participants who still need an intervention shown beneficial and reasonably safe, specifying duration, financing, delivery and transition; any justified exception to provision requires research-ethics review.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the 2024 Declaration of Helsinki post-trial provision requirement and CIOMS Guideline 6 advance planning for level, scope, duration, financing, delivery and monitoring. The sources converge on meaningful advance provision while allowing context-sensitive duration and ethics-reviewed exceptions.","sources":[{"citation":"World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.","type":"guideline"},{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.","type":"guideline"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Continue access for participants who still medically need the beneficial intervention because they accepted research burdens that generated valuable evidence and should not lose an effective therapy when the study ends.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from reciprocity and non-abandonment reasoning. The executable continued-access rule is Bench-authored.","sources":[{"citation":"Sofaer N, et al. EPIC Study. J Med Ethics. 2009. PMID 19251971.","type":"article"}]}},{"id":"fw2","text":"Require the sponsor to bridge participants through a defined transition to sustainable ordinary care, but do not impose an unlimited sponsor obligation once a safe and realistic clinical access pathway is available.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from special but bounded transition responsibility: research creates obligations to avoid a treatment cliff without making the sponsor a permanent substitute health system. The executable rule is Bench-authored.","sources":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.","type":"guideline"}]}},{"id":"fw3","text":"Use a pre-agreed proportional access plan that weighs participant medical need, feasibility, expected access delay and shared sponsor/health-system responsibilities, with ethics-reviewed exceptions where indefinite provision would be disproportionate or infeasible.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from fair-benefit and proportionality reasoning: post-trial obligations should be planned prospectively and calibrated to need, feasibility and institutional responsibility. The executable plan is Bench-authored.","sources":[{"citation":"World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.","type":"guideline"},{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.","type":"guideline"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 natural candidate ecology and convergent professional guidance with plural participant and framework policies; later P3 post-trial obligation studies."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited guidance and research retain their own rights; source material is summarized and adapted rather than reproduced."},"references":[{"citation":"World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.","type":"guideline"},{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.","type":"guideline"},{"citation":"Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.","type":"article"}],"required_aggregation":"mean","schema_version":"1.0.0","record_id":"m080-post-trial-access-beneficial-intervention-natural-concise-v1","representation":{"form":"concise","companion_record_ids":["m080-post-trial-access-beneficial-intervention-natural-detailed-v1"],"notes":"Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."},"scenario":"A randomized trial of a chronic-disease therapy is ending. Some participants who received the investigational intervention improved substantially and still medically need it; abrupt discontinuation is likely to worsen their condition. For this benchmark, assume the intervention has been shown beneficial and reasonably safe, ordinary access will be delayed about nine to twelve months, the sponsor can provide at least temporary continued supply but indefinite provision would be burdensome, and participants were told before enrollment that post-trial access would follow an ethics-approved plan. The sponsor and ethics committee must decide what access arrangement to require.","content_hash":"sha256:00bcc6d4ad7b8997c80f16a5eed4d4d5568fd0290eb14798f0c702a6fd0c37f1"}
+{
+  "case_id": "m080-post-trial-access-beneficial-intervention",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Post-trial access to a beneficial intervention",
+  "short_description": "A trial is ending while some participants still medically need an intervention shown beneficial and reasonably safe, and ordinary access will be delayed. The sponsor and ethics committee must set the post-trial access obligation.",
+  "decision_question": "What post-trial access arrangement should be required when participants still need an intervention shown beneficial and reasonably safe during the trial but ordinary access is uncertain?",
+  "jurisdiction_context": "Jurisdiction-neutral research-ethics case grounded in the 2024 Declaration of Helsinki and CIOMS Guideline 6.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m080-beneficial-safe",
+      "kind": "scientific",
+      "statement": "The intervention has been shown beneficial and reasonably safe in the trial for the represented participants.",
+      "rationale": "Professional post-trial-access obligations depend on demonstrated benefit and acceptable safety rather than speculative efficacy."
+    },
+    {
+      "id": "m080-medical-need",
+      "kind": "contextual",
+      "statement": "The represented participants still medically need the intervention and abrupt discontinuation is likely to worsen their condition.",
+      "rationale": "The case tests a real continuing health need rather than preference for convenience."
+    },
+    {
+      "id": "m080-access-delay",
+      "kind": "contextual",
+      "statement": "Ordinary regulatory, insurance or public-system access will be delayed for approximately nine to twelve months.",
+      "rationale": "A concrete access gap makes transition obligations operationally meaningful."
+    },
+    {
+      "id": "m080-sponsor-capacity",
+      "kind": "contextual",
+      "statement": "The sponsor can provide at least temporary continued supply, although indefinite lifetime provision would create substantial cost and operational burdens.",
+      "rationale": "The benchmark preserves a feasible bridge while leaving proportionality of indefinite provision contested."
+    },
+    {
+      "id": "m080-prospective-plan",
+      "kind": "contextual",
+      "statement": "Participants were told before enrollment that post-trial access would be governed by an ethics-approved plan.",
+      "rationale": "Prospective disclosure is part of current professional guidance and avoids surprise as the central issue."
+    }
+  ],
+  "position_families": [
+    "continued access while medically needed",
+    "time-limited sponsor transition to ordinary access",
+    "pre-agreed proportional access plan with REC-reviewed exceptions"
+  ],
+  "domains": [
+    "research-ethics",
+    "global-structural"
+  ],
+  "tags": [
+    "post-trial access",
+    "clinical trials",
+    "continued treatment",
+    "sponsor obligations",
+    "reciprocity",
+    "transition of care"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored post-trial-access representation grounded in the 2024 Declaration of Helsinki, CIOMS Guideline 6 and direct participant evidence from the EPIC study. It fixes demonstrated benefit, continuing medical need, a temporary ordinary-access gap and sponsor capacity for at least bridging supply so candidate policies differ on duration and responsibility.",
+    "sources": [
+      {
+        "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+        "type": "guideline"
+      },
+      {
+        "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Ensure participants who benefited and still medically need the intervention can continue receiving it after the trial until a sustainable clinical source or therapeutic equivalent is available.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from EPIC participant evidence in which many current or recent trial participants attributed obligations to researchers, sponsors, insurers or others to facilitate continued access to a beneficial study drug or therapeutic equivalent.",
+          "sources": [
+            {
+              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not guarantee indefinite sponsor-funded treatment after the trial; provide study information and a responsible transition period, then allow ordinary clinical access arrangements to govern once that transition is complete.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from EPIC participants who rejected a continuing post-trial drug or care obligation. The responsible transition language is Bench-authored policy completion so the no-indefinite-obligation orientation does not become abrupt abandonment contrary to the fixed scenario and current guidance.",
+          "sources": [
+            {
+              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Before enrollment, arrange and disclose meaningful post-trial provision for participants who still need an intervention shown beneficial and reasonably safe, specifying duration, financing, delivery and transition; any justified exception to provision requires research-ethics review.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the 2024 Declaration of Helsinki post-trial provision requirement and CIOMS Guideline 6 advance planning for level, scope, duration, financing, delivery and monitoring. The sources converge on meaningful advance provision while allowing context-sensitive duration and ethics-reviewed exceptions.",
+          "sources": [
+            {
+              "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+              "type": "guideline"
+            },
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Continue access for participants who still medically need the beneficial intervention because they accepted research burdens that generated valuable evidence and should not lose an effective therapy when the study ends.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from reciprocity and non-abandonment reasoning. The executable continued-access rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Sofaer N, et al. EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Require the sponsor to bridge participants through a defined transition to sustainable ordinary care, but do not impose an unlimited sponsor obligation once a safe and realistic clinical access pathway is available.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from special but bounded transition responsibility: research creates obligations to avoid a treatment cliff without making the sponsor a permanent substitute health system. The executable rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Use a pre-agreed proportional access plan that weighs participant medical need, feasibility, expected access delay and shared sponsor/health-system responsibilities, with ethics-reviewed exceptions where indefinite provision would be disproportionate or infeasible.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from fair-benefit and proportionality reasoning: post-trial obligations should be planned prospectively and calibrated to need, feasibility and institutional responsibility. The executable plan is Bench-authored.",
+          "sources": [
+            {
+              "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+              "type": "guideline"
+            },
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 natural candidate ecology and convergent professional guidance with plural participant and framework policies; later P3 post-trial obligation studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited guidance and research retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+      "type": "guideline"
+    },
+    {
+      "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m080-post-trial-access-beneficial-intervention-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m080-post-trial-access-beneficial-intervention-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
+  },
+  "scenario": "A randomized trial of a chronic-disease therapy is ending. Some participants who received the investigational intervention improved substantially and still medically need it; abrupt discontinuation is likely to worsen their condition. For this benchmark, assume the intervention has been shown beneficial and reasonably safe, ordinary access will be delayed about nine to twelve months, the sponsor can provide at least temporary continued supply but indefinite provision would be burdensome, and participants were told before enrollment that post-trial access would follow an ethics-approved plan. The sponsor and ethics committee must decide what access arrangement to require.",
+  "content_hash": "sha256:a28da17c57f2b51758943bc45305611f69b4ef2bf1cb4d88fed1ecfeb29f720b"
+}

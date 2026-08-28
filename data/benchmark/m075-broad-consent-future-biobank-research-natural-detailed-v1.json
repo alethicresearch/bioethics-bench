@@ -1,1 +1,242 @@
-{"case_id":"m075-broad-consent-future-biobank-research","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Broad consent for future biobank research","short_description":"A longitudinal biobank storing identifiable biospecimens and health data must choose how much future research one initial consent may authorize when later studies cannot all be specified at collection.","decision_question":"What consent model should a biobank use when storing identifiable biospecimens and data for future studies that cannot be fully specified at collection?","jurisdiction_context":"Jurisdiction-neutral biobank governance informed by CIOMS Guideline 11 and broad-consent regulatory practice.","as_of_date":"2026-08-27","stipulations":[{"id":"m075-prospective-biobank","kind":"contextual","statement":"Biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank rather than being residual clinical material.","rationale":"Prospective donation and residual clinical material raise different consent architectures and should not be collapsed."},{"id":"m075-identifiable","kind":"contextual","statement":"Stored biospecimens and linked health data remain identifiable or re-identifiable.","rationale":"The benchmark concerns continuing authorization over identifiable research material rather than fully anonymous specimens."},{"id":"m075-governance","kind":"contextual","statement":"Independent governance and research-ethics review evaluate each future secondary-use proposal, and donors may withdraw future use.","rationale":"The consent-model comparison assumes credible stewardship rather than an ungoverned repository."},{"id":"m075-recontact","kind":"contextual","statement":"Recontact is technically feasible for materially new or sensitive uses but is burdensome if required for every future study.","rationale":"This makes broad, threshold-recontact and study-specific policies all operationally meaningful."}],"position_families":["bounded broad consent plus governance","recontact for materially new research categories","study-specific consent for each identifiable future study"],"domains":["research-ethics","medical-ai-data"],"tags":["biobank","broad consent","dynamic consent","recontact","biospecimens","secondary use","governance"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored biobank-governance representation grounded in CIOMS/HHS consent architectures and empirical research-participant preferences. It fixes prospective collection, identifiability, credible governance, withdrawal and feasible but burdensome recontact so consent models differ on when new permission is required.","sources":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.","type":"guideline"},{"citation":"HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.","type":"policy-document"},{"citation":"Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 source packet.","type":"survey"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Ask donors to make an active initial choice and, if they agree, authorize a defined broad range of future biobank research under independent governance without study-by-study recontact for uses that remain inside that range.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from participant/public studies that directly compared consent models and found substantial preference for broad consent after an active initial choice. The bounded-governance wording matches the decision object rather than attributing blanket consent to respondents.","sources":[{"citation":"Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.","type":"survey"},{"citation":"Biobank participant preference studies favoring broad research consent after active opt-in, as documented in the M075 candidate audit.","type":"article"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Recontact donors for permission before each materially distinct future study or use of identifiable biospecimens rather than relying on one broad authorization for the life of the biobank.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the same direct consent-model evidence documenting a large study-by-study-consent preference and from longitudinal evidence that preferences about future uses can change over time.","sources":[{"citation":"Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.","type":"survey"},{"citation":"Dynamic-consent and biobank preference studies documenting changing participant preferences over time, as documented in the M075 candidate audit.","type":"article"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Use bounded broad informed consent that specifies the permitted range of future research, storage and access rules, governance, withdrawal and sensitive-use conditions; require ethics review for secondary uses and obtain new consent when a proposed use falls outside the authorized scope.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted directly from CIOMS Guideline 11's broad-consent architecture, supported by HHS broad-consent provisions. The professional guidance permits bounded broad consent but does not treat it as blanket authorization.","sources":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.","type":"guideline"},{"citation":"HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.","type":"policy-document"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Use bounded broad consent plus accountable governance because participants can authorize trusted institutional stewardship over a defined research domain without repeatedly deciding each scientifically similar future use.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from stewardship, trust and delegated-governance reasoning. The executable policy is Bench-authored.","sources":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.","type":"guideline"}]}},{"id":"fw2","text":"Require renewed permission when a future project enters a materially new or especially sensitive research category because changing technologies and moral implications can make the original broad authorization an unreliable proxy for present preferences.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from ongoing and relational autonomy: authorization can remain valid within a stable understood domain but should be refreshed when the normative character of use materially changes. The threshold rule is Bench-authored.","sources":[{"citation":"Dynamic-consent scholarship and participant-preference evidence summarized in the M075 research packet.","type":"article"}]}},{"id":"fw3","text":"Require specific consent for each future study using identifiable biospecimens and linked data because authorization should track the concrete purpose and risks of each identifiable research use rather than rely on continuing institutional discretion.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from specific-authorization and informational-autonomy reasoning. The executable study-by-study rule is Bench-authored.","sources":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. 2016.","type":"guideline"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 natural candidate ecology and a legitimate singleton professional pool after competing-policy review; later P3 consent-model studies."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source material is summarized and adapted rather than reproduced."},"references":[{"citation":"CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.","type":"guideline"},{"citation":"HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.","type":"policy-document"},{"citation":"Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.","type":"survey"},{"citation":"Dynamic-consent and biobank preference studies summarized in the M075 research packet.","type":"article"}],"required_aggregation":"mean","schema_version":"1.0.0","record_id":"m075-broad-consent-future-biobank-research-natural-detailed-v1","representation":{"form":"detailed","companion_record_ids":["m075-broad-consent-future-biobank-research-natural-concise-v1"],"notes":"Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."},"scenario":"An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.","content_hash":"sha256:26d23223aab3ee4c6513ee3c0dbe5f9f34792ee0f0a1dfae1525281a28471c9e"}
+{
+  "case_id": "m075-broad-consent-future-biobank-research",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Broad consent for future biobank research",
+  "short_description": "A longitudinal biobank storing identifiable biospecimens and health data must choose how much future research one initial consent may authorize when later studies cannot all be specified at collection.",
+  "decision_question": "What consent model should a biobank use when storing identifiable biospecimens and data for future studies that cannot be fully specified at collection?",
+  "jurisdiction_context": "Jurisdiction-neutral biobank governance informed by CIOMS Guideline 11 and broad-consent regulatory practice.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m075-prospective-biobank",
+      "kind": "contextual",
+      "statement": "Biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank rather than being residual clinical material.",
+      "rationale": "Prospective donation and residual clinical material raise different consent architectures and should not be collapsed."
+    },
+    {
+      "id": "m075-identifiable",
+      "kind": "contextual",
+      "statement": "Stored biospecimens and linked health data remain identifiable or re-identifiable.",
+      "rationale": "The benchmark concerns continuing authorization over identifiable research material rather than fully anonymous specimens."
+    },
+    {
+      "id": "m075-governance",
+      "kind": "contextual",
+      "statement": "Independent governance and research-ethics review evaluate each future secondary-use proposal, and donors may withdraw future use.",
+      "rationale": "The consent-model comparison assumes credible stewardship rather than an ungoverned repository."
+    },
+    {
+      "id": "m075-recontact",
+      "kind": "contextual",
+      "statement": "Recontact is technically feasible for materially new or sensitive uses but is burdensome if required for every future study.",
+      "rationale": "This makes broad, threshold-recontact and study-specific policies all operationally meaningful."
+    }
+  ],
+  "position_families": [
+    "bounded broad consent plus governance",
+    "recontact for materially new research categories",
+    "study-specific consent for each identifiable future study"
+  ],
+  "domains": [
+    "research-ethics",
+    "medical-ai-data"
+  ],
+  "tags": [
+    "biobank",
+    "broad consent",
+    "dynamic consent",
+    "recontact",
+    "biospecimens",
+    "secondary use",
+    "governance"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored biobank-governance representation grounded in CIOMS/HHS consent architectures and empirical research-participant preferences. It fixes prospective collection, identifiability, credible governance, withdrawal and feasible but burdensome recontact so consent models differ on when new permission is required.",
+    "sources": [
+      {
+        "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+        "type": "guideline"
+      },
+      {
+        "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 source packet.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Ask donors to make an active initial choice and, if they agree, authorize a defined broad range of future biobank research under independent governance without study-by-study recontact for uses that remain inside that range.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from participant/public studies that directly compared consent models and found substantial preference for broad consent after an active initial choice. The bounded-governance wording matches the decision object rather than attributing blanket consent to respondents.",
+          "sources": [
+            {
+              "citation": "Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.",
+              "type": "survey"
+            },
+            {
+              "citation": "Biobank participant preference studies favoring broad research consent after active opt-in, as documented in the M075 candidate audit.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Recontact donors for permission before each materially distinct future study or use of identifiable biospecimens rather than relying on one broad authorization for the life of the biobank.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the same direct consent-model evidence documenting a large study-by-study-consent preference and from longitudinal evidence that preferences about future uses can change over time.",
+          "sources": [
+            {
+              "citation": "Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.",
+              "type": "survey"
+            },
+            {
+              "citation": "Dynamic-consent and biobank preference studies documenting changing participant preferences over time, as documented in the M075 candidate audit.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use bounded broad informed consent that specifies the permitted range of future research, storage and access rules, governance, withdrawal and sensitive-use conditions; require ethics review for secondary uses and obtain new consent when a proposed use falls outside the authorized scope.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from CIOMS Guideline 11's broad-consent architecture, supported by HHS broad-consent provisions. The professional guidance permits bounded broad consent but does not treat it as blanket authorization.",
+          "sources": [
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+              "type": "guideline"
+            },
+            {
+              "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Use bounded broad consent plus accountable governance because participants can authorize trusted institutional stewardship over a defined research domain without repeatedly deciding each scientifically similar future use.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from stewardship, trust and delegated-governance reasoning. The executable policy is Bench-authored.",
+          "sources": [
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Require renewed permission when a future project enters a materially new or especially sensitive research category because changing technologies and moral implications can make the original broad authorization an unreliable proxy for present preferences.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from ongoing and relational autonomy: authorization can remain valid within a stable understood domain but should be refreshed when the normative character of use materially changes. The threshold rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Dynamic-consent scholarship and participant-preference evidence summarized in the M075 research packet.",
+              "type": "article"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Require specific consent for each future study using identifiable biospecimens and linked data because authorization should track the concrete purpose and risks of each identifiable research use rather than rely on continuing institutional discretion.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from specific-authorization and informational-autonomy reasoning. The executable study-by-study rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. 2016.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 natural candidate ecology and a legitimate singleton professional pool after competing-policy review; later P3 consent-model studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+      "type": "guideline"
+    },
+    {
+      "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 candidate audit.",
+      "type": "survey"
+    },
+    {
+      "citation": "Dynamic-consent and biobank preference studies summarized in the M075 research packet.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m075-broad-consent-future-biobank-research-natural-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m075-broad-consent-future-biobank-research-natural-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
+  },
+  "scenario": "An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.",
+  "content_hash": "sha256:ac5543e63894a73b197ac64c1702bdebddf0fed7d1f56cd975c2251ca99d7441"
+}
