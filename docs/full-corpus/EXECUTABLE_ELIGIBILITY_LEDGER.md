@@ -48,18 +48,43 @@ copied across unexamined.
 | M141 | `2×1×2` | n=150 |
 | M144 | `2×1×2` | n=150 — reference case for the scenario/action-divergence gate |
 
-**Awaiting independent review — 21.** Audited by the corpus author, not yet through the gate.
+**Cleared on review of the earlier ten — 2.**
 
-M012, M018, M019, M020, M025, M028, M030, M031, M033, M034, M041, M042, M045, M050, M054, M056,
-M060, M075, M080, M094, M097.
+| family | profile | why it cleared |
+|---|---|---|
+| M028 | `2×1×2` | the survey asked whether hospitals should be *required* to continue support |
+| M033 | `2×1×2` | the survey asked an eligibility question, and both public candidates come from it |
 
-**Demoted — 1.** M102, `needs-additional-evidence`, deemed-consent evidence mismatch.
+**Demoted on review of the earlier ten — 8.** Gates applied from scratch; see
+`reviews/2026-08-27-early-ten-dispositions.md`.
+
+| family | binding reason |
+|---|---|
+| M012 | patient attitudes toward an intervention are not a view on clinician conduct |
+| M018 | patient expectation studies do not support a prescribing rule |
+| M019 | modality preference does not support a triage rule |
+| M020 | workforce willingness does not support mandatory-versus-voluntary assignment |
+| M025 | `pub2` is conditioned on a fact the scenario denies — **repairable by rewording** |
+| M030 | `pub2` has no provenance; unassessable rather than failed |
+| M031 | moral acceptability of an act is not a position on institutional participation |
+| M034 | `pub2`'s evidence comes from a fact pattern the scenario excludes |
+
+**Awaiting independent review — 11.**
+
+M041, M042, M045, M050, M054, M056, M060, M075, M080, M094, M097.
+
+**Demoted earlier — 1.** M102, deemed-consent evidence mismatch.
 
 **Featured, not in the Full Corpus manifest — 1.** M001 / F01.
 
-`4 + 5 + 21 + 1 = 31.` The 21 is the real queue.
+`4 + 5 + 2 + 8 + 11 + 1 = 31.` Of these, **11 are cleared** (4 transcribed, 7 not), 11 remain
+queued, and 9 are demoted.
+
+**Current Full Corpus manifest projection: 11 cleared, up to 22 if every remaining case passes.**
+That upper bound should not be planned against — eight of the last ten failed.
 
 ---
+
 
 ## What review of the 21 involves
 
