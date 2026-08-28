@@ -208,6 +208,25 @@ E0 ran with no working cap. Worth fixing before any further authorized spend.
 It records SACRE `main` at `1b2a5db`; actual `origin/main` at this update is `99b484b`. It also
 predates the Canonical Tutorial Execution Plan landing on SACRE main. Repository state governs.
 
+## Keeping the three lanes aligned
+
+Three agents work this program: papers/program, Bench/corpus, and execution/capture. The
+coordination surfaces are not equally writable by all of them, which matters for where to look.
+
+| Surface | Who can write it | What it is for |
+|---|---|---|
+| `docs/PROGRAM_COORDINATION.md` here | any agent with repo access | corpus, lifecycle, disposition, release state |
+| `docs/PROGRAM_COORDINATION.md` in `xnuxi/sacre-prototype` | any agent with repo access | execution semantics, harnesses, evidence packages, integration branch state |
+| Drive `00 — PROJECT COORDINATION … LIVE` | whoever can edit the Doc body | publication sequencing, manuscript claims, study authorization |
+| `docs/DRIVE_COORDINATION_DELTA.md` here | any agent | edits Drive needs, staged by agents that cannot write it |
+
+The Bench/execution agent can read Drive but cannot write a Google Doc body: its integration exposes
+`update_file` for title and parent only. It therefore keeps both repo files current and stages Drive
+edits in `DRIVE_COORDINATION_DELTA.md`. An agent that *can* edit Drive should apply and clear those
+entries rather than assuming Drive is current.
+
+Put a fact in the repo file of the lane that owns it, and cross-reference rather than copy. A count
+duplicated into three files goes stale in two of them.
 ## When this file must be updated
 
 Update this file in the same change, or leave an explicit handoff requiring an update, when work changes executable family/record counts, dispositions, profile/geometry set, release/lifecycle status, provenance/inference semantics, source-to-policy review state, manifest/pin/hash, manuscript-relevant facts, or assumptions required by SACRE exploratory/validation designs.
