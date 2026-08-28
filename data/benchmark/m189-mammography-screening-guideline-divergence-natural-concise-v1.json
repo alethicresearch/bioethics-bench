@@ -1,0 +1,254 @@
+{
+  "case_id": "m189-mammography-screening-guideline-divergence",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Preventive screening when guideline bodies disagree",
+  "short_description": "A primary-care practice must set a standard mammography counseling policy for average-risk women in their 40s while major guideline bodies recommend action-distinct schedules.",
+  "decision_question": "What mammography screening policy should a primary-care practice recommend to average-risk women aged 40 to 49 when major guideline bodies differ on interval and framing?",
+  "jurisdiction_context": "United States primary care, evidence-dated 2026: the 2024 USPSTF recommendation and current American Cancer Society guidance are both in force and both reimbursable.",
+  "as_of_date": "2026-08-28",
+  "stipulations": [
+    {
+      "id": "m189-mammography-screening-guideline-divergence-average-risk",
+      "kind": "contextual",
+      "statement": "The policy concerns women at average risk of breast cancer, with no BRCA1/2 pathogenic variant, no personal or significant family history, and no prior chest radiotherapy.",
+      "rationale": "High-risk pathways carry separate supplemental-MRI indications; importing them would replace the represented disagreement with a different one."
+    },
+    {
+      "id": "m189-mammography-screening-guideline-divergence-age-band",
+      "kind": "numerical",
+      "statement": "The counseling policy applies to women aged 40 through 49.",
+      "rationale": "This is the band where the represented guideline bodies actually diverge; above and below it they converge substantially."
+    },
+    {
+      "id": "m189-mammography-screening-guideline-divergence-access",
+      "kind": "contextual",
+      "statement": "Mammography is accessible and affordable to the practice's patients at either interval, so the policy choice is not a proxy for rationing.",
+      "rationale": "If access were the binding constraint the case would be about allocation rather than about screening policy under guideline disagreement."
+    },
+    {
+      "id": "m189-mammography-screening-guideline-divergence-counseling-capacity",
+      "kind": "contextual",
+      "statement": "The practice is able to deliver standardized benefit-and-harm counseling, including absolute benefit, false-positive recall and overdiagnosis, to every patient in the band.",
+      "rationale": "Counseling capacity is held fixed so a shared-decision policy is not favoured or disfavoured by feasibility rather than by its merits."
+    },
+    {
+      "id": "m189-mammography-screening-guideline-divergence-guideline-divergence",
+      "kind": "legal",
+      "statement": "Both the USPSTF and the American Cancer Society schedules are professionally defensible and reimbursable in the represented setting.",
+      "rationale": "The case fixes genuine current guideline disagreement rather than a question of which body is authoritative."
+    }
+  ],
+  "position_families": [
+    "biennial screening from age 40 as the practice's standing recommendation",
+    "annual screening in the 40s under the ACS schedule",
+    "shared decision over timing and frequency within guideline-supported options after standardized counseling"
+  ],
+  "domains": [
+    "public-health",
+    "clinical-innovation"
+  ],
+  "tags": [
+    "mammography",
+    "breast cancer screening",
+    "USPSTF",
+    "American Cancer Society",
+    "guideline disagreement",
+    "overdiagnosis",
+    "shared decision making",
+    "preference sensitivity",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored primary-care representation grounded in two currently divergent published screening schedules and in national probability-based preference evidence for the same age band. It fixes average risk, access and counseling capacity so the represented variable is the screening policy itself rather than risk stratification, rationing or feasibility.",
+    "sources": [
+      {
+        "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+        "type": "article"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "text": "Recommend that average-risk women begin regular mammography at age 40 as the practice's standard advice, rather than presenting starting age as an open question.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the national survey in which a majority of screening-eligible women in their 40s preferred mammography at their current age rather than delaying, both before and after a decision aid (73.0% and 61.5% respectively). Those are preferences about the respondents' own screening; the step to a standing practice recommendation is a Bench translation and is not attributed to respondents as a surveyed policy.",
+          "sources": [
+            {
+              "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "text": "Make timing and frequency in the 40s an explicit choice for each patient after standardized benefit-and-harm counseling, rather than issuing one standing recommendation for the band.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the same survey's central finding that informed preferences in this band diverge and shift substantially with information: 27.0% preferred to delay screening before the decision aid and 38.5% after, while the share never wanting mammography did not rise (5.4% to 4.3%). A preference distribution that moves this much on disclosure supports eliciting the choice rather than defaulting it; the counseling-first policy form is Bench-authored completion.",
+          "sources": [
+            {
+              "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Offer biennial screening mammography to average-risk women from age 40 through 74 as the recommended schedule, rather than individualizing the starting decision for women in their 40s.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from the 2024 USPSTF grade B recommendation of biennial screening mammography for women aged 40 to 74, which states the recommendation for women aged 40 to 49 rather than individualizing the decision to screen for that group.",
+          "sources": [
+            {
+              "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Recommend annual screening mammography from age 45, and offer average-risk women aged 40 to 44 the option to begin annual screening earlier.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from current American Cancer Society guidance, under which women aged 40 to 44 have the option to start annual screening and annual screening is recommended for women aged 45 to 54. This diverges from the USPSTF schedule in both interval and framing across the represented band.",
+          "sources": [
+            {
+              "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Screen annually from age 40 because the dominant obligation in a preventable-mortality context is to detect cancers at the earliest stage the available technology allows.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from mortality-benefit-maximizing reasoning: where a serious disease is detectable earlier and earlier detection improves outcomes, the burden of justification falls on any schedule that detects less. The executable annual-from-40 rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Screen biennially rather than annually in this band because the additional false-positive recalls, procedures and overdiagnosis from annual screening are harms the practice inflicts, and they should be minimized where the incremental mortality benefit is small.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from nonmaleficence and iatrogenic-burden reasoning, which treats overdiagnosis and cascade testing as harms actively imposed by a screening programme rather than as neutral costs. The executable biennial rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Set no standing recommendation for the band and instead elicit each patient's own weighing of earlier detection against false positives and overdiagnosis after standardized counseling.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from preference-sensitivity reasoning: where a decision turns on how an individual weighs incommensurable benefits and harms and reasonable people weigh them differently, the institution's role is to inform the choice rather than to make it. The executable counseling-first rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 demonstration of a case whose expert pool divides on published policy rather than on interpretation; later P3 sensitivity work on preference-sensitive versus directive policy framing."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m189-mammography-screening-guideline-divergence-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m189-mammography-screening-guideline-divergence-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
+  },
+  "scenario": "A primary-care practice is setting a standard mammography counseling policy for its patients who are women aged 40 to 49 at average risk of breast cancer. Major guideline bodies currently disagree: the 2024 USPSTF recommends biennial screening from age 40 through 74 and specifically recommends this rather than individualizing the decision for women in their 40s, while current American Cancer Society guidance gives women 40-44 the option to begin annual screening and recommends annual screening from 45 to 54. Screening earlier and more often detects some cancers sooner; it also produces more false-positive recalls, additional procedures and overdiagnosis. National survey evidence shows that informed preferences in this age band genuinely diverge and that a substantial share of women prefer to delay screening once benefits and harms are explained. For this benchmark, assume average risk, accessible and affordable mammography at either interval, and capacity to deliver standardized benefit-and-harm counseling to everyone in the band. The practice must decide what its standard policy should be.",
+  "content_hash": "sha256:672643d84a00a2cdb35c071d1884f2831d650a0a1e72c3fc75716de7573ef839"
+}

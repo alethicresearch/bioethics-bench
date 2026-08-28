@@ -26,6 +26,7 @@ const JUDGMENTS = [
   'research-complete-not-executable',
   'as-duplicate',
   'candidate-audit-required',
+  'audit-complete-not-executable',
 ];
 
 const DISPOSITION = {
@@ -37,6 +38,7 @@ const DISPOSITION = {
   'research-complete-not-executable': 'held-not-executable',
   'as-duplicate': 'held-duplicate',
   'candidate-audit-required': 'held-candidate-audit',
+  'audit-complete-not-executable': 'held-audited-not-executable',
   'declared-canonical-frame': 'executable-eligible',
   'audited-reconciled': 'executable-eligible',
 };
@@ -51,6 +53,9 @@ const RECONSTRUCTION_HEADING = /^## (?:\d+\.\s*)?Current reconstruction decision
 // So does a candidate-audit reconciliation, written when a dossier's judgment
 // predated the audit that produced its record.
 const RECONCILIATION_HEADING = /^## (?:\d+\.\s*)?Candidate audit reconciliation/i;
+// And so does a completed candidate audit, which is the highest authority of
+// all: it was performed against the sources, not against the dossier's summary.
+const AUDIT_RESULT_HEADING = /^## (?:\d+\.\s*)?Candidate audit result/i;
 // The reconstructed style declares a frame and geometry instead of a token.
 const FRAME_DECLARATION = /\*\*Canonical frame:\*\*/;
 const GEOMETRY = /\*\*Geometry:\*\*\s*`([^`]+)`/;
@@ -67,7 +72,8 @@ function sectionUnder(text, heading) {
 // The authoritative section is the reconstruction decision when one exists,
 // otherwise the executable-eligibility judgment.
 function judgmentSection(text) {
-  return sectionUnder(text, RECONCILIATION_HEADING)
+  return sectionUnder(text, AUDIT_RESULT_HEADING)
+    ?? sectionUnder(text, RECONCILIATION_HEADING)
     ?? sectionUnder(text, RECONSTRUCTION_HEADING)
     ?? sectionUnder(text, JUDGMENT_HEADING);
 }
@@ -99,7 +105,8 @@ function readDossiers() {
         path: `docs/full-corpus/${batch}/${file}`,
         lines: text.split('\n').length,
         section,
-        judgment: isReconciliation(text) ? 'audited-reconciled' : declaredJudgment(section),
+        judgment: declaredJudgment(section)
+          ?? (isReconciliation(text) ? 'audited-reconciled' : null),
         geometry: section ? (GEOMETRY.exec(section)?.[1] ?? null) : null,
       });
     }
@@ -153,6 +160,7 @@ const counts = {
   notExecutable: tally((f) => f.disposition === 'held-not-executable'),
   duplicate: tally((f) => f.disposition === 'held-duplicate'),
   candidateAudit: tally((f) => f.disposition === 'held-candidate-audit'),
+  auditedHeld: tally((f) => f.disposition === 'held-audited-not-executable'),
   reconcile: tally((f) => f.disposition.includes('RECONCILE')),
   undeclared: tally((f) => f.disposition.startsWith('UNDECLARED')),
 };
@@ -193,6 +201,7 @@ should be reintroduced.
 | held — research-complete, not executable | ${counts.notExecutable} |
 | held — as duplicate | ${counts.duplicate} |
 | held — candidate-audit target, audit not yet performed | ${counts.candidateAudit} |
+| held — candidate audit performed, not executable | ${counts.auditedHeld} |
 | undeclared — dossier states no judgment | ${counts.undeclared} |
 | **Total** | **${families.length}** |
 

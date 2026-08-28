@@ -97,3 +97,28 @@ Maternal–fetal medicine review; reproductive-ethics review; affected-patient/c
 ## 18. Downstream record rule
 
 If candidate audit confirms two affected-patient policy translations, use the existing Mean-pinned asymmetric profile; do not create a second expert candidate from mere differences in strength of recommendation.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**Public layer is willingness-to-use evidence.** The IVF-patient survey finding that 77.4% would
+consider multifetal pregnancy reduction and 22.6% never would is a distribution of personal
+willingness, and the dossier states plainly that it "does not by itself establish institutional
+restrictions." Willingness to use a service is not a policy to establish or restrict it — the
+action-alignment rule names this case directly.
+
+**Expert layer is a singleton, and the dossier says so.** ACOG Committee Opinion 719 supports
+comprehensive nondirective counselling, respect for patient autonomy and timely referral where
+conscience interferes. The dossier warns against inventing "a separate mandatory or restrictive
+expert policy" from the fact that clinicians may recommend reduction at high order. The audit
+declines to invent one.
+
+**Held.** Promotion requires evidence of affected-community positions on what the service should
+*offer or restrict*, not on what individuals would choose.
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

@@ -102,3 +102,34 @@ Fertility-clinic operations; reproductive ethics; consent law; candidate-provena
 ## 18. Downstream record rule
 
 If executable, do not create a professional research-use candidate absent prior consent. Any non-discard candidate must state the prior-authorization condition explicitly.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**Public layer is disposition preference, not program policy.** The multi-institutional survey
+figures — 54% very likely to use embryos for reproduction, 21% to donate for research, 7% or fewer
+for other dispositions, with high decisional conflict in 39% — describe what patients would choose
+for their own embryos. The represented action is what a program should do with embryos that have
+become unclaimed. The dossier draws the right conclusion from its own data: these support "caution
+about inferring preferred nonreproductive uses from silence," which is a warning against an
+inference, not a candidate.
+
+The one policy-relevant orientation the evidence does support — that silence should not be read as
+authorization for research or donation — is the same action ASRM already requires, so representing
+it as a public candidate would place the same action in two pools and make those cross-source
+comparisons degenerate.
+
+**Expert layer is a singleton.** The dossier's own assessment of ASRM's 2021 Ethics Committee
+opinion is that it is "largely one expert architecture rather than two opposing professional
+policies": defined contact efforts and time periods, eventual designation as unclaimed with
+thaw/discard permitted, no obligation to store indefinitely, and no research or reproductive use
+absent prior specific authorization.
+
+**Held.**
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

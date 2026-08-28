@@ -99,3 +99,30 @@ Prenatal genetics; maternal–fetal medicine; genetic counseling; future-child a
 ## 18. Downstream record rule
 
 Candidate audit must distinguish professional allowance of local policy choice from direct endorsement of each candidate. Bench-authored policy completion must be labeled where safeguards/defaults are added.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**Professional openness is not a professional position.** The updated ISPD statement says there is
+*no universal consensus* on incidental and secondary findings in prenatal genome-wide sequencing, and
+that centres should state clearly whether such findings are reported and address the option to
+include or exclude them. That is an instruction to have a policy, not a policy. An absence of a
+recommendation cannot be split into two candidates; doing so would attribute to ISPD positions it
+expressly declines to take.
+
+**Public layer measures uptake, not the default rule.** 84% of 682 prenatal/paediatric families
+accepted secondary findings (86.2% of prenatal families), and 83% of 186 expectant patients thought
+prenatal whole-exome sequencing should be offered. The dossier states the limitation exactly: these
+"do not directly tell us which default policy families prefer." Uptake under a default is not
+endorsement of that default — the action-alignment rule names this case too.
+
+**Held.** M066 was flagged as the family most likely to yield genuine expert pluralism because the
+professional body left the policy open. Being left open is what makes it non-executable, not what
+makes it executable.
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

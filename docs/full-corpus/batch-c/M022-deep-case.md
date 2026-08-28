@@ -112,3 +112,35 @@ Neonatology; maternal-fetal medicine; parent/affected-community review; disabili
 ## 18. Downstream record rule
 
 If executable, both representations must preserve gestational age, clinical capability, absence of major anomaly, and the fact that both resuscitation and comfort care are professionally defensible. Outcome uncertainty must not be sharpened differently between concise and detailed versions.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**Public layer fails action-target alignment.** The dossier's §9 asked the audit to "ensure they are
+policies about the decision rule rather than merely personal treatment preferences." They are
+personal treatment preferences. PMID 39521888 (*J Perinatol*, 2024) is a semi-structured interview
+study of birthing parents who received a periviable prenatal consult, thematically analysed; it
+documents how individual parents balanced vitality against suffering **for their own infant**, and
+reports that none felt the consult information significantly affected their decision. PMID 32332448
+concerns how parents understand neonatal palliation — a finding about counselling quality, not a
+position on what default the service should adopt. Neither source bears on decisional authority or
+treatment defaults, which is the represented action.
+
+**Expert layer is a singleton.** ACOG's Periviable Birth consensus recommends individualized,
+preference-sensitive shared decision-making with stepwise assessment and reassessment. That is one
+architecture. Splitting it would manufacture pluralism the guidance does not contain.
+
+With no defensible public candidate, the represented public pool would be empty or synthetic, and
+construction rule 3 forbids quota-filling it. **Held.** The dossier's instruction that no record be
+created before the audit is now discharged: the audit ran, and its answer is not yet.
+
+Promotion requires new targeted research eliciting parental or public positions on the *policy*
+— presumptive resuscitation, no default, or comfort-focused default — rather than on their own
+case.
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

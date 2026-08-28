@@ -13,19 +13,20 @@ should be reintroduced.
 
 | Disposition | Families |
 |---|---|
-| executable-v1, record present, dossier agrees | 31 |
+| executable-v1, record present, dossier agrees | 32 |
 | executable-v1, record present, dossier judgment predates the audit — **reconcile** | 0 |
-| executable-candidate, dossier supports it but no record transcribed yet | 8 |
+| executable-candidate, dossier supports it but no record transcribed yet | 0 |
 | Featured-only (M001 → F01) | 1 |
 | held — needs additional evidence | 82 |
 | held — research-complete, not executable | 71 |
 | held — as duplicate | 0 |
 | held — candidate-audit target, audit not yet performed | 7 |
+| held — candidate audit performed, not executable | 7 |
 | undeclared — dossier states no judgment | 0 |
 | **Total** | **200** |
 
-Full Corpus records under `data/benchmark/`: **62** across
-**31** executable families, two matched records each.
+Full Corpus records under `data/benchmark/`: **64** across
+**32** executable families, two matched records each.
 
 Every executable family's dossier states the audit result that produced its record. No family
 is executable merely because a record for it exists.
@@ -59,7 +60,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M019 | executable-other-profile | — | 154 | 2 | executable-v1 (record present) |
 | M020 | executable-2x2x2 | — | 157 | 2 | executable-v1 (record present) |
 | M021 | needs-additional-evidence | — | 122 | 0 | held-needs-evidence |
-| M022 | executable-other-profile | — | 115 | 0 | executable-candidate (no record yet) |
+| M022 | audit-complete-not-executable | — | 147 | 0 | held-audited-not-executable |
 | M023 | needs-additional-evidence | — | 116 | 0 | held-needs-evidence |
 | M024 | research-complete-not-executable | — | 126 | 0 | held-not-executable |
 | M025 | declared-canonical-frame | 2 public × 1 expert × 3 framework | 157 | 2 | executable-v1 (record present) |
@@ -73,20 +74,20 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M033 | declared-canonical-frame | 2 public × 1 expert × 3 framework | 158 | 2 | executable-v1 (record present) |
 | M034 | executable-other-profile | — | 139 | 2 | executable-v1 (record present) |
 | M035 | needs-additional-evidence | — | 117 | 0 | held-needs-evidence |
-| M036 | executable-other-profile | — | 113 | 0 | executable-candidate (no record yet) |
+| M036 | audit-complete-not-executable | — | 145 | 0 | held-audited-not-executable |
 | M037 | needs-additional-evidence | — | 115 | 0 | held-needs-evidence |
 | M038 | research-complete-not-executable | — | 118 | 0 | held-not-executable |
 | M039 | needs-additional-evidence | — | 119 | 0 | held-needs-evidence |
 | M040 | needs-additional-evidence | — | 116 | 0 | held-needs-evidence |
 | M041 | executable-other-profile | — | 132 | 2 | executable-v1 (record present) |
 | M042 | executable-other-profile | — | 131 | 2 | executable-v1 (record present) |
-| M043 | executable-other-profile | — | 100 | 0 | executable-candidate (no record yet) |
+| M043 | audit-complete-not-executable | — | 125 | 0 | held-audited-not-executable |
 | M044 | research-complete-not-executable | — | 104 | 0 | held-not-executable |
 | M045 | executable-other-profile | — | 128 | 2 | executable-v1 (record present) |
 | M046 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
 | M047 | needs-additional-evidence | — | 103 | 0 | held-needs-evidence |
 | M048 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
-| M049 | executable-other-profile | — | 105 | 0 | executable-candidate (no record yet) |
+| M049 | audit-complete-not-executable | — | 136 | 0 | held-audited-not-executable |
 | M050 | executable-2x2x2 | — | 137 | 2 | executable-v1 (record present) |
 | M051 | needs-additional-evidence | — | 112 | 0 | held-needs-evidence |
 | M052 | needs-additional-evidence | — | 107 | 0 | held-needs-evidence |
@@ -96,14 +97,14 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M056 | declared-canonical-frame | 2 public × 1 expert × 2 framework | 143 | 2 | executable-v1 (record present) |
 | M057 | research-complete-not-executable | — | 102 | 0 | held-not-executable |
 | M058 | research-complete-not-executable | — | 104 | 0 | held-not-executable |
-| M059 | executable-2x2x2 | — | 108 | 0 | executable-candidate (no record yet) |
+| M059 | audit-complete-not-executable | — | 139 | 0 | held-audited-not-executable |
 | M060 | executable-2x2x2 | — | 131 | 2 | executable-v1 (record present) |
 | M061 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
 | M062 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
 | M063 | research-complete-not-executable | — | 101 | 0 | held-not-executable |
 | M064 | research-complete-not-executable | — | 101 | 0 | held-not-executable |
 | M065 | needs-additional-evidence | — | 104 | 0 | held-needs-evidence |
-| M066 | executable-2x2x2 | — | 101 | 0 | executable-candidate (no record yet) |
+| M066 | audit-complete-not-executable | — | 129 | 0 | held-audited-not-executable |
 | M067 | needs-additional-evidence | — | 101 | 0 | held-needs-evidence |
 | M068 | needs-additional-evidence | — | 101 | 0 | held-needs-evidence |
 | M069 | needs-additional-evidence | — | 100 | 0 | held-needs-evidence |
@@ -206,7 +207,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M166 | needs-additional-evidence | — | 32 | 0 | held-needs-evidence |
 | M167 | needs-additional-evidence | — | 26 | 0 | held-needs-evidence |
 | M168 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
-| M169 | full-corpus-2x1x2-mean-v1 | — | 36 | 0 | executable-candidate (no record yet) |
+| M169 | audit-complete-not-executable | — | 63 | 0 | held-audited-not-executable |
 | M170 | needs-additional-evidence | — | 33 | 0 | held-needs-evidence |
 | M171 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M172 | needs-additional-evidence | — | 26 | 0 | held-needs-evidence |
@@ -226,7 +227,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M186 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M187 | research-complete-not-executable | — | 21 | 0 | held-not-executable |
 | M188 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
-| M189 | executable-2x2x2 | — | 33 | 0 | executable-candidate (no record yet) |
+| M189 | declared-canonical-frame | 2 public × 2 expert × 3 framework | 105 | 2 | executable-v1 (record present) |
 | M190 | research-complete-not-executable | — | 21 | 0 | held-not-executable |
 | M191 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M192 | research-complete-not-executable | — | 21 | 0 | held-not-executable |
