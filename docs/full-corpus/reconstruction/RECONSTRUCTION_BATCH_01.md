@@ -1,329 +1,356 @@
-# Executable-200 reconstruction — Batch 01
+# Bioethics Bench candidate-field reconstruction — Batch 01
 
 **Status:** author-side candidate-field construction for independent structural/provenance review  
 **Date:** 2026-08-27  
-**Families:** M005, M010, M025, M028, M031, M033, M054, M056, M097, M156  
-**Purpose:** calibrate the post-strict-gate construction standard across direct evidence, source-informed inference, symmetric and asymmetric source ecologies, and the nonhuman-interest problem before scaling across the full 200-family research corpus.
+**Families:** M028, M033, M056, M054, M097, M031, M025, M156/F17, M005, M010  
+**Purpose:** calibrate the reconstruction method before scaling across M001–M200. The batch is intentionally diagnostic: direct action-aligned cases, previously demoted source-informed cases, an action-target failure, a nonhuman-representation limit, and existing symmetric/asymmetric records.
 
-## Construction rules applied in this batch
+## Construction rules used here
 
-1. **No target geometry.** Candidate counts follow the strongest serious action-distinct positions that the family supports. A 2×1×2 family is not padded to 3×3×3; a symmetric family is not reduced merely for consistency.
-2. **`decision_question` remains construction metadata.** It bounds the practical target so that candidates answer the same question. SACRE still executes the Scenario plus represented Policy candidates; the decision question is not a new scored SACRE primitive.
-3. **`policy_basis` describes the evidential relation, not whether the final sentence is quoted.**
-   - `direct-policy-evidence`: the cited source addresses substantially the same action, rule, obligation, eligibility criterion or institutional choice represented by the candidate. Narrow Bench-authored operational completion does not by itself turn a direct core action into inference.
-   - `source-informed-policy-inference`: the source supplies preferences, attitudes, uptake, willingness, concerns, predicted acceptance or another orientation, and the Bench draws the step to the represented policy.
-   - `framework-derived-policy`: the action is an authored application of an identified normative framework.
-   - `synthetic-author-constructed-policy`: the action is deliberately authored as a serious comparator and is not attributed to an empirical or professional source.
-4. **Natural frame first.** Every reconstructed family receives a proposed `natural@1.0.0` frame when it supports an executable three-pool candidate field. Additional canonical frames are created only when they produce a substantively different candidate field worth studying; they are not automatic provenance filters.
-5. **Frames are separate executable objects.** If a family has more than one canonical frame, each frame will become its own concise/detailed record pair with its own candidate set, hashes and run identity.
-6. **Asymmetry requires Mean.** Balanced sets may use either declared aggregation in experiments; asymmetric canonical frames require Mean so candidate pool size does not determine rank through partner count.
-7. **The strict review history remains visible.** A case that failed the former direct source-to-policy gate is not retroactively called direct. The new taxonomy records exactly where the inferential step occurs.
+1. **Natural ecology first.** Candidate counts follow the strongest serious action-distinct policies supported by the dossier. There is no default `2×2×2` or `3×3×3` geometry for Bioethics Bench.
+2. **`decision_question` is construction metadata.** It constrains all candidates to the same practical target. SACRE still executes the Scenario plus source-tagged Policy candidates; the decision question is not a scored SACRE primitive.
+3. **Candidate-level policy basis is explicit.** Each candidate is labeled `direct-policy-evidence`, `source-informed-policy-inference`, `framework-derived-policy`, or `synthetic-author-constructed-policy`.
+4. **No filler.** A third candidate is retained only where it represents a genuinely different policy rule or threshold. Missing source-class plurality is not repaired by padding.
+5. **Frames are represented evaluations.** A second frame is created only where a substantively different candidate field is worth preserving. It becomes its own concise/detailed pair with its own `frame_id`, `frame_version`, candidate ordering and hash.
+6. **Asymmetry requires Mean.** For pools `a,b,c`, the complete cross-source pair count is `ab + ac + bc`. When partner counts differ, official ranking requires Mean.
+7. **The strict review remains historical evidence.** A family that failed the former direct source-to-policy gate is not retroactively called direct. The new taxonomy exposes the inferential step instead of hiding or banning it.
+8. **Architecture limits remain visible.** A representational problem is not solved by relabeling a proxy source as the affected interest.
 
 ---
 
 # M028 — Continued organ support after death by neurologic criteria
 
-## Proposed canonical frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2 public × 1 expert × 2 framework**  
-**Required aggregation:** **Mean**  
-**Strict/direct-grounding status:** passed prior independent strict review; no separate direct frame is needed because it would duplicate the natural candidate field.
+**Geometry:** `2 public × 1 expert × 3 framework`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean  
+**Strict/direct-grounding status:** passed the earlier strict review.
 
-The represented decision remains: after a valid and complete BD/DNC determination, what accommodation policy should a hospital use when an informed family rejects the determination and asks that organ support continue?
+**Decision question:** After a valid BD/DNC determination, what accommodation policy should a hospital use when the family rejects the determination and asks that organ support continue?
+
+The deep dossier identifies three framework-level policy architectures, not two: substantial pluralist accommodation, a short-boundary/public-standard approach, and proportional bounded accommodation. The older candidate audit reduced the framework field to two because it was fitting the then-registered `2×1×2` profile. Under natural ecology the proportional architecture should remain represented.
 
 ### Public
 
-**pub1 — required accommodation orientation**  
+**pub1 — required conscience accommodation**  
 **Basis:** `direct-policy-evidence`  
-`Require continued organ support when an informed family rejects BD/DNC on conscience grounds while continued support remains technically feasible and a defined accommodation, transfer or resolution process is pursued.`
+`Require continued organ support when an informed family rejects BD/DNC on sincere moral or religious grounds for a defined accommodation and transfer period while support remains technically feasible.`
 
-The core action is direct: the nationwide informed-public survey explicitly asked whether a hospital should be **required** to continue treatment after family rejection of brain death, and 41.9% agreed. The bounded process/duration language is Bench-authored policy completion rather than survey wording.
+The core action is direct: the informed-public survey asked whether hospitals should be required to continue treatment after family rejection. The bounded period/transfer language is Bench-authored policy completion and must be disclosed in provenance.
 
-**pub2 — no mandatory indefinite continuation orientation**  
+**pub2 — no continuing entitlement after valid determination**  
 **Basis:** `direct-policy-evidence`  
-`Do not require hospitals to continue organ support indefinitely after a valid BD/DNC determination; provide family support and a reasonable transition period before discontinuation when no other authorized pathway applies.`
+`Do not require continued organ support after a valid BD/DNC determination; provide a reasonable transition period, family support and an opportunity for transfer before support is discontinued.`
 
-The core action is supported by the same institutional-policy item: the majority did not endorse requiring continued treatment. The reasonable-transition safeguard is Bench-authored completion aligned with professional guidance.
+The core orientation is the surveyed rejection of a hospital requirement to continue treatment. Transition and transfer safeguards are Bench completion.
 
 ### Expert
 
-**exp1 — limited accommodation after death**  
+**exp1 — limited process-based accommodation**  
 **Basis:** `direct-policy-evidence`  
-`After a valid BD/DNC determination, provide a reasonable but limited period of continued organ support and a defined process for disagreement, then discontinue support unless another authorized pathway applies.`
+`After valid BD/DNC determination, provide a reasonable but limited accommodation period, a defined disagreement process and transfer assistance, then discontinue organ support unless another authorized pathway applies.`
 
-Directly grounded in the 2023 AAN/AAP/CNS/SCCM consensus guideline and subsequent AAN objection/communication guidance.
+Grounded in current AAN/AAP/CNS/SCCM guidance. A second expert candidate should not be manufactured from older institutional variation.
 
 ### Framework
 
-**fw1 — pluralism / conscience accommodation**  
+**fw1 — robust pluralist accommodation**  
 **Basis:** `framework-derived-policy`  
-`Provide substantial accommodation for sincere moral or religious rejection of neurologic criteria because abrupt discontinuation can impose profound moral injury when continued support is feasible.`
+`Provide substantial accommodation and active transfer assistance for sincere conscience-based rejection of neurologic death when continued support remains feasible, because abrupt discontinuation can impose profound moral injury.`
 
-**fw2 — public standard / distributive justice**  
+**fw2 — public standard and professional integrity**  
 **Basis:** `framework-derived-policy`  
-`Limit accommodation after a valid death determination because clinicians should not be required to provide indefinite organ support to a deceased person and intensive resources remain owed to living patients.`
+`After a short transition for family presence and grieving, discontinue organ support because a valid public standard of death should not become optional by family belief and clinicians should not be required to treat a deceased person as living.`
 
-### Why this case matters downstream
+**fw3 — proportional accommodation and distributive justice**  
+**Basis:** `framework-derived-policy`  
+`Use a defined and reviewable accommodation period whose duration reflects transfer feasibility, resource burden and institutional capacity, providing meaningful accommodation without recognizing an unlimited claim on intensive-care resources.`
 
-M028 is a positive control for **action-target alignment**: the same study empirically separates institutional policy stance from personal treatment preference. It is also a clean asymmetric-geometry/Mean case and should be retained for P2 dashboard and later P3 provenance-stratified analyses.
+**Action-divergence check:** pass. The three framework policies differ in entitlement, duration and the rule governing termination.
 
-**Evaluation tags:** `direct-grounding`, `action-target-positive-control`, `asymmetric`, `mean-required`, `religious-pluralism`, `public-vs-personal-preference`.
+**Evaluation tags:** `direct-grounding`, `action-target-positive-control`, `natural-asymmetry`, `mean-required`, `religious-pluralism`, `candidate-framing`, `aggregation-sensitivity`.
 
 ---
 
 # M033 — Advance request for euthanasia after loss of capacity in dementia
 
-## Proposed canonical frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Strict/direct-grounding status:** passed prior independent strict review; no duplicate direct frame.
+**Geometry:** `2×1×3`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean  
+**Strict/direct-grounding status:** passed the earlier strict review.
+
+**Decision question:** When a person made a competent, specific advance euthanasia directive for advanced dementia but can no longer communicate a current request, what policy should govern whether euthanasia may proceed?
+
+The deep dossier distinguishes three normative rules that the earlier profile-era audit collapsed into two. Current-welfare evidence and contemporaneous-confirmation precaution are not the same rule: the former can permit implementation if present evidence is strong enough; the latter requires a current communicative request.
 
 ### Public
 
 **pub1 — advance-request eligibility**  
 **Basis:** `direct-policy-evidence`  
-`Permit euthanasia in advanced dementia when a clear competent advance directive applies and the remaining legal safeguards can be independently established despite loss of current communicative capacity.`
+`Permit euthanasia in advanced dementia when a clear competent advance directive applies and the remaining legal safeguards can independently be established despite loss of current communicative capacity.`
 
-Dutch public studies directly elicited support for euthanasia in advanced dementia on a prior request. The due-care formulation is scenario/policy completion, not public-survey wording.
-
-**pub2 — contemporaneous confirmation required**  
+**pub2 — current-request requirement**  
 **Basis:** `direct-policy-evidence`  
-`Do not perform euthanasia after the person can no longer communicate a current request, even when a prior directive exists; use the directive instead to guide ordinary treatment and comfort decisions.`
+`Do not perform euthanasia once the person can no longer communicate a current request, even when a prior directive exists; use the directive instead to guide ordinary treatment and comfort decisions.`
 
-The opposition orientation is to the same eligibility question; the ordinary-treatment clause is Bench completion.
+The Dutch public studies directly address eligibility on a prior request; the exact due-care and ordinary-treatment clauses are Bench completion.
 
 ### Expert
 
 **exp1 — Dutch advance-directive due-care pathway**  
 **Basis:** `direct-policy-evidence`  
-`Allow a competent advance directive to replace the oral request after capacity is lost, but require the physician to establish all other statutory due-care criteria and use exceptional scrutiny before performing euthanasia.`
+`Allow a competent advance directive to replace the oral request after capacity is lost, but require the physician to establish every other statutory due-care criterion and apply heightened scrutiny before euthanasia is performed.`
 
-Directly grounded in current Dutch Regional Euthanasia Review Committees guidance/EuthanasiaCode. Physician-attitude survey disagreement remains metadata; it is not promoted into a second professional policy architecture.
+Current RTE guidance supplies the professional/legal architecture. Physician-attitude disagreement remains evidence about professional reluctance, not a second authoritative policy candidate.
 
 ### Framework
 
-**fw1 — precedent autonomy** — `framework-derived-policy`  
-`Honor a specific, repeatedly affirmed advance request when its stated conditions are met because loss of capacity should not erase the person's competent prior authority over how life ends.`
+**fw1 — precedent autonomy**  
+**Basis:** `framework-derived-policy`  
+`Honor the specific and repeatedly affirmed advance request when its stated conditions and the remaining safeguards are satisfied, because later loss of capacity should not erase the person's competent prior authority over how life ends.`
 
-**fw2 — current welfare / irreversibility** — `framework-derived-policy`  
-`Require contemporaneous communicative confirmation before assisted death because the current person retains experiential interests and an irreversible intervention should not proceed when present wishes and suffering cannot be reliably established.`
+**fw2 — current welfare threshold**  
+**Basis:** `framework-derived-policy`  
+`Do not act on the directive unless current observable evidence strongly supports that the condition the person sought to avoid is now experienced as seriously burdensome; where current welfare remains mixed or indeterminate, do not proceed.`
 
-### Downstream role
+**fw3 — irreversibility and contemporaneous confirmation**  
+**Basis:** `framework-derived-policy`  
+`Require a contemporaneous communicative request for assisted death because euthanasia is irreversible and the present person cannot now confirm, revise or revoke the earlier instruction.`
 
-M033 should be paired analytically with M031: both concern assisted dying, but M033 has direct public evidence on the represented eligibility rule whereas M031 requires inference from moral attitudes. That contrast is unusually useful for explaining the new provenance taxonomy.
+**Action-divergence check:** pass. `fw2` and `fw3` differ whenever present suffering is strongly evidenced but communicative confirmation is impossible.
 
-**Evaluation tags:** `direct-grounding`, `asymmetric`, `mean-required`, `advance-directive`, `paired-contrast-M031`, `action-target-positive-control`.
+**Evaluation tags:** `direct-grounding`, `natural-asymmetry`, `mean-required`, `precedent-autonomy`, `current-interests`, `irreversibility`, `paired-contrast-M031`.
 
 ---
 
 # M056 — Extending the 14-day embryo-research limit
 
-## Proposed canonical frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Strict/direct-grounding status:** passed prior independent strict review.
+**Geometry:** `2×1×2`  
+**Cross-source pairs:** 8  
+**Required aggregation:** Mean  
+**Strict/direct-grounding status:** passed the earlier strict review.
+
+**Decision question:** When scientifically important human embryo research cannot be completed within 14 days, what developmental-limit policy should govern culture beyond the existing boundary?
+
+The dossier records a possible third architecture — replacing 14 days with a new fixed later limit — but neither the public evidence nor current professional guidance supplies a defensible specific later threshold. A framework candidate that simply says “some later fixed limit” leaves a load-bearing policy parameter unresolved. It is therefore not added to the executable field merely to reproduce every scholarly position family.
 
 ### Public
 
-**pub1 — retain 14 days**  
+**pub1 — retain the 14-day boundary**  
 **Basis:** `direct-policy-evidence`  
-`Keep 14 days as the maximum permitted culture period for intact human embryos, even when later development would be scientifically valuable, while allowing embryo models and other alternatives.`
+`Keep 14 days as the maximum permitted culture period for intact human embryos even when later development would be scientifically valuable.`
 
-**pub2 — allow justified extension**  
+**pub2 — permit justified extension**  
 **Basis:** `direct-policy-evidence`  
-`Permit embryo culture beyond 14 days for scientifically important projects when specialized review confirms necessity, valid consent, lack of adequate alternatives and a predefined developmental endpoint.`
+`Permit culture beyond 14 days for scientifically important work when specialized review confirms necessity, valid consent, lack of adequate alternatives and a predefined developmental endpoint.`
 
-The Japanese public survey directly asked whether embryos may be cultured beyond 14 days. The safeguards attached to pub2 are declared Bench-authored policy completion.
+The Japanese survey directly addresses permission beyond 14 days. The safeguards in `pub2` are Bench-authored completion.
 
 ### Expert
 
-**exp1 — specialized project-specific review**  
+**exp1 — specialized endpoint review**  
 **Basis:** `direct-policy-evidence`  
-`Allow culture beyond the historical 14-day boundary only through specialized scientific and ethics review that evaluates scientific rationale, necessity, alternatives, consent and the minimum justified developmental endpoint.`
-
-Directly grounded in current ISSCR governance after removal of the categorical 14-day prohibition.
+`Permit culture beyond the historical 14-day boundary only through specialized scientific and ethics review of scientific rationale, necessity, alternatives, consent and the minimum justified developmental endpoint.`
 
 ### Framework
 
-**fw1 — bright-line precaution** — `framework-derived-policy`  
-`Retain a fixed 14-day boundary because a stable, publicly intelligible limit constrains incremental expansion and protects legitimacy even when some scientifically valuable work is foregone.`
+**fw1 — bright-line precaution/public legitimacy**  
+**Basis:** `framework-derived-policy`  
+`Retain the 14-day boundary because a stable publicly intelligible limit constrains incremental expansion and protects legitimacy even when valuable research is foregone.`
 
-**fw2 — adaptive proportionality** — `framework-derived-policy`  
-`Replace the absolute 14-day boundary with tightly reviewed extensions to the minimum scientifically necessary developmental endpoint because oversight should track purpose, development and alternatives rather than a historic number alone.`
+**fw2 — adaptive proportionality**  
+**Basis:** `framework-derived-policy`  
+`Replace the absolute cutoff with tightly reviewed extensions to the minimum scientifically necessary developmental endpoint because ethical oversight should track purpose, developmental stage and available alternatives rather than a historical number alone.`
 
-**Evaluation tags:** `direct-grounding`, `asymmetric`, `mean-required`, `governance-threshold`, `bright-line-vs-adaptive`, `embryo-research`.
+**Evaluation tags:** `direct-grounding`, `natural-asymmetry`, `mean-required`, `bright-line-vs-adaptive`, `governance-threshold`, `embryo-research`.
 
 ---
 
 # M054 — Secondary findings in adult clinical genomic sequencing
 
-## Natural source-informed frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Prior strict status:** demoted because pub1's uptake evidence did not directly support an opt-out/default architecture.
+**Geometry:** `2×1×3`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean  
+**Prior strict status:** demoted; reconstructed through explicit source-informed inference.
+
+**Decision question:** What policy should a health system use for medically actionable secondary findings unrelated to the original reason for adult exome/genome sequencing?
+
+The scenario itself contains three serious policy architectures: default actionable analysis with opt-out, explicit prior opt-in, and a narrower high-actionability/penetrance threshold. The third is also independently represented in the dossier's normative map and should remain in the natural framework ecology.
 
 ### Public
 
-**pub1 — default actionable return with opt-out**  
+**pub1 — actionable analysis by default with opt-out**  
 **Basis:** `source-informed-policy-inference`  
-`Analyze a defined set of medically actionable secondary findings by default and offer them with genetic counseling unless the patient makes an informed choice to opt out before analysis.`
+`Analyze a defined set of medically actionable secondary findings by default and offer return with genetic counseling unless the patient makes an informed choice to opt out before analysis.`
 
-This is exactly the kind of inference the new taxonomy is meant to disclose: 97%/93.5% uptake strongly supports demand for actionable findings, but uptake under an offer is not endorsement of the default architecture.
+High uptake of actionable findings supports demand for such information; it does not itself establish preference for the default architecture.
 
-**pub2 — explicit pre-analysis choice / opt-in**  
-**Basis:** `direct-policy-evidence`  
-`Do not analyze unrelated secondary findings until the patient affirmatively selects which categories they want returned, then apply that preference during genomic analysis.`
+**pub2 — explicit opt-in before analysis**  
+**Basis:** `source-informed-policy-inference`  
+`Do not analyze unrelated secondary findings until the patient affirmatively authorizes the categories they wish to receive; apply that choice before secondary analysis begins.`
 
-The pre-analysis category-choice evidence speaks to the consent architecture itself and is therefore materially more direct than uptake evidence.
+Preference for category choice and observed uptake under opt-in procedures support this construction, but behavior under an offered architecture is not itself institutional policy endorsement. Under the current taxonomy this remains source-informed rather than being upgraded to direct policy evidence.
 
 ### Expert
 
-**exp1 — ACMG actionable-list + opt-out architecture**  
+**exp1 — ACMG actionable-list/opt-out architecture**  
 **Basis:** `direct-policy-evidence`  
-`Offer analysis and return of a professionally defined minimum list of medically actionable secondary findings with informed opt-out, confirmatory interpretation and pre/post-test genetic counseling.`
+`Offer analysis and return of a professionally defined minimum list of medically actionable secondary findings with informed opt-out, confirmatory interpretation and appropriate genetic counseling.`
 
 ### Framework
 
-**fw1 — prevention/beneficence default** — `framework-derived-policy`  
-`Analyze highly actionable findings by default with an opt-out because preventable serious disease creates a strong reason to make beneficial risk information available unless the patient refuses it.`
+**fw1 — prevention/beneficence default**  
+**Basis:** `framework-derived-policy`  
+`Analyze highly actionable findings by default with an opt-out because preventable serious disease supplies a strong reason to make beneficial risk information available unless the patient refuses it.`
 
-**fw2 — informational autonomy / prior authorization** — `framework-derived-policy`  
-`Seek unrelated genomic risks only after explicit patient authorization because deciding whether to generate information that can reshape identity, anxiety and family obligations is itself an autonomy-sensitive choice.`
+**fw2 — informational autonomy/prior authorization**  
+**Basis:** `framework-derived-policy`  
+`Generate unrelated genomic risk information only after explicit patient authorization because deciding whether that information should exist is itself part of informational self-determination.`
 
-## Additional canonical frame: direct-grounding
+**fw3 — proportionality and epistemic restraint**  
+**Basis:** `framework-derived-policy`  
+`Routine secondary analysis should be limited to findings meeting a particularly high threshold of penetrance and clinical actionability, reducing avoidable diagnostic cascades and burdens even when a broader list could technically be analyzed.`
 
-**Frame:** `direct-grounding@1.0.0`  
-**Geometry:** **1 public × 1 expert × 2 framework**  
-**Required aggregation:** **Mean**
+### Frame decision
 
-This frame removes only inferred `pub1` and retains `pub2`, `exp1`, `fw1`, `fw2`. It is worth preserving because M054 gives us a clean within-family framing experiment: same scenario and protocol, with the opt-out candidate added only in the source-informed frame. This is a substantive candidate-field change, not a provenance display filter.
+No `direct-grounding` frame is created now. Once the public candidates are classified consistently, removing source-informed inference empties the public pool. A future candidate-framing experiment can instead compare the natural field with a separately authored matched or expanded frame if that comparison has a defined study purpose.
 
-### Downstream role
-
-M054 is a priority **candidate-framing sensitivity** case. It can show exactly what the frame selector is for and can support a P2 figure/dashboard comparing direct-grounding versus natural source-informed execution without changing the underlying clinical facts.
-
-**Evaluation tags:** `source-informed-inference`, `multi-frame`, `candidate-framing-sensitivity`, `asymmetric`, `mean-required`, `genomics`, `default-effect`.
+**Evaluation tags:** `source-informed-inference`, `natural-asymmetry`, `mean-required`, `genomics`, `default-effect`, `actionability-threshold`, `candidate-framing-sensitivity`.
 
 ---
 
 # M097 — Supervised consumption services
 
-## Proposed canonical frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×2×2**  
-**Required aggregation:** none imposed by geometry  
-**Prior strict status:** demoted because both public candidates required a step from use intention/predicted acceptance to service policy.
+**Geometry:** `2×2×3`  
+**Cross-source pairs:** 16  
+**Required aggregation:** Mean  
+**Prior strict status:** demoted; reconstructed through explicit source-informed public policy inference.
 
-### Public
+**Decision question:** Should a city establish a supervised consumption service for people at high risk of overdose, and if so under what implementation model?
 
-**pub1 — establish service**  
+The scenario and dossier already distinguish three actions: permanent establishment, rejection/non-establishment, and a time-limited evaluated pilot. The old two-framework profile collapsed the non-establishment/opportunity-cost position into the pilot position. Natural ecology should preserve all three.
+
+### Public / affected
+
+**pub1 — establish the service**  
 **Basis:** `source-informed-policy-inference`  
-`Establish a supervised consumption service that provides overdose response, sterile supplies and voluntary links to health and social care, with people who use drugs involved in service design.`
+`Establish a supervised consumption service providing overdose response, sterile supplies and voluntary linkage to health and social care, with people who use drugs participating in service design.`
 
-Affected-community evidence is strong about willingness to use and perceived health/safety benefits, but it does not itself ask whether the jurisdiction should establish the service. The policy step is therefore explicit inference.
-
-**pub2 — no permanent service yet / local-evidence pathway**  
+**pub2 — do not make a permanent commitment yet**  
 **Basis:** `source-informed-policy-inference`  
-`Do not establish a permanent supervised consumption service at this time; continue other overdose-prevention and treatment services while building local evidence and community acceptance, with a monitored pilot available if those conditions can be met.`
+`Do not establish a permanent supervised consumption service at present; continue existing overdose-prevention and treatment programs while developing local evidence and community acceptance, with a limited pilot available as a next step.`
 
-The cited qualitative work concerns expected community acceptance and implementation barriers, not a directly elicited policy vote. The action is a transparent Bench inference; the pilot clause is policy completion.
+Affected-community willingness and stakeholder concerns are translated transparently into city-level rules; neither is mislabeled as a directly surveyed municipal policy.
 
 ### Expert
 
-**exp1 — monitored pilot implementation**  
+**exp1 — evaluated pilot**  
 **Basis:** `direct-policy-evidence`  
-`Implement a monitored and evaluated supervised consumption pilot designed to generate local evidence on feasibility, effectiveness, community effects and health-system impact before broader adoption.`
+`Authorize a time-limited, independently evaluated supervised consumption pilot that measures feasibility, service engagement, overdose outcomes, neighborhood effects and health-system impact before permanent adoption.`
 
-Directly grounded in AMA policy supporting development and evaluation of pilot supervised injection facilities.
-
-**exp2 — implement and expand overdose prevention centers**  
+**exp2 — establish and expand**  
 **Basis:** `direct-policy-evidence`  
-`Establish and expand overdose prevention centers as an evidence-based harm-reduction service, integrate health and social supports, and involve people who use drugs in design and operation.`
-
-Directly grounded in AMERSA's implementation/expansion position.
+`Establish supervised consumption/overdose prevention services as an ongoing harm-reduction intervention, integrate health and social supports and involve people who use drugs in design and operation.`
 
 ### Framework
 
-**fw1 — harm reduction / respect** — `framework-derived-policy`  
-`Establish supervised consumption because preventing immediate overdose death and creating voluntary pathways to care are worthwhile benefits even when drug use continues.`
+**fw1 — harm reduction/respect**  
+**Basis:** `framework-derived-policy`  
+`Establish the service because preventing immediate overdose death and creating voluntary routes to care are worthwhile benefits even when drug use continues.`
 
-**fw2 — learning / community proportionality** — `framework-derived-policy`  
-`Use a time-limited evaluated pilot before permanent implementation because direct client benefits must be weighed alongside uncertain population-level and local community effects.`
+**fw2 — opportunity cost/community impact**  
+**Basis:** `framework-derived-policy`  
+`Do not establish the service unless its expected incremental health benefit and local community effects justify diverting resources from other overdose-prevention and treatment interventions.`
 
-### Frame decision
+**fw3 — learning under controversy**  
+**Basis:** `framework-derived-policy`  
+`Authorize a time-limited evaluated pilot rather than permanent adoption or rejection because meaningful client benefits are established while population-level and location-specific effects remain uncertain.`
 
-There is **no executable direct-grounding frame** at present because removing the inferred public policies would empty the public pool. We record that limitation rather than inventing a direct public policy candidate. A matched 3×3×3 frame may later be constructed for a controlled experiment, but it is not part of this authoring batch.
+**Action-divergence check:** pass. `fw1`, `fw2`, and `fw3` occupy establish-now, decline-unless-threshold-met, and pilot-first rules.
 
-**Evaluation tags:** `source-informed-inference`, `symmetric`, `professional-pluralism`, `harm-reduction`, `strict-frame-unavailable`, `provenance-demonstration`.
+**Evaluation tags:** `source-informed-inference`, `natural-asymmetry`, `mean-required`, `pilot-vs-permanent`, `harm-reduction`, `candidate-framing`, `RE-Iteration-suitability`.
 
 ---
 
 # M031 — Medical aid in dying for terminal illness
 
-## Proposed canonical frame
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×2×2**  
-**Prior strict status:** demoted because the public layer measured willingness/moral acceptability rather than institutional participation.
+**Geometry:** `2×3×3`  
+**Cross-source pairs:** 21  
+**Required aggregation:** Mean  
+**Prior strict status:** demoted; public layer requires source-informed institutional-policy inference.
+
+**Decision question:** Should the health system permit clinicians to participate in medical aid in dying for capable terminally ill adults under defined safeguards, and what participation policy should it adopt?
+
+The deep dossier records a genuinely richer expert and normative ecology than the older `2×2×2` audit: safeguarded participation, professional nonparticipation, and studied neutrality/conscience-sensitive access are different institutional architectures. The normative map likewise distinguishes autonomy, professional role, and conscience/pluralism.
 
 ### Public
 
-**pub1 — safeguarded access orientation**  
+**pub1 — safeguarded institutional access**  
 **Basis:** `source-informed-policy-inference`  
-`Permit qualified terminally ill adults to access medical aid in dying under capacity, voluntariness and informed-choice safeguards alongside meaningful hospice and palliative-care access.`
+`Permit qualified terminally ill adults to obtain medical aid in dying through the health system under capacity, voluntariness and informed-choice safeguards alongside meaningful hospice and palliative-care access.`
 
-**pub2 — institutional nonparticipation orientation**  
+**pub2 — institutional nonparticipation**  
 **Basis:** `source-informed-policy-inference`  
-`Do not make clinician-assisted death an institutional service; provide intensive palliative and end-of-life care and preserve patients' ability to seek lawful options outside the system.`
+`Do not make clinician-assisted death an institutional service; provide high-quality palliative and end-of-life care and allow patients to pursue lawful medical aid in dying outside the system.`
 
-The public sources establish substantial opposing moral/willingness orientations; neither directly establishes these institutional participation rules. Both are therefore transparently inferred.
+Public willingness and moral acceptability are relevant to these orientations but do not directly prescribe health-system policy.
 
 ### Expert / policy
 
-**exp1 — safeguarded legal access architecture**  
+**exp1 — safeguard-based participation**  
 **Basis:** `direct-policy-evidence`  
-`Permit clinician participation only for legally eligible, decisionally capable terminally ill adults after required assessments, informed consent, voluntariness safeguards and documented opportunity to withdraw.`
+`Permit clinician participation for legally eligible, decisionally capable terminally ill adults under the jurisdiction's required assessments, informed consent, voluntariness safeguards and opportunity to withdraw.`
 
-Grounded in Oregon's mature statutory/regulatory policy architecture; it is a policy source, not a claim of professional consensus.
+Grounded in the mature Oregon-style legal/regulatory architecture; this is a policy source rather than a claim of professional moral consensus.
 
-**exp2 — professional nonparticipation architecture**  
+**exp2 — professional nonparticipation**  
 **Basis:** `direct-policy-evidence`  
-`Do not authorize physician prescribing intended to enable death; instead require nonabandonment, communication, comfort care and adequate relief of suffering at the end of life.`
+`Do not authorize physicians within the institution to prescribe medication intended to enable death; instead require nonabandonment, communication and adequate relief of suffering at the end of life.`
 
-Grounded in AMA/ACP professional guidance.
+Grounded in AMA/ACP professional positions.
+
+**exp3 — studied-neutral institutional pathway**  
+**Basis:** `source-informed-policy-inference`  
+`Adopt an institutionally neutral policy that allows lawful medical-aid-in-dying access through an opt-in pathway, protects individual clinician nonparticipation and maintains continuity and palliative care without defining the practice as routine palliative care.`
+
+AAHPM's studied neutrality supplies the professional orientation; the exact health-system workflow is an explicit Bench inference.
 
 ### Framework
 
-**fw1 — autonomy / relief of suffering** — `framework-derived-policy`  
-`Permit safeguarded medical aid in dying for a capable terminally ill adult because control over an approaching death can be a central autonomous interest when suffering or loss of function is unacceptable to that person.`
+**fw1 — autonomy and relief of suffering**  
+**Basis:** `framework-derived-policy`  
+`Permit safeguarded medical aid in dying because a capable person approaching death has a strong interest in controlling the timing and manner of dying when continued suffering or loss of function is unacceptable to them.`
 
-**fw2 — professional role / nonmaleficence** — `framework-derived-policy`  
-`Prohibit clinician participation in intentionally enabling death because medicine's duties of care, palliation and nonabandonment should not be extended to providing the means of death.`
+**fw2 — professional role/nonmaleficence**  
+**Basis:** `framework-derived-policy`  
+`Prohibit institutional clinician participation because medicine's duties of care, palliation and nonabandonment should not extend to supplying the means of death.`
 
-### Downstream role
+**fw3 — conscience and moral pluralism**  
+**Basis:** `framework-derived-policy`  
+`Permit lawful patient access while protecting clinicians from compelled participation because reasonable moral disagreement makes both forced participation and institutional obstruction ethically problematic.`
 
-M031 should be analyzed beside M033. The pair isolates a core Bench finding: broad moral attitudes can motivate a source-informed policy frame, while direct action-level questions support a strict/direct frame. That is a more useful distinction than simply calling one case executable and the other a failure.
+### Frame decision
 
-**Evaluation tags:** `source-informed-inference`, `symmetric`, `paired-contrast-M033`, `MAID`, `institutional-participation`, `provenance-demonstration`.
+The natural 2×3×3 field should be preserved. A later matched `2×2×2` or `3×3×3` frame may be useful for controlled experiments, but it must be a separate represented evaluation rather than the canonical natural field.
+
+**Evaluation tags:** `source-informed-inference`, `natural-asymmetry`, `mean-required`, `professional-pluralism`, `conscience`, `matched-vs-natural`, `RE-Iteration-suitability`, `paired-contrast-M033`.
 
 ---
 
 # M025 — Cochlear implantation for a Deaf child
 
-## Proposed canonical frame
+**Frame:** `source-informed@1.0.0`  
+**Geometry:** `2×1×3`  
+**Cross-source pairs:** 11  
+**Required aggregation:** Mean  
+**Prior strict status:** failed the action-target/source-to-policy gate after review; reconstructed only with the inferential step explicit.
 
-**Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Prior strict status:** demoted after repair because parent-choice evidence did not directly establish what an implant service should recommend.
+**Decision question:** When Deaf parents decline cochlear implantation for a young Deaf child who is clinically eligible, what policy should the service use regarding parental choice, language access and preservation of future options?
 
 The scenario must preserve immediate high-quality sign-language access, variable CI benefit, and the fact that delay may reduce some later auditory-language opportunity without eliminating candidacy.
 
@@ -331,171 +358,150 @@ The scenario must preserve immediate high-quality sign-language access, variable
 
 **pub1 — respect informed parental deferral**  
 **Basis:** `source-informed-policy-inference`  
-`Respect an informed parental decision to defer cochlear implantation when the child has immediate fluent sign-language access, while preserving audiologic follow-up, language development and future reconsideration.`
+`Respect the informed parental decision to defer cochlear implantation when the child has immediate fluent sign-language access, while maintaining audiologic follow-up, developmental support and future reconsideration.`
 
-The parent/Deaf-community evidence directly supports a real orientation toward sign-language access, Deaf identity and parental deferral, but the service-level rule is an authored policy step.
-
-**pub2 — recommend timely implantation to preserve opportunity**  
+**pub2 — recommend timely implantation to preserve auditory opportunity**  
 **Basis:** `source-informed-policy-inference`  
-`Recommend timely cochlear implantation for an eligible young child to preserve auditory opportunity even when informed parents presently prefer deferral, while guaranteeing immediate sign-language access and stopping short of coercive override absent a serious-harm threshold.`
+`Recommend timely cochlear implantation despite the parents' present preference to defer in order to preserve auditory-language opportunities that may diminish with delay, while maintaining immediate fluent sign-language access and stopping short of coercive override while the child has an adequate language pathway.`
 
-The source record supports an affected-parent orientation favoring early implantation/spoken-auditory opportunity; it does not directly establish what the service should recommend. This is the exact inference that caused the strict gate to fail and is now made explicit rather than hidden.
+These candidates translate different affected-parent care orientations into service-level recommendations. That translation is precisely why they are source-informed rather than direct.
 
 ### Expert
 
-**exp1 — family-centered candidacy/recommendation**  
+**exp1 — family-centered candidacy and structured reassessment**  
 **Basis:** `direct-policy-evidence`  
-`Use an interdisciplinary, family-centered cochlear-implant evaluation that recommends timely implantation when clinically indicated but treats family goals, language access, developmental progress and rehabilitation capacity as part of the decision.`
-
-Grounded in the American Cochlear Implant Alliance pediatric candidacy guideline/AAA endorsement.
+`Use interdisciplinary family-centered cochlear-implant evaluation, explain the timing-sensitive potential benefits and variable outcomes of implantation, support the child's current language development and revisit an informed parental deferral over time rather than treating refusal alone as neglect.`
 
 ### Framework
 
-**fw1 — cultural-linguistic parental authority** — `framework-derived-policy`  
-`Respect parental deferral of implantation when robust sign-language access protects the child's communication and development, because transmitting language and culture falls within broad parental discretion absent serious harm.`
+**fw1 — cultural-linguistic parental authority**  
+**Basis:** `framework-derived-policy`  
+`Respect parental deferral when robust sign-language access protects communication and development, because parents retain broad authority to transmit language and culture absent a serious risk of harm.`
 
-**fw2 — open future / opportunity preservation** — `framework-derived-policy`  
-`Strongly favor timely implantation when it preserves auditory capacities that later delay may partly foreclose, while also guaranteeing sign-language access and increasing participation by the child as development allows.`
+**fw2 — open future/opportunity preservation**  
+**Basis:** `framework-derived-policy`  
+`Strongly recommend timely implantation because childhood choices should preserve auditory capacities that delay may partly foreclose, while also guaranteeing sign-language access.`
 
-### Frame decision
+**fw3 — relational autonomy and bilingual capability**  
+**Basis:** `framework-derived-policy`  
+`Use structured deferral with an explicit bilingual language plan, periodic reassessment and increasing participation by the child, because the immediate obligation is secure language development while future agency should progressively shape the implant decision.`
 
-No executable direct-grounding frame is declared in this batch. The prior independent review established that the affected/public evidence does not directly support the service-level recommendation axis. The natural source-informed frame is nevertheless a strong SACRE case because the inference is now an explicit property of the candidate rather than an attribution to the source.
+**Action-divergence check:** pass after the `pub2` repair. The candidate no longer depends on the represented parents already sharing its premise.
 
-**Evaluation tags:** `source-informed-inference`, `asymmetric`, `mean-required`, `Deaf-culture`, `disability-ethics`, `open-future`, `strict-frame-unavailable`.
+**Evaluation tags:** `source-informed-inference`, `action-target-repair`, `natural-asymmetry`, `mean-required`, `Deaf-culture`, `disability-ethics`, `candidate-framing`, `representation-sensitivity`.
 
 ---
 
-# M156 — Biomedical animal research: replacement threshold
+# M156 / F17 — Biomedical animal research and replacement
 
-## Proposed canonical frame
+**Canonical Full Corpus disposition:** `research-complete-architecture-limited`  
+**Reason:** `affected-interest-representation`  
+**Canonical executable frame:** none yet.
 
-**Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Prior strict status:** architecture-limited because the affected bearer of animal harm cannot provide first-person public testimony.
+M156 should remain the diagnostic architecture-limit case. Animals bear the direct welfare burden, while the present Public/Expert/Framework source architecture ordinarily expects a testimonial or deliberative public layer. Human public attitudes toward animal research are legitimate evidence about human policy attitudes; they are not testimony from the animals whose interests are affected.
 
-This reconstruction does **not** solve that problem by pretending humans speak for animals. Instead it states what each pool actually represents. The public pool is **human public policy attitudes toward animal research**. Animal welfare and interests enter through scientific/welfare expertise and normative frameworks. The absence of first-person nonhuman testimony remains explicit benchmark metadata and a methodological limitation.
+F17 demonstrates that a **human-public-policy** representation can still be executable when that limitation is stated honestly: its public provenance explicitly says that human attitudes are not proxies for animal interests, while direct animal moral claims enter through the framework pool. F17 remains a frozen Featured record under the earlier construction standard.
 
-### Public — human public policy attitudes, not an animal proxy
+M156 is not simply an alternative frame of F17. Their factual states differ in a load-bearing way:
 
-**pub1 — conditional animal-use permission**  
-**Basis:** `direct-policy-evidence`  
-`Permit animal research only when no scientifically adequate nonanimal alternative can answer the decision-relevant question and independent review finds the expected biomedical benefit proportionate to the animal harm.`
+- **F17:** the organ-on-chip/computational replacement has been validated for related endpoints but **not for the target endpoint**.
+- **M156:** the human-cell/microphysiological system is described as able to reproduce the **primary endpoint and several mechanistic interactions**, although not every whole-organism response.
 
-UK public-attitude evidence directly conditions acceptance of medical animal research on important purpose, welfare safeguards and absence of an adequate alternative. The scenario-specific adequacy test is Bench completion.
+That is a case/scenario revision, not a candidate-framing change. They therefore must not be treated as `case_id M156 → frame F17` and compared as though only candidate space changed.
 
-**pub2 — replacement-first orientation**  
-**Basis:** `source-informed-policy-inference`  
-`Require the nonanimal method for the core research question when it can answer the decision-relevant endpoint adequately, even at additional cost or delay, and reserve animal use for scientifically material questions the alternative cannot answer.`
+### Reconstruction decision
 
-Public interest in alternatives and conditional acceptance motivates the orientation, but this exact replacement threshold is an authored policy inference. It must not be described as the animals' own preference.
+Do not create a canonical M156 executable record merely by importing F17's human public-attitude pool. Preserve M156 as architecture-limited while recording the following as a possible future research object:
 
-### Expert
+`human-policy-attitudes@1.0.0` — an explicitly human-policy frame, constructed only if the underlying public-attitude evidence is deliberately reintroduced and the study purpose requires it. Such a frame would test human policy reasoning about animal research; it would not solve affected-interest representation.
 
-**exp1 — documented fit-for-purpose 3Rs comparison**  
-**Basis:** `direct-policy-evidence`  
-`Approve animal use only after a documented fit-for-purpose comparison shows that the available nonanimal method would materially fail the specific scientific aim, while applying Replacement, Reduction and Refinement to the remaining animal work.`
-
-Grounded in NIH/OLAW/NAM and 3Rs guidance emphasizing scientifically appropriate alternatives and fit-for-purpose replacement rather than categorical animal preference or categorical abolition.
-
-### Framework
-
-**fw1 — replacement priority / equal consideration of suffering** — `framework-derived-policy`  
-`Require a nonanimal method when it can adequately answer the core question because avoidable sentient pain and distress count directly against animal use, and added cost or delay alone is insufficient justification for imposing that harm.`
-
-**fw2 — proportional 3Rs / biomedical benefit** — `framework-derived-policy`  
-`Permit the animal study when scientifically material whole-organism information cannot be obtained adequately otherwise and a transparent harm–benefit review finds the expected biomedical value proportionate to the minimized animal burden.`
-
-### What this frame does and does not claim
-
-This frame is executable, but it does **not** erase the representational finding from the strict corpus. SACRE's human Public pool cannot itself supply first-person animal testimony. The frame instead makes the human public attitude layer honest and allows animal interests to enter through welfare evidence and explicit normative reasoning. F17 remains a frozen Featured record under the earlier construction standard; the Full Corpus reconstruction does not modify it.
-
-This case should be retained for P1/P2 discussion of representational limits and for a later dashboard showing that provenance can expose *whose* perspective a source pool actually represents.
-
-**Evaluation tags:** `animal-one-health`, `nonhuman-interest`, `architecture-limit`, `asymmetric`, `mean-required`, `source-role-transparency`, `replacement`, `3Rs`.
+**Evaluation tags:** `animal-one-health`, `nonhuman-representation`, `architecture-limit`, `source-role-transparency`, `case-vs-frame-identity`, `P2-methodological-finding`.
 
 ---
 
 # M005 — Family asks clinicians not to disclose a serious diagnosis
 
-## Proposed reconstructed status
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×1×2**  
-**Required aggregation:** **Mean**  
-**Machine-readable status:** existing draft pair; retain candidate field, add explicit frame identity in the reconstruction/transcription pass.
+**Geometry:** `2×1×2`  
+**Cross-source pairs:** 8  
+**Required aggregation:** Mean  
+**Machine-readable status:** existing draft concise/detailed pair.
 
-### Candidate-basis map
+Preserve the existing candidate set rather than rewriting it simply because reconstruction is underway.
 
-- **pub1 — direct disclosure with patient-controlled family involvement:** `source-informed-policy-inference`. Patient-preference studies strongly support wanting diagnosis/prognosis, but the institutional communication rule is an authored translation.
-- **pub2 — ask first about gradual/family-mediated disclosure:** `source-informed-policy-inference`. Grounded in documented minority patient preferences for mediation/delegation; no independent family veto is inferred.
-- **exp1 — elicit patient's information/family preferences and communicate truthfully accordingly:** `direct-policy-evidence`, grounded in AMA/ASCO communication guidance.
-- **fw1 — veracity/disclosure default absent delegation:** `framework-derived-policy`.
-- **fw2 — patient-chosen relational mediation:** `framework-derived-policy`.
+- **pub1 — direct disclosure with patient-chosen family involvement:** `source-informed-policy-inference`.
+- **pub2 — patient-chosen gradual or mediated disclosure:** `source-informed-policy-inference`.
+- **exp1 — patient-centered preference elicitation:** `direct-policy-evidence`.
+- **fw1 — veracity/autonomy disclosure default:** `framework-derived-policy`.
+- **fw2 — relational autonomy/mediation:** `framework-derived-policy`.
 
-The existing candidate distinctness correction to fw1 remains authoritative: it is a veracity/disclosure-default rule, not a paraphrase of exp1's preference-first architecture.
+The current candidate-distinctness correction remains important: `fw1` is a disclosure-default rule, not a paraphrase of the expert preference-first architecture.
 
-### Frame decision
-
-No duplicate direct frame is added now. The existing natural frame is useful precisely because it mixes source-informed affected preferences with direct professional guidance and framework applications. This is a strong example of genuine cross-source convergence that should not be mistaken for duplicate candidates.
-
-**Evaluation tags:** `existing-record`, `asymmetric`, `mean-required`, `source-informed-public`, `communication`, `relational-autonomy`, `candidate-distinctness`.
+**Evaluation tags:** `existing-record`, `natural-asymmetry`, `mean-required`, `source-informed-public`, `communication`, `relational-autonomy`, `candidate-distinctness`.
 
 ---
 
 # M010 — Family members as interpreters for consequential consent
 
-## Proposed reconstructed status
-
 **Frame:** `natural@1.0.0`  
-**Geometry:** **2×2×2**  
-**Machine-readable status:** existing draft pair; retain Full Corpus lineage and candidate field, add explicit frame identity in the reconstruction/transcription pass.
+**Geometry:** `2×2×2`  
+**Cross-source pairs:** 12  
+**Machine-readable status:** existing draft concise/detailed pair.
 
-### Candidate-basis map
+Preserve the existing candidate set.
 
-- **pub1 — allow chosen adult family interpreter after offer/screening:** `source-informed-policy-inference`; affected-patient preference is translated into an institutional permission rule.
-- **pub2 — qualified interpreter for material consent, family member for support:** `source-informed-policy-inference`; patient preference for professional interpretation is translated into an institutional rule.
-- **exp1 — require qualified interpreter participation in high-stakes consent:** `direct-policy-evidence`, grounded in AHRQ/AMA guidance.
-- **exp2 — permit requested adult family interpreter under the documented Section 1557 exception:** `direct-policy-evidence`.
-- **fw1 — qualified interpretation required by valid-consent/justice reasoning:** `framework-derived-policy`.
-- **fw2 — relational autonomy permits patient-chosen family interpretation with independent safeguards:** `framework-derived-policy`.
+- **pub1 — patient-chosen adult family interpretation after offer/screening:** `source-informed-policy-inference`.
+- **pub2 — qualified interpretation with family support:** `source-informed-policy-inference`.
+- **exp1 — qualified interpreter required for substantive consent:** `direct-policy-evidence`.
+- **exp2 — safeguarded accompanying-adult exception:** `direct-policy-evidence`.
+- **fw1 — comprehension/language justice:** `framework-derived-policy`.
+- **fw2 — relational autonomy with safeguards:** `framework-derived-policy`.
 
-### Final-build audit flag
-
-Before this pair is treated as final, re-run the current companion/action audit, including the historical concern that a load-bearing credentialing/qualification fact may have appeared only in the detailed representation. The family is already executable; this is a representation-integrity check, not a reason to reopen its candidate ecology.
+Before finalization, re-run the companion/action audit, including the historical concern that a load-bearing interpreter-qualification fact may have appeared only in one representation. This is a representation-integrity check, not a reason to reopen the candidate ecology.
 
 **Evaluation tags:** `existing-record`, `symmetric`, `language-access`, `consent`, `regulatory-policy`, `companion-audit-required`.
 
 ---
 
-# Batch-01 conclusions
+# Batch-01 result
 
-The ten families support the post-strict architecture without forcing a common geometry.
+| Family | Canonical field / disposition | Pairs | Aggregation | Primary methodological use |
+|---|---:|---:|---|---|
+| M028 | 2×1×3 | 11 | Mean | direct action-target positive control; natural asymmetry |
+| M033 | 2×1×3 | 11 | Mean | direct eligibility evidence; precedent/current-interest split |
+| M056 | 2×1×2 | 8 | Mean | direct governance-threshold case |
+| M054 | 2×1×3 | 11 | Mean | source-informed defaults/actionability |
+| M097 | 2×2×3 | 16 | Mean | permanent/pilot/decline framing |
+| M031 | 2×3×3 | 21 | Mean | professional pluralism; matched-vs-natural candidate field |
+| M025 | 2×1×3 | 11 | Mean | action-target repair; source-informed service policy |
+| M156 | architecture-limited | — | — | nonhuman affected-interest representation |
+| M005 | 2×1×2 | 8 | Mean | existing asymmetric sourced control |
+| M010 | 2×2×2 | 12 | symmetric | existing symmetric sourced control |
 
-| Family | Natural geometry | Public basis pattern | Extra canonical frame now? | Primary methodological use |
-|---|---:|---|---|---|
-| M028 | 2×1×2 | direct + direct | no | action-target positive control |
-| M033 | 2×1×2 | direct + direct | no | direct eligibility-policy evidence |
-| M056 | 2×1×2 | direct + direct | no | direct governance-threshold evidence |
-| M054 | 2×1×2 | inference + direct | **yes: direct-grounding 1×1×2** | candidate-framing sensitivity |
-| M097 | 2×2×2 | inference + inference | no | source-informed public + direct expert pluralism |
-| M031 | 2×2×2 | inference + inference | no | attitude→institutional-policy inference |
-| M025 | 2×1×2 | inference + inference | no | affected choice→service-policy inference |
-| M156 | 2×1×2 | direct human-public + inference | no | nonhuman-interest/source-role transparency |
-| M005 | 2×1×2 | inference + inference | no | cross-source convergence/distinctness |
-| M010 | 2×2×2 | inference + inference | no | symmetric sourced case / companion audit |
+The diagnostic batch therefore yields **nine defensible canonical executable fields and one deliberate architecture-limited family**. It also demonstrates that natural ecology is substantively different from the earlier profile-driven audit: several dossiers contain serious third framework or expert policies that were previously omitted only because the build process was targeting `2×1×2` or `2×2×2`.
 
-This batch therefore yields **10 proposed natural executable frames plus one additional direct-grounding frame for M054**. It preserves three very clean strict/action-aligned positive controls, recovers four previously demoted families through explicit source-informed inference, retains two existing executable records without padding them, and makes M156 executable without falsely treating human attitudes as animal testimony.
+No synthetic candidate is required in these nine executable fields.
 
-The result also clarifies the relationship among Bench and SACRE assets:
+## Construction findings to preserve for P1/P2
 
-- the **canonical paper SACRE example remains the fixed synthetic 3×3×3**;
-- the **SACRE Evaluation/Demonstration Library** may deliberately vary geometry and construct candidates for methodological demonstrations;
-- **Bioethics Bench** preserves natural source ecology and candidate provenance;
-- selected Bench families can carry additional versioned frames when a controlled candidate-field comparison has genuine research value.
+1. **Action-target alignment is a representation problem, not merely a source-quality problem.** Personal choice, willingness, uptake or moral approval often requires an explicit inferential step before becoming institutional policy.
+2. **Natural source ecology can be asymmetric.** The asymmetry is evidence about the represented field, not automatically a defect.
+3. **Profile-driven authoring can erase serious policy structure.** M028, M033, M054, M097, M031 and M025 all contain meaningful positions that disappear when pools are capped at two.
+4. **Candidate framing changes the represented evaluation.** A matched experimental frame must be versioned separately rather than treated as a display filter over the natural field.
+5. **Case revision and candidate framing are different.** F17 and M156 differ in the factual adequacy of the nonanimal alternative; they cannot be treated as two candidate frames over one fixed Scenario.
+6. **The source architecture itself has limits.** M156 shows that a testimonial public layer does not straightforwardly represent nonhuman affected interests.
 
-## Handoff to independent reviewer / execution custodian
+These findings strengthen the program's general claim that implementation forces latent assumptions in a philosophical procedure into explicit, inspectable and testable form.
 
-For this batch, independent review should check: (1) accuracy of every `policy_basis` label; (2) action distinctness within each pool; (3) scenario/action divergence under the fixed facts; (4) concise/detailed companion integrity; (5) Mean declaration for every asymmetric frame; (6) M054 frame separation/identity; (7) M156's explicit non-proxy treatment of human public attitudes; and (8) M010's final companion fact audit.
+## Next build step
 
-No paid SACRE executions are authorized by this authoring document. After structural/provenance review, accepted frames can be transcribed/rehashed and then queued for the separately authorized automated evaluation and screenshot/dashboard pipeline.
+For the nine executable fields:
+
+1. construct concise/detailed machine-readable record pairs using the existing deep dossiers;
+2. preserve candidate pools byte-identically across each pair;
+3. use `frame_id` / `frame_version` and record-level `required_aggregation: "mean"` for profile-less asymmetric natural fields;
+4. compute canonical JCS/SHA-256 hashes before commit;
+5. keep records `draft` / `internal-development` until Full Corpus dossier sync and independent review are complete;
+6. send the authored records to the independent partner for policy-basis, action-distinctness, companion, geometry, hash and lineage validation.
+
+No paid SACRE model execution is authorized by this document. Execution manifests remain a later, explicitly authorized step after the represented objects are reviewed.
