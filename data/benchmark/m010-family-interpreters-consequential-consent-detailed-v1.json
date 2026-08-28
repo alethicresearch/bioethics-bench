@@ -12,7 +12,7 @@
     ],
     "notes": "Concise and detailed are controlled companion representations of one case family. They share the decision question, stipulations and executable candidate set exactly; only scenario detail differs."
   },
-  "benchmark_profile": "featured-core-2x2x2-v1",
+  "benchmark_profile": "full-corpus-2x2x2-v1",
   "jurisdiction_context": null,
   "as_of_date": "2026-08-27",
   "stipulations": [
@@ -253,5 +253,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:56bd17cd8c4d11f9df51a530b16c7c923bf38cdf07f276477e4e9bf6ac17257b"
+  "content_hash": "sha256:2823cf13afb763110dd6318e6bf226b45e430dbaf079f858f340ec99fcfce318"
 }

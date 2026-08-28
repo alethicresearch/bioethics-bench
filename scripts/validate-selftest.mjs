@@ -198,6 +198,20 @@ probeProfileRegistry(
   /require required_aggregation "mean"/,
 );
 
+probeProfileRegistry(
+  'a profile that declares no construction lineage',
+  (registry) => { delete registry.profiles['full-corpus-2x2x2-v1'].lineage; },
+  /lineage must be one of \[featured, full-corpus\]/,
+);
+
+probe('a Full Corpus record carrying a Featured-lineage profile',
+  [baseRecord({
+    representation: undefined,
+    collection: 'benchmark',
+    benchmark_profile: 'featured-core-2x2x2-v1',
+  })],
+  /collection "benchmark" is full-corpus lineage, but benchmark_profile "featured-core-2x2x2-v1" is featured lineage/);
+
 // ── companion invariants, driven by the profile, on a development family ────────
 
 const conciseBase = (overrides = {}) => baseRecord(overrides);

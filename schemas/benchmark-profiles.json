@@ -1,8 +1,26 @@
 {
-  "$comment": "Named executable profiles. A record's `benchmark_profile` says what shape its candidate set has; this file says what that shape is, so the validator can check it. Registering a profile here is what makes it checkable — a record declaring a profile that is not registered fails validation rather than passing unchecked. Asymmetric profiles must also declare the aggregation procedure required to avoid pool-shape bias.",
+  "$comment": "Named executable profiles. A record's `benchmark_profile` says what shape its candidate set has; this file says what that shape is, so the validator can check it. Registering a profile here is what makes it checkable — a record declaring a profile that is not registered fails validation rather than passing unchecked. Asymmetric profiles must also declare the aggregation procedure required to avoid pool-shape bias. Every profile also declares a `lineage`, and `collection_lineage` below says which lineage each corpus collection belongs to: Featured v1 and the Full Corpus executable subset are built and released as separate manifests, so a record may not carry a profile from the other lineage.",
+  "collection_lineage": {
+    "$comment": "Collections whose records are lineage-bound. A record in one of these must declare a profile of the matching lineage. Collections absent here — development, tutorial, stress-tests — are working collections and are unconstrained.",
+    "featured": "featured",
+    "benchmark": "full-corpus"
+  },
   "profiles": {
     "featured-core-2x2x2-v1": {
       "description": "Two public, two expert and two framework candidates: the Featured v1 pilot standard. Yields 12 unordered cross-source QCCS pairs per complete execution.",
+      "lineage": "featured",
+      "pools": {
+        "public": ["pub1", "pub2"],
+        "expert": ["exp1", "exp2"],
+        "framework": ["fw1", "fw2"]
+      },
+      "cross_source_pairs": 12,
+      "representations": ["concise", "detailed"],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-2x2x2-v1": {
+      "description": "Full Corpus profile with the symmetric two-public, two-expert and two-framework shape. The same candidate geometry as the Featured pilot standard, but Full Corpus lineage: a Full Corpus family whose evidence supports two candidates in every pool declares this rather than the Featured profile.",
+      "lineage": "full-corpus",
       "pools": {
         "public": ["pub1", "pub2"],
         "expert": ["exp1", "exp2"],
@@ -14,6 +32,7 @@
     },
     "full-corpus-1x2x2-mean-v1": {
       "description": "Evidence-qualified Full Corpus profile with one public, two expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
       "pools": {
         "public": ["pub1"],
         "expert": ["exp1", "exp2"],
@@ -26,6 +45,7 @@
     },
     "full-corpus-2x1x2-mean-v1": {
       "description": "Evidence-qualified Full Corpus profile with two public, one expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
       "pools": {
         "public": ["pub1", "pub2"],
         "expert": ["exp1"],

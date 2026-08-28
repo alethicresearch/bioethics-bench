@@ -43,7 +43,13 @@ function candidateSignature(record) {
   return JSON.stringify(record.candidate_pools || null);
 }
 
-const PROFILES = JSON.parse(readFileSync(join(root, 'schemas/benchmark-profiles.json'), 'utf8')).profiles;
+const PROFILE_REGISTRY = JSON.parse(readFileSync(join(root, 'schemas/benchmark-profiles.json'), 'utf8'));
+const PROFILES = PROFILE_REGISTRY.profiles;
+/** Collections whose records are bound to one construction lineage; see the registry's $comment. */
+const COLLECTION_LINEAGE = Object.fromEntries(
+  Object.entries(PROFILE_REGISTRY.collection_lineage || {}).filter(([k]) => !k.startsWith('$')),
+);
+const KNOWN_LINEAGES = new Set(Object.values(COLLECTION_LINEAGE));
 const EVIDENTIAL_COLLECTIONS = new Set(['featured', 'development', 'stress-test', 'benchmark']);
 const POOLS = ['public', 'expert', 'framework'];
 
@@ -83,6 +89,13 @@ function profileRegistryProblems(profiles) {
       issues.push(
         `benchmark profile ${name}: cross_source_pairs must equal the pool-derived count ${structure.pairCount}; `
         + `found ${profile.cross_source_pairs ?? 'missing'}`,
+      );
+    }
+    if (!profile.lineage || !KNOWN_LINEAGES.has(profile.lineage)) {
+      issues.push(
+        `benchmark profile ${name}: lineage must be one of [${[...KNOWN_LINEAGES].sort().join(', ')}]; `
+        + `found ${profile.lineage ?? 'missing'}. Featured v1 and the Full Corpus executable subset are `
+        + 'released as separate manifests, so every profile has to say which one it belongs to.',
       );
     }
     if (profile.required_aggregation && !['sum', 'mean'].includes(profile.required_aggregation)) {
@@ -214,6 +227,15 @@ for (const file of files) {
               + `[${expected.join(', ')}]; found [${ids.join(', ') || 'none'}]`,
             );
           }
+        }
+        const expectedLineage = COLLECTION_LINEAGE[record.collection];
+        if (expectedLineage && profile.lineage && profile.lineage !== expectedLineage) {
+          problems.push(
+            `${rel}: collection "${record.collection}" is ${expectedLineage} lineage, but `
+            + `benchmark_profile "${record.benchmark_profile}" is ${profile.lineage} lineage.\n`
+            + '    Featured v1 and the Full Corpus executable subset ship as separate manifests; a record may not\n'
+            + `    carry the other lineage's profile. Declare a ${expectedLineage} profile of the same candidate shape.`,
+          );
         }
         if (typeof profile.cross_source_pairs === 'number') {
           const actual = crossSourcePairCount(record);

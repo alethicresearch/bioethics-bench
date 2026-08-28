@@ -62,6 +62,46 @@ copied across unexamined.
 
 ---
 
+## Transcription preconditions (custodial check, 2026-08-28)
+
+Before writing thirteen more families into `data/benchmark`, the infrastructure was checked
+against the newly adopted build gate that Featured v1 and the Full Corpus executable subset
+ship as **separate manifests**. Two things had to be true and one was not.
+
+**Profile coverage.** The registry held only two Full Corpus profiles, both asymmetric
+(`1×2×2` and `2×1×2`). A cleared family whose evidence supports two candidates in every pool
+had nowhere to land except the Featured profile. `full-corpus-2x2x2-v1` is now registered:
+the same geometry as the Featured pilot standard, twelve cross-source pairs, Full Corpus
+lineage.
+
+**Lineage leak — M010.** `m010`, a `benchmark`-collection Full Corpus family, declared
+`featured-core-2x2x2-v1`. Nothing structural caught it, because the shapes are identical; the
+profile name is the only thing tying a record to a construction lineage, and it pointed at the
+wrong corpus. Under the separate-manifest gate that record would have carried Featured pilot
+lineage into the Full Corpus manifest.
+
+Fixed rather than worked around: profiles now declare `lineage`, the registry maps each
+lineage-bound collection to one lineage, and the validator rejects a record whose collection
+and profile disagree. Self-test probes 12 and 13 demonstrate both halves — a profile with no
+lineage, and a Full Corpus record carrying a Featured profile — so broadening the corpus
+cannot silently drop the guard. `m010` was re-declared to `full-corpus-2x2x2-v1` and rehashed:
+
+| record | new content hash |
+|---|---|
+| `m010-…-concise-v1` | `sha256:0ccf4d98e3cb2588e3b81af08c16ac74332893f4eca0c4c7ce94b1a845890ea6` |
+| `m010-…-detailed-v1` | `sha256:2823cf13afb763110dd6318e6bf226b45e430dbaf079f858f340ec99fcfce318` |
+
+Both were `draft` / `internal-development`, so nothing frozen or released was re-hashed. The
+Featured substantive digest is unchanged at `6bfb77d1…`, which is the check that the fix did
+not reach across the boundary it was added to defend. 48 records valid, 20/20 self-test guards,
+dossier sync 180 comparisons.
+
+The re-declaration is flagged rather than assumed: it follows from the adopted separate-manifest
+gate, not from a judgment of mine about M010's content. Its candidate set, scenario and review
+status are untouched.
+
+---
+
 ## What review involved
 
 Each needs the same three checks the cleared five passed:
