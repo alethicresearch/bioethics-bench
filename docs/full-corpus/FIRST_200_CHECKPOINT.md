@@ -5,6 +5,12 @@
 **Construction standard:** strict Full Corpus source-to-policy standard  
 **Stage:** source-first deep research complete for all 200 case families; independent review and machine-readable transcription remain downstream stages.
 
+## Post-checkpoint manifest correction — 2026-08-28
+
+The historical **31/200** research-stage figure recorded below included **M001**, whose executable realization is the released Featured case **F01**. After the subsequently adopted hard rule requiring **separate Featured and Full Corpus executable manifests**, M001/F01 remains in the Featured artifact and does not enter the strict Full Corpus manifest.
+
+Accordingly, the current **pre-review Full Corpus candidate-eligible set is 30 families**: 4 already transcribed and reviewed, 5 independently cleared and awaiting transcription, and 21 awaiting independent review. M102 is demoted and is not part of that 30. The historical 31/200 figure is retained below to preserve checkpoint provenance, but it **must not be cited as the Full Corpus executable-manifest yield**. See `EXECUTABLE_ELIGIBILITY_LEDGER.md` and `EXECUTABLE_SUBSET_BUILD_DECISIONS.md` for the governing build state.
+
 ## Corpus completion state
 
 - **200/200 inventory families have deep case files.**
@@ -16,22 +22,22 @@
 
 This checkpoint completes the **deep-research layer** of the planned 200-family resource. It does **not** mean that 400 concise/detailed machine-readable records have been created. Machine-readable construction intentionally follows source review and candidate review.
 
-## Current strict-standard executable yield
+## Current strict-standard executable yield at the checkpoint
 
-After incorporating independent review of M102, the current research-stage count is **31 of 200** provisionally candidate-executable families under the strict Full Corpus rule.
+After incorporating independent review of M102, the research-stage checkpoint count was **31 of 200** provisionally candidate-executable families before the later M001/Featured manifest-boundary correction described above.
 
-Profile distribution:
+Profile distribution at that checkpoint:
 
 - **9** symmetric `2 public × 2 expert × 2 framework` (`2×2×2`);
 - **21** asymmetric `2 public × 1 expert × 2 framework` (`2×1×2`, Mean required);
 - **1** asymmetric `1 public × 2 expert × 2 framework` (`1×2×2`, Mean required).
 
-Thus:
+Thus at that checkpoint:
 
-- **22/31** provisionally executable families are asymmetric;
-- **21/22** asymmetric families have the singleton in the professional/expert pool.
+- **22/31** provisionally executable families were asymmetric;
+- **21/22** asymmetric families had the singleton in the professional/expert pool.
 
-These are descriptive properties of the audited source ecology, not sampling targets or claims about the prevalence of moral disagreement in bioethics.
+These are descriptive properties of the audited source ecology, not sampling targets or claims about the prevalence of moral disagreement in bioethics. They are historical checkpoint figures rather than the current Full Corpus manifest count.
 
 ## Reconciliation with the n=160 checkpoint
 
@@ -39,7 +45,7 @@ These are descriptive properties of the audited source ecology, not sampling tar
 
 The case remains M102 rather than being rewritten to explicit authorization simply to preserve executability. The post-review disposition is recorded in `batch-k/M102-independent-review-disposition.md`.
 
-M161–M200 add **0** new executable families under the same strict standard. Therefore the current count is 31/200.
+M161–M200 add **0** new executable families under the same strict standard. The later manifest-boundary review then removed M001/F01 from the Full Corpus executable artifact without changing its Featured release status.
 
 ## Why the final forty add zero executable cases
 
