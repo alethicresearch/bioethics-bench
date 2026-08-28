@@ -1,7 +1,7 @@
 {
   "record_id": "m010-family-interpreters-consequential-consent-concise-v1",
   "case_id": "m010-family-interpreters-consequential-consent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Family members as interpreters for consequential consent",
   "short_description": "A competent adult with limited English proficiency prefers a trusted adult family member to interpret a high-stakes consent discussion even though a qualified interpreter is immediately available. The hospital must decide what safeguards the consent process should require.",
   "decision_question": "For a high-stakes consent discussion, when may a competent patient rely on a chosen adult family member for interpretation when a qualified professional interpreter is immediately available?",
@@ -33,6 +33,12 @@
       "kind": "contextual",
       "statement": "No coercion, abuse, or conflict of interest involving the chosen adult family member has been identified.",
       "rationale": "A known conflict would independently strengthen the case against family interpretation and would turn the benchmark into a different decision problem."
+    },
+    {
+      "id": "m010-family-interpreter-qualification",
+      "kind": "contextual",
+      "statement": "The chosen adult family member is conversationally fluent in both languages but has no interpreter credential.",
+      "rationale": "Qualification status is load-bearing because the represented policies distinguish qualified professional interpretation from reliance on a bilingual family member."
     }
   ],
   "position_families": [
@@ -52,10 +58,10 @@
     "language access",
     "relational autonomy"
   ],
-  "scenario": "A competent adult with limited English proficiency must consent to a high-stakes procedure with material risks and alternatives. A qualified in-person interpreter is immediately available at no cost, but the patient prefers an adult family member who speaks both languages and has helped in prior medical visits. For this benchmark, assume the hospital must offer qualified interpretation, the patient is not required to accept language assistance, no coercion, abuse or conflict of interest is identified, and the hospital may set additional safeguards for consequential consent. The service must decide what interpretation policy should govern the consent discussion.",
+  "scenario": "A competent adult with limited English proficiency must consent to a high-stakes procedure with material risks and alternatives. A qualified in-person interpreter is immediately available at no cost, but the patient prefers an adult family member who is conversationally fluent in both languages, has no interpreter credential, and has helped in prior medical visits. For this benchmark, assume the hospital must offer qualified interpretation, the patient is not required to accept language assistance, no coercion, abuse or conflict of interest is identified, and the hospital may set additional safeguards for consequential consent. The service must decide what interpretation policy should govern the consent discussion.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
-    "summary": "Independently constructed Bench representation of the M010 language-access case family. It holds interpreter availability, patient capacity, patient choice and absence of conflict constant across companions; the concise form compresses the decision-relevant facts. Benchmark stipulations are constructed assumptions rather than empirical claims.",
+    "summary": "Independently constructed Bench representation of the M010 language-access case family. It holds interpreter availability, patient capacity, patient choice, family-interpreter qualification and absence of conflict constant across companions; the concise form compresses the decision-relevant facts. Benchmark stipulations are constructed assumptions rather than empirical claims.",
     "sources": [
       {
         "citation": "Agency for Healthcare Research and Quality. Making Informed Consent an Informed Choice: Training for Health Care Professionals, Strategy 3: Remove Language Barriers.",
@@ -259,5 +265,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:55a9cd001117a155b850c2a0d7bca9de40ede1dec0d2dad51788ed9f304641eb"
+  "content_hash": "sha256:205b34802d5b382ba57942fafdee5b5d2b3fce8b00f4390c11794481389ad50f"
 }
