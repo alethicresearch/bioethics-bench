@@ -1,5 +1,43 @@
 # START HERE — Bioethics Bench Full Corpus v1 rescue / next-agent handoff
 
+> ## ⚠️ CURRENT STATE — 2026-08-28, later than the rest of this file
+>
+> **The rescue described below has been carried out. Sections 5–10 are superseded on the
+> points listed here. Everything else in this file still stands.**
+>
+> Work branch: `claude/bioethics-bench-completion-m0p43e`
+> CI-green head: **`f2f3cb7c9c57ff606bf7873cec42aac3586f4f8e`** — ordinary `Validate records`
+> workflow, run 711, conclusion success.
+>
+> | Claim below | Actual state |
+> |---|---|
+> | RC3 archive is the authoritative payload | **Closed.** `.completion/full-corpus-completion-rc3.tar.gz` is truncated — `tar tzf` lists two entries then fails. Its SHA-256 does not match the expected value. All `.completion/` debris is deleted. Do not go looking for it in Drive again. |
+> | 106 executable families / 212 records | **Not reconstructible from repository state, and not a target.** The actual executable corpus is **31 families / 62 records**. The 106 figure survived only as prose. |
+> | 150 new records still to land | **There are none to land.** They were never committed and cannot be recovered. Growing the corpus is new research, not transport. |
+> | 8 duplicate frames to delete | **Done.** |
+> | Validator is manual-only | **Restored** to push / pull_request / workflow_dispatch. |
+> | M003/M006/M007/M008 records exist | **Withdrawn.** They contradicted their own dossiers and carried candidates byte-identical across source pools. |
+>
+> **What is now true and machine-checked:**
+> - All 200 families carry an explicit disposition; none is undeclared.
+> - `scripts/disposition-ledger.mjs` regenerates the ledger from committed state and fails on drift.
+> - `scripts/dossier-decision-sync.mjs` keeps each executable dossier in agreement with its record.
+> - The validator gained an action-distinctness guard; duplicate candidate text across pools was
+>   previously invisible to CI.
+> - Every Full Corpus record now declares a registered profile, so its pool ids and pair count are
+>   checked rather than passing unchecked.
+>
+> **What remains, in order:**
+> 1. The 8-family RECONCILE queue — dossier judgments that predate the audit producing their
+>    record. No new research needed. See `PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md` §4.
+> 2. The 8-family candidate audit. **Blocked on source-level research, deliberately.** Every one
+>    of those dossiers says its judgment is provisional pending audit, and M022 says outright that
+>    no record should be created first. See `PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`.
+> 3. Independent review of source-to-policy fidelity across the 31 executable families.
+> 4. Only then a pinned SHA for the partner — and it must be described as **31 families, not 106**.
+>
+> Read `RESCUE_CORRECTION_2026-08-28.md` and `PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md` next.
+
 **Date:** 2026-08-28  
 **Purpose:** exact continuation checkpoint for a fresh ChatGPT thread / agent. Read this file first, then read `docs/full-corpus/SELF_HANDOFF_FULL_CORPUS_COMPLETION.md` for the broader project onboarding.
 
