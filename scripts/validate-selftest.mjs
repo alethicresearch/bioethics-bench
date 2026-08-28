@@ -23,7 +23,10 @@ function ref(citation) {
 }
 
 function candidate(id, pool, method, extra = {}) {
-  const { sources = [ref('A probe source.')], ...rest } = extra;
+  // Per pool, not shared. Two empirically warranted pools resting on one citation set is
+  // exactly what the scheme check rejects in a real record, so a fixture that did it would
+  // be testing against a shape the corpus does not permit.
+  const { sources = [ref(`A probe source for the ${pool} pool.`)], ...rest } = extra;
   return {
     id,
     text: `Represented policy ${id}.`,
@@ -418,6 +421,97 @@ const detailedBase = (overrides = {}) => baseRecord({
 });
 
 probe('a matched development companion pair passes', [conciseBase(), detailedBase()], /^$/);
+
+/* -------------------------------------------------- declared source schemes */
+
+// A record executes over the pools its scheme declares. The default keeps every existing
+// record valid, so these probes exercise the part that is new: a scheme with a different
+// pool set, and the ways of getting it wrong.
+
+/** A two-pool record under `professional-framework`, which the fixed triple made impossible. */
+function twoPoolRecord(overrides = {}) {
+  const record = {
+    ...benchmarkRecord(),
+    source_scheme: 'professional-framework@1.0.0',
+    candidate_pools: {
+      professional: [candidate('prof1', 'professional', 'adapted-from-source', { policy_basis: 'direct-policy-evidence' })],
+      framework: [
+        candidate('fw1', 'framework', 'derived-from-framework', { policy_basis: 'framework-derived-policy' }),
+        candidate('fw2', 'framework', 'derived-from-framework', { policy_basis: 'framework-derived-policy' }),
+      ],
+    },
+    required_aggregation: 'mean',
+    ...overrides,
+  };
+  delete record.benchmark_profile;
+  delete record.content_hash;
+  return { ...record, content_hash: canonicalContentHash(record) };
+}
+
+probe('a two-pool record under a registered scheme passes', [twoPoolRecord()], /^$/);
+
+probe('a record naming an unregistered scheme',
+  [twoPoolRecord({ source_scheme: 'invented-scheme@9.9.9' })],
+  /is not registered in schemas\/source-schemes\.json/);
+
+probe('a record whose pools are not the ones its scheme declares',
+  [(() => {
+    const r = twoPoolRecord();
+    delete r.candidate_pools.framework;
+    r.candidate_pools.expert = [candidate('exp1', 'expert', 'adapted-from-source', { policy_basis: 'direct-policy-evidence' })];
+    delete r.content_hash;
+    return { ...r, content_hash: canonicalContentHash(r) };
+  })()],
+  /candidate_pools must be exactly the pools of/);
+
+probe('a candidate whose id prefix is not the one its pool fixes',
+  [(() => {
+    const r = twoPoolRecord();
+    r.candidate_pools.professional = [candidate('exp1', 'professional', 'adapted-from-source', { policy_basis: 'direct-policy-evidence' })];
+    delete r.content_hash;
+    return { ...r, content_hash: canonicalContentHash(r) };
+  })()],
+  /whose scheme fixes the id prefix/);
+
+// The failure the relaxed pool identity newly makes possible: one body of evidence split
+// across two pools so a cross-source comparison can be enumerated.
+probe('two empirically warranted pools resting on one citation set',
+  [(() => {
+    const shared = [ref('The single study both pools rest on.')];
+    const r = {
+      ...benchmarkRecord(),
+      candidate_pools: {
+        public: [candidate('pub1', 'public', 'adapted-from-source', { policy_basis: 'direct-policy-evidence', sources: shared })],
+        expert: [candidate('exp1', 'expert', 'adapted-from-source', { policy_basis: 'direct-policy-evidence', sources: shared })],
+        framework: [candidate('fw1', 'framework', 'derived-from-framework', { policy_basis: 'framework-derived-policy' })],
+      },
+      required_aggregation: 'mean',
+    };
+    delete r.benchmark_profile;
+    delete r.content_hash;
+    return { ...r, content_hash: canonicalContentHash(r) };
+  })()],
+  /rest on an identical citation set/);
+
+// A framework pool citing the case's anchor documents is not that failure: its warrant is
+// the stated derivation, not the citation.
+probe('a framework pool sharing citations with an empirical pool passes',
+  [(() => {
+    const shared = [ref('The professional guidance this case is anchored in.')];
+    const r = {
+      ...benchmarkRecord(),
+      candidate_pools: {
+        public: [candidate('pub1', 'public', 'adapted-from-source', { policy_basis: 'direct-policy-evidence' })],
+        expert: [candidate('exp1', 'expert', 'adapted-from-source', { policy_basis: 'direct-policy-evidence', sources: shared })],
+        framework: [candidate('fw1', 'framework', 'derived-from-framework', { policy_basis: 'framework-derived-policy', sources: shared })],
+      },
+      required_aggregation: 'mean',
+    };
+    delete r.benchmark_profile;
+    delete r.content_hash;
+    return { ...r, content_hash: canonicalContentHash(r) };
+  })()],
+  /^$/);
 
 probe('companion decision questions differing, outside `featured`',
   [conciseBase(), detailedBase({ decision_question: 'Something else entirely?' })],

@@ -45,7 +45,10 @@
       "description": "Semantic version of this represented record. Any substantive change to scenario, decision question, candidates, ordering, or provenance creates a new version.",
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
-    "title": { "type": "string", "minLength": 1 },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
     "short_description": {
       "type": "string",
       "description": "One or two sentences, for case listings and cards.",
@@ -61,28 +64,53 @@
     "representation": {
       "type": "object",
       "description": "How this record represents its case family. Concise and detailed Featured companions are distinct research objects, not interchangeable formatting.",
-      "required": ["form"],
+      "required": [
+        "form"
+      ],
       "properties": {
-        "form": { "enum": ["concise", "standard", "detailed"] },
+        "form": {
+          "enum": [
+            "concise",
+            "standard",
+            "detailed"
+          ]
+        },
         "companion_record_ids": {
           "type": "array",
-          "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
           "uniqueItems": true
         },
-        "notes": { "type": ["string", "null"] }
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     },
     "benchmark_profile": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "Named executable profile, e.g. featured-core-2x2x2-v1."
     },
     "jurisdiction_context": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "Named legal/regulatory setting when required; null for a deliberately jurisdiction-neutral scenario."
     },
     "as_of_date": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date",
       "description": "Date at which time-sensitive factual, legal, or professional assumptions were checked."
     },
@@ -91,11 +119,29 @@
       "description": "Editorial benchmark stipulations: constructed numerical or contextual assumptions that make the decision problem determinate enough to execute and to perturb. A stipulation is a property of the benchmark, not a claim about the world, and must also be marked in the scenario text. Companion representations must carry identical stipulations, because they represent the same factual state.",
       "items": {
         "type": "object",
-        "required": ["id", "kind", "statement", "rationale"],
+        "required": [
+          "id",
+          "kind",
+          "statement",
+          "rationale"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
-          "kind": { "enum": ["numerical", "contextual", "legal", "scientific"] },
-          "statement": { "type": "string", "minLength": 1 },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "kind": {
+            "enum": [
+              "numerical",
+              "contextual",
+              "legal",
+              "scientific"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
           "rationale": {
             "type": "string",
             "minLength": 1,
@@ -109,7 +155,10 @@
     "position_families": {
       "type": "array",
       "description": "Optional scholarly map of documented policy-position families; not the executable candidate set and not scored by SACRE.",
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true
     },
     "domains": {
@@ -141,32 +190,54 @@
     "tags": {
       "type": "array",
       "description": "Free-form editorial tags for browsing/filtering. Not a controlled vocabulary; `domains` is.",
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true
     },
-    "scenario": { "type": "string", "minLength": 1 },
-    "scenario_provenance": { "$ref": "#/$defs/provenance" },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_provenance": {
+      "$ref": "#/$defs/provenance"
+    },
     "candidate_pools": {
       "type": "object",
-      "required": ["public", "expert", "framework"],
-      "properties": {
-        "public": { "$ref": "#/$defs/pool" },
-        "expert": { "$ref": "#/$defs/pool" },
-        "framework": { "$ref": "#/$defs/pool" }
+      "additionalProperties": {
+        "$ref": "#/$defs/pool"
       },
-      "additionalProperties": false
+      "minProperties": 2,
+      "$comment": "Pools named by the record's source_scheme. Cross-source comparison needs at least two. Pool names and candidate-id prefixes are checked against schemas/source-schemes.json by scripts/validate.mjs."
     },
     "collection": {
       "description": "The record's role in the research program.",
-      "enum": ["tutorial", "featured", "development", "stress-test", "benchmark"]
+      "enum": [
+        "tutorial",
+        "featured",
+        "development",
+        "stress-test",
+        "benchmark"
+      ]
     },
     "exposure": {
       "description": "Who has seen this record. A Featured record is public and can never later become a confirmatory holdout.",
-      "enum": ["public", "internal-development", "confirmatory-holdout"]
+      "enum": [
+        "public",
+        "internal-development",
+        "confirmatory-holdout"
+      ]
     },
     "status": {
       "description": "Editorial lifecycle position.",
-      "enum": ["draft", "editorial-review", "reviewed", "frozen", "released"]
+      "enum": [
+        "draft",
+        "editorial-review",
+        "reviewed",
+        "frozen",
+        "released"
+      ]
     },
     "intended_use": {
       "type": "array",
@@ -188,72 +259,161 @@
       "description": "Every prior public/development use, recorded prospectively.",
       "items": {
         "type": "object",
-        "required": ["date", "use"],
+        "required": [
+          "date",
+          "use"
+        ],
         "properties": {
-          "date": { "type": "string", "format": "date" },
-          "use": { "type": "string", "minLength": 1 },
-          "reference": { "type": ["string", "null"] }
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "use": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         },
         "additionalProperties": false
       }
     },
     "paper_usage": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "uniqueItems": true
     },
     "rights": {
       "type": "object",
       "description": "Licensing of this record's own text. Source materials keep their own rights, recorded per source.",
-      "required": ["license"],
+      "required": [
+        "license"
+      ],
       "properties": {
-        "license": { "type": "string", "minLength": 1 },
-        "holder": { "type": ["string", "null"] },
-        "notes": { "type": ["string", "null"] }
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "holder": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     },
     "references": {
       "type": "array",
       "description": "Literature and source documents behind this case.",
-      "items": { "$ref": "#/$defs/reference" }
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
     },
     "review": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "properties": {
-        "reviewed_by": { "type": "array", "items": { "type": "string" } },
-        "reviewed_at": { "type": ["string", "null"], "format": "date" },
-        "notes": { "type": ["string", "null"] }
+        "reviewed_by": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     },
-    "parent_record_id": { "type": ["string", "null"] },
+    "parent_record_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "perturbation_metadata": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "description": "For stress-test records: what was perturbed relative to the parent, and why.",
       "properties": {
-        "perturbation_type": { "type": "string" },
-        "relative_to": { "type": "string" },
-        "description": { "type": "string" }
+        "perturbation_type": {
+          "type": "string"
+        },
+        "relative_to": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
       },
       "additionalProperties": true
     },
     "required_aggregation": {
       "description": "The aggregation a record's own candidate shape requires. A set with unequal cross-source partner counts must declare \"mean\": under Sum such a set is ranked partly by pool size. Records that name a registered profile may inherit it from there instead.",
-      "enum": ["sum", "mean"]
+      "enum": [
+        "sum",
+        "mean"
+      ]
     },
-    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
     "content_hash": {
       "type": "string",
       "description": "Algorithm-prefixed canonical hash; see docs/VERSIONING.md.",
       "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "source_scheme": {
+      "type": "string",
+      "$comment": "Registered scheme id from schemas/source-schemes.json. Absent means the default three-pool scheme, so existing records stay valid."
     }
   },
   "allOf": [
     {
-      "if": { "properties": { "collection": { "const": "featured" } }, "required": ["collection"] },
+      "if": {
+        "properties": {
+          "collection": {
+            "const": "featured"
+          }
+        },
+        "required": [
+          "collection"
+        ]
+      },
       "then": {
-        "properties": { "exposure": { "const": "public" } },
+        "properties": {
+          "exposure": {
+            "const": "public"
+          }
+        },
         "required": [
           "decision_question",
           "representation",
@@ -266,30 +426,76 @@
       }
     },
     {
-      "if": { "properties": { "status": { "enum": ["frozen", "released"] } }, "required": ["status"] },
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "frozen",
+              "released"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
       "then": {
-        "required": ["review", "intended_use"],
+        "required": [
+          "review",
+          "intended_use"
+        ],
         "description": "A record cannot be frozen or released without a review record and declared use."
       }
     },
     {
-      "if": { "properties": { "collection": { "const": "stress-test" } }, "required": ["collection"] },
-      "then": { "required": ["parent_record_id", "perturbation_metadata"] }
+      "if": {
+        "properties": {
+          "collection": {
+            "const": "stress-test"
+          }
+        },
+        "required": [
+          "collection"
+        ]
+      },
+      "then": {
+        "required": [
+          "parent_record_id",
+          "perturbation_metadata"
+        ]
+      }
     }
   ],
   "$defs": {
     "pool": {
       "type": "array",
-      "items": { "$ref": "#/$defs/candidate" },
+      "items": {
+        "$ref": "#/$defs/candidate"
+      },
       "minItems": 1
     },
     "candidate": {
       "type": "object",
-      "required": ["id", "text", "source_pool", "provenance"],
+      "required": [
+        "id",
+        "text",
+        "source_pool",
+        "provenance"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^(pub|exp|fw)[0-9]+$" },
-        "text": { "type": "string", "minLength": 1 },
-        "source_pool": { "enum": ["public", "expert", "framework"] },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+[0-9]+$",
+          "$comment": "Prefix identifies the pool and is fixed by the scheme; the pairing logic reads the pool from it."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_pool": {
+          "type": "string",
+          "$comment": "Must be one of the pools its scheme declares; checked in scripts/validate.mjs."
+        },
         "policy_basis": {
           "description": "How this policy candidate was obtained, per docs/full-corpus/EXECUTABLE_200_CONSTRUCTION_DECISION.md. A different axis from source_pool, which says which perspective layer the candidate is represented in, and from provenance.construction_method, which records textual construction mechanics. Required on Full Corpus (`benchmark`) candidates; not applied retroactively to frozen Featured v1 records.",
           "enum": [
@@ -299,14 +505,18 @@
             "synthetic-author-constructed-policy"
           ]
         },
-        "provenance": { "$ref": "#/$defs/provenance" }
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
       },
       "additionalProperties": false
     },
     "provenance": {
       "type": "object",
       "description": "Where represented text came from and how it was constructed.",
-      "required": ["construction_method"],
+      "required": [
+        "construction_method"
+      ],
       "properties": {
         "construction_method": {
           "enum": [
@@ -318,15 +528,39 @@
             "unknown"
           ]
         },
-        "summary": { "type": ["string", "null"] },
-        "sources": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
-        "adapted_not_reproduced": { "type": ["boolean", "null"] },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "adapted_not_reproduced": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "model_assistance": {
-          "type": ["object", "null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
-            "model": { "type": "string" },
-            "role": { "type": "string" },
-            "reviewed_by_human": { "type": "boolean" }
+            "model": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "reviewed_by_human": {
+              "type": "boolean"
+            }
           },
           "additionalProperties": false
         }
@@ -335,16 +569,53 @@
     },
     "reference": {
       "type": "object",
-      "required": ["citation"],
+      "required": [
+        "citation"
+      ],
       "properties": {
-        "citation": { "type": "string", "minLength": 1 },
-        "type": {
-          "enum": ["article", "book", "guideline", "statute", "court-decision", "policy-document", "survey", "teaching-case", "other"]
+        "citation": {
+          "type": "string",
+          "minLength": 1
         },
-        "doi": { "type": ["string", "null"] },
-        "url": { "type": ["string", "null"], "format": "uri" },
-        "accessed": { "type": ["string", "null"], "format": "date" },
-        "rights": { "type": ["string", "null"] }
+        "type": {
+          "enum": [
+            "article",
+            "book",
+            "guideline",
+            "statute",
+            "court-decision",
+            "policy-document",
+            "survey",
+            "teaching-case",
+            "other"
+          ]
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "accessed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "rights": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     }

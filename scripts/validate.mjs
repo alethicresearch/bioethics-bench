@@ -59,12 +59,20 @@ const POLICY_BASES = [
   'framework-derived-policy',
   'synthetic-author-constructed-policy',
 ];
+// Pools are declared per record by its source scheme rather than fixed here. The default
+// keeps every existing record valid: a record naming no scheme executes over the original
+// three. See docs/full-corpus/SOURCE_SCHEME_DESIGN.md.
+const SCHEME_REGISTRY = JSON.parse(readFileSync(join(root, 'schemas', 'source-schemes.json'), 'utf8'));
+const SCHEMES = SCHEME_REGISTRY.schemes;
+const DEFAULT_SCHEME = SCHEME_REGISTRY.default_scheme;
+const schemeOf = (record) => SCHEMES[record?.source_scheme ?? DEFAULT_SCHEME] ?? null;
+const poolsOf = (record) => (schemeOf(record)?.pools ?? []).map((p) => p.name);
 const POOLS = ['public', 'expert', 'framework'];
 /** The standing companion contract, for records that name no registered profile. */
 const DEFAULT_REPRESENTATIONS = ['concise', 'detailed'];
 
 function crossSourcePairCount(record) {
-  const ids = POOLS.flatMap((pool) => (record.candidate_pools?.[pool] || []).map((c) => [c.id, pool]));
+  const ids = poolsOf(record).flatMap((pool) => (record.candidate_pools?.[pool] || []).map((c) => [c.id, pool]));
   let n = 0;
   for (let i = 0; i < ids.length; i += 1) {
     for (let j = i + 1; j < ids.length; j += 1) if (ids[i][1] !== ids[j][1]) n += 1;
@@ -73,7 +81,7 @@ function crossSourcePairCount(record) {
 }
 
 function profileStructure(profile) {
-  const entries = POOLS.flatMap((pool) => (profile.pools?.[pool] || []).map((id) => ({ id, pool })));
+  const entries = Object.keys(profile.pools ?? {}).flatMap((pool) => (profile.pools[pool] || []).map((id) => ({ id, pool })));
   const partnerCounts = entries.map((entry) => entries.filter((other) => other.pool !== entry.pool).length);
   let pairCount = 0;
   for (let i = 0; i < entries.length; i += 1) {
@@ -122,9 +130,92 @@ function profileRegistryProblems(profiles) {
 }
 
 function allCandidates(record) {
-  return POOLS.flatMap(
+  return poolsOf(record).flatMap(
     (pool) => (record.candidate_pools?.[pool] || []).map((c) => ({ pool, candidate: c })),
   );
+}
+
+/**
+ * A record must execute over the pools its scheme declares, with the ids that scheme fixes.
+ *
+ * Relaxing the pool identity creates one way to cheat that the fixed triple made impossible:
+ * splitting a single body of evidence across two pools so that a cross-source comparison can
+ * be enumerated. The agreement such a matrix reports is an artefact of the split. Pools must
+ * differ in kind of warrant, and the checkable part of that is enforced here.
+ */
+function schemeProblems(record, rel) {
+  const issues = [];
+  const schemeId = record.source_scheme ?? DEFAULT_SCHEME;
+  const scheme = SCHEMES[schemeId];
+  if (!scheme) {
+    issues.push(
+      `${rel}: source_scheme "${schemeId}" is not registered in schemas/source-schemes.json.\n`
+      + `    Register it with its pools, prefixes and warrants, or correct the record.\n`
+      + `    Known schemes: ${Object.keys(SCHEMES).join(', ')}.`,
+    );
+    return issues;
+  }
+
+  const declared = scheme.pools.map((p) => p.name);
+  const present = Object.keys(record.candidate_pools ?? {});
+  const missing = declared.filter((p) => !present.includes(p));
+  const extra = present.filter((p) => !declared.includes(p));
+  if (missing.length || extra.length) {
+    issues.push(
+      `${rel}: candidate_pools must be exactly the pools of ${schemeId}.\n`
+      + `    declared: ${declared.join(', ')}\n`
+      + (missing.length ? `    missing: ${missing.join(', ')}\n` : '')
+      + (extra.length ? `    unexpected: ${extra.join(', ')}\n` : ''),
+    );
+    return issues;
+  }
+
+  for (const pool of scheme.pools) {
+    for (const candidate of record.candidate_pools[pool.name] ?? []) {
+      if (!new RegExp(`^${pool.prefix}[0-9]+$`).test(candidate.id)) {
+        issues.push(`${rel}: ${candidate.id} is in pool "${pool.name}", whose scheme fixes the id prefix "${pool.prefix}".`);
+      }
+      if (candidate.source_pool !== pool.name) {
+        issues.push(`${rel}: ${candidate.id} is in pool "${pool.name}" but declares source_pool "${candidate.source_pool}".`);
+      }
+    }
+  }
+
+  // No two *empirically warranted* pools may rest on the same citations.
+  //
+  // The failure mode is splitting one body of evidence so a cross-source comparison can be
+  // enumerated: there the warrant is the evidence, so one body of it cannot support two
+  // independent positions. A framework pool is different in kind. Its candidates are
+  // Bench-authored derivations whose warrant is the stated reasoning, and they cite the
+  // case's anchor documents because provenance requires sources, not because those
+  // documents are what makes them true. A first version of this check compared every pool
+  // and failed five families for that reason, four of them hand-built — the check was
+  // wrong, not the records.
+  const empirical = declared.filter((pool) => (record.candidate_pools[pool] ?? [])
+    .some((c) => c.policy_basis !== 'framework-derived-policy'));
+  const citationsByPool = new Map();
+  for (const pool of empirical) {
+    const set = new Set();
+    for (const candidate of record.candidate_pools[pool] ?? []) {
+      for (const source of candidate.provenance?.sources ?? []) set.add(source.citation);
+    }
+    citationsByPool.set(pool, set);
+  }
+  for (let i = 0; i < empirical.length; i += 1) {
+    for (let j = i + 1; j < empirical.length; j += 1) {
+      const a = citationsByPool.get(empirical[i]); const b = citationsByPool.get(empirical[j]);
+      if (!a.size || !b.size) continue;
+      const shared = [...a].filter((c) => b.has(c));
+      if (shared.length === a.size && shared.length === b.size) {
+        issues.push(
+          `${rel}: pools "${empirical[i]}" and "${empirical[j]}" rest on an identical citation set.\n`
+          + '    Two pools drawn from one body of evidence do not make a cross-source comparison;\n'
+          + '    the agreement such a matrix reports would be an artefact of the split.',
+        );
+      }
+    }
+  }
+  return issues;
 }
 
 let checked = 0;
@@ -156,6 +247,8 @@ for (const file of files) {
 
   if (kind === 'case') {
     caseRecords.push({ rel, record });
+    problems.push(...schemeProblems(record, rel));
+
     if (record.content_hash) {
       const expected = canonicalContentHash(record);
       if (expected !== record.content_hash) {

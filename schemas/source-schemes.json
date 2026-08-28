@@ -1,0 +1,36 @@
+{
+  "$comment": "Registered source schemes. A scheme names the pools a case executes over, the candidate-id prefix each uses, and the kind of warrant each carries. Registering a scheme is what makes it usable: a record naming an unregistered scheme fails validation rather than executing on an unexamined shape. See docs/full-corpus/SOURCE_SCHEME_DESIGN.md. Pools are compared across, never within, so a scheme needs at least two; the cross-source pair count is the sum over unordered pool pairs of the product of their sizes.",
+  "default_scheme": "public-expert-framework@1.0.0",
+  "schemes": {
+    "public-expert-framework@1.0.0": {
+      "description": "The original three-pool shape: affected-community positions, professional guidance, and normative frameworks. Remains the default and covers the corpus as it stands.",
+      "pools": [
+        { "name": "public", "prefix": "pub", "warrant": "Positions attributable to affected communities and the general public, from evidence about what those communities hold rather than about what any institution recommends." },
+        { "name": "expert", "prefix": "exp", "warrant": "Positions stated by professional bodies, regulators or institutions with standing to recommend or set policy." },
+        { "name": "framework", "prefix": "fw", "warrant": "Positions derived from normative frameworks by explicit reasoning, authored by the Bench and labelled as such." }
+      ]
+    },
+    "professional-framework@1.0.0": {
+      "description": "Two pools, for cases whose live disagreement is between professional architectures and normative positions and where no policy-level affected evidence exists. A thinner field than three pools and should be read as one; it is not an absence of a case.",
+      "pools": [
+        { "name": "professional", "prefix": "prof", "warrant": "Positions stated by professional bodies, regulators or institutions with standing to recommend or set policy." },
+        { "name": "framework", "prefix": "fw", "warrant": "Positions derived from normative frameworks by explicit reasoning, authored by the Bench and labelled as such." }
+      ]
+    },
+    "affected-professional-framework@1.0.0": {
+      "description": "As the default, except that the affected pool carries evidence about the interests of the parties who bear the burden, which may be nonhuman. Welfare science about those parties is evidence about their interests; human opinion about them is evidence about human attitudes and belongs in a different pool or a different case.",
+      "pools": [
+        { "name": "affected", "prefix": "aff", "warrant": "Positions grounded in evidence about the interests of the parties who bear the consequences, including nonhuman parties where their welfare is directly evidenced rather than proxied through human opinion." },
+        { "name": "professional", "prefix": "prof", "warrant": "Positions stated by professional bodies, regulators or institutions with standing to recommend or set policy." },
+        { "name": "framework", "prefix": "fw", "warrant": "Positions derived from normative frameworks by explicit reasoning, authored by the Bench and labelled as such." }
+      ]
+    },
+    "institutional-framework@1.0.0": {
+      "description": "For cases where the live disagreement is between institutional architectures actually in force in different systems, and the normative positions that support them. The institutional pool holds rules that are operating somewhere, not proposals.",
+      "pools": [
+        { "name": "institutional", "prefix": "inst", "warrant": "Rules in force in an identified jurisdiction or institution, cited as operating policy rather than as recommendation." },
+        { "name": "framework", "prefix": "fw", "warrant": "Positions derived from normative frameworks by explicit reasoning, authored by the Bench and labelled as such." }
+      ]
+    }
+  }
+}
