@@ -38,3 +38,32 @@ Do not call PCCP unrestricted self-modification; define “material update”; d
 
 ## Principal sources
 FDA, *Marketing Submission Recommendations for a Predetermined Change Control Plan for AI-Enabled Device Software Functions* (final guidance, August 2025); FDA/Health Canada/MHRA PCCP guiding principles; FDA AI-device lifecycle guidance.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above. Where the hold rests on a gap the dossier itself identified, that is stated;
+where sources were checked directly, the finding is given.
+
+**Held on the shape the dossier predicted.** The provisional judgment anticipated this: professional
+sources support the predetermined change-control plan and full-revalidation alternatives "as
+recognizable regulatory strategies, but direct patient/public evidence is limited, so source-pool
+shape may remain non-executable." The audit confirms it.
+
+FDA's final PCCP guidance is a mature governance architecture for bounded model evolution, requiring
+planned modifications with methods for development, validation and implementation plus impact
+assessment, and the FDA/Health Canada/MHRA principles reinforce transparency, intended-population
+evidence and post-update monitoring. That is one architecture. Full revalidation before every
+material update is the status quo it departs from rather than a competing published position, and
+unrestricted continuous learning is what PCCP explicitly is not — an architecture's boundary is not
+a rival architecture.
+
+No direct patient or public evidence on model-update notice or revalidation thresholds has been
+identified, and there is a reason to expect none: the question is remote from what patients are
+ordinarily asked about, and the dossier is right that source-pool shape is the binding constraint.
+
+**Held.** This family is a good research result about lifecycle governance without being an
+executable comparison. Promotion would require eliciting affected-community positions on update
+notice and revalidation directly, which is a study that does not yet exist.
+
+Held is a recoverable state. The dossier stands as a research result; what it lacks is
+source-to-policy alignment at the represented action.

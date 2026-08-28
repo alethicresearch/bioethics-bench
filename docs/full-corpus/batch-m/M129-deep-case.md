@@ -41,7 +41,7 @@ NICE, health technology evaluations manual and severity modifiers; ICER, QALY an
 
 ## Candidate audit result — 2026-08-28
 
-This section supersedes the `candidate-audit-required` judgment above. The audit has now been
+This section supersedes the provisional judgment above. The audit has now been
 performed against the underlying sources rather than against the dossier's summary of them.
 
 **Executable.** The audit was performed against the institutional methods documents and the

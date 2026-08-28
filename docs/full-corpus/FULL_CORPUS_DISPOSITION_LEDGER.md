@@ -13,25 +13,23 @@ should be reintroduced.
 
 | Disposition | Families |
 |---|---|
-| executable-v1, record present, dossier agrees | 32 |
-| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 2 |
+| executable-v1, record present, dossier agrees | 34 |
+| executable-v1, record present, dossier judgment predates the audit — **reconcile** | 0 |
 | executable-candidate, dossier supports it but no record transcribed yet | 0 |
 | Featured-only (M001 → F01) | 1 |
 | held — needs additional evidence | 82 |
 | held — research-complete, not executable | 71 |
 | held — as duplicate | 0 |
-| held — candidate-audit target, audit not yet performed | 5 |
-| held — candidate audit performed, not executable | 7 |
+| held — candidate-audit target, audit not yet performed | 0 |
+| held — candidate audit performed, not executable | 12 |
 | undeclared — dossier states no judgment | 0 |
 | **Total** | **200** |
 
 Full Corpus records under `data/benchmark/`: **68** across
 **34** executable families, two matched records each.
 
-Of those, **2** carry a dossier judgment written before the candidate audit that
-produced the record. Those records pass every machine invariant, but the dossier has not been
-formally re-judged under the four-basis rule. They are the first priority for independent review,
-and no family should be promoted on the strength of its record existing.
+Every executable family's dossier states the audit result that produced its record. No family
+is executable merely because a record for it exists.
 
 The executable count is an output of this process, not an input to it. Promoting
 a held family requires new targeted research recorded in its dossier — not a
@@ -138,8 +136,8 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M095 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M096 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M097 | declared-canonical-frame | 2 public × 2 expert × 3 framework | 81 | 2 | executable-v1 (record present) |
-| M098 | candidate-audit-required | — | 42 | 0 | held-candidate-audit |
-| M099 | candidate-audit-required | — | 44 | 0 | held-candidate-audit |
+| M098 | audit-complete-not-executable | — | 78 | 0 | held-audited-not-executable |
+| M099 | audit-complete-not-executable | — | 73 | 0 | held-audited-not-executable |
 | M100 | needs-additional-evidence | — | 42 | 0 | held-needs-evidence |
 | M101 | needs-additional-evidence | — | 99 | 0 | held-needs-evidence |
 | M102 | audited-reconciled | — | 153 | 2 | executable-v1 (record present) |
@@ -169,11 +167,11 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M126 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M127 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M128 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
-| M129 | candidate-audit-required | 1 public × 2 expert × 3 framework | 105 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M129 | declared-canonical-frame | 1 public × 2 expert × 3 framework | 105 | 2 | executable-v1 (record present) |
 | M130 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M131 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M132 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
-| M133 | candidate-audit-required | — | 41 | 0 | held-candidate-audit |
+| M133 | audit-complete-not-executable | — | 68 | 0 | held-audited-not-executable |
 | M134 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
 | M135 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M136 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
@@ -186,10 +184,10 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M143 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M144 | audited-reconciled | — | 93 | 2 | executable-v1 (record present) |
 | M145 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
-| M146 | candidate-audit-required | 2 public × 1 expert × 3 framework | 108 | 2 | executable-v1 (record present; dossier judgment predates the audit — RECONCILE) |
+| M146 | declared-canonical-frame | 2 public × 1 expert × 3 framework | 108 | 2 | executable-v1 (record present) |
 | M147 | needs-additional-evidence | — | 38 | 0 | held-needs-evidence |
-| M148 | candidate-audit-required | — | 41 | 0 | held-candidate-audit |
-| M149 | candidate-audit-required | — | 41 | 0 | held-candidate-audit |
+| M148 | audit-complete-not-executable | — | 67 | 0 | held-audited-not-executable |
+| M149 | audit-complete-not-executable | — | 70 | 0 | held-audited-not-executable |
 | M150 | research-complete-not-executable | — | 38 | 0 | held-not-executable |
 | M151 | research-complete-not-executable | — | 63 | 0 | held-not-executable |
 | M152 | needs-additional-evidence | — | 63 | 0 | held-needs-evidence |

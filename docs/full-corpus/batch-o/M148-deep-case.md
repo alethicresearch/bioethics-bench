@@ -38,3 +38,29 @@ Do not treat approval and denial symmetrically; specify appeal speed; distinguis
 
 ## Principal sources
 AMA 2026 policy on AI, physician judgment and payer coverage determinations; CMS prior-authorization/interoperability rules; health-law and utilization-management literature.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above. Where the hold rests on a gap the dossier itself identified, that is stated;
+where sources were checked directly, the finding is given.
+
+**Held on a singleton professional layer and an unestablished public layer.** The dossier's own
+source architecture is the finding: AMA guidance is "unusually explicit" that coverage
+determinations should remain physician-led and that AI should not substitute for physician review,
+especially for adverse decisions — and it notes that this "supports asymmetric process rules rather
+than a professional pro-autonomous-denial candidate." That is one professional architecture, not
+two, and the second represented position (permitting automated adverse decisions with transparent
+appeal and human reconsideration) has no professional source endorsing it.
+
+The public layer was flagged as likely to support "different procedural thresholds" but no direct
+patient or enrollee evidence on prior-authorization automation policy has been identified. Public
+hostility to prior authorization generally is not a position on whether the adverse decision may be
+automated subject to appeal.
+
+**Held.** Promotion requires either a professional or regulatory source that actually permits
+automated adverse determinations under procedural safeguards — regulatory attention to timeliness
+and appeal rights is not that — or direct affected-community evidence distinguishing the represented
+procedural thresholds.
+
+Held is a recoverable state. The dossier stands as a research result; what it lacks is
+source-to-policy alignment at the represented action.

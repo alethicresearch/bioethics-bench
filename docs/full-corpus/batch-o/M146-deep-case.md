@@ -41,7 +41,7 @@ Lawrence et al., JAMA Network Open 2025, *Informed Consent for Ambient Documenta
 
 ## Candidate audit result — 2026-08-28
 
-This section supersedes the `candidate-audit-required` judgment above. The audit has now been
+This section supersedes the provisional judgment above. The audit has now been
 performed against the underlying sources rather than against the dossier's summary of them.
 
 **Executable.** The audit was performed against the underlying consent study and professional

@@ -88,9 +88,17 @@ function isReconciliation(text) {
 // reconstructed style, by naming the canonical frame and geometry it executes.
 function declaredJudgment(section) {
   if (!section) return null;
-  const token = JUDGMENTS.find((j) => section.includes(j));
-  if (token) return token;
-  return FRAME_DECLARATION.test(section) ? 'declared-canonical-frame' : null;
+  // A frame declaration outranks a token: a section that names the geometry it
+  // executes at is declaring executability, even if it also mentions the
+  // judgment it supersedes.
+  if (FRAME_DECLARATION.test(section)) return 'declared-canonical-frame';
+  // Dossiers write the judgment they are declaring in backticks and mention any
+  // judgment they supersede in plain prose, so a backticked token wins. Without
+  // this a sentence like "supersedes the `x` judgment above" could flip a
+  // family's disposition to the one it was superseding.
+  return JUDGMENTS.find((j) => section.includes(`\`${j}\``))
+    ?? JUDGMENTS.find((j) => section.includes(j))
+    ?? null;
 }
 
 function readDossiers() {

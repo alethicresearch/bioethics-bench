@@ -40,3 +40,38 @@ Do not use long-term life expectancy, social worth or categorical disability exc
 ## Sources
 
 AMA Code Opinion 11.1.3; crisis standards/ventilator triage literature; disability-rights analysis in NEJM; JAMA Network Open evaluation of crisis scoring versus lottery and racial equity.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above. Where the hold rests on a gap the dossier itself identified, that is stated;
+where sources were checked directly, the finding is given.
+
+**Verified against the public-preference literature; held on action-target misalignment.**
+
+Public evidence on ventilator allocation does exist and is genuinely about allocation rules rather
+than about attitudes to scarcity — respondents in nationwide surveys allocate ventilators and endorse
+or reject criteria. But what it finds does not line up with the positions this case represents. The
+robust findings are that the public allocates more ventilators to younger age groups and fewer to
+patients over 60, and that socioeconomic factors should not be used. The represented policy families
+are maximize near-term survival, equity-constrained multiprinciple allocation, and broad-eligibility
+lottery. Age-band prioritization is not among them, and it is close to the long-term-life-expectancy
+criterion that this dossier's own construction risks explicitly exclude. The one finding that does
+transfer — that social factors should be excluded — is a constraint every represented candidate
+already respects, so it does not distinguish between them.
+
+Converting "the public favours younger patients" into one of the three represented architectures
+would be a translation onto a criterion the case deliberately rules out. That is not a defensible
+inference bridge.
+
+The professional layer is also more convergent than plural: crisis-standards guidance and AMA Code
+Opinion 11.1.3 point at multiprinciple allocation with categorical exclusions rejected, rather than
+at two competing institutional architectures.
+
+**Held.** Promotion requires public evidence elicited on the survival-versus-lottery architecture
+itself, at the fixed catastrophic-scarcity scenario. Note that the simulation literature comparing
+protocols — which finds every protocol except lottery exhibiting racial disparities in allocation —
+is analytic evidence bearing on the frameworks, not a source-pool position, and should not be
+recruited as a public or expert candidate.
+
+Held is a recoverable state. The dossier stands as a research result; what it lacks is
+source-to-policy alignment at the represented action.

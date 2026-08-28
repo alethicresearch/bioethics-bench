@@ -42,3 +42,31 @@ Do not treat rarity alone as moral priority. Make opportunity cost explicit. Sep
 ## Sources
 
 NICE health-technology evaluation manual, severity modifier and Highly Specialised Technologies framework; NICE 2025 HST routing update; CMS Coverage with Evidence Development guidance (2024); ethics literature on coverage with evidence development.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above. Where the hold rests on a gap the dossier itself identified, that is stated;
+where sources were checked directly, the finding is given.
+
+**Held on the gap the dossier itself identifies.** The expert layer is the strong part and is close
+to executable: NICE's ordinary appraisal with severity modifiers and a substantially higher threshold
+for highly specialised ultra-rare technologies, against the CMS Coverage with Evidence Development
+architecture for conditional coverage under material uncertainty. Those are action-distinct across
+systems, and the corpus already accepts cross-jurisdiction expert pluralism where both positions are
+in force (M106 does exactly this).
+
+The public layer is what blocks it, and the dossier states the requirement precisely: public and
+patient evidence supports greater priority for severe and rare disease, but willingness to sacrifice
+aggregate health varies and is sensitive to the size of benefit, severity and rarity, so "direct
+evidence matched to the fixed opportunity-cost scenario is needed before execution." A preference
+that moves with how the trade-off is framed is not yet a policy position on this trade-off. The
+dossier's construction risks also warn against treating rarity alone as moral priority, which is the
+shape the inference would most easily take.
+
+**Held, and the nearest of the held families to promotion.** What it needs is specific: preference
+evidence elicited with the opportunity cost made explicit — respondents told what is displaced —
+rather than rare-disease support elicited in isolation. That is a single targeted study, not a
+research programme.
+
+Held is a recoverable state. The dossier stands as a research result; what it lacks is
+source-to-policy alignment at the represented action.
