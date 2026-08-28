@@ -22,7 +22,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m002-capacity-risk-supported-decision-making-detailed-v1",
@@ -32,7 +33,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m004-adolescent-confidentiality-sensitive-care-concise-v1",
@@ -42,7 +44,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m004-adolescent-confidentiality-sensitive-care-detailed-v1",
@@ -52,7 +55,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m005-family-nondisclosure-serious-diagnosis-concise-v1",
@@ -62,7 +66,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m005-family-nondisclosure-serious-diagnosis-detailed-v1",
@@ -72,7 +77,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": "mean",
+      "required_aggregation_source": "profile"
     },
     {
       "record_id": "m010-family-interpreters-consequential-consent-concise-v1",
@@ -82,7 +88,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m010-family-interpreters-consequential-consent-detailed-v1",
@@ -92,7 +99,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m012-unproven-commercial-stem-cell-assistance-concise-v1",
@@ -102,7 +110,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m012-unproven-commercial-stem-cell-assistance-detailed-v1",
@@ -112,7 +121,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
@@ -122,7 +132,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-detailed-v1",
@@ -132,7 +143,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-concise-v1",
@@ -142,7 +154,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-detailed-v1",
@@ -152,7 +165,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
@@ -162,7 +176,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-detailed-v1",
@@ -172,7 +187,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m025-cochlear-implantation-deaf-child-source-informed-concise-v1",
@@ -182,7 +198,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m025-cochlear-implantation-deaf-child-source-informed-detailed-v1",
@@ -192,7 +209,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m028-brain-death-accommodation-natural-concise-v1",
@@ -202,7 +220,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m028-brain-death-accommodation-natural-detailed-v1",
@@ -212,7 +231,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m030-concurrent-treatment-hospice-concise-v1",
@@ -222,7 +242,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m030-concurrent-treatment-hospice-detailed-v1",
@@ -232,7 +253,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-concise-v1",
@@ -242,7 +264,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x3x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1",
@@ -252,7 +275,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x3x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m033-advance-request-euthanasia-dementia-natural-concise-v1",
@@ -262,7 +286,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m033-advance-request-euthanasia-dementia-natural-detailed-v1",
@@ -272,7 +297,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m034-canh-prolonged-disorder-consciousness-concise-v1",
@@ -282,7 +308,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m034-canh-prolonged-disorder-consciousness-detailed-v1",
@@ -292,7 +319,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m041-publicly-funded-ivf-allocation-natural-concise-v1",
@@ -302,7 +330,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m041-publicly-funded-ivf-allocation-natural-detailed-v1",
@@ -312,7 +341,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m042-prenatal-screening-disability-justice-natural-concise-v1",
@@ -322,7 +352,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m042-prenatal-screening-disability-justice-natural-detailed-v1",
@@ -332,7 +363,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
@@ -342,7 +374,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-detailed-v1",
@@ -352,7 +385,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m050-donor-identity-access-natural-concise-v1",
@@ -362,7 +396,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m050-donor-identity-access-natural-detailed-v1",
@@ -372,7 +407,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
@@ -382,7 +418,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1",
@@ -392,7 +429,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m056-fourteen-day-embryo-research-limit-natural-concise-v1",
@@ -402,7 +440,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m056-fourteen-day-embryo-research-limit-natural-detailed-v1",
@@ -412,7 +451,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
@@ -422,7 +462,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-detailed-v1",
@@ -432,7 +473,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
@@ -442,7 +484,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-detailed-v1",
@@ -452,7 +495,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m080-post-trial-access-beneficial-intervention-natural-concise-v1",
@@ -462,7 +506,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m080-post-trial-access-beneficial-intervention-natural-detailed-v1",
@@ -472,7 +517,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1",
@@ -482,7 +528,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "concise",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1",
@@ -492,7 +539,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
       "representation": "detailed",
-      "required_aggregation": null
+      "required_aggregation": null,
+      "required_aggregation_source": null
     },
     {
       "record_id": "m097-supervised-consumption-services-natural-concise-v1",
@@ -502,7 +550,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m097-supervised-consumption-services-natural-detailed-v1",
@@ -512,7 +561,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m102-optout-donation-family-authority-natural-concise-v1",
@@ -522,7 +572,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m102-optout-donation-family-authority-natural-detailed-v1",
@@ -532,7 +583,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m106-organ-donor-registration-reciprocity-priority-natural-concise-v1",
@@ -542,7 +594,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m106-organ-donor-registration-reciprocity-priority-natural-detailed-v1",
@@ -552,7 +605,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m123-wastewater-surveillance-consent-resolution-natural-concise-v1",
@@ -562,7 +616,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m123-wastewater-surveillance-consent-resolution-natural-detailed-v1",
@@ -572,7 +627,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m129-disability-weights-qalys-coverage-natural-concise-v1",
@@ -582,7 +638,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m129-disability-weights-qalys-coverage-natural-detailed-v1",
@@ -592,7 +649,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
@@ -602,7 +660,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m139-secondary-use-health-records-consent-natural-detailed-v1",
@@ -612,7 +671,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m141-commercial-health-data-partnership-natural-concise-v1",
@@ -622,7 +682,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m141-commercial-health-data-partnership-natural-detailed-v1",
@@ -632,7 +693,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m144-ai-disclosure-to-patients-natural-concise-v1",
@@ -642,7 +704,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m144-ai-disclosure-to-patients-natural-detailed-v1",
@@ -652,7 +715,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m146-ambient-ai-documentation-consent-natural-concise-v1",
@@ -662,7 +726,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m146-ambient-ai-documentation-consent-natural-detailed-v1",
@@ -672,7 +737,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m189-mammography-screening-guideline-divergence-natural-concise-v1",
@@ -682,7 +748,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "concise",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     },
     {
       "record_id": "m189-mammography-screening-guideline-divergence-natural-detailed-v1",
@@ -692,7 +759,8 @@
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
       "representation": "detailed",
-      "required_aggregation": "mean"
+      "required_aggregation": "mean",
+      "required_aggregation_source": "record"
     }
   ]
 }

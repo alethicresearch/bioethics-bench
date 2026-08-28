@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const recordDir = join(root, 'data', 'benchmark');
+const PROFILES = JSON.parse(readFileSync(join(root, 'schemas', 'benchmark-profiles.json'), 'utf8')).profiles;
 const outDir = join(root, 'releases', 'full-corpus-v1-completion-candidate');
 const outPath = join(outDir, 'manifest.json');
 
@@ -36,8 +37,16 @@ for (const file of files) {
     collection: record.collection,
     benchmark_profile: record.benchmark_profile ?? null,
     representation: record.representation?.form ?? null,
+    // Resolved, not copied. A record may leave required_aggregation unset and take it
+    // from its profile, which most of this corpus does. Publishing the raw field would
+    // pin null for those and tell a consumer reading only the manifest that no
+    // aggregation is required — on records whose asymmetric shape makes Mean mandatory.
     required_aggregation: record.required_aggregation
+      ?? PROFILES[record.benchmark_profile]?.required_aggregation
       ?? null,
+    required_aggregation_source: record.required_aggregation
+      ? 'record'
+      : (PROFILES[record.benchmark_profile]?.required_aggregation ? 'profile' : null),
   });
 }
 
