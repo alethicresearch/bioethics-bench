@@ -4,25 +4,21 @@ This file is the repo-local operating view of the wider normative computation pr
 
 ## Read this first
 
-Before substantive work, read the Drive document **`00 — PROJECT COORDINATION — Normative Computation — LIVE`** (Google Doc ID `16CFU3qBbHcK2ZEIQ3478lQbk0KRLVjpdZKVbQP3u8XA`) in the `00 — START HERE and Program` folder.
+Before substantive work, read both live Drive documents in `00 — START HERE & Program`:
 
-Also check the current Drive manuscripts:
+1. **`00 — PROJECT COORDINATION — Normative Computation — LIVE`** — Google Doc ID `16CFU3qBbHcK2ZEIQ3478lQbk0KRLVjpdZKVbQP3u8XA`.
+2. **`01 — EXECUTION & EVIDENCE ARCHITECTURE — Tutorial → Featured → Full Corpus → Validation — LIVE`** — Google Doc ID `1Z6vFFGyxp4ctEz5pudM9xoCmwobgM9LawYocaceagck`.
 
-- P1 v56 — *Doing Ethics with AI*
-- P2 v40 — *Building a Normative Computation Infrastructure*
-- P3 v5 — *Validating Normative Computation*
-- Publication Program v12
-
-For Bench work, also read `docs/papers/PAPER_UPDATE_BRIEF.md`, `docs/full-corpus/PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`, `docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md`, the current Full Corpus manifest, and the generators/validators that establish any numeric claim needed for the task.
+Also check current P1 v56, P2 v40, P3 v5 and Publication Program v12 in Drive. For Bench work, read `docs/papers/PAPER_UPDATE_BRIEF.md`, `docs/full-corpus/PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`, `docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md`, the current Full Corpus manifest, and the generators/validators that establish any numeric claim needed for the task.
 
 ## Source-of-truth rule
 
 No coordination summary overrides repository-derived state.
 
 - **Bench records/manifests/generators/tests** govern corpus counts, profiles, provenance, lifecycle, hashes and formal validity.
-- **SACRE code/run records** govern current application behavior and execution evidence.
-- **Drive** governs publication sequencing, manuscript claims, and explicit authorization to run development or confirmatory studies.
-- This file is a cross-project map. If it disagrees with generated state or Drive, update it rather than using it to override them.
+- **SACRE code/run records** govern application behavior and execution evidence.
+- **Drive** governs publication sequencing, manuscript claims, execution/evidence roles, and explicit authorization of studies.
+- These coordination documents are the cross-project map. If they disagree with generated state, regenerate and correct them.
 
 Never take a corpus count, release state, geometry distribution, or evaluation status from an earlier chat or manuscript when the repository can regenerate it.
 
@@ -32,159 +28,117 @@ The program follows one research object through successive states:
 
 `normative concepts → calculable procedure → executable system → inspectable application → source-grounded benchmark → empirical validation`
 
-SACRE is the worked normative-computation procedure. Bioethics Bench provides the source-grounded case and candidate layer needed to execute and eventually validate that procedure on real bioethical decision structures.
+SACRE is the worked normative-computation procedure. Bioethics Bench provides the source-grounded case/candidate substrate needed to execute and eventually validate it on real bioethical decision structures.
 
-P1 is primarily specification. P2 is construction/design/deployment/investigation. P3 is confirmatory validation. Bench construction and review may inform all three, but Bench development records must not be treated as validation results.
+P1 is specification. P2 is construction/design/deployment/investigation. P3 is confirmatory validation. Bench construction/review may inform all three, but Bench development records and one-off executions are not validation results.
 
 ## What this repository owns
 
-`alethicresearch/bioethics-bench` owns:
+`alethicresearch/bioethics-bench` owns case research and dossiers; source grounding; candidate-field construction; candidate provenance/inference bridges; natural candidate geometry and executable profiles; record lifecycle; corpus manifests/release state; structural validators/self-tests; and benchmark release gates.
 
-- case research and dossiers
-- source grounding
-- candidate-field construction
-- candidate-level provenance and inference bridges
-- natural candidate geometry / executable profiles
-- record lifecycle
-- corpus manifests and release state
-- structural validators and self-tests
-- benchmark release gates
+It does not own model-performance claims, application-deployment claims, or authorization to execute SACRE studies.
 
-It does **not** own model-performance claims, application-deployment claims, or authorization to execute SACRE studies.
+## Execution and evidence architecture relevant to Bench
+
+### Featured v1 exploratory layer
+
+Featured v1 is already released and fixed at **20 families / 40 concise+detailed records**. It is therefore the appropriate first real source-grounded corpus for a clean exploratory application sweep.
+
+A one-run-per-record Featured sweep should be treated as **exploratory/descriptive execution evidence**, not validation. Its purpose is to demonstrate end-to-end Bench/SACRE integration and expose analyzable patterns: execution completeness, QCCS distributions, source/candidate relationships, rankings/provisional Final Policies, concise-vs-detailed movement, explanations/charts, and selected interpretive case vignettes.
+
+The Bench records remain the input objects; SACRE owns execution and results. Do not write execution outputs back into released Bench records. Do not infer reliability, human agreement, model superiority, benchmark accuracy or normative correctness from a one-run exploratory sweep.
+
+### Full Corpus exploratory layer
+
+The Full Corpus should **not** be used for the planned all-record exploratory census until independent human source-to-policy fidelity review fixes the release manifest. The current 34/68 release-candidate state is not guaranteed to survive that review unchanged.
+
+After the human gate is complete, SACRE may execute every record in the resulting release once under a frozen exploratory configuration. That census can map geometry, representation, source-pair and candidate-field behavior and help finalize P3 hypotheses. One run per record remains exploratory and does not estimate reliability or validity.
+
+### Confirmatory P3 layer
+
+P3 must use a separately frozen/preregistered design for repeated runs, cross-model/provider comparisons, perturbations, human comparisons, ranking/Final-Policy robustness and RE-Iteration/QCS validation. Exploratory Featured/Full-Corpus executions may generate hypotheses but must remain distinct from the confirmatory dataset.
 
 ## Current Bench state
 
 ### Released Featured v1
 
-Bench `main` contains the released Featured v1 lineage. SACRE current `main` vendors that released lineage at Bench commit:
+Bench `main` contains the released Featured v1 lineage. SACRE current `main` vendors that lineage at Bench commit `b466da3071ba7e0bb8f80a7b66fad14b2657c913`.
 
-`b466da3071ba7e0bb8f80a7b66fad14b2657c913`
-
-Featured v1 is 20 families / 40 records. It is a separate lineage from the Full Corpus.
+Featured v1 is 20 families / 40 records and is a separate lineage from the Full Corpus. Released does not mean validated; the records contain no evaluation results.
 
 ### Full Corpus completion
 
-The live Full Corpus work is open PR #10:
+The live Full Corpus work is open PR #10 on `author/full-corpus-completion` targeting `research/full-corpus-v1`.
 
-- head: `author/full-corpus-completion`
-- head at coordination review: `6e219940dbd0307c8bd13153c3c136bd4e310777`
-- base: `research/full-corpus-v1`
-
-Current verified PR-head state:
+Current substantive repository-derived state remains:
 
 - 34 executable families
 - 68 matched concise/detailed records
 - all 200 researched families explicitly dispositioned
 - manifest status `release-candidate`
-- every Full Corpus record remains `status: draft`
-- every Full Corpus record remains `reviewed_by_human: false`
-- no Full Corpus evaluation has been run
+- Full Corpus records `status: draft`
+- Full Corpus records `reviewed_by_human: false`
+- no paper-facing Full Corpus exploratory census or confirmatory validation has been run
 
-The executable count is an outcome of the disposition/audit process, not a target.
+The executable count is an outcome of the evidence/disposition process, not a target.
 
-### Older 17-family branch is not current
-
-`claude/normative-computation-research-f6zfep` reported 17 executable families after an earlier model review. It is an ancestor of the current completion branch. At coordination review, `author/full-corpus-completion` was 73 commits ahead of it and 0 behind.
-
-Do **not** use 17 as current project state.
+An older ancestor branch reported 17 executable families after an earlier model review. Do not use 17 as current state.
 
 ## Release gate and evidence boundary
 
 The remaining release gate is **independent human source-to-policy fidelity review** across the executable Full Corpus.
 
-A green validator can establish, among other things:
+A green validator can establish schema conformance, hashes, profile registration, candidate ids/pool geometry, companion structure, required aggregation, and dossier/manifest consistency. It cannot establish that a source genuinely warrants the policy candidate attributed to it.
 
-- schema conformance
-- hashes
-- profile registration
-- candidate ids and pool geometry
-- companion structure
-- required aggregation
-- dossier/manifest consistency
-
-It cannot establish that a source genuinely warrants the policy candidate attributed to it.
-
-The model-generated `SOURCE_TO_POLICY_FIDELITY_REVIEW.md` is useful internal review/planning material. It is not independent human review and must not be cited in a manuscript as evidence that fidelity has been established.
+The model-generated `SOURCE_TO_POLICY_FIDELITY_REVIEW.md` is internal review/planning material, not independent human review and not manuscript evidence that fidelity has been established.
 
 ## Full Corpus scope
 
-The executable Full Corpus is a bounded validation substrate, not yet a representative sample of all bioethics.
+The current executable Full Corpus is a bounded substrate, not a representative sample of all bioethics. Current 34-family geometry distribution is `8, 1, 7, 7, 6, 1, 3, 1` across eight registered geometries; the `1×2×2`, `2×3×3`, and `1×2×3` geometries are singletons. Domain coverage is clustered, with consent/capacity/refusal contributing 10 of 34 and animal/One Health, climate/planetary and biosecurity empty under the present executable architecture.
 
-Current 34-family geometry counts are:
-
-`8, 1, 7, 7, 6, 1, 3, 1`
-
-across the eight registered Full Corpus geometries. The `1×2×2`, `2×3×3`, and `1×2×3` geometries are each represented by one family.
-
-Domain coverage is clustered. Consent/capacity/refusal contributes 10 of 34 executable families. Animal/One Health, climate/planetary and biosecurity are empty in the current executable subset because the present three-pool architecture cannot represent nonhuman affected interests without a proxy. These are P3 scope conditions, not details to average away.
-
-Regenerate distributions from repository state before using them after any corpus change.
+Regenerate these distributions before reuse after any corpus change. They are scope conditions for exploratory/validation work, not noise to average away.
 
 ## Current SACRE state relevant to Bench
 
-Current SACRE `main` has the application/evidence work merged and currently vendors **Featured v1 only**.
+SACRE `main` contains the application/evidence work and the released Featured v1 vendor. Its existing 53-figure / 101-run / 4-walkthrough evidence package is development/capture evidence, not the planned clean Featured exploratory sweep.
 
-Current SACRE paper-evidence package:
+Full Corpus vendor/loader/execution work lives on `claude/bioethics-bench-completion-m0p43e`. That branch has now been reconciled with current SACRE main. At `ef0becd82e3ccc9829f6605fb17b96cb8d0781d1`, 359 unit tests and 73 web tests pass, the build succeeds, and the Full Corpus harness still exercises all eight current geometries. It pins the current Bench PR #10 state.
 
-- 53 figures
-- 101 development run records
-- 4 walkthroughs
-
-Those runs demonstrate reachable application states and run-to-figure provenance. They are not a model-comparison or validation study.
-
-Full Corpus vendor/loader/execution machinery currently lives on SACRE branch:
-
-`claude/bioethics-bench-completion-m0p43e`
-
-At coordination review its head was `e442c19c60deac09355e84d59f1bef0cad721e84`; it was 6 commits ahead of its merge base and 79 commits behind current SACRE `main`. It must be reconciled with current main before Full Corpus execution is treated as a current application capability.
-
-The branch contains a dedicated Full Corpus harness whose default dry run selects one family per current geometry: 8 families, 16 representations, 216 QCCS calls, 14 of 16 executions requiring Mean. That is **development machinery, not authorization and not a result**.
+Reconciliation is not deployment: until reviewed/merged, Full Corpus loading should not be described as a current SACRE-main capability.
 
 ## Current paper alignment
 
-P1 v56 should remain primarily specification; do not push corpus counts or run statistics into it unless a genuine conceptual requirement changes.
+P1 v56 should remain primarily specification. The paper’s constructed county-health tutorial numbers are being superseded by a planned canonical clean tutorial execution; this does not change Bench content.
 
-P2 v40 is the construction/deployment paper. Its Full Corpus quantitative/evaluation placeholder remains unfilled because no Full Corpus evaluation has been run.
+P2 v40 is the construction/deployment paper. Its near-term empirical/descriptive layer should use the canonical tutorial execution and then a separately frozen Featured v1 exploratory sweep. The Full Corpus exploratory census is downstream of the human release gate and should not delay near-term P1/P2 submission.
 
-P3 v5 is the validation outline. Confirmatory model and human studies have not begun and must be frozen/pre-specified before execution.
-
-There is one current cross-repo discrepancy to resolve before P2 freeze: P2 v40 / Program v12 describe the Full Corpus as vendored/loadable in the deployed application, while current SACRE `main` vendors only Featured v1. Either the Full Corpus integration must be reconciled/merged and verified on current main, or the paper claim must be softened to an integration branch/environment.
+P3 v5 is the validation outline. Confirmatory model and human studies have not begun and must be pre-specified/frozen before execution.
 
 ## Evidence boundaries
 
-1. Featured v1 and Full Corpus are separate lineages. Never pool their counts or results.
-2. No Full Corpus evaluation has been run.
-3. A harness, dry run, loader, schema test, or application route is capability, not empirical evidence.
-4. Machine validity is not source-to-policy fidelity.
-5. Development evidence must not be relabeled as confirmatory validation.
-6. E1–E4, confirmatory P3 execution, human/Prolific fielding and paid fine-tuning remain unauthorized until explicitly approved.
+1. Featured v1 and Full Corpus are separate lineages. Never pool their counts/results.
+2. A Bench record being released or structurally valid does not make a downstream model execution validated.
+3. A one-run-per-record Featured or Full-Corpus sweep is exploratory/descriptive, not reliability or validity evidence.
+4. A harness, dry run, loader or schema test is capability, not empirical evidence.
+5. Machine validity is not source-to-policy fidelity.
+6. Development evidence must not be relabeled as confirmatory validation.
 7. Changes to candidate counts, geometry, release state or provenance can propagate into P2/P3 and the Drive Program; flag them explicitly.
 
 ## Immediate Bench priorities
 
 1. Keep PR #10 internally green and derive all counts from repository state.
 2. Complete independent human source-to-policy review across the executable families.
-3. Record demotions, repairs, and promotions in the relevant dossiers and regenerate the disposition ledger/manifest; do not hand-maintain counts.
+3. Record demotions, repairs and promotions in the relevant dossiers and regenerate the disposition ledger/manifest; do not hand-maintain counts.
 4. Only move the Full Corpus toward release after the human review gate is satisfied.
-5. Coordinate any release/pin change with SACRE so its Full Corpus vendor uses an exact Bench commit/hash and current profiles.
-6. Do not grow the executable corpus merely to improve n. Promotion requires additional evidence sufficient for an action-aligned candidate field.
-7. Preserve the current structural finding: source architecture limits are legitimate reasons for a domain/family to remain non-executable.
+5. Coordinate the resulting release/pin with SACRE before any Full Corpus exploratory census.
+6. Featured v1 can support the near-term clean exploratory execution layer without waiting for Full Corpus review; Bench should preserve its frozen input identity while SACRE owns run artifacts.
+7. Do not grow the executable corpus merely to improve n. Promotion requires sufficient action-aligned evidence.
 
 ## When this file must be updated
 
-Update this file in the same change, or leave an explicit handoff requiring an update, when work changes any cross-project fact such as:
+Update this file in the same change, or leave an explicit handoff requiring an update, when work changes executable family/record counts, dispositions, profile/geometry set, release/lifecycle status, provenance/inference semantics, source-to-policy review state, manifest/pin/hash, manuscript-relevant facts, or assumptions required by SACRE exploratory/validation designs.
 
-- executable family/record count
-- disposition totals
-- profile/geometry set or distribution
-- release/lifecycle status
-- provenance or inference semantics
-- source-to-policy review state
-- manifest/pin/hash
-- a fact currently stated by P1/P2/P3/Program
-- assumptions required by SACRE integration or validation design
-
-Do not update manuscript claims merely because a record was constructed. Distinguish researched, structurally valid, executable, reviewed, released, run, and validated states.
+Distinguish researched, structurally valid, executable, human-reviewed, released, run, explored and validated states.
 
 ## Agent handoff format
 
@@ -196,12 +150,12 @@ Every substantive handoff should include:
 
 **Program impact** — effect on P1, P2, P3, handbook, SACRE integration, Bench release or validation design.
 
-**Evidence status** — construction/internal review, independent human review, development evidence, confirmatory evidence, or no empirical evidence.
+**Evidence status** — construction/internal review, independent human review, exploratory/descriptive execution, confirmatory evidence, or no empirical evidence.
 
-**Drive update** — whether the Program, current manuscripts or Drive coordination document must change.
+**Drive update** — whether the Program, current manuscripts or live coordination documents must change.
 
 **Next dependency** — what should happen next and what must be true before it starts.
 
 ## Decision rule
 
-The program should now optimize for alignment and validation rather than horizontal expansion. Bench quality and release confidence matter more than maximizing the executable count. The next major scientific step is to provide a stable, human-reviewed substrate for a rigorously frozen SACRE validation design.
+Bench quality and release confidence matter more than maximizing the executable count. Featured v1 can support near-term exploratory application evidence; Full Corpus should become a stable human-reviewed substrate before its corpus-wide exploratory census; and confirmatory validation remains a separate planned stage.
