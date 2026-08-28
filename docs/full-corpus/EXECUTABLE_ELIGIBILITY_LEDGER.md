@@ -10,6 +10,41 @@ matches those figures exactly, which is the check that the list is complete.
 
 ---
 
+## Status at completion of independent review
+
+All thirty-one strict-standard families have now been through the four gates.
+
+| | n | families |
+|---|---|---|
+| **Transcribed and reviewed** | 4 | M002, M004, M005, M010 |
+| **Cleared, awaiting transcription** | 13 | M028, M033, M041, M056, M060, M075, M080, M094, M106, M123, M139, M141, M144 |
+| **Demoted on review** | 13 | M012, M018, M019, M020, M025, M030, M031, M034, M042, M045, M050, M054, M097 |
+| **Demoted earlier** | 1 | M102 |
+| **Featured manifest, not Full Corpus** | 1 | M001 / F01 |
+
+**Full Corpus executable manifest: 17 families.** `17 + 13 = 30`, plus M001 in Featured and M102
+demoted, reconciling to the historical 32.
+
+**17 of 200 researched families — 8.5%.**
+
+### Why the number moved
+
+The thirteen demoted on review were all accepted by audits written before the source-to-policy
+standard was fully articulated. Applied from scratch, gate 1 removes them: patient attitudes toward
+an intervention are not a view about clinician conduct; uptake under an offer is not endorsement of
+a default; willingness to use a service is not a position on whether it should be provided; moral
+acceptability of an act is not a position on institutional participation.
+
+Two cases carry a route back. **M025** needs affected-community evidence about what programmes
+should recommend rather than what parents choose. **M054**'s failure is one-sided — `pub2` is
+sound, `pub1` rests on uptake — so a replacement `pub1` from consent-design evidence would restore
+it.
+
+Dispositions: `reviews/2026-08-27-early-ten-dispositions.md` and
+`reviews/2026-08-27-remaining-eleven-and-m025.md`.
+
+---
+
 ## A boundary question that changes the headline number
 
 **M001 is Featured F01.** `FIRST_50_CHECKPOINT` lists it as *"released through Featured F01
@@ -27,66 +62,7 @@ copied across unexamined.
 
 ---
 
-## The ledger
-
-**Transcribed and reviewed — 4.** In `data/benchmark` today.
-
-| family | profile | note |
-|---|---|---|
-| M002 | `1×2×2` | the only `1×2×2` in the corpus |
-| M004 | `2×1×2` | |
-| M005 | `2×1×2` | `fw1` re-derived after review; records re-hashed |
-| M010 | `2×2×2` | |
-
-**Cleared, awaiting transcription — 5.**
-
-| family | profile | cleared in |
-|---|---|---|
-| M106 | `2×1×2` | Batch K/L review |
-| M123 | `2×1×2` | n=150 six-case review — expert singleton straddles the axis |
-| M139 | `2×1×2` | n=150 — distinctness test is the reference example |
-| M141 | `2×1×2` | n=150 |
-| M144 | `2×1×2` | n=150 — reference case for the scenario/action-divergence gate |
-
-**Cleared on review of the earlier ten — 2.**
-
-| family | profile | why it cleared |
-|---|---|---|
-| M028 | `2×1×2` | the survey asked whether hospitals should be *required* to continue support |
-| M033 | `2×1×2` | the survey asked an eligibility question, and both public candidates come from it |
-
-**Demoted on review of the earlier ten — 8.** Gates applied from scratch; see
-`reviews/2026-08-27-early-ten-dispositions.md`.
-
-| family | binding reason |
-|---|---|
-| M012 | patient attitudes toward an intervention are not a view on clinician conduct |
-| M018 | patient expectation studies do not support a prescribing rule |
-| M019 | modality preference does not support a triage rule |
-| M020 | workforce willingness does not support mandatory-versus-voluntary assignment |
-| M025 | `pub2` is conditioned on a fact the scenario denies — **repairable by rewording** |
-| M030 | `pub2` has no provenance; unassessable rather than failed |
-| M031 | moral acceptability of an act is not a position on institutional participation |
-| M034 | `pub2`'s evidence comes from a fact pattern the scenario excludes |
-
-**Awaiting independent review — 11.**
-
-M041, M042, M045, M050, M054, M056, M060, M075, M080, M094, M097.
-
-**Demoted earlier — 1.** M102, deemed-consent evidence mismatch.
-
-**Featured, not in the Full Corpus manifest — 1.** M001 / F01.
-
-`4 + 5 + 2 + 8 + 11 + 1 = 31.` Of these, **11 are cleared** (4 transcribed, 7 not), 11 remain
-queued, and 9 are demoted.
-
-**Current Full Corpus manifest projection: 11 cleared, up to 22 if every remaining case passes.**
-That upper bound should not be planned against — eight of the last ten failed.
-
----
-
-
-## What review of the 21 involves
+## What review involved
 
 Each needs the same three checks the cleared five passed:
 
