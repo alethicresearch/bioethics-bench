@@ -1,0 +1,268 @@
+{
+  "case_id": "m028-brain-death-accommodation",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Continued organ support after death by neurologic criteria",
+  "short_description": "After a valid BD/DNC determination, an informed family rejects neurologic criteria as death and asks that organ support continue. The hospital must choose an accommodation policy.",
+  "decision_question": "After a valid BD/DNC determination, what accommodation policy should a hospital use when the family rejects the determination and asks that organ support continue?",
+  "jurisdiction_context": "United States-style jurisdiction in 2026 that recognizes BD/DNC as legal death and permits institutional choice among reasonable accommodation policies.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m028-valid-determination",
+      "kind": "scientific",
+      "statement": "BD/DNC was correctly determined under accepted medical standards and no diagnostic uncertainty remains.",
+      "rationale": "The case concerns accommodation after death has been validly determined; reopening diagnostic validity would create a different decision problem."
+    },
+    {
+      "id": "m028-no-donation",
+      "kind": "contextual",
+      "statement": "Organ donation is not planned.",
+      "rationale": "Donation would create an independent reason to continue organ support and would confound the accommodation question."
+    },
+    {
+      "id": "m028-informed-objection",
+      "kind": "contextual",
+      "statement": "The family understands the clinical and legal position but rejects neurologic criteria on sincere moral or religious grounds.",
+      "rationale": "The case tests accommodation of an informed normative disagreement rather than misunderstanding alone."
+    },
+    {
+      "id": "m028-resource-context",
+      "kind": "contextual",
+      "statement": "Continued organ support uses ICU-level resources, but no immediate competing patient or acute scarcity crisis is stipulated.",
+      "rationale": "Resource burden is relevant to proportional accommodation without allowing an emergency allocation problem to decide the case."
+    }
+  ],
+  "position_families": [
+    "short transition followed by discontinuation",
+    "defined accommodation and transfer period",
+    "continued support until circulatory arrest where feasible",
+    "proportional case-by-case accommodation"
+  ],
+  "domains": [
+    "end-of-life"
+  ],
+  "tags": [
+    "brain death",
+    "BD/DNC",
+    "family objection",
+    "religious accommodation",
+    "death determination",
+    "natural asymmetry",
+    "action-target alignment"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored representation synthesized from current BD/DNC guidance and empirical work on family/public objections. The scenario fixes a valid completed determination and removes organ donation so the represented decision is accommodation after death, not diagnostic validity or donation management.",
+    "sources": [
+      {
+        "citation": "Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023.",
+        "type": "guideline"
+      },
+      {
+        "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
+        "type": "survey"
+      },
+      {
+        "citation": "Families' understanding of brain death. PMID 14558637.",
+        "type": "article"
+      },
+      {
+        "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Require continued organ support when an informed family rejects BD/DNC on sincere moral or religious grounds for a defined accommodation and transfer period while support remains technically feasible.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion: the informed-public survey directly asked whether hospitals should be required to continue treatment after family rejection of brain death; the defined accommodation/transfer period makes that orientation executable but was not specified by the survey.",
+          "sources": [
+            {
+              "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not require continued organ support after a valid BD/DNC determination; provide a reasonable transition period, family support and an opportunity for transfer before support is discontinued.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion: the survey directly supports the orientation that hospitals need not be required to continue treatment after family rejection; the transition and transfer safeguards are authored completion aligned with the represented clinical context.",
+          "sources": [
+            {
+              "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "After valid BD/DNC determination, provide a reasonable but limited accommodation period, a defined disagreement process and transfer assistance, then discontinue organ support unless another authorized pathway applies.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the 2023 multidisciplinary BD/DNC consensus guideline and subsequent AAN guidance, which treat BD/DNC as death while requiring a disagreement process and consideration of a reasonable period of accommodation.",
+          "sources": [
+            {
+              "citation": "Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023.",
+              "type": "guideline"
+            },
+            {
+              "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Provide substantial accommodation and active transfer assistance for sincere conscience-based rejection of neurologic death when continued support remains feasible, because abrupt discontinuation can impose profound moral injury.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from religious-liberty and moral-pluralism reasoning: when disagreement concerns the meaning of death itself, meaningful accommodation protects conscience and reduces moral injury while a feasible alternative pathway is sought. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
+              "type": "survey"
+            },
+            {
+              "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "After a short transition for family presence and grieving, discontinue organ support because a valid public standard of death should not become optional by family belief and clinicians should not be required to treat a deceased person as living.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from public-standard and professional-integrity reasoning: a valid determination of death fixes the status of the patient for institutional practice, so conscience accommodation does not create an indefinite treatment entitlement. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023.",
+              "type": "guideline"
+            },
+            {
+              "citation": "Organ support after death by neurologic criteria: survey of US neurologists. PMID 27449064.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Use a defined and reviewable accommodation period whose duration reflects transfer feasibility, resource burden and institutional capacity, providing meaningful accommodation without recognizing an unlimited claim on intensive-care resources.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from proportional accommodation and distributive-justice reasoning: sincere conscience claims warrant real process and time, but the extent of accommodation must remain proportionate to feasibility, burden, and competing institutional obligations. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
+              "type": "article"
+            },
+            {
+              "citation": "Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 candidate-field and provenance demonstration; later P3 direct-grounding/geometry analyses."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023.",
+      "type": "guideline"
+    },
+    {
+      "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
+      "type": "survey"
+    },
+    {
+      "citation": "Families' understanding of brain death. PMID 14558637.",
+      "type": "article"
+    },
+    {
+      "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
+      "type": "survey"
+    },
+    {
+      "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
+      "type": "article"
+    },
+    {
+      "citation": "Organ support after death by neurologic criteria: survey of US neurologists. PMID 27449064.",
+      "type": "survey"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m028-brain-death-accommodation-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m028-brain-death-accommodation-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; the candidate field and load-bearing facts are fixed."
+  },
+  "scenario": "An adult with catastrophic brain injury has been validly determined dead by neurologic criteria under current accepted medical standards. Organ donation is not planned. The family does not accept neurologic criteria as death and asks that ventilation and other organ support continue until the heart stops, citing sincere religious and moral beliefs. For this benchmark, assume the determination was correctly performed with no remaining diagnostic uncertainty, the family understands the clinical and legal position, organ donation is not planned, and continued support uses ICU-level resources without an immediate scarcity crisis. The hospital must decide what accommodation policy should apply.",
+  "content_hash": "sha256:cd018a367f27c890d9d9c7f302138c61e1f6e31f0614e00a390dec8f5051a517"
+}
