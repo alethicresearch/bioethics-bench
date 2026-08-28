@@ -1,0 +1,658 @@
+{
+  "manifest_version": "1.0.0",
+  "release_id": "full-corpus-v1-completion-candidate",
+  "release_status": "release-candidate",
+  "created_at": "2026-08-28",
+  "qccs_protocol_id": "qccs-v1",
+  "qccs_protocol_version": "1.0.0",
+  "qccs_protocol_hash": null,
+  "scoring_mode": "conv+ 0-100",
+  "content_hash_algorithm": "jcs-sha256",
+  "schema_versions": {
+    "case": "1.0.0",
+    "manifest": "1.0.0"
+  },
+  "notes": "Full Corpus executable subset: 32 case families, 64 records, two matched representations each. Separate from the Featured v1 release and from the fixed paper regression; a record may not carry a profile of the other lineage. Release status is release-candidate, not released: every record is status \"draft\" with reviewed_by_human false, and independent review of source-to-policy fidelity has not yet happened. The executable count is an output of the disposition process recorded in docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md, not a target that was aimed at. M001 is released separately as Featured F01 and is deliberately not duplicated here.",
+  "records": [
+    {
+      "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:2efcba0736cddf6503247f4a53b5b6c8d6c44d6c5506083400aeee0d683e7b65",
+      "path": "data/benchmark/m002-capacity-risk-supported-decision-making-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-1x2x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m002-capacity-risk-supported-decision-making-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:18648b177e8b69ab69f9bb6c243a40417162f8de022967aa42ccbedbc8aa2700",
+      "path": "data/benchmark/m002-capacity-risk-supported-decision-making-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-1x2x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m004-adolescent-confidentiality-sensitive-care-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:9bc6103a85ed30ac49290ff137278f2a106011f8f04769cf3f0c1bb4f54f1c94",
+      "path": "data/benchmark/m004-adolescent-confidentiality-sensitive-care-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m004-adolescent-confidentiality-sensitive-care-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:9fa4b5abb6f35ceb1822b06d65e6739839057d0f035605acede9f606507caa72",
+      "path": "data/benchmark/m004-adolescent-confidentiality-sensitive-care-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m005-family-nondisclosure-serious-diagnosis-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:7fc912e5c398e2946ebbb34f520ede43f9c6289d40c07ca6a706a8996cab3715",
+      "path": "data/benchmark/m005-family-nondisclosure-serious-diagnosis-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m005-family-nondisclosure-serious-diagnosis-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:7db65235cbd33fd679ab1e0b236b7ecdd7ffd76faa3326de9e1a4697943a57e5",
+      "path": "data/benchmark/m005-family-nondisclosure-serious-diagnosis-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m010-family-interpreters-consequential-consent-concise-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:c5021e9635637e0adfc6cc0aa97db7bc9357b339d92a975bd2ee77715e53a024",
+      "path": "data/benchmark/m010-family-interpreters-consequential-consent-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m010-family-interpreters-consequential-consent-detailed-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:1a23aa695ff6c0457eb14f77815738086e1a40d0919f8657f0c16c62ebc25590",
+      "path": "data/benchmark/m010-family-interpreters-consequential-consent-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m012-unproven-commercial-stem-cell-assistance-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:ce3c2cafe149ca44e2a6e06b97f35fa137ea2c31a3654a86404df1ccb4aac9ab",
+      "path": "data/benchmark/m012-unproven-commercial-stem-cell-assistance-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m012-unproven-commercial-stem-cell-assistance-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:657edcef34c0c3e656208823ddcae9fc9ea60a4030077b938a251f2cd19ae6fe",
+      "path": "data/benchmark/m012-unproven-commercial-stem-cell-assistance-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:a40e608fec49aa2d605c8801ef7fef0d9af1431b90a749b3f972d37b3fa93887",
+      "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m018-patient-requested-antibiotics-uncertainty-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:5ca96db7d154f87fcb20e861391b8c13d413dfb7582bf1a85c906ff49b2a764f",
+      "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m019-telemedicine-access-diagnostic-safety-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:0bbc0eb60c83cedb7e4e1f8f35cef293952460593e3b4551d419a64a84fc89a3",
+      "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m019-telemedicine-access-diagnostic-safety-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:4358bdff9dca45ff7481d1128879add466d96a1f1049312b33a39ed6911aa609",
+      "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:5640f9dd85f59598c35e387cce912387146b8b444522c61d818c5081e82ddc6a",
+      "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m020-clinician-duty-dangerous-outbreak-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:e2d575a8c0f9a0e33b33dfdbc06aa5ce95a8f7b0bbaae4666e819fe5a7e58cb3",
+      "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m025-cochlear-implantation-deaf-child-source-informed-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:d3d4a60a08953531b2073a08fabb82a98c7d77c596529c0509ee354061a84319",
+      "path": "data/benchmark/m025-cochlear-implantation-deaf-child-source-informed-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m025-cochlear-implantation-deaf-child-source-informed-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:a906b86cff89a32586cd160c13514c826700e5fa827dc04fe68db4cd8677110f",
+      "path": "data/benchmark/m025-cochlear-implantation-deaf-child-source-informed-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m028-brain-death-accommodation-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:b23431040084644807f6eb3cd503fa87bceee18ce9e7bfab1e1fbce1d1c86fcc",
+      "path": "data/benchmark/m028-brain-death-accommodation-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m028-brain-death-accommodation-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:fe6987dc85769368728e25cf891ab209021e76e5a16736284da3ce9bec81b01d",
+      "path": "data/benchmark/m028-brain-death-accommodation-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m030-concurrent-treatment-hospice-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:6627919a9e6ebf70f0f4bea68e27f208897a2e76f500d78b6e77057beb33f85f",
+      "path": "data/benchmark/m030-concurrent-treatment-hospice-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m030-concurrent-treatment-hospice-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:199fb74848d8e0ac418c0589304cc09a5858de583b631927be3d5ed5ca5df0b8",
+      "path": "data/benchmark/m030-concurrent-treatment-hospice-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:c88843e13372b99112eb819c5a56520d63205220b2f21b69a40d8fcb78fc3cbd",
+      "path": "data/benchmark/m031-medical-aid-in-dying-terminal-illness-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x3x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:f1747304394fe34df217edad04d4d299170200caf5fe0383c662e758bce9c1d3",
+      "path": "data/benchmark/m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x3x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m033-advance-request-euthanasia-dementia-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:ebee9f38354e6f709f7438260e9d4eec12bc74ff176be47e65925f07a337426a",
+      "path": "data/benchmark/m033-advance-request-euthanasia-dementia-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m033-advance-request-euthanasia-dementia-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:f9785d211dea96af5ed738d40a82677d0d09468e5a4dfc5ddfe07fc09aa8424e",
+      "path": "data/benchmark/m033-advance-request-euthanasia-dementia-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m034-canh-prolonged-disorder-consciousness-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:3a65ec1a2fc5c77d3cb177972fd1961be99e936e746a09ad3d58acafe58d0bd7",
+      "path": "data/benchmark/m034-canh-prolonged-disorder-consciousness-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m034-canh-prolonged-disorder-consciousness-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:ed5d1c09139c7cb8bbae50de7583bc4e8bafd2d214ee95333c65d1c156dbeed0",
+      "path": "data/benchmark/m034-canh-prolonged-disorder-consciousness-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m041-publicly-funded-ivf-allocation-natural-concise-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:642a8b3c9c1c5677d88d7d37adba44734077cd65aaa7dc1b9f8436f63d6eda80",
+      "path": "data/benchmark/m041-publicly-funded-ivf-allocation-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m041-publicly-funded-ivf-allocation-natural-detailed-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:9b547d9621d4f498cca27cbf6263d25efc5cb374a0b2c7c6d988603d33fdd58b",
+      "path": "data/benchmark/m041-publicly-funded-ivf-allocation-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m042-prenatal-screening-disability-justice-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:d21bf389800c9fa742a9d809d0c9718b2880778a303be27b26b2c5ef87931ec9",
+      "path": "data/benchmark/m042-prenatal-screening-disability-justice-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m042-prenatal-screening-disability-justice-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:0662d6a254824819f9f3b06e27c3c51c4d84d592123c8128c0716e94fe65d848",
+      "path": "data/benchmark/m042-prenatal-screening-disability-justice-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:f4eb5aac381161f53f5f714a29eb546317269af100b00f37a1fe17f95a36ed96",
+      "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m045-posthumous-use-stored-reproductive-material-natural-detailed-v1",
+      "version": "1.1.0",
+      "content_hash": "sha256:0938afb8cee14032aa594ddc85c54e10548c719c7069144d97122bcb2a1018dd",
+      "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m050-donor-identity-access-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:1be815ef669a39aafd99de4accb8dba5e54565f77f8107794254400326a57f69",
+      "path": "data/benchmark/m050-donor-identity-access-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m050-donor-identity-access-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:2c1dcdf83933ec9fb453f669e30cadd696fd359357c5116182be79db23ea0a40",
+      "path": "data/benchmark/m050-donor-identity-access-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:4bd387fd0579e7eade4b13bc32c93dbba0958e3d44eeda639eb7023d06df6476",
+      "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:031acbb148d85d5ca61195e06b637b791d0f7035a1cc2a7c45ac666ad838e063",
+      "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m056-fourteen-day-embryo-research-limit-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:d6dca0b296855b077c4c01ccf310ac3430f210b93c6a166198a29e4ae19de961",
+      "path": "data/benchmark/m056-fourteen-day-embryo-research-limit-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m056-fourteen-day-embryo-research-limit-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:44d5cf8d9f6e5936fd7799a5dfdc57a1d24532bbb3043d43b5af740b7e86a736",
+      "path": "data/benchmark/m056-fourteen-day-embryo-research-limit-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:10a47fa35b7a6e29b199d00cc7313ed4c3d9df0d6e7f4b3a20e6114e5a776b56",
+      "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m060-nonmedical-sex-selection-ivf-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:e5b0d7f177c6c4fd0dbc0ed50c6b5405ced33a8affe7327cf7dbc24e7ccf285f",
+      "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:9c63e2cd0d7adacdd4da6cc2b3b0209addb41d370d982ac9fdeb55f850d07d30",
+      "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m075-broad-consent-future-biobank-research-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:ac5543e63894a73b197ac64c1702bdebddf0fed7d1f56cd975c2251ca99d7441",
+      "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m080-post-trial-access-beneficial-intervention-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:a28da17c57f2b51758943bc45305611f69b4ef2bf1cb4d88fed1ecfeb29f720b",
+      "path": "data/benchmark/m080-post-trial-access-beneficial-intervention-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m080-post-trial-access-beneficial-intervention-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:ccc7577a8a5492d80c41afb028e3ab76115e69a2518f42c0a4652958a88ebb05",
+      "path": "data/benchmark/m080-post-trial-access-beneficial-intervention-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:1c1c84bb8c249842eb43bcd28a3fcbd531b526f84fbff66518ac61e99c794115",
+      "path": "data/benchmark/m094-high-risk-workforce-vaccination-mandate-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "concise",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:a174879407df77c555ecfd6917f60dd21696a71e867137bf9b135211a6aa5081",
+      "path": "data/benchmark/m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x2-v1",
+      "representation": "detailed",
+      "required_aggregation": null
+    },
+    {
+      "record_id": "m097-supervised-consumption-services-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:a597ca5b8805de1b3b7ac5450eeb1683dd2878237b025fd763b8510cf2323665",
+      "path": "data/benchmark/m097-supervised-consumption-services-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m097-supervised-consumption-services-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:1b585e844db1c154527e36e20a4093edaa65365210684cad8b9184e267a57a8c",
+      "path": "data/benchmark/m097-supervised-consumption-services-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m102-optout-donation-family-authority-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:12a647dc56750088fa244a33cdca0fb817c11c6ce72fcfb52deb74f497b67264",
+      "path": "data/benchmark/m102-optout-donation-family-authority-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m102-optout-donation-family-authority-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:3ca2b77f09a2f62ae7a030fc7f14c6ad5b4b21a3e462b3ea77dd77995bf08695",
+      "path": "data/benchmark/m102-optout-donation-family-authority-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m106-organ-donor-registration-reciprocity-priority-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:e220fc0552673ed105c26cda7a29557f06354bcdaadb896f58169b4abaed9d2d",
+      "path": "data/benchmark/m106-organ-donor-registration-reciprocity-priority-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m106-organ-donor-registration-reciprocity-priority-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:7e6261341a0d276ade370eab290473229e6a373367b3f5527e19ff20039dce91",
+      "path": "data/benchmark/m106-organ-donor-registration-reciprocity-priority-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m123-wastewater-surveillance-consent-resolution-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:d4e3a850515a8bf569af5542568f4a375b99e07392930d419d92c6adc3bac40a",
+      "path": "data/benchmark/m123-wastewater-surveillance-consent-resolution-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m123-wastewater-surveillance-consent-resolution-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:89510984d5f74089bff0a19ddee08319899ad9f0c9b45ced60bb3c6ce313232b",
+      "path": "data/benchmark/m123-wastewater-surveillance-consent-resolution-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee",
+      "path": "data/benchmark/m139-secondary-use-health-records-consent-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m139-secondary-use-health-records-consent-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:09d971add23e02451d8a581cca1c8d171897d39fbf64e60b55fe945409bc5ee4",
+      "path": "data/benchmark/m139-secondary-use-health-records-consent-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m141-commercial-health-data-partnership-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:fd161df98c97d63bf0bdf1b2ee515a54be9708ed48fbc82c0f547cbdd3708915",
+      "path": "data/benchmark/m141-commercial-health-data-partnership-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m141-commercial-health-data-partnership-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:7a480362ebf222cb1464295f18316b7a83ca8f8ae26f197fcd3b760553b49c87",
+      "path": "data/benchmark/m141-commercial-health-data-partnership-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m144-ai-disclosure-to-patients-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:36009709212de1d1490fa25923f57d9ac4311e8b22f9582ef12d52592a35683f",
+      "path": "data/benchmark/m144-ai-disclosure-to-patients-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m144-ai-disclosure-to-patients-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:4b5085dbed63921444c33540058ae9498027b1ff9941152e09e8fba3d1a44481",
+      "path": "data/benchmark/m144-ai-disclosure-to-patients-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x1x2-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m189-mammography-screening-guideline-divergence-natural-concise-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:672643d84a00a2cdb35c071d1884f2831d650a0a1e72c3fc75716de7573ef839",
+      "path": "data/benchmark/m189-mammography-screening-guideline-divergence-natural-concise-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "concise",
+      "required_aggregation": "mean"
+    },
+    {
+      "record_id": "m189-mammography-screening-guideline-divergence-natural-detailed-v1",
+      "version": "1.0.0",
+      "content_hash": "sha256:481ce00aeee3542dec20af5483a373f6e398d2e3edc506f9f3f952dc08c06fc1",
+      "path": "data/benchmark/m189-mammography-screening-guideline-divergence-natural-detailed-v1.json",
+      "collection": "benchmark",
+      "benchmark_profile": "full-corpus-2x2x3-mean-v1",
+      "representation": "detailed",
+      "required_aggregation": "mean"
+    }
+  ]
+}
