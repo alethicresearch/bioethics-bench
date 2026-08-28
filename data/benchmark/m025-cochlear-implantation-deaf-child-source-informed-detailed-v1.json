@@ -1,0 +1,283 @@
+{
+  "case_id": "m025-cochlear-implantation-deaf-child",
+  "frame_id": "source-informed",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Cochlear implantation for a Deaf child",
+  "short_description": "Deaf parents of a young Deaf child decline cochlear implantation while providing immediate fluent sign-language access. The service must decide how strongly to recommend implantation and how to preserve language and future options.",
+  "decision_question": "When Deaf parents decline cochlear implantation for a young Deaf child who is clinically eligible, what policy should the service use regarding parental choice, language access and preservation of future options?",
+  "jurisdiction_context": "Jurisdiction-neutral pediatric cochlear-implant service policy; parental choice among medically reasonable options is presumed unless a serious-harm threshold is crossed.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m025-language-access",
+      "kind": "contextual",
+      "statement": "Immediate high-quality fluent sign-language exposure and educational support are available to the child.",
+      "rationale": "The case concerns a choice among viable language/habilitation pathways rather than language deprivation."
+    },
+    {
+      "id": "m025-ci-eligibility",
+      "kind": "scientific",
+      "statement": "The child is clinically eligible for cochlear-implant evaluation and implantation offers a reasonable but variable chance of improving auditory and spoken-language access.",
+      "rationale": "The implantation option must be medically genuine without being represented as guaranteed success."
+    },
+    {
+      "id": "m025-timing",
+      "kind": "scientific",
+      "statement": "Delaying implantation may reduce some later auditory-language benefit but does not eliminate future candidacy.",
+      "rationale": "Timing creates a real opportunity-preservation concern without making present deferral equivalent to permanent loss of the option."
+    },
+    {
+      "id": "m025-informed-care",
+      "kind": "contextual",
+      "statement": "The parents understand the available options and are actively supporting the child's communication and development.",
+      "rationale": "The case tests informed parental value choice rather than neglect or misunderstanding."
+    }
+  ],
+  "position_families": [
+    "respect informed parental deferral with robust sign-language and developmental support",
+    "recommend timely implantation to preserve auditory opportunity without coercive override",
+    "structured bilingual deferral with periodic reassessment and increasing child participation",
+    "override only if an adequate language pathway or other serious-harm protection fails"
+  ],
+  "domains": [
+    "pediatrics",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "deafness",
+    "Deaf culture",
+    "cochlear implant",
+    "sign language",
+    "parental choice",
+    "open future",
+    "bilingual capability",
+    "source-informed inference",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored pediatric cochlear-implant representation synthesized from Deaf-parent and broader parent decision research and current pediatric candidacy guidance. It fixes immediate fluent sign-language access, clinical eligibility, variable implant benefit, a nonabsolute timing effect and informed parental support so the represented decision is how a service should respond to value-based deferral.",
+    "sources": [
+      {
+        "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
+        "type": "article"
+      },
+      {
+        "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
+        "type": "article"
+      },
+      {
+        "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
+        "type": "article"
+      },
+      {
+        "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
+        "type": "article"
+      },
+      {
+        "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
+        "type": "guideline"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Respect the informed parental decision to defer cochlear implantation when the child has immediate fluent sign-language access, while maintaining audiologic follow-up, developmental support and future reconsideration.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: Deaf-parent and parent decision studies directly document the importance of Deaf identity, sign language, surgical/rehabilitation burdens and parental goals. The Bench translates those affected-family values into a service-level deferral policy rather than attributing that institutional rule to the studies.",
+          "sources": [
+            {
+              "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
+              "type": "article"
+            },
+            {
+              "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Recommend timely cochlear implantation despite the parents' present preference to defer in order to preserve auditory-language opportunities that may diminish with delay, while maintaining immediate fluent sign-language access and stopping short of coercive override while the child has an adequate language pathway.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: parent studies document orientations that place substantial value on early implantation, spoken/auditory opportunities and timing-sensitive benefit. The Bench translates those parental goals into what the service should recommend; parental preference is not direct evidence of an institutional recommendation rule.",
+          "sources": [
+            {
+              "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
+              "type": "article"
+            },
+            {
+              "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
+              "type": "article"
+            },
+            {
+              "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Use interdisciplinary family-centered cochlear-implant evaluation, explain the timing-sensitive potential benefits and variable outcomes of implantation, support the child's current language development and revisit an informed parental deferral over time rather than treating refusal alone as neglect.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the American Cochlear Implant Alliance pediatric candidacy guideline, endorsed by the American Academy of Audiology, which recommends evidence-based team-centered evaluation of the whole child and family system, early intervention where appropriate, individualized expectations and attention to family goals and rehabilitation capacity.",
+          "sources": [
+            {
+              "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Respect parental deferral when robust sign-language access protects communication and development, because parents retain broad authority to transmit language and culture absent a serious risk of harm.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from parental-authority and cultural-linguistic integrity reasoning: where a child has secure language access and development, Deaf cultural transmission can fall within broad parental discretion rather than constituting harm in itself. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Lane H, Grodin M. Ethical issues in cochlear implant surgery: an exploration into disease, disability, and the best interests of the child. PMID 11660356.",
+              "type": "article"
+            },
+            {
+              "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Strongly recommend timely implantation because childhood choices should preserve auditory capacities that delay may partly foreclose, while also guaranteeing immediate sign-language access.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from the child's right-to-an-open-future/opportunity-preservation reasoning: when earlier action can preserve a meaningful future capability that may be harder to recover later, the service has reason to recommend it while protecting other language capabilities. The executable policy is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Feinberg J. The Child's Right to an Open Future. In: Aiken W, LaFollette H, eds. Whose Child? Children's Rights, Parental Authority, and State Power. Rowman & Littlefield; 1980.",
+              "type": "book-chapter"
+            },
+            {
+              "citation": "The right not to hear: ethics of parental refusal of hearing rehabilitation. PMID 21792972.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Use structured deferral with an explicit bilingual language plan, periodic reassessment and increasing participation by the child, because the immediate obligation is secure language development while future agency should progressively shape the implant decision.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from relational-autonomy and bilingual-capability reasoning: autonomy develops through communication and relationships, making secure language access the immediate duty while later participation by the child increasingly matters. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
+              "type": "guideline"
+            },
+            {
+              "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 action-target alignment, source-informed provenance and candidate-framing demonstration; later P3 representation and source-basis sensitivity."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
+      "type": "article"
+    },
+    {
+      "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
+      "type": "article"
+    },
+    {
+      "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
+      "type": "article"
+    },
+    {
+      "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
+      "type": "article"
+    },
+    {
+      "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Lane H, Grodin M. Ethical issues in cochlear implant surgery: an exploration into disease, disability, and the best interests of the child. PMID 11660356.",
+      "type": "article"
+    },
+    {
+      "citation": "The right not to hear: ethics of parental refusal of hearing rehabilitation. PMID 21792972.",
+      "type": "article"
+    },
+    {
+      "citation": "Feinberg J. The Child's Right to an Open Future. In: Aiken W, LaFollette H, eds. Whose Child? Children's Rights, Parental Authority, and State Power. Rowman & Littlefield; 1980.",
+      "type": "book-chapter"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m025-cochlear-implantation-deaf-child-source-informed-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m025-cochlear-implantation-deaf-child-source-informed-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same source-informed frame; candidate pools and load-bearing facts are fixed."
+  },
+  "scenario": "A 2-year-old has bilateral severe-to-profound congenital sensorineural hearing loss and meets current pediatric cochlear-implant criteria. Both parents are Deaf adults whose primary language is sign language and who participate in a Deaf cultural community. They have already arranged early fluent sign-language exposure and plan bilingual educational opportunities, but decline cochlear implantation at present because they value Deaf identity, are concerned about surgery and rehabilitation burdens, and do not want spoken-language outcomes to dominate the child's upbringing. For this benchmark, assume immediate high-quality fluent sign-language exposure and educational support are available, the child has no other cognitive or neurologic condition limiting communication, implantation offers a reasonable but variable chance of improving access to spoken sound and language, delaying implantation may reduce some later auditory-language benefit without eliminating future candidacy, and the parents understand the options and are actively supporting communication development. The service must decide whether to respect deferral, recommend timely implantation to preserve auditory opportunity, or use a structured bilingual deferral pathway with periodic reassessment and increasing participation by the child.",
+  "content_hash": "sha256:a67ede55f2460cad5f2c02bb42ce1e2dceb89b848b1673c38ae42466c90da8ac"
+}
