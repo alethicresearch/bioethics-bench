@@ -1,0 +1,272 @@
+{
+  "case_id": "m097-supervised-consumption-services",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Supervised consumption services as overdose harm reduction",
+  "short_description": "A city with persistent overdose mortality must decide whether to establish a supervised consumption service permanently, decline permanent implementation, or use an evaluated pilot.",
+  "decision_question": "Should a city establish a supervised consumption service for people at high risk of overdose, and if so under what implementation model?",
+  "jurisdiction_context": "Jurisdiction-neutral city public-health policy in 2026; legal authority to choose among the represented options is stipulated.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m097-persistent-overdose",
+      "kind": "contextual",
+      "statement": "Fatal overdose rates remain high despite naloxone distribution, medications for opioid use disorder, outreach and emergency treatment.",
+      "rationale": "The case concerns an additional harm-reduction intervention after substantial existing measures rather than a false choice between an SCS and basic overdose prevention."
+    },
+    {
+      "id": "m097-onsite-benefit",
+      "kind": "scientific",
+      "statement": "Existing evidence supports prevention of onsite overdose deaths and engagement with health and social services at supervised consumption services.",
+      "rationale": "Direct service-level benefits are held fixed so policy disagreement is not driven by denying the strongest established evidence."
+    },
+    {
+      "id": "m097-population-uncertainty",
+      "kind": "scientific",
+      "statement": "The effect of supervised consumption services on population-level overdose mortality remains uncertain.",
+      "rationale": "The benchmark preserves uncertainty about the broader population effect rather than overstating service-level evidence."
+    },
+    {
+      "id": "m097-community-uncertainty",
+      "kind": "contextual",
+      "statement": "Local neighborhood effects and community acceptance are unresolved rather than stipulated as beneficial or harmful.",
+      "rationale": "Community externalities are part of the policy disagreement and should not be decided through loaded scenario facts."
+    }
+  ],
+  "position_families": [
+    "establish an ongoing supervised consumption service",
+    "decline permanent implementation and prioritize other interventions",
+    "authorize a time-limited evaluated pilot"
+  ],
+  "domains": [
+    "public-health"
+  ],
+  "tags": [
+    "supervised consumption",
+    "overdose prevention",
+    "harm reduction",
+    "people who use drugs",
+    "pilot",
+    "community effects",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored city-policy representation synthesized from supervised-consumption outcome research, affected-community willingness studies, community-attitude research, and professional policy. It holds direct onsite benefits and broader population uncertainty together rather than treating either as dispositive.",
+    "sources": [
+      {
+        "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
+        "type": "article"
+      },
+      {
+        "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
+        "type": "article"
+      },
+      {
+        "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
+        "type": "article"
+      },
+      {
+        "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+        "type": "policy-document",
+        "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
+      },
+      {
+        "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
+        "type": "policy-document"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Establish a supervised consumption service providing overdose response, sterile supplies and voluntary linkage to health and social care, with people who use drugs participating in service design.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: affected-community studies show substantial willingness to use supervised consumption services and perceived safety, dignity and care-linkage benefits. The Bench translates those service-user preferences into a city establishment policy; the studies did not themselves authorize a municipal program.",
+          "sources": [
+            {
+              "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not establish a permanent supervised consumption service at present; continue existing overdose-prevention and treatment programs while developing local evidence and community acceptance, with a limited pilot available as a next step.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: community-stakeholder research in heavily affected U.S. counties identified perceived benefits alongside cultural, resource and practical barriers and emphasized local evidence and education before implementation. The Bench translates that caution into a no-permanent-commitment-yet rule; the pilot pathway is authored completion.",
+          "sources": [
+            {
+              "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Authorize a time-limited, independently evaluated supervised consumption pilot that measures feasibility, service engagement, overdose outcomes, neighborhood effects and health-system impact before permanent adoption.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA Policy H-95.925, which explicitly supports monitored and evaluated pilot supervised injection facilities to generate evidence for policymakers.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "type": "policy-document",
+              "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Establish supervised consumption or overdose prevention services as an ongoing harm-reduction intervention, integrate health and social supports and involve people who use drugs in design and operation.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMERSA's 2024 position statement endorsing overdose prevention centers and calling for increased access, community-specific design, policy change and involvement of people who use drugs.",
+          "sources": [
+            {
+              "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Establish the service because preventing immediate overdose death and creating voluntary routes to care are worthwhile benefits even when drug use continues.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from harm-reduction and respect-for-persons reasoning: reducing severe preventable harm is valuable even when abstinence is not achieved, and engagement should remain voluntary. The executable policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Do not establish the service unless its expected incremental health benefit and local community effects justify diverting resources from other overdose-prevention and treatment interventions.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from opportunity-cost and community-impact reasoning: an additional public-health program should be adopted only if its incremental benefits and externalities justify the resources it displaces. The executable rule is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
+              "type": "article"
+            },
+            {
+              "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Authorize a time-limited evaluated pilot rather than permanent adoption or rejection because meaningful client benefits are established while population-level and location-specific effects remain uncertain.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from learning-under-uncertainty and adaptive-governance reasoning: a reversible, evaluated pilot can generate local evidence while preserving established client-level benefits and avoiding premature permanent commitment. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "type": "policy-document",
+              "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
+            },
+            {
+              "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 source-informed provenance, natural geometry, pilot/permanent comparison and RE-Iteration demonstration; later P3 framing and local-context sensitivity."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
+      "type": "article"
+    },
+    {
+      "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
+      "type": "article"
+    },
+    {
+      "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
+      "type": "article"
+    },
+    {
+      "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+      "type": "policy-document",
+      "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
+    },
+    {
+      "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
+      "type": "policy-document"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m097-supervised-consumption-services-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m097-supervised-consumption-services-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
+  },
+  "scenario": "A city has persistently high fatal overdose rates despite naloxone distribution, medications for opioid use disorder, outreach and emergency treatment. A proposed supervised consumption service would provide monitored use of pre-obtained substances, overdose response, sterile supplies and voluntary linkage to treatment and social services. For this benchmark, assume existing evidence supports prevention of onsite overdose deaths and engagement with health and social services, the effect on population-level overdose mortality remains uncertain, and local neighborhood effects and community acceptance are unresolved. The city must decide whether to establish an ongoing service, decline permanent implementation while prioritizing other interventions, or authorize a time-limited evaluated pilot.",
+  "content_hash": "sha256:9573b9a00d867f5a2f5a76acb33e9fb956657ca7fa6168f139b31163795a720e"
+}
