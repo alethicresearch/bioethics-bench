@@ -1,7 +1,7 @@
 {
   "record_id": "m010-family-interpreters-consequential-consent-detailed-v1",
   "case_id": "m010-family-interpreters-consequential-consent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Family members as interpreters for consequential consent",
   "short_description": "A competent adult with limited English proficiency prefers a trusted adult family member to interpret a high-stakes consent discussion even though a qualified interpreter is immediately available. The hospital must decide what safeguards the consent process should require.",
   "decision_question": "For a high-stakes consent discussion, when may a competent patient rely on a chosen adult family member for interpretation when a qualified professional interpreter is immediately available?",
@@ -33,6 +33,12 @@
       "kind": "contextual",
       "statement": "No coercion, abuse, or conflict of interest involving the chosen adult family member has been identified.",
       "rationale": "A known conflict would independently strengthen the case against family interpretation and would turn the benchmark into a different decision problem."
+    },
+    {
+      "id": "m010-family-interpreter-qualification",
+      "kind": "contextual",
+      "statement": "The chosen adult family member is conversationally fluent in both languages but has no interpreter credential.",
+      "rationale": "Qualification status is load-bearing because the represented policies distinguish qualified professional interpretation from reliance on a bilingual family member."
     }
   ],
   "position_families": [
@@ -52,7 +58,7 @@
     "language access",
     "relational autonomy"
   ],
-  "scenario": "A competent adult with limited English proficiency is considering a procedure with material risks, alternatives and possible long-term consequences. A qualified in-person medical interpreter who speaks the patient's preferred dialect is immediately available at no cost. The patient asks that a trusted adult family member interpret because the relative understands the patient's values and has helped during previous visits; the relative is conversationally fluent but has no interpreter credential. For this benchmark, assume the hospital must offer qualified interpretation, the patient is not required to accept language assistance, no coercion, abuse or conflict of interest is identified, and the hospital may set additional safeguards for consequential consent. The service must decide what interpretation policy should govern the consent discussion.",
+  "scenario": "A competent adult with limited English proficiency is considering a procedure with material risks, alternatives and possible long-term consequences. A qualified in-person medical interpreter who speaks the patient's preferred dialect is immediately available at no cost. The patient asks that a trusted adult family member interpret because the relative understands the patient's values and has helped during previous visits; the relative is conversationally fluent in both languages but has no interpreter credential. For this benchmark, assume the hospital must offer qualified interpretation, the patient is not required to accept language assistance, no coercion, abuse or conflict of interest is identified, and the hospital may set additional safeguards for consequential consent. The service must decide what interpretation policy should govern the consent discussion.",
   "scenario_provenance": {
     "construction_method": "adapted-from-source",
     "summary": "Independently constructed Bench representation of the M010 language-access case family. It holds interpreter availability, patient capacity, patient choice and absence of conflict constant across companions; the detailed form adds relational and communication context without changing the decision state. Benchmark stipulations are constructed assumptions rather than empirical claims.",
@@ -259,5 +265,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:4216ffee6677e9a17e5c92ae1be25d7feee7deb5c45ce2d18919afc248e345f2"
+  "content_hash": "sha256:9b04cd416bb780c948d70893017d1d4ac13f5c1fc0167237d1b4369aa03bfcfd"
 }
