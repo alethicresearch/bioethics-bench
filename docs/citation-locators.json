@@ -1,0 +1,37 @@
+{
+  "$comment": "Resolved locators for Featured v1 citations, keyed by the exact citation string in the record. Kept beside the corpus rather than inside it: Featured v1 records are released and frozen, and their content hashes roll up into the corpus SHA-256 that deployment records, review documents and the shipped bundle all cite. Adding a DOI to a frozen record is a re-release, not a metadata edit. Each entry records how the locator was established, so a reader can check the identification rather than trust it. `confidence: confirmed` means journal, year, authors and subject all matched; `probable` means the work matches on subject, journal and year but a detail in the record's citation could not be checked against the published record.",
+  "method": "Queried the Crossref works API by bibliographic string, then matched on container title, year, author and subject. No locator is recorded from memory, and none is recorded for a citation that describes a literature rather than a single work.",
+  "verified_on": "2026-08-28",
+  "locators": [
+    {
+      "citation": "John Broome, “Fairness,” Proceedings of the Aristotelian Society 91 (1990): 87–101.",
+      "appears_in": ["f10-age-as-organ-allocation-criterion fw2", "f11-ventilator-triage-catastrophic-scarcity fw2"],
+      "doi": "10.1093/aristotelian/91.1.87",
+      "confidence": "confirmed",
+      "discrepancy": "Crossref gives Proceedings of the Aristotelian Society 91, pages 87–102, issued 1991; the record cites 87–101 and 1990. The work is unambiguous; the page range and year in the record differ from the published record and are the corpus author's to correct."
+    },
+    {
+      "citation": "Yui H. et al., “Public attitudes in Japan toward the extension of human embryo culture beyond 14 days,” Stem Cell Reports 18, no. 8 (2023) — national survey, n = 3,000",
+      "citation_match": "prefix",
+      "appears_in": ["f08-fourteen-day-embryo-research-limit pub1"],
+      "doi": "10.1016/j.stemcr.2023.02.005",
+      "confidence": "confirmed",
+      "discrepancy": "The published title is “Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days”, not the title the record gives. Same authors, journal and year. A reader searching the record's title will not find the paper."
+    },
+    {
+      "citation": "Focus-group study of IVF/ICSI patients (n = 22) on extending the 14-day limit for human embryo research (2024).",
+      "appears_in": ["f08-fourteen-day-embryo-research-limit pub2"],
+      "doi": "10.1016/j.reth.2024.09.005",
+      "confidence": "probable",
+      "discrepancy": "Kiya et al., “Attitudes of patients with IVF/ICSI toward human embryo in vitro culture beyond 14 days”, Regenerative Therapy 2024, matches subject, population, journal and year. The sample size n = 22 was not checked against the published paper, so this is proposed rather than settled."
+    },
+    {
+      "citation": "The 2023 AAN/AAP/CNS/SCCM consensus guideline",
+      "citation_match": "contains",
+      "appears_in": ["f04-brain-death-accommodation expert layer"],
+      "doi": "10.1212/wnl.0000000000208108",
+      "confidence": "confirmed",
+      "discrepancy": "Crossref records “Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Guideline”, Neurology, issued 2024. The corpus and the source ledger both date it 2023, which is likely the online-first date."
+    }
+  ]
+}
