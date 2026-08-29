@@ -119,3 +119,105 @@ anchoring, not that each guidance document says what is attributed to it — tha
 49 professional documents against 49 candidates, and is the next bounded batch. It is a
 lower-risk tranche than the public one just closed, because professional guidance usually *is* a
 policy, so citing it for one is the expected case rather than the surprising one.
+
+---
+
+# Expert pool, batch 1 — nine families read against primary guidance
+
+**Date:** 2026-08-29 (second pass)
+**Scope:** 16 of the 49 expert `direct-policy-evidence` candidates, chosen by structural risk
+rather than by order: the families where a specific factual claim about a guidance document is
+what makes the expert pool the size and shape it is.
+
+Fourteen hold as written. Two needed repair, and both are the kind of error that only reading the
+primary document finds.
+
+## Where a pool's cardinality rests on one document saying two things
+
+**M060 — verified, and it is a distinct structural type.** Both expert candidates cite a *single*
+source, the ASRM Ethics Committee's 2022 opinion on nonmedical sex selection, for opposed clinic
+policies. That looked like the highest structural risk in the tranche. It is instead a clean case:
+the opinion states that practitioners "are under no ethical obligation to provide **or refuse to
+provide**" nonmedical sex selection, that the practice "should not be encouraged," and that clinics
+are encouraged to develop and publish their own policies. One document, deliberately declining to
+settle the question, licensing two institutional policies.
+
+Most expert pools in this corpus hold two candidates because two bodies disagree. M060 holds two
+because one body refuses to decide — and that is a different and worth-naming source of genuine
+policy pluralism. M066 was flagged in the Phase C protocol for the same reason (ISPD explicitly
+leaves secondary-finding policy open); M060 is the executable instance of it.
+
+**M189 — both candidates verified against current guidance, on the day.** USPSTF's final
+recommendation of 30 April 2024 is biennial screening for women 40 through 74 at grade B, and
+specifically declines to individualize the decision for women in their 40s as its 2016 statement
+did. Current ACS guidance gives women 40–44 the option to begin annual screening, recommends annual
+screening for 45–54, and allows 55+ to continue annually or switch to biennial. The record's
+citations state both schedules correctly. The guideline disagreement this family exists for is
+live as of this date.
+
+**M129 — both candidates verified, to the numbers.** NICE PMG36's reference case "regard[s] all
+QALYs as being of equal weight," assesses severity by absolute and proportional QALY shortfall, and
+applies weights of ×1.2 and ×1.7 with further modifiers considered in committee deliberation — as
+the citation states, including the multipliers. ICER's 2023 framework uses the equal-value life
+year gained as its usual measure, valuing all life-year gains equally "regardless of age,
+disability, or illness," while still presenting cost per QALY alongside. Both check out.
+
+M189 and M129 are two of the three families built in this session, which the fidelity review marked
+for *more* reviewer scrutiny rather than less. Under that scrutiny they hold against the primary
+documents.
+
+**M094, M054 — verified.** AMA Opinion 8.7 states the physician's responsibility to accept
+immunization "absent a recognized medical contraindication" and also addresses institutional
+responsibility, which is what M094 `exp1` translates into a staffing rule. M054's two candidates
+cite ACMG's 2021 policy statement with the current SF v3.3 list and the ESHG opportunistic-screening
+recommendations — dated, paginated, and PMID-carrying on both sides.
+
+## Two repairs
+
+### M031 `exp1` — the citation pointed at a data report, not at the policy
+
+The candidate permits clinician participation "under the jurisdiction's required assessments,
+informed consent, voluntariness safeguards and opportunity to withdraw." Its only source was the
+**Oregon Health Authority's Death with Dignity Act 2025 Data Summary** — an annual report of how
+many prescriptions were written and how many people died. That document contains none of the
+safeguards the candidate encodes. They are in the statute.
+
+This is a warrant mismatch rather than a wrong claim: everything the candidate says is true of
+Oregon, but nothing in the cited artefact says it. Repaired to cite **ORS 127.800–127.897** (adult,
+capable, terminal prognosis under six months; two oral requests separated by a waiting period plus
+a written request; consulting-physician confirmation of diagnosis, capacity, voluntariness and
+informed decision; right to rescind at any time) and the **OHA Death with Dignity Act
+Requirements**, with the data summary retained and explicitly labelled as evidence that the regime
+operates at scale rather than as the source of the policy.
+
+The general form is worth stating: **an evaluation report about a policy is not a statement of the
+policy**, and a `direct-policy-evidence` citation to one is circular in the same way a citation to
+a Bench audit was.
+
+### M102 `exp2` — the summary was more decisive than NHS guidance is
+
+The summary said NHS clinicians "state they will never proceed if the family objects." No NHS page
+says that, and the guidance is deliberately two-sided:
+
+- the consent guidance says families "do not have the legal right to veto or overrule your
+  decision," while allowing that "there may nevertheless be cases where it would be inappropriate
+  for donation to go ahead if donation would cause distress to your family";
+- the public opt-out FAQ says the family is always approached and "your organs will not be donated
+  without their consent."
+
+The candidate's *action* survives — England operates deemed consent in which family objection is
+not a legal veto but is decisive in practice, and that is what the candidate encodes. The summary
+now quotes both sides and says exactly that, instead of attributing a formal family veto to
+guidance that expressly denies one.
+
+The distinction from `exp1` is unaffected and, if anything, sharper. Under M102's stipulated facts
+— the family objects on its own beliefs and offers no evidence about the deceased — the Dutch rule
+proceeds and the English one does not.
+
+## Still open in this tranche
+
+33 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
+each document says what is attributed to it. The two errors found in the first 16 were both in the
+provenance layer rather than in a candidate's action, and neither changed a geometry — which is
+weak evidence that the remainder will behave similarly, and no substitute for reading them.

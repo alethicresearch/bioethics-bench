@@ -150,7 +150,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from current NHS Organ Donation operational guidance: opt-out/deemed consent is the starting position, families are expected to support the deceased's decision, but clinicians state they will never proceed if the family objects and organ donation requires family support in practice.",
+          "summary": "Adapted from current NHS Organ Donation guidance, which is deliberately two-sided and is quoted here as such. The consent guidance states that families \"do not have the legal right to veto or overrule your decision,\" while allowing that \"there may nevertheless be cases where it would be inappropriate for donation to go ahead if donation would cause distress to your family.\" The public opt-out FAQ puts the same practice more plainly: the family is always approached and \"your organs will not be donated without their consent.\" This candidate represents the operational position that follows — family objection is not a legal veto but is decisive in practice — rather than a claim that NHS guidance states a formal family veto, which it does not.",
           "sources": [
             {
               "citation": "NHS Organ Donation. Understanding consent for organ donation. Current through 2026.",
@@ -264,5 +264,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A country uses an adequately publicized opt-out deceased-donation system. For this benchmark, assume the deceased adult did not opt out and left no explicit registered donor authorization or written instruction; close family members object because of their own beliefs and distress but provide no credible evidence that the deceased personally opposed donation; the family can be consulted about the deceased's values and circumstances; and both a deceased-choice/rebuttable-presumption rule and a family-objection rule are legally available. The donation authority must decide whether organ recovery should proceed despite the family's own objection.",
-  "content_hash": "sha256:fc45266d11895c823388703cec41c8afc10f1fad80b61432842001130e8c546c"
+  "content_hash": "sha256:7f7f981b6e8b3e5105b38cc304edf6a7c7e20b7dca464429ebb32bd8bc07fc3b"
 }

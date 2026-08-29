@@ -141,11 +141,19 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the mature Oregon Death with Dignity regulatory architecture as a policy/regulatory candidate, not as a claim of professional moral consensus.",
+          "summary": "Adapted from the Oregon Death with Dignity Act itself and the Oregon Health Authority’s operational requirements, which state the eligibility conditions, the assessments, the waiting period, the written request and the right to rescind. This is an enacted regulatory architecture, not a claim of professional moral consensus. The annual data summary is retained only as evidence that the regime operates at scale; it reports outcomes and is not the source of the policy.",
           "sources": [
             {
-              "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.",
+              "citation": "Oregon Death with Dignity Act, ORS 127.800–127.897. Requires that the patient be an adult, capable, terminally ill with a prognosis under six months; two oral requests separated by a waiting period plus a written request; confirmation of diagnosis, capacity, voluntariness and informed decision by a consulting physician; and the right to rescind at any time.",
+              "type": "statute"
+            },
+            {
+              "citation": "Oregon Health Authority. Death with Dignity Act Requirements. Current through 2026. The attending-physician, consulting-physician, documentation and reporting steps the Act requires in operational form.",
               "type": "policy-document"
+            },
+            {
+              "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026. Cited as evidence that the regime operates at scale, not as the source of the policy.",
+              "type": "other"
             }
           ],
           "adapted_not_reproduced": true
@@ -320,5 +328,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A large health system operates in a legally permissive US-style jurisdiction with a mature medical-aid-in-dying framework for capable adults whose terminal illness is expected to cause death within six months. A qualifying patient may obtain medication for voluntary self-administration after required assessments and procedural safeguards. Some physicians in the system view participation as compatible with respect for autonomy and relief of suffering; others believe prescribing medication intended to enable death is incompatible with medicine or their conscience. Patients reasonably expect accurate information and continuity even when an individual clinician objects. For this benchmark, assume MAID is legally available under the safeguard regime, every qualifying request receives decision-specific capacity and coercion assessment and remains revocable, hospice and specialist palliative-care options are meaningfully available and explained, self-administration by the patient is required, and sincere clinician disagreement persists. The health system must choose its institutional participation policy.",
-  "content_hash": "sha256:f1747304394fe34df217edad04d4d299170200caf5fe0383c662e758bce9c1d3"
+  "content_hash": "sha256:67f80e29184dc3c2fdd78f46ae3d126f25a1a9aadc16aec1e609af3f132d002c"
 }
