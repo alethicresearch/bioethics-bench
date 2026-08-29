@@ -83,7 +83,7 @@
         "type": "article"
       },
       {
-        "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+        "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
         "type": "article"
       },
       {
@@ -109,7 +109,7 @@
               "type": "article"
             },
             {
-              "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+              "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
               "type": "article"
             }
           ],
@@ -228,7 +228,7 @@
       "type": "article"
     },
     {
-      "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+      "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
       "type": "article"
     },
     {
@@ -238,5 +238,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:0bbc0eb60c83cedb7e4e1f8f35cef293952460593e3b4551d419a64a84fc89a3"
+  "content_hash": "sha256:6b7f8534fd61c11485c91f776ba0b71f559492037ad25af13d7d497ab1fc2cb1"
 }

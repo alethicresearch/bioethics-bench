@@ -149,7 +149,7 @@
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:0bbc0eb60c83cedb7e4e1f8f35cef293952460593e3b4551d419a64a84fc89a3",
+      "content_hash": "sha256:6b7f8534fd61c11485c91f776ba0b71f559492037ad25af13d7d497ab1fc2cb1",
       "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -160,7 +160,7 @@
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:4358bdff9dca45ff7481d1128879add466d96a1f1049312b33a39ed6911aa609",
+      "content_hash": "sha256:d0945c67547f72807e04dad0adcb6be9467beb4a1df6c3ed8e308865dfacfed1",
       "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",

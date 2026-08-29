@@ -6,7 +6,7 @@
   "scripts": {
     "build:featured": "node scripts/build-featured-v1.mjs",
     "audit:granularity": "node scripts/audit-granularity.mjs",
-    "validate": "node scripts/build-featured-v1.mjs --check && node scripts/check-dossier-sync.mjs && node scripts/dossier-decision-sync.mjs && node scripts/disposition-ledger.mjs && node scripts/build-full-corpus-manifest.mjs && node scripts/fidelity-audit.mjs && node scripts/validate.mjs",
+    "validate": "node scripts/build-featured-v1.mjs --check && node scripts/check-dossier-sync.mjs && node scripts/dossier-decision-sync.mjs && node scripts/disposition-ledger.mjs && node scripts/build-full-corpus-manifest.mjs && node scripts/fidelity-audit.mjs && node scripts/verify-citations.mjs --offline && node scripts/validate.mjs",
     "digest": "node scripts/substantive-digest.mjs"
   },
   "devDependencies": {
