@@ -12,6 +12,7 @@ Read in this order.
 | `CITATION_AMBIGUITY_RESOLUTIONS.md` | The five citations that resolved but matched on neither title nor author — are they the right papers? | **Closed.** Four accurate, one wrong author, all five rewritten to full form |
 | `SOURCE_TRACEABILITY_REVIEW.md` | Can a reader get from a candidate to a nameable source at all? | **Closed.** Seven circular citations repaired, one genuinely missing source identified, build guard added |
 | `DIVERGENCE_REVIEW.md` (+ generated `divergence-worksheet.md`) | Does each scenario's fixed fact pattern sit where the candidates produce different actions? | **Closed.** All 34 families pass; six observations recorded |
+| `BRIDGE_REVIEW.md` (+ generated `bridge-worksheet.md`) | Do the inference bridges hold — does what the source measured license what the candidate directs? | **Closed.** All 55 hold; the finding is that two families' public pools rest on their own expert document |
 | `DIRECT_POLICY_WARRANT_REVIEW.md` | Does each source actually *state* the policy attributed to it? | **Closed.** All 20 public and all 49 expert `direct-policy-evidence` candidates read against their sources |
 
 ## The ordering is not arbitrary
@@ -51,7 +52,13 @@ executable set never moved from 34 families / 68 records.
 
 ## Open items
 
-- 98 public `source-informed-policy-inference` bridges verified as *stated*, not as *sound*.
+- **The largest remaining gap:** 55 inference bridges were checked for whether they *hold*, but their
+  descriptions of what each source found were largely taken on trust. Sources were read directly only
+  for the `direct-policy-evidence` class. A bridge can be logically sound and still rest on a
+  misdescribed finding.
+- **A cross-source independence question for the coordinator:** M045 and M060 have public pools
+  derived entirely from the professional-body document their expert pools cite, so those
+  public–expert QCCS cells compare one document against itself. See `BRIDGE_REVIEW.md`.
 - A method decision staged for the coordinator: the four-basis rule has no discipline for a
   candidate that is mostly direct and partly Bench-authored. Two instances found (M025, M144).
   See `docs/papers/MANUSCRIPT_WRITEBACK.md`.

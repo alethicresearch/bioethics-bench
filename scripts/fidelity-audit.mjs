@@ -113,6 +113,28 @@ for (const { record } of records.filter((r) => r.file.includes('concise'))) {
   }
 }
 
+// Reported on every run: a public candidate whose entire warrant is a document its own record's
+// expert pool also cites. QCCS compares what different sources say, so a public-expert cell built
+// this way compares a document against itself. Not failed, because a professional body's summary
+// of public attitudes is a legitimate thing to cite and the mixed cases (one independent source
+// plus one shared) are defensible; printed unconditionally because the fully-shared cases are not
+// visible any other way.
+const sharedWarrant = [];
+for (const { record } of records.filter((r) => r.file.includes('concise'))) {
+  const expertCitations = new Set();
+  for (const c of record.candidate_pools?.expert ?? []) {
+    for (const s of c.provenance?.sources ?? []) expertCitations.add(s.citation);
+  }
+  if (!expertCitations.size) continue;
+  for (const c of record.candidate_pools?.public ?? []) {
+    const sources = (c.provenance?.sources ?? []).map((s) => s.citation);
+    if (!sources.length) continue;
+    if (sources.every((s) => expertCitations.has(s))) {
+      sharedWarrant.push(`${record.case_id}: ${c.id} rests entirely on ${sources.length === 1 ? 'a source' : 'sources'} its own expert pool also cites`);
+    }
+  }
+}
+
 if (report) {
   // Heuristic 1 — does each inferred candidate say what the step from evidence to policy
   // is? Phrasing varies widely, so treat a silent candidate as worth reading, not as wrong.
@@ -176,6 +198,13 @@ if (problems.length) {
 }
 
 console.log(`✓ ${candidateCount} candidates: all sourced, basis confined to its pool, none synthetic, no Bench document cited as warrant.`);
+
+if (sharedWarrant.length) {
+  console.log(`! ${sharedWarrant.length} public candidate(s) share their whole warrant with the expert pool:`);
+  for (const u of sharedWarrant) console.log(`  ! ${u}`);
+  console.log('  A public-expert QCCS cell built this way compares one document against itself.');
+  console.log('  See docs/full-corpus/review/BRIDGE_REVIEW.md.');
+}
 
 if (unresolved.length) {
   console.log(`! ${unresolved.length} candidate(s) rest partly or wholly on an unresolved source:`);
