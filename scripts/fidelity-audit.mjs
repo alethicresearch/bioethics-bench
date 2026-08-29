@@ -30,6 +30,9 @@ const recordDir = join(root, 'data', 'benchmark');
 // docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md instead of hidden behind a pointer.
 const SELF_REFERENCE = /\b(candidate audit|deep[- ]case|deep case file|disposition ledger)\b|\bM\d{3}\s+(candidate\s+)?audit\b|\bthis (dossier|repository|corpus)\b/i;
 
+// Citations that assert what a body's guidance says now, rather than pinning an issue.
+const STANDING_GUIDANCE = /\bcurrent(ly)?\b|\bas of\b|\blatest\b|\bin force\b/i;
+
 const POOLS = ['public', 'expert', 'framework'];
 const report = process.argv.includes('--report');
 
@@ -75,6 +78,14 @@ for (const { file, record } of records) {
       for (const source of candidate.provenance?.sources ?? []) {
         if (SELF_REFERENCE.test(source.citation ?? '')) {
           problems.push(`${file}: ${candidate.id} cites a Bench document as its source warrant — "${source.citation}"`);
+        }
+        // A citation to standing professional guidance often has no publication year, because
+        // the body revises it in place — "current ACS guidance," "Code of Medical Ethics
+        // Opinion 2.1.2." That is honest, but it is only checkable if the record says when
+        // "current" was. The record's as_of_date is what supplies it, so a record making such
+        // a claim without one asserts something no reader can verify or falsify.
+        if (STANDING_GUIDANCE.test(source.citation ?? '') && !record.as_of_date) {
+          problems.push(`${file}: ${candidate.id} cites standing guidance as current, but the record has no as_of_date to anchor it — "${source.citation}"`);
         }
       }
     }

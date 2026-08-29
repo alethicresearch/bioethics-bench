@@ -83,11 +83,39 @@ full texts. They were not confirmed here, and no other candidate in this tranche
 That is the honest boundary of an abstract-level review, and it is narrower than it was: for the
 other 18 candidates, the abstract carried the finding the record attributes to it.
 
+## The expert pool: traceability swept, and what `as_of_date` is actually for
+
+The same traceability question was put to the **49 expert `direct-policy-evidence` candidates**
+(counting each family once). Every one cites a named issuing body and a named document, usually to
+a section number: AMA *Code of Medical Ethics* Opinion 2.1.2, NICE PMG36, ISSCR Recommendation
+2.2.2.1, 45 C.F.R. § 92.201, HFEA, ACS, CIOMS. **None is circular and none is unattributable.**
+
+Seventeen of those sources carry no publication year — they say "current guidance," or name a
+standing opinion that the issuing body revises in place. That is the honest way to cite a living
+document, and it is also a claim that decays: a candidate grounded in "current ACS guidance"
+becomes false the day ACS revises, silently.
+
+What stops that from being a defect is a field that has been sitting in every record without its
+purpose being stated: **`as_of_date`.** All 34 families carry one — 31 at 2026-08-27, three at
+2026-08-28. It is what converts "current guidance" from an unfalsifiable claim into a dated,
+checkable one: the record asserts what the body's guidance said on a stated day, and a reader
+who finds otherwise has found an error rather than an ambiguity.
+
+That relationship is now enforced. `scripts/fidelity-audit.mjs` fails if any candidate cites
+standing guidance as current while its record lacks an `as_of_date` to anchor it. The count is
+zero, and it cannot silently stop being zero.
+
+**M189 is where this will bite first.** Its expert pool is USPSTF 2024 against current ACS
+guidance, and the family exists *because* those two bodies disagree. If either revises toward the
+other, M189 stops being a guideline-disagreement case — and the corpus will need to notice, not
+discover it in a paper.
+
 ## What this review does not establish
 
 It checks that a source states the policy. It does not check the 98 public
 `source-informed-policy-inference` candidates, whose bridges were verified as *stated* in an
-earlier pass but not as *sound*. It does not touch the 98 expert `direct-policy-evidence`
-candidates, which cite professional guidance — a larger tranche, but a lower-risk one, since
-professional guidance usually is a policy and citing it for one is the expected case rather than
-the surprising one. That is the next bounded batch.
+earlier pass but not as *sound*. For the expert pool it establishes traceability and temporal
+anchoring, not that each guidance document says what is attributed to it — that requires reading
+49 professional documents against 49 candidates, and is the next bounded batch. It is a
+lower-risk tranche than the public one just closed, because professional guidance usually *is* a
+policy, so citing it for one is the expected case rather than the surprising one.
