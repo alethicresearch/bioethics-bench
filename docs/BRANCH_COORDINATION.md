@@ -1,177 +1,92 @@
 # Branch & Merge Coordination — Bioethics Bench
 
-**Coordinator role:** this file is the repo-local merge map for the normative-computation program. Agents should update it when branch roles, release dependencies, or merge readiness change. The central program/manuscript coordinator integrates cross-repo consequences into Drive and the papers.
-
-**Start at [`docs/COMPLETION.md`](COMPLETION.md)** if you want the whole project in one page — what "done" means for each lane, who owns it, and where the live answer lives.
+This file records durable branch roles and cross-repo dependency rules for Bioethics Bench. Exact branch heads and ahead/behind counts are session metadata; fetch them live.
 
 ## Operating rule
 
-Work belongs in Git first. Case research, records, dossiers, validators, release state, manuscript-facing findings, and coordination deltas should be committed to the branch that owns them. Do not create a parallel branch for work already owned by an active lane unless it is explicitly an experiment/review track.
+Work belongs on the branch that actually owns the current task. Do not create parallel canonical-v1 lanes for the same corpus work. Historical branches preserve research history but are not sources of current truth merely because they contain more records or older candidate constructions.
 
 Before substantive work:
-1. fetch the current branch and its intended base;
-2. read `docs/PROGRAM_COORDINATION.md`, `docs/BRANCH_COORDINATION.md`, `docs/COORDINATOR_DIRECTIVE.md`, and the controlling Full Corpus protocol/ledger;
-3. state the active branch and merge target in every handoff;
-4. check whether a different branch is experimental/legacy before borrowing its content;
-5. compute live merge/ahead/behind state rather than copying a count from this document.
+1. fetch current `main` and any branch you intend to modify;
+2. read `docs/PROGRAM_COORDINATION.md`, `docs/COORDINATOR_DIRECTIVE.md`, and the relevant review/resource protocol;
+3. verify generated corpus state rather than copying counts from prose;
+4. state branch and merge target in the handoff;
+5. classify any downstream SACRE dependency as execution-relevant, provenance-only, or documentation-only.
 
-Moving SHAs and ahead/behind counts are session metadata. Branch roles, release lineage, merge targets, and cross-repo dependencies are the durable coordination facts.
-
-## Canonical branches
+## Canonical branch roles
 
 ### `main`
-Released Featured v1 lineage and repository-wide infrastructure. Full Corpus v1 construction is not being developed directly here.
+
+Current repository-wide canonical line. PR #10 has been merged; the 34-family / 68-record Full Corpus v1 lineage and current coordination/review infrastructure are available from the merged repository state.
 
 ### `research/full-corpus-v1`
-Base line for the Full Corpus v1 completion PR. Fetch its exact head when evaluating PR #10.
+
+Preserved Full Corpus research lineage/base. Use only when a current task explicitly belongs to this lineage. Do not assume it is ahead of or preferable to `main`; fetch and compare live state.
 
 ### `author/full-corpus-completion`
-**Role:** sole canonical Full Corpus v1 completion lane and PR #10 head.
 
-It owns the current 34-family / 68-record release-candidate state, disposition ledger, candidate audits, source-to-policy review workflow, manifest generation, and v1 release preparation. This is the only branch that should change canonical Full Corpus v1 records/dispositions while PR #10 is active.
-
-Fetch the exact current branch head and live comparison to `research/full-corpus-v1` at the start/end of work rather than treating a coordination-only commit SHA as a corpus identity.
-
-### `claude/bioethics-bench-completion-m0p43e`
-Treat as an alias/handoff lineage, not a second canonical development lane. Do not make independent canonical-v1 commits here. All v1 corpus work goes to `author/full-corpus-completion`.
+Historical merged completion/PR #10 head. Its prior role as the sole open Full Corpus integration lane is complete. Do not continue canonical work there by inertia. Reactivate only through an explicit branch decision.
 
 ### `claude/generalized-source-architecture-track`
-**Role:** parked research track for generalized/partial-source schemes.
 
-It contains generalized source-scheme/schema work and reconstructed cases that are **not part of canonical v1** under the current source-completeness decision. Do not merge or cherry-pick generalized source-scheme semantics, generalized profiles, or records promoted only under that scheme into `author/full-corpus-completion`. A source-scheme-neutral validator bug discovered there may be ported only after separate review.
+Parked future research track for generalized/partial-source schemes. It is not canonical SACRE v1. Do not merge generalized source semantics or cases executable only under that scheme into current v1 through opportunistic cherry-picks.
 
-## Branches to treat as historical/read-only unless explicitly reactivated
+### Other historical branches
 
-- `author/full-corpus-completion-audited`
-- `author/full-corpus-completion-export`
-- `author/full-corpus-completion-export-2`
-- `author/reconstruction-batch-01`
-- `claude/bioethics-bench-landing-kBjiZ`
-- `claude/normative-computation-research-f6zfep`
-- `review-full-corpus`
-- `research/clean-state-v3`
-- `archive/*`
+Treat older reconstruction, export, audit, review, alias, `research/clean-state-v3`, and archive branches as read-only history unless explicitly reactivated. Historical records may explain why a rule changed; they do not define the current corpus.
 
-These branches preserve prior attempts, audits, transports, or handoffs. Do not use an older count, record, or disposition merely because it exists there.
+## Current Full Corpus state
 
-## Merge/release order for product completion
+The executable Full Corpus currently contains **34 families / 68 matched concise+detailed records / 210 unique family-level candidates**. Records remain `status: draft`, `reviewed_by_human: false`.
 
-1. Keep PR #10 (`author/full-corpus-completion` → `research/full-corpus-v1`) internally green and derive all counts/manifests from committed state.
-2. Complete the independent human source-to-policy review on the canonical three-source executable subset. Apply repairs/demotions/promotions only on `author/full-corpus-completion`; regenerate ledger/manifest after every substantive change.
-3. Fix the Full Corpus release manifest and lifecycle only after that review gate is satisfied.
-4. Notify the SACRE lane whenever execution-relevant records/schema/profile/manifest content changes. SACRE must re-vendor/re-pin before any paper-facing execution or integration merge that depends on the changed corpus.
-5. Preserve the generalized-source branch as a later architecture track; do not let it delay or contaminate the v1 release.
-6. After the human-reviewed release is fixed, coordinate the released pin with SACRE for the all-record exploratory census and later P3 validation.
+Independent human source-to-policy review is incomplete. That is a release/quality fact, not an execution gate for current developmental/paper-facing SACRE work.
 
-## Snapshot for the paper-facing Full Corpus run — 2026-08-29
+## Cross-repo dependency classes
 
-The coordinator has removed human source-to-policy review as a release or execution gate for the
-current paper program, and directs the SACRE lane to pin the current Bench snapshot and execute all
-34 families end to end for exploratory paper evidence. This lane's assignment is now explicitly
-**parallel**: keep the corpus executable, continue source review, maintain a clean change log, and
-**do not block execution**.
+Classify the change before asking the SACRE lane to act.
 
-**What to pin.** `research/full-corpus-v1`, which now contains all of `author/full-corpus-completion`
-via merged PR #10 — fetch its live head rather than any SHA written here.
-
-**What the snapshot is.** 34 families / 68 records / 420 candidates. Structurally valid, all
-geometries registered, all profiles declared, required aggregation per record. `reviewed_by_human`
-is `false` on every record; per the coordinator that is a provenance fact, not a stop condition.
-
-**Execution-relevant changes since your last pin: exactly one.** M002 `exp1`'s candidate text was
-repaired — WHO QualityRights rejects the "substitute decision-making only as a last resort" framing
-the candidate had attributed to it. Everything else this lane has changed since is citations and
-provenance summaries across twenty-two families, which the pipeline never reads.
-
-That claim is not a promise, it is derived: **`docs/full-corpus/CHANGE_LOG.md`** classifies every
-commit touching `data/benchmark` by whether the projection the pipeline reads — scenario,
-stipulations, profile, candidate ids and texts by pool — differs across it. It regenerates on every
-`npm run validate`, so it cannot drift from the history it describes.
-
-**Undertaking for the duration of the run.** Source review continues on this branch and will
-produce further provenance repairs; those are safe to ignore. If review produces an
-execution-relevant change, it will appear in the change log's first table and be reported to the
-SACRE lane in the same session. Two open items could produce one: the cross-source independence
-question on M045 and M060, which if resolved by holding those families takes the set to 32; and any
-candidate-text repair arising from the deep-research review. **Neither is in flight, and neither
-will be actioned without telling you first.**
-
-## Cross-repo dependency: what changed, and who must act
-
-This section used to record the current pin SHA and the current stale set. Both decayed within
-hours and produced a day of unnecessary re-vendoring. **What is durable is the change class, not
-the SHA.** Classify the change first; the response follows from the class, and the live SHA is
-whatever `git fetch` says at the moment you act.
-
-| Class | Examples | SACRE must | Bench must |
+| Class | Examples | SACRE response | Bench responsibility |
 |---|---|---|---|
-| **Execution-relevant** | Candidate id or text; scenario or stipulation text; `benchmark_profile`; geometry; `required_aggregation`; schema affecting execution; a family added, held or removed | Re-vendor, re-pin and re-run the suites **before** any product merge or paper-facing execution. Results computed under the old payload are not comparable. | Notify the SACRE lane in the same session, naming the first changing commit and the families affected |
-| **Provenance-only** | Citation strings; provenance summaries; `policy_basis` declarations that do not change candidate text; manifest churn that follows from the above | **Nothing, by default.** Re-pin only when the vendor is needed for a paper-facing execution, when a provenance claim has to be true on inspection, or opportunistically alongside other work | Record it here and in `docs/papers/MANUSCRIPT_WRITEBACK.md`. Do **not** open a resync request |
-| **Documentation** | Review documents, dossiers, coordination text, writebacks | Nothing | Record it in the writeback if it has a manuscript implication |
+| **Execution-relevant** | candidate id/text; scenario/task meaning; stipulations consumed by execution; profile; geometry; required aggregation; executable family added/removed; execution-relevant schema | re-vendor/re-pin and reverify before affected paper-facing execution; rerun affected results when the executed object changed | notify SACRE in the same work cycle and identify affected families/objects |
+| **Provenance-only** | citation strings; provenance summaries; basis metadata with unchanged executable text; content-hash drift following those changes | refresh provenance when needed; no automatic semantic rerun | record in review/writeback; do not manufacture a resync loop |
+| **Documentation-only** | dossiers, review documents, coordination text, manuscript writebacks | no product action unless the finding reveals an execution defect | maintain the durable record |
 
-The rule for the middle row is the SACRE coordinator's, stated in that repo's
-`docs/CURRENT_COORDINATOR_STATUS.md`: *do not restart a product-resync loop for
-execution-equivalent citation/hash changes.* It is recorded here because the Bench lane is the one
-that generates those changes and had been requesting a resync for each of them.
+A provenance-only change can alter what a manuscript may say about source support even when it does not alter a computational result.
 
-**How to tell the classes apart mechanically.** Re-vendor into a scratch checkout and diff the
-payload. If every changed line is a `contentHash`, the change is provenance-only. If any candidate
-id, text, scenario, profile, geometry or aggregation line moves, it is execution-relevant. That
-check takes a minute and settles the question without judgment:
+## Current source-review work
 
-```
-BENCH_REF=author/full-corpus-completion node scripts/vendor-bench-full-corpus.mjs
-git diff src/lib/bench/full-corpus-v1.json | grep '^[+-]' | grep -v '^[+-][+-]' | grep -vc contentHash
-```
+Use the generated review system rather than branch names as the live review state:
 
-A zero means provenance-only.
+- `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
+- generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+- `docs/full-corpus/review/research-tasks/README.md`
 
-### Current state, 2026-08-29
+The generated handoff carries unit fingerprints precisely so unrelated corpus changes do not invalidate already returned verdicts.
 
-Stated once, and expected to decay — fetch live heads rather than trusting these.
+Model-assisted source review is not independent human review. Whole-document omission review has examined five families by that method and found findings in all five; 29 remain unexamined by that method. Do not convert that subset into a corpus-wide rate.
 
-- Full Corpus integration is **merged to SACRE `main`**; the old integration lane is no longer the
-  product merge gate, and `main` treats Full Corpus loading and execution as deployed current
-  behaviour. Further Full Corpus product work starts from `main`.
-- The **inference-bridge review is complete**: all 55 source-informed candidates checked for whether
-  their bridge holds, and all 55 do. It surfaced a cross-source independence question — M045 and
-  M060 have public pools derived entirely from the professional-body document their expert pools
-  cite — which is staged as a coordinator decision in `docs/papers/MANUSCRIPT_WRITEBACK.md`. If it
-  is resolved by holding those families the executable set drops to 32 families / 64 records, which
-  would be **execution-relevant** for the SACRE lane.
-- The direct-policy warrant review is **complete**: all 20 public and all 49 expert
-  `direct-policy-evidence` candidates read against their sources. This is the last review pass the
-  Bench lane can perform without a human reviewer.
-- Bench's executable set is **34 families / 68 records**, unchanged all day. Every Bench change on
-  2026-08-29 was provenance-only, across twenty-two families.
-- A refreshed payload sits verified on `claude/bioethics-bench-completion-m0p43e` (main plus the
-  re-pin; 365 unit / 73 web / 46 Full Corpus tests, clean build). Available, not urgent.
-- **One execution-relevant change has now occurred: M002 `exp1` candidate text.** The candidate
-  attributed to WHO QualityRights a "substitute decision-making only as a last resort" rule; WHO
-  QualityRights is CRPD-Article-12 aligned and treats substitute decision-making as something to be
-  eliminated, declining even the last-resort framing. Repaired to "rather than transferring the
-  decision to a substitute decision-maker." **SACRE must re-vendor and re-verify before any product
-  merge or paper-facing execution that uses M002.** Any result computed for M002 under the previous
-  payload is not comparable to one computed after. All other Bench changes on 2026-08-29 remain
-  provenance-only.
-- The other foreseeable execution-relevant change — holding a family whose source could not be
-  traced — **did not occur**. M075's missing source was identified.
+## Current manuscript/research dependency
 
-## Manuscript interface
+The wider program's immediate substantive task is **P2 maximal integrated master**. Bench support should come from current `main`/generated state and existing manuscript-facing findings rather than reopening branch architecture.
 
-Two files, with different jobs. **`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is what a coordinator drafts from**: the findings triaged into the order they are worth using, with current numbers stated once and superseded entries retired. **`docs/papers/MANUSCRIPT_WRITEBACK.md` is the audit trail**: every finding as it was made, with its evidence and date. The log is chronological, so it accumulates superseded entries and version targets that go stale — pointing a drafting coordinator at it alone is how review work fails to reach the papers.
+In parallel, the Bench lane should run the **generalization audit** needed for the standalone resource paper: distinguish intrinsic resource fields, generic task/evaluation fields, and SACRE-specific execution fields.
 
-Agents should stage manuscript-facing contributions in `docs/papers/MANUSCRIPT_WRITEBACK.md`, not in Drive manuscript binaries as their primary writing surface. Every writeback must include:
-- target paper/version/section;
-- proposed claim/paragraph/table/figure change;
-- exact branch, commit, record/manifest/dossier evidence;
-- evidence class;
-- whether the fact is released, release-candidate, human-reviewed, exploratory, or planned;
-- dependency/blocker;
-- status: `proposed`, `ready-for-central-integration`, or `integrated`.
+## Merge/release standard
 
-The central coordinator owns final manuscript integration and records the manuscript version where the item was applied.
+A change enters canonical state because:
+- the owning branch is current;
+- source/corpus evidence supports it;
+- generated validation is green;
+- the change preserves declared method semantics or explicitly escalates a method change;
+- downstream execution dependencies are identified.
+
+Do not merge merely to maximize executable count or because a historical branch is “ahead.”
 
 ## Handoff requirement
 
-Every substantive handoff must include: **Branch**, **Merge target**, **Changed**, **Verified**, **Program/paper impact**, **Evidence status**, **Writeback status**, **Cross-repo dependency**, **Next dependency**.
+Every substantive handoff must include:
+**Branch; Merge target; Changed; Verified; Program/paper impact; Evidence status; Writeback status; Cross-repo dependency; Next dependency.**
+
+End with **COMPLETE FOR THIS STAGE** or **BLOCKED** with one concrete blocking condition.
+
+Do not manually edit generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`.
