@@ -66,6 +66,19 @@ themselves, and is packaged as a task set with a return path:
 This is not the release gate and it does not set `reviewed_by_human`. It makes the gate assessable
 from repository state instead of from someone's memory of who looked at what.
 
+## This review no longer gates execution
+
+As of 2026-08-29 the coordinator has removed human source-to-policy review as a release or
+execution gate for the current paper program. The corpus is being executed end to end now for
+developmental and exploratory paper evidence, with this review continuing in parallel as a quality
+layer, and reruns against an improved snapshot later where the delta is worth reporting.
+
+Nothing below changes as a result. `reviewed_by_human` stays `false`, the findings stand, and the
+work still needs doing — it is simply no longer the thing everything else waits on. What that does
+change is the standard for a repair: a change that alters what the pipeline reads now costs a rerun
+of paper-facing evidence, so it is reported to the SACRE lane before it lands. See
+`docs/full-corpus/CHANGE_LOG.md`.
+
 ## Open items
 
 - **The largest remaining gap:** 55 inference bridges were checked for whether they *hold*, but their
