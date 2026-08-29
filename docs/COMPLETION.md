@@ -1,103 +1,114 @@
-# What completing this project means
+# What Completing Bioethics Bench Means
 
-**One page. Read this first, then go to the surface it points you at.**
+**Read this first, then go to the surface it points to.**
 
-The Normative Computation program runs across two repositories, a Drive manuscript set and four
-working lanes. This file is the map: what "done" means for each part, who owns it, and where the
-live answer lives. It states no numbers that live somewhere else — every row points at the
-authoritative surface instead, because a copied figure goes stale within hours and this one is meant
-to survive.
+Bioethics Bench is a source-grounded research infrastructure for computational bioethics within the broader **Doing Ethics with AI (DEWA)** program. Its first mature executable task family is SACRE/QCCS, but the resource is intended to support broader computational-bioethics research through separable resource, task, and evaluation layers.
 
----
+## Where this fits in the wider program
 
-## The whole thing, in one paragraph
+The core DEWA suite is:
 
-A method (SACRE) turns a policy question into a scored comparison across public, expert and
-framework sources. An application executes that method. A benchmark corpus (Bioethics Bench)
-supplies the cases it runs on. Three papers describe the method (P1), the infrastructure (P2), and
-the validation that has not happened yet (P3). **The project is complete when the papers can make
-true claims about a working system running a defensible corpus — and can say precisely what has not
-been established.** Everything below is in service of that sentence.
+**P1 specifies → P2 builds → P3 computationally validates → P4 empirically/comparatively validates → P5+ deploys and studies use.**
 
----
+Bioethics Bench is a coordinated major resource/publication, not an extra numbered stage and not a prerequisite between P2 and P3.
 
-## The four lanes
+The current wider-program priority is **P2 maximal integrated master**. Bench source/review and resource-generalization work continues in parallel.
 
-| Lane | Done means | Live answer |
-|---|---|---|
-| **SACRE / application** | Canonical Tutorial Step 6 and a fresh iteration-1 cycle executed, with one immutable evidence bundle; Full Corpus executed end to end for exploratory evidence | `xnuxi/sacre-prototype` → `docs/CURRENT_COORDINATOR_STATUS.md` on `main` |
-| **Bioethics Bench / corpus** | Corpus executable, structurally valid, and every source claim it makes checked against its sources | this repo → [`docs/full-corpus/review/README.md`](full-corpus/review/README.md) |
-| **Papers** | P1 and P2 integrated from the evidence bundle and frozen for authorial review; P3 preregistered, not executed | Drive, sequenced from the SACRE coordinator status |
-| **Validation (P3)** | Confirmatory and human-subject work, **after explicit authorization only** | not started, deliberately |
+## Current Bench state
 
-**The critical path runs through SACRE, not here.** The coordinator has removed human
-source-to-policy review as a gate on the paper program: the corpus is executed now for developmental
-evidence, and review continues in parallel. Nothing in the Bench lane should block that.
+The executable Full Corpus currently contains:
 
----
+- **34 families**;
+- **68 matched concise/detailed records**;
+- **210 unique family-level candidates**.
 
-## The Bench lane, which this repository owns
+PR #10 is merged. All current records remain `status: draft` and `reviewed_by_human: false`.
 
-Six review passes have run, each answering a different question about the corpus. **All six are
-closed**, and the corpus survived them: no family demoted, no basis changed, no geometry moved.
-Their findings, current numbers and limitations live in two places and nowhere else:
+Structural validity is not source fidelity. Model-assisted source checks are not independent human review.
 
-- **[`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`](papers/BENCH_FINDINGS_FOR_P1_P2.md)** — what to draft
-  from. Nine findings in the order they are worth using, with the numbers stated once and section 9
-  as the limitations language.
-- **[`docs/full-corpus/review/README.md`](full-corpus/review/README.md)** — the review index: what
-  each pass asked, what it found, and why their order matters.
+## What “complete for the current stage” means
 
-### What is genuinely left
+For the current developmental/publication stage, Bench is complete enough when:
 
-**One thing, and it needs sources rather than reasoning.** Everything a model can establish from the
-record is established. What remains is reading the cited sources themselves, packaged as 126 units
-with a return path:
+1. the executable corpus remains structurally valid and versioned;
+2. execution-relevant changes are clearly classified and propagated to SACRE;
+3. source/review findings are recorded truthfully without being misrepresented as independent human review;
+4. the standalone resource paper has a defensible architecture and evidence plan;
+5. the **generalization audit** identifies accidental SACRE coupling and a path to clearer resource/task/evaluation separation;
+6. P2 can use Bench accurately as the resource that made systematic investigation possible without absorbing the full standalone resource contribution.
 
-- **Start:** [`docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`](full-corpus/review/DEEP_RESEARCH_BRIEF.md)
-  — what is already settled (so effort does not go there), and the three remaining questions.
-- **Current state:** [`docs/full-corpus/review/RESEARCH_HANDOFF.md`](full-corpus/review/RESEARCH_HANDOFF.md)
-  — regenerated every validate run; carries per-unit fingerprints so a verdict survives unrelated
-  repairs.
-- **Tasks:** [`docs/full-corpus/review/research-tasks/README.md`](full-corpus/review/research-tasks/README.md)
-  — one file per family. Work order **C → B → A**.
-- **Return:** `node scripts/ingest-research-verdicts.mjs`, which reports coverage on every
-  `npm run validate` and refuses a verdict that names a nonexistent unit, asserts a defect without
-  evidence, or judges a unit that has since been repaired.
+Independent human source-to-policy review remains important for a stronger release/quality claim, but it is **not a gate on developmental or paper-facing SACRE execution**.
 
-**Task B is where the yield is.** Five families have had a whole-document read and all five carried
-a finding the passage-level check could not see. Twenty-nine have not been read that way.
+## What remains in the Bench lane
 
-### Two open decisions, staged not taken
+### 1. Source/review work
 
-Both are in `docs/papers/MANUSCRIPT_WRITEBACK.md`, and both change the corpus rather than its
-description, which is why they wait for the coordinator:
+Continue the current deep-research review process. The live review surfaces are:
 
-1. **The four-basis rule has no discipline for a partly-authored direct candidate.** Two instances
-   found. Fixing it means amending the construction standard and a corpus-wide declaration pass.
-2. Nothing else. The cross-source independence question that stood here is **closed** — resolved by
-   re-sourcing rather than by holding families.
+- `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` — what remains to be checked and how;
+- generated `docs/full-corpus/review/RESEARCH_HANDOFF.md` — current review units/fingerprints;
+- `docs/full-corpus/review/research-tasks/README.md` — task index;
+- `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` — manuscript-facing findings;
+- `docs/papers/MANUSCRIPT_WRITEBACK.md` — chronological audit trail.
 
----
+Whole-document omission review has found findings in five of five families examined by that method; 29 remain unexamined by that method. This is not a corpus-wide rate.
+
+### 2. Generalization audit
+
+Classify current schema/task fields as:
+
+- **intrinsic resource fields**;
+- **generic task/evaluation fields**;
+- **SACRE-specific execution fields**.
+
+The purpose is to protect the intended broader computational-bioethics identity without destabilizing v1 merely for conceptual neatness.
+
+### 3. Standalone resource paper
+
+Current Drive plan: **Bioethics Bench v3 — research publication plan**  
+https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
+
+The paper should establish:
+- resource construction and release methods;
+- source grounding/provenance;
+- task abstraction;
+- evaluation protocols and baselines;
+- versioning and governance;
+- limitations and review state;
+- extension to future computational-bioethics tasks/methods.
+
+## Downstream SACRE evidence
+
+Developmental SACRE evidence currently includes:
+- 8 families / 16 records / 216 QCCS calls in a geometry-stratified tranche;
+- selected repeat/stability calibration;
+- an attempted 68-record census halted after 234 calls: 20 complete records, 48 incomplete.
+
+The 20 complete records are single-execution developmental evidence. The 48 incomplete records are non-results.
+
+Those are SACRE execution artifacts, not evidence that Bench source fidelity has been independently validated.
 
 ## What must not be claimed
 
-Stated here because it is the easiest thing to get wrong under deadline, and because every lane
-touches it:
+- The corpus is not independently human-reviewed.
+- Structural validation is not source fidelity.
+- The review is not complete.
+- Five of five whole-document findings do not imply a corpus-wide finding rate.
+- A successful SACRE run does not validate the source construction of the case.
+- Bioethics Bench has not yet demonstrated method-neutrality across multiple mature task families.
+- Developmental execution is not confirmatory P3 validation.
+- Human-model correspondence has not been measured; that belongs to P4 after authorized fielding.
 
-- The corpus is **not human-reviewed**. `reviewed_by_human` is `false` on all 68 records.
-- The review is **not complete**. 121 of 126 external units are unreturned.
-- Cross-source coherence has **not been validated**. No confirmatory evaluation has been run.
-- Implementation capability is **not** empirical evidence; development runs are **not** confirmatory
-  validation; branch-only functionality is **not** deployed functionality.
+## If picking this up cold
 
-The corpus being published at bioethicsbench.com does not change any of these. The site says so.
+Read in this order:
 
----
+1. this file;
+2. `docs/CENTRAL_COORDINATOR_CONTINUITY.md`;
+3. `docs/PROGRAM_COORDINATION.md`;
+4. `docs/COORDINATOR_DIRECTIVE.md`;
+5. `docs/BRANCH_COORDINATION.md`;
+6. if doing source review, the generated review handoff and deep-research brief;
+7. if drafting, `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`.
 
-## If you are picking this up cold
-
-Read in this order: this file, then the coordinator status in the SACRE repo for the critical path,
-then — if you are working the Bench lane — the review index here, then the deep-research brief.
-Fetch live branch heads rather than trusting any SHA written in a coordination document, including
-this one, which deliberately contains none.
+Fetch live repo state rather than trusting an old SHA or count in historical documents.
