@@ -1,7 +1,16 @@
 # Deep-research brief — the review work that needs sources
 
 **For:** a research agent or a human reviewer with retrieval, working the Full Corpus release gate.
-**Start here, then work `research-tasks/README.md`.**
+
+**Start here. Then check [`RESEARCH_HANDOFF.md`](RESEARCH_HANDOFF.md) for current state — it is
+regenerated on every validate run and is the answer to "has anything moved?" — then work
+[`research-tasks/README.md`](research-tasks/README.md).**
+
+You do not need a frozen snapshot to work against. The corpus is still being repaired, and that is
+fine: every reviewable unit carries a fingerprint over the candidate's own text, basis and
+provenance, and the return gate checks *your unit* rather than the whole record. Repairing a
+citation in one candidate will not invalidate your finding about another. If something you actually
+read has changed, the gate names that unit and only that unit.
 
 ---
 
@@ -83,15 +92,18 @@ these errors look like in this corpus, which is more useful than a general instr
 
 Then take one family per sitting from `research-tasks/README.md`, in the order C → B → A.
 
-Return a verdict as JSON per the template at the foot of each task file, then run:
+Return a verdict as JSON per the template at the foot of each task file — copying each unit's
+fingerprint from the task file or the handoff — then run:
 
 ```
 node scripts/ingest-research-verdicts.mjs
 ```
 
-It refuses a verdict that judges a record whose content hash has moved, names a candidate that is
-not a unit of that family, or asserts a defect without evidence. Those refusals are the point: a
-review that cannot be returned into the repository is a request, not a gate.
+It refuses three things: a verdict naming a unit that does not exist, a verdict asserting a defect
+or a discovery with no evidence, and a verdict whose own unit has been repaired since you read it.
+Those refusals are the point — a review that cannot be returned into the repository is a request,
+not a gate. Partial returns in any order over any period are fine and report as partial; coverage
+is computed from the corpus, not from what you sent, so an incomplete review never looks finished.
 
 ## Three standing rules
 

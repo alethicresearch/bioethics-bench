@@ -24,6 +24,11 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
+import { collectUnits, unitFingerprint } from './review-units.mjs';
+
+const UNITS = collectUnits();
+const fingerprintOf = (family, id, task) =>
+  UNITS.get(family)?.units.find((u) => u.id === id && u.task === task)?.fingerprint ?? 'unknown';
 
 const MANIFEST = 'releases/full-corpus-v1-completion-candidate/manifest.json';
 const OUTDIR = 'docs/full-corpus/review/research-tasks';
@@ -74,7 +79,9 @@ for (const family of [...byFamily.keys()].sort()) {
   L.push('**Generated. Do not edit.** Return a verdict file, not edits to this one.');
   L.push('');
   L.push(`- Record under review: \`${rec.record_id}\``);
-  L.push(`- Content hash at generation: \`${rec.content_hash}\``);
+  L.push('- Each unit below carries a **fingerprint**. Put it in your verdict: the gate checks your');
+  L.push('  unit, not the whole record, so an unrelated repair elsewhere will not invalidate your work.');
+  L.push('- Current fingerprints for every family: `../RESEARCH_HANDOFF.md`');
   L.push(`- Verdict file to write: \`${OUTDIR}/verdicts/${family}.json\``);
   L.push('');
   L.push(`**Decision question the family puts to the system.** ${rec.decision_question}`);
@@ -113,7 +120,7 @@ for (const family of [...byFamily.keys()].sort()) {
     L.push('magnitude of the finding?');
     L.push('');
     for (const { pool, c } of bridges) {
-      L.push(`### \`${c.id}\` (${pool})`);
+      L.push(`### \`${c.id}\` (${pool}) — fingerprint \`${fingerprintOf(family, c.id, 'A')}\``);
       L.push('');
       L.push(`**Directs:** ${String(c.text).replace(/\s+/g, ' ')}`);
       L.push('');
@@ -141,7 +148,7 @@ for (const family of [...byFamily.keys()].sort()) {
     L.push('about the one citing it.');
     L.push('');
     for (const { pool, c } of directs) {
-      L.push(`### \`${c.id}\` (${pool})`);
+      L.push(`### \`${c.id}\` (${pool}) — fingerprint \`${fingerprintOf(family, c.id, 'B')}\``);
       L.push('');
       L.push(`**Directs:** ${String(c.text).replace(/\s+/g, ' ')}`);
       L.push('');
@@ -163,20 +170,21 @@ for (const family of [...byFamily.keys()].sort()) {
   L.push('## Returning a verdict');
   L.push('');
   L.push('Write `' + `${OUTDIR}/verdicts/${family}.json` + '` in the shape below and run');
-  L.push('`node scripts/ingest-research-verdicts.mjs`. It refuses a verdict that names the wrong');
-  L.push('record, judges a stale content hash, or omits a candidate the task listed.');
+  L.push('`node scripts/ingest-research-verdicts.mjs`. It refuses a verdict naming a unit that does');
+  L.push('not exist, one asserting a defect without evidence, and one whose own unit has been');
+  L.push('repaired since you read it — that last refusal names the unit, and affects only that unit.');
   L.push('');
   L.push('```json');
   L.push(JSON.stringify({
     family,
     record_id: rec.record_id,
-    content_hash: rec.content_hash,
     reviewer: 'name or agent identifier',
     reviewed_at: 'YYYY-MM-DD',
     candidates: [
       ...bridges.map(({ c }) => ({
         id: c.id,
         task: 'A',
+        fingerprint: fingerprintOf(family, c.id, 'A'),
         verdict: 'confirmed | misdescribed | unverifiable',
         evidence: 'What the source actually reports — population, measure, direction, magnitude. Quote where you can.',
         proposed_repair: 'Only if misdescribed. Leave empty otherwise.',
@@ -184,6 +192,7 @@ for (const family of [...byFamily.keys()].sort()) {
       ...directs.map(({ c }) => ({
         id: c.id,
         task: 'B',
+        fingerprint: fingerprintOf(family, c.id, 'B'),
         verdict: 'no-omission | omission-found | unverifiable',
         evidence: 'If omission-found: what the document says about another question this family divides along, and which candidate it bears on.',
         proposed_repair: '',
@@ -191,6 +200,7 @@ for (const family of [...byFamily.keys()].sort()) {
       ...(resource ? [{
         id: 'public-pool',
         task: 'C',
+        fingerprint: fingerprintOf(family, 'public-pool', 'C'),
         verdict: 'resourced | not-identifiable | studies-do-not-support',
         evidence: 'Citations found, with PMIDs, and what each reports. Or why the summarised studies could not be identified.',
         proposed_repair: 'Proposed replacement citations, verbatim.',
