@@ -77,3 +77,15 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Limits:** repo-generated technical state remains authoritative over stale prose.
 - **Dependency:** future material branch/corpus changes should create/update a new delta rather than relying on this status.
 - **Integrated into:** both live Drive coordination documents have been updated through P2 v41 propagation and current branch/evidence state.
+
+### Citation verification quantifies what structural validation cannot reach
+- **Target:** P2 v41 Bench/release language, alongside the existing structural-validation-versus-fidelity paragraph
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `scripts/verify-citations.mjs`, `docs/full-corpus/review/citation-verification.md`; 231 unique citations, 103 carrying a PMID
+- **Evidence class:** corpus construction / mechanical verification
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the distinction between structural validation and source-to-policy fidelity can now be stated with a figure rather than asserted. Every one of the 103 PMIDs the Full Corpus cites resolves to a real record, and 98 are consistent with their citation on year and on title or author. That is the ceiling of what machine checking reaches: an identifier that resolves, to a paper that exists, cited accurately. Whether that paper supports the policy candidate attributed to it is a separate question that no check answers, and it is why independent human review remains the release gate.
+- **Limits:** verification covers PMIDs only. The other 128 citations are named policy documents, guidelines and books, checkable only by reading. Resolution and consistency establish nothing about warrant.
+- **Dependency:** none. Usable as written.
+- **Integrated into:** _pending_

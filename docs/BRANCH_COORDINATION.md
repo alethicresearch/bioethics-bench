@@ -63,7 +63,11 @@ These branches preserve prior attempts, audits, transports, or handoffs. Do not 
 
 ## Current cross-repo dependency
 
-SACRE’s Full Corpus integration branch is pinned to Bench execution content at commit `8811c0c7c31232b13c370518f3f1f1f9de5eabbb`. Subsequent canonical-branch commits at the last check were coordination/writeback-only, so the vendored execution input remained equivalent.
+**The vendor pin is now stale.** SACRE's Full Corpus integration branch is pinned to Bench content at `8811c0c7c31232b13c370518f3f1f1f9de5eabbb`. The first execution-relevant commit after that pin is the citation repair on this branch, which changed `data/benchmark/m019-telemedicine-access-diagnostic-safety-{concise,detailed}-v1.json` and the release manifest.
+
+What changed, precisely: one provenance citation string and the two content hashes that follow from it. Candidate ids, candidate texts, scenarios, geometry, profiles and required aggregation are **unchanged**, so nothing about how these records execute has moved. SACRE's vendored payload carries content hashes, so its pin and corpus sha256 are nevertheless no longer truthful.
+
+**Action for the SACRE lane:** re-vendor and re-pin to the current canonical head before any product merge or paper-facing execution. Re-running the suite is sufficient; no behavioural re-verification is implied. If a merge decision is already in flight against the previously verified head, re-vendoring can follow that decision rather than block it — the execution inputs are identical.
 
 This statement is invalidated immediately by any later commit that changes `data/benchmark`, candidate ids/text, executable profiles, schemas that affect execution, geometry/aggregation requirements, or the Full Corpus manifest. When that happens, update this file, state the first execution-relevant changing commit in the handoff, and flag SACRE for re-vendoring/re-pinning.
 
