@@ -177,7 +177,7 @@
           "summary": "Derived from preservation of life, epistemic humility, and disability-justice reasoning. The executable continuation rule is Bench-authored.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Disorders of Consciousness guideline. PMID 30098791.",
+              "citation": "Giacino JT, Katz DI, Schiff ND, et al. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. Arch Phys Med Rehabil. 2018;99(9):1699-709. AAN/ACRM/NIDILRR. PMID 30098791.",
               "type": "guideline"
             }
           ]
@@ -243,5 +243,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:7fb749519831b0d3084c75a44fa7bb66324b61ba1ee4c07fc1bbd43ff919beb3"
+  "content_hash": "sha256:8bc006f37ea1fb646cab15c294d200738f8d5b5a7a5e734b45b05838fcef9ee0"
 }

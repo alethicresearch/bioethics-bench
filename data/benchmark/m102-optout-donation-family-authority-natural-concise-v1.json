@@ -88,7 +88,7 @@
           "summary": "Source-informed policy inference from public evidence showing strong resistance to routine family override of a deceased person's donation choice, translated cautiously to deemed participation by limiting family override to evidence of the deceased's own contrary wishes.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             },
             {
@@ -109,7 +109,7 @@
           "summary": "Adapted from public/next-of-kin studies documenting substantial support for family consultation and final permission when the deceased's wishes are not explicitly registered. The candidate is bounded to deemed rather than explicit donor authorization.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             },
             {
@@ -176,7 +176,7 @@
           "summary": "Derived from donor autonomy, institutional commitment and reliability of public choice architecture. The executable deceased-choice rule is Bench-authored.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             }
           ]
@@ -237,7 +237,7 @@
   },
   "references": [
     {
-      "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+      "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
       "type": "article"
     },
     {
@@ -264,5 +264,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A country uses an adequately publicized opt-out deceased-donation system. For this benchmark, assume the deceased adult did not opt out and left no explicit registered donor authorization or written instruction; close family members object because of their own beliefs and distress but provide no credible evidence that the deceased personally opposed donation; the family can be consulted about the deceased's values and circumstances; and both a deceased-choice/rebuttable-presumption rule and a family-objection rule are legally available. The donation authority must decide whether organ recovery should proceed despite the family's own objection.",
-  "content_hash": "sha256:7f7f981b6e8b3e5105b38cc304edf6a7c7e20b7dca464429ebb32bd8bc07fc3b"
+  "content_hash": "sha256:9dadfd30af55fd3886be790f224d20f9ad052afdfa0216ecfa7769ae45e54d52"
 }

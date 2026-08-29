@@ -88,7 +88,7 @@
           "summary": "Source-informed policy inference from public evidence showing strong resistance to routine family override of a deceased person's donation choice, translated cautiously to deemed participation by limiting family override to evidence of the deceased's own contrary wishes.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             },
             {
@@ -109,7 +109,7 @@
           "summary": "Adapted from public/next-of-kin studies documenting substantial support for family consultation and final permission when the deceased's wishes are not explicitly registered. The candidate is bounded to deemed rather than explicit donor authorization.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             },
             {
@@ -176,7 +176,7 @@
           "summary": "Derived from donor autonomy, institutional commitment and reliability of public choice architecture. The executable deceased-choice rule is Bench-authored.",
           "sources": [
             {
-              "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+              "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             }
           ]
@@ -237,7 +237,7 @@
   },
   "references": [
     {
-      "citation": "Molina-Pérez A, et al. Transplant Rev. 2022. PMID 34864448.",
+      "citation": "Molina-Pérez A, Delgado J, Frunza M, et al. Should the family have a role in deceased organ donation decision-making? A systematic review of public knowledge and attitudes towards organ procurement policies in Europe. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
       "type": "article"
     },
     {
@@ -264,5 +264,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A national health system uses an opt-out deceased organ-donation system after extensive public information and an accessible process for registering refusal. For this benchmark, assume an adult dies in circumstances allowing donation, the person did not opt out and left no explicit registered donor authorization or written instruction, close relatives strongly object because of their own beliefs and distress but provide no credible evidence that the deceased personally opposed donation, the family can be consulted about the deceased's values and circumstances, and the authority may legally choose either a deceased-choice/rebuttable-presumption policy or a family-objection policy. The system must decide whether the family's own objection should block recovery or whether donation should proceed unless relatives can rebut deemed participation with evidence about the deceased or a narrowly defined exceptional harm.",
-  "content_hash": "sha256:6146807b599bcdc695a560d9f3751b920334484d41bfa79d33e390ef1df9e44c"
+  "content_hash": "sha256:7d55a9d392153f4c34d87dabaa3da2f29a3b3708af29a36088e241b39d8d2a9e"
 }

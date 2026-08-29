@@ -87,7 +87,7 @@
         "type": "article"
       },
       {
-        "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+        "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
         "type": "article"
       }
     ],
@@ -130,7 +130,7 @@
               "type": "article"
             },
             {
-              "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+              "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
               "type": "article"
             }
           ],
@@ -232,11 +232,11 @@
       "type": "article"
     },
     {
-      "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+      "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
       "type": "article"
     }
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:d0945c67547f72807e04dad0adcb6be9467beb4a1df6c3ed8e308865dfacfed1"
+  "content_hash": "sha256:53d5d6696309ed126605615b900ea8de01d767fcfdc89072a53e9bc1ed6fb7f8"
 }

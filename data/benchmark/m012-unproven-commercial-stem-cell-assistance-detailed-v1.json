@@ -105,11 +105,11 @@
           "summary": "Source-informed policy inference from qualitative patient-seeker evidence emphasizing hope, agency, willingness to accept uncertainty, and concern about abandonment. The concrete clinician-assistance rule is Bench-authored and is not attributed to participants as a surveyed institutional policy.",
           "sources": [
             {
-              "citation": "Master Z et al. 2025. PMID 40744777.",
+              "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
               "type": "article"
             },
             {
-              "citation": "Master Z et al. 2026. PMID 42210947.",
+              "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
               "type": "article"
             }
           ],
@@ -126,11 +126,11 @@
           "summary": "Source-informed policy inference from low-seeking patient orientations that placed greater weight on weak evidence, safety concerns, and distrust of commercial claims. The professional-boundary rule is a Bench translation of those affected-person values, not a claim that respondents themselves issued clinical guidance.",
           "sources": [
             {
-              "citation": "Master Z et al. 2025. PMID 40744777.",
+              "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
               "type": "article"
             },
             {
-              "citation": "Master Z et al. 2026. PMID 42210947.",
+              "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
               "type": "article"
             }
           ],
@@ -232,15 +232,15 @@
       "type": "article"
     },
     {
-      "citation": "Master Z et al. 2025. PMID 40744777.",
+      "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
       "type": "article"
     },
     {
-      "citation": "Master Z et al. 2026. PMID 42210947.",
+      "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
       "type": "article"
     }
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:9f27f8d1181fc2e8ed9a667c493aa27363cdb5a50f83e247f90ee15080c4b886"
+  "content_hash": "sha256:fd822776e64b200a03d5e358eade2a933fe179034cd9c6abfc746d6ce4430600"
 }

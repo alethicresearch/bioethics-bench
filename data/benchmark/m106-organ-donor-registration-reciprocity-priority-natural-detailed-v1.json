@@ -89,7 +89,7 @@
               "type": "survey"
             },
             {
-              "citation": "Oedingen C, et al. Soc Sci Med. 2021. PMID 34507218.",
+              "citation": "Oedingen C, Bartling T, Schrem H, et al. Public preferences for the allocation of donor organs for transplantation: a discrete choice experiment. Soc Sci Med. 2021;287:114360. PMID 34507218.",
               "type": "article"
             }
           ],
@@ -110,7 +110,7 @@
               "type": "article"
             },
             {
-              "citation": "Oedingen C, et al. Soc Sci Med. 2021. PMID 34507218.",
+              "citation": "Oedingen C, Bartling T, Schrem H, et al. Public preferences for the allocation of donor organs for transplantation: a discrete choice experiment. Soc Sci Med. 2021;287:114360. PMID 34507218.",
               "type": "article"
             }
           ],
@@ -250,7 +250,7 @@
       "type": "article"
     },
     {
-      "citation": "Oedingen C, et al. Soc Sci Med. 2021. PMID 34507218.",
+      "citation": "Oedingen C, Bartling T, Schrem H, et al. Public preferences for the allocation of donor organs for transplantation: a discrete choice experiment. Soc Sci Med. 2021;287:114360. PMID 34507218.",
       "type": "article"
     }
   ],
@@ -265,5 +265,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A national deceased-donor system depends on voluntary public participation and has persistent organ scarcity. The allocation authority is considering whether a person's prior willingness to join the donor pool should matter if that person later becomes a transplant candidate. For this benchmark, assume medical compatibility, minimum transplant eligibility and core urgency criteria are applied before any reciprocity factor, any credited donor registration occurred before the candidate became seriously ill or knew of the transplant need, the system can exempt candidates who lacked a fair opportunity to register because of age, disability or access barriers, and the policy concerns deceased-donor registration rather than actual prior living donation. The authority must choose whether registration carries no allocation weight, a modest bonus or tie-break among otherwise close candidates, or stronger reciprocal priority after basic clinical criteria are satisfied.",
-  "content_hash": "sha256:42e15d3f7c0acb6e0330dc9faa8d8f54f32419779ce62567c933936771883733"
+  "content_hash": "sha256:7a0ce6087a0936b9371121f5243c10a1132ac924f0c84703710adaa132870252"
 }

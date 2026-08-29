@@ -51,6 +51,14 @@ function collectCitations() {
 }
 
 const PMID = /PMID[:\s]*(\d{6,9})/i;
+
+// A source cited only by PMC identifier was invisible to this whole check: no PMID, so nothing
+// to resolve, so it counted as one of the "named documents not machine-checkable" — which it is
+// not. It is a journal article with an identifier the gate simply did not read. One such citation
+// existed and is now repaired to carry its PMID; this pattern makes the gate refuse to let
+// another hide the same way, because a PMC id is exactly as checkable as a PMID and a citation
+// carrying one has no reason to omit the other.
+const PMCID = /PMC\s*(\d{6,9})/i;
 const YEAR = /\b(19|20)\d{2}\b/;
 
 // Titles are paraphrased in citations, so compare on content words rather than exact string.
@@ -102,8 +110,26 @@ async function fetchSummaries(ids) {
 }
 
 const citations = collectCitations();
+
+// Fail before doing anything else if a citation carries a PMC id but no PMID. This is not a
+// judgment call: the article has a resolvable identifier and the citation is withholding it from
+// the gate.
+const pmcidOnlyCitations = [...citations.entries()]
+  .filter(([citation]) => !PMID.test(citation) && PMCID.test(citation));
+if (pmcidOnlyCitations.length) {
+  for (const [citation, meta] of pmcidOnlyCitations) {
+    const where = meta.uses.map((u) => `${u.family}/${u.where}`).join(', ');
+    console.error(`✗ cited by PMC id with no PMID, so unverifiable by this check — ${where}: "${citation}"`);
+  }
+  console.error(`✗ ${pmcidOnlyCitations.length} citation(s) carry a PMC id but no PMID. Add the PMID.`);
+  process.exit(1);
+}
+
 const withPmid = [...citations.entries()]
-  .map(([citation, meta]) => ({ citation, ...meta, pmid: PMID.exec(citation)?.[1] ?? null }))
+  .map(([citation, meta]) => ({
+    citation, ...meta,
+    pmid: PMID.exec(citation)?.[1] ?? null,
+  }))
   .filter((c) => c.pmid);
 
 let summaries;
