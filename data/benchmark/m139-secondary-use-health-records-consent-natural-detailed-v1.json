@@ -157,7 +157,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the NHS National Data Opt-Out, which gives people a standing choice to prevent confidential patient information from being used for research and planning except in specified circumstances.",
+          "summary": "Adapted from the NHS National Data Opt-Out, which gives people a standing choice to prevent confidential patient information from being used for research and planning except in specified circumstances. Worth stating rather than leaving inside \"specified circumstances\": those exceptions are differentiated by use type. The opt-out does not apply where explicit consent has been obtained, to anonymised data, to communicable-disease control and other public-health risks, to overriding public interest, or to named statutory registries and surveys. A single opt-out with use-type-dependent carve-outs is closer to the tiered architecture pub3 and fw3 represent than to a flat opt-out, and this candidate states the flat form.",
           "sources": [
             {
               "citation": "NHS. National Data Opt-Out: choice about use of confidential patient information for research and planning.",
@@ -284,5 +284,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system maintains longitudinal electronic records collected for direct care and is choosing a standing rule for secondary research use. For this benchmark, assume the system receives low-risk studies using coded data that remain inside a secure controlled environment as well as some requests involving identifiable data, highly sensitive conditions, or commercial partners; obtaining new study-specific authorization from every patient for every low-risk coded analysis would make many otherwise feasible studies impracticable; the system can provide clear public notice, maintain a changeable global research opt-out, restrict access and reuse, and require ethics or privacy-board review; and governed opt-out, affirmative-authorization, and risk-tiered architectures are all legally available. The board must decide whether secondary use should proceed under a standing opt-out, require affirmative authorization, or vary the consent threshold with identifiability, sensitivity, recipient, and risk.",
-  "content_hash": "sha256:09d971add23e02451d8a581cca1c8d171897d39fbf64e60b55fe945409bc5ee4"
+  "content_hash": "sha256:9b24e2ebf0382fe62eb1cee00cd58f8a5a81fe7687620ce2c19b51c9dadc60ce"
 }

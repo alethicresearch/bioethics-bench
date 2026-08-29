@@ -413,7 +413,7 @@
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:4bd387fd0579e7eade4b13bc32c93dbba0958e3d44eeda639eb7023d06df6476",
+      "content_hash": "sha256:55249bca7258ba5f41eb47b67aa2b2e8ef727aaf3dcf26a2f4f4aff098d2eb3d",
       "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -424,7 +424,7 @@
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:031acbb148d85d5ca61195e06b637b791d0f7035a1cc2a7c45ac666ad838e063",
+      "content_hash": "sha256:415c72b771a682041bb59438a680ab5108624ed731b98028b4ff28739255c591",
       "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -479,7 +479,7 @@
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:b9ce7df57b69d3e404704403292c9db393eebe08b243ff11c2a2531e6a7d3693",
+      "content_hash": "sha256:8d12f7da862ea5acfdc959435a3fedf140f4514efdb201783572b96347a81501",
       "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -490,7 +490,7 @@
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:d871e5436a270e8b84aedf9eec13514f10a8da1217ad15b332712d398d4785da",
+      "content_hash": "sha256:6716c995063e36342393d6ee3ad183e79fd67bde4452007e091b1f8bc450372c",
       "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -655,7 +655,7 @@
     {
       "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee",
+      "content_hash": "sha256:f5aa0140eb8a7286a71bf3d27c1ad5357979c0a9880ad53305a13ee1c4f0c3b5",
       "path": "data/benchmark/m139-secondary-use-health-records-consent-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
@@ -666,7 +666,7 @@
     {
       "record_id": "m139-secondary-use-health-records-consent-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:09d971add23e02451d8a581cca1c8d171897d39fbf64e60b55fe945409bc5ee4",
+      "content_hash": "sha256:9b24e2ebf0382fe62eb1cee00cd58f8a5a81fe7687620ce2c19b51c9dadc60ce",
       "path": "data/benchmark/m139-secondary-use-health-records-consent-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",

@@ -538,6 +538,65 @@ in the citation, the citation is quoting the title. Improving the *citation* had
 worse, which is the failure mode worth naming — a check tuned against real data will otherwise train
 its reader to ignore it.
 
+## Expert pool, batch 7 — the first deliberate mode-3 hunt
+
+Batches 1–6 read the passage each candidate cites. This one asked the different question, on three
+families chosen because their sources are long multi-topic guidance and their candidate fields
+divide on more than one axis: **does the document take a position on another question this family
+divides along, which the record does not carry?**
+
+**Three families read, three findings.** That is a higher hit rate than any previous batch, and it
+is the reason to treat mode 3 as under-detected rather than rare.
+
+### M054 — the strongest, and it changes how the framework pool reads
+
+ACMG's policy statement carries two positions beyond the minimum-list-with-opt-out architecture the
+record cites.
+
+It **explicitly rejects an opt-in default**: "providing the opportunity for an informed decision and
+opt out, if desired, at the time of consent should continue to be the standard for secondary
+findings," and it criticises laboratories that misapplied the policy as opt-in. That is a stated
+position *against* `pub2` and `fw2`, not an absence of support for them — a materially different
+thing for a reader weighting the expert layer.
+
+And it recommends **"avoiding inclusion of gene–phenotype pairs with uncertain or lower penetrance
+estimates,"** preferring pairs with "a higher likelihood that the individual will manifest the
+phenotype." That is a version of the high-penetrance-and-actionability threshold `fw3` derives from
+principle. **So `fw3` has professional support as well as a framework derivation** — and a reader
+who takes the framework pool as the unsupported-by-evidence layer would be wrong about this family.
+
+That is a new consequence of mode 3 worth stating: an omission does not only understate the expert
+source, it can misrepresent the *framework* pool as reasoning without professional backing when the
+backing exists and simply was not carried across.
+
+### M075 — a second re-consent trigger, on the axis the family divides on
+
+CIOMS Guideline 11 supplies the scope-based trigger the candidate states — re-consent when a use
+falls outside the authorized scope. It also holds that informed opt-out procedures are inappropriate
+"when controversial or high-impact techniques are used" or "when research is conducted in contexts
+of heightened vulnerability," requiring explicit consent instead. That is a **sensitivity**-based
+trigger, and sensitivity is exactly what `fw2` divides on.
+
+### M139 — the exceptions are themselves tiered
+
+The candidate says the NHS opt-out prevents covered uses "except in specified circumstances." Those
+circumstances are differentiated by use type: the opt-out does not apply where explicit consent has
+been obtained, to anonymised data, to communicable-disease control, to overriding public interest,
+or to named statutory registries. **A standing opt-out with use-type-dependent carve-outs is closer
+to the tiered architecture `pub3` and `fw3` represent than to the flat opt-out the candidate
+states.** The mildest of the three, and recorded rather than repaired beyond the declaration.
+
+All three are provenance-only: the declarations are added to the summaries, no candidate action
+changed, no geometry moved.
+
+## Coverage of the mode-3 question
+
+Three of 34 families have now had a deliberate whole-document read. **Thirty-one have not.** The
+hit rate so far — M041, M042 from incidental deep reads, plus M054, M075, M139 from three
+deliberate ones — is five findings from five families examined this way, which is not a rate that
+should be extrapolated but is emphatically not zero. This is the work packaged as task B in
+`research-tasks/`, and it is where the remaining yield is.
+
 ## Tranche closed
 
 **All 49 expert `direct-policy-evidence` candidates have been read against their sources**, joining

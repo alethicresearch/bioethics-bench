@@ -157,7 +157,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the NHS National Data Opt-Out, which gives people a standing choice to prevent confidential patient information from being used for research and planning except in specified circumstances.",
+          "summary": "Adapted from the NHS National Data Opt-Out, which gives people a standing choice to prevent confidential patient information from being used for research and planning except in specified circumstances. Worth stating rather than leaving inside \"specified circumstances\": those exceptions are differentiated by use type. The opt-out does not apply where explicit consent has been obtained, to anonymised data, to communicable-disease control and other public-health risks, to overriding public interest, or to named statutory registries and surveys. A single opt-out with use-type-dependent carve-outs is closer to the tiered architecture pub3 and fw3 represent than to a flat opt-out, and this candidate states the flat form.",
           "sources": [
             {
               "citation": "NHS. National Data Opt-Out: choice about use of confidential patient information for research and planning.",
@@ -284,5 +284,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A large health system is choosing a standing policy for secondary research use of records originally collected for patient care. For this benchmark, assume the system receives both low-risk coded research requests inside a secure environment and some identifiable, highly sensitive, or commercial requests; obtaining new study-specific authorization from every patient for every low-risk coded analysis would make many studies impracticable; the system can provide clear notice, maintain a changeable global opt-out, use controlled-access environments, and require ethics or privacy-board review; and governed opt-out, affirmative-authorization, and risk-tiered architectures are legally available. The board must choose the consent and governance rule that should apply across this secondary-use portfolio.",
-  "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee"
+  "content_hash": "sha256:f5aa0140eb8a7286a71bf3d27c1ad5357979c0a9880ad53305a13ee1c4f0c3b5"
 }

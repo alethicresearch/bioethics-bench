@@ -117,7 +117,7 @@ verdicts to see what, if anything, needs re-reading.
 | [M050](research-tasks/M050.md) | `exp2` | B | `u1:21628058dd8d7035` |
 | [M054](research-tasks/M054.md) | `pub1` | A | `u1:c38eb2f4ed83f30c` |
 | [M054](research-tasks/M054.md) | `pub2` | A | `u1:c0e5d01b135635aa` |
-| [M054](research-tasks/M054.md) | `exp1` | B | `u1:edfb4bb0516a173a` |
+| [M054](research-tasks/M054.md) | `exp1` | B | `u1:42872ad814a159a7` |
 | [M054](research-tasks/M054.md) | `exp2` | B | `u1:e9ded9114e2f710c` |
 | [M056](research-tasks/M056.md) | `pub1` | B | `u1:acdc86d1354fd0b0` |
 | [M056](research-tasks/M056.md) | `pub2` | B | `u1:cf30e57e0aae7141` |
@@ -130,7 +130,7 @@ verdicts to see what, if anything, needs re-reading.
 | [M060](research-tasks/M060.md) | `public-pool` | C | `u1:1ae4eb541770206a` |
 | [M075](research-tasks/M075.md) | `pub1` | B | `u1:6795cb3e09c6eaf1` |
 | [M075](research-tasks/M075.md) | `pub2` | B | `u1:48ef0b6a37269452` |
-| [M075](research-tasks/M075.md) | `exp1` | B | `u1:6be9c33c892f5e46` |
+| [M075](research-tasks/M075.md) | `exp1` | B | `u1:14cd5670eecddfd0` |
 | [M080](research-tasks/M080.md) | `pub1` | B | `u1:3aa3befa5b095e2d` |
 | [M080](research-tasks/M080.md) | `pub2` | A | `u1:82b9baa4f76fdb20` |
 | [M080](research-tasks/M080.md) | `exp1` | B | `u1:ea1e877e9e1e39d6` |
@@ -159,7 +159,7 @@ verdicts to see what, if anything, needs re-reading.
 | [M139](research-tasks/M139.md) | `pub1` | B | `u1:444e938536500d67` |
 | [M139](research-tasks/M139.md) | `pub2` | B | `u1:4badcdd4770afe56` |
 | [M139](research-tasks/M139.md) | `pub3` | A | `u1:df76eb02a998b3a9` |
-| [M139](research-tasks/M139.md) | `exp1` | B | `u1:16a5770a6fdd8ed9` |
+| [M139](research-tasks/M139.md) | `exp1` | B | `u1:c4e3914bda50d55f` |
 | [M139](research-tasks/M139.md) | `exp2` | B | `u1:1a001c8c9f460ff0` |
 | [M141](research-tasks/M141.md) | `pub1` | A | `u1:1c0c31f8fa8525fb` |
 | [M141](research-tasks/M141.md) | `pub2` | A | `u1:c411342e3e940097` |

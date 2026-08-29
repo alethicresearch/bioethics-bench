@@ -133,7 +133,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from ACMG's current secondary-findings architecture: a defined minimum list of actionable gene–disease pairs is intentionally analyzed in clinical sequencing while patients retain an informed opportunity to opt out; list content is updated as evidence changes.",
+          "summary": "Adapted from ACMG's current secondary-findings architecture: a defined minimum list of actionable gene–disease pairs is intentionally analyzed in clinical sequencing while patients retain an informed opportunity to opt out; list content is updated as evidence changes. Two further ACMG positions are declared because they bear on other candidates here and this one does not carry them. ACMG explicitly rejects an opt-in default — \"providing the opportunity for an informed decision and opt out, if desired, at the time of consent should continue to be the standard\" — which is a stated position against pub2 and fw2 rather than mere absence of support. And ACMG recommends \"avoiding inclusion of gene–phenotype pairs with uncertain or lower penetrance estimates,\" preferring pairs with \"a higher likelihood that the individual will manifest the phenotype\" — a version of the high-penetrance threshold fw3 derives from principle. fw3 therefore has professional support as well as a framework derivation, and a reader should not take it as unsupported by the expert layer.",
           "sources": [
             {
               "citation": "Miller DT, et al. Recommendations for reporting of secondary findings in clinical exome and genome sequencing, 2021 update: an ACMG policy statement. Genet Med. 2021;23:1391–1398. PMID 34012069.",
@@ -292,5 +292,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "An adult undergoes clinical genome sequencing to investigate an unexplained medical condition. The laboratory can also intentionally analyze a predefined set of variants associated with serious conditions for which established surveillance or preventive treatment can substantially reduce morbidity or mortality. For this benchmark, assume any returned secondary finding would be analytically confirmed and clinically interpreted, pre- and post-test genetic counseling is available, and the represented findings concern serious conditions with established interventions. The health system must choose whether to analyze these actionable findings by default with an informed opt-out, analyze them only after explicit opt-in, restrict routine diagnostic analysis to the clinical indication rather than deliberately seek unrelated findings, or use a narrower secondary-finding policy limited to a particularly high threshold of penetrance and actionability.",
-  "content_hash": "sha256:4bd387fd0579e7eade4b13bc32c93dbba0958e3d44eeda639eb7023d06df6476"
+  "content_hash": "sha256:55249bca7258ba5f41eb47b67aa2b2e8ef727aaf3dcf26a2f4f4aff098d2eb3d"
 }

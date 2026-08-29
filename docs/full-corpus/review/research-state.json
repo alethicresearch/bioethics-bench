@@ -435,7 +435,7 @@
     },
     "M054": {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
-      "content_hash": "sha256:4bd387fd0579e7eade4b13bc32c93dbba0958e3d44eeda639eb7023d06df6476",
+      "content_hash": "sha256:55249bca7258ba5f41eb47b67aa2b2e8ef727aaf3dcf26a2f4f4aff098d2eb3d",
       "units": [
         {
           "id": "pub1",
@@ -450,7 +450,7 @@
         {
           "id": "exp1",
           "task": "B",
-          "fingerprint": "u1:edfb4bb0516a173a"
+          "fingerprint": "u1:42872ad814a159a7"
         },
         {
           "id": "exp2",
@@ -518,7 +518,7 @@
     },
     "M075": {
       "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
-      "content_hash": "sha256:b9ce7df57b69d3e404704403292c9db393eebe08b243ff11c2a2531e6a7d3693",
+      "content_hash": "sha256:8d12f7da862ea5acfdc959435a3fedf140f4514efdb201783572b96347a81501",
       "units": [
         {
           "id": "pub1",
@@ -533,7 +533,7 @@
         {
           "id": "exp1",
           "task": "B",
-          "fingerprint": "u1:6be9c33c892f5e46"
+          "fingerprint": "u1:14cd5670eecddfd0"
         }
       ]
     },
@@ -706,7 +706,7 @@
     },
     "M139": {
       "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
-      "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee",
+      "content_hash": "sha256:f5aa0140eb8a7286a71bf3d27c1ad5357979c0a9880ad53305a13ee1c4f0c3b5",
       "units": [
         {
           "id": "pub1",
@@ -726,7 +726,7 @@
         {
           "id": "exp1",
           "task": "B",
-          "fingerprint": "u1:16a5770a6fdd8ed9"
+          "fingerprint": "u1:c4e3914bda50d55f"
         },
         {
           "id": "exp2",
