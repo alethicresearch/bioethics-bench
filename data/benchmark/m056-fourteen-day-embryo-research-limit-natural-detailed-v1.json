@@ -80,7 +80,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the Japanese public survey's direct opposition to allowing culture beyond 14 days. The candidate preserves the existing boundary rather than inferring a different policy dimension.",
+          "summary": "Adapted from the Japanese public survey, in which 37.9% of the public (n=3,000) agreed that embryos could be cultured beyond 14 days. The survey asked directly about the 14-day rule, so the basis is direct, but the balance of respondents is split between disagreement and an explicit \"cannot judge\" option and the published abstract does not separate them. This candidate represents the position that retains the boundary; it is not a claim that a majority actively opposes extension.",
           "sources": [
             {
               "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
@@ -238,5 +238,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.",
-  "content_hash": "sha256:44d5cf8d9f6e5936fd7799a5dfdc57a1d24532bbb3043d43b5af740b7e86a736"
+  "content_hash": "sha256:1c3346ffa390493c2a1575a73a0a632b7c70190d04db7adfda1054b4bf487996"
 }

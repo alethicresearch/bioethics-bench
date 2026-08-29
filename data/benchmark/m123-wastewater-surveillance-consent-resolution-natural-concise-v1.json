@@ -69,7 +69,7 @@
         "type": "guideline"
       },
       {
-        "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+        "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
         "type": "article"
       }
     ],
@@ -87,7 +87,7 @@
           "summary": "Adapted from national public-opinion evidence showing very high support for disease and toxin monitoring and substantially greater support for citywide than highly localized wastewater surveillance. The use-limit clause keeps the candidate within the public-health purpose asked about in the evidence.",
           "sources": [
             {
-              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
               "type": "article"
             }
           ],
@@ -104,7 +104,7 @@
           "summary": "Source-informed policy inference from public evidence showing substantially lower support for sensitive targets and smaller surveillance sites. The separate-justification and community-governance threshold is Bench-authored policy completion informed by professional governance guidance.",
           "sources": [
             {
-              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
               "type": "article"
             },
             {
@@ -231,7 +231,7 @@
       "type": "guideline"
     },
     {
-      "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+      "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
       "type": "article"
     }
   ],
@@ -246,5 +246,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A city wants to expand wastewater surveillance beyond citywide infectious-disease monitoring toward neighborhood and institutional catchments and sensitive drug-use markers. For this benchmark, assume individual consent or opt-out is impracticable, citywide samples have very low individual re-identification risk while smaller catchments create materially greater stigma and inference risks, and the agency can prohibit law-enforcement or commercial secondary use and implement transparency, community engagement and ethics-governance processes. The agency must choose whether to permit broad governed surveillance, keep routine monitoring at lower-resolution pathogen-focused uses, or require special community and ethics approval before small-area or sensitive-target monitoring.",
-  "content_hash": "sha256:d4e3a850515a8bf569af5542568f4a375b99e07392930d419d92c6adc3bac40a"
+  "content_hash": "sha256:63d7f46532a2204dd53781b6ceeb2d4ecab277a18b4cd59e29f032733bedfc07"
 }

@@ -70,7 +70,7 @@
         "type": "guideline"
       },
       {
-        "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+        "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care and information: qualitative results from the Experiences of Participants in Clinical Trials (EPIC) study. J Med Ethics. 2009;35(3):183-8. Ten focus groups, 93 current and recent US trial participants. PMID 19251971.",
         "type": "article"
       }
     ],
@@ -88,7 +88,7 @@
           "summary": "Adapted from EPIC participant evidence in which many current or recent trial participants attributed obligations to researchers, sponsors, insurers or others to facilitate continued access to a beneficial study drug or therapeutic equivalent.",
           "sources": [
             {
-              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care and information: qualitative results from the Experiences of Participants in Clinical Trials (EPIC) study. J Med Ethics. 2009;35(3):183-8. Ten focus groups, 93 current and recent US trial participants. PMID 19251971.",
               "type": "article"
             }
           ],
@@ -105,7 +105,7 @@
           "summary": "Source-informed policy inference from EPIC participants who rejected a continuing post-trial drug or care obligation. The responsible transition language is Bench-authored policy completion so the no-indefinite-obligation orientation does not become abrupt abandonment contrary to the fixed scenario and current guidance.",
           "sources": [
             {
-              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+              "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care and information: qualitative results from the Experiences of Participants in Clinical Trials (EPIC) study. J Med Ethics. 2009;35(3):183-8. Ten focus groups, 93 current and recent US trial participants. PMID 19251971.",
               "type": "article"
             }
           ],
@@ -220,7 +220,7 @@
       "type": "guideline"
     },
     {
-      "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care, and information: EPIC Study. J Med Ethics. 2009. PMID 19251971.",
+      "citation": "Sofaer N, et al. Subjects' views of obligations to ensure post-trial access to drugs, care and information: qualitative results from the Experiences of Participants in Clinical Trials (EPIC) study. J Med Ethics. 2009;35(3):183-8. Ten focus groups, 93 current and recent US trial participants. PMID 19251971.",
       "type": "article"
     }
   ],
@@ -235,5 +235,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A randomized trial of a chronic-disease therapy is ending. Some participants who received the investigational intervention improved substantially and still medically need it; abrupt discontinuation is likely to worsen their condition. For this benchmark, assume the intervention has been shown beneficial and reasonably safe, ordinary access will be delayed about nine to twelve months, the sponsor can provide at least temporary continued supply but indefinite provision would be burdensome, and participants were told before enrollment that post-trial access would follow an ethics-approved plan. The sponsor and ethics committee must decide what access arrangement to require.",
-  "content_hash": "sha256:a28da17c57f2b51758943bc45305611f69b4ef2bf1cb4d88fed1ecfeb29f720b"
+  "content_hash": "sha256:7faedf0e60033147ab0cba29f2c45cf2e326678996cc9bc39a9bc2eeda6cd4dd"
 }

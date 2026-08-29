@@ -69,7 +69,7 @@
         "type": "guideline"
       },
       {
-        "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+        "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
         "type": "article"
       }
     ],
@@ -87,7 +87,7 @@
           "summary": "Adapted from national public-opinion evidence showing very high support for disease and toxin monitoring and substantially greater support for citywide than highly localized wastewater surveillance. The use-limit clause keeps the candidate within the public-health purpose asked about in the evidence.",
           "sources": [
             {
-              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
               "type": "article"
             }
           ],
@@ -104,7 +104,7 @@
           "summary": "Source-informed policy inference from public evidence showing substantially lower support for sensitive targets and smaller surveillance sites. The separate-justification and community-governance threshold is Bench-authored policy completion informed by professional governance guidance.",
           "sources": [
             {
-              "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+              "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
               "type": "article"
             },
             {
@@ -231,7 +231,7 @@
       "type": "guideline"
     },
     {
-      "citation": "U.S. public-opinion study on wastewater surveillance targets and geographic scale. PMID 39212278.",
+      "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
       "type": "article"
     }
   ],
@@ -246,5 +246,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public-health department already monitors municipal wastewater for respiratory pathogens and proposes adding neighborhood and institutional catchments plus antimicrobial-resistance and drug-use markers. For this benchmark, assume individual consent or opt-out cannot practically be obtained, citywide samples have very low individual re-identification risk while neighborhood or institutional catchments create materially greater stigma, inference and re-identification risks, the proposed program includes both infectious-disease targets and more sensitive drug-use markers, and the agency can prohibit law-enforcement and commercial secondary use while implementing transparency, community engagement and ethics-governance processes. The agency must decide whether broad governed surveillance may expand across useful targets and scales, routine surveillance should remain at sufficiently large catchments and mainly infectious-disease targets, or small-area and sensitive-target monitoring should require a separate community and ethics approval process.",
-  "content_hash": "sha256:89510984d5f74089bff0a19ddee08319899ad9f0c9b45ced60bb3c6ce313232b"
+  "content_hash": "sha256:8c6976fe01dbe8caba6f4e96a283808880d831c3ee268b8eacff3be63b3c2027"
 }

@@ -80,7 +80,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the Japanese public survey's direct opposition to allowing culture beyond 14 days. The candidate preserves the existing boundary rather than inferring a different policy dimension.",
+          "summary": "Adapted from the Japanese public survey, in which 37.9% of the public (n=3,000) agreed that embryos could be cultured beyond 14 days. The survey asked directly about the 14-day rule, so the basis is direct, but the balance of respondents is split between disagreement and an explicit \"cannot judge\" option and the published abstract does not separate them. This candidate represents the position that retains the boundary; it is not a claim that a majority actively opposes extension.",
           "sources": [
             {
               "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
@@ -238,5 +238,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "Researchers propose a study of early human developmental processes that begin after day 14. The embryos were donated for research and will never be transferred for reproduction. For this benchmark, assume the scientific question cannot be answered adequately before day 14 or with available alternative models, valid donor consent has been obtained, no embryo will be used for reproduction, and a specialized independent scientific and ethics oversight process is available. The regulator must choose whether to keep the 14-day boundary absolute or permit carefully justified culture beyond it.",
-  "content_hash": "sha256:d6dca0b296855b077c4c01ccf310ac3430f210b93c6a166198a29e4ae19de961"
+  "content_hash": "sha256:55c7403a9f50981b559d3789ca425dbb17fbe69eae99c2d504e6fce471f39df3"
 }
