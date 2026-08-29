@@ -194,3 +194,16 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none.
 - **Integrated into:** _pending_
 
+### The four-basis rule has no discipline for a partly-authored direct candidate
+
+- **Target:** P1 method section on the four-basis taxonomy; `CONSTRUCTION_STANDARD_DECISION.md` if the coordinator wants it fixed in the standard
+- **Status:** proposed — **method decision for the coordinator**
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`, expert batch 2
+- **Evidence class:** method-boundary finding
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the taxonomy requires a `source-informed-policy-inference` candidate to state its bridge — what the source measured, what the candidate asserts, which part is Bench-authored — and 110 of 110 do. It says nothing about a `direct-policy-evidence` candidate that is *mostly* direct and partly authored. M025 is where that gap is widest: the ACIA candidacy guideline supports the candidate's evaluation architecture but takes no position on informed parental refusal, so the clause doing the actual policy work — that refusal alone is not treated as neglect — was Bench-authored and undeclared. Most of the corpus declares such completion by convention ("Bench-authored policy completion," "the clauses are not survey wording"), so the practice exists without a rule behind it. **A guard was written for this and deleted: it fired on 59 of 118 direct candidates**, because many silences are correct — a candidate that adds nothing to its source has nothing to declare — and no keyword check can separate those from M025 without doing the reading. The fix belongs in the construction standard, not in a script.
+- **Limits:** one clear instance found in 24 expert candidates read. The other 25 are unread.
+- **Dependency:** if the standard is amended, existing direct candidates need a declaration pass. That is a corpus-wide edit and is not made here.
+- **Integrated into:** _pending_
+

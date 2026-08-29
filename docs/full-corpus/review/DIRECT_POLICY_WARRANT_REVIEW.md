@@ -301,6 +301,24 @@ That is a finding about the taxonomy rather than about M025: the four-basis rule
 corpus's direct candidates do declare it — M028's and M056's summaries open with "Bench-authored
 policy completion" — so the practice exists without a rule behind it.
 
+### The check that was written and then deleted
+
+The obvious response to M025 was a guard: flag every `direct-policy-evidence` candidate whose
+summary declares no Bench completion. It was written, and it fired on **59 of the 118 direct
+candidates** — half the class.
+
+That is not a finding, it is noise, and it fails the standard this repository already set when a
+keyword check for inference bridges was demoted to a never-failing reading aid: *a check a reviewer
+learns to ignore is worse than no check.* Many of the 59 are correct silences. M045 `exp2`, M033
+`exp1` and M056 `exp1` were each verified in this pass as adding nothing to their sources, so they
+have nothing to declare, and a check cannot tell them apart from M025 without doing the reading
+that is the whole task.
+
+So the heuristic was deleted rather than tuned. What survives is the finding: **the four-basis rule
+has no discipline for a candidate that is mostly direct and partly authored**, most of the corpus
+supplies one by convention anyway, and the place to fix it is the construction standard rather than
+a script. That is a decision for the coordinator, not a repair to make here.
+
 ## Still open in this tranche
 
 25 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
