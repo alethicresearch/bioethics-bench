@@ -31,7 +31,7 @@ An adult with an acute mental-health episode must decide within about six hours 
 | id | pool | basis | action |
 |---|---|---|---|
 | `pub1` | public | source-informed-policy-inference | Use individualized supported decision-making that adapts the form and intensity of help to the patient's expressed preferences, and reassess during the best available period before substituting another decision-maker. |
-| `exp1` | expert | direct-policy-evidence | Maximize supported decision-making and interpretation of the patient's own will and preferences throughout the available decision window, using substitute decision-making only as a last resort. |
+| `exp1` | expert | direct-policy-evidence | Maximize supported decision-making and the best interpretation of the patient's own will and preferences throughout the available decision window, rather than transferring the decision to a substitute decision-maker. |
 | `exp2` | expert | direct-policy-evidence | Provide reasonable support and reassess decision-specific capacity; if the relevant capacity remains absent, use the appropriate surrogate while continuing to involve the patient as much as possible. |
 | `fw1` | framework | framework-derived-policy | Preserve the patient's own decision through communication support and a trusted supporter whenever that can make the choice meaningfully theirs; fluctuating symptoms alone should not transfer decisional authority. |
 | `fw2` | framework | framework-derived-policy | If supported reassessment still shows inability to appreciate the grave consequence and the treatment window is closing, permit a narrowly bounded protective or surrogate decision to prevent irreversible harm. |

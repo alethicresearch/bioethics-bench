@@ -102,7 +102,15 @@ Stated once, and expected to decay — fetch live heads rather than trusting the
   2026-08-29 was provenance-only, across twenty-two families.
 - A refreshed payload sits verified on `claude/bioethics-bench-completion-m0p43e` (main plus the
   re-pin; 365 unit / 73 web / 46 Full Corpus tests, clean build). Available, not urgent.
-- The one foreseeable execution-relevant change — holding a family whose source could not be
+- **One execution-relevant change has now occurred: M002 `exp1` candidate text.** The candidate
+  attributed to WHO QualityRights a "substitute decision-making only as a last resort" rule; WHO
+  QualityRights is CRPD-Article-12 aligned and treats substitute decision-making as something to be
+  eliminated, declining even the last-resort framing. Repaired to "rather than transferring the
+  decision to a substitute decision-maker." **SACRE must re-vendor and re-verify before any product
+  merge or paper-facing execution that uses M002.** Any result computed for M002 under the previous
+  payload is not comparable to one computed after. All other Bench changes on 2026-08-29 remain
+  provenance-only.
+- The other foreseeable execution-relevant change — holding a family whose source could not be
   traced — **did not occur**. M075's missing source was identified.
 
 ## Manuscript interface

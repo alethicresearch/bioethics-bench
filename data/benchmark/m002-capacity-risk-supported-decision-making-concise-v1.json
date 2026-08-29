@@ -109,12 +109,12 @@
     "expert": [
       {
         "id": "exp1",
-        "text": "Maximize supported decision-making and interpretation of the patient's own will and preferences throughout the available decision window, using substitute decision-making only as a last resort.",
+        "text": "Maximize supported decision-making and the best interpretation of the patient's own will and preferences throughout the available decision window, rather than transferring the decision to a substitute decision-maker.",
         "source_pool": "expert",
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from WHO QualityRights' rights-based supported-decision-making architecture; the scenario-specific time-window formulation is Bench-authored.",
+          "summary": "Adapted from WHO QualityRights, which is explicitly aligned with CRPD Article 12 as the CRPD Committee reads it: substitute decision-making is to be eliminated rather than reserved, and where a person's will cannot be directly ascertained the mechanism is best interpretation of their will and preferences. Commentary on QualityRights notes that it declines even a last-resort framing for coercive and substitutive measures, on the ground that naming something a last resort normalises it. Verification note: the module's own wording was not retrievable, so this rests on WHO QualityRights' documented CRPD alignment and secondary literature rather than a quoted passage; the earlier version of this candidate said \"using substitute decision-making only as a last resort,\" which attributes to WHO the framing it rejects.",
           "sources": [
             {
               "citation": "World Health Organization. WHO QualityRights module on supported decision-making & advance planning. 2019.",
@@ -238,5 +238,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:2efcba0736cddf6503247f4a53b5b6c8d6c44d6c5506083400aeee0d683e7b65"
+  "content_hash": "sha256:99e89ee6188503919600209c7ad4af817e70831195a3672feb27df144b0f9925"
 }

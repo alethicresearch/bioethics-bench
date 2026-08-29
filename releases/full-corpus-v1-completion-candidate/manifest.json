@@ -17,7 +17,7 @@
     {
       "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:2efcba0736cddf6503247f4a53b5b6c8d6c44d6c5506083400aeee0d683e7b65",
+      "content_hash": "sha256:99e89ee6188503919600209c7ad4af817e70831195a3672feb27df144b0f9925",
       "path": "data/benchmark/m002-capacity-risk-supported-decision-making-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x2-mean-v1",
@@ -28,7 +28,7 @@
     {
       "record_id": "m002-capacity-risk-supported-decision-making-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:18648b177e8b69ab69f9bb6c243a40417162f8de022967aa42ccbedbc8aa2700",
+      "content_hash": "sha256:ab458372fd9067fc93c8f4e9c082656a6220a21f9337004816817c046c8e8c16",
       "path": "data/benchmark/m002-capacity-risk-supported-decision-making-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-1x2x2-mean-v1",

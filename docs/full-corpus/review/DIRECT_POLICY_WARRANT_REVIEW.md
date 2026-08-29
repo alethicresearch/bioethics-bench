@@ -409,9 +409,44 @@ authored part undeclared. Two instances in 33 candidates read is no longer a one
 strengthens the case for fixing the construction standard rather than treating each occurrence as a
 local repair.
 
+## M002 — the first repair that changes candidate text
+
+Every repair in this review so far has been to a citation or a provenance summary. This one is not.
+
+M002 `exp1` read: *"Maximize supported decision-making and interpretation of the patient's own will
+and preferences throughout the available decision window, **using substitute decision-making only as
+a last resort**."* It is `direct-policy-evidence` cited to the WHO QualityRights module on supported
+decision-making and advance planning.
+
+WHO QualityRights is explicitly aligned with CRPD Article 12 as the CRPD Committee reads it, which
+requires the **elimination** of substitute decision-making rather than its reservation. Commentary on
+QualityRights goes further and notes that it declines even a last-resort framing, on the ground that
+naming something a last resort is what normalises it. So the candidate attributed to WHO the exact
+formulation QualityRights exists to reject.
+
+The direction matters. This is not a neutral paraphrase slip: it made a rights-maximalist source
+endorse substitution, which is also the reading that makes `exp1` *easier* to compare against `exp2`
+(AMA Opinion 2.1.2 — reassess, and use the surrogate if capacity remains absent). An error that
+happens to make the corpus more convenient is the kind worth being most suspicious of.
+
+Repaired to *"...rather than transferring the decision to a substitute decision-maker."* That is
+WHO's position, and it makes `exp1` and `exp2` sharply action-distinct where they had partly
+converged — better construction as well as better fidelity.
+
+**Verification note, stated because it bears on how much weight this carries.** The module's own
+wording was not retrievable: WHO's IRIS PDF returned 403 and the publication page carries only
+metadata. The repair rests on WHO QualityRights' documented CRPD alignment plus secondary
+literature, and the provenance summary says so. A human reviewer with the module in hand should
+confirm it. What is not in doubt is that the previous wording was wrong in the permissive direction.
+
+**This is execution-relevant.** Candidate text changed, so the QCCS inputs for M002 changed. The
+SACRE lane must re-vendor and re-verify before any product or paper-facing use — the first such
+change since the change-class table was written into `docs/BRANCH_COORDINATION.md`, and the reason
+that table distinguishes this case from the twenty-two families of provenance-only edits.
+
 ## Still open in this tranche
 
-16 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+15 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is
