@@ -1,0 +1,17 @@
+{
+  "family": "M139",
+  "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
+  "reviewer": "Bench lane (Claude Opus 5) — batch 7 mode-3 hunt",
+  "reviewed_at": "2026-08-29",
+  "candidates": [
+    {
+      "id": "exp1",
+      "task": "B",
+      "fingerprint": "u1:c4e3914bda50d55f",
+      "verdict": "omission-found",
+      "evidence": "The NHS National Data Opt-Out exceptions are differentiated by use type rather than being a flat carve-out list: the opt-out does not apply where explicit consent has been obtained, to anonymised data, to communicable-disease control and other public-health risks, to overriding public interest, or to named statutory registries and surveys. A standing opt-out with use-type-dependent exceptions is closer to the tiered architecture pub3 and fw3 represent than to the flat opt-out this candidate states.",
+      "proposed_repair": "",
+      "applied": "Declared in exp1 provenance summary. No candidate action changed."
+    }
+  ]
+}

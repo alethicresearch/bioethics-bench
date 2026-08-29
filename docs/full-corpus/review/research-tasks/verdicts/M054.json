@@ -1,0 +1,17 @@
+{
+  "family": "M054",
+  "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
+  "reviewer": "Bench lane (Claude Opus 5) — batch 7 mode-3 hunt",
+  "reviewed_at": "2026-08-29",
+  "candidates": [
+    {
+      "id": "exp1",
+      "task": "B",
+      "fingerprint": "u1:42872ad814a159a7",
+      "verdict": "omission-found",
+      "evidence": "ACMG carries two positions beyond the minimum-list-with-opt-out architecture this candidate states. It explicitly rejects an opt-in default — \"providing the opportunity for an informed decision and opt out, if desired, at the time of consent should continue to be the standard for secondary findings\" — which is a stated position against pub2 and fw2 rather than an absence of support for them. And it recommends \"avoiding inclusion of gene-phenotype pairs with uncertain or lower penetrance estimates\", preferring pairs with \"a higher likelihood that the individual will manifest the phenotype\", which is a version of the high-penetrance threshold fw3 derives from principle. fw3 therefore has professional backing as well as a framework derivation.",
+      "proposed_repair": "",
+      "applied": "Both positions declared in exp1 provenance summary. No candidate action changed."
+    }
+  ]
+}

@@ -51,26 +51,50 @@ The known failure shape, from the one instance found so far: M030's candidate de
 as "directly elicited care preferences," and the study had surveyed **adult smokers imagining
 advanced lung cancer**, not patients under treatment. The bridge was fine. The description was not.
 
-### B — whole-document reads (69 units, where the real defects were)
+### B — whole-document reads (69 units, and the highest-yield work left)
 
-The warrant review read the passage each candidate cites. Twice, reading the *whole* document found
-something the passage could not show: the source taking a position on **another question the family
-divides along**, which the record does not carry.
+The warrant review read the passage each candidate cites. The question here is different: **does the
+same document take a position on another question the family divides along, which the record does
+not carry?**
 
-- **M041** — the candidate reproduces ESHRE Task Force 14's funding-threshold rule almost verbatim.
-  The same paper also holds that when only one patient can be treated, priority goes to a childless
-  couple. Prior children is exactly the axis that family's other candidates split on.
-- **M042** — the candidate carries Nuffield's "accurate, balanced and non-directive" standard. The
-  same report warns that normalising NIPT without deliberative support erodes rather than supports
-  autonomous choice — which sits on the routine-offer versus opt-in axis the other candidates split
-  on.
+**Five families have been examined this way and all five carried it.** Three of those were a
+deliberate hunt (M054, M075, M139) and returned three findings from three attempts; two were found
+incidentally (M041, M042) while reading a source for another reason. **Twenty-nine families have not
+been examined this way at all.** Do not extrapolate 5/5 — the three deliberate ones were *chosen*
+for long multi-topic sources and multi-axis candidate fields — but do not assume the rest are clean
+either.
 
-Both were invisible from the abstract and from the cited passage. **Both were found in the only two
-sources read from their own full text.** That is the reason to expect more of them, and the reason
-this task exists: it is under-detected, not rare.
+Their verdicts are filed in `research-tasks/verdicts/` as worked examples. Read them before
+starting; they are what a useful return looks like.
 
-So read for what the source says about the *other* candidates in the family, not only about the one
-citing it. Each task file lists them for exactly this purpose.
+**The five, and what each looked like:**
+
+- **M054 / ACMG secondary findings.** The record cites the minimum-list-with-opt-out architecture.
+  The same policy *explicitly rejects* an opt-in default — a stated position **against** two other
+  candidates in the family, not merely absence of support — and separately recommends avoiding
+  lower-penetrance gene–phenotype pairs, which is a version of the threshold the *framework*
+  candidate derives from principle. **This one shows the sharpest form of the failure:** an omission
+  can misrepresent a different pool, making a framework candidate look unsupported when the expert
+  source in fact backs it.
+- **M075 / CIOMS Guideline 11.** The record carries the scope-based re-consent trigger. CIOMS also
+  carries a *sensitivity*-based one — opt-out inappropriate for "controversial or high-impact
+  techniques" and "contexts of heightened vulnerability" — and sensitivity is precisely the axis
+  another candidate divides on.
+- **M139 / NHS National Data Opt-Out.** The record says the opt-out applies "except in specified
+  circumstances." Those circumstances turn out to be differentiated by use type, which makes the
+  real architecture closer to the *tiered* candidate than to the flat opt-out stated.
+- **M041 / ESHRE Task Force 14.** Threshold rule reproduced almost verbatim; the same paper's
+  holding that priority goes to a childless couple omitted — the axis the family splits on.
+- **M042 / Nuffield NIPT.** The information standard carried; the normalisation warning omitted.
+
+**What this tells you about where to look.** Every one was a long, multi-topic guidance document in
+a family whose candidates divide on more than one axis. Single-finding journal articles are much
+less likely to carry it. Prioritise accordingly: the professional-body guidance, the regulatory
+manuals, the multi-chapter reports.
+
+**And read for the family, not the candidate.** Each task file lists the family's *other* candidates
+for exactly this purpose. The question is never "does this source support the candidate citing it" —
+that is already checked — it is "does this source have a view on what the other candidates say."
 
 ### C — re-source two public pools (2 units, release-gating)
 

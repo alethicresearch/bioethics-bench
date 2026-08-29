@@ -2,6 +2,8 @@
 
 **Coordinator role:** this file is the repo-local merge map for the normative-computation program. Agents should update it when branch roles, release dependencies, or merge readiness change. The central program/manuscript coordinator integrates cross-repo consequences into Drive and the papers.
 
+**Start at [`docs/COMPLETION.md`](COMPLETION.md)** if you want the whole project in one page — what "done" means for each lane, who owns it, and where the live answer lives.
+
 ## Operating rule
 
 Work belongs in Git first. Case research, records, dossiers, validators, release state, manuscript-facing findings, and coordination deltas should be committed to the branch that owns them. Do not create a parallel branch for work already owned by an active lane unless it is explicitly an experiment/review track.

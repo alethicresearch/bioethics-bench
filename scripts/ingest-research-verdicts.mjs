@@ -116,10 +116,23 @@ if (stale.length) {
   for (const s of stale) console.log(`  ~ ${s}`);
 }
 
-const findings = [...accepted.values()].filter((a) => NOTABLE.has(a.verdict));
-if (findings.length) {
-  console.log(`${findings.length} unit(s) need action or could not be verified:`);
-  for (const f of findings) {
+// A finding can be handled two ways, and both must read as handled rather than outstanding.
+// Either the fix moved the unit's fingerprint — caught above — or it was a provenance declaration
+// that left the fingerprint matching, which lands here. Without this split an addressed finding
+// prints as "needs action" forever, and a list that never shrinks is a list nobody works.
+const notable = [...accepted.values()].filter((a) => NOTABLE.has(a.verdict));
+const handled = notable.filter((a) => a.applied);
+const outstanding = notable.filter((a) => !a.applied);
+
+if (handled.length) {
+  console.log(`${handled.length} finding(s) accepted and addressed in place:`);
+  for (const f of handled) {
+    console.log(`  + ${f.family}/${f.id} (task ${f.task}): ${f.verdict} — ${String(f.applied).replace(/\s+/g, ' ').slice(0, 140)}`);
+  }
+}
+if (outstanding.length) {
+  console.log(`${outstanding.length} unit(s) need action or could not be verified:`);
+  for (const f of outstanding) {
     console.log(`  ! ${f.family}/${f.id} (task ${f.task}): ${f.verdict} — ${String(f.evidence ?? '').replace(/\s+/g, ' ').slice(0, 160)}`);
   }
 }

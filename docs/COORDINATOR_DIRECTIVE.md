@@ -4,6 +4,8 @@
 
 If this work is being resumed in a new central-coordination chat, read **`docs/CENTRAL_COORDINATOR_CONTINUITY.md` first**. This Bench file points to the canonical program-level handoff in the SACRE repo; the present file remains the lane-specific directive.
 
+**Start at [`docs/COMPLETION.md`](COMPLETION.md)** if you want the whole project in one page — what "done" means for each lane, who owns it, and where the live answer lives.
+
 Read this together with:
 - `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
 - `docs/PROGRAM_COORDINATION.md`

@@ -1,0 +1,17 @@
+{
+  "family": "M075",
+  "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
+  "reviewer": "Bench lane (Claude Opus 5) — batch 7 mode-3 hunt",
+  "reviewed_at": "2026-08-29",
+  "candidates": [
+    {
+      "id": "exp1",
+      "task": "B",
+      "fingerprint": "u1:14cd5670eecddfd0",
+      "verdict": "omission-found",
+      "evidence": "CIOMS Guideline 11 carries a second re-consent trigger this candidate does not state. Alongside the scope-based trigger (re-consent when a use falls outside the authorized scope), it holds that informed opt-out procedures are inappropriate \"when controversial or high-impact techniques are used\" or \"when research is conducted in contexts of heightened vulnerability\", requiring explicit consent instead. That is a sensitivity-based trigger, and sensitivity is the axis fw2 divides on.",
+      "proposed_repair": "",
+      "applied": "Declared in exp1 provenance summary. No candidate action changed."
+    }
+  ]
+}
