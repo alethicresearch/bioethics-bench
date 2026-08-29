@@ -89,3 +89,42 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Limits:** verification covers PMIDs only. The other 128 citations are named policy documents, guidelines and books, checkable only by reading. Resolution and consistency establish nothing about warrant.
 - **Dependency:** none. Usable as written.
 - **Integrated into:** _pending_
+
+### The citation gate now closes at 103/103
+
+- **Target:** P2 Bench/release language — supersedes the figure in the entry above
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/CITATION_AMBIGUITY_RESOLUTIONS.md`; `npm run validate` green
+- **Evidence class:** corpus construction / mechanical verification
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the earlier entry's figure was 98 of 103 consistent with 5 requiring a human read. Those five have been read against their PubMed abstracts and the queue is closed: **103 of 103 now resolve with year and title-or-author consistent.** Four of the five glosses were substantively accurate; one carried a wrong author attribution and was repaired. All five were short-form citations naming neither author nor title — a form that defeats verification by construction — and all five were rewritten to full citations. If P2 states a figure, state 103/103.
+- **Limits:** unchanged. PMIDs only; the other 128 citations are policy documents, guidelines and books, checkable only by reading. Resolution establishes nothing about warrant.
+- **Dependency:** none. Supersede the "98 consistent" figure wherever it appears.
+- **Integrated into:** _pending_
+
+### A stipulation is a measurement instrument, and the corpus can now show it
+
+- **Target:** P1 method section on scenario construction; P2 Bench-construction language
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIVERGENCE_REVIEW.md` and the generated `divergence-worksheet.md`; 34 families, 420 candidates
+- **Evidence class:** corpus construction / internal-consistency review by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the review that closes SOURCE_TO_POLICY_FIDELITY_REVIEW §6.3 supplies a concrete account of what a benchmark stipulation is *for*, which the papers currently assert rather than show. A stipulation in this corpus is not scene-setting; it holds the case at the point where the represented policies come apart, and each one carries a rationale saying which alternative it is preventing from deciding the case in advance. M094 stipulates that the less-restrictive infection-control package can reach an institutionally acceptable level of patient protection — without that, the vaccination-mandate case answers itself. M045 stipulates strong evidence of a shared family-building plan *and* the absence of a signed instruction, and under exactly those facts the four source candidates split two and two along the written-authorization / strong-evidence line. This is the mechanism by which a case measures a disagreement rather than illustrating one, and one or two worked examples would carry it in a paragraph.
+- **Limits:** the review is internal-consistency only — it reads stated actions against stated facts. It establishes nothing about whether a candidate is what its sources support. It was performed by a model; `reviewed_by_human` remains false on every record.
+- **Dependency:** none. Usable as written.
+- **Integrated into:** _pending_
+
+### The fixed-fact-pattern test has a stateable limit, and one family sits on it
+
+- **Target:** P1 limitations, or the QCCS method section where action-distinctness is defined
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIVERGENCE_REVIEW.md` observations 1–3
+- **Evidence class:** method boundary finding
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the corpus's distinctness rule is *action-distinctness under the fixed fact pattern* — same action, one candidate. Applying it across all 34 families surfaces its boundary. In M033 (advance euthanasia directive in dementia) two framework candidates, current-welfare and contemporaneous-confirmation, both refuse under the stipulated facts, because the scenario deliberately leaves current welfare indeterminate so that neither precedent autonomy nor present interests wins by stipulation. They are nonetheless different policies: one keeps a defined reopening trigger, the other forecloses the question. So the field holds at three — on the ground that a standing policy is not only its answer today. That is a real and paper-worthy refinement: **a policy's identity includes the institutional behaviour it directs going forward, not only the action it selects on the instant case**, and a distinctness test evaluated on one fact pattern can only see the latter. A second, milder instance appears in M102. Separately, four expert singletons state a *process* rather than an outcome (M025, M034, M042, M146) and so score as compatible with both sides of a two-position public pool — a true report of what professional guidance often is, and a QCCS reading that should not be mistaken for the expert layer endorsing both policies.
+- **Limits:** these are judgments about candidate texts, made by a model. No geometry was changed and no record was edited on the strength of them; they are recorded for the human gate.
+- **Dependency:** if the coordinator wants the distinctness rule restated in P1, this is the evidence for it. Do not present it as a validated empirical result.
+- **Integrated into:** _pending_

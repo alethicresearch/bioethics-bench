@@ -65,7 +65,9 @@ These branches preserve prior attempts, audits, transports, or handoffs. Do not 
 
 **The vendor pin is now stale.** SACRE's Full Corpus integration branch is pinned to Bench content at `8811c0c7c31232b13c370518f3f1f1f9de5eabbb`. The first execution-relevant commit after that pin is the citation repair on this branch, which changed `data/benchmark/m019-telemedicine-access-diagnostic-safety-{concise,detailed}-v1.json` and the release manifest.
 
-What changed, precisely: one provenance citation string and the two content hashes that follow from it. Candidate ids, candidate texts, scenarios, geometry, profiles and required aggregation are **unchanged**, so nothing about how these records execute has moved. SACRE's vendored payload carries content hashes, so its pin and corpus sha256 are nevertheless no longer truthful.
+The citation-resolution pass on 2026-08-29 extends this. It rewrote five short-form citations to full form across `m004-*`, `m020-*` and `m030-*` (six records in total, both representations of three families), and revised one provenance summary in `m030-*`. That brings the stale set to **eight records across four families** — M004, M019, M020, M030 — plus the release manifest.
+
+What changed, precisely: provenance citation strings, one provenance summary, and the content hashes that follow from them. Candidate ids, candidate texts, scenarios, stipulations, geometry, profiles and required aggregation are **unchanged across every one of those records**, so nothing about how they execute has moved. The scenario/action divergence review completed the same day changed no record at all. SACRE's vendored payload carries content hashes, so its pin and corpus sha256 are nevertheless no longer truthful.
 
 **Action for the SACRE lane:** re-vendor and re-pin to the current canonical head before any product merge or paper-facing execution. Re-running the suite is sufficient; no behavioural re-verification is implied. If a merge decision is already in flight against the previously verified head, re-vendoring can follow that decision rather than block it — the execution inputs are identical.
 
