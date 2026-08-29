@@ -61,6 +61,39 @@ These branches preserve prior attempts, audits, transports, or handoffs. Do not 
 5. Preserve the generalized-source branch as a later architecture track; do not let it delay or contaminate the v1 release.
 6. After the human-reviewed release is fixed, coordinate the released pin with SACRE for the all-record exploratory census and later P3 validation.
 
+## Snapshot for the paper-facing Full Corpus run — 2026-08-29
+
+The coordinator has removed human source-to-policy review as a release or execution gate for the
+current paper program, and directs the SACRE lane to pin the current Bench snapshot and execute all
+34 families end to end for exploratory paper evidence. This lane's assignment is now explicitly
+**parallel**: keep the corpus executable, continue source review, maintain a clean change log, and
+**do not block execution**.
+
+**What to pin.** `research/full-corpus-v1`, which now contains all of `author/full-corpus-completion`
+via merged PR #10 — fetch its live head rather than any SHA written here.
+
+**What the snapshot is.** 34 families / 68 records / 420 candidates. Structurally valid, all
+geometries registered, all profiles declared, required aggregation per record. `reviewed_by_human`
+is `false` on every record; per the coordinator that is a provenance fact, not a stop condition.
+
+**Execution-relevant changes since your last pin: exactly one.** M002 `exp1`'s candidate text was
+repaired — WHO QualityRights rejects the "substitute decision-making only as a last resort" framing
+the candidate had attributed to it. Everything else this lane has changed since is citations and
+provenance summaries across twenty-two families, which the pipeline never reads.
+
+That claim is not a promise, it is derived: **`docs/full-corpus/CHANGE_LOG.md`** classifies every
+commit touching `data/benchmark` by whether the projection the pipeline reads — scenario,
+stipulations, profile, candidate ids and texts by pool — differs across it. It regenerates on every
+`npm run validate`, so it cannot drift from the history it describes.
+
+**Undertaking for the duration of the run.** Source review continues on this branch and will
+produce further provenance repairs; those are safe to ignore. If review produces an
+execution-relevant change, it will appear in the change log's first table and be reported to the
+SACRE lane in the same session. Two open items could produce one: the cross-source independence
+question on M045 and M060, which if resolved by holding those families takes the set to 32; and any
+candidate-text repair arising from the deep-research review. **Neither is in flight, and neither
+will be actioned without telling you first.**
+
 ## Cross-repo dependency: what changed, and who must act
 
 This section used to record the current pin SHA and the current stale set. Both decayed within

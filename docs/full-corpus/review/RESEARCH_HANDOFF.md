@@ -8,8 +8,8 @@ from committed state, so if it says something, that is what the corpus says righ
 | | |
 |---|---|
 | Branch | `author/full-corpus-completion` |
-| Head at generation | `a14b48207b2b5e8d1e1ed7fb8bf0111537359ce5` |
-| Head committed | 2026-08-29T03:26:11+00:00 |
+| Head at generation | `2106805f52233319dbc9f805a29c8ea4812803a3` |
+| Head committed | 2026-08-29T03:33:57+00:00 |
 | Executable set | 34 families |
 | Review units | 126 — 55 × A (source descriptions), 69 × B (whole-document), 2 × C (re-source) |
 
