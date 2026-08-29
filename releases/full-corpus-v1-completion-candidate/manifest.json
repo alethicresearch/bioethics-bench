@@ -127,7 +127,7 @@
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:a40e608fec49aa2d605c8801ef7fef0d9af1431b90a749b3f972d37b3fa93887",
+      "content_hash": "sha256:e8d7b684890a84a770b41b83de0cbf786c136e49ba0fb934f9324159c4124cb2",
       "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -138,7 +138,7 @@
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:5ca96db7d154f87fcb20e861391b8c13d413dfb7582bf1a85c906ff49b2a764f",
+      "content_hash": "sha256:83d908110b9e5cd66c258be69c3e3916cc38ab852b2dfe505eaccebd0d8f7a36",
       "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -171,7 +171,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:c3e3288007fde09744d39d181ae1df94d99258ae3f419ab2c24afb81a547b9cf",
+      "content_hash": "sha256:fba3282567175311439b5f3516229567391f274b657a7d8cd18c4c5ee272acdd",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -182,7 +182,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:87121acc614047c78826cda200b97edda0f75b49c2860cf02e55a029ab6677c1",
+      "content_hash": "sha256:b084d0bfd5fff860df63fa2d784ed0b31b6b9fc75697c41f6d08e935ff1b43a6",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",

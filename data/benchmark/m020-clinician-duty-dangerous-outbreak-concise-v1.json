@@ -72,7 +72,7 @@
     "summary": "Bench-authored outbreak-workforce case synthesized from professional duty-to-care guidance, occupational-health reciprocity principles, and healthcare-worker willingness studies. It fixes adequate institutional protection, meaningful residual risk, consequential staffing need, heterogeneous vulnerability, and limited reassignment so stronger-duty and broader-exemption policies remain action-distinct.",
     "sources": [
       {
-        "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
         "type": "guideline"
       },
       {
@@ -147,10 +147,10 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from professional duty-to-care guidance treating care during public-health emergencies as a substantial role obligation whose force increases with urgent patient need and adequate reciprocal institutional protection.",
+          "summary": "Adapted from AMA Code Opinion 8.3, which states the obligation to provide urgent medical care during disasters and holds it even against greater than usual personal risk. The same opinion also states the countervailing obligation to weigh present risk against future availability, which is what the second expert candidate represents; both expert positions here are licensed by one professional document rather than by two bodies disagreeing.",
           "sources": [
             {
-              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
               "type": "guideline"
             }
           ],
@@ -167,7 +167,7 @@
           "summary": "Source-informed professional policy inference from guidance that duty to care is not unlimited and must be bounded by degree of risk, available alternatives, reciprocal protections, and competing obligations, together with occupational-health requirements to reduce unequal hazards. The exact individualized threshold is a Bench operationalization.",
           "sources": [
             {
-              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
               "type": "guideline"
             },
             {
@@ -190,7 +190,7 @@
           "summary": "Derived from professional-role obligation, solidarity, reciprocity, and fair burden-sharing. The executable mandatory-rotation rule is Bench-authored.",
           "sources": [
             {
-              "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
               "type": "guideline"
             }
           ]
@@ -234,7 +234,7 @@
   },
   "references": [
     {
-      "citation": "American Medical Association. Current ethics guidance on physicians' responsibilities during pandemics and disasters.",
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
       "type": "guideline"
     },
     {
@@ -255,5 +255,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:c3e3288007fde09744d39d181ae1df94d99258ae3f419ab2c24afb81a547b9cf"
+  "content_hash": "sha256:fba3282567175311439b5f3516229567391f274b657a7d8cd18c4c5ee272acdd"
 }

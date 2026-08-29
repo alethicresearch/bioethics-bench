@@ -319,9 +319,53 @@ has no discipline for a candidate that is mostly direct and partly authored**, m
 supplies one by convention anyway, and the place to fix it is the construction standard rather than
 a script. That is a decision for the coordinator, not a repair to make here.
 
+## Expert pool, batch 3 — and a pattern that has become the finding
+
+**M010 `exp2` — verified with unusual precision.** 45 C.F.R. § 92.201 forbids relying on an
+accompanying adult to interpret *unless* the individual specifically requests it in private with a
+qualified interpreter present and without the accompanying adult present, the adult agrees, the
+request and agreement are documented, and reliance is appropriate under the circumstances. The
+candidate states the request-in-private condition, the qualified-interpreter-present condition, the
+documentation condition and the appropriateness condition — four of the regulation's five, omitting
+only the accompanying adult's own agreement, which the scenario's "requested family member" framing
+already supplies. This is the closest thing in the corpus to a candidate that *is* its source.
+
+### One document licensing both expert candidates — now three families, not one
+
+Batch 1 recorded M060 as a distinct structural type: two opposed expert candidates from a single
+ASRM opinion that declines to settle the question. Reading batch 3, it is not a curiosity. It is
+the most common way this corpus's expert pools get to two.
+
+- **M060** — ASRM 2022 says practitioners are under no obligation to provide *or refuse to provide*
+  nonmedical sex selection, and that clinics should publish their own policies.
+- **M018** — CDC's Core Elements framework directs avoidance of antibiotics where expected benefit
+  is low, *and* its toolkit supplies watchful-waiting and delayed-prescribing materials. Both
+  `exp1` (no antibiotic now) and `exp2` (delayed prescription) are strategies the same body
+  endorses. The record cites Cochrane and JAMA trials for `exp2`, which is a stronger warrant, but
+  `exp1`'s summary previously implied CDC settles against delayed prescribing. It does not, and the
+  summary now says so.
+- **M020** — AMA Code Opinion 8.3 states the obligation to provide urgent care during disasters
+  "even in the face of greater than usual risks to physicians' own safety, health, or life," *and*
+  the obligation to weigh present risk against remaining available to provide care in future. `exp1`
+  is the first clause and `exp2` the second. Both citations previously read "current ethics guidance
+  on physicians' responsibilities during pandemics and disasters," naming no opinion; both now name
+  8.3 and quote its two clauses.
+
+The generalisation is worth stating carefully, because it cuts against the intuitive model. Expert
+pluralism in this corpus is **not** mainly two authorities contradicting each other. It is more often
+**one authority stating a duty and its limit**, or declining to settle, or endorsing a menu — and
+the candidate field represents positions the same document licenses. M189 (USPSTF against ACS) is
+the exception rather than the rule.
+
+That matters for how a QCCS result should be read. Where two expert candidates come from two bodies,
+a low expert–expert coherence score reflects a real professional disagreement. Where they come from
+one document's two clauses, a low score reflects tension *within* a single professional position —
+which is a different finding about the field, and one the corpus can now distinguish because the
+citations say which case each family is.
+
 ## Still open in this tranche
 
-25 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+21 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is

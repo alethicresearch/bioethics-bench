@@ -64,7 +64,7 @@
     "summary": "Bench-authored outpatient prescribing case synthesized from delayed-antibiotic trials, stewardship guidance, and patient-expectation research. The scenario fixes low clinical risk, genuine but modest diagnostic uncertainty, low expected immediate benefit, strong patient preference, and reliable follow-up so no-immediate, delayed, and immediate-access orientations remain action-distinct.",
     "sources": [
       {
-        "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+        "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
         "type": "guideline"
       },
       {
@@ -143,10 +143,10 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from outpatient antimicrobial-stewardship guidance emphasizing evidence-based prescribing and avoidance of unnecessary antibiotics when expected benefit is low.",
+          "summary": "Adapted from CDC outpatient antimicrobial-stewardship guidance, which directs evidence-based prescribing and avoidance of antibiotics where expected benefit is low. One limit is declared rather than left implicit: the same framework’s toolkit also supplies watchful-waiting and delayed-prescribing materials, so this candidate represents the no-immediate-antibiotic option within CDC’s framework and must not be read as CDC ruling the delayed-prescription strategy out. The two expert candidates here are both defensible under one body’s guidance.",
           "sources": [
             {
-              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
               "type": "guideline"
             }
           ],
@@ -230,7 +230,7 @@
   },
   "references": [
     {
-      "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+      "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
       "type": "guideline"
     },
     {
@@ -255,5 +255,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:a40e608fec49aa2d605c8801ef7fef0d9af1431b90a749b3f972d37b3fa93887"
+  "content_hash": "sha256:e8d7b684890a84a770b41b83de0cbf786c136e49ba0fb934f9324159c4124cb2"
 }
