@@ -4,6 +4,14 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 
 ## Entry format
 
+
+> **Drafting P1 v59 or P2 v45? Read `BENCH_FINDINGS_FOR_P1_P2.md` instead.**
+> This file is the chronological audit trail: 21 entries of mixed vintage, several superseded by
+> later ones, several naming manuscript versions that have moved. The consolidated brief triages the
+> same material into nine findings in the order they are worth using, with current numbers and with
+> superseded entries retired. This log stays as the record of when each finding was made and on what
+> evidence.
+
 ### [Short title]
 - **Target:** P1 / P2 / P3 / Computational Bioethics; manuscript version and section if known
 - **Status:** proposed / ready-for-central-integration / integrated
