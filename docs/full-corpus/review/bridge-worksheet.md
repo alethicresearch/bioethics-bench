@@ -418,21 +418,25 @@ established that the bridge is *stated*. The question here is whether it *holds*
 
 **Directs:** Permit posthumous reproductive use only when the deceased left explicit written authorization for that use; a shared wish for children during life is not enough by itself.
 
-**Stated bridge:** Source-informed policy inference from public and fertility-patient attitude evidence summarized by ASRM that places strong importance on prior consent. The written-authorization threshold is a Bench translation of that orientation rather than a policy directly issued by respondents.
+**Stated bridge:** Adapted from population and patient evidence on prior consent, cited directly rather than through a professional body’s summary of it. Barton’s population survey found that among those supporting posthumous retrieval, 69.8% believed prior consent from the deceased was required; Pastuszak and Côté document the signed-directive practice that written authorization refers to, with 85.9% of sperm-bank patients and a majority of IVF users recording a post-mortem choice in advance. The written-authorization threshold is a Bench translation of that orientation, not a policy the respondents issued.
 
 **Sources:**
 
-- ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.
+- Barton SE, Correia KF, Shalev S, Missmer SA, Soleymani Lehmann L, Shah DK, et al. Population-based study of attitudes toward posthumous reproduction. Fertil Steril. 2012;98(3):735-40.e5. Survey of 1,049 US adults: 47.8% supported retrieving gametes from men and 42.7% from women; among supporters, 69.8% believed prior consent from the deceased was required. PMID 22763100.
+- Pastuszak AW, Lai WS, Hsieh TC, Lipshultz LI. Posthumous sperm utilization in men presenting for sperm banking: an analysis of patient choice. Andrology. 2013;1(2):251-5. Signed sperm-bank directives from 364 patients; 85.9% consented to post-mortem use. PMID 23315967.
+- Côté S, Affdal AO, Kadoch IJ, Hamet P, Ravitsky V. Posthumous reproduction with surplus in vitro fertilization embryos: a study exploring users’ choices. Fertil Steril. 2014;102(5):1410-5. Signed forms from 498 IVF users; 73.5% of men and 61.8% of women agreed to leave cryopreserved embryos to their partner for reproductive use after death. PMID 25217872.
 
 ### `pub2` (public)
 
 **Directs:** Allow a surviving spouse or partner to use stored reproductive material when reliable evidence shows that posthumous reproduction accords with the deceased's shared family-building wishes and there is no contrary evidence.
 
-**Stated bridge:** Source-informed policy inference from fertility and sperm-banking patient evidence showing substantial willingness to permit partner use after death and from the salience of shared family-building intentions. The institutional evidentiary threshold is Bench-authored.
+**Stated bridge:** Adapted from evidence that substantial majorities want a surviving partner to be able to use their material, cited directly rather than through a professional body’s summary. Hans found 70% of men and 58% of women aged 18-44 wanted a surviving spouse able to use their gametes; Nakhuda found about 78% of couples in fertility treatment would permit posthumous use; Côté found 73.5% of men and 61.8% of women agreed to leave embryos to their partner. The institutional evidentiary threshold — reliable evidence of the deceased’s wishes, absent contrary evidence — is Bench-authored.
 
 **Sources:**
 
-- ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.
+- Hans JD. Posthumous gamete retrieval and reproduction: would the deceased spouse consent? Soc Sci Med. 2014;119:10-17. Random-digit-dial survey of 2,064 US adults; among those aged 18-44, 70% of men and 58% of women wanted a surviving spouse to be able to use their gametes after death. PMID 25134070.
+- Nakhuda GS, Wang JG, Sauer MV. Posthumous assisted reproduction: a survey of attitudes of couples seeking fertility treatment and the degree of agreement between intimate partners. Fertil Steril. 2011;96(6):1463-6.e1. 106 couples; about 78% would permit posthumous assisted reproduction. PMID 21982730.
+- Côté S, Affdal AO, Kadoch IJ, Hamet P, Ravitsky V. Posthumous reproduction with surplus in vitro fertilization embryos: a study exploring users’ choices. Fertil Steril. 2014;102(5):1410-5. Signed forms from 498 IVF users; 73.5% of men and 61.8% of women agreed to leave cryopreserved embryos to their partner for reproductive use after death. PMID 25217872.
 
 ---
 
@@ -510,21 +514,25 @@ established that the bridge is *stated*. The question here is whether it *holds*
 
 **Directs:** Allow patients already undergoing IVF to use embryo sex as a transfer preference for family balancing after counseling, provided the choice is voluntary and does not displace a medically superior embryo.
 
-**Stated bridge:** Source-informed policy inference from public evidence showing a minority permissive orientation toward non-medical sex selection and from family-balancing interest. The clinic permission rule and medical-priority safeguard are Bench-authored translations rather than a claim of majority support.
+**Stated bridge:** Adapted from population evidence of a minority permissive orientation, cited directly rather than through a professional body’s summary. Dahl found 8% of US adults would use preconception sex selection while 50% wished for an equal number of boys and girls — the family-balancing interest this candidate serves — and Winkelman found 21.1% of a nationally representative sample supported PGD for sex selection. The candidate represents that minority position and the clinic permission rule and medical-priority safeguard are Bench-authored; it is not a claim of majority support.
 
 **Sources:**
 
-- Public-attitude studies summarized in ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.
+- Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.
+- Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.
+- Dahl E, Hinsch KD, Brosig B, Beutel M. Attitudes towards preconception sex selection: a representative survey from Germany. Reprod Biomed Online. 2004;9(6):600-3. PMID 15670402.
 
 ### `pub2` (public)
 
 **Directs:** Do not allow embryo sex to determine transfer when no medical indication exists, even when the request is for family balancing and sex information is already available.
 
-**Stated bridge:** Source-informed policy inference from population surveys reporting substantial opposition to elective or family-balancing IVF sex selection. The institutional refusal rule is a Bench translation of that public orientation.
+**Stated bridge:** Adapted from population evidence of majority opposition, cited directly rather than through a professional body’s summary. Dahl found 74% of US adults opposed to preconception sex selection; Kippen found high and rising Australian disapproval of IVF sex selection including for family balancing, which is this scenario’s exact request; Winkelman’s 21.1% support for PGD sex selection is the same finding from the other side. The clinic policy of declining, disclosing and applying consistently is a Bench translation of that orientation.
 
 **Sources:**
 
-- Public-attitude studies summarized in ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.
+- Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.
+- Kippen R, Gray E, Evans A. High and growing disapproval of sex-selection technology in Australia. Reprod Health. 2018;15(1):134. Australian Survey of Social Attitudes, 2007 and 2016; disapproval of IVF sex selection, including for family balancing, is high and rose across the two waves. PMID 30185179.
+- Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.
 
 ---
 

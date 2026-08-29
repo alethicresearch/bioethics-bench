@@ -1,0 +1,17 @@
+{
+  "family": "M060",
+  "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
+  "reviewer": "OpenAI Codex research agent",
+  "reviewed_at": "2026-08-29",
+  "candidates": [
+    {
+      "id": "public-pool",
+      "task": "C",
+      "fingerprint": "u1:fe3c16ad43691bc3",
+      "verdict": "resourced",
+      "evidence": "Direct population studies support both the minority-permissive and majority-opposed orientations without relying on the ASRM opinion. Dahl et al. surveyed 1,197 US adults aged 18-45: 8% would use preconception sex-selection technology, 74% were opposed, and 50% preferred an equal number of boys and girls, connecting the small prospective demand to family-balance preferences (PMID 16595229). Winkelman et al. surveyed a nationally representative US sample of 1,006 adults: 21.1% supported PGD for sex selection, 51.5% disagreed or strongly disagreed, and 27.4% were neutral (PMID 25758988). Kippen, Gray and Evans analyzed the 2007 and 2016 Australian Survey of Social Attitudes; in 2016 roughly three quarters opposed legalizing IVF sex selection for any reason or for family balancing of a second or third child, directly matching the family-balancing policy axis (PMID 30185179). An earlier representative German survey found 11% approved nonmedical preconception sex selection and 32% favored strict prohibition (PMID 15670402). These studies establish genuine public disagreement while showing that the permissive orientation is a minority position, not majority support.",
+      "proposed_repair": "Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-473. PMID: 16595229.\nWinkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-675. PMID: 25758988.\nKippen R, Gray E, Evans A. High and growing disapproval of sex-selection technology in Australia. Reprod Health. 2018;15(1):134. PMID: 30185179.\nDahl E, Hinsch KD, Brosig B, Beutel M. Attitudes towards preconception sex selection: a representative survey from Germany. Reprod Biomed Online. 2004;9(6):600-603. PMID: 15670402.",
+      "applied": "Public pool re-sourced to Dahl 2006, Winkelman 2015, Dahl 2004 (pub1) and Dahl 2006, Kippen 2018, Winkelman 2015 (pub2); ASRM opinion removed from the public pool."
+    }
+  ]
+}

@@ -42,6 +42,7 @@ const NOTABLE = new Set([...NEEDS_EVIDENCE, 'unverifiable', 'not-identifiable'])
 const families = collectUnits();
 const problems = [];
 const stale = [];
+const applied = [];
 const accepted = new Map();
 
 if (existsSync(VERDICTDIR)) {
@@ -75,7 +76,16 @@ if (existsSync(VERDICTDIR)) {
         continue;
       }
       if (c.fingerprint !== unit.fingerprint) {
-        stale.push(`${family}/${c.id} (task ${c.task}): reviewed \`${c.fingerprint}\`, now \`${unit.fingerprint}\` — this candidate was repaired after your read; re-read this unit only`);
+        // A finding that was acted on necessarily moves the fingerprint of the thing it was about,
+        // so "superseded" and "implemented" look identical from here. The Bench lane records the
+        // difference by stamping `applied` on the verdict when it implements the finding; without
+        // that, an accepted review would read as work needing redoing, which is the opposite of
+        // what happened to it.
+        if (c.applied) {
+          applied.push(`${family}/${c.id} (task ${c.task}): ${c.verdict}, applied — ${String(c.applied).replace(/\s+/g, ' ').slice(0, 140)}`);
+        } else {
+          stale.push(`${family}/${c.id} (task ${c.task}): reviewed \`${c.fingerprint}\`, now \`${unit.fingerprint}\` — this candidate was repaired after your read; re-read this unit only`);
+        }
         continue;
       }
       accepted.set(`${family}/${c.id}/${c.task}`, { family, ...c, reviewer: v.reviewer });
@@ -93,7 +103,13 @@ let totalUnits = 0;
 for (const [, { units }] of families) totalUnits += units.length;
 const familiesTouched = new Set([...accepted.values()].map((a) => a.family));
 
-console.log(`Deep-research review: ${accepted.size} of ${totalUnits} units returned across ${familiesTouched.size} of ${families.size} families.`);
+const returned = accepted.size + applied.length;
+console.log(`Deep-research review: ${returned} of ${totalUnits} units returned across ${new Set([...familiesTouched, ...applied.map((a) => a.slice(0, 4))]).size} of ${families.size} families.`);
+
+if (applied.length) {
+  console.log(`${applied.length} finding(s) accepted and implemented:`);
+  for (const a of applied) console.log(`  + ${a}`);
+}
 
 if (stale.length) {
   console.log(`${stale.length} returned unit(s) superseded since review:`);
@@ -108,7 +124,7 @@ if (findings.length) {
   }
 }
 
-if (accepted.size < totalUnits) {
+if (returned < totalUnits) {
   console.log('Current state and per-unit fingerprints: docs/full-corpus/review/RESEARCH_HANDOFF.md');
   if (strict) process.exit(1);
 }

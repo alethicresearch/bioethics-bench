@@ -369,7 +369,7 @@
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:c70cce05b57c8c02a3abafa474583fbdbc18e68948c16490fc10f44ef0b3c6ad",
+      "content_hash": "sha256:34ded50faef363540dcb872a2c7640b3a9dbd14755767ce771982f50d963f00c",
       "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -380,7 +380,7 @@
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-detailed-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:96aa9ff3eed5542043caa004f1a96363bffd5581f284fbf937e2a9d8e0b7ec3a",
+      "content_hash": "sha256:01b937a317d61c3ba6ae7b97a6475be2ae519f3987c3294382ef744f6728c59f",
       "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -457,7 +457,7 @@
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:10a47fa35b7a6e29b199d00cc7313ed4c3d9df0d6e7f4b3a20e6114e5a776b56",
+      "content_hash": "sha256:f531bbc44cef6e446f45d55786bf29ba07398ad04a6329001701a17a525309de",
       "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -468,7 +468,7 @@
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:e5b0d7f177c6c4fd0dbc0ed50c6b5405ced33a8affe7327cf7dbc24e7ccf285f",
+      "content_hash": "sha256:e8a71ae55f86b1625daf06f736af1871018c321bad961aba922ef008200f1746",
       "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",

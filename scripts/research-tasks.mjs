@@ -22,7 +22,7 @@
  * than a request: a verdict that does not name the record it judges, or judges a record whose
  * content hash has since moved, is refused.
  */
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { collectUnits, unitFingerprint } from './review-units.mjs';
 
@@ -48,7 +48,14 @@ const RESOURCE_FAMILIES = new Map([
   ['M060', 'ASRM Ethics Committee, Use of reproductive technology for sex selection for nonmedical reasons (2022) — find the public-attitude studies it summarises on non-medical sex selection and family balancing.'],
 ]);
 
-rmSync(OUTDIR, { recursive: true, force: true });
+// Regenerate the task files, but never touch `verdicts/`. An earlier version wiped OUTDIR
+// wholesale, which meant `npm run validate` silently destroyed returned reviews — the first real
+// verdicts to arrive were nearly lost to it. Task files are derived and disposable; verdicts are
+// the only thing here that cannot be regenerated.
+for (const f of existsSync(OUTDIR) ? readdirSync(OUTDIR) : []) {
+  if (f === 'verdicts') continue;
+  rmSync(join(OUTDIR, f), { recursive: true, force: true });
+}
 mkdirSync(OUTDIR, { recursive: true });
 
 const index = [];

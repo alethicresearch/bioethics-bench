@@ -85,9 +85,11 @@ of paper-facing evidence, so it is reported to the SACRE lane before it lands. S
   descriptions of what each source found were largely taken on trust. Sources were read directly only
   for the `direct-policy-evidence` class. A bridge can be logically sound and still rest on a
   misdescribed finding.
-- **A cross-source independence question for the coordinator:** M045 and M060 have public pools
-  derived entirely from the professional-body document their expert pools cite, so those
-  public–expert QCCS cells compare one document against itself. See `BRIDGE_REVIEW.md`.
+- ~~A cross-source independence question for the coordinator (M045, M060).~~ **Resolved
+  2026-08-29** by the deep-research review, which traced both ASRM opinions back to the underlying
+  population studies. Nine proposed PMIDs, all verified here against PubMed; both public pools
+  re-sourced and the professional-body documents removed from them. Provenance-only. See
+  `BRIDGE_REVIEW.md`.
 - A method decision staged for the coordinator: the four-basis rule has no discipline for a
   candidate that is mostly direct and partly Bench-authored. Two instances found (M025, M144).
   See `docs/papers/MANUSCRIPT_WRITEBACK.md`.

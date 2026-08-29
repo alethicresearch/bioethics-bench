@@ -1,0 +1,17 @@
+{
+  "family": "M045",
+  "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
+  "reviewer": "OpenAI Codex research agent",
+  "reviewed_at": "2026-08-29",
+  "candidates": [
+    {
+      "id": "public-pool",
+      "task": "C",
+      "fingerprint": "u1:97bdf9dee69aafc5",
+      "verdict": "resourced",
+      "evidence": "The ASRM opinion's public and affected-patient claims can be traced to five named studies. Barton et al. surveyed 1,049 US adults: 47.8% supported posthumous retrieval from men and 42.7% from women; among supporters, 69.8% considered prior consent necessary (PMID 22763100). Hans surveyed 2,064 US adults by random-digit dialing; among respondents aged 18-44, 70% of men and 58% of women wanted a surviving spouse to be able to use their gametes after death (PMID 25134070). Pastuszak et al. reviewed signed sperm-bank choices from 364 patients and found 85.9% consented to post-mortem use, with especially high consent among partnered men (PMID 23315967). Nakhuda et al. surveyed 106 couples seeking fertility treatment; about 78% would permit posthumous assisted reproduction, with couple-level concordance about 75% (PMID 21982730). Cote et al. examined signed forms from 498 IVF users; 73.5% of men and 61.8% of women agreed to leave cryopreserved embryos to their partners for reproductive use after death (PMID 25217872). Together these directly ground both orientations in the public pool: strong salience of prior consent and substantial, non-universal willingness to authorize surviving-partner use.",
+      "proposed_repair": "Barton SE, Correia KF, Shalev S, Missmer SA, Soleymani Lehmann L, Shah DK, et al. Population-based study of attitudes toward posthumous reproduction. Fertil Steril. 2012;98(3):735-740.e5. PMID: 22763100.\nHans JD. Posthumous gamete retrieval and reproduction: would the deceased spouse consent? Soc Sci Med. 2014;119:10-17. PMID: 25134070.\nPastuszak AW, Lai WS, Hsieh TC, Lipshultz LI. Posthumous sperm utilization in men presenting for sperm banking: an analysis of patient choice. Andrology. 2013;1(2):251-255. PMID: 23315967.\nNakhuda GS, Wang JG, Sauer MV. Posthumous assisted reproduction: a survey of attitudes of couples seeking fertility treatment and the degree of agreement between intimate partners. Fertil Steril. 2011;96(6):1463-1466.e1. PMID: 21982730.\nCote S, Affdal AO, Kadoch IJ, Hamet P, Ravitsky V. Posthumous reproduction with surplus in vitro fertilization embryos: a study exploring users' choices. Fertil Steril. 2014;102(5):1410-1415. PMID: 25217872.",
+      "applied": "Public pool re-sourced to Barton 2012, Pastuszak 2013, Cote 2014 (pub1) and Hans 2014, Nakhuda 2011, Cote 2014 (pub2); ASRM opinion removed from the public pool, resolving the cross-source independence defect."
+    }
+  ]
+}

@@ -85,11 +85,19 @@
         "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Source-informed policy inference from public evidence showing a minority permissive orientation toward non-medical sex selection and from family-balancing interest. The clinic permission rule and medical-priority safeguard are Bench-authored translations rather than a claim of majority support.",
+          "summary": "Adapted from population evidence of a minority permissive orientation, cited directly rather than through a professional body’s summary. Dahl found 8% of US adults would use preconception sex selection while 50% wished for an equal number of boys and girls — the family-balancing interest this candidate serves — and Winkelman found 21.1% of a nationally representative sample supported PGD for sex selection. The candidate represents that minority position and the clinic permission rule and medical-priority safeguard are Bench-authored; it is not a claim of majority support.",
           "sources": [
             {
-              "citation": "Public-attitude studies summarized in ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-              "type": "survey"
+              "citation": "Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.",
+              "type": "article"
+            },
+            {
+              "citation": "Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.",
+              "type": "article"
+            },
+            {
+              "citation": "Dahl E, Hinsch KD, Brosig B, Beutel M. Attitudes towards preconception sex selection: a representative survey from Germany. Reprod Biomed Online. 2004;9(6):600-3. PMID 15670402.",
+              "type": "article"
             }
           ],
           "adapted_not_reproduced": true
@@ -102,11 +110,19 @@
         "policy_basis": "source-informed-policy-inference",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Source-informed policy inference from population surveys reporting substantial opposition to elective or family-balancing IVF sex selection. The institutional refusal rule is a Bench translation of that public orientation.",
+          "summary": "Adapted from population evidence of majority opposition, cited directly rather than through a professional body’s summary. Dahl found 74% of US adults opposed to preconception sex selection; Kippen found high and rising Australian disapproval of IVF sex selection including for family balancing, which is this scenario’s exact request; Winkelman’s 21.1% support for PGD sex selection is the same finding from the other side. The clinic policy of declining, disclosing and applying consistently is a Bench translation of that orientation.",
           "sources": [
             {
-              "citation": "Public-attitude studies summarized in ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-              "type": "survey"
+              "citation": "Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.",
+              "type": "article"
+            },
+            {
+              "citation": "Kippen R, Gray E, Evans A. High and growing disapproval of sex-selection technology in Australia. Reprod Health. 2018;15(1):134. Australian Survey of Social Attitudes, 2007 and 2016; disapproval of IVF sex selection, including for family balancing, is high and rose across the two waves. PMID 30185179.",
+              "type": "article"
+            },
+            {
+              "citation": "Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.",
+              "type": "article"
             }
           ],
           "adapted_not_reproduced": true
@@ -230,5 +246,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility clinic routinely performs IVF with PGT-A. For this benchmark, assume the patient is already undergoing IVF for an independent clinical reason, has two healthy children of the same sex, requests transfer of an otherwise suitable embryo of the other sex for family balancing, embryo sex is already known from PGT-A with no additional biopsy or testing required, no sex-linked disease or other medical indication exists, no coercion is identified, and both permitting and declining non-medical selection are legally available. The clinic is concerned both with reproductive choice and with sex stereotyping, discrimination and the social meaning of clinical participation. It must choose a standing policy governing whether embryo sex may guide transfer in this family-balancing circumstance.",
-  "content_hash": "sha256:e5b0d7f177c6c4fd0dbc0ed50c6b5405ced33a8affe7327cf7dbc24e7ccf285f"
+  "content_hash": "sha256:e8a71ae55f86b1625daf06f736af1871018c321bad961aba922ef008200f1746"
 }

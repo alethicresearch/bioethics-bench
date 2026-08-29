@@ -84,24 +84,43 @@ accurate. It is a claim that **their public–expert cells do not measure what t
 cells measure**, and that a paper reporting cross-source coherence should not include them without
 saying so.
 
-## Disposition: recorded, not resolved
+## Disposition: resolved — option 1, by the deep-research review
 
-Three options, and the choice is not this lane's to make alone because it bears on what QCCS
-requires of a source pool:
+This document originally recorded three options and declined to choose, because two of them
+changed the corpus rather than its description. **Option 1 has since been taken and it worked.**
 
-1. **Re-source.** Find the public-attitude studies ASRM summarises and cite them directly. This is
-   the best outcome and the most work; it risks constructing grounding rather than finding it,
-   which is the failure the corpus was rebuilt to avoid.
-2. **Declare and keep.** Note in each record that its public layer derives from the expert
-   document, and exclude the affected public–expert cells from any cross-source coherence claim.
-   Cheap, honest, and leaves the families executable.
-3. **Hold both families.** Takes the corpus to 32 families / 64 records.
+An external research agent worked the two task-C units and returned `resourced` for both, tracing
+the ASRM opinions back to the population and patient studies underlying them. Nine PMIDs were
+proposed. **All nine resolve, and every author, title and reported figure checked out against
+PubMed** — Barton's 69.8% of supporters requiring prior consent, Dahl's 8% who would use
+preconception sex selection against 74% opposed, Winkelman's 21.1% supporting PGD for sex
+selection. Verification was done here rather than taken on trust, because a real paper with an
+invented statistic is exactly the failure this corpus is built to resist.
 
-**Option 2 is what the provenance now does**, as an interim state — the bridges already said
-"summarized by ASRM" and now the review says what follows from that. Options 1 and 3 are for the
-coordinator, because either changes the corpus rather than its description.
+Both public pools are re-sourced and the ASRM opinions are **removed from them entirely**, staying
+where they belong as the expert pool's warrant:
 
-A guard reports the condition on every `npm run validate` run, so it cannot return silently.
+| | Now grounded in |
+|---|---|
+| **M045 `pub1`** — require written authorization | Barton 2012 (69.8% of supporters required prior consent), Pastuszak 2013 and Côté 2014 (the signed-directive practice written authorization refers to) |
+| **M045 `pub2`** — permit on strong evidence of shared intent | Hans 2014 (70% of men, 58% of women wanted a surviving spouse able to use their gametes), Nakhuda 2011 (~78% of couples), Côté 2014 |
+| **M060 `pub1`** — permit family balancing | Dahl 2006 (8% would use; 50% wished for equal numbers of boys and girls), Winkelman 2015 (21.1%), Dahl 2004 |
+| **M060 `pub2`** — decline non-medical sex selection | Dahl 2006 (74% opposed), Kippen 2018 (high and rising Australian disapproval including for family balancing), Winkelman 2015 |
+
+The guard in `scripts/fidelity-audit.mjs` no longer fires, and it is the same guard — it was not
+relaxed. No candidate text changed, so the repair is **provenance-only** and costs the SACRE lane
+nothing.
+
+**What this buys beyond two families.** The public–expert cells in M045 and M060 now compare
+genuinely distinct sources, so a coherence score there reports convergence rather than restating a
+document against itself. And the four public candidates are better grounded than they were before
+the defect was found: they now cite population surveys with stated sample sizes and figures instead
+of a professional body's paraphrase of them.
+
+**One limit, recorded.** The agent's evidence for M060 cites Winkelman figures of "51.5% disagreed
+and 27.4% neutral" that the PubMed abstract does not carry; the 21.1% support figure it does. The
+citations written into the records use only the verified figures. The unverified pair may well be
+in the full text and nothing turns on it, but it is not repeated as though confirmed.
 
 ## What this review does not establish
 

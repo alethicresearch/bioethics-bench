@@ -373,17 +373,17 @@
     },
     "M045": {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
-      "content_hash": "sha256:c70cce05b57c8c02a3abafa474583fbdbc18e68948c16490fc10f44ef0b3c6ad",
+      "content_hash": "sha256:34ded50faef363540dcb872a2c7640b3a9dbd14755767ce771982f50d963f00c",
       "units": [
         {
           "id": "pub1",
           "task": "A",
-          "fingerprint": "u1:d043d436894da87f"
+          "fingerprint": "u1:4dbdc832198b625f"
         },
         {
           "id": "pub2",
           "task": "A",
-          "fingerprint": "u1:5a49a5d1ed99d70d"
+          "fingerprint": "u1:d598579f30bbfc53"
         },
         {
           "id": "exp1",
@@ -398,7 +398,7 @@
         {
           "id": "public-pool",
           "task": "C",
-          "fingerprint": "u1:97bdf9dee69aafc5"
+          "fingerprint": "u1:9f558641c9e4f9dc"
         }
       ]
     },
@@ -487,17 +487,17 @@
     },
     "M060": {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
-      "content_hash": "sha256:10a47fa35b7a6e29b199d00cc7313ed4c3d9df0d6e7f4b3a20e6114e5a776b56",
+      "content_hash": "sha256:f531bbc44cef6e446f45d55786bf29ba07398ad04a6329001701a17a525309de",
       "units": [
         {
           "id": "pub1",
           "task": "A",
-          "fingerprint": "u1:0cf752a427b440fd"
+          "fingerprint": "u1:3d2cff232051feae"
         },
         {
           "id": "pub2",
           "task": "A",
-          "fingerprint": "u1:dc62d9abd91eeb02"
+          "fingerprint": "u1:4e99d8bbdd346c5a"
         },
         {
           "id": "exp1",
@@ -512,7 +512,7 @@
         {
           "id": "public-pool",
           "task": "C",
-          "fingerprint": "u1:fe3c16ad43691bc3"
+          "fingerprint": "u1:1ae4eb541770206a"
         }
       ]
     },
