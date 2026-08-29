@@ -50,6 +50,22 @@ than a policy, two summaries overstating their sources, and roughly twenty citat
 author, title, section or date. One candidate's text changed; everything else was provenance. The
 executable set never moved from 34 families / 68 records.
 
+## The next pass needs sources, and is packaged for one
+
+The six passes above are what a model can establish from the record. What remains needs the sources
+themselves, and is packaged as a task set with a return path:
+
+- **`DEEP_RESEARCH_BRIEF.md`** — what has already been checked (so effort does not go there), the
+  three remaining questions, and the failure shapes each one is looking for.
+- **`research-tasks/`** — 126 units across 34 families, generated from committed state, one file per
+  family. Work order C → B → A.
+- **`scripts/ingest-research-verdicts.mjs`** — the return path. It refuses a verdict that judges a
+  record whose content hash has moved, names a candidate that is not a unit of that family, or
+  asserts a defect without evidence. `npm run validate` reports coverage on every run.
+
+This is not the release gate and it does not set `reviewed_by_human`. It makes the gate assessable
+from repository state instead of from someone's memory of who looked at what.
+
 ## Open items
 
 - **The largest remaining gap:** 55 inference bridges were checked for whether they *hold*, but their
