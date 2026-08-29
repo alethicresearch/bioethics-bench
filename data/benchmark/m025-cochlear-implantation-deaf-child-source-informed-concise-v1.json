@@ -139,7 +139,7 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the American Cochlear Implant Alliance pediatric candidacy guideline, endorsed by the American Academy of Audiology, which recommends evidence-based team-centered evaluation of the whole child and family system, early intervention where appropriate, individualized expectations and attention to family goals and rehabilitation capacity.",
+          "summary": "Adapted from the American Cochlear Implant Alliance pediatric candidacy guideline, endorsed by the American Academy of Audiology, which recommends evidence-based team-centered evaluation of the whole child and family system, early intervention where appropriate, individualized expectations and attention to family goals and rehabilitation capacity. Two limits are declared rather than elided. The guideline governs candidacy determination and does not address what a service should do when informed parents decline implantation, so the candidate's final clause — that informed refusal alone is not treated as neglect — is Bench-authored completion, not ACIA's statement. This is also why the expert pool here is a process architecture rather than a position on the deferral: the profession's document does not take one.",
           "sources": [
             {
               "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
@@ -280,5 +280,5 @@
     "notes": "Concise and detailed are companion representations of the same source-informed frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A 2-year-old with bilateral severe-to-profound congenital sensorineural hearing loss meets clinical criteria for cochlear implantation. Both parents are Deaf, use sign language as their primary language and want to raise the child with early fluent sign-language access; they decline implantation for now because they value Deaf identity and do not want surgery to define the child's development. For this benchmark, assume immediate high-quality fluent sign-language exposure and educational support are available, the child is clinically eligible and implantation offers a reasonable but variable chance of improving auditory/spoken-language access, delay may reduce some later auditory-language benefit without eliminating candidacy, and the parents understand the options and actively support the child's communication development. The implant service must decide what policy should govern the deferral.",
-  "content_hash": "sha256:d3d4a60a08953531b2073a08fabb82a98c7d77c596529c0509ee354061a84319"
+  "content_hash": "sha256:3a8ef410cf0b684560e8f84d52d203e0a843e148b478a53e75e919afe9dc9fa8"
 }

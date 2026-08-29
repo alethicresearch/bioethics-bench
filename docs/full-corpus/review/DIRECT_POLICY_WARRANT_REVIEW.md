@@ -253,9 +253,57 @@ waiting-list score for donor-card registration, subject to a minimum registratio
 clinical suitability and matching still governing. The candidate says exactly that. Citation now
 names the statute rather than only the ministry's public donor-card page.
 
+## Expert pool, batch 2 — the singletons that carry a whole layer alone
+
+A singleton expert pool is the highest-leverage place to check, because one document is the entire
+professional layer of its family. Five were read.
+
+**M075 `exp1` — verified, comprehensively.** CIOMS 2016 Guideline 11 permits broad informed consent
+for unspecified future use, requires institutions to operate a governance system for authorizing
+future use, makes the ethical acceptability of broad consent *depend* on that governance, and
+requires the original consent process to state the limits of secondary use and the conditions
+under which investigators must return for additional authorization. Every element of the candidate
+— bounded scope, governance, ethics review of secondary uses, re-consent outside scope — is in the
+guideline.
+
+**M033 `exp1` — verified, both clauses.** The RTE EuthanasiaCode provides that where a patient can
+no longer express their wishes, an advance directive can replace the oral request and the statutory
+due-care criteria apply in the same way, and that the physician must be satisfied there are no
+contraindications or signs the patient no longer wishes their life terminated. That second element
+is the candidate's "heightened scrutiny," and it was in the source rather than added to it.
+
+### M025 — the explanation for two earlier flags
+
+`SOURCE_TO_POLICY_FIDELITY_REVIEW.md` §4 flagged M025 as the one singleton not framed as the
+outcome of a competing-policy sweep. `DIVERGENCE_REVIEW.md` observation 4 flagged it again as the
+singleton whose action overlaps most heavily with a public candidate. Reading the source explains
+both at once.
+
+The ACIA Task Force guideline (Ear Hear 2022;43(2):268-282) is a **candidacy-determination**
+document. It recommends team-based evaluation of the whole child and family system, flexibility,
+attention to skill progression and quality of life — all of which the candidate states accurately.
+What it does not do is take a position on what a service should do when informed parents decline
+implantation, which is M025's actual decision question.
+
+So there was no competing-policy sweep to report, because the profession's document does not
+contain a competing policy — it does not contain a policy on this question at all. And the
+candidate reads as a process architecture because that is genuinely all the source supports.
+
+The candidate's final clause — that informed refusal alone is not treated as neglect — is
+**Bench-authored completion**, and was not declared as such. It is now. `direct-policy-evidence`
+candidates have been carrying undeclared completion that the corpus requires inferred candidates to
+declare; M025 is where that gap is widest, because the undeclared clause is the one doing the
+policy work.
+
+That is a finding about the taxonomy rather than about M025: the four-basis rule asks
+`source-informed-policy-inference` candidates to state their bridge, but says nothing about a
+`direct-policy-evidence` candidate that is *mostly* direct and partly authored. Most of this
+corpus's direct candidates do declare it — M028's and M056's summaries open with "Bench-authored
+policy completion" — so the practice exists without a rule behind it.
+
 ## Still open in this tranche
 
-27 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+25 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is

@@ -57,7 +57,7 @@
     "summary": "Bench-authored biobank-governance representation grounded in CIOMS/HHS consent architectures and empirical research-participant preferences. It fixes prospective collection, identifiability, credible governance, withdrawal and feasible but burdensome recontact so consent models differ on when new permission is required.",
     "sources": [
       {
-        "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+        "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans, 2016, Guideline 11 (collection, storage and use of biological materials and related data). Permits broad informed consent for unspecified future use, requires institutions to operate a governance system for authorizing future use, makes the ethical acceptability of broad consent depend on that governance, and requires the original consent process to state the limits of secondary use and the conditions under which investigators must return for additional authorization.",
         "type": "guideline"
       },
       {
@@ -123,7 +123,7 @@
           "summary": "Adapted directly from CIOMS Guideline 11's broad-consent architecture, supported by HHS broad-consent provisions. The professional guidance permits bounded broad consent but does not treat it as blanket authorization.",
           "sources": [
             {
-              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans, 2016, Guideline 11 (collection, storage and use of biological materials and related data). Permits broad informed consent for unspecified future use, requires institutions to operate a governance system for authorizing future use, makes the ethical acceptability of broad consent depend on that governance, and requires the original consent process to state the limits of secondary use and the conditions under which investigators must return for additional authorization.",
               "type": "guideline"
             },
             {
@@ -146,7 +146,7 @@
           "summary": "Derived from stewardship, trust and delegated-governance reasoning. The executable policy is Bench-authored.",
           "sources": [
             {
-              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+              "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans, 2016, Guideline 11 (collection, storage and use of biological materials and related data). Permits broad informed consent for unspecified future use, requires institutions to operate a governance system for authorizing future use, makes the ethical acceptability of broad consent depend on that governance, and requires the original consent process to state the limits of secondary use and the conditions under which investigators must return for additional authorization.",
               "type": "guideline"
             }
           ]
@@ -207,7 +207,7 @@
   },
   "references": [
     {
-      "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 11. 2016.",
+      "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans, 2016, Guideline 11 (collection, storage and use of biological materials and related data). Permits broad informed consent for unspecified future use, requires institutions to operate a governance system for authorizing future use, makes the ethical acceptability of broad consent depend on that governance, and requires the original consent process to state the limits of secondary use and the conditions under which investigators must return for additional authorization.",
       "type": "guideline"
     },
     {
@@ -234,5 +234,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.",
-  "content_hash": "sha256:5f4be3c85a7ee8301183bc862e946274ef69a607789d449affead2378f2cc730"
+  "content_hash": "sha256:d871e5436a270e8b84aedf9eec13514f10a8da1217ad15b332712d398d4785da"
 }
