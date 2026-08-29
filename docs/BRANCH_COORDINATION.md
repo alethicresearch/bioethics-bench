@@ -98,6 +98,12 @@ Stated once, and expected to decay — fetch live heads rather than trusting the
 - Full Corpus integration is **merged to SACRE `main`**; the old integration lane is no longer the
   product merge gate, and `main` treats Full Corpus loading and execution as deployed current
   behaviour. Further Full Corpus product work starts from `main`.
+- The **inference-bridge review is complete**: all 55 source-informed candidates checked for whether
+  their bridge holds, and all 55 do. It surfaced a cross-source independence question — M045 and
+  M060 have public pools derived entirely from the professional-body document their expert pools
+  cite — which is staged as a coordinator decision in `docs/papers/MANUSCRIPT_WRITEBACK.md`. If it
+  is resolved by holding those families the executable set drops to 32 families / 64 records, which
+  would be **execution-relevant** for the SACRE lane.
 - The direct-policy warrant review is **complete**: all 20 public and all 49 expert
   `direct-policy-evidence` candidates read against their sources. This is the last review pass the
   Bench lane can perform without a human reviewer.
