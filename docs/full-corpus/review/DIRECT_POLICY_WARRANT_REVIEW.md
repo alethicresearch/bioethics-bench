@@ -214,9 +214,37 @@ The distinction from `exp1` is unaffected and, if anything, sharper. Under M102'
 — the family objects on its own beliefs and offers no evidence about the deceased — the Dutch rule
 proceeds and the English one does not.
 
+## Four more verified, and three citations sharpened
+
+**M056 `exp1`** — ISSCR Recommendation 2.2.2.1 (2021 guidelines) removes the categorical
+prohibition and provides that where local policies and regulations permit *and* there is public
+support, specialized scientific and ethics oversight may permit culture beyond 14 days. The
+candidate's two conditions — specialized review, and prior public and regulatory authorization —
+are the recommendation's own two conditions. Citation now names the guidelines and the year rather
+than "current guidance."
+
+**M080 `exp1`** — the closest source-to-candidate match found anywhere in this corpus. Declaration
+of Helsinki 2024 ¶34: post-trial provisions "must be arranged" *in advance of the trial*, by
+sponsors and researchers, for all participants who still need an intervention "identified as
+beneficial and reasonably safe in the trial," with exceptions requiring research-ethics-committee
+approval and the provisions disclosed in informed consent. Every operative element of the candidate
+— advance arrangement, the beneficial-and-reasonably-safe test, disclosure, REC-approved exceptions
+— is in the paragraph. Citation now names ¶34 and states its content.
+
+**M097 `exp1`** — AMA Policy H-95.925 supports pilot supervised injection facilities "designed,
+monitored and evaluated to generate data to inform policymakers on the feasibility, effectiveness,
+and legal aspects." The candidate authorizes a time-limited independently evaluated pilot; the
+specific outcome list is Bench completion and the summary already says the policy supports
+"monitored and evaluated pilot" facilities rather than claiming the outcomes came from AMA.
+
+**M139 `exp2`** — the candidate states the three §164.512(i) waiver criteria in order: minimal
+privacy risk, an adequate plan to protect identifiers, and research that could not practicably be
+conducted without both the waiver and access to the protected health information. That is the
+regulation.
+
 ## Still open in this tranche
 
-33 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+29 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is

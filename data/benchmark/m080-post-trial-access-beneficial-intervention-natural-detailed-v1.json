@@ -62,7 +62,7 @@
     "summary": "Bench-authored post-trial-access representation grounded in the 2024 Declaration of Helsinki, CIOMS Guideline 6 and direct participant evidence from the EPIC study. It fixes demonstrated benefit, continuing medical need, a temporary ordinary-access gap and sponsor capacity for at least bridging supply so candidate policies differ on duration and responsibility.",
     "sources": [
       {
-        "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+        "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
         "type": "guideline"
       },
       {
@@ -124,7 +124,7 @@
           "summary": "Adapted from the 2024 Declaration of Helsinki post-trial provision requirement and CIOMS Guideline 6 advance planning for level, scope, duration, financing, delivery and monitoring. The sources converge on meaningful advance provision while allowing context-sensitive duration and ethics-reviewed exceptions.",
           "sources": [
             {
-              "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+              "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
               "type": "guideline"
             },
             {
@@ -179,7 +179,7 @@
           "summary": "Derived from fair-benefit and proportionality reasoning: post-trial obligations should be planned prospectively and calibrated to need, feasibility and institutional responsibility. The executable plan is Bench-authored.",
           "sources": [
             {
-              "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+              "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
               "type": "guideline"
             },
             {
@@ -212,7 +212,7 @@
   },
   "references": [
     {
-      "citation": "World Medical Association. Declaration of Helsinki. 2024 revision, post-trial provisions.",
+      "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
       "type": "guideline"
     },
     {
@@ -235,5 +235,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A multicenter clinical trial for a serious chronic condition is ending. For this benchmark, assume the intervention has been shown beneficial and reasonably safe, the represented participants still medically need it and abrupt discontinuation is likely to worsen their condition, ordinary regulatory or reimbursement access will be delayed for approximately nine to twelve months, the sponsor can provide at least temporary continued supply although indefinite lifetime provision would create substantial burdens, and participants were told before enrollment that post-trial access would be governed by an ethics-approved plan. The sponsor and research ethics committee must choose among continued access while medically needed, a defined bridge to ordinary clinical access, and a proportional pre-agreed plan with REC-reviewed exceptions.",
-  "content_hash": "sha256:866efdec72bcc0bd46267b46e81c59487ef91b4bb17977d35386c2557289dbee"
+  "content_hash": "sha256:ec7d82eff0ba21cf3918034741532ea07d7bee26008be536292fb7d22eb0e534"
 }

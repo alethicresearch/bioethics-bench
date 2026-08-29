@@ -119,7 +119,7 @@
           "summary": "Adapted from current ISSCR guidance, which permits specialized oversight to consider culture beyond 14 days where broad public support and local policy permit and scientific objectives necessitate the additional time; the HFEA has separately recommended that UK law be changed to extend the current limit.",
           "sources": [
             {
-              "citation": "International Society for Stem Cell Research. Recommendation 2.2.2.1, current guidance.",
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, 2021, Recommendation 2.2.2.1. Removes the categorical prohibition on culture beyond 14 days and provides that where local policies and regulations permit and there is public support, specialized scientific and ethics oversight processes may permit such research.",
               "type": "guideline",
               "url": "https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"
             },
@@ -177,7 +177,7 @@
           "summary": "Derived from adaptive-governance and proportionality reasoning reflected in the post-2021 debate: extension should be tied to necessity, developmental objectives and oversight rather than an invariant numerical threshold. The policy sentence is a Bench construction.",
           "sources": [
             {
-              "citation": "International Society for Stem Cell Research. Recommendation 2.2.2.1, current guidance.",
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, 2021, Recommendation 2.2.2.1. Removes the categorical prohibition on culture beyond 14 days and provides that where local policies and regulations permit and there is public support, specialized scientific and ethics oversight processes may permit such research.",
               "type": "guideline",
               "url": "https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"
             }
@@ -238,5 +238,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.",
-  "content_hash": "sha256:1c3346ffa390493c2a1575a73a0a632b7c70190d04db7adfda1054b4bf487996"
+  "content_hash": "sha256:887fb6c05a7739ef8da604489d1a6de72b2ff7c3600473e8c5b0a76de930ce83"
 }

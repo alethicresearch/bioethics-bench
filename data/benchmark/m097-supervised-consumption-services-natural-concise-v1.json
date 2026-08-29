@@ -68,7 +68,7 @@
         "type": "article"
       },
       {
-        "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+        "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
         "type": "policy-document",
         "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
       },
@@ -127,7 +127,7 @@
           "summary": "Adapted from AMA Policy H-95.925, which explicitly supports monitored and evaluated pilot supervised injection facilities to generate evidence for policymakers.",
           "sources": [
             {
-              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
               "type": "policy-document",
               "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
             }
@@ -202,7 +202,7 @@
           "summary": "Derived from learning-under-uncertainty and adaptive-governance reasoning: a reversible, evaluated pilot can generate local evidence while preserving established client-level benefits and avoiding premature permanent commitment. The policy sentence is a Bench construction.",
           "sources": [
             {
-              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
               "type": "policy-document",
               "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
             },
@@ -249,7 +249,7 @@
       "type": "article"
     },
     {
-      "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+      "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
       "type": "policy-document",
       "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
     },
@@ -269,5 +269,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A city has persistently high fatal overdose rates despite naloxone distribution, medications for opioid use disorder, outreach and emergency treatment. A proposed supervised consumption service would provide monitored use of pre-obtained substances, overdose response, sterile supplies and voluntary linkage to treatment and social services. For this benchmark, assume existing evidence supports prevention of onsite overdose deaths and engagement with health and social services, the effect on population-level overdose mortality remains uncertain, and local neighborhood effects and community acceptance are unresolved. The city must decide whether to establish an ongoing service, decline permanent implementation while prioritizing other interventions, or authorize a time-limited evaluated pilot.",
-  "content_hash": "sha256:a597ca5b8805de1b3b7ac5450eeb1683dd2878237b025fd763b8510cf2323665"
+  "content_hash": "sha256:5ed5bd4bd322f20fa02352b327f61486a8e9541d6863a481ed849f327ccd44d0"
 }
