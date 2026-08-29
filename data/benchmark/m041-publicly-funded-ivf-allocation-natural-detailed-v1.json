@@ -57,7 +57,7 @@
         "type": "guideline"
       },
       {
-        "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Human Reproduction. 2008;23:772-774. PMID 18321893.",
+        "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
         "type": "guideline"
       },
       {
@@ -133,10 +133,10 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from ESHRE Task Force on Ethics and Law 14, which explicitly addresses limited public resources, endorses a minimum effectiveness threshold, and rejects restricting access only to those with the highest pregnancy chance above that threshold.",
+          "summary": "Adapted from ESHRE Task Force on Ethics and Law 14, whose \"intermediate solution\" is this candidate almost word for word: fix a threshold below which a patient is not eligible for funding, and simultaneously reject prioritization by chance of success above it. One limit of the representation is declared rather than left implicit: the same paper also holds that when only one patient can be treated, priority should go to a childless couple over one who already has a child in the present relationship. This candidate carries ESHRE's threshold rule and not its childless-priority rule, so it under-represents ESHRE on the prior-children axis that this family's other candidates divide along. A fuller ESHRE candidate would sit closer to `pub2` than to `exp1`.",
           "sources": [
             {
-              "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Human Reproduction. 2008;23:772-774. PMID 18321893.",
+              "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
               "type": "guideline"
             }
           ],
@@ -220,7 +220,7 @@
       "type": "guideline"
     },
     {
-      "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Human Reproduction. 2008;23:772-774. PMID 18321893.",
+      "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
       "type": "guideline"
     },
     {
@@ -251,5 +251,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Individual treatment success is probabilistic, fertility can be time-sensitive, and the program wants a transparent rule that can be applied consistently. For this benchmark, assume all represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy, annual demand exceeds funded capacity by roughly one third, and equal-opportunity, clinical-priority and transparent multifactor allocation rules are legally available. The program must decide whether scarce funded cycles should be allocated by equal chance after threshold eligibility, by clinical benefit and time sensitivity, or through a broader published priority structure.",
-  "content_hash": "sha256:9b547d9621d4f498cca27cbf6263d25efc5cb374a0b2c7c6d988603d33fdd58b"
+  "content_hash": "sha256:c6a0a982a5fd1aa90ed394535cd4be260d188922f18bfe9ff617432b8ffdd7a8"
 }

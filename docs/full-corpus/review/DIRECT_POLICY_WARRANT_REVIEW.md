@@ -444,9 +444,54 @@ SACRE lane must re-vendor and re-verify before any product or paper-facing use �
 change since the change-class table was written into `docs/BRANCH_COORDINATION.md`, and the reason
 that table distinguishes this case from the twenty-two families of provenance-only edits.
 
+## Expert pool, batch 5 — and the first partial representation
+
+**M028 `exp1` — verified in the guideline's own words.** The 2023 AAN/AAP/CNS/SCCM consensus
+guideline provides that organ support may be continued after BD/DNC for a period judged by the
+attending clinician under institutional policy, to give the family *"a reasonable but limited
+amount of time"* with the deceased patient, and — unlike prior guidelines — addresses management of
+disagreements with families. The candidate's "reasonable but limited accommodation period" and
+"defined disagreement process" are those two provisions. Citation now carries the full reference
+and the quoted provision.
+
+**M041 `exp2` — verified against the primary text, almost word for word.** ESHRE Task Force 14's
+section on minimal effectiveness reads: *"The intermediate solution for health care systems would be
+to fix a threshold below which a patient would not be eligible for funding and simultaneously to
+reject prioritization according to chance of success above that threshold."* The candidate is that
+sentence made executable. This is the only source in the review so far read from the primary
+document itself rather than an abstract or a summary — ESHRE publishes the paper openly, and it was
+worth the extra step.
+
+### Partial representation — a class the review had not yet found
+
+Reading the whole ESHRE paper rather than the passage the candidate needed turned up something the
+abstract would never have shown. Under "Secondary infertility and number of children," the same
+Task Force holds that **"when only one patient can be treated, priority should be given to a
+childless couple above a couple who already have a child in their present relationship,"** and that
+people who already have a child "should not usurp the resources that could give other people a
+chance of having a child."
+
+Nothing in the record is wrong. `exp2` states ESHRE's threshold rule accurately, and M041's other
+expert candidate is cited to NICE, not ESHRE, so there is no misattribution: NICE rejecting
+living-child status as an exclusion and ESHRE giving childless couples priority is a real
+disagreement between two bodies, correctly represented as two candidates.
+
+But `exp2` carries ESHRE's threshold rule and **not** its childless-priority rule — and the
+prior-children axis is exactly what this family's other candidates divide along, with `pub2`
+weighting prior biological children and `exp1` refusing to. A fuller ESHRE candidate would sit
+closer to `pub2` than to `exp1`. So the record under-represents ESHRE on the axis where ESHRE has
+the most to say.
+
+This is a **third failure mode**, distinct from the two already recorded. It is not a wrong claim
+(M002), and not an undeclared authored clause (M025, M144). It is a source quoted correctly on one
+question while silent on its own position on another question the family is actually about. No
+mechanical check could reach it, and neither could a warrant review that reads only the passage
+supporting the candidate — it needs the whole document. The provenance summary now declares the
+limit.
+
 ## Still open in this tranche
 
-15 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+13 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is
