@@ -252,3 +252,17 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none. If P2 wants one concrete example rather than three, mode 3 is the strongest, because it is the one no tightening of citation practice would catch.
 - **Integrated into:** _pending_
 
+### The warrant review is complete: what reading every high-warrant candidate against its sources found
+
+- **Target:** P2 Bench release-status and construction language; P1 limitations
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`; all 20 public and all 49 expert `direct-policy-evidence` candidates
+- **Evidence class:** corpus review by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** every candidate in the corpus claiming the strongest basis — that a source *states* this policy — has now been read against its sources. **69 candidates, and the corpus held.** No candidate was demoted, no basis changed, no geometry moved, and the executable set stayed at 34 families / 68 records throughout. Exactly one candidate's text changed. Everything else was provenance: two undeclared authored clauses, two partial representations, one warrant pointing at an evaluation report rather than the policy it evaluates, two summaries more decisive than their sources, and roughly twenty citations that named no author, title, section or date and now do.
+  If P2 states a release-readiness position, this is the defensible form of it: **the Bench's strongest evidentiary claims have been checked against their sources and survived, with the corrections recorded**; and the corpus remains release-candidate because that check was performed by a model, not the independent human reviewer the release gate names. Those two statements are compatible and both should be made.
+- **Limits:** verification depth is uneven and the review document says where — some sources read from their own PDFs, most from PubMed abstracts or publisher summaries, six at document level only. The 98 public `source-informed-policy-inference` bridges are verified as *stated*, not as *sound*. Mode 3 — a source quoted correctly on one question and silent on its own position on another — was found twice, both times in the deepest reads, so it is under-detected rather than rare.
+- **Dependency:** none. This is the last review pass the Bench lane can perform without a human.
+- **Integrated into:** _pending_
+

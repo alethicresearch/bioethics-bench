@@ -98,6 +98,9 @@ Stated once, and expected to decay — fetch live heads rather than trusting the
 - Full Corpus integration is **merged to SACRE `main`**; the old integration lane is no longer the
   product merge gate, and `main` treats Full Corpus loading and execution as deployed current
   behaviour. Further Full Corpus product work starts from `main`.
+- The direct-policy warrant review is **complete**: all 20 public and all 49 expert
+  `direct-policy-evidence` candidates read against their sources. This is the last review pass the
+  Bench lane can perform without a human reviewer.
 - Bench's executable set is **34 families / 68 records**, unchanged all day. Every Bench change on
   2026-08-29 was provenance-only, across twenty-two families.
 - A refreshed payload sits verified on `claude/bioethics-bench-completion-m0p43e` (main plus the
