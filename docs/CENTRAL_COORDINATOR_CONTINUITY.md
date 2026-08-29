@@ -18,6 +18,9 @@ After reading the canonical central continuity file:
    - `docs/PROGRAM_COORDINATION.md`
    - `docs/BRANCH_COORDINATION.md`
    - `docs/papers/MANUSCRIPT_WRITEBACK.md`
+
+**Drafting note:** `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is the surface to draft P1/P2 from — the Bench findings triaged into the order they are worth using, with current numbers and superseded entries retired. `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail behind it.
+
    - `docs/SACRE_V1_SOURCE_COMPLETENESS_DECISION.md`
    - `docs/full-corpus/PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`
    - the generated Full Corpus disposition ledger and manifest

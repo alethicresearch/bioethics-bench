@@ -11,6 +11,9 @@ Before substantive work, read:
 3. `docs/BRANCH_COORDINATION.md` — branch ownership and release/merge order.
 4. `docs/COORDINATOR_DIRECTIVE.md` — current product priorities.
 5. `docs/papers/MANUSCRIPT_WRITEBACK.md` — manuscript-facing queue and central-integration status.
+
+**Drafting note:** `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is the surface to draft P1/P2 from — the Bench findings triaged into the order they are worth using, with current numbers and superseded entries retired. `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail behind it.
+
 6. The current Drive manuscripts: **P1 v58**, **P2 v41**, P3 v5, Publication Program v12.
 
 Current manuscript IDs:

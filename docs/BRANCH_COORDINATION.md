@@ -157,6 +157,8 @@ Stated once, and expected to decay — fetch live heads rather than trusting the
 
 ## Manuscript interface
 
+Two files, with different jobs. **`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is what a coordinator drafts from**: the findings triaged into the order they are worth using, with current numbers stated once and superseded entries retired. **`docs/papers/MANUSCRIPT_WRITEBACK.md` is the audit trail**: every finding as it was made, with its evidence and date. The log is chronological, so it accumulates superseded entries and version targets that go stale — pointing a drafting coordinator at it alone is how review work fails to reach the papers.
+
 Agents should stage manuscript-facing contributions in `docs/papers/MANUSCRIPT_WRITEBACK.md`, not in Drive manuscript binaries as their primary writing surface. Every writeback must include:
 - target paper/version/section;
 - proposed claim/paragraph/table/figure change;

@@ -8,7 +8,8 @@ Read this together with:
 - `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
 - `docs/PROGRAM_COORDINATION.md`
 - `docs/BRANCH_COORDINATION.md`
-- `docs/papers/MANUSCRIPT_WRITEBACK.md`
+- `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` — **read this if you are drafting**; the nine findings triaged in the order they are worth using
+- `docs/papers/MANUSCRIPT_WRITEBACK.md` — the chronological audit trail behind them
 - `docs/SACRE_V1_SOURCE_COMPLETENESS_DECISION.md`
 - `docs/full-corpus/PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`
 - the generated Full Corpus disposition ledger and manifest
@@ -31,7 +32,7 @@ When a family or review batch is adequately decided under the protocol, record t
 2. **Complete independent source-to-policy review in bounded batches.** This is the release-critical product task. Resolve the remaining mechanically ambiguous citations, then review executable families under `PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`. Apply pass/repair/demote decisions on the canonical branch and regenerate the ledger/manifest after substantive changes. Do not optimize for preserving the current executable count.
 3. **Do not merge generalized-source architecture into v1.** Preserve `claude/generalized-source-architecture-track` as a future research branch. Missing-public/source cases are current method-boundary findings, not an instruction to redesign v1 for a larger n.
 4. **Keep SACRE informed of execution-relevant drift.** If records, candidate texts/ids, profiles, execution-relevant schema, geometry, required aggregation, content hashes carried by the vendor payload, or the Full Corpus manifest change, update the cross-repo dependency immediately. SACRE must re-vendor/re-pin before a product merge or paper-facing execution uses stale corpus state.
-5. **Write manuscript-facing findings in Git.** Update `docs/papers/MANUSCRIPT_WRITEBACK.md` with paper-ready scope/release/architecture language and exact evidence. Do not wait for the central coordinator to reconstruct implications from commit history.
+5. **Write manuscript-facing findings in Git.** Log each finding in `docs/papers/MANUSCRIPT_WRITEBACK.md` with paper-ready language and exact evidence, and keep `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` current as the drafting surface — the log is chronological and accumulates superseded entries and stale version targets, so a coordinator who reads only the log will work from the wrong material. Do not wait for the central coordinator to reconstruct implications from commit history.
 6. **Do not turn corpus work into model evaluation.** The completed SACRE Full Corpus development tranche is downstream execution evidence owned by the SACRE lane. Bench owns the input/release facts. Do not treat execution outcomes as Bench release validation or expand calibration runs ad hoc.
 
 ## Product-quality rule
@@ -43,7 +44,7 @@ Perfection is not the acceptance criterion for a review batch. **A defensible do
 ## Cross-lane handoff rule
 
 If your work changes the Full Corpus executable set or any execution-relevant object:
-- update `docs/papers/MANUSCRIPT_WRITEBACK.md`;
+- update `docs/papers/MANUSCRIPT_WRITEBACK.md`, and retriage `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` if the change alters a number or supersedes a finding;
 - update `docs/BRANCH_COORDINATION.md` if branch/release dependencies changed;
 - explicitly tell the SACRE lane whether its current vendor pin is still execution-equivalent and hash-current;
 - stage any Drive/program delta that the central coordinator must apply.
