@@ -72,7 +72,7 @@
     "summary": "Bench-authored program-design case grounded in current Medicare hospice election policy, VHA concurrent-care practice, patient preference studies, and observational VA literature. It fixes hospice eligibility, noncurative but plausible treatment benefit, informed patient preference for both services, administrative feasibility, and terminal-illness treatment scope so traditional and concurrent architectures remain action-distinct.",
     "sources": [
       {
-        "citation": "Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.",
+        "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
         "type": "policy-document"
       },
       {
@@ -150,7 +150,7 @@
           "summary": "Adapted directly from the current Medicare hospice benefit architecture. This candidate represents an enacted payer policy, not a claim that the policy is ethically superior.",
           "sources": [
             {
-              "citation": "Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.",
+              "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
               "type": "policy-document"
             }
           ],
@@ -238,7 +238,7 @@
   },
   "references": [
     {
-      "citation": "Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials, current through 2026.",
+      "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
       "type": "policy-document"
     },
     {
@@ -263,5 +263,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:f075f4f817cd879dac897432049ee64a55e0d639dc4b29f9f22a596f237f45e3"
+  "content_hash": "sha256:b1b9aef26ce4aad44d0dcfb6e63556a213c43453f6ced92ed05e6e51cb8a4c10"
 }

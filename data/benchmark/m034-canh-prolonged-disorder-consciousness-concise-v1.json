@@ -150,7 +150,7 @@
           "summary": "Adapted from convergent professional guidance emphasizing diagnostic rigor and serial assessment in prolonged disorders of consciousness and treating artificially administered nutrition and hydration as a clinical intervention subject to collaborative autonomy, benefit/burden, and ethical review. Current sources support one individualized process architecture rather than opposed professional endpoints.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. PMID 30098791.",
+              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. 2018. Recommends serial, standardized neurobehavioral assessment with measures shown valid and reliable, to improve diagnostic accuracy, and care from multidisciplinary teams with specialized expertise. The benefit/burden and patient-preference process this candidate also states comes from the ASPEN and ESPEN ethics guidelines cited alongside. PMID 30098791.",
               "type": "guideline"
             },
             {
@@ -243,5 +243,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:3a65ec1a2fc5c77d3cb177972fd1961be99e936e746a09ad3d58acafe58d0bd7"
+  "content_hash": "sha256:7fb749519831b0d3084c75a44fa7bb66324b61ba1ee4c07fc1bbd43ff919beb3"
 }

@@ -489,10 +489,67 @@ mechanical check could reach it, and neither could a warrant review that reads o
 supporting the candidate — it needs the whole document. The provenance summary now declares the
 limit.
 
-## Still open in this tranche
+## Expert pool, batch 6 — tranche closed
 
-13 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
-documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
-each document says what is attributed to it. The two errors found in the first 16 were both in the
-provenance layer rather than in a candidate's action, and neither changed a geometry — which is
-weak evidence that the remainder will behave similarly, and no substitute for reading them.
+The last thirteen, verified against their sources.
+
+- **M002 `exp2`** — AMA Opinion 2.1.2: when a patient lacks capacity the physician should identify
+  an appropriate surrogate, and should engage patients whose capacity is impaired "to the greatest
+  extent possible." Both clauses of the candidate. It is now sharply distinct from the repaired
+  `exp1`, which is the WHO position.
+- **M005 `exp1`** — AMA Opinion 2.1.3: encourage the patient to specify preferences about
+  communication *before* the information becomes available; honour a request to convey information
+  to a designated surrogate; tailor disclosure to the patient's preferences. The candidate's
+  "family-mediated disclosure only when the patient chooses it" is 2.1.3's own condition.
+- **M030 `exp1`** — 42 C.F.R. § 418.24: electing hospice waives the right to Medicare payment for
+  items, services and drugs related to the terminal illness and related conditions, with hospice
+  expected to provide virtually all care for that illness. Verbatim in substance.
+- **M028, M041** — recorded in batch 5.
+- **M034 `exp1`** — the AAN/ACRM/NIDILRR guideline supplies serial standardized neurobehavioral
+  assessment and multidisciplinary team care; the benefit/burden and patient-preference process
+  comes from the ASPEN and ESPEN ethics guidelines cited alongside it. The citation now says which
+  source carries which clause.
+- **M042 `exp1`** — Nuffield's "accurate, balanced and non-directive" is the candidate's standard
+  almost verbatim.
+- **M004, M010, M012, M050 `exp2`, M123, M139 `exp1`** — verified at document level: each source
+  exists, is correctly identified and dated, and its stated position matches the candidate's action.
+
+### A second partial representation, and a fix to the verifier
+
+**M042** turns out to be mode 3 as well. Nuffield supports NIPT in NHS screening *"provided that it
+is accompanied by accurate, balanced and non-directive information and support"* — which the
+candidate states — but the same report also warns that **normalising NIPT without sufficient
+deliberative support risks eroding rather than supporting autonomous decision-making**. That warning
+sits directly on the routine-offer versus explicit-opt-in axis that M042's public and framework
+candidates divide along, and the expert singleton does not carry it. Declared in the provenance,
+same treatment as M041.
+
+Two instances of mode 3 in the corpus, both found the same way — by reading past the passage the
+candidate needed. Neither was reachable from an abstract.
+
+**The verifier needed a fix to accept one of these repairs.** Citing the AAN/ACRM guideline by its
+actual title tripped the "neither title nor first author matches" check, because PubMed's title
+appends "Report of the Guideline Development, Dissemination, and Implementation Subcommittee of the
+American Academy of Neurology; the American Congress of Rehabilitation Medicine; and the National
+Institute on Disability, Independent Living, and Rehabilitation Research" — twenty words no citation
+has reason to repeat, which drags word overlap below any sensible threshold. `verify-citations.mjs`
+now also tests containment: if the record title's opening run of content words appears contiguously
+in the citation, the citation is quoting the title. Improving the *citation* had made the *check*
+worse, which is the failure mode worth naming — a check tuned against real data will otherwise train
+its reader to ignore it.
+
+## Tranche closed
+
+**All 49 expert `direct-policy-evidence` candidates have been read against their sources**, joining
+all 20 public ones. Across 69 candidates the review found: one wrong claim (M002, repaired in
+candidate text), two undeclared authored clauses (M025, M144), two partial representations (M041,
+M042), one warrant pointing at an evaluation report rather than the policy (M031), one summary more
+decisive than its source (M102), one summary asserting opposition where the survey showed agreement
+(M056), and roughly twenty citations that named no author, title, section or date and now do.
+
+**No candidate was demoted, no basis changed, no geometry moved, and the executable set stands at
+34 families / 68 records.** One candidate's text changed. Everything else was provenance.
+
+Depth is uneven and the document says where: some sources were read from their own PDFs, most from
+PubMed abstracts or publisher summaries, and six at document level only. The two mode-3 findings
+both came from the deepest reads, which is the reason to expect more of them rather than fewer.

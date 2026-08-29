@@ -58,7 +58,7 @@
         "accessed": "2026-08-27"
       },
       {
-        "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+        "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
         "type": "guideline",
         "doi": "10.1542/peds.2024-066326",
         "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -132,7 +132,7 @@
           "summary": "Adapted from convergent AAP, SAHM and ACOG guidance treating confidentiality as central to adolescent care while supporting voluntary family involvement and defined safety/legal exceptions.",
           "sources": [
             {
-              "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+              "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
               "type": "guideline",
               "doi": "10.1542/peds.2024-066326",
               "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -221,7 +221,7 @@
       "accessed": "2026-08-27"
     },
     {
-      "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+      "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
       "type": "guideline",
       "doi": "10.1542/peds.2024-066326",
       "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -246,5 +246,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:15dc71f99fef8b784c3feb629285f65749c8fc84870fddf48674eec6e0161b38"
+  "content_hash": "sha256:d8d4e296c33242def1e1ff918215fe44825830d9254c05fca08028ba246b56cb"
 }

@@ -12,7 +12,7 @@ Read in this order.
 | `CITATION_AMBIGUITY_RESOLUTIONS.md` | The five citations that resolved but matched on neither title nor author — are they the right papers? | **Closed.** Four accurate, one wrong author, all five rewritten to full form |
 | `SOURCE_TRACEABILITY_REVIEW.md` | Can a reader get from a candidate to a nameable source at all? | **Closed.** Seven circular citations repaired, one genuinely missing source identified, build guard added |
 | `DIVERGENCE_REVIEW.md` (+ generated `divergence-worksheet.md`) | Does each scenario's fixed fact pattern sit where the candidates produce different actions? | **Closed.** All 34 families pass; six observations recorded |
-| `DIRECT_POLICY_WARRANT_REVIEW.md` | Does each source actually *state* the policy attributed to it? | **Public pool closed** (20/20). **Expert pool in progress** (36 of 49 read) |
+| `DIRECT_POLICY_WARRANT_REVIEW.md` | Does each source actually *state* the policy attributed to it? | **Closed.** All 20 public and all 49 expert `direct-policy-evidence` candidates read against their sources |
 
 ## The ordering is not arbitrary
 
@@ -40,9 +40,17 @@ and the highest-risk warrant class has been read. What is left for a person is t
 check reaches — whether these are the right cases, the right candidates, and the right readings of
 the sources.
 
+## What all five passes together establish
+
+The mechanical floor is clear and the highest-warrant class has been read. Across 69
+`direct-policy-evidence` candidates the warrant review found one wrong claim, two undeclared
+authored clauses, two partial representations, one warrant pointing at an evaluation report rather
+than a policy, two summaries overstating their sources, and roughly twenty citations that named no
+author, title, section or date. One candidate's text changed; everything else was provenance. The
+executable set never moved from 34 families / 68 records.
+
 ## Open items
 
-- 13 of 49 expert `direct-policy-evidence` candidates not yet read against primary documents.
 - 98 public `source-informed-policy-inference` bridges verified as *stated*, not as *sound*.
 - A method decision staged for the coordinator: the four-basis rule has no discipline for a
   candidate that is mostly direct and partly Bench-authored. Two instances found (M025, M144).

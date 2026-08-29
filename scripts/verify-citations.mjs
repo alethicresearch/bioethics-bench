@@ -63,6 +63,21 @@ const overlap = (a, b) => {
   return [...A].filter((w) => B.has(w)).length / Math.min(A.size, B.size);
 };
 
+// Word overlap alone mis-flags a citation that quotes a record's title exactly when PubMed's
+// title is much longer than the quoted part. Guideline titles are the usual case: a citation
+// may carry "Practice Guideline Update Recommendations Summary: Disorders of Consciousness"
+// while PubMed appends "Report of the Guideline Development, Dissemination, and Implementation
+// Subcommittee of the American Academy of Neurology; ..." — twenty words the citation has no
+// reason to repeat, which drags overlap below any sensible threshold. So also test containment:
+// if the record title's opening run of content words appears contiguously in the citation, the
+// citation is quoting the title and the check should say so rather than asking for a read.
+const titleQuoted = (citation, title) => {
+  const t = words(title);
+  if (t.length < 4) return false;
+  const lead = t.slice(0, Math.min(6, t.length)).join(' ');
+  return words(citation).join(' ').includes(lead);
+};
+
 async function fetchSummaries(ids) {
   const out = new Map();
   for (let i = 0; i < ids.length; i += 150) {
@@ -128,12 +143,13 @@ for (const c of withPmid) {
   const citedYear = hasRange || yearsFound.length !== 1 ? null : yearsFound[0];
 
   const sim = overlap(c.citation, found.title);
+  const quoted = titleQuoted(c.citation, found.title);
   const entry = {
-    ...c, found, citedYear, authorMatches,
+    ...c, found, citedYear, authorMatches, quoted,
     similarity: Number(sim.toFixed(2)),
   };
   if (citedYear && found.year && citedYear !== found.year) yearMismatch.push(entry);
-  else if (sim < 0.30 && !authorMatches) titleWeak.push(entry);
+  else if (sim < 0.30 && !authorMatches && !quoted) titleWeak.push(entry);
   else ok.push(entry);
 }
 
