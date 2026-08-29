@@ -6,13 +6,12 @@ This file is the answer to "what is current?" — check it rather than asking. I
 from committed state on every validate run, so if it says something, that is what the corpus
 says right now.
 
-It carries no commit SHA on purpose. A handoff that changes on every commit is one people
-stop reading, and the SHA is not what a reviewer needs — the unit fingerprints are, and those
-move only when the candidate they cover moves.
+It carries no commit SHA and no branch name on purpose. Either would make this file change
+on commits that touch nothing you care about, and neither is what you need — the unit
+fingerprints are, and those move only when the candidate they cover moves.
 
 | | |
 |---|---|
-| Branch | `research/full-corpus-v1` |
 | Executable set | 34 families |
 | Review units | 126 — 55 × A (source descriptions), 69 × B (whole-document), 2 × C (re-source) |
 

@@ -19,15 +19,15 @@ const git = (...args) => {
 };
 
 const families = collectUnits();
-const branch = git('rev-parse', '--abbrev-ref', 'HEAD');
-// Deliberately not the head SHA. Embedding it would make this file change on every commit,
-// including commits that touch nothing a reviewer cares about — and a handoff that churns is one
-// people stop reading. What a reviewer needs is stable: the unit fingerprints below, which move
-// only when the candidate they cover moves. For the live head, look at the branch on GitHub.
+// Deliberately carries neither the head SHA nor the branch name. Either would make this file
+// change on commits that touch nothing a reviewer cares about, or differ between two branches
+// holding identical records — and a handoff that churns is one people stop reading. What a
+// reviewer needs is stable: the unit fingerprints below, which move only when the candidate they
+// cover moves. Whoever opened this file already knows which branch they are on.
 
 let totalUnits = 0;
 const byTask = { A: 0, B: 0, C: 0 };
-const state = { generated_from: { branch }, families: {} };
+const state = { families: {} };
 for (const [family, { meta, units }] of families) {
   totalUnits += units.length;
   for (const u of units) byTask[u.task] += 1;
@@ -48,13 +48,12 @@ L.push('This file is the answer to "what is current?" — check it rather than a
 L.push('from committed state on every validate run, so if it says something, that is what the corpus');
 L.push('says right now.');
 L.push('');
-L.push('It carries no commit SHA on purpose. A handoff that changes on every commit is one people');
-L.push('stop reading, and the SHA is not what a reviewer needs — the unit fingerprints are, and those');
-L.push('move only when the candidate they cover moves.');
+L.push('It carries no commit SHA and no branch name on purpose. Either would make this file change');
+L.push('on commits that touch nothing you care about, and neither is what you need — the unit');
+L.push('fingerprints are, and those move only when the candidate they cover moves.');
 L.push('');
 L.push('| | |');
 L.push('|---|---|');
-L.push(`| Branch | \`${branch}\` |`);
 L.push(`| Executable set | ${families.size} families |`);
 L.push(`| Review units | ${totalUnits} — ${byTask.A} × A (source descriptions), ${byTask.B} × B (whole-document), ${byTask.C} × C (re-source) |`);
 L.push('');
