@@ -61,17 +61,49 @@ These branches preserve prior attempts, audits, transports, or handoffs. Do not 
 5. Preserve the generalized-source branch as a later architecture track; do not let it delay or contaminate the v1 release.
 6. After the human-reviewed release is fixed, coordinate the released pin with SACRE for the all-record exploratory census and later P3 validation.
 
-## Current cross-repo dependency
+## Cross-repo dependency: what changed, and who must act
 
-**Corrected 2026-08-29 from live partner state.** Two things this file previously said are out of date.
+This section used to record the current pin SHA and the current stale set. Both decayed within
+hours and produced a day of unnecessary re-vendoring. **What is durable is the change class, not
+the SHA.** Classify the change first; the response follows from the class, and the live SHA is
+whatever `git fetch` says at the moment you act.
 
-**The SACRE merge decision is not pending — it happened.** Full Corpus integration is merged to SACRE `main`, and `main` now treats Full Corpus loading and execution as deployed current application behaviour rather than an integration-branch capability. `claude/bioethics-bench-completion-m0p43e` is no longer the product merge gate; further Full Corpus product work starts from `main`. SACRE has also executed its canonical Tutorial baseline prospectively, and the manuscript baseline has advanced to **P2 v43** (an authorial restoration replacing v41/v42), with P1 v58, P3 v5 and Publication Program v12 unchanged.
+| Class | Examples | SACRE must | Bench must |
+|---|---|---|---|
+| **Execution-relevant** | Candidate id or text; scenario or stipulation text; `benchmark_profile`; geometry; `required_aggregation`; schema affecting execution; a family added, held or removed | Re-vendor, re-pin and re-run the suites **before** any product merge or paper-facing execution. Results computed under the old payload are not comparable. | Notify the SACRE lane in the same session, naming the first changing commit and the families affected |
+| **Provenance-only** | Citation strings; provenance summaries; `policy_basis` declarations that do not change candidate text; manifest churn that follows from the above | **Nothing, by default.** Re-pin only when the vendor is needed for a paper-facing execution, when a provenance claim has to be true on inspection, or opportunistically alongside other work | Record it here and in `docs/papers/MANUSCRIPT_WRITEBACK.md`. Do **not** open a resync request |
+| **Documentation** | Review documents, dossiers, coordination text, writebacks | Nothing | Record it in the writeback if it has a manuscript implication |
 
-**The re-vendor cadence was wrong and has been corrected.** SACRE's `docs/CURRENT_COORDINATOR_STATUS.md` states plainly: do not restart a product-resync loop for execution-equivalent citation/hash changes. Re-pin only when the vendor is needed for truthful provenance, before a paper-facing corpus execution that actually uses it, or when execution-relevant Bench content changes. This lane had been re-vendoring once per Bench pass — four times on 2026-08-29, each a content-hash-only diff. That has stopped.
+The rule for the middle row is the SACRE coordinator's, stated in that repo's
+`docs/CURRENT_COORDINATOR_STATUS.md`: *do not restart a product-resync loop for
+execution-equivalent citation/hash changes.* It is recorded here because the Bench lane is the one
+that generates those changes and had been requesting a resync for each of them.
 
-**What this means for Bench work going forward.** Citation, provenance-summary and warrant repairs change content hashes and nothing else. They should be recorded here and in the manuscript writeback, and they do **not** oblige the SACRE lane to act. One refreshed payload is staged and verified on `claude/bioethics-bench-completion-m0p43e` (Bench `06242bd`, corpus sha256 `52c0b8cc…`, 365 unit / 73 web / 46 Full Corpus tests, clean build) and can be taken whenever convenient.
+**How to tell the classes apart mechanically.** Re-vendor into a scratch checkout and diff the
+payload. If every changed line is a `contentHash`, the change is provenance-only. If any candidate
+id, text, scenario, profile, geometry or aggregation line moves, it is execution-relevant. That
+check takes a minute and settles the question without judgment:
 
-**What still requires immediate notification.** Any change to records' candidate ids or texts, scenarios, stipulations, executable profiles, execution-relevant schema, geometry or required aggregation, or the removal or addition of a family. Those are not execution-equivalent, and the SACRE lane must re-vendor and re-verify before a product or paper-facing use. The one foreseeable instance — holding a family for an unresolvable source — did not occur: M075's missing source was identified and the executable set stands at 34 families / 68 records.
+```
+BENCH_REF=author/full-corpus-completion node scripts/vendor-bench-full-corpus.mjs
+git diff src/lib/bench/full-corpus-v1.json | grep '^[+-]' | grep -v '^[+-][+-]' | grep -vc contentHash
+```
+
+A zero means provenance-only.
+
+### Current state, 2026-08-29
+
+Stated once, and expected to decay — fetch live heads rather than trusting these.
+
+- Full Corpus integration is **merged to SACRE `main`**; the old integration lane is no longer the
+  product merge gate, and `main` treats Full Corpus loading and execution as deployed current
+  behaviour. Further Full Corpus product work starts from `main`.
+- Bench's executable set is **34 families / 68 records**, unchanged all day. Every Bench change on
+  2026-08-29 was provenance-only, across twenty-two families.
+- A refreshed payload sits verified on `claude/bioethics-bench-completion-m0p43e` (main plus the
+  re-pin; 365 unit / 73 web / 46 Full Corpus tests, clean build). Available, not urgent.
+- The one foreseeable execution-relevant change — holding a family whose source could not be
+  traced — **did not occur**. M075's missing source was identified.
 
 ## Manuscript interface
 
