@@ -1,40 +1,72 @@
-# Central Coordinator Continuity — Bench Entry Point
+# Central Coordinator Continuity — Bioethics Bench Entry Point
 
-This repository participates in a multi-repo publication/application/benchmark program. The **canonical durable handoff for the central coordinator** lives in:
+Bioethics Bench participates in the wider **Doing Ethics with AI (DEWA)** research program. The canonical durable cross-program self-handoff lives in:
 
 `xnuxi/sacre-prototype` → `docs/CENTRAL_COORDINATOR_CONTINUITY.md` on `main`.
 
-Read that file first when starting a new central-coordination thread. It defines the source-of-truth hierarchy, new-thread bootstrap, manuscript/Drive promotion rules, evidence architecture, SACRE v1 method decisions, branch-control rules, current completion sequence, and author-authorization boundaries.
+The latest compact checkpoint lives beside it in:
 
-Do not copy or independently maintain the full central directive here: duplication creates competing coordinator truth. This Bench file is deliberately an entry point.
+`xnuxi/sacre-prototype` → `docs/CURRENT_COORDINATOR_STATUS.md`.
+
+Read those first when starting a new central-coordination thread. This file intentionally remains a Bench-specific entry point rather than duplicating the entire program handoff.
 
 ## Minimum Bench bootstrap
 
-After reading the canonical central continuity file:
+After reading the canonical central continuity/status files:
 
-1. Fetch the live head of `author/full-corpus-completion` and PR #10; do not reuse a SHA from an old handoff.
+1. Fetch current Bioethics Bench `main` and the current Full Corpus lineage; PR #10 has already been merged. Do not treat `author/full-corpus-completion` as a still-open integration gate unless it is explicitly reactivated.
 2. Read:
-   - `docs/COORDINATOR_DIRECTIVE.md`
    - `docs/PROGRAM_COORDINATION.md`
+   - `docs/COORDINATOR_DIRECTIVE.md`
    - `docs/BRANCH_COORDINATION.md`
-   - `docs/papers/MANUSCRIPT_WRITEBACK.md`
+   - `docs/COMPLETION.md`
+   - `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` — current manuscript-facing drafting surface
+   - `docs/papers/MANUSCRIPT_WRITEBACK.md` — chronological audit trail
+3. For source-review work, read:
+   - `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
+   - generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+   - `docs/full-corpus/review/research-tasks/README.md`
+4. Treat repository-generated records/manifests/review state as authoritative for corpus facts.
+5. Keep the generalized-source architecture track separate from canonical v1 unless the program explicitly re-specifies SACRE's source architecture.
 
-**Drafting note:** `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is the surface to draft P1/P2 from — the Bench findings triaged into the order they are worth using, with current numbers and superseded entries retired. `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail behind it.
+## Current program relationship
 
-   - `docs/SACRE_V1_SOURCE_COMPLETENESS_DECISION.md`
-   - `docs/full-corpus/PHASE_C_CANDIDATE_AUDIT_PROTOCOL.md`
-   - the generated Full Corpus disposition ledger and manifest
-   - `docs/DRIVE_COORDINATION_DELTA.md` if present/non-empty
-3. Treat repository-generated corpus state as authoritative for counts, profiles, geometry, provenance, review, and release status.
-4. Keep `author/full-corpus-completion` as the canonical v1 work lane unless the central program explicitly changes it.
-5. Keep `claude/generalized-source-architecture-track` separate from canonical v1 unless the source architecture is explicitly re-specified at program level.
-6. The release-critical Bench task is independent human source-to-policy fidelity review; machine validity is not that review.
-7. If Bench changes any execution-relevant object, explicitly tell the SACRE lane whether its current vendor pin is still execution-equivalent and update the manuscript writeback queue.
+The core DEWA sequence is:
 
-## Central manuscript/Drive rule
+**P1 specifies → P2 builds → P3 computationally validates → P4 empirically/comparatively validates → P5+ deploys and studies use.**
 
-Repo agents should place paper-ready findings in `docs/papers/MANUSCRIPT_WRITEBACK.md`. The central coordinator integrates those findings into the actual P1/P2/P3 manuscripts, renders/QA-checks promoted DOCX versions, uploads/promotes them on Google Drive in the same work cycle, and updates coordination state. A manuscript version that exists only in chat is not fully promoted.
+Bioethics Bench is a coordinated major research object and planned standalone paper: a source-grounded research infrastructure for computational bioethics. It arose from systematic SACRE/REai investigation, but SACRE/QCCS is the first mature task family rather than the definition of the resource.
 
-## Maintenance
+Keep the intended architecture separable:
 
-Only update this file if the location of the canonical central continuity file or the Bench bootstrap contract changes. Current manuscript versions, evidence sequencing, and central rules belong in the canonical SACRE continuity file plus the live Drive/repo coordination surfaces.
+**resource layer → task layer → evaluation layer.**
+
+A generalization audit should distinguish intrinsic resource fields, generic task/evaluation machinery, and SACRE-specific execution metadata.
+
+## Current Bench evidence boundary
+
+The executable Full Corpus currently contains **34 families / 68 matched concise+detailed records / 210 unique family-level candidates**. Records remain `status: draft` and `reviewed_by_human: false`.
+
+Structural validation is not source fidelity. Model-assisted review is not independent human review. Whole-document omission review has examined five families by that method and found findings in all five; 29 remain unexamined by that method. Do not extrapolate a corpus-wide rate from that subset.
+
+Independent human source-to-policy review remains a quality/release layer. It is **not a gate on developmental or paper-facing SACRE execution** under the current program architecture. Execution-relevant corpus changes still require SACRE re-pin/reverification and, where applicable, rerun.
+
+## Current manuscript interface
+
+The current standalone Bench research/publication plan is **v3** in Drive:
+
+https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
+
+The immediate program-level manuscript task is **P2 maximal integrated master**. Bench should support P2 with the construction story, resource architecture, and bounded developmental findings needed to explain how systematic investigation became possible, without letting P2 absorb the standalone Bench paper.
+
+## Handoff rule
+
+Every substantive Bench handoff states:
+
+**Branch; Merge target; Changed; Verified; Product/paper impact; Evidence status; Writeback status; Cross-repo dependency; Next dependency.**
+
+If an execution-relevant object changes, state explicitly whether SACRE must re-vendor/re-pin and which paper-facing runs are affected.
+
+## Generated review handoff
+
+`docs/full-corpus/review/RESEARCH_HANDOFF.md` is generated by the review tooling and should not be manually edited. It is the precise live answer for review-unit/fingerprint state; the coordination files explain how that state fits the broader program.
