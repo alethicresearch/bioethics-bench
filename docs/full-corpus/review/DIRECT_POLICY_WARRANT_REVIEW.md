@@ -242,9 +242,20 @@ privacy risk, an adequate plan to protect identifiers, and research that could n
 conducted without both the waiver and access to the protected health information. That is the
 regulation.
 
+**M045 `exp2`** — ESHRE Task Force on Ethics and Law 11 (Hum Reprod 2006;21(12):3050-3) concludes
+that conditions are met "when written consent has been given by the deceased person, the partner
+received extensive counselling and a minimum waiting period of 1 year is imposed before a treatment
+can be started." The candidate states all three. Citation now carries volume, pages, PMID and the
+condition set.
+
+**M106 `exp2`** — Israel's Organ Transplant Law 2008 adds credit points to a candidate's
+waiting-list score for donor-card registration, subject to a minimum registration period, with
+clinical suitability and matching still governing. The candidate says exactly that. Citation now
+names the statute rather than only the ministry's public donor-card page.
+
 ## Still open in this tranche
 
-29 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+27 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is

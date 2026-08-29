@@ -62,7 +62,7 @@
         "type": "guideline"
       },
       {
-        "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Human Reproduction. 2006.",
+        "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
         "type": "guideline"
       },
       {
@@ -137,7 +137,7 @@
           "summary": "Adapted from ESHRE Task Force on Ethics and Law 11, which treats posthumous reproduction by a partner as acceptable only with written consent, extensive counseling and a minimum waiting period.",
           "sources": [
             {
-              "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Human Reproduction. 2006.",
+              "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
               "type": "guideline"
             }
           ],
@@ -204,7 +204,7 @@
       "type": "guideline"
     },
     {
-      "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Human Reproduction. 2006.",
+      "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
       "type": "guideline"
     },
     {
@@ -222,5 +222,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program stores reproductive material banked during a couple's family-building treatment. One genetic contributor dies and the surviving partner asks to use the material for reproduction. For this benchmark, assume each represented posthumous-use policy is legally available, there is strong evidence of a shared plan to have children but no explicit signed posthumous-use instruction, there is no evidence the deceased opposed posthumous reproduction, and adequate grieving time and counseling have occurred. The program must decide what authorization threshold should govern reproductive use.",
-  "content_hash": "sha256:f4eb5aac381161f53f5f714a29eb546317269af100b00f37a1fe17f95a36ed96"
+  "content_hash": "sha256:c70cce05b57c8c02a3abafa474583fbdbc18e68948c16490fc10f44ef0b3c6ad"
 }

@@ -59,7 +59,7 @@
         "type": "policy-document"
       },
       {
-        "citation": "Israel Ministry of Health. Get an 'Adi' Donor Card — Priority under the law. Current through 2026.",
+        "citation": "Israel Organ Transplant Law, 2008, donor-card priority provisions, as described by the Israel Ministry of Health's 'Adi' donor-card materials, current through 2026. Registered donors and the families of actual donors receive credit points added to their waiting-list score, subject to a minimum registration period, while clinical suitability and matching continue to govern.",
         "type": "policy-document"
       },
       {
@@ -150,7 +150,7 @@
           "summary": "Adapted directly from Israel's Adi donor-card priority policy, under which qualifying card holders receive transplant waiting-list priority over candidates with the same medical condition who did not sign a donor card.",
           "sources": [
             {
-              "citation": "Israel Ministry of Health. Get an 'Adi' Donor Card — Priority under the law. Current through 2026.",
+              "citation": "Israel Organ Transplant Law, 2008, donor-card priority provisions, as described by the Israel Ministry of Health's 'Adi' donor-card materials, current through 2026. Registered donors and the families of actual donors receive credit points added to their waiting-list score, subject to a minimum registration period, while clinical suitability and matching continue to govern.",
               "type": "policy-document"
             }
           ],
@@ -242,7 +242,7 @@
       "type": "policy-document"
     },
     {
-      "citation": "Israel Ministry of Health. Get an 'Adi' Donor Card — Priority under the law. Current through 2026.",
+      "citation": "Israel Organ Transplant Law, 2008, donor-card priority provisions, as described by the Israel Ministry of Health's 'Adi' donor-card materials, current through 2026. Registered donors and the families of actual donors receive credit points added to their waiting-list score, subject to a minimum registration period, while clinical suitability and matching continue to govern.",
       "type": "policy-document"
     },
     {
@@ -265,5 +265,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A national deceased-donor system depends on voluntary public participation and has persistent organ scarcity. The allocation authority is considering whether a person's prior willingness to join the donor pool should matter if that person later becomes a transplant candidate. For this benchmark, assume medical compatibility, minimum transplant eligibility and core urgency criteria are applied before any reciprocity factor, any credited donor registration occurred before the candidate became seriously ill or knew of the transplant need, the system can exempt candidates who lacked a fair opportunity to register because of age, disability or access barriers, and the policy concerns deceased-donor registration rather than actual prior living donation. The authority must choose whether registration carries no allocation weight, a modest bonus or tie-break among otherwise close candidates, or stronger reciprocal priority after basic clinical criteria are satisfied.",
-  "content_hash": "sha256:79f1093dc800374201a3865f7121fec3dfcb5efd82ee88334b57d097a388f359"
+  "content_hash": "sha256:42e15d3f7c0acb6e0330dc9faa8d8f54f32419779ce62567c933936771883733"
 }
