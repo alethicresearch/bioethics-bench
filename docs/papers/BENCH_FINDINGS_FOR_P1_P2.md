@@ -52,6 +52,14 @@ action-distinctness, citation resolution, traceability and scenario/action diver
 Mode 3 is caught only by reading the whole document, because the failure is in what the record
 leaves out.
 
+**Mode 3 has a second consequence, found since:** an omission does not only understate the source it
+came from — it can misrepresent a *different* pool. M054's expert source (ACMG) both explicitly
+rejects the opt-in default two other candidates represent, and recommends the high-penetrance
+threshold the framework candidate `fw3` derives from principle. So `fw3` has professional backing as
+well as a framework derivation, and a reader taking the framework pool as the
+unsupported-by-evidence layer would be wrong about that family. If P1 characterises what the
+framework pool is, this is the caveat.
+
 **What would falsify it:** nothing found here was a fabricated source or a wrong identifier — the
 mechanical layer held. The claim is about what mechanical checking *reaches*, not that it failed.
 
@@ -163,8 +171,11 @@ model, not the independent human reviewer the release gate names.
   correctly.** Sources were read directly only for the direct-policy class. A bridge can be sound
   reasoning from a finding the source does not report — M030 described "directly elicited care
   preferences" from a study of adult smokers imagining lung cancer.
-- **Mode 3 is under-detected, not rare.** Both instances came from the only two sources read from
-  full text. Every source read at abstract level could carry it invisibly.
+- **Mode 3 is under-detected, not rare — now with a rate.** Three families were given a deliberate
+  whole-document read and **all three carried it** (M054, M075, M139), on top of the two found
+  incidentally (M041, M042). Five findings from five families examined this way. Thirty-one families
+  have not been examined this way at all. Do not extrapolate the rate, but do not describe the
+  corpus as free of it either.
 - **The four-basis rule has no discipline for a partly-authored direct candidate.** Two instances;
   staged as a construction-standard decision, not silently changed.
 
