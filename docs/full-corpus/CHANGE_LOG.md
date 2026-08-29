@@ -13,7 +13,7 @@ something else moved.
 warrant, and no scoring path branches on it. If that ever stops being true, the projection
 in the script must change with it.
 
-**41 commits since 2026-08-27. 24 execution-relevant, 17 provenance-only.**
+**42 commits since 2026-08-27. 24 execution-relevant, 18 provenance-only.**
 
 ## Execution-relevant changes
 
@@ -71,4 +71,5 @@ when convenient; these never require a semantic rerun and must not gate executio
 | `18be0a74` | 2026-08-29 | M028, M041 | Verify M028 and M041 from primary text, and record a third failure mode |
 | `a037e92e` | 2026-08-29 | M004, M030, M034, M042 | Close the expert warrant tranche: all 49 read against their sources |
 | `1c47acd4` | 2026-08-29 | M012, M018, M019, M034, M080, M102, M106, M141 | Repair the author-only citations and close the PMCID hole in the gate |
+| `c90a1fb1` | 2026-08-29 | M045, M060 | Apply the deep-research re-sourcing, and fix two gaps it exposed in the gate |
 

@@ -266,17 +266,18 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none. This is the last review pass the Bench lane can perform without a human.
 - **Integrated into:** _pending_
 
-### Cross-source independence is an assumption the method makes and the corpus must earn
+### Cross-source independence is an assumption the method makes and the corpus must earn — and it was earned
 
-- **Target:** P1 method section on source pools and what a cross-source QCCS cell measures — this is a **method question, not only a corpus defect**; P2 release language
-- **Status:** proposed — **decision required from the coordinator**
+- **Target:** P1 method section on source pools and what a cross-source QCCS cell measures; P2 Bench-construction language
+- **Status:** ready-for-central-integration — **the decision this entry previously requested has been made and implemented**
 - **Branch:** `author/full-corpus-completion`
-- **Commit/evidence:** `docs/full-corpus/review/BRIDGE_REVIEW.md`; guard in `scripts/fidelity-audit.mjs` reporting on every validate run
-- **Evidence class:** method-boundary finding
-- **Lifecycle state:** release-candidate, two families flagged
-- **Proposed writeback:** QCCS compares what *different sources* say about the same policy question, and a public–expert cell scoring high is read as the public and the profession converging. **Two families do not satisfy that assumption.** M045's two public candidates each cite exactly one source — the ASRM Ethics Committee opinion that is also their expert candidate's source — and M060 is the same with the same body. Their provenance is honest about it ("attitude evidence summarized by ASRM"), which is what makes it findable and also what makes it a problem: the public layer is a professional body's *characterisation* of public attitudes, not the attitude studies. In those families' public–expert cells a document is being compared against itself, so a high score is guaranteed by construction.
-  The general point is worth stating in P1 regardless of how these two families are resolved: **source independence is a precondition for a cross-source coherence score to mean anything, and it is not enforced by anything structural.** Nothing in the schema, the geometry, the profile registry or the four-basis taxonomy prevents a public candidate from being derived from the expert document. A corpus can satisfy every construction rule and still contain cells that measure nothing.
-- **Limits:** found in two of 34 families. The guard compares citation strings, so it catches M045 and misses M060, which cites the same document in different words — M060 was found by reading. Two further families (M050, M123) mix a shared professional document with an independent study, which is defensible and recorded rather than flagged.
-- **Dependency:** **three options, and the choice bears on what QCCS requires of a source pool.** (1) Re-source from the studies ASRM summarises — best outcome, most work, and it risks constructing grounding rather than finding it. (2) Declare and keep, excluding the affected public–expert cells from any cross-source coherence claim — cheap, honest, leaves the families executable, and is what the provenance now does as an interim state. (3) Hold both families, taking the corpus to 32 families / 64 records. Options 1 and 3 change the corpus rather than its description.
+- **Commit/evidence:** `docs/full-corpus/review/BRIDGE_REVIEW.md`; guard in `scripts/fidelity-audit.mjs`, which no longer fires
+- **Evidence class:** method-boundary finding, resolved by external source review verified here
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** QCCS reads a high public–expert cell as the public and the profession converging, which assumes the two pools are independent sources. **Nothing structural enforces that** — not the schema, the geometry, the profile registry or the four-basis taxonomy — and two families failed it. M045's and M060's public candidates were grounded in the ASRM Ethics Committee opinions that were also their expert pools' warrant, so those cells compared a document against itself and a high score was guaranteed by construction.
+  It has since been fixed by the route worth reporting: an external research agent traced both opinions back to the population and patient studies underneath them, and both public pools now cite those directly — Barton 2012, Hans 2014, Pastuszak 2013, Nakhuda 2011 and Côté 2014 for M045; Dahl 2006, Winkelman 2015, Kippen 2018 and Dahl 2004 for M060. The ASRM opinions were removed from the public pools entirely. **All nine PMIDs were verified against PubMed here, including the reported figures**, because a real paper carrying an invented statistic is the failure mode this corpus exists to resist.
+  If P1 discusses what a cross-source cell measures, the general claim is the durable part: **source independence is a precondition for a cross-source coherence score to mean anything, it is not implied by satisfying every construction rule, and a corpus can pass all of them while containing cells that measure nothing.** The two families are the worked example, and the repair shows the defect is findable and fixable rather than fatal.
+- **Limits:** found in two of 34 families. The guard compares citation strings, so it caught M045 and missed M060, which cited the same document in different words — M060 was found by reading. Two further families (M050, M123) mix a shared professional document with an independent study, which is defensible and recorded rather than flagged.
+- **Dependency:** none. Provenance-only; no candidate text changed and no SACRE rerun is implied.
 - **Integrated into:** _pending_
 
