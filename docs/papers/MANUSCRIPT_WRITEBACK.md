@@ -221,3 +221,17 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none. Supersede the earlier two-ways entry.
 - **Integrated into:** _pending_
 
+### The first candidate-text error, and what made it findable
+
+- **Target:** P2 Bench-construction language; P1 limitations if a construction-failure example is wanted
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`, M002 section; SACRE re-vendored at `e4c0548`
+- **Evidence class:** construction-failure finding
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** across five review passes and thirty-four families, every defect found had been in a citation or a provenance summary — until M002. Its expert candidate, cited to the WHO QualityRights module on supported decision-making, read "using substitute decision-making only as a last resort." WHO QualityRights is explicitly aligned with CRPD Article 12 as the CRPD Committee reads it, which requires **eliminating** substitute decision-making rather than reserving it; commentary on QualityRights notes it declines even a last-resort framing, on the ground that naming something a last resort is what normalises it. The candidate attributed to a rights-maximalist source the exact formulation it exists to reject.
+  Two things make this worth a paragraph rather than a line. First, **the error's direction was convenient**: the wrong reading made this candidate easier to compare against the AMA surrogate rule in the same pool, and the repair makes the two sharply action-distinct where they had partly converged. Errors that make a corpus tidier are the ones to be most suspicious of. Second, **no mechanical check could have found it**. M002 passed schema, hashing, companion equivalence, geometry, profile, action-distinctness, citation resolution, source traceability and scenario/action divergence. The citation was correct, the source was real and nameable, and the paper existed — the candidate simply said something the source does not. Only reading the source against the candidate finds that, which is the argument for why the human source-to-policy gate is the release gate and not a formality.
+- **Limits:** the module's own wording was not retrievable — WHO's IRIS PDF returns 403 — so the repair rests on documented CRPD alignment plus secondary literature, and the record's provenance says so. That the previous wording was wrong in the permissive direction is not in doubt; the exact replacement should be confirmed by a reviewer with the module.
+- **Dependency:** none for the manuscripts. Execution-relevant for SACRE, already discharged.
+- **Integrated into:** _pending_
+
