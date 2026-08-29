@@ -142,16 +142,15 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none.
 - **Integrated into:** _pending_
 
-### One open release-gate item: M075's public pool has no traceable source
+### The M075 release-gate item is closed, and the missing source turned out to be findable
 
-- **Target:** P2 release-status language; any manuscript statement of the executable family count
-- **Status:** proposed — **decision required from the coordinator**
+- **Target:** P2 release-status language; supersedes the "one open release-gate item" entry this replaces
+- **Status:** ready-for-central-integration
 - **Branch:** `author/full-corpus-completion`
-- **Commit/evidence:** `docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md`; `npm run validate` prints the condition on every run
-- **Evidence class:** source-traceability gap
-- **Lifecycle state:** release-candidate, with one family flagged
-- **Proposed writeback:** M075's candidate audit reports a representative US survey of 4,659 adults preferring broad consent 52% to study-by-study 48%. That one finding is the warrant for both of M075's public candidates, and it is cited nowhere in the repository; PubMed searching has not matched it. `pub1` has since been given a verified second source (Sanderson 2017, eMERGE, PMID 28190457). **`pub2` has none** — a `direct-policy-evidence` candidate with no traceable warrant. No source was substituted, because adjacent literature that could be made to fit does not state the policy, and attaching it would convert a visible gap into an invisible false citation.
-- **Limits:** this is a traceability failure, not a demonstration that the candidate is wrong. The finding may well be real and simply uncited.
-- **Dependency:** **blocks a clean release claim.** Two resolutions: (1) supply the citation, and this closes with a one-line edit; (2) hold M075, taking the corpus to 33 families / 66 records, which moves the manifest, SACRE's vendor pin and any manuscript-stated count. Option 2 is a cross-project change and is recorded rather than taken. **Until this is resolved, manuscripts should not describe the Full Corpus executable subset as fully source-traceable.** The count of 34 remains correct as of this branch.
+- **Commit/evidence:** `docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md`; `npm run validate` reports no unresolved source
+- **Evidence class:** corpus construction / source identification
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** M075's public pool rested on a survey the repository described but never cited — 4,659 US adults, broad consent 52% against study-by-study 48%. It has been identified as Platt et al., *Genet Med* 2014;16(1):11-8, PMID 23660530, verified against the abstract: sample size and both percentages match exactly. **No candidate in the Full Corpus now rests on an unresolved source.** Platt is also worth a sentence on its own merits if P2 discusses the four-basis taxonomy: it is an unusually clean case of `direct-policy-evidence` in the public pool, because it elicited preferences *over consent models themselves* rather than preferences from which a consent model must be inferred. That is what the action-target alignment rule asks for, and the reason it is rare — 98 of 138 public candidates need a declared inference bridge and only 40 are direct.
+- **Limits:** identification establishes that the source exists and reports what the audit said it reports. It does not by itself establish that the candidate's policy wording is the right translation of it.
+- **Dependency:** none. **The earlier writeback saying manuscripts should not describe the corpus as fully source-traceable is withdrawn.** The count of 34 families stands and no family is held.
 - **Integrated into:** _pending_
-

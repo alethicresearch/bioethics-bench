@@ -83,7 +83,7 @@
           "summary": "Adapted from participant/public studies that directly compared consent models and found substantial preference for broad consent after an active initial choice. The bounded-governance wording matches the decision object rather than attributing blanket consent to respondents.",
           "sources": [
             {
-              "citation": "UNRESOLVED SOURCE. A representative US genomic-research survey of 4,659 adults reporting broad consent preferred 52% to study-by-study 48%. No bibliographic record has been matched to this finding anywhere in the repository. Disposition: docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md.",
+              "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SL, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-8. Online survey of a representative sample of 4,659 US adults; broad consent preferred by 52% against study-by-study consent by 48%. PMID 23660530.",
               "type": "survey"
             },
             {
@@ -101,15 +101,11 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from the same direct consent-model evidence documenting a large study-by-study-consent preference and from longitudinal evidence that preferences about future uses can change over time.",
+          "summary": "Adapted from the same direct consent-model evidence documenting a large study-by-study-consent preference and from longitudinal evidence that preferences about future uses can change over time. The warrant is the 48% of that survey who preferred study-by-study consent: a preference expressed over consent models themselves rather than over research participation, which is why the basis is direct. The dossier also refers to dynamic-consent literature on preferences changing over time; no specific study was matched to that claim and it is not carried here as a source.",
           "sources": [
             {
-              "citation": "UNRESOLVED SOURCE. A representative US genomic-research survey of 4,659 adults reporting broad consent preferred 52% to study-by-study 48%. No bibliographic record has been matched to this finding anywhere in the repository. Disposition: docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md.",
+              "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SL, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-8. Online survey of a representative sample of 4,659 US adults; broad consent preferred by 52% against study-by-study consent by 48%. PMID 23660530.",
               "type": "survey"
-            },
-            {
-              "citation": "UNRESOLVED SOURCE. Dynamic-consent and biobank studies reporting that donor preferences change over time. No specific study has been matched to this claim anywhere in the repository. Disposition: docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md.",
-              "type": "article"
             }
           ],
           "adapted_not_reproduced": true
@@ -238,5 +234,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.",
-  "content_hash": "sha256:fb965f85b79f242e1ea4bc8d2d63c816e0b36bf51602a2d1bcc982cc80ae379d"
+  "content_hash": "sha256:5f4be3c85a7ee8301183bc862e946274ef69a607789d449affead2378f2cc730"
 }
