@@ -2,7 +2,10 @@
 
 **Program objective:** finish a defensible canonical Full Corpus v1 and its release substrate while keeping the Bench, SACRE application, and near-term P1/P2 manuscripts synchronized.
 
+If this work is being resumed in a new central-coordination chat, read **`docs/CENTRAL_COORDINATOR_CONTINUITY.md` first**. This Bench file points to the canonical program-level handoff in the SACRE repo; the present file remains the lane-specific directive.
+
 Read this together with:
+- `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
 - `docs/PROGRAM_COORDINATION.md`
 - `docs/BRANCH_COORDINATION.md`
 - `docs/papers/MANUSCRIPT_WRITEBACK.md`
