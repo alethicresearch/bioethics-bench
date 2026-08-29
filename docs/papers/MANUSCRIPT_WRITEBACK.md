@@ -154,3 +154,17 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Limits:** identification establishes that the source exists and reports what the audit said it reports. It does not by itself establish that the candidate's policy wording is the right translation of it.
 - **Dependency:** none. **The earlier writeback saying manuscripts should not describe the corpus as fully source-traceable is withdrawn.** The count of 34 families stands and no family is held.
 - **Integrated into:** _pending_
+
+### "Direct policy evidence" from a public survey means the instrument asked about the policy
+
+- **Target:** P1 method section on the four-basis taxonomy; P2 Bench-construction language
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`; all 20 public `direct-policy-evidence` candidates, sources read against candidates
+- **Evidence class:** corpus construction / source reading by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the papers state the action-target alignment rule — willingness to use is not a policy to establish, uptake under a default is not endorsement — but state it as a principle. Reviewing every public-pool `direct-policy-evidence` candidate against its sources gives it an operational test that can be shown rather than asserted: **the basis is earned when the instrument put a policy to the respondent instead of asking about the respondent.** M028 is the worked example, because one study contains both questions. Ludka 2025 asked whether *the hospital should be required* to continue treatment when a family rejects brain death (41.9% agreed) and separately what respondents would want *for themselves* (24.4%). The record cites the first. Two numbers, one study, and the whole rule is visible in the gap between them. All 20 candidates hold; six needed a citation or summary repair, none needed a basis or action change.
+- **Limits:** abstract-level reading. M144's three sources are correctly identified and on topic, but two are research letters without structured abstracts and its specific claims were not confirmed. The 98 expert `direct-policy-evidence` candidates are not covered.
+- **Dependency:** none. Usable as written.
+- **Integrated into:** _pending_
+
