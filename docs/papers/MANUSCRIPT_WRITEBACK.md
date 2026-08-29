@@ -128,3 +128,30 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Limits:** these are judgments about candidate texts, made by a model. No geometry was changed and no record was edited on the strength of them; they are recorded for the human gate.
 - **Dependency:** if the coordinator wants the distinctness rule restated in P1, this is the evidence for it. Do not present it as a validated empirical result.
 - **Integrated into:** _pending_
+
+### A traceability check found the circular citations, and they clustered exactly where theory predicts
+
+- **Target:** P2 Bench-construction and release-gate language; P1 limitations if a construction-failure example is wanted
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md`; the guard in `scripts/fidelity-audit.mjs`
+- **Evidence class:** corpus construction / mechanical verification plus source reading
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** seven source citations in the Full Corpus named one of the repository's own audit documents as a candidate's warrant — grounding the record in a document written from the record. Of 420 candidates, **all seven were in the public pool and all seven were on `direct-policy-evidence` candidates**, the single basis that asserts a source *states* the policy. That distribution is the point worth making: circular grounding does not appear at random, it appears where a construction pass reaches for a summary instead of a source, which is the strongest-claim class. Five are now repaired against identified sources and a build guard makes the count non-recoverable. If P2 wants a concrete instance of why structural validation is not fidelity, this is a better one than any abstract statement: every one of the seven passed schema, hashing, companion equivalence, geometry and profile checks.
+- **Limits:** the check establishes traceability, not warrant. Reaching the source is not reading it.
+- **Dependency:** none.
+- **Integrated into:** _pending_
+
+### One open release-gate item: M075's public pool has no traceable source
+
+- **Target:** P2 release-status language; any manuscript statement of the executable family count
+- **Status:** proposed — **decision required from the coordinator**
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md`; `npm run validate` prints the condition on every run
+- **Evidence class:** source-traceability gap
+- **Lifecycle state:** release-candidate, with one family flagged
+- **Proposed writeback:** M075's candidate audit reports a representative US survey of 4,659 adults preferring broad consent 52% to study-by-study 48%. That one finding is the warrant for both of M075's public candidates, and it is cited nowhere in the repository; PubMed searching has not matched it. `pub1` has since been given a verified second source (Sanderson 2017, eMERGE, PMID 28190457). **`pub2` has none** — a `direct-policy-evidence` candidate with no traceable warrant. No source was substituted, because adjacent literature that could be made to fit does not state the policy, and attaching it would convert a visible gap into an invisible false citation.
+- **Limits:** this is a traceability failure, not a demonstration that the candidate is wrong. The finding may well be real and simply uncited.
+- **Dependency:** **blocks a clean release claim.** Two resolutions: (1) supply the citation, and this closes with a one-line edit; (2) hold M075, taking the corpus to 33 families / 66 records, which moves the manifest, SACRE's vendor pin and any manuscript-stated count. Option 2 is a cross-project change and is recorded rather than taken. **Until this is resolved, manuscripts should not describe the Full Corpus executable subset as fully source-traceable.** The count of 34 remains correct as of this branch.
+- **Integrated into:** _pending_
+
