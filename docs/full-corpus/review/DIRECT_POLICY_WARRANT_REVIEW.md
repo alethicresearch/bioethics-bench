@@ -363,9 +363,55 @@ one document's two clauses, a low score reflects tension *within* a single profe
 which is a different finding about the field, and one the corpus can now distinguish because the
 citations say which case each family is.
 
+## Expert pool, batch 4
+
+Five more verified against primary documents, four citations sharpened, and a second instance of
+the taxonomy gap.
+
+**M141 `exp2` — verified against both operative clauses.** The DHSC framework's five principles
+begin: use of NHS data must have "an explicit aim to improve patient health and care or the
+operation of the NHS," and "fair terms should be agreed for the NHS." The candidate's two
+conditions are those two principles. Citation now lists all five.
+
+**M146 `exp1` — verified nearly verbatim.** AMA guidance on using health AI in the exam room:
+"If AI tools are being used during an encounter — especially ambient scribing — physicians should
+explain the technology, secure consent and reassure patients about HIPAA compliance." The candidate
+is that sentence made executable. M146 is the third of the three families built in this session; all
+three now hold against their primary sources.
+
+**M050 `exp1` — verified on both clauses.** People conceived from donors registered after 1 April
+2005 may apply to the HFEA at 18 for identifying information, and donors are encouraged but under
+no obligation to have contact — which is exactly the candidate's "identity release does not create a
+duty of personal contact."
+
+**M012 `exp1` — verified at document level, with a dating note.** The ISSCR guidelines version 1.2
+of August 2025 exists and contains a section on unproven stem-cell-based interventions. The August
+2025 release is a *targeted* update covering stem-cell-based embryo models; every other section,
+including this one, remains as published in 2021. The citation now says so, because "version 1.2,
+August 2025" otherwise implies the unproven-interventions guidance is a 2025 position. The specific
+clauses were not retrievable, so this is document-level rather than clause-level verification.
+
+### M144 — the taxonomy gap, second instance
+
+AMA Policy H-480.931 supplies the candidate's controlling phrase verbatim: transparency and
+disclosure decisions "should be based upon a risk- and impact-based approach," with the need for
+disclosure greater where the technology carries greater risk of harm to a patient. That is a real
+and precise match.
+
+But much of what H-480.931 enumerates is disclosure **by the AI developer to purchasers and
+physicians** — regulatory approval status, consensus standards, intended use and population,
+limitations. The candidate carries the risk-and-impact *principle* across to **physician-to-patient**
+disclosure. That is a defensible move and it is what the family needs, but it is a step the source
+does not itself take, and it was not declared. The citation now states it.
+
+This is the same shape as M025: a candidate that is mostly direct and partly authored, with the
+authored part undeclared. Two instances in 33 candidates read is no longer a one-off, and it
+strengthens the case for fixing the construction standard rather than treating each occurrence as a
+local repair.
+
 ## Still open in this tranche
 
-21 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
+16 of the 49 expert `direct-policy-evidence` candidates have not been read against their primary
 documents. Traceability and temporal anchoring hold for all 49; what remains is confirming that
 each document says what is attributed to it. The two errors found in the first 16 were both in the
 provenance layer rather than in a candidate's action, and neither changed a geometry — which is

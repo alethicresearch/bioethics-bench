@@ -149,7 +149,7 @@
           "summary": "Adapted from convergent current ISSCR guidance condemning commercial use of unproven stem-cell interventions outside rigorous research or tightly constrained compliant innovation, FDA warnings about unapproved regenerative products, and professional counseling literature emphasizing education, non-abandonment, and avoidance of unwarranted legitimization.",
           "sources": [
             {
-              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
               "type": "guideline"
             },
             {
@@ -192,7 +192,7 @@
           "summary": "Derived from nonmaleficence, professional integrity, and responsible-innovation reasoning. The executable non-facilitation rule is Bench-authored.",
           "sources": [
             {
-              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
               "type": "guideline"
             }
           ]
@@ -220,7 +220,7 @@
   },
   "references": [
     {
-      "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025.",
+      "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
       "type": "guideline"
     },
     {
@@ -242,5 +242,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:657edcef34c0c3e656208823ddcae9fc9ea60a4030077b938a251f2cd19ae6fe"
+  "content_hash": "sha256:9f27f8d1181fc2e8ed9a667c493aa27363cdb5a50f83e247f90ee15080c4b886"
 }

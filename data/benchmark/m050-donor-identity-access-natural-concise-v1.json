@@ -161,7 +161,7 @@
           "summary": "Adapted from the HFEA's current open-identity regulatory architecture for most donations made after 1 April 2005, under which eligible donor-conceived adults can request identifying donor information at 18 and donors are not required to respond or meet.",
           "sources": [
             {
-              "citation": "HFEA. Rules around releasing donor information; FAQs for donors, donor-conceived people and their parents, current through 2026.",
+              "citation": "HFEA. Rules around releasing donor information; FAQs for donors, donor-conceived people and their parents, current through 2026. People conceived from donors who registered after 1 April 2005 may apply to the HFEA at 18 for information identifying their donor; donors are encouraged but under no obligation to have contact.",
               "type": "policy-document"
             }
           ],
@@ -313,5 +313,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program is designing prospective rules for future gamete donation. Donor-conceived adults may have strong interests in genetic-origin information, while donors and recipient parents may value privacy or controlled contact. For this benchmark, assume open-identity, mutual-consent identity release and program-level nonidentification are legally available, the policy is disclosed before donation and treatment, relevant medical and genetic information is permanently retained, and consumer DNA matching may reveal donor identity regardless of clinic policy. The program must decide what identity-disclosure rule to promise.",
-  "content_hash": "sha256:1be815ef669a39aafd99de4accb8dba5e54565f77f8107794254400326a57f69"
+  "content_hash": "sha256:326f7d7926b935914286290b796eabe8c3c3380d9fa64df8ac69a10da606b72c"
 }

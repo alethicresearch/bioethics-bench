@@ -161,7 +161,7 @@
           "summary": "Adapted from the HFEA's current open-identity regulatory architecture for most donations made after 1 April 2005, under which eligible donor-conceived adults can request identifying donor information at 18 and donors are not required to respond or meet.",
           "sources": [
             {
-              "citation": "HFEA. Rules around releasing donor information; FAQs for donors, donor-conceived people and their parents, current through 2026.",
+              "citation": "HFEA. Rules around releasing donor information; FAQs for donors, donor-conceived people and their parents, current through 2026. People conceived from donors who registered after 1 April 2005 may apply to the HFEA at 18 for information identifying their donor; donors are encouraged but under no obligation to have contact.",
               "type": "policy-document"
             }
           ],
@@ -313,5 +313,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program is redesigning the consent terms for future sperm, oocyte and embryo donation. Donor-conceived adults often report strong interests in medical, genealogical and identifying information, while some donors and recipient parents prefer privacy, nonidentification or controlled contact. External consumer DNA databases can identify genetic relatives even when clinics do not release names. For this benchmark, assume the policy applies prospectively before donation and treatment; open-identity, mutual-consent disclosure and program-level nonidentification are all legally available; relevant medical and genetic information is permanently retained; and all parties are told that DNA matching may reveal identity outside the program. The program must choose whether adult offspring receive identifying information at maturity, whether identification requires mutual consent, or whether clinic records remain nonidentifying while the program explicitly refuses to guarantee practical anonymity.",
-  "content_hash": "sha256:2c1dcdf83933ec9fb453f669e30cadd696fd359357c5116182be79db23ea0a40"
+  "content_hash": "sha256:ce772f241300bdfc51952beef75355fe98bd1d803808d48148cec982b63bd252"
 }

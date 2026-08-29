@@ -56,7 +56,7 @@
     "summary": "Bench-authored AI-transparency case grounded in current AMA/WHO governance and direct patient/public studies of AI notification. It fixes validated tools, clinician responsibility, a range of clinical impact, available general notice and contestability so candidate policies differ on the threshold for case-specific patient disclosure.",
     "sources": [
       {
-        "citation": "AMA Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026.",
+        "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
         "type": "policy-document"
       },
       {
@@ -134,7 +134,7 @@
           "summary": "Adapted from current AMA policy, which explicitly makes transparency/disclosure risk- and impact-based, requires disclosure when AI impacts access or point-of-care medical decisions, and requires clear disclosure for direct patient-facing AI. WHO transparency, intelligibility and human-autonomy principles support the same tiered governance direction.",
           "sources": [
             {
-              "citation": "AMA Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026.",
+              "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
               "type": "policy-document"
             },
             {
@@ -202,7 +202,7 @@
   },
   "references": [
     {
-      "citation": "AMA Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026.",
+      "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
       "type": "policy-document"
     },
     {
@@ -233,5 +233,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A health system uses validated AI tools ranging from routine low-impact workflow support to systems that materially influence diagnosis, monitoring or treatment recommendations. For this benchmark, assume clinicians remain responsible for final decisions, the system can provide clear general transparency about routine lower-impact AI, and case-specific disclosure lets patients ask what role the AI played and request clinician explanation or review. The governance committee must decide whether every material AI contribution should receive case-specific disclosure or whether specific notice should be reserved for consequential/high-impact AI while lower-impact use is covered by general transparency.",
-  "content_hash": "sha256:71120fe8f17247ee10db18ce1f49ef6ac42de3449d43a7e010745028c3b5c62c"
+  "content_hash": "sha256:8f6afd3281492b75df3dc1404276d658e87358d6dc11b782e548f7169b4b484a"
 }
