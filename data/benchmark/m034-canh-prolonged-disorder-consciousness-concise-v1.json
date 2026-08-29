@@ -150,7 +150,7 @@
           "summary": "Adapted from convergent professional guidance emphasizing diagnostic rigor and serial assessment in prolonged disorders of consciousness and treating artificially administered nutrition and hydration as a clinical intervention subject to collaborative autonomy, benefit/burden, and ethical review. Current sources support one individualized process architecture rather than opposed professional endpoints.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. PMID 30098791.",
+              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. 2018. Recommends serial, standardized neurobehavioral assessment with measures shown valid and reliable, to improve diagnostic accuracy, and care from multidisciplinary teams with specialized expertise. The benefit/burden and patient-preference process this candidate also states comes from the ASPEN and ESPEN ethics guidelines cited alongside. PMID 30098791.",
               "type": "guideline"
             },
             {
@@ -177,7 +177,7 @@
           "summary": "Derived from preservation of life, epistemic humility, and disability-justice reasoning. The executable continuation rule is Bench-authored.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Disorders of Consciousness guideline. PMID 30098791.",
+              "citation": "Giacino JT, Katz DI, Schiff ND, et al. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. Arch Phys Med Rehabil. 2018;99(9):1699-709. AAN/ACRM/NIDILRR. PMID 30098791.",
               "type": "guideline"
             }
           ]
@@ -243,5 +243,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:3a65ec1a2fc5c77d3cb177972fd1961be99e936e746a09ad3d58acafe58d0bd7"
+  "content_hash": "sha256:8bc006f37ea1fb646cab15c294d200738f8d5b5a7a5e734b45b05838fcef9ee0"
 }

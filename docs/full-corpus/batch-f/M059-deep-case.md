@@ -105,3 +105,34 @@ Mitochondrial disease/reproductive genetics; HFEA/regulatory expertise; affected
 ## 18. Downstream record rule
 
 Candidate audit must determine whether the two HFEA-derived action thresholds are genuinely distinct or nested formulations of one conditional policy. Do not manufacture a second expert candidate if they collapse.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**The two HFEA formulations are one architecture, not two candidates.** This was the specific
+question the dossier posed: whether "general serious-disease case approval versus a narrower
+alternatives-exhausted threshold" are action-distinct, or "merely two phrasings of the same rule."
+
+Current HFEA guidance states one eligibility architecture: only people at very high risk of passing
+a serious mitochondrial disease to their children are eligible, those with less serious forms may
+not qualify, and every request requires case-by-case HFEA approval at a licensed centre. The 2016
+transition language about cautious use where alternatives "would offer little or no benefit" states
+the rationale for that same restrictive threshold rather than a competing rule. Under the fixed
+scenario — a couple at very high risk of serious mitochondrial disease — both formulations produce
+the same action: case-by-case approval. They do not diverge where the case is fixed, and construction
+rule 7 makes that one candidate.
+
+**Public layer is not candidate-ready**, as the dossier concedes: the UK public dialogue, consultation
+and patient/family evidence is genuinely policy-directed, unusually so for this corpus, but it is
+historical and qualitative and "less cleanly candidate-ready than a contemporary randomized
+public-policy survey."
+
+**Held** at 1 expert candidate. This is a finding worth preserving: M059 was the strongest remaining
+case for expert pluralism and it did not survive contact with the current regulatory text.
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

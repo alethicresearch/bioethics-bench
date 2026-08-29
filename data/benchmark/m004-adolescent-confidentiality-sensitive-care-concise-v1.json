@@ -52,13 +52,13 @@
         "accessed": "2026-08-27"
       },
       {
-        "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+        "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
         "type": "article",
         "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
         "accessed": "2026-08-27"
       },
       {
-        "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+        "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
         "type": "guideline",
         "doi": "10.1542/peds.2024-066326",
         "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -111,7 +111,7 @@
               "accessed": "2026-08-27"
             },
             {
-              "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+              "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
               "type": "article",
               "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
               "accessed": "2026-08-27"
@@ -132,7 +132,7 @@
           "summary": "Adapted from convergent AAP, SAHM and ACOG guidance treating confidentiality as central to adolescent care while supporting voluntary family involvement and defined safety/legal exceptions.",
           "sources": [
             {
-              "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+              "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
               "type": "guideline",
               "doi": "10.1542/peds.2024-066326",
               "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -215,13 +215,13 @@
       "accessed": "2026-08-27"
     },
     {
-      "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+      "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
       "type": "article",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
       "accessed": "2026-08-27"
     },
     {
-      "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+      "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326. Supports the right to adolescent confidentiality as a foundational element of accessible care while encouraging adolescents to discuss health issues with parents or guardians. PMID 38646690.",
       "type": "guideline",
       "doi": "10.1542/peds.2024-066326",
       "url": "https://publications.aap.org/pediatrics/article/153/5/e2024066326/197124/Confidentiality-in-the-Care-of-Adolescents-Policy",
@@ -246,5 +246,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:9bc6103a85ed30ac49290ff137278f2a106011f8f04769cf3f0c1bb4f54f1c94"
+  "content_hash": "sha256:d8d4e296c33242def1e1ff918215fe44825830d9254c05fca08028ba246b56cb"
 }

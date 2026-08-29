@@ -1,0 +1,258 @@
+{
+  "case_id": "m129-disability-weights-qalys-coverage",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Disability weights and QALYs in coverage decisions",
+  "short_description": "A public health-technology assessment body must choose the outcome measure governing reimbursement when disability organizations hold that conventional quality weighting undervalues life extension for people living with disability.",
+  "decision_question": "What outcome-measurement rule should a public health-technology assessment body use for coverage decisions when conventional quality weights are argued to undervalue benefits to people living with disability?",
+  "jurisdiction_context": "Jurisdiction-neutral public health-technology assessment, evidence-dated 2026, informed by NICE and ICER methods and by United States disability-policy positions on QALY use.",
+  "as_of_date": "2026-08-28",
+  "stipulations": [
+    {
+      "id": "m129-disability-weights-qalys-coverage-life-extending",
+      "kind": "scientific",
+      "statement": "The treatment under evaluation extends life and improves some function for people already living with substantial disability, but does not restore them to population-average health.",
+      "rationale": "The represented disagreement concerns how a measurement rule values life extension from a lower baseline; a treatment that normalised health would not engage it."
+    },
+    {
+      "id": "m129-disability-weights-qalys-coverage-measurement-not-effectiveness",
+      "kind": "scientific",
+      "statement": "Clinical effectiveness is not in dispute; the disagreement concerns the outcome measure used to express benefit.",
+      "rationale": "The dossier's construction risks require separating health-state valuation from clinical effectiveness, or the case collapses into an evidence dispute."
+    },
+    {
+      "id": "m129-disability-weights-qalys-coverage-population-not-persons",
+      "kind": "contextual",
+      "statement": "The measurement rule governs comparisons between treatments for reimbursement, not the ranking of individual patients for access.",
+      "rationale": "Using a metric to compare interventions and using it to rank persons are different practices and the objection to each differs."
+    },
+    {
+      "id": "m129-disability-weights-qalys-coverage-budget-constrained",
+      "kind": "contextual",
+      "statement": "The payer operates under a fixed budget, so funding this treatment displaces other funded care.",
+      "rationale": "Opportunity cost must remain visible; without it the efficiency position has nothing to weigh."
+    }
+  ],
+  "position_families": [
+    "standard QALY cost-effectiveness with equal QALY weighting",
+    "QALYs with explicit severity and equity modifiers applied after the reference case",
+    "an equal-value life-extension metric with functional benefit assessed separately",
+    "no measure that weights life years by health-state quality in coverage decisions"
+  ],
+  "domains": [
+    "allocation-transplantation",
+    "disability-mental-health"
+  ],
+  "tags": [
+    "QALY",
+    "cost-effectiveness",
+    "health technology assessment",
+    "disability justice",
+    "equal value life years",
+    "severity modifier",
+    "NICE",
+    "ICER",
+    "non-discrimination",
+    "natural asymmetry",
+    "singleton public pool"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored health-technology-assessment representation grounded in two currently divergent institutional measurement architectures and in formal policy positions taken by disability-led organizations. It fixes clinical effectiveness, the fixed budget and the treatment-comparison scope so the represented variable is the measurement rule itself rather than evidence quality or individual rationing.",
+    "sources": [
+      {
+        "citation": "National Institute for Health and Care Excellence. NICE health technology evaluations: the manual (PMG36). The reference case regards all QALYs as being of equal weight; severity is assessed by absolute and proportional shortfall and applied as a quantitative QALY weight of x1.2 or x1.7, with further modifiers considered qualitatively in committee deliberation.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Institute for Clinical and Economic Review. Cost-Effectiveness, the QALY, and the evLYG; 2023 Value Assessment Framework. ICER uses the equal value life year gained as its usual measure of health gain, weighting years of life gained uniformly regardless of age, disease or level of disability in order to address the potential discriminatory effect of the cost per QALY, while also reporting cost per QALY for benchmarking against other assessments.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "National Council on Independent Living. Resolution Opposing the Use of QALYs (Quality Adjusted Life Years), adopted 23 July 2020. NCIL is a cross-disability grassroots organization run by and for people with disabilities; the resolution states that NCIL opposes the use of the QALY in all decisions concerning health care coverage and commits to supporting state and federal efforts to prohibit it.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "National Council on Disability. Quality-Adjusted Life Years and the Devaluation of Life with a Disability. Washington DC, 2019. Found sufficient evidence of discriminatory effects of QALYs to recommend prohibition, and recommended that Congress prohibit Medicare and Medicaid from using the QALY.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Patient Protection and Affordable Care Act, section 1182: prohibits PCORI from using a QALY or similar measure that discounts the value of a life because of an individual's disability as a threshold for what care is cost effective or recommended, and prohibits the Secretary of HHS from using such measures to determine coverage, reimbursement or incentive programs under Medicare.",
+        "type": "policy-document"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Do not use a measure that weights years of life by health-state quality in coverage decisions, because a rule that discounts a life year by the recipient's baseline disability should not determine access to care.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from formal policy positions of disability-led and disability-policy bodies, not from attitude data. NCIL, a cross-disability organization run by and for people with disabilities, resolved that it opposes the use of the QALY in all decisions concerning health care coverage; the National Council on Disability recommended prohibition; and the Affordable Care Act already bars the use of such measures for Medicare coverage determination. A competing-policy sweep of the affected-community layer found convergence rather than division: advocacy has consistently sought prohibition or replacement rather than equity-weighted reform, so this pool is a legitimate singleton.",
+          "sources": [
+            {
+              "citation": "National Council on Independent Living. Resolution Opposing the Use of QALYs (Quality Adjusted Life Years), adopted 23 July 2020. NCIL is a cross-disability grassroots organization run by and for people with disabilities; the resolution states that NCIL opposes the use of the QALY in all decisions concerning health care coverage and commits to supporting state and federal efforts to prohibit it.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "National Council on Disability. Quality-Adjusted Life Years and the Devaluation of Life with a Disability. Washington DC, 2019. Found sufficient evidence of discriminatory effects of QALYs to recommend prohibition, and recommended that Congress prohibit Medicare and Medicaid from using the QALY.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "Patient Protection and Affordable Care Act, section 1182: prohibits PCORI from using a QALY or similar measure that discounts the value of a life because of an individual's disability as a threshold for what care is cost effective or recommended, and prohibits the Secretary of HHS from using such measures to determine coverage, reimbursement or incentive programs under Medicare.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Keep the quality-adjusted life year as the reference-case outcome with all QALYs equally weighted there, and correct for distributive concerns afterwards by applying an explicit severity weight based on health shortfall together with further modifiers considered in committee deliberation.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from the NICE health technology evaluations manual, under which the reference case regards all QALYs as of equal weight, severity is measured as absolute and proportional shortfall and applied as a quantitative QALY weight of x1.2 or x1.7, and remaining modifiers are taken into account qualitatively. The architecture retains the QALY and layers correction on top of it.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Excellence. NICE health technology evaluations: the manual (PMG36). The reference case regards all QALYs as being of equal weight; severity is assessed by absolute and proportional shortfall and applied as a quantitative QALY weight of x1.2 or x1.7, with further modifiers considered qualitatively in committee deliberation.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Use an equal-value life-year measure as the usual metric, weighting each year of life gained uniformly regardless of the recipient's age, disease or level of disability, and report cost per quality-adjusted life year alongside it for comparison rather than as the decision rule.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from ICER's value assessment framework, which uses the equal value life year gained as its usual measure of health gain specifically to address the potential discriminatory effect of cost per QALY, while continuing to report cost per QALY for benchmarking against other assessments. This changes the measure itself rather than correcting its output.",
+          "sources": [
+            {
+              "citation": "Institute for Clinical and Economic Review. Cost-Effectiveness, the QALY, and the evLYG; 2023 Value Assessment Framework. ICER uses the equal value life year gained as its usual measure of health gain, weighting years of life gained uniformly regardless of age, disease or level of disability in order to address the potential discriminatory effect of the cost per QALY, while also reporting cost per QALY for benchmarking against other assessments.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Retain standard quality-adjusted life years as the decision rule because a single common metric is what makes the health forgone by funding one treatment rather than another visible and contestable.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from comparability and opportunity-cost reasoning: under a fixed budget every funding decision displaces care, and a shared scalar is what allows that displacement to be seen rather than hidden in incommensurable judgements. The executable rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "National Institute for Health and Care Excellence. NICE health technology evaluations: the manual (PMG36). The reference case regards all QALYs as being of equal weight; severity is assessed by absolute and proportional shortfall and applied as a quantitative QALY weight of x1.2 or x1.7, with further modifiers considered qualitatively in committee deliberation.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Value a year of life extension equally whatever the recipient's baseline health, and assess improvements in function as a separate consideration rather than folding them into the value of survival.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from equality and non-discrimination reasoning: baseline disability should not make an added year of life intrinsically worth less to the person living it, whatever aggregate preference data say about states of health. The separation of survival from functional benefit is Bench-authored.",
+          "sources": [
+            {
+              "citation": "National Council on Disability. Quality-Adjusted Life Years and the Devaluation of Life with a Disability. Washington DC, 2019. Found sufficient evidence of discriminatory effects of QALYs to recommend prohibition, and recommended that Congress prohibit Medicare and Medicaid from using the QALY.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Treat any single measure as one input among several rather than as the complete decision rule, and require the agency to state its distributive judgements explicitly alongside the metric instead of encoding them inside it.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from plural-measurement reasoning: no scalar captures every relevant distributive value, and the specific objection to hidden modifiers is that a metric presented as technical is carrying contested normative weight. The executable requirement to externalise those judgements is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Institute for Clinical and Economic Review. Cost-Effectiveness, the QALY, and the evLYG; 2023 Value Assessment Framework. ICER uses the equal value life year gained as its usual measure of health gain, weighting years of life gained uniformly regardless of age, disease or level of disability in order to address the potential discriminatory effect of the cost per QALY, while also reporting cost per QALY for benchmarking against other assessments.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-1x2x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 demonstration of a legitimate singleton source pool arising from documented convergence rather than from missing evidence, and of two expert architectures that correct the same objection at different points in the calculation."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "National Institute for Health and Care Excellence. NICE health technology evaluations: the manual (PMG36). The reference case regards all QALYs as being of equal weight; severity is assessed by absolute and proportional shortfall and applied as a quantitative QALY weight of x1.2 or x1.7, with further modifiers considered qualitatively in committee deliberation.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Institute for Clinical and Economic Review. Cost-Effectiveness, the QALY, and the evLYG; 2023 Value Assessment Framework. ICER uses the equal value life year gained as its usual measure of health gain, weighting years of life gained uniformly regardless of age, disease or level of disability in order to address the potential discriminatory effect of the cost per QALY, while also reporting cost per QALY for benchmarking against other assessments.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "National Council on Independent Living. Resolution Opposing the Use of QALYs (Quality Adjusted Life Years), adopted 23 July 2020. NCIL is a cross-disability grassroots organization run by and for people with disabilities; the resolution states that NCIL opposes the use of the QALY in all decisions concerning health care coverage and commits to supporting state and federal efforts to prohibit it.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "National Council on Disability. Quality-Adjusted Life Years and the Devaluation of Life with a Disability. Washington DC, 2019. Found sufficient evidence of discriminatory effects of QALYs to recommend prohibition, and recommended that Congress prohibit Medicare and Medicaid from using the QALY.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Patient Protection and Affordable Care Act, section 1182: prohibits PCORI from using a QALY or similar measure that discounts the value of a life because of an individual's disability as a threshold for what care is cost effective or recommended, and prohibits the Secretary of HHS from using such measures to determine coverage, reimbursement or incentive programs under Medicare.",
+      "type": "policy-document"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m129-disability-weights-qalys-coverage-natural-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m129-disability-weights-qalys-coverage-natural-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
+  },
+  "scenario": "A national health-technology assessment agency is deciding what outcome measure should govern its reimbursement recommendations. The immediate occasion is a treatment that extends life and improves some function for people with a severe chronic disability, without restoring them to population-average health. Standard cost-effectiveness modelling expresses benefit as quality-adjusted life years derived from health-state utilities, so a year of life gained is weighted by measured quality of life. Disability-led organizations argue that this encodes public preferences about living with disability into the coverage rule and makes an identical year of added life count for less when the recipient's baseline is lower; in the United States that argument has produced formal opposition from disability-led bodies, a federal recommendation of prohibition, and a statutory bar on using such measures for Medicare coverage. The agency also recognises what the QALY does well: it captures benefit beyond survival and makes opportunity costs visible across unrelated conditions, which matters because the budget is fixed and funding this treatment displaces other care. Current institutional practice is not a binary. One national agency keeps QALYs as its reference case, regards all QALYs as of equal weight there, and then applies a quantitative severity weight based on absolute and proportional shortfall together with further modifiers considered qualitatively in committee. Another body uses an equal value life year gained as its usual measure of health gain, weighting years of life gained uniformly regardless of age, disease or level of disability precisely to address the discrimination objection, while continuing to report cost per QALY alongside it for benchmarking. For this benchmark, assume clinical effectiveness is not in dispute so the disagreement is about measurement rather than evidence, that the rule governs comparison between treatments rather than the ranking of individual persons, and that the budget constraint is real. The agency must decide what measurement rule should govern reimbursement.",
+  "content_hash": "sha256:415016337ee7714ae6e4bb5ea8c3a14f5ee2f19dac071321be4176d41f4bf3d5"
+}

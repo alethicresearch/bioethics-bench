@@ -1,0 +1,224 @@
+{
+  "case_id": "m146-ambient-ai-documentation-consent",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Ambient AI recording for clinical documentation",
+  "short_description": "An outpatient health system must set the consent and data-use policy for an always-listening AI system that drafts clinical notes from patient-clinician conversations.",
+  "decision_question": "What consent and data-use policy should govern always-listening ambient AI systems that draft clinical notes from patient-clinician conversations?",
+  "jurisdiction_context": "United States ambulatory care, evidence-dated 2026, informed by AMA augmented-intelligence guidance and ambulatory consent research.",
+  "as_of_date": "2026-08-28",
+  "stipulations": [
+    {
+      "id": "m146-ambient-ai-documentation-consent-drafting-only",
+      "kind": "contextual",
+      "statement": "The system produces a draft clinical note that the clinician reviews and finalises; it does not make clinical decisions.",
+      "rationale": "Documentation support and clinical decision support raise different disclosure questions and should not be collapsed."
+    },
+    {
+      "id": "m146-ambient-ai-documentation-consent-continuous-capture",
+      "kind": "scientific",
+      "statement": "Producing the draft requires capturing the conversation as it happens rather than after the fact.",
+      "rationale": "The privacy question turns on capture of the encounter itself; a policy over post-hoc dictation would not engage it."
+    },
+    {
+      "id": "m146-ambient-ai-documentation-consent-vendor-processing",
+      "kind": "contextual",
+      "statement": "Audio or transcripts are processed by a third-party vendor, and retention and model-training terms are set by contract rather than fixed by the technology.",
+      "rationale": "The evidence shows patient consent turning on exactly these data flows, so they must be represented rather than assumed away."
+    },
+    {
+      "id": "m146-ambient-ai-documentation-consent-mixed-encounters",
+      "kind": "contextual",
+      "statement": "The policy governs all ambulatory encounters, including ones covering mental health and sexual health.",
+      "rationale": "Comfort differs sharply by encounter type, so a single policy for a mixed clinic is where the represented positions diverge."
+    }
+  ],
+  "position_families": [
+    "encounter-level affirmative opt-in before recording",
+    "default use with meaningful notice and easy immediate opt-out",
+    "routine documentation only under strict no-retention and no-training rules, with separate consent for sensitive encounters or expanded data use"
+  ],
+  "domains": [
+    "medical-ai-data",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "ambient AI",
+    "clinical documentation",
+    "AI scribe",
+    "informed consent",
+    "opt-in",
+    "opt-out",
+    "contextual integrity",
+    "vendor data use",
+    "sensitive encounters",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored ambulatory representation grounded in measured patient consent decisions under differing disclosure depth and in professional guidance on disclosing AI use in the encounter. It fixes clinician review, continuous capture, contractual vendor terms and a mixed-encounter clinic so the represented variable is the consent architecture rather than the technology's accuracy or its clinical role.",
+    "sources": [
+      {
+        "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+        "type": "article"
+      },
+      {
+        "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
+        "type": "policy-document"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Require affirmative patient consent before recording each encounter, obtained after the patient has been told what the system captures, where the audio goes, who can access it and whether it is retained or used for training.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from measured consent decisions rather than from attitude data: in the ambulatory study, consent to ambient documentation was 81.6% under basic information and 55.3% under detailed information about AI features, data storage and corporate involvement, and over 98% of patients rated knowing where audio was sent and who could access it as important. Consent that moves that far on disclosure is evidence about the consent architecture itself, which is the decision object here. The study's authors likewise recommend an opt-in approach with previsit notification and in-visit confirmation.",
+          "sources": [
+            {
+              "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "text": "Run ambient documentation by default with clear notice at the point of care and an immediate, easily exercised opt-out, rather than pausing each encounter for an affirmative consent step.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the same study's finding that most patients were comfortable with ambient documentation and that stakeholders asked for a flexible multimodal approach including digital touchpoints, non-clinical staff support and opt-out options. Patients expressed a preference for flexibility and for being told; they were not asked to endorse a default-on institutional rule, so the default-with-opt-out policy form is Bench-authored completion of that preference.",
+          "sources": [
+            {
+              "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "text": "Explain the technology to the patient and secure consent wherever an AI tool is used in the encounter, and address privacy protection explicitly as part of that conversation.",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA guidance and augmented-intelligence principles, under which physicians using AI tools during an encounter, and ambient scribing in particular, should explain the technology, secure consent and address privacy protection. Professional guidance converges on a single disclosure-and-consent architecture and does not offer a competing default-capture position, so this pool is a legitimate singleton rather than one architecture split to fill a shape.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Require affirmative consent before any capture, because recording changes what kind of space the consultation is and that change is not the clinician's alone to make.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from conversational-privacy reasoning: the clinical encounter's candour depends on its being unrecorded, so the alteration is to a shared good and needs the patient's authorization rather than notice. The executable per-encounter consent rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Permit default use with notice and easy opt-out, because relieving documentation burden returns clinician attention to the patient and a consent step at every visit imposes its own cost on the encounter.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from beneficence and proportionality reasoning applied to the encounter as a whole, treating the friction of repeated consent as a real cost rather than a free safeguard. The executable default-with-opt-out rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "text": "Permit routine note drafting only under strict no-retention and no-training terms, and require separate consent for sensitive encounters or for any use of the material beyond drafting that note.",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from contextual-integrity reasoning: consenting to a note being drafted is not consent to indefinite storage, vendor model training or unrelated analysis, and information norms differ by what the encounter is about. The executable retention and sensitive-encounter rules are Bench-authored.",
+          "sources": [
+            {
+              "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 demonstration of a public pool grounded in measured consent behaviour under differing disclosure, against a singleton professional layer; later P3 sensitivity work on disclosure depth as a scenario variable."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Informed Consent for Ambient Documentation Using Generative AI in Ambulatory Care. JAMA Netw Open. 2025. Observational quality-improvement study at NYU Langone Health, March-December 2024; 121 participants (18 ambulatory clinicians, 103 patients). 74.8% of patients reported comfort with ambient documentation; 81.6% consented when given basic information, falling to 55.3% when given detailed information about AI features, data storage and corporate involvement. Comfort varied by encounter type: 63.1% for routine physical examination, 40.8% for sexual health, 35.0% for mental health. Over 98% rated knowing where audio was sent and who could access recordings as important. The authors recommend opt-in consent with a flexible multimodal approach including previsit notification, in-visit confirmation, nonclinical staff support and opt-out options.",
+      "type": "article"
+    },
+    {
+      "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
+      "type": "policy-document"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m146-ambient-ai-documentation-consent-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m146-ambient-ai-documentation-consent-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
+  },
+  "scenario": "An outpatient health system is setting the consent and data-use policy for an ambient AI system that listens to patient-clinician conversations and drafts the clinical note. The clinician reviews and finalises every draft; the system makes no clinical decisions. Producing the draft requires capturing the conversation as it happens, and a third-party vendor processes the audio under contract terms that govern retention and model training. Study evidence from ambulatory care finds most patients comfortable with the technology in principle, but consent falls substantially when patients are told in detail what the system does with the recording, and comfort is markedly lower for mental-health and sexual-health encounters than for routine examinations. Patients rate knowing where audio is sent and who can access it as near-universally important. For this benchmark, assume the policy governs all ambulatory encounters including sensitive ones. The system must decide whether recording requires affirmative consent for each encounter, whether it may run by default with clear notice and easy immediate opt-out, or whether routine use is permissible only under strict retention and training limits with separate consent for sensitive encounters.",
+  "content_hash": "sha256:4b094d37310d6f52a0b38dac9ab7bae59f3ea9159c55219084637c1170caac14"
+}

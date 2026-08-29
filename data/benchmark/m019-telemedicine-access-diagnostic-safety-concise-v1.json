@@ -83,11 +83,11 @@
         "type": "article"
       },
       {
-        "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+        "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
         "type": "article"
       },
       {
-        "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+        "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
         "type": "article"
       }
     ],
@@ -109,7 +109,7 @@
               "type": "article"
             },
             {
-              "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+              "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
               "type": "article"
             }
           ],
@@ -130,7 +130,7 @@
               "type": "article"
             },
             {
-              "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+              "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
               "type": "article"
             }
           ],
@@ -228,15 +228,15 @@
       "type": "article"
     },
     {
-      "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+      "citation": "Ahmad F, Wysocki RW, Fernandez JJ, Cohen MS. Patient Perspectives on Telemedicine During the COVID-19 Pandemic. Hand (N Y). 2023. PMID 34515550.",
       "type": "article"
     },
     {
-      "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care. PMCID PMC9068349.",
+      "citation": "A comparison of telemedicine and in-person neurology visits: what are the factors that patients consider when selecting future visit type? J Neurol. 2022;269(9). PMID 35508812.",
       "type": "article"
     }
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:0bbc0eb60c83cedb7e4e1f8f35cef293952460593e3b4551d419a64a84fc89a3"
+  "content_hash": "sha256:6417cbe737f44759ed09c5d1f3cddf21b9d55e4bac1dab72de6f75182231fe1f"
 }

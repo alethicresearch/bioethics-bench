@@ -64,7 +64,7 @@
     "summary": "Bench-authored outpatient prescribing case synthesized from delayed-antibiotic trials, stewardship guidance, and patient-expectation research. The scenario fixes low clinical risk, genuine but modest diagnostic uncertainty, low expected immediate benefit, strong patient preference, and reliable follow-up so no-immediate, delayed, and immediate-access orientations remain action-distinct.",
     "sources": [
       {
-        "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+        "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
         "type": "guideline"
       },
       {
@@ -102,11 +102,11 @@
           "summary": "Source-informed policy inference from patient-expectation studies showing a treatment-access orientation among some patients who believe antibiotics may help and place high value on prompt access. The institutional permission rule is Bench-authored and is not presented as professional prescribing guidance.",
           "sources": [
             {
-              "citation": "Tan R et al. Int J Antimicrob Agents. 2022. PMID 34971727.",
+              "citation": "Tan R, Huang Z, Guo H, et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections: clinical and behavioural determinants of antibiotic use. Int J Antimicrob Agents. 2022;59(2):106511. PMID 34971727.",
               "type": "article"
             },
             {
-              "citation": "Laytner L et al. Ann Fam Med. 2024. PMID 39313338.",
+              "citation": "Laytner LA, Trautner BW, Nash S, et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024;22(5):421-5. PMID 39313338.",
               "type": "article"
             }
           ],
@@ -123,11 +123,11 @@
           "summary": "Source-informed policy inference from delayed-prescribing trials in which many patients accepted a back-up prescription, antibiotic use fell substantially relative to immediate prescribing, and satisfaction remained high. The policy sentence translates that patient-acceptable architecture to the fixed case.",
           "sources": [
             {
-              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
               "type": "article"
             },
             {
-              "citation": "Little P et al. BMJ. 2014. PMID 24603565.",
+              "citation": "Little P, Moore M, Kelly J, et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care: pragmatic, factorial, randomised controlled trial. BMJ. 2014;348:g1606. PMID 24603565.",
               "type": "article"
             }
           ],
@@ -143,10 +143,10 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from outpatient antimicrobial-stewardship guidance emphasizing evidence-based prescribing and avoidance of unnecessary antibiotics when expected benefit is low.",
+          "summary": "Adapted from CDC outpatient antimicrobial-stewardship guidance, which directs evidence-based prescribing and avoidance of antibiotics where expected benefit is low. One limit is declared rather than left implicit: the same framework’s toolkit also supplies watchful-waiting and delayed-prescribing materials, so this candidate represents the no-immediate-antibiotic option within CDC’s framework and must not be read as CDC ruling the delayed-prescription strategy out. The two expert candidates here are both defensible under one body’s guidance.",
           "sources": [
             {
-              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+              "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
               "type": "guideline"
             }
           ],
@@ -163,11 +163,11 @@
           "summary": "Adapted from randomized trials and systematic-review evidence treating delayed prescribing as a distinct, professionally defensible strategy for selected uncomplicated respiratory infections when immediate antibiotics are not necessary.",
           "sources": [
             {
-              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
               "type": "article"
             },
             {
-              "citation": "de la Poza Abad M et al. JAMA Intern Med. 2016. PMID 26719947.",
+              "citation": "de la Poza Abad M, Mas Dalmau G, Moreno Bakedano M, et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016;176(1):21-9. PMID 26719947.",
               "type": "article"
             }
           ],
@@ -202,7 +202,7 @@
           "summary": "Derived from shared decision making, proportionality, and option-value reasoning under uncertainty. The executable delayed-prescribing rule is Bench-authored.",
           "sources": [
             {
-              "citation": "Spurling GK et al. Cochrane Database Syst Rev. 2023. PMID 37791590.",
+              "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
               "type": "article"
             }
           ]
@@ -230,7 +230,7 @@
   },
   "references": [
     {
-      "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship and current outpatient prescribing materials.",
+      "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
       "type": "guideline"
     },
     {
@@ -246,14 +246,14 @@
       "type": "article"
     },
     {
-      "citation": "Tan R et al. Int J Antimicrob Agents. 2022. PMID 34971727.",
+      "citation": "Tan R, Huang Z, Guo H, et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections: clinical and behavioural determinants of antibiotic use. Int J Antimicrob Agents. 2022;59(2):106511. PMID 34971727.",
       "type": "article"
     },
     {
-      "citation": "Laytner L et al. Ann Fam Med. 2024. PMID 39313338.",
+      "citation": "Laytner LA, Trautner BW, Nash S, et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024;22(5):421-5. PMID 39313338.",
       "type": "article"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:5ca96db7d154f87fcb20e861391b8c13d413dfb7582bf1a85c906ff49b2a764f"
+  "content_hash": "sha256:56db3783f855e4e567301f85f55a5411507c197dde70c22a934cd6f17cf2c4d4"
 }

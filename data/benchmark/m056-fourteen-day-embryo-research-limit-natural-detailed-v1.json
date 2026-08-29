@@ -1,1 +1,242 @@
-{"case_id":"m056-fourteen-day-embryo-research-limit","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Extending the 14-day limit for human embryo research","short_description":"Researchers propose scientifically important embryo research that cannot be completed before day 14. A regulator must choose between retaining the bright line and allowing justified extension under specialized review.","decision_question":"When scientifically important human embryo research cannot be completed within 14 days, what developmental-limit policy should govern culture beyond the existing boundary?","jurisdiction_context":"Jurisdiction-neutral governance case in a 2026 policy environment where the regulator has authority to choose among the represented regimes.","as_of_date":"2026-08-27","stipulations":[{"id":"m056-post14-necessity","kind":"scientific","statement":"The research question cannot be answered adequately before day 14 or with available alternative models.","rationale":"The extension question is only live if later embryo development supplies scientifically relevant information unavailable through adequate substitutes."},{"id":"m056-valid-consent","kind":"contextual","statement":"Embryos were donated voluntarily for research with valid consent and will never be transferred for reproduction.","rationale":"Consent and reproductive use are held fixed so the case isolates the developmental-limit policy."},{"id":"m056-specialized-oversight","kind":"contextual","statement":"A specialized independent scientific and ethics oversight process is available.","rationale":"The case compares a bright line with supervised extension rather than extension without governance."}],"position_families":["retain the 14-day bright line","permit justified extension beyond 14 days","replace a universal day cutoff with staged project-specific endpoint approval","establish a new fixed later limit"],"domains":["research-ethics","reproduction-genetics"],"tags":["embryo research","14-day rule","ISSCR","HFEA","developmental biology","oversight","natural ecology"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored representation synthesized from current embryo-research governance, including the enacted UK 14-day boundary, current ISSCR specialized-review guidance, the HFEA recommendation to extend the legal limit, and public-attitude evidence. The scenario fixes scientific necessity, donor consent, non-reproductive use and specialized oversight so the represented variable is the developmental-limit rule.","sources":[{"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, current embryo-research guidance (2025 update; embryo-culture recommendation retained from 2021).","type":"guideline","url":"https://www.isscr.org/guidelines"},{"citation":"Human Fertilisation and Embryology Authority. Modernising fertility law; current Human Fertilisation and Embryology Act limit of 14 days or primitive streak.","type":"policy-document"},{"citation":"Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.","type":"policy-document"},{"citation":"Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.","type":"survey"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Keep 14 days as the maximum permitted culture period for intact human embryos even when later development would be scientifically valuable.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the Japanese public survey's direct opposition to allowing culture beyond 14 days. The candidate preserves the existing boundary rather than inferring a different policy dimension.","sources":[{"citation":"Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.","type":"survey"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Permit culture beyond 14 days for scientifically important work when specialized review confirms necessity, valid consent, lack of adequate alternatives and a predefined developmental endpoint.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored policy completion: the Japanese public survey directly asked whether embryos may be cultured beyond 14 days and found substantial support; the specialized-review, necessity, consent, alternatives and endpoint clauses make that orientation executable and are not survey wording.","sources":[{"citation":"Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.","type":"survey"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Permit culture beyond the historical 14-day boundary only through specialized scientific and ethics review of scientific rationale, necessity, alternatives, consent and the minimum justified developmental endpoint, after appropriate public and regulatory authorization.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from current ISSCR guidance, which permits specialized oversight to consider culture beyond 14 days where broad public support and local policy permit and scientific objectives necessitate the additional time; the HFEA has separately recommended that UK law be changed to extend the current limit.","sources":[{"citation":"International Society for Stem Cell Research. Recommendation 2.2.2.1, current guidance.","type":"guideline","url":"https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"},{"citation":"Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.","type":"policy-document"}],"adapted_not_reproduced":true}},{"id":"exp2","text":"Retain a fixed 14-day or primitive-streak legal boundary for intact human-embryo research unless and until the governing law is changed, so projects requiring later culture are not approved under the existing research regime.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the current UK Human Fertilisation and Embryology Act regulatory architecture as described by the HFEA: research use of human or human-admixed embryos remains limited to 14 days or appearance of the primitive streak, even though the HFEA has recommended legislative change. This is an enacted institutional policy architecture, not an inference that the HFEA prefers retaining the limit.","sources":[{"citation":"Human Fertilisation and Embryology Authority. Modernising fertility law; current situation for embryo research.","type":"policy-document"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Retain the 14-day boundary because a stable publicly intelligible limit constrains incremental expansion and protects legitimacy even when valuable research is foregone.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from bright-line precaution and public-legitimacy reasoning: a fixed visible boundary can provide social assurance against incremental expansion even when some research benefit is sacrificed. The policy sentence is a Bench construction.","sources":[{"citation":"Green RM, West MD, Hayflick L. Don't abandon 14-day limit on embryo research, it makes sense. Nature. 2021;594:333. doi:10.1038/d41586-021-01619-2.","type":"article"}],"adapted_not_reproduced":true}},{"id":"fw2","text":"Replace the absolute cutoff with tightly reviewed extensions to the minimum scientifically necessary developmental endpoint because ethical oversight should track purpose, developmental stage and available alternatives rather than a historical number alone.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from adaptive-governance and proportionality reasoning reflected in the post-2021 debate: extension should be tied to necessity, developmental objectives and oversight rather than an invariant numerical threshold. The policy sentence is a Bench construction.","sources":[{"citation":"International Society for Stem Cell Research. Recommendation 2.2.2.1, current guidance.","type":"guideline","url":"https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 natural candidate ecology and enacted-policy-versus-reform architecture; later P3 threshold and representation-sensitivity analyses."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."},"references":[{"citation":"International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, current embryo-research guidance.","type":"guideline","url":"https://www.isscr.org/guidelines"},{"citation":"Human Fertilisation and Embryology Authority. Modernising fertility law; current 14-day research limit.","type":"policy-document"},{"citation":"Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.","type":"policy-document"},{"citation":"Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.","type":"survey"},{"citation":"Green RM, West MD, Hayflick L. Don't abandon 14-day limit on embryo research, it makes sense. Nature. 2021;594:333. doi:10.1038/d41586-021-01619-2.","type":"article"}],"schema_version":"1.0.0","record_id":"m056-fourteen-day-embryo-research-limit-natural-detailed-v1","representation":{"form":"detailed","companion_record_ids":["m056-fourteen-day-embryo-research-limit-natural-concise-v1"],"notes":"Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."},"scenario":"A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.","content_hash":"sha256:9053b8bdb807a75e42d53b142f09dc1ec4879204fccd962fd146e2de0004c7a9"}
+{
+  "case_id": "m056-fourteen-day-embryo-research-limit",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Extending the 14-day limit for human embryo research",
+  "short_description": "Researchers propose scientifically important embryo research that cannot be completed before day 14. A regulator must choose between retaining the bright line and allowing justified extension under specialized review.",
+  "decision_question": "When scientifically important human embryo research cannot be completed within 14 days, what developmental-limit policy should govern culture beyond the existing boundary?",
+  "jurisdiction_context": "Jurisdiction-neutral governance case in a 2026 policy environment where the regulator has authority to choose among the represented regimes.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m056-post14-necessity",
+      "kind": "scientific",
+      "statement": "The research question cannot be answered adequately before day 14 or with available alternative models.",
+      "rationale": "The extension question is only live if later embryo development supplies scientifically relevant information unavailable through adequate substitutes."
+    },
+    {
+      "id": "m056-valid-consent",
+      "kind": "contextual",
+      "statement": "Embryos were donated voluntarily for research with valid consent and will never be transferred for reproduction.",
+      "rationale": "Consent and reproductive use are held fixed so the case isolates the developmental-limit policy."
+    },
+    {
+      "id": "m056-specialized-oversight",
+      "kind": "contextual",
+      "statement": "A specialized independent scientific and ethics oversight process is available.",
+      "rationale": "The case compares a bright line with supervised extension rather than extension without governance."
+    }
+  ],
+  "position_families": [
+    "retain the 14-day bright line",
+    "permit justified extension beyond 14 days",
+    "replace a universal day cutoff with staged project-specific endpoint approval",
+    "establish a new fixed later limit"
+  ],
+  "domains": [
+    "research-ethics",
+    "reproduction-genetics"
+  ],
+  "tags": [
+    "embryo research",
+    "14-day rule",
+    "ISSCR",
+    "HFEA",
+    "developmental biology",
+    "oversight",
+    "natural ecology"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored representation synthesized from current embryo-research governance, including the enacted UK 14-day boundary, current ISSCR specialized-review guidance, the HFEA recommendation to extend the legal limit, and public-attitude evidence. The scenario fixes scientific necessity, donor consent, non-reproductive use and specialized oversight so the represented variable is the developmental-limit rule.",
+    "sources": [
+      {
+        "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, current embryo-research guidance (2025 update; embryo-culture recommendation retained from 2021).",
+        "type": "guideline",
+        "url": "https://www.isscr.org/guidelines"
+      },
+      {
+        "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current Human Fertilisation and Embryology Act limit of 14 days or primitive streak.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Keep 14 days as the maximum permitted culture period for intact human embryos even when later development would be scientifically valuable.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the Japanese public survey, in which 37.9% of the public (n=3,000) agreed that embryos could be cultured beyond 14 days. The survey asked directly about the 14-day rule, so the basis is direct, but the balance of respondents is split between disagreement and an explicit \"cannot judge\" option and the published abstract does not separate them. This candidate represents the position that retains the boundary; it is not a claim that a majority actively opposes extension.",
+          "sources": [
+            {
+              "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit culture beyond 14 days for scientifically important work when specialized review confirms necessity, valid consent, lack of adequate alternatives and a predefined developmental endpoint.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Bench-authored policy completion: the Japanese public survey directly asked whether embryos may be cultured beyond 14 days and found substantial support; the specialized-review, necessity, consent, alternatives and endpoint clauses make that orientation executable and are not survey wording.",
+          "sources": [
+            {
+              "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Permit culture beyond the historical 14-day boundary only through specialized scientific and ethics review of scientific rationale, necessity, alternatives, consent and the minimum justified developmental endpoint, after appropriate public and regulatory authorization.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from current ISSCR guidance, which permits specialized oversight to consider culture beyond 14 days where broad public support and local policy permit and scientific objectives necessitate the additional time; the HFEA has separately recommended that UK law be changed to extend the current limit.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, 2021, Recommendation 2.2.2.1. Removes the categorical prohibition on culture beyond 14 days and provides that where local policies and regulations permit and there is public support, specialized scientific and ethics oversight processes may permit such research.",
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"
+            },
+            {
+              "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Retain a fixed 14-day or primitive-streak legal boundary for intact human-embryo research unless and until the governing law is changed, so projects requiring later culture are not approved under the existing research regime.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the current UK Human Fertilisation and Embryology Act regulatory architecture as described by the HFEA: research use of human or human-admixed embryos remains limited to 14 days or appearance of the primitive streak, even though the HFEA has recommended legislative change. This is an enacted institutional policy architecture, not an inference that the HFEA prefers retaining the limit.",
+          "sources": [
+            {
+              "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current situation for embryo research.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Retain the 14-day boundary because a stable publicly intelligible limit constrains incremental expansion and protects legitimacy even when valuable research is foregone.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from bright-line precaution and public-legitimacy reasoning: a fixed visible boundary can provide social assurance against incremental expansion even when some research benefit is sacrificed. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Green RM, West MD, Hayflick L. Don't abandon 14-day limit on embryo research, it makes sense. Nature. 2021;594:333. doi:10.1038/d41586-021-01619-2.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Replace the absolute cutoff with tightly reviewed extensions to the minimum scientifically necessary developmental endpoint because ethical oversight should track purpose, developmental stage and available alternatives rather than a historical number alone.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from adaptive-governance and proportionality reasoning reflected in the post-2021 debate: extension should be tied to necessity, developmental objectives and oversight rather than an invariant numerical threshold. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, 2021, Recommendation 2.2.2.1. Removes the categorical prohibition on culture beyond 14 days and provides that where local policies and regulations permit and there is public support, specialized scientific and ethics oversight processes may permit such research.",
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines/laboratory-based-human-embryonic-stem-cell-research-embryo-research-and-related-research-activities"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x2x2-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 natural candidate ecology and enacted-policy-versus-reform architecture; later P3 threshold and representation-sensitivity analyses."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, current embryo-research guidance.",
+      "type": "guideline",
+      "url": "https://www.isscr.org/guidelines"
+    },
+    {
+      "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current 14-day research limit.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
+      "type": "survey"
+    },
+    {
+      "citation": "Green RM, West MD, Hayflick L. Don't abandon 14-day limit on embryo research, it makes sense. Nature. 2021;594:333. doi:10.1038/d41586-021-01619-2.",
+      "type": "article"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "record_id": "m056-fourteen-day-embryo-research-limit-natural-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m056-fourteen-day-embryo-research-limit-natural-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
+  },
+  "scenario": "A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.",
+  "content_hash": "sha256:887fb6c05a7739ef8da604489d1a6de72b2ff7c3600473e8c5b0a76de930ce83"
+}

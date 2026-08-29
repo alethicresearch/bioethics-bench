@@ -68,7 +68,7 @@
         "type": "article"
       },
       {
-        "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+        "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
         "type": "policy-document",
         "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
       },
@@ -127,7 +127,7 @@
           "summary": "Adapted from AMA Policy H-95.925, which explicitly supports monitored and evaluated pilot supervised injection facilities to generate evidence for policymakers.",
           "sources": [
             {
-              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
               "type": "policy-document",
               "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
             }
@@ -202,7 +202,7 @@
           "summary": "Derived from learning-under-uncertainty and adaptive-governance reasoning: a reversible, evaluated pilot can generate local evidence while preserving established client-level benefits and avoiding premature permanent commitment. The policy sentence is a Bench construction.",
           "sources": [
             {
-              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+              "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
               "type": "policy-document",
               "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
             },
@@ -217,6 +217,7 @@
     ]
   },
   "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x2x3-mean-v1",
   "exposure": "internal-development",
   "status": "draft",
   "intended_use": [
@@ -248,7 +249,7 @@
       "type": "article"
     },
     {
-      "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities H-95.925, reaffirmed 2023.",
+      "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
       "type": "policy-document",
       "url": "https://policysearch.ama-assn.org/policyfinder/detail/supervised%20injection?uri=%2FAMADoc%2FHOD.xml-H-95.925.xml"
     },
@@ -268,5 +269,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A city faces a sustained overdose crisis despite widespread naloxone, medications for opioid use disorder, outreach and emergency treatment. Public-health officials propose a supervised consumption service where adults could use pre-obtained substances under trained observation and receive immediate overdose response, sterile equipment, health care and voluntary referrals to treatment and social services. People who use drugs and advocates emphasize safety, dignity and access to care, while some residents and businesses raise concerns about location, public disorder and concentration of drug activity. For this benchmark, assume existing evidence strongly supports prevention of onsite overdose deaths and engagement with health and social services, the effect on population-level overdose mortality remains uncertain, and local neighborhood effects and community acceptance are unresolved rather than stipulated as beneficial or harmful. The city must choose among permanent implementation, declining permanent implementation in favor of other interventions, or a time-limited pilot with independent evaluation of overdose, service-engagement and neighborhood outcomes.",
-  "content_hash": "sha256:a02435a0555d66691f7363a3b34716f53223c7e79366b065f65ec50ce36d9444"
+  "content_hash": "sha256:cd48a44faa14ee94faac7b38ea00984d9c95c88eeda15a593631e1982648483a"
 }

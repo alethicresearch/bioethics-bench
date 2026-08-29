@@ -1,1 +1,275 @@
-{"case_id":"m141-commercial-health-data-partnership","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Commercial partnership using health-system data","short_description":"A nonprofit health system must decide whether and on what terms coded patient data may be used by a commercial technology company to develop a clinically useful model.","decision_question":"Should a health system share patient data with a commercial company to build a clinically useful model, and what benefit, governance, and consent conditions should apply?","jurisdiction_context":"Jurisdiction-neutral health-system commercial data partnership informed by health-data commercialization research, AHA data-sharing principles, and NHS/DHSC fair-benefit principles.","as_of_date":"2026-08-27","stipulations":[{"id":"m141-secure-coded-access","kind":"contextual","statement":"The company would access coded patient data only inside a controlled environment with contractual purpose limits and no unrestricted raw-data export.","rationale":"The case concerns commercial purpose, benefit, and consent rather than an obviously insecure data sale."},{"id":"m141-clinical-value","kind":"contextual","statement":"The proposed model has a credible prospect of improving diagnosis and the health system would receive discounted clinical access and research collaboration.","rationale":"A plausible public/clinical benefit keeps the permissive and fair-benefit policies serious rather than making the partnership purely extractive."},{"id":"m141-commercial-rights","kind":"contextual","statement":"The company seeks substantial commercial intellectual-property rights, while the current offer gives the health system no revenue share, nonexclusive public license, or other explicit financial return for the data contribution.","rationale":"This creates action divergence between ordinary governed collaboration and a stronger fair-value/benefit-sharing requirement."},{"id":"m141-no-specific-consent","kind":"contextual","statement":"The health system has not obtained patient-specific permission for this commercial secondary use but can provide transparent public notice and a consent process if its chosen policy requires one.","rationale":"The consent candidate must differ operationally from governance-only partnership rules."},{"id":"m141-lawful-options","kind":"legal","statement":"For this benchmark, assume governed commercial collaboration, fair-benefit/value-sharing requirements, and specific-permission requirements are all legally available policy choices.","rationale":"The benchmark tests ethical partnership design rather than jurisdiction-specific legal prohibition."}],"position_families":["governed commercial collaboration for public and clinical benefit","commercial partnership only with fair value and benefit sharing","specific patient permission before commercial secondary use"],"domains":["medical-ai-data","research-ethics"],"tags":["commercial data partnership","health data","benefit sharing","fair value","consent","data governance","intellectual property","public trust"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored commercial data-partnership case grounded in empirical commercialization-attitude reviews, AHA health-information principles, and NHS/DHSC commercial-data partnership guidance. It fixes secure coded access, plausible clinical value, significant private IP rights, limited current value return, and absence of specific consent so governance, fair-benefit, and permission policies diverge.","sources":[{"citation":"Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.","type":"article"},{"citation":"American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.","type":"policy-document"},{"citation":"UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. 2019; current good-practice guidance retained in 2025.","type":"policy-document"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Allow the commercial partnership without patient-specific permission when coded data remain in a secure controlled environment, the clinical purpose is credible, the arrangement is transparent, and enforceable safeguards prevent unrelated reuse.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from empirical studies showing commercial involvement reduces but does not eliminate willingness to share, with support remaining possible when purpose, privacy, trust, and health benefit are clear. The institutional permission rule is a Bench construction rather than a claim of majority endorsement.","sources":[{"citation":"Walshe J, et al. Commercialisation effect systematic review. 2024. PMID 38389329.","type":"article"},{"citation":"Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.","type":"article"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Permit a commercial data partnership only if the health system negotiates demonstrably fair value for the public contribution, such as meaningful benefit sharing, favorable access, or nonexclusive/public-interest rights in resulting tools rather than allowing private value capture on ordinary terms.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from recurring public concerns about private profit, ownership/control, reciprocity, and benefit sharing in commercialization studies. The exact fair-value mechanisms are Bench-authored operational alternatives, not attributed to respondents as one surveyed contract form.","sources":[{"citation":"Walshe J, et al. Commercialisation effect systematic review. 2024. PMID 38389329.","type":"article"}],"adapted_not_reproduced":true}},{"id":"pub3","text":"Do not provide patient data for this commercial secondary use unless patients have specifically authorized commercial access or a sufficiently specific commercial-use category.","source_pool":"public","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from empirical health-data studies in the audit record that directly elicited strong preferences for specific permission before private or for-profit access. The candidate is limited to commercial secondary use and does not imply opposition to all health research.","sources":[{"citation":"Commercialization and health-data sharing empirical studies synthesized in Walshe et al. 2024, PMID 38389329, and the M141 candidate audit.","type":"article"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Permit controlled commercial research access when the use is clinically or scientifically valuable, contributors are treated as data stakeholders, the partnership is transparent, access is technically and contractually restricted, and privacy, equity, and misuse protections are enforceable.","source_pool":"expert","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from the American Heart Association's policy statement supporting broad health-information sharing as a driver of progress while requiring stewardship, transparency, contributor respect, privacy protections, authenticated access, and contractual or technical restrictions on misuse. The specific commercial-partnership approval sentence is a Bench application of those principles.","sources":[{"citation":"American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.","type":"policy-document"}],"adapted_not_reproduced":true}},{"id":"exp2","text":"Approve a commercial data partnership only when it has an explicit aim to improve patient or health-system benefit and the health system secures fair commercial terms that recognize the value of its data contribution, including appropriate financial or in-kind value return.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted directly from UK DHSC/NHS guiding principles for arrangements in which health data underpins innovation: partnerships should deliver explicit patient/NHS benefit and NHS organizations should secure fair terms and fair value reflecting their data and other contributions.","sources":[{"citation":"UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. 2019; reflected in current digital and data-driven health technology guidance.","type":"policy-document"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Permit the securely governed partnership when it has a credible prospect of producing clinically useful tools because commercial technical capacity can convert underused health data into social value that the health system could not efficiently create alone.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from social-value, innovation, and welfare-maximization reasoning. The executable permission rule is Bench-authored.","sources":[{"citation":"American Heart Association. Principles for Health Information Collection, Sharing, and Use. 2023.","type":"policy-document"}]}},{"id":"fw2","text":"Require materially better benefit-sharing or public-interest licensing terms before approval because data generated through a collectively supported health system are a valuable public contribution and private commercialization should return a fair share of resulting value.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from reciprocity, anti-exploitation, and public-value reasoning. The executable renegotiation requirement is Bench-authored.","sources":[{"citation":"UK DHSC principles for fair benefit and fair value in NHS data partnerships.","type":"policy-document"}]}},{"id":"fw3","text":"Require specific patient authorization before commercial secondary use because using information supplied within a care relationship to generate private commercial value materially changes the purpose and social meaning of the original data collection.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from informational autonomy, purpose limitation, and anti-exploitation reasoning. The executable consent rule is Bench-authored.","sources":[{"citation":"Walshe J, et al. Commercialisation effect systematic review. 2024. PMID 38389329.","type":"article"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 commercial data governance, professional policy plurality, and public-benefit/value-sharing comparison; later P3 consent and commercialization studies."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. External research and policy documents retain their rights; positions are summarized and adapted rather than reproduced."},"references":[{"citation":"Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.","type":"article"},{"citation":"American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.","type":"policy-document"},{"citation":"UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. 2019; current good-practice guidance retained in 2025.","type":"policy-document"},{"citation":"Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.","type":"article"}],"required_aggregation":"mean","schema_version":"1.0.0","record_id":"m141-commercial-health-data-partnership-natural-concise-v1","representation":{"form":"concise","companion_record_ids":["m141-commercial-health-data-partnership-natural-detailed-v1"],"notes":"Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."},"scenario":"A nonprofit health system is considering a partnership with a technology company to develop a clinically useful predictive model from patient data collected for care. For this benchmark, assume the company would access coded data only inside a controlled environment with contractual purpose limits, the model has a credible clinical benefit, the company seeks substantial commercial intellectual-property rights, the health system would receive discounted access and research collaboration but no revenue share or nonexclusive public-interest license, and patients have not given specific permission for this commercial secondary use. Governed collaboration, stronger fair-value terms, and specific-permission requirements are all legally available. The board must decide what partnership rule to apply.","content_hash":"sha256:f80ef0d15a6543b30bcaeb62a21973e7a5fd836bd7aed6d56b0cc8e4bb9aae3a"}
+{
+  "case_id": "m141-commercial-health-data-partnership",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Commercial partnership using health-system data",
+  "short_description": "A nonprofit health system must decide whether and on what terms coded patient data may be used by a commercial technology company to develop a clinically useful model.",
+  "decision_question": "Should a health system share patient data with a commercial company to build a clinically useful model, and what benefit, governance, and consent conditions should apply?",
+  "jurisdiction_context": "Jurisdiction-neutral health-system commercial data partnership informed by health-data commercialization research, AHA data-sharing principles, and NHS/DHSC fair-benefit principles.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m141-secure-coded-access",
+      "kind": "contextual",
+      "statement": "The company would access coded patient data only inside a controlled environment with contractual purpose limits and no unrestricted raw-data export.",
+      "rationale": "The case concerns commercial purpose, benefit, and consent rather than an obviously insecure data sale."
+    },
+    {
+      "id": "m141-clinical-value",
+      "kind": "contextual",
+      "statement": "The proposed model has a credible prospect of improving diagnosis and the health system would receive discounted clinical access and research collaboration.",
+      "rationale": "A plausible public/clinical benefit keeps the permissive and fair-benefit policies serious rather than making the partnership purely extractive."
+    },
+    {
+      "id": "m141-commercial-rights",
+      "kind": "contextual",
+      "statement": "The company seeks substantial commercial intellectual-property rights, while the current offer gives the health system no revenue share, nonexclusive public license, or other explicit financial return for the data contribution.",
+      "rationale": "This creates action divergence between ordinary governed collaboration and a stronger fair-value/benefit-sharing requirement."
+    },
+    {
+      "id": "m141-no-specific-consent",
+      "kind": "contextual",
+      "statement": "The health system has not obtained patient-specific permission for this commercial secondary use but can provide transparent public notice and a consent process if its chosen policy requires one.",
+      "rationale": "The consent candidate must differ operationally from governance-only partnership rules."
+    },
+    {
+      "id": "m141-lawful-options",
+      "kind": "legal",
+      "statement": "For this benchmark, assume governed commercial collaboration, fair-benefit/value-sharing requirements, and specific-permission requirements are all legally available policy choices.",
+      "rationale": "The benchmark tests ethical partnership design rather than jurisdiction-specific legal prohibition."
+    }
+  ],
+  "position_families": [
+    "governed commercial collaboration for public and clinical benefit",
+    "commercial partnership only with fair value and benefit sharing",
+    "specific patient permission before commercial secondary use"
+  ],
+  "domains": [
+    "medical-ai-data",
+    "research-ethics"
+  ],
+  "tags": [
+    "commercial data partnership",
+    "health data",
+    "benefit sharing",
+    "fair value",
+    "consent",
+    "data governance",
+    "intellectual property",
+    "public trust"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored commercial data-partnership case grounded in empirical commercialization-attitude reviews, AHA health-information principles, and NHS/DHSC commercial-data partnership guidance. It fixes secure coded access, plausible clinical value, significant private IP rights, limited current value return, and absence of specific consent so governance, fair-benefit, and permission policies diverge.",
+    "sources": [
+      {
+        "citation": "Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.",
+        "type": "article"
+      },
+      {
+        "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
+        "type": "policy-document"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Allow the commercial partnership without patient-specific permission when coded data remain in a secure controlled environment, the clinical purpose is credible, the arrangement is transparent, and enforceable safeguards prevent unrelated reuse.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from empirical studies showing commercial involvement reduces but does not eliminate willingness to share, with support remaining possible when purpose, privacy, trust, and health benefit are clear. The institutional permission rule is a Bench construction rather than a claim of majority endorsement.",
+          "sources": [
+            {
+              "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
+              "type": "article"
+            },
+            {
+              "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Permit a commercial data partnership only if the health system negotiates demonstrably fair value for the public contribution, such as meaningful benefit sharing, favorable access, or nonexclusive/public-interest rights in resulting tools rather than allowing private value capture on ordinary terms.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from recurring public concerns about private profit, ownership/control, reciprocity, and benefit sharing in commercialization studies. The exact fair-value mechanisms are Bench-authored operational alternatives, not attributed to respondents as one surveyed contract form.",
+          "sources": [
+            {
+              "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub3",
+        "text": "Do not provide patient data for this commercial secondary use unless patients have specifically authorized commercial access or a sufficiently specific commercial-use category.",
+        "source_pool": "public",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from empirical health-data studies in the audit record that directly elicited strong preferences for specific permission before private or for-profit access. The candidate is limited to commercial secondary use and does not imply opposition to all health research.",
+          "sources": [
+            {
+              "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
+              "type": "article"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Permit controlled commercial research access when the use is clinically or scientifically valuable, contributors are treated as data stakeholders, the partnership is transparent, access is technically and contractually restricted, and privacy, equity, and misuse protections are enforceable.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the American Heart Association's policy statement supporting broad health-information sharing as a driver of progress while requiring stewardship, transparency, contributor respect, privacy protections, authenticated access, and contractual or technical restrictions on misuse. The specific commercial-partnership approval sentence is a Bench application of those principles.",
+          "sources": [
+            {
+              "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Approve a commercial data partnership only when it has an explicit aim to improve patient or health-system benefit and the health system secures fair commercial terms that recognize the value of its data contribution, including appropriate financial or in-kind value return.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted directly from UK DHSC/NHS guiding principles for arrangements in which health data underpins innovation: partnerships should deliver explicit patient/NHS benefit and NHS organizations should secure fair terms and fair value reflecting their data and other contributions.",
+          "sources": [
+            {
+              "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; reflected in current digital and data-driven health technology guidance.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Permit the securely governed partnership when it has a credible prospect of producing clinically useful tools because commercial technical capacity can convert underused health data into social value that the health system could not efficiently create alone.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from social-value, innovation, and welfare-maximization reasoning. The executable permission rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. 2023.",
+              "type": "policy-document"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Require materially better benefit-sharing or public-interest licensing terms before approval because data generated through a collectively supported health system are a valuable public contribution and private commercialization should return a fair share of resulting value.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from reciprocity, anti-exploitation, and public-value reasoning. The executable renegotiation requirement is Bench-authored.",
+          "sources": [
+            {
+              "citation": "UK DHSC principles for fair benefit and fair value in NHS data partnerships.",
+              "type": "policy-document"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Require specific patient authorization before commercial secondary use because using information supplied within a care relationship to generate private commercial value materially changes the purpose and social meaning of the original data collection.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from informational autonomy, purpose limitation, and anti-exploitation reasoning. The executable consent rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
+              "type": "article"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-3x2x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 commercial data governance, professional policy plurality, and public-benefit/value-sharing comparison; later P3 consent and commercialization studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. External research and policy documents retain their rights; positions are summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.",
+      "type": "article"
+    },
+    {
+      "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
+      "type": "article"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m141-commercial-health-data-partnership-natural-concise-v1",
+  "representation": {
+    "form": "concise",
+    "companion_record_ids": [
+      "m141-commercial-health-data-partnership-natural-detailed-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
+  },
+  "scenario": "A nonprofit health system is considering a partnership with a technology company to develop a clinically useful predictive model from patient data collected for care. For this benchmark, assume the company would access coded data only inside a controlled environment with contractual purpose limits, the model has a credible clinical benefit, the company seeks substantial commercial intellectual-property rights, the health system would receive discounted access and research collaboration but no revenue share or nonexclusive public-interest license, and patients have not given specific permission for this commercial secondary use. Governed collaboration, stronger fair-value terms, and specific-permission requirements are all legally available. The board must decide what partnership rule to apply.",
+  "content_hash": "sha256:93f63fdac3aed16ea535a80d2df2068c44b1e60bd33cc7c1a4c142cfe826bfb6"
+}

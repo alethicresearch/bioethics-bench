@@ -10,51 +10,227 @@
       "description": "Two public, two expert and two framework candidates: the Featured v1 pilot standard. Yields 12 unordered cross-source QCCS pairs per complete execution.",
       "lineage": "featured",
       "pools": {
-        "public": ["pub1", "pub2"],
-        "expert": ["exp1", "exp2"],
-        "framework": ["fw1", "fw2"]
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2"
+        ]
       },
       "cross_source_pairs": 12,
-      "representations": ["concise", "detailed"],
+      "representations": [
+        "concise",
+        "detailed"
+      ],
       "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
     },
     "full-corpus-2x2x2-v1": {
       "description": "Full Corpus profile with the symmetric two-public, two-expert and two-framework shape. The same candidate geometry as the Featured pilot standard, but Full Corpus lineage: a Full Corpus family whose evidence supports two candidates in every pool declares this rather than the Featured profile.",
       "lineage": "full-corpus",
       "pools": {
-        "public": ["pub1", "pub2"],
-        "expert": ["exp1", "exp2"],
-        "framework": ["fw1", "fw2"]
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2"
+        ]
       },
       "cross_source_pairs": 12,
-      "representations": ["concise", "detailed"],
+      "representations": [
+        "concise",
+        "detailed"
+      ],
       "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
     },
     "full-corpus-1x2x2-mean-v1": {
       "description": "Evidence-qualified Full Corpus profile with one public, two expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
       "lineage": "full-corpus",
       "pools": {
-        "public": ["pub1"],
-        "expert": ["exp1", "exp2"],
-        "framework": ["fw1", "fw2"]
+        "public": [
+          "pub1"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2"
+        ]
       },
       "cross_source_pairs": 8,
       "required_aggregation": "mean",
-      "representations": ["concise", "detailed"],
+      "representations": [
+        "concise",
+        "detailed"
+      ],
       "representation_note": "Companion representations of one case family. The asymmetric candidate shape is evidence-driven; Mean aggregation is required because Sum would favor the singleton pool on partner count alone."
     },
     "full-corpus-2x1x2-mean-v1": {
       "description": "Evidence-qualified Full Corpus profile with two public, one expert and two framework candidates. Unequal cross-source partner counts require Mean aggregation.",
       "lineage": "full-corpus",
       "pools": {
-        "public": ["pub1", "pub2"],
-        "expert": ["exp1"],
-        "framework": ["fw1", "fw2"]
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1"
+        ],
+        "framework": [
+          "fw1",
+          "fw2"
+        ]
       },
       "cross_source_pairs": 8,
       "required_aggregation": "mean",
-      "representations": ["concise", "detailed"],
+      "representations": [
+        "concise",
+        "detailed"
+      ],
       "representation_note": "Companion representations of one case family. The asymmetric candidate shape is evidence-driven; Mean aggregation is required because Sum would favor the singleton pool on partner count alone."
+    },
+    "full-corpus-2x1x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with 2 public, 1 expert and 3 framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 11,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-2x2x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with 2 public, 2 expert and 3 framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 16,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-2x3x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with 2 public, 3 expert and 3 framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1",
+          "pub2"
+        ],
+        "expert": [
+          "exp1",
+          "exp2",
+          "exp3"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 21,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-3x2x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with 3 public, 2 expert and 3 framework candidates. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1",
+          "pub2",
+          "pub3"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 21,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
+    },
+    "full-corpus-1x2x3-mean-v1": {
+      "description": "Evidence-qualified Full Corpus profile with one public, two expert and three framework candidates. A singleton public pool is legitimate where an active competing-policy sweep shows the affected community converging on one action-distinct position. Unequal cross-source partner counts require Mean aggregation.",
+      "lineage": "full-corpus",
+      "pools": {
+        "public": [
+          "pub1"
+        ],
+        "expert": [
+          "exp1",
+          "exp2"
+        ],
+        "framework": [
+          "fw1",
+          "fw2",
+          "fw3"
+        ]
+      },
+      "cross_source_pairs": 11,
+      "required_aggregation": "mean",
+      "representations": [
+        "concise",
+        "detailed"
+      ],
+      "representation_note": "Companion representations of one case family. They must state the same decision question, the same candidate set and the same stipulations, and differ only in scenario detail."
     }
   }
 }

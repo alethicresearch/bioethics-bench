@@ -1,1 +1,253 @@
-{"case_id":"m094-high-risk-workforce-vaccination-mandate","frame_id":"natural","frame_version":"1.0.0","version":"1.0.0","title":"Vaccination mandate for a high-risk workforce during a serious outbreak","short_description":"During a serious outbreak, a health authority must decide whether patient-facing workers should be required to receive a safe and effective vaccine when a burdensome but plausibly adequate less-restrictive infection-control package remains available.","decision_question":"Under what conditions should vaccination be required for a defined high-transmission-risk workforce during a serious outbreak?","benchmark_profile":"full-corpus-2x2x2-v1","jurisdiction_context":"Jurisdiction-neutral health-system policy for a defined patient-facing workforce during a serious vaccine-preventable outbreak.","as_of_date":"2026-08-27","stipulations":[{"id":"m094-serious-outbreak","kind":"contextual","statement":"A serious infectious outbreak is causing substantial hospitalization and clinically important transmission risk to vulnerable patients in the represented health system.","rationale":"The case concerns a high-stakes outbreak rather than routine vaccination policy."},{"id":"m094-vaccine-performance","kind":"scientific","statement":"The available vaccine has strong evidence of safety and substantially reduces severe disease and onward transmission for the outbreak strain, although protection is not perfect.","rationale":"Mandate ethics depends materially on safety, effectiveness and transmission impact."},{"id":"m094-equitable-access","kind":"contextual","statement":"Vaccination is free and convenient, paid time is available, and recognized medical exemptions are protected.","rationale":"The benchmark removes avoidable access barriers that would independently weaken a mandate."},{"id":"m094-voluntary-plateau","kind":"contextual","statement":"Voluntary education and access efforts have plateaued below the health system's preferred vaccination level.","rationale":"The case tests what follows after substantial voluntary efforts rather than whether those efforts should be tried first."},{"id":"m094-alternative-package","kind":"scientific","statement":"A less-restrictive package of high-quality respirators, frequent testing and prompt reassignment can plausibly reduce patient exposure to an institutionally acceptable level, but is more operationally burdensome and somewhat less protective than vaccination.","rationale":"This places the scenario where a mandate-focused professional policy and a least-restrictive proportionality policy can produce different actions."},{"id":"m094-lawful","kind":"legal","statement":"Both a vaccination requirement with medical exemptions and a voluntary-vaccination policy coupled to the less-restrictive package are legally available.","rationale":"The benchmark tests ethical policy rather than jurisdiction-specific law."}],"position_families":["require vaccination for patient-facing work","continue voluntary vaccination with an adequate less-restrictive protection bundle"],"domains":["public-health","consent-capacity-refusal"],"tags":["vaccination","mandate","healthcare workers","outbreak","proportionality","least restrictive means","reciprocity"],"scenario_provenance":{"construction_method":"adapted-from-source","summary":"Bench-authored workforce-mandate representation grounded in WHO mandate ethics, AMA professional-immunization guidance and public mandate-attitude evidence. The scenario deliberately fixes a serious outbreak, strong vaccine performance and a plausibly adequate alternative infection-control package so competing policy architectures generate different institutional actions.","sources":[{"citation":"WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.","type":"guideline"},{"citation":"AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.","type":"guideline"},{"citation":"Largent EA, Persad G, Sangenito S, Glickman A, Boyle C, Emanuel EJ. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.","type":"article"},{"citation":"Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.","type":"survey"}],"adapted_not_reproduced":true},"candidate_pools":{"public":[{"id":"pub1","text":"Require vaccination for patient-facing workers during the serious outbreak, with medical exemptions and reassignment or other proportionate alternatives for workers who cannot be vaccinated.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from nationally representative U.S. evidence showing substantial public acceptance of employer vaccination requirements. The patient-facing outbreak rule is a Bench translation to the narrower high-risk workforce scenario, not a claim that respondents voted on this exact policy.","sources":[{"citation":"Largent EA, et al. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.","type":"article"},{"citation":"Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.","type":"survey"}],"adapted_not_reproduced":true}},{"id":"pub2","text":"Keep vaccination voluntary while requiring the high-quality respirator, frequent-testing and prompt-reassignment package, because that less-restrictive approach can achieve an acceptable level of patient protection without making vaccination a condition of patient-facing employment.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from the substantial public and worker opposition to employer vaccination mandates. The alternative infection-control package is Bench-authored policy completion that turns mandate opposition into an institutionally protective rule rather than a generic anti-vaccination position.","sources":[{"citation":"Largent EA, et al. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.","type":"article"},{"citation":"Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.","type":"survey"}],"adapted_not_reproduced":true}}],"expert":[{"id":"exp1","text":"Require immunization for patient-facing staff during the vaccine-preventable outbreak absent a recognized medical contraindication, and keep workers who remain unimmunized out of direct patient contact when necessary to protect patients and staff.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from AMA Code Opinion 8.7, which states that physicians have a responsibility to accept immunization in high-risk vaccine-preventable outbreaks and that health institutions' responsibility may extend to requiring staff immunization and limiting direct patient contact for unimmunized individuals.","sources":[{"citation":"AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.","type":"guideline"}],"adapted_not_reproduced":true}},{"id":"exp2","text":"Do not impose a vaccination mandate while an acceptable less-intrusive infection-control package can achieve the institution's patient-protection objective within an acceptable time; reassess a mandate if that package proves inadequate.","source_pool":"expert","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference from WHO's necessity and proportionality framework: mandatory vaccination should be considered only when necessary and proportionate, and its justification is weaker where acceptable less-intrusive measures can achieve the objective within an acceptable time. The no-mandate-now action follows from the benchmark stipulation that the alternative package is plausibly adequate.","sources":[{"citation":"WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.","type":"guideline"}],"adapted_not_reproduced":true}}],"framework":[{"id":"fw1","text":"Require vaccination for patient-facing work because workers who can safely reduce a substantial avoidable transmission risk to vulnerable patients have reciprocal and harm-prevention duties that outweigh the remaining liberty cost.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from harm prevention, professional reciprocity and duties to protect vulnerable patients. The executable requirement is Bench-authored.","sources":[{"citation":"AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians.","type":"guideline"}]}},{"id":"fw2","text":"Use the effective respirator, testing and reassignment package instead of compulsory vaccination while it can provide an acceptable level of patient protection, because coercion should not exceed what is necessary to achieve the legitimate public-health objective.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from least-restrictive-means, proportionality, liberty and institutional-trust reasoning. The executable alternative-measures rule is Bench-authored.","sources":[{"citation":"WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.","type":"guideline"}]}}]},"collection":"benchmark","exposure":"internal-development","status":"draft","intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],"review":null,"paper_usage":["P2 action-divergent candidate construction and professional-policy plurality; later P3 mandate/proportionality sensitivity studies."],"rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source positions are summarized and adapted rather than reproduced."},"references":[{"citation":"WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.","type":"guideline"},{"citation":"AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.","type":"guideline"},{"citation":"Largent EA, Persad G, Sangenito S, Glickman A, Boyle C, Emanuel EJ. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.","type":"article"},{"citation":"Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.","type":"survey"}],"schema_version":"1.0.0","record_id":"m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1","representation":{"form":"detailed","companion_record_ids":["m094-high-risk-workforce-vaccination-mandate-natural-concise-v1"],"notes":"Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."},"scenario":"A regional health system is responding to a serious vaccine-preventable outbreak with ongoing transmission risk to vulnerable patients and substantial hospitalization. For this benchmark, assume the available vaccine has strong evidence of safety and substantially reduces severe disease and onward transmission, vaccination is free and convenient with paid time and recognized medical exemptions, months of voluntary education and access efforts have plateaued below the health system's preferred vaccination level, and a package of high-quality respirators, frequent testing and prompt reassignment can plausibly reduce patient exposure to an institutionally acceptable level although it is more operationally burdensome and somewhat less protective than vaccination. Assume both a vaccination requirement with medical exemptions and continued voluntary vaccination coupled to that alternative package are legally available. The authority must decide whether vaccination should be a condition of patient-facing work or whether the less-restrictive package should remain the required protection strategy.","content_hash":"sha256:a174879407df77c555ecfd6917f60dd21696a71e867137bf9b135211a6aa5081"}
+{
+  "case_id": "m094-high-risk-workforce-vaccination-mandate",
+  "frame_id": "natural",
+  "frame_version": "1.0.0",
+  "version": "1.0.0",
+  "title": "Vaccination mandate for a high-risk workforce during a serious outbreak",
+  "short_description": "During a serious outbreak, a health authority must decide whether patient-facing workers should be required to receive a safe and effective vaccine when a burdensome but plausibly adequate less-restrictive infection-control package remains available.",
+  "decision_question": "Under what conditions should vaccination be required for a defined high-transmission-risk workforce during a serious outbreak?",
+  "benchmark_profile": "full-corpus-2x2x2-v1",
+  "jurisdiction_context": "Jurisdiction-neutral health-system policy for a defined patient-facing workforce during a serious vaccine-preventable outbreak.",
+  "as_of_date": "2026-08-27",
+  "stipulations": [
+    {
+      "id": "m094-serious-outbreak",
+      "kind": "contextual",
+      "statement": "A serious infectious outbreak is causing substantial hospitalization and clinically important transmission risk to vulnerable patients in the represented health system.",
+      "rationale": "The case concerns a high-stakes outbreak rather than routine vaccination policy."
+    },
+    {
+      "id": "m094-vaccine-performance",
+      "kind": "scientific",
+      "statement": "The available vaccine has strong evidence of safety and substantially reduces severe disease and onward transmission for the outbreak strain, although protection is not perfect.",
+      "rationale": "Mandate ethics depends materially on safety, effectiveness and transmission impact."
+    },
+    {
+      "id": "m094-equitable-access",
+      "kind": "contextual",
+      "statement": "Vaccination is free and convenient, paid time is available, and recognized medical exemptions are protected.",
+      "rationale": "The benchmark removes avoidable access barriers that would independently weaken a mandate."
+    },
+    {
+      "id": "m094-voluntary-plateau",
+      "kind": "contextual",
+      "statement": "Voluntary education and access efforts have plateaued below the health system's preferred vaccination level.",
+      "rationale": "The case tests what follows after substantial voluntary efforts rather than whether those efforts should be tried first."
+    },
+    {
+      "id": "m094-alternative-package",
+      "kind": "scientific",
+      "statement": "A less-restrictive package of high-quality respirators, frequent testing and prompt reassignment can plausibly reduce patient exposure to an institutionally acceptable level, but is more operationally burdensome and somewhat less protective than vaccination.",
+      "rationale": "This places the scenario where a mandate-focused professional policy and a least-restrictive proportionality policy can produce different actions."
+    },
+    {
+      "id": "m094-lawful",
+      "kind": "legal",
+      "statement": "Both a vaccination requirement with medical exemptions and a voluntary-vaccination policy coupled to the less-restrictive package are legally available.",
+      "rationale": "The benchmark tests ethical policy rather than jurisdiction-specific law."
+    }
+  ],
+  "position_families": [
+    "require vaccination for patient-facing work",
+    "continue voluntary vaccination with an adequate less-restrictive protection bundle"
+  ],
+  "domains": [
+    "public-health",
+    "consent-capacity-refusal"
+  ],
+  "tags": [
+    "vaccination",
+    "mandate",
+    "healthcare workers",
+    "outbreak",
+    "proportionality",
+    "least restrictive means",
+    "reciprocity"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored workforce-mandate representation grounded in WHO mandate ethics, AMA professional-immunization guidance and public mandate-attitude evidence. The scenario deliberately fixes a serious outbreak, strong vaccine performance and a plausibly adequate alternative infection-control package so competing policy architectures generate different institutional actions.",
+    "sources": [
+      {
+        "citation": "WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.",
+        "type": "guideline"
+      },
+      {
+        "citation": "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.",
+        "type": "guideline"
+      },
+      {
+        "citation": "Largent EA, Persad G, Sangenito S, Glickman A, Boyle C, Emanuel EJ. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.",
+        "type": "article"
+      },
+      {
+        "citation": "Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
+  "candidate_pools": {
+    "public": [
+      {
+        "id": "pub1",
+        "text": "Require vaccination for patient-facing workers during the serious outbreak, with medical exemptions and reassignment or other proportionate alternatives for workers who cannot be vaccinated.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from nationally representative U.S. evidence showing substantial public acceptance of employer vaccination requirements. The patient-facing outbreak rule is a Bench translation to the narrower high-risk workforce scenario, not a claim that respondents voted on this exact policy.",
+          "sources": [
+            {
+              "citation": "Largent EA, et al. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.",
+              "type": "article"
+            },
+            {
+              "citation": "Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Keep vaccination voluntary while requiring the high-quality respirator, frequent-testing and prompt-reassignment package, because that less-restrictive approach can achieve an acceptable level of patient protection without making vaccination a condition of patient-facing employment.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from the substantial public and worker opposition to employer vaccination mandates. The alternative infection-control package is Bench-authored policy completion that turns mandate opposition into an institutionally protective rule rather than a generic anti-vaccination position.",
+          "sources": [
+            {
+              "citation": "Largent EA, et al. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.",
+              "type": "article"
+            },
+            {
+              "citation": "Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "expert": [
+      {
+        "id": "exp1",
+        "text": "Require immunization for patient-facing staff during the vaccine-preventable outbreak absent a recognized medical contraindication, and keep workers who remain unimmunized out of direct patient contact when necessary to protect patients and staff.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA Code Opinion 8.7, which states that physicians have a responsibility to accept immunization in high-risk vaccine-preventable outbreaks and that health institutions' responsibility may extend to requiring staff immunization and limiting direct patient contact for unimmunized individuals.",
+          "sources": [
+            {
+              "citation": "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Do not impose a vaccination mandate while an acceptable less-intrusive infection-control package can achieve the institution's patient-protection objective within an acceptable time; reassess a mandate if that package proves inadequate.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference from WHO's necessity and proportionality framework: mandatory vaccination should be considered only when necessary and proportionate, and its justification is weaker where acceptable less-intrusive measures can achieve the objective within an acceptable time. The no-mandate-now action follows from the benchmark stipulation that the alternative package is plausibly adequate.",
+          "sources": [
+            {
+              "citation": "WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.",
+              "type": "guideline"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
+    ],
+    "framework": [
+      {
+        "id": "fw1",
+        "text": "Require vaccination for patient-facing work because workers who can safely reduce a substantial avoidable transmission risk to vulnerable patients have reciprocal and harm-prevention duties that outweigh the remaining liberty cost.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from harm prevention, professional reciprocity and duties to protect vulnerable patients. The executable requirement is Bench-authored.",
+          "sources": [
+            {
+              "citation": "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians.",
+              "type": "guideline"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Use the effective respirator, testing and reassignment package instead of compulsory vaccination while it can provide an acceptable level of patient protection, because coercion should not exceed what is necessary to achieve the legitimate public-health objective.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from least-restrictive-means, proportionality, liberty and institutional-trust reasoning. The executable alternative-measures rule is Bench-authored.",
+          "sources": [
+            {
+              "citation": "WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.",
+              "type": "guideline"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "collection": "benchmark",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 action-divergent candidate construction and professional-policy plurality; later P3 mandate/proportionality sensitivity studies."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited guidance and studies retain their own rights; source positions are summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "WHO. COVID-19 and mandatory vaccination: Ethical considerations. Policy brief. 2022.",
+      "type": "guideline"
+    },
+    {
+      "citation": "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.",
+      "type": "guideline"
+    },
+    {
+      "citation": "Largent EA, Persad G, Sangenito S, Glickman A, Boyle C, Emanuel EJ. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.",
+      "type": "article"
+    },
+    {
+      "citation": "Gallup. U.S. workers' opinions on employer vaccination requirements, 2021 tracking surveys.",
+      "type": "survey"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
+  },
+  "scenario": "A regional health system is responding to a serious vaccine-preventable outbreak with ongoing transmission risk to vulnerable patients and substantial hospitalization. For this benchmark, assume the available vaccine has strong evidence of safety and substantially reduces severe disease and onward transmission, vaccination is free and convenient with paid time and recognized medical exemptions, months of voluntary education and access efforts have plateaued below the health system's preferred vaccination level, and a package of high-quality respirators, frequent testing and prompt reassignment can plausibly reduce patient exposure to an institutionally acceptable level although it is more operationally burdensome and somewhat less protective than vaccination. Assume both a vaccination requirement with medical exemptions and continued voluntary vaccination coupled to that alternative package are legally available. The authority must decide whether vaccination should be a condition of patient-facing work or whether the less-restrictive package should remain the required protection strategy.",
+  "content_hash": "sha256:a174879407df77c555ecfd6917f60dd21696a71e867137bf9b135211a6aa5081"
+}

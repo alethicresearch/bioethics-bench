@@ -1,0 +1,843 @@
+{
+  "generated_from": {
+    "branch": "author/full-corpus-completion",
+    "head": "a14b48207b2b5e8d1e1ed7fb8bf0111537359ce5",
+    "head_committed_at": "2026-08-29T03:26:11+00:00"
+  },
+  "families": {
+    "M002": {
+      "record_id": "m002-capacity-risk-supported-decision-making-concise-v1",
+      "content_hash": "sha256:99e89ee6188503919600209c7ad4af817e70831195a3672feb27df144b0f9925",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:ffce398ec2e06003"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:2691fef766265e05"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:e1c5fed4f9815349"
+        }
+      ]
+    },
+    "M004": {
+      "record_id": "m004-adolescent-confidentiality-sensitive-care-concise-v1",
+      "content_hash": "sha256:d8d4e296c33242def1e1ff918215fe44825830d9254c05fca08028ba246b56cb",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:71699bba5ff84a19"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:0aceb72f48ee9cb9"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:28ec1d0863082973"
+        }
+      ]
+    },
+    "M005": {
+      "record_id": "m005-family-nondisclosure-serious-diagnosis-concise-v1",
+      "content_hash": "sha256:7fc912e5c398e2946ebbb34f520ede43f9c6289d40c07ca6a706a8996cab3715",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:f83aaace41757bdf"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:02d7058620b956f1"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:745030dbb9880299"
+        }
+      ]
+    },
+    "M010": {
+      "record_id": "m010-family-interpreters-consequential-consent-concise-v1",
+      "content_hash": "sha256:c5021e9635637e0adfc6cc0aa97db7bc9357b339d92a975bd2ee77715e53a024",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:00d32dcbff7395fb"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:5cea45dda63eb0fc"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:4ed7b8551e317c54"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:f9fef1db2fc4d74f"
+        }
+      ]
+    },
+    "M012": {
+      "record_id": "m012-unproven-commercial-stem-cell-assistance-concise-v1",
+      "content_hash": "sha256:f01e6ae160eb3c2e369e6df01ab2775ccb8dd11eafeda58201cdffd57d7e9e84",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:4f9814d68aecdad3"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:9f34c2cf9d9872ed"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:aef5ddad7efb42aa"
+        }
+      ]
+    },
+    "M018": {
+      "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
+      "content_hash": "sha256:8bddda452e60e88cc451bac6c1749e2f3fdce49bae580fe848dd272c5bf4f501",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:2f6fcde62761e233"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:358985175118f3a3"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:1c0981bc24c726d2"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:266400038581cbd3"
+        }
+      ]
+    },
+    "M019": {
+      "record_id": "m019-telemedicine-access-diagnostic-safety-concise-v1",
+      "content_hash": "sha256:6417cbe737f44759ed09c5d1f3cddf21b9d55e4bac1dab72de6f75182231fe1f",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:4bdd55cd17062f02"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:6febe7bfbbc145b2"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:cac4171b7d2e2b38"
+        }
+      ]
+    },
+    "M020": {
+      "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
+      "content_hash": "sha256:fba3282567175311439b5f3516229567391f274b657a7d8cd18c4c5ee272acdd",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:55bea6fdece4190c"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:cbdb1b5fbef70834"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:3a96540a8ead48ab"
+        },
+        {
+          "id": "exp2",
+          "task": "A",
+          "fingerprint": "u1:661d0ed26eaf8796"
+        }
+      ]
+    },
+    "M025": {
+      "record_id": "m025-cochlear-implantation-deaf-child-source-informed-concise-v1",
+      "content_hash": "sha256:3a8ef410cf0b684560e8f84d52d203e0a843e148b478a53e75e919afe9dc9fa8",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:4d63bf2d4cc4ce76"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:7ce5b81c1f14bf75"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:13f6ca0ae39da28c"
+        }
+      ]
+    },
+    "M028": {
+      "record_id": "m028-brain-death-accommodation-natural-concise-v1",
+      "content_hash": "sha256:93e0e05cf9a1d7c62c6458c5d3b8d58d51da70432340ca11a437b8f90c421046",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:7c42253366f9a5cc"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:418d0bb16f96a152"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:115f8daae4fdc6f1"
+        }
+      ]
+    },
+    "M030": {
+      "record_id": "m030-concurrent-treatment-hospice-concise-v1",
+      "content_hash": "sha256:1b7240d68977b531d462f685fbca99c3e1357d23b842c4554ae1f71f4bc90edf",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:7656bf5ae3f335e3"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:eb0157a663bc545e"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:944673847eeb2875"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:3f49ffd8e4f8d036"
+        }
+      ]
+    },
+    "M031": {
+      "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-concise-v1",
+      "content_hash": "sha256:393650f289254f2270db79bb6ba854e43adcaf1966a49dd2b7aaf38f60e181da",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:d94de1cbd159fbc5"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:453137bf63d2b3b6"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:3a4fe1901d6a699f"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:f00515ac79b884af"
+        },
+        {
+          "id": "exp3",
+          "task": "A",
+          "fingerprint": "u1:6e441e54322f5e78"
+        }
+      ]
+    },
+    "M033": {
+      "record_id": "m033-advance-request-euthanasia-dementia-natural-concise-v1",
+      "content_hash": "sha256:2df70fbfa755d405a2b5a7f6a8d69e62e78dd52be0f3b4bd842aa31c897048ad",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:0cca877706c35520"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:dc536e9957551a42"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:7d8d4d9cc3aaffd4"
+        }
+      ]
+    },
+    "M034": {
+      "record_id": "m034-canh-prolonged-disorder-consciousness-concise-v1",
+      "content_hash": "sha256:8bc006f37ea1fb646cab15c294d200738f8d5b5a7a5e734b45b05838fcef9ee0",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:a7413878e1fb7802"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:0ad9514f1df67c04"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:d0dcb8bd8b3bbca7"
+        }
+      ]
+    },
+    "M041": {
+      "record_id": "m041-publicly-funded-ivf-allocation-natural-concise-v1",
+      "content_hash": "sha256:2d8daf38b868bd7c7fb55e274a1a95780980efcc8639e2ac28d44a4094b322d3",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:37cdc2fb8a535c34"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:a15838edc641d9f0"
+        },
+        {
+          "id": "exp1",
+          "task": "A",
+          "fingerprint": "u1:639abb34403f27fd"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:445065a2e8adcdab"
+        }
+      ]
+    },
+    "M042": {
+      "record_id": "m042-prenatal-screening-disability-justice-natural-concise-v1",
+      "content_hash": "sha256:1ef725d0a43957ff0721b0b7f91925412de456874b7a899fed0100a036a49885",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:f78f2fd4b06712b2"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:7500d9d585159ef6"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:33f3d7cc84bed747"
+        }
+      ]
+    },
+    "M045": {
+      "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
+      "content_hash": "sha256:c70cce05b57c8c02a3abafa474583fbdbc18e68948c16490fc10f44ef0b3c6ad",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:d043d436894da87f"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:5a49a5d1ed99d70d"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:2e29022692e38a95"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:5535c17c76db4ee1"
+        },
+        {
+          "id": "public-pool",
+          "task": "C",
+          "fingerprint": "u1:97bdf9dee69aafc5"
+        }
+      ]
+    },
+    "M050": {
+      "record_id": "m050-donor-identity-access-natural-concise-v1",
+      "content_hash": "sha256:326f7d7926b935914286290b796eabe8c3c3380d9fa64df8ac69a10da606b72c",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:2bb6986352a0cb87"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:7fef3d5edff3d94c"
+        },
+        {
+          "id": "pub3",
+          "task": "A",
+          "fingerprint": "u1:5200c03a77142ea0"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:4042bfbe61f587a1"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:21628058dd8d7035"
+        }
+      ]
+    },
+    "M054": {
+      "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
+      "content_hash": "sha256:4bd387fd0579e7eade4b13bc32c93dbba0958e3d44eeda639eb7023d06df6476",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:c38eb2f4ed83f30c"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:c0e5d01b135635aa"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:edfb4bb0516a173a"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:e9ded9114e2f710c"
+        }
+      ]
+    },
+    "M056": {
+      "record_id": "m056-fourteen-day-embryo-research-limit-natural-concise-v1",
+      "content_hash": "sha256:3fce1715a66ed1525d3ce357d1499744600a0c69eb5c0a5f2eba38a4b7c9b9cd",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:acdc86d1354fd0b0"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:cf30e57e0aae7141"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:30b80444402f55eb"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:15bf8d2af15039cc"
+        }
+      ]
+    },
+    "M060": {
+      "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
+      "content_hash": "sha256:10a47fa35b7a6e29b199d00cc7313ed4c3d9df0d6e7f4b3a20e6114e5a776b56",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:0cf752a427b440fd"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:dc62d9abd91eeb02"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:1c0140bec7b15e0d"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:69d0da1b46fc3b99"
+        },
+        {
+          "id": "public-pool",
+          "task": "C",
+          "fingerprint": "u1:fe3c16ad43691bc3"
+        }
+      ]
+    },
+    "M075": {
+      "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
+      "content_hash": "sha256:b9ce7df57b69d3e404704403292c9db393eebe08b243ff11c2a2531e6a7d3693",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:6795cb3e09c6eaf1"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:48ef0b6a37269452"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:6be9c33c892f5e46"
+        }
+      ]
+    },
+    "M080": {
+      "record_id": "m080-post-trial-access-beneficial-intervention-natural-concise-v1",
+      "content_hash": "sha256:12445a7a2c7fc378e9d979828b790af41a162fbf3335cabe578b8a3ca0da0adb",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:3aa3befa5b095e2d"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:82b9baa4f76fdb20"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:ea1e877e9e1e39d6"
+        }
+      ]
+    },
+    "M094": {
+      "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1",
+      "content_hash": "sha256:1c1c84bb8c249842eb43bcd28a3fcbd531b526f84fbff66518ac61e99c794115",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:f59e3a5d50357ec0"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:720790c30b76ea73"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:d7483b1d3fd046ad"
+        },
+        {
+          "id": "exp2",
+          "task": "A",
+          "fingerprint": "u1:74464f8ab5a639e2"
+        }
+      ]
+    },
+    "M097": {
+      "record_id": "m097-supervised-consumption-services-natural-concise-v1",
+      "content_hash": "sha256:5ed5bd4bd322f20fa02352b327f61486a8e9541d6863a481ed849f327ccd44d0",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:db58bec4e8d7d6a6"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:ea94d766c72051bf"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:c86846665e6b3069"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:e35480324195a560"
+        }
+      ]
+    },
+    "M102": {
+      "record_id": "m102-optout-donation-family-authority-natural-concise-v1",
+      "content_hash": "sha256:9dadfd30af55fd3886be790f224d20f9ad052afdfa0216ecfa7769ae45e54d52",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:817feca5bd5a6087"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:39bf29ce8fa0dc7c"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:2af58d9c74b0596c"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:80aaa486433b603e"
+        }
+      ]
+    },
+    "M106": {
+      "record_id": "m106-organ-donor-registration-reciprocity-priority-natural-concise-v1",
+      "content_hash": "sha256:1ccb252dbdecda9694e7e3df489cc37def7371bb91781f52837bd99c7fe77d46",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:7fce6bd2baadd024"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:e2f6b9a559bec26d"
+        },
+        {
+          "id": "exp1",
+          "task": "A",
+          "fingerprint": "u1:0df4f79fc89cab34"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:8e6cfcc236cb02b4"
+        }
+      ]
+    },
+    "M123": {
+      "record_id": "m123-wastewater-surveillance-consent-resolution-natural-concise-v1",
+      "content_hash": "sha256:63d7f46532a2204dd53781b6ceeb2d4ecab277a18b4cd59e29f032733bedfc07",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:5e7bc17183552b2a"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:45e7cb1a004d7f0b"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:8007a26ce2a82850"
+        }
+      ]
+    },
+    "M129": {
+      "record_id": "m129-disability-weights-qalys-coverage-natural-concise-v1",
+      "content_hash": "sha256:10f6759b9aa83a6a2f889bedbf9027a7b883b9a56d50edcd14502e166db8ef5e",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:21f183d526917682"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:44a063945a54b738"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:fa132bd626f5ca56"
+        }
+      ]
+    },
+    "M139": {
+      "record_id": "m139-secondary-use-health-records-consent-natural-concise-v1",
+      "content_hash": "sha256:c625b100e7e02a0d9bd7a48d3b3426656b49be76939f54387fff4f6b184189ee",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:444e938536500d67"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:4badcdd4770afe56"
+        },
+        {
+          "id": "pub3",
+          "task": "A",
+          "fingerprint": "u1:df76eb02a998b3a9"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:16a5770a6fdd8ed9"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:1a001c8c9f460ff0"
+        }
+      ]
+    },
+    "M141": {
+      "record_id": "m141-commercial-health-data-partnership-natural-concise-v1",
+      "content_hash": "sha256:93f63fdac3aed16ea535a80d2df2068c44b1e60bd33cc7c1a4c142cfe826bfb6",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:1c0c31f8fa8525fb"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:c411342e3e940097"
+        },
+        {
+          "id": "pub3",
+          "task": "B",
+          "fingerprint": "u1:1ebfcd9aae6a3ec0"
+        },
+        {
+          "id": "exp1",
+          "task": "A",
+          "fingerprint": "u1:08a5ae79cf69ce6c"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:d4dab8afbc131861"
+        }
+      ]
+    },
+    "M144": {
+      "record_id": "m144-ai-disclosure-to-patients-natural-concise-v1",
+      "content_hash": "sha256:8f6afd3281492b75df3dc1404276d658e87358d6dc11b782e548f7169b4b484a",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:8ea9243f6f3e3c3a"
+        },
+        {
+          "id": "pub2",
+          "task": "B",
+          "fingerprint": "u1:86bc501bb1966117"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:bf8fa3528d801f62"
+        }
+      ]
+    },
+    "M146": {
+      "record_id": "m146-ambient-ai-documentation-consent-natural-concise-v1",
+      "content_hash": "sha256:4b094d37310d6f52a0b38dac9ab7bae59f3ea9159c55219084637c1170caac14",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "B",
+          "fingerprint": "u1:8f684238079799bb"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:1b9e14906bc1ee9f"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:e095bfbda0cc43dd"
+        }
+      ]
+    },
+    "M189": {
+      "record_id": "m189-mammography-screening-guideline-divergence-natural-concise-v1",
+      "content_hash": "sha256:672643d84a00a2cdb35c071d1884f2831d650a0a1e72c3fc75716de7573ef839",
+      "units": [
+        {
+          "id": "pub1",
+          "task": "A",
+          "fingerprint": "u1:536be5a32694f080"
+        },
+        {
+          "id": "pub2",
+          "task": "A",
+          "fingerprint": "u1:6c360fb949499e1e"
+        },
+        {
+          "id": "exp1",
+          "task": "B",
+          "fingerprint": "u1:fc56214999357b09"
+        },
+        {
+          "id": "exp2",
+          "task": "B",
+          "fingerprint": "u1:052e3b61887b151f"
+        }
+      ]
+    }
+  }
+}

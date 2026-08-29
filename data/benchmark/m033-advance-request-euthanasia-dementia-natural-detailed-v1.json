@@ -65,7 +65,7 @@
     "summary": "Bench-authored Dutch 2026 representation synthesized from RTE guidance and empirical work on public and professional attitudes. It fixes a specific reaffirmed directive and mixed current experiential evidence so the decision concerns how prior authority, current welfare and irreversibility should interact.",
     "sources": [
       {
-        "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+        "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
         "type": "policy-document"
       },
       {
@@ -73,7 +73,7 @@
         "type": "survey"
       },
       {
-        "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+        "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
         "type": "survey"
       },
       {
@@ -103,7 +103,7 @@
               "type": "survey"
             },
             {
-              "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+              "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
               "type": "survey"
             }
           ],
@@ -124,7 +124,7 @@
               "type": "survey"
             },
             {
-              "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+              "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
               "type": "survey"
             },
             {
@@ -147,7 +147,7 @@
           "summary": "Adapted from current Dutch Regional Euthanasia Review Committees guidance: a competent advance directive may substitute for the oral request after communication is lost, but it does not waive the remaining due-care criteria.",
           "sources": [
             {
-              "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+              "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
               "type": "policy-document"
             }
           ],
@@ -218,6 +218,7 @@
     ]
   },
   "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x1x3-mean-v1",
   "exposure": "internal-development",
   "status": "draft",
   "intended_use": [
@@ -237,7 +238,7 @@
   },
   "references": [
     {
-      "citation": "Regional Euthanasia Review Committees. EuthanasiaCode, current version effective January 1, 2026.",
+      "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
       "type": "policy-document"
     },
     {
@@ -245,7 +246,7 @@
       "type": "survey"
     },
     {
-      "citation": "Opinions of health professionals and the public after eight years of euthanasia legislation in the Netherlands. PMID 22695742.",
+      "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
       "type": "survey"
     },
     {
@@ -280,5 +281,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A person with advanced Alzheimer disease has lost capacity to understand or decide about euthanasia and can no longer communicate a coherent current treatment preference. Six years earlier, while fully decisionally capable and after detailed discussion with a physician, the person completed an advance euthanasia directive stating that euthanasia should be performed if dementia progressed to permanent inability to recognize close family and make independent decisions; the directive was reaffirmed on later visits while capacity remained intact. Those specified conditions are now present. The person sometimes appears calm and receptive to familiar touch and music and at other times shows fear and agitation, so clinicians cannot establish a stable current judgment that life is experienced as unbearable. For this benchmark, assume the directive was specific, informed and repeatedly reaffirmed with capacity, its trigger is now met, there is no coherent current request or revocation, behavior and affect do not establish continuous unbearable suffering, and current Dutch law allows directive substitution in principle while requiring every other due-care criterion. The physician must decide whether and under what rule the advance request may be acted upon.",
-  "content_hash": "sha256:31f4732dcc72c6e29acead4adf4d1ed8fc1822f3543ef1992bfd67ac1a315df5"
+  "content_hash": "sha256:639d266bdb2ee66a9ed0ad2a93d6398e64406d60357797fa2edc39c62c70872a"
 }

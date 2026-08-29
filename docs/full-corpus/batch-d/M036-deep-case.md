@@ -110,3 +110,35 @@ Critical care/palliative medicine; behavioral ethics; public-attitudes methodolo
 ## 18. Downstream record rule
 
 If executable, concise/detailed representations must preserve strict clinical equivalence at the decision point. Any difference in prognosis, treatment burden, symptom control or prior commitment would destroy the intended construct.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above, which was explicitly
+conditional on a candidate audit. The audit has now been performed against the underlying
+sources rather than against the dossier's summary of them. The provisional judgment is
+preserved above as research history.
+
+**Public layer measures a different decision object.** PMID 38912645 (Strand et al., *Med Decis
+Making*, 2024; preregistered, n=1067) concerns **medical reimbursement decisions in which only
+future patients are affected**. It found participants more supportive of rationing framed as
+withholding than as withdrawing, and — contrary to its own prestated hypothesis — more supportive of
+withdrawal at the bedside than at the policy level. M036's scenario is an ICU treatment-limitation
+policy for a present patient with a surrogate. The dossier's own §13 lists "conflating bedside
+permissibility with reimbursement/rationing policy evidence" as a construction risk, and that is
+precisely the bridge a public candidate would have to cross. PMID 18279501 and PMID 38588396
+document physician–public attitude gaps, not institutional policies.
+
+The dossier asked the audit to "test whether public evidence yields two actionable policy
+orientations rather than merely a mean difference in discomfort." It yields a framing effect on a
+different decision object. That is less than a mean difference in discomfort, not more.
+
+**Expert layer is a singleton.** AMA ethics holds there is no ethical difference between withholding
+and withdrawing when the intervention may appropriately be declined. Per the dossier's §10, the
+contrary scholarship at PMID 30896350 belongs in the framework pool, and it is already represented
+there.
+
+**Held.** Promotion requires evidence of public or affected-community positions on a bedside
+treatment-limitation *policy* at matched action granularity.
+
+Held is a recoverable state, not a verdict on the family's importance. The dossier stands as
+a research result; what it lacks is source-to-policy alignment at the represented action.

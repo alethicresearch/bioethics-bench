@@ -164,6 +164,20 @@ probe('empty candidate provenance sources in `development`',
   })],
   /candidate exp1 has no provenance sources \(collection "development"\)/);
 
+probe('one action repeated across two source pools',
+  [baseRecord({
+    representation: undefined,
+    candidate_pools: (() => {
+      const pools = baseRecord().candidate_pools;
+      return {
+        ...pools,
+        expert: [{ ...candidate('exp1', 'expert', 'adapted-from-source'), text: 'Represented policy pub1.' },
+          ...pools.expert.slice(1)],
+      };
+    })(),
+  })],
+  /candidate exp1 \(expert\) repeats the action of pub1 \(public\) verbatim/);
+
 probe('framework candidate not derived-from-framework',
   [baseRecord({
     representation: undefined,

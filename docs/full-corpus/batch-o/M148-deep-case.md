@@ -31,7 +31,36 @@ AMA currently provides unusually explicit professional guidance: coverage determ
 Do not treat approval and denial symmetrically; specify appeal speed; distinguish recommendation from final determination; do not infer professional acceptance of automated denials from use of AI elsewhere.
 
 ## Executable judgment
-Provisional candidate-audit target, but likely asymmetric: professional guidance strongly supports physician review while patient/clinician evidence may support different procedural thresholds.
+
+`candidate-audit-required`. The dossier identifies this family as a candidate-audit target but no candidate audit has been performed, so it is held for v1. Promotion requires a recorded audit establishing action-distinct candidates in each represented pool under the four-basis rule. Original judgment, kept as research history:
+
+> Provisional candidate-audit target, but likely asymmetric: professional guidance strongly supports physician review while patient/clinician evidence may support different procedural thresholds.
 
 ## Principal sources
 AMA 2026 policy on AI, physician judgment and payer coverage determinations; CMS prior-authorization/interoperability rules; health-law and utilization-management literature.
+
+## Candidate audit result — 2026-08-28
+
+`audit-complete-not-executable`. This section supersedes the provisional judgment above. Where the hold rests on a gap the dossier itself identified, that is stated;
+where sources were checked directly, the finding is given.
+
+**Held on a singleton professional layer and an unestablished public layer.** The dossier's own
+source architecture is the finding: AMA guidance is "unusually explicit" that coverage
+determinations should remain physician-led and that AI should not substitute for physician review,
+especially for adverse decisions — and it notes that this "supports asymmetric process rules rather
+than a professional pro-autonomous-denial candidate." That is one professional architecture, not
+two, and the second represented position (permitting automated adverse decisions with transparent
+appeal and human reconsideration) has no professional source endorsing it.
+
+The public layer was flagged as likely to support "different procedural thresholds" but no direct
+patient or enrollee evidence on prior-authorization automation policy has been identified. Public
+hostility to prior authorization generally is not a position on whether the adverse decision may be
+automated subject to appeal.
+
+**Held.** Promotion requires either a professional or regulatory source that actually permits
+automated adverse determinations under procedural safeguards — regulatory attention to timeliness
+and appeal rights is not that — or direct affected-community evidence distinguishing the represented
+procedural thresholds.
+
+Held is a recoverable state. The dossier stands as a research result; what it lacks is
+source-to-policy alignment at the represented action.

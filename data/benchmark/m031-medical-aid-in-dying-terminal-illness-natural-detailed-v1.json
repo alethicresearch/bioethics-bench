@@ -9,41 +9,324 @@
   "jurisdiction_context": "Legally permissive US-style jurisdiction, 2026; Oregon supplies the mature statutory reference architecture without making this an Oregon-law lookup.",
   "as_of_date": "2026-08-27",
   "stipulations": [
-    {"id":"m031-legality","kind":"legal","statement":"Medical aid in dying is legally available to qualifying terminally ill adults under a mature safeguard regime.","rationale":"The case concerns ethical institutional participation under legal permission rather than whether the practice is prohibited by law."},
-    {"id":"m031-capacity-voluntariness","kind":"contextual","statement":"Every qualifying request receives decision-specific capacity and coercion assessment and remains revocable.","rationale":"The policy disagreement should not depend on permitting assisted dying for people who lack capacity or are coerced."},
-    {"id":"m031-palliative-access","kind":"contextual","statement":"Hospice and specialist palliative-care options are meaningfully available and explained to requesting patients.","rationale":"The case should not make assisted dying attractive merely by withholding ordinary high-quality end-of-life care."},
-    {"id":"m031-self-administration","kind":"legal","statement":"The represented practice requires voluntary self-administration by the patient; clinician-administered euthanasia is not represented.","rationale":"MAID and euthanasia raise different legal and ethical architectures and should not be conflated."},
-    {"id":"m031-conscience","kind":"contextual","statement":"Clinicians in the system hold sincere opposing views about participation.","rationale":"The natural institutional field includes a conscience/pluralism architecture that would be trivial if no conscientious disagreement existed."}
+    {
+      "id": "m031-legality",
+      "kind": "legal",
+      "statement": "Medical aid in dying is legally available to qualifying terminally ill adults under a mature safeguard regime.",
+      "rationale": "The case concerns ethical institutional participation under legal permission rather than whether the practice is prohibited by law."
+    },
+    {
+      "id": "m031-capacity-voluntariness",
+      "kind": "contextual",
+      "statement": "Every qualifying request receives decision-specific capacity and coercion assessment and remains revocable.",
+      "rationale": "The policy disagreement should not depend on permitting assisted dying for people who lack capacity or are coerced."
+    },
+    {
+      "id": "m031-palliative-access",
+      "kind": "contextual",
+      "statement": "Hospice and specialist palliative-care options are meaningfully available and explained to requesting patients.",
+      "rationale": "The case should not make assisted dying attractive merely by withholding ordinary high-quality end-of-life care."
+    },
+    {
+      "id": "m031-self-administration",
+      "kind": "legal",
+      "statement": "The represented practice requires voluntary self-administration by the patient; clinician-administered euthanasia is not represented.",
+      "rationale": "MAID and euthanasia raise different legal and ethical architectures and should not be conflated."
+    },
+    {
+      "id": "m031-conscience",
+      "kind": "contextual",
+      "statement": "Clinicians in the system hold sincere opposing views about participation.",
+      "rationale": "The natural institutional field includes a conscience/pluralism architecture that would be trivial if no conscientious disagreement existed."
+    }
   ],
-  "position_families": ["safeguarded clinician participation","institutional nonparticipation with palliative care and nonabandonment","lawful access with individual conscience protection","studied-neutral institutional pathway"],
-  "domains": ["assisted-dying","end-of-life"],
-  "tags": ["medical aid in dying","terminal illness","self-administration","clinician conscience","palliative care","professional role","natural asymmetry"],
-  "scenario_provenance": {"construction_method":"adapted-from-source","summary":"Bench-authored health-system policy representation synthesized from mature US MAID law, current professional positions, and recent national public-attitude evidence. Legal permission, capacity/voluntariness, palliative access, self-administration and conscientious disagreement are fixed so the represented variable is institutional participation.","sources":[{"citation":"Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.","type":"policy-document"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.","type":"policy-document","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"},{"citation":"Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.","type":"policy-document"},{"citation":"American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.","type":"policy-document","url":"https://aahpm.org/advocacy/where-we-stand/pad/"},{"citation":"Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.","type":"survey"}],"adapted_not_reproduced":true},
+  "position_families": [
+    "safeguarded clinician participation",
+    "institutional nonparticipation with palliative care and nonabandonment",
+    "lawful access with individual conscience protection",
+    "studied-neutral institutional pathway"
+  ],
+  "domains": [
+    "assisted-dying",
+    "end-of-life"
+  ],
+  "tags": [
+    "medical aid in dying",
+    "terminal illness",
+    "self-administration",
+    "clinician conscience",
+    "palliative care",
+    "professional role",
+    "natural asymmetry"
+  ],
+  "scenario_provenance": {
+    "construction_method": "adapted-from-source",
+    "summary": "Bench-authored health-system policy representation synthesized from mature US MAID law, current professional positions, and recent national public-attitude evidence. Legal permission, capacity/voluntariness, palliative access, self-administration and conscientious disagreement are fixed so the represented variable is institutional participation.",
+    "sources": [
+      {
+        "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
+        "type": "policy-document",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"
+      },
+      {
+        "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
+        "type": "policy-document"
+      },
+      {
+        "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
+        "type": "policy-document",
+        "url": "https://aahpm.org/advocacy/where-we-stand/pad/"
+      },
+      {
+        "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
+        "type": "survey"
+      }
+    ],
+    "adapted_not_reproduced": true
+  },
   "candidate_pools": {
     "public": [
-      {"id":"pub1","text":"Permit qualified terminally ill adults to obtain medical aid in dying through the health system under capacity, voluntariness and informed-choice safeguards alongside meaningful hospice and palliative-care access.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference: recent national data show substantial personal willingness to consider MAID and broader public moral acceptance. The Bench translates that access orientation into a health-system participation rule; personal willingness is not itself direct institutional-policy evidence.","sources":[{"citation":"Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.","type":"survey"},{"citation":"Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.","type":"survey"}],"adapted_not_reproduced":true}},
-      {"id":"pub2","text":"Do not make clinician-assisted death an institutional service; provide high-quality palliative and end-of-life care and allow patients to pursue lawful medical aid in dying outside the system.","source_pool":"public","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference: recent national surveys show substantial public moral opposition to physician-assisted death. The Bench translates that opposition into an institutional nonparticipation policy while preserving ordinary care and lawful external choice; the surveys did not directly specify this workflow.","sources":[{"citation":"Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.","type":"survey"},{"citation":"Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.","type":"survey"}],"adapted_not_reproduced":true}}
+      {
+        "id": "pub1",
+        "text": "Permit qualified terminally ill adults to obtain medical aid in dying through the health system under capacity, voluntariness and informed-choice safeguards alongside meaningful hospice and palliative-care access.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: recent national data show substantial personal willingness to consider MAID and broader public moral acceptance. The Bench translates that access orientation into a health-system participation rule; personal willingness is not itself direct institutional-policy evidence.",
+          "sources": [
+            {
+              "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
+              "type": "survey"
+            },
+            {
+              "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "pub2",
+        "text": "Do not make clinician-assisted death an institutional service; provide high-quality palliative and end-of-life care and allow patients to pursue lawful medical aid in dying outside the system.",
+        "source_pool": "public",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: recent national surveys show substantial public moral opposition to physician-assisted death. The Bench translates that opposition into an institutional nonparticipation policy while preserving ordinary care and lawful external choice; the surveys did not directly specify this workflow.",
+          "sources": [
+            {
+              "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
+              "type": "survey"
+            },
+            {
+              "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
+              "type": "survey"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "expert": [
-      {"id":"exp1","text":"Permit clinician participation for legally eligible, decisionally capable terminally ill adults under the jurisdiction's required assessments, informed consent, voluntariness safeguards and opportunity to withdraw.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from the mature Oregon Death with Dignity regulatory architecture as a policy/regulatory candidate, not as a claim of professional moral consensus.","sources":[{"citation":"Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.","type":"policy-document"}],"adapted_not_reproduced":true}},
-      {"id":"exp2","text":"Do not authorize physicians within the institution to prescribe medication intended to enable death; instead require nonabandonment, communication and adequate relief of suffering at the end of life.","source_pool":"expert","policy_basis":"direct-policy-evidence","provenance":{"construction_method":"adapted-from-source","summary":"Adapted from AMA Opinion 5.7 and the ACP position opposing physician-assisted suicide while emphasizing nonabandonment, communication, palliative care and relief of suffering.","sources":[{"citation":"American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.","type":"policy-document","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"},{"citation":"Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.","type":"policy-document"}],"adapted_not_reproduced":true}},
-      {"id":"exp3","text":"Adopt an institutionally neutral policy that allows lawful medical-aid-in-dying access through an opt-in pathway, protects individual clinician nonparticipation and maintains continuity and palliative care without defining the practice as routine palliative care.","source_pool":"expert","policy_basis":"source-informed-policy-inference","provenance":{"construction_method":"adapted-from-source","summary":"Source-informed policy inference: AAHPM explicitly takes studied neutrality on legal permission, emphasizes safeguards and conscientious practice, and resists treating physician-assisted dying as routine palliative care. The Bench authors the exact health-system opt-in/access workflow from that professional orientation.","sources":[{"citation":"American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.","type":"policy-document","url":"https://aahpm.org/advocacy/where-we-stand/pad/"}],"adapted_not_reproduced":true}}
+      {
+        "id": "exp1",
+        "text": "Permit clinician participation for legally eligible, decisionally capable terminally ill adults under the jurisdiction's required assessments, informed consent, voluntariness safeguards and opportunity to withdraw.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from the Oregon Death with Dignity Act itself and the Oregon Health Authority’s operational requirements, which state the eligibility conditions, the assessments, the waiting period, the written request and the right to rescind. This is an enacted regulatory architecture, not a claim of professional moral consensus. The annual data summary is retained only as evidence that the regime operates at scale; it reports outcomes and is not the source of the policy.",
+          "sources": [
+            {
+              "citation": "Oregon Death with Dignity Act, ORS 127.800–127.897. Requires that the patient be an adult, capable, terminally ill with a prognosis under six months; two oral requests separated by a waiting period plus a written request; confirmation of diagnosis, capacity, voluntariness and informed decision by a consulting physician; and the right to rescind at any time.",
+              "type": "statute"
+            },
+            {
+              "citation": "Oregon Health Authority. Death with Dignity Act Requirements. Current through 2026. The attending-physician, consulting-physician, documentation and reporting steps the Act requires in operational form.",
+              "type": "policy-document"
+            },
+            {
+              "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026. Cited as evidence that the regime operates at scale, not as the source of the policy.",
+              "type": "other"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp2",
+        "text": "Do not authorize physicians within the institution to prescribe medication intended to enable death; instead require nonabandonment, communication and adequate relief of suffering at the end of life.",
+        "source_pool": "expert",
+        "policy_basis": "direct-policy-evidence",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Adapted from AMA Opinion 5.7 and the ACP position opposing physician-assisted suicide while emphasizing nonabandonment, communication, palliative care and relief of suffering.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
+              "type": "policy-document",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"
+            },
+            {
+              "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "exp3",
+        "text": "Adopt an institutionally neutral policy that allows lawful medical-aid-in-dying access through an opt-in pathway, protects individual clinician nonparticipation and maintains continuity and palliative care without defining the practice as routine palliative care.",
+        "source_pool": "expert",
+        "policy_basis": "source-informed-policy-inference",
+        "provenance": {
+          "construction_method": "adapted-from-source",
+          "summary": "Source-informed policy inference: AAHPM explicitly takes studied neutrality on legal permission, emphasizes safeguards and conscientious practice, and resists treating physician-assisted dying as routine palliative care. The Bench authors the exact health-system opt-in/access workflow from that professional orientation.",
+          "sources": [
+            {
+              "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
+              "type": "policy-document",
+              "url": "https://aahpm.org/advocacy/where-we-stand/pad/"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ],
     "framework": [
-      {"id":"fw1","text":"Permit safeguarded medical aid in dying because a capable person approaching death has a strong interest in controlling the timing and manner of dying when continued suffering or loss of function is unacceptable to them.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from autonomy and relief-of-suffering reasoning: a capable person's evaluative authority over an approaching death can support access when safeguards and alternatives are present. The executable policy sentence is a Bench construction.","sources":[{"citation":"Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.","type":"survey"},{"citation":"American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.","type":"policy-document","url":"https://aahpm.org/advocacy/where-we-stand/pad/"}],"adapted_not_reproduced":true}},
-      {"id":"fw2","text":"Prohibit institutional clinician participation because medicine's duties of care, palliation and nonabandonment should not extend to supplying the means of death.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from professional-role and nonmaleficence reasoning: medicine's distinctive ethical commitments are taken to exclude intentionally enabling death while requiring intensive end-of-life care. The policy sentence is a Bench construction.","sources":[{"citation":"American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.","type":"policy-document","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"},{"citation":"Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.","type":"policy-document"}],"adapted_not_reproduced":true}},
-      {"id":"fw3","text":"Permit lawful patient access while protecting clinicians from compelled participation because reasonable moral disagreement makes both forced participation and institutional obstruction ethically problematic.","source_pool":"framework","policy_basis":"framework-derived-policy","provenance":{"construction_method":"derived-from-framework","summary":"Derived from conscience and moral-pluralism reasoning: both patient access and clinician integrity can be morally weighty in a legally permissive setting, motivating a structured access pathway without compulsory individual participation. The policy sentence is a Bench construction.","sources":[{"citation":"American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.","type":"policy-document","url":"https://aahpm.org/advocacy/where-we-stand/pad/"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 5.7 and related conscience guidance.","type":"policy-document","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"}],"adapted_not_reproduced":true}}
+      {
+        "id": "fw1",
+        "text": "Permit safeguarded medical aid in dying because a capable person approaching death has a strong interest in controlling the timing and manner of dying when continued suffering or loss of function is unacceptable to them.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from autonomy and relief-of-suffering reasoning: a capable person's evaluative authority over an approaching death can support access when safeguards and alternatives are present. The executable policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
+              "type": "survey"
+            },
+            {
+              "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
+              "type": "policy-document",
+              "url": "https://aahpm.org/advocacy/where-we-stand/pad/"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw2",
+        "text": "Prohibit institutional clinician participation because medicine's duties of care, palliation and nonabandonment should not extend to supplying the means of death.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from professional-role and nonmaleficence reasoning: medicine's distinctive ethical commitments are taken to exclude intentionally enabling death while requiring intensive end-of-life care. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
+              "type": "policy-document",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"
+            },
+            {
+              "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
+              "type": "policy-document"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      },
+      {
+        "id": "fw3",
+        "text": "Permit lawful patient access while protecting clinicians from compelled participation because reasonable moral disagreement makes both forced participation and institutional obstruction ethically problematic.",
+        "source_pool": "framework",
+        "policy_basis": "framework-derived-policy",
+        "provenance": {
+          "construction_method": "derived-from-framework",
+          "summary": "Derived from conscience and moral-pluralism reasoning: both patient access and clinician integrity can be morally weighty in a legally permissive setting, motivating a structured access pathway without compulsory individual participation. The policy sentence is a Bench construction.",
+          "sources": [
+            {
+              "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
+              "type": "policy-document",
+              "url": "https://aahpm.org/advocacy/where-we-stand/pad/"
+            },
+            {
+              "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7 and related conscience guidance.",
+              "type": "policy-document",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"
+            }
+          ],
+          "adapted_not_reproduced": true
+        }
+      }
     ]
   },
-  "collection":"benchmark","exposure":"internal-development","status":"draft",
-  "intended_use":["application-demonstration","paper-illustration","protocol-development","robustness-testing"],
-  "review":null,
-  "paper_usage":["P2 natural-geometry, professional pluralism, projects/Compare Runs and RE-Iteration demonstration; later P3 matched-vs-natural and source-basis analyses."],
-  "rights":{"license":"CC-BY-4.0","holder":"Alethic Research","notes":"Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."},
-  "references":[{"citation":"Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.","type":"policy-document"},{"citation":"American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.","type":"policy-document","url":"https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"},{"citation":"Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.","type":"policy-document"},{"citation":"American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.","type":"policy-document","url":"https://aahpm.org/advocacy/where-we-stand/pad/"},{"citation":"Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.","type":"survey"},{"citation":"Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.","type":"survey"}],
-  "required_aggregation":"mean","schema_version":"1.0.0",
-  "record_id":"m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1",
-  "representation":{"form":"detailed","companion_record_ids":["m031-medical-aid-in-dying-terminal-illness-natural-concise-v1"],"notes":"Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."},
-  "scenario":"A large health system operates in a legally permissive US-style jurisdiction with a mature medical-aid-in-dying framework for capable adults whose terminal illness is expected to cause death within six months. A qualifying patient may obtain medication for voluntary self-administration after required assessments and procedural safeguards. Some physicians in the system view participation as compatible with respect for autonomy and relief of suffering; others believe prescribing medication intended to enable death is incompatible with medicine or their conscience. Patients reasonably expect accurate information and continuity even when an individual clinician objects. For this benchmark, assume MAID is legally available under the safeguard regime, every qualifying request receives decision-specific capacity and coercion assessment and remains revocable, hospice and specialist palliative-care options are meaningfully available and explained, self-administration by the patient is required, and sincere clinician disagreement persists. The health system must choose its institutional participation policy.",
-  "content_hash":"sha256:db43227deeb279ab0144b92d6e2ad06abd094d2898f45500f5c647e3ae55d98a"
+  "collection": "benchmark",
+  "benchmark_profile": "full-corpus-2x3x3-mean-v1",
+  "exposure": "internal-development",
+  "status": "draft",
+  "intended_use": [
+    "application-demonstration",
+    "paper-illustration",
+    "protocol-development",
+    "robustness-testing"
+  ],
+  "review": null,
+  "paper_usage": [
+    "P2 natural-geometry, professional pluralism, projects/Compare Runs and RE-Iteration demonstration; later P3 matched-vs-natural and source-basis analyses."
+  ],
+  "rights": {
+    "license": "CC-BY-4.0",
+    "holder": "Alethic Research",
+    "notes": "Bench-authored case content is licensed CC BY 4.0. Cited sources retain their own rights; source material is summarized and adapted rather than reproduced."
+  },
+  "references": [
+    {
+      "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
+      "type": "policy-document",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physician-assisted-suicide"
+    },
+    {
+      "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
+      "type": "policy-document"
+    },
+    {
+      "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
+      "type": "policy-document",
+      "url": "https://aahpm.org/advocacy/where-we-stand/pad/"
+    },
+    {
+      "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
+      "type": "survey"
+    },
+    {
+      "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
+      "type": "survey"
+    }
+  ],
+  "required_aggregation": "mean",
+  "schema_version": "1.0.0",
+  "record_id": "m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1",
+  "representation": {
+    "form": "detailed",
+    "companion_record_ids": [
+      "m031-medical-aid-in-dying-terminal-illness-natural-concise-v1"
+    ],
+    "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
+  },
+  "scenario": "A large health system operates in a legally permissive US-style jurisdiction with a mature medical-aid-in-dying framework for capable adults whose terminal illness is expected to cause death within six months. A qualifying patient may obtain medication for voluntary self-administration after required assessments and procedural safeguards. Some physicians in the system view participation as compatible with respect for autonomy and relief of suffering; others believe prescribing medication intended to enable death is incompatible with medicine or their conscience. Patients reasonably expect accurate information and continuity even when an individual clinician objects. For this benchmark, assume MAID is legally available under the safeguard regime, every qualifying request receives decision-specific capacity and coercion assessment and remains revocable, hospice and specialist palliative-care options are meaningfully available and explained, self-administration by the patient is required, and sincere clinician disagreement persists. The health system must choose its institutional participation policy.",
+  "content_hash": "sha256:67f80e29184dc3c2fdd78f46ae3d126f25a1a9aadc16aec1e609af3f132d002c"
 }

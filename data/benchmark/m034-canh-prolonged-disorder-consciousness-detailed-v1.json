@@ -150,7 +150,7 @@
           "summary": "Adapted from convergent professional guidance emphasizing diagnostic rigor and serial assessment in prolonged disorders of consciousness and treating artificially administered nutrition and hydration as a clinical intervention subject to collaborative autonomy, benefit/burden, and ethical review. Current sources support one individualized process architecture rather than opposed professional endpoints.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. PMID 30098791.",
+              "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. 2018. Recommends serial, standardized neurobehavioral assessment with measures shown valid and reliable, to improve diagnostic accuracy, and care from multidisciplinary teams with specialized expertise. The benefit/burden and patient-preference process this candidate also states comes from the ASPEN and ESPEN ethics guidelines cited alongside. PMID 30098791.",
               "type": "guideline"
             },
             {
@@ -177,7 +177,7 @@
           "summary": "Derived from preservation of life, epistemic humility, and disability-justice reasoning. The executable continuation rule is Bench-authored.",
           "sources": [
             {
-              "citation": "AAN/ACRM/NIDILRR. Disorders of Consciousness guideline. PMID 30098791.",
+              "citation": "Giacino JT, Katz DI, Schiff ND, et al. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. Arch Phys Med Rehabil. 2018;99(9):1699-709. AAN/ACRM/NIDILRR. PMID 30098791.",
               "type": "guideline"
             }
           ]
@@ -243,5 +243,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:ed5d1c09139c7cb8bbae50de7583bc4e8bafd2d214ee95333c65d1c156dbeed0"
+  "content_hash": "sha256:4644694e13a92aeb7e88756a61c44ecf61ff40906f2a1c9d69dc51b816b268e2"
 }
