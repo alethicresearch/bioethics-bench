@@ -207,3 +207,17 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** if the standard is amended, existing direct candidates need a declaration pass. That is a corpus-wide edit and is not made here.
 - **Integrated into:** _pending_
 
+### Expert pluralism is mostly one authority stating a duty and its limit, not two authorities disagreeing
+
+- **Target:** P1 method section on source pools and what a cross-source QCCS cell measures; P2 Bench-construction language. **Supersedes the "two ways an expert pool comes to hold two candidates" entry above**, which had the shape right and the proportions wrong.
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`, expert batches 1–3; 28 of 49 expert `direct-policy-evidence` candidates read against primary professional documents
+- **Evidence class:** corpus construction / primary-source reading by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the intuitive model of expert pluralism — two professional bodies contradicting each other — describes the minority of this corpus. Reading the primary documents, the more common structure is **one authority stating a duty and its limit, declining to settle, or endorsing a menu of strategies**, with both expert candidates licensed by the same document. Three worked cases: ASRM 2022 says practitioners are under no obligation to provide *or refuse to provide* nonmedical sex selection and that clinics should publish their own policies (M060); CDC's Core Elements framework directs avoidance of low-benefit antibiotics *and* supplies watchful-waiting and delayed-prescribing materials (M018); AMA Opinion 8.3 states the obligation to provide urgent disaster care "even in the face of greater than usual risks to physicians' own safety, health, or life" *and* the obligation to weigh present risk against remaining available in future (M020). M189's USPSTF-against-ACS is the exception, not the template.
+  **This changes how an expert–expert QCCS cell should be read.** A low coherence score between two candidates drawn from two bodies reports a professional disagreement. A low score between two candidates drawn from one document's two clauses reports tension *within* a single professional position. Those are different findings about the field, and the corpus can now distinguish them because the citations say which case each family is. If P1 discusses what a cross-source cell measures, this is the distinction to make.
+- **Limits:** 28 of 49 expert candidates verified against primary documents; 21 remain. Model-performed reading of published guidance, not a survey of the professional literature.
+- **Dependency:** none. Supersede the earlier two-ways entry.
+- **Integrated into:** _pending_
+
