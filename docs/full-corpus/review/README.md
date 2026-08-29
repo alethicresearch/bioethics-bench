@@ -12,7 +12,7 @@ Read in this order.
 | `CITATION_AMBIGUITY_RESOLUTIONS.md` | The five citations that resolved but matched on neither title nor author — are they the right papers? | **Closed.** Four accurate, one wrong author, all five rewritten to full form |
 | `SOURCE_TRACEABILITY_REVIEW.md` | Can a reader get from a candidate to a nameable source at all? | **Closed.** Seven circular citations repaired, one genuinely missing source identified, build guard added |
 | `DIVERGENCE_REVIEW.md` (+ generated `divergence-worksheet.md`) | Does each scenario's fixed fact pattern sit where the candidates produce different actions? | **Closed.** All 34 families pass; six observations recorded |
-| `DIRECT_POLICY_WARRANT_REVIEW.md` | Does each source actually *state* the policy attributed to it? | **Public pool closed** (20/20). **Expert pool in progress** (33 of 49 read) |
+| `DIRECT_POLICY_WARRANT_REVIEW.md` | Does each source actually *state* the policy attributed to it? | **Public pool closed** (20/20). **Expert pool in progress** (36 of 49 read) |
 
 ## The ordering is not arbitrary
 
@@ -42,8 +42,13 @@ the sources.
 
 ## Open items
 
-- 16 of 49 expert `direct-policy-evidence` candidates not yet read against primary documents.
+- 13 of 49 expert `direct-policy-evidence` candidates not yet read against primary documents.
 - 98 public `source-informed-policy-inference` bridges verified as *stated*, not as *sound*.
 - A method decision staged for the coordinator: the four-basis rule has no discipline for a
   candidate that is mostly direct and partly Bench-authored. Two instances found (M025, M144).
   See `docs/papers/MANUSCRIPT_WRITEBACK.md`.
+- **Mode 3 is under-detected.** The warrant review found one instance of a source quoted correctly
+  on one question while silent on its own position on another (M041/ESHRE), and found it in the
+  one source read from its own PDF rather than from an abstract. Every other source read at
+  abstract level could carry the same defect invisibly. Closing this properly means reading whole
+  documents, not cited passages.

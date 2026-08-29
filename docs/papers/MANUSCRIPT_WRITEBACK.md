@@ -235,3 +235,20 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none for the manuscripts. Execution-relevant for SACRE, already discharged.
 - **Integrated into:** _pending_
 
+### Three ways a source-to-policy chain fails, each with an instance
+
+- **Target:** P2 Bench-construction language; P1 limitations. **Consolidates and supersedes** the separate M031 and M002 construction-failure entries above, which are instances of modes 1 and 2.
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`; 36 of 49 expert plus 20 of 20 public `direct-policy-evidence` candidates read against sources
+- **Evidence class:** construction-failure taxonomy from corpus review by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the papers argue that structural validation is not source fidelity. Reading every high-warrant candidate against its sources turns that from an assertion into a taxonomy with three distinct modes, each with an instance, and each invisible to every mechanical check the corpus runs.
+  **1. The source does not say it.** M002's expert candidate, cited to WHO QualityRights, read "using substitute decision-making only as a last resort." WHO QualityRights is CRPD-Article-12 aligned and treats substitute decision-making as something to eliminate, declining even a last-resort framing. The citation was correct, the source real; the candidate said something the source rejects.
+  **2. The candidate adds a clause the source does not carry, undeclared.** M025's ACIA candidacy guideline supports the evaluation architecture but takes no position on informed parental refusal, so "refusal alone is not treated as neglect" was Bench-authored. M144 carries AMA H-480.931's risk-and-impact principle from developer-to-purchaser disclosure across to physician-to-patient disclosure. The taxonomy requires inferred candidates to declare their bridge and says nothing about a direct candidate that is mostly direct and partly authored.
+  **3. The source is quoted correctly on one question and silent on its own position on another.** M041's expert candidate reproduces ESHRE Task Force 14's threshold rule almost verbatim — and omits the same paper's holding that when only one patient can be treated, priority goes to a childless couple. Prior children is exactly the axis the family's other candidates divide along.
+  Mode 3 is the one worth dwelling on, because it defeats the obvious remedy. Modes 1 and 2 are caught by reading the passage a candidate cites. Mode 3 is caught only by reading the whole document, since the failure is in what the record leaves out. **A citation check verifies the passage; only a reader verifies the source.**
+- **Limits:** 13 of 49 expert candidates remain unread. All reading was model-performed. Mode 3 was found once, in the one source read from its own PDF rather than an abstract — which suggests it is under-detected rather than rare.
+- **Dependency:** none. If P2 wants one concrete example rather than three, mode 3 is the strongest, because it is the one no tightening of citation practice would catch.
+- **Integrated into:** _pending_
+
