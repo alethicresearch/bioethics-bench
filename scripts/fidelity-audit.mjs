@@ -24,6 +24,12 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const recordDir = join(root, 'data', 'benchmark');
+// Matches a citation whose warrant is one of this repository's own documents rather than an
+// external source. Deliberately narrow: it must name a Bench artefact, so a citation that
+// openly reports an unresolved source is not caught by it — that gap is recorded in
+// docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md instead of hidden behind a pointer.
+const SELF_REFERENCE = /\b(candidate audit|deep[- ]case|deep case file|disposition ledger)\b|\bM\d{3}\s+(candidate\s+)?audit\b|\bthis (dossier|repository|corpus)\b/i;
+
 const POOLS = ['public', 'expert', 'framework'];
 const report = process.argv.includes('--report');
 
@@ -61,6 +67,37 @@ for (const { file, record } of records) {
       if (candidate.policy_basis === 'synthetic-author-constructed-policy') {
         problems.push(`${file}: ${candidate.id} is a synthetic author-constructed policy; this corpus represents none`);
       }
+      // A candidate's warrant must point outward. A citation that names one of this
+      // repository's own audit or dossier documents is circular: the record is grounded in
+      // the document that was written from the record. Seven such citations existed, all
+      // of them in the public pool and all on direct-policy-evidence candidates — the
+      // strongest basis, where a false claim of grounding does the most damage.
+      for (const source of candidate.provenance?.sources ?? []) {
+        if (SELF_REFERENCE.test(source.citation ?? '')) {
+          problems.push(`${file}: ${candidate.id} cites a Bench document as its source warrant — "${source.citation}"`);
+        }
+      }
+    }
+  }
+}
+
+// Reported on every run, not only under --report: a candidate whose warrant is an
+// unresolved source. This is not a schema violation and it does not fail the build, because
+// the gap is documented and has a named resolution path. It is printed unconditionally so
+// that no release run can pass without the reader seeing it.
+const unresolved = [];
+for (const { record } of records.filter((r) => r.file.includes('concise'))) {
+  for (const pool of POOLS) {
+    for (const candidate of record.candidate_pools?.[pool] ?? []) {
+      const sources = candidate.provenance?.sources ?? [];
+      const open = sources.filter((s) => /^UNRESOLVED SOURCE\b/.test(s.citation ?? ''));
+      if (!open.length) continue;
+      const soleWarrant = open.length === sources.length;
+      unresolved.push(
+        `${record.case_id}: ${candidate.id} (${pool}, ${candidate.policy_basis}) — `
+        + `${open.length}/${sources.length} source(s) unresolved`
+        + `${soleWarrant ? '; UNRESOLVED IS THE CANDIDATE\'S ONLY WARRANT' : ''}`,
+      );
     }
   }
 }
@@ -127,7 +164,13 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log(`✓ ${candidateCount} candidates: all sourced, basis confined to its pool, none synthetic.`);
+console.log(`✓ ${candidateCount} candidates: all sourced, basis confined to its pool, none synthetic, no Bench document cited as warrant.`);
+
+if (unresolved.length) {
+  console.log(`! ${unresolved.length} candidate(s) rest partly or wholly on an unresolved source:`);
+  for (const u of unresolved) console.log(`  ! ${u}`);
+  console.log('  See docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md for the disposition.');
+}
 if (report) {
   console.log('\nBasis distribution:');
   for (const [key, n] of [...basisTally.entries()].sort()) console.log(`  ${key}: ${n}`);

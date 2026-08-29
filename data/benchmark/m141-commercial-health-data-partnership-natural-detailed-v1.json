@@ -128,7 +128,7 @@
           "summary": "Adapted from empirical health-data studies in the audit record that directly elicited strong preferences for specific permission before private or for-profit access. The candidate is limited to commercial secondary use and does not imply opposition to all health research.",
           "sources": [
             {
-              "citation": "Commercialization and health-data sharing empirical studies synthesized in Walshe et al. 2024, PMID 38389329, and the M141 candidate audit.",
+              "citation": "Walshe K, et al. Public attitudes to commercial access to health data: a systematic scoping review. 2024. PMID 38389329.",
               "type": "article"
             }
           ],
@@ -271,5 +271,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A nonprofit health system holds a large clinical dataset originally collected for care. A technology company proposes using coded records inside a secure controlled environment to train and validate a predictive model expected to improve diagnosis. For this benchmark, assume the company cannot export unrestricted raw records and is contractually limited to the approved purpose; the model has a credible prospect of clinical benefit; the company will invest substantial engineering resources and seeks substantial commercial intellectual-property rights; the health system would receive discounted access to the resulting product and research collaboration but no revenue share, nonexclusive public-interest license, or other explicit financial return for the data contribution; patients would receive no individual payments and have not given specific permission for this commercial secondary use, although the system can provide transparent notice or obtain consent if its policy requires it; and governed collaboration, stronger fair-value terms, and specific-permission requirements are legally available. The governance board must decide whether the current arrangement is acceptable, should be renegotiated for stronger public value return, or should wait for patient authorization.",
-  "content_hash": "sha256:7a480362ebf222cb1464295f18316b7a83ca8f8ae26f197fcd3b760553b49c87"
+  "content_hash": "sha256:94a1e88c195bcdd50ea3f329a5141952a145d4433c5e67c2aaec820f40ac2b06"
 }

@@ -113,7 +113,7 @@
               "type": "article"
             },
             {
-              "citation": "Family-role and next-of-kin surveys summarized in the M102 candidate audit.",
+              "citation": "Molina-Pérez A, Rodríguez-Arias D, Delgado J, et al. Public knowledge and attitudes towards consent policies for organ donation in Europe: a systematic review. Transplant Rev (Orlando). 2022;36(1):100673. PMID 34864448.",
               "type": "article"
             }
           ],
@@ -264,5 +264,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A national health system uses an opt-out deceased organ-donation system after extensive public information and an accessible process for registering refusal. For this benchmark, assume an adult dies in circumstances allowing donation, the person did not opt out and left no explicit registered donor authorization or written instruction, close relatives strongly object because of their own beliefs and distress but provide no credible evidence that the deceased personally opposed donation, the family can be consulted about the deceased's values and circumstances, and the authority may legally choose either a deceased-choice/rebuttable-presumption policy or a family-objection policy. The system must decide whether the family's own objection should block recovery or whether donation should proceed unless relatives can rebut deemed participation with evidence about the deceased or a narrowly defined exceptional harm.",
-  "content_hash": "sha256:3ca2b77f09a2f62ae7a030fc7f14c6ad5b4b21a3e462b3ea77dd77995bf08695"
+  "content_hash": "sha256:a282dba232c681910f2faef3ca5b970656091231b6ffd9a184b37e152dc4e58a"
 }
