@@ -168,3 +168,29 @@ This is the canonical repo-side surface for Bench/corpus findings that may chang
 - **Dependency:** none. Usable as written.
 - **Integrated into:** _pending_
 
+### Two ways an expert pool comes to hold two candidates
+
+- **Target:** P1 method section on candidate-pool construction; P2 Bench-construction language
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`, expert batch; 22 of 49 expert `direct-policy-evidence` candidates read against primary guidance
+- **Evidence class:** corpus construction / primary-source reading by a model, not a human
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** the papers describe expert pluralism as bodies disagreeing. Reading the primary documents shows a second and distinct source of it. **M060's two opposed expert candidates cite a single document** — the ASRM Ethics Committee's 2022 opinion, which states practitioners are "under no ethical obligation to provide *or refuse to provide*" nonmedical sex selection, that the practice should not be encouraged, and that clinics should develop and publish their own policies. One body, deliberately declining to settle the question, licensing two institutional policies. Contrast M189, where the pool is two because USPSTF and ACS actually disagree. Both are genuine policy pluralism and they are not the same phenomenon: one is disagreement between authorities, the other is an authority devolving the decision. A benchmark that only modelled the first would miss cases where the professional field is open by design.
+- **Limits:** 22 of 49 expert candidates verified against primary documents; 27 remain. Model-performed, abstract- and web-level reading.
+- **Dependency:** none.
+- **Integrated into:** _pending_
+
+### An evaluation report about a policy is not a statement of the policy
+
+- **Target:** P2 Bench-construction language, alongside the circular-citation finding
+- **Status:** ready-for-central-integration
+- **Branch:** `author/full-corpus-completion`
+- **Commit/evidence:** `docs/full-corpus/review/DIRECT_POLICY_WARRANT_REVIEW.md`, M031 repair
+- **Evidence class:** construction-failure finding
+- **Lifecycle state:** release-candidate
+- **Proposed writeback:** M031's expert candidate for permitting clinician participation in medical aid in dying encoded Oregon's safeguards — capacity, terminal prognosis, two oral requests plus a written one, consulting-physician confirmation, right to rescind. Its only source was the Oregon Health Authority's **annual Death with Dignity data summary**, a report of how many prescriptions were written and how many people died. That document contains none of those safeguards; they are in ORS 127.800–127.897. Everything the candidate said was true of Oregon and nothing in the cited artefact said it. This is the same circularity as citing a Bench audit, in a form that looks entirely respectable: an official government document, on exactly the right topic, from the right agency, that is nonetheless evidence *about* the policy rather than a statement *of* it. Worth a sentence wherever the papers discuss what a provenance chain has to establish.
+- **Limits:** one instance found in 22 candidates read.
+- **Dependency:** none.
+- **Integrated into:** _pending_
+
