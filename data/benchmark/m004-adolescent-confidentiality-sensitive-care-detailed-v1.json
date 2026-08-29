@@ -52,7 +52,7 @@
         "accessed": "2026-08-27"
       },
       {
-        "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+        "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
         "type": "article",
         "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
         "accessed": "2026-08-27"
@@ -111,7 +111,7 @@
               "accessed": "2026-08-27"
             },
             {
-              "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+              "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
               "type": "article",
               "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
               "accessed": "2026-08-27"
@@ -215,7 +215,7 @@
       "accessed": "2026-08-27"
     },
     {
-      "citation": "National parent survey on private adolescent time and disclosure preferences. PMID 19643441.",
+      "citation": "Dempsey AF, Singer DD, Clark SJ, Davis MM. Adolescent preventive health care: what do parents want? J Pediatr. 2009;155(5):689-94. National survey of 1,025 parents. PMID 19643441.",
       "type": "article",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
       "accessed": "2026-08-27"
@@ -246,5 +246,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:9fa4b5abb6f35ceb1822b06d65e6739839057d0f035605acede9f606507caa72"
+  "content_hash": "sha256:bdc77d499740084266b01c91ea2c607eec99f38f458cfe6bedb2afed5e93eab3"
 }

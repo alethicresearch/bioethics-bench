@@ -39,7 +39,7 @@
     {
       "record_id": "m004-adolescent-confidentiality-sensitive-care-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:9bc6103a85ed30ac49290ff137278f2a106011f8f04769cf3f0c1bb4f54f1c94",
+      "content_hash": "sha256:15dc71f99fef8b784c3feb629285f65749c8fc84870fddf48674eec6e0161b38",
       "path": "data/benchmark/m004-adolescent-confidentiality-sensitive-care-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -50,7 +50,7 @@
     {
       "record_id": "m004-adolescent-confidentiality-sensitive-care-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:9fa4b5abb6f35ceb1822b06d65e6739839057d0f035605acede9f606507caa72",
+      "content_hash": "sha256:bdc77d499740084266b01c91ea2c607eec99f38f458cfe6bedb2afed5e93eab3",
       "path": "data/benchmark/m004-adolescent-confidentiality-sensitive-care-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -171,7 +171,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:5640f9dd85f59598c35e387cce912387146b8b444522c61d818c5081e82ddc6a",
+      "content_hash": "sha256:c3e3288007fde09744d39d181ae1df94d99258ae3f419ab2c24afb81a547b9cf",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -182,7 +182,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:e2d575a8c0f9a0e33b33dfdbc06aa5ce95a8f7b0bbaae4666e819fe5a7e58cb3",
+      "content_hash": "sha256:87121acc614047c78826cda200b97edda0f75b49c2860cf02e55a029ab6677c1",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -237,7 +237,7 @@
     {
       "record_id": "m030-concurrent-treatment-hospice-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:6627919a9e6ebf70f0f4bea68e27f208897a2e76f500d78b6e77057beb33f85f",
+      "content_hash": "sha256:c6654fabd431dbf296b871871c4baf93e151aff238d44134ddbd7037fe6f3b0e",
       "path": "data/benchmark/m030-concurrent-treatment-hospice-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -248,7 +248,7 @@
     {
       "record_id": "m030-concurrent-treatment-hospice-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:199fb74848d8e0ac418c0589304cc09a5858de583b631927be3d5ed5ca5df0b8",
+      "content_hash": "sha256:f075f4f817cd879dac897432049ee64a55e0d639dc4b29f9f22a596f237f45e3",
       "path": "data/benchmark/m030-concurrent-treatment-hospice-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",

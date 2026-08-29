@@ -88,7 +88,7 @@
         "type": "article"
       },
       {
-        "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+        "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
         "type": "article"
       }
     ],
@@ -106,7 +106,7 @@
           "summary": "Source-informed policy inference from healthcare-worker studies in which many respondents accepted a substantial duty to care when protections were credible. The fair-rotation and narrow-exemption rule is Bench-authored rather than a literal survey item.",
           "sources": [
             {
-              "citation": "Aitken P et al. 2021. PMID 34496995.",
+              "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
               "type": "article"
             },
             {
@@ -127,11 +127,11 @@
           "summary": "Source-informed policy inference from worker evidence showing that family exposure, personal vulnerability, perceived workplace safety, and caregiving obligations materially affect willingness to accept outbreak risk. The executable exemption architecture is Bench-authored.",
           "sources": [
             {
-              "citation": "Aitken P et al. 2021. PMID 34496995.",
+              "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
               "type": "article"
             },
             {
-              "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+              "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
               "type": "article"
             }
           ],
@@ -242,7 +242,7 @@
       "type": "guideline"
     },
     {
-      "citation": "Aitken P et al. 2021. PMID 34496995.",
+      "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
       "type": "article"
     },
     {
@@ -250,10 +250,10 @@
       "type": "article"
     },
     {
-      "citation": "Ebola-era healthcare-worker willingness and duty-to-care study. PMID 34780288.",
+      "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
       "type": "article"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:e2d575a8c0f9a0e33b33dfdbc06aa5ce95a8f7b0bbaae4666e819fe5a7e58cb3"
+  "content_hash": "sha256:87121acc614047c78826cda200b97edda0f75b49c2860cf02e55a029ab6677c1"
 }

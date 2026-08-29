@@ -92,7 +92,7 @@
         "type": "article"
       },
       {
-        "citation": "Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.",
+        "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
         "type": "article"
       }
     ],
@@ -107,14 +107,14 @@
         "policy_basis": "direct-policy-evidence",
         "provenance": {
           "construction_method": "adapted-from-source",
-          "summary": "Adapted from preference evidence in which concurrent chemotherapy plus hospice was the most commonly selected option and from evidence that willingness to forgo cancer treatment did not track perceived hospice-service need. The program-policy wording is an executable translation of those directly elicited care preferences.",
+          "summary": "Adapted from the stated policy conclusions of both cited studies: that concurrent chemotherapy and hospice may be the preferred option and a solution to hospice underuse, and that the requirement to forgo cancer treatment does not identify patients with greater hospice need. The basis is direct because each source states this policy direction in its own conclusions; the underlying preference elicitation in PMID 19571331 used a hypothetical scenario with adult smokers rather than patients under treatment, so the preference data alone would not carry the candidate.",
           "sources": [
             {
-              "citation": "Advanced lung-cancer treatment and hospice preference study. PMID 19571331.",
+              "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
               "type": "article"
             },
             {
-              "citation": "Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.",
+              "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
               "type": "article"
             }
           ],
@@ -131,7 +131,7 @@
           "summary": "Source-informed policy inference from respondents who preferred hospice-only or supportive-care pathways and from broader advanced-cancer treatment-preference evidence. The institutional boundary rule is Bench-authored and is not presented as a majority public position.",
           "sources": [
             {
-              "citation": "Advanced lung-cancer treatment and hospice preference study. PMID 19571331.",
+              "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
               "type": "article"
             }
           ],
@@ -254,14 +254,14 @@
       "type": "article"
     },
     {
-      "citation": "Advanced lung-cancer treatment and hospice preference study. PMID 19571331.",
+      "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
       "type": "article"
     },
     {
-      "citation": "Hospice-service need and willingness to forgo cancer treatment study. PMID 19114698.",
+      "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
       "type": "article"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:199fb74848d8e0ac418c0589304cc09a5858de583b631927be3d5ed5ca5df0b8"
+  "content_hash": "sha256:f075f4f817cd879dac897432049ee64a55e0d639dc4b29f9f22a596f237f45e3"
 }
