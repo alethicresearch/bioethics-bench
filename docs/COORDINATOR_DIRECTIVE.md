@@ -7,9 +7,10 @@ For a cold start, read:
 2. `docs/PROGRAM_COORDINATION.md`
 3. `docs/BRANCH_COORDINATION.md`
 4. `docs/COMPLETION.md`
-5. `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`
-6. `docs/papers/MANUSCRIPT_WRITEBACK.md`
-7. for source review, `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` and generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+5. `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
+6. `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`
+7. `docs/papers/MANUSCRIPT_WRITEBACK.md`
+8. for source review, `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` and generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
 
 ## Current state
 
@@ -22,11 +23,13 @@ P2 has completed its v49 submission-composition stage. Current P2 main and suppl
 - https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
 - https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 
+The **first-pass Bioethics Bench generalization audit is complete** in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`. It identifies a large reusable resource/provenance core and localizes the strongest SACRE-specific coupling to the fixed public/expert/framework pool structure, `pub/exp/fw` candidate aliases, SACRE profiles/geometry/cross-source pairing, and `required_aggregation`. The v1 corpus should not be rewritten merely for architectural neatness.
+
 Bench should now prioritize its own resource maturation and standalone paper, while supplying P2 only with targeted factual corrections if new evidence changes a current claim materially.
 
 ## Operating mode
 
-Work in meaningful completion units. Prefer a completed review batch, a resolved resource-design question, or a verified generalization-audit tranche over another layer of coordination prose.
+Work in meaningful completion units. Prefer a completed review batch, a resolved resource-design question, or a verified adapter/task-contract step over another layer of coordination prose.
 
 Do not stop developmental/paper-facing SACRE work because independent human source review is incomplete. Human review is a quality/release layer under the current program architecture, not an execution gate.
 
@@ -44,19 +47,23 @@ Use the existing review tooling and task system. Model-assisted review remains u
 
 When a review finding is actionable, distinguish whether it changes executable meaning or only provenance.
 
-### 3. Run the Bioethics Bench generalization audit
+### 3. Act on the completed generalization audit without destabilizing v1
 
-The standalone paper intends Bioethics Bench to be broader than SACRE/REai. Audit the current schema/task coupling and classify fields as:
+The audit is recorded in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`.
 
-- **intrinsic resource fields**;
-- **generic task/evaluation fields**;
-- **SACRE-specific execution fields**.
+Next architectural steps:
 
-The goal is to identify accidental coupling and future abstraction opportunities without destabilizing the v1 execution path merely to make an architectural claim look cleaner.
+- specify **`sacre-qccs-v1`** explicitly as a task contract: source-role mapping, candidate aliases, pair generation, QCCS instruction/scale, aggregation semantics, and required outputs;
+- define the future generic candidate/source-role model on paper before editing the canonical schema;
+- build a **read-only adapter prototype** that reproduces the current v1 SACRE executable projection;
+- add equivalence tests before any generalized representation can replace current records;
+- specify one additional scientifically motivated non-SACRE task when its research question is mature enough.
+
+Do not claim demonstrated method-neutrality merely because a separable architecture has now been identified.
 
 ### 4. Mature the standalone resource paper
 
-`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` remains the manuscript-facing findings surface; `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail. Use current findings to develop the standalone Bench paper around:
+`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` remains the manuscript-facing findings surface; `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail. Use the completed generalization audit to develop the standalone Bench paper around:
 
 - why source-grounded/versioned normative research objects are needed;
 - resource / task / evaluation separation;
@@ -70,7 +77,12 @@ SACRE/QCCS remains the first mature task family rather than the definition of th
 
 ### 5. Support P3/P4 only with frozen, explicit objects
 
-When P3/P4 protocols need Bench objects, provide exact versioned cases/task definitions and preserve representation/provenance. Do not let protocol convenience silently alter the canonical resource.
+When P3/P4 protocols need Bench objects, distinguish and freeze:
+
+1. the **resource snapshot** — exact cases, representations, candidate content, provenance/version state;
+2. the **task specification** — SACRE pool mapping, QCCS instruction/scale, pair-generation rule, aggregation, model/provider/configuration, and retry/exclusion semantics.
+
+Do not let protocol convenience silently alter the canonical resource.
 
 ## Change-class rule for SACRE
 
