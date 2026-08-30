@@ -12,7 +12,7 @@ The core DEWA suite is:
 
 Bioethics Bench is a coordinated major resource/publication, not an extra numbered stage and not a prerequisite between P2 and P3.
 
-The current wider-program priority is **P2 maximal integrated master**. Bench source/review and resource-generalization work continues in parallel.
+P2 v49 main + Supplementary Information are complete for this compositional stage. The current Bench priorities are the **generalization audit, source/review/release maturation, and standalone resource paper**, while P2 receives only targeted factual corrections if new Bench evidence materially changes an existing claim.
 
 ## Current Bench state
 
