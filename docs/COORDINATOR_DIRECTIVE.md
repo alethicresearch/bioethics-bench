@@ -19,8 +19,8 @@ The current standalone research/publication plan is Bioethics Bench v3 in Drive:
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
 P2 has completed its v49 submission-composition stage. Current P2 main and supplement are:
-- https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
-- https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
+- https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 
 Bench should now prioritize its own resource maturation and standalone paper, while supplying P2 only with targeted factual corrections if new evidence changes a current claim materially.
 
