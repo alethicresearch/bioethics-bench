@@ -1,0 +1,4 @@
+{
+  "_comment": "Verified canonical locators for Full Corpus citations that cannot be recovered mechanically from citation text. Keys are exact citation strings. Only genuine source URLs/DOIs belong here; search-result URLs do not.",
+  "citations": {}
+}
