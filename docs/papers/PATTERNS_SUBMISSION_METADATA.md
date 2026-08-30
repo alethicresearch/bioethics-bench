@@ -1,6 +1,6 @@
 # Bioethics Bench — Patterns Submission Metadata
 
-**Manuscript:** Bioethics Bench v7 — Patterns-positioned manuscript development draft  
+**Manuscript:** Bioethics Bench v8 — Patterns submission-prepared manuscript development draft  
 **Primary target:** *Patterns* (Cell Press)  
 **Proposed article type:** Resource-style submission; verify exact live Editorial Manager label at submission  
 **Status:** submission metadata preparation
@@ -27,33 +27,24 @@ computational bioethics; evaluation science; benchmark design; provenance; norma
 
 ## Abstract
 
-Current v7 abstract length: **291 words**.
+Current v8 abstract length: **291 words**.
 
 Do not shorten solely by analogy to another Cell Press journal. Verify the live *Patterns* article-type limit in Editorial Manager / current author instructions first. If the live limit is lower than 291 words, produce a venue-compliant compressed abstract without changing the paper's evidence ceiling.
 
 ## Highlights
 
-Current v7 Highlights are scientifically appropriate but exceed the Cell Press general production rule of 85 characters per Highlight.
-
-Current character counts, including spaces:
-
-1. 105 characters — Normative evaluation requires versioned, source-grounded research objects rather than moral labels alone.
-2. 110 characters — Thirty-four executable families yield 68 matched records across eight evidence-qualified candidate geometries.
-3. 107 characters — An explicit SACRE/QCCS adapter reproduces all 68 task projections with zero execution-semantic differences.
-4. 107 characters — Warrant relations separate what sources assert, how policies are constructed, and how tasks later use them.
-
-### Recommended compliant replacements
+V8 implements the Cell Press general production constraint used for the submission-prepared draft. All four current Highlights are below 85 characters:
 
 1. **69 characters** — Normative benchmarks need versioned, source-grounded research objects
 2. **79 characters** — Thirty-four families yield 68 matched records across eight candidate geometries
 3. **74 characters** — All 68 reference-task projections reproduce with zero semantic differences
 4. **75 characters** — Warrant relations separate source claims, policy construction, and task use
 
-These retain the current scientific claims while removing acronyms and staying below 85 characters.
+Do not restore the longer v7 Highlights unless a journal-specific instruction requires a different form.
 
 ## The Bigger Picture
 
-Current v7 Bigger Picture length: **136 words**.
+Current v8 Bigger Picture length: **136 words**.
 
 Current text already serves the intended broad-audience function: it explains why normative benchmark construction itself is part of the measurement apparatus and distinguishes inspectability/reproducibility from moral truth.
 
@@ -61,7 +52,7 @@ Verify the live *Patterns* length limit at submission. Do not expand it further 
 
 ## Authors and affiliations — unresolved submission blocker
 
-The current v7 development manuscript contains **no author line or affiliations in the front matter**. Do not infer the final author list from program participation or prior papers.
+The current v8 development manuscript contains **no locked author line or affiliations in the front matter**. Do not infer the final author list from program participation or prior papers.
 
 Before the final submission snapshot, lock:
 
@@ -92,14 +83,12 @@ https://bioethicsbench.com
 `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`  
 `tasks/sacre-qccs-v1/task-contract.json`
 
-**All-record equivalence reference**  
-Bench execution-equivalence commit: `077b36ff1eb9662e93549b1f4261691960cfa605`  
-SACRE re-pin merge commit: `4ed4b24ab99d7427195a21393474c02700274ee6`
+**Current locator-enriched all-record equivalence reference**  
+Bench resource commit: `0a8317ba8a2c5978f7a50bb5f13de875153b6782`  
+SACRE re-pin merge commit (PR #22): `9fa908a45c2447aa97f0473754c434bdb874b19e`  
+SACRE Full Corpus payload SHA-256: `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`
 
-**Current publication-package validation commit**  
-`00615a10d5a72d592dba39ca9b7ec71970d80cda`
-
-The final manuscript should cite the exact immutable **submission-snapshot** commit/tag created immediately before submission, while retaining the earlier commit as the specific execution-equivalence reference.
+The final manuscript should cite the exact immutable **submission-snapshot** commit/tag created immediately before submission. The locator-enriched equivalence references above remain the scientific reference for the current resource→task projection even if later documentation-only commits advance repository `main`.
 
 ## Licensing
 
@@ -118,11 +107,18 @@ Software-license selection is a submission/public-release metadata decision that
 - Eight current evidence-qualified candidate geometries.
 - 428 unordered cross-source reference-task pairs per representation; 856 across one concise/detailed pass.
 - Current records remain `status: draft` and `reviewed_by_human: false`.
-- All-record `sacre-qccs-v1` task projection verified across 68 records.
-- 0 execution/task-semantic differences in the equivalence test.
-- 36 stale content hashes in the prior SACRE vendor state, classified as provenance-only drift.
+- **242 unique Full Corpus citations**.
+- **130 PMID-bearing citations; 130/130 resolve consistently against PubMed**.
+- **0 unresolved canonical source locators** across all 68 Full Corpus records.
+- Traceable internal research-packet placeholders have been replaced with their underlying external sources.
+- All-record `sacre-qccs-v1` task projection verified across 68 records after the locator enrichment.
+- **0 execution/task-semantic differences** in the current equivalence test.
+- **68/68 resource hashes changed**, classified as provenance-only drift because source/provenance metadata is part of whole-resource identity.
 - Post-repin adapter projection and SACRE vendor payload byte-for-byte identical.
-- Current repository validation and deliberate self-tests pass.
+- SACRE Full Corpus regression suite passes **46/46** and the main-branch post-merge equivalence workflow passes.
+- No model/QCCS rerun was required or performed.
+
+Complete source-locator coverage and PMID resolution are traceability/identifier claims. They are **not** corpus-wide source-fidelity validation.
 
 ## Claims not to enter into submission metadata
 
@@ -154,11 +150,11 @@ Avoid positioning the paper as primarily an LLM performance comparison or as a p
 
 ## Remaining pre-submission checklist
 
-1. Lock authors/affiliations/ORCIDs/corresponding author.
+1. Lock authors/affiliations/ORCIDs/corresponding author/contributions/funding/competing interests.
 2. Choose software/tooling license.
-3. Replace v7 Highlights with the compliant versions above.
-4. Verify live *Patterns* abstract, Bigger Picture, graphical-abstract, and file requirements.
-5. Finalize cover letter.
-6. Freeze and validate the immutable submission snapshot.
-7. Test logged-out reviewer access to repository, data, task contract, and documentation.
-8. Update manuscript Data and Code Availability with the exact snapshot identifier.
+3. Verify live *Patterns* abstract, Bigger Picture, graphical-abstract, and file requirements.
+4. Finalize cover letter/front matter with locked author metadata.
+5. Freeze and validate the immutable submission snapshot.
+6. Test logged-out reviewer access to repository, data, task contract, and documentation.
+7. Update manuscript Data and Code Availability with the exact snapshot identifier.
+8. Conduct final author/coauthor prose review and submit.
