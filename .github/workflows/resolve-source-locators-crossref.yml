@@ -1,0 +1,35 @@
+name: Resolve source locators via Crossref
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/resolve-source-locators-crossref.mjs'
+      - '.github/workflows/resolve-source-locators-crossref.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Resolve high-confidence DOI matches
+        run: node scripts/resolve-source-locators-crossref.mjs
+      - name: Commit verified resolver output
+        run: |
+          if git diff --quiet -- data/source-locator-overrides.json; then
+            echo 'No high-confidence Crossref matches found.'
+            exit 0
+          fi
+          git config user.name 'xnuxi'
+          git config user.email 'research@alethic.ai'
+          git add data/source-locator-overrides.json
+          git commit -m 'Add Crossref-verified source locators'
+          git push
