@@ -1,120 +1,133 @@
 # Coordinator Directive — Bioethics Bench Lane
 
-**Current objective:** move Bioethics Bench from a scientifically coherent standalone resource manuscript into submission-ready research infrastructure without turning source review into a developmental execution gate.
+**Current objective:** convert the now submission-prepared Bioethics Bench manuscript and reviewer-inspectable repository package into a final immutable Patterns submission snapshot, without overstating source review or reopening completed architecture work.
 
-For a cold start, read:
+## Cold-start reading order
 
-1. `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
-2. `docs/PROGRAM_COORDINATION.md`
-3. `docs/BRANCH_COORDINATION.md`
-4. `docs/COMPLETION.md`
-5. `docs/papers/BENCH_MANUSCRIPT_V7_HANDOFF.md`
-6. `docs/papers/BENCH_SUBMISSION_POSITIONING.md`
-7. `docs/papers/BENCH_V7_CITATION_CLAIM_AUDIT.md`
-8. `docs/papers/BENCH_STANDALONE_FINDINGS.md`
-9. `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
+1. `docs/papers/BENCH_MANUSCRIPT_V8_HANDOFF.md`
+2. `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md`
+3. `docs/papers/PATTERNS_SUBMISSION_METADATA.md`
+4. `docs/papers/PATTERNS_COVER_LETTER_DRAFT.md`
+5. `docs/RESOURCE_CARD.md`
+6. `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md`
+7. `docs/ARCHIVAL_RELEASE_PLAN.md`
+8. `docs/papers/BENCH_SUBMISSION_POSITIONING.md`
+9. `docs/papers/BENCH_V7_CITATION_CLAIM_AUDIT.md`
 10. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
-11. `docs/strategy/GENERIC_CANDIDATE_SOURCE_ROLE_MODEL.md`
-12. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
-13. for source review, `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` and generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+11. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
+12. for continuing source review, generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
 
-## Current manuscript frontier
+## Current manuscript
 
-**CURRENT Bioethics Bench v7 — Patterns-positioned manuscript development draft:**  
-https://docs.google.com/document/d/1aL0sM1Ilx9ihPF7T7705vBCOe2iLN4SQ/edit
+**CURRENT Bioethics Bench v8 — Patterns submission-prepared manuscript development draft**  
+https://docs.google.com/document/d/14HRYJ1QDDfb7Rhv_QJGQ7siowIVm5BbK/edit
 
-V6 is preserved as the immediate superseded source; v5, v4, and v3 remain preserved as earlier manuscript/planning states. Only v7 carries `CURRENT`.
+V8 is **15 pages, four figures, five tables**. It is scientifically identical to v7 except for a production-compliance correction: all four Highlights are now below the Cell Press 85-character limit. The 291-word abstract and 136-word Bigger Picture were deliberately left unchanged until the exact live Patterns article-specific limits are verified.
 
-V7 is a **15-page submission-positioned manuscript development draft** with four figures and five tables. The v6 Methods/Results spine is preserved. V7 adds Patterns-facing Highlights and `The bigger picture`, revises the abstract, positions the paper against moral-evaluation benchmarks, evaluation science, and dataset/model documentation, and expands the bibliography. The exact final DOCX was rendered and inspected page-by-page; **15/15 pages passed**.
+V8 passed a complete 15/15 page render inspection. V7 is preserved in Drive as the immediate superseded source.
 
-The current primary venue recommendation is **Patterns (Cell Press), Resource article**. NeurIPS Evaluations & Datasets is a strong later-cycle alternative; JBI is a plausible methodology-oriented fallback. The venue and literature analysis is complete in `docs/papers/BENCH_SUBMISSION_POSITIONING.md`. Do not restart generic venue research unless a concrete submission constraint changes.
+**Primary target:** *Patterns* (Cell Press), Resource-style submission. Do not restart generic venue research unless a concrete journal requirement changes.
 
-The exact v7 quantitative/source/literature claim surface has also been audited in `docs/papers/BENCH_V7_CITATION_CLAIM_AUDIT.md`; it passes for manuscript-development use while preserving the independent-review boundary.
+## Submission resource package — complete for current development state
 
-## Current verified resource state
+The reviewer-facing repository package now includes:
 
-The executable Full Corpus contains **34 families / 68 matched concise+detailed records / 210 unique family-level candidates**. The broader disposition program covers **200 families**: 34 Full Corpus executable, one Featured-only, 82 held for additional evidence, 71 research-complete but not executable under the current source/decision structure, and 12 held after candidate audit. The executable count is an output of evidence/eligibility constraints rather than a preset target.
+- `docs/RESOURCE_CARD.md`;
+- `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md`;
+- `docs/ARCHIVAL_RELEASE_PLAN.md`;
+- provisional `CITATION.cff`;
+- refreshed current-state `README.md`;
+- `docs/papers/PATTERNS_SUBMISSION_METADATA.md`;
+- `docs/papers/PATTERNS_COVER_LETTER_DRAFT.md`;
+- `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md`.
 
-Current SACRE task-role counts are 69 Public, 55 Expert, and 86 Framework. Policy-basis distribution is Public 49 source-informed / 20 direct; Expert 49 direct / 6 source-informed; Framework 86 framework-derived. Current records remain `status: draft` and `reviewed_by_human: false`.
+The package explicitly distinguishes a **peer-review submission snapshot** from a later **formal public archival release**. The submission snapshot may remain transparently draft and not independently human-reviewed; that state must be stated rather than hidden.
 
-The 34 executable families occupy **eight natural candidate geometries**. Only 8/34 are 2×2×2; 26/34 are evidence-qualified asymmetric shapes. Current geometry yields **428 unordered cross-source QCCS pairs per representation and 856 across one matched concise+detailed pass**.
+## Repository verification
 
-Current machine/model-assisted quality evidence includes 122/122 recorded PMIDs resolving, candidate-level reading of all 69 direct-policy-evidence candidates, and bridge checks for all 55 source-informed policy inferences. Whole-document omission review has examined five families by that method; **29 remain unexamined**. Do not extrapolate a corpus-wide omission/error rate.
+A publication-package push exposed a latent task-contract/verifier mismatch: the verifier required `equivalence_gate.current_expected_record_count`, while the contract only carried the historical `verified_record_count`.
 
-## Closed architecture gates — do not redo
+The contract now distinguishes:
 
-The first-pass generalization audit, explicit `sacre-qccs-v1` task contract, read-only adapter, and all-record equivalence gate are complete.
+- current expected corpus: **68 records / 34 families**;
+- historically equivalence-verified corpus: **68 records / 34 families**.
 
-Verification established across all 68 records:
+Repair commit: `00615a10d5a72d592dba39ca9b7ec71970d80cda`.
 
-- **0/68 execution/task-semantic differences**;
-- **36/68 stale Bench `content_hash` values** in SACRE's older pin with no accompanying execution-relevant change;
-- those differences were **provenance-only drift**;
-- SACRE re-vendored/re-pinned to merged Bench `main` commit `077b36ff1eb9662e93549b1f4261691960cfa605`;
-- refreshed adapter projection and SACRE vendor payload are byte-for-byte identical;
-- SACRE Full Corpus regression tests pass.
+GitHub Actions validation run `33291927572` passed both `npm run validate` and `node scripts/validate-selftest.mjs`. A subsequent documentation-only package handoff commit also passed the full workflow.
 
-Current SACRE vendor payload SHA-256: `7bfe149a40494354f22ef4f137ec838bae5ad1e3a887cfe44d6d09f9bbf0399d`.
+This repair changed no executable candidate/scenario/task semantics and requires no model rerun.
 
-Do **not** restart the generalization audit, re-specify `sacre-qccs-v1`, or redo adapter equivalence.
+## Current resource state
 
-## Generic resource-model milestone
+- 200-family research/disposition program;
+- 34 executable Full Corpus families;
+- 68 matched concise/detailed records;
+- 210 unique family-level candidates;
+- task roles: 69 Public / 55 Expert / 86 Framework;
+- eight natural candidate geometries;
+- 428 unordered cross-source QCCS pairs per representation / 856 per matched concise+detailed pass;
+- records remain `status: draft`, `reviewed_by_human: false`;
+- 122/122 recorded PMIDs currently resolve;
+- whole-document omission review by the current method covers five families; 29 remain unexamined.
 
-The future generic candidate/source-role model and corpus stress test remain conceptual/shadow architecture. The stress test requires separate axes for source/document type, evidence function, translation mode, support direction, warrant scope, source assertion summary, Bench bridge summary, and relation-level review identity/fingerprint, with many-to-many source↔candidate relations.
+## Closed gates — do not redo
 
-Do **not** migrate canonical v1 merely for architectural neatness. A future source-to-policy warrant task remains scientifically promising but is not a frozen second task.
+The following are complete:
 
-## Current priorities
+- first-pass generalization audit;
+- explicit `sacre-qccs-v1` task contract;
+- read-only adapter;
+- 34-family / 68-record equivalence gate;
+- generic candidate/source-role conceptual model;
+- first corpus-driven warrant-ontology stress test;
+- manuscript Methods/Results construction;
+- venue/literature positioning;
+- v7 claim/citation audit;
+- reviewer-facing submission resource package;
+- v8 Highlight compliance and visual QA.
 
-### 1. Build the submission-linked resource package
+The all-record equivalence result remains: **0/68 execution/task-semantic differences**, 36/68 stale provenance-bearing hashes in the older SACRE vendor state, then exact byte equivalence after re-pin. Scientific reference commits remain Bench `077b36ff1eb9662e93549b1f4261691960cfa605` and SACRE `4ed4b24ab99d7427195a21393474c02700274ee6`.
 
-The next substantive Bench work is **resource release readiness**, not another manuscript rewrite. Prepare the repo-side package reviewers need to inspect and cite the manuscript-linked resource state:
+Do not implement schema v2 or a second task merely for submission neatness.
 
-- submission release checklist and immutable-state plan;
-- citation metadata (`CITATION.cff` or equivalent) aligned with actual authorship and manuscript state;
-- compact Resource/Data Card describing composition, provenance architecture, intended/out-of-scope use, review state, rights, versioning, and task/evaluation separation;
-- exact validation and reference-task projection commands;
-- archival DOI/release plan without claiming a DOI until one actually exists;
-- stable schema/task/manifest pointers.
+## Two unresolved submission decisions
 
-Do not silently promote the current completion-candidate manifest into a public independently reviewed release. Any submission-linked release must state its actual draft/review lifecycle clearly.
+### 1. Author metadata
 
-### 2. Verify concrete Patterns Resource requirements
+Do **not** infer the final author list from other DEWA papers or repository participation. Before the final submission snapshot, explicitly lock:
 
-The substantive venue fit is already established. Before final typesetting/submission, verify current article-specific author requirements where accessible; where public Cell author pages are unavailable, record the unresolved requirement and obtain direct editorial clarification rather than inventing word/figure limits.
+- ordered authors;
+- affiliations;
+- corresponding author/email;
+- ORCIDs where approved;
+- CRediT/contribution statement;
+- funding/acknowledgments;
+- competing interests.
 
-### 3. Author/coauthor submission-facing review
+### 2. Software/tooling license
 
-After the resource package and format checklist are stable, perform byline/affiliation/funding/competing-interest/author-contribution completion and a prose review. Do not churn versions for purely speculative formatting.
+Bench-authored case content is explicitly CC BY 4.0. The repository currently has **no finalized root software license** and `package.json` has no software-license declaration. Do not silently choose or infer one. License selection is a real author/project decision required before the archival/public-release state and preferably before the final submission snapshot.
 
-### 4. Continue source/review/release maturation in parallel
+## After those two decisions are locked
 
-Apply source/candidate repairs because evidence warrants them, never to optimize rankings or executable count. Independent review remains a quality/release layer, **not a developmental execution gate**.
+Proceed directly to:
 
-### 5. Preserve P3/P4 gates
-
-For P3/P4 freeze separately: **resource snapshot**, **task specification**, and **evaluation/execution condition**. No confirmatory P3 execution or human P4 fielding is authorized by v7 or the submission package.
-
-## Cross-repository change rule
-
-**Execution-relevant:** candidate IDs/texts, scenario/task meaning, profile/geometry, required aggregation, executable-set membership, or execution-relevant schema. Notify SACRE, re-vendor/re-pin/reverify, and rerun affected results if the executed object changed.
-
-**Provenance-only:** citations, provenance summaries, source-review metadata, or resulting record-hash drift with unchanged executable projection. Refresh provenance/pins as needed; **do not automatically rerun model outputs**.
-
-**Documentation/manuscript/release-metadata only:** coordination, manuscript prose, resource cards, citation metadata, release checklists, figures/tables with no executable effect. No product rerun unless the work exposes an execution defect.
+1. finalize `CITATION.cff` and submission metadata;
+2. verify remaining live Patterns article-specific requirements rather than guessing limits;
+3. finalize cover letter/front matter;
+4. test logged-out reviewer access;
+5. run clean-clone validation and task-adapter verification;
+6. create immutable submission tag/snapshot plus checksums;
+7. write the exact snapshot identifier into manuscript Data and Code Availability;
+8. perform final author/coauthor prose review and submit.
 
 ## Evidence ceiling
 
-V7 may claim the 200-family disposition process, 34-family/68-record executable substrate, 210 unique candidates, eight natural geometries, 428/856 pair-count consequences, structural/companion invariants, verified resource/task boundary, 36-record provenance-only refresh, bounded source-review repair examples, and the differentiated relationship to adjacent benchmark/evaluation/documentation literatures.
+May claim current composition, natural geometry, structural/companion invariants, bounded source-review findings, resource/task/evaluation separation, and all-record task equivalence.
 
-V7 may **not** claim independent corpus-wide human source validation, QCCS reliability or construct validity, moral correctness of a provisional Final Policy, human-model correspondence, method-neutrality across multiple mature tasks, a production generic v2 schema, or a mature source-to-policy warrant benchmark.
+May **not** claim independent corpus-wide human source validation, corpus-wide source fidelity, QCCS reliability/construct validity, moral correctness, human-model correspondence, demonstrated method-neutrality across multiple mature tasks, an implemented generic v2 schema, or a mature source-to-policy warrant benchmark.
 
-Current developmental SACRE evidence remains developmental: the 8-family / 16-record geometry tranche is complete; the attempted 68-record census produced 20 complete single executions and 48 incomplete non-results.
+Independent source review remains a quality/release layer, **not a developmental execution gate**. Confirmatory P3 and human P4 execution remain separately protocol/authorization gated.
 
-## Handoff rule
-
-Every substantive handoff states: **Changed; Verified; Product/paper impact; Evidence status; Writeback status; Cross-repo dependency; Next dependency.**
-
-Do not manually edit generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`.
-
-**CURRENT NEXT DEPENDENCY: submission-linked resource/release package + concrete Patterns requirement verification + author/coauthor review, while source review continues in parallel.**
+**CURRENT NEXT DEPENDENCY: lock author metadata + software-license decision, then freeze the immutable submission snapshot.**
