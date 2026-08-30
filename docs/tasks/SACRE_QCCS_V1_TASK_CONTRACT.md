@@ -4,15 +4,15 @@
 **Contract version:** 0.1.0  
 **Task protocol id:** `sacre-qccs-v1`  
 **Measurement protocol:** SACRE `qccs-v1`, version 1.0.0, operationalization `conv+`  
-**Verification date:** 2026-08-30
+**Latest verification date:** 2026-08-30
 
-This contract makes explicit the task-layer semantics that were previously distributed across Bioethics Bench records and profiles and the SACRE implementation. It is the first implemented result of the Bioethics Bench generalization audit: the source-grounded resource can be distinguished from the SACRE/QCCS task applied to it without changing canonical v1 cases or their executable meaning.
+This contract makes explicit the task-layer semantics that were previously distributed across Bioethics Bench records/profiles and the SACRE implementation. Its central result is that a source-grounded Bioethics Bench resource can be distinguished from the SACRE/QCCS task applied to it without changing canonical v1 cases or their executable meaning.
 
-The contract is deliberately non-breaking. The read-only adapter now verifies the current v1 projection across all 34 families / 68 concise+detailed records. It does not replace the scientific resource with a SACRE-specific schema and does not turn task-equivalence evidence into validation of QCCS, moral correctness, or human correspondence.
+The contract remains deliberately non-breaking. The read-only adapter verifies the current v1 projection across all **34 families / 68 concise+detailed records**. It does not replace the scientific resource with a SACRE-specific schema and does not turn task-equivalence evidence into validation of QCCS, moral correctness, source fidelity, or human correspondence.
 
 ## 1. Three objects must remain distinct
 
-A reproducible Bench/SACRE study should identify **resource**, **task**, and **evaluation/execution** state separately.
+A reproducible Bench/SACRE study identifies **resource**, **task**, and **evaluation/execution** state separately.
 
 ### Resource snapshot
 
@@ -28,7 +28,7 @@ The selected Bioethics Bench record supplies the represented normative object:
 - source/provenance and policy-basis metadata;
 - lifecycle, review, rights, and release state.
 
-These are properties of the research resource. They remain meaningful even when another computational-bioethics task is applied instead of SACRE.
+These are properties of the research resource. They remain meaningful when another computational-bioethics task is applied instead of SACRE.
 
 ### Task specification
 
@@ -46,7 +46,7 @@ These are properties of the research resource. They remain meaningful even when 
 
 Provider, model, model version, temperature, top-p, maximum tokens, seed, repetition count, retry/exclusion rules, representation comparisons, perturbations, and evaluator type belong to the evaluation layer. They are not intrinsic properties of either the Bench resource or the SACRE task contract.
 
-This distinction is especially important for P3: a computational repeat is interpretable only when one can say which resource object, which task definition, and which execution condition were held fixed or deliberately varied.
+This distinction is especially important for P3: a computational repeat is interpretable only when the resource object, task definition, and execution condition held fixed or deliberately varied can each be named.
 
 ## 2. Current v1 resource-to-task projection
 
@@ -98,6 +98,8 @@ P×E + P×F + E×F
 
 The adapter independently derives that pair set and count and verifies it against the registered `benchmark_profile.cross_source_pairs`. A mismatch is a projection error and execution should stop.
 
+Current Full Corpus total: **428 unordered cross-source pairs per representation / 856 across one matched concise+detailed pass**.
+
 ## 5. Measurement contract — QCCS v1
 
 The canonical measurement is SACRE `qccs-v1`, protocol version 1.0.0, operationalization `conv+`.
@@ -111,7 +113,7 @@ The canonical measurement is SACRE `qccs-v1`, protocol version 1.0.0, operationa
 
 The floor does not distinguish orthogonality from opposition. Divergence-only or signed alternatives are different measurement protocols and must not be pooled under `qccs-v1`.
 
-The response contract is one integer score plus a brief justification. Executions should preserve QCCS protocol identity/hash, scoring mode, prompt hashes, model/provider/configuration, attempts/failures, and other state needed to reconstruct the measurement condition. The canonical prompt wording remains owned by the SACRE repository so that the Bench task contract does not become a second independently editable prompt source.
+The response contract is one integer score plus a brief justification. Executions should preserve QCCS protocol identity/hash, scoring mode, prompt hashes, model/provider/configuration, attempts/failures, and other state needed to reconstruct the measurement condition. Canonical prompt wording remains owned by the SACRE repository so the Bench task contract does not become a second independently editable prompt source.
 
 ## 6. Matrix-completeness rule
 
@@ -132,7 +134,7 @@ For each candidate, the cross-source partner count is the number of candidates i
 
 If every candidate has the same partner count, the geometry is structurally symmetric. Current v1 does not impose Mean in that case; the reference baseline uses Sum unless another compatible aggregation is explicitly declared as an evaluation condition.
 
-If partner counts differ, Sum would give candidates with more partners more terms in their total independently of the measured QCCS values. Therefore:
+If partner counts differ, Sum gives candidates with more partners more terms independently of measured QCCS values. Therefore:
 
 ```text
 if partner counts differ:
@@ -141,7 +143,7 @@ if partner counts differ:
 
 The adapter derives this requirement from the candidate set and checks it against the Bench release/profile declaration. If Mean is structurally required and another aggregation is selected, measured cells remain available diagnostically but official rankings and provisional Final Policy are withheld.
 
-Current reference-task candidate weights are 1.0/absent. Weighted ranking is a separately declared extension or experimental condition.
+Current Full Corpus geometry is asymmetric in **26/34 families**. Current reference-task candidate weights are 1.0/absent. Weighted ranking is a separately declared extension or experimental condition.
 
 ## 8. Ranking outputs
 
@@ -195,18 +197,18 @@ A paper-facing execution should identify at minimum:
 - attempt/failure/retry record;
 - app commit/build/deployment identity.
 
-## 11. All-record equivalence verification — complete
+## 11. All-record equivalence verification — complete and current
 
 The read-only adapter is implemented in:
 
 - `scripts/task-adapters/sacre-qccs-v1.mjs`
 - `scripts/verify-sacre-qccs-v1-adapter.mjs`
 
-The adapter was tested over every current canonical v1 Full Corpus record. The verification proceeded in two stages because it exposed a scientifically important distinction between executable semantics and whole-resource provenance identity.
+The adapter has now been used for two full-corpus provenance gates. The first established the resource/task boundary; the second proved that the later canonical source-locator enrichment changed resource identity without changing executable task semantics.
 
-### Stage A — execution/task-semantic equivalence
+### Verification event A — initial explicit task-boundary gate
 
-Against SACRE's pre-existing vendor pin, the adapter demonstrated equality across all **34 families / 68 records** for:
+Against SACRE's earlier vendor pin, the adapter demonstrated equality across all **34 families / 68 records** for:
 
 - case, record, version, and representation identity;
 - scenario text;
@@ -220,32 +222,57 @@ Against SACRE's pre-existing vendor pin, the adapter demonstrated equality acros
 
 **Semantic differences found: 0.**
 
-The comparison simultaneously found that SACRE's older vendor carried stale Bioethics Bench `content_hash` values for **36 of 68 records**. The corresponding scenario/candidate/task fields were unchanged. This was therefore classified as **provenance-only drift**, consistent with the program's cross-repository change rule: resource identity needed refreshing, but existing model results did not require semantic rerun merely because source/provenance metadata had changed.
+That comparison found **36/68** stale Bench `content_hash` values in the older SACRE vendor while the corresponding scenario/candidate/task fields were unchanged. It was classified as provenance-only drift. The resulting historical re-pin used Bench commit `077b36ff1eb9662e93549b1f4261691960cfa605`, SACRE merge `4ed4b24ab99d7427195a21393474c02700274ee6`, and payload SHA-256 `7bfe149a40494354f22ef4f137ec838bae5ad1e3a887cfe44d6d09f9bbf0399d`.
 
-### Stage B — current resource-provenance re-pin
+That event is retained as historical evidence, not the current consumer pin.
 
-SACRE was re-vendored from merged Bioethics Bench `main` commit:
+### Verification event B — canonical source-locator enrichment
 
-`077b36ff1eb9662e93549b1f4261691960cfa605`
+The Full Corpus provenance layer was subsequently repaired source-by-source. Across the 68 canonical records:
 
-The resulting SACRE pin now records:
+- unresolved canonical source locators were reduced to **0**;
+- traceable internal “research packet” placeholders were replaced with their underlying external literature;
+- the current corpus contains **242 unique citations**;
+- **130 citations carry a PMID and 130/130 resolve consistently** against PubMed;
+- official/publisher/bibliographic locators are carried for non-PubMed sources where available.
+
+Complete locator coverage is a provenance/traceability result. It does not by itself establish that every source supports every Bench policy translation.
+
+Because source/provenance metadata is included in whole-resource `content_hash`, the locator repair changed the resource hash for **68/68 records**. Before accepting a new SACRE pin, the same explicit all-record gate was rerun against the then-current SACRE vendor.
+
+The gate found:
+
+- **34/34 families and 68/68 records task-semantic equivalent**;
+- **68/68 stale resource hashes** relative to the pre-repin vendor;
+- **0 execution/task-semantic differences**;
+- unchanged scenarios, candidate ids/text/order/source roles, stipulations, profiles, geometries, pair generation/counts, partner counts, structural asymmetry, and required aggregation.
+
+The 68 hash differences were therefore classified as **provenance-only drift**, not execution drift. No LLM/QCCS rerun was required or performed.
+
+SACRE was then re-vendored from locator-enriched Bench resource commit:
+
+`0a8317ba8a2c5978f7a50bb5f13de875153b6782`
+
+The resulting current SACRE pin records:
 
 - 34 families / 68 records;
 - upstream ref `main`;
-- upstream commit `077b36ff1eb9662e93549b1f4261691960cfa605`;
-- vendored payload SHA-256 `7bfe149a40494354f22ef4f137ec838bae5ad1e3a887cfe44d6d09f9bbf0399d`.
+- upstream resource commit `0a8317ba8a2c5978f7a50bb5f13de875153b6782`;
+- vendored payload SHA-256 `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
 
-After re-pinning, the explicit adapter projection and SACRE's refreshed Full Corpus payload were **byte-for-byte identical**, and SACRE's existing `src/lib/bench/full-corpus.test.mjs` regression suite passed.
+After re-pinning:
 
-The SACRE equivalence/provenance work was merged at:
+- the explicit adapter projection and SACRE Full Corpus payload are **byte-for-byte identical**;
+- SACRE's `src/lib/bench/full-corpus.test.mjs` regression suite passes **46/46**;
+- SACRE's main-branch post-merge equivalence workflow also passes.
 
-`4ed4b24ab99d7427195a21393474c02700274ee6`
+The current provenance re-pin was merged through SACRE PR #22 at:
 
-The generated SACRE diff contained the 36 refreshed `contentHash` values plus pin metadata only. It did not change scenario text, candidates, geometry, aggregation, QCCS semantics, rankings, or model outputs.
+`9fa908a45c2447aa97f0473754c434bdb874b19e`
 
-**Conclusion:** the task boundary is no longer merely proposed. The current Bioethics Bench v1 resource can be projected through an explicit `sacre-qccs-v1` adapter with verified identity to the SACRE vendor representation.
+The generated consumer diff changed resource `contentHash` values and pin metadata. It did not change scenario text, candidate content/order/roles, geometry, aggregation, QCCS semantics, rankings, or model outputs.
 
-This verification does **not** mean the adapter must immediately replace the current vendor path. It establishes that replacement/refactoring can occur without semantic change if and when there is a concrete engineering reason to do so.
+**Current conclusion:** the task boundary remains verified after the canonical source-locator repair. Bioethics Bench resource provenance can change and be re-pinned without conflating provenance drift with execution-semantic drift.
 
 ## 12. Truthfulness boundary after equivalence verification
 
@@ -253,34 +280,37 @@ Supported now:
 
 - SACRE/QCCS is explicitly specified as a task layer over richer Bioethics Bench resource objects;
 - the read-only adapter reproduces current v1 SACRE task semantics across all 68 records;
-- SACRE is re-pinned to the current merged Bench resource identity;
+- SACRE is re-pinned to the locator-enriched Bench resource identity;
 - the adapter and refreshed SACRE vendor payload are exactly equivalent after the provenance refresh;
-- resource provenance drift can be distinguished from execution-semantic drift rather than automatically forcing unnecessary model reruns.
+- resource provenance drift can be distinguished from execution-semantic drift rather than automatically forcing unnecessary model reruns;
+- canonical source-locator coverage is complete for the current Full Corpus, with zero unresolved locator residual;
+- the 130 PMID-bearing citations resolve consistently against PubMed.
 
 Still not established:
 
 - QCCS reliability or construct validity;
 - moral correctness of QCCS scores, rankings, or provisional Final Policies;
 - independent human source fidelity for the full Bench corpus;
+- corpus-wide warrant adequacy merely because source identifiers resolve;
 - Bioethics Bench method-neutrality across multiple mature task families;
 - human-model correspondence;
 - confirmatory P3 results.
 
-The verified adapter is architectural/reproducibility evidence. It is not computational validation of the normative method.
+The verified adapter is architectural/reproducibility evidence. The locator repair is provenance/traceability evidence. Neither is computational or empirical validation of the normative method.
 
-## 13. Next dependency
+## 13. Current dependency
 
-The first SACRE task boundary is now specified and equivalence verified. The Bench generalization lane should therefore move forward rather than continue polishing this adapter.
+The first SACRE task boundary, canonical source-locator repair, and post-repair provenance re-pin are complete. Do not keep polishing or rerunning this gate unless a future execution-relevant or provenance-changing resource revision actually requires it.
 
-The next useful work is to:
+For the submission lane, the current blockers are external to this task contract: lock final author/affiliation/contribution metadata and choose the repository's software/tooling license, then freeze the immutable reviewer-facing submission snapshot and run final clean-clone/reviewer-access checks.
 
-1. define the **generic candidate/source-role resource model on paper** without changing canonical v1 records;
-2. use the verified resource/task separation in the standalone Bioethics Bench manuscript;
-3. refine P3 so the protocol freezes the **resource snapshot** and **task specification** separately;
-4. continue source/review/release work in parallel;
-5. specify an additional non-SACRE task only when a genuine computational-bioethics research question warrants it, rather than adding task breadth for appearance's sake.
+For P3, freeze separately:
 
-A generalized schema remains a future versioned architectural change, not something to impose on canonical v1 merely because the separation boundary has now been demonstrated.
+1. the exact Bioethics Bench resource snapshot;
+2. `sacre-qccs-v1` task specification;
+3. the evaluation/execution condition.
+
+No confirmatory P3 execution is authorized by this equivalence work.
 
 ## 14. Authoritative references
 
@@ -291,6 +321,10 @@ Bioethics Bench:
 - `tasks/sacre-qccs-v1/task-contract.json`
 - `scripts/task-adapters/sacre-qccs-v1.mjs`
 - `scripts/verify-sacre-qccs-v1-adapter.mjs`
+- `scripts/enrich-source-locators.mjs`
+- `scripts/apply-source-locator-overrides.mjs`
+- `scripts/repair-source-placeholders.mjs`
+- `docs/source-locators/UNRESOLVED_FULL_CORPUS.md`
 - `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
 
 SACRE/REai:
@@ -305,4 +339,4 @@ SACRE/REai:
 - `src/lib/bench/PINNED-FULL-CORPUS.json`
 - `src/lib/bench/full-corpus.test.mjs`
 
-**COMPLETE FOR TASK-SPECIFICATION AND EQUIVALENCE STAGE.**
+**COMPLETE FOR TASK-SPECIFICATION, SOURCE-LOCATOR PROVENANCE, AND CURRENT EQUIVALENCE STAGE.**
