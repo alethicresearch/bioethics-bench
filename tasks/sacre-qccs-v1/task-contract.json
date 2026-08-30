@@ -97,6 +97,8 @@
     "verified": true,
     "verified_at": "2026-08-30",
     "scope": "all-current-canonical-v1-records",
+    "current_expected_record_count": 68,
+    "current_expected_family_count": 34,
     "verified_record_count": 68,
     "verified_family_count": 34,
     "bench_merge_commit": "077b36ff1eb9662e93549b1f4261691960cfa605",
