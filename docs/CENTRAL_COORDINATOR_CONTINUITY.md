@@ -20,9 +20,11 @@ After reading the canonical central continuity/status files:
    - `docs/COORDINATOR_DIRECTIVE.md`
    - `docs/BRANCH_COORDINATION.md`
    - `docs/COMPLETION.md`
-   - `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md` — current resource/task/evaluation separation audit
-   - `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` — current manuscript-facing drafting surface
-   - `docs/papers/MANUSCRIPT_WRITEBACK.md` — chronological audit trail
+   - `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
+   - `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+   - `tasks/sacre-qccs-v1/task-contract.json`
+   - `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`
+   - `docs/papers/MANUSCRIPT_WRITEBACK.md`
 3. For source-review work, read:
    - `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
    - generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
@@ -42,9 +44,18 @@ Keep the intended architecture separable:
 
 **resource layer → task layer → evaluation layer.**
 
-The first-pass structural generalization audit is complete in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`. It found that most current fields form a reusable resource/provenance core, while the strongest SACRE-specific coupling is concentrated in the fixed public/expert/framework pool structure, `pub/exp/fw` aliases, `benchmark_profile`, geometry/cross-source pairing, and `required_aggregation`. Current v1 should remain unchanged; the next architectural step is an explicit `sacre-qccs-v1` task contract plus a read-only equivalence-tested adapter before any generalized schema revision.
+The first-pass structural generalization audit is complete in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`. It found that most current fields form a reusable resource/provenance core, while the strongest SACRE-specific coupling is concentrated in the fixed public/expert/framework pool structure, `pub/exp/fw` aliases, `benchmark_profile`, geometry/cross-source pairing, and `required_aggregation`.
 
-This is evidence of an identifiable separation boundary and a non-breaking generalization path, **not** a demonstration that Bioethics Bench is already method-neutral across multiple mature task families.
+The first task-layer artifact is also now explicit:
+
+- `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+- `tasks/sacre-qccs-v1/task-contract.json`
+
+`sacre-qccs-v1` formalizes the current source-role mapping, aliases, cross-source pair generation, QCCS v1.0.0/`conv+` measurement identity, complete-matrix requirement, aggregation-compatibility rule, ranking outputs, and separate resource/task/evaluation provenance. It does not change current v1 records or hashes.
+
+Its status is **specified, not yet equivalence-verified**. The next architectural gate is a read-only adapter plus all-record equivalence testing against current SACRE vendoring before any generalized schema or vendor refactor.
+
+This is evidence of an identifiable separation boundary and a concrete non-breaking implementation path, **not** a demonstration that Bioethics Bench is already method-neutral across multiple mature task families.
 
 ## Current Bench evidence boundary
 
@@ -66,7 +77,9 @@ P2 has completed its v49 submission-composition stage. Current P2 artifacts are:
 - Supplementary Information: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 - preserved maximal v48 master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
-Bench support for P2 is therefore no longer a maximal-master drafting task. The current Bench lane is source/review/release work, the explicit task-contract/adapter step following the completed generalization audit, standalone paper development, and later frozen support for P3/P4 study designs. P2 should receive only targeted corrections if new Bench evidence changes a claim materially.
+Bench support for P2 is no longer a maximal-master drafting task. The current Bench lane is source/review/release work, the adapter/equivalence gate for the explicit task contract, standalone paper development, and later frozen support for P3/P4 study designs. P2 should receive only targeted corrections if new Bench evidence changes a claim materially.
+
+For P3/P4, freeze **resource snapshot**, **task specification**, and **evaluation/execution condition** separately.
 
 ## Handoff rule
 
