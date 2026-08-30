@@ -9,8 +9,9 @@
 3. `../COORDINATOR_DIRECTIVE.md` — current Bench priorities.
 4. `../BRANCH_COORDINATION.md` — current branch/change-class rules.
 5. `../COMPLETION.md` — what completion means now.
-6. `SELF_HANDOFF_FULL_CORPUS_COMPLETION.md` — current durable Full Corpus self-handoff.
-7. For source review: `review/DEEP_RESEARCH_BRIEF.md` and generated `review/RESEARCH_HANDOFF.md`.
+6. `../strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md` — completed first-pass resource/task/evaluation separation audit.
+7. `SELF_HANDOFF_FULL_CORPUS_COMPLETION.md` — current durable Full Corpus self-handoff.
+8. For source review: `review/DEEP_RESEARCH_BRIEF.md` and generated `review/RESEARCH_HANDOFF.md`.
 
 ## Current verified state
 
@@ -25,13 +26,13 @@ Fetch/regenerate repository state before reusing these numbers; this file is a n
 
 ## What is different from the old rescue phase
 
-The repository-recovery problem is over. P2 has also completed its v49 submission-composition stage. Current work is now resource maturation and publication work:
+The repository-recovery problem is over. P2 has also completed its v49 submission-composition stage. The first-pass **Bioethics Bench generalization audit is complete**. Current work is now resource maturation and publication work:
 
 - continue source/review work without describing model-assisted review as independent human review;
-- run the Bioethics Bench **generalization audit** to distinguish resource fields, generic task/evaluation fields, and SACRE-specific execution fields;
+- implement the audit's non-breaking next step: specify `sacre-qccs-v1` as an explicit task contract, then build a read-only adapter/equivalence test before any generalized schema change;
 - mature the standalone Bioethics Bench paper as a source-grounded research infrastructure for computational bioethics;
 - support P2 only with targeted factual corrections when new Bench evidence materially changes a claim;
-- prepare stable/versioned Bench objects for later P3/P4 protocols without silently changing canonical v1 semantics.
+- prepare stable/versioned **resource snapshots and task specifications** separately for later P3/P4 protocols without silently changing canonical v1 semantics.
 
 Current P2 submission artifacts are:
 - main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
@@ -44,6 +45,8 @@ Independent human source-to-policy review remains a quality/release layer. Under
 If a Bench change alters candidate ids/text, scenario/task meaning, profile, geometry, required aggregation, executable-set membership, or execution-relevant schema, it is execution-relevant: notify SACRE for re-vendor/re-pin/reverification and rerun affected paper-facing results where needed.
 
 Citation/provenance changes with unchanged executable projection do not automatically require a semantic rerun.
+
+The first-pass generalization audit itself is documentation/architecture work and does not trigger a SACRE rerun because canonical v1 records and execution semantics were not changed.
 
 ## Generated review state
 
