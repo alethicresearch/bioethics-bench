@@ -1,7 +1,7 @@
 {
   "task_protocol_id": "sacre-qccs-v1",
   "contract_version": "0.1.0",
-  "status": "specified-not-yet-equivalence-verified",
+  "status": "equivalence-verified",
   "resource_type": "bioethics-bench-record",
   "measurement": {
     "protocol_id": "qccs-v1",
@@ -94,8 +94,19 @@
   ],
   "equivalence_gate": {
     "required_before_replacing_current_vendor_path": true,
+    "verified": true,
+    "verified_at": "2026-08-30",
     "scope": "all-current-canonical-v1-records",
-    "current_expected_record_count": 68,
+    "verified_record_count": 68,
+    "verified_family_count": 34,
+    "bench_merge_commit": "077b36ff1eb9662e93549b1f4261691960cfa605",
+    "sacre_merge_commit": "4ed4b24ab99d7427195a21393474c02700274ee6",
+    "verification_mode": "all-record semantic equivalence against prior SACRE vendor; provenance-only hash drift classified; SACRE re-vendored/re-pinned; exact byte equivalence verified after re-pin",
+    "pre_repin_stale_content_hash_records": 36,
+    "semantic_differences_found": 0,
+    "post_repin_exact_byte_equivalence": true,
+    "sacre_full_corpus_sha256": "7bfe149a40494354f22ef4f137ec838bae5ad1e3a887cfe44d6d09f9bbf0399d",
+    "regression_test": "xnuxi/sacre-prototype/src/lib/bench/full-corpus.test.mjs",
     "must_match": [
       "resource-identity",
       "scenario-text",
