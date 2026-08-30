@@ -1,0 +1,54 @@
+name: SACRE task equivalence
+
+on:
+  push:
+    paths:
+      - 'data/benchmark/**'
+      - 'schemas/benchmark-profiles.json'
+      - 'releases/full-corpus-v1-completion-candidate/manifest.json'
+      - 'tasks/sacre-qccs-v1/**'
+      - 'scripts/task-adapters/**'
+      - 'scripts/verify-sacre-qccs-v1-adapter.mjs'
+      - '.github/workflows/sacre-task-equivalence.yml'
+  pull_request:
+    paths:
+      - 'data/benchmark/**'
+      - 'schemas/benchmark-profiles.json'
+      - 'releases/full-corpus-v1-completion-candidate/manifest.json'
+      - 'tasks/sacre-qccs-v1/**'
+      - 'scripts/task-adapters/**'
+      - 'scripts/verify-sacre-qccs-v1-adapter.mjs'
+      - '.github/workflows/sacre-task-equivalence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  equivalence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Bioethics Bench
+        uses: actions/checkout@v4
+        with:
+          path: bench
+
+      # Pin the exact SACRE state whose current vendor projection defines the equivalence gate.
+      # Updating this ref is an explicit task-contract/reference change, not silent main-branch drift.
+      - name: Check out SACRE reference implementation
+        uses: actions/checkout@v4
+        with:
+          repository: xnuxi/sacre-prototype
+          ref: bde5aede824c18571b8b60da2de1c61684a09943
+          path: sacre
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Verify all-record adapter equivalence
+        working-directory: bench
+        run: >-
+          node scripts/verify-sacre-qccs-v1-adapter.mjs
+          --sacre-reference ../sacre/src/lib/bench/full-corpus-v1.json
+          --sacre-pin ../sacre/src/lib/bench/PINNED-FULL-CORPUS.json
