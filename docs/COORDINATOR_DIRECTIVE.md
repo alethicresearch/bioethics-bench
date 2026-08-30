@@ -10,32 +10,39 @@ Read `docs/papers/BENCH_COMPLETION_STATE_MANUSCRIPT_PLAN.md` first.
 
 The manuscript should be the paper intended to exist after the planned research is complete. Write the final scientific question, Methods, Results surfaces, figures, tables, Discussion, and Limitations now. For outputs not yet available, use explicit placeholders that specify exactly what study or release artifact must replace them.
 
-Do not substitute:
+Do not substitute partial batches, interrupted executions, interim review counts, temporary implementation checks, or current resource counts known to be intermediate for the planned final result. Those belong in coordination, protocol, review, and technical handoff records unless the development event remains scientifically relevant after the final release.
 
-- partial batches;
-- interrupted executions;
-- interim review counts;
-- temporary implementation checks;
-- current resource counts that are known to be an intermediate state
+## SACRE ontology correction — governing for all future Bench work
 
-for the planned final result.
+Bioethics Bench must be constructed around the formal SACRE objects specified in Part I.
 
-Those belong in coordination, protocol, review, and technical handoff records unless the development event remains scientifically relevant after the final release.
+SACRE begins with a **Scenario** and source-tagged **Policy candidates** from Public Preferences, Expert Judgments, and Ethical Frameworks. It does not formally take a separate `decision`, `decision-maker`, or `decision_question` object as input.
+
+A practical `decision_question` and named decision-maker may remain useful metadata when they help a reader understand or bound a Scenario. They must not dictate the candidate taxonomy or cause source research to be reverse-engineered toward a prewritten menu of options.
+
+The resource-construction rule is now:
+
+> **Scenario first → recover the natural number of substantively distinct source-supported Policy positions → preserve provenance and source identity → audit representation → classify SACRE suitability.**
+
+Do not replace this with “one bounded decision → fill a candidate geometry.”
+
+The governing audit is `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`, now titled **Scenario and Policy-Representation Audit**.
 
 ## Cold-start reading order
 
 1. `AGENTS.md`
 2. `docs/papers/BENCH_COMPLETION_STATE_MANUSCRIPT_PLAN.md`
 3. `docs/FULL_CORPUS_V1_PLAN.md`
-4. `docs/PROGRAM_COORDINATION.md`
-5. generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
-6. `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
-7. `docs/RESOURCE_CARD.md`
-8. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
-9. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
-10. `docs/papers/BENCH_MANUSCRIPT_V8_HANDOFF.md` for historical manuscript/submission state
-11. `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md` for reusable production material
-12. `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md` when the completed resource is ready for submission freeze
+4. `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`
+5. `docs/PROGRAM_COORDINATION.md`
+6. generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+7. `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
+8. `docs/RESOURCE_CARD.md`
+9. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+10. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
+11. `docs/papers/BENCH_MANUSCRIPT_V8_HANDOFF.md` for historical manuscript/submission state
+12. `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md` for reusable production material
+13. `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md` when the completed resource is ready for submission freeze
 
 ## Manuscript state
 
@@ -50,22 +57,23 @@ Drive: `1IYG8N2PHQOMGva6a-sdE7YEKb29TiSHG`
 
 V10 is the governing **shape** for the intended completed standalone paper. It does not claim that placeholder studies have already been completed and is not automatically promoted to CURRENT.
 
+The ontology correction above may require terminology cleanup in the final v10 manuscript when its placeholders are populated. Do not churn the manuscript merely for versioning; make those corrections as part of the next substantive Bench manuscript pass.
+
 ## Intended v1 resource endpoint
 
 The endpoint is defined by `docs/FULL_CORPUS_V1_PLAN.md`, not by the present executable subset:
 
-- 200 bounded practical-ethics case families;
-- paired concise and detailed forms, yielding 400 authored representations if the completion criterion is met;
-- one bounded decision per family with explicit decision-maker/question, decision-critical facts, uncertainty, jurisdiction/time treatment, stipulations, source-grounded candidate map, provenance, and construction risks;
+- 200 bounded practical-ethics Scenarios / cases;
+- concise and detailed forms, yielding 400 authored Scenario representations if the completion criterion is met;
+- source-grounded recovery of the natural Policy positions supported in Public / affected-community, Expert / professional, and Ethical Framework source domains;
+- explicit factual assumptions, uncertainty, jurisdiction/time treatment, stipulations, provenance, and construction risks where relevant;
+- a Scenario / Policy-representation audit for **all 200 cases**;
 - explicit executable eligibility rather than manufactured regularity;
-- nested resource structure:
-  - Full Corpus = completed scholarly case resource;
-  - Executable Collection = evidence-qualified subset under declared profiles;
-  - Featured Collection = curated front door;
+- explicit distinction between research-complete, SACRE-suitable, demonstration-rich, and Featured/public-release status;
 - reproducible corpus-level statistics generated from machine-readable metadata;
 - release review, versioning, rights/licensing, hashing, manifests, and reviewer-inspectable provenance.
 
-A research-complete family may legitimately be non-executable. Executable yield is an outcome of the evidence, not a quota.
+A research-complete case may legitimately be non-executable. An executable case may legitimately be a weak public demonstration. Candidate counts may legitimately be asymmetric. These are outcomes of the evidence and representation quality, not quotas.
 
 ## Current development state — coordination evidence, not final Results
 
@@ -90,21 +98,52 @@ The provenance refresh changed 68/68 resource hashes but produced 0 execution/ta
 
 The interrupted 68-record developmental QCCS census (20 complete / 48 incomplete non-results) is coordination evidence only. It is not the final Bench study and should not appear as the standalone resource paper's endpoint.
 
+## New representational finding — 2026-08-30
+
+The source-grounded resource is stronger than the original SACRE example library on provenance and research traceability, but the construction process appears in some cases to have narrowed the represented normative field.
+
+The failure mode is not simply “missing decision branches.” That formulation incorrectly gives an editorial `decision_question` more ontological weight than SACRE does.
+
+The correct question is whether the source research and editorial translation preserve the **natural substantively distinct Policy positions** supported by the relevant source domains. Risks include:
+
+- near-paraphrase candidates;
+- nested-caveat duplication;
+- source-slot completion;
+- decision-question overfitting;
+- constraint-induced collapse;
+- evidence-to-policy overcompression;
+- rationale diversity without position diversity;
+- merging genuinely distinct positions into a single synthetic cautious formulation.
+
+Current Featured F03 is a useful calibration example: its framing question mentions resuscitation default, comfort-care default, and shared decision-making, but that fact alone does not require all three to appear as candidates. The audit instead asks whether the current candidates faithfully represent the positions actually supported by the sources, or whether the source-to-policy construction compressed a broader normative field.
+
+Current Featured F10 is a useful positive comparison because its represented positions differ materially in the role of age, prognosis, lottery, fair innings, and equal moral status.
+
+Do not silently rewrite the released Featured records. Any substantive correction should be issued as a new explicit version with change history.
+
+## RE-Iteration finding
+
+The current RE-Iteration revision prompt in `xnuxi/sacre-prototype` was compared with its original Phase 3 implementation. The operative prompt did **not** drift: it continues to require preservation of the candidate's essential normative commitment and source perspective, the smallest sufficient revision, and movement toward the stated target. The directive-proposal prompt is also substantively unchanged from its first implementation.
+
+Therefore weaker recent directives or revised candidates should not be “fixed” by restoring an older prompt. More plausible contributors include overcompressed starting Policy fields, the current QCCS operationalization and resulting coherence matrix, model/provider/configuration differences, selected anchors and targets, and later full fresh re-execution semantics.
+
+The next RE-Iteration diagnostic should compare broad and narrow candidate fields under controlled current conditions before any prompt modification.
+
 ## Final paper evidence surfaces
 
 V10 and the manuscript plan organize the completed paper around four result surfaces.
 
 ### 1. Completed corpus and eligibility
 
-Final family/representation counts, domain distribution, executable profiles, research-complete/non-executable families, any held/additional-evidence cases, Featured crosswalk, candidate counts, and source/citation inventory.
+Final case/representation counts, domain distribution, executable profiles, research-complete/non-executable cases, any held/additional-evidence cases, Featured crosswalk, natural candidate geometry, demonstration-richness classification, and source/citation inventory.
 
 ### 2. Source grounding and release review
 
 Complete release-review coverage, material source/warrant/whole-document/source-independence findings, repairs, additions, holds/demotions, adjudicated outcomes, independent human review status, and final canonical locator/identifier coverage.
 
-### 3. Controlled representations and natural geometry
+### 3. Controlled representations and natural Policy geometry
 
-Final concise/detailed invariant audit, executable-geometry distribution, candidates per family, partner-count asymmetry, and task workload summaries.
+Final concise/detailed invariant audit, Scenario / Policy-representation audit, executable-geometry distribution, candidates per case, partner-count asymmetry, and task workload summaries.
 
 ### 4. Final reference-task reproducibility
 
@@ -116,8 +155,9 @@ The standalone Bench paper owns:
 
 - resource construction and release methods;
 - provenance and source-grounding architecture;
+- Scenario and Policy-representation quality;
 - evidence-qualified executable eligibility;
-- paired representation controls;
+- controlled representation construction;
 - natural candidate geometry;
 - resource/task/evaluator separation;
 - release governance, versioning, and reproducibility;
@@ -129,7 +169,7 @@ It does **not** own:
 - human-human reliability, human-model correspondence, participant heterogeneity, or human empirical interpretation — P4 owns those;
 - deployment outcomes — P5+ owns those when a real institutional study is activated.
 
-## Closed development gates — do not redo without a reason
+## Closed development gates — preserve, but reopen representations where justified
 
 The following remain valid development achievements:
 
@@ -145,29 +185,34 @@ The following remain valid development achievements:
 - reviewer-facing submission resource package;
 - current Patterns production metadata and release-checklist work.
 
-Do not implement schema v2 or a second task merely for manuscript neatness.
+These technical gates do not prove representational adequacy. Existing developmental records may be reopened for Scenario / Policy-representation review without treating the prior technical work as invalid.
+
+Do not implement schema v2 or a second task merely for manuscript neatness. A schema revision should occur only if the corrected research object cannot be represented faithfully in the present schema.
 
 ## Current research work
 
 Proceed in this order:
 
-1. Complete all 200 scholarly case families under `FULL_CORPUS_V1_PLAN.md` with paired representations and explicit disposition.
-2. Complete outstanding source research, source-description verification, whole-document omission work, and warrant/source-independence review; repair or hold cases without manufacturing grounding.
-3. Freeze and complete the independent release-review/adjudication protocol.
-4. Freeze the final resource object and evidence-qualified executable collection.
-5. Generate final corpus, provenance, eligibility, representation, and geometry statistics directly from the machine-readable release.
-6. Run the final `sacre-qccs-v1` all-record projection/equivalence gate on the frozen executable collection and pin the consumer artifact.
-7. Generate final tables and figures from versioned scripts/artifacts.
-8. Replace all v10 placeholders with the complete observed result set, including negative/null/held outcomes.
-9. Then complete author metadata, software/tooling license, live Patterns requirements, cover letter/front matter, reviewer access, clean-clone validation, archival identifiers, and immutable submission snapshot.
-10. Final author/coauthor prose review and submit.
+1. **Audit the 20 released Featured cases as a calibration set** using `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`; classify representational issues and demonstration richness without silently editing released records.
+2. **Stabilize the audit standard** with concrete positive and negative examples from Featured.
+3. **Apply the same audit to the entire planned 200-case Bench during construction and review**, reopening developmental records where necessary.
+4. Complete all 200 scholarly cases under the corrected Scenario-first `FULL_CORPUS_V1_PLAN.md`, with concise/detailed forms and explicit disposition.
+5. Complete outstanding source research, source-description verification, whole-document omission work, source-independence review, and source-to-Policy reconstruction; repair or hold cases without manufacturing grounding or disagreement.
+6. Freeze and complete the independent release-review/adjudication protocol.
+7. Freeze the final resource object and evidence-qualified executable collection.
+8. Generate final corpus, provenance, eligibility, representation, natural-geometry, and demonstration-richness statistics directly from the machine-readable release.
+9. Run the final `sacre-qccs-v1` all-record projection/equivalence gate on the frozen executable collection and pin the consumer artifact.
+10. Generate final tables and figures from versioned scripts/artifacts.
+11. Replace all v10 placeholders with the complete observed result set, including negative/null/held/non-executable outcomes.
+12. Then complete author metadata, software/tooling license, live Patterns requirements, cover letter/front matter, reviewer access, clean-clone validation, archival identifiers, and immutable submission snapshot.
+13. Final author/coauthor prose review and submit.
 
 ## Evidence ceiling while the work remains incomplete
 
-Current coordination documents may accurately state the present 34/68 development substrate, current provenance repairs, and current equivalence checks.
+Current coordination documents may accurately state the present 34/68 development substrate, provenance repairs, equivalence checks, and results of the new representational audit as they are completed.
 
-The completion-state manuscript may specify planned final analyses and placeholders, but it must not invent their outcomes or imply that the 200-family release, independent review, final eligibility distribution, or final equivalence gate has already been completed.
+The completion-state manuscript may specify planned final analyses and placeholders, but it must not invent their outcomes or imply that the 200-case release, all-case representational audit, independent review, final eligibility distribution, or final equivalence gate has already been completed.
 
-Do not claim independent corpus-wide human source validation, corpus-wide source fidelity, QCCS reliability/construct validity, moral correctness, human-model correspondence, demonstrated method-neutrality across multiple mature tasks, an implemented generic v2 schema, or a mature source-to-policy warrant benchmark until the corresponding evidence exists.
+Do not claim independent corpus-wide human source validation, corpus-wide source fidelity, corpus-wide Policy-space adequacy, QCCS reliability/construct validity, moral correctness, human-model correspondence, demonstrated method-neutrality across multiple mature tasks, an implemented generic v2 schema, or a mature source-to-policy warrant benchmark until the corresponding evidence exists.
 
-**CURRENT NEXT DEPENDENCY:** complete the 200-family / paired-representation scholarly resource and remaining source/release-review work; the manuscript placeholders are the execution checklist for the final paper.
+**CURRENT NEXT DEPENDENCY:** complete the 20-case Featured calibration audit, stabilize the Scenario / Policy-representation standard, and then apply it across the full 200-case resource while completing source and release review. The final Bench freeze comes only after the whole-corpus audit.
