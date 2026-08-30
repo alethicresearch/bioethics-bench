@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: >-
+  If you use Bioethics Bench, cite the standalone Bioethics Bench manuscript
+  when a stable bibliographic citation is available, and identify the exact
+  resource or record version used. Record-level citations should include
+  record_id, version, and content_hash.
+title: "Bioethics Bench"
+type: dataset
+authors:
+  - name: "Alethic Research"
+abstract: >-
+  A source-grounded, versioned research infrastructure for computational
+  bioethics. Bioethics Bench represents bioethical decision problems as
+  reconstructable normative research objects with explicit policy candidates,
+  provenance and warrant information, benchmark stipulations, controlled
+  representations, version lineage, review state, and separable task and
+  evaluation layers.
+repository-code: "https://github.com/alethicresearch/bioethics-bench"
+url: "https://bioethicsbench.com"
+keywords:
+  - bioethics
+  - computational bioethics
+  - normative computation
+  - benchmark
+  - evaluation
+  - provenance
+  - reproducibility
+version: "development"
