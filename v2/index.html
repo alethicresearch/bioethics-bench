@@ -1,197 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Bioethics Bench v2 Preview</title>
-  <meta name="description" content="Explore Bioethics Bench cases, policy options, source provenance, task definitions, and developmental results.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bioethics Bench v2 — Computational Bioethics Research Infrastructure</title>
+  <meta name="description" content="Bioethics Bench v2: 34 source-grounded case families, 68 matched records, 210 policy candidates, explicit task definitions, and explorable developmental results." />
+  <meta property="og:title" content="Bioethics Bench v2" />
+  <meta property="og:description" content="Explore bioethics cases, policy options, sources, task definitions, and developmental results." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./home.css" />
 </head>
 <body>
-  <div class="preview">
-    <div class="wrap"><span>Preview site</span><a href="../">Current site ↗</a></div>
-  </div>
+  <div class="preview-bar">v2 preview <a href="../">View the current public site ↗</a></div>
 
-  <nav class="topnav">
-    <div class="wrap navin">
-      <a class="brand" href="./">Bioethics<span>Bench</span></a>
-      <div class="navlinks">
-        <a class="current" href="./">Overview</a>
-        <a href="./cases/">Explore cases</a>
-        <a href="./results/">Developmental results</a>
-        <a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
-    </div>
+  <nav>
+    <a href="./" class="nav-logo">Bioethics<em>Bench</em></a>
+    <ul class="nav-links">
+      <li><a href="#domains">Domains</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
+      <li><a href="#pipeline">Framework</a></li>
+      <li><a href="#about">What It Provides</a></li>
+      <li><a href="./cases/">Cases</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="./results/">Results</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="https://github.com/alethicresearch/bioethics-bench" class="nav-cta" target="_blank" rel="noopener">GitHub ↗</a></li>
+    </ul>
   </nav>
 
   <header class="hero">
-    <div class="wrap">
-      <div class="kicker">Source-grounded research infrastructure for computational bioethics</div>
-      <h1>A bioethics case, its policy options, and the evidence behind them.</h1>
-      <p>Each Bioethics Bench case asks a concrete decision question. The record includes a scenario, several policy options, the sources and reasoning used to construct those options, explicit assumptions used for the benchmark, a concise and detailed version of the case, and a versioned review history. Researchers can then apply a defined comparison task and record which model or human evaluator produced the result.</p>
-      <div class="actions">
-        <a class="btn primary" href="./cases/">Explore the 34 case families →</a>
-        <a class="btn ghost" href="./results/">See developmental results</a>
-        <a class="btn ghost" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/RESOURCE_CARD.md" target="_blank" rel="noopener">Resource Card ↗</a>
+    <div class="hero-inner">
+      <div class="status-badge"><span class="dot"></span>v2 Preview · In Development</div>
+      <h1>A Benchmark for<br /><em>Computational Bioethics</em></h1>
+      <p class="hero-lead">
+        Bioethics Bench is a versioned collection of bioethical decision problems for computational and human evaluation.
+        Each case records a decision question, scenario, policy options, the sources used to construct those options, benchmark assumptions, and matched concise and detailed forms.
+        The current executable Full Corpus contains <strong>34 case families, 68 records, and 210 policy candidates</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="./cases/" class="btn btn-green">Browse the 34 case families</a>
+        <a href="./results/" class="btn btn-ghost">Explore developmental results</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/RESOURCE_CARD.md" class="btn btn-ghost" target="_blank" rel="noopener">Resource Card ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="hero-provenance">
+        <div class="prov-item"><span class="prov-label">Full Corpus</span><span class="prov-value">34 families · 68 records · 210 candidates</span></div>
+        <div class="prov-item"><span class="prov-label">Sources</span><span class="prov-value">242 unique citations · canonical locators complete</span></div>
+        <div class="prov-item"><span class="prov-label">Reference task</span><span class="prov-value"><a class="ilink" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md" target="_blank" rel="noopener">sacre-qccs-v1</a></span></div>
       </div>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <div class="metrics">
-        <div class="metric"><b>200</b><span>families researched and dispositioned</span></div>
-        <div class="metric"><b>34</b><span>executable Full Corpus case families</span></div>
-        <div class="metric"><b>68</b><span>matched concise + detailed records</span></div>
-        <div class="metric"><b>210</b><span>unique family-level policy candidates</span></div>
-        <div class="metric"><b>8</b><span>candidate-set geometries</span></div>
+  <section class="domains-bg" id="domains">
+    <div class="container">
+      <span class="eyebrow">Coverage</span>
+      <h2>Bioethical domains</h2>
+      <p class="lead">The Full Corpus covers recurring decision problems across clinical care, research, public health, biotechnology, animal and environmental ethics, global health, and medical AI.</p>
+      <div class="domains-grid">
+        <div class="domain-tile"><div class="domain-glyph">🏥</div><div><div class="domain-name">Clinical Bioethics</div><div class="domain-detail">Capacity, consent, end-of-life care, surrogate decisions, treatment limits</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🔬</div><div><div class="domain-name">Research Ethics</div><div class="domain-detail">Human subjects, consent models, trial design, data and biospecimen use</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🌍</div><div><div class="domain-name">Public Health Ethics</div><div class="domain-detail">Allocation, surveillance, vaccination, emergency and population policy</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🧬</div><div><div class="domain-name">Biotechnology Ethics</div><div class="domain-detail">Genomics, reproductive technologies, fertility and gene governance</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🐾</div><div><div class="domain-name">Animal Ethics</div><div class="domain-detail">Animal research, welfare, replacement and cross-species obligations</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🌱</div><div><div class="domain-name">Environmental Bioethics</div><div class="domain-detail">One Health, ecological risk, climate-health and intergenerational decisions</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🌐</div><div><div class="domain-name">Global Health Ethics</div><div class="domain-detail">Access, workforce, priority-setting, scarcity and distribution</div></div></div>
+        <div class="domain-tile"><div class="domain-glyph">🤖</div><div><div class="domain-name">Medical AI</div><div class="domain-detail">Clinical deployment, consent, documentation, data partnerships and standards</div></div></div>
       </div>
     </div>
+  </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="kicker">How the Bench works</div>
-        <h2>Start with the case. Then specify the comparison. Then record the evaluator.</h2>
-        <p class="lede">Keeping these three pieces separate makes it possible to reuse the same case with different computational methods, models, human evaluators, prompts, or experimental conditions while preserving exactly what was held fixed.</p>
+  <div class="method-strip">
+    <p class="method-quote">A Bench result is identified by <strong>the exact case record, the task applied to it, and the evaluator that performed the task.</strong> Those pieces remain separately identifiable so results can be reproduced and compared.</p>
+    <p class="method-attr">Bioethics Bench · current experimental structure</p>
+  </div>
 
-        <div class="architecture">
-          <article class="arch">
-            <div class="num">01 · CASE RECORD</div>
-            <h3>What decision is being studied?</h3>
-            <p>The record states the decision question, scenario, policy options, source citations, benchmark assumptions, concise/detailed companion, version, content hash and review state.</p>
-            <div class="pillrow"><span class="pill teal">34 families</span><span class="pill">68 records</span><span class="pill">210 candidates</span></div>
-          </article>
-          <div class="arrow">→</div>
-          <article class="arch">
-            <div class="num">02 · TASK</div>
-            <h3>How will the policy options be compared?</h3>
-            <p>The first reference task, <code>sacre-qccs-v1</code>, compares every eligible pair of policy options across the current Public, Expert and Framework groups, scores their normative convergence with QCCS, and combines those scores into a provisional ranking.</p>
-            <div class="pillrow"><span class="pill blue">qccs-v1</span><span class="pill">conv+</span><span class="pill">428 pairs / representation</span></div>
-          </article>
-          <div class="arrow">→</div>
-          <article class="arch">
-            <div class="num">03 · EVALUATION RUN</div>
-            <h3>Who or what performs the comparison?</h3>
-            <p>The run records the model or human evaluator, provider, prompt and configuration, along with repetitions or perturbations used in the study. Those choices define the evaluation condition for that result.</p>
-            <div class="pillrow"><span class="pill purple">models</span><span class="pill">humans</span><span class="pill">repeats + perturbations</span></div>
-          </article>
-        </div>
+  <section id="evaluation">
+    <div class="container">
+      <span class="eyebrow">What the Infrastructure Supports</span>
+      <h2>Questions the Bench can be used to study</h2>
+      <p class="lead">The same source-grounded cases can be reused across repeated runs, different evaluators, controlled representation changes, and alternative experimental conditions.</p>
+      <div class="modes-grid">
+        <div class="mode-card"><h3>Repetition and stability</h3><p>Run the same record and task repeatedly to measure the stability of pair scores, rankings and provisional policies.</p></div>
+        <div class="mode-card"><h3>Cross-model comparison</h3><p>Use the same case and task across models or providers and record the evaluator configuration with every result.</p></div>
+        <div class="mode-card"><h3>Human comparison</h3><p>Ask human evaluators corresponding comparison questions and measure agreement, disagreement and test–retest behavior under a specified protocol.</p></div>
+        <div class="mode-card"><h3>Representation effects</h3><p>Compare matched concise and detailed records that preserve the same decision question, candidate set and benchmark assumptions.</p></div>
+        <div class="mode-card"><h3>Perturbation and robustness</h3><p>Test pair order, paraphrase, near-ties and other controlled perturbations to locate sensitivity in the evaluation procedure.</p></div>
+        <div class="mode-card"><h3>Revision and iteration</h3><p>Revise selected policy candidates, preserve the version history, and re-execute the same task to measure what changed.</p></div>
       </div>
-    </section>
-
-    <section class="section soft">
-      <div class="wrap split">
-        <div>
-          <div class="kicker">Explore a case</div>
-          <h2>See the question, scenario, options and sources together.</h2>
-          <p class="lede">Choose a topic, open a case, and switch between its concise and detailed versions. For every policy option, you can inspect the wording, source citations, how the option was constructed, and the assumptions that define the comparison.</p>
-          <div class="actions">
-            <a class="btn teal" href="./cases/">Open the case explorer →</a>
-            <a class="btn light" href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/benchmark" target="_blank" rel="noopener">Raw records ↗</a>
-          </div>
-        </div>
-        <div class="card shadow">
-          <h3>Inside a case record</h3>
-          <div class="pillrow">
-            <span class="pill">decision question</span>
-            <span class="pill">scenario</span>
-            <span class="pill">benchmark assumptions</span>
-            <span class="pill blue">Public candidates</span>
-            <span class="pill teal">Expert candidates</span>
-            <span class="pill purple">Framework candidates</span>
-            <span class="pill">source citations</span>
-            <span class="pill">how each policy was derived</span>
-            <span class="pill">version + content hash</span>
-          </div>
-          <div class="statusbox" style="margin-top:18px"><strong>Current review state:</strong> Full Corpus records are draft / release-candidate records. Corpus-wide independent human review of the source-to-policy relationships is still pending.</div>
-        </div>
+      <div class="evidence-strip">
+        <div class="evidence-stat"><b>68 / 68</b><span>records checked in the current adapter-equivalence gate</span></div>
+        <div class="evidence-stat"><b>0</b><span>execution/task-semantic differences after the latest provenance refresh</span></div>
+        <div class="evidence-stat"><b>216</b><span>QCCS calls in the completed 8-family developmental geometry tranche</span></div>
+        <div class="evidence-stat"><b>20 / 68</b><span>complete records in the interrupted developmental whole-corpus attempt</span></div>
       </div>
-    </section>
+      <div class="inline-actions"><a href="./results/" class="btn btn-dark">Explore the developmental results →</a></div>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="kicker">Policy options</div>
-        <h2>Each case keeps the policy options that its evidence can support.</h2>
-        <p class="lede">The 34 executable families contain different numbers of Public, Expert and Framework options. They occupy eight candidate-set geometries. Eight families have a 2×2×2 structure; the remaining 26 have asymmetric sets. Under <code>sacre-qccs-v1</code>, the current corpus generates 428 cross-source comparisons for one representation and 856 across the matched concise and detailed records.</p>
-
-        <div class="grid3">
-          <article class="card">
-            <h3>Where an option comes from</h3>
-            <p>Each candidate records its policy text and provenance. The record distinguishes policies stated closely by a source, policies inferred from source evidence, and policies constructed from a named normative framework.</p>
-          </article>
-          <article class="card">
-            <h3>Two versions of the same case</h3>
-            <p>The concise and detailed records keep the same decision question, policy options and benchmark assumptions while changing the amount of scenario detail. This allows representation detail to be studied directly.</p>
-          </article>
-          <article class="card">
-            <h3>Assumptions are visible</h3>
-            <p>Some decisions require facts to be fixed before the policy options can be compared. Those benchmark stipulations are written into the scenario so a reader can see exactly what the analysis assumes.</p>
-          </article>
-        </div>
+  <section class="pipeline-bg" id="pipeline">
+    <div class="container">
+      <span class="eyebrow">Research Framework</span>
+      <h2>From a bioethics case to an evaluation result</h2>
+      <p class="lead">The Bench records the case, the comparison procedure and the evaluator as separate parts of the experiment.</p>
+      <div class="pipeline-track">
+        <div class="pipe-node highlight"><div class="pipe-num">01 · Case Record</div><div class="pipe-title">Bioethics Bench case</div><div class="pipe-desc">Decision question, scenario, candidate policies, sources, benchmark stipulations, representation form, review state, version and content hash.</div><span class="pipe-tag">Resource</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node"><div class="pipe-num">02 · Task</div><div class="pipe-title"><a class="ilink" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md" target="_blank" rel="noopener">sacre-qccs-v1</a></div><div class="pipe-desc">Maps candidates to the current Public, Expert and Framework roles, generates eligible cross-source pairs, applies QCCS convergence scoring, and specifies aggregation and ranking outputs.</div></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node"><div class="pipe-num">03 · Evaluator</div><div class="pipe-title">Model or human condition</div><div class="pipe-desc">Evaluator identity, provider, prompt, configuration, repetition and any experimental perturbation used for the run.</div></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node"><div class="pipe-num">04 · Result</div><div class="pipe-title">Scores and rankings</div><div class="pipe-desc">Pairwise scores and derived rankings stored with the exact record, task protocol and evaluation condition that produced them.</div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section soft">
-      <div class="wrap split">
-        <div>
-          <div class="kicker">Evidence so far</div>
-          <h2>Two results are currently available.</h2>
-          <p class="lede">First, the full 68-record corpus has been checked to confirm that the explicit Bench task adapter reproduces SACRE's executable task semantics. Second, a smaller developmental tranche has been used to study model execution, representation and repeat behavior.</p>
-          <div class="actions"><a class="btn teal" href="./results/">Open the results explorer →</a></div>
-        </div>
-        <div>
-          <div class="minirow">
-            <div class="mini"><b>68 / 68</b><span>records checked in the current equivalence gate</span></div>
-            <div class="mini"><b>0</b><span>execution/task-semantic differences</span></div>
-            <div class="mini"><b>68</b><span>provenance-bearing hashes refreshed in the latest source-locator re-pin</span></div>
-            <div class="mini"><b>216</b><span>QCCS calls in the completed 8-family developmental tranche</span></div>
-          </div>
-          <div class="statusbox red" style="margin-top:16px"><strong>Current evidence limit:</strong> the developmental model runs are limited research evidence. They do not establish QCCS validity, human correspondence, or the moral correctness of a ranked policy.</div>
-        </div>
+  <section id="about">
+    <div class="container">
+      <span class="eyebrow">What It Provides</span>
+      <h2>A case collection with inspectable policy construction</h2>
+      <p class="lead">A reader can inspect the decision being studied, the policy options being compared, and the source trail used to construct those options.</p>
+      <div class="cards-grid">
+        <div class="card"><div class="card-icon">📚</div><h3>Versioned Case Families</h3><p>Each family has stable identifiers and matched concise and detailed records. Every record carries a version and canonical content hash.</p></div>
+        <div class="card"><div class="card-icon">🔗</div><h3>Source-Linked Policy Options</h3><p>Candidate provenance records the citation and the reasoning used to construct the policy. Canonical source locators are complete across all 68 Full Corpus records.</p></div>
+        <div class="card"><div class="card-icon">⚖️</div><h3>Evidence-Qualified Candidate Sets</h3><p>The 34 families contain 210 unique policy candidates across eight Public × Expert × Framework geometries. Candidate counts vary with the evidence available for each case.</p></div>
+        <div class="card"><div class="card-icon">🧪</div><h3>Controlled Representations</h3><p>Concise and detailed companions preserve the same decision question, candidate set and benchmark stipulations while varying scenario detail.</p></div>
+        <div class="card"><div class="card-icon">🧾</div><h3>Explicit Benchmark Assumptions</h3><p>When a comparison depends on legal, factual or contextual assumptions, those stipulations are written into the record.</p></div>
+        <div class="card"><div class="card-icon">🔍</div><h3>Reviewable Provenance</h3><p>Source citations, candidate-construction summaries and review metadata can be inspected separately from any later evaluation result.</p></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="kicker">Sources and policy construction</div>
-        <h2>A citation should show how it supports the policy option.</h2>
-        <p class="lede">For a sourced policy, the important questions are concrete: What source is being cited? What does it actually say? Which part of that source matters for this case? How did the Bench turn that evidence into the policy wording shown in the record? The provenance fields preserve those steps so they can be reviewed and revised.</p>
-
-        <div class="grid2">
-          <article class="card">
-            <h3>What the provenance records</h3>
-            <p>Source type, the claim taken from the source, the role that claim plays, the direction and scope of support, the Bench's policy bridge, and the identity of the review performed on that relationship.</p>
-          </article>
-          <article class="card">
-            <h3>Current review coverage</h3>
-            <p>Canonical source locators are now complete across the 68 Full Corpus records. The current corpus contains 242 unique citations; 130 carry PMIDs and all 130 resolve consistently against PubMed. Independent corpus-wide human source-to-policy review remains a later quality and release step.</p>
-          </article>
+  <section class="example-bg" id="example">
+    <div class="container">
+      <span class="eyebrow">Inside the Data</span>
+      <h2>What a current record looks like</h2>
+      <p class="lead">M002 asks how much support and reassessment should be required before a clinical team shifts decision-making authority away from an adult with fluctuating capacity.</p>
+      <div class="record">
+        <div class="record-row"><div class="record-key">Case</div><div class="record-val"><strong>Capacity, risk and supported decision-making</strong><br />An adult with an acute mental-health episode must decide within about six hours whether to undergo urgent surgery for a serious infection. A trusted supporter is available, and further communication support and reassessment can occur within the treatment window.</div></div>
+        <div class="record-row"><div class="record-key">Decision</div><div class="record-val">Before relying on a surrogate or temporary protective intervention, what support and reassessment should the clinical team require for this adult's high-stakes treatment decision?</div></div>
+        <div class="record-row"><div class="record-key">Geometry</div><div class="record-val"><span class="chip">1 Public × 2 Expert × 2 Framework</span> &nbsp; matched concise + detailed records</div></div>
+        <div class="record-policies">
+          <div class="policy"><div class="policy-src">Public · pub1</div><div class="policy-text">Use individualized supported decision-making, adapt the form and intensity of help to the patient's preferences, and reassess before substituting another decision-maker.</div><a class="policy-link" href="https://pubmed.ncbi.nlm.nih.gov/29557294/" target="_blank" rel="noopener">Example source: Knight et al. ↗</a></div>
+          <div class="policy"><div class="policy-src">Expert · exp1 / exp2</div><div class="policy-text">The expert pool includes a rights-maximizing supported-decision approach and a capacity-threshold approach that permits surrogate decision-making when relevant capacity remains absent.</div><a class="policy-link" href="https://www.who.int/publications/i/item/9789241516761" target="_blank" rel="noopener">WHO QualityRights ↗</a><br /><a class="policy-link" href="https://code-medical-ethics.ama-assn.org/ethics-opinions/decisions-adult-patients-who-lack-capacity" target="_blank" rel="noopener">AMA Opinion 2.1.2 ↗</a></div>
+          <div class="policy"><div class="policy-src">Framework · fw1 / fw2</div><div class="policy-text">The framework pool represents relational autonomy and a bounded protective approach grounded in autonomy, beneficence and nonmaleficence under time constraint.</div><a class="policy-link" href="https://doi.org/10.1093/oso/9780195123333.001.0001" target="_blank" rel="noopener">Relational Autonomy ↗</a></div>
         </div>
+        <div class="record-row"><div class="record-key">Inspect</div><div class="record-val"><a href="./cases/">Open M002 in the visual case explorer →</a> &nbsp; · &nbsp; <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/data/benchmark/m002-capacity-risk-supported-decision-making-concise-v1.json" target="_blank" rel="noopener">View the source record ↗</a></div></div>
       </div>
-    </section>
+      <p class="example-note">This example is drawn from the current M002 concise record. The explorer exposes all candidates, sources, stipulations, references, companion representations and record identifiers.</p>
+    </div>
+  </section>
 
-    <section class="section soft">
-      <div class="wrap">
-        <div class="kicker">Reproducible research</div>
-        <h2>A result should say exactly which case, task and evaluator produced it.</h2>
-        <p class="lede">For a computational or human study, report the record ID, version and content hash; the task protocol used to compare the policies; and the evaluator, prompt and configuration used for that run. Those three pieces are enough to identify the object studied and the procedure that produced the result.</p>
-        <div class="actions">
-          <a class="btn light" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md" target="_blank" rel="noopener">Read the task contract ↗</a>
-          <a class="btn light" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/RESOURCE_CARD.md" target="_blank" rel="noopener">Read the Resource Card ↗</a>
-          <a class="btn light" href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md" target="_blank" rel="noopener">Content license ↗</a>
-        </div>
+  <section id="cases">
+    <div class="container">
+      <span class="eyebrow">Full Corpus</span>
+      <h2>Thirty-four executable case families</h2>
+      <p class="lead">The executable set emerged from a 200-family research and disposition program. Each of the 34 families has matched concise and detailed records and a candidate set that can be projected into the current reference task.</p>
+      <div class="collection-grid">
+        <div class="collection-stat"><b>200</b><span>families researched and dispositioned</span></div>
+        <div class="collection-stat"><b>34</b><span>executable Full Corpus families</span></div>
+        <div class="collection-stat"><b>68</b><span>matched concise + detailed records</span></div>
+        <div class="collection-stat"><b>210</b><span>unique family-level policy candidates</span></div>
       </div>
-    </section>
-  </main>
+      <p class="note">The 34 families occupy eight natural candidate-set geometries. Eight are 2×2×2; 26 are asymmetric. Under the current task this yields 428 cross-source comparisons for one representation and 856 across one matched concise/detailed pass.</p>
+      <div class="inline-actions">
+        <a href="./cases/" class="btn btn-green">Browse the Full Corpus</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/benchmark" class="btn btn-ghost" target="_blank" rel="noopener">Records on GitHub ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md" class="btn btn-ghost" target="_blank" rel="noopener">Content license ↗</a>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <div class="wrap footerin">
-      <div>Bioethics Bench · /v2 preview · Alethic Research</div>
-      <div><a href="../">Current site</a> · <a href="https://github.com/alethicresearch/bioethics-bench">Repository</a> · <a href="./cases/">Cases</a> · <a href="./results/">Results</a></div>
+  <section class="domains-bg" id="results">
+    <div class="container">
+      <span class="eyebrow">Current Evidence</span>
+      <h2>Reproducibility and developmental execution</h2>
+      <p class="lead">The current public evidence separates an all-record reproducibility check from smaller developmental model-execution studies.</p>
+      <div class="cards-grid">
+        <div class="card"><div class="card-icon">✓</div><h3>All-record task equivalence</h3><p>The explicit Bench adapter was checked across all 68 records after the latest source-locator enrichment. The gate found zero execution/task-semantic differences, and the refreshed consumer payload is byte-equivalent after re-pin.</p></div>
+        <div class="card"><div class="card-icon">↔</div><h3>Concise versus detailed</h3><p>An 8-family / 16-record developmental tranche completed 216 QCCS calls and records how pair scores and rankings changed when scenario detail changed.</p></div>
+        <div class="card"><div class="card-icon">↻</div><h3>Repeat calibration</h3><p>Repeated developmental runs show heterogeneous stability across cases, providing hypotheses for later protocolized reliability work.</p></div>
+        <div class="card"><div class="card-icon">20</div><h3>Interrupted corpus attempt</h3><p>A 68-record developmental census was halted after 234 calls. Twenty records have complete single executions; 48 are incomplete and remain non-results.</p></div>
+      </div>
+      <p class="note">These developmental model runs do not establish QCCS validity, human correspondence, or the moral correctness of a ranked policy.</p>
+      <div class="inline-actions"><a href="./results/" class="btn btn-dark">Open the results explorer →</a></div>
+    </div>
+  </section>
+
+  <section class="team-bg" id="team">
+    <div class="container">
+      <span class="eyebrow">Research Team</span>
+      <div class="team-grid">
+        <div class="person-card"><div class="initials">SG</div></div><div class="person-card"><div class="initials">PS</div></div><div class="person-card"><div class="initials">JS</div></div><div class="person-card"><div class="initials">IH</div></div><div class="person-card"><div class="initials">RS</div></div><div class="person-card"><div class="initials">DW</div></div><div class="person-card"><div class="initials">KR</div></div><div class="person-card"><div class="initials">NI</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container-sm">
+      <span class="eyebrow">Explore the Resource</span>
+      <h2>Inspect the cases and the evidence behind them</h2>
+      <p class="lead">Use the case explorer to move from a decision problem to its policy candidates and sources, or open the results explorer to inspect the current developmental evidence.</p>
+      <div class="cta-actions"><a href="./cases/" class="btn btn-green">Explore cases</a><a href="./results/" class="btn btn-ghost">Explore results</a><a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">Repository ↗</a></div>
+      <p class="cta-contact">Questions about Bioethics Bench: <a href="mailto:research@alethic.ai">research@alethic.ai</a></p>
+    </div>
+  </section>
+
+  <section class="cite-bg" id="cite">
+    <div class="container-sm">
+      <span class="eyebrow">Citation</span>
+      <h2>Current citation metadata</h2>
+      <p class="lead">The repository currently carries provisional resource-level citation metadata while the standalone manuscript byline is finalized.</p>
+      <div class="bibtex-wrap">
+        <button class="copy-btn" id="copy-cite" type="button">Copy</button>
+        <pre class="bibtex" id="citation">Bioethics Bench. Alethic Research. Development version.
+https://github.com/alethicresearch/bioethics-bench
+
+For a specific analysis, also report the exact record version/content hash, task protocol, and evaluation condition.</pre>
+      </div>
+      <div class="inline-actions"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/CITATION.cff" class="btn btn-dark" target="_blank" rel="noopener">CITATION.cff ↗</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><a href="./" class="footer-brand">Bioethics<em>Bench</em></a></div>
+      <div class="footer-links"><a href="../">Current site</a><a href="./cases/">Cases</a><a href="./results/">Results</a><a href="https://github.com/alethicresearch/bioethics-bench">GitHub</a><a href="mailto:research@alethic.ai">Contact</a></div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('copy-cite').addEventListener('click', function () {
+      var text = document.getElementById('citation').textContent;
+      navigator.clipboard.writeText(text).then(() => { this.textContent = 'Copied'; setTimeout(() => this.textContent = 'Copy', 1400); });
+    });
+  </script>
 </body>
 </html>
