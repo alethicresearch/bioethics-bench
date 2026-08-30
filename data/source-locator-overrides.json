@@ -1,148 +1,178 @@
 {
-  "_comment": "Verified canonical locators for Full Corpus citations that cannot be recovered mechanically from citation text. Keys are exact citation strings. Only genuine source URLs/DOIs belong here; search-result URLs do not.",
+  "_comment": "Verified canonical locators for Full Corpus citations that cannot be recovered mechanically from citation text. Keys are exact citation strings. Only genuine source URLs/DOIs belong here; search-result URLs do not. Override fields are authoritative, including explicit null used to clear an incorrect propagated locator.",
   "citations": {
-    "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially unproven interventions and communications guidance.": {
-      "doi": "10.4135/9781483347660.n215",
-      "url": "https://doi.org/10.4135/9781483347660.n215",
-      "verified_by": "crossref-title-match",
-      "matched_title": "International Society for Stem Cell Research Guidelines",
-      "title_match": 1,
+    "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians.": {
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/routine-universal-immunization-physicians",
+      "verified_by": "official-source-page",
       "checked_at": "2026-08-30"
     },
-    "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current FDA warnings.": {
-      "doi": "10.33589/31.4.133",
-      "url": "https://doi.org/10.33589/31.4.133",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes",
-      "title_match": 1,
+    "AMA Code of Medical Ethics Opinion 8.7. Routine Universal Immunization of Physicians. Current through 2026.": {
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/routine-universal-immunization-physicians",
+      "verified_by": "official-source-page",
       "checked_at": "2026-08-30"
     },
-    "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding Stem Cell Tourism. JAMA Neurol. 2015;72:1342-1345.": {
-      "doi": "10.1001/jamaneurol.2015.1891",
-      "url": "https://doi.org/10.1001/jamaneurol.2015.1891",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding “Stem Cell Tourism”",
-      "title_match": 1,
-      "checked_at": "2026-08-30"
-    },
-    "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.": {
-      "doi": "10.33589/31.4.133",
-      "url": "https://doi.org/10.33589/31.4.133",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes",
-      "title_match": 1,
-      "checked_at": "2026-08-30"
-    },
-    "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.": {
-      "doi": "10.15585/mmwr.rr6506a1",
-      "url": "https://doi.org/10.15585/mmwr.rr6506a1",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Core Elements of Outpatient Antibiotic Stewardship",
-      "title_match": 1,
+    "AMA Policy H-480.931, risk- and impact-based transparency and disclosure.": {
+      "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml",
+      "verified_by": "official-source-page",
       "checked_at": "2026-08-30"
     },
     "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.": {
-      "doi": "10.1212/wnl.0000000000214334",
-      "url": "https://doi.org/10.1212/wnl.0000000000214334",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Brain Death/Death by Neurologic Criteria Guidance on Communication, Objections, Pregnancy, and Public Trust",
-      "title_match": 1,
+      "doi": "10.1212/WNL.0000000000214334",
+      "url": "https://doi.org/10.1212/WNL.0000000000214334",
+      "verified_by": "pubmed-and-crossref",
       "checked_at": "2026-08-30"
     },
-    "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.": {
-      "doi": "10.1016/s0140-6736(09)60137-9",
-      "url": "https://doi.org/10.1016/s0140-6736(09)60137-9",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Principles for allocation of scarce medical interventions",
-      "title_match": 1,
+    "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.": {
+      "url": "https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection/american-cancer-society-recommendations-for-the-early-detection-of-breast-cancer.html",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "American Heart Association. Principles for Health Information Collection, Sharing, and Use. 2023.": {
+      "doi": "10.1161/CIR.0000000000001173",
+      "url": "https://doi.org/10.1161/CIR.0000000000001173",
+      "verified_by": "pubmed",
+      "checked_at": "2026-08-30"
+    },
+    "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.": {
+      "url": "https://www.ama-assn.org/practice-management/digital-health/using-health-ai-exam-room-what-doctors-should-consider",
+      "verified_by": "official-source-page-for-cited-ambient-guidance",
+      "checked_at": "2026-08-30"
+    },
+    "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.": {
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.": {
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.": {
+      "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.": {
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/fertility-preservation-and-reproduction-in-patients-facing-gonadotoxic-therapies-or-gonadectomy-an-ethics-committee-opinion-2026/",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.": {
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/informing-offspring-of-their-conception-by-gamete-or-embryo-donation-an-ethics-committee-opinion-2018/",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "ASRM Ethics Committee. Interests, obligations, and rights in gamete and embryo donation. 2019.": {
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/interests-obligations-and-rights-in-gamete-and-embryo-donation-an-ethics-committee-opinion-2019/",
+      "verified_by": "official-source-page",
       "checked_at": "2026-08-30"
     },
     "ASRM Ethics Committee. Posthumous retrieval and use of gametes or embryos. 2018.": {
-      "doi": "10.1016/j.fertnstert.2005.11.011",
-      "url": "https://doi.org/10.1016/j.fertnstert.2005.11.011",
-      "verified_by": "crossref-title-match",
-      "matched_title": "ASRM Ethics Committee",
-      "title_match": 1,
+      "doi": "10.1016/j.fertnstert.2018.04.002",
+      "url": "https://doi.org/10.1016/j.fertnstert.2018.04.002",
+      "verified_by": "pubmed",
       "checked_at": "2026-08-30"
     },
-    "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.": {
-      "doi": "10.1038/s41431-020-00758-w",
-      "url": "https://doi.org/10.1038/s41431-020-00758-w",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics",
-      "title_match": 1,
+    "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.": {
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/",
+      "verified_by": "official-source-page",
       "checked_at": "2026-08-30"
     },
     "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion. Fertility and Sterility. 2022;117:720-726.": {
       "doi": "10.1016/j.fertnstert.2021.12.024",
       "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion",
-      "title_match": 1,
+      "verified_by": "crossref-and-official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.": {
+      "doi": "10.1016/j.fertnstert.2021.12.024",
+      "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024",
+      "verified_by": "matched-to-full-2022-asrm-opinion",
+      "checked_at": "2026-08-30"
+    },
+    "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially unproven interventions and communications guidance.": {
+      "doi": null,
+      "url": "https://www.isscr.org/guidelines",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current FDA warnings.": {
+      "doi": null,
+      "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.": {
+      "doi": null,
+      "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes",
+      "verified_by": "official-source-page",
+      "checked_at": "2026-08-30"
+    },
+    "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding Stem Cell Tourism. JAMA Neurol. 2015;72:1342-1345.": {
+      "doi": "10.1001/jamaneurol.2015.1891",
+      "url": "https://doi.org/10.1001/jamaneurol.2015.1891",
+      "verified_by": "crossref-title-and-bibliographic-match",
+      "checked_at": "2026-08-30"
+    },
+    "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.": {
+      "doi": "10.15585/mmwr.rr6506a1",
+      "url": "https://doi.org/10.15585/mmwr.rr6506a1",
+      "verified_by": "crossref-title-and-bibliographic-match",
+      "checked_at": "2026-08-30"
+    },
+    "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.": {
+      "doi": "10.1016/S0140-6736(09)60137-9",
+      "url": "https://doi.org/10.1016/S0140-6736(09)60137-9",
+      "verified_by": "crossref-title-and-bibliographic-match",
+      "checked_at": "2026-08-30"
+    },
+    "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.": {
+      "doi": "10.1038/s41431-020-00758-w",
+      "url": "https://doi.org/10.1038/s41431-020-00758-w",
+      "verified_by": "crossref-title-and-bibliographic-match",
       "checked_at": "2026-08-30"
     },
     "Dondorp W, et al. ESHRE Task Force on Ethics and Law 20: sex selection for non-medical reasons. Human Reproduction. 2013;28:1448-1454.": {
       "doi": "10.1093/humrep/det109",
       "url": "https://doi.org/10.1093/humrep/det109",
-      "verified_by": "crossref-title-match",
-      "matched_title": "ESHRE Task Force on ethics and Law 20: sex selection for non-medical reasons",
-      "title_match": 1,
-      "checked_at": "2026-08-30"
-    },
-    "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.": {
-      "doi": "10.1001/virtualmentor.2007.9.6.ccas3-0706",
-      "url": "https://doi.org/10.1001/virtualmentor.2007.9.6.ccas3-0706",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Sex Selection for Nonmedical Reasons",
-      "title_match": 1,
+      "verified_by": "crossref-title-and-bibliographic-match",
       "checked_at": "2026-08-30"
     },
     "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans, 2016, Guideline 11 (collection, storage and use of biological materials and related data). Permits broad informed consent for unspecified future use, requires institutions to operate a governance system for authorizing future use, makes the ethical acceptability of broad consent depend on that governance, and requires the original consent process to state the limits of secondary use and the conditions under which investigators must return for additional authorization.": {
       "doi": "10.56759/rgxl7405",
       "url": "https://doi.org/10.56759/rgxl7405",
-      "verified_by": "crossref-title-match",
-      "matched_title": "International Ethical Guidelines for Health-related Research involving Humans",
-      "title_match": 1,
+      "verified_by": "ncbi-bookshelf",
       "checked_at": "2026-08-30"
     },
     "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. 2016.": {
       "doi": "10.56759/rgxl7405",
       "url": "https://doi.org/10.56759/rgxl7405",
-      "verified_by": "crossref-title-match",
-      "matched_title": "International Ethical Guidelines for Health-related Research involving Humans",
-      "title_match": 1,
+      "verified_by": "ncbi-bookshelf",
       "checked_at": "2026-08-30"
     },
     "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.": {
       "doi": "10.56759/rgxl7405",
       "url": "https://doi.org/10.56759/rgxl7405",
-      "verified_by": "crossref-title-match",
-      "matched_title": "International Ethical Guidelines for Health-related Research involving Humans",
-      "title_match": 1,
+      "verified_by": "ncbi-bookshelf",
       "checked_at": "2026-08-30"
     },
     "Largent EA, Persad G, Sangenito S, Glickman A, Boyle C, Emanuel EJ. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.": {
       "doi": "10.1001/jamanetworkopen.2020.33324",
       "url": "https://doi.org/10.1001/jamanetworkopen.2020.33324",
-      "verified_by": "crossref-title-match",
-      "matched_title": "US Public Attitudes Toward COVID-19 Vaccine Mandates",
-      "title_match": 1,
+      "verified_by": "crossref-title-and-bibliographic-match",
       "checked_at": "2026-08-30"
     },
     "Largent EA, et al. US Public Attitudes Toward COVID-19 Vaccine Mandates. JAMA Netw Open. 2020;3:e2033324.": {
       "doi": "10.1001/jamanetworkopen.2020.33324",
       "url": "https://doi.org/10.1001/jamanetworkopen.2020.33324",
-      "verified_by": "crossref-title-match",
-      "matched_title": "US Public Attitudes Toward COVID-19 Vaccine Mandates",
-      "title_match": 1,
+      "verified_by": "crossref-title-and-bibliographic-match",
       "checked_at": "2026-08-30"
     },
     "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.": {
       "doi": "10.17226/26767",
       "url": "https://doi.org/10.17226/26767",
-      "verified_by": "crossref-title-match",
-      "matched_title": "Wastewater-based Disease Surveillance for Public Health Action",
-      "title_match": 1,
+      "verified_by": "crossref-title-and-bibliographic-match",
       "checked_at": "2026-08-30"
     }
   }
