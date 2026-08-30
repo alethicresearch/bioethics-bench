@@ -13,7 +13,7 @@ import { canonicalContentHash } from './hash-case.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dir = join(root, 'data', 'benchmark');
-const mapPath = join(root, 'data', 'source-locator-overrides.json');
+const mapPath = join(root, 'docs', 'source-locators', 'source-locator-overrides.json');
 const write = process.argv.includes('--write');
 const map = JSON.parse(readFileSync(mapPath, 'utf8')).citations || {};
 
