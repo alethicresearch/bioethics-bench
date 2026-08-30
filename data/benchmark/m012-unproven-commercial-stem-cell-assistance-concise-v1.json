@@ -160,7 +160,8 @@
           "sources": [
             {
               "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines"
             },
             {
               "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
@@ -169,7 +170,9 @@
             },
             {
               "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.1001/jamaneurol.2015.1891",
+              "url": "https://doi.org/10.1001/jamaneurol.2015.1891"
             }
           ],
           "adapted_not_reproduced": true
@@ -188,7 +191,8 @@
           "sources": [
             {
               "citation": "Beauchamp and Childress. Principles of Biomedical Ethics, 8th ed. 2019.",
-              "type": "book"
+              "type": "book",
+              "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
             }
           ]
         }
@@ -204,7 +208,8 @@
           "sources": [
             {
               "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.isscr.org/guidelines"
             }
           ]
         }
@@ -232,7 +237,8 @@
   "references": [
     {
       "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, section on unproven stem cell-based interventions and medical innovation. The August 2025 release is a targeted update covering stem-cell-based embryo models; all other sections, including this one, remain as published in the 2021 guidelines.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.isscr.org/guidelines"
     },
     {
       "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
@@ -241,7 +247,9 @@
     },
     {
       "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
-      "type": "article"
+      "type": "article",
+      "doi": "10.1001/jamaneurol.2015.1891",
+      "url": "https://doi.org/10.1001/jamaneurol.2015.1891"
     },
     {
       "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
@@ -256,5 +264,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:46ff66493950fe3f01a1864c8517d4016a85c794c1caad0e1b22152d616dbfac"
+  "content_hash": "sha256:9c3846a8eb08450a2477e2dbcb5ded7a1b4c1b30b6eae5ea978dbdc6f016e55b"
 }

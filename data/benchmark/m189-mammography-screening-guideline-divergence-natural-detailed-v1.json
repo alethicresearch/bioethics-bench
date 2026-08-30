@@ -66,7 +66,8 @@
     "sources": [
       {
         "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/breast-cancer-screening"
       },
       {
         "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
@@ -135,7 +136,8 @@
           "sources": [
             {
               "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/breast-cancer-screening"
             }
           ],
           "adapted_not_reproduced": true
@@ -172,7 +174,8 @@
           "sources": [
             {
               "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/breast-cancer-screening"
             }
           ],
           "adapted_not_reproduced": true
@@ -240,7 +243,8 @@
   "references": [
     {
       "citation": "U.S. Preventive Services Task Force. Breast Cancer: Screening. Final Recommendation Statement, 30 April 2024. Grade B: biennial screening mammography for women aged 40 to 74 years.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/breast-cancer-screening"
     },
     {
       "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
@@ -265,5 +269,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
   },
   "scenario": "A primary-care practice is writing the standing counseling policy its clinicians will follow with patients who are women aged 40 to 49 at average risk of breast cancer. The policy matters because the major guideline bodies currently give action-distinct schedules for exactly this band. The 2024 USPSTF recommendation is biennial screening mammography for women aged 40 to 74 at grade B, and it explicitly recommends biennial screening for women aged 40 to 49 rather than individualizing the decision for that group, reversing its earlier position. Current American Cancer Society guidance instead gives women aged 40 to 44 the option to begin annual screening and recommends annual screening for women aged 45 to 54. Both schedules are professionally defensible and reimbursable in this setting, so the practice cannot resolve the question by deferring to whichever body is authoritative. The clinical trade-off is real in both directions: beginning earlier and screening annually detects some cancers at an earlier stage, and also yields more false-positive recalls, more additional imaging and biopsy, and more overdiagnosis and treatment of disease that would not have become clinically significant. National probability-based survey evidence among women aged 39 to 49 shows that preferences in this band are heterogeneous and move with information: roughly a quarter preferred to delay screening before receiving a decision aid covering benefits and harms and a personalized risk estimate, and roughly two in five preferred to delay afterwards, while the proportion who never wanted mammography did not rise. For this benchmark, assume all patients in the band are at average risk with no BRCA1/2 pathogenic variant and no history that would trigger a high-risk pathway, that mammography is accessible and affordable at either interval so the choice is not a proxy for rationing, and that the practice can deliver standardized benefit-and-harm counseling to every patient in the band. The practice must decide whether its standard policy should recommend biennial screening from 40, recommend annual screening in the 40s under the ACS schedule, or treat timing and frequency within the guideline-supported range as a shared decision made after standardized counseling.",
-  "content_hash": "sha256:a6fa29fb2f18b4723100c28b3da82764963dc9e0f8ec43f1d6c7760001847e0f"
+  "content_hash": "sha256:df8faae63aeca0e15835c63d4924b7992b2a2ea31b5c6fdc53269953fbfcb4a0"
 }

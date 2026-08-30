@@ -59,7 +59,8 @@
     "sources": [
       {
         "citation": "HFEA. Rules around releasing donor information; donor identity guidance, current through 2026.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.hfea.gov.uk/donation/donors/rules-around-releasing-donor-information"
       },
       {
         "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
@@ -173,7 +174,8 @@
           "sources": [
             {
               "citation": "HFEA. Rules around releasing donor information; FAQs for donors, donor-conceived people and their parents, current through 2026. People conceived from donors who registered after 1 April 2005 may apply to the HFEA at 18 for information identifying their donor; donors are encouraged but under no obligation to have contact.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.hfea.gov.uk/donation/donors/rules-around-releasing-donor-information"
             }
           ],
           "adapted_not_reproduced": true
@@ -220,7 +222,8 @@
           "sources": [
             {
               "citation": "Nuffield Council on Bioethics. Donor conception: ethical aspects of information sharing. 2013.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/publication/donor-conception-ethical-aspects-of-information-sharing/"
             }
           ]
         }
@@ -283,7 +286,8 @@
   "references": [
     {
       "citation": "HFEA. Rules around releasing donor information; donor identity guidance, current through 2026.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.hfea.gov.uk/donation/donors/rules-around-releasing-donor-information"
     },
     {
       "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
@@ -302,7 +306,8 @@
     },
     {
       "citation": "Nuffield Council on Bioethics. Donor conception: ethical aspects of information sharing. 2013.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.nuffieldbioethics.org/publication/donor-conception-ethical-aspects-of-information-sharing/"
     },
     {
       "citation": "Perspectives on sperm donor anonymity: insights from donor-conceived adults in Belgium. PMID 39008824.",
@@ -336,5 +341,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program is designing prospective rules for future gamete donation. Donor-conceived adults may have strong interests in genetic-origin information, while donors and recipient parents may value privacy or controlled contact. For this benchmark, assume open-identity, mutual-consent identity release and program-level nonidentification are legally available, the policy is disclosed before donation and treatment, relevant medical and genetic information is permanently retained, and consumer DNA matching may reveal donor identity regardless of clinic policy. The program must decide what identity-disclosure rule to promise.",
-  "content_hash": "sha256:b66e2319dfb5731321499ddbc31d4b87c6060d3f845fed8e429c1f14521c8cf4"
+  "content_hash": "sha256:75979f887b161b3fc5a48f5d6b0e9fe1c8e4764c31f863be8a046e53ccbe7752"
 }

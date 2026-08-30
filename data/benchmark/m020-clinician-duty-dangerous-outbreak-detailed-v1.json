@@ -78,7 +78,8 @@
       },
       {
         "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/WHO-2019-nCoV-HCW_advice-2021-1"
       },
       {
         "citation": "Aitken P et al. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia's First Wave of COVID-19 Community Transmission. 2021. PMID 34496995.",
@@ -182,7 +183,8 @@
             },
             {
               "citation": "World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/WHO-2019-nCoV-HCW_advice-2021-1"
             }
           ],
           "adapted_not_reproduced": true
@@ -218,7 +220,8 @@
           "sources": [
             {
               "citation": "World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/WHO-2019-nCoV-HCW_advice-2021-1"
             }
           ]
         }
@@ -251,7 +254,8 @@
     },
     {
       "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/WHO-2019-nCoV-HCW_advice-2021-1"
     },
     {
       "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
@@ -270,5 +274,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:53b32bb3de255972b401e5eebdcf3afe59f31d32277715649fabcd9152baa64b"
+  "content_hash": "sha256:4f30132bda5715a590658fbe2746454e536f3ddc49cb6009a0a020cf32f36036"
 }

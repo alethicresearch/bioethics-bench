@@ -197,7 +197,9 @@
           "sources": [
             {
               "citation": "Miller DT, et al. ACMG secondary-findings policy, 2021 update.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1038/s41436-021-01172-3",
+              "url": "https://doi.org/10.1038/s41436-021-01172-3"
             }
           ]
         }
@@ -321,5 +323,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "An adult with decision-making capacity is undergoing clinical exome/genome sequencing for a diagnostic indication. In addition to variants related to that indication, the laboratory can intentionally search for a predefined set of pathogenic or likely pathogenic variants associated with serious conditions for which surveillance, preventive treatment or another established intervention can meaningfully reduce morbidity or mortality. For this benchmark, assume every returned secondary finding would be analytically confirmed and clinically interpreted, pre- and post-test genetic counseling is available, and the represented conditions have established interventions; penetrance and actionability nevertheless vary across gene–disease pairs. The health system must choose a standing policy: routine secondary analysis with informed opt-out, secondary analysis only after explicit opt-in, restriction of diagnostic analysis to the clinical indication rather than routine opportunistic search, or a narrower secondary program restricted to findings meeting a particularly high threshold of penetrance and clinical actionability.",
-  "content_hash": "sha256:017fe113e3f7310c27172e930e6f38061433622c065542c74c1f55872b9a0c29"
+  "content_hash": "sha256:52ab16bfee2c6bbfe50d1b7ba8625f71bfac7699d3638b8bfe8853c7df17c637"
 }

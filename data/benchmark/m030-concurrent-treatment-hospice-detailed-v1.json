@@ -73,7 +73,8 @@
     "sources": [
       {
         "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.cms.gov/research-statistics-data-and-systems/monitoring-programs/medicare-ffs-compliance-programs/recovery/1781035297/0201-hospice-continuous-home-care-medical-necessity-and-documentation-requirements"
       },
       {
         "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
@@ -159,7 +160,8 @@
           "sources": [
             {
               "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.cms.gov/research-statistics-data-and-systems/monitoring-programs/medicare-ffs-compliance-programs/recovery/1781035297/0201-hospice-continuous-home-care-medical-necessity-and-documentation-requirements"
             }
           ],
           "adapted_not_reproduced": true
@@ -206,7 +208,8 @@
           "sources": [
             {
               "citation": "Beauchamp and Childress. Principles of Biomedical Ethics, 8th ed. 2019.",
-              "type": "book"
+              "type": "book",
+              "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
             }
           ]
         }
@@ -222,7 +225,8 @@
           "sources": [
             {
               "citation": "Centers for Medicare & Medicaid Services. Medicare hospice coverage and election materials.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.cms.gov/research-statistics-data-and-systems/monitoring-programs/medicare-ffs-compliance-programs/recovery/1781035297/0201-hospice-continuous-home-care-medical-necessity-and-documentation-requirements"
             }
           ]
         }
@@ -250,7 +254,8 @@
   "references": [
     {
       "citation": "Centers for Medicare & Medicaid Services. Medicare hospice benefit: election of hospice care, 42 C.F.R. § 418.24, and Medicare Benefit Policy Manual chapter 9, current through 2026. On electing hospice the beneficiary waives the right to Medicare payment for items, services and drugs related to the terminal illness and related conditions, acknowledges the palliative rather than curative nature of the care, and hospice is expected to provide virtually all care needed for that illness.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.cms.gov/research-statistics-data-and-systems/monitoring-programs/medicare-ffs-compliance-programs/recovery/1781035297/0201-hospice-continuous-home-care-medical-necessity-and-documentation-requirements"
     },
     {
       "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
@@ -279,5 +284,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:d823cba2270da34b1ae9fa4a654c689ce028195cfa8feb5bbd1e684ffc7ca716"
+  "content_hash": "sha256:9ab56bea00ff3d04524c9a9749a3c35da05bd25c6c28d4e29a0106e8b884a5a0"
 }

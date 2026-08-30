@@ -64,11 +64,13 @@
       },
       {
         "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.who.int/publications/m/item/wastewater-and-environmental-surveillance-for-one-or-more-pathogens--guidance-on-prioritization--implementation-and-integration"
       },
       {
         "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789241512657"
       },
       {
         "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
@@ -141,11 +143,13 @@
             },
             {
               "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/m/item/wastewater-and-environmental-surveillance-for-one-or-more-pathogens--guidance-on-prioritization--implementation-and-integration"
             },
             {
               "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789241512657"
             }
           ],
           "adapted_not_reproduced": true
@@ -200,11 +204,13 @@
           "sources": [
             {
               "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/m/item/wastewater-and-environmental-surveillance-for-one-or-more-pathogens--guidance-on-prioritization--implementation-and-integration"
             },
             {
               "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789241512657"
             }
           ]
         }
@@ -239,11 +245,13 @@
     },
     {
       "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.who.int/publications/m/item/wastewater-and-environmental-surveillance-for-one-or-more-pathogens--guidance-on-prioritization--implementation-and-integration"
     },
     {
       "citation": "WHO. Guidelines on Ethical Issues in Public Health Surveillance. 2017.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789241512657"
     },
     {
       "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
@@ -262,5 +270,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public-health department already monitors municipal wastewater for respiratory pathogens and proposes adding neighborhood and institutional catchments plus antimicrobial-resistance and drug-use markers. For this benchmark, assume individual consent or opt-out cannot practically be obtained, citywide samples have very low individual re-identification risk while neighborhood or institutional catchments create materially greater stigma, inference and re-identification risks, the proposed program includes both infectious-disease targets and more sensitive drug-use markers, and the agency can prohibit law-enforcement and commercial secondary use while implementing transparency, community engagement and ethics-governance processes. The agency must decide whether broad governed surveillance may expand across useful targets and scales, routine surveillance should remain at sufficiently large catchments and mainly infectious-disease targets, or small-area and sensitive-target monitoring should require a separate community and ethics approval process.",
-  "content_hash": "sha256:5ccf010cddbf10fd2e11d2813eac147f66e432136980368bacfbcfe23b6303c4"
+  "content_hash": "sha256:e33f72dd159104ef9357e3af96cccbc7a2694218c600eae4c61b10c2b827ad0b"
 }

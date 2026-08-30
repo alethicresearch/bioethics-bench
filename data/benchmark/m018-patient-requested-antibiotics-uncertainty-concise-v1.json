@@ -202,7 +202,9 @@
           "sources": [
             {
               "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.15585/mmwr.rr6506a1",
+              "url": "https://doi.org/10.15585/mmwr.rr6506a1"
             }
           ]
         }
@@ -278,5 +280,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:974936fe4053030263f528f122356daf8eebc4671d5609ed805ba48e01b89408"
+  "content_hash": "sha256:6ea4aa6d4ef47084126f9f5a36aea41b1e71dc5325ddb01743c8cdf5e1215a95"
 }

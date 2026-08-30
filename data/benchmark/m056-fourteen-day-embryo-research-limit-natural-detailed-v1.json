@@ -58,11 +58,13 @@
       },
       {
         "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current Human Fertilisation and Embryology Act limit of 14 days or primitive streak.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.hfea.gov.uk/about-us/modernising-the-regulation-of-fertility-treatment-and-research-involving-human-embryos/modernising-fertility-law"
       },
       {
         "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.hfea.gov.uk/about-us/news-and-press-releases/2024/the-hfea-s-recommendation-to-government-on-extending-the-time-limit-on-embryo-research/"
       },
       {
         "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
@@ -128,7 +130,8 @@
             },
             {
               "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.hfea.gov.uk/about-us/news-and-press-releases/2024/the-hfea-s-recommendation-to-government-on-extending-the-time-limit-on-embryo-research/"
             }
           ],
           "adapted_not_reproduced": true
@@ -145,7 +148,8 @@
           "sources": [
             {
               "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current situation for embryo research.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.hfea.gov.uk/about-us/modernising-the-regulation-of-fertility-treatment-and-research-involving-human-embryos/modernising-fertility-law"
             }
           ],
           "adapted_not_reproduced": true
@@ -218,11 +222,13 @@
     },
     {
       "citation": "Human Fertilisation and Embryology Authority. Modernising fertility law; current 14-day research limit.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.hfea.gov.uk/about-us/modernising-the-regulation-of-fertility-treatment-and-research-involving-human-embryos/modernising-fertility-law"
     },
     {
       "citation": "Human Fertilisation and Embryology Authority. Recommendation to government on extending the time limit on embryo research. 2024.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.hfea.gov.uk/about-us/news-and-press-releases/2024/the-hfea-s-recommendation-to-government-on-extending-the-time-limit-on-embryo-research/"
     },
     {
       "citation": "Survey of Japanese researchers and the public regarding the culture of human embryos in vitro beyond 14 days. PMID 36963386.",
@@ -246,5 +252,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.",
-  "content_hash": "sha256:c4f2312624bd1886cb93c23977cfcfdaf4eb5297a86982de6ce7a2d7d268f967"
+  "content_hash": "sha256:8dd7096a5ea76f4fbaca857df86a4b8ec3ea2dcb8808b7133f00fbdb33e50072"
 }

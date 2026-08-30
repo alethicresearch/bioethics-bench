@@ -62,7 +62,8 @@
       },
       {
         "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.who.int/publications/i/item/9789240029200"
       },
       {
         "citation": "Khullar D, Casalino LP, Qian Y, Lu Y, Krumholz HM, Aneja S. Perspectives of Patients About Artificial Intelligence in Health Care. JAMA Netw Open. 2022;5(5):e2210309. Nationally representative survey. PMID 35507346.",
@@ -148,7 +149,8 @@
             },
             {
               "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.who.int/publications/i/item/9789240029200"
             }
           ],
           "adapted_not_reproduced": true
@@ -166,8 +168,19 @@
           "summary": "Derived from informational autonomy, respect for persons and epistemic transparency. The executable material-disclosure rule is Bench-authored.",
           "sources": [
             {
-              "citation": "Patient AI disclosure literature summarized in the M144 research packet.",
-              "type": "article"
+              "citation": "Khullar D, Casalino LP, Qian Y, Lu Y, Krumholz HM, Aneja S. Perspectives of Patients About Artificial Intelligence in Health Care. JAMA Netw Open. 2022;5(5):e2210309. PMID 35507346.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35507346/"
+            },
+            {
+              "citation": "Public Attitudes Toward Notification of Use of Artificial Intelligence in Health Care. JAMA Netw Open. 2024;7(12):e2450102. PMID 39661391.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39661391/"
+            },
+            {
+              "citation": "Patient information needs for transparent and trustworthy cardiovascular artificial intelligence: a qualitative study. PLOS Digit Health. 2025;4(4):e0000826. PMID 40258073.",
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40258073/"
             }
           ]
         }
@@ -218,7 +231,8 @@
     },
     {
       "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240029200"
     },
     {
       "citation": "Khullar D, Casalino LP, Qian Y, Lu Y, Krumholz HM, Aneja S. Perspectives of Patients About Artificial Intelligence in Health Care. JAMA Netw Open. 2022;5(5):e2210309. Nationally representative survey. PMID 35507346.",
@@ -247,5 +261,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A health system uses validated AI tools ranging from routine low-impact workflow support to systems that materially influence diagnosis, monitoring or treatment recommendations. For this benchmark, assume clinicians remain responsible for final decisions, the system can provide clear general transparency about routine lower-impact AI, and case-specific disclosure lets patients ask what role the AI played and request clinician explanation or review. The governance committee must decide whether every material AI contribution should receive case-specific disclosure or whether specific notice should be reserved for consequential/high-impact AI while lower-impact use is covered by general transparency.",
-  "content_hash": "sha256:ebebbc47dc1593b806ff8bd93207a3559e6a418134a1e0e355435a9c4b1750ae"
+  "content_hash": "sha256:f2908c9c7f07567911e55d5e8638d3e90ddaf05fbd9b1788f326fa18c97f2c87"
 }

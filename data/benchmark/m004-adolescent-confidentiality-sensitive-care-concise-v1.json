@@ -168,7 +168,8 @@
           "sources": [
             {
               "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
-              "type": "book"
+              "type": "book",
+              "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
             }
           ],
           "adapted_not_reproduced": true
@@ -185,7 +186,8 @@
           "sources": [
             {
               "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
-              "type": "book"
+              "type": "book",
+              "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
             }
           ],
           "adapted_not_reproduced": true
@@ -242,9 +244,10 @@
     },
     {
       "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
-      "type": "book"
+      "type": "book",
+      "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:d8d4e296c33242def1e1ff918215fe44825830d9254c05fca08028ba246b56cb"
+  "content_hash": "sha256:5eaf116104fc6f25b6ed6239e996eea50a756d37ba6c83d28cc17382a7b56c81"
 }

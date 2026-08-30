@@ -66,7 +66,8 @@
     "sources": [
       {
         "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.euthanasiecommissie.nl/documenten/2026/01/01/euthanasiecode"
       },
       {
         "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
@@ -157,7 +158,8 @@
           "sources": [
             {
               "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.euthanasiecommissie.nl/documenten/2026/01/01/euthanasiecode"
             }
           ],
           "adapted_not_reproduced": true
@@ -176,7 +178,8 @@
           "sources": [
             {
               "citation": "Ronald Dworkin. Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom. Alfred A. Knopf, 1993.",
-              "type": "book"
+              "type": "book",
+              "url": "https://books.google.com/books/about/Life_s_Dominion.html?id=u4gp6Le3EbYC"
             }
           ],
           "adapted_not_reproduced": true
@@ -255,7 +258,8 @@
   "references": [
     {
       "citation": "Regional Euthanasia Review Committees (RTE). EuthanasiaCode, current version effective 1 January 2026. Where a patient is no longer capable of expressing their wishes, an advance directive can replace the oral request and the statutory due-care criteria apply in the same way; the physician must also be satisfied there are no contraindications or signs that the patient no longer wishes their life to be terminated.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.euthanasiecommissie.nl/documenten/2026/01/01/euthanasiecode"
     },
     {
       "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
@@ -279,7 +283,8 @@
     },
     {
       "citation": "Ronald Dworkin. Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom. Alfred A. Knopf, 1993.",
-      "type": "book"
+      "type": "book",
+      "url": "https://books.google.com/books/about/Life_s_Dominion.html?id=u4gp6Le3EbYC"
     },
     {
       "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
@@ -305,5 +310,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A person with advanced Alzheimer disease can no longer make or communicate complex decisions. Years earlier, while fully capable, the person completed and repeatedly reaffirmed a specific advance euthanasia directive requesting euthanasia if dementia progressed to permanent inability to recognize close family and make independent decisions. Those conditions are now met. The person sometimes appears calm and at other times fearful or agitated, and clinicians cannot reliably establish a stable current judgment about whether life is experienced as unbearable. For this benchmark, assume the directive was specific and reaffirmed with capacity, its stated trigger is now met, the person cannot communicate a current euthanasia request or revocation, current behavior does not establish continuous unbearable suffering, and Dutch law permits an advance directive to replace an oral request only if all other due-care criteria are met. The physician must decide what policy should govern implementation.",
-  "content_hash": "sha256:c20bb3d81113802ade538feffa3cf088358a17b6b71491624271d6e14b7b69d9"
+  "content_hash": "sha256:59bfb6a5ddd6428a061ac2551e01b0bec6c9116dfaf0ead12a5d66280ecdd1b3"
 }

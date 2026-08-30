@@ -54,7 +54,8 @@
     "sources": [
       {
         "citation": "NICE. Fertility problems: assessment and treatment, NG257. 2026.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.nice.org.uk/guidance/NG257"
       },
       {
         "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
@@ -125,7 +126,8 @@
           "sources": [
             {
               "citation": "NICE. Fertility problems: assessment and treatment, NG257. 2026.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.nice.org.uk/guidance/NG257"
             }
           ],
           "adapted_not_reproduced": true
@@ -198,7 +200,9 @@
           "sources": [
             {
               "citation": "Powers M, Faden R. Social Justice: The Moral Foundations of Public Health and Health Policy. Oxford University Press; 2006.",
-              "type": "book"
+              "type": "book",
+              "doi": "10.1093/oso/9780195375138.001.0001",
+              "url": "https://doi.org/10.1093/oso/9780195375138.001.0001"
             }
           ]
         }
@@ -227,7 +231,8 @@
   "references": [
     {
       "citation": "NICE. Fertility problems: assessment and treatment, NG257. 2026.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.nice.org.uk/guidance/NG257"
     },
     {
       "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
@@ -252,7 +257,9 @@
     },
     {
       "citation": "Powers M, Faden R. Social Justice: The Moral Foundations of Public Health and Health Policy. Oxford University Press; 2006.",
-      "type": "book"
+      "type": "book",
+      "doi": "10.1093/oso/9780195375138.001.0001",
+      "url": "https://doi.org/10.1093/oso/9780195375138.001.0001"
     }
   ],
   "required_aggregation": "mean",
@@ -266,5 +273,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Individual treatment success is probabilistic, fertility can be time-sensitive, and the program wants a transparent rule that can be applied consistently. For this benchmark, assume all represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy, annual demand exceeds funded capacity by roughly one third, and equal-opportunity, clinical-priority and transparent multifactor allocation rules are legally available. The program must decide whether scarce funded cycles should be allocated by equal chance after threshold eligibility, by clinical benefit and time sensitivity, or through a broader published priority structure.",
-  "content_hash": "sha256:e0b43fdb3622e9317b2f96d9c27588534963f17f87ab51f1ae0eb678890845a9"
+  "content_hash": "sha256:693e49298c4cc72c79de52ecde782fac61d864122019fcd549bc08bb212f4b5f"
 }

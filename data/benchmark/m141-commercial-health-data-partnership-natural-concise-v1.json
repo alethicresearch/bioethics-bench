@@ -75,7 +75,8 @@
       },
       {
         "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.gov.uk/government/publications/creating-the-right-framework-to-realise-the-benefits-of-health-data/creating-the-right-framework-to-realise-the-benefits-for-patients-and-the-nhs-where-data-underpins-innovation"
       }
     ],
     "adapted_not_reproduced": true
@@ -172,7 +173,8 @@
           "sources": [
             {
               "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; reflected in current digital and data-driven health technology guidance.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.gov.uk/government/publications/creating-the-right-framework-to-realise-the-benefits-of-health-data/creating-the-right-framework-to-realise-the-benefits-for-patients-and-the-nhs-where-data-underpins-innovation"
             }
           ],
           "adapted_not_reproduced": true
@@ -209,7 +211,8 @@
           "sources": [
             {
               "citation": "UK DHSC principles for fair benefit and fair value in NHS data partnerships.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.gov.uk/government/publications/creating-the-right-framework-to-realise-the-benefits-of-health-data/creating-the-right-framework-to-realise-the-benefits-for-patients-and-the-nhs-where-data-underpins-innovation"
             }
           ]
         }
@@ -265,7 +268,8 @@
     },
     {
       "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.gov.uk/government/publications/creating-the-right-framework-to-realise-the-benefits-of-health-data/creating-the-right-framework-to-realise-the-benefits-for-patients-and-the-nhs-where-data-underpins-innovation"
     },
     {
       "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
@@ -284,5 +288,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A nonprofit health system is considering a partnership with a technology company to develop a clinically useful predictive model from patient data collected for care. For this benchmark, assume the company would access coded data only inside a controlled environment with contractual purpose limits, the model has a credible clinical benefit, the company seeks substantial commercial intellectual-property rights, the health system would receive discounted access and research collaboration but no revenue share or nonexclusive public-interest license, and patients have not given specific permission for this commercial secondary use. Governed collaboration, stronger fair-value terms, and specific-permission requirements are all legally available. The board must decide what partnership rule to apply.",
-  "content_hash": "sha256:ccc7f4d251976f60dfa975191d2923bef3c587fca89e19c52e4baf26c71dc426"
+  "content_hash": "sha256:e61c24b55bee00ab0d2ba6bea8e1d72b6ec0f928fd7dca67632a79948f4053f0"
 }

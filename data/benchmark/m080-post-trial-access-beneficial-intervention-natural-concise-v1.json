@@ -63,7 +63,8 @@
     "sources": [
       {
         "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
       },
       {
         "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
@@ -130,7 +131,8 @@
           "sources": [
             {
               "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
             },
             {
               "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
@@ -190,7 +192,8 @@
           "sources": [
             {
               "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
             },
             {
               "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
@@ -225,7 +228,8 @@
   "references": [
     {
       "citation": "World Medical Association. Declaration of Helsinki, 2024 revision, paragraph 34. Post-trial provisions must be arranged in advance of the trial, by sponsors and researchers, for all participants who still need an intervention identified as beneficial and reasonably safe in the trial; exceptions must be approved by a research ethics committee and the provisions disclosed as part of informed consent.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
     },
     {
       "citation": "CIOMS. International Ethical Guidelines for Health-related Research Involving Humans. Guideline 6. 2016.",
@@ -250,5 +254,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A randomized trial of a chronic-disease therapy is ending. Some participants who received the investigational intervention improved substantially and still medically need it; abrupt discontinuation is likely to worsen their condition. For this benchmark, assume the intervention has been shown beneficial and reasonably safe, ordinary access will be delayed about nine to twelve months, the sponsor can provide at least temporary continued supply but indefinite provision would be burdensome, and participants were told before enrollment that post-trial access would follow an ethics-approved plan. The sponsor and ethics committee must decide what access arrangement to require.",
-  "content_hash": "sha256:41ddb523699ad23ac0254599b7a42591ff17a6505645b34784b11f312b8e71f5"
+  "content_hash": "sha256:533877f5e842ad14c9ac0957a9c35ee3d033e7478650d6fe6e8fd7793086ea5a"
 }

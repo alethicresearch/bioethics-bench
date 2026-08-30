@@ -197,7 +197,9 @@
           "sources": [
             {
               "citation": "Miller DT, et al. ACMG secondary-findings policy, 2021 update.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1038/s41436-021-01172-3",
+              "url": "https://doi.org/10.1038/s41436-021-01172-3"
             }
           ]
         }
@@ -321,5 +323,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "An adult undergoes clinical genome sequencing to investigate an unexplained medical condition. The laboratory can also intentionally analyze a predefined set of variants associated with serious conditions for which established surveillance or preventive treatment can substantially reduce morbidity or mortality. For this benchmark, assume any returned secondary finding would be analytically confirmed and clinically interpreted, pre- and post-test genetic counseling is available, and the represented findings concern serious conditions with established interventions. The health system must choose whether to analyze these actionable findings by default with an informed opt-out, analyze them only after explicit opt-in, restrict routine diagnostic analysis to the clinical indication rather than deliberately seek unrelated findings, or use a narrower secondary-finding policy limited to a particularly high threshold of penetrance and actionability.",
-  "content_hash": "sha256:7e134cf4669a06367a21d5c192be0d8c8b908f9a5aea4c99c3eb88eb6668045d"
+  "content_hash": "sha256:df60700676bc4d8dd6a366e61bf67da4865ff0a9225ea9a9972d0d94bf0ae5ba"
 }

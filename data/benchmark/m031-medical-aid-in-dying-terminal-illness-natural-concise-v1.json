@@ -65,7 +65,8 @@
     "sources": [
       {
         "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.oregon.gov/oha/PH/PROVIDERPARTNERRESOURCES/EVALUATIONRESEARCH/DEATHWITHDIGNITYACT/Documents/year28.pdf"
       },
       {
         "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
@@ -108,7 +109,8 @@
             },
             {
               "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://www.pewresearch.org/short-reads/2026/03/23/about-6-in-10-americans-dont-have-moral-objections-to-medical-aid-in-dying/"
             }
           ],
           "adapted_not_reproduced": true
@@ -125,7 +127,8 @@
           "sources": [
             {
               "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://www.pewresearch.org/short-reads/2026/03/23/about-6-in-10-americans-dont-have-moral-objections-to-medical-aid-in-dying/"
             },
             {
               "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
@@ -149,15 +152,18 @@
           "sources": [
             {
               "citation": "Oregon Death with Dignity Act, ORS 127.800–127.897. Requires that the patient be an adult, capable, terminally ill with a prognosis under six months; two oral requests separated by a waiting period plus a written request; confirmation of diagnosis, capacity, voluntariness and informed decision by a consulting physician; and the right to rescind at any time.",
-              "type": "statute"
+              "type": "statute",
+              "url": "https://www.oregon.gov/oha/ph/providerpartnerresources/evaluationresearch/deathwithdignityact/pages/ors.aspx"
             },
             {
               "citation": "Oregon Health Authority. Death with Dignity Act Requirements. Current through 2026. The attending-physician, consulting-physician, documentation and reporting steps the Act requires in operational form.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.oregon.gov/oha/ph/providerpartnerresources/evaluationresearch/deathwithdignityact/documents/requirements.pdf"
             },
             {
               "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026. Cited as evidence that the regime operates at scale, not as the source of the policy.",
-              "type": "other"
+              "type": "other",
+              "url": "https://www.oregon.gov/oha/PH/PROVIDERPARTNERRESOURCES/EVALUATIONRESEARCH/DEATHWITHDIGNITYACT/Documents/year28.pdf"
             }
           ],
           "adapted_not_reproduced": true
@@ -299,7 +305,8 @@
   "references": [
     {
       "citation": "Oregon Health Authority. Death with Dignity Act 2025 Data Summary, revised June 17, 2026.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.oregon.gov/oha/PH/PROVIDERPARTNERRESOURCES/EVALUATIONRESEARCH/DEATHWITHDIGNITYACT/Documents/year28.pdf"
     },
     {
       "citation": "American Medical Association. Code of Medical Ethics Opinion 5.7, Physician-Assisted Suicide.",
@@ -323,7 +330,8 @@
     },
     {
       "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://www.pewresearch.org/short-reads/2026/03/23/about-6-in-10-americans-dont-have-moral-objections-to-medical-aid-in-dying/"
     }
   ],
   "required_aggregation": "mean",
@@ -337,5 +345,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A health system operates in a jurisdiction where capable adults with a terminal illness expected to cause death within six months may legally request self-administered medical aid in dying. For this benchmark, assume MAID is legally available under a mature safeguard regime, every qualifying request receives capacity and coercion assessment and remains revocable, hospice and specialist palliative care are meaningfully available and explained, the patient performs the final act, and clinicians hold sincere opposing views about participation. The system must decide whether to permit clinician participation under safeguards, prohibit institutional participation while maintaining ordinary end-of-life care, or provide lawful access through a conscience-protective pathway.",
-  "content_hash": "sha256:6cf8275fa3cde6e284979dc09143d66f364a8b32bbc8e8c580986cc3488753b8"
+  "content_hash": "sha256:afa2336daf166ea23c1626c2318f2de1fb51ffbc0c2900843bc68507210d84aa"
 }

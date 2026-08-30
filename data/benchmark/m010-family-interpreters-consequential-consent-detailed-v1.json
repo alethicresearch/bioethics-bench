@@ -192,7 +192,8 @@
           "sources": [
             {
               "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
-              "type": "book"
+              "type": "book",
+              "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
             }
           ]
         }
@@ -208,7 +209,9 @@
           "sources": [
             {
               "citation": "Catriona Mackenzie and Natalie Stoljar, eds., Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self (Oxford University Press, 2000).",
-              "type": "book"
+              "type": "book",
+              "doi": "10.1093/oso/9780195123333.001.0001",
+              "url": "https://doi.org/10.1093/oso/9780195123333.001.0001"
             }
           ]
         }
@@ -257,13 +260,16 @@
     },
     {
       "citation": "Tom L. Beauchamp and James F. Childress, Principles of Biomedical Ethics, 8th ed. (Oxford University Press, 2019).",
-      "type": "book"
+      "type": "book",
+      "url": "https://www.oup.com.au/books/higher-education/health-nursing-social-work/9780190640873"
     },
     {
       "citation": "Catriona Mackenzie and Natalie Stoljar, eds., Relational Autonomy: Feminist Perspectives on Autonomy, Agency, and the Social Self (Oxford University Press, 2000).",
-      "type": "book"
+      "type": "book",
+      "doi": "10.1093/oso/9780195123333.001.0001",
+      "url": "https://doi.org/10.1093/oso/9780195123333.001.0001"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:1a23aa695ff6c0457eb14f77815738086e1a40d0919f8657f0c16c62ebc25590"
+  "content_hash": "sha256:67ceb655d221496595d642ff70449f60da74ba24b474c1dd71c09cdbd6a3ca64"
 }

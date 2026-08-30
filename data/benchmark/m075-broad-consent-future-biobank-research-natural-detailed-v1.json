@@ -64,11 +64,14 @@
       },
       {
         "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.hhs.gov/ohrp/sachrp-committee/recommendations/attachment-c-faqs-recommendations-and-glossary-informed-consent-and-research-use-of-biospecimens-and-associated-data/index.html"
       },
       {
-        "citation": "Representative U.S. genomic-research survey of 4,659 adults comparing broad and study-by-study consent, as documented in the M075 source packet.",
-        "type": "survey"
+        "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SLR, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-18. PMID 23660530.",
+        "type": "survey",
+        "doi": "10.1038/gim.2013.59",
+        "url": "https://doi.org/10.1038/gim.2013.59"
       }
     ],
     "adapted_not_reproduced": true
@@ -135,7 +138,8 @@
             },
             {
               "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.hhs.gov/ohrp/sachrp-committee/recommendations/attachment-c-faqs-recommendations-and-glossary-informed-consent-and-research-use-of-biospecimens-and-associated-data/index.html"
             }
           ],
           "adapted_not_reproduced": true
@@ -171,8 +175,16 @@
           "summary": "Derived from ongoing and relational autonomy: authorization can remain valid within a stable understood domain but should be refreshed when the normative character of use materially changes. The threshold rule is Bench-authored.",
           "sources": [
             {
-              "citation": "Dynamic-consent scholarship and participant-preference evidence summarized in the M075 research packet.",
-              "type": "article"
+              "citation": "Kaye J, Whitley EA, Lund D, Morrison M, Teare H, Melham K. Dynamic consent: a patient interface for twenty-first century research networks. Eur J Hum Genet. 2015;23(2):141-146. PMID 24801761.",
+              "type": "article",
+              "doi": "10.1038/ejhg.2014.71",
+              "url": "https://doi.org/10.1038/ejhg.2014.71"
+            },
+            {
+              "citation": "Pacyna JE, et al. Assessing the stability of biobank donor preferences regarding sample use: evidence supporting the value of dynamic consent. Eur J Hum Genet. 2020;28(9):1168-1177. PMID 32327712.",
+              "type": "article",
+              "doi": "10.1038/s41431-020-0625-9",
+              "url": "https://doi.org/10.1038/s41431-020-0625-9"
             }
           ]
         }
@@ -225,15 +237,26 @@
     },
     {
       "citation": "HHS/OHRP. Common Rule broad-consent provisions for storage, maintenance and secondary research use of identifiable private information or identifiable biospecimens.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.hhs.gov/ohrp/sachrp-committee/recommendations/attachment-c-faqs-recommendations-and-glossary-informed-consent-and-research-use-of-biospecimens-and-associated-data/index.html"
     },
     {
-      "citation": "UNRESOLVED SOURCE. A representative US genomic-research survey of 4,659 adults reporting broad consent preferred 52% to study-by-study 48%. No bibliographic record has been matched to this finding anywhere in the repository. Disposition: docs/full-corpus/review/SOURCE_TRACEABILITY_REVIEW.md.",
-      "type": "survey"
+      "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SLR, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-18. PMID 23660530.",
+      "type": "survey",
+      "doi": "10.1038/gim.2013.59",
+      "url": "https://doi.org/10.1038/gim.2013.59"
     },
     {
-      "citation": "Dynamic-consent and biobank preference studies summarized in the M075 research packet.",
-      "type": "article"
+      "citation": "Kaye J, Whitley EA, Lund D, Morrison M, Teare H, Melham K. Dynamic consent: a patient interface for twenty-first century research networks. Eur J Hum Genet. 2015;23(2):141-146. PMID 24801761.",
+      "type": "article",
+      "doi": "10.1038/ejhg.2014.71",
+      "url": "https://doi.org/10.1038/ejhg.2014.71"
+    },
+    {
+      "citation": "Pacyna JE, et al. Assessing the stability of biobank donor preferences regarding sample use: evidence supporting the value of dynamic consent. Eur J Hum Genet. 2020;28(9):1168-1177. PMID 32327712.",
+      "type": "article",
+      "doi": "10.1038/s41431-020-0625-9",
+      "url": "https://doi.org/10.1038/s41431-020-0625-9"
     }
   ],
   "required_aggregation": "mean",
@@ -247,5 +270,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.",
-  "content_hash": "sha256:8ee8d3c74e4d51f5cbe41db57a6653c8548278bb0ac62e80af9620e347aa74c0"
+  "content_hash": "sha256:2baf53aa6401223ca2420129ebd00b6595685ed027f20d2e84d77639d506758d"
 }

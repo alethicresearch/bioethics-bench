@@ -52,7 +52,8 @@
     "sources": [
       {
         "citation": "Nuffield Council on Bioethics. Non-invasive prenatal testing: ethical issues. 2017. Supports NIPT in NHS screening \"provided that it is accompanied by accurate, balanced and non-directive information and support,\" and separately warns that normalising NIPT without sufficient deliberative support risks eroding rather than supporting autonomous decision-making.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.nuffieldbioethics.org/publication/non-invasive-prenatal-testing-ethical-issues/"
       },
       {
         "citation": "This lifetime commitment: Public conceptions of disability and noninvasive prenatal genetic screening. PMID 26566970.",
@@ -118,7 +119,8 @@
           "sources": [
             {
               "citation": "Nuffield Council on Bioethics. Non-invasive prenatal testing: ethical issues. 2017. Supports NIPT in NHS screening \"provided that it is accompanied by accurate, balanced and non-directive information and support,\" and separately warns that normalising NIPT without sufficient deliberative support risks eroding rather than supporting autonomous decision-making.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/publication/non-invasive-prenatal-testing-ethical-issues/"
             }
           ],
           "adapted_not_reproduced": true
@@ -137,7 +139,8 @@
           "sources": [
             {
               "citation": "Nuffield Council on Bioethics. Non-invasive prenatal testing: ethical issues. 2017. Supports NIPT in NHS screening \"provided that it is accompanied by accurate, balanced and non-directive information and support,\" and separately warns that normalising NIPT without sufficient deliberative support risks eroding rather than supporting autonomous decision-making.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/publication/non-invasive-prenatal-testing-ethical-issues/"
             }
           ]
         }
@@ -153,7 +156,8 @@
           "sources": [
             {
               "citation": "Nuffield Council on Bioethics. Non-invasive prenatal testing: ethical issues. 2017. Supports NIPT in NHS screening \"provided that it is accompanied by accurate, balanced and non-directive information and support,\" and separately warns that normalising NIPT without sufficient deliberative support risks eroding rather than supporting autonomous decision-making.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.nuffieldbioethics.org/publication/non-invasive-prenatal-testing-ethical-issues/"
             },
             {
               "citation": "Attitudes of mothers of children with Down syndrome towards noninvasive prenatal testing. PMID 24481673.",
@@ -187,7 +191,8 @@
   "references": [
     {
       "citation": "Nuffield Council on Bioethics. Non-invasive prenatal testing: ethical issues. 2017. Supports NIPT in NHS screening \"provided that it is accompanied by accurate, balanced and non-directive information and support,\" and separately warns that normalising NIPT without sufficient deliberative support risks eroding rather than supporting autonomous decision-making.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.nuffieldbioethics.org/publication/non-invasive-prenatal-testing-ethical-issues/"
     },
     {
       "citation": "This lifetime commitment: Public conceptions of disability and noninvasive prenatal genetic screening. PMID 26566970.",
@@ -211,5 +216,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A publicly funded prenatal program is redesigning how it offers NIPT for trisomy 21. NIPT provides earlier and more accurate screening than older methods but remains a screening rather than definitive diagnostic test. Patients may value early access to information, while disability advocates and families of people with Down syndrome have raised concerns about stigma, deficit-focused framing and subtle pressure when testing becomes routine. For this benchmark, assume follow-up diagnostic testing is accessible, all represented screening pathways remain voluntary, and the program may lawfully choose among routine voluntary offer and explicit disability-informed opt-in structures. The decision is how to structure the offer and counseling, not whether abortion is permissible or what any individual should do after a result.",
-  "content_hash": "sha256:8ea27e7ea118f9949939e427b3bdd8c3662cd562f00cecc2d879f530f9780da2"
+  "content_hash": "sha256:a22a0e4bb5ea405edca99e4a22cae2696ef1cb10f5a835e8732faa5bd1bcfab9"
 }
