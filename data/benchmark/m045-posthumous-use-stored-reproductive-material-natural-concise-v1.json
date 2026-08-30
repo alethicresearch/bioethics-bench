@@ -63,7 +63,8 @@
       },
       {
         "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16923749/"
       },
       {
         "citation": "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.",
@@ -85,15 +86,18 @@
           "sources": [
             {
               "citation": "Barton SE, Correia KF, Shalev S, Missmer SA, Soleymani Lehmann L, Shah DK, et al. Population-based study of attitudes toward posthumous reproduction. Fertil Steril. 2012;98(3):735-40.e5. Survey of 1,049 US adults: 47.8% supported retrieving gametes from men and 42.7% from women; among supporters, 69.8% believed prior consent from the deceased was required. PMID 22763100.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22763100/"
             },
             {
               "citation": "Pastuszak AW, Lai WS, Hsieh TC, Lipshultz LI. Posthumous sperm utilization in men presenting for sperm banking: an analysis of patient choice. Andrology. 2013;1(2):251-5. Signed sperm-bank directives from 364 patients; 85.9% consented to post-mortem use. PMID 23315967.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23315967/"
             },
             {
               "citation": "Côté S, Affdal AO, Kadoch IJ, Hamet P, Ravitsky V. Posthumous reproduction with surplus in vitro fertilization embryos: a study exploring users’ choices. Fertil Steril. 2014;102(5):1410-5. Signed forms from 498 IVF users; 73.5% of men and 61.8% of women agreed to leave cryopreserved embryos to their partner for reproductive use after death. PMID 25217872.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25217872/"
             }
           ],
           "adapted_not_reproduced": true
@@ -110,15 +114,18 @@
           "sources": [
             {
               "citation": "Hans JD. Posthumous gamete retrieval and reproduction: would the deceased spouse consent? Soc Sci Med. 2014;119:10-17. Random-digit-dial survey of 2,064 US adults; among those aged 18-44, 70% of men and 58% of women wanted a surviving spouse to be able to use their gametes after death. PMID 25134070.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25134070/"
             },
             {
               "citation": "Nakhuda GS, Wang JG, Sauer MV. Posthumous assisted reproduction: a survey of attitudes of couples seeking fertility treatment and the degree of agreement between intimate partners. Fertil Steril. 2011;96(6):1463-6.e1. 106 couples; about 78% would permit posthumous assisted reproduction. PMID 21982730.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21982730/"
             },
             {
               "citation": "Côté S, Affdal AO, Kadoch IJ, Hamet P, Ravitsky V. Posthumous reproduction with surplus in vitro fertilization embryos: a study exploring users’ choices. Fertil Steril. 2014;102(5):1410-5. Signed forms from 498 IVF users; 73.5% of men and 61.8% of women agreed to leave cryopreserved embryos to their partner for reproductive use after death. PMID 25217872.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25217872/"
             }
           ],
           "adapted_not_reproduced": true
@@ -154,7 +161,8 @@
           "sources": [
             {
               "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16923749/"
             }
           ],
           "adapted_not_reproduced": true
@@ -221,7 +229,8 @@
     },
     {
       "citation": "ESHRE Task Force on Ethics and Law 11. Posthumous assisted reproduction. Hum Reprod. 2006;21(12):3050-3. Conditions are met when written consent has been given by the deceased, the partner has received extensive counselling, and a minimum waiting period of one year is imposed before treatment can start. PMID 16923749.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16923749/"
     },
     {
       "citation": "ASRM Ethics Committee. Fertility preservation and reproduction in patients facing gonadotoxic therapies or gonadectomy. 2026.",
@@ -238,5 +247,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program stores reproductive material banked during a couple's family-building treatment. One genetic contributor dies and the surviving partner asks to use the material for reproduction. For this benchmark, assume each represented posthumous-use policy is legally available, there is strong evidence of a shared plan to have children but no explicit signed posthumous-use instruction, there is no evidence the deceased opposed posthumous reproduction, and adequate grieving time and counseling have occurred. The program must decide what authorization threshold should govern reproductive use.",
-  "content_hash": "sha256:34ded50faef363540dcb872a2c7640b3a9dbd14755767ce771982f50d963f00c"
+  "content_hash": "sha256:885da67290cc3150b4ee18278fee2fc5539f7d8a74926c2a9d26b1e6f0871d88"
 }

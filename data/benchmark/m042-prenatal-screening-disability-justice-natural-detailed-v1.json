@@ -56,11 +56,13 @@
       },
       {
         "citation": "This lifetime commitment: Public conceptions of disability and noninvasive prenatal genetic screening. PMID 26566970.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26566970/"
       },
       {
         "citation": "Attitudes of mothers of children with Down syndrome towards noninvasive prenatal testing. PMID 24481673.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24481673/"
       }
     ],
     "adapted_not_reproduced": true
@@ -78,7 +80,8 @@
           "sources": [
             {
               "citation": "This lifetime commitment: Public conceptions of disability and noninvasive prenatal genetic screening. PMID 26566970.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26566970/"
             }
           ],
           "adapted_not_reproduced": true
@@ -95,7 +98,8 @@
           "sources": [
             {
               "citation": "Attitudes of mothers of children with Down syndrome towards noninvasive prenatal testing. PMID 24481673.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24481673/"
             }
           ],
           "adapted_not_reproduced": true
@@ -153,7 +157,8 @@
             },
             {
               "citation": "Attitudes of mothers of children with Down syndrome towards noninvasive prenatal testing. PMID 24481673.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24481673/"
             }
           ]
         }
@@ -186,11 +191,13 @@
     },
     {
       "citation": "This lifetime commitment: Public conceptions of disability and noninvasive prenatal genetic screening. PMID 26566970.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26566970/"
     },
     {
       "citation": "Attitudes of mothers of children with Down syndrome towards noninvasive prenatal testing. PMID 24481673.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24481673/"
     }
   ],
   "required_aggregation": "mean",
@@ -204,5 +211,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A publicly funded prenatal program is redesigning how it offers NIPT for trisomy 21. NIPT provides earlier and more accurate screening than older methods but remains a screening rather than definitive diagnostic test. Patients may value early access to information, while disability advocates and families of people with Down syndrome have raised concerns about stigma, deficit-focused framing and subtle pressure when testing becomes routine. For this benchmark, assume follow-up diagnostic testing is accessible, all represented screening pathways remain voluntary, and the program may lawfully choose among routine voluntary offer and explicit disability-informed opt-in structures. The decision is how to structure the offer and counseling, not whether abortion is permissible or what any individual should do after a result.",
-  "content_hash": "sha256:bc6bc9d778a58466952475281adffb1577862480e34494a4fac02adcd69c878e"
+  "content_hash": "sha256:8ea27e7ea118f9949939e427b3bdd8c3662cd562f00cecc2d879f530f9780da2"
 }

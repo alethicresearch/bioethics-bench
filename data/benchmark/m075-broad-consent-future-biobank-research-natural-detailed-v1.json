@@ -84,11 +84,13 @@
           "sources": [
             {
               "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SL, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-8. Online survey of a representative sample of 4,659 US adults; broad consent preferred by 52% against study-by-study consent by 48%. PMID 23660530.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23660530/"
             },
             {
               "citation": "Sanderson SC, Brothers KB, Mercaldo ND, et al. Public Attitudes toward Consent and Data Sharing in Biobank Research: A Large Multi-site Experimental Survey in the US. Am J Hum Genet. 2017;100(3):414-27. 13,000 respondents across 11 eMERGE health systems randomised to tiered-consent, broad-consent and broad-consent-with-open-sharing scenarios; 66% were willing to participate and willingness did not differ between the three consent scenarios. PMID 28190457.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28190457/"
             }
           ],
           "adapted_not_reproduced": true
@@ -105,7 +107,8 @@
           "sources": [
             {
               "citation": "Platt J, Bollinger J, Dvoskin R, Kardia SL, Kaufman D. Public preferences regarding informed consent models for participation in population-based genomic research. Genet Med. 2014;16(1):11-8. Online survey of a representative sample of 4,659 US adults; broad consent preferred by 52% against study-by-study consent by 48%. PMID 23660530.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23660530/"
             }
           ],
           "adapted_not_reproduced": true
@@ -234,5 +237,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "An academic health system is establishing a biobank for future studies that cannot all be specified now. For this benchmark, assume the biospecimens and longitudinal clinical data are prospectively collected specifically for the biobank, remain identifiable or re-identifiable, independent governance and research-ethics review evaluate each future secondary-use proposal, donors may withdraw future use, and recontact is technically feasible for materially new or sensitive uses but burdensome if required for every future study. The institution can define a consented research domain, access rules, commercial-collaboration terms, governance, withdrawal and handling of unexpected findings. The biobank must choose among bounded broad consent within a governed scope, renewed permission at a material-change threshold, and study-specific consent for each future identifiable use.",
-  "content_hash": "sha256:6716c995063e36342393d6ee3ad183e79fd67bde4452007e091b1f8bc450372c"
+  "content_hash": "sha256:12ffbd5b6fef61278a9d3ed0baf22b533e4d24ef6ad72f047ecc7e21c47ea234"
 }

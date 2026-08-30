@@ -57,15 +57,19 @@
     "sources": [
       {
         "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40960731/"
       },
       {
         "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
-        "type": "article"
+        "type": "article",
+        "doi": "10.1016/j.drugpo.2025.104866",
+        "url": "https://doi.org/10.1016/j.drugpo.2025.104866"
       },
       {
         "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34098293/"
       },
       {
         "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
@@ -74,7 +78,9 @@
       },
       {
         "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "doi": "10.1177/29767342241252590",
+        "url": "https://doi.org/10.1177/29767342241252590"
       }
     ],
     "adapted_not_reproduced": true
@@ -92,7 +98,9 @@
           "sources": [
             {
               "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.1016/j.drugpo.2025.104866",
+              "url": "https://doi.org/10.1016/j.drugpo.2025.104866"
             }
           ],
           "adapted_not_reproduced": true
@@ -109,7 +117,8 @@
           "sources": [
             {
               "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34098293/"
             }
           ],
           "adapted_not_reproduced": true
@@ -146,7 +155,9 @@
           "sources": [
             {
               "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1177/29767342241252590",
+              "url": "https://doi.org/10.1177/29767342241252590"
             }
           ],
           "adapted_not_reproduced": true
@@ -165,7 +176,9 @@
           "sources": [
             {
               "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1177/29767342241252590",
+              "url": "https://doi.org/10.1177/29767342241252590"
             }
           ],
           "adapted_not_reproduced": true
@@ -182,11 +195,13 @@
           "sources": [
             {
               "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40960731/"
             },
             {
               "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34098293/"
             }
           ],
           "adapted_not_reproduced": true
@@ -208,7 +223,8 @@
             },
             {
               "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40960731/"
             }
           ],
           "adapted_not_reproduced": true
@@ -238,15 +254,19 @@
   "references": [
     {
       "citation": "Gariépy G, et al. Supervised consumption sites and population-level overdose mortality: a systematic review of recent evidence, 2016–2024. PMID 40960731.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40960731/"
     },
     {
       "citation": "Holmén E, et al. Willingness and contextual considerations for supervised consumption sites: a mixed-methods study among people who inject drugs in Stockholm. Int J Drug Policy. 2025;143:104866. PMID 40440860. doi:10.1016/j.drugpo.2025.104866.",
-      "type": "article"
+      "type": "article",
+      "doi": "10.1016/j.drugpo.2025.104866",
+      "url": "https://doi.org/10.1016/j.drugpo.2025.104866"
     },
     {
       "citation": "Community perspectives on supervised consumption sites: Insights from four U.S. counties deeply affected by opioids. PMID 34098293.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34098293/"
     },
     {
       "citation": "American Medical Association. Pilot Implementation of Supervised Injection Facilities, Policy H-95.925, reaffirmed 2023. Supports development and implementation of pilot facilities designed, monitored and evaluated to generate data for policymakers on feasibility, effectiveness and legal aspects.",
@@ -255,7 +275,9 @@
     },
     {
       "citation": "Dunham K, et al. In Support of Overdose Prevention Centers: Position Statement of AMERSA, Inc. 2024. doi:10.1177/29767342241252590.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "doi": "10.1177/29767342241252590",
+      "url": "https://doi.org/10.1177/29767342241252590"
     }
   ],
   "required_aggregation": "mean",
@@ -269,5 +291,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A city has persistently high fatal overdose rates despite naloxone distribution, medications for opioid use disorder, outreach and emergency treatment. A proposed supervised consumption service would provide monitored use of pre-obtained substances, overdose response, sterile supplies and voluntary linkage to treatment and social services. For this benchmark, assume existing evidence supports prevention of onsite overdose deaths and engagement with health and social services, the effect on population-level overdose mortality remains uncertain, and local neighborhood effects and community acceptance are unresolved. The city must decide whether to establish an ongoing service, decline permanent implementation while prioritizing other interventions, or authorize a time-limited evaluated pilot.",
-  "content_hash": "sha256:5ed5bd4bd322f20fa02352b327f61486a8e9541d6863a481ed849f327ccd44d0"
+  "content_hash": "sha256:c6d779b683df7c16630d1c35816708e9482b17b8b5899b39819115e83e486c5c"
 }

@@ -70,7 +70,8 @@
       },
       {
         "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
       }
     ],
     "adapted_not_reproduced": true
@@ -88,7 +89,8 @@
           "sources": [
             {
               "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
             }
           ],
           "adapted_not_reproduced": true
@@ -105,7 +107,8 @@
           "sources": [
             {
               "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
             },
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
@@ -232,7 +235,8 @@
     },
     {
       "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
     }
   ],
   "required_aggregation": "mean",
@@ -246,5 +250,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public-health department already monitors municipal wastewater for respiratory pathogens and proposes adding neighborhood and institutional catchments plus antimicrobial-resistance and drug-use markers. For this benchmark, assume individual consent or opt-out cannot practically be obtained, citywide samples have very low individual re-identification risk while neighborhood or institutional catchments create materially greater stigma, inference and re-identification risks, the proposed program includes both infectious-disease targets and more sensitive drug-use markers, and the agency can prohibit law-enforcement and commercial secondary use while implementing transparency, community engagement and ethics-governance processes. The agency must decide whether broad governed surveillance may expand across useful targets and scales, routine surveillance should remain at sufficiently large catchments and mainly infectious-disease targets, or small-area and sensitive-target monitoring should require a separate community and ethics approval process.",
-  "content_hash": "sha256:8c6976fe01dbe8caba6f4e96a283808880d831c3ee268b8eacff3be63b3c2027"
+  "content_hash": "sha256:bb4ac13fba4e891f40d5b975a264f0523f89759b1850798473bddbcc54581c30"
 }

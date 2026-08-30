@@ -81,15 +81,18 @@
       },
       {
         "citation": "Aitken P et al. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia's First Wave of COVID-19 Community Transmission. 2021. PMID 34496995.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34496995/"
       },
       {
         "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38598257/"
       },
       {
         "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34780288/"
       }
     ],
     "adapted_not_reproduced": true
@@ -107,11 +110,13 @@
           "sources": [
             {
               "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34496995/"
             },
             {
               "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38598257/"
             }
           ],
           "adapted_not_reproduced": true
@@ -128,11 +133,13 @@
           "sources": [
             {
               "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34496995/"
             },
             {
               "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34780288/"
             }
           ],
           "adapted_not_reproduced": true
@@ -243,17 +250,20 @@
     },
     {
       "citation": "Hill M, Smith E, Mills B. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. Disaster Med Public Health Prep. 2021;17:e44. Online survey, n=580. PMID 34496995.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34496995/"
     },
     {
       "citation": "Exploring U.S. Nurses' Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38598257/"
     },
     {
       "citation": "Nagel N, Salisbury H, Hinson H. Registered Nurses’ Perceptions After a Patient with Ebola Virus Disease Is Admitted to Their Hospital. Health Secur. 2021;19(6):616-24. Survey of 72 critical-care RNs. PMID 34780288.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34780288/"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:fba3282567175311439b5f3516229567391f274b657a7d8cd18c4c5ee272acdd"
+  "content_hash": "sha256:18c8c0b14a8d254ce59d8c18e84fb4216a1ff08d5b1a951f1ecc56b779a5179d"
 }

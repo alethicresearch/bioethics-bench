@@ -84,11 +84,13 @@
       },
       {
         "citation": "Master Z et al. Factors that influence unproven stem cell intervention seeking behavior: A qualitative analysis. 2025. PMID 40744777.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40744777/"
       },
       {
         "citation": "Master Z et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. 2026. PMID 42210947.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/"
       }
     ],
     "adapted_not_reproduced": true
@@ -106,11 +108,13 @@
           "sources": [
             {
               "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40744777/"
             },
             {
               "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/"
             }
           ],
           "adapted_not_reproduced": true
@@ -127,11 +131,13 @@
           "sources": [
             {
               "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40744777/"
             },
             {
               "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/"
             }
           ],
           "adapted_not_reproduced": true
@@ -233,14 +239,16 @@
     },
     {
       "citation": "Kawam O, Zhu X, Watson S, et al. Factors that influence unproven stem cell intervention seeking behavior: a qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. Soc Sci Med. 2025;382:117795. PMID 40744777.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40744777/"
     },
     {
       "citation": "Kawam O, Watson S, Zhu X, et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. Front Med (Lausanne). 2026;13:1772881. PMID 42210947.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/"
     }
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:fd822776e64b200a03d5e358eade2a933fe179034cd9c6abfc746d6ce4430600"
+  "content_hash": "sha256:2cfa7973a2ee846855162b162bdbbc96d52e180fc31e6bf1e58ddf56457bbfab"
 }

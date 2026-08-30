@@ -70,19 +70,23 @@
       },
       {
         "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32652560/"
       },
       {
         "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22695742/"
       },
       {
         "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25630339/"
       },
       {
         "citation": "Euthanasia in advanced dementia: Dutch general-practitioner vignette survey. PMID 34789166.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34789166/"
       }
     ],
     "adapted_not_reproduced": true
@@ -100,11 +104,13 @@
           "sources": [
             {
               "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32652560/"
             },
             {
               "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22695742/"
             }
           ],
           "adapted_not_reproduced": true
@@ -121,15 +127,18 @@
           "sources": [
             {
               "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32652560/"
             },
             {
               "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22695742/"
             },
             {
               "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25630339/"
             }
           ],
           "adapted_not_reproduced": true
@@ -184,11 +193,15 @@
           "sources": [
             {
               "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.2307/3527839",
+              "url": "https://doi.org/10.2307/3527839"
             },
             {
               "citation": "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138. doi:10.1111/j.1088-4963.1999.00105.x.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.1111/j.1088-4963.1999.00105.x",
+              "url": "https://doi.org/10.1111/j.1088-4963.1999.00105.x"
             }
           ],
           "adapted_not_reproduced": true
@@ -205,11 +218,14 @@
           "sources": [
             {
               "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.2307/3527839",
+              "url": "https://doi.org/10.2307/3527839"
             },
             {
               "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25630339/"
             }
           ],
           "adapted_not_reproduced": true
@@ -243,19 +259,23 @@
     },
     {
       "citation": "Physicians' and Public Attitudes Toward Euthanasia in People with Advanced Dementia. PMID 32652560.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32652560/"
     },
     {
       "citation": "Kouwenhoven PS, Raijmakers NJ, van Delden JJ, Rietjens JA, et al. Opinions of health care professionals and the public after eight years of euthanasia legislation in the Netherlands: a mixed methods approach. Palliat Med. 2013;27(3):273-80. In severe dementia, 77% of the general public agreed with performing euthanasia on the basis of an advance directive. PMID 22695742.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22695742/"
     },
     {
       "citation": "Opinions about euthanasia and advanced dementia: qualitative study. PMID 25630339.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25630339/"
     },
     {
       "citation": "Euthanasia in advanced dementia: Dutch general-practitioner vignette survey. PMID 34789166.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34789166/"
     },
     {
       "citation": "Ronald Dworkin. Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom. Alfred A. Knopf, 1993.",
@@ -263,11 +283,15 @@
     },
     {
       "citation": "Rebecca Dresser. Dworkin on Dementia: Elegant Theory, Questionable Policy. Hastings Center Report. 1995;25(6):32–38. doi:10.2307/3527839.",
-      "type": "article"
+      "type": "article",
+      "doi": "10.2307/3527839",
+      "url": "https://doi.org/10.2307/3527839"
     },
     {
       "citation": "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138. doi:10.1111/j.1088-4963.1999.00105.x.",
-      "type": "article"
+      "type": "article",
+      "doi": "10.1111/j.1088-4963.1999.00105.x",
+      "url": "https://doi.org/10.1111/j.1088-4963.1999.00105.x"
     }
   ],
   "required_aggregation": "mean",
@@ -281,5 +305,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A person with advanced Alzheimer disease can no longer make or communicate complex decisions. Years earlier, while fully capable, the person completed and repeatedly reaffirmed a specific advance euthanasia directive requesting euthanasia if dementia progressed to permanent inability to recognize close family and make independent decisions. Those conditions are now met. The person sometimes appears calm and at other times fearful or agitated, and clinicians cannot reliably establish a stable current judgment about whether life is experienced as unbearable. For this benchmark, assume the directive was specific and reaffirmed with capacity, its stated trigger is now met, the person cannot communicate a current euthanasia request or revocation, current behavior does not establish continuous unbearable suffering, and Dutch law permits an advance directive to replace an oral request only if all other due-care criteria are met. The physician must decide what policy should govern implementation.",
-  "content_hash": "sha256:2df70fbfa755d405a2b5a7f6a8d69e62e78dd52be0f3b4bd842aa31c897048ad"
+  "content_hash": "sha256:c20bb3d81113802ade538feffa3cf088358a17b6b71491624271d6e14b7b69d9"
 }

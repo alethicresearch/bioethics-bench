@@ -70,7 +70,8 @@
       },
       {
         "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
       }
     ],
     "adapted_not_reproduced": true
@@ -88,7 +89,8 @@
           "sources": [
             {
               "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
             }
           ],
           "adapted_not_reproduced": true
@@ -105,7 +107,8 @@
           "sources": [
             {
               "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
             },
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
@@ -232,7 +235,8 @@
     },
     {
       "citation": "Holm RH, Anderson LB, Ness HD, LaJoie AS, et al. Towards the outbreak tail, what is the public opinion about wastewater surveillance in the United States? J Water Health. 2024;22(8):1409-18. Support for surveillance of toxins 91% and diseases 91%, against lifestyle behaviours 35% and mental illness 46%; most respondents supported citywide rather than smaller-area scales. PMID 39212278.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39212278/"
     }
   ],
   "required_aggregation": "mean",
@@ -246,5 +250,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A city wants to expand wastewater surveillance beyond citywide infectious-disease monitoring toward neighborhood and institutional catchments and sensitive drug-use markers. For this benchmark, assume individual consent or opt-out is impracticable, citywide samples have very low individual re-identification risk while smaller catchments create materially greater stigma and inference risks, and the agency can prohibit law-enforcement or commercial secondary use and implement transparency, community engagement and ethics-governance processes. The agency must choose whether to permit broad governed surveillance, keep routine monitoring at lower-resolution pathogen-focused uses, or require special community and ethics approval before small-area or sensitive-target monitoring.",
-  "content_hash": "sha256:63d7f46532a2204dd53781b6ceeb2d4ecab277a18b4cd59e29f032733bedfc07"
+  "content_hash": "sha256:7dcbfb3ea5ef14585770a88a201952eab8c6e351a9449b29a8624cbad132ca9f"
 }

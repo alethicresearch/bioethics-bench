@@ -58,15 +58,18 @@
       },
       {
         "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18321893/"
       },
       {
         "citation": "Van Muylder A, et al. Weighing Parenthood Wishes: A Conjoint Analysis of Criteria to Prioritize Infertile Couples for Publicly Funded Fertility Treatment. PMID 40826820.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40826820/"
       },
       {
         "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35098563/"
       }
     ],
     "adapted_not_reproduced": true
@@ -84,7 +87,8 @@
           "sources": [
             {
               "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35098563/"
             }
           ],
           "adapted_not_reproduced": true
@@ -101,7 +105,8 @@
           "sources": [
             {
               "citation": "Van Muylder A, et al. Weighing Parenthood Wishes: A Conjoint Analysis of Criteria to Prioritize Infertile Couples for Publicly Funded Fertility Treatment. PMID 40826820.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40826820/"
             }
           ],
           "adapted_not_reproduced": true
@@ -137,7 +142,8 @@
           "sources": [
             {
               "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18321893/"
             }
           ],
           "adapted_not_reproduced": true
@@ -221,15 +227,18 @@
     },
     {
       "citation": "ESHRE Task Force on Ethics and Law 14. Equity of access to assisted reproductive technology. Hum Reprod. 2008;23(4):772-4. Under \"Minimal effectiveness\": \"The intermediate solution for health care systems would be to fix a threshold below which a patient would not be eligible for funding and simultaneously to reject prioritization according to chance of success above that threshold.\" The paper notes the threshold is usually expressed as a female age limit, while equity demands all factors affecting success rate be considered. PMID 18321893.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18321893/"
     },
     {
       "citation": "Van Muylder A, et al. Weighing Parenthood Wishes: A Conjoint Analysis of Criteria to Prioritize Infertile Couples for Publicly Funded Fertility Treatment. PMID 40826820.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40826820/"
     },
     {
       "citation": "Patients' preferences for distributing limited government-funded IVF cycles. PMID 35098563.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35098563/"
     },
     {
       "citation": "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.",
@@ -251,5 +260,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Individual treatment success is probabilistic, fertility can be time-sensitive, and the program wants a transparent rule that can be applied consistently. For this benchmark, assume all represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy, annual demand exceeds funded capacity by roughly one third, and equal-opportunity, clinical-priority and transparent multifactor allocation rules are legally available. The program must decide whether scarce funded cycles should be allocated by equal chance after threshold eligibility, by clinical benefit and time sensitivity, or through a broader published priority structure.",
-  "content_hash": "sha256:c6a0a982a5fd1aa90ed394535cd4be260d188922f18bfe9ff617432b8ffdd7a8"
+  "content_hash": "sha256:474263e77f96da257355501dd128e0d2f537ac707d60c056944fbcf54e91705d"
 }

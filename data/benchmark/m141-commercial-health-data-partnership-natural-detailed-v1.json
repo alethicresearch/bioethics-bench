@@ -65,11 +65,13 @@
     "sources": [
       {
         "citation": "Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
       },
       {
         "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37646159/"
       },
       {
         "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
@@ -91,11 +93,13 @@
           "sources": [
             {
               "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
             },
             {
               "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
             }
           ],
           "adapted_not_reproduced": true
@@ -112,7 +116,8 @@
           "sources": [
             {
               "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
             }
           ],
           "adapted_not_reproduced": true
@@ -129,7 +134,8 @@
           "sources": [
             {
               "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
             }
           ],
           "adapted_not_reproduced": true
@@ -148,7 +154,8 @@
           "sources": [
             {
               "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37646159/"
             }
           ],
           "adapted_not_reproduced": true
@@ -216,7 +223,8 @@
           "sources": [
             {
               "citation": "Walshe J, Elphinstone B, Nicol D, et al. A systematic literature review of the 'commercialisation effect' on public attitudes towards biobank and genomic data repositories. Public Underst Sci. 2024;33(5):548-67. PMID 38389329.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
             }
           ]
         }
@@ -245,11 +253,13 @@
   "references": [
     {
       "citation": "Walshe J, et al. A systematic literature review of the commercialisation effect on public attitudes towards biobank and genomic data repositories. Public Understanding of Science. 2024. PMID 38389329.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38389329/"
     },
     {
       "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. Circulation. 2023. PMID 37646159.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37646159/"
     },
     {
       "citation": "UK Department of Health and Social Care. Creating the right framework to realise the benefits for patients and the NHS where data underpins innovation. Five principles: use of NHS data must have an explicit aim to improve patient health and care or NHS operation; fair terms should be agreed for the NHS; NHS organisations should not enter exclusive arrangements; arrangements should be transparent and clearly communicated; and arrangements must meet legal, regulatory, privacy and security obligations. 2019; current good-practice guidance retained in 2025.",
@@ -257,7 +267,8 @@
     },
     {
       "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
     }
   ],
   "required_aggregation": "mean",
@@ -271,5 +282,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A nonprofit health system holds a large clinical dataset originally collected for care. A technology company proposes using coded records inside a secure controlled environment to train and validate a predictive model expected to improve diagnosis. For this benchmark, assume the company cannot export unrestricted raw records and is contractually limited to the approved purpose; the model has a credible prospect of clinical benefit; the company will invest substantial engineering resources and seeks substantial commercial intellectual-property rights; the health system would receive discounted access to the resulting product and research collaboration but no revenue share, nonexclusive public-interest license, or other explicit financial return for the data contribution; patients would receive no individual payments and have not given specific permission for this commercial secondary use, although the system can provide transparent notice or obtain consent if its policy requires it; and governed collaboration, stronger fair-value terms, and specific-permission requirements are legally available. The governance board must decide whether the current arrangement is acceptable, should be renegotiated for stronger public value return, or should wait for patient authorization.",
-  "content_hash": "sha256:8cff2a8f29e2b4b2c7d6dc729e0aa49b161354bcf74e5e19bce3380ebb10cdf4"
+  "content_hash": "sha256:908aad1a3155c33d22cba76c14d50b29e5396cdc7d078952922412b7b88106df"
 }

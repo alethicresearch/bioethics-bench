@@ -74,7 +74,9 @@
       },
       {
         "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-        "type": "article"
+        "type": "article",
+        "doi": "10.7326/M23-3325",
+        "url": "https://doi.org/10.7326/M23-3325"
       }
     ],
     "adapted_not_reproduced": true
@@ -92,7 +94,9 @@
           "sources": [
             {
               "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-              "type": "article"
+              "type": "article",
+              "doi": "10.7326/M23-3325",
+              "url": "https://doi.org/10.7326/M23-3325"
             }
           ],
           "adapted_not_reproduced": true
@@ -109,7 +113,9 @@
           "sources": [
             {
               "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-              "type": "article"
+              "type": "article",
+              "doi": "10.7326/M23-3325",
+              "url": "https://doi.org/10.7326/M23-3325"
             }
           ],
           "adapted_not_reproduced": true
@@ -181,7 +187,9 @@
           "sources": [
             {
               "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-              "type": "article"
+              "type": "article",
+              "doi": "10.7326/M23-3325",
+              "url": "https://doi.org/10.7326/M23-3325"
             }
           ],
           "adapted_not_reproduced": true
@@ -198,7 +206,9 @@
           "sources": [
             {
               "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-              "type": "article"
+              "type": "article",
+              "doi": "10.7326/M23-3325",
+              "url": "https://doi.org/10.7326/M23-3325"
             }
           ],
           "adapted_not_reproduced": true
@@ -236,7 +246,9 @@
     },
     {
       "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
-      "type": "article"
+      "type": "article",
+      "doi": "10.7326/M23-3325",
+      "url": "https://doi.org/10.7326/M23-3325"
     }
   ],
   "required_aggregation": "mean",
@@ -250,5 +262,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
   },
   "scenario": "A primary-care practice is writing the standing counseling policy its clinicians will follow with patients who are women aged 40 to 49 at average risk of breast cancer. The policy matters because the major guideline bodies currently give action-distinct schedules for exactly this band. The 2024 USPSTF recommendation is biennial screening mammography for women aged 40 to 74 at grade B, and it explicitly recommends biennial screening for women aged 40 to 49 rather than individualizing the decision for that group, reversing its earlier position. Current American Cancer Society guidance instead gives women aged 40 to 44 the option to begin annual screening and recommends annual screening for women aged 45 to 54. Both schedules are professionally defensible and reimbursable in this setting, so the practice cannot resolve the question by deferring to whichever body is authoritative. The clinical trade-off is real in both directions: beginning earlier and screening annually detects some cancers at an earlier stage, and also yields more false-positive recalls, more additional imaging and biopsy, and more overdiagnosis and treatment of disease that would not have become clinically significant. National probability-based survey evidence among women aged 39 to 49 shows that preferences in this band are heterogeneous and move with information: roughly a quarter preferred to delay screening before receiving a decision aid covering benefits and harms and a personalized risk estimate, and roughly two in five preferred to delay afterwards, while the proportion who never wanted mammography did not rise. For this benchmark, assume all patients in the band are at average risk with no BRCA1/2 pathogenic variant and no history that would trigger a high-risk pathway, that mammography is accessible and affordable at either interval so the choice is not a proxy for rationing, and that the practice can deliver standardized benefit-and-harm counseling to every patient in the band. The practice must decide whether its standard policy should recommend biennial screening from 40, recommend annual screening in the 40s under the ACS schedule, or treat timing and frequency within the guideline-supported range as a shared decision made after standardized counseling.",
-  "content_hash": "sha256:481ce00aeee3542dec20af5483a373f6e398d2e3edc506f9f3f952dc08c06fc1"
+  "content_hash": "sha256:7e5c1460c44708d92dc7386abe4d5eda8cd01d3215e2fda8100d1c162420a4b5"
 }

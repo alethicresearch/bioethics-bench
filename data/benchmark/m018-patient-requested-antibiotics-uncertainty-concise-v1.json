@@ -69,23 +69,28 @@
       },
       {
         "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/"
       },
       {
         "citation": "Little P et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care. BMJ. 2014. PMID 24603565.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24603565/"
       },
       {
         "citation": "de la Poza Abad M et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016. PMID 26719947.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26719947/"
       },
       {
         "citation": "Tan R et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections. Int J Antimicrob Agents. 2022. PMID 34971727.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34971727/"
       },
       {
         "citation": "Laytner L et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024. PMID 39313338.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39313338/"
       }
     ],
     "adapted_not_reproduced": true
@@ -103,11 +108,13 @@
           "sources": [
             {
               "citation": "Tan R, Huang Z, Guo H, et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections: clinical and behavioural determinants of antibiotic use. Int J Antimicrob Agents. 2022;59(2):106511. PMID 34971727.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34971727/"
             },
             {
               "citation": "Laytner LA, Trautner BW, Nash S, et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024;22(5):421-5. PMID 39313338.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39313338/"
             }
           ],
           "adapted_not_reproduced": true
@@ -124,11 +131,13 @@
           "sources": [
             {
               "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/"
             },
             {
               "citation": "Little P, Moore M, Kelly J, et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care: pragmatic, factorial, randomised controlled trial. BMJ. 2014;348:g1606. PMID 24603565.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24603565/"
             }
           ],
           "adapted_not_reproduced": true
@@ -164,11 +173,13 @@
           "sources": [
             {
               "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/"
             },
             {
               "citation": "de la Poza Abad M, Mas Dalmau G, Moreno Bakedano M, et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016;176(1):21-9. PMID 26719947.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26719947/"
             }
           ],
           "adapted_not_reproduced": true
@@ -203,7 +214,8 @@
           "sources": [
             {
               "citation": "Spurling GK, Dooley L, Clark J, et al. Immediate versus delayed versus no antibiotics for respiratory infections. Cochrane Database Syst Rev. 2023;10:CD004417. PMID 37791590.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/"
             }
           ]
         }
@@ -235,25 +247,30 @@
     },
     {
       "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/"
     },
     {
       "citation": "Little P et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care. BMJ. 2014. PMID 24603565.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24603565/"
     },
     {
       "citation": "de la Poza Abad M et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016. PMID 26719947.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26719947/"
     },
     {
       "citation": "Tan R, Huang Z, Guo H, et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections: clinical and behavioural determinants of antibiotic use. Int J Antimicrob Agents. 2022;59(2):106511. PMID 34971727.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34971727/"
     },
     {
       "citation": "Laytner LA, Trautner BW, Nash S, et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients' Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024;22(5):421-5. PMID 39313338.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39313338/"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:8bddda452e60e88cc451bac6c1749e2f3fdce49bae580fe848dd272c5bf4f501"
+  "content_hash": "sha256:e28bb42cf0a4ef54b6ea6e85b59ec99126d86851d016813085ea5229cc625be9"
 }

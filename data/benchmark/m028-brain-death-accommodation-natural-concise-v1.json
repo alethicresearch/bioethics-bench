@@ -58,7 +58,8 @@
     "sources": [
       {
         "citation": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023;101(24):1112-32. AAN/AAP/CNS/SCCM consensus. Unlike prior guidelines it addresses management of disagreements with families, and provides that organ support may be continued for a period after BD/DNC, its length judged by the attending clinician under institutional policy, to give the family \"a reasonable but limited amount of time\" with the deceased patient. PMID 37821233.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37821233/"
       },
       {
         "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
@@ -66,15 +67,18 @@
       },
       {
         "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39810074/"
       },
       {
         "citation": "Families' understanding of brain death. PMID 14558637.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14558637/"
       },
       {
         "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34195896/"
       }
     ],
     "adapted_not_reproduced": true
@@ -92,7 +96,8 @@
           "sources": [
             {
               "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39810074/"
             }
           ],
           "adapted_not_reproduced": true
@@ -109,7 +114,8 @@
           "sources": [
             {
               "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39810074/"
             }
           ],
           "adapted_not_reproduced": true
@@ -128,7 +134,8 @@
           "sources": [
             {
               "citation": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023;101(24):1112-32. AAN/AAP/CNS/SCCM consensus. Unlike prior guidelines it addresses management of disagreements with families, and provides that organ support may be continued for a period after BD/DNC, its length judged by the attending clinician under institutional policy, to give the family \"a reasonable but limited amount of time\" with the deceased patient. PMID 37821233.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37821233/"
             },
             {
               "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
@@ -151,11 +158,13 @@
           "sources": [
             {
               "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34195896/"
             },
             {
               "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26490777/"
             }
           ],
           "adapted_not_reproduced": true
@@ -172,11 +181,13 @@
           "sources": [
             {
               "citation": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023;101(24):1112-32. AAN/AAP/CNS/SCCM consensus. Unlike prior guidelines it addresses management of disagreements with families, and provides that organ support may be continued for a period after BD/DNC, its length judged by the attending clinician under institutional policy, to give the family \"a reasonable but limited amount of time\" with the deceased patient. PMID 37821233.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37821233/"
             },
             {
               "citation": "Organ support after death by neurologic criteria: survey of US neurologists. PMID 27449064.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27449064/"
             }
           ],
           "adapted_not_reproduced": true
@@ -193,11 +204,13 @@
           "sources": [
             {
               "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26490777/"
             },
             {
               "citation": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023;101(24):1112-32. AAN/AAP/CNS/SCCM consensus. Unlike prior guidelines it addresses management of disagreements with families, and provides that organ support may be continued for a period after BD/DNC, its length judged by the attending clinician under institutional policy, to give the family \"a reasonable but limited amount of time\" with the deceased patient. PMID 37821233.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37821233/"
             }
           ],
           "adapted_not_reproduced": true
@@ -227,7 +240,8 @@
   "references": [
     {
       "citation": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline. Neurology. 2023;101(24):1112-32. AAN/AAP/CNS/SCCM consensus. Unlike prior guidelines it addresses management of disagreements with families, and provides that organ support may be continued for a period after BD/DNC, its length judged by the attending clinician under institutional policy, to give the family \"a reasonable but limited amount of time\" with the deceased patient. PMID 37821233.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37821233/"
     },
     {
       "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
@@ -235,23 +249,28 @@
     },
     {
       "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39810074/"
     },
     {
       "citation": "Families' understanding of brain death. PMID 14558637.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14558637/"
     },
     {
       "citation": "The Intersection of Neurology and Religion: survey of hospital chaplains on brain death/death by neurologic criteria. PMID 34195896.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34195896/"
     },
     {
       "citation": "Prolonging Support After Brain Death: When Families Ask for More. PMID 26490777.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26490777/"
     },
     {
       "citation": "Organ support after death by neurologic criteria: survey of US neurologists. PMID 27449064.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27449064/"
     }
   ],
   "required_aggregation": "mean",
@@ -265,5 +284,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; the candidate field and load-bearing facts are fixed."
   },
   "scenario": "An adult with catastrophic brain injury has been validly determined dead by neurologic criteria under current accepted medical standards. Organ donation is not planned. The family does not accept neurologic criteria as death and asks that ventilation and other organ support continue until the heart stops, citing sincere religious and moral beliefs. For this benchmark, assume the determination was correctly performed with no remaining diagnostic uncertainty, the family understands the clinical and legal position, organ donation is not planned, and continued support uses ICU-level resources without an immediate scarcity crisis. The hospital must decide what accommodation policy should apply.",
-  "content_hash": "sha256:93e0e05cf9a1d7c62c6458c5d3b8d58d51da70432340ca11a437b8f90c421046"
+  "content_hash": "sha256:6e88abaa3068292f964c8c9e5c472e0d85f263d1e5a7d1cc0aeebc4123ecaa00"
 }

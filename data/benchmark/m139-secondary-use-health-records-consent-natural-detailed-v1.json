@@ -74,11 +74,13 @@
       },
       {
         "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
       },
       {
         "citation": "Cascini et al. Public willingness to share health data: systematic review. eClinicalMedicine. 2024. PMID 38533128.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38533128/"
       }
     ],
     "adapted_not_reproduced": true
@@ -96,7 +98,8 @@
           "sources": [
             {
               "citation": "Cascini et al. Public willingness to share health data: systematic review. eClinicalMedicine. 2024. PMID 38533128.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38533128/"
             },
             {
               "citation": "NHS England. National public engagement on health-data opt-out and patient choice, Cohort 3. 2026.",
@@ -117,11 +120,13 @@
           "sources": [
             {
               "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
             },
             {
               "citation": "Cascini et al. Public willingness to share health data: systematic review. eClinicalMedicine. 2024. PMID 38533128.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38533128/"
             }
           ],
           "adapted_not_reproduced": true
@@ -138,11 +143,13 @@
           "sources": [
             {
               "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
             },
             {
               "citation": "Cascini et al. Public willingness to share health data: systematic review. eClinicalMedicine. 2024. PMID 38533128.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38533128/"
             }
           ],
           "adapted_not_reproduced": true
@@ -229,7 +236,8 @@
           "sources": [
             {
               "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
             }
           ]
         }
@@ -266,11 +274,13 @@
     },
     {
       "citation": "Patient and Public Willingness to Share Personal Health Data for Third-Party or Secondary Uses: Systematic Review. PMID 38441944.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38441944/"
     },
     {
       "citation": "Cascini et al. Public willingness to share health data: systematic review. eClinicalMedicine. 2024. PMID 38533128.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38533128/"
     }
   ],
   "required_aggregation": "mean",
@@ -284,5 +294,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system maintains longitudinal electronic records collected for direct care and is choosing a standing rule for secondary research use. For this benchmark, assume the system receives low-risk studies using coded data that remain inside a secure controlled environment as well as some requests involving identifiable data, highly sensitive conditions, or commercial partners; obtaining new study-specific authorization from every patient for every low-risk coded analysis would make many otherwise feasible studies impracticable; the system can provide clear public notice, maintain a changeable global research opt-out, restrict access and reuse, and require ethics or privacy-board review; and governed opt-out, affirmative-authorization, and risk-tiered architectures are all legally available. The board must decide whether secondary use should proceed under a standing opt-out, require affirmative authorization, or vary the consent threshold with identifiability, sensitivity, recipient, and risk.",
-  "content_hash": "sha256:9b24e2ebf0382fe62eb1cee00cd58f8a5a81fe7687620ce2c19b51c9dadc60ce"
+  "content_hash": "sha256:1640819d3c7f43582399b7715c5f435887329bda97d22fd89bd196c1600cdaef"
 }

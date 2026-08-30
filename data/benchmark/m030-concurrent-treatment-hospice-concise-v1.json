@@ -77,23 +77,28 @@
       },
       {
         "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26670795/"
       },
       {
         "citation": "Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32119800/"
       },
       {
         "citation": "The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30467792/"
       },
       {
         "citation": "Experimental preference study of supportive care, hospice, chemotherapy, and concurrent chemotherapy plus hospice in advanced lung cancer. PMID 19571331.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19571331/"
       },
       {
         "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19114698/"
       }
     ],
     "adapted_not_reproduced": true
@@ -111,11 +116,13 @@
           "sources": [
             {
               "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19571331/"
             },
             {
               "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19114698/"
             }
           ],
           "adapted_not_reproduced": true
@@ -132,7 +139,8 @@
           "sources": [
             {
               "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19571331/"
             }
           ],
           "adapted_not_reproduced": true
@@ -168,15 +176,18 @@
           "sources": [
             {
               "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26670795/"
             },
             {
               "citation": "Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32119800/"
             },
             {
               "citation": "The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30467792/"
             }
           ],
           "adapted_not_reproduced": true
@@ -243,25 +254,30 @@
     },
     {
       "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26670795/"
     },
     {
       "citation": "Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32119800/"
     },
     {
       "citation": "The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30467792/"
     },
     {
       "citation": "Salz T, Brewer NT. Offering chemotherapy and hospice jointly: one solution to hospice underuse. Med Decis Making. 2009;29(4):521-31. Hypothetical-scenario survey of 198 adult smokers, not of patients under treatment. PMID 19571331.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19571331/"
     },
     {
       "citation": "Casarett DJ, Fishman JM, Lu HL, et al. The terrible choice: re-evaluating hospice eligibility criteria for cancer. J Clin Oncol. 2009;27(6):953-9. Conjoint interviews with 300 patients with cancer and 171 family members. PMID 19114698.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19114698/"
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:1b7240d68977b531d462f685fbca99c3e1357d23b842c4554ae1f71f4bc90edf"
+  "content_hash": "sha256:c24828a05da92406da88595d5f724952d69e77d9c8afddb6e348f57e61e6dfc7"
 }

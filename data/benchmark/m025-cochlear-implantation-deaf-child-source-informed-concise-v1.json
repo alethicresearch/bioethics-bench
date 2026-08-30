@@ -61,23 +61,28 @@
     "sources": [
       {
         "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21941879/"
       },
       {
         "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15236889/"
       },
       {
         "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11006449/"
       },
       {
         "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15148196/"
       },
       {
         "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35213891/"
       }
     ],
     "adapted_not_reproduced": true
@@ -95,11 +100,13 @@
           "sources": [
             {
               "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21941879/"
             },
             {
               "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15148196/"
             }
           ],
           "adapted_not_reproduced": true
@@ -116,15 +123,18 @@
           "sources": [
             {
               "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15236889/"
             },
             {
               "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11006449/"
             },
             {
               "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15148196/"
             }
           ],
           "adapted_not_reproduced": true
@@ -143,7 +153,8 @@
           "sources": [
             {
               "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35213891/"
             }
           ],
           "adapted_not_reproduced": true
@@ -162,11 +173,13 @@
           "sources": [
             {
               "citation": "Lane H, Grodin M. Ethical issues in cochlear implant surgery: an exploration into disease, disability, and the best interests of the child. PMID 11660356.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11660356/"
             },
             {
               "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21941879/"
             }
           ],
           "adapted_not_reproduced": true
@@ -187,7 +200,8 @@
             },
             {
               "citation": "The right not to hear: ethics of parental refusal of hearing rehabilitation. PMID 21792972.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21792972/"
             }
           ],
           "adapted_not_reproduced": true
@@ -204,11 +218,13 @@
           "sources": [
             {
               "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35213891/"
             },
             {
               "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21941879/"
             }
           ],
           "adapted_not_reproduced": true
@@ -238,31 +254,38 @@
   "references": [
     {
       "citation": "Deaf parents and pediatric cochlear implantation: exploration of decision making. PMID 21941879.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21941879/"
     },
     {
       "citation": "Parental decision-making in considering cochlear implant technology for a deaf child. PMID 15236889.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15236889/"
     },
     {
       "citation": "Parental values in the decision about cochlear implantation. PMID 11006449.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11006449/"
     },
     {
       "citation": "Children with cochlear implants: changing parent and Deaf community perspectives. PMID 15148196.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15148196/"
     },
     {
       "citation": "American Cochlear Implant Alliance Task Force Guidelines for Determining Cochlear Implant Candidacy in Children. Ear Hear. 2022. PMID 35213891.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35213891/"
     },
     {
       "citation": "Lane H, Grodin M. Ethical issues in cochlear implant surgery: an exploration into disease, disability, and the best interests of the child. PMID 11660356.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11660356/"
     },
     {
       "citation": "The right not to hear: ethics of parental refusal of hearing rehabilitation. PMID 21792972.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21792972/"
     },
     {
       "citation": "Feinberg J. The Child's Right to an Open Future. In: Aiken W, LaFollette H, eds. Whose Child? Children's Rights, Parental Authority, and State Power. Rowman & Littlefield; 1980.",
@@ -280,5 +303,5 @@
     "notes": "Concise and detailed are companion representations of the same source-informed frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A 2-year-old with bilateral severe-to-profound congenital sensorineural hearing loss meets clinical criteria for cochlear implantation. Both parents are Deaf, use sign language as their primary language and want to raise the child with early fluent sign-language access; they decline implantation for now because they value Deaf identity and do not want surgery to define the child's development. For this benchmark, assume immediate high-quality fluent sign-language exposure and educational support are available, the child is clinically eligible and implantation offers a reasonable but variable chance of improving auditory/spoken-language access, delay may reduce some later auditory-language benefit without eliminating candidacy, and the parents understand the options and actively support the child's communication development. The implant service must decide what policy should govern the deferral.",
-  "content_hash": "sha256:3a8ef410cf0b684560e8f84d52d203e0a843e148b478a53e75e919afe9dc9fa8"
+  "content_hash": "sha256:deac13ad4cd78f8418f4108142fbc23d6f597ec45a471bab286026573c317f36"
 }

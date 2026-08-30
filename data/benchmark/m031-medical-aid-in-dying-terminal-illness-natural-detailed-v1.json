@@ -74,7 +74,8 @@
       },
       {
         "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28975242/"
       },
       {
         "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
@@ -83,7 +84,8 @@
       },
       {
         "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
-        "type": "survey"
+        "type": "survey",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39992651/"
       }
     ],
     "adapted_not_reproduced": true
@@ -101,7 +103,8 @@
           "sources": [
             {
               "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39992651/"
             },
             {
               "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
@@ -126,7 +129,8 @@
             },
             {
               "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39992651/"
             }
           ],
           "adapted_not_reproduced": true
@@ -175,7 +179,8 @@
             },
             {
               "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28975242/"
             }
           ],
           "adapted_not_reproduced": true
@@ -212,7 +217,8 @@
           "sources": [
             {
               "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
-              "type": "survey"
+              "type": "survey",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39992651/"
             },
             {
               "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
@@ -239,7 +245,8 @@
             },
             {
               "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28975242/"
             }
           ],
           "adapted_not_reproduced": true
@@ -301,7 +308,8 @@
     },
     {
       "citation": "Snyder Sulmasy L, Mueller PS. Ethics and the Legalization of Physician-Assisted Suicide: An American College of Physicians Position Paper. Ann Intern Med. 2017;167:576–578. PMID 28975242.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28975242/"
     },
     {
       "citation": "American Academy of Hospice and Palliative Medicine. Physician-Assisted Dying position statement.",
@@ -310,7 +318,8 @@
     },
     {
       "citation": "Kozlov E, et al. Knowledge of and Preferences for Medical Aid in Dying. JAMA Netw Open. 2025. PMID 39992651.",
-      "type": "survey"
+      "type": "survey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39992651/"
     },
     {
       "citation": "Pew Research Center. U.S. adult morality survey on physician-assisted death, fielded May 2025 and published 2026.",
@@ -328,5 +337,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "A large health system operates in a legally permissive US-style jurisdiction with a mature medical-aid-in-dying framework for capable adults whose terminal illness is expected to cause death within six months. A qualifying patient may obtain medication for voluntary self-administration after required assessments and procedural safeguards. Some physicians in the system view participation as compatible with respect for autonomy and relief of suffering; others believe prescribing medication intended to enable death is incompatible with medicine or their conscience. Patients reasonably expect accurate information and continuity even when an individual clinician objects. For this benchmark, assume MAID is legally available under the safeguard regime, every qualifying request receives decision-specific capacity and coercion assessment and remains revocable, hospice and specialist palliative-care options are meaningfully available and explained, self-administration by the patient is required, and sincere clinician disagreement persists. The health system must choose its institutional participation policy.",
-  "content_hash": "sha256:67f80e29184dc3c2fdd78f46ae3d126f25a1a9aadc16aec1e609af3f132d002c"
+  "content_hash": "sha256:d629f986ce93b0ac5e1e4db0be49e9b2697124d3849448434bb1ce17d2a2489d"
 }

@@ -55,11 +55,13 @@
     "sources": [
       {
         "citation": "Miller DT, et al. Recommendations for reporting of secondary findings in clinical exome and genome sequencing, 2021 update: an ACMG policy statement. Genet Med. 2021;23:1391–1398. PMID 34012069.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34012069/"
       },
       {
         "citation": "Lee K, et al. ACMG SF v3.3 list for reporting of secondary findings in clinical exome and genome sequencing. Genet Med. 2025;27(8):101454. PMID 40568962.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40568962/"
       },
       {
         "citation": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.",
@@ -67,15 +69,18 @@
       },
       {
         "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39299240/"
       },
       {
         "citation": "Shickh S, et al. Great expectations: patients' preferences for clinically significant results from genomic sequencing. Hum Genet. 2023;142:553–562. PMID 36943453.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36943453/"
       },
       {
         "citation": "Shahmirzadi L, et al. Patient decisions for disclosure of secondary findings among the first 200 individuals undergoing clinical diagnostic exome sequencing. Genet Med. 2014;16:395–399. PMID 24113345.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24113345/"
       }
     ],
     "adapted_not_reproduced": true
@@ -93,11 +98,13 @@
           "sources": [
             {
               "citation": "Shickh S, et al. Great expectations: patients' preferences for clinically significant results from genomic sequencing. Hum Genet. 2023;142:553–562. PMID 36943453.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36943453/"
             },
             {
               "citation": "Shahmirzadi L, et al. Patient decisions for disclosure of secondary findings among the first 200 individuals undergoing clinical diagnostic exome sequencing. Genet Med. 2014;16:395–399. PMID 24113345.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24113345/"
             }
           ],
           "adapted_not_reproduced": true
@@ -114,11 +121,13 @@
           "sources": [
             {
               "citation": "Public's Views toward Return of Secondary Results in Genomic Sequencing: It's (Almost) All about the Choice. PMID 28357777.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28357777/"
             },
             {
               "citation": "Shahmirzadi L, et al. Patient decisions for disclosure of secondary findings among the first 200 individuals undergoing clinical diagnostic exome sequencing. Genet Med. 2014;16:395–399. PMID 24113345.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24113345/"
             }
           ],
           "adapted_not_reproduced": true
@@ -137,11 +146,13 @@
           "sources": [
             {
               "citation": "Miller DT, et al. Recommendations for reporting of secondary findings in clinical exome and genome sequencing, 2021 update: an ACMG policy statement. Genet Med. 2021;23:1391–1398. PMID 34012069.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34012069/"
             },
             {
               "citation": "Lee K, et al. ACMG SF v3.3 list for reporting of secondary findings in clinical exome and genome sequencing. Genet Med. 2025;27(8):101454. PMID 40568962.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40568962/"
             }
           ],
           "adapted_not_reproduced": true
@@ -162,7 +173,8 @@
             },
             {
               "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39299240/"
             }
           ],
           "adapted_not_reproduced": true
@@ -197,7 +209,8 @@
           "sources": [
             {
               "citation": "Andorno R. The right not to know: an autonomy based approach. J Med Ethics. 2004;30(5):435–439. PMID 15467071.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15467071/"
             }
           ]
         }
@@ -213,11 +226,13 @@
           "sources": [
             {
               "citation": "To tell or not to tell? A systematic review of ethical reflections on incidental findings arising in genetics contexts. PMID 22739341.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22739341/"
             },
             {
               "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39299240/"
             }
           ]
         }
@@ -246,11 +261,13 @@
   "references": [
     {
       "citation": "Miller DT, et al. Recommendations for reporting of secondary findings in clinical exome and genome sequencing, 2021 update: an ACMG policy statement. Genet Med. 2021;23:1391–1398. PMID 34012069.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34012069/"
     },
     {
       "citation": "Lee K, et al. ACMG SF v3.3 list for reporting of secondary findings in clinical exome and genome sequencing. Genet Med. 2025;27(8):101454. PMID 40568962.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40568962/"
     },
     {
       "citation": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.",
@@ -258,27 +275,33 @@
     },
     {
       "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39299240/"
     },
     {
       "citation": "Shickh S, et al. Great expectations: patients' preferences for clinically significant results from genomic sequencing. Hum Genet. 2023;142:553–562. PMID 36943453.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36943453/"
     },
     {
       "citation": "Shahmirzadi L, et al. Patient decisions for disclosure of secondary findings among the first 200 individuals undergoing clinical diagnostic exome sequencing. Genet Med. 2014;16:395–399. PMID 24113345.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24113345/"
     },
     {
       "citation": "Public's Views toward Return of Secondary Results in Genomic Sequencing: It's (Almost) All about the Choice. PMID 28357777.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28357777/"
     },
     {
       "citation": "Andorno R. The right not to know: an autonomy based approach. J Med Ethics. 2004;30(5):435–439. PMID 15467071.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15467071/"
     },
     {
       "citation": "To tell or not to tell? A systematic review of ethical reflections on incidental findings arising in genetics contexts. PMID 22739341.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22739341/"
     }
   ],
   "required_aggregation": "mean",
@@ -292,5 +315,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "An adult with decision-making capacity is undergoing clinical exome/genome sequencing for a diagnostic indication. In addition to variants related to that indication, the laboratory can intentionally search for a predefined set of pathogenic or likely pathogenic variants associated with serious conditions for which surveillance, preventive treatment or another established intervention can meaningfully reduce morbidity or mortality. For this benchmark, assume every returned secondary finding would be analytically confirmed and clinically interpreted, pre- and post-test genetic counseling is available, and the represented conditions have established interventions; penetrance and actionability nevertheless vary across gene–disease pairs. The health system must choose a standing policy: routine secondary analysis with informed opt-out, secondary analysis only after explicit opt-in, restriction of diagnostic analysis to the clinical indication rather than routine opportunistic search, or a narrower secondary program restricted to findings meeting a particularly high threshold of penetrance and clinical actionability.",
-  "content_hash": "sha256:415c72b771a682041bb59438a680ab5108624ed731b98028b4ff28739255c591"
+  "content_hash": "sha256:8b9acc05e5e59bc45ffde224e552492ee0caa11f20b4adc2203606c53a0a9aad"
 }

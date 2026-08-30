@@ -71,7 +71,8 @@
       },
       {
         "citation": "Capelouto SM, et al. Sex selection for non-medical indications: a survey of current pre-implantation genetic screening practices among U.S. ART clinics. J Assist Reprod Genet. 2018;35:409-416. PMID 29080968.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29080968/"
       }
     ],
     "adapted_not_reproduced": true
@@ -89,15 +90,18 @@
           "sources": [
             {
               "citation": "Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16595229/"
             },
             {
               "citation": "Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25758988/"
             },
             {
               "citation": "Dahl E, Hinsch KD, Brosig B, Beutel M. Attitudes towards preconception sex selection: a representative survey from Germany. Reprod Biomed Online. 2004;9(6):600-3. PMID 15670402.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15670402/"
             }
           ],
           "adapted_not_reproduced": true
@@ -114,15 +118,18 @@
           "sources": [
             {
               "citation": "Dahl E, Gupta RS, Beutel M, Stoebel-Richter Y, Brosig B, Tinneberg HR, et al. Preconception sex selection demand and preferences in the United States. Fertil Steril. 2006;85(2):468-73. Survey of 1,197 US adults aged 18-45: 8% would use preconception sex selection, 74% were opposed, and 50% wished for a family with an equal number of boys and girls. PMID 16595229.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16595229/"
             },
             {
               "citation": "Kippen R, Gray E, Evans A. High and growing disapproval of sex-selection technology in Australia. Reprod Health. 2018;15(1):134. Australian Survey of Social Attitudes, 2007 and 2016; disapproval of IVF sex selection, including for family balancing, is high and rose across the two waves. PMID 30185179.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30185179/"
             },
             {
               "citation": "Winkelman WD, Missmer SA, Myers D, Ginsburg ES. Public perspectives on the use of preimplantation genetic diagnosis. J Assist Reprod Genet. 2015;32(5):665-75. Nationally representative US sample of 1,006 adults; 21.1% supported PGD for sex selection, against 72.9% supporting PGD for diseases fatal early in life. PMID 25758988.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25758988/"
             }
           ],
           "adapted_not_reproduced": true
@@ -233,7 +240,8 @@
     },
     {
       "citation": "Capelouto SM, et al. Sex selection for non-medical indications: a survey of current pre-implantation genetic screening practices among U.S. ART clinics. J Assist Reprod Genet. 2018;35:409-416. PMID 29080968.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29080968/"
     }
   ],
   "schema_version": "1.0.0",
@@ -246,5 +254,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility clinic routinely performs IVF with PGT-A. For this benchmark, assume the patient is already undergoing IVF for an independent clinical reason, has two healthy children of the same sex, requests transfer of an otherwise suitable embryo of the other sex for family balancing, embryo sex is already known from PGT-A with no additional biopsy or testing required, no sex-linked disease or other medical indication exists, no coercion is identified, and both permitting and declining non-medical selection are legally available. The clinic is concerned both with reproductive choice and with sex stereotyping, discrimination and the social meaning of clinical participation. It must choose a standing policy governing whether embryo sex may guide transfer in this family-balancing circumstance.",
-  "content_hash": "sha256:e8a71ae55f86b1625daf06f736af1871018c321bad961aba922ef008200f1746"
+  "content_hash": "sha256:57ac57ca33770a40ab121e467a6c6e6d5e8827cb946c6890fe727b2bf303cbc9"
 }

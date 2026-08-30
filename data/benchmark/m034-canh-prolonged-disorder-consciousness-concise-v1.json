@@ -73,23 +73,28 @@
     "sources": [
       {
         "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30098791/"
       },
       {
         "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33616284/"
       },
       {
         "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26923519/"
       },
       {
         "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26539603/"
       },
       {
         "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
-        "type": "article"
+        "type": "article",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24425753/"
       }
     ],
     "adapted_not_reproduced": true
@@ -107,11 +112,13 @@
           "sources": [
             {
               "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26539603/"
             },
             {
               "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24425753/"
             }
           ],
           "adapted_not_reproduced": true
@@ -128,11 +135,13 @@
           "sources": [
             {
               "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26539603/"
             },
             {
               "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
-              "type": "article"
+              "type": "article",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24425753/"
             }
           ],
           "adapted_not_reproduced": true
@@ -151,15 +160,18 @@
           "sources": [
             {
               "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. 2018. Recommends serial, standardized neurobehavioral assessment with measures shown valid and reliable, to improve diagnostic accuracy, and care from multidisciplinary teams with specialized expertise. The benefit/burden and patient-preference process this candidate also states comes from the ASPEN and ESPEN ethics guidelines cited alongside. PMID 30098791.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30098791/"
             },
             {
               "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33616284/"
             },
             {
               "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26923519/"
             }
           ],
           "adapted_not_reproduced": true
@@ -178,7 +190,8 @@
           "sources": [
             {
               "citation": "Giacino JT, Katz DI, Schiff ND, et al. Practice Guideline Update Recommendations Summary: Disorders of Consciousness. Arch Phys Med Rehabil. 2018;99(9):1699-709. AAN/ACRM/NIDILRR. PMID 30098791.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30098791/"
             }
           ]
         }
@@ -194,7 +207,8 @@
           "sources": [
             {
               "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration. PMID 33616284.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33616284/"
             }
           ]
         }
@@ -222,26 +236,31 @@
   "references": [
     {
       "citation": "AAN/ACRM/NIDILRR. Practice Guideline Update Recommendations: Disorders of Consciousness. 2018; reaffirmed July 2024. PMID 30098791.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30098791/"
     },
     {
       "citation": "ASPEN. Ethical Aspects of Artificially Administered Nutrition and Hydration: Position Paper. PMID 33616284.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33616284/"
     },
     {
       "citation": "ESPEN Guideline on Ethical Aspects of Artificial Nutrition and Hydration. PMID 26923519.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26923519/"
     },
     {
       "citation": "Family perspectives on proper treatment in prolonged vegetative/minimally conscious states. PMID 26539603.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26539603/"
     },
     {
       "citation": "Withdrawing artificial nutrition and hydration from minimally conscious and vegetative patients: family perspectives. PMID 24425753.",
-      "type": "article"
+      "type": "article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24425753/"
     }
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:8bc006f37ea1fb646cab15c294d200738f8d5b5a7a5e734b45b05838fcef9ee0"
+  "content_hash": "sha256:99a0181119f610c407934f3227c94bbce9f064a1b2f886add7f574e8f6691b6c"
 }
