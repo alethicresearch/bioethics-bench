@@ -1,0 +1,26 @@
+{
+  "source": {
+    "repository": "xnuxi/sacre-prototype",
+    "path": "docs/bench-runs/stability-2026-08-28.json",
+    "source_blob_sha": "f78a40fe81cc5f9a7cc0ee4e2b42990f9f9c936f"
+  },
+  "comment": "Repeated-execution stability for three Full Corpus families. Development evidence: not validation, not a moral finding, not a claim about any case. Single model, single provider, five repetitions.",
+  "model": "gpt-5.6-sol",
+  "repetitions": 5,
+  "corpus": "full-corpus-v1-completion-candidate @ d547e05",
+  "measures": {
+    "top_minus_second": "gap between the top two candidate scores, averaged over runs",
+    "median_within_candidate_range": "median across candidates of (max-min) score over repeated runs",
+    "gap_over_noise": "the ratio; below 1 the ranking is not separable from run-to-run variation"
+  },
+  "results": [
+    {"case":"m094-high-risk-workforce-vaccination-mandate","aggregation":"sum","representation":"concise","runs":5,"top_minus_second":2.4,"median_within_candidate_range":12,"gap_over_noise":0.2,"distinct_final_policies":2,"distinct_rankings":5},
+    {"case":"m094-high-risk-workforce-vaccination-mandate","aggregation":"sum","representation":"detailed","runs":5,"top_minus_second":0.2,"median_within_candidate_range":8,"gap_over_noise":0.03,"distinct_final_policies":4,"distinct_rankings":5},
+    {"case":"m094-high-risk-workforce-vaccination-mandate","aggregation":"mean","representation":"concise","runs":5,"top_minus_second":0.54,"median_within_candidate_range":3,"gap_over_noise":0.18,"distinct_final_policies":3,"distinct_rankings":5},
+    {"case":"m094-high-risk-workforce-vaccination-mandate","aggregation":"mean","representation":"detailed","runs":5,"top_minus_second":0.12,"median_within_candidate_range":3.7,"gap_over_noise":0.03,"distinct_final_policies":4,"distinct_rankings":4},
+    {"case":"m004-adolescent-confidentiality-sensitive-care","aggregation":"mean","representation":"concise","runs":5,"top_minus_second":9.24,"median_within_candidate_range":4,"gap_over_noise":2.31,"distinct_final_policies":1,"distinct_rankings":1},
+    {"case":"m004-adolescent-confidentiality-sensitive-care","aggregation":"mean","representation":"detailed","runs":5,"top_minus_second":9.86,"median_within_candidate_range":4.4,"gap_over_noise":2.24,"distinct_final_policies":1,"distinct_rankings":2},
+    {"case":"m139-secondary-use-health-records-consent","aggregation":"mean","representation":"concise","runs":4,"top_minus_second":1.55,"median_within_candidate_range":1.4,"gap_over_noise":1.11,"distinct_final_policies":1,"distinct_rankings":1},
+    {"case":"m139-secondary-use-health-records-consent","aggregation":"mean","representation":"detailed","runs":4,"top_minus_second":2.45,"median_within_candidate_range":2.2,"gap_over_noise":1.11,"distinct_final_policies":1,"distinct_rankings":2}
+  ]
+}
