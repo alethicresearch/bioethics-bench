@@ -1,0 +1,47 @@
+{
+  "source": {
+    "repository": "xnuxi/sacre-prototype",
+    "path": "docs/bench-runs/fc-2026-08-28-gpt-5.6-sol-manifest.json",
+    "source_blob_sha": "7a01d0e1ca1082bb2dc7d4ba4bbd91076421c7d9",
+    "release_id": "fc-2026-08-28-gpt-5.6-sol"
+  },
+  "model": "gpt-5.6-sol",
+  "qccs_protocol_id": "qccs-v1",
+  "scoring_mode": "conv+",
+  "usage": {
+    "calls": 216,
+    "input_tokens": 117675,
+    "output_tokens": 33424,
+    "median_latency_ms": 3109,
+    "estimated_usd": 0.6284
+  },
+  "records": [
+    {"record_id":"m002-capacity-risk-supported-decision-making-concise-v1","representation":"concise","geometry":"1x2x2","aggregation_mode":"mean"},
+    {"record_id":"m002-capacity-risk-supported-decision-making-detailed-v1","representation":"detailed","geometry":"1x2x2","aggregation_mode":"mean"},
+    {"record_id":"m004-adolescent-confidentiality-sensitive-care-concise-v1","representation":"concise","geometry":"2x1x2","aggregation_mode":"mean"},
+    {"record_id":"m004-adolescent-confidentiality-sensitive-care-detailed-v1","representation":"detailed","geometry":"2x1x2","aggregation_mode":"mean"},
+    {"record_id":"m075-broad-consent-future-biobank-research-natural-concise-v1","representation":"concise","geometry":"2x1x3","aggregation_mode":"mean"},
+    {"record_id":"m075-broad-consent-future-biobank-research-natural-detailed-v1","representation":"detailed","geometry":"2x1x3","aggregation_mode":"mean"},
+    {"record_id":"m129-disability-weights-qalys-coverage-natural-concise-v1","representation":"concise","geometry":"1x2x3","aggregation_mode":"mean"},
+    {"record_id":"m129-disability-weights-qalys-coverage-natural-detailed-v1","representation":"detailed","geometry":"1x2x3","aggregation_mode":"mean"},
+    {"record_id":"m094-high-risk-workforce-vaccination-mandate-natural-concise-v1","representation":"concise","geometry":"2x2x2","aggregation_mode":"sum"},
+    {"record_id":"m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1","representation":"detailed","geometry":"2x2x2","aggregation_mode":"sum"},
+    {"record_id":"m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1","representation":"concise","geometry":"2x2x3","aggregation_mode":"mean"},
+    {"record_id":"m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1","representation":"detailed","geometry":"2x2x3","aggregation_mode":"mean"},
+    {"record_id":"m031-medical-aid-in-dying-terminal-illness-natural-concise-v1","representation":"concise","geometry":"2x3x3","aggregation_mode":"mean"},
+    {"record_id":"m031-medical-aid-in-dying-terminal-illness-natural-detailed-v1","representation":"detailed","geometry":"2x3x3","aggregation_mode":"mean"},
+    {"record_id":"m139-secondary-use-health-records-consent-natural-concise-v1","representation":"concise","geometry":"3x2x3","aggregation_mode":"mean"},
+    {"record_id":"m139-secondary-use-health-records-consent-natural-detailed-v1","representation":"detailed","geometry":"3x2x3","aggregation_mode":"mean"}
+  ],
+  "discrimination": [
+    {"case_id":"m002-capacity-risk-supported-decision-making","concise_ranking":"exp1>fw1>pub1>exp2>fw2","detailed_ranking":"exp1>fw1>pub1>fw2>exp2","ranking_agrees":false,"same_final_policy":true,"pairs_compared":8,"pairs_differing":7,"max_abs_pair_delta":5},
+    {"case_id":"m004-adolescent-confidentiality-sensitive-care","concise_ranking":"pub1>fw2>exp1>fw1>pub2","detailed_ranking":"pub1>fw2>exp1>fw1>pub2","ranking_agrees":true,"same_final_policy":true,"pairs_compared":8,"pairs_differing":5,"max_abs_pair_delta":5},
+    {"case_id":"m075-broad-consent-future-biobank-research","concise_ranking":"fw2>fw1>pub1>pub2>exp1>fw3","detailed_ranking":"fw2>fw1>pub1>exp1>pub2>fw3","ranking_agrees":false,"same_final_policy":true,"pairs_compared":11,"pairs_differing":8,"max_abs_pair_delta":10},
+    {"case_id":"m129-disability-weights-qalys-coverage","concise_ranking":"fw2>fw3>exp2>exp1>pub1>fw1","detailed_ranking":"fw2>fw3>exp2>exp1>pub1>fw1","ranking_agrees":true,"same_final_policy":true,"pairs_compared":11,"pairs_differing":8,"max_abs_pair_delta":7},
+    {"case_id":"m094-high-risk-workforce-vaccination-mandate","concise_ranking":"exp1>pub2>fw2>fw1>exp2>pub1","detailed_ranking":"pub1>fw2>pub2>exp1>exp2>fw1","ranking_agrees":false,"same_final_policy":false,"pairs_compared":12,"pairs_differing":8,"max_abs_pair_delta":10},
+    {"case_id":"m054-secondary-findings-clinical-genomic-sequencing","concise_ranking":"exp1>fw2>pub1>pub2>fw1>fw3>exp2","detailed_ranking":"exp1>fw2>pub2>pub1>fw1>fw3>exp2","ranking_agrees":false,"same_final_policy":true,"pairs_compared":16,"pairs_differing":12,"max_abs_pair_delta":10},
+    {"case_id":"m031-medical-aid-in-dying-terminal-illness","concise_ranking":"fw3>exp3>pub1>fw1>pub2>exp1>exp2>fw2","detailed_ranking":"fw3>pub1>exp3>fw1>exp1>pub2>exp2>fw2","ranking_agrees":false,"same_final_policy":true,"pairs_compared":21,"pairs_differing":17,"max_abs_pair_delta":10},
+    {"case_id":"m139-secondary-use-health-records-consent","concise_ranking":"fw3>pub3>pub1>fw1>exp2>exp1>pub2>fw2","detailed_ranking":"fw3>pub3>pub1>fw1>exp2>exp1>fw2>pub2","ranking_agrees":false,"same_final_policy":true,"pairs_compared":21,"pairs_differing":14,"max_abs_pair_delta":14}
+  ],
+  "notes": "Pinned display subset of the SACRE developmental tranche manifest. Development evidence only: not validation, not a moral finding, and not a claim about any case."
+}
