@@ -1,8 +1,8 @@
 # Bioethics Bench Full Corpus — Self-Handoff
 
-**Last updated: 2026-08-29.** This is the durable onboarding record for a fresh thread, collaborator, or agent working on the Full Corpus. It replaces earlier completion-candidate narratives and branch-era instructions that are no longer current.
+**Last updated: 2026-08-30.** This is the durable onboarding record for a fresh thread, collaborator, or agent working on the Full Corpus. It replaces earlier rescue/completion narratives and branch-era instructions.
 
-For the wider program, first read the canonical central self-handoff in:
+For the wider DEWA program, first read:
 
 `xnuxi/sacre-prototype` → `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
 
@@ -17,170 +17,193 @@ Then read this repo's:
 - `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
 - `tasks/sacre-qccs-v1/task-contract.json`
 
-## 1. What the project is
+## 1. Project identity
 
-Bioethics Bench is a **source-grounded research infrastructure for computational bioethics** within the broader **Doing Ethics with AI (DEWA)** research program.
+Bioethics Bench is a **source-grounded research infrastructure for computational bioethics** within **Doing Ethics with AI (DEWA)**.
 
 The core DEWA sequence is:
 
 **P1 specifies → P2 builds → P3 computationally validates → P4 empirically/comparatively validates → P5+ deploys and studies use.**
 
-Bioethics Bench is not simply the test set for ReflectiveEquilibrium.AI. It was developed because systematic SACRE/REai investigation required stable, versioned, source-grounded normative objects, but its intended scientific identity is broader.
+Bioethics Bench is a parallel major research object/publication. SACRE/QCCS is its first mature task family, not the definition of the resource.
 
-Use a three-layer model:
+Use the three-layer model:
 
 ```text
-RESOURCE LAYER
+RESOURCE
 cases • decision questions • candidate positions • sources/provenance • stipulations • representations • versioning
    ↓
-TASK LAYER
-SACRE/QCCS first; future identification, explanation, disagreement, retrieval, framework, and other tasks
+TASK
+sacre-qccs-v1 first • future scientifically motivated computational-bioethics tasks
    ↓
-EVALUATION LAYER
-models • humans • ensembles • hybrids • future computational-bioethics systems
+EVALUATION
+models • humans • ensembles • hybrids • repetitions • perturbations • providers/configurations
 ```
-
-SACRE/QCCS is the first mature task family rather than the definition of the resource.
 
 ## 2. Current verified Full Corpus state
 
-Current executable Full Corpus:
+- **34 executable families**
+- **68 matched concise/detailed records**
+- **210 unique family-level candidates**
+- all 200 researched families have dispositions
+- current records remain `status: draft`
+- current records remain `reviewed_by_human: false`
 
-- **34 executable families**;
-- **68 matched concise/detailed records**;
-- **210 unique family-level candidates**;
-- all 200 researched families have dispositions;
-- current executable records remain `status: draft`;
-- `reviewed_by_human: false` on all current executable records.
-
-PR #10 has been merged. Do not resurrect the obsolete 106-family / 212-record completion-candidate story as current state; it was never the verified committed canonical corpus.
-
-The generated corpus/review surfaces, not old prose counts, govern current truth.
+Generated corpus/review state, not historical prose counts, governs current truth.
 
 ## 3. Canonical v1 method boundary
 
-Canonical SACRE v1 uses three represented source classes: Public, Expert, and Framework. A source pool can legitimately contain one candidate when the source field genuinely converges on one action-distinct position. Natural geometry is allowed; records are not forced into a regular 2×2×2 or 3×3×3 shape.
+Current SACRE v1 uses Public, Expert, and Framework source roles. Natural candidate geometry is permitted. A source pool may legitimately contain one candidate where the source field supports one action-distinct position.
 
-When candidate partner counts differ, the declared aggregation must avoid geometry-induced score magnitude bias; current asymmetric profiles use Mean. Complete required matrices are required before official ranking/provisional Final Policy.
+All unordered cross-source pairs are measured. Complete required matrices are necessary before official rankings/provisional Final Policy. When partner counts differ across candidates, Mean aggregation is required to remove geometry-induced score-magnitude bias.
 
-The generalized/partial-source architecture track remains a future method/research direction. Do not silently relax canonical v1 source semantics merely to increase executable n.
+Do not silently relax canonical v1 semantics merely to increase executable n.
 
-## 4. Policy basis and provenance
+## 4. Source grounding and review state
 
-Source pool and evidentiary policy basis are separate dimensions. Current policy-basis vocabulary includes `direct-policy-evidence`, `source-informed-policy-inference`, `framework-derived-policy`, and `synthetic-author-constructed-policy`.
+Source pool and evidentiary policy basis are separate dimensions. Current policy-basis vocabulary includes:
 
-The executable Full Corpus currently contains direct, inferred, and framework-derived candidates; it does not rely on undisclosed synthetic candidates. Candidate construction must preserve action-target alignment and make inferential bridges explicit.
+- `direct-policy-evidence`
+- `source-informed-policy-inference`
+- `framework-derived-policy`
+- `synthetic-author-constructed-policy`
 
-## 5. Current review state
+Structural validation is not source fidelity. Current source checks remain model-assisted rather than independent human review.
 
-Structural validation and source fidelity are distinct. Current model-assisted review has checked direct-policy-evidence candidates against sources and checked source-informed bridges for whether the inference holds. This remains model-assisted review, **not independent human review**.
+Whole-document omission review has examined five families by that method. **Twenty-nine families remain unexamined.** Do not infer a corpus-wide rate and do not describe unexamined families as cleared.
 
-A deliberate whole-document omission-review method has so far examined five families. **Twenty-nine families remain unexamined by that method.** Do not infer a corpus-wide finding rate and do not describe the remaining families as cleared.
-
-For live review work, use:
+For live review work use:
 
 1. `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
 2. generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
 3. `docs/full-corpus/review/research-tasks/README.md`
-4. verdict ingestion tooling described there
+4. the verdict-ingestion tooling described there
 
-The generated `RESEARCH_HANDOFF.md` carries unit fingerprints and is rewritten by the tooling. **Do not edit it manually.**
+Do **not** manually edit generated `RESEARCH_HANDOFF.md`.
 
-## 6. Human review is not a developmental execution gate
+## 5. Human review is not a developmental execution gate
 
-Independent human source-to-policy review remains important for release/quality. Under the current DEWA program decision, it does **not** block developmental or paper-facing SACRE execution.
+Independent human source-to-policy review remains important for release/quality. It does **not** block developmental or paper-facing computational execution under the current DEWA program decision.
 
-SACRE may execute a precisely pinned current snapshot with explicit provenance/evidence labels. Later source repairs may require reruns; rerunnability is an expected feature of the program.
+This does not authorize confirmatory P3 execution or P4 human fielding.
 
-This does not authorize confirmatory P3 or human P4 studies.
+## 6. Current downstream developmental evidence
 
-## 7. Current downstream execution evidence
+SACRE developmental Full Corpus evidence includes:
 
-SACRE has already produced developmental evidence using the Full Corpus lineage:
-
-- geometry-stratified tranche: **8 families / 16 concise+detailed records / 216 QCCS calls**;
+- **8 families / 16 records / 216 QCCS calls** in the geometry-stratified tranche;
 - selected repeat/stability calibration showing heterogeneous case-level behavior;
-- attempted corpus-wide pass: **68 records / 856 planned calls**, halted after 234 calls because provider credit was exhausted;
-- **20 records complete** and usable as single-execution developmental evidence;
+- attempted 68-record census, 856 calls planned, halted after 234;
+- **20 records complete** as single-execution developmental evidence;
 - **48 records incomplete** and therefore non-results.
 
-Do not write SACRE outputs into Bench records as though they were source/release validation. Model execution and corpus-source fidelity are different evidence questions.
+Do not write SACRE execution outputs into Bench records as though they validated source construction.
 
-## 8. Current paper relationships
-
-### P1
-Bioethics Bench can inform the specification paper through construction findings: source independence, action alignment, natural geometry, provenance, representational boundaries, and the distinction between structural validity and source fidelity. Do not turn P1 into the Bench methods paper.
+## 7. P2/P3/P4 relationships
 
 ### P2
-P2 has completed its v49 submission-composition stage. Current submission artifacts:
+
+P2 v49 main + Supplementary Information are complete for this compositional stage:
 
 - main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
-- Supplementary Information: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
-- preserved v48 maximal authorial master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
+- supplement: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
+- preserved v48 maximal master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
-Future Bench work should update P2 only when a new finding materially changes a factual or interpretive claim; otherwise the resource should mature in its own paper and release track.
+Future Bench work should alter P2 only if new evidence materially changes an existing factual or interpretive claim.
 
 ### P3
-Bench should provide separately frozen **resource snapshots**, **task specifications**, and **execution conditions** for computational validation. P3 owns reliability, robustness, model/provider, representation, perturbation, aggregation/ranking, QCS/QCCS, and RE-Iteration behavior.
+
+P3 should receive separately frozen:
+
+1. **resource snapshot**;
+2. **task specification**;
+3. **evaluation/execution condition**.
+
+P3 owns computational validation, not Bench construction or source validation.
 
 ### P4
-Bench cases can support matched human/model evaluation, but human recruitment, instructions, ethics/IRB, and fielding belong to P4. Resource content and task/instruction/UI conditions should be versioned separately where they differ.
 
-### Standalone Bioethics Bench paper
-Current Drive plan: **Bioethics Bench v3 — research publication plan — reader-led P1 style**  
+The same frozen resource objects can support matched human/model studies. Human recruitment, instructions, ethics/IRB, and fielding belong to P4.
+
+## 8. Standalone Bioethics Bench paper
+
+Current Drive plan:
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
-The paper owns resource construction/release methods, source grounding, task abstraction, evaluation architecture, baselines, versioning/governance, and extensibility.
+The standalone paper owns resource construction/release methods, provenance and policy-basis ontology, representation and natural geometry, resource/task/evaluation separation, the verified reference task, source-fidelity limits, governance/versioning, baselines, and extension logic.
 
-## 9. Generalization audit and task specification — complete for this stage
+## 9. Generalization audit + `sacre-qccs-v1` adapter/equivalence — COMPLETE
 
-The first-pass structural audit is recorded in:
+The first-pass generalization audit is recorded in:
 
 `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
 
-It classifies current fields into intrinsic resource fields, generic task/evaluation/governance fields, and SACRE-specific execution fields/semantics. Its central finding is that the reusable resource/provenance core is already substantial while the strongest SACRE coupling is localized to the fixed public/expert/framework pool object, `pub/exp/fw` candidate aliases, SACRE benchmark profiles/geometry/cross-source pairing, and `required_aggregation`.
-
-The first explicit task-layer artifact is now specified:
+The first explicit task contract is:
 
 - `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
 - `tasks/sacre-qccs-v1/task-contract.json`
 
-The contract preserves canonical v1 and makes explicit the source-role mapping, aliases, pair-generation rule, QCCS v1.0.0/`conv+` measurement identity, complete-matrix rule, aggregation compatibility, ranking outputs, and separate resource/task/evaluation provenance.
+The adapter/verifier are:
 
-Its status is **specified, not yet equivalence-verified**. The non-breaking next sequence is therefore:
+- `scripts/task-adapters/sacre-qccs-v1.mjs`
+- `scripts/verify-sacre-qccs-v1-adapter.mjs`
 
-- keep canonical v1 records and hashes unchanged;
-- build a **read-only adapter** implementing the specified `sacre-qccs-v1` projection;
-- verify semantic equivalence against current SACRE vendoring for **all 68 records**;
-- do not replace/refactor the current vendor path or generalized schema until equivalence passes;
-- specify a scientifically motivated additional task only when mature enough.
+The adapter is **equivalence verified across all 34 families / 68 records**.
 
-This is an architectural/task-specification result, **not** empirical proof of method-neutrality across multiple mature task families.
+Against SACRE's older vendor payload, verification found:
 
-## 10. Cross-repo change rule
+- **0 execution/task-semantic differences**;
+- **36/68 stale Bench `content_hash` values**;
+- no scenario, candidate ID/text/order, representation, version, profile, geometry, pair-generation, partner-count, or aggregation difference.
 
-Before telling SACRE to re-vendor, classify the change.
+This was classified as **provenance-only drift**.
+
+SACRE was then re-vendored/re-pinned to merged Bench `main` commit:
+
+`077b36ff1eb9662e93549b1f4261691960cfa605`
+
+Current SACRE Full Corpus payload SHA-256:
+
+`7bfe149a40494354f22ef4f137ec838bae5ad1e3a887cfe44d6d09f9bbf0399d`
+
+After re-pin:
+
+- adapter projection and SACRE vendor payload are byte-for-byte identical;
+- SACRE Full Corpus regression tests pass;
+- SACRE equivalence/provenance work is merged at `4ed4b24ab99d7427195a21393474c02700274ee6`.
+
+**Do not restart the task-specification or adapter-equivalence work.** It is complete for this stage.
+
+The result establishes architectural/reproducibility equivalence. It does **not** establish QCCS validity, moral truth, independent human source fidelity, or method-neutrality across multiple mature task families.
+
+## 10. Current next dependencies
+
+1. Continue source/review/release maturation.
+2. Define the future **generic candidate/source-role resource model on paper** before changing canonical schema.
+3. Mature the standalone Bioethics Bench paper using the verified resource/task boundary.
+4. Refine P3 protocol around separately frozen resource/task/evaluation objects.
+5. Specify an additional non-SACRE task only when a genuine scientific question warrants it.
+6. Preserve canonical v1 as a compatibility lineage until a future versioned architecture change is justified.
+
+## 11. Cross-repository change rule
 
 ### Execution-relevant
-Candidate ids/texts, scenario/task meaning, profile, geometry, required aggregation, executable-set changes, or execution-relevant schema.
 
-**Action:** notify SACRE, re-vendor/re-pin/reverify, and rerun affected paper-facing results if the executed object changed.
+Candidate IDs/texts, scenario/task meaning, profile/geometry, required aggregation, executable-set changes, or execution-relevant schema.
+
+**Action:** notify SACRE, re-vendor/re-pin/reverify, and rerun affected paper-facing results when the executed object changed.
 
 ### Provenance-only
-Citations, provenance summaries, non-execution basis metadata, or resulting content-hash drift with unchanged executable projection.
 
-**Action:** propagate truthfully; no automatic semantic rerun.
+Citations, provenance summaries, source-review metadata, or resulting content-hash drift with unchanged executable projection.
 
-### Documentation/specification-only
-Review docs, dossiers, coordination prose, writebacks, the first-pass generalization audit, and the current task contracts while they merely describe the existing projection.
+**Action:** refresh provenance/pins as needed; **no automatic semantic model rerun**. The 36-record 2026-08-30 refresh is the reference example.
 
-**Action:** no SACRE product action unless adapter/equivalence work reveals an execution defect.
+### Documentation-only
 
-## 11. Manuscript writeback
+Review docs, coordination prose, audit/writeback material with no executable effect.
 
-Use `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` for current drafting priorities and `docs/papers/MANUSCRIPT_WRITEBACK.md` for the chronological record.
-
-Every new manuscript-facing finding should include exact evidence, evidence class, limits, target paper, and cross-repo dependency.
+**Action:** no product action unless an execution defect is exposed.
 
 ## 12. Handoff format
 
@@ -194,11 +217,11 @@ End with **COMPLETE FOR THIS STAGE** or **BLOCKED** with one concrete blocking c
 
 - The corpus is independently human-reviewed.
 - Structural validation establishes source fidelity.
-- Findings in the whole-document-reviewed subset establish a corpus-wide rate.
-- SACRE execution validates Bench source construction.
-- One-run developmental results establish reliability or model ranking.
-- Bioethics Bench has already demonstrated method-neutrality across multiple computational-bioethics methods.
-- The new task contract is already an equivalence-verified replacement adapter.
+- The whole-document-reviewed subset establishes a corpus-wide finding rate.
+- Task equivalence establishes QCCS reliability, validity, or moral correctness.
+- Developmental SACRE execution is confirmatory P3 validation.
+- One-run developmental results establish model ranking.
+- Bioethics Bench has demonstrated method-neutrality across multiple mature computational-bioethics tasks.
 - Human-model correspondence has been established.
 
-Fetch live generated state before reusing any number from this handoff.
+Fetch live generated state before reusing any count or hash from this handoff.
