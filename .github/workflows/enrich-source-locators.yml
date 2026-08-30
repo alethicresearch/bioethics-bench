@@ -31,7 +31,7 @@ jobs:
         run: node scripts/enrich-source-locators.mjs --write
       - name: Refresh Full Corpus manifest
         run: node scripts/build-full-corpus-manifest.mjs --write
-      - name: Validate corpus except cross-repo pin
+      - name: Validate corpus without regenerating review-coordination artifacts
         run: |
           node scripts/build-featured-v1.mjs --check
           node scripts/check-dossier-sync.mjs
@@ -40,16 +40,11 @@ jobs:
           node scripts/build-full-corpus-manifest.mjs
           node scripts/fidelity-audit.mjs
           node scripts/divergence-worksheet.mjs --check
-          node scripts/bridge-worksheet.mjs
-          node scripts/research-tasks.mjs
-          node scripts/research-handoff.mjs
-          node scripts/change-log.mjs
-          node scripts/ingest-research-verdicts.mjs
           node scripts/verify-citations.mjs --offline
           node scripts/validate.mjs
       - name: Commit provenance-only enrichment
         run: |
-          if git diff --quiet; then
+          if git diff --quiet -- data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md; then
             echo 'No locator changes required.'
             exit 0
           fi
