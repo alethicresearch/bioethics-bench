@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/enrich-source-locators.mjs'
+      - 'scripts/apply-source-locator-overrides.mjs'
+      - 'data/source-locator-overrides.json'
       - '.github/workflows/enrich-source-locators.yml'
 
 permissions:
@@ -21,7 +23,11 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - name: Enrich canonical locators
+      - name: Enrich mechanically recoverable canonical locators
+        run: node scripts/enrich-source-locators.mjs --write
+      - name: Apply source-by-source verified locator overrides
+        run: node scripts/apply-source-locator-overrides.mjs --write
+      - name: Refresh unresolved locator report after overrides
         run: node scripts/enrich-source-locators.mjs --write
       - name: Refresh Full Corpus manifest
         run: node scripts/build-full-corpus-manifest.mjs --write
@@ -50,5 +56,5 @@ jobs:
           git config user.name 'xnuxi'
           git config user.email 'research@alethic.ai'
           git add data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md
-          git commit -m 'Enrich Full Corpus canonical source locators'
+          git commit -m 'Apply verified Full Corpus source locators'
           git push
