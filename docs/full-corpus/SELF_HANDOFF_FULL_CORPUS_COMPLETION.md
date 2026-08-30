@@ -14,6 +14,8 @@ Then read this repo's:
 - `docs/BRANCH_COORDINATION.md`
 - `docs/COMPLETION.md`
 - `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
+- `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+- `tasks/sacre-qccs-v1/task-contract.json`
 
 ## 1. What the project is
 
@@ -57,13 +59,7 @@ The generated corpus/review surfaces, not old prose counts, govern current truth
 
 ## 3. Canonical v1 method boundary
 
-Canonical SACRE v1 uses three represented source classes:
-
-- Public
-- Expert
-- Framework
-
-A source pool can legitimately contain one candidate when the source field genuinely converges on one action-distinct position. Natural geometry is allowed; records are not forced into a regular 2×2×2 or 3×3×3 shape.
+Canonical SACRE v1 uses three represented source classes: Public, Expert, and Framework. A source pool can legitimately contain one candidate when the source field genuinely converges on one action-distinct position. Natural geometry is allowed; records are not forced into a regular 2×2×2 or 3×3×3 shape.
 
 When candidate partner counts differ, the declared aggregation must avoid geometry-induced score magnitude bias; current asymmetric profiles use Mean. Complete required matrices are required before official ranking/provisional Final Policy.
 
@@ -71,22 +67,13 @@ The generalized/partial-source architecture track remains a future method/resear
 
 ## 4. Policy basis and provenance
 
-Source pool and evidentiary policy basis are separate dimensions. Current policy-basis vocabulary includes:
+Source pool and evidentiary policy basis are separate dimensions. Current policy-basis vocabulary includes `direct-policy-evidence`, `source-informed-policy-inference`, `framework-derived-policy`, and `synthetic-author-constructed-policy`.
 
-- `direct-policy-evidence`
-- `source-informed-policy-inference`
-- `framework-derived-policy`
-- `synthetic-author-constructed-policy`
-
-The executable Full Corpus currently contains direct, inferred, and framework-derived candidates; it does not rely on undisclosed synthetic candidates.
-
-Candidate construction must preserve action-target alignment and make inferential bridges explicit. A preference, behavior, or uptake measure is not automatically a policy recommendation unless the bridge to the represented action is justified.
+The executable Full Corpus currently contains direct, inferred, and framework-derived candidates; it does not rely on undisclosed synthetic candidates. Candidate construction must preserve action-target alignment and make inferential bridges explicit.
 
 ## 5. Current review state
 
-Structural validation and source fidelity are distinct.
-
-Current model-assisted review has checked direct-policy-evidence candidates against sources and checked source-informed bridges for whether the inference holds. This remains model-assisted review, **not independent human review**.
+Structural validation and source fidelity are distinct. Current model-assisted review has checked direct-policy-evidence candidates against sources and checked source-informed bridges for whether the inference holds. This remains model-assisted review, **not independent human review**.
 
 A deliberate whole-document omission-review method has so far examined five families. **Twenty-nine families remain unexamined by that method.** Do not infer a corpus-wide finding rate and do not describe the remaining families as cleared.
 
@@ -122,59 +109,53 @@ Do not write SACRE outputs into Bench records as though they were source/release
 ## 8. Current paper relationships
 
 ### P1
-
 Bioethics Bench can inform the specification paper through construction findings: source independence, action alignment, natural geometry, provenance, representational boundaries, and the distinction between structural validity and source fidelity. Do not turn P1 into the Bench methods paper.
 
 ### P2
-
-P2 has completed its v49 submission-composition stage. The current submission artifacts are:
+P2 has completed its v49 submission-composition stage. Current submission artifacts:
 
 - main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
 - Supplementary Information: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 - preserved v48 maximal authorial master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
-Bench enters P2 because systematic investigation of SACRE/REai required stable source-grounded research objects. That role is now composed and QA'd in v49. Future Bench work should update P2 only when a new finding materially changes a factual or interpretive claim; otherwise the resource should mature in its own paper and release track.
+Future Bench work should update P2 only when a new finding materially changes a factual or interpretive claim; otherwise the resource should mature in its own paper and release track.
 
 ### P3
-
-Bench can provide frozen/versioned cases and task objects for computational validation. Following the completed generalization audit, P3 should distinguish the **resource snapshot** from the **SACRE task specification** rather than treating a Bench record as an indivisible experimental condition. P3 owns reliability, robustness, model/provider, representation, perturbation, aggregation/ranking, QCS/QCCS, and RE-Iteration behavior.
+Bench should provide separately frozen **resource snapshots**, **task specifications**, and **execution conditions** for computational validation. P3 owns reliability, robustness, model/provider, representation, perturbation, aggregation/ranking, QCS/QCCS, and RE-Iteration behavior.
 
 ### P4
-
 Bench cases can support matched human/model evaluation, but human recruitment, instructions, ethics/IRB, and fielding belong to P4. Resource content and task/instruction/UI conditions should be versioned separately where they differ.
 
 ### Standalone Bioethics Bench paper
-
-Current Drive plan:
-
-**Bioethics Bench v3 — research publication plan — reader-led P1 style**  
+Current Drive plan: **Bioethics Bench v3 — research publication plan — reader-led P1 style**  
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
 The paper owns resource construction/release methods, source grounding, task abstraction, evaluation architecture, baselines, versioning/governance, and extensibility.
 
-## 9. Generalization audit — first pass complete
+## 9. Generalization audit and task specification — complete for this stage
 
-The structural audit is recorded in:
+The first-pass structural audit is recorded in:
 
 `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
 
-It classifies current fields into:
+It classifies current fields into intrinsic resource fields, generic task/evaluation/governance fields, and SACRE-specific execution fields/semantics. Its central finding is that the reusable resource/provenance core is already substantial while the strongest SACRE coupling is localized to the fixed public/expert/framework pool object, `pub/exp/fw` candidate aliases, SACRE benchmark profiles/geometry/cross-source pairing, and `required_aggregation`.
 
-1. **intrinsic computational-bioethics resource fields**;
-2. **generic task/evaluation/governance fields**;
-3. **SACRE-specific execution fields and semantics**.
+The first explicit task-layer artifact is now specified:
 
-The central finding is that the reusable resource/provenance core is already substantial. The strongest SACRE coupling is localized to the fixed public/expert/framework pool object, `pub/exp/fw` candidate aliases, SACRE benchmark profiles/geometry/cross-source pairing, and `required_aggregation`.
+- `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+- `tasks/sacre-qccs-v1/task-contract.json`
 
-Current SACRE vendoring already functions as an implicit projection from the richer Bench record into an executable SACRE object. The non-breaking next sequence is therefore:
+The contract preserves canonical v1 and makes explicit the source-role mapping, aliases, pair-generation rule, QCCS v1.0.0/`conv+` measurement identity, complete-matrix rule, aggregation compatibility, ranking outputs, and separate resource/task/evaluation provenance.
+
+Its status is **specified, not yet equivalence-verified**. The non-breaking next sequence is therefore:
 
 - keep canonical v1 records and hashes unchanged;
-- specify **`sacre-qccs-v1`** as an explicit task contract;
-- build a read-only adapter that reproduces the current executable projection;
-- add equivalence tests before any generalized schema can replace v1;
+- build a **read-only adapter** implementing the specified `sacre-qccs-v1` projection;
+- verify semantic equivalence against current SACRE vendoring for **all 68 records**;
+- do not replace/refactor the current vendor path or generalized schema until equivalence passes;
 - specify a scientifically motivated additional task only when mature enough.
 
-This is an architectural separation result, **not** empirical proof of method-neutrality across multiple mature task families.
+This is an architectural/task-specification result, **not** empirical proof of method-neutrality across multiple mature task families.
 
 ## 10. Cross-repo change rule
 
@@ -190,17 +171,14 @@ Citations, provenance summaries, non-execution basis metadata, or resulting cont
 
 **Action:** propagate truthfully; no automatic semantic rerun.
 
-### Documentation-only
-Review docs, dossiers, coordination prose, writebacks, and the first-pass generalization audit.
+### Documentation/specification-only
+Review docs, dossiers, coordination prose, writebacks, the first-pass generalization audit, and the current task contracts while they merely describe the existing projection.
 
-**Action:** no SACRE product action unless the finding reveals an execution defect.
+**Action:** no SACRE product action unless adapter/equivalence work reveals an execution defect.
 
 ## 11. Manuscript writeback
 
-Use:
-
-- `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` for current drafting priorities;
-- `docs/papers/MANUSCRIPT_WRITEBACK.md` for the chronological record.
+Use `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` for current drafting priorities and `docs/papers/MANUSCRIPT_WRITEBACK.md` for the chronological record.
 
 Every new manuscript-facing finding should include exact evidence, evidence class, limits, target paper, and cross-repo dependency.
 
@@ -220,6 +198,7 @@ End with **COMPLETE FOR THIS STAGE** or **BLOCKED** with one concrete blocking c
 - SACRE execution validates Bench source construction.
 - One-run developmental results establish reliability or model ranking.
 - Bioethics Bench has already demonstrated method-neutrality across multiple computational-bioethics methods.
+- The new task contract is already an equivalence-verified replacement adapter.
 - Human-model correspondence has been established.
 
 Fetch live generated state before reusing any number from this handoff.
