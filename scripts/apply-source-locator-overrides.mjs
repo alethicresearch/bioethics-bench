@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+/**
+ * Apply source-by-source verified canonical locators to exact citation strings across
+ * the Full Corpus. This is provenance-only. Do not place search-result URLs here.
+ */
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { canonicalContentHash } from './hash-case.mjs';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const dir = join(root, 'data', 'benchmark');
+const mapPath = join(root, 'data', 'source-locator-overrides.json');
+const write = process.argv.includes('--write');
+const map = JSON.parse(readFileSync(mapPath, 'utf8')).citations || {};
+
+function refsIn(record) {
+  const refs = [];
+  const add = (arr) => (arr || []).forEach((ref) => refs.push(ref));
+  add(record.scenario_provenance?.sources);
+  for (const pool of ['public','expert','framework']) {
+    for (const c of record.candidate_pools?.[pool] || []) add(c.provenance?.sources);
+  }
+  add(record.references);
+  return refs;
+}
+
+let recordsChanged = 0, refsChanged = 0;
+for (const file of readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
+  const path = join(dir, file);
+  const record = JSON.parse(readFileSync(path, 'utf8'));
+  let changed = false;
+  for (const ref of refsIn(record)) {
+    const ov = map[ref.citation];
+    if (!ov) continue;
+    let local = false;
+    if (ov.doi && !ref.doi) { ref.doi = ov.doi; local = true; }
+    if (ov.url && !ref.url) { ref.url = ov.url; local = true; }
+    if (local) { refsChanged++; changed = true; }
+  }
+  if (changed) {
+    record.content_hash = canonicalContentHash(record);
+    recordsChanged++;
+    if (write) writeFileSync(path, JSON.stringify(record, null, 2) + '\n');
+  }
+}
+
+if (!write && (recordsChanged || refsChanged)) {
+  console.error(`✗ ${refsChanged} source objects in ${recordsChanged} records need verified locator overrides applied. Run --write.`);
+  process.exit(1);
+}
+console.log(`✓ locator overrides ${write ? 'applied' : 'current'}: ${refsChanged} source objects across ${recordsChanged} records changed.`);
