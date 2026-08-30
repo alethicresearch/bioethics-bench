@@ -34,8 +34,8 @@ The repository-recovery problem is over. P2 has also completed its v49 submissio
 - prepare stable/versioned Bench objects for later P3/P4 protocols without silently changing canonical v1 semantics.
 
 Current P2 submission artifacts are:
-- main: https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
-- supplement: https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
+- supplement: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 
 Independent human source-to-policy review remains a quality/release layer. Under the current DEWA program decision it is **not a gate on developmental or paper-facing SACRE execution**.
 
