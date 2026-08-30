@@ -67,9 +67,9 @@ Model-assisted source review is not independent human review. Whole-document omi
 
 ## Current manuscript/research dependency
 
-The wider program's immediate substantive task is **P2 maximal integrated master**. Bench support should come from current `main`/generated state and existing manuscript-facing findings rather than reopening branch architecture.
+P2 v49 main + Supplementary Information are complete for this compositional stage and now enter author/coauthor submission-facing review. Bench should not reopen P2 reconstruction; it should supply only targeted factual corrections if new Bench evidence materially changes an existing P2 claim.
 
-In parallel, the Bench lane should run the **generalization audit** needed for the standalone resource paper: distinguish intrinsic resource fields, generic task/evaluation fields, and SACRE-specific execution fields.
+The Bench lane's immediate structural priority is the **generalization audit** needed for the standalone resource paper: distinguish intrinsic resource fields, generic task/evaluation fields, and SACRE-specific execution fields. Source/review/release work continues in parallel. Later P3/P4 support should use explicit frozen/versioned Bench objects without silently changing canonical v1 semantics.
 
 ## Merge/release standard
 
