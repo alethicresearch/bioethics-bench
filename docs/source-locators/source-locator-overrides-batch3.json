@@ -1,0 +1,10 @@
+{
+  "_comment": "Final verified locator for the original 1980 edited-volume source. The chapter itself has no original DOI; use the WorldCat bibliographic record for the cited Rowman & Littlefield edition rather than a DOI for a later reprint.",
+  "citations": {
+    "Feinberg J. The Child's Right to an Open Future. In: Aiken W, LaFollette H, eds. Whose Child? Children's Rights, Parental Authority, and State Power. Rowman & Littlefield; 1980.": {
+      "url": "https://search.worldcat.org/title/whose-child-childrens-rights-parental-authority-and-state-power/oclc/5894263",
+      "verified_by": "worldcat-original-edition-record",
+      "checked_at": "2026-08-30"
+    }
+  }
+}
