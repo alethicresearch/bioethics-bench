@@ -3,82 +3,105 @@
 **Status:** active research build  
 **Branch:** `research/full-corpus-v1`  
 **Base:** released Featured v1 on `main`  
-**Scope:** convert the 200-case master inventory into a completed, source-grounded Bioethics Bench resource while preserving the released 20-family Featured collection as the curated executable front door.
+**Scope:** convert the 200-case master inventory into a completed, source-grounded Bioethics Bench resource while preserving the released 20-case Featured collection as the curated public front door.
 
 ## 1. Research object
 
-Bioethics Bench v1 will contain **200 bounded practical-ethics case families**, each represented in two controlled forms:
+Bioethics Bench v1 will contain **200 bounded practical-ethics cases / Scenarios**, each represented in two controlled forms:
 
 - **concise** — a compact representation for browsing, teaching and low-friction application use;
-- **detailed** — a richer representation of the same decision problem, adding decision-relevant context without changing the underlying question.
+- **detailed** — a richer representation of the same normative Scenario, adding relevant context without changing the underlying represented Policy field.
 
-The full resource therefore targets **200 case families / 400 authored scenario representations**.
+The full resource therefore targets **200 cases / 400 authored Scenario representations**.
 
-The existing 20-family Featured collection remains a released subset, not a separate ontology. Featured cases are the first fully reviewed `2 × 2 × 2` executable slice of the larger resource.
+The existing 20-case Featured collection remains a released subset, not a separate ontology. Featured cases are the first fully reviewed public executable slice of the larger resource.
 
-## 2. What every case family must contain
+### Governing SACRE ontology
 
-Every case family in the completed resource must have a scholarly case file with:
+The resource must remain aligned with the SACRE specification in Part I.
 
-1. stable case-family identifier and title;
+SACRE does not formally take a separate `decision` object as input. Its represented normative material begins with:
+
+1. a **Scenario** `S`;
+2. source-tagged **Policy candidates** from Public Preferences / affected-community evidence, Expert Judgments / professional evidence, and Ethical Frameworks.
+
+SACRE then measures cross-source normative convergence, aggregates the completed relation field, identifies a provisional Final Policy, and may revise selected positions through RE-Iteration.
+
+A `decision_question` may remain useful editorial metadata because it can make a Scenario intelligible and bounded. An explicit decision-maker may likewise be useful contextual metadata. Neither should be treated as a formal SACRE primitive or used to pre-author the candidate taxonomy.
+
+The construction goal is therefore **Scenario-first, source-grounded recovery of the natural Policy positions**, not exhaustive completion of an editor-defined menu of decision branches.
+
+## 2. What every case must contain
+
+Every case in the completed resource must have a scholarly case file with:
+
+1. stable case identifier and title;
 2. domain, subdomain and tags;
-3. explicit decision-maker;
-4. one bounded decision question;
-5. concise scenario;
-6. detailed scenario;
+3. concise Scenario;
+4. detailed Scenario;
+5. an optional practical framing question where it helps a reader understand the Scenario;
+6. relevant actor / institutional context where it matters;
 7. decision-critical factual assumptions;
 8. explicit uncertainties;
 9. jurisdiction/time treatment where relevant;
 10. explicit benchmark stipulations where needed to prevent hidden factual completion by the scorer;
-11. source-grounded map of serious policy/position families;
+11. a source-grounded map of substantively distinct Policy positions naturally supported by the evidence;
 12. public or affected-community evidence where it genuinely exists;
-13. professional/expert recommendations;
-14. normative/framework positions and the reasoning bridge from principle to action;
+13. professional/expert recommendations or judgments;
+14. normative/framework positions and the reasoning bridge from principle to Policy;
 15. references and provenance;
 16. construction and representation risks;
-17. an executable-eligibility determination;
-18. suggested uses such as teaching, SACRE, matched human QCCS, robustness, RE-Iteration or perturbation.
+17. a Scenario / Policy-representation audit;
+18. an executable-eligibility determination;
+19. a demonstration-richness determination where relevant;
+20. suggested uses such as teaching, SACRE, matched human QCCS, robustness, RE-Iteration or perturbation.
 
 The case file is a research object in its own right even when the case does not qualify for the executable subset.
 
-## 3. Controlled paired representations
+## 3. Controlled concise and detailed representations
 
-Concise and detailed representations are two authored representations of **one underlying decision**.
+Concise and detailed forms are two authored representations of **one underlying normative Scenario**.
 
 They must share:
 
-- case-family identity;
-- decision-maker;
-- decision question;
+- case identity;
+- the same practical normative problem;
 - decision-critical factual state;
 - benchmark stipulations;
-- substantive position map.
+- substantive source-grounded Policy field.
 
-Detailed may unpack context, uncertainty, stakeholder structure and institutional background. It must not introduce a load-bearing fact absent from concise if the same executable candidate set is intended to apply to both.
+A practical framing question may be shared when useful, but it is metadata rather than the object that defines the candidate set.
 
-Where a case becomes executable, candidate policies should initially be held constant across concise and detailed representations so representation sensitivity is not confounded with candidate wording.
+Detailed may unpack context, uncertainty, stakeholder structure and institutional background. It must not introduce a load-bearing fact absent from concise if the same executable candidate field is intended to apply to both.
+
+Where a case becomes executable, Policy candidates should initially be held constant across concise and detailed representations so representation sensitivity is not confounded with candidate wording.
 
 ## 4. Evidence-qualified executable status
 
-The full corpus must **not** manufacture evidence to force all 200 cases into one executable profile.
+The full corpus must **not** manufacture evidence or normative disagreement to force all 200 cases into one executable profile.
 
-A family may be designated executable only when the evidence supports a defensible set of policy candidates satisfying the case-construction standard.
+A case may be designated executable only when the evidence supports a defensible represented Policy field satisfying the case-construction standard.
 
-For the default `2 × 2 × 2` profile, that means:
+Under the current SACRE specification, that means:
 
-- two substantively distinct public- or affected-public-derived policy candidates;
-- two substantively distinct expert/professional policy candidates;
-- two actionable framework-derived candidates;
-- all six answering the same decision question at comparable policy granularity;
-- all twelve cross-source QCCS pairs being meaningful comparisons.
+- at least one defensible Public / affected-community Policy candidate;
+- at least one defensible Expert / professional Policy candidate;
+- at least one defensible Framework-derived Policy candidate;
+- candidate counts following the evidence rather than a preferred visual geometry;
+- candidates preserving substantively distinct source-supported normative positions rather than near-paraphrases or merged synthetic compromises;
+- cross-source QCCS pairs representing meaningful comparisons at a sufficiently comparable level of abstraction;
+- any asymmetric candidate geometry handled explicitly by the SACRE aggregation rule rather than edited away at the resource level.
 
-If a source class is genuinely missing or too weak, record that as an **evidence gap**. Do not write an editorial intuition and label it public preference.
+A `2 × 2 × 2` profile may still be selected for a controlled study where the evidence naturally supports it. It is not the substantive definition of an executable case.
+
+If a source class is genuinely missing or too weak, record that as an **evidence gap**. Do not write an editorial intuition and label it public preference, expert judgment, or framework evidence.
 
 Accordingly the public resource has nested levels:
 
-1. **Full Corpus** — 200 complete scholarly case families / 400 representations.
-2. **Executable Collection** — every family that passes executable evidence and representation gates.
-3. **Featured Collection** — the released 20-family curated executable subset designed for demonstration, controlled execution and paper use.
+1. **Full Corpus** — 200 complete scholarly cases / 400 representations.
+2. **SACRE-suitable / Executable Collection** — every case that passes evidence, Scenario, and Policy-representation gates under a declared executable profile.
+3. **Demonstration-rich Collection** — cases whose naturally supported Policy fields make the method especially informative to inspect or revise.
+4. **Featured Collection** — the curated public front door, which may draw preferentially from demonstration-rich cases but remains a release/versioning designation rather than an ontology.
 
 Executable status is an evidence/construction property, not a judgment of philosophical importance.
 
@@ -96,13 +119,15 @@ Research should use multiple discovery streams rather than one canon:
 For each case distinguish:
 
 - reported fact;
-- professional recommendation;
+- professional recommendation or judgment;
 - empirical public/affected-community position;
 - advocacy or stakeholder position;
-- framework-derived recommendation;
+- framework-derived Policy position;
 - Bench editorial stipulation.
 
 A source may support more than one layer, but the provenance record must state what it actually supports.
+
+Source search must not stop once an editorially prewritten `decision_question` appears to have two answers. Research should instead ask what substantively distinct normative positions the relevant source domain actually contains.
 
 ## 6. Animal ethics and One Health
 
@@ -118,9 +143,9 @@ Do not add an artificial fourth source pool merely for symmetry. Reopen the sour
 
 Each inventory topic moves through the following gates:
 
-**inventory → source packet → deep case file → paired representations → editorial audit → executable-eligibility audit → executable record(s) where supported → release**
+**inventory → source packet → deep case file → concise/detailed Scenario representations → Scenario / Policy-representation audit → editorial/source audit → executable-eligibility audit → executable record(s) where supported → demonstration-richness classification → release**
 
-The workflow is deliberately source-first. Do not mass-generate scenarios or candidate policies directly from the inventory descriptions.
+The workflow is deliberately source-first and Scenario-first. Do not mass-generate Scenarios or Policy candidates directly from inventory descriptions, and do not use an editorial `decision_question` to dictate what candidate positions the source search is expected to find.
 
 ### Gate 1 — source packet
 
@@ -130,39 +155,89 @@ Minimum expectation:
 - serious normative source(s);
 - empirical public/affected-community evidence where available;
 - relevant casebook or historical source where useful;
-- current empirical facts needed to make the decision interpretable.
+- current empirical facts needed to make the Scenario interpretable.
 
 ### Gate 2 — deep case file
 
 The case file should explain:
 
-- why this is one decision rather than a topic;
+- what normative Scenario is being represented and why it is bounded enough to compare;
 - which facts actually change the normative problem;
-- serious position families;
+- substantively distinct source-supported Policy positions;
 - source-class evidence and gaps;
 - likely benchmark stipulations;
-- risks of triviality, hidden factual dependence, source duplication or rhetorical imbalance.
+- risks of triviality, hidden factual dependence, source duplication, position merging, rhetorical imbalance, or decision-question overfitting.
 
-### Gate 3 — paired representations
+A practical framing question may be included for clarity but should be derived after understanding the Scenario and source positions, not used as the generator of those positions.
+
+### Gate 3 — controlled representations
 
 Draft concise and detailed forms under the controlled-representation rule.
 
-### Gate 4 — executable eligibility
+### Gate 4 — Scenario / Policy-representation audit
 
-Classify each family:
+Apply `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`.
 
-- `executable-2x2x2`;
-- `executable-other-profile`;
+The audit asks whether:
+
+- the Scenario contains enough context for meaningful comparison without stipulating away the normative problem;
+- the source search recovered the natural number of substantively distinct positions in each source domain;
+- candidates were merged, duplicated, overcompressed, or created to fill a slot;
+- the framing question has narrowed the candidate field artificially;
+- concise and detailed forms preserve the same normative object;
+- genuine source convergence is preserved rather than artificially diversified.
+
+### Gate 5 — executable eligibility
+
+Classify each case:
+
+- `executable-natural-geometry`;
+- `executable-study-profile` where a declared study subset naturally satisfies a specified geometry;
 - `research-complete-not-executable`;
 - `needs-additional-evidence`.
 
 The classification must include a reason.
 
-### Gate 5 — release review
+### Gate 6 — demonstration richness
+
+Separately classify whether the case is especially suitable for public demonstration, teaching, or RE-Iteration because its naturally supported Policy field yields an informative coherence structure.
+
+A case can be executable without being demonstration-rich, and research-complete without being executable.
+
+### Gate 7 — release review
 
 No new executable record becomes released merely because it validates as JSON. Apply the existing provenance, distinctness, granularity, rights, hashing, substantive-digest and review rules.
 
-## 8. Batching
+## 8. Audit sequence: Featured calibration, then the whole Bench
+
+The Scenario / Policy-representation audit is a **Bench-wide completion requirement**, not a one-off check on Featured cases.
+
+Proceed in two stages:
+
+### Stage A — Featured calibration
+
+Audit all 20 currently released Featured cases first.
+
+Purpose:
+
+- calibrate what counts as adequate Scenario specification;
+- identify recurring source-to-Policy construction failures;
+- distinguish natural convergence from editorial compression;
+- identify which released cases remain strong demonstrations;
+- establish concrete examples of acceptable asymmetry and natural candidate geometry;
+- test the audit rubric against cases the research team already understands well.
+
+Do not silently rewrite released v1 records. Any substantive correction becomes a new explicit version with change history.
+
+### Stage B — Full Bench audit
+
+Once the calibration standard is stable, apply the same audit systematically to **all 200 planned cases before final corpus freeze**.
+
+The audit should occur during case construction and source/release review rather than as a cosmetic pass after all 200 are already frozen. Existing developmental records must be reopened where necessary.
+
+No case should enter the final executable collection solely because it already has valid JSON, resolved citations, or a previously assigned geometry.
+
+## 9. Batching
 
 The 200-case build should proceed in five research batches while preserving the master inventory IDs as editorial handles:
 
@@ -174,73 +249,81 @@ The 200-case build should proceed in five research batches while preserving the 
 
 Work may be reordered within a batch when sourceability or overlap makes a cluster more efficient, but no domain should be deferred simply because it is harder.
 
-## 9. Tracking fields
+## 10. Tracking fields
 
 `docs/FULL_CORPUS_PROGRESS.md` is the operational ledger. Each inventory case should ultimately carry:
 
 - inventory ID;
-- case-family ID;
+- case ID;
 - title;
 - primary domain;
 - source packet status;
-- case-file status;
+- deep case-file status;
 - concise status;
 - detailed status;
 - public evidence status;
 - expert evidence status;
 - framework status;
+- Scenario / Policy-representation audit status;
+- natural candidate geometry;
 - executable eligibility;
-- review status;
+- demonstration-richness classification;
+- release-review status;
 - Featured crosswalk if applicable;
 - notes/blocker.
 
 The progress ledger is editorial state, not benchmark identity.
 
-## 10. Relationship to Featured v1
+## 11. Relationship to Featured v1
 
 Featured v1 is closed and remains released on `main`.
 
-The full-corpus branch must not silently rewrite those 20 released research objects. For a Featured case:
+The full-corpus work must not silently rewrite those 20 released research objects. For a Featured case:
 
-- the full case file may be expanded;
+- the full scholarly case file may be expanded;
 - the master-corpus taxonomy may add metadata around it;
-- the released executable record remains unchanged unless a genuine defect requires a new explicit version.
+- the new audit may classify it differently for future demonstration use;
+- the released executable record remains unchanged unless a genuine representational or factual defect requires a new explicit version.
 
-A crosswalk should connect Featured IDs to their underlying master-inventory cases so the full corpus does not duplicate them as new independent decisions.
+A crosswalk should connect Featured IDs to their underlying master-inventory cases so the full corpus does not duplicate them as new independent objects.
 
-## 11. Resource-paper deliverable
+## 12. Resource-paper deliverable
 
 The completed corpus is intended to support a standalone resource/methods paper in addition to its use in the normative-computation papers.
 
 The paper-facing description should be able to report, without projection:
 
-- how the 200-decision universe was assembled;
-- why bounded decisions rather than broad topics are the unit of analysis;
+- how the 200-Scenario universe was assembled;
+- why bounded normative Scenarios rather than broad topics are the unit of construction;
 - how casebooks, policy/guidance, empirical bioethics, normative scholarship and emerging governance were combined;
 - how concise/detailed controlled representations were constructed;
 - how source-class provenance and evidence gaps were handled;
+- how Policy positions were recovered from sources without forcing a fixed candidate geometry;
 - how benchmark stipulations were separated from reported facts;
-- how executable eligibility was determined;
-- the resulting counts by domain and eligibility class;
-- how the 20-case Featured subset was chosen;
+- how Scenario / Policy-representation adequacy was audited;
+- how executable eligibility and demonstration richness were distinguished;
+- the resulting counts by domain, natural candidate geometry, and eligibility class;
+- how the Featured/public demonstration set was selected;
 - licensing, versioning, hashing and substantive-digest rules;
 - what the resource enables for teaching, ethics research, SACRE, matched human/model studies, representation robustness, RE-Iteration and future validation.
 
 The resource paper should not claim that release, execution, model agreement or human agreement establishes moral correctness.
 
-## 12. Completion definition
+## 13. Completion definition
 
 Bioethics Bench Full Corpus v1 is complete when:
 
-1. all M001–M200 are accounted for by a stable case-family crosswalk;
-2. all 200 have deep case files;
-3. all 200 have reviewed concise and detailed representations;
-4. every case has an explicit executable-eligibility classification with reasons;
-5. every case has source/provenance documentation and rights treatment;
-6. the executable subset has schema-valid versioned records under the appropriate profile(s);
-7. Featured v1 remains intact as the curated 20-family front door;
-8. the public site can browse the full corpus and distinguish full, executable and Featured layers;
-9. corpus-level counts, domain coverage and provenance summaries are reproducible from machine-readable metadata;
-10. a methods/resource-paper report can be generated from the completed object rather than from planned future work.
+1. all M001–M200 are accounted for by a stable case crosswalk;
+2. all 200 have deep scholarly case files;
+3. all 200 have reviewed concise and detailed Scenario representations;
+4. all 200 have passed an explicit Scenario / Policy-representation audit;
+5. every case has an explicit executable-eligibility classification with reasons;
+6. every case has a demonstration-richness classification where relevant;
+7. every case has source/provenance documentation and rights treatment;
+8. the executable subset has schema-valid versioned records under the appropriate natural or declared study profile(s);
+9. Featured v1 remains intact as a historical released front door, with any substantive corrections represented as new versions rather than silent mutation;
+10. the public site can browse the full corpus and distinguish full, SACRE-suitable, and demonstration layers;
+11. corpus-level counts, domain coverage, provenance summaries and natural candidate geometry are reproducible from machine-readable metadata;
+12. a methods/resource-paper report can be generated from the completed object rather than from planned future work.
 
 The 200-case inventory remains extensible after v1. Completion means this release is finished, not that practical bioethics has been exhaustively enumerated forever.
