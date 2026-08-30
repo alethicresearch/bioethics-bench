@@ -12,7 +12,7 @@ The core DEWA suite is:
 
 Bioethics Bench is a coordinated major resource/publication, not an extra numbered stage and not a prerequisite between P2 and P3.
 
-P2 v49 main + Supplementary Information are complete for this compositional stage. The current Bench priorities are **source/review/release maturation, implementing the non-breaking task-contract/adapter boundary identified by the completed first-pass generalization audit, and the standalone resource paper**. P2 receives only targeted factual corrections if new Bench evidence materially changes an existing claim.
+P2 v49 main + Supplementary Information are complete for this compositional stage. The current Bench priorities are **source/review/release maturation, completing the read-only adapter/equivalence gate for the now-specified `sacre-qccs-v1` task boundary, and the standalone resource paper**. P2 receives only targeted factual corrections if new Bench evidence materially changes an existing claim.
 
 ## Current Bench state
 
@@ -26,15 +26,22 @@ PR #10 is merged. All current records remain `status: draft` and `reviewed_by_hu
 
 Structural validity is not source fidelity. Model-assisted source checks are not independent human review.
 
-## Generalization audit state
+## Generalization and task-boundary state
 
 The first-pass structural audit is complete:
 
 `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
 
-Its central finding is that most current fields belong to a reusable resource/provenance and generic evaluation/governance core. The strongest SACRE/QCCS coupling is concentrated in the fixed public/expert/framework pool structure, `pub/exp/fw` IDs, `benchmark_profile`, QCCS geometry/cross-source pairing, and `required_aggregation`.
+The explicit current SACRE task projection is now specified in:
 
-This supports a **non-breaking resource → task → evaluation architecture**. It does not establish empirical method-neutrality. Current v1 remains canonical and unchanged; the next architectural step is an explicit `sacre-qccs-v1` task contract plus a read-only equivalence-tested adapter.
+- `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+- `tasks/sacre-qccs-v1/task-contract.json`
+
+The audit found that most current fields belong to a reusable resource/provenance and generic evaluation/governance core. The strongest SACRE/QCCS coupling is concentrated in the fixed public/expert/framework pool structure, `pub/exp/fw` IDs, `benchmark_profile`, QCCS geometry/cross-source pairing, and `required_aggregation`.
+
+The new contract makes that boundary explicit without changing canonical v1. Its status is **specified, not yet equivalence-verified**. The next architectural gate is a read-only adapter that reproduces current SACRE execution semantics across all 68 records before any generalized representation or vendor refactor.
+
+This supports a **non-breaking resource → task → evaluation architecture**. It does not establish empirical method-neutrality.
 
 ## What “complete for the current stage” means
 
@@ -44,7 +51,7 @@ For the current developmental/publication stage, Bench is complete enough when:
 2. execution-relevant changes are clearly classified and propagated to SACRE;
 3. source/review findings are recorded truthfully without being misrepresented as independent human review;
 4. the standalone resource paper has a defensible architecture and evidence plan;
-5. the completed generalization audit is translated into an explicit non-breaking task-contract/adapter boundary rather than a disruptive v1 rewrite;
+5. the explicit `sacre-qccs-v1` task projection is verified against the existing execution path before any generalized schema/vendor refactor;
 6. P2 can use Bench accurately as the resource that made systematic investigation possible without absorbing the full standalone resource contribution.
 
 Independent human source-to-policy review remains important for a stronger release/quality claim, but it is **not a gate on developmental or paper-facing SACRE execution**.
@@ -63,9 +70,9 @@ Continue the current deep-research review process. The live review surfaces are:
 
 Whole-document omission review has examined five families by that method; 29 remain unexamined by that method. Do not extrapolate a corpus-wide rate.
 
-### 2. Task-contract/adapter implementation
+### 2. Adapter equivalence gate
 
-Specify `sacre-qccs-v1` explicitly, then build a read-only projection from the current Bench resource objects into the exact current SACRE execution contract. Add equivalence tests before any generalized representation is allowed to replace canonical v1 records.
+Build a read-only projection from the current Bench resource objects into the specified `sacre-qccs-v1` task contract. Compare it with current SACRE vendoring semantics for all 68 records: resource identity, scenario, candidate ids/text/role/order, profile, geometry, pair set/count, partner counts, structural asymmetry, required aggregation, and release/hash provenance must match before the current vendor path is replaced or refactored.
 
 ### 3. Standalone resource paper
 
@@ -100,6 +107,7 @@ Those are SACRE execution artifacts, not evidence that Bench source fidelity has
 - Findings in the whole-document-reviewed subset do not imply a corpus-wide rate.
 - A successful SACRE run does not validate the source construction of the case.
 - Bioethics Bench has not yet demonstrated method-neutrality across multiple mature task families.
+- A specified task contract is not an equivalence-verified adapter.
 - Developmental execution is not confirmatory P3 validation.
 - Human-model correspondence has not been measured; that belongs to P4 after authorized fielding.
 
@@ -113,7 +121,9 @@ Read in this order:
 4. `docs/COORDINATOR_DIRECTIVE.md`;
 5. `docs/BRANCH_COORDINATION.md`;
 6. `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`;
-7. if doing source review, the generated review handoff and deep-research brief;
-8. if drafting, `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`.
+7. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`;
+8. `tasks/sacre-qccs-v1/task-contract.json`;
+9. if doing source review, the generated review handoff and deep-research brief;
+10. if drafting, `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`.
 
 Fetch live repo state rather than trusting an old SHA or count in historical documents.
