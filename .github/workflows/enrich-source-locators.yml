@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/enrich-source-locators.mjs'
       - 'scripts/apply-source-locator-overrides.mjs'
+      - 'scripts/repair-source-placeholders.mjs'
       - 'docs/source-locators/source-locator-overrides.json'
       - '.github/workflows/enrich-source-locators.yml'
 
@@ -23,6 +24,8 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+      - name: Replace verified research-packet placeholders with external sources
+        run: node scripts/repair-source-placeholders.mjs --write
       - name: Enrich mechanically recoverable canonical locators
         run: node scripts/enrich-source-locators.mjs --write
       - name: Apply source-by-source verified locator overrides
