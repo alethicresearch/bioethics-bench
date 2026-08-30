@@ -101,7 +101,21 @@ Concise and detailed records are controlled representations of the same underlyi
 
 This makes representation length/detail a manipulable experimental axis rather than an uncontrolled rewrite of the normative object.
 
-## 8. First mature task projection: `sacre-qccs-v1`
+## 8. Source traceability and canonical locators
+
+The current Full Corpus contains **242 unique citations**. Of these, **130 carry a PMID and 130/130 currently resolve consistently against PubMed**. The remaining citations are policies, guidelines, statutes, books, reports, surveys, and other source types that are not uniformly PubMed-indexed.
+
+A corpus-wide canonical-locator repair has now been completed across all 68 Full Corpus records:
+
+- unresolved canonical locator residual: **0**;
+- traceable internal “research packet” placeholders were replaced with the underlying external literature rather than treated as external citations themselves;
+- DOI/PMID/URL recovery already encoded elsewhere in the records was propagated consistently;
+- additional policy/guideline/book/article locators were source-by-source verified and stored in explicit provenance registries;
+- false-positive fuzzy DOI matches discovered during development were corrected rather than accepted into the canonical resource.
+
+This establishes **traceability and identifier consistency**, not source-to-policy fidelity. A source can be correctly identified and still fail to warrant the policy translation attributed to it; that remains a substantive review question.
+
+## 9. First mature task projection: `sacre-qccs-v1`
 
 The first mature reference task maps the resource into SACRE/QCCS without making SACRE-specific fields intrinsic to the resource ontology.
 
@@ -111,9 +125,17 @@ For `P` Public, `E` Expert, and `F` Framework candidates, the task generates all
 
 The current task contract uses QCCS v1.0.0 with the `conv+` operationalization, requires a complete matrix for official ranking, and requires Mean rather than Sum when partner counts differ.
 
-An all-record adapter-equivalence gate verified the current projection across 34 families / 68 records. It found **0 execution/task-semantic differences** and **36 stale resource content hashes** in SACRE's older vendor state. Those 36 differences were provenance-only drift; after re-pinning, the adapter projection and SACRE vendor payload were byte-for-byte identical and regression tests passed. No model/QCCS rerun was triggered because executable semantics had not changed.
+The current all-record adapter-equivalence gate covers the locator-enriched resource across **34 families / 68 records**. Because canonical source/provenance metadata is included in resource `content_hash`, the locator repair changed all **68/68** record hashes. Pre-repin verification found **0 execution/task-semantic differences** and classified the 68 hash changes as **provenance-only drift**. After SACRE re-vendoring/re-pinning, adapter projection and consumer payload are byte-for-byte identical and the Full Corpus regression suite passes **46/46**. No model/QCCS rerun was required or performed.
 
-## 9. Validation and review state
+Current resource/pin references:
+
+- locator-enriched Bench resource commit: `0a8317ba8a2c5978f7a50bb5f13de875153b6782`;
+- SACRE re-pin merge (PR #22): `9fa908a45c2447aa97f0473754c434bdb874b19e`;
+- SACRE Full Corpus payload SHA-256: `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
+
+The earlier 36/68 hash-refresh event remains historical provenance rather than the current pin.
+
+## 10. Validation and review state
 
 Bioethics Bench deliberately separates different validation claims.
 
@@ -121,11 +143,12 @@ Bioethics Bench deliberately separates different validation claims.
 
 - machine-readable schema and content-hash validation;
 - profile/lineage, aggregation, provenance, representation-pair, and structural invariant checks;
-- current identifier/source-resolution checks, including 122/122 recorded PMIDs resolving in the current review state;
+- complete current canonical locator coverage across the 68 Full Corpus records;
+- current PMID identifier-resolution checks: **130/130** PMID-bearing citations resolve consistently;
 - model-assisted reading of all current direct-policy-evidence candidates;
 - model-assisted bridge checks for all current source-informed policy inferences;
 - bounded whole-document omission review for five families;
-- all-record `sacre-qccs-v1` adapter equivalence.
+- all-record `sacre-qccs-v1` adapter equivalence, including the post-locator provenance re-pin.
 
 ### Not yet established
 
@@ -140,7 +163,7 @@ Bioethics Bench deliberately separates different validation claims.
 
 Independent source review is a quality/release layer. It is not a developmental-execution gate.
 
-## 10. Intended uses
+## 11. Intended uses
 
 Appropriate current uses include:
 
@@ -150,7 +173,7 @@ Appropriate current uses include:
 - paper illustrations and reproducibility studies;
 - protocol development for later confirmatory computational and human-comparison studies.
 
-## 11. Uses that are not supported
+## 12. Uses that are not supported
 
 The current resource should not be used as:
 
@@ -160,27 +183,31 @@ The current resource should not be used as:
 - evidence that one model is morally superior because it agrees with a provisional task output;
 - a hidden training target presented later as an unexposed confirmatory benchmark.
 
-## 12. Versioning, citation, and reproducibility
+## 13. Versioning, citation, and reproducibility
 
 A citation to a Bench record should include **record ID, version, and content hash**. A citation to a computational result should additionally identify the resource snapshot, task specification, and evaluation/execution condition.
 
-The current equivalence-verified Bench→SACRE executable projection is associated with Bench commit:
+The current equivalence-verified locator-enriched Bench→SACRE projection is associated with Bench resource commit:
 
-`077b36ff1eb9662e93549b1f4261691960cfa605`
+`0a8317ba8a2c5978f7a50bb5f13de875153b6782`
 
 and SACRE re-pin merge commit:
 
-`4ed4b24ab99d7427195a21393474c02700274ee6`
+`9fa908a45c2447aa97f0473754c434bdb874b19e`
+
+with vendored Full Corpus payload SHA-256:
+
+`82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`
 
 The repository's release-candidate manifest is under `releases/full-corpus-v1-completion-candidate/manifest.json`. It is a **release candidate**, not a declaration that the corpus has been independently validated or formally released.
 
-## 13. Rights and licensing
+## 14. Rights and licensing
 
 Bench-authored case content is licensed **CC BY 4.0**, as specified in `CONTENT-LICENSE.md`. Third-party source material retains its own rights and is cited/summarized rather than relicensed.
 
 The repository currently does **not** contain a finalized root software-license file for the validation/tooling code. A software-license decision is therefore a pre-archival-release action and must not be inferred from the content license.
 
-## 14. Release status
+## 15. Release status
 
 The manuscript and resource may be submitted for peer review while the corpus remains transparently identified as draft/developmental. A paper-submission snapshot and a later public archival release are distinct objects.
 
