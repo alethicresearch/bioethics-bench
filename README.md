@@ -72,6 +72,17 @@ Current executable candidates distinguish:
 - `framework-derived-policy` — the executable policy is a Bench-authored derivation
   from a named normative framework or principle set.
 
+The current Full Corpus contains **242 unique citations**. **130 carry a PMID and
+130/130 currently resolve consistently against PubMed.** A corpus-wide canonical
+source-locator repair has also reduced the unresolved locator residual to **0 across all
+68 Full Corpus records**. Traceable internal “research packet” placeholders were
+replaced with their underlying external literature, and non-PubMed sources carry direct
+official/publisher/bibliographic locators where available.
+
+Complete locator coverage establishes traceability and identifier consistency; it does
+**not** establish independent source-to-policy fidelity. A correctly identified source
+can still fail to warrant a Bench policy translation.
+
 The ongoing warrant-ontology work further separates source type, evidence function,
 translation mode, support direction, warrant scope, source assertion, Bench bridge,
 and relation-level review identity. That richer model is **shadow architecture**, not
@@ -103,26 +114,34 @@ The current task contract uses QCCS v1.0.0 with the `conv+` operationalization a
 requires Mean rather than Sum when unequal partner counts would otherwise introduce
 pool-shape bias.
 
-An all-record adapter-equivalence gate verified the current projection across all
-**34 families / 68 records**. It found **0 execution/task-semantic differences** and
-**36 stale resource content hashes** in SACRE's older vendor state. Those differences
-were provenance-only; after re-pinning, the adapter projection and SACRE vendor payload
-were byte-for-byte identical and regression tests passed. No model/QCCS rerun was
-required because executable semantics had not changed.
+The current all-record adapter-equivalence gate covers the locator-enriched resource
+across **34 families / 68 records**. Because canonical source/provenance metadata is
+part of whole-resource identity, the locator repair changed all **68/68** record
+`content_hash` values. Pre-repin verification found **0 execution/task-semantic
+differences** and classified the 68 changes as **provenance-only drift**. After
+re-vendoring/re-pinning SACRE, the adapter projection and consumer payload are
+byte-for-byte identical and the Full Corpus regression suite passes **46/46**. No
+model/QCCS rerun was required or performed.
 
-Equivalence-tested Bench commit:
-`077b36ff1eb9662e93549b1f4261691960cfa605`
+Current locator-enriched Bench resource commit:
+`0a8317ba8a2c5978f7a50bb5f13de875153b6782`
 
-Corresponding SACRE re-pin merge commit:
-`4ed4b24ab99d7427195a21393474c02700274ee6`
+Current SACRE re-pin merge commit (PR #22):
+`9fa908a45c2447aa97f0473754c434bdb874b19e`
+
+Current SACRE Full Corpus payload SHA-256:
+`82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`
+
+The earlier 36/68 hash-refresh event is retained as historical provenance rather than
+the current consumer pin.
 
 ## Validation state
 
 Current quality evidence includes structural/schema/hash validation, profile and
-aggregation checks, companion-representation checks, identifier/source-resolution
-checks, model-assisted direct-policy and inference-bridge review, bounded
-whole-document omission review, scenario/action-divergence review, and all-record task
-adapter equivalence.
+aggregation checks, companion-representation checks, complete canonical locator
+coverage, PMID identifier-resolution checks, model-assisted direct-policy and
+inference-bridge review, bounded whole-document omission review,
+scenario/action-divergence review, and all-record task adapter equivalence.
 
 These checks do **not** establish:
 
@@ -171,6 +190,7 @@ execution is complete.
 | [`docs/VERSIONING.md`](docs/VERSIONING.md) | Record identity and canonical content hashing |
 | [`docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`](docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md) | Human-readable first mature task contract |
 | [`tasks/sacre-qccs-v1/task-contract.json`](tasks/sacre-qccs-v1/task-contract.json) | Machine-readable task contract |
+| [`docs/source-locators/UNRESOLVED_FULL_CORPUS.md`](docs/source-locators/UNRESOLVED_FULL_CORPUS.md) | Current canonical-locator residual report |
 | [`docs/ARCHIVAL_RELEASE_PLAN.md`](docs/ARCHIVAL_RELEASE_PLAN.md) | Submission snapshot versus public archival-release architecture |
 | [`docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md`](docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md) | Submission and release checklist |
 | [`CONTENT-LICENSE.md`](CONTENT-LICENSE.md) | Rights for Bench-authored case content and third-party boundaries |
