@@ -1,6 +1,6 @@
 # Coordinator Directive — Bioethics Bench Lane
 
-**Program objective:** mature Bioethics Bench as a defensible source-grounded research infrastructure for computational bioethics while supporting the current DEWA paper program without making corpus review a blocking loop.
+**Program objective:** mature Bioethics Bench as a defensible source-grounded research infrastructure for computational bioethics while supporting the DEWA paper program without making corpus review a blocking loop.
 
 For a cold start, read:
 1. `docs/CENTRAL_COORDINATOR_CONTINUITY.md`
@@ -18,7 +18,11 @@ PR #10 is merged. The executable Full Corpus currently contains **34 families / 
 The current standalone research/publication plan is Bioethics Bench v3 in Drive:
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
-The wider program's immediate substantive priority is **P2 maximal integrated master**. Bench should support that work with accurate construction/resource findings and bounded developmental evidence while continuing to mature as an independent paper/resource.
+P2 has completed its v49 submission-composition stage. Current P2 main and supplement are:
+- https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
+- https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+
+Bench should now prioritize its own resource maturation and standalone paper, while supplying P2 only with targeted factual corrections if new evidence changes a current claim materially.
 
 ## Operating mode
 
@@ -50,23 +54,23 @@ The standalone paper intends Bioethics Bench to be broader than SACRE/REai. Audi
 
 The goal is to identify accidental coupling and future abstraction opportunities without destabilizing the v1 execution path merely to make an architectural claim look cleaner.
 
-### 4. Keep manuscript-facing findings current
+### 4. Mature the standalone resource paper
 
-`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` is the drafting surface; `MANUSCRIPT_WRITEBACK.md` is the chronological audit trail. Keep the brief current when a finding changes materially.
+`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` remains the manuscript-facing findings surface; `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail. Use current findings to develop the standalone Bench paper around:
 
-For P2, prioritize findings that explain why systematic investigation required a stable resource and what source-grounded construction revealed about representation, provenance, geometry, source independence, and execution.
-
-### 5. Preserve the standalone resource-paper identity
-
-P2 should not absorb the full Bench contribution. The standalone Bench paper owns:
-- resource construction and release methods;
-- source grounding/provenance;
-- task abstraction;
-- evaluation architecture and baselines;
-- versioning/governance;
-- extensibility and future multi-method use.
+- why source-grounded/versioned normative research objects are needed;
+- resource / task / evaluation separation;
+- construction and release methods;
+- provenance and policy-basis distinctions;
+- source fidelity and review limits;
+- baseline/evaluation protocol architecture;
+- governance/versioning and future extension.
 
 SACRE/QCCS remains the first mature task family rather than the definition of the resource.
+
+### 5. Support P3/P4 only with frozen, explicit objects
+
+When P3/P4 protocols need Bench objects, provide exact versioned cases/task definitions and preserve representation/provenance. Do not let protocol convenience silently alter the canonical resource.
 
 ## Change-class rule for SACRE
 
