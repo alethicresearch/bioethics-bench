@@ -56,7 +56,25 @@ Repair commit: `00615a10d5a72d592dba39ca9b7ec71970d80cda`.
 
 GitHub Actions validation run `33291927572` passed both `npm run validate` and `node scripts/validate-selftest.mjs`. A subsequent documentation-only package handoff commit also passed the full workflow.
 
-This repair changed no executable candidate/scenario/task semantics and requires no model rerun.
+### Canonical source-locator enrichment — complete
+
+The Full Corpus provenance layer has now been repaired corpus-wide rather than relying on website search fallbacks:
+
+- all **68** canonical Full Corpus records were scanned;
+- unresolved canonical source locators reduced from 105 initially, to 74 after the first verified pass, to **0** after source-by-source verification;
+- internal “research packet” citation placeholders that could be traced were replaced with their underlying external literature;
+- automated fuzzy DOI matching was not accepted as canonical evidence; false-positive matches found during development were corrected and the final registry is explicit/source-verified;
+- current citation inventory: **242 unique citations**, **130 with PMID**, with **130/130 resolving consistently** against PubMed;
+- named policies, guidelines, books and other non-PubMed sources carry direct canonical/bibliographic locators where available.
+
+Canonical locator-enriched Bench commit: `0a8317ba8a2c5978f7a50bb5f13de875153b6782`.
+
+Because provenance is included in `content_hash`, all **68/68** Full Corpus hashes changed. The explicit `sacre-qccs-v1` equivalence gate classified this as **provenance-only drift** with **0 execution/task-semantic differences**. SACRE was re-vendored and re-pinned; the post-repin adapter projection is byte-for-byte identical and the Full Corpus regression suite passes **46/46**.
+
+Current SACRE re-pin merge: `9fa908a45c2447aa97f0473754c434bdb874b19e` (PR #22).  
+Current SACRE Full Corpus payload SHA-256: `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
+
+This enrichment changed no scenario/candidate/task semantics and required **no model/QCCS rerun**.
 
 ## Current resource state
 
@@ -66,9 +84,10 @@ This repair changed no executable candidate/scenario/task semantics and requires
 - 210 unique family-level candidates;
 - task roles: 69 Public / 55 Expert / 86 Framework;
 - eight natural candidate geometries;
-- 428 unordered cross-source QCCS pairs per representation / 856 per matched concise+detailed pass;
+- 428 unordered cross-source QCCS pairs per representation / 856 per matched concise/detailed pass;
 - records remain `status: draft`, `reviewed_by_human: false`;
-- 122/122 recorded PMIDs currently resolve;
+- 242 unique citations, of which 130 carry a PMID and **130/130 currently resolve consistently**;
+- canonical source-locator residual: **0 unresolved citations**;
 - whole-document omission review by the current method covers five families; 29 remain unexamined.
 
 ## Closed gates — do not redo
@@ -79,6 +98,8 @@ The following are complete:
 - explicit `sacre-qccs-v1` task contract;
 - read-only adapter;
 - 34-family / 68-record equivalence gate;
+- canonical source-locator enrichment and source-placeholder repair;
+- post-enrichment SACRE provenance re-pin and all-record equivalence verification;
 - generic candidate/source-role conceptual model;
 - first corpus-driven warrant-ontology stress test;
 - manuscript Methods/Results construction;
@@ -87,7 +108,9 @@ The following are complete:
 - reviewer-facing submission resource package;
 - v8 Highlight compliance and visual QA.
 
-The all-record equivalence result remains: **0/68 execution/task-semantic differences**, 36/68 stale provenance-bearing hashes in the older SACRE vendor state, then exact byte equivalence after re-pin. Scientific reference commits remain Bench `077b36ff1eb9662e93549b1f4261691960cfa605` and SACRE `4ed4b24ab99d7427195a21393474c02700274ee6`.
+The **current** all-record equivalence result is: **0/68 execution/task-semantic differences**, 68/68 provenance-bearing hashes refreshed after canonical source enrichment, then exact byte equivalence after re-pin. Current scientific reference commits are Bench `0a8317ba8a2c5978f7a50bb5f13de875153b6782` and SACRE `9fa908a45c2447aa97f0473754c434bdb874b19e`; current SACRE payload SHA-256 is `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
+
+The earlier 36/68 hash-refresh event remains historical evidence, not the current pin.
 
 Do not implement schema v2 or a second task merely for submission neatness.
 
@@ -124,7 +147,7 @@ Proceed directly to:
 
 ## Evidence ceiling
 
-May claim current composition, natural geometry, structural/companion invariants, bounded source-review findings, resource/task/evaluation separation, and all-record task equivalence.
+May claim current composition, natural geometry, structural/companion invariants, bounded source-review findings, resource/task/evaluation separation, all-record task equivalence, complete canonical source-locator coverage, and PMID identifier consistency for the 130 PubMed-indexed citations.
 
 May **not** claim independent corpus-wide human source validation, corpus-wide source fidelity, QCCS reliability/construct validity, moral correctness, human-model correspondence, demonstrated method-neutrality across multiple mature tasks, an implemented generic v2 schema, or a mature source-to-policy warrant benchmark.
 
