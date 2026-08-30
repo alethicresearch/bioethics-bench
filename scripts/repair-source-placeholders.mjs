@@ -43,7 +43,7 @@ const MOLINA = {
   url: 'https://pubmed.ncbi.nlm.nih.gov/34864448/'
 };
 const SHEPHERD = {
-  citation: "Shepherd L, O'Carroll RE, Ferguson E. An international comparison of deceased and living organ donation/transplant rates in opt-in and opt-out systems: a panel study. Soc Sci Med. 2023;317:115545.",
+  citation: "Shepherd L, O'Carroll RE, Ferguson E. Assessing the factors that influence the donation of a deceased family member's organs in an opt-out system for organ donation. Soc Sci Med. 2023;317:115545. PMID 36436261.",
   type: 'article',
   doi: '10.1016/j.socscimed.2022.115545',
   url: 'https://doi.org/10.1016/j.socscimed.2022.115545'
