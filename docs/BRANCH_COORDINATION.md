@@ -11,13 +11,13 @@ Before substantive work:
 2. read `docs/PROGRAM_COORDINATION.md`, `docs/COORDINATOR_DIRECTIVE.md`, and the relevant review/resource protocol;
 3. verify generated corpus state rather than copying counts from prose;
 4. state branch and merge target in the handoff;
-5. classify any downstream SACRE dependency as execution-relevant, provenance-only, or documentation-only.
+5. classify any downstream SACRE dependency as execution-relevant, provenance-only, or documentation/specification-only.
 
 ## Canonical branch roles
 
 ### `main`
 
-Current repository-wide canonical line. PR #10 has been merged; the 34-family / 68-record Full Corpus v1 lineage and current coordination/review infrastructure are available from the merged repository state.
+Current repository-wide canonical line. PR #10 has been merged; the 34-family / 68-record Full Corpus v1 lineage, current review infrastructure, first-pass generalization audit, and explicit `sacre-qccs-v1` task specification are available from the merged repository state.
 
 ### `research/full-corpus-v1`
 
@@ -31,7 +31,7 @@ Historical merged completion/PR #10 head. Its prior role as the sole open Full C
 
 Parked future research track for generalized/partial-source schemes. It is not canonical SACRE v1. Do not merge generalized source semantics or cases executable only under that scheme into current v1 through opportunistic cherry-picks.
 
-The first-pass generalization audit on `main` does **not** reactivate this branch or authorize generalized-source semantics. It identifies a non-breaking task-adapter boundary around current v1 and is recorded in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`.
+The first-pass generalization audit and `sacre-qccs-v1` specification on `main` do **not** reactivate this branch or authorize generalized-source semantics. They establish a non-breaking task-adapter boundary around current v1. Current records and hashes remain canonical until a separately verified migration is justified.
 
 ### Other historical branches
 
@@ -51,7 +51,7 @@ Classify the change before asking the SACRE lane to act.
 |---|---|---|---|
 | **Execution-relevant** | candidate id/text; scenario/task meaning; stipulations consumed by execution; profile; geometry; required aggregation; executable family added/removed; execution-relevant schema | re-vendor/re-pin and reverify before affected paper-facing execution; rerun affected results when the executed object changed | notify SACRE in the same work cycle and identify affected families/objects |
 | **Provenance-only** | citation strings; provenance summaries; basis metadata with unchanged executable text; content-hash drift following those changes | refresh provenance when needed; no automatic semantic rerun | record in review/writeback; do not manufacture a resync loop |
-| **Documentation-only** | dossiers, review documents, coordination text, manuscript writebacks, first-pass generalization audit | no product action unless the finding reveals an execution defect | maintain the durable record |
+| **Documentation/specification-only** | dossiers, review documents, coordination text, manuscript writebacks, generalization audit, task contract that describes unchanged v1 semantics | no product action unless adapter/equivalence work exposes an execution defect | maintain the durable record and label specification status accurately |
 
 A provenance-only change can alter what a manuscript may say about source support even when it does not alter a computational result.
 
@@ -71,7 +71,9 @@ Model-assisted source review is not independent human review. Whole-document omi
 
 P2 v49 main + Supplementary Information are complete for this compositional stage and now enter author/coauthor submission-facing review. Bench should not reopen P2 reconstruction; it should supply only targeted factual corrections if new Bench evidence materially changes an existing P2 claim.
 
-The first-pass structural generalization audit is complete. The immediate architectural dependency is now an explicit **`sacre-qccs-v1` task contract** and **read-only equivalence-tested adapter** that reproduces the current executable projection without modifying canonical v1 records. Source/review/release work continues in parallel. Later P3/P4 support should distinguish a frozen resource snapshot from a frozen task specification.
+The first-pass structural generalization audit is complete, and the explicit **`sacre-qccs-v1` task contract** is now specified in both reader-facing and machine-readable form. Its status is **specified, not yet equivalence-verified**.
+
+The immediate architectural dependency is therefore the **read-only adapter + all-record equivalence test**: reproduce current SACRE vendoring semantics across all 68 canonical records before any generalized schema or vendor-path refactor. Source/review/release work continues in parallel. Later P3/P4 support should distinguish a frozen resource snapshot, task specification, and evaluation/execution condition.
 
 ## Merge/release standard
 
@@ -83,6 +85,8 @@ A change enters canonical state because:
 - downstream execution dependencies are identified.
 
 Do not merge merely to maximize executable count or because a historical branch is “ahead.”
+
+Do not replace current v1 resource/task semantics merely because the generalized architecture is conceptually cleaner. A replacement path must first pass the explicit equivalence gate.
 
 ## Handoff requirement
 
