@@ -8,9 +8,11 @@ For a cold start, read:
 3. `docs/BRANCH_COORDINATION.md`
 4. `docs/COMPLETION.md`
 5. `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
-6. `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`
-7. `docs/papers/MANUSCRIPT_WRITEBACK.md`
-8. for source review, `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` and generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+6. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+7. `tasks/sacre-qccs-v1/task-contract.json`
+8. `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md`
+9. `docs/papers/MANUSCRIPT_WRITEBACK.md`
+10. for source review, `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md` and generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
 
 ## Current state
 
@@ -25,11 +27,18 @@ P2 has completed its v49 submission-composition stage. Current P2 main and suppl
 
 The **first-pass Bioethics Bench generalization audit is complete** in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`. It identifies a large reusable resource/provenance core and localizes the strongest SACRE-specific coupling to the fixed public/expert/framework pool structure, `pub/exp/fw` candidate aliases, SACRE profiles/geometry/cross-source pairing, and `required_aggregation`. The v1 corpus should not be rewritten merely for architectural neatness.
 
-Bench should now prioritize its own resource maturation and standalone paper, while supplying P2 only with targeted factual corrections if new evidence changes a current claim materially.
+The audit's first implementation artifact is now also complete for the specification stage:
+
+- reader-facing task contract: `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`;
+- machine-readable contract: `tasks/sacre-qccs-v1/task-contract.json`.
+
+The contract makes the current task projection explicit without changing any canonical v1 record. Its status is **specified, not yet equivalence-verified**. The sole remaining gate before replacing/refactoring the existing vendor path is a read-only adapter plus all-record equivalence testing.
+
+Bench should now prioritize that equivalence gate, source/review/release work, and the standalone paper, while supplying P2 only with targeted factual corrections if new evidence changes a current claim materially.
 
 ## Operating mode
 
-Work in meaningful completion units. Prefer a completed review batch, a resolved resource-design question, or a verified adapter/task-contract step over another layer of coordination prose.
+Work in meaningful completion units. Prefer a completed review batch, a resolved resource-design question, or a verified adapter/equivalence step over another layer of coordination prose.
 
 Do not stop developmental/paper-facing SACRE work because independent human source review is incomplete. Human review is a quality/release layer under the current program architecture, not an execution gate.
 
@@ -47,23 +56,24 @@ Use the existing review tooling and task system. Model-assisted review remains u
 
 When a review finding is actionable, distinguish whether it changes executable meaning or only provenance.
 
-### 3. Act on the completed generalization audit without destabilizing v1
+### 3. Complete the non-breaking task-adapter gate
 
-The audit is recorded in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`.
+The structural audit and explicit `sacre-qccs-v1` task specification are complete.
 
 Next architectural steps:
 
-- specify **`sacre-qccs-v1`** explicitly as a task contract: source-role mapping, candidate aliases, pair generation, QCCS instruction/scale, aggregation semantics, and required outputs;
-- define the future generic candidate/source-role model on paper before editing the canonical schema;
-- build a **read-only adapter prototype** that reproduces the current v1 SACRE executable projection;
-- add equivalence tests before any generalized representation can replace current records;
-- specify one additional scientifically motivated non-SACRE task when its research question is mature enough.
+- build a **read-only adapter prototype** that consumes current canonical v1 Bench records and emits the explicit task projection;
+- compare that projection with the current SACRE vendoring semantics for **all 68 records**;
+- test case/record/representation identity, scenario, candidate ids/text/role/order, profile, geometry, pair set/count, partner counts, structural asymmetry, required aggregation, and release/hash provenance;
+- do not replace or refactor the current vendor path until equivalence passes;
+- define any future generic candidate/source-role schema only after this compatibility boundary is verified;
+- specify an additional non-SACRE task only when it has a real scientific purpose, not merely to demonstrate breadth.
 
-Do not claim demonstrated method-neutrality merely because a separable architecture has now been identified.
+Do not claim demonstrated method-neutrality merely because the architecture and task boundary have now been specified.
 
 ### 4. Mature the standalone resource paper
 
-`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` remains the manuscript-facing findings surface; `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail. Use the completed generalization audit to develop the standalone Bench paper around:
+`docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` remains the manuscript-facing findings surface; `MANUSCRIPT_WRITEBACK.md` remains the chronological audit trail. Use the completed audit and explicit task contract to develop the standalone Bench paper around:
 
 - why source-grounded/versioned normative research objects are needed;
 - resource / task / evaluation separation;
@@ -80,7 +90,8 @@ SACRE/QCCS remains the first mature task family rather than the definition of th
 When P3/P4 protocols need Bench objects, distinguish and freeze:
 
 1. the **resource snapshot** — exact cases, representations, candidate content, provenance/version state;
-2. the **task specification** — SACRE pool mapping, QCCS instruction/scale, pair-generation rule, aggregation, model/provider/configuration, and retry/exclusion semantics.
+2. the **task specification** — `sacre-qccs-v1`, QCCS protocol identity, source-role mapping, pair-generation rule, aggregation, and required outputs;
+3. the **evaluation/execution condition** — model/provider/configuration, repetitions, retry/exclusion rules, perturbation assignment, or human evaluator condition.
 
 Do not let protocol convenience silently alter the canonical resource.
 
@@ -98,7 +109,7 @@ it is **execution-relevant**. Notify SACRE in the same work cycle; re-vendoring/
 
 Citation/provenance changes with an unchanged executable projection are **provenance-only**. Propagate them truthfully but do not automatically request a semantic rerun.
 
-Documentation-only changes need no product action unless they reveal an execution defect.
+Documentation/specification changes that merely describe the current projection — including the current audit/task-contract work — do not require a rerun unless equivalence work reveals an execution defect.
 
 ## Evidence boundary
 
