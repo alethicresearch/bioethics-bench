@@ -13,6 +13,7 @@ Then read this repo's:
 - `docs/COORDINATOR_DIRECTIVE.md`
 - `docs/BRANCH_COORDINATION.md`
 - `docs/COMPLETION.md`
+- `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
 
 ## 1. What the project is
 
@@ -87,7 +88,7 @@ Structural validation and source fidelity are distinct.
 
 Current model-assisted review has checked direct-policy-evidence candidates against sources and checked source-informed bridges for whether the inference holds. This remains model-assisted review, **not independent human review**.
 
-A deliberate whole-document omission-review method has so far examined five families and found findings in all five. **Twenty-nine families remain unexamined by that method.** Do not infer a corpus-wide finding rate and do not describe the remaining families as cleared.
+A deliberate whole-document omission-review method has so far examined five families. **Twenty-nine families remain unexamined by that method.** Do not infer a corpus-wide finding rate and do not describe the remaining families as cleared.
 
 For live review work, use:
 
@@ -136,11 +137,11 @@ Bench enters P2 because systematic investigation of SACRE/REai required stable s
 
 ### P3
 
-Bench can provide frozen/versioned cases and task objects for computational validation. P3 owns reliability, robustness, model/provider, representation, perturbation, aggregation/ranking, QCS/QCCS, and RE-Iteration behavior.
+Bench can provide frozen/versioned cases and task objects for computational validation. Following the completed generalization audit, P3 should distinguish the **resource snapshot** from the **SACRE task specification** rather than treating a Bench record as an indivisible experimental condition. P3 owns reliability, robustness, model/provider, representation, perturbation, aggregation/ranking, QCS/QCCS, and RE-Iteration behavior.
 
 ### P4
 
-Bench cases can support matched human/model evaluation, but human recruitment, instructions, ethics/IRB, and fielding belong to P4.
+Bench cases can support matched human/model evaluation, but human recruitment, instructions, ethics/IRB, and fielding belong to P4. Resource content and task/instruction/UI conditions should be versioned separately where they differ.
 
 ### Standalone Bioethics Bench paper
 
@@ -151,17 +152,29 @@ https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
 The paper owns resource construction/release methods, source grounding, task abstraction, evaluation architecture, baselines, versioning/governance, and extensibility.
 
-## 9. Generalization audit — next structural research task
+## 9. Generalization audit — first pass complete
 
-Audit the current schema/records for accidental SACRE coupling. Classify fields as:
+The structural audit is recorded in:
+
+`docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`
+
+It classifies current fields into:
 
 1. **intrinsic computational-bioethics resource fields**;
-2. **generic task/evaluation fields**;
-3. **SACRE-specific execution fields**.
+2. **generic task/evaluation/governance fields**;
+3. **SACRE-specific execution fields and semantics**.
 
-Ask whether SACRE-specific geometry, aggregation, and QCCS execution metadata should live in a task specification/adapter layer over more general case/source/candidate objects.
+The central finding is that the reusable resource/provenance core is already substantial. The strongest SACRE coupling is localized to the fixed public/expert/framework pool object, `pub/exp/fw` candidate aliases, SACRE benchmark profiles/geometry/cross-source pairing, and `required_aggregation`.
 
-The audit should preserve v1 execution while making the future resource architecture clearer. Do not claim demonstrated method-neutrality before multiple mature task families support it.
+Current SACRE vendoring already functions as an implicit projection from the richer Bench record into an executable SACRE object. The non-breaking next sequence is therefore:
+
+- keep canonical v1 records and hashes unchanged;
+- specify **`sacre-qccs-v1`** as an explicit task contract;
+- build a read-only adapter that reproduces the current executable projection;
+- add equivalence tests before any generalized schema can replace v1;
+- specify a scientifically motivated additional task only when mature enough.
+
+This is an architectural separation result, **not** empirical proof of method-neutrality across multiple mature task families.
 
 ## 10. Cross-repo change rule
 
@@ -178,7 +191,7 @@ Citations, provenance summaries, non-execution basis metadata, or resulting cont
 **Action:** propagate truthfully; no automatic semantic rerun.
 
 ### Documentation-only
-Review docs, dossiers, coordination prose, writebacks.
+Review docs, dossiers, coordination prose, writebacks, and the first-pass generalization audit.
 
 **Action:** no SACRE product action unless the finding reveals an execution defect.
 
@@ -203,7 +216,7 @@ End with **COMPLETE FOR THIS STAGE** or **BLOCKED** with one concrete blocking c
 
 - The corpus is independently human-reviewed.
 - Structural validation establishes source fidelity.
-- Five of five whole-document findings imply a corpus-wide rate.
+- Findings in the whole-document-reviewed subset establish a corpus-wide rate.
 - SACRE execution validates Bench source construction.
 - One-run developmental results establish reliability or model ranking.
 - Bioethics Bench has already demonstrated method-neutrality across multiple computational-bioethics methods.
