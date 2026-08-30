@@ -1,0 +1,119 @@
+{
+  "task_protocol_id": "sacre-qccs-v1",
+  "contract_version": "0.1.0",
+  "status": "specified-not-yet-equivalence-verified",
+  "resource_type": "bioethics-bench-record",
+  "measurement": {
+    "protocol_id": "qccs-v1",
+    "protocol_version": "1.0.0",
+    "operationalization_id": "conv+",
+    "score_type": "integer",
+    "min": 0,
+    "max": 100,
+    "response_fields": [
+      "score",
+      "justification"
+    ],
+    "authoritative_source": "xnuxi/sacre-prototype/src/lib/spec/qccs-v1.json"
+  },
+  "source_roles": {
+    "public": {
+      "resource_pool": "candidate_pools.public",
+      "current_alias_pattern": "^pub[1-9][0-9]*$"
+    },
+    "expert": {
+      "resource_pool": "candidate_pools.expert",
+      "current_alias_pattern": "^exp[1-9][0-9]*$"
+    },
+    "framework": {
+      "resource_pool": "candidate_pools.framework",
+      "current_alias_pattern": "^fw[1-9][0-9]*$"
+    }
+  },
+  "pair_generation": {
+    "type": "all-unordered-cross-source-pairs",
+    "include_same_source": false,
+    "canonical_key": "lexically-sort-candidate-ids-and-join-with-hyphen",
+    "expected_count_formula": "P*E + P*F + E*F",
+    "verify_against_profile_field": "cross_source_pairs"
+  },
+  "matrix_completeness": {
+    "official_ranking_requires_complete_matrix": true,
+    "missing_or_error_cell_action": "retain-diagnostics-withhold-ranking-and-final-policy"
+  },
+  "aggregation": {
+    "partner_count": "number-of-candidates-in-the-other-two-source-roles",
+    "structural_requirement": "if-distinct-partner-counts-greater-than-one-then-mean-required-else-no-mean-requirement",
+    "symmetric_reference_default": "sum",
+    "incompatible_mode_action": "retain-cells-withhold-ranking-and-final-policy",
+    "candidate_weight_baseline": 1.0
+  },
+  "outputs": {
+    "public_expert_ranking": true,
+    "full_ranking": true,
+    "provisional_final_policy": "top-ranked-candidate-in-full-ranking",
+    "partner_count_per_candidate": true
+  },
+  "resource_identity_fields": [
+    "case_id",
+    "record_id",
+    "frame_id",
+    "frame_version",
+    "version",
+    "content_hash",
+    "representation.form",
+    "benchmark_profile",
+    "scenario",
+    "stipulations",
+    "candidate_pools"
+  ],
+  "task_projection_fields": [
+    "mapped-source-role",
+    "candidate-alias",
+    "expected-pair-set",
+    "expected-pair-count",
+    "geometry",
+    "partner-counts",
+    "derived-required-aggregation",
+    "qccs-protocol-id",
+    "qccs-protocol-version",
+    "scoring-mode"
+  ],
+  "evaluation_fields_not_intrinsic_to_task": [
+    "provider",
+    "model_id",
+    "model_version",
+    "temperature",
+    "top_p",
+    "max_tokens",
+    "seed",
+    "repeat_count",
+    "retry_policy",
+    "perturbation_assignment",
+    "evaluator_type"
+  ],
+  "equivalence_gate": {
+    "required_before_replacing_current_vendor_path": true,
+    "scope": "all-current-canonical-v1-records",
+    "current_expected_record_count": 68,
+    "must_match": [
+      "resource-identity",
+      "scenario-text",
+      "candidate-ids-text-role-and-order",
+      "benchmark-profile",
+      "geometry",
+      "cross-source-pair-set-and-count",
+      "partner-counts",
+      "structural-asymmetry",
+      "derived-required-aggregation",
+      "release-version-hash-provenance"
+    ]
+  },
+  "nonclaims": [
+    "This contract does not establish QCCS reliability or validity.",
+    "This contract does not establish moral truth or all-things-considered justification.",
+    "This contract does not establish Bioethics Bench method-neutrality across multiple mature tasks.",
+    "This contract does not convert developmental Full Corpus executions into confirmatory P3 results."
+  ],
+  "documentation": "docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md"
+}
