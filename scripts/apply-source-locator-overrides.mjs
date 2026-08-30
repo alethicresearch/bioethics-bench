@@ -2,6 +2,9 @@
 /**
  * Apply source-by-source verified canonical locators to exact citation strings across
  * the Full Corpus. This is provenance-only. Do not place search-result URLs here.
+ *
+ * Override entries are authoritative for fields they explicitly contain. Setting
+ * `doi: null` or `url: null` removes a previously propagated incorrect locator.
  */
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -24,6 +27,15 @@ function refsIn(record) {
   add(record.references);
   return refs;
 }
+function applyField(ref, ov, field) {
+  if (!Object.prototype.hasOwnProperty.call(ov, field)) return false;
+  const target = ov[field];
+  const current = Object.prototype.hasOwnProperty.call(ref, field) ? ref[field] : undefined;
+  if ((current ?? null) === (target ?? null)) return false;
+  if (target == null) delete ref[field];
+  else ref[field] = target;
+  return true;
+}
 
 let recordsChanged = 0, refsChanged = 0;
 for (const file of readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
@@ -33,9 +45,7 @@ for (const file of readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
   for (const ref of refsIn(record)) {
     const ov = map[ref.citation];
     if (!ov) continue;
-    let local = false;
-    if (ov.doi && !ref.doi) { ref.doi = ov.doi; local = true; }
-    if (ov.url && !ref.url) { ref.url = ov.url; local = true; }
+    const local = applyField(ref, ov, 'doi') | applyField(ref, ov, 'url');
     if (local) { refsChanged++; changed = true; }
   }
   if (changed) {
