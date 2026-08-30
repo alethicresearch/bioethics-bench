@@ -1,102 +1,112 @@
-# M047 — Conscientious objection in abortion care
+# M047 — Permanent contraception requested by a young childfree adult
 
-**Case-family identity:** M047  
-**Featured crosswalk:** none  
-**Primary domain:** reproductive ethics / professional duties  
-**Subdomain:** abortion; conscience; referral  
-**Tags:** abortion, conscientious objection, referral, disclosure, emergency duty  
-**Research status:** deep case draft  
-**Evidence date:** 2026-08-27
+**Case-family identity:** M047 (replacement identity adopted 2026-08-30)  
+**Historical identity:** conscientious objection in abortion care — superseded as duplicative of M007  
+**Primary domain:** reproductive ethics / contraception  
+**Subdomain:** permanent contraception; reproductive autonomy; regret; paternalism  
+**Tags:** permanent contraception, childfree, sterilization, reproductive autonomy, regret, access  
+**Research status:** reconstructed deep case  
+**Evidence date:** 2026-08-30
 
 ## 1. Decision architecture
 
-**Decision-maker:** hospital/clinical-service leadership.  
-**Decision question:** What disclosure, referral and emergency duties should an institution require from a clinician who conscientiously objects to providing abortion?
+**Decision-maker:** gynecology service or health system.  
+**Decision question:** What access and deliberative safeguards should apply when a competent young adult with no children makes a sustained request for permanent contraception?
 
-This is narrower than M007 because the service is abortion, access is time-sensitive and the institutional reproductive-health context is explicit. M046 addresses institutional service scope rather than an individual clinician's duties.
+This case concerns requested permanent contraception itself. It is distinct from M046 (hospital abortion-service scope), M007 (clinician conscientious objection and referral), and the former M047 identity, which has been retired into M007's provenance history.
 
 ## 2. Concise representation
 
-A hospital permits clinicians with sincere moral objections to opt out of providing non-emergency abortions. A patient lawfully requests abortion from an objecting clinician. Another qualified provider is available, but delay increases if the transfer is not arranged promptly. The hospital must decide whether objecting clinicians must give advance disclosure and make an effective referral, may decline direct referral if the institution itself guarantees a timely transfer pathway, or must provide the requested abortion when refusal would materially jeopardize timely access. In an emergency where transfer is unsafe, medically indicated care must be provided under all options.
+A competent 25-year-old adult with no children requests bilateral salpingectomy for permanent contraception. The patient has made the same request at more than one visit, understands that the procedure is intended to be irreversible, understands surgical risks and contraceptive alternatives, and states a stable desire never to become pregnant or parent. There is no coercion, acute psychiatric crisis, postpartum pressure, medical contraindication, or legal barrier. The service must decide whether to provide the procedure after ordinary informed shared decision making, require additional deliberative safeguards because of the patient's age and nulliparity, or use age/parity thresholds to defer or decline permanent contraception.
 
 ## 3. Detailed representation
 
-A hospital that provides reproductive care allows clinicians to claim conscientious objection to non-emergency abortion. An adult patient requests a lawful abortion from a clinician who has a longstanding sincere objection. Another qualified provider can offer the service, but the opportunity is time-sensitive and a poorly managed referral could add several days of delay. The clinician can communicate accurate medical information and is not permitted to shame, mislead or obstruct the patient. The institution must choose its standing conscience policy: require objectors to disclose their limitation in advance and make a timely effective referral; permit the individual clinician to decline direct referral provided the institution itself immediately arranges transfer to a non-objecting clinician; or require the objecting clinician to provide the abortion when refusal would materially impede timely safe access. For this benchmark, emergency care that cannot safely be transferred must be provided regardless of objection.
+A 25-year-old competent adult with no children has requested permanent contraception at two visits separated in time. The patient describes a longstanding desire not to become pregnant or parent and prefers bilateral salpingectomy over reversible contraceptive methods after counseling about efficacy, surgical risks, irreversibility, possible failure and ectopic pregnancy, and the availability of long-acting reversible options. The patient understands that future preferences can change and accepts that regret cannot be eliminated. There is no evidence of coercion, untreated acute mental illness, relationship crisis, postpartum decision pressure, financial inducement, or medical contraindication. The procedure is lawful and ordinarily available in the service. Clinicians nevertheless disagree about whether young age and nulliparity justify a mandatory waiting period, a second independent consultation, or refusal until an age/parity threshold is reached. The service must set a prospective policy governing such requests.
 
 ## 4. Decision-critical facts
 
-- objection is sincere and specific to abortion;
-- abortion is lawful and medically appropriate;
-- alternative provider exists but delay matters;
-- accurate information/non-obstruction is required under all policies;
-- emergency non-transferable care is excluded from ordinary opt-out.
+- adult has decision-making capacity;
+- request is voluntary and sustained across more than one encounter;
+- patient has no children and is relatively young, but age/parity do not establish incapacity;
+- permanence, surgical risks, alternatives, possible failure and future regret have been discussed;
+- no acute crisis, coercion or medical contraindication is present;
+- procedure is lawful and clinically feasible;
+- decision is prospective service policy, not retrospective judgment of whether the patient will regret the choice.
 
 ## 5. Explicit uncertainty
 
-The ethically relevant access threshold is context dependent. The benchmark fixes meaningful time sensitivity but not a precise number of days at which referral becomes unacceptable.
+Regret is possible and is not fully predictable for an individual patient. Population associations between younger age and later desire for reversal do not establish that this patient will regret the decision, nor do they establish incapacity.
 
 ## 6. Jurisdiction and time strategy
 
-Jurisdiction-neutral institutional policy with the relevant services stipulated lawful. Current law varies, so the case isolates ethical professional duties.
+Jurisdiction-neutral ethical case with legal eligibility stipulated. Jurisdiction-specific statutory waiting periods or payer rules should be modeled only in a separately named projection.
 
 ## 7. Benchmark stipulations
 
-- For this benchmark, assume the abortion is lawful and medically appropriate.
-- For this benchmark, assume another provider exists but delay is clinically/access relevant.
-- For this benchmark, assume emergency care cannot be refused when safe transfer is impossible.
+- For this benchmark, assume the adult has decision-making capacity and the request is voluntary.
+- Assume the patient has received accurate counseling about permanence, risks and alternatives.
+- Assume the procedure is lawful, clinically feasible and not contraindicated.
+- Do not infer incapacity from age, nulliparity or a childfree identity.
 
 ## 8. Serious policy / position families
 
-- objection allowed only with advance disclosure and direct effective referral;
-- objection may include declining direct referral if the institution itself guarantees immediate transfer/access;
-- objection yields when it would materially impede timely safe care.
+- provide permanent contraception after ordinary nonjudgmental informed shared decision making without age/parity vetoes;
+- use longitudinal counseling or an optional return visit to confirm sustained intent without making delay a categorical barrier;
+- require an independent second clinical review for unusually young/nulliparous requests before proceeding;
+- impose a uniform cooling-off interval before elective permanent contraception;
+- defer or decline below a defined age/parity threshold because of anticipated future-regret risk;
+- use a reproductive-autonomy/reproductive-justice rule that treats the competent patient's values as controlling while guarding against coercion and demographic bias;
+- use a future-self/nonmaleficence rule that permits stronger deliberative safeguards for irreversible choices while rejecting permanent demographic vetoes.
+
+The last four positions are not all current professional recommendations. Their provenance must remain explicit.
 
 ## 9. Public / affected-community evidence
 
-Patient-access literature documents that refusals and weak referral practices can create delay, stigma and uncertainty, but direct patient comparison of the three institutional conscience architectures remains limited. This is therefore not yet a strong two-candidate affected-public pool.
+Recent research on childfree adults seeking permanent contraception documents real access barriers and generally high satisfaction among respondents who received the procedure (PMID 39522633). This is useful affected-person evidence about barriers and experience, but it is not a representative vote on one national service policy.
+
+National regret data show that later regret/desire for reversal is more common after procedures performed at younger ages, while the investigators explicitly caution against using age alone as a barrier (PMID 35115436). Regret evidence therefore informs counseling and uncertainty; it does not directly support an age cutoff.
 
 ## 10. Expert / professional recommendations
 
-ACOG Committee Opinion 385 supports advance disclosure, accurate unbiased information, timely referral, preservation of access and provision in emergencies where referral is impossible or harmful. Professional attitudes themselves remain plural: a national OB/GYN vignette experiment found 43% regarded conscientious refusal as appropriate overall, with much higher acceptance when referral was made and very low acceptance when objection was paired with non-referral. A national primary-care survey found 69% believed referral remained obligatory despite personal objection. These are professional-attitude data rather than equivalent formal guidance.
+ACOG Committee Statement No. 8 (2024), *Permanent Contraception: Ethical Issues and Considerations*, makes reproductive autonomy the primary concern, calls for nonjudgmental patient-centered shared decision making, requires discussion of permanence and alternatives, encourages longitudinal counseling, and states that respect for reproductive autonomy requires not imposing age or parity thresholds. It also recognizes the historical risk of coercive sterilization and the continuing need to protect patients from both coercion and paternalistic denial of desired care.
 
 ## 11. Normative / framework positions and reasoning bridges
 
-- **Professional nonabandonment:** accepting a clinical role creates obligations to preserve patient access → conscience may excuse direct performance but not abandonment → require effective referral and advance disclosure.
-- **Moral integrity / anti-complicity:** referral itself may be experienced as participation in a morally objectionable act → individual integrity can be protected if the institution guarantees access independently → permit institutional rather than clinician referral.
-- **Patient welfare priority:** conscience accommodation is conditional on not imposing material health/access harm → when delay or lack of transfer makes refusal consequential, professional duty overrides objection → require care in access-critical cases.
+- **Reproductive autonomy / dignity of risk:** competent adults retain authority over whether to reproduce → future regret cannot be eliminated without removing decisional authority → provide access after adequate informed deliberation rather than demographic veto.
+- **Reproductive justice / anti-bias:** sterilization has a history of coercion while childfree, young and marginalized patients also face paternalistic denial → safeguards should detect coercion and misinformation rather than encode stereotypes about who should parent.
+- **Future-self nonmaleficence:** an irreversible intervention can affect a person's future options → additional deliberation may be justified when it improves understanding without functioning as an indefinite veto → permit proportionate safeguards while avoiding categorical age/parity exclusion.
 
 ## 12. References and provenance
 
-- ACOG Committee Opinion 385. *The Limits of Conscientious Refusal in Reproductive Medicine*.
-- *Obstetrician-gynaecologists' opinions about conscientious refusal of a request for abortion*. PMID 21670319.
-- *Obstetrician-gynecologists' objections to and willingness to help patients obtain an abortion*. PMID 21934455.
-- *Pregnancy Options Counseling and Abortion Referrals Among US Primary Care Physicians*. PMID 28724150.
-- Qualitative abortion-referral literature including PMID 28131650.
+- American College of Obstetricians and Gynecologists. Committee Statement No. 8. *Permanent Contraception: Ethical Issues and Considerations*. 2024.
+- Contemporary US permanent-contraception regret analysis, PMID 35115436.
+- Parker AB, Morse JE, Bryant AG. *Permanent contraception in the childfree population: An exploratory study*. Contraception. 2025;143:110746. PMID 39522633.
 
 ## 13. Construction and representation risks
 
-- duplicating M007 without an abortion-specific access object;
-- treating physician survey responses as patient/public evidence;
-- presenting objection as automatically insincere or automatically controlling;
-- hiding access consequences by saying simply “another provider is available”;
-- failing to distinguish clinician referral from institution-arranged transfer.
+- treating age or nulliparity as a proxy for incapacity;
+- presenting population regret statistics as individualized prediction;
+- laundering a mandatory waiting period or second opinion as though ACOG recommends it routinely;
+- ignoring the history of coercive sterilization while discussing access;
+- equating longitudinal counseling with mandatory delay;
+- writing a caricatured 'perform on demand without counseling' autonomy candidate.
 
 ## 14. Rights / licensing notes
 
-Bench-authored text may be CC BY 4.0. External sources are paraphrased.
+Bench-authored text may be released under CC BY 4.0. External professional and empirical positions are paraphrased with identifiers.
 
 ## 15. Possible uses
 
-Conscience/nonabandonment teaching; comparison with M007 and M046; delay perturbation; institutional versus individual responsibility.
+Reproductive-autonomy teaching; paternalism and dignity-of-risk analysis; source-grounded versus expanded SACRE projections; age/parity perturbation; RE-Iteration around safeguards; comparison of anti-coercion and anti-paternalism commitments.
 
 ## 16. Executable-eligibility judgment
 
-`needs-additional-evidence`. Professional architectures are rich, but the current affected-public layer is not direct enough at the exact referral-policy granularity for executable construction.
+**Rich-universe judgment:** `candidate-universe-ready`. A source-grounded projection can represent the ACOG access architecture and affected-person evidence honestly, while an expanded projection may add clearly labeled stronger safeguards or paternalist comparators. Do not represent age/parity refusal as a current professional recommendation without a direct source.
 
 ## 17. Review requirements
 
-Reproductive-health professional review; patient-access review; conscience ethics; overlap review with M007/M046.
+Complex-family-planning/reproductive-health review; reproductive-justice review; provenance review of empirical regret/access evidence; distinctness audit for longitudinal counseling versus mandatory waiting.
 
 ## 18. Downstream record rule
 
-Do not create an executable record unless direct patient/affected evidence supports the institutional referral-policy distinctions or the source architecture is deliberately revised in a future version.
+M047 now refers only to this permanent-contraception family. The former abortion-conscience M047 is historical and crosswalks to M007. New machine-readable M047 records must use this replacement identity and must preserve candidate-level provenance.
