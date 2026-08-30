@@ -34,7 +34,7 @@ jobs:
         run: node scripts/enrich-source-locators.mjs --write
       - name: Refresh Full Corpus manifest
         run: node scripts/build-full-corpus-manifest.mjs --write
-      - name: Validate corpus without regenerating review-coordination artifacts
+      - name: Validate corpus and refresh PMID verification cache
         run: |
           node scripts/build-featured-v1.mjs --check
           node scripts/check-dossier-sync.mjs
@@ -43,16 +43,16 @@ jobs:
           node scripts/build-full-corpus-manifest.mjs
           node scripts/fidelity-audit.mjs
           node scripts/divergence-worksheet.mjs --check
-          node scripts/verify-citations.mjs --offline
+          node scripts/verify-citations.mjs --report
           node scripts/validate.mjs
       - name: Commit provenance-only enrichment
         run: |
-          if git diff --quiet -- data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md; then
+          if git diff --quiet -- data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md docs/full-corpus/review/citation-verification.json docs/full-corpus/review/citation-verification.md; then
             echo 'No locator changes required.'
             exit 0
           fi
           git config user.name 'xnuxi'
           git config user.email 'research@alethic.ai'
-          git add data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md
+          git add data/benchmark releases/full-corpus-v1-completion-candidate/manifest.json docs/source-locators/UNRESOLVED_FULL_CORPUS.md docs/full-corpus/review/citation-verification.json docs/full-corpus/review/citation-verification.md
           git commit -m 'Apply verified Full Corpus source locators'
           git push
