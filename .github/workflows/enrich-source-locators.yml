@@ -7,7 +7,7 @@ on:
       - 'scripts/enrich-source-locators.mjs'
       - 'scripts/apply-source-locator-overrides.mjs'
       - 'scripts/repair-source-placeholders.mjs'
-      - 'docs/source-locators/source-locator-overrides.json'
+      - 'docs/source-locators/source-locator-overrides*.json'
       - '.github/workflows/enrich-source-locators.yml'
 
 permissions:
