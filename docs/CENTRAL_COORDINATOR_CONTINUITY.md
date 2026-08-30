@@ -57,7 +57,13 @@ The current standalone Bench research/publication plan is **v3** in Drive:
 
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
-The immediate program-level manuscript task is **P2 maximal integrated master**. Bench should support P2 with the construction story, resource architecture, and bounded developmental findings needed to explain how systematic investigation became possible, without letting P2 absorb the standalone Bench paper.
+P2 has now completed its v49 submission-composition stage. Current P2 artifacts are:
+
+- main: https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
+- Supplementary Information: https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- preserved maximal v48 master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
+
+Bench support for P2 is therefore no longer a maximal-master drafting task. The next Bench-facing work is to mature the resource itself: generalization audit, source/review/release work, standalone paper development, and later frozen support for P3/P4 study designs. P2 should receive only targeted corrections if new Bench evidence changes a claim materially.
 
 ## Handoff rule
 
