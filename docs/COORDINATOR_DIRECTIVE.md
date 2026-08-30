@@ -12,21 +12,59 @@ The manuscript should be the paper intended to exist after the planned research 
 
 Do not substitute partial batches, interrupted executions, interim review counts, temporary implementation checks, or current resource counts known to be intermediate for the planned final result. Those belong in coordination, protocol, review, and technical handoff records unless the development event remains scientifically relevant after the final release.
 
-## SACRE ontology correction — governing for all future Bench work
+## Governing Bench construction model — 2026-08-30
 
-Bioethics Bench must be constructed around the formal SACRE objects specified in Part I.
+Bioethics Bench must remain aligned with the formal SACRE specification while preserving a **richer normative research object** than any single SACRE run.
 
-SACRE begins with a **Scenario** and source-tagged **Policy candidates** from Public Preferences, Expert Judgments, and Ethical Frameworks. It does not formally take a separate `decision`, `decision-maker`, or `decision_question` object as input.
+The three layers are:
 
-A practical `decision_question` and named decision-maker may remain useful metadata when they help a reader understand or bound a Scenario. They must not dictate the candidate taxonomy or cause source research to be reverse-engineered toward a prewritten menu of options.
+1. **Scenario** — the practical normative situation;
+2. **candidate universe** — the serious Policy positions worth representing for that Scenario;
+3. **SACRE projection** — an explicit selection from that universe for a particular source-grounded, expanded, matched-study, or demonstration analysis.
 
-The resource-construction rule is now:
+SACRE itself begins with a Scenario and Policy candidates represented in Public Preferences, Expert Judgments, and Ethical Framework roles for the run. It does not formally take a separate `decision`, `decision-maker`, or `decision_question` object as input.
 
-> **Scenario first → recover the natural number of substantively distinct source-supported Policy positions → preserve provenance and source identity → audit representation → classify SACRE suitability.**
+A practical `decision_question` and named decision-maker may remain useful metadata when they help a reader understand or bound a Scenario. They must not dictate the candidate universe.
 
-Do not replace this with “one bounded decision → fill a candidate geometry.”
+### Rich candidate universe
 
-The governing audit is `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`, now titled **Scenario and Policy-Representation Audit**.
+The Bench candidate universe is **not restricted to candidates that carry direct source support**.
+
+A serious candidate may be:
+
+- directly source-grounded;
+- source-informed through an explicit reasoning bridge;
+- Framework-derived;
+- constructed as a serious comparator, boundary position, or missing normative alternative.
+
+Every candidate must disclose which of these it is.
+
+The public interface may use a simple **✓ Source** mark where defensible external grounding exists. The check mark is provenance metadata, not an inclusion criterion and not a quality score.
+
+A constructed comparator is legitimate research material. It must never masquerade as an observed public preference, affected-community position, professional recommendation, or verbatim philosophical view.
+
+### SACRE projections
+
+A case may support several projections from one richer candidate universe:
+
+- `source-grounded`;
+- `expanded`;
+- `matched-study`;
+- `demonstration`;
+- `direct-grounding`;
+- another explicitly justified research projection.
+
+Every projection must declare which candidate IDs it uses, their Public/Expert/Framework role assignment, provenance state, geometry, purpose, and what claims the result can support.
+
+A projection that claims convergence among **actual represented source positions** must use defensibly grounded candidates in those roles. An expanded projection may include constructed comparators, but the resulting claim is about the represented expanded field rather than empirical consensus among the named source communities.
+
+The governing construction rule is therefore:
+
+> **Scenario first → build a rich serious candidate universe → mark provenance/source status → audit the universe → derive explicit SACRE projection(s) for the research purpose.**
+
+Do not replace this with either “one bounded decision → fill a candidate geometry” or “only sourced candidates may exist in the Bench.”
+
+The governing audit is `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`, now titled **Scenario, Candidate-Universe, and Projection Audit**.
 
 ## Cold-start reading order
 
@@ -34,15 +72,19 @@ The governing audit is `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`, now titled **Scen
 2. `docs/papers/BENCH_COMPLETION_STATE_MANUSCRIPT_PLAN.md`
 3. `docs/FULL_CORPUS_V1_PLAN.md`
 4. `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`
-5. `docs/PROGRAM_COORDINATION.md`
-6. generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
-7. `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
-8. `docs/RESOURCE_CARD.md`
-9. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
-10. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
-11. `docs/papers/BENCH_MANUSCRIPT_V8_HANDOFF.md` for historical manuscript/submission state
-12. `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md` for reusable production material
-13. `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md` when the completed resource is ready for submission freeze
+5. `docs/FULL_CORPUS_SCENARIO_POLICY_AUDIT_LEDGER.md`
+6. `docs/FEATURED_SCENARIO_POLICY_AUDIT_2026-08-30.md`
+7. `docs/FEATURED_PRIORITY_SOURCE_REOPEN_2026-08-30.md`
+8. `docs/FEATURED_PROPOSED_NEXT_VERSION_RECONSTRUCTIONS_2026-08-30.md`
+9. `docs/PROGRAM_COORDINATION.md`
+10. generated `docs/full-corpus/review/RESEARCH_HANDOFF.md`
+11. `docs/full-corpus/review/DEEP_RESEARCH_BRIEF.md`
+12. `docs/RESOURCE_CARD.md`
+13. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
+14. `docs/strategy/GENERIC_RESOURCE_ONTOLOGY_STRESS_TEST.md`
+15. `docs/papers/BENCH_MANUSCRIPT_V8_HANDOFF.md` for historical manuscript/submission state
+16. `docs/papers/BENCH_SUBMISSION_RESOURCE_PACKAGE_HANDOFF.md` for reusable production material
+17. `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md` when the completed resource is ready for submission freeze
 
 ## Manuscript state
 
@@ -57,7 +99,7 @@ Drive: `1IYG8N2PHQOMGva6a-sdE7YEKb29TiSHG`
 
 V10 is the governing **shape** for the intended completed standalone paper. It does not claim that placeholder studies have already been completed and is not automatically promoted to CURRENT.
 
-The ontology correction above may require terminology cleanup in the final v10 manuscript when its placeholders are populated. Do not churn the manuscript merely for versioning; make those corrections as part of the next substantive Bench manuscript pass.
+The richer candidate-universe model will require terminology and Methods cleanup in the final v10 manuscript when its placeholders are populated. Do not churn the manuscript merely for versioning; make those corrections as part of the next substantive Bench manuscript pass.
 
 ## Intended v1 resource endpoint
 
@@ -65,15 +107,19 @@ The endpoint is defined by `docs/FULL_CORPUS_V1_PLAN.md`, not by the present exe
 
 - 200 bounded practical-ethics Scenarios / cases;
 - concise and detailed forms, yielding 400 authored Scenario representations if the completion criterion is met;
-- source-grounded recovery of the natural Policy positions supported in Public / affected-community, Expert / professional, and Ethical Framework source domains;
-- explicit factual assumptions, uncertainty, jurisdiction/time treatment, stipulations, provenance, and construction risks where relevant;
-- a Scenario / Policy-representation audit for **all 200 cases**;
-- explicit executable eligibility rather than manufactured regularity;
-- explicit distinction between research-complete, SACRE-suitable, demonstration-rich, and Featured/public-release status;
+- a reviewed **rich candidate universe** for every case;
+- candidate-level provenance status, including visible source grounding where warranted;
+- source-supported Public / affected-community, Expert / professional, and Ethical Framework evidence where available;
+- serious constructed comparators where needed to represent important normative structure;
+- explicit factual assumptions, uncertainty, jurisdiction/time treatment, and stipulations;
+- a Scenario / candidate-universe audit for **all 200 cases**;
+- one or more explicit SACRE projections where appropriate;
+- clear separation between source-grounded and expanded/constructed projections;
+- explicit distinction between research completeness, projection suitability, demonstration richness, and Featured/public-release status;
 - reproducible corpus-level statistics generated from machine-readable metadata;
 - release review, versioning, rights/licensing, hashing, manifests, and reviewer-inspectable provenance.
 
-A research-complete case may legitimately be non-executable. An executable case may legitimately be a weak public demonstration. Candidate counts may legitimately be asymmetric. These are outcomes of the evidence and representation quality, not quotas.
+A case may legitimately have a narrow source-grounded projection and a richer expanded projection. A case may also be complete scholarship without an appropriate SACRE projection yet. These are not failures.
 
 ## Current development state — coordination evidence, not final Results
 
@@ -94,72 +140,102 @@ Current locator-enriched Bench commit: `0a8317ba8a2c5978f7a50bb5f13de875153b6782
 Current SACRE re-pin: `9fa908a45c2447aa97f0473754c434bdb874b19e`.  
 Current vendored Full Corpus payload SHA-256: `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
 
-The provenance refresh changed 68/68 resource hashes but produced 0 execution/task-semantic differences; post-repin adapter projection is byte-equivalent and the Full Corpus regression suite passes 46/46. This remains useful reproducibility evidence, but the final paper should report the equivalent release-level test on the **frozen final executable collection** rather than making this transitory event the central Results section.
+The provenance refresh changed 68/68 resource hashes but produced 0 execution/task-semantic differences; post-repin adapter projection is byte-equivalent and the Full Corpus regression suite passes 46/46. This remains useful reproducibility evidence, but the final paper should report the equivalent release-level test on the frozen final research object and declared projection(s).
 
 The interrupted 68-record developmental QCCS census (20 complete / 48 incomplete non-results) is coordination evidence only. It is not the final Bench study and should not appear as the standalone resource paper's endpoint.
 
-## New representational finding — 2026-08-30
+## Representational finding — 2026-08-30
 
-The source-grounded resource is stronger than the original SACRE example library on provenance and research traceability, but the construction process appears in some cases to have narrowed the represented normative field.
+The resource became substantially stronger on provenance and source grounding, but some cases narrowed their normative field because candidate construction was effectively limited by the available source map or by a fixed geometry.
 
-The failure mode is not simply “missing decision branches.” That formulation incorrectly gives an editorial `decision_question` more ontological weight than SACRE does.
+The corrected question is no longer only:
 
-The correct question is whether the source research and editorial translation preserve the **natural substantively distinct Policy positions** supported by the relevant source domains. Risks include:
+> What source-supported positions exist?
+
+It is also:
+
+> What serious Policy positions are needed to represent the normative space, and what is the provenance status of each?
+
+Risks include:
 
 - near-paraphrase candidates;
 - nested-caveat duplication;
 - source-slot completion;
+- **source-ceiling compression**;
 - decision-question overfitting;
 - constraint-induced collapse;
 - evidence-to-policy overcompression;
-- rationale diversity without position diversity;
-- merging genuinely distinct positions into a single synthetic cautious formulation.
+- rationale diversity without Policy diversity;
+- merging genuinely distinct positions into a cautious synthesis;
+- adding a constructed extreme that is merely theatrical;
+- provenance laundering, where a constructed/inferred Policy looks source-backed.
 
-Current Featured F03 is a useful calibration example: its framing question mentions resuscitation default, comfort-care default, and shared decision-making, but that fact alone does not require all three to appear as candidates. The audit instead asks whether the current candidates faithfully represent the positions actually supported by the sources, or whether the source-to-policy construction compressed a broader normative field.
+Current Featured F10 remains a positive example because its positions differ materially in the role of age, prognosis, lottery, fair innings, and equal moral status.
 
-Current Featured F10 is a useful positive comparison because its represented positions differ materially in the role of age, prognosis, lottery, fair innings, and equal moral status.
+F17 is a useful example of why the candidate universe may need to be richer than the original sourced field: serious rights-based abolitionist animal-ethics reasoning should not disappear merely because the initial source construction centered reformist harm-benefit positions.
 
-Do not silently rewrite the released Featured records. Any substantive correction should be issued as a new explicit version with change history.
+Do not silently rewrite released Featured records. Any changed record is a new explicit version with change history.
+
+## Public website
+
+`/v4/` is the current design candidate for the next Bioethics Bench public page.
+
+It deliberately returns to the original pre-recent-change v1 visual language:
+
+- centered navy/teal hero;
+- compact provenance strip;
+- restrained cards and spacing;
+- dark research-framework band;
+- example-record treatment;
+- minimal public-facing prose.
+
+Do **not** use `/v3/` as the style model. V3 is retained only as a historical comparison and is too meta for the public site.
+
+The v4 public-language rule is simple: explain the resource, not the coordination process. Do not surface calibration stages, audit queues, completion gates, internal version logic, or manuscript-development state on the main page.
 
 ## RE-Iteration finding
 
-The current RE-Iteration revision prompt in `xnuxi/sacre-prototype` was compared with its original Phase 3 implementation. The operative prompt did **not** drift: it continues to require preservation of the candidate's essential normative commitment and source perspective, the smallest sufficient revision, and movement toward the stated target. The directive-proposal prompt is also substantively unchanged from its first implementation.
+The current RE-Iteration revision prompt in `xnuxi/sacre-prototype` was compared with its original Phase 3 implementation. The operative prompt did **not** drift: it continues to require preservation of the candidate's essential normative commitment and source perspective, the smallest sufficient revision, and movement toward the stated target.
 
-Therefore weaker recent directives or revised candidates should not be “fixed” by restoring an older prompt. More plausible contributors include overcompressed starting Policy fields, the current QCCS operationalization and resulting coherence matrix, model/provider/configuration differences, selected anchors and targets, and later full fresh re-execution semantics.
+Therefore weaker recent directives or revised candidates should not be “fixed” by restoring an older prompt. More plausible contributors include overcompressed starting Policy fields, QCCS operationalization and the resulting coherence matrix, model/provider/configuration differences, selected anchors and targets, and later full fresh re-execution semantics.
 
-The next RE-Iteration diagnostic should compare broad and narrow candidate fields under controlled current conditions before any prompt modification.
+The next RE-Iteration diagnostic should compare at least:
+
+- a source-grounded projection; and
+- a richer expanded projection
+
+under controlled current conditions before any prompt modification.
 
 ## Final paper evidence surfaces
 
-V10 and the manuscript plan organize the completed paper around four result surfaces.
+The completed paper should report at least:
 
-### 1. Completed corpus and eligibility
+### 1. Completed corpus
 
-Final case/representation counts, domain distribution, executable profiles, research-complete/non-executable cases, any held/additional-evidence cases, Featured crosswalk, natural candidate geometry, demonstration-richness classification, and source/citation inventory.
+Final case/representation counts, domain distribution, candidate-universe sizes, candidate provenance classes, Featured crosswalk, and source/citation inventory.
 
 ### 2. Source grounding and release review
 
-Complete release-review coverage, material source/warrant/whole-document/source-independence findings, repairs, additions, holds/demotions, adjudicated outcomes, independent human review status, and final canonical locator/identifier coverage.
+Complete release-review coverage, source/warrant/whole-document/source-independence findings, repairs, additions, adjudicated outcomes, independent human review status, and canonical locator/identifier coverage.
 
-### 3. Controlled representations and natural Policy geometry
+### 3. Controlled representations and candidate universes
 
-Final concise/detailed invariant audit, Scenario / Policy-representation audit, executable-geometry distribution, candidates per case, partner-count asymmetry, and task workload summaries.
+Final concise/detailed invariant audit, Scenario / candidate-universe audit, candidate counts per case, provenance/source-mark distribution, and important reconstruction findings.
 
-### 4. Final reference-task reproducibility
+### 4. SACRE projections and reproducibility
 
-Frozen resource release/checksum, frozen `sacre-qccs-v1` contract/version/checksum, records projected, task-semantic differences, provenance-only differences if any, consumer re-pin / byte-equivalence, validator/regression status, and immutable release identifiers.
+Projection types, candidate IDs, projection geometries, source-grounded versus expanded claims, frozen resource/checksums, `sacre-qccs-v1` contract/version/checksum where used, projection/equivalence checks, regression status, and immutable release identifiers.
 
 ## Ownership boundaries
 
 The standalone Bench paper owns:
 
 - resource construction and release methods;
-- provenance and source-grounding architecture;
+- candidate-universe construction;
+- provenance and source-marking architecture;
 - Scenario and Policy-representation quality;
-- evidence-qualified executable eligibility;
+- SACRE projection construction as a resource interface;
 - controlled representation construction;
-- natural candidate geometry;
-- resource/task/evaluator separation;
 - release governance, versioning, and reproducibility;
 - the uses enabled by the completed resource.
 
@@ -185,34 +261,33 @@ The following remain valid development achievements:
 - reviewer-facing submission resource package;
 - current Patterns production metadata and release-checklist work.
 
-These technical gates do not prove representational adequacy. Existing developmental records may be reopened for Scenario / Policy-representation review without treating the prior technical work as invalid.
+These technical gates do not prove candidate-universe adequacy. Existing developmental records may be reopened without treating prior technical work as invalid.
 
-Do not implement schema v2 or a second task merely for manuscript neatness. A schema revision should occur only if the corrected research object cannot be represented faithfully in the present schema.
+Do not implement schema v2 merely for manuscript neatness. A schema revision should occur only when the richer case object cannot be represented cleanly through current records plus explicit projection metadata.
 
 ## Current research work
 
 Proceed in this order:
 
-1. **Audit the 20 released Featured cases as a calibration set** using `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`; classify representational issues and demonstration richness without silently editing released records.
-2. **Stabilize the audit standard** with concrete positive and negative examples from Featured.
-3. **Apply the same audit to the entire planned 200-case Bench during construction and review**, reopening developmental records where necessary.
-4. Complete all 200 scholarly cases under the corrected Scenario-first `FULL_CORPUS_V1_PLAN.md`, with concise/detailed forms and explicit disposition.
-5. Complete outstanding source research, source-description verification, whole-document omission work, source-independence review, and source-to-Policy reconstruction; repair or hold cases without manufacturing grounding or disagreement.
-6. Freeze and complete the independent release-review/adjudication protocol.
-7. Freeze the final resource object and evidence-qualified executable collection.
-8. Generate final corpus, provenance, eligibility, representation, natural-geometry, and demonstration-richness statistics directly from the machine-readable release.
-9. Run the final `sacre-qccs-v1` all-record projection/equivalence gate on the frozen executable collection and pin the consumer artifact.
+1. Use the 20 Featured cases as the calibration set for **candidate-universe richness, provenance accuracy, and projection design**; never silently mutate released v1 records.
+2. Revisit the five priority cases already identified (F03, F04, F09, F17, F20) under the richer-universe model. Some issues may require a new record version; others may be solved by adding an expanded projection without changing the historical source-grounded record.
+3. Apply the same audit to **all 200 cases**, reopening developmental records where necessary.
+4. For every case, construct a serious candidate universe and mark candidate provenance/source status.
+5. Derive source-grounded, expanded, matched-study, and/or demonstration projections only where they serve a real research purpose.
+6. Complete source research, source-description verification, whole-document omission work, source-independence review, and candidate provenance adjudication.
+7. Freeze the final resource object, candidate universes, and declared projections.
+8. Generate final corpus, provenance, source-marking, candidate-universe, projection, and demonstration statistics directly from the machine-readable release.
+9. Run the final `sacre-qccs-v1` projection/equivalence gate on every frozen projection used in the paper and pin consumer artifacts.
 10. Generate final tables and figures from versioned scripts/artifacts.
-11. Replace all v10 placeholders with the complete observed result set, including negative/null/held/non-executable outcomes.
-12. Then complete author metadata, software/tooling license, live Patterns requirements, cover letter/front matter, reviewer access, clean-clone validation, archival identifiers, and immutable submission snapshot.
-13. Final author/coauthor prose review and submit.
+11. Replace all v10 placeholders with the complete observed result set, including negative/null/held/non-projected outcomes.
+12. Complete submission metadata, live Patterns requirements, reviewer access, clean-clone validation, archival identifiers, immutable snapshot, coauthor review, and submission.
 
 ## Evidence ceiling while the work remains incomplete
 
-Current coordination documents may accurately state the present 34/68 development substrate, provenance repairs, equivalence checks, and results of the new representational audit as they are completed.
+Current coordination documents may accurately state the present development substrate, provenance repairs, equivalence checks, and results of candidate-universe/source audits as they are completed.
 
-The completion-state manuscript may specify planned final analyses and placeholders, but it must not invent their outcomes or imply that the 200-case release, all-case representational audit, independent review, final eligibility distribution, or final equivalence gate has already been completed.
+The completion-state manuscript may specify planned final analyses and placeholders, but it must not invent their outcomes or imply that the 200-case release, all-case audit, independent review, final candidate-universe statistics, final projection distribution, or final equivalence gates have already been completed.
 
-Do not claim independent corpus-wide human source validation, corpus-wide source fidelity, corpus-wide Policy-space adequacy, QCCS reliability/construct validity, moral correctness, human-model correspondence, demonstrated method-neutrality across multiple mature tasks, an implemented generic v2 schema, or a mature source-to-policy warrant benchmark until the corresponding evidence exists.
+Do not claim corpus-wide human source validation, corpus-wide candidate-universe adequacy, QCCS reliability/construct validity, moral correctness, human-model correspondence, or demonstrated method-neutrality until the corresponding evidence exists.
 
-**CURRENT NEXT DEPENDENCY:** complete the 20-case Featured calibration audit, stabilize the Scenario / Policy-representation standard, and then apply it across the full 200-case resource while completing source and release review. The final Bench freeze comes only after the whole-corpus audit.
+**CURRENT NEXT DEPENDENCY:** stabilize the Featured calibration under the richer candidate-universe model, then apply that model to all 200 cases while completing source and release review. The final Bench freeze comes only after the whole-corpus audit.
