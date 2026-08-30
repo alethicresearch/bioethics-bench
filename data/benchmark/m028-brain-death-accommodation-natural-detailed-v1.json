@@ -63,7 +63,9 @@
       },
       {
         "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "doi": "10.1212/WNL.0000000000214334",
+        "url": "https://doi.org/10.1212/WNL.0000000000214334"
       },
       {
         "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
@@ -139,7 +141,9 @@
             },
             {
               "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1212/WNL.0000000000214334",
+              "url": "https://doi.org/10.1212/WNL.0000000000214334"
             }
           ],
           "adapted_not_reproduced": true
@@ -245,7 +249,9 @@
     },
     {
       "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "doi": "10.1212/WNL.0000000000214334",
+      "url": "https://doi.org/10.1212/WNL.0000000000214334"
     },
     {
       "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
@@ -284,5 +290,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; the candidate field and load-bearing facts are fixed."
   },
   "scenario": "An adult sustains catastrophic permanent brain injury and, after prerequisites are satisfied, is evaluated under current multidisciplinary US standards for death by neurologic criteria. The examination and apnea testing are completed correctly and death is declared. The family understands that the medical and legal system treats BD/DNC as death but rejects that definition on sincere religious and moral grounds and asks that mechanical ventilation, vasoactive medication and other organ support continue until circulatory arrest. The hospital has already offered repeated explanation, ethics support and spiritual care. For this benchmark, assume no diagnostic uncertainty remains, organ donation is not planned, continued support cannot restore brain function, and ongoing support uses an ICU bed and intensive clinical resources without an immediate named competing patient or acute scarcity crisis. The hospital must choose the policy governing accommodation, transfer opportunity and eventual discontinuation.",
-  "content_hash": "sha256:cd69400e5a2aded5b87a4f1b8e27026d83734a4175997d9a92c8821bf409c55e"
+  "content_hash": "sha256:865b847b8e38f6e0dd65acf2af546a9a93408f3cad6f4789fb8d875216c50a50"
 }

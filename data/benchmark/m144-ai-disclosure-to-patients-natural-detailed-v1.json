@@ -57,7 +57,8 @@
     "sources": [
       {
         "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml"
       },
       {
         "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
@@ -142,7 +143,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml"
             },
             {
               "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
@@ -181,7 +183,8 @@
           "sources": [
             {
               "citation": "AMA Policy H-480.931, risk- and impact-based transparency and disclosure.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml"
             }
           ]
         }
@@ -210,7 +213,8 @@
   "references": [
     {
       "citation": "American Medical Association. Policy H-480.931, Assessing the Intersection Between AI and Health Care, current through 2026. Transparency and disclosure decisions \"should be based upon a risk- and impact-based approach,\" with the need for disclosure greater where an AI-enabled technology carries greater risk of harm to a patient. Note that much of what H-480.931 enumerates is disclosure by the AI developer to purchasers and physicians; the risk-and-impact principle is what this candidate carries across to physician-to-patient disclosure.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://policysearch.ama-assn.org/policyfinder/detail/augmented%20intelligence?uri=%2FAMADoc%2FHOD.xml-H-480.931.xml"
     },
     {
       "citation": "WHO. Ethics and governance of artificial intelligence for health. 2021.",
@@ -243,5 +247,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A health system uses multiple validated AI-enabled tools, ranging from routine workflow support and image triage to systems that materially influence diagnosis, monitoring and treatment recommendations. For this benchmark, assume clinicians remain responsible for final clinical decisions, the institution can provide clear general transparency about routine lower-impact AI, and case-specific disclosure gives patients an opportunity to ask what role AI played and request clinician explanation or review. Patient-attitude evidence shows strong demand for transparency, especially as AI becomes more consequential, while the institution wants to avoid turning disclosure into repetitive boilerplate. The governance committee must decide whether every material AI contribution should trigger case-specific notice or whether specific disclosure should be reserved for consequential or high-impact AI while lower-impact use is covered through general transparency.",
-  "content_hash": "sha256:be2b1f3fae553fce4488baa14dd01e7c649f01e291f1f4ea214e8b610ee18bcc"
+  "content_hash": "sha256:9d4e85963bdd99e9c24c2326cab8c06c90e30e213258cbb450f70481638c43a6"
 }

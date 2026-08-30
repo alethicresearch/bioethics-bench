@@ -73,7 +73,8 @@
     "sources": [
       {
         "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness"
       },
       {
         "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
@@ -158,7 +159,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness"
             }
           ],
           "adapted_not_reproduced": true
@@ -175,7 +177,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness"
             },
             {
               "citation": "World Health Organization and International Labour Organization. Occupational health and safety for health workers. 2021.",
@@ -198,7 +201,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness"
             }
           ]
         }
@@ -242,7 +246,8 @@
   "references": [
     {
       "citation": "American Medical Association. Code of Medical Ethics Opinion 8.3, Physicians' Responsibilities in Disaster Response & Preparedness. Individual physicians have an obligation to provide urgent medical care during disasters, holding even against greater than usual risk to their own safety, health or life; they also have an obligation to weigh the risk of providing care in the present against the need to remain available to provide care in the future.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/physicians-responsibilities-disaster-response-preparedness"
     },
     {
       "citation": "World Health Organization and International Labour Organization. COVID-19: Occupational health and safety for health workers. 2021.",
@@ -265,5 +270,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:18c8c0b14a8d254ce59d8c18e84fb4216a1ff08d5b1a951f1ecc56b779a5179d"
+  "content_hash": "sha256:8d1a5cb006d064aad82df89e83797b406cf3df95e0b12a446ad25ee711e603c9"
 }

@@ -72,15 +72,19 @@
     "sources": [
       {
         "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially unproven interventions and communications guidance.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.isscr.org/guidelines"
       },
       {
         "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current FDA warnings.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes"
       },
       {
         "citation": "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding Stem Cell Tourism. JAMA Neurol. 2015;72:1342-1345.",
-        "type": "article"
+        "type": "article",
+        "doi": "10.1001/jamaneurol.2015.1891",
+        "url": "https://doi.org/10.1001/jamaneurol.2015.1891"
       },
       {
         "citation": "Master Z et al. Factors that influence unproven stem cell intervention seeking behavior: A qualitative analysis. 2025. PMID 40744777.",
@@ -160,7 +164,8 @@
             },
             {
               "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes"
             },
             {
               "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
@@ -231,7 +236,8 @@
     },
     {
       "citation": "U.S. Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes"
     },
     {
       "citation": "Bowman M et al. JAMA Neurol. 2015;72:1342-1345.",
@@ -250,5 +256,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:92919fceb6d37a04448bd5b140d996f1391de76f27ab11f02042962a23dcb568"
+  "content_hash": "sha256:46ff66493950fe3f01a1864c8517d4016a85c794c1caad0e1b22152d616dbfac"
 }

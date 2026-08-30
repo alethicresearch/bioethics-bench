@@ -65,7 +65,8 @@
       },
       {
         "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.ama-assn.org/practice-management/digital-health/using-health-ai-exam-room-what-doctors-should-consider"
       }
     ],
     "adapted_not_reproduced": true
@@ -119,7 +120,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.ama-assn.org/practice-management/digital-health/using-health-ai-exam-room-what-doctors-should-consider"
             }
           ],
           "adapted_not_reproduced": true
@@ -206,7 +208,8 @@
     },
     {
       "citation": "American Medical Association. Augmented Intelligence Development, Deployment and Use in Health Care (AMA AI principles); AMA guidance on using health AI in the exam room, which states that where AI tools are used during an encounter, and especially for ambient scribing, physicians should explain the technology, secure consent, and address privacy protection.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.ama-assn.org/practice-management/digital-health/using-health-ai-exam-room-what-doctors-should-consider"
     }
   ],
   "required_aggregation": "mean",
@@ -220,5 +223,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
   },
   "scenario": "An outpatient health system is setting the consent and data-use policy for an ambient AI system that listens to patient-clinician conversations and drafts the clinical note. The clinician reviews and finalises every draft; the system makes no clinical decisions. Producing the draft requires capturing the conversation as it happens, and a third-party vendor processes the audio under contract terms that govern retention and model training. Study evidence from ambulatory care finds most patients comfortable with the technology in principle, but consent falls substantially when patients are told in detail what the system does with the recording, and comfort is markedly lower for mental-health and sexual-health encounters than for routine examinations. Patients rate knowing where audio is sent and who can access it as near-universally important. For this benchmark, assume the policy governs all ambulatory encounters including sensitive ones. The system must decide whether recording requires affirmative consent for each encounter, whether it may run by default with clear notice and easy immediate opt-out, or whether routine use is permissible only under strict retention and training limits with separate consent for sensitive encounters.",
-  "content_hash": "sha256:4b094d37310d6f52a0b38dac9ab7bae59f3ea9159c55219084637c1170caac14"
+  "content_hash": "sha256:c56ae35f70e11fae6e2b64b1bc32ef1ba64c79bba12ef40a95455af7d83a0fcd"
 }

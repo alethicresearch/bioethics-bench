@@ -65,7 +65,9 @@
     "sources": [
       {
         "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
-        "type": "guideline"
+        "type": "guideline",
+        "doi": "10.15585/mmwr.rr6506a1",
+        "url": "https://doi.org/10.15585/mmwr.rr6506a1"
       },
       {
         "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
@@ -156,7 +158,9 @@
           "sources": [
             {
               "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.15585/mmwr.rr6506a1",
+              "url": "https://doi.org/10.15585/mmwr.rr6506a1"
             }
           ],
           "adapted_not_reproduced": true
@@ -243,7 +247,9 @@
   "references": [
     {
       "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship. MMWR Recomm Rep. 2016;65(RR-6):1-12. Four elements — commitment, action for policy and practice, tracking and reporting, education and expertise — with the accompanying toolkit supplying both symptom-relief and, separately, watchful-waiting and delayed-prescribing materials.",
-      "type": "guideline"
+      "type": "guideline",
+      "doi": "10.15585/mmwr.rr6506a1",
+      "url": "https://doi.org/10.15585/mmwr.rr6506a1"
     },
     {
       "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590.",
@@ -272,5 +278,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:e28bb42cf0a4ef54b6ea6e85b59ec99126d86851d016813085ea5229cc625be9"
+  "content_hash": "sha256:974936fe4053030263f528f122356daf8eebc4671d5609ed805ba48e01b89408"
 }

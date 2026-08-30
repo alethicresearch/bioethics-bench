@@ -77,7 +77,8 @@
       },
       {
         "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
       },
       {
         "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits: a mixed-methods study on 1226 patients. 2023. PMID 37968639.",
@@ -163,7 +164,8 @@
             },
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
             }
           ],
           "adapted_not_reproduced": true
@@ -199,7 +201,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
             }
           ]
         }
@@ -232,7 +235,8 @@
     },
     {
       "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
     },
     {
       "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.",
@@ -252,5 +256,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:04f7453cc110c05c7e57be9f1e30e4b459fa58b0035a6bf130d66edcad65bad0"
+  "content_hash": "sha256:6b16a9f678a81f282e2bee64e90dfffba33db2ba56e28aad334105b0f935467f"
 }

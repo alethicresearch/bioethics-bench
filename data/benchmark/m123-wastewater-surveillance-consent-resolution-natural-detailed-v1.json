@@ -58,7 +58,9 @@
     "sources": [
       {
         "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-        "type": "guideline"
+        "type": "guideline",
+        "doi": "10.17226/26767",
+        "url": "https://doi.org/10.17226/26767"
       },
       {
         "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
@@ -112,7 +114,9 @@
             },
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.17226/26767",
+              "url": "https://doi.org/10.17226/26767"
             }
           ],
           "adapted_not_reproduced": true
@@ -131,7 +135,9 @@
           "sources": [
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.17226/26767",
+              "url": "https://doi.org/10.17226/26767"
             },
             {
               "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024.",
@@ -158,7 +164,9 @@
           "sources": [
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.17226/26767",
+              "url": "https://doi.org/10.17226/26767"
             }
           ]
         }
@@ -174,7 +182,9 @@
           "sources": [
             {
               "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.17226/26767",
+              "url": "https://doi.org/10.17226/26767"
             }
           ]
         }
@@ -223,7 +233,9 @@
   "references": [
     {
       "citation": "National Academies. Wastewater-based Disease Surveillance for Public Health Action. 2023.",
-      "type": "guideline"
+      "type": "guideline",
+      "doi": "10.17226/26767",
+      "url": "https://doi.org/10.17226/26767"
     },
     {
       "citation": "WHO. Wastewater and environmental surveillance for one or more pathogens: guidance on prioritization, implementation and integration. Pilot version 2024; landscape analysis 2026.",
@@ -250,5 +262,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public-health department already monitors municipal wastewater for respiratory pathogens and proposes adding neighborhood and institutional catchments plus antimicrobial-resistance and drug-use markers. For this benchmark, assume individual consent or opt-out cannot practically be obtained, citywide samples have very low individual re-identification risk while neighborhood or institutional catchments create materially greater stigma, inference and re-identification risks, the proposed program includes both infectious-disease targets and more sensitive drug-use markers, and the agency can prohibit law-enforcement and commercial secondary use while implementing transparency, community engagement and ethics-governance processes. The agency must decide whether broad governed surveillance may expand across useful targets and scales, routine surveillance should remain at sufficiently large catchments and mainly infectious-disease targets, or small-area and sensitive-target monitoring should require a separate community and ethics approval process.",
-  "content_hash": "sha256:bb4ac13fba4e891f40d5b975a264f0523f89759b1850798473bddbcc54581c30"
+  "content_hash": "sha256:5ccf010cddbf10fd2e11d2813eac147f66e432136980368bacfbcfe23b6303c4"
 }

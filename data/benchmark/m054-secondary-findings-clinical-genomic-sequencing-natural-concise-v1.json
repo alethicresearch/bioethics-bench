@@ -65,7 +65,9 @@
       },
       {
         "citation": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "doi": "10.1038/s41431-020-00758-w",
+        "url": "https://doi.org/10.1038/s41431-020-00758-w"
       },
       {
         "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
@@ -169,7 +171,9 @@
           "sources": [
             {
               "citation": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1038/s41431-020-00758-w",
+              "url": "https://doi.org/10.1038/s41431-020-00758-w"
             },
             {
               "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
@@ -271,7 +275,9 @@
     },
     {
       "citation": "Opportunistic genomic screening. Recommendations of the European Society of Human Genetics. Eur J Hum Genet. 2021;29:365–377.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "doi": "10.1038/s41431-020-00758-w",
+      "url": "https://doi.org/10.1038/s41431-020-00758-w"
     },
     {
       "citation": "International policies guiding the selection, analysis, and clinical management of secondary findings from genomic sequencing: a systematic review. PMID 39299240.",
@@ -315,5 +321,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools and load-bearing facts are fixed."
   },
   "scenario": "An adult undergoes clinical genome sequencing to investigate an unexplained medical condition. The laboratory can also intentionally analyze a predefined set of variants associated with serious conditions for which established surveillance or preventive treatment can substantially reduce morbidity or mortality. For this benchmark, assume any returned secondary finding would be analytically confirmed and clinically interpreted, pre- and post-test genetic counseling is available, and the represented findings concern serious conditions with established interventions. The health system must choose whether to analyze these actionable findings by default with an informed opt-out, analyze them only after explicit opt-in, restrict routine diagnostic analysis to the clinical indication rather than deliberately seek unrelated findings, or use a narrower secondary-finding policy limited to a particularly high threshold of penetrance and actionability.",
-  "content_hash": "sha256:001347eca4d3e44eb6b01fb6744f61db89571609b16f5216b51f7b39ee125738"
+  "content_hash": "sha256:7e134cf4669a06367a21d5c192be0d8c8b908f9a5aea4c99c3eb88eb6668045d"
 }

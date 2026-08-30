@@ -77,7 +77,8 @@
       },
       {
         "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
       },
       {
         "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits: a mixed-methods study on 1226 patients. 2023. PMID 37968639.",
@@ -163,7 +164,8 @@
             },
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
             }
           ],
           "adapted_not_reproduced": true
@@ -199,7 +201,8 @@
           "sources": [
             {
               "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
             }
           ]
         }
@@ -232,7 +235,8 @@
     },
     {
       "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12, Ethical Practice in Telemedicine.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://code-medical-ethics.ama-assn.org/ethics-opinions/ethical-practice-telemedicine"
     },
     {
       "citation": "Patients' perspectives and preferences toward telemedicine versus in-person visits. 2023. PMID 37968639.",
@@ -252,5 +256,5 @@
   ],
   "required_aggregation": "mean",
   "schema_version": "1.0.0",
-  "content_hash": "sha256:9c00e0d5844e1c706cd7e1a722f0da43df3d5771c353e6374bdb46ff58356fa6"
+  "content_hash": "sha256:31773b849f240dbc16dac722d4c4c5be16fa8e410a3a0043481b4c1bba33c421"
 }

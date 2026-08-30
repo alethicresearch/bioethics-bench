@@ -162,7 +162,9 @@
           "sources": [
             {
               "citation": "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.1016/S0140-6736(09)60137-9",
+              "url": "https://doi.org/10.1016/S0140-6736(09)60137-9"
             }
           ]
         }
@@ -178,7 +180,9 @@
           "sources": [
             {
               "citation": "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.",
-              "type": "article"
+              "type": "article",
+              "doi": "10.1016/S0140-6736(09)60137-9",
+              "url": "https://doi.org/10.1016/S0140-6736(09)60137-9"
             }
           ]
         }
@@ -242,7 +246,9 @@
     },
     {
       "citation": "Persad G, Wertheimer A, Emanuel EJ. Principles for allocation of scarce medical interventions. Lancet. 2009;373:423-431.",
-      "type": "article"
+      "type": "article",
+      "doi": "10.1016/S0140-6736(09)60137-9",
+      "url": "https://doi.org/10.1016/S0140-6736(09)60137-9"
     },
     {
       "citation": "Powers M, Faden R. Social Justice: The Moral Foundations of Public Health and Health Policy. Oxford University Press; 2006.",
@@ -260,5 +266,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A public health system has committed to funding IVF but cannot immediately provide treatment to every eligible applicant. Individual treatment success is probabilistic, fertility can be time-sensitive, and the program wants a transparent rule that can be applied consistently. For this benchmark, assume all represented applicants meet the program's minimum clinical eligibility criteria for IVF and have no contraindication to pregnancy, annual demand exceeds funded capacity by roughly one third, and equal-opportunity, clinical-priority and transparent multifactor allocation rules are legally available. The program must decide whether scarce funded cycles should be allocated by equal chance after threshold eligibility, by clinical benefit and time sensitivity, or through a broader published priority structure.",
-  "content_hash": "sha256:474263e77f96da257355501dd128e0d2f537ac707d60c056944fbcf54e91705d"
+  "content_hash": "sha256:e0b43fdb3622e9317b2f96d9c27588534963f17f87ab51f1ae0eb678890845a9"
 }

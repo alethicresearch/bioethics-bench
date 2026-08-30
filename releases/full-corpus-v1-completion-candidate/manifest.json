@@ -105,7 +105,7 @@
     {
       "record_id": "m012-unproven-commercial-stem-cell-assistance-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:92919fceb6d37a04448bd5b140d996f1391de76f27ab11f02042962a23dcb568",
+      "content_hash": "sha256:46ff66493950fe3f01a1864c8517d4016a85c794c1caad0e1b22152d616dbfac",
       "path": "data/benchmark/m012-unproven-commercial-stem-cell-assistance-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -116,7 +116,7 @@
     {
       "record_id": "m012-unproven-commercial-stem-cell-assistance-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:2cfa7973a2ee846855162b162bdbbc96d52e180fc31e6bf1e58ddf56457bbfab",
+      "content_hash": "sha256:4d01f326a2039c6beb56aaa2b81b5d1dd76158a702b97ec3ac173b288423530c",
       "path": "data/benchmark/m012-unproven-commercial-stem-cell-assistance-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -127,7 +127,7 @@
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:e28bb42cf0a4ef54b6ea6e85b59ec99126d86851d016813085ea5229cc625be9",
+      "content_hash": "sha256:974936fe4053030263f528f122356daf8eebc4671d5609ed805ba48e01b89408",
       "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -138,7 +138,7 @@
     {
       "record_id": "m018-patient-requested-antibiotics-uncertainty-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:d85b6c9a7849c66a5612d18c7b37c27875dcde10fb5e5bbdfa540bec191e108d",
+      "content_hash": "sha256:f897f05c63f20965e5f12fc3ea5b1c9d9c22bfbdd207c90fcc359f4bcf03ecd5",
       "path": "data/benchmark/m018-patient-requested-antibiotics-uncertainty-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -149,7 +149,7 @@
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:9c00e0d5844e1c706cd7e1a722f0da43df3d5771c353e6374bdb46ff58356fa6",
+      "content_hash": "sha256:31773b849f240dbc16dac722d4c4c5be16fa8e410a3a0043481b4c1bba33c421",
       "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -160,7 +160,7 @@
     {
       "record_id": "m019-telemedicine-access-diagnostic-safety-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:04f7453cc110c05c7e57be9f1e30e4b459fa58b0035a6bf130d66edcad65bad0",
+      "content_hash": "sha256:6b16a9f678a81f282e2bee64e90dfffba33db2ba56e28aad334105b0f935467f",
       "path": "data/benchmark/m019-telemedicine-access-diagnostic-safety-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -171,7 +171,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:18c8c0b14a8d254ce59d8c18e84fb4216a1ff08d5b1a951f1ecc56b779a5179d",
+      "content_hash": "sha256:8d1a5cb006d064aad82df89e83797b406cf3df95e0b12a446ad25ee711e603c9",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -182,7 +182,7 @@
     {
       "record_id": "m020-clinician-duty-dangerous-outbreak-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:04987ca9a858bdc97ee0c6ee691a48b0203af2909c72ed314d1640f143b0b88a",
+      "content_hash": "sha256:53b32bb3de255972b401e5eebdcf3afe59f31d32277715649fabcd9152baa64b",
       "path": "data/benchmark/m020-clinician-duty-dangerous-outbreak-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -215,7 +215,7 @@
     {
       "record_id": "m028-brain-death-accommodation-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:6e88abaa3068292f964c8c9e5c472e0d85f263d1e5a7d1cc0aeebc4123ecaa00",
+      "content_hash": "sha256:ff441a39db69a835736d86bdcd7e8d1d8e7f3c7ac15449de15536680f0debf2e",
       "path": "data/benchmark/m028-brain-death-accommodation-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -226,7 +226,7 @@
     {
       "record_id": "m028-brain-death-accommodation-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:cd69400e5a2aded5b87a4f1b8e27026d83734a4175997d9a92c8821bf409c55e",
+      "content_hash": "sha256:865b847b8e38f6e0dd65acf2af546a9a93408f3cad6f4789fb8d875216c50a50",
       "path": "data/benchmark/m028-brain-death-accommodation-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -325,7 +325,7 @@
     {
       "record_id": "m041-publicly-funded-ivf-allocation-natural-concise-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:50e5f98e456fdd026082a359c6782f86baffb86f2a95f3a66cd18d0d852c8ac6",
+      "content_hash": "sha256:1cd1f0e0fa7c32afbe6a9e191a496287b6109be293d64ffbc5ac90166cfa77d8",
       "path": "data/benchmark/m041-publicly-funded-ivf-allocation-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -336,7 +336,7 @@
     {
       "record_id": "m041-publicly-funded-ivf-allocation-natural-detailed-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:474263e77f96da257355501dd128e0d2f537ac707d60c056944fbcf54e91705d",
+      "content_hash": "sha256:e0b43fdb3622e9317b2f96d9c27588534963f17f87ab51f1ae0eb678890845a9",
       "path": "data/benchmark/m041-publicly-funded-ivf-allocation-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -369,7 +369,7 @@
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-concise-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:885da67290cc3150b4ee18278fee2fc5539f7d8a74926c2a9d26b1e6f0871d88",
+      "content_hash": "sha256:9d2f029075cb989a2b02ae6400a0bd5dc3987480c7d922b84676ecdd09e57d81",
       "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -380,7 +380,7 @@
     {
       "record_id": "m045-posthumous-use-stored-reproductive-material-natural-detailed-v1",
       "version": "1.1.0",
-      "content_hash": "sha256:ed04b111b17233493fb3648f652864e0a7bf40a976493c1d3f7d38448d33c32e",
+      "content_hash": "sha256:b87160462b395fe1d337b3fae6976d6e53ed6e43a422f0b108e9a7fcbe4fee39",
       "path": "data/benchmark/m045-posthumous-use-stored-reproductive-material-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -391,7 +391,7 @@
     {
       "record_id": "m050-donor-identity-access-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:d5c20336a5e80db615caba6a6132552889ece716e181f95f24de7326305d3d65",
+      "content_hash": "sha256:b66e2319dfb5731321499ddbc31d4b87c6060d3f845fed8e429c1f14521c8cf4",
       "path": "data/benchmark/m050-donor-identity-access-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
@@ -402,7 +402,7 @@
     {
       "record_id": "m050-donor-identity-access-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:884a4f8cd880b42a74b0f3c2ca57886eddb6acc2cf067772efcc9e5851cad192",
+      "content_hash": "sha256:80d652597447a64501314caf877c8203ea8a28d728a916f7227e9317d1218fe3",
       "path": "data/benchmark/m050-donor-identity-access-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
@@ -413,7 +413,7 @@
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:001347eca4d3e44eb6b01fb6744f61db89571609b16f5216b51f7b39ee125738",
+      "content_hash": "sha256:7e134cf4669a06367a21d5c192be0d8c8b908f9a5aea4c99c3eb88eb6668045d",
       "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -424,7 +424,7 @@
     {
       "record_id": "m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:8b9acc05e5e59bc45ffde224e552492ee0caa11f20b4adc2203606c53a0a9aad",
+      "content_hash": "sha256:017fe113e3f7310c27172e930e6f38061433622c065542c74c1f55872b9a0c29",
       "path": "data/benchmark/m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -457,7 +457,7 @@
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:4c0fd4db35cfe46299e7bb7a3080bcb72b3661a3c2f64e2e6754aa60a23462c1",
+      "content_hash": "sha256:7abef89d44577243a3898420765a02bc6972df1ea84efe470a66ff5ee3472d7e",
       "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -468,7 +468,7 @@
     {
       "record_id": "m060-nonmedical-sex-selection-ivf-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:57ac57ca33770a40ab121e467a6c6e6d5e8827cb946c6890fe727b2bf303cbc9",
+      "content_hash": "sha256:b4534ac8a57274f829879196690d451033d647958893160ddefb7a6fd5907c93",
       "path": "data/benchmark/m060-nonmedical-sex-selection-ivf-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -479,7 +479,7 @@
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:77351c8ac09b7ede551cb4fbe0ada8b403fbe5b36bc62cfedae4d311cd42edb9",
+      "content_hash": "sha256:b0a3d8a7f3f71c7c2b4bc3b4f2522d192f5debf126cd4af97fbaa276ed8f12ad",
       "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -490,7 +490,7 @@
     {
       "record_id": "m075-broad-consent-future-biobank-research-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:12ffbd5b6fef61278a9d3ed0baf22b533e4d24ef6ad72f047ecc7e21c47ea234",
+      "content_hash": "sha256:8ee8d3c74e4d51f5cbe41db57a6653c8548278bb0ac62e80af9620e347aa74c0",
       "path": "data/benchmark/m075-broad-consent-future-biobank-research-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -501,7 +501,7 @@
     {
       "record_id": "m080-post-trial-access-beneficial-intervention-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:5988757f8cb569016bb31396dc43e2ecc1efaacc19f277ed90ea9f402064d374",
+      "content_hash": "sha256:41ddb523699ad23ac0254599b7a42591ff17a6505645b34784b11f312b8e71f5",
       "path": "data/benchmark/m080-post-trial-access-beneficial-intervention-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -512,7 +512,7 @@
     {
       "record_id": "m080-post-trial-access-beneficial-intervention-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:a49da3bc5fa23d065f292365795f90618b482a1f2c777ea16ce3cb640eb2d1b0",
+      "content_hash": "sha256:a49cd23e38c72331cb6aa979dddfe501a524644b730d85e30ba1a560d65de2df",
       "path": "data/benchmark/m080-post-trial-access-beneficial-intervention-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -523,7 +523,7 @@
     {
       "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:1c1c84bb8c249842eb43bcd28a3fcbd531b526f84fbff66518ac61e99c794115",
+      "content_hash": "sha256:1f208082ed3922b0b4bedc414b4d8c5f256feb9ace5d5a51a6c181c63ffe4007",
       "path": "data/benchmark/m094-high-risk-workforce-vaccination-mandate-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -534,7 +534,7 @@
     {
       "record_id": "m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:a174879407df77c555ecfd6917f60dd21696a71e867137bf9b135211a6aa5081",
+      "content_hash": "sha256:82f553e2d727a11efbe1815b2d50f4de3eac8b3c01ff9437f5ea1bb0d2c31902",
       "path": "data/benchmark/m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x2-v1",
@@ -611,7 +611,7 @@
     {
       "record_id": "m123-wastewater-surveillance-consent-resolution-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:7dcbfb3ea5ef14585770a88a201952eab8c6e351a9449b29a8624cbad132ca9f",
+      "content_hash": "sha256:04ef05cebaffa186b4d3a5be7013910f67f99042da224b5ea7e5a1c3b46447b4",
       "path": "data/benchmark/m123-wastewater-surveillance-consent-resolution-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -622,7 +622,7 @@
     {
       "record_id": "m123-wastewater-surveillance-consent-resolution-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:bb4ac13fba4e891f40d5b975a264f0523f89759b1850798473bddbcc54581c30",
+      "content_hash": "sha256:5ccf010cddbf10fd2e11d2813eac147f66e432136980368bacfbcfe23b6303c4",
       "path": "data/benchmark/m123-wastewater-surveillance-consent-resolution-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -677,7 +677,7 @@
     {
       "record_id": "m141-commercial-health-data-partnership-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:2a008f9908472828f10bed80bee06a3927e75f14f8414a23a3af211bd6bb6568",
+      "content_hash": "sha256:ccc7f4d251976f60dfa975191d2923bef3c587fca89e19c52e4baf26c71dc426",
       "path": "data/benchmark/m141-commercial-health-data-partnership-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
@@ -688,7 +688,7 @@
     {
       "record_id": "m141-commercial-health-data-partnership-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:908aad1a3155c33d22cba76c14d50b29e5396cdc7d078952922412b7b88106df",
+      "content_hash": "sha256:d981f73d8c4ca03e11e8de7a340b6433105b501a33543431d342341880158e61",
       "path": "data/benchmark/m141-commercial-health-data-partnership-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-3x2x3-mean-v1",
@@ -699,7 +699,7 @@
     {
       "record_id": "m144-ai-disclosure-to-patients-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:995137ec38aef23f42144f1e62e151e96c53bdb4e6077992fca5838ab794620d",
+      "content_hash": "sha256:ebebbc47dc1593b806ff8bd93207a3559e6a418134a1e0e355435a9c4b1750ae",
       "path": "data/benchmark/m144-ai-disclosure-to-patients-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -710,7 +710,7 @@
     {
       "record_id": "m144-ai-disclosure-to-patients-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:be2b1f3fae553fce4488baa14dd01e7c649f01e291f1f4ea214e8b610ee18bcc",
+      "content_hash": "sha256:9d4e85963bdd99e9c24c2326cab8c06c90e30e213258cbb450f70481638c43a6",
       "path": "data/benchmark/m144-ai-disclosure-to-patients-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x2-mean-v1",
@@ -721,7 +721,7 @@
     {
       "record_id": "m146-ambient-ai-documentation-consent-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:4b094d37310d6f52a0b38dac9ab7bae59f3ea9159c55219084637c1170caac14",
+      "content_hash": "sha256:c56ae35f70e11fae6e2b64b1bc32ef1ba64c79bba12ef40a95455af7d83a0fcd",
       "path": "data/benchmark/m146-ambient-ai-documentation-consent-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -732,7 +732,7 @@
     {
       "record_id": "m146-ambient-ai-documentation-consent-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:c3dcb45b74cd184bb0d4b9cc66d0979dfc94a261cc85a7649f549dd235be2756",
+      "content_hash": "sha256:d08e0ee5d5111b7c2bf516ef13d8941bc2db538a0afcbebed0e73a9e444cf96f",
       "path": "data/benchmark/m146-ambient-ai-documentation-consent-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x1x3-mean-v1",
@@ -743,7 +743,7 @@
     {
       "record_id": "m189-mammography-screening-guideline-divergence-natural-concise-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:c7ab42ff1973d7dad565b73e754830732157b289ca47ee4f03b3943611ec44d3",
+      "content_hash": "sha256:3081f5f4edcbeac4f2149a18ec77366e9735eb5c940a78a1083306812735d8f6",
       "path": "data/benchmark/m189-mammography-screening-guideline-divergence-natural-concise-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",
@@ -754,7 +754,7 @@
     {
       "record_id": "m189-mammography-screening-guideline-divergence-natural-detailed-v1",
       "version": "1.0.0",
-      "content_hash": "sha256:7e5c1460c44708d92dc7386abe4d5eda8cd01d3215e2fda8100d1c162420a4b5",
+      "content_hash": "sha256:a6fa29fb2f18b4723100c28b3da82764963dc9e0f8ec43f1d6c7760001847e0f",
       "path": "data/benchmark/m189-mammography-screening-guideline-divergence-natural-detailed-v1.json",
       "collection": "benchmark",
       "benchmark_profile": "full-corpus-2x2x3-mean-v1",

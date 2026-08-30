@@ -63,15 +63,18 @@
       },
       {
         "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.asrm.org/practice-guidance/ethics-opinions/informing-offspring-of-their-conception-by-gamete-or-embryo-donation-an-ethics-committee-opinion-2018/"
       },
       {
         "citation": "ASRM Ethics Committee. Interests, obligations, and rights in gamete and embryo donation. 2019.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.asrm.org/practice-guidance/ethics-opinions/interests-obligations-and-rights-in-gamete-and-embryo-donation-an-ethics-committee-opinion-2019/"
       },
       {
         "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
-        "type": "guideline"
+        "type": "guideline",
+        "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/"
       },
       {
         "citation": "Perspectives on sperm donor anonymity: insights from donor-conceived adults in Belgium. PMID 39008824.",
@@ -150,7 +153,8 @@
             },
             {
               "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/"
             }
           ],
           "adapted_not_reproduced": true
@@ -186,15 +190,18 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/informing-offspring-of-their-conception-by-gamete-or-embryo-donation-an-ethics-committee-opinion-2018/"
             },
             {
               "citation": "ASRM Ethics Committee. Interests, obligations, and rights in gamete and embryo donation. 2019.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/interests-obligations-and-rights-in-gamete-and-embryo-donation-an-ethics-committee-opinion-2019/"
             },
             {
               "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/"
             }
           ],
           "adapted_not_reproduced": true
@@ -229,7 +236,8 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Interests, obligations, and rights in gamete and embryo donation. 2019.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/interests-obligations-and-rights-in-gamete-and-embryo-donation-an-ethics-committee-opinion-2019/"
             }
           ]
         }
@@ -245,7 +253,8 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
-              "type": "guideline"
+              "type": "guideline",
+              "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/"
             }
           ]
         }
@@ -278,15 +287,18 @@
     },
     {
       "citation": "ASRM Ethics Committee. Informing offspring of their conception by gamete or embryo donation. 2018.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/informing-offspring-of-their-conception-by-gamete-or-embryo-donation-an-ethics-committee-opinion-2018/"
     },
     {
       "citation": "ASRM Ethics Committee. Interests, obligations, and rights in gamete and embryo donation. 2019.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/interests-obligations-and-rights-in-gamete-and-embryo-donation-an-ethics-committee-opinion-2019/"
     },
     {
       "citation": "ASRM Ethics Committee. Updated terminology for gamete and embryo donors. 2022.",
-      "type": "guideline"
+      "type": "guideline",
+      "url": "https://www.asrm.org/practice-guidance/ethics-opinions/updated-terminology-for-gamete-and-embryo-donors-directed-identied-to-replace-known-and-nonidentied-to-replace-anonymous-a-committee-opinion-2002/"
     },
     {
       "citation": "Nuffield Council on Bioethics. Donor conception: ethical aspects of information sharing. 2013.",
@@ -324,5 +336,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility program is redesigning the consent terms for future sperm, oocyte and embryo donation. Donor-conceived adults often report strong interests in medical, genealogical and identifying information, while some donors and recipient parents prefer privacy, nonidentification or controlled contact. External consumer DNA databases can identify genetic relatives even when clinics do not release names. For this benchmark, assume the policy applies prospectively before donation and treatment; open-identity, mutual-consent disclosure and program-level nonidentification are all legally available; relevant medical and genetic information is permanently retained; and all parties are told that DNA matching may reveal identity outside the program. The program must choose whether adult offspring receive identifying information at maturity, whether identification requires mutual consent, or whether clinic records remain nonidentifying while the program explicitly refuses to guarantee practical anonymity.",
-  "content_hash": "sha256:884a4f8cd880b42a74b0f3c2ca57886eddb6acc2cf067772efcc9e5851cad192"
+  "content_hash": "sha256:80d652597447a64501314caf877c8203ea8a28d728a916f7227e9317d1218fe3"
 }

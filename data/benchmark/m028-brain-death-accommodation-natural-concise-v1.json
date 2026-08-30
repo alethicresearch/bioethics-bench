@@ -63,7 +63,9 @@
       },
       {
         "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "doi": "10.1212/WNL.0000000000214334",
+        "url": "https://doi.org/10.1212/WNL.0000000000214334"
       },
       {
         "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
@@ -139,7 +141,9 @@
             },
             {
               "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1212/WNL.0000000000214334",
+              "url": "https://doi.org/10.1212/WNL.0000000000214334"
             }
           ],
           "adapted_not_reproduced": true
@@ -245,7 +249,9 @@
     },
     {
       "citation": "American Academy of Neurology. Brain Death/Death by Neurologic Criteria: Guidance on Communication, Objections, Pregnancy, and Public Trust. Position statement. 2025.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "doi": "10.1212/WNL.0000000000214334",
+      "url": "https://doi.org/10.1212/WNL.0000000000214334"
     },
     {
       "citation": "An Investigation into the Public's Attitude Toward Opting out of Brain Death. PMID 39810074.",
@@ -284,5 +290,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; the candidate field and load-bearing facts are fixed."
   },
   "scenario": "An adult with catastrophic brain injury has been validly determined dead by neurologic criteria under current accepted medical standards. Organ donation is not planned. The family does not accept neurologic criteria as death and asks that ventilation and other organ support continue until the heart stops, citing sincere religious and moral beliefs. For this benchmark, assume the determination was correctly performed with no remaining diagnostic uncertainty, the family understands the clinical and legal position, organ donation is not planned, and continued support uses ICU-level resources without an immediate scarcity crisis. The hospital must decide what accommodation policy should apply.",
-  "content_hash": "sha256:6e88abaa3068292f964c8c9e5c472e0d85f263d1e5a7d1cc0aeebc4123ecaa00"
+  "content_hash": "sha256:ff441a39db69a835736d86bdcd7e8d1d8e7f3c7ac15449de15536680f0debf2e"
 }

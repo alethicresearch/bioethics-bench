@@ -63,11 +63,15 @@
     "sources": [
       {
         "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion. Fertility and Sterility. 2022;117:720-726.",
-        "type": "guideline"
+        "type": "guideline",
+        "doi": "10.1016/j.fertnstert.2021.12.024",
+        "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
       },
       {
         "citation": "Dondorp W, et al. ESHRE Task Force on Ethics and Law 20: sex selection for non-medical reasons. Human Reproduction. 2013;28:1448-1454.",
-        "type": "guideline"
+        "type": "guideline",
+        "doi": "10.1093/humrep/det109",
+        "url": "https://doi.org/10.1093/humrep/det109"
       },
       {
         "citation": "Capelouto SM, et al. Sex selection for non-medical indications: a survey of current pre-implantation genetic screening practices among U.S. ART clinics. J Assist Reprod Genet. 2018;35:409-416. PMID 29080968.",
@@ -148,7 +152,9 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion. Fertility and Sterility. 2022;117:720-726.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.1016/j.fertnstert.2021.12.024",
+              "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
             }
           ],
           "adapted_not_reproduced": true
@@ -165,7 +171,9 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion. Fertility and Sterility. 2022;117:720-726.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.1016/j.fertnstert.2021.12.024",
+              "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
             }
           ],
           "adapted_not_reproduced": true
@@ -184,11 +192,15 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.1016/j.fertnstert.2021.12.024",
+              "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
             },
             {
               "citation": "Dondorp W, et al. ESHRE Task Force on Ethics and Law 20: sex selection for non-medical reasons. Human Reproduction. 2013;28:1448-1454.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.1093/humrep/det109",
+              "url": "https://doi.org/10.1093/humrep/det109"
             }
           ]
         }
@@ -204,7 +216,9 @@
           "sources": [
             {
               "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-              "type": "guideline"
+              "type": "guideline",
+              "doi": "10.1016/j.fertnstert.2021.12.024",
+              "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
             }
           ]
         }
@@ -232,11 +246,15 @@
   "references": [
     {
       "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons: an Ethics Committee opinion. Fertility and Sterility. 2022;117:720-726.",
-      "type": "guideline"
+      "type": "guideline",
+      "doi": "10.1016/j.fertnstert.2021.12.024",
+      "url": "https://doi.org/10.1016/j.fertnstert.2021.12.024"
     },
     {
       "citation": "Dondorp W, et al. ESHRE Task Force on Ethics and Law 20: sex selection for non-medical reasons. Human Reproduction. 2013;28:1448-1454.",
-      "type": "guideline"
+      "type": "guideline",
+      "doi": "10.1093/humrep/det109",
+      "url": "https://doi.org/10.1093/humrep/det109"
     },
     {
       "citation": "Capelouto SM, et al. Sex selection for non-medical indications: a survey of current pre-implantation genetic screening practices among U.S. ART clinics. J Assist Reprod Genet. 2018;35:409-416. PMID 29080968.",
@@ -254,5 +272,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A fertility clinic routinely performs IVF with PGT-A. For this benchmark, assume the patient is already undergoing IVF for an independent clinical reason, has two healthy children of the same sex, requests transfer of an otherwise suitable embryo of the other sex for family balancing, embryo sex is already known from PGT-A with no additional biopsy or testing required, no sex-linked disease or other medical indication exists, no coercion is identified, and both permitting and declining non-medical selection are legally available. The clinic is concerned both with reproductive choice and with sex stereotyping, discrimination and the social meaning of clinical participation. It must choose a standing policy governing whether embryo sex may guide transfer in this family-balancing circumstance.",
-  "content_hash": "sha256:57ac57ca33770a40ab121e467a6c6e6d5e8827cb946c6890fe727b2bf303cbc9"
+  "content_hash": "sha256:b4534ac8a57274f829879196690d451033d647958893160ddefb7a6fd5907c93"
 }

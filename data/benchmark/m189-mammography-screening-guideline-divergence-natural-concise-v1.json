@@ -70,7 +70,8 @@
       },
       {
         "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
-        "type": "policy-document"
+        "type": "policy-document",
+        "url": "https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection/american-cancer-society-recommendations-for-the-early-detection-of-breast-cancer.html"
       },
       {
         "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
@@ -151,7 +152,8 @@
           "sources": [
             {
               "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "url": "https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection/american-cancer-society-recommendations-for-the-early-detection-of-breast-cancer.html"
             }
           ],
           "adapted_not_reproduced": true
@@ -242,7 +244,8 @@
     },
     {
       "citation": "American Cancer Society. Recommendations for the Early Detection of Breast Cancer (current guidance): women 40-44 have the option to begin annual screening; annual screening is recommended for women 45-54; women 55 and older may continue annually or switch to biennial.",
-      "type": "policy-document"
+      "type": "policy-document",
+      "url": "https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection/american-cancer-society-recommendations-for-the-early-detection-of-breast-cancer.html"
     },
     {
       "citation": "Scherer LD, et al. Mammography Screening Preferences Among Screening-Eligible Women in Their 40s: A National U.S. Survey. Ann Intern Med. 2024;177(8):1069-1077. doi:10.7326/M23-3325. PMID 39008858. National probability-based pre-post survey of 495 women aged 39-49; 27.0% preferred to delay screening before a decision aid versus 38.5% after, with no increase in those never wanting mammography (5.4% vs 4.3%).",
@@ -262,5 +265,5 @@
     "notes": "Concise and detailed are companion representations of the same natural frame; candidate pools, stipulations and the decision question are fixed and only scenario detail differs."
   },
   "scenario": "A primary-care practice is setting a standard mammography counseling policy for its patients who are women aged 40 to 49 at average risk of breast cancer. Major guideline bodies currently disagree: the 2024 USPSTF recommends biennial screening from age 40 through 74 and specifically recommends this rather than individualizing the decision for women in their 40s, while current American Cancer Society guidance gives women 40-44 the option to begin annual screening and recommends annual screening from 45 to 54. Screening earlier and more often detects some cancers sooner; it also produces more false-positive recalls, additional procedures and overdiagnosis. National survey evidence shows that informed preferences in this age band genuinely diverge and that a substantial share of women prefer to delay screening once benefits and harms are explained. For this benchmark, assume average risk, accessible and affordable mammography at either interval, and capacity to deliver standardized benefit-and-harm counseling to everyone in the band. The practice must decide what its standard policy should be.",
-  "content_hash": "sha256:c7ab42ff1973d7dad565b73e754830732157b289ca47ee4f03b3943611ec44d3"
+  "content_hash": "sha256:3081f5f4edcbeac4f2149a18ec77366e9735eb5c940a78a1083306812735d8f6"
 }

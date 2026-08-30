@@ -191,7 +191,9 @@
           "sources": [
             {
               "citation": "American Heart Association. Principles for Health Information Collection, Sharing, and Use. 2023.",
-              "type": "policy-document"
+              "type": "policy-document",
+              "doi": "10.1161/CIR.0000000000001173",
+              "url": "https://doi.org/10.1161/CIR.0000000000001173"
             }
           ]
         }
@@ -282,5 +284,5 @@
     "notes": "Concise and detailed are companion representations of the same natural candidate field; decision question, stipulations and candidate pools are fixed."
   },
   "scenario": "A nonprofit health system holds a large clinical dataset originally collected for care. A technology company proposes using coded records inside a secure controlled environment to train and validate a predictive model expected to improve diagnosis. For this benchmark, assume the company cannot export unrestricted raw records and is contractually limited to the approved purpose; the model has a credible prospect of clinical benefit; the company will invest substantial engineering resources and seeks substantial commercial intellectual-property rights; the health system would receive discounted access to the resulting product and research collaboration but no revenue share, nonexclusive public-interest license, or other explicit financial return for the data contribution; patients would receive no individual payments and have not given specific permission for this commercial secondary use, although the system can provide transparent notice or obtain consent if its policy requires it; and governed collaboration, stronger fair-value terms, and specific-permission requirements are legally available. The governance board must decide whether the current arrangement is acceptable, should be renegotiated for stronger public value return, or should wait for patient authorization.",
-  "content_hash": "sha256:908aad1a3155c33d22cba76c14d50b29e5396cdc7d078952922412b7b88106df"
+  "content_hash": "sha256:d981f73d8c4ca03e11e8de7a340b6433105b501a33543431d342341880158e61"
 }
