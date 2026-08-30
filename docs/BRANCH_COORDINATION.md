@@ -31,6 +31,8 @@ Historical merged completion/PR #10 head. Its prior role as the sole open Full C
 
 Parked future research track for generalized/partial-source schemes. It is not canonical SACRE v1. Do not merge generalized source semantics or cases executable only under that scheme into current v1 through opportunistic cherry-picks.
 
+The first-pass generalization audit on `main` does **not** reactivate this branch or authorize generalized-source semantics. It identifies a non-breaking task-adapter boundary around current v1 and is recorded in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`.
+
 ### Other historical branches
 
 Treat older reconstruction, export, audit, review, alias, `research/clean-state-v3`, and archive branches as read-only history unless explicitly reactivated. Historical records may explain why a rule changed; they do not define the current corpus.
@@ -49,7 +51,7 @@ Classify the change before asking the SACRE lane to act.
 |---|---|---|---|
 | **Execution-relevant** | candidate id/text; scenario/task meaning; stipulations consumed by execution; profile; geometry; required aggregation; executable family added/removed; execution-relevant schema | re-vendor/re-pin and reverify before affected paper-facing execution; rerun affected results when the executed object changed | notify SACRE in the same work cycle and identify affected families/objects |
 | **Provenance-only** | citation strings; provenance summaries; basis metadata with unchanged executable text; content-hash drift following those changes | refresh provenance when needed; no automatic semantic rerun | record in review/writeback; do not manufacture a resync loop |
-| **Documentation-only** | dossiers, review documents, coordination text, manuscript writebacks | no product action unless the finding reveals an execution defect | maintain the durable record |
+| **Documentation-only** | dossiers, review documents, coordination text, manuscript writebacks, first-pass generalization audit | no product action unless the finding reveals an execution defect | maintain the durable record |
 
 A provenance-only change can alter what a manuscript may say about source support even when it does not alter a computational result.
 
@@ -63,13 +65,13 @@ Use the generated review system rather than branch names as the live review stat
 
 The generated handoff carries unit fingerprints precisely so unrelated corpus changes do not invalidate already returned verdicts.
 
-Model-assisted source review is not independent human review. Whole-document omission review has examined five families by that method and found findings in all five; 29 remain unexamined by that method. Do not convert that subset into a corpus-wide rate.
+Model-assisted source review is not independent human review. Whole-document omission review has examined five families by that method; 29 remain unexamined by that method. Do not convert that subset into a corpus-wide rate.
 
 ## Current manuscript/research dependency
 
 P2 v49 main + Supplementary Information are complete for this compositional stage and now enter author/coauthor submission-facing review. Bench should not reopen P2 reconstruction; it should supply only targeted factual corrections if new Bench evidence materially changes an existing P2 claim.
 
-The Bench lane's immediate structural priority is the **generalization audit** needed for the standalone resource paper: distinguish intrinsic resource fields, generic task/evaluation fields, and SACRE-specific execution fields. Source/review/release work continues in parallel. Later P3/P4 support should use explicit frozen/versioned Bench objects without silently changing canonical v1 semantics.
+The first-pass structural generalization audit is complete. The immediate architectural dependency is now an explicit **`sacre-qccs-v1` task contract** and **read-only equivalence-tested adapter** that reproduces the current executable projection without modifying canonical v1 records. Source/review/release work continues in parallel. Later P3/P4 support should distinguish a frozen resource snapshot from a frozen task specification.
 
 ## Merge/release standard
 
