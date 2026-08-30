@@ -5,6 +5,8 @@
  *
  * Override entries are authoritative for fields they explicitly contain. Setting
  * `doi: null` or `url: null` removes a previously propagated incorrect locator.
+ * Multiple source-locator-overrides*.json files are merged so verified batches can be
+ * added without rewriting one large registry. Conflicting non-identical fields fail.
  */
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -13,9 +15,26 @@ import { canonicalContentHash } from './hash-case.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dir = join(root, 'data', 'benchmark');
-const mapPath = join(root, 'docs', 'source-locators', 'source-locator-overrides.json');
+const registryDir = join(root, 'docs', 'source-locators');
 const write = process.argv.includes('--write');
-const map = JSON.parse(readFileSync(mapPath, 'utf8')).citations || {};
+
+const registryFiles = readdirSync(registryDir)
+  .filter((f) => /^source-locator-overrides(?:-[^.]+)?\.json$/.test(f))
+  .sort();
+const map = {};
+for (const file of registryFiles) {
+  const doc = JSON.parse(readFileSync(join(registryDir, file), 'utf8'));
+  for (const [citation, ov] of Object.entries(doc.citations || {})) {
+    if (!map[citation]) { map[citation] = { ...ov }; continue; }
+    for (const [field, value] of Object.entries(ov)) {
+      if (Object.prototype.hasOwnProperty.call(map[citation], field)
+          && JSON.stringify(map[citation][field]) !== JSON.stringify(value)) {
+        throw new Error(`conflicting locator override for ${JSON.stringify(citation)} field ${field}: ${file}`);
+      }
+      map[citation][field] = value;
+    }
+  }
+}
 
 function refsIn(record) {
   const refs = [];
@@ -45,7 +64,7 @@ for (const file of readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
   for (const ref of refsIn(record)) {
     const ov = map[ref.citation];
     if (!ov) continue;
-    const local = applyField(ref, ov, 'doi') | applyField(ref, ov, 'url');
+    const local = Boolean(applyField(ref, ov, 'doi') | applyField(ref, ov, 'url'));
     if (local) { refsChanged++; changed = true; }
   }
   if (changed) {
@@ -59,4 +78,4 @@ if (!write && (recordsChanged || refsChanged)) {
   console.error(`✗ ${refsChanged} source objects in ${recordsChanged} records need verified locator overrides applied. Run --write.`);
   process.exit(1);
 }
-console.log(`✓ locator overrides ${write ? 'applied' : 'current'}: ${refsChanged} source objects across ${recordsChanged} records changed.`);
+console.log(`✓ locator overrides ${write ? 'applied' : 'current'} from ${registryFiles.length} registry file(s): ${refsChanged} source objects across ${recordsChanged} records changed.`);
