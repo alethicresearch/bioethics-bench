@@ -48,6 +48,8 @@ Each reviewed case must receive a row with:
 | Final disposition | `RETAIN`, `NEW-VERSION`, `EXPAND-UNIVERSE`, `HOLD`, or `RESEARCH-COMPLETE` |
 | Audit note | short rationale and path to adjudication |
 
+`✓ Source` counts every candidate whose provenance is defensibly supported by an external empirical, professional, stakeholder, or normative-framework source. It does **not** mean that every sourced candidate is an observed Public preference or an Expert consensus. The provenance subtype remains authoritative.
+
 ## Mandatory questions
 
 For every M001–M200 case, answer:
@@ -71,7 +73,7 @@ For every M001–M200 case, answer:
 | Queue | Inventory range | Status | Notes |
 |---|---|---|---|
 | Featured calibration | released F01–F20 + crosswalks | **REOPEN UNDER RICH-UNIVERSE MODEL** | The first record-level audit remains useful, but its source-only candidate-count assumptions are superseded. Priority cases F03/F04/F09/F17/F20 should now be reconsidered as candidate-universe/projection problems, not automatically as source-only reconstruction problems. |
-| Full Corpus A | M001–M050 | PENDING all-case audit | Existing deep files and executable judgments are inputs, not exemptions. |
+| Full Corpus A | M001–M050 | **IN PROGRESS — 10/50 audited** | M001–M010 complete under rich-universe model at `docs/full-corpus/audit-v2/M001-M010-rich-candidate-audit.md`. |
 | Full Corpus B | M051–M100 | PENDING all-case audit | Reopen source packets where provenance or universe audit finds a material issue. |
 | Full Corpus C | M101–M150 | PENDING all-case audit | Apply same standard regardless of prior geometry or schema validity. |
 | Full Corpus D | M151–M175 | PENDING all-case audit | Includes animal / One Health cases; explicitly audit missing serious normative positions and nonhuman representation. |
@@ -83,6 +85,18 @@ Add one row here as each underlying M-case completes the new audit. Do not bulk-
 
 | Inventory | Featured | Scenario | Universe | Cand. n | ✓ Source | Direct | Inferred | Framework | Constructed | Distinct | Provenance | C/D | Stipulation | Projections | Source-grounded | Expanded | Demo | Disposition | Note |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|---|---|---|
+| M001 | F01 | PASS | PASS | 6 | 5 | 0 | 3 | 2 | 1 | REVIEW | PASS | PASS | LOW | released F01 source-grounded + future expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Reconcile stale emergency-refusal packet with later M001/F01 elective-surgery identity; do not split blood-product heterogeneity into institutional policies. See `audit-v2/M001-M010-rich-candidate-audit.md`. |
+| M002 | — | PASS | PASS | 7 | 6 | 2 | 1 | 3 | 1 | PASS | PASS | PASS | MATERIAL | current 1×2×2 source-grounded + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Preserve existing asymmetric draft; add substituted-judgment, best-interests, and deferral/support positions to research universe. |
+| M003 | — | PASS | PASS | 6 | 4 | 1 | 0 | 3 | 2 | PASS | PASS | PASS | MATERIAL | expanded methodological; time-window perturbation | NO | YES | HIGH | EXPAND-UNIVERSE | Public treatment-preference data do not establish exact search-duration policy. Rich case remains useful without pretending a canonical Public-role policy exists. |
+| M004 | — | PASS | PASS | 6 | 5 | 1 | 2 | 2 | 1 | REVIEW | PASS | PASS | LOW | current 2×1×2 source-grounded + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Preserve current projection; maturity-sensitive graduated comparator requires final distinctness check. |
+| M005 | — | PASS | PASS | 7 | 7 | 2 | 3 | 2 | 0 | PASS | PASS | PASS | LOW | current 2×1×2 source-grounded + expanded stakeholder | YES | YES | HIGH | EXPAND-UNIVERSE | Caregiver nondisclosure position belongs in universe with stakeholder provenance, not as patient preference or professional standard. |
+| M006 | — | PASS | PASS | 6 | 3 | 2 | 1 | 0 | 3 | PASS | PASS | PASS | LOW | asymmetric source-grounded candidate + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Patient evidence is disclosure-dominant; compare prompt/staged/risk-managed transparency without manufacturing two Public policies. |
+| M007 | — | PASS | PASS | 6 | 5 | 2 | 1 | 2 | 1 | REVIEW | PASS | PASS | MATERIAL | source-grounded candidate + expanded | NEEDS-EVIDENCE | YES | HIGH | EXPAND-UNIVERSE | Referral/nonfacilitation/institutional-access positions are rich; exact empirical Public-role policy needs careful source labeling. |
+| M008 | — | PASS | PASS | 6 | 3 | 1 | 0 | 2 | 3 | REVIEW | PASS | PASS | MATERIAL | expanded threshold/channel projections | NO | YES | HIGH | EXPAND-UNIVERSE | Strong confidentiality/protection case; no need to omit serious positions because direct Public-policy evidence is sparse. |
+| M009 | — | PASS | PASS | 7 | 6 | 3 | 0 | 3 | 1 | PASS | PASS | PASS | MATERIAL | source-grounded candidate + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Keep fair-process, informed-nondissent, autonomy, and professional-integrity architectures separate. |
+| M010 | — | PASS | PASS | 6 | 6 | 2 | 2 | 2 | 0 | PASS | PASS | PASS | LOW | current 2×2×2 source-grounded | YES | NOT-NEEDED | HIGH | RETAIN | Existing six-candidate field is already rich; do not add a duplicative `use both` seventh candidate. |
+
+**Count note:** provenance counts are audit classifications of the proposed universe. Some candidates draw on both professional evidence and a framework; each is assigned one primary provenance subtype here to keep the columns additive. The candidate-level adjudication text is authoritative where a policy has mixed support.
 
 ## Featured calibration relationship
 
