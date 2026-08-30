@@ -128,8 +128,8 @@ Bioethics Bench can inform the specification paper through construction findings
 
 P2 has completed its v49 submission-composition stage. The current submission artifacts are:
 
-- main: https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
-- Supplementary Information: https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
+- Supplementary Information: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 - preserved v48 maximal authorial master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
 Bench enters P2 because systematic investigation of SACRE/REai required stable source-grounded research objects. That role is now composed and QA'd in v49. Future Bench work should update P2 only when a new finding materially changes a factual or interpretive claim; otherwise the resource should mature in its own paper and release track.
