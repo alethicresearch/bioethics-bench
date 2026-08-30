@@ -6,7 +6,7 @@ on:
     paths:
       - 'scripts/enrich-source-locators.mjs'
       - 'scripts/apply-source-locator-overrides.mjs'
-      - 'data/source-locator-overrides.json'
+      - 'docs/source-locators/source-locator-overrides.json'
       - '.github/workflows/enrich-source-locators.yml'
 
 permissions:
