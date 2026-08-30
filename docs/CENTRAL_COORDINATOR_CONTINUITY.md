@@ -20,6 +20,7 @@ After reading the canonical central continuity/status files:
    - `docs/COORDINATOR_DIRECTIVE.md`
    - `docs/BRANCH_COORDINATION.md`
    - `docs/COMPLETION.md`
+   - `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md` — current resource/task/evaluation separation audit
    - `docs/papers/BENCH_FINDINGS_FOR_P1_P2.md` — current manuscript-facing drafting surface
    - `docs/papers/MANUSCRIPT_WRITEBACK.md` — chronological audit trail
 3. For source-review work, read:
@@ -41,13 +42,15 @@ Keep the intended architecture separable:
 
 **resource layer → task layer → evaluation layer.**
 
-A generalization audit should distinguish intrinsic resource fields, generic task/evaluation machinery, and SACRE-specific execution metadata.
+The first-pass structural generalization audit is complete in `docs/strategy/BIOETHICS_BENCH_GENERALIZATION_AUDIT.md`. It found that most current fields form a reusable resource/provenance core, while the strongest SACRE-specific coupling is concentrated in the fixed public/expert/framework pool structure, `pub/exp/fw` aliases, `benchmark_profile`, geometry/cross-source pairing, and `required_aggregation`. Current v1 should remain unchanged; the next architectural step is an explicit `sacre-qccs-v1` task contract plus a read-only equivalence-tested adapter before any generalized schema revision.
+
+This is evidence of an identifiable separation boundary and a non-breaking generalization path, **not** a demonstration that Bioethics Bench is already method-neutral across multiple mature task families.
 
 ## Current Bench evidence boundary
 
 The executable Full Corpus currently contains **34 families / 68 matched concise+detailed records / 210 unique family-level candidates**. Records remain `status: draft` and `reviewed_by_human: false`.
 
-Structural validation is not source fidelity. Model-assisted review is not independent human review. Whole-document omission review has examined five families by that method and found findings in all five; 29 remain unexamined by that method. Do not extrapolate a corpus-wide rate from that subset.
+Structural validation is not source fidelity. Model-assisted review is not independent human review. Whole-document omission review has examined five families by that method; 29 remain unexamined by that method. Do not extrapolate a corpus-wide rate from that subset.
 
 Independent human source-to-policy review remains a quality/release layer. It is **not a gate on developmental or paper-facing SACRE execution** under the current program architecture. Execution-relevant corpus changes still require SACRE re-pin/reverification and, where applicable, rerun.
 
@@ -57,13 +60,13 @@ The current standalone Bench research/publication plan is **v3** in Drive:
 
 https://docs.google.com/document/d/1QpnkzGwElNP9IKrdz1S_9fC0KVWt2tzM/edit
 
-P2 has now completed its v49 submission-composition stage. Current P2 artifacts are:
+P2 has completed its v49 submission-composition stage. Current P2 artifacts are:
 
 - main: https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
 - Supplementary Information: https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 - preserved maximal v48 master: https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
-Bench support for P2 is therefore no longer a maximal-master drafting task. The next Bench-facing work is to mature the resource itself: generalization audit, source/review/release work, standalone paper development, and later frozen support for P3/P4 study designs. P2 should receive only targeted corrections if new Bench evidence changes a claim materially.
+Bench support for P2 is therefore no longer a maximal-master drafting task. The current Bench lane is source/review/release work, the explicit task-contract/adapter step following the completed generalization audit, standalone paper development, and later frozen support for P3/P4 study designs. P2 should receive only targeted corrections if new Bench evidence changes a claim materially.
 
 ## Handoff rule
 
