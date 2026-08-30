@@ -1,210 +1,114 @@
-# Bioethics Bench — Full Corpus reconstruction decision
+# Bioethics Bench — Historical Full Corpus reconstruction decision
 
-**Decision date:** 2026-08-27  
-**Updated:** 2026-08-27 after candidate-field reconstruction reset  
-**Scope:** M001–M200 deep-research corpus  
-**Status:** authoritative construction decision for the next phase  
-**Filename note:** the historical filename is retained for repository continuity; the present decision supersedes the earlier goal of forcing all 200 families into executable form.
+**Original decision date:** 2026-08-27  
+**Superseded:** 2026-08-30  
+**Status:** HISTORICAL — **not authoritative for current construction**  
+**Filename note:** retained for repository and citation continuity. Git history preserves the complete prior text.
 
-## Decision
+## Supersession notice
 
-The M001–M200 deep-research corpus is complete. The next phase is a **candidate-field reconstruction pass across all 200 families**, using the existing dossiers as the research substrate.
+The August 27 reconstruction decision was useful in breaking the earlier assumption that all cases should be forced into a fixed `2 × 2 × 2` executable geometry. It correctly recognized natural candidate asymmetry and the distinction between Bioethics Bench and deliberately synthetic SACRE demonstration objects.
 
-Every family receives a provenance-aware candidate-field assessment. Families that support a strong executable representation are constructed as versioned concise/detailed record pairs. Families that do not support a compelling executable frame remain first-class researched cases rather than being padded with weak or artificial candidates merely to reach a numerical target.
+However, parts of that decision subsequently became inconsistent with the formal SACRE specification and with the corrected Bioethics Bench construction standard. In particular, it:
 
-The earlier strict source-to-policy review remains preserved as a source-grounding study. It established the methodological problem of **action-target alignment**: much empirical bioethics evidence concerns preferences, attitudes, uptake, willingness, experience or moral approval rather than the institutional action represented by a benchmark policy. The 17 families that survived that unusually strict rule remain a valuable **direct-grounding subset**. The strict rule is no longer the boundary of Bioethics Bench executability.
+- treated a singular `decision_question` as a governing construction constraint rather than reader-facing / editorial metadata around the Scenario;
+- permitted synthetic or author-constructed policies to occupy Public or Expert perspective slots in the canonical source-grounded Bench;
+- allowed construction to move from an editorially specified practical decision toward candidate completion, which can overcompress or distort the natural normative positions supported by the sources.
 
-The reconstructed Bench instead makes candidate construction explicit at the **candidate level** and lets the evidence and practical decision determine the natural candidate ecology.
+Those instructions are **superseded**.
 
-## Four distinct research artifacts
+## Current governing documents
 
-Do not collapse these into one dataset.
+Read these instead, in this order:
 
-1. **Canonical SACRE worked example** — the fixed 3×3×3 paper demonstration and deterministic regression target used in P1/P2.
-2. **SACRE evaluation / demonstration library** — deliberately constructed or synthetic cases used to demonstrate and investigate the method, including controlled geometry, aggregation, framing and RE-Iteration examples.
-3. **Bioethics Bench** — the source-grounded, versioned corpus of real bioethical problems, scenarios, evidence, candidate provenance and natural candidate ecologies.
-4. **Experimental / paper subsets** — selected later from the Bench and evaluation library for repeated runs, matched geometries, framing comparisons, model/human studies and paper figures.
+1. `docs/COORDINATOR_DIRECTIVE.md`
+2. `docs/FULL_CORPUS_V1_PLAN.md`
+3. `docs/CANDIDATE_POLICY_SPACE_AUDIT.md` — current title/content: Scenario and Policy-Representation Audit
+4. `docs/FEATURED_SCENARIO_POLICY_AUDIT_2026-08-30.md`
+5. `docs/FEATURED_PRIORITY_SOURCE_REOPEN_2026-08-30.md`
+6. `docs/FEATURED_PROPOSED_NEXT_VERSION_RECONSTRUCTIONS_2026-08-30.md`
+7. `docs/SACRE_V1_SOURCE_COMPLETENESS_DECISION.md`
 
-Synthetic cases are legitimate in the evaluation library because their purpose is methodological demonstration. Bioethics Bench should preserve the provenance and natural structure of researched cases rather than being standardized to look like the synthetic library.
+The governing construction rule is:
 
-## Canonical policy-basis taxonomy
+> **Scenario first → recover the natural number of substantively distinct source-supported Policy positions → preserve provenance and source identity → audit the representation → classify SACRE suitability.**
 
-Every executable candidate in the reconstructed Full Corpus carries exactly one of these four policy-basis labels:
+## What remains valid from the August 27 decision
 
-1. **Direct policy evidence**  
-   The cited source itself addresses substantially the same action, rule, obligation, eligibility criterion, allocation rule, consent architecture, authorization decision or other policy target represented by the candidate. Editorial work may adapt wording and add narrow operational completion, but does not supply the core policy orientation.
+Several insights from the prior decision remain important.
 
-2. **Source-informed policy inference**  
-   The cited source provides relevant preferences, attitudes, values, behavior, willingness, lived-experience evidence, professional concerns or other source-class evidence, and the Bench explicitly draws the inference to an actionable policy. The policy must be a reasonable and transparent construction from the evidence, but it is **not attributed to the source as though the source directly endorsed that policy**.
+### 1. Natural candidate geometry
 
-3. **Framework-derived policy**  
-   The policy is derived from an identified normative framework or philosophical position and is authored as an actionable implication of that framework for the represented scenario. Framework candidates remain constructions, not quotations.
+There is no substantive default `2 × 2 × 2` ontology for Bioethics Bench. Candidate counts should follow the evidence. Fields may be symmetric or asymmetric. A matched geometry may be selected later for a controlled study from cases that naturally support it.
 
-4. **Synthetic/author-constructed policy**  
-   The policy is deliberately authored to instantiate a serious, action-distinct alternative in the decision space without claiming direct empirical provenance. Relevant factual or scholarly sources may motivate the case, but they are not claimed to be the source of the policy itself.
+### 2. Bench and synthetic demonstration cases are different research objects
 
-These labels describe **how the policy candidate was obtained**, not how morally credible it is and not whether SACRE should prefer it.
+Synthetic or deliberately constructed cases remain legitimate in the **SACRE evaluation / demonstration library**, where their purpose is methodological demonstration, stress testing, controlled geometry, or pedagogical illustration.
 
-## Source pool and policy basis are different axes
+They are **not** substitutes for source-grounded Public or Expert positions in the canonical Bioethics Bench executable collection.
 
-`source_pool` identifies the perspective layer in which a candidate is represented (`public`, `expert`, `framework`). `policy_basis` identifies the epistemic/construction relation between the represented policy and its sources.
+### 3. Source-to-Policy inference must be explicit
 
-For direct and source-informed public/expert candidates, the pool corresponds to the source class from which the policy is drawn or inferred. A synthetic candidate placed in a public- or expert-oriented slot must be described explicitly as an **author-constructed comparator for that perspective layer**, never as evidence that a public or professional group actually holds the policy. Downstream analyses must be able to stratify or exclude such candidates.
+A source may directly state a policy or may supply attitudes, values, experience, concerns, or professional considerations from which the Bench makes a bounded Policy inference. Those relations should remain explicit in provenance.
 
-Framework candidates use **framework-derived-policy** unless a future, separately justified design says otherwise.
+A source-informed inference does not become direct evidence merely because the resulting sentence is plausible.
 
-## Construction priority
+### 4. Asymmetry affects aggregation
 
-When building a candidate field, use the strongest available provenance in this order:
+Where source-pool geometry gives candidates unequal numbers of cross-source partners, the SACRE aggregation rule must handle that structure explicitly rather than editing the resource to restore symmetry. The current SACRE specification governs the applicable ranking rule.
 
-1. direct policy evidence;
-2. source-informed policy inference;
-3. framework-derived policy for the framework layer;
-4. synthetic/author-constructed policy when it adds a serious action-distinct alternative worth analyzing.
+### 5. A research-complete case need not be executable
 
-Do not replace a directly supported policy with a synthetic one merely to make a candidate set look balanced. Do not add a candidate merely to satisfy a quota.
+If one of the declared Public / Expert / Framework source classes cannot be populated with at least one defensibly source-grounded Policy candidate, the case can remain an excellent scholarly Bench case while falling outside the executable scope of canonical SACRE v1. See `docs/SACRE_V1_SOURCE_COMPLETENESS_DECISION.md`.
 
-## Natural candidate ecology
+## Current treatment of `decision_question`
 
-There is **no default 2×2×2 rule for Bioethics Bench**.
+`decision_question` may remain in schemas and case files because it can be useful for navigation, explanatory clarity, searching, and checking whether a Scenario has become too broad.
 
-For each family ask how many serious, action-distinct Public, Expert and Framework policies the existing research actually supports. The answer may be symmetric or asymmetric and may vary substantially across cases. The original SACRE materials already contain useful shapes such as 3×2×3, 4×3×4, 3×3×3, 3×2×4, 2×3×3, 4×3×3 and 3×3×4. Natural asymmetry can itself be philosophically and experimentally informative.
-
-`2×2×2` remains useful for simple Featured or pedagogical objects. `3×3×3` remains the canonical paper demonstration and may be used for deliberately matched experimental subsets. Neither geometry is the general ontology of SACRE or the default shape of Bioethics Bench.
-
-Every executable frame must still satisfy action distinctness and scenario/action divergence: the represented scenario must lie in a region where the candidate set produces meaningful differences in recommended action.
-
-## Aggregation for asymmetric fields
-
-For pool sizes Public = `a`, Expert = `b`, Framework = `c`, the complete cross-source comparison count is:
-
-`ab + ac + bc`
-
-Cross-source comparisons only:
-
-- Public × Expert
-- Public × Framework
-- Expert × Framework
-
-No within-source QCCS pairs.
-
-When candidates have unequal cross-source partner counts, the official ranking requires **Mean** aggregation. Raw Sum would rank partly by pool geometry. This rule applies directly at the record level for profile-less natural frames.
-
-Mean removes deterministic partner-count bias. It does not erase composition effects or make scores from different geometries statistically interchangeable; those questions belong in later validation and sensitivity analysis.
-
-## Decision question
-
-`decision_question` is useful Bench and case-construction metadata because a shared Scenario alone does not guarantee that all candidates answer the same practical problem.
+It is **not a formal SACRE input** and must not determine the candidate taxonomy.
 
 Conceptually:
 
-- Scenario = SACRE input
-- Decision question = representation / construction constraint
-- Policy candidates = SACRE inputs
+- **Scenario** = SACRE input;
+- **Policy candidates** = SACRE inputs;
+- **decision_question** = optional / useful Bench framing metadata;
+- **decision-maker** = optional / useful practical context.
 
-The decision question therefore constrains candidate commensurability but is not introduced as a new SACRE scoring primitive.
+Source research should therefore not stop once an editorially written question appears to have a neat set of answers. The research task is to recover the substantively distinct normative positions that the relevant source domains actually support for the represented Scenario.
 
-## Multiple canonical frames per family
+## Current treatment of synthetic policies
 
-A well-researched family may support more than one defensible candidate field, for example:
+For the canonical source-grounded Bench:
 
-- `natural`
-- `direct-grounding`
-- `source-informed`
-- `matched-3x3x3`
-- `expanded`
-- another explicitly justified research frame
+- Public candidates require defensible Public / affected-community grounding;
+- Expert candidates require defensible Expert / professional grounding;
+- Framework candidates require an explicit normative framework and a defensible reasoning bridge to the represented Policy;
+- a synthetic author-constructed comparator **does not satisfy a missing source class** and cannot make a case executable under canonical SACRE v1.
 
-Alternative canonical frames are represented as **separate executable record pairs**, not several candidate sets nested inside one record.
+If a synthetic comparator is scientifically useful, place it in an explicitly synthetic evaluation / demonstration object or a separately specified experimental condition. Do not label it as an empirical Public or professional Expert position.
 
-Conceptually:
+## Current all-200 rule
 
-```text
-case family M097
-  frame natural
-    concise
-    detailed
-  frame source-informed
-    concise
-    detailed
-  frame matched-3x3x3
-    concise
-    detailed
-```
+All 200 planned Bench cases must receive the Scenario / Policy-representation audit before final Full Corpus v1 freeze, including cases whose existing developmental records already validate structurally.
 
-Each frame has its own `case_id`, `frame_id`, `frame_version`, ordered candidate IDs and candidate-set hash. Companion integrity applies per frame. Changing frame creates a new represented evaluation; it is not a display-only filter.
+The audit records at minimum:
 
-Within a frame, concise and detailed records must preserve the same practical decision, the same candidate set and the same load-bearing facts. Representation detail may differ; the represented decision may not.
+- Scenario adequacy;
+- source-to-Policy fidelity;
+- natural candidate count by source domain;
+- within-pool distinctness;
+- cross-source independence;
+- position merging / omission risks;
+- concise/detailed invariance;
+- stipulation leverage;
+- SACRE suitability;
+- demonstration richness;
+- final disposition.
 
-## Relationship to the strict review
+The 20 Featured v1 cases are the calibration set for this all-corpus pass, not an exemption from it.
 
-The strict review is retained rather than overwritten.
+## Historical value
 
-- The 17 independently cleared Full Corpus families constitute the **direct-grounding subset**.
-- Cases that failed the strict gate are not retroactively described as direct.
-- Their reconstructed candidates may be labeled source-informed, framework-derived or synthetic where appropriate.
-- `research-complete-architecture-limited` remains a meaningful disposition, especially where the current source architecture cannot faithfully represent a materially affected interest.
-- The earlier 17/200 result should be reported only as the yield of the unusually strict action-aligned source-grounding exercise, not as the executable size of Bioethics Bench and not as a claim about the computational executability of bioethics generally.
+The August 27 decision remains useful evidence of the program's development. In particular, it captured the transition away from forced fixed geometry and toward natural candidate ecology. Its supersession on August 30 captures a second construction finding: **natural geometry is not enough if the candidate-generation ontology itself is allowed to be driven by an editorial decision frame or by synthetic slot completion.**
 
-## Featured boundary
-
-Featured v1 remains frozen and separate. Its records and hashes are not rewritten to adopt the new labels retroactively. The Full Corpus uses its own lineage and manifest. The construction-standard difference must remain explicit in any downstream comparison.
-
-## Authorship and independent review
-
-The corpus-author side authors reconstructed candidate sets, provenance classifications, framing decisions and concise/detailed companion records. The independent partner remains the structural/review gate and implementation custodian rather than substantively authoring the candidate sets they certify.
-
-Independent review should check:
-
-1. policy-basis accuracy;
-2. whether direct policies really are direct;
-3. whether source-informed inferences are reasonable and transparently described;
-4. whether synthetic policies are clearly disclosed and serious rather than filler;
-5. action distinctness and matched granularity;
-6. scenario/action divergence;
-7. concise/detailed companion equivalence on load-bearing facts;
-8. frame identity, candidate IDs, hashes and provenance completeness;
-9. pool geometry and complete cross-source pair count;
-10. Mean enforcement where unequal partner counts require it.
-
-## Minimal implementation rule
-
-Do not build a second provenance ontology. Retain the machine-readable candidate-level `policy_basis` field with the four values above and the existing `construction_method` field. The older field records textual construction mechanics; the newer field records the substantive relation between a policy and its evidentiary basis.
-
-The usual mapping for newly reconstructed Full Corpus candidates is:
-
-| policy basis | usual `construction_method` |
-|---|---|
-| Direct policy evidence | `extracted-from-evidence` or `adapted-from-source` |
-| Source-informed policy inference | `adapted-from-source` |
-| Framework-derived policy | `derived-from-framework` |
-| Synthetic/author-constructed policy | `editorial` |
-
-Synthetic candidates must not be presented as empirical public or professional positions. A source-informed candidate must state the inferential step in `provenance.summary`. Direct policy evidence should identify the source-level action being represented.
-
-## Reconstruction workflow
-
-1. Use the completed M001–M200 deep research as the source layer; do not restart broad source research.
-2. For each family, preserve/refine the Scenario and identify the singular practical decision question.
-3. Construct the natural Public/Expert/Framework ecology without a preset geometry.
-4. Label every candidate by policy basis and state any source→policy inference explicitly.
-5. Define one or more canonical frames only where they create substantively different represented evaluations.
-6. Mark experimental usefulness, including natural asymmetry, aggregation sensitivity, consensus, polarization, representation sensitivity, candidate-framing sensitivity, direct-vs-inferred comparison, nonhuman representation, candidate granularity and RE-Iteration suitability.
-7. Build concise/detailed companions, compute hashes, and send authored frames to the independent partner for structural validation.
-8. Scale after recurring construction defects have been resolved in the first diagnostic batch.
-
-The first diagnostic reconstruction batch is:
-
-`M028, M033, M056, M054, M097, M031, M025, M156/F17, M005, M010`.
-
-## Target and stopping rule
-
-All 200 families should receive a complete candidate-field assessment and provenance-aware representation. **Do not force all 200 into weak executable forms merely to claim 200 executable cases.**
-
-A high-quality 100+ sourced/source-informed executable Bench would already be a substantial research asset if that is where the evidence and construction quality lead. Additional synthetic or expanded frames may be useful for selected cases, but corpus size is subordinate to representational quality.
-
-The publication program supplies the practical stopping rule. Bioethics Bench, ReflectiveEquilibrium.AI, automated execution, dashboards and screenshots are research infrastructure for the papers, not independent projects allowed to expand indefinitely. Once the Bench contains enough high-quality cases and frames to support the required P2 evidence and the planned P3 studies, corpus perfection should not delay P1/P2 completion.
-
-The intended sequence is:
-
-**Bench reconstruction → selected executable sets → automated runs → structured dashboards/reports/screenshots → targeted P1/P2 updates → submission; broader validation follows in P3.**
+That development history can be discussed in internal methods records where useful, but current corpus construction must follow the documents listed above.
