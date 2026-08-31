@@ -21,7 +21,7 @@ Some legacy filenames, JSON fields, scripts, archived records, and historical re
 
 ## Current Bench state
 
-Bioethics Bench contains **200 cases (M001–M200)** and **1,298 reviewed policies**.
+Bioethics Bench contains **200 cases (M001–M200)** and **1,298 policies**.
 
 The current public machine-readable case file is:
 
@@ -32,11 +32,11 @@ Every case in that file has:
 - a concise version;
 - a detailed version;
 - a set of policies;
-- a reviewed Public, Expert, or Framework type for each policy;
+- a current Public, Expert, or Framework type assignment for each policy;
 - a sourcing label for every policy;
 - a link to the supporting research file.
 
-The number and mix of Public, Expert, and Framework policies vary naturally by case. Some cases do not currently contain all three types. Do not manufacture a missing Public, Expert, or Framework policy merely to make a case symmetrical.
+The current type assignments are a preview layer and remain subject to scholarly release review. The number and mix of Public, Expert, and Framework policies vary naturally by case. Some cases do not currently contain all three types. Do not manufacture a missing Public, Expert, or Framework policy merely to make a case symmetrical.
 
 The case-and-policy research pass is complete. Remaining work is scholarly review and release work: source checking, policy-type checking, concise/detailed consistency, citation review, independent review, release statistics, and final freeze/versioning.
 
@@ -75,7 +75,7 @@ A user should be able to:
 3. search or filter the cases;
 4. choose concise or detailed wording;
 5. load the case;
-6. have its reviewed Public, Expert, and Framework policies appear in the evaluation setup.
+6. have its currently assigned Public, Expert, and Framework policies appear in the evaluation setup.
 
 If one policy type is absent, SACRE should show that plainly and load the policies that are available. It must not create a missing type automatically. A complete three-type SACRE evaluation requires at least one Public, Expert, and Framework policy.
 
