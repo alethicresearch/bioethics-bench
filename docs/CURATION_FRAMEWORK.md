@@ -26,7 +26,7 @@ Two gates deserve emphasis because they are the ones a compelling case most ofte
 
 **G5** excludes cases whose fair representation requires presupposing an answer. Historical atrocities are morally important and pedagogically vital, but they are not useful SACRE benchmark cases if one side of the represented choice can only be a straw position.
 
-**G8** excludes cases that only look well specified. A scenario that turns on an unstated prognosis, statute, treatment effect, technology performance figure or other specialist fact is not yet a stable represented object: the candidates may be answering different versions of the problem. Some cases are rescued by stating the fact or bounded uncertainty explicitly; others remain unsuitable because the factual controversy is inseparable from the normative decision.
+**G8** excludes cases that only look well specified. A scenario that turns on an unstated prognosis, statute, treatment effect, technology performance figure or other specialist fact does not yet state one stable problem: the policies may be answering different versions of it. Some cases are rescued by stating the fact or bounded uncertainty explicitly; others remain unsuitable because the factual controversy is inseparable from the normative decision.
 
 ## Stage 2 — Portfolio dimensions
 

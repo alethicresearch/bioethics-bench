@@ -42,7 +42,7 @@ Until those questions are answered, missing-source cases remain legitimate scope
 - **P1:** v58 now makes this present-specification boundary explicit while leaving generalized source architectures open as future method extensions.
 - **P2:** should report architecture limits as construction findings rather than implying that every researched case must be made executable.
 - **P3:** canonical validation should use the source-complete released Full Corpus; generalized-source validation is a separate future design question.
-- **Bench:** continue human source-to-policy review of the canonical executable subset. Do not batch-reconstruct held cases under a missing-source profile unless this architecture decision is later explicitly revised.
+- **Bench:** continue human source-to-policy review of the cases already used in evaluations. Do not batch-reconstruct held cases under a missing-source profile unless this architecture decision is later explicitly revised.
 
 ## Next dependency
 

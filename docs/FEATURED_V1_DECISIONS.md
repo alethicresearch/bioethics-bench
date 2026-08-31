@@ -4,19 +4,19 @@
 
 ## 1. Release size
 
-Featured v1 will target **20 deeply researched case families**.
+Featured v1 will target **20 deeply researched cases**.
 
 The 200-case master inventory remains open-ended and is not pruned or discarded to reach 20. Featured v1 is the first polished public release, not the definition of the field or the lifetime size of Bioethics Bench.
 
 ## 2. Animal ethics is required
 
-Animal ethics / One Health is part of the Bench proper, not an optional boundary domain. The first Featured release should include **at least two case families that directly represent nonhuman interests**, preferably from different decision structures (for example animal research plus food/One Health, wildlife, or zoonotic governance).
+Animal ethics / One Health is part of the Bench proper, not an optional boundary domain. The first Featured release should include **at least two cases that directly represent nonhuman interests**, preferably from different decision structures (for example animal research plus food/One Health, wildlife, or zoonotic governance).
 
 This is methodologically informative as well as substantively important: the project should test whether its public/expert/framework source architecture can represent nonhuman interests directly and faithfully rather than only through human preference proxies.
 
 ## 3. Concise and detailed representations
 
-Each Featured case family should be developed with **two curated scenario representations**:
+Each Featured case should be developed with **two curated scenario representations**:
 
 - **Concise** — the default application/onboarding representation: digestible, minimal context, all outcome-critical facts preserved.
 - **Detailed** — a richer representation of the same decision problem, adding relevant context and nuance without changing the decision question or silently changing the factual assumptions.
@@ -54,5 +54,5 @@ Both concise and detailed Featured representations are deliberately public/expos
 1. Choose a deliberately diverse pilot subset from the master inventory, including an animal-ethics case.
 2. Deep-source those cases and construct paired concise/detailed scenario representations.
 3. Test the 2×2×2 candidate profile and provenance model in the actual SACRE application.
-4. Use the pilot to refine the construction standard before drafting all 20 Featured v1 case families.
+4. Use the pilot to refine the construction standard before drafting all 20 Featured v1 cases.
 5. Select final Featured v1 balance only after real executable records have been reviewed and run.

@@ -1,11 +1,11 @@
 # Bioethics Bench — Featured v1 selection
 
 **Status:** selected for deep construction; not yet released.  
-**Release target:** 20 underlying case families, each with a concise and detailed executable representation using the same decision question and candidate set.
+**Release target:** 20 cases, each with a concise and detailed executable representation using the same decision question and candidate set.
 
 The master inventory remains open-ended. These 20 are the first public product release because, together, they give a broad and methodologically useful cross-section of practical bioethics while remaining feasible to source, review, execute, and present well.
 
-| # | Case family | Primary domains | Why it is in v1 | Inventory origin |
+| # | Case | Primary domains | Why it is in v1 | Inventory origin |
 |---|---|---|---|---|
 | F01 | Competent adult refusal of blood transfusion | consent-capacity-refusal | Canonical autonomy/refusal case; unusually clear affected-community source material; good low-complexity benchmark anchor | M001 |
 | F02 | Advance directive versus current contentment in dementia | end-of-life; consent-capacity-refusal | Canonical precedent-autonomy/current-interests conflict; excellent nontrivial convergence structure | M027 |
@@ -30,7 +30,7 @@ The master inventory remains open-ended. These 20 are the first public product r
 
 ## Representation design
 
-Each case family will receive two public executable records:
+Each case will receive two public records:
 
 - **concise** — a short, high-signal version intended as the default loader representation;
 - **detailed** — a fuller version containing additional decision-relevant context but no additional advocacy or change in underlying facts.

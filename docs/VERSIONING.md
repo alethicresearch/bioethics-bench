@@ -4,7 +4,7 @@ Every Bioethics Bench record is content-addressed and versioned.
 
 ## Record identity
 
-- `case_id` identifies the underlying case family.
+- `case_id` identifies the case.
 - `record_id` identifies a specific represented record.
 - `version` changes whenever the represented scenario, candidate set, ordering, provenance record, or other research-relevant content changes.
 - `content_hash` is computed from a canonical serialization of the frozen research object,

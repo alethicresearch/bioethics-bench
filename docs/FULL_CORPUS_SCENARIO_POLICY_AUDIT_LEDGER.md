@@ -25,7 +25,7 @@ The new review has been completed for **all 200 inventory cases**. Each case has
 5. demonstration richness;
 6. case-level disposition.
 
-The resulting candidate universes range from **5 to 7 serious positions**, with a mean of **6.49**. This is an observed consequence of the audit, not a target geometry. Most cases required expansion because the older source-to-policy rule had compressed legitimate normative alternatives when empirical Public or professional policy evidence was not itself plural.
+The resulting policy sets range from **5 to 7 serious positions**, with a mean of **6.49**. This is an observed consequence of the audit, not a target geometry. Most cases required expansion because the older source-to-policy rule had compressed legitimate normative alternatives when empirical Public or professional policy evidence was not itself plural.
 
 ## Identity / ontology corrections
 
@@ -71,7 +71,7 @@ A case may be complete at the Scenario/provenance/candidate-universe level while
 
 Before Full Corpus v1 freeze:
 
-1. transcribe the audited candidate universes and provenance into the machine-readable resource/schema;
+1. transcribe the audited policy sets and their sourcing into the machine-readable resource/schema;
 2. represent candidate provenance independently of run role;
 3. create explicit source-grounded and expanded projection manifests with exact candidate IDs, roles, geometry, aggregation, and claim type;
 4. resolve the remaining Featured crosswalk identities;
@@ -85,7 +85,7 @@ Before Full Corpus v1 freeze:
 
 ## Research implication
 
-Bioethics Bench should now be treated as a **Scenario + rich candidate universe + declared analysis projection** resource. Source completeness is evidence metadata, not an ontology ceiling. A source-grounded projection can coexist with a broader expanded projection, and the claims made from each must remain distinct.
+Bioethics Bench should now be treated as a **case + its policies + the policies selected for a given evaluation** resource. Source completeness is evidence metadata, not an ontology ceiling. A source-grounded projection can coexist with a broader expanded projection, and the claims made from each must remain distinct.
 
 ## Queue status
 
