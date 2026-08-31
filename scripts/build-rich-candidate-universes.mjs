@@ -28,7 +28,10 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const auditDir = join(root, 'docs', 'full-corpus', 'audit-v2');
-const outDir = join(root, 'data', 'case-families');
+// Neutral case-family resources are not represented executable case records.
+// Keep them outside data/, whose generic validator is intentionally scoped to
+// executable/result/release objects.
+const outDir = join(root, 'resources', 'case-families');
 const outPath = join(outDir, 'full-200-rich-candidate-universes.v1.json');
 
 const AUDIT_DATE = '2026-08-30';
