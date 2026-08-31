@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bioethicsbench.com/schemas/candidate-universe.schema.json",
-  "title": "Bioethics Bench rich candidate-universe resource",
-  "description": "Case-family-level Scenario and Policy-candidate universe, independent of any SACRE Public/Expert/Framework role assignment. A candidate's provenance/source status is evidence metadata; analysis roles belong in projection manifests.",
+  "title": "Bioethics Bench 200-case policy resource",
+  "description": "Machine-readable Bioethics Bench cases and their reviewed policies. Legacy field names such as case_family_id and candidate_universe are retained for compatibility. Public/Expert/Framework policy type is assigned separately for a particular SACRE evaluation setup.",
   "type": "object",
   "required": [
     "resource_id",
@@ -25,7 +25,8 @@
       "format": "date"
     },
     "construction_standard": {
-      "const": "scenario-candidate-universe-projection-v1"
+      "const": "scenario-candidate-universe-projection-v1",
+      "description": "Legacy machine identifier retained for reproducibility. Current prose calls this the case-and-policy review model."
     },
     "source_directory": {
       "type": "string"
@@ -46,6 +47,7 @@
   "$defs": {
     "caseFamily": {
       "type": "object",
+      "description": "One Bioethics Bench case. The definition name is retained for compatibility with the original schema.",
       "required": [
         "inventory_id",
         "case_family_id",
@@ -67,7 +69,8 @@
         },
         "case_family_id": {
           "type": "string",
-          "pattern": "^m[0-9]{3}$"
+          "pattern": "^m[0-9]{3}$",
+          "description": "Legacy field name for the case ID."
         },
         "title": {
           "type": "string",
@@ -76,15 +79,17 @@
         "scenario_audit": {
           "type": "string",
           "minLength": 1,
-          "description": "Editorial audit of Scenario adequacy. This is not a substitute for the full concise/detailed Scenario text in case records."
+          "description": "Editorial review of case clarity and adequacy."
         },
         "candidate_count": {
           "type": "integer",
-          "minimum": 1
+          "minimum": 1,
+          "description": "Number of reviewed policies in the case."
         },
         "candidate_universe": {
           "type": "array",
           "minItems": 1,
+          "description": "Legacy field name for the case's reviewed policies.",
           "items": {
             "$ref": "#/$defs/candidate"
           }
@@ -92,16 +97,17 @@
         "source_grounded_status": {
           "type": "string",
           "minLength": 1,
-          "description": "Case-level audit statement about whether a defensible source-grounded projection currently exists and any limitations. It does not assign candidate roles."
+          "description": "Review note about whether the current evidence supports a direct source-based SACRE evaluation setup."
         },
         "expanded_projection_status": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Legacy field name for notes about broader policy use in evaluation or comparison."
         },
         "demonstration_richness": {
           "type": "string",
           "pattern": "^(VERY HIGH|HIGH|MEDIUM-HIGH|MEDIUM|LOW|N/A)(?:\\b.*)?$",
-          "description": "Audit-preserved demonstration-richness statement. The leading token is the controlled category; any following text is retained editorial explanation rather than a different category."
+          "description": "Editorial note about how useful the case is for demonstrating different policy positions."
         },
         "action": {
           "type": "string",
@@ -120,6 +126,7 @@
     },
     "candidate": {
       "type": "object",
+      "description": "One policy. The definition name is retained for compatibility with the original schema.",
       "required": [
         "candidate_id",
         "text",
@@ -130,7 +137,8 @@
       "properties": {
         "candidate_id": {
           "type": "string",
-          "pattern": "^c[0-9]{2}$"
+          "pattern": "^c[0-9]{2}$",
+          "description": "Legacy field name for the policy ID."
         },
         "text": {
           "type": "string",
@@ -138,12 +146,12 @@
         },
         "audit_source_mark": {
           "type": "boolean",
-          "description": "True exactly when the reviewed audit marked the candidate with ✓. This means the candidate has an identified source/framework/governance anchor at the audit's stated level; it does not imply direct empirical policy evidence or determine SACRE role."
+          "description": "Legacy review flag showing that the policy had an identified external or framework anchor. It is not the public Direct/Inferred/Constructed sourcing label and it does not determine Public/Expert/Framework policy type."
         },
         "audit_provenance_label": {
           "type": "string",
           "minLength": 1,
-          "description": "Exact terminal provenance annotation from the rich-candidate audit, retained so the builder does not silently normalize a nuanced editorial judgment."
+          "description": "Exact scholarly sourcing note retained from the case audit."
         },
         "provenance_class": {
           "enum": [
@@ -155,7 +163,7 @@
             "mixed",
             "other"
           ],
-          "description": "Coarse machine category derived conservatively from the exact audit label. The exact label remains authoritative."
+          "description": "Legacy internal sourcing class. Public interfaces collapse these conservatively to Direct source, Inferred from source, or Constructed."
         }
       },
       "additionalProperties": false
