@@ -21,6 +21,7 @@ const JUDGMENTS = [
   'executable-other-profile',
   'full-corpus-2x1x2-mean-v1',
   'full-corpus-1x2x2-mean-v1',
+  'candidate-universe-ready',
   'needs-additional-evidence',
   'research-complete-not-executable',
   'as-duplicate',
@@ -33,6 +34,7 @@ const DISPOSITION = {
   'executable-other-profile': 'executable-eligible',
   'full-corpus-2x1x2-mean-v1': 'executable-eligible',
   'full-corpus-1x2x2-mean-v1': 'executable-eligible',
+  'candidate-universe-ready': 'rich-universe-ready',
   'needs-additional-evidence': 'held-needs-evidence',
   'research-complete-not-executable': 'held-not-executable',
   'as-duplicate': 'held-duplicate',
@@ -133,6 +135,7 @@ const tally = (pred) => families.filter(pred).length;
 const counts = {
   executableWithRecord: tally((f) => f.disposition === 'executable-v1 (record present)'),
   executableCandidate: tally((f) => f.disposition === 'executable-candidate (no record yet)'),
+  richUniverseReady: tally((f) => f.disposition === 'rich-universe-ready'),
   featuredOnly: tally((f) => f.disposition.startsWith('featured-only')),
   needsEvidence: tally((f) => f.disposition === 'held-needs-evidence'),
   notExecutable: tally((f) => f.disposition === 'held-not-executable'),
@@ -171,6 +174,7 @@ should be reintroduced.
 | executable-v1, record present, dossier agrees | ${counts.executableWithRecord} |
 | executable-v1, record present, dossier judgment predates the audit — **reconcile** | ${counts.reconcile} |
 | executable-candidate, dossier supports it but no record transcribed yet | ${counts.executableCandidate} |
+| rich candidate universe ready; projection manifest/review pending | ${counts.richUniverseReady} |
 | Featured-only (M001 → F01) | ${counts.featuredOnly} |
 | held — needs additional evidence | ${counts.needsEvidence} |
 | held — research-complete, not executable | ${counts.notExecutable} |
