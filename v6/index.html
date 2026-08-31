@@ -98,14 +98,95 @@
     </div>
   </section>
 
+  <section class="record-bg" id="record">
+    <div class="wrap">
+      <span class="section-label">Inside the data</span>
+      <h2 class="section-title">What a record looks like</h2>
+      <p class="section-lead">A case pairs a decision with the policies proposed for it. Each policy carries its type and how it was sourced. This is case M004, as recorded.</p>
+      <div class="record">
+        <div class="record-row">
+          <div class="record-key">Case</div>
+          <div class="record-val">Adolescent confidentiality <span class="chip">Clinical care</span></div>
+        </div>
+        <div class="record-row">
+          <div class="record-key">Decision</div>
+          <div class="record-val">A 16-year-old seeks contraception and STI testing and asks the clinic not to disclose the visit or results to a parent. The clinic must decide what confidentiality rule to apply.</div>
+        </div>
+        <div class="record-policies">
+          <div class="rec-policy">
+            <div class="rec-policy-text">Protect confidential access to sensitive care for adolescents who can participate meaningfully, with disclosure limited to defined safety exceptions.</div>
+            <div class="rec-policy-meta"><span class="ptype public">Public</span><span class="prov inferred">Inferred from source</span></div>
+          </div>
+          <div class="rec-policy">
+            <div class="rec-policy-text">Maintain confidentiality, explain its limits, and actively encourage — but do not compel — family involvement.</div>
+            <div class="rec-policy-meta"><span class="ptype expert">Expert</span><span class="prov direct">Direct source</span></div>
+          </div>
+          <div class="rec-policy">
+            <div class="rec-policy-text">Use a graduated policy in which confidentiality authority increases with the adolescent's demonstrated capacity.</div>
+            <div class="rec-policy-meta"><span class="ptype framework">Framework</span><span class="prov constructed">Constructed</span></div>
+          </div>
+        </div>
+        <div class="record-row">
+          <div class="record-key">Also recorded</div>
+          <div class="record-val">Case id and category · concise and detailed versions of the case and its policies · every policy's type and sourcing · the sources behind each policy, in the case file</div>
+        </div>
+      </div>
+      <p class="record-note">Three of this case's six policies are shown. <a href="cases/#M004">Open M004</a> for the rest, or <a href="cases/">browse all 200 cases</a>.</p>
+    </div>
+  </section>
+
   <section class="cta">
-    <h2>Explore the cases</h2>
-    <p>Search by topic, choose a category, filter by policy type or sourcing, and load a case into SACRE.</p>
-    <a class="btn btn-primary" href="cases/">Browse all 200 cases</a>
+    <span class="section-label" style="color:rgba(16,185,129,.75)">Get involved</span>
+    <h2>Building this together</h2>
+    <p>Bioethics Bench is being developed through careful case construction, expert consultation, and institutional collaboration. We invite researchers, practitioners, and institutions to engage with the project.</p>
+    <form class="signup-form" id="updates-form">
+      <input type="email" name="email" placeholder="you@institution.edu" required aria-label="Email address" />
+      <button type="submit" class="btn btn-primary">Stay updated</button>
+    </form>
+    <p class="signup-note">Get notified about releases, the cases, and ways to contribute.</p>
+    <div class="cta-actions">
+      <a class="btn btn-ghost" href="cases/">Browse all 200 cases</a>
+      <a class="btn btn-ghost" href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">ReflectiveEquilibrium.AI ↗</a>
+    </div>
+    <p class="cta-contact">Questions or collaboration: <a href="mailto:research@alethic.ai">research@alethic.ai</a></p>
+  </section>
+
+  <section class="cite-bg" id="cite">
+    <div class="wrap">
+      <span class="section-label">Citation</span>
+      <h2 class="section-title">How to cite</h2>
+      <p class="section-lead">If you use Bioethics Bench or the SACRE methodology in your research, please cite the introducing paper.</p>
+      <div class="bibtex-wrap">
+        <button class="copy-btn" id="copy-bib" type="button">Copy</button>
+        <pre class="bibtex" id="bibtex">@article{ghose2026doingethics,
+  title   = {Doing Ethics with AI: Practical Ethics Engineering,
+             Product-Led Philosophy, and Computer-Aided Ethics},
+  author  = {Ghose, Sankalpa and Rasaee, Kasra and
+             Singer, Peter and Savulescu, Julian},
+  year    = {2026}
+}</pre>
+      </div>
+    </div>
   </section>
 
   <footer>
     <div class="foot"><span>Bioethics Bench</span><span><a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub</a></span></div>
   </footer>
+<script>
+  document.getElementById('updates-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'mailto:research@alethic.ai?subject='
+      + encodeURIComponent('Bioethics Bench — stay updated')
+      + '&body=' + encodeURIComponent('Please add this address to Bioethics Bench updates: ' + this.email.value);
+  });
+  document.getElementById('copy-bib').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText(document.getElementById('bibtex').innerText).then(function () {
+      btn.textContent = 'Copied';
+      setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+    });
+  });
+</script>
 </body>
 </html>

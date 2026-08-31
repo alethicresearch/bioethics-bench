@@ -21,11 +21,21 @@ function buildCases(raw){
   }).sort((a,b)=>Number(a.id.slice(1))-Number(b.id.slice(1)));
 }
 
+/* The type and sourcing selectors describe the case exactly: ticking Public and Framework asks
+   for cases whose policies are Public and Framework and nothing else. Containment ("has a Public
+   policy somewhere") returned almost everything and told a reader nothing about the case. */
+function sameSet(selected,present){
+  if(!selected.size)return true;
+  if(selected.size!==present.size)return false;
+  for(const v of selected)if(!present.has(v))return false;
+  return true;
+}
+
 function matches(c){
   if(state.category&&c.category!==state.category)return false;
   if(state.q&&!c.hay.includes(state.q))return false;
-  for(const t of state.types)if(!c.types.has(t))return false;
-  for(const s of state.sourcing)if(!c.sourcing.has(s))return false;
+  if(!sameSet(state.types,c.types))return false;
+  if(!sameSet(state.sourcing,c.sourcing))return false;
   return true;
 }
 
