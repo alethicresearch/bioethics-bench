@@ -12,7 +12,7 @@ Each case has:
 - a concise version;
 - a detailed version;
 - a set of serious policies;
-- a reviewed policy type for each policy: **Public**, **Expert**, or **Framework** (a policy may carry more than one type when independently supported in more than one role);
+- a current Public, Expert, or Framework type assignment for each policy (a policy may carry more than one type when it represents more than one role);
 - a sourcing label for each policy: **Direct source**, **Inferred from source**, or **Constructed**;
 - a scholarly source file with supporting material and review notes.
 
@@ -22,7 +22,9 @@ The current machine-readable public file is:
 
 `resources/cases/full-200-cases.v1.json`
 
-`npm run validate` checks that all 200 cases and all 1,298 policies are present, that every policy has a valid type and sourcing label, and that the case data are structurally consistent. It does not require every case to contain all three policy types.
+`npm run validate` checks that all 200 cases and all 1,298 policies are present, that every policy has a valid current type assignment and sourcing label, and that the case data are structurally consistent. It does not require every case to contain all three policy types.
+
+The type assignments in this preview remain part of the release-review workload. Structural validation does not substitute for scholarly review of whether a policy is correctly classified as Public, Expert, or Framework.
 
 ## 2. The basic model
 
@@ -149,9 +151,9 @@ A Bench case can be loaded into SACRE as a new evaluation setup.
 Loading a case adds:
 
 1. the selected concise or detailed case description;
-2. its reviewed Public policies, if present;
-3. its reviewed Expert policies, if present;
-4. its reviewed Framework policies, if present.
+2. its currently assigned Public policies, if present;
+3. its currently assigned Expert policies, if present;
+4. its currently assigned Framework policies, if present.
 
 SACRE should show the available policies without inventing a missing type. A case that lacks one of the three policy types can still be loaded for inspection or editing; a complete three-type SACRE evaluation requires at least one policy in each type.
 
