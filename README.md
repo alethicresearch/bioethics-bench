@@ -137,6 +137,7 @@ Some legacy filenames and JSON field names still contain terms such as `family`,
 |---|---|
 | [`docs/README.md`](docs/README.md) | Which documents govern current work and which record past work |
 | [`docs/REVIEW_QUEUE.md`](docs/REVIEW_QUEUE.md) | What is left to review, ordered by consequence |
+| [`docs/COMPOSITION.md`](docs/COMPOSITION.md) | What the collection is made of, counted from the published files |
 | [`docs/RESOURCE_CARD.md`](docs/RESOURCE_CARD.md) | Scientific description, uses and limits |
 | [`docs/CASE_CONSTRUCTION_STANDARD.md`](docs/CASE_CONSTRUCTION_STANDARD.md) | Rules for writing cases and policies |
 | [`docs/CORPUS_AUTHORING.md`](docs/CORPUS_AUTHORING.md) | Machine-enforced authoring rules |

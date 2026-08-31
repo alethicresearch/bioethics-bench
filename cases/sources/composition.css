@@ -1,0 +1,54 @@
+/* The composition page. Bars carry the same colours the case browser uses for the same labels —
+   a Framework policy is the same violet here as it is on a case — so the two pages read as one
+   resource. Every bar is also labelled and repeated in a table, which is what the palette's low
+   contrast against white obliges and what a reader wanting the number needs anyway. */
+.composition{background:var(--soft);padding:2.6rem 2rem 4.5rem;min-height:60vh}
+.composition .wrap{max-width:960px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.6rem 1.7rem;margin-bottom:1.4rem;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.panel h2{margin:0 0 .3rem;font-size:1.15rem;letter-spacing:-.02em;color:var(--ink)}
+.panel .note{margin:.3rem 0 1.2rem;color:var(--muted);font-size:.87rem;line-height:1.65;max-width:66ch}
+.panel .note:last-child{margin-bottom:0}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.9rem;margin-bottom:1.4rem}
+.tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.05rem 1.15rem}
+.tile b{display:block;font-size:1.75rem;line-height:1.1;letter-spacing:-.03em;color:var(--ink);font-weight:800}
+.tile span{display:block;margin-top:.3rem;color:var(--muted);font-size:.79rem;line-height:1.45}
+
+/* One proportion bar: segments sit on the panel with a 2px gap, each labelled where it fits. */
+.pbar{display:flex;gap:2px;height:34px;margin:.2rem 0 .7rem}
+.pbar .seg{position:relative;border-radius:4px;display:flex;align-items:center;justify-content:center;min-width:2px;transition:filter .12s}
+.pbar .seg:hover{filter:brightness(1.07)}
+.pbar .seg.track{pointer-events:none;filter:none}
+.pbar .seg em{font-style:normal;font-size:.72rem;font-weight:750;color:#fff;padding:0 .4rem;white-space:nowrap;text-shadow:0 1px 2px rgba(15,23,42,.35)}
+.legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin:0 0 1.1rem;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:#475569}
+.legend i{width:10px;height:10px;border-radius:3px;flex:0 0 auto}
+
+.rows{display:grid;gap:.65rem;margin:.4rem 0 .3rem}
+.row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:.8rem;align-items:center}
+.row-label{font-size:.8rem;font-weight:700;color:#475569;text-align:right}
+.row .pbar{margin:0;height:28px}
+
+
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.figures{width:100%;min-width:340px;border-collapse:collapse;margin-top:1rem;font-size:.85rem}
+table.figures th,table.figures td{padding:.5rem .6rem;border-bottom:1px solid var(--line);text-align:right}
+table.figures th:first-child,table.figures td:first-child{text-align:left}
+table.figures thead th{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:#94a3b8;font-weight:800}
+table.figures tbody tr:last-child td{border-bottom:0}
+table.figures .swatch{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:.45rem}
+
+.tip{position:fixed;z-index:60;background:var(--ink);color:#fff;font-size:.75rem;line-height:1.4;padding:.45rem .6rem;border-radius:7px;pointer-events:none;opacity:0;transition:opacity .1s;max-width:240px;box-shadow:0 6px 18px rgba(15,23,42,.24)}
+.tip.on{opacity:1}
+.tip b{display:block;font-size:.78rem}
+
+.readnext{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.2rem}
+.readnext a{font-size:.82rem;font-weight:700;color:#047857;text-decoration:none}
+.readnext a:hover{text-decoration:underline}
+
+@media(max-width:640px){
+  .composition{padding:1.6rem 1.1rem 3rem}
+  .panel{padding:1.15rem}
+  .row{grid-template-columns:1fr;gap:.25rem}
+  .row-label{text-align:left}
+}

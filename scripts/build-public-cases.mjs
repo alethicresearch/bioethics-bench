@@ -173,6 +173,22 @@ const PUBLIC_TERMS = ['public', 'affected', 'service-user', 'service user', 'pat
 const EXPERT_TERMS = ['professional', 'expert', 'guidance', 'governance', 'clinical', 'institution', 'who', 'aap', 'acog', 'ama', 'fda', 'cdc', 'woah', 'isscr', 'cioms', 'acmg', 'nice', 'icer', 'hrsa', 'optn', 'hfea', 'national academies', 'policy', 'regulat', 'legal', 'law', 'irb', 'crisis standards', 'care/sing', 'dutch policy'];
 const FRAMEWORK_TERMS = ['framework', 'autonomy', 'utilitarian', 'consequential', 'deont', 'rights', 'justice', 'equity', 'fairness', 'benefic', 'harm-prevention', 'proportionality', 'capabilit', 'solidarity', 'stewardship', 'libert', 'precaution', 'moral', 'best interests', 'substituted judgment', 'nuffield', 'unesco-derived', 'olmstead-derived'];
 
+/*
+ * How a policy's type was arrived at, published beside the type itself.
+ *
+ * "Reviewed or not" is too coarse to act on: a label carried over from a human-written provenance
+ * note and one read off the policy's own wording are not the same claim, and the second is the
+ * smaller, likelier-wrong set. Recording which route produced each label says where review is
+ * most worth spending, and stops a reader treating all 1,328 unreviewed labels alike.
+ */
+export function typeRoute(caseId, policy, reviewed) {
+  const key = `${caseId}:${policy.candidate_id}`;
+  if (reviewed.has(key)) return 'reviewed';
+  const label = String(policy.audit_provenance_label || '').toLowerCase();
+  const matched = [...PUBLIC_TERMS, ...EXPERT_TERMS, ...FRAMEWORK_TERMS].some((term) => label.includes(term));
+  return matched ? 'case-record' : 'wording';
+}
+
 function inferTypes(caseId, policy, reviewed) {
   const key = `${caseId}:${policy.candidate_id}`;
   if (reviewed.has(key)) return [...reviewed.get(key)].sort();
@@ -225,6 +241,7 @@ const cases = source.cases.map((entry) => {
       text_detailed: detailedText,
       types: inferTypes(entry.inventory_id, policy, reviewed),
       type_reviewed: reviewed.has(`${entry.inventory_id}:${policy.candidate_id}`),
+      type_route: typeRoute(entry.inventory_id, policy, reviewed),
       sourcing: sourcing(policy),
     };
   });
@@ -242,6 +259,8 @@ const cases = source.cases.map((entry) => {
       text_detailed: addedDetail,
       types: [added.type],
       type_reviewed: false,
+      // Typed when it was written, by whoever wrote it, and never checked since.
+      type_route: 'authored',
       sourcing: 'constructed',
       written_by_bench: true,
     });

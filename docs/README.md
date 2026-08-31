@@ -19,6 +19,7 @@ been decided and carried out.
 | [`VERSIONING.md`](VERSIONING.md) | Version and content-hash rules |
 | [`RESOURCE_CARD.md`](RESOURCE_CARD.md) | What the resource is, what it is for, what it does not establish |
 | [`REVIEW_QUEUE.md`](REVIEW_QUEUE.md) | What is left to review, ordered by consequence (generated) |
+| [`COMPOSITION.md`](COMPOSITION.md) | What the collection is made of: sourcing, types, review routes, citations (generated) |
 | [`tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`](tasks/SACRE_QCCS_V1_TASK_CONTRACT.md) | How SACRE evaluates a loaded case |
 | [`PROGRAM_COORDINATION.md`](PROGRAM_COORDINATION.md), [`BRANCH_COORDINATION.md`](BRANCH_COORDINATION.md), [`CENTRAL_COORDINATOR_CONTINUITY.md`](CENTRAL_COORDINATOR_CONTINUITY.md) | Where this repository sits in the wider program |
 | [`COMPLETION.md`](COMPLETION.md) | What finishing the Bench would mean |

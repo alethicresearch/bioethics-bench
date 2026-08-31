@@ -22,6 +22,7 @@ jobs:
       # no longer matches what the sources produce, so a hand-edited resource is caught here.
       - run: node scripts/build-public-cases.mjs
       - run: node scripts/build-case-sources.mjs
+      - run: node scripts/build-composition.mjs
       - run: node scripts/validate-public-cases.mjs
       # Documents that still say what is true, and an index that still places every one of them.
       - run: node scripts/check-docs.mjs
