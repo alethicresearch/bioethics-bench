@@ -65,6 +65,26 @@ SACRE can load a Bench case directly into an evaluation. Loading a case adds:
 
 Users who want source details, fuller case notes, or the broader 200-case collection can open the case on the Bioethics Bench website.
 
+## Benchmark study results
+
+Bench cases are scored in SACRE under QCCS v1 with the `conv+` protocol: every cross-source policy
+pair in a case is asked how far the two converge on what to do. Because each pair is an independent
+call, the corpus can be scored model by model.
+
+Results are published at **[bioethicsbench.com/study](https://bioethicsbench.com/study/)**. The page
+shows the full study design — 200 cases, two representations, ten models, three repeats — a
+completion matrix of which cells have been executed, and the dashboard for whatever has been
+published: score distribution, concise-versus-detailed comparison, failed calls by error kind, and
+the cases where cross-source policies pull furthest apart.
+
+Everything there is provisional and marked as such. A single execution of a pair is one draw, not a
+reliability estimate, and until the repeats exist a difference between two models or two
+representations is not separable from run-to-run variation. The design is shown first so a partial
+result reads as a fraction of a known whole rather than as a finding.
+
+Reports are fetched live from the SACRE study API, so publishing a run updates the page without a
+site change. The report JSON and the pair-level scores behind it are linked from the page itself.
+
 ## Source and review information
 
 The repository keeps the source trail behind each policy. This includes article, guideline, professional-statement, survey, legal, governance, and ethical-framework sources where relevant.
@@ -102,6 +122,7 @@ Those questions belong to the planned validation studies and final release revie
 ├── releases/               # Versioned release material
 ├── analyses/               # Reproducible analyses when available
 ├── cases/                  # The case browser published at bioethicsbench.com/cases/
+├── study/                  # Published study results at bioethicsbench.com/study/
 ├── archive/                # Earlier versions of the site, kept at /archive/v1 … /archive/v6
 ├── CONTENT-LICENSE.md
 ├── CITATION.cff
