@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 386,
+  "detailed_policy_count": 488,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -2012,6 +2012,7 @@
         {
           "id": "c01",
           "text": "Continue treatment temporarily while intensive communication, second opinion, ethics review, and goals clarification proceed",
+          "text_detailed": "Continue treatment while intensive communication, a second opinion, ethics review and goals clarification proceed, with each step scheduled rather than open-ended and the family told when the process will conclude.",
           "types": [
             "expert"
           ],
@@ -2021,6 +2022,7 @@
         {
           "id": "c02",
           "text": "Use a time-limited trial with agreed clinical endpoints before deciding continuation/withdrawal",
+          "text_detailed": "Agree a time-limited trial with clinical endpoints set before it begins — what would count as improvement and by when — and decide continuation or withdrawal against those endpoints rather than against the team's overall impression.",
           "types": [
             "expert"
           ],
@@ -2030,6 +2032,7 @@
         {
           "id": "c03",
           "text": "After fair process and transfer opportunity, permit withdrawal of potentially inappropriate treatment despite persistent surrogate objection",
+          "text_detailed": "After fair process and a genuine opportunity to transfer, permit withdrawal of treatment judged potentially inappropriate despite continuing surrogate objection, with the process steps completed and recorded and the decision reviewed outside the treating team.",
           "types": [
             "expert"
           ],
@@ -2039,6 +2042,7 @@
         {
           "id": "c04",
           "text": "Continue treatment when the surrogate's interpretation of the patient's values remains plausible and burdens are not overwhelming",
+          "text_detailed": "Continue treatment while the surrogate's interpretation of the patient's values remains plausible and the burdens are not overwhelming, with plausibility assessed against what is known of the patient rather than against the team's own view of the outcome.",
           "types": [
             "framework"
           ],
@@ -2048,6 +2052,7 @@
         {
           "id": "c05",
           "text": "Make benefit/burden and professional integrity controlling when treatment no longer advances an acceptable patient-centered goal",
+          "text_detailed": "Make benefit, burden and professional integrity controlling once treatment no longer advances any acceptable patient-centred goal, with the goals stated explicitly and the finding that none remains achievable recorded and independently confirmed.",
           "types": [
             "expert",
             "framework"
@@ -2058,6 +2063,7 @@
         {
           "id": "c06",
           "text": "Require transfer to a willing institution before unilateral withdrawal whenever feasible",
+          "text_detailed": "Require a transfer to a willing institution before any unilateral withdrawal wherever that is feasible, with the search documented, the institutions contacted named, and support continued while it proceeds.",
           "types": [
             "expert"
           ],
@@ -2067,6 +2073,7 @@
         {
           "id": "c07",
           "text": "Permit a longer accommodation period for religious/moral objection when doing so does not impose disproportionate burdens on the patient or system",
+          "text_detailed": "Permit a longer accommodation period for religious or moral objection where doing so does not impose disproportionate burdens on the patient or the service, with the extension stated as a period and the burdens assessed rather than assumed.",
           "types": [
             "framework"
           ],
@@ -2076,6 +2083,7 @@
         {
           "id": "c08",
           "text": "Fix the accommodation period in advance and tell the family what it is, so that time is a stated part of the plan rather than something they must keep asking for.",
+          "text_detailed": "Fix the accommodation period in advance and tell the family what it is, so that time is a stated part of the plan rather than something they must keep asking for, with the end date recorded and any extension explained.",
           "types": [
             "public"
           ],
@@ -2096,6 +2104,7 @@
         {
           "id": "c01",
           "text": "Follow the applicable prior directive even when the person now appears content, because the capable person's precedent autonomous choice governs",
+          "text_detailed": "Follow the applicable prior directive even where the person now appears content, on the ground that the capable person's earlier choice governs, provided the directive addresses this situation and its applicability is recorded rather than assumed.",
           "types": [
             "framework"
           ],
@@ -2105,6 +2114,7 @@
         {
           "id": "c02",
           "text": "Give current experiential welfare and expressed assent/dissent priority when the person can no longer endorse the earlier directive",
+          "text_detailed": "Give the person's current experience and their present assent or dissent priority once they can no longer endorse the earlier directive, reading behaviour as well as words and recording what was observed and by whom.",
           "types": [
             "framework"
           ],
@@ -2114,6 +2124,7 @@
         {
           "id": "c03",
           "text": "Use a hybrid rule: prior directive has strong presumptive weight but can be overridden when current wellbeing is substantial and treatment burden/benefit differs materially from what was anticipated",
+          "text_detailed": "Give the prior directive strong presumptive weight while allowing it to be overridden where present wellbeing is substantial and the burden-benefit balance differs materially from what the person anticipated, with the difference named rather than asserted.",
           "types": [
             "framework"
           ],
@@ -2123,6 +2134,7 @@
         {
           "id": "c04",
           "text": "Interpret the directive through the person's broader values rather than literal wording, using substituted judgment where possible",
+          "text_detailed": "Interpret the directive through the person's broader values rather than its literal wording, using substituted judgment where the values are known, and recording the interpretation so that it can be examined and revised.",
           "types": [
             "framework"
           ],
@@ -2132,6 +2144,7 @@
         {
           "id": "c05",
           "text": "Honor present resistance to burdensome treatment even if the old directive would permit it; do not use precedent autonomy to compel unwanted present intervention",
+          "text_detailed": "Honour present resistance to burdensome treatment even where the earlier directive would permit it, so that precedent autonomy is not used to compel an intervention the person is now refusing in the only way available to them.",
           "types": [
             "framework"
           ],
@@ -2141,6 +2154,7 @@
         {
           "id": "c06",
           "text": "Use a time-limited treatment trial when prognosis and current quality of life are uncertain, then reassess against both prior values and present welfare",
+          "text_detailed": "Use a time-limited treatment trial where prognosis and current quality of life are uncertain, then reassess against both the person's prior values and their present welfare, with the reassessment date fixed at the start.",
           "types": [
             "framework"
           ],
@@ -2150,6 +2164,7 @@
         {
           "id": "c07",
           "text": "Require an independent review when literal directive and current apparent interests sharply conflict, documenting why one temporal self's interests are given priority",
+          "text_detailed": "Require independent review where the literal directive and the person's current apparent interests sharply conflict, with the review recording why one temporal self's interests were preferred rather than treating the conflict as resolved by the document.",
           "types": [
             "expert"
           ],
@@ -2159,6 +2174,7 @@
         {
           "id": "c08",
           "text": "Ask the family what the person said while they could still say it, record that alongside the directive, and revisit it whenever the plan changes.",
+          "text_detailed": "Ask the family what the person said while they could still say it, record that alongside the directive, and revisit it whenever the plan changes, so that the account is built up over time rather than recalled once.",
           "types": [
             "public"
           ],
@@ -2179,6 +2195,7 @@
         {
           "id": "c01",
           "text": "Require continued support for a meaningful accommodation period when an informed family rejects BD/DNC, while transfer/resolution proceeds",
+          "text_detailed": "Continue organ support for a meaningful accommodation period where an informed family rejects the determination, while transfer or resolution proceeds, with the period stated at the outset and the family told what happens at its end.",
           "types": [
             "public"
           ],
@@ -2188,6 +2205,7 @@
         {
           "id": "c02",
           "text": "Do not require indefinite continuation; provide support and a reasonable transition period before discontinuation",
+          "text_detailed": "Provide support and a reasonable transition period, without any commitment to indefinite continuation, with the transition length stated in advance and the reasons for it explained rather than left to negotiation.",
           "types": [
             "public"
           ],
@@ -2197,6 +2215,7 @@
         {
           "id": "c03",
           "text": "Provide a reasonable but limited accommodation period and defined disagreement process, then discontinue absent another authorized pathway",
+          "text_detailed": "Provide a limited accommodation period with a defined disagreement process, then discontinue unless another authorised pathway exists, with the period and the process published as institutional policy rather than set case by case.",
           "types": [
             "expert"
           ],
@@ -2206,6 +2225,7 @@
         {
           "id": "c04",
           "text": "Provide substantial conscience accommodation when feasible because forced discontinuation can impose profound moral injury",
+          "text_detailed": "Provide substantial conscience accommodation where feasible, on the ground that forced discontinuation can cause profound moral injury, with feasibility assessed against staffing and other patients' needs and the assessment recorded.",
           "types": [
             "framework"
           ],
@@ -2215,6 +2235,7 @@
         {
           "id": "c05",
           "text": "Limit accommodation because clinicians should not provide indefinite organ support after death and resources remain owed to living patients",
+          "text_detailed": "Limit accommodation on the ground that clinicians should not provide indefinite organ support after death and that resources are owed to living patients, with the limit stated in advance rather than reached when pressure mounts.",
           "types": [
             "framework"
           ],
@@ -2224,6 +2245,7 @@
         {
           "id": "c06",
           "text": "Offer transfer as the presumptive route when family rejection persists beyond the institution's accommodation period, with continued support only while transfer is actively feasible",
+          "text_detailed": "Treat transfer as the presumptive route once family rejection persists beyond the accommodation period, continuing support only while transfer remains actively feasible, with feasibility reviewed at stated intervals.",
           "types": [
             "framework"
           ],
@@ -2243,6 +2265,7 @@
         {
           "id": "c01",
           "text": "Use proportional sedation at the lowest depth that relieves refractory suffering, with reassessment and titration",
+          "text_detailed": "Sedate proportionally at the lowest depth that relieves the refractory symptom, with reassessment at short intervals and titration up or down as the symptom changes, recorded each time.",
           "types": [
             "expert"
           ],
@@ -2252,6 +2275,7 @@
         {
           "id": "c02",
           "text": "Permit continuous deep sedation when lesser sedation cannot adequately relieve refractory suffering and the patient gives informed consent",
+          "text_detailed": "Permit continuous deep sedation where lighter sedation cannot adequately relieve refractory suffering and the patient has given informed consent, with the failure of lighter sedation documented rather than presumed.",
           "types": [
             "expert"
           ],
@@ -2261,6 +2285,7 @@
         {
           "id": "c03",
           "text": "Begin intermittent/time-limited sedation before continuous deep sedation when symptom pattern and patient goals make a reversible trial feasible",
+          "text_detailed": "Begin with intermittent or time-limited sedation before continuous deep sedation where the symptom pattern and the patient's goals make a reversible trial feasible, with the trial's length and purpose agreed with the patient beforehand.",
           "types": [
             "expert",
             "framework"
@@ -2271,6 +2296,7 @@
         {
           "id": "c04",
           "text": "Honor a capable dying patient's informed preference for deeper continuous sedation once suffering is refractory, even if a lighter level might technically reduce symptoms",
+          "text_detailed": "Honour a capable dying patient's informed preference for deeper continuous sedation once suffering is refractory, even where a lighter level might technically reduce symptoms, with the preference recorded in the patient's own words.",
           "types": [
             "framework"
           ],
@@ -2280,6 +2306,7 @@
         {
           "id": "c05",
           "text": "Require the minimum effective depth because preserving interaction/consciousness has intrinsic and relational value when symptom relief can still be achieved",
+          "text_detailed": "Use the minimum effective depth, on the ground that preserving consciousness and the possibility of interaction has value where symptom relief can still be achieved, with each increase justified by a symptom that lighter sedation did not control.",
           "types": [
             "framework"
           ],
@@ -2289,6 +2316,7 @@
         {
           "id": "c06",
           "text": "Decline sedation intended primarily to hasten death, while distinguishing that intention from proportionate symptom relief that may foreseeably affect consciousness or survival",
+          "text_detailed": "Decline sedation intended primarily to hasten death, while distinguishing that intention from proportionate symptom relief that may foreseeably affect consciousness or survival, with the intention recorded through the dosing and titration rationale.",
           "types": [
             "expert",
             "framework"
@@ -2299,6 +2327,7 @@
         {
           "id": "c07",
           "text": "Use shared decision with family involvement only as the patient wishes; family distress alone should not determine depth",
+          "text_detailed": "Involve family in the decision only to the extent the patient wishes, and do not let family distress alone determine the depth of sedation, with the patient's wishes about involvement recorded while they can still state them.",
           "types": [
             "expert",
             "public"
@@ -2319,6 +2348,7 @@
         {
           "id": "c01",
           "text": "concurrent hospice + selected disease-directed treatment",
+          "text_detailed": "Provide hospice support alongside selected disease-directed treatment, with the treatments that may continue named in advance and reviewed as goals change, rather than requiring the patient to choose between the two.",
           "types": [
             "public"
           ],
@@ -2328,6 +2358,7 @@
         {
           "id": "c02",
           "text": "distinct comfort-focused hospice pathway",
+          "text_detailed": "Offer a distinct comfort-focused hospice pathway, with what it includes and excludes stated plainly at enrolment so that the choice is understood before it is made.",
           "types": [
             "public"
           ],
@@ -2337,6 +2368,7 @@
         {
           "id": "c03",
           "text": "traditional Medicare-style hospice election",
+          "text_detailed": "Use a traditional hospice election in which the patient forgoes disease-directed treatment for the terminal condition, with the boundary of that condition defined and the election revocable.",
           "types": [
             "expert"
           ],
@@ -2346,6 +2378,7 @@
         {
           "id": "c04",
           "text": "VHA-style concurrent hospice architecture",
+          "text_detailed": "Use a concurrent-care architecture in which hospice and disease-directed treatment are funded together, with eligibility criteria published and the two services coordinated rather than parallel.",
           "types": [
             "expert"
           ],
@@ -2355,6 +2388,7 @@
         {
           "id": "c05",
           "text": "concurrent care grounded in autonomy/nonabandonment",
+          "text_detailed": "Provide concurrent care on autonomy and non-abandonment grounds, so that accepting hospice never requires giving up treatment the patient still wants, with the commitment stated at enrolment.",
           "types": [
             "framework"
           ],
@@ -2364,6 +2398,7 @@
         {
           "id": "c06",
           "text": "bounded distinct hospice benefit grounded in stewardship/program coherence",
+          "text_detailed": "Keep the hospice benefit bounded and distinct on stewardship and coherence grounds, with the boundary defined by the terminal condition and the reasoning explained to patients rather than presented as a rule without one.",
           "types": [
             "framework"
           ],
@@ -2383,6 +2418,7 @@
         {
           "id": "c01",
           "text": "permit clinician participation under capacity/terminality/voluntariness/safeguards",
+          "text_detailed": "Permit clinician participation where capacity, terminal prognosis and voluntariness are established and the statutory safeguards are met, with each element assessed independently and recorded, and the assessments repeated before the act.",
           "types": [
             "expert",
             "public"
@@ -2393,6 +2429,7 @@
         {
           "id": "c02",
           "text": "prohibit physician participation while maintaining palliative care",
+          "text_detailed": "Prohibit physician participation while guaranteeing full palliative care, with the palliative alternative offered in practice — specialist access, symptom control, continuity — rather than named as a reason for the prohibition.",
           "types": [
             "expert",
             "public"
@@ -2403,6 +2440,7 @@
         {
           "id": "c03",
           "text": "institutional neutrality with individual conscience and transfer/access process",
+          "text_detailed": "Take no institutional position while providing for individual conscience and a working transfer and access process, with the transfer arranged by the institution and the timeline stated.",
           "types": [
             "expert",
             "framework"
@@ -2413,6 +2451,7 @@
         {
           "id": "c04",
           "text": "require referral/access pathway where legal",
+          "text_detailed": "Require a referral or access pathway where the practice is lawful, with the pathway named, contactable, and effective within the patient's clinical window rather than left to the patient to locate.",
           "types": [
             "expert"
           ],
@@ -2422,6 +2461,7 @@
         {
           "id": "c05",
           "text": "autonomy/relief-of-suffering access",
+          "text_detailed": "Permit access on grounds of autonomy and relief of suffering, with the request originating from the patient and the assessment recording their own reasons rather than a clinical summary of them.",
           "types": [
             "framework"
           ],
@@ -2431,6 +2471,7 @@
         {
           "id": "c06",
           "text": "professional-role/nonmaleficence prohibition",
+          "text_detailed": "Prohibit participation on grounds of professional role and non-maleficence, with the prohibition applying to the act rather than to discussing it, so that patients can still raise the question and be heard.",
           "types": [
             "framework"
           ],
@@ -2440,6 +2481,7 @@
         {
           "id": "c07",
           "text": "equity-enhanced safeguards for disability, coercion, socioeconomic pressure, and palliative access",
+          "text_detailed": "Add safeguards addressing disability, coercion, socioeconomic pressure and access to palliative care, assessed explicitly in every case and recorded, with a request deferred where any of them is unresolved.",
           "types": [
             "expert",
             "framework"
@@ -2461,6 +2503,7 @@
         {
           "id": "c01",
           "text": "permit only under exceptional Dutch due-care criteria with independent psychiatric review",
+          "text_detailed": "Permit only under exceptional due-care criteria with independent psychiatric review, with the reviewer independent of the treating team and of the assessing physician, and the review recorded in full.",
           "types": [
             "expert"
           ],
@@ -2470,6 +2513,7 @@
         {
           "id": "c02",
           "text": "require extended treatment-history/second-opinion and no reasonable alternative before eligibility",
+          "text_detailed": "Require an extended treatment history, a second opinion, and a finding that no reasonable alternative remains, with reasonable alternative defined by what is actually available to this patient rather than what exists in principle.",
           "types": [
             "expert"
           ],
@@ -2479,6 +2523,7 @@
         {
           "id": "c03",
           "text": "exclude psychiatric-only suffering from assisted-dying eligibility",
+          "text_detailed": "Exclude psychiatric-only suffering from eligibility, stating the exclusion as a categorical rule so that patients are not assessed under a standard that cannot be met, while guaranteeing continued treatment.",
           "types": [
             "expert"
           ],
@@ -2488,6 +2533,7 @@
         {
           "id": "c04",
           "text": "central specialist review for all psychiatric cases",
+          "text_detailed": "Route every psychiatric case through central specialist review, with the reviewing body constituted in advance, its criteria published, and its decisions recorded for consistency across cases.",
           "types": [
             "expert"
           ],
@@ -2497,6 +2543,7 @@
         {
           "id": "c05",
           "text": "autonomy/equality argues diagnosis alone should not categorically exclude capable patients",
+          "text_detailed": "Do not exclude capable patients on the basis of diagnosis alone, on autonomy and equality grounds, requiring any refusal to name a feature of this patient's decision rather than of their condition.",
           "types": [
             "framework"
           ],
@@ -2506,6 +2553,7 @@
         {
           "id": "c06",
           "text": "vulnerability/uncertainty argues exceptional precaution or exclusion",
+          "text_detailed": "Apply exceptional precaution or exclusion on grounds of vulnerability and prognostic uncertainty, with the uncertainty stated — what cannot be known about the course of this illness — rather than asserted generally.",
           "types": [
             "framework"
           ],
@@ -2515,6 +2563,7 @@
         {
           "id": "c07",
           "text": "time-limited deferral with renewed assessment after additional evidence/treatment opportunities",
+          "text_detailed": "Defer for a stated period with renewed assessment after further treatment opportunities, with the treatments named, made available, and the reassessment automatic rather than requiring a fresh request.",
           "types": [
             "framework"
           ],
@@ -2524,6 +2573,7 @@
         {
           "id": "c08",
           "text": "Guarantee continued treatment and support throughout any assessment, so that asking to be assessed never reduces the care a person is offered.",
+          "text_detailed": "Guarantee continued treatment and support throughout any assessment, so that asking to be assessed never reduces the care a person is offered, with the treating team's obligations unchanged and stated in writing.",
           "types": [
             "public"
           ],
@@ -2544,6 +2594,7 @@
         {
           "id": "c01",
           "text": "allow valid advance directive to substitute for current oral request when all due-care criteria are met",
+          "text_detailed": "Allow a valid advance directive to substitute for a current oral request where every due-care criterion is met, with the directive's applicability to the present situation established and recorded by an independent assessor.",
           "types": [
             "expert",
             "public"
@@ -2554,6 +2605,7 @@
         {
           "id": "c02",
           "text": "require current communicative confirmation/observable concurrence before assisted death",
+          "text_detailed": "Require some current communicative confirmation or observable concurrence before proceeding, with what would count defined in advance rather than judged in the moment, and the absence of it treated as decisive.",
           "types": [
             "framework",
             "public"
@@ -2564,6 +2616,7 @@
         {
           "id": "c03",
           "text": "permit only when directive is specific, repeatedly confirmed historically, current suffering/applicability established, and independent review agrees",
+          "text_detailed": "Permit only where the directive is specific, was repeatedly confirmed while the person was capable, current suffering and applicability are established, and independent review agrees, with all four recorded separately.",
           "types": [
             "expert"
           ],
@@ -2573,6 +2626,7 @@
         {
           "id": "c04",
           "text": "do not proceed when present behavior suggests resistance or material uncertainty about applicability",
+          "text_detailed": "Do not proceed where present behaviour suggests resistance or where the directive's applicability is materially uncertain, with resistance interpreted broadly and any doubt resolved against proceeding.",
           "types": [
             "expert",
             "framework"
@@ -2583,6 +2637,7 @@
         {
           "id": "c05",
           "text": "precedent autonomy controls",
+          "text_detailed": "Let precedent autonomy control, on the ground that the capable person's settled choice about their own dying is theirs to make, with the directive's specificity and its confirmations documented.",
           "types": [
             "framework"
           ],
@@ -2592,6 +2647,7 @@
         {
           "id": "c06",
           "text": "present experiential interests/current minimal autonomy control",
+          "text_detailed": "Let present experiential interests and current minimal autonomy control, treating the person now as the one whose life is at stake, with their present state assessed by those who know them.",
           "types": [
             "framework"
           ],
@@ -2601,6 +2657,7 @@
         {
           "id": "c07",
           "text": "independent multidisciplinary adjudication where directive/current state conflict",
+          "text_detailed": "Require independent multidisciplinary adjudication wherever the directive and the person's current state conflict, with the adjudication recording why one was preferred and what evidence decided it.",
           "types": [
             "expert"
           ],
@@ -2620,6 +2677,7 @@
         {
           "id": "c01",
           "text": "continue CANH during diagnostic/prognostic clarification and family deliberation",
+          "text_detailed": "Continue clinically assisted nutrition and hydration while diagnosis and prognosis are clarified and the family deliberates, with the clarification following a defined assessment schedule rather than continuing indefinitely.",
           "types": [
             "expert"
           ],
@@ -2629,6 +2687,7 @@
         {
           "id": "c02",
           "text": "withdraw CANH after best-interest/shared process when burdens and prognosis justify it",
+          "text_detailed": "Withdraw after a best-interests process shared with the family where burdens and prognosis justify it, with the assessment recording what is known of the person's values and what remains unknown.",
           "types": [
             "expert",
             "framework"
@@ -2639,6 +2698,7 @@
         {
           "id": "c03",
           "text": "use time-limited continuation with predefined reassessment milestones",
+          "text_detailed": "Continue for a defined period with reassessment milestones set in advance, agreed with the family, and applied at those points rather than deferred when they arrive.",
           "types": [
             "expert"
           ],
@@ -2648,6 +2708,7 @@
         {
           "id": "c04",
           "text": "continue when family reasonably interprets patient's values as favoring life preservation under uncertainty",
+          "text_detailed": "Continue where the family reasonably interprets the person's values as favouring preservation of life under uncertainty, with that interpretation recorded and tested against what is known rather than accepted or dismissed.",
           "types": [
             "framework",
             "public"
@@ -2658,6 +2719,7 @@
         {
           "id": "c05",
           "text": "withdraw when family reasonably interprets patient's values as rejecting prolonged dependence and burdensome intervention",
+          "text_detailed": "Withdraw where the family reasonably interprets the person's values as rejecting prolonged dependence and burdensome intervention, with the interpretation recorded and independently reviewed before an irreversible step.",
           "types": [
             "framework",
             "public"
@@ -2668,6 +2730,7 @@
         {
           "id": "c06",
           "text": "require independent neurorehabilitation/ethics review before irreversible withdrawal when diagnosis/prognosis is contested",
+          "text_detailed": "Require independent neurorehabilitation and ethics review before irreversible withdrawal wherever diagnosis or prognosis is contested, with the contest identified explicitly and the review addressing it.",
           "types": [
             "expert"
           ],
@@ -2687,6 +2750,7 @@
         {
           "id": "c01",
           "text": "respect VSED after capacity/coercion/symptom assessment and provide anticipatory symptom care",
+          "text_detailed": "Respect a decision to stop eating and drinking after assessing capacity, coercion and symptoms, and provide anticipatory symptom care — mouth care, sedation for distress, family support — arranged before it begins.",
           "types": [
             "expert"
           ],
@@ -2696,6 +2760,7 @@
         {
           "id": "c02",
           "text": "treat reversible depression, uncontrolled symptoms, misinformation, or coercion before accepting the decision as settled",
+          "text_detailed": "Treat reversible depression, uncontrolled symptoms, misinformation or coercion before accepting the decision as settled, with each addressed and the decision revisited afterwards rather than accepted at first statement.",
           "types": [
             "expert"
           ],
@@ -2705,6 +2770,7 @@
         {
           "id": "c03",
           "text": "allow clinician conscientious nonparticipation while ensuring nonabandonment/transfer and symptom relief",
+          "text_detailed": "Allow conscientious non-participation while guaranteeing non-abandonment, transfer and symptom relief, with an alternative clinician arranged and the patient's care unchanged in the interim.",
           "types": [
             "expert"
           ],
@@ -2714,6 +2780,7 @@
         {
           "id": "c04",
           "text": "support hospice/family with clear expectations and caregiver resources",
+          "text_detailed": "Support hospice and family with clear expectations about the course and duration and with the caregiver resources that sustain it, provided in advance rather than as the need becomes acute.",
           "types": [
             "expert",
             "public"
@@ -2724,6 +2791,7 @@
         {
           "id": "c05",
           "text": "autonomy-based accompaniment",
+          "text_detailed": "Accompany the person on autonomy grounds, providing symptom care without pressure to resume, with the accompaniment recorded as the plan rather than as acquiescence.",
           "types": [
             "framework"
           ],
@@ -2733,6 +2801,7 @@
         {
           "id": "c06",
           "text": "life-preservation/suicide-prevention position favoring continued efforts to restore desire to eat/drink where ethically/legally permissible",
+          "text_detailed": "Continue efforts to restore the desire to eat and drink where that is ethically and legally permissible, with those efforts bounded, non-coercive, and stopped when the person's decision remains settled.",
           "types": [
             "framework"
           ],
@@ -2752,6 +2821,7 @@
         {
           "id": "c01",
           "text": "treat withholding and withdrawing as ethically equivalent when the intervention no longer serves patient goals",
+          "text_detailed": "Treat withholding and withdrawing as ethically equivalent once the intervention no longer serves the patient's goals, and require the same justification for each rather than a higher one for stopping.",
           "types": [
             "expert"
           ],
@@ -2761,6 +2831,7 @@
         {
           "id": "c02",
           "text": "require a higher procedural threshold for withdrawal because stopping an established treatment creates reliance/causal/moral concerns",
+          "text_detailed": "Require a higher procedural threshold for withdrawal, on the ground that stopping an established treatment engages reliance and causal concerns, with the additional steps specified rather than left to local practice.",
           "types": [
             "public"
           ],
@@ -2770,6 +2841,7 @@
         {
           "id": "c03",
           "text": "use explicit time-limited trials so initiation does not create a presumption of indefinite continuation",
+          "text_detailed": "Use explicit time-limited trials so that starting does not create a presumption of continuing, with the endpoint and the review agreed before the treatment begins and recorded where the family can see them.",
           "types": [
             "expert"
           ],
@@ -2779,6 +2851,7 @@
         {
           "id": "c04",
           "text": "when uncertainty is high, start treatment with stopping criteria rather than withhold because reversibility preserves options",
+          "text_detailed": "Where uncertainty is high, start treatment with stopping criteria rather than withhold, on the ground that reversibility preserves options, with the criteria fixed at the outset and applied when met.",
           "types": [
             "framework"
           ],
@@ -2788,6 +2861,7 @@
         {
           "id": "c05",
           "text": "avoid starting when likely later withdrawal would be psychologically/institutionally harder and expected benefit is low",
+          "text_detailed": "Avoid starting where later withdrawal would be psychologically or institutionally harder and expected benefit is low, with that judgment made explicitly and shared with the family rather than left as a reason not offered.",
           "types": [
             "expert"
           ],
@@ -2797,6 +2871,7 @@
         {
           "id": "c06",
           "text": "formal-equivalence framework versus morally relevant act/omission/reliance framework",
+          "text_detailed": "Choose between formal equivalence and a rule that treats acts, omissions and reliance as morally distinct, and state which is being applied in this case so that the reasoning is available for challenge.",
           "types": [
             "framework"
           ],
@@ -2817,6 +2892,7 @@
         {
           "id": "c01",
           "text": "do not offer escalation that cannot reasonably achieve the agreed goal, after transparent explanation",
+          "text_detailed": "Do not offer an escalation that cannot reasonably achieve the agreed goal, after explaining transparently what the goal is and why the escalation cannot meet it, with the explanation given in writing.",
           "types": [
             "expert"
           ],
@@ -2826,6 +2902,7 @@
         {
           "id": "c02",
           "text": "use second opinion/ethics review/appeal before final nonoffer when disagreement persists",
+          "text_detailed": "Obtain a second opinion, ethics review and an appeal opportunity before any final non-offer where disagreement persists, with the timeline stated and the surrogate told how to use each step.",
           "types": [
             "expert"
           ],
@@ -2835,6 +2912,7 @@
         {
           "id": "c03",
           "text": "offer a time-limited trial if benefit is uncertain rather than effectively absent",
+          "text_detailed": "Offer a time-limited trial where benefit is uncertain rather than effectively absent, with the distinction stated and the stopping criteria agreed before the trial begins.",
           "types": [
             "expert",
             "framework"
@@ -2845,6 +2923,7 @@
         {
           "id": "c04",
           "text": "temporarily maintain eligibility while transfer to a willing center is explored",
+          "text_detailed": "Maintain eligibility temporarily while transfer to a willing centre is explored, with the search documented and support continued while it remains realistic.",
           "types": [
             "expert"
           ],
@@ -2854,6 +2933,7 @@
         {
           "id": "c05",
           "text": "allow surrogate request to carry presumptive weight where some plausible goal-concordant benefit remains",
+          "text_detailed": "Give the surrogate's request presumptive weight where some plausible goal-concordant benefit remains, with plausibility assessed against the agreed goal and the assessment recorded.",
           "types": [
             "framework"
           ],
@@ -2863,6 +2943,7 @@
         {
           "id": "c06",
           "text": "professional-integrity/nonmaleficence permits firm nonoffer when escalation cannot meet the goal",
+          "text_detailed": "Permit a firm non-offer on grounds of professional integrity and non-maleficence where the escalation cannot meet the goal, with that finding made institutionally rather than by the bedside team alone.",
           "types": [
             "framework"
           ],
@@ -2872,6 +2953,7 @@
         {
           "id": "c07",
           "text": "Tell the surrogate in writing, at the time of the request, what will and will not be offered and why, with the route to a second opinion named.",
+          "text_detailed": "Tell the surrogate in writing, at the time of the request, what will and will not be offered and why, naming the route to a second opinion and the person who will handle it.",
           "types": [
             "public"
           ],
@@ -2892,6 +2974,7 @@
         {
           "id": "c01",
           "text": "follow the deceased patient's known prior wishes concerning postmortem somatic support/pregnancy",
+          "text_detailed": "Follow the deceased person's known prior wishes about postmortem somatic support and pregnancy, with those wishes established from a document or a recorded conversation rather than from a general impression.",
           "types": [
             "expert",
             "framework"
@@ -2902,6 +2985,7 @@
         {
           "id": "c02",
           "text": "allow surrogate/family decision where prior wishes unknown and fetal survival is plausible",
+          "text_detailed": "Let the surrogate or family decide where prior wishes are unknown and fetal survival is plausible, with plausibility stated as a clinical estimate and the decision revisited as that estimate changes.",
           "types": [
             "public"
           ],
@@ -2911,6 +2995,7 @@
         {
           "id": "c03",
           "text": "continue support to a defined fetal viability/delivery threshold when prognosis is reasonable and burdens proportionate",
+          "text_detailed": "Continue support to a defined gestational threshold where prognosis is reasonable and burdens proportionate, with the threshold set at the outset and the burdens on the family reviewed as it approaches.",
           "types": [
             "framework"
           ],
@@ -2920,6 +3005,7 @@
         {
           "id": "c04",
           "text": "discontinue because the patient is dead and continued bodily use conflicts with autonomy/dignity absent prior authorization",
+          "text_detailed": "Discontinue on the ground that the person is dead and continued use of their body conflicts with their autonomy and dignity absent prior authorisation, with the absence of authorisation established rather than assumed.",
           "types": [
             "framework"
           ],
@@ -2929,6 +3015,7 @@
         {
           "id": "c05",
           "text": "permit continuation only after independent maternal-fetal/ethics review of fetal prognosis, burdens, resources, and prior values",
+          "text_detailed": "Permit continuation only after independent maternal-fetal and ethics review of fetal prognosis, burdens, resources and the person's prior values, with the review completed before support is committed rather than after.",
           "types": [
             "expert"
           ],
@@ -2938,6 +3025,7 @@
         {
           "id": "c06",
           "text": "allow substantial family accommodation but not indefinite support where fetal benefit becomes negligible",
+          "text_detailed": "Allow substantial family accommodation without indefinite support, ending it where fetal benefit becomes negligible, with the point at which that is judged defined in advance and explained to the family.",
           "types": [
             "framework"
           ],
@@ -2957,6 +3045,7 @@
         {
           "id": "c01",
           "text": "offer donation to medically suitable competent patients after the MAID decision is independently established, with separation, first-person consent, withdrawal rights, and dead-donor-rule compliance",
+          "text_detailed": "Offer donation to medically suitable competent patients only after the assisted-dying decision is independently established, with separate teams, first-person consent, an unconditional right to withdraw, and compliance with the dead-donor rule.",
           "types": [
             "expert"
           ],
@@ -2966,6 +3055,7 @@
         {
           "id": "c02",
           "text": "discuss donation only after patient initiation or a defined neutral timing trigger to minimize influence",
+          "text_detailed": "Raise donation only after the patient initiates it or at a defined neutral point, with that point fixed in policy so that the timing cannot be adjusted toward a donation outcome.",
           "types": [
             "expert"
           ],
@@ -2975,6 +3065,7 @@
         {
           "id": "c03",
           "text": "decline donation when premortem procedures or logistics impose burdens the donor has not separately authorized",
+          "text_detailed": "Decline donation where premortem procedures or logistics would impose burdens the donor has not separately authorised, with each such procedure consented to specifically rather than covered by a general agreement.",
           "types": [
             "expert"
           ],
@@ -2984,6 +3075,7 @@
         {
           "id": "c04",
           "text": "autonomy-based facilitation of donation",
+          "text_detailed": "Facilitate donation on autonomy grounds, treating the patient's wish to donate as theirs to act on, with the arrangements made without altering the assisted-dying process.",
           "types": [
             "framework"
           ],
@@ -2993,6 +3085,7 @@
         {
           "id": "c05",
           "text": "public-trust/noninstrumentalization safeguards requiring strict separation of care teams and decisions",
+          "text_detailed": "Require strict separation of care teams and decisions on public-trust grounds, with the separation structural rather than procedural and stated publicly so that it can be relied on.",
           "types": [
             "expert",
             "framework"
@@ -3003,6 +3096,7 @@
         {
           "id": "c06",
           "text": "permit clinician conscience opt-out while ensuring institutional continuity/transfer",
+          "text_detailed": "Permit clinician conscience opt-out while the institution guarantees continuity and transfer, with the alternative clinician identified in advance rather than sought when the objection arises.",
           "types": [
             "expert"
           ],
@@ -3012,6 +3106,7 @@
         {
           "id": "c07",
           "text": "Let the patient raise donation whenever they wish and answer fully, without allowing the donation question to alter the timing or handling of the assisted-dying decision.",
+          "text_detailed": "Let the patient raise donation whenever they wish and answer fully, without allowing the donation question to alter the timing or handling of the assisted-dying decision, and record that the two were kept separate.",
           "types": [
             "public"
           ],
@@ -3033,6 +3128,7 @@
         {
           "id": "c01",
           "text": "proceed after clear communication because determining death is a professional responsibility not contingent on family authorization",
+          "text_detailed": "Proceed after clear communication, on the ground that determining death is a professional responsibility rather than something requiring family authorisation, with the communication documented and support offered throughout.",
           "types": [
             "expert",
             "framework"
@@ -3043,6 +3139,7 @@
         {
           "id": "c02",
           "text": "allow a brief accommodation period for family understanding/religious support before testing when clinically feasible",
+          "text_detailed": "Allow a brief accommodation period for family understanding and religious support before testing where that is clinically feasible, with the period stated and the reason for any limit explained.",
           "types": [
             "expert"
           ],
@@ -3052,6 +3149,7 @@
         {
           "id": "c03",
           "text": "require family permission for apnea testing because it carries procedural risk and profound moral significance",
+          "text_detailed": "Require family permission for apnoea testing specifically, on the ground that it carries procedural risk and profound significance, while other components of the determination proceed.",
           "types": [
             "expert"
           ],
@@ -3061,6 +3159,7 @@
         {
           "id": "c04",
           "text": "use ancillary testing instead of apnea testing when objection/risk makes that a valid guideline pathway",
+          "text_detailed": "Use ancillary testing in place of apnoea testing where objection or clinical risk makes that a valid guideline pathway, with the substitution recorded and the guideline basis named.",
           "types": [
             "expert"
           ],
@@ -3070,6 +3169,7 @@
         {
           "id": "c05",
           "text": "proceed over objection only after second opinion/ethics/legal review",
+          "text_detailed": "Proceed over objection only after a second opinion and ethics or legal review, with each completed and recorded before testing rather than sought afterwards.",
           "types": [
             "expert"
           ],
@@ -3079,6 +3179,7 @@
         {
           "id": "c06",
           "text": "transfer when feasible if another institution can accommodate objection without abandoning accepted death-determination standards",
+          "text_detailed": "Transfer where feasible if another institution can accommodate the objection without departing from accepted death-determination standards, with the search documented and support continued while it proceeds.",
           "types": [
             "expert"
           ],
@@ -3088,6 +3189,7 @@
         {
           "id": "c07",
           "text": "Explain what the testing involves and why before it happens, and allow a short defined period for the family to gather, rather than proceeding on the clinical timetable alone.",
+          "text_detailed": "Explain what the testing involves and why before it happens, and allow a short defined period for the family to gather, rather than proceeding on the clinical timetable alone, with the period stated at the time.",
           "types": [
             "public"
           ],
