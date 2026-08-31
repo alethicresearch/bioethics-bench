@@ -63,25 +63,33 @@ function stripOuterMarkdown(value) {
   return out;
 }
 
+const FIELD_LABELS = [
+  'Source-grounded canonical three-source SACRE',
+  'Source-grounded projection',
+  'Source-grounded',
+  'Expanded methodological projection',
+  'Expanded projection',
+  'Expanded',
+  'Demonstration richness',
+  'Demo',
+  'Action',
+  'Scenario',
+];
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function extractLabel(body, label) {
-  const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const labels = [
-    'Source-grounded projection',
-    'Expanded projection',
-    'Demonstration richness',
-    'Source-grounded',
-    'Expanded',
-    'Demo',
-    'Action',
-    'Scenario',
-  ].map((item) => item.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const escaped = escapeRegex(label);
+  const labels = FIELD_LABELS.map(escapeRegex).join('|');
   const re = new RegExp(`\\*\\*${escaped}:\\*\\*\\s*([\\s\\S]*?)(?=\\s+\\*\\*(?:${labels}):\\*\\*|\\n|$)`);
   const match = body.match(re);
   return match?.[1] ? stripOuterMarkdown(match[1]).trim() : null;
 }
 
 function subsection(body, heading) {
-  const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escaped = escapeRegex(heading);
   const match = body.match(new RegExp(`^###\\s+${escaped}\\s*$`, 'mi'));
   if (!match) return null;
   const rest = body.slice(match.index + match[0].length);
@@ -140,8 +148,6 @@ function candidateFromParts(text, label, index, inventoryId) {
 }
 
 function parseTerminalCandidate(chunk, index, inventoryId) {
-  // Later compact audits put provenance in a terminal parenthesis. Terminal
-  // sentence punctuation is editorial and is normalized before parsing.
   const normalized = chunk.trim().replace(/[.;]\s*$/, '').trim();
   const boundary = normalized.lastIndexOf(' (');
   if (boundary < 0 || !normalized.endsWith(')')) {
@@ -156,8 +162,6 @@ function parseTerminalCandidate(chunk, index, inventoryId) {
 }
 
 function splitCompactCandidates(text) {
-  // Split only after a closing provenance parenthesis so semicolons inside the
-  // policy proposition remain part of that proposition.
   return text
     .trim()
     .split(/\)\s*;\s*/)
@@ -188,8 +192,6 @@ function candidateArea(body) {
 
 function splitNumberedCandidate(line, inventoryId, index) {
   const cleaned = line.replace(/^\d+\.\s+/, '').trim().replace(/[.;]\s*$/, '').trim();
-  // Numbered audits use an em-dash to separate policy text from provenance.
-  // Use the final separator because policy prose can itself contain punctuation.
   const boundary = cleaned.lastIndexOf(' — ');
   if (boundary < 0) throw new Error(`${inventoryId}: numbered candidate ${index + 1} has no provenance separator: ${line}`);
   return candidateFromParts(cleaned.slice(0, boundary), cleaned.slice(boundary + 3), index, inventoryId);
@@ -206,16 +208,11 @@ function parseNumberedCandidates(section) {
 function compactUniverse(section) {
   const match = section.body.match(/^\*\*(?:Candidate universe|Universe)(?:\s*\((\d+)\))?:\*\*\s*(.+)$/m);
   if (!match || !match[2]?.trim()) return null;
-  // A line such as "existing six-candidate audit is already rich:" introduces
-  // a numbered list rather than containing candidates itself.
   if (!match[2].includes(' (') && !match[2].includes('(✓') && !match[2].includes('(constructed')) return null;
   return { declaredCount: match[1] ? Number(match[1]) : null, text: match[2].trim() };
 }
 
 const candidateOverrides = {
-  // M101 is a crosswalk note rather than a freshly enumerated audit line. These
-  // six families are copied from the reviewed F10 crosswalk sentence rather than
-  // guessed from punctuation.
   M101: [
     ['limited younger tie-break', '✓ F10 established provenance'],
     ['no independent age weight', '✓ F10 established provenance'],
@@ -229,11 +226,13 @@ const candidateOverrides = {
 function parseProjectionStatus(section) {
   const body = section.body;
   const batch = batchDisposition(section);
-  const sourceGrounded = extractLabel(body, 'Source-grounded projection')
+  const sourceGrounded = extractLabel(body, 'Source-grounded canonical three-source SACRE')
+    ?? extractLabel(body, 'Source-grounded projection')
     ?? extractLabel(body, 'Source-grounded')
     ?? batch?.sourceGrounded
     ?? null;
-  const expanded = extractLabel(body, 'Expanded projection')
+  const expanded = extractLabel(body, 'Expanded methodological projection')
+    ?? extractLabel(body, 'Expanded projection')
     ?? extractLabel(body, 'Expanded')
     ?? batch?.expanded
     ?? null;
@@ -304,9 +303,6 @@ for (const file of auditFiles) {
   }
 }
 
-// The first M041–M050 audit correctly identified the old M047 as a duplicate.
-// M047 was then replaced with a distinct permanent-contraception family; the
-// supersession file is therefore the authoritative M047 candidate audit.
 const m047Path = 'docs/full-corpus/audit-v2/M047-rich-candidate-audit-supersession.md';
 const m047Markdown = readFileSync(join(root, m047Path), 'utf8');
 const m047Section = extractSections(m047Markdown, m047Path).find((section) => section.inventoryId === 'M047');
