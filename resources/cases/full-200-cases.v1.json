@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 199,
+  "detailed_policy_count": 386,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -8593,6 +8593,7 @@
         {
           "id": "c01",
           "text": "equal initial allocation then need/risk-based redistribution",
+          "text_detailed": "Allocate equally across countries at the start, then redistribute by need and risk once epidemiological data allow, with the switch point and the redistribution rule fixed before the first dose ships.",
           "types": [
             "expert"
           ],
@@ -8602,6 +8603,7 @@
         {
           "id": "c02",
           "text": "prioritize countries with greatest epidemiologic burden and marginal health benefit",
+          "text_detailed": "Prioritise countries where the epidemiological burden and the marginal health benefit are greatest, using stated indicators and published data, and revisiting the ranking as the epidemic moves rather than fixing it at the outset.",
           "types": [
             "expert",
             "framework"
@@ -8612,6 +8614,7 @@
         {
           "id": "c03",
           "text": "prioritize health-system/frontline protection to preserve response capacity",
+          "text_detailed": "Prioritise protection of health systems and frontline workers so that response capacity survives, with the covered categories defined narrowly and the same definition applied in every country.",
           "types": [
             "expert"
           ],
@@ -8621,6 +8624,7 @@
         {
           "id": "c04",
           "text": "give reciprocity weight to countries contributing manufacturing/research resources",
+          "text_detailed": "Give weight to countries that contributed manufacturing or research capacity, with the weight stated in advance as a proportion rather than negotiated per shipment, and capped so that reciprocity cannot displace need entirely.",
           "types": [
             "expert",
             "framework"
@@ -8631,6 +8635,7 @@
         {
           "id": "c05",
           "text": "allocate proportionally by population after minimum need threshold",
+          "text_detailed": "Allocate proportionally by population once a minimum need threshold is met everywhere, with the threshold defined first and proportional allocation applying only to supply above it.",
           "types": [
             "framework"
           ],
@@ -8640,6 +8645,7 @@
         {
           "id": "c06",
           "text": "reserve a share for low-resource/worst-off countries independent of purchasing power",
+          "text_detailed": "Reserve a stated share for low-resource and worst-off countries, ring-fenced from purchasing power and from bilateral negotiation, and released on the same schedule as the rest of the supply.",
           "types": [
             "framework"
           ],
@@ -8649,6 +8655,7 @@
         {
           "id": "c07",
           "text": "multiprinciple transparent allocation combining need, benefit, equity, reciprocity, and procedural fairness",
+          "text_detailed": "Combine need, benefit, equity, reciprocity and procedural fairness under a published rule that says how each is weighed, applied by a body whose decisions and departures from the rule are on the record.",
           "types": [
             "expert"
           ],
@@ -8658,6 +8665,7 @@
         {
           "id": "c08",
           "text": "Distribute through a shared mechanism countries agree to in advance, and publish each allocation, so that supply does not follow bilateral deals made out of sight.",
+          "text_detailed": "Distribute through a shared mechanism countries agree to before supply exists, and publish each allocation as it is made, so that supply does not follow bilateral deals struck out of sight.",
           "types": [
             "public"
           ],
@@ -8679,6 +8687,7 @@
         {
           "id": "c01",
           "text": "refrain from active recruitment from safeguard-list countries while preserving individual freedom to migrate",
+          "text_detailed": "Refrain from active recruitment in countries on the safeguard list, while leaving individuals free to apply on their own initiative, with the distinction defined by what the employer does rather than by how the worker arrives.",
           "types": [
             "expert"
           ],
@@ -8688,6 +8697,7 @@
         {
           "id": "c02",
           "text": "allow recruitment only through government-to-government agreements with proportional support/co-investment for source systems",
+          "text_detailed": "Recruit only under government-to-government agreements that include proportional support or co-investment for the source system, with the support specified, funded, and reported rather than promised in principle.",
           "types": [
             "expert"
           ],
@@ -8697,6 +8707,7 @@
         {
           "id": "c03",
           "text": "unrestricted recruitment where workers independently apply and contracts are fair",
+          "text_detailed": "Permit recruitment where workers apply independently and the contract is fair, with fairness defined by stated terms — no recruitment fees, no tied visas, portable qualifications — and audited rather than asserted.",
           "types": [
             "framework"
           ],
@@ -8706,6 +8717,7 @@
         {
           "id": "c04",
           "text": "destination system compensates source-country training loss through financing/training partnerships",
+          "text_detailed": "Compensate the source country for training loss through financing or training partnerships, at a rate tied to the number recruited, paid to the health system rather than to a general fund.",
           "types": [
             "expert",
             "framework"
@@ -8716,6 +8728,7 @@
         {
           "id": "c05",
           "text": "worker-autonomy framework rejecting restrictions on individual mobility",
+          "text_detailed": "Reject restrictions on individual mobility, on the ground that a worker's right to move is theirs rather than their government's, while leaving room to regulate what employers may do to attract them.",
           "types": [
             "framework"
           ],
@@ -8725,6 +8738,7 @@
         {
           "id": "c06",
           "text": "global-health-equity framework limiting institutional recruitment that worsens severe shortages",
+          "text_detailed": "Limit institutional recruitment that worsens severe shortages, assessed against the source country's own workforce data, with the limit applying to the employer and reviewed as that data changes.",
           "types": [
             "framework"
           ],
@@ -8734,6 +8748,7 @@
         {
           "id": "c07",
           "text": "ethical-recruitment certification with transparency, no recruitment fees, portability, and retention support",
+          "text_detailed": "Require ethical-recruitment certification covering transparency, no recruitment fees, qualification portability and retention support, with certification audited and withdrawable rather than granted once.",
           "types": [
             "expert"
           ],
@@ -8743,6 +8758,7 @@
         {
           "id": "c08",
           "text": "Guarantee recruited workers full information, portable qualifications and the right to return, and refuse arrangements that bind a worker to one employer.",
+          "text_detailed": "Guarantee recruited workers full information before departure, portable qualifications and the right to return, and refuse any arrangement that binds a worker to a single employer or makes leaving costly.",
           "types": [
             "public"
           ],
@@ -8763,6 +8779,7 @@
         {
           "id": "c01",
           "text": "preserve exclusivity with subsidized procurement/donation",
+          "text_detailed": "Preserve exclusivity while funding subsidised procurement or donation for those who cannot pay, with the volumes and the duration committed in advance rather than adjusted as demand becomes apparent.",
           "types": [
             "expert"
           ],
@@ -8772,6 +8789,7 @@
         {
           "id": "c02",
           "text": "negotiated tiered voluntary licensing and technology transfer",
+          "text_detailed": "Negotiate tiered voluntary licensing and technology transfer, with the territories, the price tiers and the transfer obligations written into the licence and published.",
           "types": [
             "expert"
           ],
@@ -8781,6 +8799,7 @@
         {
           "id": "c03",
           "text": "compulsory licensing/TRIPS public-health flexibility when voluntary access fails",
+          "text_detailed": "Use compulsory licensing or other public-health flexibilities where voluntary access fails, with failure defined by stated price and supply targets and a date by which they must be met.",
           "types": [
             "expert"
           ],
@@ -8790,6 +8809,7 @@
         {
           "id": "c04",
           "text": "public/private patent pool or shared manufacturing platform",
+          "text_detailed": "Place the technology in a patent pool or shared manufacturing platform, with participation terms published and the pool governed by the countries relying on it rather than by the licensor alone.",
           "types": [
             "expert"
           ],
@@ -8799,6 +8819,7 @@
         {
           "id": "c05",
           "text": "innovation-incentive framework favoring time-limited exclusivity with access obligations",
+          "text_detailed": "Grant time-limited exclusivity carrying access obligations, on the ground that the incentive is what produced the technology, with the obligations enforceable and the limit fixed rather than extendable.",
           "types": [
             "framework"
           ],
@@ -8808,6 +8829,7 @@
         {
           "id": "c06",
           "text": "right-to-health/global-justice framework favoring broad licensing/technology sharing during severe need",
+          "text_detailed": "Favour broad licensing and technology sharing during severe need, on the ground that a right to health is at stake, with the trigger for such need defined in advance rather than declared case by case.",
           "types": [
             "framework"
           ],
@@ -8817,6 +8839,7 @@
         {
           "id": "c07",
           "text": "staged trigger: voluntary agreement first, compulsory mechanisms if price/supply targets unmet",
+          "text_detailed": "Try voluntary agreement first and move to compulsory mechanisms if price or supply targets are unmet by a stated date, with both the targets and the date public from the beginning.",
           "types": [
             "framework"
           ],
@@ -8826,6 +8849,7 @@
         {
           "id": "c08",
           "text": "Publish what public money contributed to the technology and what the price is in each country, so that patients can see what they are being charged for.",
+          "text_detailed": "Publish what public money contributed to the technology and what the price is in each country, so that patients can see what they are being charged for and what was already paid on their behalf.",
           "types": [
             "public"
           ],
@@ -8846,6 +8870,7 @@
         {
           "id": "c01",
           "text": "equal access to essential services irrespective status",
+          "text_detailed": "Give equal access to essential services irrespective of immigration status, with entitlement determined by presence rather than documents, and no charge that would deter someone from seeking care.",
           "types": [
             "expert"
           ],
@@ -8855,6 +8880,7 @@
         {
           "id": "c02",
           "text": "universal emergency/communicable/maternal-child core plus staged access to broader services",
+          "text_detailed": "Guarantee emergency, communicable-disease and maternal and child care universally, and stage access to broader services against stated criteria, with the staging published so that people know what they can obtain now.",
           "types": [
             "expert"
           ],
@@ -8864,6 +8890,7 @@
         {
           "id": "c03",
           "text": "residence-based enrollment in ordinary primary/chronic care with firewall from immigration enforcement",
+          "text_detailed": "Enrol people in ordinary primary and chronic care on the basis of residence, with a firewall between health records and immigration enforcement that is stated in law rather than in policy.",
           "types": [
             "expert",
             "framework"
@@ -8874,6 +8901,7 @@
         {
           "id": "c04",
           "text": "restrict publicly funded nonurgent services to a defined essential package where resources are constrained",
+          "text_detailed": "Where resources are constrained, restrict publicly funded non-urgent services to a defined essential package, with the package set by clinical criteria and applied to everyone rather than by status.",
           "types": [
             "expert"
           ],
@@ -8883,6 +8911,7 @@
         {
           "id": "c05",
           "text": "equal moral status/public-health framework favoring broad inclusion",
+          "text_detailed": "Include broadly on equal-status and public-health grounds, treating exclusion as both a wrong to the person and a risk to everyone, with any limit justified against both.",
           "types": [
             "framework"
           ],
@@ -8892,6 +8921,7 @@
         {
           "id": "c06",
           "text": "stewardship framework allowing transparent scope limits but rejecting status as a proxy for worth",
+          "text_detailed": "Permit transparent limits on the scope of publicly funded services while rejecting immigration status as a proxy for who deserves care, with the limits stated as clinical categories and applied uniformly.",
           "types": [
             "framework"
           ],
@@ -8901,6 +8931,7 @@
         {
           "id": "c07",
           "text": "Separate care entirely from immigration enforcement and say so publicly, so that no one avoids treatment for fear of the consequences of seeking it.",
+          "text_detailed": "Separate care entirely from immigration enforcement and say so publicly, so that no one avoids treatment for fear of what seeking it will bring, with the separation stated at the point of registration.",
           "types": [
             "public"
           ],
@@ -8921,6 +8952,7 @@
         {
           "id": "c01",
           "text": "impartial clinical triage based solely on medical need/urgency",
+          "text_detailed": "Triage on medical need and urgency alone, with the assessment made by clinicians who are not told, and do not ask, which side a patient came from, and the ordering recorded.",
           "types": [
             "expert"
           ],
@@ -8930,6 +8962,7 @@
         {
           "id": "c02",
           "text": "security separation outside bedside triage without discriminatory clinical priority",
+          "text_detailed": "Keep any security separation outside the triage decision: guards and physical arrangements may differ, clinical priority may not, and the separation is not allowed to delay assessment.",
           "types": [
             "expert"
           ],
@@ -8939,6 +8972,7 @@
         {
           "id": "c03",
           "text": "prioritize those most likely to benefit when resources are scarce, irrespective combatant status",
+          "text_detailed": "Where resources are scarce, prioritise those most likely to benefit irrespective of combatant status, with likelihood of benefit assessed on stated clinical grounds and recorded for each decision.",
           "types": [
             "expert",
             "framework"
@@ -8949,6 +8983,7 @@
         {
           "id": "c04",
           "text": "civilian-priority rule",
+          "text_detailed": "Give civilians priority as a stated rule, applied openly rather than informally, with the rule published and the consequences for combatant care acknowledged rather than concealed.",
           "types": [
             "expert"
           ],
@@ -8958,6 +8993,7 @@
         {
           "id": "c05",
           "text": "medical-neutrality/equal-status framework",
+          "text_detailed": "Treat everyone as of equal status under medical neutrality, with the commitment stated publicly, applied to staff conduct as well as triage, and defended to both sides.",
           "types": [
             "framework"
           ],
@@ -8967,6 +9003,7 @@
         {
           "id": "c06",
           "text": "Publish the triage rule and apply it identically to everyone brought in, so that neither side's community has reason to believe the hospital treats the other first.",
+          "text_detailed": "Publish the triage rule and apply it identically to everyone brought in, so that neither side's community has reason to believe the hospital treats the other first, with the rule displayed at the entrance in both languages.",
           "types": [
             "public"
           ],
@@ -8988,6 +9025,7 @@
         {
           "id": "c01",
           "text": "lowest-cost immediate procurement to maximize near-term doses/treatments",
+          "text_detailed": "Procure finished products at lowest cost to maximise doses now, stating the volumes bought and accepting that supply remains dependent on external manufacturers when the next need arises.",
           "types": [
             "framework"
           ],
@@ -8997,6 +9035,7 @@
         {
           "id": "c02",
           "text": "invest in local production/technology transfer despite higher short-run cost",
+          "text_detailed": "Invest in local production and technology transfer despite higher short-run cost, with the capacity targets, the timeline and the accepted reduction in near-term volume stated up front.",
           "types": [
             "expert"
           ],
@@ -9006,6 +9045,7 @@
         {
           "id": "c03",
           "text": "staged hybrid: procure now while financing regional capacity for future supply",
+          "text_detailed": "Procure now while financing regional capacity in parallel, with the split between the two published at the outset and the capacity milestones tracked rather than deferred.",
           "types": [
             "expert"
           ],
@@ -9015,6 +9055,7 @@
         {
           "id": "c04",
           "text": "require licensing/training/quality systems as condition of donor procurement contracts",
+          "text_detailed": "Make licensing, training and quality systems a condition of donor procurement contracts, with the obligations written into the contract, priced into it, and verified rather than encouraged.",
           "types": [
             "expert"
           ],
@@ -9024,6 +9065,7 @@
         {
           "id": "c05",
           "text": "near-term lives-saved framework favoring procurement",
+          "text_detailed": "Favour immediate procurement on the ground that near-term lives saved are the measure, stating what the choice costs in future supply resilience rather than leaving it unsaid.",
           "types": [
             "framework"
           ],
@@ -9033,6 +9075,7 @@
         {
           "id": "c06",
           "text": "resilience/self-determination framework favoring technology transfer",
+          "text_detailed": "Favour technology transfer on grounds of resilience and self-determination, accepting a stated reduction in doses now for capacity that the region controls afterwards.",
           "types": [
             "framework"
           ],
@@ -9042,6 +9085,7 @@
         {
           "id": "c07",
           "text": "equity rule prioritizing capacity in regions structurally excluded from manufacturing",
+          "text_detailed": "Prioritise building capacity in regions structurally excluded from manufacturing, with exclusion assessed on stated indicators and the priority applied across successive funding rounds rather than once.",
           "types": [
             "expert",
             "framework"
@@ -9052,6 +9096,7 @@
         {
           "id": "c08",
           "text": "Decide with the recipient region rather than for it, and publish the agreed split between immediate supply and local capacity.",
+          "text_detailed": "Decide with the recipient region rather than for it, and publish the agreed split between immediate supply and local capacity, together with who took part in the decision.",
           "types": [
             "public"
           ],
@@ -9072,6 +9117,7 @@
         {
           "id": "c01",
           "text": "maximize total health gain across all interventions",
+          "text_detailed": "Maximise total health gain across all available interventions, applying one threshold consistently and reporting what a curative therapy displaced when it was refused.",
           "types": [
             "framework"
           ],
@@ -9081,6 +9127,7 @@
         {
           "id": "c02",
           "text": "severity/rescue priority funding some cures despite lower cost-effectiveness",
+          "text_detailed": "Fund some curative therapies on severity and rescue grounds despite lower cost-effectiveness, with the severity criterion defined in advance and the number of such exceptions bounded.",
           "types": [
             "framework"
           ],
@@ -9090,6 +9137,7 @@
         {
           "id": "c03",
           "text": "reserve portfolio share for rare severe curative therapies while spending remainder on high-impact population services",
+          "text_detailed": "Reserve a stated portfolio share for rare severe curative therapies and spend the remainder on high-impact population services, with the share fixed before applications are considered.",
           "types": [
             "expert"
           ],
@@ -9099,6 +9147,7 @@
         {
           "id": "c04",
           "text": "threshold with severity modifier",
+          "text_detailed": "Apply a cost-effectiveness threshold with a severity modifier, publishing both the threshold and the modifier so that a refusal can be checked against the rule rather than only announced.",
           "types": [
             "expert"
           ],
@@ -9108,6 +9157,7 @@
         {
           "id": "c05",
           "text": "conditional funding tied to price reduction/evidence generation",
+          "text_detailed": "Fund conditionally on price reduction and evidence generation, with the price, the evidence to be collected and the review date written into the agreement and the funding ending if they are not met.",
           "types": [
             "expert"
           ],
@@ -9117,6 +9167,7 @@
         {
           "id": "c06",
           "text": "equal-life-chance/anti-abandonment framework favoring access for small severe-disease groups",
+          "text_detailed": "Favour access for small severe-disease groups on equal-life-chance grounds, treating abandonment of an identifiable group as a distinct cost, and stating what population spending is foregone.",
           "types": [
             "framework"
           ],
@@ -9126,6 +9177,7 @@
         {
           "id": "c07",
           "text": "opportunity-cost/global-justice framework prioritizing scalable interventions for the worst-off populations",
+          "text_detailed": "Prioritise scalable interventions for the worst-off populations on opportunity-cost and global-justice grounds, stating explicitly what the refused therapy would have done for the children concerned.",
           "types": [
             "framework"
           ],
@@ -9135,6 +9187,7 @@
         {
           "id": "c08",
           "text": "Involve the affected families in the funding decision and publish the reasoning, including what a refusal means for the children concerned.",
+          "text_detailed": "Involve the affected families in the funding decision and publish the reasoning, including what a refusal means for the children concerned, rather than announcing a threshold result alone.",
           "types": [
             "public"
           ],
@@ -9155,6 +9208,7 @@
         {
           "id": "c01",
           "text": "open scientific sharing under privacy/security + general public benefit obligations",
+          "text_detailed": "Share openly under privacy and security safeguards with a general obligation to public benefit, with the safeguards specified and the benefit obligation stated in the access terms rather than left to goodwill.",
           "types": [
             "expert"
           ],
@@ -9164,6 +9218,7 @@
         {
           "id": "c02",
           "text": "negotiated community/national benefit-sharing agreement before access",
+          "text_detailed": "Negotiate a community or national benefit-sharing agreement before access is granted, with the agreement covering what is returned, to whom and when, and access conditional on it.",
           "types": [
             "expert"
           ],
@@ -9173,6 +9228,7 @@
         {
           "id": "c03",
           "text": "community-controlled licensing/access for sensitive or sovereign datasets",
+          "text_detailed": "Let contributing communities control licensing and access for sensitive or sovereign datasets, with the control exercised through a body they choose and decisions recorded.",
           "types": [
             "expert",
             "framework"
@@ -9183,6 +9239,7 @@
         {
           "id": "c04",
           "text": "tiered access with local capacity-building/coauthorship/training obligations",
+          "text_detailed": "Grant tiered access carrying local capacity-building, co-authorship and training obligations, with each obligation specific enough to be checked and reported against annually.",
           "types": [
             "expert"
           ],
@@ -9192,6 +9249,7 @@
         {
           "id": "c05",
           "text": "reciprocity framework requiring contributors share in scientific/economic benefits",
+          "text_detailed": "Require that contributors share in the scientific and economic value generated, with the mechanism — royalties, equity, guaranteed supply, training — named in the agreement rather than deferred.",
           "types": [
             "framework"
           ],
@@ -9201,6 +9259,7 @@
         {
           "id": "c06",
           "text": "open-science framework resisting restrictive control where privacy/equity safeguards suffice",
+          "text_detailed": "Resist restrictive control where privacy and equity safeguards are sufficient, on the ground that open data serves the same populations, with the sufficiency of those safeguards assessed independently.",
           "types": [
             "framework"
           ],
@@ -9210,6 +9269,7 @@
         {
           "id": "c07",
           "text": "commercial-use trigger requiring stronger financial/nonfinancial benefit sharing than nonprofit research use",
+          "text_detailed": "Require stronger financial and non-financial benefit sharing for commercial use than for non-profit research, with the commercial trigger defined and the stronger terms set in advance.",
           "types": [
             "framework"
           ],
@@ -9219,6 +9279,7 @@
         {
           "id": "c08",
           "text": "Return results and capacity to the contributing communities on a published timetable, and require their agreement before commercial use.",
+          "text_detailed": "Return results and capacity to the contributing communities on a published timetable, and require their agreement before any commercial use, with the timetable reported against rather than merely stated.",
           "types": [
             "public"
           ],
@@ -9630,6 +9691,7 @@
         {
           "id": "c01",
           "text": "eliminate coercive treatment and rely on supported decision-making/free informed consent",
+          "text_detailed": "Provide no treatment without the person's free and informed consent, and meet crises with supported decision-making instead: a named supporter, a crisis plan made in advance, and time. Where consent cannot be obtained, care continues on the person's own terms rather than passing to compulsion.",
           "types": [
             "expert"
           ],
@@ -9639,6 +9701,7 @@
         {
           "id": "c02",
           "text": "permit emergency involuntary treatment for immediate serious danger/capacity failure under strict review",
+          "text_detailed": "Permit involuntary treatment only for immediate serious danger together with a failure of capacity, under review that begins within a stated period and is conducted by someone outside the treating team. Both conditions must hold at the moment of the decision, and each is recorded separately.",
           "types": [
             "expert"
           ],
@@ -9648,6 +9711,7 @@
         {
           "id": "c03",
           "text": "time-limited compulsory treatment only when necessary/least restrictive and likely to restore agency or prevent catastrophic harm",
+          "text_detailed": "Permit compulsory treatment only where it is necessary, the least restrictive option available, and likely either to restore the person's agency or to prevent catastrophic harm, for a fixed period stated at the outset and renewable only on fresh findings.",
           "types": [
             "framework"
           ],
@@ -9657,6 +9721,7 @@
         {
           "id": "c04",
           "text": "advance directives/crisis plans should control where available",
+          "text_detailed": "Let a valid advance directive or crisis plan control where one exists, applying it as written rather than as a factor to weigh, and treat the absence of a plan as a reason to make one after the crisis rather than as licence to decide without it.",
           "types": [
             "framework"
           ],
@@ -9666,6 +9731,7 @@
         {
           "id": "c05",
           "text": "autonomy/equal-legal-capacity framework opposing coercion",
+          "text_detailed": "Oppose coercive treatment on the ground that legal capacity is not lost with illness, and provide support to exercise it instead. Any measure that overrides the person's stated will requires a justification that would hold for a patient without a psychiatric diagnosis.",
           "types": [
             "framework"
           ],
@@ -9675,6 +9741,7 @@
         {
           "id": "c06",
           "text": "harm-prevention/parens-patriae framework permitting narrow intervention",
+          "text_detailed": "Permit narrow intervention to prevent serious harm the person cannot presently avoid, bounded by what the harm requires, ended as soon as it is averted, and never extended for treatment goals the person has refused.",
           "types": [
             "framework"
           ],
@@ -9684,6 +9751,7 @@
         {
           "id": "c07",
           "text": "independent advocacy/judicial or tribunal review for any continued coercion",
+          "text_detailed": "Require independent advocacy and judicial or tribunal review for any coercion that continues beyond the initial period, with the person present or represented, the reasons given to them, and the review at fixed intervals rather than on application.",
           "types": [
             "expert"
           ],
@@ -9693,6 +9761,7 @@
         {
           "id": "c08",
           "text": "Give the person an independent advocate from the first assessment, and record their own account of what they want alongside the clinical judgement.",
+          "text_detailed": "Give the person an independent advocate from the first assessment rather than after admission, and record their own account of what they want alongside the clinical judgement, so that both are before whoever reviews the decision.",
           "types": [
             "public"
           ],
@@ -9713,6 +9782,7 @@
         {
           "id": "c01",
           "text": "voluntary/relational treatment with intensive capacity-support first",
+          "text_detailed": "Treat voluntarily and relationally, with intensive support for the person's own decision-making first: their choice of setting, pace and supporters, and medical stabilisation offered rather than imposed. Compulsion is not available under this policy until that has genuinely been tried and recorded.",
           "types": [
             "expert"
           ],
@@ -9722,6 +9792,7 @@
         {
           "id": "c02",
           "text": "compulsory feeding when immediate life-threatening risk + incapacity/necessity threshold met",
+          "text_detailed": "Feed compulsorily only where there is immediate life-threatening risk and the necessity and incapacity thresholds are both met, for the shortest period that resolves the danger, with the thresholds defined in advance and the assessment repeated daily.",
           "types": [
             "expert"
           ],
@@ -9731,6 +9802,7 @@
         {
           "id": "c03",
           "text": "compulsory treatment even with apparent decision capacity in exceptional severe self-starvation under a protection threshold",
+          "text_detailed": "Permit compulsory treatment in exceptional severe self-starvation even where the person appears to have decisional capacity, under a protection threshold stated in advance, applied by a clinician outside the treating team and reviewed independently within days.",
           "types": [
             "framework"
           ],
@@ -9740,6 +9812,7 @@
         {
           "id": "c04",
           "text": "time-limited rescue feeding with rapid reassessment and transition to collaborative care",
+          "text_detailed": "Use time-limited rescue feeding with reassessment at short fixed intervals and an explicit transition back to collaborative care as soon as the acute danger passes, with the transition planned before the feeding starts.",
           "types": [
             "expert",
             "framework"
@@ -9750,6 +9823,7 @@
         {
           "id": "c05",
           "text": "respect capable refusal after robust assessment even when death risk is substantial",
+          "text_detailed": "Respect the capable person's refusal after robust, decision-specific assessment, even where the risk of death is substantial, provided the assessment is repeated, independently confirmed, and recorded with the person's own reasoning.",
           "types": [
             "framework"
           ],
@@ -9759,6 +9833,7 @@
         {
           "id": "c06",
           "text": "rescue/nonmaleficence framework favoring intervention where illness impairs appreciation/choice",
+          "text_detailed": "Intervene where the illness itself impairs the person's appreciation of their situation, treating that impairment as the ground rather than the refusal, and stating what would count as appreciation returning.",
           "types": [
             "framework"
           ],
@@ -9768,6 +9843,7 @@
         {
           "id": "c07",
           "text": "trauma-informed minimization rule limiting force, duration, and coercive setting",
+          "text_detailed": "Limit force, duration and setting to the minimum: the least restrictive method, the shortest period, the least institutional environment, with each departure recorded and reviewed, and the person's prior stated preferences about method followed where they exist.",
           "types": [
             "framework"
           ],
@@ -9777,6 +9853,7 @@
         {
           "id": "c08",
           "text": "Involve the patient in setting the terms of any feeding while they can still speak to it, and record what they said for the next episode.",
+          "text_detailed": "Involve the patient in setting the terms of any feeding while they can still speak to it — method, setting, who is present, what would end it — and record what they said so it governs the next episode rather than being reconstructed under pressure.",
           "types": [
             "public"
           ],
@@ -9797,6 +9874,7 @@
         {
           "id": "c01",
           "text": "conventional QALY cost-effectiveness with severity modifiers",
+          "text_detailed": "Use conventional cost-effectiveness with QALYs and a severity modifier, stating the modifier and the threshold in advance so that the same rule applies across conditions rather than being adjusted case by case.",
           "types": [
             "expert"
           ],
@@ -9806,6 +9884,7 @@
         {
           "id": "c02",
           "text": "QALY + equal-value life-year supplemental analysis",
+          "text_detailed": "Report the QALY analysis alongside an equal-value life-year analysis and present both to the decision-maker, with any divergence between them explained rather than resolved silently in favour of one.",
           "types": [
             "expert"
           ],
@@ -9815,6 +9894,7 @@
         {
           "id": "c03",
           "text": "prohibit quality adjustment of life-extension benefit when it systematically disadvantages disabled people",
+          "text_detailed": "Do not quality-adjust the life-extension component of a benefit where doing so systematically disadvantages disabled people; count added years equally and apply quality adjustment only to changes in health state.",
           "types": [
             "framework",
             "public"
@@ -9825,6 +9905,7 @@
         {
           "id": "c04",
           "text": "use patient/condition-specific quality weights rather than general-population preferences",
+          "text_detailed": "Use quality weights elicited from people with the condition rather than from the general public, stating whose weights were used and how they were obtained, and reporting where they differ from population weights.",
           "types": [
             "framework"
           ],
@@ -9834,6 +9915,7 @@
         {
           "id": "c05",
           "text": "retain general-population weights for societal allocation consistency",
+          "text_detailed": "Retain general-population weights for societal allocation, on the ground that consistency across conditions requires one source of weights, while reporting condition-specific weights alongside them so the difference is visible.",
           "types": [
             "framework"
           ],
@@ -9843,6 +9925,7 @@
         {
           "id": "c06",
           "text": "severity/prioritarian modifier on top of QALYs",
+          "text_detailed": "Apply a severity or prioritarian modifier on top of the QALY calculation, with the modifier's size and the severity measure fixed in advance and published, rather than introduced when a particular result is unwelcome.",
           "types": [
             "expert",
             "framework"
@@ -9853,6 +9936,7 @@
         {
           "id": "c07",
           "text": "multiperspective deliberative HTA combining QALY evidence with disability, equity, caregiver, and nonhealth considerations",
+          "text_detailed": "Combine the QALY evidence with disability, equity, caregiver and non-health considerations through a deliberative process that includes disabled people, and publish which considerations changed the decision.",
           "types": [
             "framework"
           ],
@@ -9872,6 +9956,7 @@
         {
           "id": "c01",
           "text": "eliminate seclusion/restraint and use noncoercive alternatives",
+          "text_detailed": "Use no seclusion or restraint at all, and staff the service for the non-coercive alternatives that replace them: de-escalation, sensory and support options, and enough people to use them. The commitment is to the alternatives being available, not only to the prohibition.",
           "types": [
             "expert"
           ],
@@ -9881,6 +9966,7 @@
         {
           "id": "c02",
           "text": "emergency physical intervention only for immediate serious danger when less restrictive measures fail, shortest duration + monitoring",
+          "text_detailed": "Use physical intervention only for immediate serious danger after less restrictive measures have failed, for the shortest duration, with continuous monitoring, a debrief with the person afterwards, and each episode reviewed at service level.",
           "types": [
             "expert"
           ],
@@ -9890,6 +9976,7 @@
         {
           "id": "c03",
           "text": "staff-intensive de-escalation/sensory/support alternatives as mandatory first line",
+          "text_detailed": "Require staff-intensive de-escalation, sensory and support alternatives as a mandatory first line, with their use recorded before any restrictive intervention, and staffing planned so that they are actually available at night and at weekends.",
           "types": [
             "expert",
             "public"
@@ -9900,6 +9987,7 @@
         {
           "id": "c04",
           "text": "restraint without seclusion versus seclusion without mechanical restraint depending immediate risk",
+          "text_detailed": "Choose between restraint without seclusion and seclusion without mechanical restraint according to the immediate risk, recording which was chosen and why, and following the person's recorded preference where one exists.",
           "types": [
             "expert"
           ],
@@ -9909,6 +9997,7 @@
         {
           "id": "c05",
           "text": "trauma/autonomy framework strongly minimizing coercion",
+          "text_detailed": "Minimise coercion strongly on trauma and autonomy grounds: every restrictive episode is treated as a harm to be accounted for, counted, reviewed, and reduced against a stated target rather than accepted as routine.",
           "types": [
             "framework"
           ],
@@ -9918,6 +10007,7 @@
         {
           "id": "c06",
           "text": "emergency harm-prevention framework permitting narrowly bounded force",
+          "text_detailed": "Permit narrowly bounded force to prevent immediate serious harm, with the bounds — what may be done, for how long, by whom — set in advance rather than judged in the moment, and any excess reported as an incident.",
           "types": [
             "framework"
           ],
@@ -9937,6 +10027,7 @@
         {
           "id": "c01",
           "text": "honor directive as controlling during incapacity where applicable",
+          "text_detailed": "Honour the directive as controlling during incapacity wherever it applies, following its terms as written, and record what was followed. A clinician who finds it does not apply must say why in the record at the time.",
           "types": [
             "expert",
             "framework"
@@ -9947,6 +10038,7 @@
         {
           "id": "c02",
           "text": "override only for narrowly specified emergency necessity/legal threshold",
+          "text_detailed": "Override only where a narrowly specified emergency necessity or legal threshold is met, with the specific clause and the reason recorded, and the override ending when the emergency does rather than continuing through the admission.",
           "types": [
             "expert"
           ],
@@ -9956,6 +10048,7 @@
         {
           "id": "c03",
           "text": "use supported interpretation of directive and current values before override",
+          "text_detailed": "Interpret the directive with support — the named supporter, previous crises, what the person has said — and use that interpretation before considering override, so that an ambiguity is resolved rather than treated as a gap.",
           "types": [
             "framework"
           ],
@@ -9965,6 +10058,7 @@
         {
           "id": "c04",
           "text": "allow patient to preauthorize specified treatments they may later resist during crisis",
+          "text_detailed": "Allow the person to pre-authorise specified treatments they may later resist during crisis, provided the authorisation names those treatments, was made with support while well, and can be revoked while well.",
           "types": [
             "framework"
           ],
@@ -9974,6 +10068,7 @@
         {
           "id": "c05",
           "text": "current-resistance/autonomy framework limiting Ulysses-type clauses",
+          "text_detailed": "Limit pre-authorisation clauses where the person resists at the time, on the ground that present refusal carries weight the earlier self cannot extinguish, and require any use of such a clause to be reviewed independently.",
           "types": [
             "framework"
           ],
@@ -9983,6 +10078,7 @@
         {
           "id": "c06",
           "text": "crisis-beneficence framework permitting temporary override to prevent catastrophic harm",
+          "text_detailed": "Permit temporary override to prevent catastrophic harm, bounded to what that harm requires, with control returned as soon as it passes and the reasons given to the person afterwards.",
           "types": [
             "framework"
           ],
@@ -9992,6 +10088,7 @@
         {
           "id": "c07",
           "text": "independent review/advocacy for any override with postcrisis debrief and restoration of control",
+          "text_detailed": "Require independent review and advocacy for any override, followed by a debrief with the person and an explicit restoration of their control, with the directive revisited together rather than left as it stood.",
           "types": [
             "expert"
           ],
@@ -10001,6 +10098,7 @@
         {
           "id": "c08",
           "text": "Give the person a route to see and revise the directive while well, and require anyone overriding it to record their reasons to the person afterwards.",
+          "text_detailed": "Give the person a route to see and revise the directive while well, on a schedule rather than on request, and require anyone who overrides it to record their reasons and give them to the person afterwards.",
           "types": [
             "public"
           ],
@@ -10021,6 +10119,7 @@
         {
           "id": "c01",
           "text": "emergency stabilization/observation while decisional capacity is uncertain, then reassess",
+          "text_detailed": "Stabilise and observe while decisional capacity is uncertain, then reassess at a defined point rather than holding indefinitely, with the uncertainty and what would resolve it recorded at the outset.",
           "types": [
             "expert"
           ],
@@ -10030,6 +10129,7 @@
         {
           "id": "c02",
           "text": "respect refusal once robust decision-specific capacity is confirmed and immediate coercive threshold no longer applies",
+          "text_detailed": "Respect the refusal once robust decision-specific capacity is confirmed and no immediate coercive threshold applies, with the assessment conducted when the person is medically clear rather than during acute intoxication or delirium.",
           "types": [
             "expert",
             "framework"
@@ -10040,6 +10140,7 @@
         {
           "id": "c03",
           "text": "continue involuntary protection despite apparent capacity during a narrowly defined acute suicidal crisis",
+          "text_detailed": "Continue protective intervention despite apparent capacity during a narrowly defined acute crisis, with the definition set in advance, the period fixed, and independent review before any extension.",
           "types": [
             "framework"
           ],
@@ -10049,6 +10150,7 @@
         {
           "id": "c04",
           "text": "use supported decision-making and short delay where risk can be safely contained",
+          "text_detailed": "Use supported decision-making and a short delay where risk can be safely contained, naming the length of the delay and what it is for, and letting the person leave when it ends unless something has changed.",
           "types": [
             "framework"
           ],
@@ -10058,6 +10160,7 @@
         {
           "id": "c05",
           "text": "autonomy framework treating competent refusal as controlling",
+          "text_detailed": "Treat competent refusal as controlling, with capacity assessed for this decision and not inferred from the attempt itself, and the person told what has been assessed and found.",
           "types": [
             "framework"
           ],
@@ -10067,6 +10170,7 @@
         {
           "id": "c06",
           "text": "protection-of-life framework permitting temporary intervention where preference formation is plausibly crisis-distorted",
+          "text_detailed": "Permit temporary intervention where the person's preference was plausibly formed under crisis conditions, bounded to a stated period, with the judgment recorded and reassessed rather than carried forward.",
           "types": [
             "framework"
           ],
@@ -10076,6 +10180,7 @@
         {
           "id": "c07",
           "text": "independent second capacity assessment before irreversible refusal in high-lethality context",
+          "text_detailed": "Require a second, independent capacity assessment before accepting a refusal in a high-lethality context, conducted by someone not involved in the person's care and recorded with its reasoning.",
           "types": [
             "expert"
           ],
@@ -10085,6 +10190,7 @@
         {
           "id": "c08",
           "text": "Keep the person's own account of the attempt and their reasons on the record, and offer follow-up they can accept rather than only detention.",
+          "text_detailed": "Keep the person's own account of the attempt and their reasons in the record, and offer follow-up they will actually accept — their choice of setting and clinician — rather than detention as the only thing on offer.",
           "types": [
             "public"
           ],
@@ -10105,6 +10211,7 @@
         {
           "id": "c01",
           "text": "explicit opt-in for passive sensing with granular controls",
+          "text_detailed": "Require explicit opt-in for passive sensing, with granular control over which signals are collected, and a plain statement of what each one reveals. Consent is sought outside a crisis and can be withdrawn without affecting care.",
           "types": [
             "expert"
           ],
@@ -10114,6 +10221,7 @@
         {
           "id": "c02",
           "text": "default-off but clinician may offer monitoring for high-risk patients",
+          "text_detailed": "Keep sensing off by default while allowing a clinician to offer it to patients at high risk, with the offer recorded, declining carrying no consequence, and the reason for the offer explained to the patient.",
           "types": [
             "expert"
           ],
@@ -10123,6 +10231,7 @@
         {
           "id": "c03",
           "text": "default-on in a defined high-risk program with easy opt-out and strict use limits",
+          "text_detailed": "Turn sensing on by default within a defined high-risk programme, with an opt-out that takes effect immediately, strict limits on what the data may be used for, and the default reviewed as the programme's evidence accumulates.",
           "types": [
             "expert"
           ],
@@ -10132,6 +10241,7 @@
         {
           "id": "c04",
           "text": "local/on-device or data-minimized sensing rather than continuous raw-data transfer",
+          "text_detailed": "Process signals on the device or in minimised form rather than transferring raw data continuously, sending only what a clinical alert requires, and stating what leaves the phone.",
           "types": [
             "framework"
           ],
@@ -10141,6 +10251,7 @@
         {
           "id": "c05",
           "text": "allow safety alerts to clinicians under predefined thresholds but prohibit unrelated secondary use",
+          "text_detailed": "Allow safety alerts to clinicians against thresholds fixed in advance, and prohibit any other use of the data — service improvement, research, commercial — without separate consent for that purpose.",
           "types": [
             "expert",
             "framework"
@@ -10151,6 +10262,7 @@
         {
           "id": "c06",
           "text": "patient-control framework over pause/delete/share settings",
+          "text_detailed": "Give the patient control over pausing, deleting and sharing, available in the app rather than by request, with deletion covering derived measures and not only the raw signal.",
           "types": [
             "public"
           ],
@@ -10160,6 +10272,7 @@
         {
           "id": "c07",
           "text": "beneficence/suicide-prevention framework allowing more proactive monitoring when demonstrable benefit exceeds privacy burden",
+          "text_detailed": "Permit more proactive monitoring where a demonstrated benefit outweighs the privacy burden for this patient, with the benefit stated in terms of what the monitoring would change, and the arrangement reviewed at intervals.",
           "types": [
             "framework"
           ],
@@ -10179,6 +10292,7 @@
         {
           "id": "c01",
           "text": "voluntary tracking with consent/assent where capacity permits",
+          "text_detailed": "Use tracking voluntarily, with the person's consent or assent wherever capacity permits, explained in a way they can engage with and revisited as their capacity changes rather than treated as settled at the start.",
           "types": [
             "expert",
             "public"
@@ -10189,6 +10303,7 @@
         {
           "id": "c02",
           "text": "surrogate-authorized least-intrusive tracking when wandering risk is substantial and person cannot decide",
+          "text_detailed": "Where the person cannot decide, permit surrogate-authorised tracking only where the wandering risk is substantial, in the least intrusive form that meets it, with the authorisation recorded and reviewed at set intervals.",
           "types": [
             "expert",
             "framework"
@@ -10199,6 +10314,7 @@
         {
           "id": "c03",
           "text": "use geofence/alert rather than continuous live tracking to minimize intrusion",
+          "text_detailed": "Use a geofence with alerts rather than continuous live tracking, so that location is known only when the person leaves a defined area, with the boundary set for safety rather than convenience.",
           "types": [
             "framework"
           ],
@@ -10208,6 +10324,7 @@
         {
           "id": "c04",
           "text": "avoid tracking when the person consistently resists and risk can be managed through environmental/support alternatives",
+          "text_detailed": "Do not track where the person consistently resists and the risk can be managed through environmental or support alternatives, with those alternatives put in place rather than merely considered.",
           "types": [
             "framework"
           ],
@@ -10217,6 +10334,7 @@
         {
           "id": "c05",
           "text": "permit covert tracking only under exceptional serious-risk conditions with review",
+          "text_detailed": "Permit covert tracking only under exceptional serious-risk conditions, authorised outside the care team, for a fixed period, and reviewed with a presumption against renewal.",
           "types": [
             "expert"
           ],
@@ -10226,6 +10344,7 @@
         {
           "id": "c06",
           "text": "safety/independence framework favoring technology that enables less restrictive living",
+          "text_detailed": "Favour technology that allows less restrictive living, on the ground that a person able to walk outside with a device is freer than one kept indoors, with that comparison made explicitly for this person.",
           "types": [
             "framework"
           ],
@@ -10235,6 +10354,7 @@
         {
           "id": "c07",
           "text": "privacy/dignity framework requiring minimization, retention limits, and no secondary use",
+          "text_detailed": "Minimise what is collected, retain it only as long as the safety purpose requires, and prohibit secondary use, with retention periods stated and deletion actually carried out rather than left to the provider's discretion.",
           "types": [
             "framework"
           ],
@@ -12862,6 +12982,7 @@
         {
           "id": "c01",
           "text": "prioritize highest medical heat-risk individuals",
+          "text_detailed": "Prioritise those at highest medical risk from heat, using stated clinical criteria — age, cardiorespiratory and renal conditions, medications — identified from existing records rather than at the door.",
           "types": [
             "expert"
           ],
@@ -12871,6 +12992,7 @@
         {
           "id": "c02",
           "text": "prioritize socially vulnerable people lacking home cooling/transport",
+          "text_detailed": "Prioritise people who lack cooling at home or the transport to reach it, identified through stated indicators rather than self-report at the point of need, and reached actively during the heatwave.",
           "types": [
             "framework",
             "public"
@@ -12881,6 +13003,7 @@
         {
           "id": "c03",
           "text": "first-come/open access with reserved high-risk quota",
+          "text_detailed": "Open access first-come while reserving a stated quota for high-risk people, held back until a defined point in the day so that the quota is not exhausted by early arrivals.",
           "types": [
             "framework"
           ],
@@ -12890,6 +13013,7 @@
         {
           "id": "c04",
           "text": "geographic deployment to hottest/highest-risk neighborhoods",
+          "text_detailed": "Deploy resources geographically to the hottest and highest-risk neighbourhoods, using measured temperature and vulnerability data rather than existing service locations, and publish the map.",
           "types": [
             "expert"
           ],
@@ -12899,6 +13023,7 @@
         {
           "id": "c05",
           "text": "expected-harm-reduction framework",
+          "text_detailed": "Allocate to reduce expected harm, using stated risk estimates, and report afterwards what the deployment is estimated to have prevented so the rule can be revised.",
           "types": [
             "framework"
           ],
@@ -12908,6 +13033,7 @@
         {
           "id": "c06",
           "text": "worst-off/equity framework",
+          "text_detailed": "Give priority to the worst-off, with disadvantage assessed on stated indicators rather than inferred from who presents, and the priority applied at the point of deployment rather than at the door.",
           "types": [
             "framework"
           ],
@@ -12917,6 +13043,7 @@
         {
           "id": "c07",
           "text": "lottery among similarly high-risk eligible people when resources cannot distinguish further",
+          "text_detailed": "Where the resources cannot distinguish further among similarly high-risk eligible people, allocate by lottery, run openly, with the eligibility criteria published beforehand.",
           "types": [
             "framework"
           ],
@@ -12936,6 +13063,7 @@
         {
           "id": "c01",
           "text": "equal continuity of essential/chronic care irrespective displacement/migration status",
+          "text_detailed": "Give equal continuity of essential and chronic care irrespective of displacement or migration status, with the entitlement effective on arrival and not conditional on registration that takes weeks.",
           "types": [
             "expert"
           ],
@@ -12945,6 +13073,7 @@
         {
           "id": "c02",
           "text": "temporary portable coverage/records/medication entitlement during displacement",
+          "text_detailed": "Provide portable coverage, records and medication entitlement for the period of displacement, with a defined duration, a route to renew it, and records transferable without the person having to obtain them.",
           "types": [
             "expert"
           ],
@@ -12954,6 +13083,7 @@
         {
           "id": "c03",
           "text": "staged package prioritizing emergency/essential services under severe host scarcity",
+          "text_detailed": "Under severe host scarcity, provide a staged package prioritising emergency and essential services, with the stages defined in advance and the same package applying to hosts and displaced people alike.",
           "types": [
             "expert"
           ],
@@ -12963,6 +13093,7 @@
         {
           "id": "c04",
           "text": "host-community and displaced-person needs integrated under one vulnerability-based allocation rule",
+          "text_detailed": "Allocate to hosts and displaced people under one vulnerability-based rule rather than two systems, with the rule published and its application reported by group so that neither is quietly disadvantaged.",
           "types": [
             "framework"
           ],
@@ -12972,6 +13103,7 @@
         {
           "id": "c05",
           "text": "equal-status/global-health framework favoring inclusion",
+          "text_detailed": "Include on equal-status grounds, treating exclusion as a wrong independent of its consequences, with any limit justified in the same terms that would be used for residents.",
           "types": [
             "framework"
           ],
@@ -12981,6 +13113,7 @@
         {
           "id": "c06",
           "text": "stewardship framework permitting transparent service-priority limits without categorical host-first discrimination",
+          "text_detailed": "Permit transparent limits on service priority under scarcity while rejecting a categorical host-first rule, with the limits stated as clinical categories and reviewed as capacity changes.",
           "types": [
             "framework"
           ],
@@ -12990,6 +13123,7 @@
         {
           "id": "c07",
           "text": "Give displaced people the same access as residents from the day they arrive, and carry their records with them.",
+          "text_detailed": "Give displaced people the same access as residents from the day they arrive, and carry their records with them, with the transfer arranged by the services rather than left to the person.",
           "types": [
             "public"
           ],
@@ -13010,6 +13144,7 @@
         {
           "id": "c01",
           "text": "permit tightly limited outdoor research under independent governance/environmental assessment",
+          "text_detailed": "Permit tightly limited outdoor research under independent governance and environmental assessment, with the scale, materials and duration fixed in the authorisation and monitoring reported publicly.",
           "types": [
             "expert"
           ],
@@ -13019,6 +13154,7 @@
         {
           "id": "c02",
           "text": "laboratory/modeling only until international governance framework stronger",
+          "text_detailed": "Confine work to laboratory and modelling until international governance is stronger, naming what would count as sufficient governance so that the restriction has an end condition.",
           "types": [
             "framework"
           ],
@@ -13028,6 +13164,7 @@
         {
           "id": "c03",
           "text": "require local/community consent/consultation for site-specific outdoor experiments",
+          "text_detailed": "Require consent or consultation from the communities at any experimental site, obtained before the work is designed rather than after, with the outcome published and binding on the decision.",
           "types": [
             "expert",
             "public"
@@ -13038,6 +13175,7 @@
         {
           "id": "c04",
           "text": "moratorium on substance-release field experiments",
+          "text_detailed": "Hold a moratorium on field experiments that release substances, defined by what is released rather than by intent, and reviewed on a stated schedule against named evidence gaps.",
           "types": [
             "framework",
             "public"
@@ -13048,6 +13186,7 @@
         {
           "id": "c05",
           "text": "research-value framework favoring knowledge generation before climate emergency narrows choices",
+          "text_detailed": "Favour generating knowledge before a climate emergency narrows the options, with the research bounded by scale and risk ceilings and its results placed in the public domain.",
           "types": [
             "framework"
           ],
@@ -13057,6 +13196,7 @@
         {
           "id": "c06",
           "text": "precaution/global-governance framework opposing unilateral field experimentation",
+          "text_detailed": "Oppose unilateral field experimentation on precautionary and governance grounds, requiring international authorisation before any outdoor work regardless of scale.",
           "types": [
             "framework"
           ],
@@ -13066,6 +13206,7 @@
         {
           "id": "c07",
           "text": "international registry/transparency + predefined scale/risk ceilings",
+          "text_detailed": "Require registration in an international registry with predefined scale and risk ceilings, transparent protocols, and results published whether or not the experiment succeeds.",
           "types": [
             "expert"
           ],
@@ -13085,6 +13226,7 @@
         {
           "id": "c01",
           "text": "staged contained-to-field testing under WHO risk/benefit framework",
+          "text_detailed": "Move from contained testing to field testing in defined stages under a risk-and-benefit framework, with the criteria for each stage set in advance and independent confirmation before moving on.",
           "types": [
             "expert"
           ],
@@ -13094,6 +13236,7 @@
         {
           "id": "c02",
           "text": "field release only after meaningful community engagement + regulatory/ecological thresholds",
+          "text_detailed": "Release in the field only after meaningful community engagement and after regulatory and ecological thresholds are met, with engagement judged by what was changed as a result rather than by attendance.",
           "types": [
             "expert"
           ],
@@ -13103,6 +13246,7 @@
         {
           "id": "c03",
           "text": "contained trials only until stronger long-term/ecological evidence",
+          "text_detailed": "Keep trials contained until longer-term ecological evidence is stronger, naming the evidence sought and the monitoring that would produce it so the restriction can end.",
           "types": [
             "framework"
           ],
@@ -13112,6 +13256,7 @@
         {
           "id": "c04",
           "text": "local community veto/authorization before release affecting shared environment",
+          "text_detailed": "Require authorisation from the local community before any release affecting the shared environment, exercised through a body the community recognises, and revocable before release.",
           "types": [
             "framework"
           ],
@@ -13121,6 +13266,7 @@
         {
           "id": "c05",
           "text": "public-health-benefit framework favoring deployment when disease burden high and expected benefit substantial",
+          "text_detailed": "Favour deployment where disease burden is high and expected benefit substantial, with both stated numerically and monitoring in place to confirm the benefit materialises.",
           "types": [
             "framework"
           ],
@@ -13130,6 +13276,7 @@
         {
           "id": "c06",
           "text": "ecological precaution framework favoring reversible/localized strategies",
+          "text_detailed": "Favour reversible and localised strategies on ecological precautionary grounds, with reversibility defined operationally — what could be stopped, how quickly, and by whom.",
           "types": [
             "framework"
           ],
@@ -13139,6 +13286,7 @@
         {
           "id": "c07",
           "text": "adaptive release with independent monitoring/stop criteria and transparent data",
+          "text_detailed": "Release adaptively under independent monitoring with stop criteria fixed in advance and data published as it is collected, so that a decision to continue is made on visible evidence.",
           "types": [
             "expert"
           ],
@@ -13148,6 +13296,7 @@
         {
           "id": "c08",
           "text": "Require the consent of the communities where release would occur, obtained before trials begin and revocable, with the outcome published.",
+          "text_detailed": "Require the consent of the communities where release would occur, obtained before trials begin and revocable up to release, with the outcome of the consent process published.",
           "types": [
             "public"
           ],
@@ -13168,6 +13317,7 @@
         {
           "id": "c01",
           "text": "maximize total health gain regardless borders",
+          "text_detailed": "Maximise total health gain regardless of borders, applying one cost-effectiveness standard to domestic and international spending and publishing what each pound bought in each.",
           "types": [
             "framework"
           ],
@@ -13177,6 +13327,7 @@
         {
           "id": "c02",
           "text": "domestic-priority rule giving special weight to residents/taxpayers",
+          "text_detailed": "Give special weight to residents, with the weight stated as a factor rather than left implicit, so that the size of the partiality is visible and can be argued about.",
           "types": [
             "expert",
             "framework"
@@ -13187,6 +13338,7 @@
         {
           "id": "c03",
           "text": "global prioritarian rule prioritizing much worse-off populations abroad",
+          "text_detailed": "Prioritise populations abroad who are much worse off, with the comparison made on stated measures and the resulting allocation published alongside domestic spending.",
           "types": [
             "framework"
           ],
@@ -13196,6 +13348,7 @@
         {
           "id": "c04",
           "text": "fixed international-assistance floor plus domestic allocation of remainder",
+          "text_detailed": "Set a fixed floor for international assistance and allocate the remainder domestically, with the floor protected from in-year reallocation and reported against annually.",
           "types": [
             "framework"
           ],
@@ -13205,6 +13358,7 @@
         {
           "id": "c05",
           "text": "reciprocity/community-obligation framework allowing bounded national partiality",
+          "text_detailed": "Allow bounded national partiality on reciprocity and community grounds, with the bound expressed as a floor for assistance below which partiality may not go.",
           "types": [
             "framework"
           ],
@@ -13214,6 +13368,7 @@
         {
           "id": "c06",
           "text": "cost-effectiveness rule with equity weights for global poverty/burden",
+          "text_detailed": "Apply cost-effectiveness with equity weights for global poverty and burden, publishing the weights so that the trade-off between efficiency and equity is inspectable.",
           "types": [
             "framework"
           ],
@@ -13223,6 +13378,7 @@
         {
           "id": "c07",
           "text": "democratic mandate rule linking aid share to transparent public authorization while preserving humanitarian minimum",
+          "text_detailed": "Tie the aid share to a transparent public authorisation while preserving a humanitarian minimum that no mandate can reduce, with both the mandate and the minimum stated.",
           "types": [
             "expert"
           ],
@@ -13232,6 +13388,7 @@
         {
           "id": "c08",
           "text": "Decide the domestic and international split through public deliberation and publish the reasoning, so that the balance is a stated choice.",
+          "text_detailed": "Decide the domestic and international split through public deliberation and publish the reasoning, so that the balance is a stated choice rather than a residual. The deliberation happens before the budget is set, its participants and terms are published, and the split is revisited on a fixed schedule rather than only when it is challenged.",
           "types": [
             "public"
           ],
@@ -13252,6 +13409,7 @@
         {
           "id": "c01",
           "text": "maximize total expected health gain",
+          "text_detailed": "Maximise total expected health gain, applying the rule to identifiable and statistical patients alike and recording what the identifiable patient's claim would have cost.",
           "types": [
             "framework"
           ],
@@ -13261,6 +13419,7 @@
         {
           "id": "c02",
           "text": "rescue identifiable person when death/major harm is imminent despite lower aggregate gain",
+          "text_detailed": "Rescue the identifiable person where death or major harm is imminent, despite lower aggregate gain, with imminence defined in advance and the aggregate cost stated when the decision is made.",
           "types": [
             "framework"
           ],
@@ -13270,6 +13429,7 @@
         {
           "id": "c03",
           "text": "severity/worst-off priority with bounded cost-effectiveness threshold",
+          "text_detailed": "Give priority by severity and to the worst-off, bounded by a cost-effectiveness threshold, with both the severity measure and the bound published so that the limit of the priority is known.",
           "types": [
             "framework",
             "public"
@@ -13280,6 +13440,7 @@
         {
           "id": "c04",
           "text": "equal-value chance/lottery between rescue and population program when moral claims close",
+          "text_detailed": "Where the moral claims are close, decide by lottery between rescue and the population programme, with closeness defined on stated criteria and the draw conducted openly.",
           "types": [
             "framework"
           ],
@@ -13289,6 +13450,7 @@
         {
           "id": "c05",
           "text": "age/lifetime prioritarian modifier only if justified independently of identifiability",
+          "text_detailed": "Apply an age or lifetime modifier only where it can be justified independently of who is identifiable, stating that justification, and never as a proxy for salience.",
           "types": [
             "framework",
             "public"
@@ -13299,6 +13461,7 @@
         {
           "id": "c06",
           "text": "multiprinciple rule balancing gain, severity, urgency and budget impact",
+          "text_detailed": "Balance gain, severity, urgency and budget impact under a published rule that says how much each contributes, applied by a standing body rather than case by case.",
           "types": [
             "framework"
           ],
@@ -13308,6 +13471,7 @@
         {
           "id": "c07",
           "text": "anti-identifiability rule rejecting salience as a legitimate allocation factor while allowing severity to matter",
+          "text_detailed": "Reject salience as a legitimate allocation factor while allowing severity to count, with the distinction applied by asking whether the same claim would be honoured for an unidentified patient.",
           "types": [
             "framework"
           ],
@@ -13317,6 +13481,7 @@
         {
           "id": "c08",
           "text": "Apply a published institutional rule deciding rescue-versus-programme cases in advance, and require committee review of any departure from it.",
+          "text_detailed": "Apply a published institutional rule deciding rescue-versus-programme cases in advance, and require committee review of any departure from it, with departures reported.",
           "types": [
             "expert"
           ],
@@ -13337,6 +13502,7 @@
         {
           "id": "c01",
           "text": "guarantee post-trial access to beneficial intervention for participants who still need it",
+          "text_detailed": "Guarantee post-trial access to the beneficial intervention for participants who still need it, for a stated duration, funded and arranged before enrolment opens.",
           "types": [
             "expert"
           ],
@@ -13346,6 +13512,7 @@
         {
           "id": "c02",
           "text": "negotiate broader community health-system/capacity benefits rather than product access alone",
+          "text_detailed": "Negotiate broader community health-system and capacity benefits rather than product access alone, with the benefits identified by the community and written into the agreement.",
           "types": [
             "expert"
           ],
@@ -13355,6 +13522,7 @@
         {
           "id": "c03",
           "text": "combine participant post-trial access + community infrastructure/training plan",
+          "text_detailed": "Provide both participant post-trial access and a community infrastructure and training plan, with each specified separately so that one cannot substitute for the other.",
           "types": [
             "framework"
           ],
@@ -13364,6 +13532,7 @@
         {
           "id": "c04",
           "text": "community engagement determines locally valued benefit package within ethical minimums",
+          "text_detailed": "Let community engagement determine the locally valued benefit package within stated ethical minimums, with those minimums non-negotiable and the rest genuinely open.",
           "types": [
             "expert",
             "public"
@@ -13374,6 +13543,7 @@
         {
           "id": "c05",
           "text": "reciprocity framework requiring communities share in research-generated value",
+          "text_detailed": "Require that communities share in the value the research generates, with the mechanism named and its delivery reported after the trial ends rather than promised during recruitment.",
           "types": [
             "framework"
           ],
@@ -13383,6 +13553,7 @@
         {
           "id": "c06",
           "text": "scientific-social-value framework allowing diverse nonproduct benefits where they are responsive and sustainable",
+          "text_detailed": "Allow diverse non-product benefits where they are responsive to what the community identified and sustainable after the trial, with sustainability assessed against who will fund them afterwards.",
           "types": [
             "framework"
           ],
@@ -13392,6 +13563,7 @@
         {
           "id": "c07",
           "text": "prohibit benefit arrangements so large they distort consent/community authorization or substitute for fair baseline conditions",
+          "text_detailed": "Prohibit benefit arrangements large enough to distort consent or community authorisation, or to substitute for fair baseline conditions, with the limit assessed by an independent committee.",
           "types": [
             "expert"
           ],
@@ -13411,6 +13583,7 @@
         {
           "id": "c01",
           "text": "multiprinciple GCF-style allocation across impact, vulnerability/need, country ownership and efficiency",
+          "text_detailed": "Allocate across impact, vulnerability and need, country ownership and efficiency under a published multiprinciple rule, with the weight of each stated and the resulting allocation reported.",
           "types": [
             "expert"
           ],
@@ -13420,6 +13593,7 @@
         {
           "id": "c02",
           "text": "maximize expected climate-health/adaptation impact",
+          "text_detailed": "Maximise expected climate and health impact per unit of finance, publishing the estimates used and revisiting them as projects report outcomes.",
           "types": [
             "framework"
           ],
@@ -13429,6 +13603,7 @@
         {
           "id": "c03",
           "text": "reserve floor for least-developed/small-island/most vulnerable countries",
+          "text_detailed": "Reserve a floor for least-developed countries, small island states and the most vulnerable, ring-fenced from competitive allocation and disbursed on the same timetable.",
           "types": [
             "expert",
             "framework"
@@ -13439,6 +13614,7 @@
         {
           "id": "c04",
           "text": "allocate per-capita or proportional vulnerability index",
+          "text_detailed": "Allocate per capita or by a published vulnerability index, with the index components and data sources stated so that a country can check its own position.",
           "types": [
             "framework"
           ],
@@ -13448,6 +13624,7 @@
         {
           "id": "c05",
           "text": "loss-and-damage/responsibility rule weighting historical emissions/capacity",
+          "text_detailed": "Weight allocation by historical emissions and capacity to pay, stating the measure of responsibility used and the period it covers.",
           "types": [
             "framework"
           ],
@@ -13457,6 +13634,7 @@
         {
           "id": "c06",
           "text": "country-ownership rule requiring nationally identified priorities rather than donor optimization alone",
+          "text_detailed": "Require that allocations follow nationally identified priorities rather than donor optimisation alone, with the country's own plan attached to the funding decision.",
           "types": [
             "expert"
           ],
@@ -13466,6 +13644,7 @@
         {
           "id": "c07",
           "text": "portfolio diversification balancing immediate adaptation and long-term resilience",
+          "text_detailed": "Balance immediate adaptation and long-term resilience across the portfolio, with the split stated in advance and reported against rather than emerging from project selection.",
           "types": [
             "framework"
           ],
@@ -13475,6 +13654,7 @@
         {
           "id": "c08",
           "text": "Let recipient countries set their own adaptation priorities within the allocation, and publish what each received and chose.",
+          "text_detailed": "Let recipient countries set their own adaptation priorities within the allocation, and publish what each received and what it chose, so that ownership is visible rather than asserted.",
           "types": [
             "public"
           ],
@@ -13495,6 +13675,7 @@
         {
           "id": "c01",
           "text": "plant-forward default with easy meat/animal-product opt-out",
+          "text_detailed": "Present plant-forward options as the default while keeping meat and animal products available on request without extra cost, delay or explanation, with the default set at the menu level rather than by rationing.",
           "types": [
             "expert"
           ],
@@ -13504,6 +13685,7 @@
         {
           "id": "c02",
           "text": "equal-choice/no default presentation",
+          "text_detailed": "Present all options equally with no default, ordering and placement chosen to avoid steering, and the neutrality of the presentation checked rather than assumed.",
           "types": [
             "framework"
           ],
@@ -13513,6 +13695,7 @@
         {
           "id": "c03",
           "text": "mandatory procurement target reducing high-impact animal products while preserving choice",
+          "text_detailed": "Set a mandatory procurement target reducing high-impact animal products while preserving individual choice, with the target expressed in purchasing rather than in what any person may eat.",
           "types": [
             "expert"
           ],
@@ -13522,6 +13705,7 @@
         {
           "id": "c04",
           "text": "lowest-cost nutritionally adequate menu without environmental default",
+          "text_detailed": "Serve the lowest-cost nutritionally adequate menu without an environmental default, stating that environmental impact is not among the criteria so the omission is visible.",
           "types": [
             "framework"
           ],
@@ -13531,6 +13715,7 @@
         {
           "id": "c05",
           "text": "choice-architecture framework permitting welfare-improving defaults with easy opt-out",
+          "text_detailed": "Permit welfare-improving defaults with an easy opt-out, on the ground that some presentation is unavoidable, provided the opt-out is genuinely costless and stated on the menu.",
           "types": [
             "framework"
           ],
@@ -13540,6 +13725,7 @@
         {
           "id": "c06",
           "text": "autonomy/neutrality framework opposing manipulative defaults absent explicit institutional mandate",
+          "text_detailed": "Oppose defaults set without an explicit institutional mandate, on autonomy grounds, requiring any default to be authorised through the institution's own decision process rather than by the caterer.",
           "types": [
             "framework"
           ],
@@ -13549,6 +13735,7 @@
         {
           "id": "c07",
           "text": "Consult the people who eat there and publish the result, so that a default is set with them rather than for them.",
+          "text_detailed": "Consult the people who eat there and publish the result, so that a default is set with them rather than for them, and revisit it on a stated schedule.",
           "types": [
             "public"
           ],
