@@ -9,6 +9,14 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { referenceLines, referenceLayers } from './lib/case-references.mjs';
+
+/* Locators established by asking Crossref about a citation and accepting only an unambiguous
+   answer (scripts/resolve-case-source-locators.mjs). A recorded locator beats a search link. */
+const OVERRIDES_PATH = path.join(process.cwd(), 'docs/source-locators/case-source-overrides.json');
+const LOCATOR_OVERRIDES = fs.existsSync(OVERRIDES_PATH)
+  ? JSON.parse(fs.readFileSync(OVERRIDES_PATH, 'utf8')).citations || {}
+  : {};
 
 const ROOT = process.cwd();
 const INVENTORY = path.join(ROOT, 'resources/case-families/full-200-rich-candidate-universes.v1.1.json');
@@ -16,46 +24,11 @@ const CROSSWALK_DIR = path.join(ROOT, 'resources/projections/source-grounded');
 const RECORD_DIR = path.join(ROOT, 'data/benchmark');
 const OUTPUT = path.join(ROOT, 'resources/cases/case-sources.v1.json');
 
-const REFERENCE_HEADINGS = /^(references and provenance|references|principal sources|sources|key sources|source architecture|evidence layers|evidence architecture)$/i;
-
-/* These sections mix citations with their own sub-headings ("Affected-public / empirical") and
-   with pointers to bodies of work rather than documents ("relational-autonomy scholarship"). Drop
-   those two; anything else naming a document is kept, including guidance with no identifier. */
-function isCitation(line) {
-  if (line.length < 25 || line.startsWith('|')) return false;
-  if (line.endsWith(':')) return false;
-  if (/^(affected|public|expert|framework|normative|evidence|sources?|references?)\b[^.]*$/i.test(line)) return false;
-  const identified = /PMID|doi|https?:\/\//i.test(line);
-  if (identified) return true;
-  if (/\b(literature|scholarship|arguments?|reasoning|debate)\b/i.test(line) && !/\b(19|20)\d{2}\b/.test(line)) return false;
-  return /^[A-Z0-9]/.test(line);
-}
-
-function referenceLines(markdown) {
-  const out = [];
-  for (const match of markdown.matchAll(/^##\s+(?:\d+[.)]?\s*)?(.+)$/gm)) {
-    if (!REFERENCE_HEADINGS.test(match[1].trim())) continue;
-    const rest = markdown.slice(match.index + match[0].length);
-    const next = rest.search(/^##\s/m);
-    const body = next >= 0 ? rest.slice(0, next) : rest;
-    const lines = body.split('\n').map((raw) => raw.replace(/^[-*]\s*/, '').replace(/\*/g, '').trim());
-    const kept = lines.filter(isCitation);
-    // A few case files write the section as one semicolon-joined sentence rather than a list.
-    if (!kept.length) {
-      for (const part of body.replace(/\*/g, '').split(/;\s*/)) {
-        const line = part.trim().replace(/\.$/, '');
-        if (line.length > 20) out.push(`${line}.`);
-      }
-      continue;
-    }
-    out.push(...kept);
-  }
-  return [...new Set(out)];
-}
-
 /** A citation is only useful if a reader can reach it. Prefer a real identifier; else search. */
 export function link(citation) {
   const text = String(citation || '');
+  const recorded = LOCATOR_OVERRIDES[text];
+  if (recorded?.url) return { url: recorded.url, resolved: true };
   const url = text.match(/https?:\/\/[^\s)>\]]+/);
   if (url) return { url: url[0].replace(/[).,;]+$/, ''), resolved: true };
   const pmid = text.match(/\bPMID:?\s*(\d{5,10})\b/i);
@@ -72,12 +45,21 @@ const cases = {};
 let caseSourceCount = 0;
 let policySourceCount = 0;
 let casesWithPolicySources = 0;
+let casesWithLayers = 0;
 
 for (const entry of inventory.cases) {
   const markdown = fs.readFileSync(path.join(ROOT, entry.deep_case_path), 'utf8');
   const sources = referenceLines(markdown).map((citation) => ({ citation, ...link(citation) }));
   caseSourceCount += sources.length;
-  cases[entry.inventory_id] = { sources, policies: {} };
+  // Where the case file grouped its references by evidence layer, keep the grouping: a Public
+  // policy can then show the affected-public material rather than the whole reading list.
+  const grouped = referenceLayers(markdown);
+  const layers = {};
+  for (const [layer, citations] of Object.entries(grouped)) {
+    if (citations.length) layers[layer] = citations.map((citation) => ({ citation, ...link(citation) }));
+  }
+  if (Object.keys(layers).length) casesWithLayers += 1;
+  cases[entry.inventory_id] = { sources, layers, policies: {} };
 }
 
 // Per-policy sources, where an approved crosswalk names the released record each policy matches.
@@ -118,15 +100,16 @@ const output = {
   case_source_count: caseSourceCount,
   policy_source_count: policySourceCount,
   cases_with_policy_sources: casesWithPolicySources,
+  cases_with_layered_sources: casesWithLayers,
   cases,
 };
 
 const rendered = `${JSON.stringify(output, null, 2)}\n`;
 if (process.argv.includes('--write')) {
   fs.writeFileSync(OUTPUT, rendered);
-  console.log(`Wrote ${path.relative(ROOT, OUTPUT)}: ${caseSourceCount} case sources, ${policySourceCount} policy sources across ${casesWithPolicySources} cases.`);
+  console.log(`Wrote ${path.relative(ROOT, OUTPUT)}: ${caseSourceCount} case sources (${casesWithLayers} cases grouped by evidence layer), ${policySourceCount} policy sources across ${casesWithPolicySources} cases.`);
 } else {
   if (!fs.existsSync(OUTPUT)) throw new Error(`${path.relative(ROOT, OUTPUT)} is missing; run with --write`);
   if (fs.readFileSync(OUTPUT, 'utf8') !== rendered) throw new Error(`${path.relative(ROOT, OUTPUT)} is stale; run with --write`);
-  console.log(`Verified ${caseSourceCount} case sources / ${policySourceCount} policy sources.`);
+  console.log(`Verified ${caseSourceCount} case sources / ${policySourceCount} policy sources / ${casesWithLayers} cases grouped by evidence layer.`);
 }

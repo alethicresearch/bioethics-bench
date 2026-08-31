@@ -87,11 +87,18 @@ const SOURCE_NOTES={
    case's, said plainly to be the case's. */
 function policyProvenance(p,src){
   const own=(src.policies||{})[p.id]||[];
-  const list=own.length?own:(src.sources||[]);
+  // Where the case file grouped its references by evidence layer, a policy shows the group for
+  // its own type before falling back to the case's whole reading list.
+  const layers=src.layers||{};
+  const layer=[...new Map((p.types||[]).flatMap(t=>layers[t]||[]).map(x=>[x.citation,x])).values()];
+  const list=own.length?own:(layer.length?layer:(src.sources||[]));
   const badge=sourceBadge(p.sourcing);
   if(!list.length)return badge;
   const note=SOURCE_NOTES[p.sourcing];
-  const lead=own.length?'':'<p class="src-lead">The Bench records sources for this case rather than for each of its policies. What the case was built from:</p>';
+  const lead=own.length?''
+    :`<p class="src-lead">${layer.length
+      ? 'The Bench records these sources for the case, under the kind of position this policy represents:'
+      : 'The Bench records sources for this case rather than for each of its policies. What the case was built from:'}</p>`;
   return `<details class="srcs prov-srcs"><summary>${badge}${own.length?`<span class="src-count">· ${own.length}</span>`:''}</summary>${note?`<p class="src-lead">${esc(note)}</p>`:''}${lead}${sourceList(list)}</details>`;
 }
 function typeBadges(types){return (types||[]).map(t=>`<span class="ptype ${esc(t)}">${esc(TYPE_LABELS[t]||t)}</span>`).join('');}

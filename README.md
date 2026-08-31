@@ -43,7 +43,7 @@ The case-level research pass is complete. Every case carries all three policy ty
 
 Filling out the three types meant writing policies for the cases that lacked one. **138 of the 1,436 policies are Bench-written comparison policies**, marked as such wherever they appear. Twelve cases record their own judgement that the evidence did not support writing a pool of them; that judgement is kept with the case rather than overruled.
 
-Policy type is recorded for every policy, but it has been reviewed for 108 of them. The rest are assigned from the case record and are marked unreviewed, so a reader can tell a checked label from an inferred one. The website carries the case, its policies, their sources and the review state; the machine-readable files behind it are `resources/cases/full-200-cases.v1.json` (cases and policies) and `resources/cases/case-sources.v1.json` (662 case citations and 208 policy citations).
+Policy type is recorded for every policy, but it has been reviewed for 108 of them. The rest are assigned from the case record and are marked unreviewed, so a reader can tell a checked label from an inferred one. [`docs/REVIEW_QUEUE.md`](docs/REVIEW_QUEUE.md) orders that remaining work by how much a reader's doubt rests on it — the policies the Bench wrote itself, the twelve cases whose files objected to a pool, and the cases resting on one or two citations, before the rest. The website carries the case, its policies, their sources and the review state; the machine-readable files behind it are `resources/cases/full-200-cases.v1.json` (cases and policies) and `resources/cases/case-sources.v1.json` (662 case citations and 208 policy citations).
 
 ## Concise and detailed versions
 
@@ -135,6 +135,8 @@ Some legacy filenames and JSON field names still contain terms such as `family`,
 
 | Document | Purpose |
 |---|---|
+| [`docs/README.md`](docs/README.md) | Which documents govern current work and which record past work |
+| [`docs/REVIEW_QUEUE.md`](docs/REVIEW_QUEUE.md) | What is left to review, ordered by consequence |
 | [`docs/RESOURCE_CARD.md`](docs/RESOURCE_CARD.md) | Scientific description, uses and limits |
 | [`docs/CASE_CONSTRUCTION_STANDARD.md`](docs/CASE_CONSTRUCTION_STANDARD.md) | Rules for writing cases and policies |
 | [`docs/CORPUS_AUTHORING.md`](docs/CORPUS_AUTHORING.md) | Machine-enforced authoring rules |

@@ -59,3 +59,20 @@ Do not invent Public or Expert positions simply to fill a column. If a policy wa
 ### Remaining release work
 
 The 200-case research pass is complete, but the final release still requires review of the machine-readable case and policy files, confirmation of Public / Expert / Framework assignments where they will be used in evaluations, concise/detailed consistency checks, citation and sourcing checks, independent scholarly review, and final validation/release statistics.
+
+## Working alongside other agents
+
+Several agents work in this repository at once and `main` deploys to bioethicsbench.com on push,
+so a change lands in front of readers the moment it merges. Two rules keep that safe:
+
+- **Branch for anything that changes the site or the published resources.** `index.html`,
+  `cases/`, `styles.css`, `resources/cases/*` and the scripts that generate them go through a
+  branch and a pull request, so validation runs before the change is public. Documentation,
+  research notes and batch records can go straight to `main`.
+- **Never rewrite another agent's branch.** Merge `main` into your branch to resolve a conflict;
+  do not rebase, amend or force-push a branch you did not create.
+
+Before pushing anything that touches the published files, run `npm run validate` and
+`node scripts/validate-public-cases.mjs` and read their exit status directly. Piping either into
+`tail` or `head` reports the pager's status instead, and a failing check has already been
+committed that way once.

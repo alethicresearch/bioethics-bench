@@ -1,0 +1,122 @@
+{
+  "_comment": "Locators for case-level citations, accepted only on an unambiguous Crossref match. Written by scripts/resolve-case-source-locators.mjs and read by scripts/build-case-sources.mjs.",
+  "citations": {
+    "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138.": {
+      "doi": "10.1111/j.1088-4963.1999.00105.x",
+      "url": "https://doi.org/10.1111/j.1088-4963.1999.00105.x",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value",
+      "matched_year": 1999,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "American College of Obstetricians and Gynecologists. Committee Statement No. 8. Permanent Contraception: Ethical Issues and Considerations. 2024.": {
+      "doi": "10.1097/aog.0000000000005474",
+      "url": "https://doi.org/10.1097/aog.0000000000005474",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Permanent Contraception: Ethical Issues and Considerations",
+      "matched_year": 2024,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Artificial intelligence–driven kidney organ allocation: systematic review of clinical outcome prediction, ethical frameworks, and decision-making algorithms. BMC Nephrology. 2025.": {
+      "doi": "10.1186/s12882-025-04576-4",
+      "url": "https://doi.org/10.1186/s12882-025-04576-4",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Artificial intelligence–driven kidney organ allocation: systematic review of clinical outcome prediction, ethical frameworks, and decision-making algorithms",
+      "matched_year": 2025,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.": {
+      "doi": "10.1007/978-3-031-41215-8_5",
+      "url": "https://doi.org/10.1007/978-3-031-41215-8_5",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Sex Selection for Nonmedical Reasons",
+      "matched_year": 2023,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding “Stem Cell Tourism”: Caveat Emptor. JAMA Neurol. 2015;72:1342–1345.": {
+      "doi": "10.1001/jamaneurol.2015.1891",
+      "url": "https://doi.org/10.1001/jamaneurol.2015.1891",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding “Stem Cell Tourism”",
+      "matched_year": 2015,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "ESHRE PGT Consortium. Good practice recommendations for the organisation of PGT. 2020.": {
+      "doi": "10.1093/hropen/hoaa021",
+      "url": "https://doi.org/10.1093/hropen/hoaa021",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "ESHRE PGT Consortium good practice recommendations for the organisation of PGT†",
+      "matched_year": 2020,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Miller DJ, Thelen MH. Knowledge and Beliefs About Confidentiality in Psychotherapy (1986).": {
+      "doi": "10.1037//0735-7028.17.1.15",
+      "url": "https://doi.org/10.1037//0735-7028.17.1.15",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Knowledge and beliefs about confidentiality in psychotherapy.",
+      "matched_year": 1986,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "National Academies. Nonhuman Primate Models in Biomedical Research. 2023.": {
+      "doi": "10.17226/26857",
+      "url": "https://doi.org/10.17226/26857",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Nonhuman Primate Models in Biomedical Research",
+      "matched_year": 2023,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Porter A, et al. Machine unlearning as a governance imperative for clinical AI. npj Digit Med. 2026.": {
+      "doi": "10.1038/s41746-026-03050-1",
+      "url": "https://doi.org/10.1038/s41746-026-03050-1",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Machine unlearning as a governance imperative for clinical AI",
+      "matched_year": 2026,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Savior siblings and Fanconi anemia: analysis of success rates from the family's perspective. Genetics in Medicine. 2015.": {
+      "doi": "10.1038/gim.2014.206",
+      "url": "https://doi.org/10.1038/gim.2014.206",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Savior siblings and Fanconi anemia: analysis of success rates from the family’s perspective",
+      "matched_year": 2015,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Use of AI as a Research Recruitment Tool: Ethical Elements, Considerations, and Recommendations. 2026.": {
+      "doi": "10.1080/15265161.2026.2649234",
+      "url": "https://doi.org/10.1080/15265161.2026.2649234",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Use of AI as a Research Recruitment Tool: Ethical Elements, Considerations, and Recommendations",
+      "matched_year": 2026,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Views of US Voters on Compensating Living Kidney Donors. JAMA Surg. 2016.": {
+      "doi": "10.1001/jamasurg.2016.0065",
+      "url": "https://doi.org/10.1001/jamasurg.2016.0065",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Views of US Voters on Compensating Living Kidney Donors",
+      "matched_year": 2016,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    },
+    "Wang Y, et al. Mitigating algorithmic unfairness arising from forgetfulness of medical records in clinical artificial intelligence. Nat Commun. 2026.": {
+      "doi": "10.1038/s41467-026-72601-7",
+      "url": "https://doi.org/10.1038/s41467-026-72601-7",
+      "verified_by": "crossref-title-year-bibliographic-match",
+      "matched_title": "Mitigating algorithmic unfairness arising from forgetfulness of medical records in clinical artificial intelligence",
+      "matched_year": 2026,
+      "title_match": 1,
+      "checked_at": "2026-08-31"
+    }
+  }
+}

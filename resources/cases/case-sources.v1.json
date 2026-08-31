@@ -5,6 +5,7 @@
   "case_source_count": 662,
   "policy_source_count": 208,
   "cases_with_policy_sources": 22,
+  "cases_with_layered_sources": 23,
   "cases": {
     "M001": {
       "sources": [
@@ -39,6 +40,44 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Jehovah's Witnesses. Religious and Ethical Position on Medical Therapy and Related Matters. https://www.jw.org/en/medical-library/medical-information/religious-and-ethical-position-medical-therapy/",
+            "url": "https://www.jw.org/en/medical-library/medical-information/religious-and-ethical-position-medical-therapy/",
+            "resolved": true
+          },
+          {
+            "citation": "Jehovah's Witnesses. Blood Fractions and Surgical Procedures. https://www.jw.org/en/library/books/gods-love/blood-fractions-surgical-procedures/",
+            "url": "https://www.jw.org/en/library/books/gods-love/blood-fractions-surgical-procedures/",
+            "resolved": true
+          },
+          {
+            "citation": "Hubbard R, Waters JH, Yazer MH. Heterogeneity in Blood Product Acceptance Among Antenatal Patients of the Jehovah's Witness Faith. Obstet Gynecol. 2015;126(5):974-977. PMID 26444113.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26444113/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "Royal College of Surgeons of England. Caring for Patients who Refuse Blood: A Guide to Good Practice.",
+            "url": "https://scholar.google.com/scholar?q=Royal%20College%20of%20Surgeons%20of%20England.%20Caring%20for%20Patients%20who%20Refuse%20Blood%3A%20A%20Guide%20to%20Good%20Practice.",
+            "resolved": false
+          },
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.1, Informed Consent.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%202.1.1%2C%20Informed%20Consent.",
+            "resolved": false
+          }
+        ],
+        "framework": [
+          {
+            "citation": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics, 8th ed.",
+            "url": "https://scholar.google.com/scholar?q=Beauchamp%20TL%2C%20Childress%20JF.%20Principles%20of%20Biomedical%20Ethics%2C%208th%20ed.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M002": {
@@ -74,6 +113,42 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Knight F, Kokanović R, Ridge D, et al. Supported Decision-Making: The Expectations Held by People With Experience of Mental Illness. Qual Health Res. 2018;28(6):1002-1015. PMID 29557294.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29557294/",
+            "resolved": true
+          },
+          {
+            "citation": "Systematic review of everyday decision-making among adults with intellectual disability, care partners and support workers. PMID 37436408.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37436408/",
+            "resolved": true
+          },
+          {
+            "citation": "Supported decision-making perspectives of mental-health service users, family members and practitioners. PMID 29952217.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29952217/",
+            "resolved": true
+          },
+          {
+            "citation": "Systematic review of equitable and accessible health-care consent for people with intellectual disability. PMID 38071590.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38071590/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "World Health Organization, QualityRights. Supported decision-making and advance planning (2019).",
+            "url": "https://scholar.google.com/scholar?q=World%20Health%20Organization%2C%20QualityRights.%20Supported%20decision-making%20and%20advance%20planning%20(2019).",
+            "resolved": false
+          },
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.2, Decisions for Adult Patients Who Lack Capacity.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%202.1.2%2C%20Decisions%20for%20Adult%20Patients%20Who%20Lack%20Capacity.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -143,6 +218,32 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Singer PA, Choudhry S, Armstrong J. Public opinion regarding consent to treatment. J Am Geriatr Soc. 1993;41(2):112-116. PMID 8426030.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8426030/",
+            "resolved": true
+          },
+          {
+            "citation": "Chiong W, Kim AS, Huang IA, Farahany NA, Josephson SA. Testing the Presumption of Consent to Emergency Treatment for Acute Ischemic Stroke. JAMA. 2014;311(16):1689-1691. PMID 24756520.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24756520/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.1, Informed Consent.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%202.1.1%2C%20Informed%20Consent.",
+            "resolved": false
+          },
+          {
+            "citation": "AMA Journal of Ethics. Opinions Related to Urgent Decision Making (2018).",
+            "url": "https://scholar.google.com/scholar?q=AMA%20Journal%20of%20Ethics.%20Opinions%20Related%20to%20Urgent%20Decision%20Making%20(2018).",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M004": {
@@ -188,6 +289,52 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Nationally representative adolescent-parent dyad survey, PMID 30396723.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30396723/",
+            "resolved": true
+          },
+          {
+            "citation": "National parent survey, PMID 19643441.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19643441/",
+            "resolved": true
+          },
+          {
+            "citation": "High-school confidentiality/care-forgoing survey, PMID 8441216.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8441216/",
+            "resolved": true
+          },
+          {
+            "citation": "Adolescent confidential-care preference survey, PMID 10980791.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10980791/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Policy Statement. Pediatrics. 2024;153(5):e2024066326.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Confidentiality%20in%20the%20Care%20of%20Adolescents%3A%20Policy%20Statement.%20Pediatrics.%202024%3B153(5)%3Ae2024066326.",
+            "resolved": false
+          },
+          {
+            "citation": "American Academy of Pediatrics. Confidentiality in the Care of Adolescents: Technical Report. Pediatrics. 2024;153(5):e2024066327.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Confidentiality%20in%20the%20Care%20of%20Adolescents%3A%20Technical%20Report.%20Pediatrics.%202024%3B153(5)%3Ae2024066327.",
+            "resolved": false
+          },
+          {
+            "citation": "Society for Adolescent Health and Medicine. Confidential Healthcare for Adolescent Minors and Young Adults. J Adolesc Health. 2025;77(4):791-796. PMID 40973393.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40973393/",
+            "resolved": true
+          },
+          {
+            "citation": "ACOG Committee Opinion 803. Confidentiality in Adolescent Health Care. PMID 32217979.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32217979/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -279,6 +426,47 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Ghoshal A, Salins N, Damani A, et al. To Tell or Not to Tell: Exploring the Preferences and Attitudes of Patients and Family Caregivers on Disclosure of a Cancer-Related Diagnosis and Prognosis. J Glob Oncol. 2019;5:1-12. PMID 31770048.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31770048/",
+            "resolved": true
+          },
+          {
+            "citation": "Bangalore oncology disclosure-preference study, PMID 27221852.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27221852/",
+            "resolved": true
+          },
+          {
+            "citation": "Pakistan cancer disclosure-preference study, PMID 34125778.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34125778/",
+            "resolved": true
+          },
+          {
+            "citation": "Japanese public disclosure-attitude study, PMID 15571636.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15571636/",
+            "resolved": true
+          },
+          {
+            "citation": "Japanese cancer outpatient preference study, PMID 16998948.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16998948/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 2.1.3, Withholding Information from Patients.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%202.1.3%2C%20Withholding%20Information%20from%20Patients.",
+            "resolved": false
+          },
+          {
+            "citation": "American Society of Clinical Oncology. Patient-Clinician Communication: ASCO Guideline Update. J Clin Oncol. 2026. DOI 10.1200/JCO-26-00118.",
+            "url": "https://doi.org/10.1200/JCO-26-00118",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M006": {
@@ -299,6 +487,27 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Mazor KM, Simon SR, Yood RA, et al. Health plan members' views about disclosure of medical errors. Ann Intern Med. 2004;140(6):409-418. PMID 15023706.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15023706/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "Agency for Healthcare Research and Quality. Communication and Optimal Resolution (CANDOR).",
+            "url": "https://scholar.google.com/scholar?q=Agency%20for%20Healthcare%20Research%20and%20Quality.%20Communication%20and%20Optimal%20Resolution%20(CANDOR).",
+            "resolved": false
+          },
+          {
+            "citation": "AHRQ. Disclosure Checklist. Content reviewed August 2022.",
+            "url": "https://scholar.google.com/scholar?q=AHRQ.%20Disclosure%20Checklist.%20Content%20reviewed%20August%202022.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M007": {
@@ -344,6 +553,49 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Self B, Maxwell C, Fleming V. The missing voices in the conscientious objection debate: British service users' experiences of conscientious objection to abortion. BMC Med Ethics. 2023;24:65. PMID 37605173.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37605173/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "ACOG Committee on Ethics. The Limits of Conscientious Refusal in Reproductive Medicine. Committee Opinion No. 385.",
+            "url": "https://scholar.google.com/scholar?q=ACOG%20Committee%20on%20Ethics.%20The%20Limits%20of%20Conscientious%20Refusal%20in%20Reproductive%20Medicine.%20Committee%20Opinion%20No.%20385.",
+            "resolved": false
+          },
+          {
+            "citation": "ACOG. Person-Centered Pregnancy Options Counseling. Committee Statement, July 2026.",
+            "url": "https://scholar.google.com/scholar?q=ACOG.%20Person-Centered%20Pregnancy%20Options%20Counseling.%20Committee%20Statement%2C%20July%202026.",
+            "resolved": false
+          },
+          {
+            "citation": "Holt K, Janiak E, McCormick MC, et al. Pregnancy Options Counseling and Abortion Referrals Among US Primary Care Physicians. Fam Med. 2017;49(7):527-536. PMID 28724150.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28724150/",
+            "resolved": true
+          },
+          {
+            "citation": "Conscientious refusals to refer: Findings from a national physician survey. PMID/PMC source in the batch packet.",
+            "url": "https://scholar.google.com/scholar?q=Conscientious%20refusals%20to%20refer%3A%20Findings%20from%20a%20national%20physician%20survey.%20PMID%2FPMC%20source%20in%20the%20batch%20packet.",
+            "resolved": false
+          },
+          {
+            "citation": "Fink LR, Stanhope KK, Rochat RW, Bernal OA. Objector interviews in Bogotá. PMID 28825908.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28825908/",
+            "resolved": true
+          }
+        ],
+        "framework": [
+          {
+            "citation": "Brock DW and competing anti-complicity/professional-role accounts of referral.",
+            "url": "https://scholar.google.com/scholar?q=Brock%20DW%20and%20competing%20anti-complicity%2Fprofessional-role%20accounts%20of%20referral.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M008": {
@@ -355,8 +607,8 @@
         },
         {
           "citation": "Miller DJ, Thelen MH. Knowledge and Beliefs About Confidentiality in Psychotherapy (1986).",
-          "url": "https://scholar.google.com/scholar?q=Miller%20DJ%2C%20Thelen%20MH.%20Knowledge%20and%20Beliefs%20About%20Confidentiality%20in%20Psychotherapy%20(1986).",
-          "resolved": false
+          "url": "https://doi.org/10.1037//0735-7028.17.1.15",
+          "resolved": true
         },
         {
           "citation": "American Medical Association. Code of Medical Ethics Opinion 3.2.1, Confidentiality.",
@@ -364,6 +616,27 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Rubanowitz DE. Public attitudes toward psychotherapist-client confidentiality. Prof Psychol Res Pr. 1987;18(6):613-618. PMID 11653820.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/11653820/",
+            "resolved": true
+          },
+          {
+            "citation": "Miller DJ, Thelen MH. Knowledge and Beliefs About Confidentiality in Psychotherapy (1986).",
+            "url": "https://doi.org/10.1037//0735-7028.17.1.15",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 3.2.1, Confidentiality.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%203.2.1%2C%20Confidentiality.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M009": {
@@ -399,6 +672,37 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Seriously ill patient/family CPR preference literature in the source packet, including PMID 8629646 and PMID 28735269.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8629646/",
+            "resolved": true
+          },
+          {
+            "citation": "ICU patient/surrogate communication and preference literature, PMID 24606839.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24606839/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Heart Association. 2025 CPR & ECC Guidelines — Part 3: Ethics.",
+            "url": "https://scholar.google.com/scholar?q=American%20Heart%20Association.%202025%20CPR%20%26%20ECC%20Guidelines%20%E2%80%94%20Part%203%3A%20Ethics.",
+            "resolved": false
+          },
+          {
+            "citation": "National survey of physicians on unilateral DNR orders, reported in CHEST: approximately half endorsed such orders as sometimes appropriate.",
+            "url": "https://scholar.google.com/scholar?q=National%20survey%20of%20physicians%20on%20unilateral%20DNR%20orders%2C%20reported%20in%20CHEST%3A%20approximately%20half%20endorsed%20such%20orders%20as%20sometimes%20appropriate.",
+            "resolved": false
+          },
+          {
+            "citation": "Hernandez A, Marks A, Firn J. Navigating Unilateral DNAR Orders: Findings from a Decade of Ethics Consultation Cases. HEC Forum. 2026. PMID 42463620.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42463620/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M010": {
@@ -424,6 +728,32 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Steele H, Lehane D, Walton E, Mitchell C. Exploring patient preference regarding interpreter use in primary care. Br J Gen Pract. 2020. PMID 32554678.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32554678/",
+            "resolved": true
+          },
+          {
+            "citation": "Ramsey KW, Davis J, French G. Perspectives of Chuukese patients and their health care providers on the use of different sources of interpreters. Hawaii J Med Public Health. 2012;71(9):249-252. PMID 23115753.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23115753/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "US Department of Health and Human Services, Office for Civil Rights. May an LEP person use a family member or friend as his or her interpreter?",
+            "url": "https://scholar.google.com/scholar?q=US%20Department%20of%20Health%20and%20Human%20Services%2C%20Office%20for%20Civil%20Rights.%20May%20an%20LEP%20person%20use%20a%20family%20member%20or%20friend%20as%20his%20or%20her%20interpreter%3F",
+            "resolved": false
+          },
+          {
+            "citation": "HHS language-access / Section 1557 guidance and rules as applicable at release review.",
+            "url": "https://scholar.google.com/scholar?q=HHS%20language-access%20%2F%20Section%201557%20guidance%20and%20rules%20as%20applicable%20at%20release%20review.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -512,6 +842,42 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Bunnik EM, Aarts N, van de Vathorst S. What do patients with unmet medical needs want? A qualitative study of patients’ views and experiences with expanded access to unapproved, investigational treatments in the Netherlands. BMC Med Ethics. 2019;20:80. PMID 31706313.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31706313/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "US Food and Drug Administration. Expanded Access. Current program guidance and patient/physician/industry pages, accessed 2026-08-27.",
+            "url": "https://scholar.google.com/scholar?q=US%20Food%20and%20Drug%20Administration.%20Expanded%20Access.%20Current%20program%20guidance%20and%20patient%2Fphysician%2Findustry%20pages%2C%20accessed%202026-08-27.",
+            "resolved": false
+          },
+          {
+            "citation": "US FDA. IND Applications for Clinical Treatment (Expanded Access): Overview.",
+            "url": "https://scholar.google.com/scholar?q=US%20FDA.%20IND%20Applications%20for%20Clinical%20Treatment%20(Expanded%20Access)%3A%20Overview.",
+            "resolved": false
+          },
+          {
+            "citation": "Smith C et al. Oncologists’ reflections on patient rights and access to compassionate use drugs. PLoS One. 2021. PMID 34919568.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34919568/",
+            "resolved": true
+          },
+          {
+            "citation": "Moerdler S et al. Perspectives of Academic Oncologists About Offering Expanded Access to Investigational Drugs. JAMA Netw Open. 2022. PMID 36318206.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36318206/",
+            "resolved": true
+          },
+          {
+            "citation": "Caplan A et al. A Pilot Experiment in Responding to Individual Patient Requests for Compassionate Use of an Unapproved Drug: The Compassionate Use Advisory Committee. Ther Innov Regul Sci. 2019. PMID 29714573.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29714573/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M012": {
@@ -543,8 +909,8 @@
         },
         {
           "citation": "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding “Stem Cell Tourism”: Caveat Emptor. JAMA Neurol. 2015;72:1342–1345.",
-          "url": "https://scholar.google.com/scholar?q=Bowman%20M%2C%20Racke%20M%2C%20Kissel%20J%2C%20Imitola%20J.%20Responsibilities%20of%20Health%20Care%20Professionals%20in%20Counseling%20and%20Educating%20Patients%20With%20Incurable%20Neurological%20Diseases%20Regarding%20%E2%80%9CStem%20Cell%20Tourism%E2%80%9D%3A%20Caveat%20Em",
-          "resolved": false
+          "url": "https://doi.org/10.1001/jamaneurol.2015.1891",
+          "resolved": true
         },
         {
           "citation": "Stem-cell tourism clinic-information analysis, PMID 25449045.",
@@ -552,6 +918,42 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Master Z et al. Factors that influence unproven stem cell intervention seeking behavior: A qualitative analysis of U.S. patients considering or having undertaken unproven stem cell interventions. 2025. PMID 40744777.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40744777/",
+            "resolved": true
+          },
+          {
+            "citation": "Master Z et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. 2026. PMID 42210947.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially §§3.5 and 4.3.",
+            "url": "https://scholar.google.com/scholar?q=International%20Society%20for%20Stem%20Cell%20Research.%20Guidelines%20for%20Stem%20Cell%20Research%20and%20Clinical%20Translation%2C%20version%201.2%2C%20August%202025%2C%20especially%20%C2%A7%C2%A73.5%20and%204.3.",
+            "resolved": false
+          },
+          {
+            "citation": "US Food and Drug Administration. Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes; current unapproved-cell/tissue warnings.",
+            "url": "https://scholar.google.com/scholar?q=US%20Food%20and%20Drug%20Administration.%20Consumer%20Alert%20on%20Regenerative%20Medicine%20Products%20Including%20Stem%20Cells%20and%20Exosomes%3B%20current%20unapproved-cell%2Ftissue%20warnings.",
+            "resolved": false
+          },
+          {
+            "citation": "Bowman M, Racke M, Kissel J, Imitola J. Responsibilities of Health Care Professionals in Counseling and Educating Patients With Incurable Neurological Diseases Regarding “Stem Cell Tourism”: Caveat Emptor. JAMA Neurol. 2015;72:1342–1345.",
+            "url": "https://doi.org/10.1001/jamaneurol.2015.1891",
+            "resolved": true
+          },
+          {
+            "citation": "Stem-cell tourism clinic-information analysis, PMID 25449045.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25449045/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -653,6 +1055,52 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Santen SA, Hemphill RR, Spanier CM, Fletcher ND. “Sorry, it’s my first time!” Will patients consent to medical students learning procedures? Med Educ. 2005;39:365–369. PMID 15813758.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15813758/",
+            "resolved": true
+          },
+          {
+            "citation": "Graber MA, Pierre J, Charlton M. Patient opinions and attitudes toward medical student procedures in the emergency department. Acad Emerg Med. 2003;10:1329–1333. PMID 14644784.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14644784/",
+            "resolved": true
+          },
+          {
+            "citation": "Porta CR et al. Training surgeons and the informed consent process: routine disclosure of trainee participation and its effect on patient willingness and consent rates. PMID 21930977.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21930977/",
+            "resolved": true
+          },
+          {
+            "citation": "Langerman A et al. Patient Perceptions of Resident Involvement in Surgery: A Qualitative Study Using Surgical Video. PMID 35396187.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35396187/",
+            "resolved": true
+          },
+          {
+            "citation": "Additional outpatient/student-acceptance studies include PMID 16572911 and PMID 7616333.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16572911/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "AMA Code of Medical Ethics Opinion 9.2.1. Medical Student Involvement in Patient Care.",
+            "url": "https://scholar.google.com/scholar?q=AMA%20Code%20of%20Medical%20Ethics%20Opinion%209.2.1.%20Medical%20Student%20Involvement%20in%20Patient%20Care.",
+            "resolved": false
+          },
+          {
+            "citation": "ACOG. Sexual Misconduct (current committee guidance): trainees should be introduced and patients given an opportunity to agree; intimate educational examinations require specific consent.",
+            "url": "https://scholar.google.com/scholar?q=ACOG.%20Sexual%20Misconduct%20(current%20committee%20guidance)%3A%20trainees%20should%20be%20introduced%20and%20patients%20given%20an%20opportunity%20to%20agree%3B%20intimate%20educational%20examinations%20require%20specific%20consent.",
+            "resolved": false
+          },
+          {
+            "citation": "Hammoud MM et al. Consent for the Pelvic Examination Under Anesthesia by Medical Students: Recommendations by the Association of Professors of Gynecology and Obstetrics. PMID 31764743 (contextual stronger-consent case, not the represented procedure).",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31764743/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M014": {
@@ -663,6 +1111,15 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "expert": [
+          {
+            "citation": "American College of Obstetricians and Gynecologists. Committee Opinion No. 664. Refusal of Medically Recommended Treatment During Pregnancy. Obstet Gynecol. 2016;127:e175–e182; current ACOG clinical-guidance page accessed 2026-08-27.",
+            "url": "https://scholar.google.com/scholar?q=American%20College%20of%20Obstetricians%20and%20Gynecologists.%20Committee%20Opinion%20No.%20664.%20Refusal%20of%20Medically%20Recommended%20Treatment%20During%20Pregnancy.%20Obstet%20Gynecol.%202016%3B127%3Ae175%E2%80%93e182%3B%20current%20ACOG%20clinical-g",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M015": {
@@ -713,6 +1170,52 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Contemporary vaccine-hesitancy studies inform reasons, trust and communication but are not treated as direct evidence of preferred dismissal policy unless the study actually asks that question.",
+            "url": "https://scholar.google.com/scholar?q=Contemporary%20vaccine-hesitancy%20studies%20inform%20reasons%2C%20trust%20and%20communication%20but%20are%20not%20treated%20as%20direct%20evidence%20of%20preferred%20dismissal%20policy%20unless%20the%20study%20actually%20asks%20that%20question.",
+            "resolved": false
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Academy of Pediatrics. Strategies for Improving Vaccine Communication and Uptake. Pediatrics. 2024;153:e2023065483.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Strategies%20for%20Improving%20Vaccine%20Communication%20and%20Uptake.%20Pediatrics.%202024%3B153%3Ae2023065483.",
+            "resolved": false
+          },
+          {
+            "citation": "American Academy of Pediatrics. Red Book 2024–2027: Policies for Families Who Refuse or Delay Vaccination.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Red%20Book%202024%E2%80%932027%3A%20Policies%20for%20Families%20Who%20Refuse%20or%20Delay%20Vaccination.",
+            "resolved": false
+          },
+          {
+            "citation": "CDC. State Vaccination Requirements, current page; contextual only because state/school mandates are excluded from this decision.",
+            "url": "https://scholar.google.com/scholar?q=CDC.%20State%20Vaccination%20Requirements%2C%20current%20page%3B%20contextual%20only%20because%20state%2Fschool%20mandates%20are%20excluded%20from%20this%20decision.",
+            "resolved": false
+          },
+          {
+            "citation": "Flanagan-Klygis EA, Sharp L, Frader JE. Dismissing the family who refuses vaccines: a study of pediatrician attitudes. Arch Pediatr Adolesc Med. 2005;159:929–934. PMID 16203937.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16203937/",
+            "resolved": true
+          },
+          {
+            "citation": "Characteristics of Physicians Who Dismiss Families for Refusing Vaccines. Pediatrics. 2015. PMID 26527552.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26527552/",
+            "resolved": true
+          },
+          {
+            "citation": "National pediatrician survey literature on dismissal policies, including 2020 JAMA Network reporting.",
+            "url": "https://scholar.google.com/scholar?q=National%20pediatrician%20survey%20literature%20on%20dismissal%20policies%2C%20including%202020%20JAMA%20Network%20reporting.",
+            "resolved": false
+          },
+          {
+            "citation": "Lantos JD et al. Should Pediatric Practices Have Policies to Not Care for Children With Vaccine-Hesitant Parents? Pediatrics. 2016;138:e20161597. PMID 27590900.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27590900/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M016": {
@@ -758,6 +1261,42 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Robertson EG et al. Decision-making in childhood cancer: parents’ and adolescents’ views and perceptions. Support Care Cancer. 2019. PMID 30880372.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30880372/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Academy of Pediatrics. Pediatric Decision Making: Consensus Recommendations. Pediatrics. 2023;152:e2023061832.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Pediatric%20Decision%20Making%3A%20Consensus%20Recommendations.%20Pediatrics.%202023%3B152%3Ae2023061832.",
+            "resolved": false
+          },
+          {
+            "citation": "Diekema DS. Parental refusals of medical treatment: the harm principle as threshold for state intervention. Theor Med Bioeth. 2004. PMID 15637945.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15637945/",
+            "resolved": true
+          },
+          {
+            "citation": "Weaver MS et al. Family Refusal of Chemotherapy for Pediatric Cancer Patients: A National Survey of Oncologists. J Pediatr Hematol Oncol. 2015. PMID 25411868.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25411868/",
+            "resolved": true
+          },
+          {
+            "citation": "Johnston EE et al. Landscape of pediatric cancer treatment refusal and abandonment in the US: A qualitative study. Front Pediatr. 2023. PMID 36699305.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36699305/",
+            "resolved": true
+          },
+          {
+            "citation": "Contemporary case-management literature on resolving pediatric cancer refusal without legal action, including PMID 37638811 and PMID 40751325.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37638811/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M017": {
@@ -793,6 +1332,37 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Roope LSJ et al. Preferences regarding antibiotic treatment and the role of antibiotic resistance: A discrete choice experiment. 2020. PMID 33080314.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33080314/",
+            "resolved": true
+          },
+          {
+            "citation": "Moore JE et al. Evaluating patient attitudes to increased patient engagement with antimicrobial stewardship. JAC Antimicrob Resist. 2020;2:dlaa046.",
+            "url": "https://scholar.google.com/scholar?q=Moore%20JE%20et%20al.%20Evaluating%20patient%20attitudes%20to%20increased%20patient%20engagement%20with%20antimicrobial%20stewardship.%20JAC%20Antimicrob%20Resist.%202020%3B2%3Adlaa046.",
+            "resolved": false
+          },
+          {
+            "citation": "Contemporary public-attitude studies on antimicrobial use and resistance, including PMID 35387816.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35387816/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "World Health Organization. The WHO AWaRe (Access, Watch, Reserve) antibiotic book / classification, including 2025 classification update.",
+            "url": "https://scholar.google.com/scholar?q=World%20Health%20Organization.%20The%20WHO%20AWaRe%20(Access%2C%20Watch%2C%20Reserve)%20antibiotic%20book%20%2F%20classification%2C%20including%202025%20classification%20update.",
+            "resolved": false
+          },
+          {
+            "citation": "Infectious Diseases Society of America / Society for Healthcare Epidemiology of America. Clinical Practice Guidelines for Implementing an Antibiotic Stewardship Program.",
+            "url": "https://scholar.google.com/scholar?q=Infectious%20Diseases%20Society%20of%20America%20%2F%20Society%20for%20Healthcare%20Epidemiology%20of%20America.%20Clinical%20Practice%20Guidelines%20for%20Implementing%20an%20Antibiotic%20Stewardship%20Program.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M018": {
@@ -838,6 +1408,47 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Tan R et al. Antibiotic expectations of patients attending an emergency department with upper respiratory tract infections. Int J Antimicrob Agents. 2022. PMID 34971727.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34971727/",
+            "resolved": true
+          },
+          {
+            "citation": "Laytner L et al. Lack of Knowledge of Antibiotic Risks Contributes to Primary Care Patients’ Expectations of Antibiotics for Common Symptoms. Ann Fam Med. 2024. PMID 39313338.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39313338/",
+            "resolved": true
+          },
+          {
+            "citation": "Contemporary public-attitude studies on antibiotic use and resistance, including PMID 35387816.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35387816/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship, current materials updated 2026; foundational MMWR 2016 framework.",
+            "url": "https://scholar.google.com/scholar?q=CDC.%20Core%20Elements%20of%20Outpatient%20Antibiotic%20Stewardship%2C%20current%20materials%20updated%202026%3B%20foundational%20MMWR%202016%20framework.",
+            "resolved": false
+          },
+          {
+            "citation": "Spurling GK et al. Delayed antibiotic prescriptions for respiratory infections. Cochrane Database Syst Rev. 2023. PMID 37791590; earlier update PMID 28881007.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37791590/",
+            "resolved": true
+          },
+          {
+            "citation": "Little P et al. Delayed antibiotic prescribing strategies for respiratory tract infections in primary care. BMJ. 2014. PMID 24603565.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24603565/",
+            "resolved": true
+          },
+          {
+            "citation": "de la Poza Abad M et al. Prescription Strategies in Acute Uncomplicated Respiratory Infections: A Randomized Clinical Trial. JAMA Intern Med. 2016. PMID 26719947.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26719947/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -926,6 +1537,37 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Patients’ perspectives and preferences toward telemedicine versus in-person visits: a mixed-methods study on 1226 patients. 2023. PMID 37968639.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37968639/",
+            "resolved": true
+          },
+          {
+            "citation": "Hand-surgery telemedicine patient-experience study. 2021. PMID 34515550.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34515550/",
+            "resolved": true
+          },
+          {
+            "citation": "Mixed-methods neurology research on patient choice of telemedicine versus in-person care, PMCID PMC9068349.",
+            "url": "https://scholar.google.com/scholar?q=Mixed-methods%20neurology%20research%20on%20patient%20choice%20of%20telemedicine%20versus%20in-person%20care%2C%20PMCID%20PMC9068349.",
+            "resolved": false
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American College of Physicians. Telemedicine Policy and Practice: A Position Paper From the American College of Physicians. Ann Intern Med. 2026;179:1030–1032. PMID 42114091.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42114091/",
+            "resolved": true
+          },
+          {
+            "citation": "American Medical Association. Code of Medical Ethics Opinion 1.2.12. Ethical Practice in Telemedicine.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Code%20of%20Medical%20Ethics%20Opinion%201.2.12.%20Ethical%20Practice%20in%20Telemedicine.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -1017,6 +1659,42 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Aitken P et al. Willingness to Work amongst Australian Frontline Healthcare Workers during Australia’s First Wave of Covid-19 Community Transmission. 2021. PMID 34496995.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34496995/",
+            "resolved": true
+          },
+          {
+            "citation": "Exploring U.S. Nurses’ Perceived Duty to Care During the COVID-19 Pandemic. 2024. PMID 38598257.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38598257/",
+            "resolved": true
+          },
+          {
+            "citation": "Ebola-era healthcare-worker duty/willingness literature, including PMID 34780288.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34780288/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Medical Association. Current pandemic-duty ethics guidance, including Council on Ethical and Judicial Affairs discussion of physicians’ duty to treat during pandemics.",
+            "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Current%20pandemic-duty%20ethics%20guidance%2C%20including%20Council%20on%20Ethical%20and%20Judicial%20Affairs%20discussion%20of%20physicians%E2%80%99%20duty%20to%20treat%20during%20pandemics.",
+            "resolved": false
+          },
+          {
+            "citation": "World Health Organization / International Labour Organization. COVID-19: Occupational health and safety for health workers, interim guidance 2021.",
+            "url": "https://scholar.google.com/scholar?q=World%20Health%20Organization%20%2F%20International%20Labour%20Organization.%20COVID-19%3A%20Occupational%20health%20and%20safety%20for%20health%20workers%2C%20interim%20guidance%202021.",
+            "resolved": false
+          },
+          {
+            "citation": "World Health Organization. Keep health workers safe to keep patients safe and related worker-protection guidance.",
+            "url": "https://scholar.google.com/scholar?q=World%20Health%20Organization.%20Keep%20health%20workers%20safe%20to%20keep%20patients%20safe%20and%20related%20worker-protection%20guidance.",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -1120,6 +1798,54 @@
           "resolved": false
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Morillo Palomo A, et al. Parents Value Shared Decision-Making and Sensitive Communication During End-of-Life Care in Neonatal Intensive Care. Acta Paediatr. 2026. PMID 42324645.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42324645/",
+            "resolved": true
+          },
+          {
+            "citation": "Parental decision-making preferences in neonatal intensive care. PMID 27665039.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27665039/",
+            "resolved": true
+          },
+          {
+            "citation": "Parents' experiences of palliative care decision-making in NICUs. PMID 38229540.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38229540/",
+            "resolved": true
+          },
+          {
+            "citation": "Qualitative study of parents participating in end-of-life decisions for critically ill infants. PMID 36670597.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36670597/",
+            "resolved": true
+          },
+          {
+            "citation": "Parental experiences systematic review/qualitative synthesis. PMID 39550908.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39550908/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "American Academy of Pediatrics. Guidance on Forgoing Life-Sustaining Medical Treatment. Pediatrics. 2017; reaffirmed 2023.",
+            "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Guidance%20on%20Forgoing%20Life-Sustaining%20Medical%20Treatment.%20Pediatrics.%202017%3B%20reaffirmed%202023.",
+            "resolved": false
+          },
+          {
+            "citation": "Levine DR, Laventhal NT, Macauley R, et al. Responding to Parental Requests for Potentially Nonbeneficial Treatment in Life-Threatening Situations: Clinical Report and Technical Report. Pediatrics. 2026.",
+            "url": "https://scholar.google.com/scholar?q=Levine%20DR%2C%20Laventhal%20NT%2C%20Macauley%20R%2C%20et%20al.%20Responding%20to%20Parental%20Requests%20for%20Potentially%20Nonbeneficial%20Treatment%20in%20Life-Threatening%20Situations%3A%20Clinical%20Report%20and%20Technical%20Report.%20Pediatrics.%2020",
+            "resolved": false
+          }
+        ],
+        "framework": [
+          {
+            "citation": "Best-interests, harm-principle and constrained-parental-authority literature, including AAP Pediatric Decision Making Consensus Recommendations (2023).",
+            "url": "https://scholar.google.com/scholar?q=Best-interests%2C%20harm-principle%20and%20constrained-parental-authority%20literature%2C%20including%20AAP%20Pediatric%20Decision%20Making%20Consensus%20Recommendations%20(2023).",
+            "resolved": false
+          }
+        ]
+      },
       "policies": {}
     },
     "M022": {
@@ -1145,6 +1871,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M023": {
@@ -1175,6 +1902,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M024": {
@@ -1220,6 +1948,52 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Clark BA, Marshall SK, Saewyc EM. Hormone therapy decision-making processes: transgender youth and parents. PMID 31972534.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31972534/",
+            "resolved": true
+          },
+          {
+            "citation": "Conditions for shared decision making in the care of transgender youth in Canada. PMID 32596730.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32596730/",
+            "resolved": true
+          },
+          {
+            "citation": "Medical decision-making competence regarding puberty suppression. PMID 36115898.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36115898/",
+            "resolved": true
+          },
+          {
+            "citation": "“I Couldn't See a Downside”: Decision-Making About Gender-Affirming Hormone Therapy. PMID 31196783.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31196783/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "Endocrine Society. Gender Dysphoria/Gender Incongruence Guideline Resources. Current access 2026.",
+            "url": "https://scholar.google.com/scholar?q=Endocrine%20Society.%20Gender%20Dysphoria%2FGender%20Incongruence%20Guideline%20Resources.%20Current%20access%202026.",
+            "resolved": false
+          },
+          {
+            "citation": "NHS England. Clinical policy on puberty-suppressing hormones; Children and Young People's Gender Services; 2026 service and consultation materials.",
+            "url": "https://scholar.google.com/scholar?q=NHS%20England.%20Clinical%20policy%20on%20puberty-suppressing%20hormones%3B%20Children%20and%20Young%20People's%20Gender%20Services%3B%202026%20service%20and%20consultation%20materials.",
+            "resolved": false
+          },
+          {
+            "citation": "Taylor J, et al. Systematic reviews of puberty suppression and masculinising/feminising hormone interventions. PMID 38594047; PMID 38594053.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38594047/",
+            "resolved": true
+          },
+          {
+            "citation": "Puberty blockers for gender dysphoria in youth: systematic review/meta-analysis. PMID 39855724.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39855724/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {}
     },
     "M025": {
@@ -1260,6 +2034,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -1368,6 +2143,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M027": {
@@ -1403,6 +2179,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M028": {
@@ -1443,6 +2220,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -1526,6 +2304,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M030": {
@@ -1581,6 +2360,57 @@
           "resolved": true
         }
       ],
+      "layers": {
+        "public": [
+          {
+            "citation": "Differential patient-caregiver opinions of treatment and care for advanced lung cancer. PMID 20137849.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20137849/",
+            "resolved": true
+          },
+          {
+            "citation": "Association of illness understanding with advance care planning and end-of-life preferences. PMID 31768736.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31768736/",
+            "resolved": true
+          },
+          {
+            "citation": "How patients with advanced cancer and family caregivers accommodate one another in decision-making. PMID 38756049.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38756049/",
+            "resolved": true
+          }
+        ],
+        "expert": [
+          {
+            "citation": "Centers for Medicare & Medicaid Services. Hospice coverage/payment materials, current 2026.",
+            "url": "https://scholar.google.com/scholar?q=Centers%20for%20Medicare%20%26%20Medicaid%20Services.%20Hospice%20coverage%2Fpayment%20materials%2C%20current%202026.",
+            "resolved": false
+          },
+          {
+            "citation": "The rise of concurrent care for veterans with advanced cancer at the end of life. PMID 26670795.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26670795/",
+            "resolved": true
+          },
+          {
+            "citation": "Concurrent Hospice Care and Cancer-Directed Treatment for Advanced Lung Cancer in VHA. PMID 32119800.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32119800/",
+            "resolved": true
+          },
+          {
+            "citation": "Association of Expanded VA Hospice Care With Aggressive Care and Cost. PMID 30920603.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30920603/",
+            "resolved": true
+          },
+          {
+            "citation": "The experience of providing hospice care concurrent with cancer treatment in the VA. PMID 30467792.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30467792/",
+            "resolved": true
+          },
+          {
+            "citation": "Concurrent Hospice Healthcare Utilization in the Hematology/Oncology VA population. PMID 37846638.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37846638/",
+            "resolved": true
+          }
+        ]
+      },
       "policies": {
         "c01": [
           {
@@ -1679,6 +2509,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -1795,6 +2626,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M033": {
@@ -1846,10 +2678,11 @@
         },
         {
           "citation": "Agnieszka Jaworska. Respecting the Margins of Agency: Alzheimer's Patients and the Capacity to Value. Philosophy & Public Affairs. 1999;28(2):105–138.",
-          "url": "https://scholar.google.com/scholar?q=Agnieszka%20Jaworska.%20Respecting%20the%20Margins%20of%20Agency%3A%20Alzheimer's%20Patients%20and%20the%20Capacity%20to%20Value.%20Philosophy%20%26%20Public%20Affairs.%201999%3B28(2)%3A105%E2%80%93138.",
-          "resolved": false
+          "url": "https://doi.org/10.1111/j.1088-4963.1999.00105.x",
+          "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -1944,6 +2777,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M035": {
@@ -1979,6 +2813,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M036": {
@@ -2009,6 +2844,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M037": {
@@ -2034,6 +2870,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M038": {
@@ -2069,6 +2906,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M039": {
@@ -2099,6 +2937,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M040": {
@@ -2124,6 +2963,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M041": {
@@ -2159,6 +2999,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c02": [
           {
@@ -2226,6 +3067,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M043": {
@@ -2241,6 +3083,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M044": {
@@ -2266,6 +3109,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M045": {
@@ -2286,6 +3130,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -2365,14 +3210,15 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M047": {
       "sources": [
         {
           "citation": "American College of Obstetricians and Gynecologists. Committee Statement No. 8. Permanent Contraception: Ethical Issues and Considerations. 2024.",
-          "url": "https://scholar.google.com/scholar?q=American%20College%20of%20Obstetricians%20and%20Gynecologists.%20Committee%20Statement%20No.%208.%20Permanent%20Contraception%3A%20Ethical%20Issues%20and%20Considerations.%202024.",
-          "resolved": false
+          "url": "https://doi.org/10.1097/aog.0000000000005474",
+          "resolved": true
         },
         {
           "citation": "Contemporary US permanent-contraception regret analysis, PMID 35115436.",
@@ -2385,6 +3231,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M048": {
@@ -2405,6 +3252,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M049": {
@@ -2425,6 +3273,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M050": {
@@ -2470,6 +3319,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M051": {
@@ -2510,6 +3360,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M052": {
@@ -2540,6 +3391,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M053": {
@@ -2570,6 +3422,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M054": {
@@ -2605,6 +3458,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M055": {
@@ -2630,6 +3484,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M056": {
@@ -2655,6 +3510,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M057": {
@@ -2675,6 +3531,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M058": {
@@ -2705,6 +3562,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M059": {
@@ -2735,14 +3593,15 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M060": {
       "sources": [
         {
           "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-          "url": "https://scholar.google.com/scholar?q=ASRM%20Ethics%20Committee.%20Use%20of%20reproductive%20technology%20for%20sex%20selection%20for%20nonmedical%20reasons.%202022.",
-          "resolved": false
+          "url": "https://doi.org/10.1007/978-3-031-41215-8_5",
+          "resolved": true
         },
         {
           "citation": "Sex selection for non-medical indications: a survey of current pre-implantation genetic screening practices among U.S. ART clinics. PMID 29080968.",
@@ -2755,6 +3614,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c03": [
           {
@@ -2805,8 +3665,8 @@
         "c05": [
           {
             "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-            "url": "https://scholar.google.com/scholar?q=ASRM%20Ethics%20Committee.%20Use%20of%20reproductive%20technology%20for%20sex%20selection%20for%20nonmedical%20reasons.%202022.",
-            "resolved": false
+            "url": "https://doi.org/10.1007/978-3-031-41215-8_5",
+            "resolved": true
           },
           {
             "citation": "Dondorp W, et al. ESHRE Task Force on Ethics and Law 20: sex selection for non-medical reasons. Human Reproduction. 2013;28:1448-1454.",
@@ -2817,8 +3677,8 @@
         "c06": [
           {
             "citation": "ASRM Ethics Committee. Use of reproductive technology for sex selection for nonmedical reasons. 2022.",
-            "url": "https://scholar.google.com/scholar?q=ASRM%20Ethics%20Committee.%20Use%20of%20reproductive%20technology%20for%20sex%20selection%20for%20nonmedical%20reasons.%202022.",
-            "resolved": false
+            "url": "https://doi.org/10.1007/978-3-031-41215-8_5",
+            "resolved": true
           }
         ]
       }
@@ -2836,6 +3696,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M062": {
@@ -2851,6 +3712,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M063": {
@@ -2866,6 +3728,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M064": {
@@ -2876,14 +3739,15 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M065": {
       "sources": [
         {
           "citation": "ESHRE PGT Consortium. Good practice recommendations for the organisation of PGT. 2020.",
-          "url": "https://scholar.google.com/scholar?q=ESHRE%20PGT%20Consortium.%20Good%20practice%20recommendations%20for%20the%20organisation%20of%20PGT.%202020.",
-          "resolved": false
+          "url": "https://doi.org/10.1093/hropen/hoaa021",
+          "resolved": true
         },
         {
           "citation": "ESHRE PGT Consortium. Good practice recommendations for detection of monogenic disorders. 2020.",
@@ -2897,8 +3761,8 @@
         },
         {
           "citation": "Savior siblings and Fanconi anemia: analysis of success rates from the family's perspective. Genetics in Medicine. 2015.",
-          "url": "https://scholar.google.com/scholar?q=Savior%20siblings%20and%20Fanconi%20anemia%3A%20analysis%20of%20success%20rates%20from%20the%20family's%20perspective.%20Genetics%20in%20Medicine.%202015.",
-          "resolved": false
+          "url": "https://doi.org/10.1038/gim.2014.206",
+          "resolved": true
         },
         {
           "citation": "Knowledge and ethical attitudes toward preimplantation genetic testing among ART patients in Greece. Ethics Med Public Health. 2026.",
@@ -2906,6 +3770,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M066": {
@@ -2926,6 +3791,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M067": {
@@ -2936,6 +3802,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M068": {
@@ -2951,6 +3818,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M069": {
@@ -2961,6 +3829,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M070": {
@@ -2976,6 +3845,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M071": {
@@ -2991,6 +3861,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M072": {
@@ -3011,6 +3882,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M073": {
@@ -3026,6 +3898,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M074": {
@@ -3041,6 +3914,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M075": {
@@ -3056,6 +3930,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -3123,6 +3998,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M077": {
@@ -3138,6 +4014,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M078": {
@@ -3148,6 +4025,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M079": {
@@ -3163,6 +4041,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M080": {
@@ -3183,6 +4062,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -3234,6 +4114,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M082": {
@@ -3259,6 +4140,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M083": {
@@ -3274,6 +4156,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M084": {
@@ -3289,6 +4172,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M085": {
@@ -3304,6 +4188,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M086": {
@@ -3324,6 +4209,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M087": {
@@ -3339,6 +4225,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M088": {
@@ -3354,6 +4241,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M089": {
@@ -3374,6 +4262,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M090": {
@@ -3394,6 +4283,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M091": {
@@ -3414,6 +4304,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M092": {
@@ -3429,6 +4320,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M093": {
@@ -3444,6 +4336,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M094": {
@@ -3464,6 +4357,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M095": {
@@ -3494,6 +4388,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M096": {
@@ -3524,6 +4419,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M097": {
@@ -3539,6 +4435,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M098": {
@@ -3569,6 +4466,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M099": {
@@ -3589,6 +4487,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M100": {
@@ -3609,6 +4508,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M101": {
@@ -3639,6 +4539,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M102": {
@@ -3659,6 +4560,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c04": [
           {
@@ -3750,6 +4652,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M104": {
@@ -3765,6 +4668,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M105": {
@@ -3776,8 +4680,8 @@
         },
         {
           "citation": "Views of US Voters on Compensating Living Kidney Donors. JAMA Surg. 2016.",
-          "url": "https://scholar.google.com/scholar?q=Views%20of%20US%20Voters%20on%20Compensating%20Living%20Kidney%20Donors.%20JAMA%20Surg.%202016.",
-          "resolved": false
+          "url": "https://doi.org/10.1001/jamasurg.2016.0065",
+          "resolved": true
         },
         {
           "citation": "HRSA/OPTN living-donor informed-consent and safety guidance.",
@@ -3785,6 +4689,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M106": {
@@ -3805,6 +4710,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -3901,6 +4807,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M108": {
@@ -3921,6 +4828,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M109": {
@@ -3936,6 +4844,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M110": {
@@ -3951,6 +4860,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M111": {
@@ -3966,6 +4876,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M112": {
@@ -3981,6 +4892,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M113": {
@@ -4001,6 +4913,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M114": {
@@ -4021,6 +4934,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M115": {
@@ -4041,6 +4955,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M116": {
@@ -4061,6 +4976,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M117": {
@@ -4076,6 +4992,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M118": {
@@ -4091,6 +5008,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M119": {
@@ -4106,6 +5024,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M120": {
@@ -4121,6 +5040,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M121": {
@@ -4136,6 +5056,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M122": {
@@ -4151,6 +5072,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M123": {
@@ -4166,6 +5088,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M124": {
@@ -4181,6 +5104,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M125": {
@@ -4206,6 +5130,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M126": {
@@ -4231,6 +5156,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M127": {
@@ -4246,6 +5172,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M128": {
@@ -4271,6 +5198,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M129": {
@@ -4296,6 +5224,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c03": [
           {
@@ -4357,6 +5286,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M131": {
@@ -4382,6 +5312,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M132": {
@@ -4407,6 +5338,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M133": {
@@ -4422,6 +5354,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M134": {
@@ -4437,6 +5370,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M135": {
@@ -4452,6 +5386,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M136": {
@@ -4467,6 +5402,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M137": {
@@ -4482,6 +5418,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M138": {
@@ -4497,6 +5434,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M139": {
@@ -4512,6 +5450,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M140": {
@@ -4527,6 +5466,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M141": {
@@ -4542,6 +5482,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M142": {
@@ -4567,6 +5508,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M143": {
@@ -4592,6 +5534,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M144": {
@@ -4607,6 +5550,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -4682,6 +5626,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M146": {
@@ -4697,6 +5642,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M147": {
@@ -4712,6 +5658,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M148": {
@@ -4727,6 +5674,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M149": {
@@ -4742,6 +5690,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M150": {
@@ -4757,19 +5706,20 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M151": {
       "sources": [
         {
           "citation": "Porter A, et al. Machine unlearning as a governance imperative for clinical AI. npj Digit Med. 2026.",
-          "url": "https://scholar.google.com/scholar?q=Porter%20A%2C%20et%20al.%20Machine%20unlearning%20as%20a%20governance%20imperative%20for%20clinical%20AI.%20npj%20Digit%20Med.%202026.",
-          "resolved": false
+          "url": "https://doi.org/10.1038/s41746-026-03050-1",
+          "resolved": true
         },
         {
           "citation": "Wang Y, et al. Mitigating algorithmic unfairness arising from forgetfulness of medical records in clinical artificial intelligence. Nat Commun. 2026.",
-          "url": "https://scholar.google.com/scholar?q=Wang%20Y%2C%20et%20al.%20Mitigating%20algorithmic%20unfairness%20arising%20from%20forgetfulness%20of%20medical%20records%20in%20clinical%20artificial%20intelligence.%20Nat%20Commun.%202026.",
-          "resolved": false
+          "url": "https://doi.org/10.1038/s41467-026-72601-7",
+          "resolved": true
         },
         {
           "citation": "Machine-unlearning and right-to-be-forgotten healthcare literature, 2024–2026.",
@@ -4777,6 +5727,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M152": {
@@ -4793,10 +5744,11 @@
         },
         {
           "citation": "Use of AI as a Research Recruitment Tool: Ethical Elements, Considerations, and Recommendations. 2026.",
-          "url": "https://scholar.google.com/scholar?q=Use%20of%20AI%20as%20a%20Research%20Recruitment%20Tool%3A%20Ethical%20Elements%2C%20Considerations%2C%20and%20Recommendations.%202026.",
-          "resolved": false
+          "url": "https://doi.org/10.1080/15265161.2026.2649234",
+          "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M153": {
@@ -4822,16 +5774,18 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M154": {
       "sources": [
         {
           "citation": "Artificial intelligence–driven kidney organ allocation: systematic review of clinical outcome prediction, ethical frameworks, and decision-making algorithms. BMC Nephrology. 2025.",
-          "url": "https://scholar.google.com/scholar?q=Artificial%20intelligence%E2%80%93driven%20kidney%20organ%20allocation%3A%20systematic%20review%20of%20clinical%20outcome%20prediction%2C%20ethical%20frameworks%2C%20and%20decision-making%20algorithms.%20BMC%20Nephrology.%202025.",
-          "resolved": false
+          "url": "https://doi.org/10.1186/s12882-025-04576-4",
+          "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M155": {
@@ -4852,6 +5806,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M156": {
@@ -4877,6 +5832,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M157": {
@@ -4888,8 +5844,8 @@
         },
         {
           "citation": "National Academies. Nonhuman Primate Models in Biomedical Research. 2023.",
-          "url": "https://scholar.google.com/scholar?q=National%20Academies.%20Nonhuman%20Primate%20Models%20in%20Biomedical%20Research.%202023.",
-          "resolved": false
+          "url": "https://doi.org/10.17226/26857",
+          "resolved": true
         },
         {
           "citation": "NHMRC. Use of non-human primates for scientific purposes.",
@@ -4902,6 +5858,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M158": {
@@ -4917,6 +5874,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M159": {
@@ -4952,6 +5910,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M160": {
@@ -4972,6 +5931,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M161": {
@@ -4997,6 +5957,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M162": {
@@ -5017,6 +5978,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M163": {
@@ -5047,6 +6009,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M164": {
@@ -5067,6 +6030,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M165": {
@@ -5087,6 +6051,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M166": {
@@ -5097,6 +6062,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M167": {
@@ -5107,6 +6073,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M168": {
@@ -5117,6 +6084,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M169": {
@@ -5137,6 +6105,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M170": {
@@ -5162,6 +6131,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M171": {
@@ -5172,6 +6142,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M172": {
@@ -5182,6 +6153,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M173": {
@@ -5192,6 +6164,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M174": {
@@ -5202,6 +6175,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M175": {
@@ -5217,6 +6191,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M176": {
@@ -5227,6 +6202,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M177": {
@@ -5237,6 +6213,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M178": {
@@ -5247,6 +6224,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M179": {
@@ -5257,6 +6235,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M180": {
@@ -5267,6 +6246,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M181": {
@@ -5277,6 +6257,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M182": {
@@ -5287,6 +6268,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M183": {
@@ -5297,6 +6279,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M184": {
@@ -5307,6 +6290,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M185": {
@@ -5317,6 +6301,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M186": {
@@ -5327,6 +6312,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M187": {
@@ -5342,6 +6328,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M188": {
@@ -5352,6 +6339,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M189": {
@@ -5377,6 +6365,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {
         "c01": [
           {
@@ -5437,6 +6426,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M191": {
@@ -5447,6 +6437,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M192": {
@@ -5457,6 +6448,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M193": {
@@ -5467,6 +6459,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M194": {
@@ -5477,6 +6470,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M195": {
@@ -5487,6 +6481,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M196": {
@@ -5502,6 +6497,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M197": {
@@ -5512,6 +6508,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M198": {
@@ -5522,6 +6519,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M199": {
@@ -5537,6 +6535,7 @@
           "resolved": true
         }
       ],
+      "layers": {},
       "policies": {}
     },
     "M200": {
@@ -5562,6 +6561,7 @@
           "resolved": false
         }
       ],
+      "layers": {},
       "policies": {}
     }
   }

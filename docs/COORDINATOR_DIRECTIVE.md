@@ -126,12 +126,15 @@ The two versions should describe the same case and retain the same policies, pol
 
 ## Reading order
 
+`docs/README.md` separates the documents that govern current work from the ones that record work
+already done. Read a dated batch note as provenance, never as an instruction.
+
 For current work, read:
 
 1. `AGENTS.md`
 2. `README.md`
 3. `docs/FULL_CORPUS_V1_PLAN.md`
-4. `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`
+4. `docs/REVIEW_QUEUE.md`
 5. `docs/RESOURCE_CARD.md`
 6. `docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
 7. the current manuscript blueprint in the program Drive when manuscript work is requested.
