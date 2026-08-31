@@ -74,23 +74,21 @@ function render(d) {
 
   <section class="panel">
     <h2>How each policy was sourced</h2>
-    <p class="note">Sourcing says how a policy reached the Bench, and it is separate from what kind
-      of position the policy represents. Two thirds of the collection is inferred: a source supports
-      the underlying view, evidence or principle, and the Bench states the policy as an inference
-      from it. A directly sourced policy is one a source states in substantially these words.</p>
+    <p class="note">Two thirds of the collection is inferred: a source supports the view, evidence
+      or principle, and the Bench states the policy from it. A directly sourced policy is one a
+      source states in substantially these words. Sourcing is separate from policy type.</p>
     ${legend(bySourcing)}
     ${pbar(bySourcing, d.policies)}
     ${table(['Sourcing', 'Policies', 'Share'], bySourcing.map((s) => [swatch(s.color, s.label), n(s.value), pct(s.value, d.policies)]))}
-    <p class="note">${n(d.written_by_bench)} of the ${n(d.sourcing.constructed)} constructed policies were written by the Bench for a case
-      that recorded no policy of one of the three types, so that every case can be evaluated across
-      all three. Each is marked where it appears. ${n(d.cases_objecting_to_pool)} cases record their own judgement that the
-      evidence was too thin to support such a policy, and say so on the case.</p>
+    <p class="note">${n(d.written_by_bench)} of the ${n(d.sourcing.constructed)} constructed policies were written by the Bench for cases
+      recording no policy of one type, so every case can be evaluated across all three. Each is
+      marked where it appears. ${n(d.cases_objecting_to_pool)} cases judged the evidence too thin for one, and say so.</p>
   </section>
 
   <section class="panel">
     <h2>Policy type</h2>
-    <p class="note">Public, Expert and Framework say what kind of position a policy represents. A
-      policy can represent more than one, so these count assignments and do not sum to ${n(d.policies)}.</p>
+    <p class="note">A policy can represent more than one kind of position, so these count
+      assignments and do not sum to ${n(d.policies)}.</p>
     <div class="rows">
       ${TYPES.map((t) => `<div class="row"><span class="row-label">${t.label}</span>
         ${pbar([
@@ -103,18 +101,17 @@ function render(d) {
       swatch(t.color, t.label), n(d.by_type[t.id].assignments), d.by_type[t.id].per_case.mean,
       `${d.by_type[t.id].per_case.min}–${d.by_type[t.id].per_case.max}`,
     ]))}
-    <p class="note">The Public layer is the thinnest in the collection: ${n(d.by_type.public.assignments)} assignments against
-      ${n(d.by_type.expert.assignments)} Expert, and a mean of ${d.by_type.public.per_case.mean} per case. What the affected public
-      wants is harder to source than what a professional body recommends.</p>
+    <p class="note">Public is the thinnest layer: ${n(d.by_type.public.assignments)} assignments against ${n(d.by_type.expert.assignments)} Expert, a mean of
+      ${d.by_type.public.per_case.mean} per case. What the affected public wants is harder to source than what a
+      professional body recommends.</p>
     ${table(['Combination', 'Policies'], combos.map(([k, v]) => [typeLabel(k), n(v)]))}
   </section>
 
   <section class="panel">
     <h2>Type against sourcing</h2>
-    <p class="note">Direct sourcing is almost entirely an Expert phenomenon: ${n(d.by_type.expert.sourcing.direct)} of the
-      ${n(d.sourcing.direct)} directly sourced policies are Expert. A professional guideline states a policy in
-      nearly the words a policy needs, while a survey reports a preference and a framework supplies a
-      principle — both take a step to become a policy someone could adopt.</p>
+    <p class="note">${n(d.by_type.expert.sourcing.direct)} of the ${n(d.sourcing.direct)} directly sourced policies are Expert. A guideline states a
+      policy in nearly the words a policy needs; a survey reports a preference and a framework
+      supplies a principle, and both take a step to become one.</p>
     ${legend(SOURCING)}
     <div class="rows">
       ${TYPES.map((t) => `<div class="row"><span class="row-label">${t.label}</span>
@@ -126,11 +123,10 @@ function render(d) {
 
   <section class="panel">
     <h2>How each type label was arrived at</h2>
-    <p class="note">Only the first of these has been checked against a source, and that check is an
-      approved editorial crosswalk to an earlier released record rather than an independent
-      re-derivation. The second carries over a label written into the case record by hand. The third
-      reads the policy's own wording where the record said nothing, which makes it the smallest set
-      and the likeliest to be wrong — and the first place review is worth spending.</p>
+    <p class="note">Only the first has been checked, and that check is an editorial crosswalk to an
+      earlier released record, not an independent re-derivation. The second carries over a label
+      written into the case record by hand. The third reads the policy's own wording where the
+      record said nothing, so it is the smallest set and the likeliest to be wrong.</p>
     ${legend(byRoute)}
     ${pbar(byRoute, d.policies)}
     ${table(['Route', 'Policies', 'Share'], byRoute.map((r) => [swatch(r.color, r.label), n(r.value), pct(r.value, d.policies)]))}
@@ -138,13 +134,12 @@ function render(d) {
 
   <section class="panel">
     <h2>Sources</h2>
-    <p class="note">${n(d.citations.total)} citations are recorded across the ${n(d.cases)} cases. ${n(d.citations.resolved)} resolve to a
-      canonical locator — a DOI, a PubMed record or an official page — and the rest to a scholarly
-      search, which finds the source but is a search rather than a link to it. ${n(d.citations.cases_with_two_or_fewer)} cases rest on two
-      citations or fewer.</p>
-    <p class="note">${n(d.citations.policy_level_cases)} cases record citations policy by policy. ${n(d.citations.cases_with_layer_notes)} carry the case file's own
-      account of the evidence behind each kind of position, which a policy shows when the Bench has
-      recorded no citation of its own for it.</p>
+    <p class="note">${n(d.citations.resolved)} of the ${n(d.citations.total)} citations resolve to a DOI, a PubMed record or an official
+      page. The rest resolve to a scholarly search, which finds the source without linking to it.
+      ${n(d.citations.cases_with_two_or_fewer)} cases rest on two citations or fewer.</p>
+    <p class="note">${n(d.citations.policy_level_cases)} cases record citations policy by policy. ${n(d.citations.cases_with_layer_notes)} carry the case file's account
+      of the evidence behind each kind of position, which a policy shows where it has no citation
+      of its own.</p>
     ${table(['Citations', 'Count'], [
       ['Recorded across all cases', n(d.citations.total)],
       ['Resolving to a canonical locator', n(d.citations.resolved)],
@@ -156,8 +151,7 @@ function render(d) {
 
   <section class="panel">
     <h2>Read next</h2>
-    <p class="note">These figures are generated from the published files, so they change when the
-      collection does.</p>
+    <p class="note">These figures are generated from the published files and change with them.</p>
     <div class="readnext">
       <a href="../">Browse the cases →</a>
       <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/COMPOSITION.md" target="_blank" rel="noopener">The same figures as a document ↗</a>

@@ -1,11 +1,9 @@
 # What to read, and what is a record
 
-Twenty-nine documents sit in this directory and they do not all carry the same authority. Some
-state the rules current work must follow; the rest record work already done, at the date it was
-done, and are useful for provenance rather than for instruction. An agent or collaborator reading
-a batch note as if it were a directive is how a decision gets quietly reversed — the corpus plan
-told readers not to write a policy to fill a missing type for some time after the opposite had
-been decided and carried out.
+The documents here do not carry the same authority. Some state the rules current work follows; the
+rest record work already done, at its date, and are provenance rather than instruction. Reading a
+batch note as a directive is how a decision gets reversed: the corpus plan told readers not to
+write a policy to fill a missing type long after the opposite had been decided and done.
 
 ## Current — these govern work now
 

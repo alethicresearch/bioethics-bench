@@ -70,12 +70,10 @@ The full research set contains **200 cases (M001–M200)** across:
 - climate and environment;
 - everyday clinical and professional practice.
 
-The composition of the collection — how each policy was sourced, how the three types are
-distributed, how each type label was arrived at — is counted from the published files in
-[`COMPOSITION.md`](COMPOSITION.md) and published at
-[bioethicsbench.com/cases/sources/](https://bioethicsbench.com/cases/sources/). In summary: 7% of
-policies are directly sourced, two thirds are inferred from a source and a quarter are constructed,
-and directly sourced policies are almost entirely Expert ones.
+7% of policies are directly sourced, two thirds are inferred from a source, and a quarter are
+constructed; the directly sourced ones are almost all Expert. [`COMPOSITION.md`](COMPOSITION.md)
+and [bioethicsbench.com/cases/sources/](https://bioethicsbench.com/cases/sources/) carry the full
+figures, counted from the published files.
 
 The case-and-policy research pass is complete. The current machine-readable 200-case file contains **1,436 policies**, each with a concise and a detailed form and a sourcing label. 138 of them are Bench-written comparison policies, marked as such, added so that every case carries all three policy types. Policy type has been reviewed for 108 policies; the rest are assigned from the case record and marked unreviewed. Final release work includes scholarly review of policy sourcing, the remaining Public / Expert / Framework assignments, concise/detailed consistency, citations, and release checks.
 

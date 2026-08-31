@@ -74,8 +74,8 @@ so a change lands in front of readers the moment it merges. Two rules keep that 
 
 Before pushing anything that touches the published files, run `npm run validate` and
 `node scripts/validate-public-cases.mjs` and read their exit status directly. Piping either into
-`tail` or `head` reports the pager's status instead, and a failing check has already been
-committed that way once.
+`tail` or `head` reports the pager's status, not the check's — a failing check reached main that
+way once.
 
 ## Documentation
 
@@ -84,6 +84,5 @@ Read a dated batch note as provenance, never as an instruction.
 
 `npm run check:docs` enforces three things: every file in `docs/` is placed in one of those two
 lists, the counts the current documents quote match the published resources, and those documents
-use the current terminology. It runs on every push and before every deploy. When you add a
-document, place it in the index in the same commit; when a count changes, the check names the
-document still quoting the old one.
+use the current terminology. It runs on every push and before every deploy. Place a new document
+in the index in the same commit.
