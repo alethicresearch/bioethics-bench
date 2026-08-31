@@ -12,17 +12,17 @@ Each case has:
 - a concise version;
 - a detailed version;
 - a set of serious policies;
-- at least one **Public** policy;
-- at least one **Expert** policy;
-- at least one **Framework** policy;
+- a reviewed policy type for each policy: **Public**, **Expert**, or **Framework** (a policy may carry more than one type when independently supported in more than one role);
 - a sourcing label for each policy: **Direct source**, **Inferred from source**, or **Constructed**;
 - a scholarly source file with supporting material and review notes.
+
+The number and mix of Public, Expert, and Framework policies may differ by case. A case does not need a policy of every type simply to complete a three-column pattern. Missing types should remain missing when the research does not support them.
 
 The current machine-readable public file is:
 
 `resources/cases/full-200-cases.v1.json`
 
-`npm run validate` checks that all 200 cases and all 1,298 policies are present and that every case contains Public, Expert, and Framework policies.
+`npm run validate` checks that all 200 cases and all 1,298 policies are present, that every policy has a valid type and sourcing label, and that the case data are structurally consistent. It does not require every case to contain all three policy types.
 
 ## 2. The basic model
 
@@ -107,9 +107,9 @@ For each policy, confirm:
 
 ### 5.2 Policy-type review
 
-Confirm that Public / Expert / Framework accurately describes the role of each policy in the intended evaluation.
+Confirm that Public / Expert / Framework accurately describes the role of each policy.
 
-Do not create a Public or Expert policy merely to fill a column.
+Do not create a Public, Expert, or Framework policy merely to fill a missing type. If a case lacks one type after review, record that plainly.
 
 ### 5.3 Policy-quality review
 
@@ -144,20 +144,22 @@ Complete independent scholarly or domain review before the formal release is fro
 
 ## 6. Using the cases in SACRE
 
-A Bench case can be loaded into SACRE as a new evaluation.
+A Bench case can be loaded into SACRE as a new evaluation setup.
 
 Loading a case adds:
 
 1. the selected concise or detailed case description;
-2. its Public policies;
-3. its Expert policies;
-4. its Framework policies.
+2. its reviewed Public policies, if present;
+3. its reviewed Expert policies, if present;
+4. its reviewed Framework policies, if present.
 
-SACRE is deliberately simple about this. Users who want source details, sourcing labels, or fuller research notes can open the same case on Bioethics Bench.
+SACRE should show the available policies without inventing a missing type. A case that lacks one of the three policy types can still be loaded for inspection or editing; a complete three-type SACRE evaluation requires at least one policy in each type.
+
+Users who want source details, sourcing labels, or fuller research notes can open the same case on Bioethics Bench.
 
 The Bench website and SACRE use the same 200-case resource so the case list does not need to be maintained twice.
 
-## 7. More than one evaluation setup
+## 7. Evaluation setups
 
 A case may support different legitimate evaluation setups for different studies.
 
@@ -167,9 +169,9 @@ Each study should record exactly which policies it used. The underlying Bench ca
 
 ## 8. Unequal policy counts
 
-Cases do not need equal numbers of Public, Expert, and Framework policies.
+Cases do not need equal numbers of Public, Expert, and Framework policies, and some cases may lack one type entirely.
 
-Where the counts are unequal, an evaluation should use an aggregation rule that does not give a policy a numerical advantage simply because it has more cross-type comparison partners.
+For an evaluation that contains all three types but unequal counts, use an aggregation rule that does not give a policy a numerical advantage simply because it has more cross-type comparison partners.
 
 Older machine fields may call these counts a `geometry`. Current prose should simply say **policy counts**.
 
@@ -190,7 +192,7 @@ The 200-case release can be frozen when:
 
 1. all 200 cases pass structural validation;
 2. all 1,298 policies have reviewed sourcing;
-3. Public / Expert / Framework assignments are reviewed;
+3. Public / Expert / Framework assignments are reviewed without filling missing types artificially;
 4. concise and detailed versions are confirmed to match;
 5. citation and locator checks pass;
 6. rights and licensing checks pass;
