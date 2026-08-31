@@ -6,11 +6,11 @@
  * Projection mapping is substantive and is never inferred here. This validator
  * only checks that an editorially declared mapping is internally coherent and,
  * where it claims lineage to existing executable records, that the declared
- * family and aggregation agree with those records.
+ * inventory family and aggregation agree with those records.
  */
 
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { basename, join } from 'node:path';
+import { join } from 'node:path';
 import Ajv from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 
@@ -26,6 +26,10 @@ const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
 const profiles = JSON.parse(readFileSync(profilePath, 'utf8')).profiles ?? {};
 const familyById = new Map(universe.cases.map((family) => [family.case_family_id, family]));
 const recordById = new Map();
+
+function inventoryIdentity(value) {
+  return String(value ?? '').match(/^m\d{3}/)?.[0] ?? null;
+}
 
 for (const file of readdirSync(benchmarkDir).filter((name) => name.endsWith('.json'))) {
   const record = JSON.parse(readFileSync(join(benchmarkDir, file), 'utf8'));
@@ -107,8 +111,9 @@ for (const { file, manifest } of manifests) {
       continue;
     }
     sourceRecords.push(record);
-    if (record.case_id !== manifest.case_family_id) {
-      problems.push(`${file}: source record ${recordId} belongs to ${record.case_id}, not ${manifest.case_family_id}`);
+    const recordFamily = inventoryIdentity(record.case_id) ?? inventoryIdentity(record.record_id);
+    if (recordFamily !== manifest.case_family_id) {
+      problems.push(`${file}: source record ${recordId} belongs to inventory ${recordFamily ?? 'unknown'} (${record.case_id}), not ${manifest.case_family_id}`);
     }
   }
 
