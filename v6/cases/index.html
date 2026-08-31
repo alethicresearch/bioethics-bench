@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cases — Bioethics Bench</title>
-  <meta name="description" content="Browse 200 bioethics cases by topic and how their policies were sourced." />
+  <meta name="description" content="Browse 200 bioethics cases by topic, policy type, and how each policy was sourced." />
   <link rel="icon" href="../../assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
   <header class="page-head">
     <div class="wrap">
       <h1>Explore 200 cases</h1>
-      <p>Search by topic, choose a category, or filter cases by how their policy options were sourced.</p>
+      <p>Search by topic, choose a category, or filter the cases by policy type and how the policies were sourced.</p>
     </div>
   </header>
 
@@ -39,14 +39,22 @@
         <div id="categories" class="pills" aria-label="Category selector"></div>
       </div>
       <div class="filter-row">
-        <span class="filter-name">Policy sourcing</span>
+        <span class="filter-name">Policy type</span>
+        <div class="checks" aria-label="Policy type filters">
+          <span class="check type-public"><input id="type-public" type="checkbox" value="public"><label for="type-public">Public</label></span>
+          <span class="check type-expert"><input id="type-expert" type="checkbox" value="expert"><label for="type-expert">Expert</label></span>
+          <span class="check type-framework"><input id="type-framework" type="checkbox" value="framework"><label for="type-framework">Framework</label></span>
+        </div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-name">Sourcing</span>
         <div class="checks" aria-label="Policy sourcing filters">
           <span class="check direct"><input id="prov-direct" type="checkbox" value="direct"><label for="prov-direct">Direct source</label></span>
           <span class="check inferred"><input id="prov-inferred" type="checkbox" value="inferred"><label for="prov-inferred">Inferred from source</label></span>
           <span class="check constructed"><input id="prov-constructed" type="checkbox" value="constructed"><label for="prov-constructed">Constructed</label></span>
         </div>
       </div>
-      <p class="legend-note">Public, Expert, and Framework describe the type of policy. These filters describe how the policy was sourced.</p>
+      <p class="legend-note">Public / Expert / Framework describes the type of policy. Direct / Inferred / Constructed describes how that policy was sourced.</p>
     </div>
   </section>
 
