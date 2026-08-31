@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioethicsbench.com/schemas/candidate-universe.schema.json",
+  "title": "Bioethics Bench rich candidate-universe resource",
+  "description": "Case-family-level Scenario and Policy-candidate universe, independent of any SACRE Public/Expert/Framework role assignment. A candidate's provenance/source status is evidence metadata; analysis roles belong in projection manifests.",
+  "type": "object",
+  "required": [
+    "resource_id",
+    "resource_version",
+    "audit_date",
+    "construction_standard",
+    "case_count",
+    "cases"
+  ],
+  "properties": {
+    "resource_id": {
+      "const": "full-200-rich-candidate-universes"
+    },
+    "resource_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "audit_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "construction_standard": {
+      "const": "scenario-candidate-universe-projection-v1"
+    },
+    "source_directory": {
+      "type": "string"
+    },
+    "case_count": {
+      "const": 200
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 200,
+      "maxItems": 200,
+      "items": {
+        "$ref": "#/$defs/caseFamily"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "caseFamily": {
+      "type": "object",
+      "required": [
+        "inventory_id",
+        "case_family_id",
+        "title",
+        "scenario_audit",
+        "candidate_count",
+        "candidate_universe",
+        "source_grounded_status",
+        "expanded_projection_status",
+        "demonstration_richness",
+        "action",
+        "audit_source_path",
+        "deep_case_path"
+      ],
+      "properties": {
+        "inventory_id": {
+          "type": "string",
+          "pattern": "^M[0-9]{3}$"
+        },
+        "case_family_id": {
+          "type": "string",
+          "pattern": "^m[0-9]{3}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenario_audit": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Editorial audit of Scenario adequacy. This is not a substitute for the full concise/detailed Scenario text in case records."
+        },
+        "candidate_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "candidate_universe": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/candidate"
+          }
+        },
+        "source_grounded_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Case-level audit statement about whether a defensible source-grounded projection currently exists and any limitations. It does not assign candidate roles."
+        },
+        "expanded_projection_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "demonstration_richness": {
+          "enum": ["VERY HIGH", "HIGH", "MEDIUM-HIGH", "MEDIUM", "LOW", "N/A"]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audit_source_path": {
+          "type": "string",
+          "pattern": "^docs/full-corpus/audit-v2/.*\\.md$"
+        },
+        "deep_case_path": {
+          "type": "string",
+          "pattern": "^docs/full-corpus/batch-[a-t]/M[0-9]{3}-deep-case\\.md$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "text",
+        "audit_source_mark",
+        "audit_provenance_label",
+        "provenance_class"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "pattern": "^c[0-9]{2}$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audit_source_mark": {
+          "type": "boolean",
+          "description": "True exactly when the reviewed audit marked the candidate with ✓. This means the candidate has an identified source/framework/governance anchor at the audit's stated level; it does not imply direct empirical policy evidence or determine SACRE role."
+        },
+        "audit_provenance_label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact terminal provenance annotation from the rich-candidate audit, retained so the builder does not silently normalize a nuanced editorial judgment."
+        },
+        "provenance_class": {
+          "enum": [
+            "direct-source",
+            "source-informed",
+            "framework-derived",
+            "constructed-comparator",
+            "source-anchored-other",
+            "mixed",
+            "other"
+          ],
+          "description": "Coarse machine category derived conservatively from the exact audit label. The exact label remains authoritative."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
