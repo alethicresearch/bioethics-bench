@@ -32,7 +32,7 @@ jobs:
           git diff --check
       - name: Commit generated resource when changed
         run: |
-          if git diff --quiet -- resources/cases/full-200-cases.v1.json; then
+          if [ -z "$(git status --porcelain -- resources/cases/full-200-cases.v1.json)" ]; then
             echo 'Public case resource already current.'
             exit 0
           fi
