@@ -1,5 +1,5 @@
-const RESOURCE='../../resources/cases/full-200-cases.v1.json';
-const SOURCES='../../resources/cases/case-sources.v1.json';
+const RESOURCE='../resources/cases/full-200-cases.v1.json';
+const SOURCES='../resources/cases/case-sources.v1.json';
 const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
 const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
@@ -49,11 +49,13 @@ function renderCategories(){
 function renderIndex(){
   state.shown=state.cases.filter(matches);
   $('count').textContent=`${state.shown.length} of ${state.cases.length} cases`;
+  const indexCount=$('index-count');
+  if(indexCount)indexCount.textContent=state.shown.length===state.cases.length?`all ${state.cases.length}`:`${state.shown.length} of ${state.cases.length}`;
   const host=$('case-index');
   if(!state.shown.length){host.innerHTML='<p class="idx-empty">No cases match those filters.</p>';$('case-detail').innerHTML='<p class="loading">Change or clear a filter to see cases.</p>';return;}
   const groups=new Map();
   for(const c of state.shown){if(!groups.has(c.category))groups.set(c.category,[]);groups.get(c.category).push(c);}
-  host.innerHTML=Object.keys(state.categories).filter(k=>groups.has(k)).map(k=>`<div class="idx-group"><div class="idx-group-title">${esc(state.categories[k])} · ${groups.get(k).length}</div>${groups.get(k).map(c=>`<a class="idx-item ${state.current===c.id?'on':''}" href="#${esc(c.id)}" data-id="${esc(c.id)}">${esc(c.title)}</a>`).join('')}</div>`).join('');
+  host.innerHTML=Object.keys(state.categories).filter(k=>groups.has(k)).map(k=>`<div class="idx-group"><div class="idx-group-title">${esc(state.categories[k])} <span class="idx-group-count">${groups.get(k).length} ${groups.get(k).length===1?'case':'cases'}</span></div>${groups.get(k).map(c=>`<a class="idx-item ${state.current===c.id?'on':''}" href="#${esc(c.id)}" data-id="${esc(c.id)}">${esc(c.title)}</a>`).join('')}</div>`).join('');
   if(!state.shown.some(c=>c.id===state.current))show(state.shown[0].id,false);else markCurrent();
 }
 
@@ -129,6 +131,83 @@ $('categories').addEventListener('click',e=>{const b=e.target.closest('[data-cat
 document.querySelectorAll('.type-public input,.type-expert input,.type-framework input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.types.add(e.target.value);else state.types.delete(e.target.value);renderIndex();}));
 document.querySelectorAll('.direct input,.inferred input,.constructed input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.sourcing.add(e.target.value);else state.sourcing.delete(e.target.value);renderIndex();}));
 $('clear').addEventListener('click',clearFilters);
+
+/* The filter panel is sticky and tall; on a laptop it took most of the screen before a case
+   appeared. It folds away, and the choice is remembered, so a reader who has filtered once can
+   put the controls out of the way and keep the result. */
+(function filterPanel(){
+  const body=$('filter-body'), btn=$('toggle-filters');
+  if(!body||!btn)return;
+  const apply=(open)=>{
+    body.hidden=!open;
+    btn.textContent=open?'Hide filters':'Show filters';
+    btn.setAttribute('aria-expanded',String(open));
+  };
+  let open=true;
+  try{open=localStorage.getItem('bench-filters-open')!=='0';}catch{}
+  apply(open);
+  btn.addEventListener('click',()=>{
+    open=!open;
+    apply(open);
+    try{localStorage.setItem('bench-filters-open',open?'1':'0');}catch{}
+  });
+})();
+
+/* The list sticks below the filter bar, so its offset is the bar's actual height: with the
+   filters folded away the bar is short, and a fixed offset left the list floating below the case. */
+(function stickyOffset(){
+  const bar=document.querySelector('.filters');
+  if(!bar||!window.ResizeObserver)return;
+  const set=()=>{
+    const navHeight=58;
+    document.documentElement.style.setProperty('--index-top',`${Math.round(navHeight + bar.offsetHeight + 18)}px`);
+  };
+  set();
+  new ResizeObserver(set).observe(bar);
+  window.addEventListener('resize',set);
+})();
+
+/* The split between the list and the case is a reading preference, not a layout constant: a long
+   case title needs a wider list, a long policy needs a wider record. Drag the divider, or use the
+   arrow keys on it; double-click returns to the default. */
+(function columnResize(){
+  const browser=$('browser'), handle=$('col-handle');
+  if(!browser||!handle)return;
+  const MIN=220, MAX=620, DEFAULT=330;
+  const set=(w,save=true)=>{
+    const width=Math.round(Math.min(MAX,Math.max(MIN,w)));
+    browser.style.setProperty('--index-w',`${width}px`);
+    if(save){try{localStorage.setItem('bench-index-width',String(width));}catch{}}
+    return width;
+  };
+  let stored=null;
+  try{stored=Number(localStorage.getItem('bench-index-width'))||null;}catch{}
+  if(stored)set(stored,false);
+
+  const current=()=>browser.querySelector('.case-index').getBoundingClientRect().width;
+  const onMove=(e)=>set(e.clientX-browser.getBoundingClientRect().left);
+  const stop=()=>{
+    handle.classList.remove('dragging');
+    document.body.classList.remove('resizing');
+    window.removeEventListener('pointermove',onMove);
+    window.removeEventListener('pointerup',stop);
+  };
+  handle.addEventListener('pointerdown',(e)=>{
+    e.preventDefault();
+    handle.classList.add('dragging');
+    document.body.classList.add('resizing');
+    window.addEventListener('pointermove',onMove);
+    window.addEventListener('pointerup',stop);
+  });
+  handle.addEventListener('dblclick',()=>set(DEFAULT));
+  handle.addEventListener('keydown',(e)=>{
+    if(e.key==='ArrowLeft')set(current()-20);
+    else if(e.key==='ArrowRight')set(current()+20);
+    else if(e.key==='Home')set(DEFAULT);
+    else return;
+    e.preventDefault();
+  });
+})();
 $('case-index').addEventListener('click',e=>{const a=e.target.closest('.idx-item');if(!a)return;e.preventDefault();show(a.dataset.id);});
 $('case-detail').addEventListener('click',e=>{const b=e.target.closest('.rep-btn');if(!b)return;state.rep=b.dataset.rep;const c=state.cases.find(x=>x.id===state.current);if(c)renderDetail(c);});
 window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(id&&id!==state.current)show(id,false);});

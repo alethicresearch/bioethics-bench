@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bioethics Bench — A Benchmark for Computational Bioethics</title>
+  <meta name="description" content="A developing, versioned evaluation corpus and benchmark framework for studying normative computation across clinical, research, public health, and other bioethical domains. In development; no release is yet a validated benchmark." />
+  <meta property="og:title" content="Bioethics Bench" />
+  <meta property="og:description" content="A developing, versioned evaluation corpus for studying normative computation in bioethics." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0c1445;
+      --navy-dark:  #080e30;
+      --navy-mid:   #162060;
+      --teal:       #10b981;
+      --teal-light: #34d399;
+      --teal-dim:   #065f46;
+      --white:      #ffffff;
+      --off-white:  #f8fafc;
+      --gray-100:   #f1f5f9;
+      --gray-200:   #e2e8f0;
+      --gray-400:   #94a3b8;
+      --gray-500:   #64748b;
+      --gray-600:   #475569;
+      --gray-800:   #1e293b;
+      --gray-900:   #0f172a;
+      --font:       'Inter', system-ui, -apple-system, sans-serif;
+      --mono:       'JetBrains Mono', 'Fira Code', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      color: var(--gray-800);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 14, 48, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0 2rem;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+    .nav-logo em {
+      font-style: normal;
+      color: var(--teal);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      padding: 0.375rem 0.75rem;
+      border-radius: 6px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .nav-links a:hover {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.07);
+    }
+    .nav-links .nav-cta {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--teal-light);
+      margin-left: 0.5rem;
+    }
+    .nav-links .nav-cta:hover {
+      background: rgba(16, 185, 129, 0.22);
+      color: var(--white);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background:
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(16, 185, 129, 0.07) 0%, transparent 65%),
+        linear-gradient(160deg, #080e30 0%, #0c1445 45%, #0e1a58 75%, #080e30 100%);
+      padding: 6.5rem 2rem 5.5rem;
+      text-align: center;
+    }
+    .hero-inner { max-width: 800px; margin: 0 auto; }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      color: var(--teal-light);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+    }
+    .status-badge .dot {
+      width: 5px;
+      height: 5px;
+      background: var(--teal);
+      border-radius: 50%;
+      animation: blink 2.2s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 6.5vw, 4.75rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.035em;
+      line-height: 1.06;
+      margin-bottom: 1.375rem;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(120deg, #10b981 20%, #34d399 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-lead {
+      font-size: clamp(1rem, 2.4vw, 1.175rem);
+      color: rgba(255, 255, 255, 0.58);
+      max-width: 580px;
+      margin: 0 auto 2.75rem;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.7rem 1.625rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-green {
+      background: var(--teal);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    }
+    .btn-green:hover {
+      background: #0ea572;
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.38);
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.07);
+      color: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+    }
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); }
+    .btn-dark {
+      background: var(--gray-900);
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .btn-dark:hover { background: #1e2940; }
+
+    .hero-provenance {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 2rem;
+    }
+    .prov-item { text-align: center; }
+    .prov-label {
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.28);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .prov-value {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.62);
+      font-weight: 500;
+    }
+    .ilink {
+      color: var(--teal-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .ilink:hover { color: var(--teal); text-decoration: underline; }
+    .pipe-title a, .method-attr a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .pipe-title a:hover, .method-attr a:hover { text-decoration: underline; }
+
+    .hero-partners {
+      margin-top: 1.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+    }
+    .partners-label {
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.28);
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .partners-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.55rem 1.1rem;
+    }
+    .partners-list a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.66);
+      text-decoration: none;
+      transition: color 0.15s;
+      white-space: nowrap;
+    }
+    .partners-list a:hover { color: var(--teal-light); }
+    .partners-list .sep {
+      color: rgba(255, 255, 255, 0.16);
+      font-size: 0.75rem;
+      user-select: none;
+    }
+    @media (max-width: 640px) {
+      .partners-list .sep { display: none; }
+    }
+
+    /* ── LAYOUT UTILS ── */
+    section { padding: 5.5rem 2rem; }
+    .container       { max-width: 1080px; margin: 0 auto; }
+    .container-sm    { max-width: 740px;  margin: 0 auto; }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    h2 {
+      font-size: clamp(1.75rem, 3.8vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.028em;
+      color: var(--gray-900);
+      line-height: 1.15;
+      margin-bottom: 1.1rem;
+    }
+    .lead {
+      font-size: 1.0625rem;
+      color: var(--gray-500);
+      line-height: 1.72;
+      max-width: 620px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.45rem;
+      letter-spacing: -0.015em;
+    }
+    p { color: var(--gray-500); line-height: 1.72; font-size: 0.9375rem; }
+    em { font-style: italic; }
+
+    /* ── WHAT IT IS ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.625rem;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+      border-color: var(--gray-300, #cbd5e1);
+    }
+    .card-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(16, 185, 129, 0.09);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.125rem;
+      margin-bottom: 1.1rem;
+    }
+    .card h3 { font-size: 1rem; }
+    .card p { font-size: 0.855rem; line-height: 1.6; }
+
+    /* ── PIPELINE ── */
+    .pipeline-bg {
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 100%, rgba(16, 185, 129, 0.04) 0%, transparent 70%),
+        var(--gray-900);
+    }
+    .pipeline-bg .eyebrow { color: rgba(16, 185, 129, 0.75); }
+    .pipeline-bg h2       { color: rgba(255, 255, 255, 0.92); }
+    .pipeline-bg .lead    { color: rgba(255, 255, 255, 0.45); max-width: 600px; }
+
+    .pipeline-track {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+      align-items: center;
+      gap: 0;
+      margin-top: 3.5rem;
+    }
+    .pipe-node {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      padding: 1.5rem 1.375rem;
+      height: 100%;
+    }
+    .pipe-node.highlight {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.32);
+    }
+    .pipe-node.highlight .pipe-title { color: var(--teal-light); }
+    .pipe-arrow {
+      color: rgba(255, 255, 255, 0.18);
+      font-size: 1.1rem;
+      padding: 0 0.875rem;
+      text-align: center;
+      flex-shrink: 0;
+      user-select: none;
+    }
+    .pipe-num {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      color: rgba(255, 255, 255, 0.22);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+    }
+    .pipe-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .pipe-desc {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.37);
+      line-height: 1.55;
+    }
+    .pipe-tag {
+      display: inline-block;
+      margin-top: 0.875rem;
+      font-size: 0.635rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      background: rgba(16, 185, 129, 0.14);
+      color: var(--teal);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    /* ── DOMAINS ── */
+    .domains-bg { background: var(--off-white); }
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1rem;
+      margin-top: 2.75rem;
+    }
+    .domain-tile {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 1.25rem 1.375rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .domain-tile:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 3px 12px rgba(16, 185, 129, 0.08);
+    }
+    .domain-glyph {
+      font-size: 1.375rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .domain-name {
+      font-size: 0.9rem;
+      font-weight: 650;
+      color: var(--gray-800);
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .domain-detail {
+      font-size: 0.785rem;
+      color: var(--gray-400);
+      line-height: 1.45;
+    }
+
+    /* ── EVALUATION MODES ── */
+    .modes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .mode-card {
+      border-left: 2px solid var(--teal);
+      padding-left: 1.5rem;
+    }
+    .mode-num {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--teal);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── METHODOLOGY QUOTE ── */
+    .method-strip {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 50%, rgba(16, 185, 129, 0.06) 0%, transparent 70%),
+        var(--gray-900);
+      padding: 4.5rem 2rem;
+      text-align: center;
+    }
+    .method-quote {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .method-quote strong {
+      font-style: normal;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .method-attr {
+      margin-top: 1.25rem;
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.3);
+      font-style: normal;
+      font-family: var(--mono);
+    }
+
+    /* ── TEAM ── */
+    .team-bg { background: var(--off-white); }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.75rem;
+    }
+    .person-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .person-card:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+    .initials {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.1rem;
+      font-size: 0.9375rem;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.88);
+      letter-spacing: -0.01em;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .person-name {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+    }
+    .person-aff {
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      line-height: 1.5;
+    }
+
+    /* ── RELATED ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.75rem;
+    }
+    .related-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    }
+    .related-card:hover {
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+    .related-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+    .related-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.015em;
+    }
+    .related-desc {
+      font-size: 0.8375rem;
+      color: var(--gray-400);
+      line-height: 1.5;
+    }
+    .related-arrow {
+      display: inline-block;
+      margin-top: 0.875rem;
+      font-size: 0.8125rem;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    /* ── CTA ── */
+    .cta-band {
+      background:
+        radial-gradient(ellipse 80% 70% at 50% 0%, rgba(16, 185, 129, 0.06) 0%, transparent 70%),
+        linear-gradient(160deg, #080e30 0%, #0c1445 55%, #0e1a58 100%);
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .cta-band h2       { color: var(--white); }
+    .cta-band .lead    { color: rgba(255, 255, 255, 0.5); margin: 0 auto 2.5rem; }
+    .cta-band .eyebrow { color: rgba(16, 185, 129, 0.7); }
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.875rem;
+      flex-wrap: wrap;
+    }
+
+    .signup-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.625rem;
+      max-width: 460px;
+      margin: 0 auto 0.85rem;
+      flex-wrap: wrap;
+    }
+    .signup-form input[type="email"] {
+      flex: 1 1 240px;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      font-family: var(--font);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .signup-form input[type="email"]::placeholder { color: rgba(255, 255, 255, 0.38); }
+    .signup-form input[type="email"]:focus {
+      border-color: rgba(16, 185, 129, 0.55);
+      background: rgba(255, 255, 255, 0.09);
+    }
+    .signup-note {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.38);
+      margin: 0 auto 2.25rem;
+    }
+    .cta-contact {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.42);
+    }
+    .cta-contact a {
+      color: var(--teal-light);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .cta-contact a:hover { text-decoration: underline; }
+
+    /* ── EXAMPLE RECORD ── */
+    .example-bg {
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(16, 185, 129, 0.04) 0%, transparent 70%),
+        var(--gray-900);
+    }
+    .example-bg .eyebrow { color: rgba(16, 185, 129, 0.75); }
+    .example-bg h2       { color: rgba(255, 255, 255, 0.92); }
+    .example-bg .lead    { color: rgba(255, 255, 255, 0.45); max-width: 640px; }
+    .record {
+      margin-top: 3rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .record-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .record-key {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.4);
+      padding-top: 0.15rem;
+    }
+    .record-val { color: rgba(255, 255, 255, 0.78); font-size: 0.92rem; line-height: 1.6; }
+    .chip {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 100px;
+      background: rgba(16, 185, 129, 0.14);
+      color: var(--teal-light);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .record-policies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .policy { background: #0f172a; padding: 1.25rem 1.5rem; }
+    .policy-src {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+    .policy-text { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); line-height: 1.5; }
+    .record-result { padding: 1.5rem; }
+    .result-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.1rem;
+    }
+    .result-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    .result-selected {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--teal-light);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+    }
+    .score-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .score {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 1rem 0.75rem;
+    }
+    .score-num { display: block; font-size: 1.55rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+    .score-cap {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.38);
+      margin-top: 0.45rem;
+    }
+    .example-note {
+      margin-top: 1.25rem;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.3);
+      font-style: italic;
+    }
+
+    /* ── CITATION ── */
+    .cite-bg { background: var(--off-white); }
+    .bibtex-wrap { position: relative; margin-top: 2.25rem; }
+    .bibtex {
+      background: var(--gray-900);
+      color: rgba(255, 255, 255, 0.85);
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      line-height: 1.7;
+      padding: 1.5rem;
+      border-radius: 12px;
+      overflow-x: auto;
+      text-align: left;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      font-family: var(--font);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .copy-btn:hover { background: rgba(255, 255, 255, 0.18); }
+
+    @media (max-width: 640px) {
+      .record-row { grid-template-columns: 1fr; }
+      .record-policies { grid-template-columns: 1fr; }
+      .score-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--gray-900);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 2.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-brand {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+    .footer-brand:visited,
+    .footer-brand:active { color: var(--white); }
+    .footer-brand em {
+      font-style: normal;
+      color: var(--teal);
+    }
+    .footer-text {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.25);
+      line-height: 1.55;
+    }
+    .footer-logo {
+      display: block;
+      height: 30px;
+      width: auto;
+      margin-top: 0.6rem;
+      opacity: 0.85;
+    }
+    .footer-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: rgba(255, 255, 255, 0.7); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .pipeline-track {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .pipe-arrow {
+        transform: rotate(90deg);
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+      .modes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 1.25rem; }
+      .hero { padding: 5rem 1.25rem 4rem; }
+      .hero-provenance { gap: 1.5rem; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="#" class="nav-logo">Bioethics<em>Bench</em></a>
+    <ul class="nav-links">
+      <li><a href="#domains">Domains</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
+      <li><a href="#pipeline">Framework</a></li>
+      <li><a href="#about">What It Provides</a></li>
+      <li><a href="cases/">Featured Cases</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="https://github.com/alethicresearch/bioethics-bench" class="nav-cta" target="_blank" rel="noopener">GitHub ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="status-badge">
+        <span class="dot"></span>
+        In Development
+      </div>
+      <h1>A Benchmark for<br /><em>Computational Bioethics</em></h1>
+      <p class="hero-lead">
+        Bioethics Bench is a developing, versioned evaluation corpus and benchmark framework for
+        studying normative computation across clinical, research, public health, and other domains
+        where ethical judgment matters most. It is being built prospectively and in the open.
+        The Full Corpus published here is a <strong>release candidate</strong>: its records are
+        <code>draft</code>, independent human source-to-policy review is still in progress, and its
+        review state travels with it in
+        <a class="ilink" href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/full-corpus/review/README.md">the review record</a>.
+      </p>
+      <div class="hero-actions">
+        <a href="cases/" class="btn btn-green">Browse Featured Cases</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+        <a href="http://www.doingethicswithai.org" class="btn btn-ghost" target="_blank" rel="noopener">Read the Paper ↗</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="hero-provenance">
+        <div class="prov-item">
+          <span class="prov-label">Introduced in</span>
+          <span class="prov-value"><a class="ilink" href="http://www.doingethicswithai.org" target="_blank" rel="noopener">Doing Ethics with AI</a> (2026)</span>
+        </div>
+        <div class="prov-item">
+          <span class="prov-label">Built on</span>
+          <span class="prov-value"><a class="ilink" href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">SACRE</a> · <a class="ilink" href="https://github.com/alethicresearch/alethic-ism" target="_blank" rel="noopener">Alethic-ISM</a></span>
+        </div>
+      </div>
+      <div class="hero-partners">
+        <span class="partners-label">In Collaboration With</span>
+        <div class="partners-list">
+          <a href="https://im-ai.org" target="_blank" rel="noopener">Initiative for Medical AI</a>
+          <span class="sep">·</span>
+          <a href="https://medicine.nus.edu.sg/cbme/" target="_blank" rel="noopener">Centre for Biomedical Ethics, NUS</a>
+          <span class="sep">·</span>
+          <a href="https://opentelemed.org" target="_blank" rel="noopener">OpenTelemed</a>
+          <span class="sep">·</span>
+          <a href="https://alethic.ai" target="_blank" rel="noopener">Alethic Research</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── DOMAINS ── -->
+  <section class="domains-bg" id="domains">
+    <div class="container">
+      <span class="eyebrow">Coverage</span>
+      <h2>Bioethical domains</h2>
+      <p class="lead">
+        The Bench spans the full breadth of bioethics — the ethics of living systems
+        in their clinical, research, policy, environmental, and technological dimensions.
+      </p>
+      <div class="domains-grid">
+        <div class="domain-tile">
+          <div class="domain-glyph">🏥</div>
+          <div>
+            <div class="domain-name">Clinical Bioethics</div>
+            <div class="domain-detail">Patient care, informed consent, end-of-life care, surrogate decision-making</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🔬</div>
+          <div>
+            <div class="domain-name">Research Ethics</div>
+            <div class="domain-detail">Human and animal subjects, trial design, scientific justification, data use</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🌍</div>
+          <div>
+            <div class="domain-name">Public Health Ethics</div>
+            <div class="domain-detail">Resource allocation, disease surveillance, emergency preparatio</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🧬</div>
+          <div>
+            <div class="domain-name">Biotechnology Ethics</div>
+            <div class="domain-detail">Synthetic biology, gene therapy, public-private innovation</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🐾</div>
+          <div>
+            <div class="domain-name">Animal Ethics</div>
+            <div class="domain-detail">Welfare standards, moral patiency, interspecies obligations</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🌱</div>
+          <div>
+            <div class="domain-name">Environmental Bioethics</div>
+            <div class="domain-detail">Biodiversity, ecology and conservation, climate and health policy</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🌐</div>
+          <div>
+            <div class="domain-name">Global Health Ethics</div>
+            <div class="domain-detail">Healthcare access, medical knowledge distribution, intellectual property</div>
+          </div>
+        </div>
+        <div class="domain-tile">
+          <div class="domain-glyph">🤖</div>
+          <div>
+            <div class="domain-name">Medical AI</div>
+            <div class="domain-detail">Diagnostic accuracy, clinical deployment, standards of care</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── METHODOLOGY QUOTE ── -->
+  <div class="method-strip">
+    <p class="method-quote">
+      "Bioethics Bench: <strong>a shared corpus for investigating, validating, and improving normative computation
+      across important bioethical domains.</strong> Building the Bench properly will require careful scenario
+      construction, expert consultation, institutional collaboration, and iterative development in line
+      with the aim of fostering a community of use."
+    </p>
+    <p class="method-attr">— <a href="http://www.doingethicswithai.org" target="_blank" rel="noopener">Doing Ethics with AI</a> (2026) · Ghose, Rasaee, Singer, Savulescu</p>
+  </div>
+
+  <!-- ── EVALUATION MODES ── -->
+  <section id="evaluation">
+    <div class="container">
+      <span class="eyebrow">What the Infrastructure Supports</span>
+      <h2>Investigations the Bench is built for</h2>
+      <p class="lead">
+        Bioethics Bench is designed so that normative computations can be run, repeated, compared
+        and inspected as research objects. The validation study design is not yet fixed, and this
+        page does not announce one.
+      </p>
+      <div class="modes-grid">
+        <div class="mode-card">
+          <h3>Repetition and stability</h3>
+          <p>The same represented case executed repeatedly under the same declared protocol, so that variation in the measurement can be observed rather than assumed away.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Cross-model comparison</h3>
+          <p>The same case and procedure executed across models and providers, with the protocol, scale and aggregation recorded on every run so comparisons stay commensurable.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Human comparison</h3>
+          <p>People asked the same pairwise convergence question the model is asked, kept distinct from policy endorsement and from best-policy preference, which are different constructs.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Perturbation and robustness</h3>
+          <p>Deliberate variations — paraphrase, pair-order reversal, near-ties, source-pool asymmetry — to test which results are properties of the case and which of the instrument.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Aggregation sensitivity</h3>
+          <p>The same scored relations aggregated under alternative defensible procedures, so the robustness of a ranking is inspectable rather than implied.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Revision and RE-Iteration</h3>
+          <p>Directed revision of candidates followed by re-execution, so movement toward coherence can be tracked across iterations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PIPELINE ── -->
+  <section class="pipeline-bg" id="pipeline">
+    <div class="container">
+      <span class="eyebrow">Research Framework</span>
+      <h2>Where Bioethics Bench fits</h2>
+      <p class="lead">
+        Bioethics Bench is the evaluation corpus at the end of a normative computation pipeline —
+        extending the structured outputs of SACRE evaluations into benchmarking and fine-tuning
+        infrastructure for the research community.
+      </p>
+      <div class="pipeline-track">
+
+        <div class="pipe-node">
+          <div class="pipe-num">01 · Formal Procedure</div>
+          <div class="pipe-title"><a href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">SACRE</a></div>
+          <div class="pipe-desc">
+            Structurally Analyzed Collective Reflective Equilibrium. A formally specified decision procedure
+            that integrates public preferences, expert judgments, and ethical frameworks through
+            pairwise convergence testing and coherence scoring to rank-order the represented
+            candidates. The highest-ranked candidate is reported as the provisional Final Policy for
+            that analysis; this does not by itself establish moral truth or all-things-considered
+            moral justification.
+          </div>
+        </div>
+
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div class="pipe-num">02 · Research Workbench</div>
+          <div class="pipe-title"><a href="https://github.com/alethicresearch/alethic-ism" target="_blank" rel="noopener">Alethic-ISM</a></div>
+          <div class="pipe-desc">
+            An AI research workbench for composing analytic workflows as computable directed graphs.
+            Enables SACRE to be executed at scale across many scenarios, models, and configurations —
+            with full auditability and reproducibility at every step.
+          </div>
+        </div>
+
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node highlight">
+          <div class="pipe-num">03 · Evaluation Corpus</div>
+          <div class="pipe-title">Bioethics Bench</div>
+          <div class="pipe-desc">
+            A developing, versioned collection of bioethical scenarios and SACRE evaluations,
+            structured so that normative computations can be recorded, compared and reproduced.
+            No release is yet a validated benchmark.
+          </div>
+          <span class="pipe-tag">This project</span>
+        </div>
+
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div class="pipe-num">04 · AI Model</div>
+          <div class="pipe-title">SACRE-FT</div>
+          <div class="pipe-desc">
+            Supervised fine-tuning on released Bioethics Bench outputs. Convergence scores, ranked
+            candidate sets and justification records become training data for domain-adapted models.
+            Whether this improves normative reasoning is the question, not a result.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <span class="eyebrow">What It Provides</span>
+      <h2>A shared infrastructure for normative evaluation</h2>
+      <p class="lead">
+        Beyond any single benchmark or fine-tuning run, the Bench is built on a few
+        design commitments that make it a durable resource for the field.
+      </p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Versioned Records</h3>
+          <p>Every case is a versioned object with a stable id and a canonical content hash, so a result can be traced to the exact record version it scored.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚖️</div>
+          <h3>Multi-Source Grounding</h3>
+          <p>Each scenario weighs policy candidates from public preferences, expert judgment, and ethical frameworks — never a single viewpoint.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <h3>Transparent Scoring</h3>
+          <p>Released evaluation results carry their scores, justifications, and the protocol and scale that produced them — so a number can be read as a measurement rather than a verdict.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🖼</div>
+          <h3>Open Research Resource</h3>
+          <p>A shared base for benchmarking models, comparing them against human judgment, and fine-tuning domain-adapted systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXAMPLE RECORD ── -->
+  <section class="example-bg" id="example">
+    <div class="container">
+      <span class="eyebrow">Inside the Data</span>
+      <h2>What a record looks like</h2>
+      <p class="lead">
+        Each entry pairs a bioethical scenario with candidate policies — drawn from public
+        preferences, expert judgment, and ethical frameworks — and the full SACRE evaluation
+        that scores their normative convergence and rank-orders the candidates by calculated
+        coherence.
+      </p>
+      <div class="record">
+        <div class="record-row">
+          <div class="record-key">Scenario</div>
+          <div class="record-val">A 72-year-old patient with advanced dementia can no longer eat safely. The care team must decide whether to place a feeding tube, shift to comfort-focused feeding, or continue intervention at the family's request.</div>
+        </div>
+        <div class="record-row">
+          <div class="record-key">Domain</div>
+          <div class="record-val"><span class="chip">Clinical Bioethics</span></div>
+        </div>
+        <div class="record-policies">
+          <div class="policy">
+            <div class="policy-src">Public Preference</div>
+            <div class="policy-text">Continue intervention in line with the family's expressed wishes.</div>
+          </div>
+          <div class="policy">
+            <div class="policy-src">Expert Judgment</div>
+            <div class="policy-text">Shift to comfort-focused care; tube feeding is not indicated in advanced dementia.</div>
+          </div>
+          <div class="policy">
+            <div class="policy-src">Ethical Framework</div>
+            <div class="policy-text">Balance autonomy, beneficence, and non-maleficence to minimize net harm.</div>
+          </div>
+        </div>
+        <div class="record-row">
+          <div class="record-key">Recorded with</div>
+          <div class="record-val">Stable case id and version · scenario and candidate provenance · declared QCCS protocol, scoring scale and aggregation · canonical content hash</div>
+        </div>
+      </div>
+      <p class="example-note">Illustrative structure only. The scenario and candidates are written for this page and are not a Bench record; no evaluation scores are shown, because none has been released. QCCS v1 scores pairwise normative convergence on a 0–100 scale.</p>
+    </div>
+  </section>
+
+  <!-- ── FEATURED CASES ── -->
+  <section id="featured">
+    <div class="container">
+      <span class="eyebrow">Featured v1</span>
+      <h2>Twenty Featured case families</h2>
+      <p class="lead">
+        The first curated Featured collection covers twenty bioethical decision problems, from
+        consent and end-of-life care through research ethics, allocation, global health workforce
+        policy, medical AI, animal research and One Health, climate and neuroethics. Each family
+        carries two companion representations of the same decision — a concise one and a detailed
+        one — with the same decision question and the same six executable policy candidates, so
+        that the effect of scenario detail can be studied rather than absorbed silently.
+      </p>
+      <p class="example-note" style="margin-top:1.5rem">
+        The records are released and frozen: each is content-addressed, and a substantive change
+        creates a new version rather than editing one in place. Released does not mean validated —
+        no human or model evaluation has been executed against them, so no results are shown.
+        Featured records are deliberately public and can never become a confirmatory holdout.
+      </p>
+      <p class="example-note" style="margin-top:0.75rem">
+        Bench-authored case content is licensed <a class="ilink" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>,
+        copyright Alethic Research. This does not relicense cited source material, which keeps its own rights and is
+        recorded per source; Bench case text adapts and summarizes rather than reproduces third-party prose. See the
+        <a class="ilink" href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md" target="_blank" rel="noopener">content license</a>.
+      </p>
+      <div class="hero-actions" style="margin-top:1.75rem">
+        <a href="cases/" class="btn btn-green">Browse the twenty families</a>
+        <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/featured" class="btn btn-ghost" target="_blank" rel="noopener">Records on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM ── -->
+  <section class="team-bg" id="team">
+    <div class="container">
+      <span class="eyebrow">Research Team</span>
+      <div class="team-grid">
+        <div class="person-card"><div class="initials">SG</div></div>
+        <div class="person-card"><div class="initials">PS</div></div>
+        <div class="person-card"><div class="initials">JS</div></div>
+        <div class="person-card"><div class="initials">IH</div></div>
+        <div class="person-card"><div class="initials">RS</div></div>
+        <div class="person-card"><div class="initials">DW</div></div>
+        <div class="person-card"><div class="initials">KR</div></div>
+        <div class="person-card"><div class="initials">NI</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-band">
+    <div class="container-sm">
+      <span class="eyebrow">Get Involved</span>
+      <h2>Building this together</h2>
+      <p class="lead">
+        Bioethics Bench is being developed through careful scenario construction, expert consultation,
+        and institutional collaboration. We invite researchers, practitioners, and institutions
+        to engage with the project.
+      </p>
+      <form class="signup-form" id="updates-form">
+        <input type="email" name="email" placeholder="you@institution.edu" required aria-label="Email address" />
+        <button type="submit" class="btn btn-green">Stay Updated</button>
+      </form>
+      <p class="signup-note">Get notified about releases, the dataset, and ways to contribute.</p>
+      <div class="cta-actions">
+        <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <a href="https://reflectiveequilibrium.ai" class="btn btn-ghost" target="_blank" rel="noopener">ReflectiveEquilibrium.AI ↗</a>
+      </div>
+      <p class="cta-contact">Questions or collaboration: <a href="mailto:research@alethic.ai">research@alethic.ai</a></p>
+    </div>
+  </section>
+
+  <!-- ── CITATION ── -->
+  <section class="cite-bg" id="cite">
+    <div class="container-sm">
+      <span class="eyebrow">Citation</span>
+      <h2>How to cite</h2>
+      <p class="lead">
+        If you use Bioethics Bench or the SACRE methodology in your research,
+        please cite the introducing paper.
+      </p>
+      <div class="bibtex-wrap">
+        <button class="copy-btn" id="copy-bib" type="button">Copy</button>
+        <pre class="bibtex" id="bibtex">@article{ghose2026doingethics,
+  title   = {Doing Ethics with AI: Practical Ethics Engineering,
+             Product-Led Philosophy, and Computer-Aided Ethics},
+  author  = {Ghose, Sankalpa and Rasaee, Kasra and
+             Singer, Peter and Savulescu, Julian},
+  year    = {2026}
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a href="https://bioethicsbench.com/#" class="footer-brand">Bioethics<em>Bench</em></a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:research@alethic.ai">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('updates-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = this.email.value;
+      window.location.href =
+        'mailto:research@alethic.ai' +
+        '?subject=' + encodeURIComponent('Bioethics Bench — Stay Updated') +
+        '&body=' + encodeURIComponent('Please add this address to Bioethics Bench updates: ' + email);
+    });
+
+    var copyBtn = document.getElementById('copy-bib');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
+        var text = document.getElementById('bibtex').innerText;
+        navigator.clipboard.writeText(text).then(function () {
+          copyBtn.textContent = 'Copied';
+          setTimeout(function () { copyBtn.textContent = 'Copy'; }, 1600);
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
