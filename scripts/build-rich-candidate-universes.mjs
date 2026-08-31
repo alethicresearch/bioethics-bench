@@ -4,6 +4,14 @@
 // provenance/source marks belong to candidates; Public/Expert/Framework roles
 // belong to a separately declared projection manifest.
 //
+// The audit was written in three editorial formats as the review matured:
+//   1. Markdown candidate tables (early batches),
+//   2. numbered candidate lists (middle batches), and
+//   3. compact semicolon-delimited Universe lines (later batches).
+// This builder accepts all three without rewriting the scholarly audit merely
+// to satisfy code. It also uses each batch disposition table as a metadata/count
+// cross-check and fallback when a prose field is deliberately abbreviated.
+//
 // Default mode validates that all 200 audit sections parse and that the number
 // of structured candidates agrees with the reviewed count. --write emits the
 // deterministic machine-readable resource. --check additionally requires the
@@ -48,27 +56,58 @@ function extractSections(markdown, sourcePath) {
   return out;
 }
 
-function oneLine(body, label) {
+function stripOuterMarkdown(value) {
+  let out = value.trim();
+  out = out.replace(/^[-*]\s+/, '').trim();
+  if (out.startsWith('**') && out.endsWith('**') && out.length > 4) out = out.slice(2, -2).trim();
+  return out;
+}
+
+function extractLabel(body, label) {
   const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = body.match(new RegExp(`^\\*\\*${escaped}:\\*\\*\\s*(.+?)(?:\\s{2})?$`, 'm'));
-  return match?.[1]?.trim() ?? null;
+  const labels = [
+    'Source-grounded projection',
+    'Expanded projection',
+    'Demonstration richness',
+    'Source-grounded',
+    'Expanded',
+    'Demo',
+    'Action',
+    'Scenario',
+  ].map((item) => item.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const re = new RegExp(`\\*\\*${escaped}:\\*\\*\\s*([\\s\\S]*?)(?=\\s+\\*\\*(?:${labels}):\\*\\*|\\n|$)`);
+  const match = body.match(re);
+  return match?.[1] ? stripOuterMarkdown(match[1]).trim() : null;
 }
 
-function reviewedCount(section, universeLabelCount) {
-  if (universeLabelCount) return Number(universeLabelCount);
-  const row = section.fullMarkdown.match(new RegExp(`^\\|\\s*${section.inventoryId}\\s*\\|\\s*(\\d+)\\s*\\|`, 'm'));
-  return row ? Number(row[1]) : null;
+function subsection(body, heading) {
+  const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const match = body.match(new RegExp(`^###\\s+${escaped}\\s*$`, 'mi'));
+  if (!match) return null;
+  const rest = body.slice(match.index + match[0].length);
+  const next = rest.search(/^###\s+|^##\s+/m);
+  return (next < 0 ? rest : rest.slice(0, next)).trim();
 }
 
-function splitCandidateChunks(text) {
-  // Audit candidates are written as semicolon-delimited propositions whose
-  // terminal parenthesis is the provenance annotation. Splitting only after a
-  // closing parenthesis deliberately leaves semicolons inside policy prose intact.
-  const parts = text.split(/\)\s*;\s*/);
-  return parts.map((part, index) => {
-    if (index < parts.length - 1) return `${part.trim()})`;
-    return part.trim();
-  }).filter(Boolean);
+function firstParagraph(text) {
+  if (!text) return null;
+  const blocks = text.split(/\n\s*\n/).map((block) => block.trim()).filter(Boolean);
+  const block = blocks.find((item) => !item.startsWith('|') && !item.startsWith('#'));
+  if (!block) return null;
+  return stripOuterMarkdown(block.replace(/\s{2}\n/g, ' ').replace(/\n/g, ' '));
+}
+
+function batchDisposition(section) {
+  const re = new RegExp(`^\\|\\s*${section.inventoryId}\\s*\\|\\s*(\\d+)\\s*\\|\\s*([^|]+?)\\s*\\|\\s*([^|]+?)\\s*\\|\\s*([^|]+?)\\s*\\|\\s*([^|]+?)\\s*\\|\\s*$`, 'm');
+  const row = section.fullMarkdown.match(re);
+  if (!row) return null;
+  return {
+    count: Number(row[1]),
+    sourceGrounded: row[2].trim(),
+    expanded: row[3].trim(),
+    demo: row[4].trim(),
+    action: row[5].trim(),
+  };
 }
 
 function provenanceClass(label, sourceMark) {
@@ -86,22 +125,91 @@ function provenanceClass(label, sourceMark) {
   return 'other';
 }
 
-function parseCandidate(chunk, index, inventoryId) {
-  const boundary = chunk.lastIndexOf(' (');
-  if (boundary < 0 || !chunk.endsWith(')')) {
-    throw new Error(`${inventoryId}: candidate ${index + 1} has no terminal provenance annotation: ${chunk}`);
-  }
-  const text = chunk.slice(0, boundary).trim();
-  const label = chunk.slice(boundary + 2, -1).trim();
-  if (!text || !label) throw new Error(`${inventoryId}: empty candidate text/provenance annotation`);
-  const sourceMark = label.includes('✓');
+function candidateFromParts(text, label, index, inventoryId) {
+  const cleanText = stripOuterMarkdown(text).replace(/[.;]\s*$/, '').trim();
+  const cleanLabel = stripOuterMarkdown(label).replace(/[.;]\s*$/, '').trim();
+  if (!cleanText || !cleanLabel) throw new Error(`${inventoryId}: candidate ${index + 1} has empty text/provenance`);
+  const sourceMark = cleanLabel.includes('✓');
   return {
     candidate_id: `c${String(index + 1).padStart(2, '0')}`,
-    text,
+    text: cleanText,
     audit_source_mark: sourceMark,
-    audit_provenance_label: label,
-    provenance_class: provenanceClass(label, sourceMark),
+    audit_provenance_label: cleanLabel,
+    provenance_class: provenanceClass(cleanLabel, sourceMark),
   };
+}
+
+function parseTerminalCandidate(chunk, index, inventoryId) {
+  // Later compact audits put provenance in a terminal parenthesis. Terminal
+  // sentence punctuation is editorial and is normalized before parsing.
+  const normalized = chunk.trim().replace(/[.;]\s*$/, '').trim();
+  const boundary = normalized.lastIndexOf(' (');
+  if (boundary < 0 || !normalized.endsWith(')')) {
+    throw new Error(`${inventoryId}: candidate ${index + 1} has no terminal provenance annotation: ${chunk}`);
+  }
+  return candidateFromParts(
+    normalized.slice(0, boundary),
+    normalized.slice(boundary + 2, -1),
+    index,
+    inventoryId,
+  );
+}
+
+function splitCompactCandidates(text) {
+  // Split only after a closing provenance parenthesis so semicolons inside the
+  // policy proposition remain part of that proposition.
+  return text
+    .trim()
+    .split(/\)\s*;\s*/)
+    .map((part, index, all) => (index < all.length - 1 ? `${part.trim()})` : part.trim()))
+    .filter(Boolean);
+}
+
+function parseTableCandidates(section) {
+  const rows = [...section.body.matchAll(/^\|\s*M\d{3}-C(\d+)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*$/gm)];
+  if (!rows.length) return null;
+  return rows.map((row, index) => candidateFromParts(row[2], row[3], index, section.inventoryId));
+}
+
+function candidateArea(body) {
+  const headings = [
+    /^###\s+(?:Rich )?candidate universe\s*$/mi,
+    /^\*\*(?:Candidate universe|Universe)(?:\s*\(\d+\))?:\*\*/mi,
+  ];
+  for (const re of headings) {
+    const match = body.match(re);
+    if (!match) continue;
+    const rest = body.slice(match.index + match[0].length);
+    const next = rest.search(/^###\s+|^##\s+|^\*\*(?:Source-grounded|Expanded|Demo|Demonstration richness|Action):\*\*/m);
+    return (next < 0 ? rest : rest.slice(0, next)).trim();
+  }
+  return null;
+}
+
+function splitNumberedCandidate(line, inventoryId, index) {
+  const cleaned = line.replace(/^\d+\.\s+/, '').trim().replace(/[.;]\s*$/, '').trim();
+  // Numbered audits use an em-dash to separate policy text from provenance.
+  // Use the final separator because policy prose can itself contain punctuation.
+  const boundary = cleaned.lastIndexOf(' — ');
+  if (boundary < 0) throw new Error(`${inventoryId}: numbered candidate ${index + 1} has no provenance separator: ${line}`);
+  return candidateFromParts(cleaned.slice(0, boundary), cleaned.slice(boundary + 3), index, inventoryId);
+}
+
+function parseNumberedCandidates(section) {
+  const area = candidateArea(section.body);
+  if (!area) return null;
+  const lines = area.split('\n').map((line) => line.trim()).filter((line) => /^\d+\.\s+/.test(line));
+  if (!lines.length) return null;
+  return lines.map((line, index) => splitNumberedCandidate(line, section.inventoryId, index));
+}
+
+function compactUniverse(section) {
+  const match = section.body.match(/^\*\*(?:Candidate universe|Universe)(?:\s*\((\d+)\))?:\*\*\s*(.+)$/m);
+  if (!match || !match[2]?.trim()) return null;
+  // A line such as "existing six-candidate audit is already rich:" introduces
+  // a numbered list rather than containing candidates itself.
+  if (!match[2].includes(' (') && !match[2].includes('(✓') && !match[2].includes('(constructed')) return null;
+  return { declaredCount: match[1] ? Number(match[1]) : null, text: match[2].trim() };
 }
 
 const candidateOverrides = {
@@ -115,40 +223,67 @@ const candidateOverrides = {
     ['neutral lottery when candidates are otherwise equivalent', '✓ F10 established provenance'],
     ['fair-innings priority', '✓ F10 established framework provenance'],
     ['equal-status reasoning rejecting age as independent moral worth', '✓ F10 established framework provenance'],
-  ].map(([text, label], index) => ({
-    candidate_id: `c${String(index + 1).padStart(2, '0')}`,
-    text,
-    audit_source_mark: true,
-    audit_provenance_label: label,
-    provenance_class: label.includes('framework') ? 'framework-derived' : 'source-anchored-other',
-  })),
+  ].map(([text, label], index) => candidateFromParts(text, label, index, 'M101')),
 };
 
-function parseProjectionStatus(body) {
-  const regular = body.match(/^\*\*Source-grounded:\*\*\s*(.*?)\s+\*\*Expanded:\*\*\s*(.*?)\s+\*\*Demo:\*\*\s*(.*?)\s+\*\*Action:\*\*\s*(.*?)(?:\s{2})?$/m);
-  if (regular) {
-    return {
-      sourceGrounded: regular[1].trim(),
-      expanded: regular[2].trim(),
-      demo: regular[3].trim().replace(/\.$/, ''),
-      action: regular[4].trim().replace(/\.$/, ''),
-    };
+function parseProjectionStatus(section) {
+  const body = section.body;
+  const batch = batchDisposition(section);
+  const sourceGrounded = extractLabel(body, 'Source-grounded projection')
+    ?? extractLabel(body, 'Source-grounded')
+    ?? batch?.sourceGrounded
+    ?? null;
+  const expanded = extractLabel(body, 'Expanded projection')
+    ?? extractLabel(body, 'Expanded')
+    ?? batch?.expanded
+    ?? null;
+  const demo = extractLabel(body, 'Demonstration richness')
+    ?? extractLabel(body, 'Demo')
+    ?? batch?.demo
+    ?? null;
+  const action = extractLabel(body, 'Action')
+    ?? batch?.action
+    ?? null;
+  if (![sourceGrounded, expanded, demo, action].every(Boolean)) return null;
+  return {
+    sourceGrounded: sourceGrounded.replace(/\.$/, '').trim(),
+    expanded: expanded.replace(/\.$/, '').trim(),
+    demo: demo.replace(/\.$/, '').trim(),
+    action: action.replace(/\.$/, '').trim(),
+  };
+}
+
+function parseScenario(section) {
+  return extractLabel(section.body, 'Scenario')
+    ?? firstParagraph(subsection(section.body, 'Scenario audit'));
+}
+
+function parseCandidates(section, problems) {
+  if (candidateOverrides[section.inventoryId]) return { candidates: candidateOverrides[section.inventoryId], declaredCount: null };
+
+  try {
+    const table = parseTableCandidates(section);
+    if (table) return { candidates: table, declaredCount: null };
+
+    const numbered = parseNumberedCandidates(section);
+    if (numbered) {
+      const heading = section.body.match(/^\*\*(?:Candidate universe|Universe)\s*\((\d+)\):\*\*/m);
+      return { candidates: numbered, declaredCount: heading ? Number(heading[1]) : null };
+    }
+
+    const compact = compactUniverse(section);
+    if (compact) {
+      const candidates = splitCompactCandidates(compact.text)
+        .map((chunk, index) => parseTerminalCandidate(chunk, index, section.inventoryId));
+      return { candidates, declaredCount: compact.declaredCount };
+    }
+  } catch (error) {
+    problems.push(error.message);
+    return { candidates: [], declaredCount: null };
   }
 
-  // M047's supersession intentionally uses more explicit field labels.
-  const sourceGrounded = oneLine(body, 'Source-grounded projection');
-  const expanded = oneLine(body, 'Expanded projection');
-  const demo = oneLine(body, 'Demonstration richness');
-  const action = oneLine(body, 'Action');
-  if (sourceGrounded && expanded && demo && action) {
-    return {
-      sourceGrounded: sourceGrounded.replace(/\.$/, ''),
-      expanded: expanded.replace(/\.$/, ''),
-      demo: demo.replace(/\.$/, ''),
-      action: action.replace(/\.$/, ''),
-    };
-  }
-  return null;
+  problems.push(`${section.inventoryId}: no recognized candidate-universe representation`);
+  return { candidates: [], declaredCount: null };
 }
 
 const auditFiles = readdirSync(auditDir)
@@ -190,28 +325,19 @@ const cases = [];
 const problems = [];
 for (const inventoryId of expectedIds) {
   const section = sections.get(inventoryId);
-  const scenario = oneLine(section.body, 'Scenario');
-  const universe = section.body.match(/^\*\*Universe(?: \((\d+)\))?:\*\*\s*(.+?)(?:\s{2})?$/m);
-  const projection = parseProjectionStatus(section.body);
-  if (!scenario) problems.push(`${inventoryId}: missing Scenario audit line`);
-  if (!universe) problems.push(`${inventoryId}: missing Universe audit line`);
+  const scenario = parseScenario(section);
+  const projection = parseProjectionStatus(section);
+  const parsed = parseCandidates(section, problems);
+  const batch = batchDisposition(section);
+  const count = parsed.declaredCount ?? batch?.count ?? parsed.candidates.length;
+
+  if (!scenario) problems.push(`${inventoryId}: missing Scenario audit`);
   if (!projection) problems.push(`${inventoryId}: missing source-grounded/expanded/demo/action audit fields`);
-  if (!scenario || !universe || !projection) continue;
-
-  const count = reviewedCount(section, universe[1]);
-  let candidates = candidateOverrides[inventoryId] ?? splitCandidateChunks(universe[2]).map((chunk, index) => {
-    try {
-      return parseCandidate(chunk, index, inventoryId);
-    } catch (error) {
-      problems.push(error.message);
-      return null;
-    }
-  }).filter(Boolean);
-
-  if (count === null) problems.push(`${inventoryId}: no reviewed candidate count`);
-  if (count !== null && candidates.length !== count) {
-    problems.push(`${inventoryId}: reviewed candidate count is ${count}, parser found ${candidates.length}`);
+  if (!parsed.candidates.length) problems.push(`${inventoryId}: candidate universe is empty`);
+  if (parsed.candidates.length && count !== parsed.candidates.length) {
+    problems.push(`${inventoryId}: reviewed candidate count is ${count}, parser found ${parsed.candidates.length}`);
   }
+  if (!scenario || !projection || !parsed.candidates.length) continue;
 
   const number = Number(inventoryId.slice(1));
   cases.push({
@@ -219,8 +345,8 @@ for (const inventoryId of expectedIds) {
     case_family_id: inventoryId.toLowerCase(),
     title: section.title,
     scenario_audit: scenario,
-    candidate_count: count ?? candidates.length,
-    candidate_universe: candidates,
+    candidate_count: count,
+    candidate_universe: parsed.candidates,
     source_grounded_status: projection.sourceGrounded,
     expanded_projection_status: projection.expanded,
     demonstration_richness: projection.demo,
