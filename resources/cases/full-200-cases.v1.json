@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 1254,
+  "detailed_policy_count": 1348,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -14624,6 +14624,7 @@
         {
           "id": "c01",
           "text": "decline test and explain why, offering safety-net/follow-up",
+          "text_detailed": "Decline the test and explain why, offering a safety net: what would change the advice, when to come back, and a follow-up appointment booked rather than suggested.",
           "types": [
             "expert"
           ],
@@ -14633,6 +14634,7 @@
         {
           "id": "c02",
           "text": "use shared decision after discussing low value and allow testing when residual uncertainty/patient values justify it within reasonable practice",
+          "text_detailed": "Decide with the patient after discussing the test's low value, and order it where residual uncertainty or the patient's own values justify it within reasonable practice, with the reasoning recorded.",
           "types": [
             "expert"
           ],
@@ -14642,6 +14644,7 @@
         {
           "id": "c03",
           "text": "defer testing with predefined reassessment triggers",
+          "text_detailed": "Defer the test with reassessment triggers agreed in advance — specific symptoms, a stated interval — so that deferral is a plan the patient holds rather than a refusal.",
           "types": [
             "expert",
             "framework"
@@ -14652,6 +14655,7 @@
         {
           "id": "c04",
           "text": "order test primarily for reassurance",
+          "text_detailed": "Order the test primarily for reassurance, with the limits of what a normal result would establish stated beforehand so that reassurance does not rest on a misunderstanding.",
           "types": [
             "expert"
           ],
@@ -14661,6 +14665,7 @@
         {
           "id": "c05",
           "text": "nonmaleficence/stewardship framework favoring nonordering",
+          "text_detailed": "Do not order on non-maleficence and stewardship grounds, with the downstream harms of a false positive described to the patient rather than held as the clinician's private reason.",
           "types": [
             "framework"
           ],
@@ -14670,6 +14675,7 @@
         {
           "id": "c06",
           "text": "autonomy/relational-care framework permitting bounded preference-sensitive testing when harms/costs are small",
+          "text_detailed": "Permit bounded preference-sensitive testing where harms and costs are small, with the bound stated as a practice policy rather than decided by how insistent the patient is.",
           "types": [
             "framework"
           ],
@@ -14679,6 +14685,7 @@
         {
           "id": "c07",
           "text": "Tell the patient plainly what the test can and cannot settle, and record their decision either way rather than declining without explanation.",
+          "text_detailed": "Tell the patient plainly what the test can and cannot settle, and record their decision either way rather than declining without explanation, with the record available to them.",
           "types": [
             "public"
           ],
@@ -14699,6 +14706,7 @@
         {
           "id": "c01",
           "text": "do not offer/provide scientifically invalid or medically ineffective intervention; negotiate appropriate alternatives",
+          "text_detailed": "Do not offer or provide a scientifically invalid or ineffective intervention, and negotiate alternatives that address what the patient is actually seeking, with both the refusal and the alternatives recorded.",
           "types": [
             "expert"
           ],
@@ -14708,6 +14716,7 @@
         {
           "id": "c02",
           "text": "second opinion/ethics review when disagreement persists",
+          "text_detailed": "Obtain a second opinion or ethics review where disagreement persists, with the review arranged by the service and its outcome given to the patient in writing.",
           "types": [
             "expert"
           ],
@@ -14717,6 +14726,7 @@
         {
           "id": "c03",
           "text": "time-limited trial only if genuine uncertainty remains about benefit, not when physiologically incapable",
+          "text_detailed": "Offer a time-limited trial only where genuine uncertainty about benefit remains, and not where the intervention is physiologically incapable of the effect sought, with that distinction stated.",
           "types": [
             "expert",
             "framework"
@@ -14727,6 +14737,7 @@
         {
           "id": "c04",
           "text": "transfer to willing provider only if proposed intervention remains within acceptable professional practice",
+          "text_detailed": "Transfer to a willing provider only where the requested intervention remains within acceptable professional practice, with the assessment recorded and transfer arranged rather than suggested.",
           "types": [
             "expert"
           ],
@@ -14736,6 +14747,7 @@
         {
           "id": "c05",
           "text": "autonomy framework rejects entitlement to nonbeneficial treatment",
+          "text_detailed": "Reject any entitlement to non-beneficial treatment, while distinguishing the patient's right to refuse from a right to demand, and stating that distinction to the patient.",
           "types": [
             "framework"
           ],
@@ -14745,6 +14757,7 @@
         {
           "id": "c06",
           "text": "relational/nonabandonment rule requires continued care and symptom support despite refusal of requested intervention",
+          "text_detailed": "Continue care and symptom support despite refusing the requested intervention, with the ongoing plan documented so that refusal does not read as discharge.",
           "types": [
             "expert",
             "framework"
@@ -14755,6 +14768,7 @@
         {
           "id": "c07",
           "text": "Say clearly what will not be provided and why, in writing, and offer a second opinion, so that a refusal is not experienced as a hidden judgement.",
+          "text_detailed": "Say clearly what will not be provided and why, in writing, and offer a second opinion, so that a refusal is not experienced as a hidden judgement. The letter names what would change the answer.",
           "types": [
             "public"
           ],
@@ -14775,6 +14789,7 @@
         {
           "id": "c01",
           "text": "document only clinically supportable facts/limitations and decline false certification",
+          "text_detailed": "Document only clinically supportable facts and limitations, and decline to certify what cannot be supported, with the decline explained and the supportable content offered instead.",
           "types": [
             "expert"
           ],
@@ -14784,6 +14799,7 @@
         {
           "id": "c02",
           "text": "describe uncertainty/function without categorical unsupported diagnosis where evidence incomplete",
+          "text_detailed": "Describe the uncertainty and the patient's function without asserting a categorical diagnosis the evidence does not support, with the wording shown to the patient before it is issued.",
           "types": [
             "expert"
           ],
@@ -14793,6 +14809,7 @@
         {
           "id": "c03",
           "text": "advocate for accommodations based on documented functional needs without making false causal claims",
+          "text_detailed": "Advocate for accommodations on the basis of documented functional needs, without making causal claims the record cannot support, with the functional assessment attached.",
           "types": [
             "expert",
             "framework"
@@ -14803,6 +14820,7 @@
         {
           "id": "c04",
           "text": "refer for appropriate independent assessment where expertise/evidence insufficient",
+          "text_detailed": "Refer for independent assessment where the expertise or evidence is insufficient, with the referral made by the practice and the interim documentation stating what is pending.",
           "types": [
             "expert"
           ],
@@ -14812,6 +14830,7 @@
         {
           "id": "c05",
           "text": "truthfulness/professional-integrity framework",
+          "text_detailed": "Apply a truthfulness standard, with the limits of certification explained as professional obligation rather than as reluctance to help.",
           "types": [
             "framework"
           ],
@@ -14821,6 +14840,7 @@
         {
           "id": "c06",
           "text": "patient-advocacy framework supports generous interpretation within evidentiary ambiguity but not fabrication",
+          "text_detailed": "Interpret ambiguous evidence generously in the patient's favour without fabricating findings, with the generosity confined to what the record could reasonably bear.",
           "types": [
             "framework"
           ],
@@ -14830,6 +14850,7 @@
         {
           "id": "c07",
           "text": "Tell the patient at the outset what can and cannot be certified, and offer to document what is supportable, so that the refusal is not a surprise at the end of the visit.",
+          "text_detailed": "Tell the patient at the outset what can and cannot be certified, and offer to document what is supportable, so that the refusal is not a surprise at the end of the visit. The practice states its position in writing when the appointment is booked, and the alternative documentation is offered in the same conversation rather than afterwards.",
           "types": [
             "public"
           ],
@@ -14850,6 +14871,7 @@
         {
           "id": "c01",
           "text": "allow complementary use with disclosure/interaction monitoring while continuing effective treatment",
+          "text_detailed": "Permit complementary use alongside effective treatment, with disclosure encouraged, interactions checked, and the effective treatment continued without condition.",
           "types": [
             "expert"
           ],
@@ -14859,6 +14881,7 @@
         {
           "id": "c02",
           "text": "discourage/use only where evidence and safety are adequate",
+          "text_detailed": "Discourage use except where evidence and safety are adequate, with the assessment made for the specific therapy rather than for the category.",
           "types": [
             "expert"
           ],
@@ -14868,6 +14891,7 @@
         {
           "id": "c03",
           "text": "decline to prescribe/endorse but maintain relationship if patient independently uses low-risk therapy",
+          "text_detailed": "Decline to prescribe or endorse while maintaining the relationship where the patient independently uses a low-risk therapy, with that position stated to the patient plainly.",
           "types": [
             "expert"
           ],
@@ -14877,6 +14901,7 @@
         {
           "id": "c04",
           "text": "integrative shared-decision framework permitting preference-sensitive adjuncts",
+          "text_detailed": "Permit preference-sensitive adjuncts through shared decision-making, with the evidence for each stated honestly and the effective treatment unaffected.",
           "types": [
             "framework"
           ],
@@ -14886,6 +14911,7 @@
         {
           "id": "c05",
           "text": "epistemic-integrity framework limiting clinician endorsement to evidence-supported claims",
+          "text_detailed": "Confine clinician endorsement to evidence-supported claims, while distinguishing endorsement from tolerance so that the patient is not left feeling judged.",
           "types": [
             "framework"
           ],
@@ -14895,6 +14921,7 @@
         {
           "id": "c06",
           "text": "prohibit complementary therapy only where it materially interferes with effective care or creates significant harm",
+          "text_detailed": "Prohibit the complementary therapy only where it materially interferes with effective care or creates significant harm, with the interference specified rather than presumed.",
           "types": [
             "expert",
             "framework"
@@ -14905,6 +14932,7 @@
         {
           "id": "c07",
           "text": "Ask about complementary use without disapproval and record it, so that patients disclose what they are actually taking.",
+          "text_detailed": "Ask about complementary use without disapproval and record it, so that patients disclose what they are actually taking, with the question asked routinely rather than when something is suspected.",
           "types": [
             "public"
           ],
@@ -14925,6 +14953,7 @@
         {
           "id": "c01",
           "text": "respect refusal of standard treatment after informed-capacity process, while declining to provide/endorse unproven alternative",
+          "text_detailed": "Respect the refusal after an informed-capacity process, while declining to provide or endorse the unproven alternative, with both positions stated to the patient at the same time.",
           "types": [
             "expert"
           ],
@@ -14934,6 +14963,7 @@
         {
           "id": "c02",
           "text": "continue relationship/harm reduction and monitoring if patient pursues alternative independently",
+          "text_detailed": "Continue the relationship with harm reduction and monitoring where the patient pursues the alternative independently, with the monitoring plan agreed and appointments kept open.",
           "types": [
             "expert"
           ],
@@ -14943,6 +14973,7 @@
         {
           "id": "c03",
           "text": "intensive motivational/shared decision and second opinion before accepting high-stakes refusal",
+          "text_detailed": "Use intensive shared decision-making and offer a second opinion before accepting a high-stakes refusal, with the offer made once and not repeated to the point of pressure.",
           "types": [
             "expert",
             "framework"
@@ -14953,6 +14984,7 @@
         {
           "id": "c04",
           "text": "discharge/transfer care only if ongoing relationship cannot be maintained safely/ethically, with nonabandonment safeguards",
+          "text_detailed": "Discharge or transfer only where the relationship cannot be maintained safely or ethically, with non-abandonment safeguards, notice, and continuing care until transfer.",
           "types": [
             "expert"
           ],
@@ -14962,6 +14994,7 @@
         {
           "id": "c05",
           "text": "autonomy framework respecting refusal",
+          "text_detailed": "Respect the refusal on autonomy grounds, with capacity assessed for this decision and the refusal recorded in the patient's own words.",
           "types": [
             "framework"
           ],
@@ -14971,6 +15004,7 @@
         {
           "id": "c06",
           "text": "beneficence/nonmaleficence framework favoring strong persuasion but not coercion in competent adult",
+          "text_detailed": "Persuade strongly without coercing a competent adult, with the boundary between the two stated as a limit on the clinician rather than a judgment about the patient.",
           "types": [
             "framework"
           ],
@@ -14980,6 +15014,7 @@
         {
           "id": "c07",
           "text": "epistemic-integrity rule separating right to refuse from right to demand unsupported treatment",
+          "text_detailed": "Separate the right to refuse from any right to demand unsupported treatment, and say so plainly, so that respecting the first is not read as agreeing to the second.",
           "types": [
             "expert",
             "framework"
@@ -14990,6 +15025,7 @@
         {
           "id": "c08",
           "text": "Keep the patient in ordinary care with scheduled review whatever they decide, so that refusing treatment does not cost them the relationship.",
+          "text_detailed": "Keep the patient in ordinary care with scheduled review whatever they decide, so that refusing treatment does not cost them the relationship. The next appointment is booked at the visit where the refusal is recorded.",
           "types": [
             "public"
           ],
@@ -15010,6 +15046,7 @@
         {
           "id": "c01",
           "text": "redesign care around cost/housing/work barriers and simplify access",
+          "text_detailed": "Redesign the care plan around the actual barriers — cost, housing, work schedule, transport — and simplify access, with the barriers identified with the patient and the changes recorded.",
           "types": [
             "expert",
             "public"
@@ -15020,6 +15057,7 @@
         {
           "id": "c02",
           "text": "simplify regimen and accept less aggressive targets when treatment burden itself undermines achievable benefit",
+          "text_detailed": "Simplify the regimen and accept less aggressive targets where the treatment burden itself is what defeats the benefit, with the revised target agreed and its rationale recorded.",
           "types": [
             "public"
           ],
@@ -15029,6 +15067,7 @@
         {
           "id": "c03",
           "text": "intensive adherence support with pharmacy/social-work/case-management follow-up before labeling treatment failure",
+          "text_detailed": "Provide intensive adherence support with pharmacy, social work and case-management follow-up before treatment failure is recorded, with what was provided documented.",
           "types": [
             "expert"
           ],
@@ -15038,6 +15077,7 @@
         {
           "id": "c04",
           "text": "require demonstrated ability to follow selected unusually high-risk or scarce therapies only when adherence is materially necessary to safety/effectiveness",
+          "text_detailed": "Require demonstrated ability to follow a regimen only for unusually high-risk or scarce therapies where adherence is materially necessary to safety or effectiveness, with that necessity stated.",
           "types": [
             "expert"
           ],
@@ -15047,6 +15087,7 @@
         {
           "id": "c05",
           "text": "never condition ordinary necessary care on moralized “compliance”",
+          "text_detailed": "Never make ordinary necessary care conditional on compliance, with that rule stated in policy so that it does not depend on the individual clinician's view.",
           "types": [
             "framework"
           ],
@@ -15056,6 +15097,7 @@
         {
           "id": "c06",
           "text": "structural-justice rule treating adherence failure partly as a system-design problem",
+          "text_detailed": "Treat adherence failure partly as a system-design problem, with the service's own contribution — appointment times, cost, continuity — assessed alongside the patient's circumstances.",
           "types": [
             "framework"
           ],
@@ -15065,6 +15107,7 @@
         {
           "id": "c07",
           "text": "proportional stewardship rule matching resource-intensive supports to expected benefit while preserving baseline care",
+          "text_detailed": "Match resource-intensive supports to expected benefit while preserving baseline care for everyone, with the allocation rule stated rather than left to individual judgment.",
           "types": [
             "framework"
           ],
@@ -15084,6 +15127,7 @@
         {
           "id": "c01",
           "text": "honor the competent refusal while using confidential safety planning, resources and close follow-up",
+          "text_detailed": "Honour the competent refusal while providing confidential safety planning, resources and close follow-up, with the follow-up scheduled and the plan held by the patient.",
           "types": [
             "framework"
           ],
@@ -15093,6 +15137,7 @@
         {
           "id": "c02",
           "text": "intensify multidisciplinary assessment of coercion, capacity and immediate danger before discharge when evidence is concerning but threshold is uncertain",
+          "text_detailed": "Intensify multidisciplinary assessment of coercion, capacity and immediate danger before discharge where the evidence is concerning but the threshold is uncertain, with the assessment documented.",
           "types": [
             "expert"
           ],
@@ -15102,6 +15147,7 @@
         {
           "id": "c03",
           "text": "offer voluntary temporary separation/respite or alternative safe placement without making it a condition of future autonomy",
+          "text_detailed": "Offer voluntary respite or alternative safe placement without making it a condition of continued support, so that declining it does not reduce what else is offered.",
           "types": [
             "expert",
             "framework"
@@ -15112,6 +15158,7 @@
         {
           "id": "c04",
           "text": "report or override refusal only when the stipulated statutory/imminent-danger threshold is crossed",
+          "text_detailed": "Report or override the refusal only where the statutory or imminent-danger threshold is crossed, with the threshold cited and the finding recorded.",
           "types": [
             "expert"
           ],
@@ -15121,6 +15168,7 @@
         {
           "id": "c05",
           "text": "least-restrictive safeguarding rule requiring escalation only as risk/constraint becomes necessary and proportionate",
+          "text_detailed": "Escalate only as far as the risk makes necessary and proportionate, with each step recorded and reviewed rather than treated as a single decision to intervene.",
           "types": [
             "framework"
           ],
@@ -15130,6 +15178,7 @@
         {
           "id": "c06",
           "text": "relational-autonomy rule supporting trusted-person/community involvement chosen by the patient while screening for coercion",
+          "text_detailed": "Support the involvement of a trusted person or community chosen by the patient, while screening for coercion privately and repeatedly rather than once.",
           "types": [
             "framework"
           ],
@@ -15139,6 +15188,7 @@
         {
           "id": "c07",
           "text": "Follow the patient's own account of what is safe for them, and keep the appointment open, so that a refusal does not end contact.",
+          "text_detailed": "Follow the patient's own account of what is safe for them, and keep the appointment open, so that a refusal does not end contact, with a named clinician to return to.",
           "types": [
             "public"
           ],
@@ -15159,6 +15209,7 @@
         {
           "id": "c01",
           "text": "report once reasonable-suspicion threshold is met while continuing medical/forensic evaluation",
+          "text_detailed": "Report once the reasonable-suspicion threshold is met, while continuing the medical and forensic evaluation, with the report made promptly and its basis recorded.",
           "types": [
             "expert"
           ],
@@ -15168,6 +15219,7 @@
         {
           "id": "c02",
           "text": "if current facts genuinely remain below reasonable suspicion, complete rapid specialist assessment before reporting provided delay does not increase danger",
+          "text_detailed": "Where the facts genuinely remain below reasonable suspicion, complete a rapid specialist assessment before reporting, provided the delay does not increase danger, with that judgment recorded and time-limited.",
           "types": [
             "expert"
           ],
@@ -15177,6 +15229,7 @@
         {
           "id": "c03",
           "text": "use immediate protective hospitalization/observation only when medical or safety facts independently justify it",
+          "text_detailed": "Use protective hospitalisation or observation only where the medical or safety facts independently justify it, with the clinical justification recorded separately from the protective concern.",
           "types": [
             "expert"
           ],
@@ -15186,6 +15239,7 @@
         {
           "id": "c04",
           "text": "communicate the report and next steps to caregivers when doing so does not increase risk",
+          "text_detailed": "Tell the caregivers about the report and what happens next, unless doing so would increase risk to the child, with the risk assessment recorded when disclosure is withheld.",
           "types": [
             "expert"
           ],
@@ -15195,6 +15249,7 @@
         {
           "id": "c05",
           "text": "child-protection framework favors a low evidentiary threshold because waiting for certainty can expose the child to preventable harm",
+          "text_detailed": "Apply a low evidentiary threshold on child-protection grounds, on the ground that waiting for certainty exposes the child, with that reasoning stated in the service's policy.",
           "types": [
             "framework"
           ],
@@ -15204,6 +15259,7 @@
         {
           "id": "c06",
           "text": "procedural-fairness/nonmaleficence rule minimizes unnecessary coercive investigation while never raising the legal reporting threshold",
+          "text_detailed": "Minimise unnecessary coercive investigation while never raising the legal reporting threshold, with the two held apart explicitly so that procedural care does not become delay.",
           "types": [
             "framework"
           ],
@@ -15213,6 +15269,7 @@
         {
           "id": "c07",
           "text": "Tell the family what has been reported and what happens next, in plain terms and at the time, unless doing so would put the child at risk.",
+          "text_detailed": "Tell the family what has been reported and what happens next, in plain terms and at the time, unless doing so would put the child at risk, with that exception applied case by case and recorded.",
           "types": [
             "public"
           ],
@@ -15233,6 +15290,7 @@
         {
           "id": "c01",
           "text": "confidential patient-led safety planning and resource offer without forced police/shelter involvement",
+          "text_detailed": "Provide confidential patient-led safety planning and offer resources, without involving police or shelters unless the patient asks, with the plan held by the patient and no record that could endanger them.",
           "types": [
             "expert"
           ],
@@ -15242,6 +15300,7 @@
         {
           "id": "c02",
           "text": "assertive multidisciplinary advocacy/outreach that remains opt-in and preserves the patient’s right to refuse",
+          "text_detailed": "Provide assertive advocacy and outreach that remains opt-in, with each contact offered rather than imposed and the patient able to stop it at any point.",
           "types": [
             "expert"
           ],
@@ -15251,6 +15310,7 @@
         {
           "id": "c03",
           "text": "schedule proactive confidential follow-up and repeat danger assessment rather than treating one refusal as the end of care",
+          "text_detailed": "Schedule proactive confidential follow-up and repeat the danger assessment, so that one refusal is not treated as the end of care, with the follow-up arranged in a way that is safe for the patient.",
           "types": [
             "expert"
           ],
@@ -15260,6 +15320,7 @@
         {
           "id": "c04",
           "text": "breach confidentiality only when a defined emergency/legal threshold is met",
+          "text_detailed": "Breach confidentiality only where a defined emergency or legal threshold is met, with the threshold stated in advance and the patient told before any disclosure where that is safe.",
           "types": [
             "expert"
           ],
@@ -15269,6 +15330,7 @@
         {
           "id": "c05",
           "text": "autonomy/trauma-informed framework rejects coercive “rescue” below that threshold",
+          "text_detailed": "Reject coercive rescue below that threshold on autonomy and trauma-informed grounds, with the position stated as a limit on the service's action rather than as a lack of concern.",
           "types": [
             "framework"
           ],
@@ -15278,6 +15340,7 @@
         {
           "id": "c06",
           "text": "relational-safety framework supports stronger clinician effort to expand feasible exit/safety options while leaving final action with the competent patient",
+          "text_detailed": "Work to expand the exit and safety options actually available to the patient while leaving the final action to them, with what was expanded recorded rather than only what was offered.",
           "types": [
             "framework"
           ],
@@ -15287,6 +15350,7 @@
         {
           "id": "c07",
           "text": "Let the patient set the pace and record what they asked for, so that disclosure never triggers action they did not choose.",
+          "text_detailed": "Let the patient set the pace and record what they asked for, so that disclosure never triggers action they did not choose, with the record itself kept where the partner cannot see it.",
           "types": [
             "public"
           ],
@@ -15307,6 +15371,7 @@
         {
           "id": "c01",
           "text": "continue opioids with intensified monitoring/risk mitigation while benefits still exceed risks",
+          "text_detailed": "Continue opioids with intensified monitoring and risk mitigation while benefits still exceed risks, with the monitoring specified, the review interval set, and the balance reassessed at each review.",
           "types": [
             "expert"
           ],
@@ -15316,6 +15381,7 @@
         {
           "id": "c02",
           "text": "collaborative gradual taper/transition when risks now exceed benefits",
+          "text_detailed": "Taper collaboratively and gradually where risks now exceed benefits, with the rate agreed with the patient, adjustable, and the reason for the change recorded.",
           "types": [
             "expert"
           ],
@@ -15325,6 +15391,7 @@
         {
           "id": "c03",
           "text": "discontinue controlled prescribing only when risk becomes unmanageable while continuing pain/OUD care and nonabandonment",
+          "text_detailed": "Discontinue controlled prescribing only where risk becomes unmanageable, while continuing pain and addiction care, with the continuing plan arranged before the prescription ends.",
           "types": [
             "expert"
           ],
@@ -15334,6 +15401,7 @@
         {
           "id": "c04",
           "text": "evaluate and treat possible OUD without treating one toxicology result or early refill as moral proof",
+          "text_detailed": "Evaluate and treat possible opioid use disorder without treating a single toxicology result or an early refill as proof of anything, with the evaluation offered as care rather than as a consequence.",
           "types": [
             "expert"
           ],
@@ -15343,6 +15411,7 @@
         {
           "id": "c05",
           "text": "time-limited continuation with predefined reassessment goals when benefit-risk balance is genuinely uncertain",
+          "text_detailed": "Continue for a defined period with reassessment goals set in advance where the balance is genuinely uncertain, with the goals functional rather than only pharmacological.",
           "types": [
             "expert"
           ],
@@ -15352,6 +15421,7 @@
         {
           "id": "c06",
           "text": "nonmaleficence/stewardship framework gives overdose/diversion risk increasing weight as evidence accumulates",
+          "text_detailed": "Give overdose and diversion risk increasing weight as evidence accumulates, with the evidence specified and the weighting explained to the patient rather than applied silently.",
           "types": [
             "framework"
           ],
@@ -15361,6 +15431,7 @@
         {
           "id": "c07",
           "text": "relational-autonomy framework opposes abrupt forced taper and emphasizes shared goals, function and withdrawal safety",
+          "text_detailed": "Reject abrupt forced tapering and work from shared goals, function and withdrawal safety, with the taper stopped or slowed where the patient's function deteriorates.",
           "types": [
             "framework"
           ],
@@ -15370,6 +15441,7 @@
         {
           "id": "c08",
           "text": "Involve the patient in setting the taper or continuation plan and record their account of what the medicine does for them.",
+          "text_detailed": "Involve the patient in setting the taper or continuation plan and record their account of what the medicine does for them, in their own words, so that the plan can be reviewed against it.",
           "types": [
             "public"
           ],
@@ -15390,6 +15462,7 @@
         {
           "id": "c01",
           "text": "continue effective OUD medication and provide full multimodal analgesia including additional opioids when indicated",
+          "text_detailed": "Continue the patient's opioid use disorder medication and provide full multimodal analgesia, including additional opioids where indicated, with doses set for the patient's tolerance rather than a standard schedule.",
           "types": [
             "expert"
           ],
@@ -15399,6 +15472,7 @@
         {
           "id": "c02",
           "text": "use an opioid-sparing multimodal plan while retaining rescue opioid access and specialist input",
+          "text_detailed": "Use an opioid-sparing multimodal plan while retaining rescue opioid access and specialist input, with the rescue route agreed in advance and available without renegotiation.",
           "types": [
             "expert"
           ],
@@ -15408,6 +15482,7 @@
         {
           "id": "c03",
           "text": "temporarily adjust buprenorphine/OUD regimen only for a specific perioperative indication under addiction/pain expertise",
+          "text_detailed": "Adjust the buprenorphine or other regimen only for a specific perioperative indication, under addiction and pain expertise, with the adjustment planned and reversed on a stated schedule.",
           "types": [
             "expert"
           ],
@@ -15417,6 +15492,7 @@
         {
           "id": "c04",
           "text": "use individualized shared planning that explicitly addresses relapse risk, tolerance and the patient’s prior pain-treatment experience",
+          "text_detailed": "Plan individually with the patient, addressing relapse risk, tolerance and their previous experience of pain treatment, with that experience recorded and the plan agreed before the procedure.",
           "types": [
             "expert"
           ],
@@ -15426,6 +15502,7 @@
         {
           "id": "c05",
           "text": "equal-treatment/non-stigma framework rejects undertreatment because of OUD history",
+          "text_detailed": "Reject undertreatment on the basis of an opioid use disorder history, with analgesia assessed against the pain rather than against the diagnosis.",
           "types": [
             "framework"
           ],
@@ -15435,6 +15512,7 @@
         {
           "id": "c06",
           "text": "relapse-prevention/nonmaleficence framework favors the lowest opioid exposure compatible with adequate analgesia, never untreated severe pain",
+          "text_detailed": "Use the lowest opioid exposure compatible with adequate analgesia, and never leave severe pain untreated, with adequacy judged by the patient's report rather than by dose thresholds.",
           "types": [
             "framework"
           ],
@@ -15444,6 +15522,7 @@
         {
           "id": "c07",
           "text": "Treat the pain on the same terms as any other patient's, and say so in the record, so that a diagnosis of opioid use disorder does not become the reason for undertreatment.",
+          "text_detailed": "Treat the pain on the same terms as any other patient's, and say so in the record, so that a diagnosis of opioid use disorder does not become the reason for undertreatment, with the analgesic plan documented alongside that statement.",
           "types": [
             "public"
           ],
@@ -15464,6 +15543,7 @@
         {
           "id": "c01",
           "text": "granular segmentation of sensitive diagnoses, labs, prescriptions, problem-list items and notes with proxy blocking while ordinary proxy access remains",
+          "text_detailed": "Segment sensitive diagnoses, laboratory results, prescriptions, problem-list items and notes with proxy blocking, while ordinary proxy access continues, with the segmented categories defined in the system rather than by the clinician each time.",
           "types": [
             "expert"
           ],
@@ -15473,6 +15553,7 @@
         {
           "id": "c02",
           "text": "confidential adolescent encounter/sub-portal architecture that automatically protects legally sensitive categories while preserving adolescent access",
+          "text_detailed": "Use a confidential adolescent encounter or sub-portal that automatically protects legally sensitive categories while preserving the adolescent's own access, with the protection applied by default.",
           "types": [
             "expert"
           ],
@@ -15482,6 +15563,7 @@
         {
           "id": "c03",
           "text": "broad proxy access with clinician item-by-item privacy marking plus prompts/auditing",
+          "text_detailed": "Allow broad proxy access with clinician item-by-item privacy marking, supported by prompts and auditing, with audits reviewing what was and was not marked.",
           "types": [
             "expert"
           ],
@@ -15491,6 +15573,7 @@
         {
           "id": "c04",
           "text": "adolescent-controlled proxy permissions from a defined age with safety/legal exceptions",
+          "text_detailed": "Give the adolescent control over proxy permissions from a defined age, subject to stated safety and legal exceptions, with the controls usable by the adolescent directly.",
           "types": [
             "framework"
           ],
@@ -15500,6 +15583,7 @@
         {
           "id": "c05",
           "text": "system-wide suppression of confidential billing/EOB and exchanged-data leakage as a mandatory safeguard",
+          "text_detailed": "Suppress confidential billing statements and data exchanged with other systems as a mandatory safeguard, with the suppression tested rather than assumed from the configuration.",
           "types": [
             "expert"
           ],
@@ -15509,6 +15593,7 @@
         {
           "id": "c06",
           "text": "confidentiality/developing-autonomy framework favors robust technical control because leakage can deter sensitive-care disclosure",
+          "text_detailed": "Favour robust technical control on confidentiality and developing-autonomy grounds, because leakage deters disclosure, with the deterrent effect treated as a clinical harm.",
           "types": [
             "framework"
           ],
@@ -15518,6 +15603,7 @@
         {
           "id": "c07",
           "text": "parental-responsibility/care-coordination framework favors broad nonconfidential proxy access with reliable protected carve-outs",
+          "text_detailed": "Favour broad non-confidential proxy access with reliable protected carve-outs, on care-coordination grounds, with the carve-outs specified and their reliability audited.",
           "types": [
             "framework"
           ],
@@ -15527,6 +15613,7 @@
         {
           "id": "c08",
           "text": "Give the adolescent a plain account of what a parent can see in the portal before the visit, so that confidentiality is understood rather than assumed.",
+          "text_detailed": "Give the adolescent a plain account of what a parent can see in the portal before the visit, so that confidentiality is understood rather than assumed, and repeat it when the arrangements change.",
           "types": [
             "public"
           ],
@@ -15547,6 +15634,7 @@
         {
           "id": "c01",
           "text": "defer predictive testing until the young person can decide because no childhood medical action follows",
+          "text_detailed": "Defer predictive testing until the young person can decide, on the ground that no childhood medical action follows, with the deferral recorded and the family told how to revisit it.",
           "types": [
             "expert"
           ],
@@ -15556,6 +15644,7 @@
         {
           "id": "c02",
           "text": "permit a narrow exception where psychosocial burden is substantial and a sufficiently mature adolescent concurs",
+          "text_detailed": "Permit a narrow exception where the psychosocial burden is substantial and a sufficiently mature adolescent concurs, with maturity assessed individually and the concurrence recorded separately from the parents' request.",
           "types": [
             "expert"
           ],
@@ -15565,6 +15654,7 @@
         {
           "id": "c03",
           "text": "individualized ethics/genetics review where penetrance, age of onset, family circumstances or near-term management depart from the canonical case",
+          "text_detailed": "Refer for individualised ethics and genetics review where penetrance, age of onset, family circumstances or near-term management depart from the usual case, with the departure specified.",
           "types": [
             "expert"
           ],
@@ -15574,6 +15664,7 @@
         {
           "id": "c04",
           "text": "parental-authority comparator permitting testing after informed permission even without childhood intervention",
+          "text_detailed": "Permit testing after informed parental permission even without childhood intervention, with the decision and its reasoning recorded for the young person to read later.",
           "types": [
             "expert"
           ],
@@ -15583,6 +15674,7 @@
         {
           "id": "c05",
           "text": "future-autonomy/right-to-an-open-future framework favors deferral",
+          "text_detailed": "Favour deferral on open-future grounds, with the decision preserved for the young person rather than made on their behalf, and the reasoning recorded for them.",
           "types": [
             "framework"
           ],
@@ -15592,6 +15684,7 @@
         {
           "id": "c06",
           "text": "family-welfare/relational framework permits carefully bounded earlier knowledge when substantial family/child psychosocial benefit is credibly expected",
+          "text_detailed": "Permit carefully bounded earlier knowledge where a substantial family or child psychosocial benefit is credibly expected, with the expected benefit stated and the bound defined.",
           "types": [
             "framework"
           ],
@@ -15601,6 +15694,7 @@
         {
           "id": "c07",
           "text": "Record the young person's own view as soon as they can express one, and revisit the decision with them rather than treating the parents' choice as final.",
+          "text_detailed": "Record the young person's own view as soon as they can express one, and revisit the decision with them rather than treating the parents' choice as final, with the revisiting scheduled rather than left to request.",
           "types": [
             "public"
           ],
