@@ -4,3 +4,15 @@
 .type-note .reviewed{margin:0 .1rem}
 
 .bench-written{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:999px;padding:.05rem .5rem}
+
+.srcs{margin-top:.6rem;font-size:.8rem}
+.srcs summary{cursor:pointer;color:#0f766e;font-weight:600;font-size:.75rem;list-style:none}
+.srcs summary::-webkit-details-marker{display:none}
+.srcs summary::before{content:"▸ ";color:#94a3b8}
+.srcs[open] summary::before{content:"▾ "}
+.srcs summary:hover{text-decoration:underline}
+.srclist{margin:.5rem 0 0;padding-left:1.1rem;color:#64748b;line-height:1.55}
+.srclist li{margin-bottom:.35rem}
+.srclist a{color:#64748b;text-decoration:underline;text-underline-offset:2px}
+.srclist a:hover{color:#0f766e}
+.searchmark{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:#94a3b8;border:1px solid #e2e8f0;border-radius:999px;padding:0 .35rem}

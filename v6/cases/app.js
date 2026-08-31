@@ -1,9 +1,10 @@
 const RESOURCE='../../resources/cases/full-200-cases.v1.json';
+const SOURCES='../../resources/cases/case-sources.v1.json';
 const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
 const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
 const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
-const state={cases:[],shown:[],category:'',q:'',types:new Set(),sourcing:new Set(),current:null,rep:'concise',categories:{}};
+const state={cases:[],sources:{},shown:[],category:'',q:'',types:new Set(),sourcing:new Set(),current:null,rep:'concise',categories:{}};
 const $=id=>document.getElementById(id);
 /* Policy texts are recorded as short phrases, often starting lower case. Capitalise the first
    letter for display; the recorded text is unchanged. */
@@ -56,6 +57,19 @@ function renderIndex(){
   if(!state.shown.some(c=>c.id===state.current))show(state.shown[0].id,false);else markCurrent();
 }
 
+function shortCite(t){const c=String(t||'').trim();const cut=c.split(/(?<=\.)\s(?=[A-Z])/).slice(0,2).join(' ');return cut.length>170?cut.slice(0,167)+'…':cut||c;}
+function sourceList(list){
+  if(!list||!list.length)return '';
+  return '<ul class="srclist">'+list.map(s=>{
+    const label=esc(shortCite(s.citation));
+    const body=s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${label}</a>${s.resolved?'':' <span class="searchmark">search</span>'}`:label;
+    return `<li>${body}</li>`;
+  }).join('')+'</ul>';
+}
+function sourceBlock(list,label){
+  if(!list||!list.length)return '';
+  return `<details class="srcs"><summary>${esc(label)} · ${list.length}</summary>${sourceList(list)}</details>`;
+}
 function typeBadges(types){return (types||[]).map(t=>`<span class="ptype ${esc(t)}">${esc(TYPE_LABELS[t]||t)}</span>`).join('');}
 function sourceBadge(s){return `<span class="prov ${esc(s)}">${esc(SOURCE_LABELS[s]||s)}</span>`;}
 function sourceSummary(c){return Object.keys(SOURCE_LABELS).filter(k=>c.sourcing.has(k)).map(k=>sourceBadge(k)).join(' ');}
@@ -64,7 +78,8 @@ function typeSummary(c){return Object.keys(TYPE_LABELS).filter(k=>c.types.has(k)
 function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.searchParams.set('form',state.rep);return u.toString();}
 
 function renderDetail(c){
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div></div>`).join('');
+  const src=state.sources[c.id]||{sources:[],policies:{}};
+  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${sourceBlock(src.policies[p.id],'Sources for this policy')}</div>`).join('');
   const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
   $('case-detail').innerHTML=`
     <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>
@@ -73,6 +88,7 @@ function renderDetail(c){
     <div class="source-summary">${typeSummary(c)}${sourceSummary(c)}</div>
     <div class="scenario-tools"><span class="scenario-label">Case</span><div class="pills"><button class="pill-btn rep-btn ${state.rep==='concise'?'on':''}" data-rep="concise">Concise</button><button class="pill-btn rep-btn ${state.rep==='detailed'?'on':''}" data-rep="detailed">Detailed</button></div></div>
     <div id="scenario" class="scenario-box">${esc(c[state.rep])}</div>
+    ${sourceBlock(src.sources,'Sources for this case')}
     <div class="case-actions"><a id="load-sacre" class="sacre-btn" href="${esc(sacreUrl(c))}" target="_blank" rel="noopener">Load in SACRE ↗</a><span>Loads this case and its Public, Expert, and Framework policies into a new evaluation.</span></div>
     <div class="policies-head">Policies</div>
     <div class="policy-list">${policies}</div>
@@ -101,7 +117,9 @@ function clearFilters(){
 async function boot(){
   try{
     const r=await fetch(RESOURCE);if(!r.ok)throw new Error('Could not load cases');
-    const raw=await r.json();state.cases=buildCases(raw);applyUrlCategory();renderCategories();
+    const raw=await r.json();
+    // Sources are a separate file: the case list should still render if it cannot be read.
+    try{const sr=await fetch(SOURCES);if(sr.ok)state.sources=(await sr.json()).cases||{};}catch{}state.cases=buildCases(raw);applyUrlCategory();renderCategories();
     const opening=state.cases.find(c=>c.id===location.hash.slice(1));state.current=opening?.id||null;renderIndex();if(opening&&matches(opening))show(opening.id,false);
   }catch(e){$('count').textContent='Cases unavailable';$('case-index').innerHTML=`<p class="idx-empty">${esc(e.message)}</p>`;$('case-detail').innerHTML='<p class="loading">The case data could not be loaded.</p>';}
 }
