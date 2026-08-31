@@ -184,6 +184,7 @@
     "M136:c05": "Favour the patient's pre-treatment commitments where the change conflicts with them, on the ground that continuity of the person's own long-standing values is what treatment was meant to serve.",
     "M136:c06": "Favour the present competent patient's values, on the ground that the person deciding now is the patient, and treat the earlier self's preferences as evidence rather than as a standing instruction.",
     "M136:c07": "Where the change materially harms the patient's relationships but the patient remains competent, negotiate an adjustment with the patient and those affected, with the patient retaining the decision and the negotiation recorded.",
+    "M136:c08": "Record the patient's own account of the change alongside the family's, and treat a disagreement between the two accounts as a reason to review the stimulation settings rather than to decide which account is right. Both accounts stay in the record, and the review is scheduled rather than left to whoever raises it again.",
     "M137:c01": "Permit enhancement in competent adults under informed-consent and safety regulation, with the consent stating what is known about long-term effects and what is not, and post-market monitoring in place.",
     "M137:c02": "Restrict use to therapeutic and restorative indications, with the boundary defined by a stated clinical criterion rather than by the wording of a request, and reviewed as diagnostic categories change.",
     "M137:c03": "Permit limited enhancement while prohibiting employer, school and military use that a person cannot refuse without cost, with the prohibition enforced against the institution rather than the individual.",
@@ -200,5 +201,5 @@
     "M138:c07": "Require public and stakeholder engagement and revisit the governance whenever a capability threshold is crossed, with the engagement conducted before the threshold rather than after, and its outcome published.",
     "M138:c08": "Publish what is being grown and what would trigger a stop, so that the limits are set in public before they are reached, and report against them at stated intervals."
   },
-  "written": 198
+  "written": 199
 }

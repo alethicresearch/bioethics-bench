@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 198,
+  "detailed_policy_count": 199,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -10417,6 +10417,7 @@
         {
           "id": "c08",
           "text": "Record the patient's own account of the change alongside the family's, and treat a disagreement between them as a reason to review the settings rather than to decide between accounts.",
+          "text_detailed": "Record the patient's own account of the change alongside the family's, and treat a disagreement between the two accounts as a reason to review the stimulation settings rather than to decide which account is right. Both accounts stay in the record, and the review is scheduled rather than left to whoever raises it again.",
           "types": [
             "public"
           ],
