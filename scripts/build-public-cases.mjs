@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const SOURCE = path.join(ROOT, 'resources/case-families/full-200-rich-candidate-universes.v1.1.json');
 const PROJECTION_DIR = path.join(ROOT, 'resources/projections/source-grounded');
 const OUTPUT = path.join(ROOT, 'resources/cases/full-200-cases.v1.json');
+const CONSTRUCTED = path.join(ROOT, 'resources/cases/constructed-policies.v1.json');
 
 const CATEGORIES = {
   clinical: 'Clinical care',
@@ -192,6 +193,10 @@ function inferTypes(caseId, policy, reviewed) {
 
 const source = JSON.parse(fs.readFileSync(SOURCE, 'utf8'));
 const reviewed = loadReviewedTypes();
+/* Cases that record no policy of a given type carry one written by the Bench, so every case can be
+   evaluated across Public, Expert and Framework. It is published as sourcing "constructed", and
+   where the case file judged the evidence insufficient to support such a pool, the case says so. */
+const constructed = JSON.parse(fs.readFileSync(CONSTRUCTED, 'utf8')).policies;
 /* Two policies (M189 c01 and c02) open with the classification they were filed under —
    "public/source-informed orientation toward …". The type and sourcing fields now carry that,
    so the prefix repeats itself in the reader's own words and adds the audit vocabulary back.
@@ -214,9 +219,24 @@ const cases = source.cases.map((entry) => {
       sourcing: sourcing(policy),
     };
   });
+  const added = constructed[entry.inventory_id];
+  if (added) {
+    const present = new Set(policies.flatMap((p) => p.types));
+    if (present.has(added.type)) throw new Error(`${entry.inventory_id} already records a ${added.type} policy`);
+    policyCount += 1;
+    policies.push({
+      id: `c${String(policies.length + 1).padStart(2, '0')}`,
+      text: added.text,
+      types: [added.type],
+      type_reviewed: false,
+      sourcing: 'constructed',
+      written_by_bench: true,
+    });
+  }
   return {
     id: entry.inventory_id,
     title: entry.title,
+    case_file_objects_to_pool: added?.case_file_objects === true ? added.type : undefined,
     category: categoryFor(entry.inventory_id),
     concise,
     detailed,
@@ -226,7 +246,7 @@ const cases = source.cases.map((entry) => {
 });
 
 if (cases.length !== 200) throw new Error(`Expected 200 cases, found ${cases.length}`);
-if (policyCount !== 1298) throw new Error(`Expected 1298 policies, found ${policyCount}`);
+if (policyCount !== 1436) throw new Error(`Expected 1436 policies, found ${policyCount}`);
 for (const benchCase of cases) {
   if (!benchCase.concise || !benchCase.detailed) throw new Error(`Missing case text for ${benchCase.id}`);
   for (const policy of benchCase.policies) {

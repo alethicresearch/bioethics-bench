@@ -2,7 +2,7 @@
   "resource_id": "bioethics-bench-cases",
   "resource_version": "1.0.0",
   "case_count": 200,
-  "policy_count": 1298,
+  "policy_count": 1436,
   "categories": {
     "clinical": "Clinical care",
     "children": "Children & families",
@@ -93,6 +93,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Keep the operation available at the patient's own hospital rather than transferring or postponing, so that refusing transfusion does not cost a patient timely access to care others receive locally.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-a/M001-deep-case.md"
@@ -502,6 +512,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient at first contact who will provide the service and by when, so that a clinician's objection is never left as the patient's problem to solve.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-a/M007-deep-case.md"
@@ -568,6 +588,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "State at the start of care exactly what would be disclosed and to whom, and hold any disclosure to that stated limit, so people can seek help without learning the rules afterwards.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-a/M008-deep-case.md"
@@ -642,6 +672,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Keep the surrogate's request in force until a documented conversation about what CPR would and would not achieve for this patient has happened, and record the family's view in the chart when the team decides otherwise.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-a/M009-deep-case.md"
@@ -770,6 +810,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Publish the access criteria and the decision timeline at the point of request, so a patient who asks learns where they stand within days rather than through informal escalation.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-b/M011-deep-case.md"
@@ -967,6 +1017,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Keep the refusal in force and continue full labour care unchanged, so that declining an intervention never costs a patient the rest of the team's attention.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-b/M014-deep-case.md"
@@ -1032,6 +1092,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Keep the child in the practice and place scheduling and infection-control precautions on the practice rather than the family, so that refusal does not cost the child a regular clinician.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-b/M015-deep-case.md"
@@ -1096,6 +1166,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Offer a named second opinion and an independent family advocate before any child-protection step, so a family that disagrees is heard rather than only reported.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-b/M016-deep-case.md"
@@ -1161,6 +1241,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient when a stewardship rule rather than their own clinical picture is the reason a drug is withheld, and give them a route to ask for that decision to be reviewed.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-b/M017-deep-case.md"
@@ -1426,6 +1516,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Continue treatment while the parents request it and their questions remain unanswered, with scheduled family meetings rather than an open-ended wait, so parents are not asked to decide before they understand the prognosis.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-c/M021-deep-case.md"
@@ -1510,6 +1610,7 @@
     {
       "id": "M023",
       "title": "Experimental treatment requested for critically ill child",
+      "case_file_objects_to_pool": "public",
       "category": "children",
       "concise": "A child with progressive, life-threatening cancer has exhausted standard curative therapy and is not eligible for the only active clinical trial because of prior treatment-related organ dysfunction. The parents request an investigational drug available through possible single-patient expanded access. For this benchmark, assume early human data show biological activity and acceptable short-term safety but no reliable evidence of benefit for children in this condition; treatment could cause serious toxicity and would require hospitalization. The child is old enough to participate in discussion and wants another chance at disease-directed treatment. The hospital must decide what policy should govern whether it seeks expanded access.",
       "detailed": "A school-aged child has progressive, life-threatening cancer after exhausting established curative treatments. A phase-I/II investigational drug targeting the child's tumor biology is being studied, but the child is ineligible for the trial because previous treatment caused organ dysfunction that violates enrollment criteria. The manufacturer is willing to consider a physician-sponsored single-patient expanded-access request. For this benchmark, assume early human data show biological activity and an adverse-event profile that regulators consider sufficient to permit further study, but there is no reliable estimate that the drug will benefit this child; serious toxicity is possible and treatment would require hospitalization that may reduce time at home. Palliative care is available whether or not the drug is pursued. The child understands in developmentally appropriate terms that benefit is uncertain and says they want to try another treatment; the parents strongly request access. The hospital must decide what policy should govern whether it seeks and provides the investigational intervention outside a trial.",
@@ -1568,6 +1669,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give the family a written answer with a named decision-maker and a date, so that a request for access is answered rather than absorbed into the treatment discussion.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-c/M023-deep-case.md"
@@ -1575,6 +1686,7 @@
     {
       "id": "M024",
       "title": "Adolescent gender-affirming medical treatment under contested evidence",
+      "case_file_objects_to_pool": "public",
       "category": "children",
       "concise": "A 15-year-old with persistent gender incongruence and distress requests a puberty-related medical intervention after more than a year of specialist assessment and psychosocial support. For this benchmark, assume the adolescent demonstrates substantial understanding of the treatment's intended effects, uncertainties, fertility implications and alternatives; one parent supports treatment and the other remains concerned about long-term outcomes but is willing to continue deliberation. There is no acute suicidality or untreated condition that independently prevents informed decision-making. The service must decide what policy should govern access when the adolescent requests treatment but the evidence base and professional policies remain contested.",
       "detailed": "A 15-year-old has experienced persistent gender incongruence and clinically significant distress through puberty and has been followed for more than a year by a multidisciplinary service. The adolescent requests a puberty-related medical intervention after psychosocial support and repeated discussion of nonmedical options. For this benchmark, assume the adolescent can explain the intended effects, known adverse effects, important evidence uncertainties, possible fertility consequences and the possibility that future preferences may change. Relevant mental-health conditions have been assessed and are being treated where needed; there is no acute crisis or cognitive impairment that independently defeats decision-making capacity. One parent supports the request. The other parent is worried about long-term physical and psychological outcomes and would prefer further observation but remains engaged rather than categorically refusing care. Current international professional policies differ materially in how they translate the evidence into access rules. The service must decide what policy should govern treatment access in this context.",
@@ -1642,6 +1754,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Keep the young person and their family in specialist care with scheduled review whatever is decided about medication, so that deferral is not experienced as discharge.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-c/M024-deep-case.md"
@@ -1713,6 +1835,7 @@
     {
       "id": "M026",
       "title": "Withdrawal of life-sustaining treatment over family objection",
+      "case_file_objects_to_pool": "public",
       "category": "end-of-life",
       "concise": "An adult in the ICU lacks decision-making capacity after catastrophic illness and remains dependent on mechanical ventilation and other organ support. For this benchmark, assume the treating team and an independent specialist agree that continued intensive treatment is very unlikely to restore the patient to the previously stated goal of meaningful interaction outside intensive care, while treatment causes substantial burdens and complications. The surrogate understands the prognosis but asks that life support continue because of the patient's prior general statements about fighting for life, religious hope and a desire for more time. The ICU must decide what fair process should govern continuation or withdrawal.",
       "detailed": "An adult has survived a catastrophic illness but remains unable to make medical decisions and is dependent on mechanical ventilation, vasopressors and repeated invasive procedures. Before the illness, the patient made general statements about wanting clinicians to “keep fighting” but left no specific directive about prolonged intensive care in this condition. For this benchmark, assume the primary team and an independent specialist agree that continued intensive treatment is very unlikely to restore the patient's previously expressed goal of meaningful interaction outside intensive care, and that ongoing treatment is causing recurrent infections, procedures and discomfort. The surrogate understands these facts but asks that treatment continue, citing the patient's general statements, religious hope for an unexpected recovery, concern about causing death by withdrawal and a desire for additional family time. Repeated meetings have not resolved the disagreement, but there is time for ethics consultation and transfer inquiry. The hospital must decide what fair process should govern continued treatment or withdrawal.",
@@ -1780,6 +1903,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Fix the accommodation period in advance and tell the family what it is, so that time is a stated part of the plan rather than something they must keep asking for.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-c/M026-deep-case.md"
@@ -1853,6 +1986,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Ask the family what the person said while they could still say it, record that alongside the directive, and revisit it whenever the plan changes.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-c/M027-deep-case.md"
@@ -2141,6 +2284,7 @@
     {
       "id": "M032",
       "title": "Assisted dying for treatment-resistant psychiatric illness",
+      "case_file_objects_to_pool": "public",
       "category": "end-of-life",
       "concise": "A 52-year-old adult in the Netherlands has severe recurrent psychiatric illness with decades of specialist treatment, repeated hospitalizations and persistent suffering that the patient describes as unbearable. The patient requests euthanasia and demonstrates understanding of the request and its consequences. For this benchmark, assume multiple evidence-based treatments have failed or produced intolerable burdens, but some clinicians believe further therapeutic possibilities cannot be ruled out with the confidence normally possible in terminal somatic disease. There is no terminal physical illness and no acute intoxication or psychotic episode driving the request. The assessment service must decide what policy should govern eligibility for assisted dying in psychiatric illness alone.",
       "detailed": "A 52-year-old adult in the Netherlands has lived for decades with severe recurrent depression, trauma-related symptoms and personality-related difficulties. The patient has undergone prolonged psychotherapy, multiple medication classes, augmentation strategies, structured rehabilitation and several psychiatric hospitalizations. For this benchmark, assume the request for euthanasia has persisted over time outside acute crises; the patient can understand relevant information, compare alternatives and explain the consequences of death; and no intoxication, delirium or acute psychotic episode is determining the request. Several experienced clinicians agree that suffering is profound and chronic, but they differ about whether “no reasonable alternative” and lack of prospect of improvement can be established with sufficient confidence because psychiatric outcomes remain uncertain and additional treatment approaches exist, though burdensome and of uncertain benefit. The patient has no terminal somatic illness. The service must decide whether psychiatric illness alone can qualify, whether an exceptional heightened-review pathway should apply, or whether such requests should be excluded.",
@@ -2207,6 +2351,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Guarantee continued treatment and support throughout any assessment, so that asking to be assessed never reduces the care a person is offered.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-d/M032-deep-case.md"
@@ -2486,6 +2640,7 @@
     {
       "id": "M037",
       "title": "Unilateral limitation of a newly requested nonbeneficial escalation",
+      "case_file_objects_to_pool": "public",
       "category": "end-of-life",
       "concise": "An adult in the ICU lacks decision-making capacity and is receiving mechanical ventilation and vasopressors for advanced irreversible disease. The surrogate asks clinicians to initiate ECMO if cardiopulmonary failure worsens. For this benchmark, assume two experienced critical-care specialists agree that ECMO cannot reasonably restore the patient's agreed goal of surviving to leave intensive care and would add major invasive burdens; existing ventilation, symptom treatment and other current care will continue while conflict is reviewed. The surrogate understands the prognosis but requests “everything possible.” The hospital must decide what process should govern non-offer of the requested escalation.",
       "detailed": "An adult with advanced irreversible disease has developed severe multiorgan failure and lacks decision-making capacity. The patient is already receiving mechanical ventilation, vasopressors and full symptom-focused care. The surrogate asks that extracorporeal membrane oxygenation (ECMO) be initiated if cardiopulmonary function deteriorates further, describing a commitment to “everything possible.” For this benchmark, assume the patient and surrogate previously identified survival sufficient to leave intensive care and interact with family as the relevant treatment goal. Two experienced critical-care specialists independently conclude that ECMO cannot reasonably achieve that goal because the underlying disease is irreversible and would expose the patient to major cannulation, bleeding and other burdens without a realistic path to ICU discharge. Existing life-sustaining treatment will not be withdrawn merely because ECMO is declined, and there is time for ethics consultation and transfer inquiry. The surrogate understands the clinical judgment but continues to request ECMO. The hospital must decide what fair process should govern whether this new escalation is offered.",
@@ -2544,6 +2699,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the surrogate in writing, at the time of the request, what will and will not be offered and why, with the route to a second opinion named.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-d/M037-deep-case.md"
@@ -2674,6 +2839,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "direct"
+        },
+        {
+          "id": "c07",
+          "text": "Let the patient raise donation whenever they wish and answer fully, without allowing the donation question to alter the timing or handling of the assisted-dying decision.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-d/M039-deep-case.md"
@@ -2681,6 +2856,7 @@
     {
       "id": "M040",
       "title": "Family objection to BD/DNC testing",
+      "case_file_objects_to_pool": "public",
       "category": "end-of-life",
       "concise": "A child has catastrophic irreversible brain injury, no observed brain-mediated responses and no plausible confounder, and clinicians believe formal testing for death by neurologic criteria is indicated. The parents object to the neurologic examination and apnea test because they believe testing itself may hasten death and their religious tradition recognizes death only when the heart permanently stops. For this benchmark, assume the team has explained the purpose and risks of testing, no organ-donation decision is pending, and a short delay for consultation is medically feasible. The hospital must decide what process should govern whether formal BD/DNC testing proceeds over parental objection.",
       "detailed": "A child in the pediatric ICU has catastrophic irreversible brain injury after a prolonged period without cerebral perfusion. The known cause of injury has been established, temperature and blood pressure are adequate, sedating/paralyzing drugs and major metabolic confounders have been excluded, and repeated bedside examinations show no brain-mediated responses. The treating team believes the child is likely to meet criteria for death by neurologic criteria and proposes the formal neurologic examination and apnea testing required by current standards. The parents object. They fear the apnea test could itself cause cardiopulmonary deterioration and explain that their religious understanding recognizes death only after irreversible circulatory arrest. For this benchmark, assume clinicians have explained that the purpose of testing is to determine whether the child is already dead by neurologic criteria rather than to decide whether life support should be withdrawn; no organ-donation decision is pending; and a short period for ethics/spiritual consultation is feasible without immediate harm to another patient. The hospital must decide whether parental consent is required, whether testing should be delayed for accommodation or alternative testing where medically appropriate, or whether clinicians should proceed despite objection as part of their duty to determine death.",
@@ -2739,6 +2915,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Explain what the testing involves and why before it happens, and allow a short defined period for the family to gather, rather than proceeding on the clinical timetable alone.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-d/M040-deep-case.md"
@@ -2955,6 +3141,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Provide the counselling and, where chosen, the procedure at the centre already managing the pregnancy, so that acting on the decision does not require travel or repeating the history.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M043-deep-case.md"
@@ -3029,6 +3225,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish what the programme offers, its outcomes so far and its selection criteria, so that patients can judge for themselves whether to seek it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M044-deep-case.md"
@@ -3102,6 +3308,7 @@
     {
       "id": "M046",
       "title": "Institutional abortion-service policy",
+      "case_file_objects_to_pool": "public",
       "category": "reproduction",
       "concise": "A general hospital provides obstetric, gynecologic and emergency care in a region where abortion is lawful under the circumstances represented here. The hospital can staff abortion care directly but leadership is considering a narrower service policy because some clinicians and community stakeholders object. Other local providers exist, though referral can add travel and delay. The hospital must choose whether to provide abortion broadly within ordinary clinical/legal limits, provide only a narrower set of indications while guaranteeing timely referral or transfer for other lawful care, or ordinarily decline abortion provision while maintaining emergency treatment and an access pathway elsewhere. For this benchmark, assume all three institutional policies are lawful.",
       "detailed": "A regional general hospital offers comprehensive obstetric and gynecologic care and has clinicians capable of providing medication and procedural abortion. Abortion is lawful for the patients and gestational ranges relevant to this benchmark. Hospital leaders are considering whether the institution should integrate abortion into ordinary reproductive care, restrict direct provision to a narrower set of gestational ages or clinical indications while guaranteeing a timely external pathway, or generally decline direct abortion services except urgent health-preserving care while directing patients elsewhere. Some staff and community members have moral objections; other patients and clinicians argue that exclusion from a comprehensive hospital creates stigma, delay and unequal access. Alternative providers are available but may require additional travel and several days of delay. The hospital must choose its standing service policy, not adjudicate the morality of an individual abortion.",
@@ -3160,6 +3367,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish what the hospital does and does not provide, so that a patient knows before arriving rather than at the point of need.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M046-deep-case.md"
@@ -3234,6 +3451,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Provide the procedure on the same terms as for any other adult, without an added waiting period, second review or parity threshold that would not apply to an older or parenting patient.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M047-deep-case.md"
@@ -3299,6 +3526,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Put the disposition agreement in front of both people again at each storage renewal, so that what happens on disagreement is settled while both still agree.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M048-deep-case.md"
@@ -3354,6 +3591,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c06",
+          "text": "Treat storage without instruction as a duty owed to the people who created the embryos: act only after the notice they were promised has genuinely been given, and follow the disposition they last recorded.",
+          "types": [
+            "framework"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-e/M049-deep-case.md"
@@ -3502,6 +3749,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Involve affected families and people living with the condition in setting the criteria, and publish the outcome of that involvement alongside any decision to permit or refuse.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-f/M051-deep-case.md"
@@ -3641,6 +3898,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Decide by public deliberation with a published result rather than by clinic-level discretion, so that access does not turn on which programme a family happens to reach.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-f/M053-deep-case.md"
@@ -3919,6 +4186,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish what is being made, how far it develops and what happens to it, so that oversight is checkable from outside the specialist community.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-f/M057-deep-case.md"
@@ -4208,6 +4485,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Set compensation so the carrier is never out of pocket and is paid for time and risk, with terms fixed in advance and independent legal advice paid for by the programme.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M061-deep-case.md"
@@ -4272,6 +4559,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give the donor a separate clinician and a private route to withdraw at any point, so that a family offer can be declined without the family learning why.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M062-deep-case.md"
@@ -4327,6 +4624,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c06",
+          "text": "Consult broadly and publish the reasoning before any change of position, so that a prohibition is maintained or lifted by public decision rather than by the first laboratory to proceed.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M063-deep-case.md"
@@ -4334,6 +4641,7 @@
     {
       "id": "M064",
       "title": "Artificial-womb technology for extreme prematurity",
+      "case_file_objects_to_pool": "public",
       "category": "reproduction",
       "concise": "A future neonatal center can transfer an extremely premature fetus/newborn to an artificial-womb system that continues fluid-based extrauterine support rather than conventional ventilation. For this benchmark, assume early clinical evidence suggests a meaningful chance of improving survival without severe morbidity compared with standard intensive care at a narrow gestational threshold, but long-term outcome evidence remains limited. Parents can receive counseling and conventional neonatal care remains available. The program must decide whether to offer artificial-womb support as a parental option for eligible patients, restrict initial use to a tightly monitored trial/registry at defined gestational thresholds, or require it when the expected benefit over conventional care is substantial and parental refusal would expose the child to markedly worse outcomes.",
       "detailed": "A future tertiary neonatal center has an artificial-womb platform intended for fetuses/newborns delivered at the edge of viability. The system provides fluid-based extrauterine support intended to continue organ maturation while avoiding some harms of immediate air ventilation. For this benchmark, assume controlled early clinical evidence indicates that, within a defined gestational and physiologic window, the technology has a meaningful prospect of improving survival without severe morbidity compared with conventional neonatal intensive care, but long-term neurodevelopmental evidence is still limited. Conventional intensive care remains a medically reasonable alternative. Parents have time for urgent but meaningful counseling. The center must choose a standing policy: offer artificial-womb support as one parental option alongside conventional care; restrict use to a prospective trial/registry with narrow eligibility until longer-term evidence matures; or treat artificial-womb support as the recommended/required rescue pathway when its expected benefit over conventional treatment crosses a high threshold, subject to ordinary limits on parental refusal of clearly superior life-saving care.",
@@ -4391,6 +4699,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Keep the conventional neonatal option available in full, with the same staffing and follow-up, so that choosing it is not the lesser path.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M064-deep-case.md"
@@ -4465,6 +4783,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give the future donor child their own clinician and record now what they will be told, so that a child conceived to donate learns their history from the family rather than by accident.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M065-deep-case.md"
@@ -4603,6 +4931,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Offer the counselling and the procedure without delaying cancer therapy, and record the child's own view whatever their age.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M067-deep-case.md"
@@ -4676,6 +5014,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell patients the clinic's transfer policy before treatment begins, so that no one discovers a restriction after their embryos exist.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M068-deep-case.md"
@@ -4741,6 +5089,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the affected patient every laboratory error touching their material as soon as it is known, including errors the clinic judges harmless, and say what remains uncertain.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-g/M069-deep-case.md"
@@ -4823,6 +5181,7 @@
     {
       "id": "M071",
       "title": "Placebo control when effective treatment exists",
+      "case_file_objects_to_pool": "public",
       "category": "research",
       "concise": "Investigators propose a short randomized trial of a new treatment for a chronic symptomatic condition. An established therapy improves symptoms but stopping it for several weeks is not expected to cause death, irreversible injury or major disease progression. Investigators argue that symptom variability and a large placebo response make an active-control trial unable to establish efficacy reliably. Participants assigned to placebo would receive close monitoring, rescue treatment for predefined worsening and prompt withdrawal if safety thresholds are crossed. The ethics committee must decide whether to require an active control, permit placebo under the narrow methodological/risk exception, or permit placebo only with stricter mitigation such as shorter exposure and mandatory rescue thresholds.",
       "detailed": "A research ethics committee is reviewing a randomized trial for a chronic condition with fluctuating subjective symptoms. An established treatment provides meaningful symptomatic benefit but is not curative. Investigators contend that an active-comparator noninferiority trial would be scientifically difficult to interpret because assay sensitivity is uncertain and placebo response is substantial. The proposed placebo period is six weeks. For this benchmark, assume withholding established treatment during that interval creates temporary symptom burden but no expected serious or irreversible harm, and participants can restart rescue therapy promptly if prespecified deterioration occurs. All participants know that placebo is possible. The committee must choose whether the existence of effective treatment requires an active-control design; whether the study qualifies for the narrow placebo exception because the scientific rationale is compelling and risk remains below the serious/irreversible-harm threshold; or whether placebo may be allowed only after further mitigation such as a shorter exposure window, more frequent monitoring and lower rescue thresholds.",
@@ -4880,6 +5239,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Guarantee that anyone assigned placebo returns to effective treatment immediately on worsening, and say plainly at consent how long they may be without it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M071-deep-case.md"
@@ -4954,6 +5323,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Fix compensation, treatment for any harm and long-term follow-up before recruitment opens, and publish those terms with the participant information.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M072-deep-case.md"
@@ -5018,6 +5397,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Consult the community the trial will enrol from before it begins and publish what was heard, so that people enrolled without consent were represented in the decision to allow it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M073-deep-case.md"
@@ -5092,6 +5481,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Commit in advance to what the host community gets if the treatment works, and publish that commitment with the protocol.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M074-deep-case.md"
@@ -5232,6 +5631,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Pay for time and burden at a rate the participant can see and check, prorated so that leaving early costs nothing already earned.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M076-deep-case.md"
@@ -5361,6 +5770,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Offer pregnant patients the trial rather than deciding for them, with the uncertainty stated plainly and their own clinician involved in the decision.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M078-deep-case.md"
@@ -5425,6 +5844,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Let people in prison decide without their participation affecting parole, privileges or housing, and say so in writing at consent.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-h/M079-deep-case.md"
@@ -5545,6 +5974,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c06",
+          "text": "Publish the result whatever it shows, within a stated period, and tell participants where to find it when they enrol.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M081-deep-case.md"
@@ -5609,6 +6048,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Consult the school communities before randomisation and publish what was decided, so that families whose children are covered by the change had a route to object.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M082-deep-case.md"
@@ -5739,6 +6188,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c06",
+          "text": "Publish the contract terms governing publication alongside the trial registration, so that participants can see what the sponsor may withhold before enrolling.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M084-deep-case.md"
@@ -5814,6 +6273,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Say plainly at consent that this is a first-in-human study and cannot be expected to treat the participant's own disease, and give the same care afterwards to those it does not help.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M085-deep-case.md"
@@ -5887,6 +6356,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish the allocation rule and the numbers available, so that patients who receive nothing can see how the decision was made rather than suspecting it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M086-deep-case.md"
@@ -5952,6 +6431,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell participants exactly what the sham involves and its risks, and guarantee the real procedure afterwards if the trial shows it works.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M087-deep-case.md"
@@ -6016,6 +6505,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M088-deep-case.md"
@@ -6091,6 +6590,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give patients and the public a standing role in setting the portfolio, with the reasoning for the final split published.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-i/M089-deep-case.md"
@@ -6222,6 +6731,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Choose the design that reduces participant travel and time, and say what the trial asks of participants before asking them to join.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M091-deep-case.md"
@@ -6287,6 +6806,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish what oversight was applied and by whom, so that the public can see a decision was taken rather than assumed.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M092-deep-case.md"
@@ -6352,6 +6881,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Say publicly that information has been withheld and on what grounds, so that restriction is visible and can be challenged.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M093-deep-case.md"
@@ -6492,6 +7031,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Provide income, housing, food and contact with family for the whole period, so that isolation does not cost a person their livelihood or their household.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M095-deep-case.md"
@@ -6557,6 +7106,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give parents a plain account of what a positive result would and would not mean, including the chance of finding something that never causes harm, before the sample is taken.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M096-deep-case.md"
@@ -6631,6 +7190,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Involve residents and people who use drugs in siting and operating the service, and publish what was agreed, so that the arrangement is one the neighbourhood recognises.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M097-deep-case.md"
@@ -6705,6 +7274,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M098-deep-case.md"
@@ -6778,6 +7357,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M099-deep-case.md"
@@ -6853,6 +7442,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Tell the patients and families not admitted that a bed was unavailable and what will happen instead, rather than presenting the decision as purely clinical.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-j/M100-deep-case.md"
@@ -7057,6 +7656,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give the donor an independent advocate, a private route to withdraw, and a plain account of the risk in their own terms, at every stage.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M103-deep-case.md"
@@ -7121,6 +7730,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Address the barriers that caused the missed doses — cost, transport, housing, support — and count that response, rather than the earlier record alone, when deciding.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M104-deep-case.md"
@@ -7325,6 +7944,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell donor families exactly what the procedure involves before authorisation, and let them decline it while still donating.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M107-deep-case.md"
@@ -7389,6 +8018,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Fix at consent what surveillance is required, for how long, and what happens if the recipient later declines, so that lifelong obligations are agreed rather than imposed afterwards.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M108-deep-case.md"
@@ -7453,6 +8092,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Provide the same follow-up any other transplant patient would receive, and keep clinical care separate from any reporting the law requires.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M109-deep-case.md"
@@ -7517,6 +8166,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Keep clinical eligibility and immigration enquiry entirely separate, and say so publicly, so that seeking assessment carries no risk of exposure.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-k/M110-deep-case.md"
@@ -7582,6 +8241,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Refuse conditions the recipients themselves could not be told about, and tell donors this rule before donation rather than at the point of refusal.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M111-deep-case.md"
@@ -7646,6 +8315,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Keep withdrawal unconditional and private, and tell every participant at the outset what happens to the chain if someone withdraws.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M112-deep-case.md"
@@ -7720,6 +8399,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell every candidate on the list how combined-organ decisions are made, so that a patient passed over knows the rule rather than suspecting one.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M113-deep-case.md"
@@ -7727,6 +8416,7 @@
     {
       "id": "M114",
       "title": "Global allocation of scarce vaccine or therapeutic",
+      "case_file_objects_to_pool": "public",
       "category": "global-health",
       "concise": "An effective pandemic vaccine is available, but global supply is enough for only a fraction of people during the first six months. Countries differ in population size, current mortality, health-system strain and manufacturing contribution. The international mechanism must decide whether to begin with equal population-proportional shares, allocate primarily according to current epidemiologic need and expected health benefit, or reserve a limited reciprocity tranche for countries that contributed manufacturing or frontline global-response capacity while distributing the remainder by need and equity.",
       "detailed": "An international financing and procurement mechanism controls a large but insufficient supply of a highly effective vaccine during a severe pandemic. All participating countries have accepted common reporting and delivery requirements. Some countries have much larger populations; some face rapidly rising mortality and fragile health systems; several invested heavily in manufacturing or supplied globally scarce inputs and health workers. Supply cannot cover all high-risk groups immediately. The mechanism must choose a transparent first-phase allocation rule: equal per-capita or population-proportional access so every country can protect a comparable initial share; dynamic need/benefit allocation weighted toward current outbreak burden, vulnerable populations and health-system collapse risk; or a multiprinciple rule that reserves a bounded reciprocity contribution for countries providing critical global-response resources while directing most doses according to need and equity.",
@@ -7795,6 +8485,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Distribute through a shared mechanism countries agree to in advance, and publish each allocation, so that supply does not follow bilateral deals made out of sight.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M114-deep-case.md"
@@ -7802,6 +8502,7 @@
     {
       "id": "M115",
       "title": "International recruitment of health workers from shortage countries",
+      "case_file_objects_to_pool": "public",
       "category": "global-health",
       "concise": "A high-income health system has major staffing vacancies and is considering a targeted recruitment campaign in a country on WHO's 2026 health-workforce support and safeguards list. Individual clinicians from that country remain free to apply for jobs abroad. The employer must decide whether to refrain from active recruitment, recruit only through a bilateral agreement that provides proportional workforce/health-system investment to the source country, or recruit openly while relying on individual workers' right to migrate.",
       "detailed": "A hospital network in a high-income country faces persistent shortages of nurses and physicians. A recruitment agency proposes a large targeted campaign in a lower-income country whose health-worker density and service coverage place it on WHO's 2026 Support and Safeguards List. The source government has not requested exemption from the safeguards. Individual health workers retain the right to seek jobs abroad and some actively want migration opportunities. WHO's amended Global Code distinguishes that individual freedom from systematic active recruitment and encourages government-to-government arrangements and proportional co-investment when recruitment occurs. The employer must decide whether to avoid active recruitment from the listed country; recruit only through a bilateral agreement that supports source-country workforce priorities; or conduct ordinary active recruitment on the view that limiting employer outreach unfairly constrains workers' opportunities.",
@@ -7869,6 +8570,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Guarantee recruited workers full information, portable qualifications and the right to return, and refuse arrangements that bind a worker to one employer.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M115-deep-case.md"
@@ -7942,6 +8653,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Publish what public money contributed to the technology and what the price is in each country, so that patients can see what they are being charged for.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M116-deep-case.md"
@@ -8007,6 +8728,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Separate care entirely from immigration enforcement and say so publicly, so that no one avoids treatment for fear of the consequences of seeking it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M117-deep-case.md"
@@ -8063,6 +8794,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c06",
+          "text": "Publish the triage rule and apply it identically to everyone brought in, so that neither side's community has reason to believe the hospital treats the other first.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M118-deep-case.md"
@@ -8070,6 +8811,7 @@
     {
       "id": "M119",
       "title": "Technology transfer versus immediate procurement",
+      "case_file_objects_to_pool": "public",
       "category": "global-health",
       "concise": "A donor has a fixed five-year budget for vaccines and diagnostics in a lower-resource region. Purchasing finished products from established international manufacturers would deliver more doses in the first two years. Funding a local manufacturing and technology-transfer partnership would deliver fewer products initially but could create regional production capacity, trained staff and faster future emergency response. The donor must choose immediate lowest-cost procurement, local-capacity priority, or a staged hybrid that guarantees current supply while tying additional investment to manufacturing milestones.",
       "detailed": "An international donor supports a lower-resource country's vaccine and diagnostic program. A fixed five-year budget can either purchase large volumes from established foreign manufacturers immediately or finance a technology-transfer partnership involving equipment, regulatory strengthening, workforce training and local production. For this benchmark, assume the local project is technically credible but will produce fewer usable doses during the first two years; if successful, it will provide substantial regional capacity by years three to five and improve preparedness for future outbreaks. The donor must decide whether to maximize immediate procurement, prioritize long-term local production and technical autonomy despite near-term opportunity cost, or split funding through a staged hybrid that secures current essential products while expanding local capacity against transparent performance milestones.",
@@ -8137,6 +8879,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Decide with the recipient region rather than for it, and publish the agreed split between immediate supply and local capacity.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M119-deep-case.md"
@@ -8210,6 +8962,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Involve the affected families in the funding decision and publish the reasoning, including what a refusal means for the children concerned.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-l/M120-deep-case.md"
@@ -8284,6 +9046,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Return results and capacity to the contributing communities on a published timetable, and require their agreement before commercial use.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M121-deep-case.md"
@@ -8349,6 +9121,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Provide housing, income and treatment support first, and record what was offered before any compulsory measure is considered.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M122-deep-case.md"
@@ -8496,6 +9278,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M124-deep-case.md"
@@ -8561,6 +9353,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Offer to notify the partner in a way that does not name the patient, and let the patient choose the route, before any provider-led notification.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M125-deep-case.md"
@@ -8635,6 +9437,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "State exactly what is reported and to whom before testing, and guarantee treatment and support to anyone who tests positive.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M126-deep-case.md"
@@ -8708,6 +9520,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give the person an independent advocate from the first assessment, and record their own account of what they want alongside the clinical judgement.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M127-deep-case.md"
@@ -8782,6 +9604,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Involve the patient in setting the terms of any feeding while they can still speak to it, and record what they said for the next episode.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-m/M128-deep-case.md"
@@ -8996,6 +9828,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give the person a route to see and revise the directive while well, and require anyone overriding it to record their reasons to the person afterwards.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M131-deep-case.md"
@@ -9070,6 +9912,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Keep the person's own account of the attempt and their reasons on the record, and offer follow-up they can accept rather than only detention.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M132-deep-case.md"
@@ -9293,6 +10145,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Let the user see what is stored, take it with them, and stop collection, with those controls available in the device rather than on request.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M135-deep-case.md"
@@ -9367,6 +10229,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Record the patient's own account of the change alongside the family's, and treat a disagreement between them as a reason to review the settings rather than to decide between accounts.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M136-deep-case.md"
@@ -9516,6 +10388,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish what is being grown and what would trigger a stop, so that the limits are set in public before they are reached.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M138-deep-case.md"
@@ -9665,6 +10547,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Keep use voluntary and the data on the phone, and publish what the system does, so that a person can decline without losing access to testing or care.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-n/M140-deep-case.md"
@@ -9814,6 +10706,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell patients that a ranking system is used, what it uses, and how to ask for review, so that someone missed by it has a route back.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M142-deep-case.md"
@@ -9878,6 +10780,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient when a recommendation came from a model and when the clinician departed from it, and record the reason in terms the patient can read.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M143-deep-case.md"
@@ -10028,6 +10940,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell patients in the affected subgroup that the tool performs less well for them and offer the standard pathway instead, rather than deciding for them.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M145-deep-case.md"
@@ -10165,6 +11087,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Let any patient ask for a clinician to look at the result, at no cost or delay, and say that this is available before the test.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M147-deep-case.md"
@@ -10229,6 +11161,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c07",
+          "text": "Give a plain-language reason and a named human reviewer with every denial, and publish how often automated denials are overturned.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M148-deep-case.md"
@@ -10302,6 +11244,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell clinicians and patients when the model has changed and what changed, so that a decision can be read against the version that produced it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M149-deep-case.md"
@@ -10375,6 +11327,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell the communities whose data underlie the set where fidelity is poor, so that findings about them are not read as firmer than they are.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-o/M150-deep-case.md"
@@ -10449,6 +11411,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell the patient plainly what withdrawal can and cannot undo, before consent, rather than describing deletion in terms the system cannot deliver.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M151-deep-case.md"
@@ -10523,6 +11495,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Let patients say once whether they wish to be approached about research, and honour that setting, rather than requiring a decision at each contact.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M152-deep-case.md"
@@ -10587,6 +11569,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the user at the start what the system will do if they say they intend to harm themselves, and give them a way to reach a person immediately.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M153-deep-case.md"
@@ -10661,6 +11653,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish the allocation rule and give every candidate the reason for their own priority in terms they can question.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M154-deep-case.md"
@@ -10735,6 +11737,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell patients when a tool has not been validated in their population and offer the existing pathway alongside it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M155-deep-case.md"
@@ -10809,6 +11821,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Publish what was done to the animals and what the study found, so that the harm and its justification can be judged outside the review committee.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M156-deep-case.md"
@@ -10883,6 +11905,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Require public reporting of severity and outcomes for every primate study, so that the case for continuing this work rests on what it has produced.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M157-deep-case.md"
@@ -10956,6 +11988,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish the severity endpoints in advance and report what actually happened, so that the promised limits can be checked afterwards.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M158-deep-case.md"
@@ -11029,6 +12071,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Require independent inspection with published findings, so that welfare inside a closed facility can be verified rather than asserted.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M159-deep-case.md"
@@ -11102,6 +12154,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Publish farm-level antimicrobial use so that buyers and the public can see what a producer actually uses.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-p/M160-deep-case.md"
@@ -11176,6 +12238,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Compensate affected farmers promptly and in full, so that reporting an outbreak does not ruin the household that reports it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M161-deep-case.md"
@@ -11250,6 +12322,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Decide with the island community and publish the method chosen, so that people living with the outcome chose it.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M162-deep-case.md"
@@ -11324,6 +12406,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Publish the intervention plan and its results, so that people living alongside the population can see what is being done and why.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M163-deep-case.md"
@@ -11461,6 +12553,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish the health system's emissions and its reduction plan, so that patients and staff can hold it to what it has said.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M165-deep-case.md"
@@ -11536,6 +12638,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give the communities most exposed a standing role in setting priorities, and publish where the money went.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M166-deep-case.md"
@@ -11674,6 +12786,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give displaced people the same access as residents from the day they arrive, and carry their records with them.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M168-deep-case.md"
@@ -11822,6 +12944,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Require the consent of the communities where release would occur, obtained before trials begin and revocable, with the outcome published.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-q/M170-deep-case.md"
@@ -11896,6 +13028,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Decide the domestic and international split through public deliberation and publish the reasoning, so that the balance is a stated choice.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M171-deep-case.md"
@@ -11971,6 +13113,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Apply a published institutional rule deciding rescue-versus-programme cases in advance, and require committee review of any departure from it.",
+          "types": [
+            "expert"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M172-deep-case.md"
@@ -12119,6 +13271,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Let recipient countries set their own adaptation priorities within the allocation, and publish what each received and chose.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M174-deep-case.md"
@@ -12183,6 +13345,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Consult the people who eat there and publish the result, so that a default is set with them rather than for them.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M175-deep-case.md"
@@ -12248,6 +13420,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient plainly what the test can and cannot settle, and record their decision either way rather than declining without explanation.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M176-deep-case.md"
@@ -12314,6 +13496,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Say clearly what will not be provided and why, in writing, and offer a second opinion, so that a refusal is not experienced as a hidden judgement.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M177-deep-case.md"
@@ -12379,6 +13571,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient at the outset what can and cannot be certified, and offer to document what is supportable, so that the refusal is not a surprise at the end of the visit.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M178-deep-case.md"
@@ -12444,6 +13646,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Ask about complementary use without disapproval and record it, so that patients disclose what they are actually taking.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M179-deep-case.md"
@@ -12519,6 +13731,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Keep the patient in ordinary care with scheduled review whatever they decide, so that refusing treatment does not cost them the relationship.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-r/M180-deep-case.md"
@@ -12658,6 +13880,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Follow the patient's own account of what is safe for them, and keep the appointment open, so that a refusal does not end contact.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M182-deep-case.md"
@@ -12722,6 +13954,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the family what has been reported and what happens next, in plain terms and at the time, unless doing so would put the child at risk.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M183-deep-case.md"
@@ -12786,6 +14028,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Let the patient set the pace and record what they asked for, so that disclosure never triggers action they did not choose.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M184-deep-case.md"
@@ -12859,6 +14111,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Involve the patient in setting the taper or continuation plan and record their account of what the medicine does for them.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M185-deep-case.md"
@@ -12923,6 +14185,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Treat the pain on the same terms as any other patient's, and say so in the record, so that a diagnosis of opioid use disorder does not become the reason for undertreatment.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M186-deep-case.md"
@@ -12996,6 +14268,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Give the adolescent a plain account of what a parent can see in the portal before the visit, so that confidentiality is understood rather than assumed.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M187-deep-case.md"
@@ -13060,6 +14342,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Record the young person's own view as soon as they can express one, and revisit the decision with them rather than treating the parents' choice as final.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M188-deep-case.md"
@@ -13197,6 +14489,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient what the finding means in absolute terms, including the option of doing nothing, and record their choice.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-s/M190-deep-case.md"
@@ -13261,6 +14563,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the patient at the outset what must be recorded and who can see it, and offer to write only what is clinically necessary.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M191-deep-case.md"
@@ -13325,6 +14637,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Publish what the practice accepts and from whom, so that patients can see the relationships behind their care.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M192-deep-case.md"
@@ -13399,6 +14721,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell the patient when coverage rather than clinical judgement shaped the recommendation, and name the route to appeal.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M193-deep-case.md"
@@ -13463,6 +14795,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give written notice, a stated reason, and continuing care until another clinician is in place, so that ending the relationship is not the same as being abandoned.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M194-deep-case.md"
@@ -13527,6 +14869,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Tell the family member plainly what the clinician can and cannot do in this setting, and arrange the alternative before it is needed.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M195-deep-case.md"
@@ -13664,6 +15016,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c07",
+          "text": "Give the family a single named contact and a scheduled meeting, and record each person's view, so that disagreement is worked through rather than routed around.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M197-deep-case.md"
@@ -13738,6 +15100,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Tell the patient what the disagreement is about and let them hear both views before discharge is decided.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M198-deep-case.md"
@@ -13811,6 +15183,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "inferred"
+        },
+        {
+          "id": "c08",
+          "text": "Do not discharge to the street: hold the bed until a place to go is arranged, and record what was sought and what was available.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M199-deep-case.md"
@@ -13885,6 +15267,16 @@
           ],
           "type_reviewed": false,
           "sourcing": "constructed"
+        },
+        {
+          "id": "c08",
+          "text": "Give the person the choice between home and institutional care with the real terms of each stated, and record their preference in the funding decision.",
+          "types": [
+            "public"
+          ],
+          "type_reviewed": false,
+          "sourcing": "constructed",
+          "written_by_bench": true
         }
       ],
       "source_file": "docs/full-corpus/batch-t/M200-deep-case.md"

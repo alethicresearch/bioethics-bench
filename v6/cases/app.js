@@ -64,7 +64,7 @@ function typeSummary(c){return Object.keys(TYPE_LABELS).filter(k=>c.types.has(k)
 function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.searchParams.set('form',state.rep);return u.toString();}
 
 function renderDetail(c){
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div></div>`).join('');
+  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div></div>`).join('');
   const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
   $('case-detail').innerHTML=`
     <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>
@@ -77,6 +77,7 @@ function renderDetail(c){
     <div class="policies-head">Policies</div>
     <div class="policy-list">${policies}</div>
     ${unreviewed?'<p class="type-note">Policy types marked <span class="reviewed">reviewed</span> have been checked against the sources. The rest are a first pass and may change.</p>':''}
+    ${c.case_file_objects_to_pool?`<p class="type-note">No ${esc(TYPE_LABELS[c.case_file_objects_to_pool]||'')} policy here comes from a source: this case's file judged the available evidence too thin to support one, so the ${esc((TYPE_LABELS[c.case_file_objects_to_pool]||'').toLowerCase())} policy was written by the Bench as a comparison.</p>`:''}
     <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.source_file)}" target="_blank" rel="noopener">Sources and further detail ↗</a></div>`;
 }
 

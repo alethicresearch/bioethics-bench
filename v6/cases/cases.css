@@ -2,3 +2,5 @@
 .reviewed{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#0f766e;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);border-radius:999px;padding:.05rem .5rem}
 .type-note{margin:1rem 0 0;font-size:.8rem;color:var(--muted);line-height:1.6}
 .type-note .reviewed{margin:0 .1rem}
+
+.bench-written{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:999px;padding:.05rem .5rem}

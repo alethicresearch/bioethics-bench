@@ -1,0 +1,695 @@
+{
+  "note": "Policies written by Bioethics Bench for cases that record no policy of that type. Each is published with sourcing \"constructed\". Where the case file judged the available evidence insufficient to support a pool of that type, case_file_objects is true and the site says so on the case.",
+  "policies": {
+    "M001": {
+      "type": "public",
+      "text": "Keep the operation available at the patient's own hospital rather than transferring or postponing, so that refusing transfusion does not cost a patient timely access to care others receive locally.",
+      "case_file_objects": false
+    },
+    "M007": {
+      "type": "public",
+      "text": "Tell the patient at first contact who will provide the service and by when, so that a clinician's objection is never left as the patient's problem to solve.",
+      "case_file_objects": false
+    },
+    "M008": {
+      "type": "public",
+      "text": "State at the start of care exactly what would be disclosed and to whom, and hold any disclosure to that stated limit, so people can seek help without learning the rules afterwards.",
+      "case_file_objects": false
+    },
+    "M009": {
+      "type": "public",
+      "text": "Keep the surrogate's request in force until a documented conversation about what CPR would and would not achieve for this patient has happened, and record the family's view in the chart when the team decides otherwise.",
+      "case_file_objects": false
+    },
+    "M011": {
+      "type": "public",
+      "text": "Publish the access criteria and the decision timeline at the point of request, so a patient who asks learns where they stand within days rather than through informal escalation.",
+      "case_file_objects": false
+    },
+    "M014": {
+      "type": "public",
+      "text": "Keep the refusal in force and continue full labour care unchanged, so that declining an intervention never costs a patient the rest of the team's attention.",
+      "case_file_objects": false
+    },
+    "M015": {
+      "type": "public",
+      "text": "Keep the child in the practice and place scheduling and infection-control precautions on the practice rather than the family, so that refusal does not cost the child a regular clinician.",
+      "case_file_objects": false
+    },
+    "M016": {
+      "type": "public",
+      "text": "Offer a named second opinion and an independent family advocate before any child-protection step, so a family that disagrees is heard rather than only reported.",
+      "case_file_objects": false
+    },
+    "M017": {
+      "type": "public",
+      "text": "Tell the patient when a stewardship rule rather than their own clinical picture is the reason a drug is withheld, and give them a route to ask for that decision to be reviewed.",
+      "case_file_objects": false
+    },
+    "M021": {
+      "type": "public",
+      "text": "Continue treatment while the parents request it and their questions remain unanswered, with scheduled family meetings rather than an open-ended wait, so parents are not asked to decide before they understand the prognosis.",
+      "case_file_objects": false
+    },
+    "M023": {
+      "type": "public",
+      "text": "Give the family a written answer with a named decision-maker and a date, so that a request for access is answered rather than absorbed into the treatment discussion.",
+      "case_file_objects": true
+    },
+    "M024": {
+      "type": "public",
+      "text": "Keep the young person and their family in specialist care with scheduled review whatever is decided about medication, so that deferral is not experienced as discharge.",
+      "case_file_objects": true
+    },
+    "M026": {
+      "type": "public",
+      "text": "Fix the accommodation period in advance and tell the family what it is, so that time is a stated part of the plan rather than something they must keep asking for.",
+      "case_file_objects": true
+    },
+    "M027": {
+      "type": "public",
+      "text": "Ask the family what the person said while they could still say it, record that alongside the directive, and revisit it whenever the plan changes.",
+      "case_file_objects": false
+    },
+    "M032": {
+      "type": "public",
+      "text": "Guarantee continued treatment and support throughout any assessment, so that asking to be assessed never reduces the care a person is offered.",
+      "case_file_objects": true
+    },
+    "M037": {
+      "type": "public",
+      "text": "Tell the surrogate in writing, at the time of the request, what will and will not be offered and why, with the route to a second opinion named.",
+      "case_file_objects": true
+    },
+    "M039": {
+      "type": "public",
+      "text": "Let the patient raise donation whenever they wish and answer fully, without allowing the donation question to alter the timing or handling of the assisted-dying decision.",
+      "case_file_objects": false
+    },
+    "M040": {
+      "type": "public",
+      "text": "Explain what the testing involves and why before it happens, and allow a short defined period for the family to gather, rather than proceeding on the clinical timetable alone.",
+      "case_file_objects": true
+    },
+    "M043": {
+      "type": "public",
+      "text": "Provide the counselling and, where chosen, the procedure at the centre already managing the pregnancy, so that acting on the decision does not require travel or repeating the history.",
+      "case_file_objects": false
+    },
+    "M044": {
+      "type": "public",
+      "text": "Publish what the programme offers, its outcomes so far and its selection criteria, so that patients can judge for themselves whether to seek it.",
+      "case_file_objects": false
+    },
+    "M046": {
+      "type": "public",
+      "text": "Publish what the hospital does and does not provide, so that a patient knows before arriving rather than at the point of need.",
+      "case_file_objects": true
+    },
+    "M047": {
+      "type": "public",
+      "text": "Provide the procedure on the same terms as for any other adult, without an added waiting period, second review or parity threshold that would not apply to an older or parenting patient.",
+      "case_file_objects": false
+    },
+    "M048": {
+      "type": "public",
+      "text": "Put the disposition agreement in front of both people again at each storage renewal, so that what happens on disagreement is settled while both still agree.",
+      "case_file_objects": false
+    },
+    "M049": {
+      "type": "framework",
+      "text": "Treat storage without instruction as a duty owed to the people who created the embryos: act only after the notice they were promised has genuinely been given, and follow the disposition they last recorded.",
+      "case_file_objects": false
+    },
+    "M051": {
+      "type": "public",
+      "text": "Involve affected families and people living with the condition in setting the criteria, and publish the outcome of that involvement alongside any decision to permit or refuse.",
+      "case_file_objects": false
+    },
+    "M053": {
+      "type": "public",
+      "text": "Decide by public deliberation with a published result rather than by clinic-level discretion, so that access does not turn on which programme a family happens to reach.",
+      "case_file_objects": false
+    },
+    "M057": {
+      "type": "public",
+      "text": "Publish what is being made, how far it develops and what happens to it, so that oversight is checkable from outside the specialist community.",
+      "case_file_objects": false
+    },
+    "M061": {
+      "type": "public",
+      "text": "Set compensation so the carrier is never out of pocket and is paid for time and risk, with terms fixed in advance and independent legal advice paid for by the programme.",
+      "case_file_objects": false
+    },
+    "M062": {
+      "type": "public",
+      "text": "Give the donor a separate clinician and a private route to withdraw at any point, so that a family offer can be declined without the family learning why.",
+      "case_file_objects": false
+    },
+    "M063": {
+      "type": "public",
+      "text": "Consult broadly and publish the reasoning before any change of position, so that a prohibition is maintained or lifted by public decision rather than by the first laboratory to proceed.",
+      "case_file_objects": false
+    },
+    "M064": {
+      "type": "public",
+      "text": "Keep the conventional neonatal option available in full, with the same staffing and follow-up, so that choosing it is not the lesser path.",
+      "case_file_objects": true
+    },
+    "M065": {
+      "type": "public",
+      "text": "Give the future donor child their own clinician and record now what they will be told, so that a child conceived to donate learns their history from the family rather than by accident.",
+      "case_file_objects": false
+    },
+    "M067": {
+      "type": "public",
+      "text": "Offer the counselling and the procedure without delaying cancer therapy, and record the child's own view whatever their age.",
+      "case_file_objects": false
+    },
+    "M068": {
+      "type": "public",
+      "text": "Tell patients the clinic's transfer policy before treatment begins, so that no one discovers a restriction after their embryos exist.",
+      "case_file_objects": false
+    },
+    "M069": {
+      "type": "public",
+      "text": "Tell the affected patient every laboratory error touching their material as soon as it is known, including errors the clinic judges harmless, and say what remains uncertain.",
+      "case_file_objects": false
+    },
+    "M071": {
+      "type": "public",
+      "text": "Guarantee that anyone assigned placebo returns to effective treatment immediately on worsening, and say plainly at consent how long they may be without it.",
+      "case_file_objects": true
+    },
+    "M072": {
+      "type": "public",
+      "text": "Fix compensation, treatment for any harm and long-term follow-up before recruitment opens, and publish those terms with the participant information.",
+      "case_file_objects": false
+    },
+    "M073": {
+      "type": "public",
+      "text": "Consult the community the trial will enrol from before it begins and publish what was heard, so that people enrolled without consent were represented in the decision to allow it.",
+      "case_file_objects": false
+    },
+    "M074": {
+      "type": "public",
+      "text": "Commit in advance to what the host community gets if the treatment works, and publish that commitment with the protocol.",
+      "case_file_objects": false
+    },
+    "M076": {
+      "type": "public",
+      "text": "Pay for time and burden at a rate the participant can see and check, prorated so that leaving early costs nothing already earned.",
+      "case_file_objects": false
+    },
+    "M078": {
+      "type": "public",
+      "text": "Offer pregnant patients the trial rather than deciding for them, with the uncertainty stated plainly and their own clinician involved in the decision.",
+      "case_file_objects": false
+    },
+    "M079": {
+      "type": "public",
+      "text": "Let people in prison decide without their participation affecting parole, privileges or housing, and say so in writing at consent.",
+      "case_file_objects": false
+    },
+    "M081": {
+      "type": "public",
+      "text": "Publish the result whatever it shows, within a stated period, and tell participants where to find it when they enrol.",
+      "case_file_objects": false
+    },
+    "M082": {
+      "type": "public",
+      "text": "Consult the school communities before randomisation and publish what was decided, so that families whose children are covered by the change had a route to object.",
+      "case_file_objects": false
+    },
+    "M084": {
+      "type": "public",
+      "text": "Publish the contract terms governing publication alongside the trial registration, so that participants can see what the sponsor may withhold before enrolling.",
+      "case_file_objects": false
+    },
+    "M085": {
+      "type": "public",
+      "text": "Say plainly at consent that this is a first-in-human study and cannot be expected to treat the participant's own disease, and give the same care afterwards to those it does not help.",
+      "case_file_objects": false
+    },
+    "M086": {
+      "type": "public",
+      "text": "Publish the allocation rule and the numbers available, so that patients who receive nothing can see how the decision was made rather than suspecting it.",
+      "case_file_objects": false
+    },
+    "M087": {
+      "type": "public",
+      "text": "Tell participants exactly what the sham involves and its risks, and guarantee the real procedure afterwards if the trial shows it works.",
+      "case_file_objects": false
+    },
+    "M088": {
+      "type": "public",
+      "text": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
+      "case_file_objects": false
+    },
+    "M089": {
+      "type": "public",
+      "text": "Give patients and the public a standing role in setting the portfolio, with the reasoning for the final split published.",
+      "case_file_objects": false
+    },
+    "M091": {
+      "type": "public",
+      "text": "Choose the design that reduces participant travel and time, and say what the trial asks of participants before asking them to join.",
+      "case_file_objects": false
+    },
+    "M092": {
+      "type": "public",
+      "text": "Publish what oversight was applied and by whom, so that the public can see a decision was taken rather than assumed.",
+      "case_file_objects": false
+    },
+    "M093": {
+      "type": "public",
+      "text": "Say publicly that information has been withheld and on what grounds, so that restriction is visible and can be challenged.",
+      "case_file_objects": false
+    },
+    "M095": {
+      "type": "public",
+      "text": "Provide income, housing, food and contact with family for the whole period, so that isolation does not cost a person their livelihood or their household.",
+      "case_file_objects": false
+    },
+    "M096": {
+      "type": "public",
+      "text": "Give parents a plain account of what a positive result would and would not mean, including the chance of finding something that never causes harm, before the sample is taken.",
+      "case_file_objects": false
+    },
+    "M097": {
+      "type": "public",
+      "text": "Involve residents and people who use drugs in siting and operating the service, and publish what was agreed, so that the arrangement is one the neighbourhood recognises.",
+      "case_file_objects": false
+    },
+    "M098": {
+      "type": "public",
+      "text": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
+      "case_file_objects": false
+    },
+    "M099": {
+      "type": "public",
+      "text": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
+      "case_file_objects": false
+    },
+    "M100": {
+      "type": "public",
+      "text": "Tell the patients and families not admitted that a bed was unavailable and what will happen instead, rather than presenting the decision as purely clinical.",
+      "case_file_objects": false
+    },
+    "M103": {
+      "type": "public",
+      "text": "Give the donor an independent advocate, a private route to withdraw, and a plain account of the risk in their own terms, at every stage.",
+      "case_file_objects": false
+    },
+    "M104": {
+      "type": "public",
+      "text": "Address the barriers that caused the missed doses — cost, transport, housing, support — and count that response, rather than the earlier record alone, when deciding.",
+      "case_file_objects": false
+    },
+    "M107": {
+      "type": "public",
+      "text": "Tell donor families exactly what the procedure involves before authorisation, and let them decline it while still donating.",
+      "case_file_objects": false
+    },
+    "M108": {
+      "type": "public",
+      "text": "Fix at consent what surveillance is required, for how long, and what happens if the recipient later declines, so that lifelong obligations are agreed rather than imposed afterwards.",
+      "case_file_objects": false
+    },
+    "M109": {
+      "type": "public",
+      "text": "Provide the same follow-up any other transplant patient would receive, and keep clinical care separate from any reporting the law requires.",
+      "case_file_objects": false
+    },
+    "M110": {
+      "type": "public",
+      "text": "Keep clinical eligibility and immigration enquiry entirely separate, and say so publicly, so that seeking assessment carries no risk of exposure.",
+      "case_file_objects": false
+    },
+    "M111": {
+      "type": "public",
+      "text": "Refuse conditions the recipients themselves could not be told about, and tell donors this rule before donation rather than at the point of refusal.",
+      "case_file_objects": false
+    },
+    "M112": {
+      "type": "public",
+      "text": "Keep withdrawal unconditional and private, and tell every participant at the outset what happens to the chain if someone withdraws.",
+      "case_file_objects": false
+    },
+    "M113": {
+      "type": "public",
+      "text": "Tell every candidate on the list how combined-organ decisions are made, so that a patient passed over knows the rule rather than suspecting one.",
+      "case_file_objects": false
+    },
+    "M114": {
+      "type": "public",
+      "text": "Distribute through a shared mechanism countries agree to in advance, and publish each allocation, so that supply does not follow bilateral deals made out of sight.",
+      "case_file_objects": true
+    },
+    "M115": {
+      "type": "public",
+      "text": "Guarantee recruited workers full information, portable qualifications and the right to return, and refuse arrangements that bind a worker to one employer.",
+      "case_file_objects": true
+    },
+    "M116": {
+      "type": "public",
+      "text": "Publish what public money contributed to the technology and what the price is in each country, so that patients can see what they are being charged for.",
+      "case_file_objects": false
+    },
+    "M117": {
+      "type": "public",
+      "text": "Separate care entirely from immigration enforcement and say so publicly, so that no one avoids treatment for fear of the consequences of seeking it.",
+      "case_file_objects": false
+    },
+    "M118": {
+      "type": "public",
+      "text": "Publish the triage rule and apply it identically to everyone brought in, so that neither side's community has reason to believe the hospital treats the other first.",
+      "case_file_objects": false
+    },
+    "M119": {
+      "type": "public",
+      "text": "Decide with the recipient region rather than for it, and publish the agreed split between immediate supply and local capacity.",
+      "case_file_objects": true
+    },
+    "M120": {
+      "type": "public",
+      "text": "Involve the affected families in the funding decision and publish the reasoning, including what a refusal means for the children concerned.",
+      "case_file_objects": false
+    },
+    "M121": {
+      "type": "public",
+      "text": "Return results and capacity to the contributing communities on a published timetable, and require their agreement before commercial use.",
+      "case_file_objects": false
+    },
+    "M122": {
+      "type": "public",
+      "text": "Provide housing, income and treatment support first, and record what was offered before any compulsory measure is considered.",
+      "case_file_objects": false
+    },
+    "M124": {
+      "type": "public",
+      "text": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
+      "case_file_objects": false
+    },
+    "M125": {
+      "type": "public",
+      "text": "Offer to notify the partner in a way that does not name the patient, and let the patient choose the route, before any provider-led notification.",
+      "case_file_objects": false
+    },
+    "M126": {
+      "type": "public",
+      "text": "State exactly what is reported and to whom before testing, and guarantee treatment and support to anyone who tests positive.",
+      "case_file_objects": false
+    },
+    "M127": {
+      "type": "public",
+      "text": "Give the person an independent advocate from the first assessment, and record their own account of what they want alongside the clinical judgement.",
+      "case_file_objects": false
+    },
+    "M128": {
+      "type": "public",
+      "text": "Involve the patient in setting the terms of any feeding while they can still speak to it, and record what they said for the next episode.",
+      "case_file_objects": false
+    },
+    "M131": {
+      "type": "public",
+      "text": "Give the person a route to see and revise the directive while well, and require anyone overriding it to record their reasons to the person afterwards.",
+      "case_file_objects": false
+    },
+    "M132": {
+      "type": "public",
+      "text": "Keep the person's own account of the attempt and their reasons on the record, and offer follow-up they can accept rather than only detention.",
+      "case_file_objects": false
+    },
+    "M135": {
+      "type": "public",
+      "text": "Let the user see what is stored, take it with them, and stop collection, with those controls available in the device rather than on request.",
+      "case_file_objects": false
+    },
+    "M136": {
+      "type": "public",
+      "text": "Record the patient's own account of the change alongside the family's, and treat a disagreement between them as a reason to review the settings rather than to decide between accounts.",
+      "case_file_objects": false
+    },
+    "M138": {
+      "type": "public",
+      "text": "Publish what is being grown and what would trigger a stop, so that the limits are set in public before they are reached.",
+      "case_file_objects": false
+    },
+    "M140": {
+      "type": "public",
+      "text": "Keep use voluntary and the data on the phone, and publish what the system does, so that a person can decline without losing access to testing or care.",
+      "case_file_objects": false
+    },
+    "M142": {
+      "type": "public",
+      "text": "Tell patients that a ranking system is used, what it uses, and how to ask for review, so that someone missed by it has a route back.",
+      "case_file_objects": false
+    },
+    "M143": {
+      "type": "public",
+      "text": "Tell the patient when a recommendation came from a model and when the clinician departed from it, and record the reason in terms the patient can read.",
+      "case_file_objects": false
+    },
+    "M145": {
+      "type": "public",
+      "text": "Tell patients in the affected subgroup that the tool performs less well for them and offer the standard pathway instead, rather than deciding for them.",
+      "case_file_objects": false
+    },
+    "M147": {
+      "type": "public",
+      "text": "Let any patient ask for a clinician to look at the result, at no cost or delay, and say that this is available before the test.",
+      "case_file_objects": false
+    },
+    "M148": {
+      "type": "public",
+      "text": "Give a plain-language reason and a named human reviewer with every denial, and publish how often automated denials are overturned.",
+      "case_file_objects": false
+    },
+    "M149": {
+      "type": "public",
+      "text": "Tell clinicians and patients when the model has changed and what changed, so that a decision can be read against the version that produced it.",
+      "case_file_objects": false
+    },
+    "M150": {
+      "type": "public",
+      "text": "Tell the communities whose data underlie the set where fidelity is poor, so that findings about them are not read as firmer than they are.",
+      "case_file_objects": false
+    },
+    "M151": {
+      "type": "public",
+      "text": "Tell the patient plainly what withdrawal can and cannot undo, before consent, rather than describing deletion in terms the system cannot deliver.",
+      "case_file_objects": false
+    },
+    "M152": {
+      "type": "public",
+      "text": "Let patients say once whether they wish to be approached about research, and honour that setting, rather than requiring a decision at each contact.",
+      "case_file_objects": false
+    },
+    "M153": {
+      "type": "public",
+      "text": "Tell the user at the start what the system will do if they say they intend to harm themselves, and give them a way to reach a person immediately.",
+      "case_file_objects": false
+    },
+    "M154": {
+      "type": "public",
+      "text": "Publish the allocation rule and give every candidate the reason for their own priority in terms they can question.",
+      "case_file_objects": false
+    },
+    "M155": {
+      "type": "public",
+      "text": "Tell patients when a tool has not been validated in their population and offer the existing pathway alongside it.",
+      "case_file_objects": false
+    },
+    "M156": {
+      "type": "public",
+      "text": "Publish what was done to the animals and what the study found, so that the harm and its justification can be judged outside the review committee.",
+      "case_file_objects": false
+    },
+    "M157": {
+      "type": "public",
+      "text": "Require public reporting of severity and outcomes for every primate study, so that the case for continuing this work rests on what it has produced.",
+      "case_file_objects": false
+    },
+    "M158": {
+      "type": "public",
+      "text": "Publish the severity endpoints in advance and report what actually happened, so that the promised limits can be checked afterwards.",
+      "case_file_objects": false
+    },
+    "M159": {
+      "type": "public",
+      "text": "Require independent inspection with published findings, so that welfare inside a closed facility can be verified rather than asserted.",
+      "case_file_objects": false
+    },
+    "M160": {
+      "type": "public",
+      "text": "Publish farm-level antimicrobial use so that buyers and the public can see what a producer actually uses.",
+      "case_file_objects": false
+    },
+    "M161": {
+      "type": "public",
+      "text": "Compensate affected farmers promptly and in full, so that reporting an outbreak does not ruin the household that reports it.",
+      "case_file_objects": false
+    },
+    "M162": {
+      "type": "public",
+      "text": "Decide with the island community and publish the method chosen, so that people living with the outcome chose it.",
+      "case_file_objects": false
+    },
+    "M163": {
+      "type": "public",
+      "text": "Publish the intervention plan and its results, so that people living alongside the population can see what is being done and why.",
+      "case_file_objects": false
+    },
+    "M165": {
+      "type": "public",
+      "text": "Publish the health system's emissions and its reduction plan, so that patients and staff can hold it to what it has said.",
+      "case_file_objects": false
+    },
+    "M166": {
+      "type": "public",
+      "text": "Give the communities most exposed a standing role in setting priorities, and publish where the money went.",
+      "case_file_objects": false
+    },
+    "M168": {
+      "type": "public",
+      "text": "Give displaced people the same access as residents from the day they arrive, and carry their records with them.",
+      "case_file_objects": false
+    },
+    "M170": {
+      "type": "public",
+      "text": "Require the consent of the communities where release would occur, obtained before trials begin and revocable, with the outcome published.",
+      "case_file_objects": false
+    },
+    "M171": {
+      "type": "public",
+      "text": "Decide the domestic and international split through public deliberation and publish the reasoning, so that the balance is a stated choice.",
+      "case_file_objects": false
+    },
+    "M172": {
+      "type": "expert",
+      "text": "Apply a published institutional rule deciding rescue-versus-programme cases in advance, and require committee review of any departure from it.",
+      "case_file_objects": false
+    },
+    "M174": {
+      "type": "public",
+      "text": "Let recipient countries set their own adaptation priorities within the allocation, and publish what each received and chose.",
+      "case_file_objects": false
+    },
+    "M175": {
+      "type": "public",
+      "text": "Consult the people who eat there and publish the result, so that a default is set with them rather than for them.",
+      "case_file_objects": false
+    },
+    "M176": {
+      "type": "public",
+      "text": "Tell the patient plainly what the test can and cannot settle, and record their decision either way rather than declining without explanation.",
+      "case_file_objects": false
+    },
+    "M177": {
+      "type": "public",
+      "text": "Say clearly what will not be provided and why, in writing, and offer a second opinion, so that a refusal is not experienced as a hidden judgement.",
+      "case_file_objects": false
+    },
+    "M178": {
+      "type": "public",
+      "text": "Tell the patient at the outset what can and cannot be certified, and offer to document what is supportable, so that the refusal is not a surprise at the end of the visit.",
+      "case_file_objects": false
+    },
+    "M179": {
+      "type": "public",
+      "text": "Ask about complementary use without disapproval and record it, so that patients disclose what they are actually taking.",
+      "case_file_objects": false
+    },
+    "M180": {
+      "type": "public",
+      "text": "Keep the patient in ordinary care with scheduled review whatever they decide, so that refusing treatment does not cost them the relationship.",
+      "case_file_objects": false
+    },
+    "M182": {
+      "type": "public",
+      "text": "Follow the patient's own account of what is safe for them, and keep the appointment open, so that a refusal does not end contact.",
+      "case_file_objects": false
+    },
+    "M183": {
+      "type": "public",
+      "text": "Tell the family what has been reported and what happens next, in plain terms and at the time, unless doing so would put the child at risk.",
+      "case_file_objects": false
+    },
+    "M184": {
+      "type": "public",
+      "text": "Let the patient set the pace and record what they asked for, so that disclosure never triggers action they did not choose.",
+      "case_file_objects": false
+    },
+    "M185": {
+      "type": "public",
+      "text": "Involve the patient in setting the taper or continuation plan and record their account of what the medicine does for them.",
+      "case_file_objects": false
+    },
+    "M186": {
+      "type": "public",
+      "text": "Treat the pain on the same terms as any other patient's, and say so in the record, so that a diagnosis of opioid use disorder does not become the reason for undertreatment.",
+      "case_file_objects": false
+    },
+    "M187": {
+      "type": "public",
+      "text": "Give the adolescent a plain account of what a parent can see in the portal before the visit, so that confidentiality is understood rather than assumed.",
+      "case_file_objects": false
+    },
+    "M188": {
+      "type": "public",
+      "text": "Record the young person's own view as soon as they can express one, and revisit the decision with them rather than treating the parents' choice as final.",
+      "case_file_objects": false
+    },
+    "M190": {
+      "type": "public",
+      "text": "Tell the patient what the finding means in absolute terms, including the option of doing nothing, and record their choice.",
+      "case_file_objects": false
+    },
+    "M191": {
+      "type": "public",
+      "text": "Tell the patient at the outset what must be recorded and who can see it, and offer to write only what is clinically necessary.",
+      "case_file_objects": false
+    },
+    "M192": {
+      "type": "public",
+      "text": "Publish what the practice accepts and from whom, so that patients can see the relationships behind their care.",
+      "case_file_objects": false
+    },
+    "M193": {
+      "type": "public",
+      "text": "Tell the patient when coverage rather than clinical judgement shaped the recommendation, and name the route to appeal.",
+      "case_file_objects": false
+    },
+    "M194": {
+      "type": "public",
+      "text": "Give written notice, a stated reason, and continuing care until another clinician is in place, so that ending the relationship is not the same as being abandoned.",
+      "case_file_objects": false
+    },
+    "M195": {
+      "type": "public",
+      "text": "Tell the family member plainly what the clinician can and cannot do in this setting, and arrange the alternative before it is needed.",
+      "case_file_objects": false
+    },
+    "M197": {
+      "type": "public",
+      "text": "Give the family a single named contact and a scheduled meeting, and record each person's view, so that disagreement is worked through rather than routed around.",
+      "case_file_objects": false
+    },
+    "M198": {
+      "type": "public",
+      "text": "Tell the patient what the disagreement is about and let them hear both views before discharge is decided.",
+      "case_file_objects": false
+    },
+    "M199": {
+      "type": "public",
+      "text": "Do not discharge to the street: hold the bed until a place to go is arranged, and record what was sought and what was available.",
+      "case_file_objects": false
+    },
+    "M200": {
+      "type": "public",
+      "text": "Give the person the choice between home and institutional care with the real terms of each stated, and record their preference in the funding decision.",
+      "case_file_objects": false
+    }
+  }
+}
