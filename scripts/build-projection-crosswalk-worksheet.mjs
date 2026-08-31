@@ -29,6 +29,10 @@ function compact(value) {
   return String(value ?? '').replace(/\|/g, '\\|').replace(/\s+/g, ' ').trim();
 }
 
+function inventoryIdentity(value) {
+  return String(value ?? '').match(/^m\d{3}/)?.[0] ?? null;
+}
+
 function candidateCount(record) {
   return ['public', 'expert', 'framework']
     .reduce((sum, role) => sum + (record.candidate_pools?.[role]?.length ?? 0), 0);
@@ -38,9 +42,10 @@ const families = [];
 const problems = [];
 for (const file of conciseFiles) {
   const record = JSON.parse(readFileSync(join(recordDir, file), 'utf8'));
-  const neutral = neutralById.get(record.case_id);
+  const inventoryId = inventoryIdentity(record.case_id) ?? inventoryIdentity(record.record_id) ?? inventoryIdentity(file);
+  const neutral = inventoryId ? neutralById.get(inventoryId) : null;
   if (!neutral) {
-    problems.push(`${record.case_id}: no neutral Full-200 family found`);
+    problems.push(`${record.case_id}: no neutral Full-200 family found for stable identity ${inventoryId ?? 'missing'}`);
     continue;
   }
   const detailedFile = file.replace('-concise-v1.json', '-detailed-v1.json');
@@ -53,7 +58,10 @@ for (const file of conciseFiles) {
   if (detailed && JSON.stringify(detailed.candidate_pools) !== JSON.stringify(record.candidate_pools)) {
     problems.push(`${record.case_id}: concise/detailed candidate pools differ; crosswalk cannot proceed`);
   }
-  families.push({ file, record, detailedFile, detailed, neutral });
+  if (detailed && inventoryIdentity(detailed.case_id) !== inventoryId) {
+    problems.push(`${record.case_id}: detailed companion crosses inventory identity (${detailed.case_id})`);
+  }
+  families.push({ file, record, detailedFile, detailed, neutral, inventoryId });
 }
 
 if (problems.length) {
@@ -81,13 +89,14 @@ const lines = [
   '',
 ];
 
-for (const { file, record, detailedFile, detailed, neutral } of families) {
+for (const { record, detailedFile, detailed, neutral, inventoryId } of families) {
   const geometry = ['public', 'expert', 'framework']
     .map((role) => `${record.candidate_pools?.[role]?.length ?? 0} ${role}`)
     .join(' × ');
   lines.push(`## ${neutral.inventory_id} — ${compact(neutral.title)}`);
   lines.push('');
-  lines.push(`- Case ID: \`${record.case_id}\``);
+  lines.push(`- Neutral inventory identity: \`${inventoryId}\``);
+  lines.push(`- Executable case ID: \`${record.case_id}\``);
   lines.push(`- Existing concise record: \`${record.record_id}\``);
   lines.push(`- Existing detailed record: \`${detailed?.record_id ?? detailedFile.replace(/\.json$/, '')}\``);
   lines.push(`- Existing benchmark profile: \`${record.benchmark_profile ?? '—'}\``);
