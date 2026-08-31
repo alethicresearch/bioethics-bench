@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 1113,
+  "detailed_policy_count": 1183,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -4029,6 +4029,7 @@
         {
           "id": "c01",
           "text": "permit severe monogenic disease use under stringent national/international oversight",
+          "text_detailed": "Permit use for severe monogenic disease under stringent national and international oversight, with the conditions covered listed, the oversight body constituted before any application, and its decisions published.",
           "types": [
             "expert"
           ],
@@ -4038,6 +4039,7 @@
         {
           "id": "c02",
           "text": "permit only when PGT/other reasonable alternatives cannot reliably avoid disease",
+          "text_detailed": "Permit only where preimplantation testing and other reasonable alternatives cannot reliably avoid the disease, with that finding made for the specific couple and independently confirmed.",
           "types": [
             "expert",
             "framework"
@@ -4048,6 +4050,7 @@
         {
           "id": "c03",
           "text": "continue reproductive prohibition while allowing laboratory research",
+          "text_detailed": "Maintain the reproductive prohibition while permitting laboratory research, with the boundary defined by transfer rather than by technique, and research subject to its own oversight.",
           "types": [
             "expert"
           ],
@@ -4057,6 +4060,7 @@
         {
           "id": "c04",
           "text": "broader reproductive-choice permission for serious disease once safety is adequate",
+          "text_detailed": "Permit broader reproductive choice for serious disease once safety is adequate, with adequacy defined by stated evidence rather than by regulatory readiness, and the definition published in advance.",
           "types": [
             "framework"
           ],
@@ -4066,6 +4070,7 @@
         {
           "id": "c05",
           "text": "precautionary future-generation rule requiring multigenerational follow-up/registry",
+          "text_detailed": "Require multigenerational follow-up and a registry as a condition of any permission, with participation mandatory, funded, and the results published across generations.",
           "types": [
             "expert",
             "framework"
@@ -4076,6 +4081,7 @@
         {
           "id": "c06",
           "text": "equity rule conditioning access on fair distribution/nonenhancement boundaries",
+          "text_detailed": "Condition access on fair distribution and on a boundary against enhancement, with both defined in advance and access monitored so that the technology does not become available only to those who can pay.",
           "types": [
             "framework"
           ],
@@ -4085,6 +4091,7 @@
         {
           "id": "c07",
           "text": "categorical germline prohibition even after technical readiness because future persons and species-level change are not appropriately authorized",
+          "text_detailed": "Prohibit germline modification categorically even after technical readiness, on the ground that future persons and species-level change cannot be appropriately authorised by present decision-makers.",
           "types": [
             "framework"
           ],
@@ -4094,6 +4101,7 @@
         {
           "id": "c08",
           "text": "Involve affected families and people living with the condition in setting the criteria, and publish the outcome of that involvement alongside any decision to permit or refuse.",
+          "text_detailed": "Involve affected families and people living with the condition in setting the criteria, and publish the outcome of that involvement alongside any decision to permit or refuse, including where their view did not prevail.",
           "types": [
             "public"
           ],
@@ -4114,6 +4122,7 @@
         {
           "id": "c01",
           "text": "prohibit nonmedical trait ranking",
+          "text_detailed": "Prohibit ranking embryos on non-medical traits, with the prohibition applying to the service offered rather than to the underlying data, and stated in the clinic's published policy.",
           "types": [
             "expert"
           ],
@@ -4123,6 +4132,7 @@
         {
           "id": "c02",
           "text": "research-only until evidence thresholds met",
+          "text_detailed": "Confine the technique to research until stated evidence thresholds are met, with the thresholds specified as predictive performance across ancestry groups and the restriction reviewed against them.",
           "types": [
             "expert"
           ],
@@ -4132,6 +4142,7 @@
         {
           "id": "c03",
           "text": "allow validated serious health-risk applications but not height/cognition-type traits",
+          "text_detailed": "Permit validated serious health-risk applications while excluding height, cognition and similar traits, with the permitted conditions listed and additions requiring public justification.",
           "types": [
             "expert"
           ],
@@ -4141,6 +4152,7 @@
         {
           "id": "c04",
           "text": "permit informed reproductive choice for validated traits",
+          "text_detailed": "Permit informed reproductive choice for validated traits, with validation defined by stated performance criteria and the limits of prediction explained to patients before selection.",
           "types": [
             "framework"
           ],
@@ -4150,6 +4162,7 @@
         {
           "id": "c05",
           "text": "restrict because eugenic/social stratification and ancestry-performance inequities create population harms",
+          "text_detailed": "Restrict on the ground that stratification and unequal predictive performance across ancestries create population-level harms, with those effects assessed rather than asserted.",
           "types": [
             "framework",
             "public"
@@ -4160,6 +4173,7 @@
         {
           "id": "c06",
           "text": "allow only under equity/validity thresholds across ancestry groups",
+          "text_detailed": "Permit only where validity and equity thresholds are met across ancestry groups, with performance reported by group and the service withdrawn where it is not.",
           "types": [
             "framework"
           ],
@@ -4169,6 +4183,7 @@
         {
           "id": "c07",
           "text": "clinic may decline trait selection as inconsistent with reproductive-medical purpose even if lawful",
+          "text_detailed": "Permit the clinic to decline trait selection as inconsistent with its purpose even where it is lawful, with the policy published before treatment begins so that patients are not surprised by it.",
           "types": [
             "expert"
           ],
@@ -4188,6 +4203,7 @@
         {
           "id": "c01",
           "text": "permit competent parental reproductive choice for safe enhancement",
+          "text_detailed": "Permit competent parental reproductive choice for enhancement judged safe, with safety established by stated evidence and the choice made after counselling that states what remains unknown.",
           "types": [
             "framework"
           ],
@@ -4197,6 +4213,7 @@
         {
           "id": "c02",
           "text": "permit only interventions restoring/preventing serious disease or maintaining normal species functioning",
+          "text_detailed": "Permit only interventions that restore or prevent serious disease or maintain normal functioning, with the boundary defined by a stated clinical criterion rather than by the wording of the request.",
           "types": [
             "expert",
             "framework"
@@ -4207,6 +4224,7 @@
         {
           "id": "c03",
           "text": "prohibit reproductive enhancement categorically",
+          "text_detailed": "Prohibit reproductive enhancement categorically, with the prohibition applying to the intervention rather than the motive, and stated in law rather than in clinic policy.",
           "types": [
             "expert"
           ],
@@ -4216,6 +4234,7 @@
         {
           "id": "c04",
           "text": "permit limited enhancement only where access is equitable and social externalities controlled",
+          "text_detailed": "Permit limited enhancement only where access is equitable and social externalities are controlled, with both conditions specified, monitored, and the permission withdrawn if they fail.",
           "types": [
             "framework"
           ],
@@ -4225,6 +4244,7 @@
         {
           "id": "c05",
           "text": "precautionary restriction because effects on future generations/social competition remain morally uncertain despite technical safety",
+          "text_detailed": "Restrict on precautionary grounds because the effects on future generations and on social competition remain uncertain despite technical safety, naming the uncertainties so the position can be revisited.",
           "types": [
             "framework"
           ],
@@ -4234,6 +4254,7 @@
         {
           "id": "c06",
           "text": "anti-eugenics/equal-status rule barring selection that entrenches hierarchy or positional arms races",
+          "text_detailed": "Bar selection that entrenches hierarchy or drives positional competition, with the assessment made for the specific trait and setting rather than for enhancement in general.",
           "types": [
             "framework"
           ],
@@ -4243,6 +4264,7 @@
         {
           "id": "c07",
           "text": "Decide by public deliberation with a published result rather than by clinic-level discretion, so that access does not turn on which programme a family happens to reach.",
+          "text_detailed": "Decide by public deliberation with a published result rather than by clinic-level discretion, so that access does not turn on which programme a family happens to reach, with the decision binding on all providers.",
           "types": [
             "public"
           ],
@@ -4263,6 +4285,7 @@
         {
           "id": "c01",
           "text": "analyze/return defined actionable list with informed opt-out",
+          "text_detailed": "Analyse and return a defined list of actionable findings, with an opt-out offered before sequencing, the list published, and any change to it explained to patients already sequenced.",
           "types": [
             "expert"
           ],
@@ -4272,6 +4295,7 @@
         {
           "id": "c02",
           "text": "require opt-in before any secondary analysis",
+          "text_detailed": "Require opt-in before any secondary analysis, with the choice made before the sample is analysed and the categories described concretely enough to choose between them.",
           "types": [
             "framework"
           ],
@@ -4281,6 +4305,7 @@
         {
           "id": "c03",
           "text": "return only very-high-actionability/high-penetrance findings",
+          "text_detailed": "Return only findings of very high actionability and penetrance, with both thresholds stated so that patients know in advance what will not be reported.",
           "types": [
             "expert"
           ],
@@ -4290,6 +4315,7 @@
         {
           "id": "c04",
           "text": "allow patients to choose categories/timing of secondary information",
+          "text_detailed": "Let patients choose the categories and the timing of any secondary information, with the choices recorded, revisable, and honoured when a finding arises.",
           "types": [
             "public"
           ],
@@ -4299,6 +4325,7 @@
         {
           "id": "c05",
           "text": "return actionable findings by default because preventable morbidity justifies a weak paternalistic default",
+          "text_detailed": "Return actionable findings by default, on the ground that preventable morbidity justifies a weak default, with the default stated before sequencing and the opt-out genuinely available.",
           "types": [
             "expert",
             "framework"
@@ -4309,6 +4336,7 @@
         {
           "id": "c06",
           "text": "right-not-to-know framework favoring explicit prior authorization",
+          "text_detailed": "Require explicit prior authorisation before return, on right-not-to-know grounds, with the authorisation specific to categories rather than given once for all findings.",
           "types": [
             "framework"
           ],
@@ -4318,6 +4346,7 @@
         {
           "id": "c07",
           "text": "staged recontact model permitting later choice rather than one-time all-or-none consent",
+          "text_detailed": "Use a staged recontact model that allows later choices rather than a one-time all-or-nothing consent, with the recontact route maintained and patients told how to use it.",
           "types": [
             "expert"
           ],
@@ -4337,6 +4366,7 @@
         {
           "id": "c01",
           "text": "consumer controls disclosure, supported by communication tools",
+          "text_detailed": "Leave disclosure to the consumer, supported by tools that help them tell relatives, with the tools provided by the service rather than left to the person to find.",
           "types": [
             "public"
           ],
@@ -4346,6 +4376,7 @@
         {
           "id": "c02",
           "text": "structured service-mediated support for proband disclosure to relatives",
+          "text_detailed": "Provide structured service-mediated support for disclosure to relatives, with the service offering to make contact on the consumer's behalf and the consumer deciding whether it does.",
           "types": [
             "expert"
           ],
@@ -4355,6 +4386,7 @@
         {
           "id": "c03",
           "text": "narrow pre-consented warning pathway for serious actionable familial risk",
+          "text_detailed": "Operate a narrow pre-consented warning pathway for serious actionable familial risk, with consent to that pathway taken at registration and the conditions covered listed.",
           "types": [
             "expert"
           ],
@@ -4364,6 +4396,7 @@
         {
           "id": "c04",
           "text": "direct warning without consumer consent only under very high preventability/severity threshold",
+          "text_detailed": "Warn a relative without the consumer's consent only above a very high preventability and severity threshold, with the threshold stated in advance and each use reviewed independently.",
           "types": [
             "expert"
           ],
@@ -4373,6 +4406,7 @@
         {
           "id": "c05",
           "text": "confidentiality/consumer-control framework",
+          "text_detailed": "Protect confidentiality and consumer control, with any disclosure requiring the consumer's agreement and the service's obligations stated at registration.",
           "types": [
             "framework"
           ],
@@ -4382,6 +4416,7 @@
         {
           "id": "c06",
           "text": "relational/familial responsibility framework giving relatives a claim to actionable risk information",
+          "text_detailed": "Recognise relatives' claim to actionable risk information on relational grounds, with the claim defined by what they could act on rather than by what they might want to know.",
           "types": [
             "framework"
           ],
@@ -4401,6 +4436,7 @@
         {
           "id": "c01",
           "text": "retain fixed 14-day limit",
+          "text_detailed": "Retain the fixed 14-day limit, with the boundary applied uniformly and any research requiring more days refused rather than reviewed case by case.",
           "types": [
             "expert",
             "public"
@@ -4411,6 +4447,7 @@
         {
           "id": "c02",
           "text": "permit extension to a new fixed maximum under specialized review",
+          "text_detailed": "Permit extension to a new fixed maximum under specialised review, with the new limit set publicly, the review body named, and its decisions recorded.",
           "types": [
             "expert",
             "public"
@@ -4421,6 +4458,7 @@
         {
           "id": "c03",
           "text": "replace universal day cutoff with staged developmental-milestone/project-specific review",
+          "text_detailed": "Replace a universal day cutoff with staged developmental-milestone review of each project, with the milestones defined biologically and the review conducted before each stage.",
           "types": [
             "expert"
           ],
@@ -4430,6 +4468,7 @@
         {
           "id": "c04",
           "text": "allow extension only for high scientific value/no adequate alternative",
+          "text_detailed": "Permit extension only where scientific value is high and no adequate alternative exists, with both assessed by the review body and its reasoning published.",
           "types": [
             "expert",
             "framework"
@@ -4440,6 +4479,7 @@
         {
           "id": "c05",
           "text": "embryo moral-status precaution favors a firm boundary",
+          "text_detailed": "Maintain a firm boundary on precautionary grounds about embryo moral status, with the boundary's function as a bright line stated as its justification rather than a biological claim.",
           "types": [
             "framework"
           ],
@@ -4449,6 +4489,7 @@
         {
           "id": "c06",
           "text": "research-benefit/proportionality favors controlled extension",
+          "text_detailed": "Permit controlled extension on proportionality grounds, with the research benefit stated concretely and the extension limited to what that benefit requires.",
           "types": [
             "framework"
           ],
@@ -4458,6 +4499,7 @@
         {
           "id": "c07",
           "text": "require periodic public/legislative reauthorization rather than indefinite regulator discretion",
+          "text_detailed": "Require periodic public or legislative reauthorisation rather than indefinite regulator discretion, with the interval fixed and the authorisation lapsing if not renewed.",
           "types": [
             "expert"
           ],
@@ -4477,6 +4519,7 @@
         {
           "id": "c01",
           "text": "specialized review for all 3D SCBEM work",
+          "text_detailed": "Require specialised review for all three-dimensional embryo-model work, with the reviewing body constituted for this purpose and its criteria published.",
           "types": [
             "expert"
           ],
@@ -4486,6 +4529,7 @@
         {
           "id": "c02",
           "text": "tiered oversight by developmental capability, integration, endpoint, and scientific purpose",
+          "text_detailed": "Tier oversight by developmental capability, degree of integration, endpoint and scientific purpose, with the tiers defined in advance and the assignment of a project recorded.",
           "types": [
             "expert"
           ],
@@ -4495,6 +4539,7 @@
         {
           "id": "c03",
           "text": "prohibit reproductive transfer/high-integration experiments beyond defined limits",
+          "text_detailed": "Prohibit reproductive transfer and high-integration experiments beyond defined limits, with the prohibited experiments listed specifically rather than described in general terms.",
           "types": [
             "expert"
           ],
@@ -4504,6 +4549,7 @@
         {
           "id": "c04",
           "text": "ordinary research oversight for low-capability models with escalation triggers",
+          "text_detailed": "Apply ordinary research oversight to low-capability models with escalation triggers, with the triggers defined as observable features and monitoring in place to detect them.",
           "types": [
             "expert"
           ],
@@ -4513,6 +4559,7 @@
         {
           "id": "c05",
           "text": "precaution framework tracking moral concern to increasing organismal resemblance/capability",
+          "text_detailed": "Track moral concern to increasing organismal resemblance and capability, with the indicators named in advance so that escalation is automatic rather than discretionary.",
           "types": [
             "framework"
           ],
@@ -4522,6 +4569,7 @@
         {
           "id": "c06",
           "text": "research-freedom/proportionality framework opposing embryo-equivalent restrictions absent embryo-equivalent capacities",
+          "text_detailed": "Oppose embryo-equivalent restrictions where embryo-equivalent capacities are absent, requiring any restriction to name the capacity it responds to rather than the resemblance.",
           "types": [
             "framework"
           ],
@@ -4531,6 +4579,7 @@
         {
           "id": "c07",
           "text": "Publish what is being made, how far it develops and what happens to it, so that oversight is checkable from outside the specialist community.",
+          "text_detailed": "Publish what is being made, how far it develops and what happens to it, so that oversight is checkable from outside the specialist community, with reports at stated intervals.",
           "types": [
             "public"
           ],
@@ -4551,6 +4600,7 @@
         {
           "id": "c01",
           "text": "broad clinical use under ART safeguards once safe",
+          "text_detailed": "Permit broad clinical use under existing assisted-reproduction safeguards once safety is established, with the safety standard stated and the safeguards adapted to the new technique rather than assumed to transfer.",
           "types": [
             "expert",
             "public"
@@ -4561,6 +4611,7 @@
         {
           "id": "c02",
           "text": "initial restricted indications with registry/long-term follow-up",
+          "text_detailed": "Begin with restricted indications together with a registry and long-term follow-up, with participation mandatory, the indications listed, and expansion tied to registry findings.",
           "types": [
             "expert"
           ],
@@ -4570,6 +4621,7 @@
         {
           "id": "c03",
           "text": "no reproductive use until stronger ethical/social and offspring evidence exists",
+          "text_detailed": "Permit no reproductive use until stronger evidence about offspring and about the social implications exists, naming the evidence sought so the restriction can end.",
           "types": [
             "expert",
             "framework"
@@ -4580,6 +4632,7 @@
         {
           "id": "c04",
           "text": "infertility-only indication initially",
+          "text_detailed": "Restrict initial use to infertility indications, with the indication defined clinically and any extension requiring a fresh public decision.",
           "types": [
             "expert"
           ],
@@ -4589,6 +4642,7 @@
         {
           "id": "c05",
           "text": "permit access irrespective of family form where reproductive use is otherwise safe",
+          "text_detailed": "Permit access irrespective of family form where the reproductive use is otherwise safe, with eligibility criteria stated so that family form cannot enter as an unwritten factor.",
           "types": [
             "framework"
           ],
@@ -4598,6 +4652,7 @@
         {
           "id": "c06",
           "text": "restrict uses that enable nonconsensual genetic parenthood or large-scale enhancement/selection",
+          "text_detailed": "Restrict uses that would enable non-consensual genetic parenthood or large-scale selection, with the prohibited uses defined and consent verified at the point of gamete derivation.",
           "types": [
             "expert",
             "framework"
@@ -4608,6 +4663,7 @@
         {
           "id": "c07",
           "text": "equity rule addressing access and downstream intergenerational monitoring",
+          "text_detailed": "Address access and intergenerational monitoring as a condition of permission, with the funding for both identified and the monitoring continuing beyond the first generation.",
           "types": [
             "framework"
           ],
@@ -4627,6 +4683,7 @@
         {
           "id": "c01",
           "text": "permit serious-disease use with case-by-case specialist approval and long-term follow-up",
+          "text_detailed": "Permit use for serious disease with case-by-case specialist approval and long-term follow-up, with the approval criteria published and follow-up mandatory and funded.",
           "types": [
             "expert"
           ],
@@ -4636,6 +4693,7 @@
         {
           "id": "c02",
           "text": "restrict to cases where alternatives provide little/no comparable benefit",
+          "text_detailed": "Restrict to cases where alternatives offer little or no comparable benefit, with that comparison made for the specific family and recorded in the approval.",
           "types": [
             "expert"
           ],
@@ -4645,6 +4703,7 @@
         {
           "id": "c03",
           "text": "prohibit reproductive use pending longer-term safety evidence",
+          "text_detailed": "Prohibit reproductive use pending longer-term safety evidence, naming the evidence and the studies that would produce it so the prohibition is reviewable.",
           "types": [
             "framework"
           ],
@@ -4654,6 +4713,7 @@
         {
           "id": "c04",
           "text": "affected-family access position favoring availability under safeguards",
+          "text_detailed": "Favour availability for affected families under safeguards, with the safeguards specified and the families' own account of the burden of the condition recorded in the assessment.",
           "types": [
             "public"
           ],
@@ -4663,6 +4723,7 @@
         {
           "id": "c05",
           "text": "future-child precaution requiring registry/intergenerational monitoring",
+          "text_detailed": "Require a registry and intergenerational monitoring on precautionary grounds, with participation a condition of treatment and the findings published as they accumulate.",
           "types": [
             "framework"
           ],
@@ -4672,6 +4733,7 @@
         {
           "id": "c06",
           "text": "reproductive autonomy/beneficence position",
+          "text_detailed": "Favour access on reproductive-autonomy and beneficence grounds, with the decision left to the family once the safeguards are met and the uncertainties stated plainly.",
           "types": [
             "framework"
           ],
@@ -4681,6 +4743,7 @@
         {
           "id": "c07",
           "text": "equity/public-trust rule restricting non-disease expansion and requiring transparent oversight",
+          "text_detailed": "Restrict expansion beyond disease and require transparent oversight, with the boundary defined in advance and the oversight body's decisions published to maintain public trust.",
           "types": [
             "expert",
             "framework"
@@ -4701,6 +4764,7 @@
         {
           "id": "c01",
           "text": "permit informed nonmedical selection",
+          "text_detailed": "Permit informed non-medical sex selection, with counselling covering the reasons for the request and the clinic's policy published so that patients know before treatment.",
           "types": [
             "expert"
           ],
@@ -4710,6 +4774,7 @@
         {
           "id": "c02",
           "text": "decline all nonmedical sex selection",
+          "text_detailed": "Decline all non-medical sex selection, with the policy stated publicly and applied uniformly rather than case by case.",
           "types": [
             "expert",
             "public"
@@ -4720,6 +4785,7 @@
         {
           "id": "c03",
           "text": "permit only family balancing",
+          "text_detailed": "Permit selection only for family balancing, with the condition defined by the existing composition of the family and applied consistently rather than by the persuasiveness of the request.",
           "types": [
             "public"
           ],
@@ -4729,6 +4795,7 @@
         {
           "id": "c04",
           "text": "allow clinic-level transparent conscience/policy choice while requiring nondiscriminatory disclosure before treatment",
+          "text_detailed": "Permit each clinic a transparent policy of its own while requiring non-discriminatory disclosure before treatment begins, so that patients can choose a provider knowing its position.",
           "types": [
             "expert"
           ],
@@ -4738,6 +4805,7 @@
         {
           "id": "c05",
           "text": "reproductive-liberty framework favoring permission",
+          "text_detailed": "Favour permission on reproductive-liberty grounds, requiring any restriction to identify a harm beyond disapproval of the preference.",
           "types": [
             "framework"
           ],
@@ -4747,6 +4815,7 @@
         {
           "id": "c06",
           "text": "gender-justice/anti-stereotyping framework favoring prohibition",
+          "text_detailed": "Favour prohibition on gender-justice grounds, with the concern about reinforcing stereotypes stated and assessed for this population rather than in general.",
           "types": [
             "framework"
           ],
@@ -4756,6 +4825,7 @@
         {
           "id": "c07",
           "text": "permit only where coercion/population sex-ratio/social harm risk is low and counseling confirms autonomous preference",
+          "text_detailed": "Permit only where coercion, sex-ratio and social-harm risks are low and counselling confirms the preference is the patient's own, with each assessed and recorded before treatment.",
           "types": [
             "framework"
           ],
