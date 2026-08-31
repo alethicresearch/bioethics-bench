@@ -25,7 +25,7 @@ const byFamily = new Map(reviewInput.cases.map((item) => [item.neutral_case_fami
 const problems = [];
 
 const STANDARD_CLAIM = (inventory) => `Source-grounded comparison among the represented Public, Expert, and Framework positions in the historical ${inventory} Full Corpus v1 records; this crosswalk preserves represented source-role claims only and does not imply broader public, professional, or normative consensus.`;
-const APPROVED_NOTE = 'Editorially reviewed against neutral resource v1.1.0 at operative Policy level. Cross-role reuse of a neutral Policy denotes independent evidential support, not duplicate Policy identity.';
+const APPROVED_NOTE = 'Editorially reviewed against neutral resource v1.1.0 at operative Policy level. Cross-role reuse of a neutral Policy denotes independent evidential support, not duplicate Policy identity. Symmetric historical profiles use the sacre-qccs-v1 reference-task Sum baseline when no aggregation was explicitly required; asymmetric profiles preserve their required Mean aggregation.';
 const HOLD_NOTE = 'Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0.';
 
 if (decisions.review_version !== '1.1.0') problems.push(`decision review_version must be 1.1.0; found ${decisions.review_version}`);
@@ -75,7 +75,7 @@ for (const decision of decisions.decisions ?? []) {
       as_of_date: decisions.review_date,
       jurisdiction_context: null,
       role_assignments: roleAssignments,
-      aggregation: source.aggregation,
+      aggregation: source.aggregation ?? 'sum',
       source_record_ids: source.source_record_ids,
       source_candidate_crosswalk: crosswalk,
       review_status: 'approved-editorial-crosswalk',
@@ -134,6 +134,8 @@ const ledger = [
   `- Undeclared: **${34 - outputs.length}**`,
   '',
   'An approval means each historical Public/Expert/Framework candidate can be traced to a materially equivalent neutral Policy in v1.1. A hold means the historical record remains valid as historical provenance, but a one-to-one crosswalk would collapse, split, misclassify, or overstate the current neutral representation. Holds are not silently repaired.',
+  '',
+  'For symmetric historical profiles with no explicit aggregation requirement, manifests use the `sacre-qccs-v1` reference-task **Sum** baseline. Asymmetric profiles preserve their profile-required **Mean** aggregation.',
   '',
   '| Family | Title | Disposition | Existing geometry | Crosswalk / hold reason | Next action |',
   '|---|---|---|---|---|---|',
