@@ -800,7 +800,7 @@
     }
 
     /* ---------- case level ---------- */
-    function renderCase() {
+    function renderCase(scrollToTop) {
       var id = state.openCase;
       var bc = (state.cases || {})[id];
       var all = (state.pairs || []).filter(function (p) {
@@ -906,6 +906,14 @@
 
       if (state.openPair) renderInspector(idMap, textOf);
       attachCaseViewHandlers();
+      // The corpus view is several screens tall and the case view is not, so the browser keeps a
+      // scroll offset that lands the reader partway down the case — usually below the heatmap,
+      // with nothing to say the page changed. Only on opening a case, not on every re-render:
+      // clicking a matrix cell must not yank the view away from the cell that was clicked.
+      if (scrollToTop) {
+        var head = $('results-title');
+        if (head && head.scrollIntoView) head.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
     }
 
     function renderInspector(idMap, textOf) {
@@ -1008,9 +1016,9 @@
     function openCase(id) {
       state.openCase = id; state.openPair = null;
       location.hash = id;
-      if (state.pairs && state.cases) { renderCase(); return; }
+      if (state.pairs && state.cases) { renderCase(true); return; }
       $('results').innerHTML = '<div class="empty">Loading case detail…</div>';
-      loadDetail().then(renderCase);
+      loadDetail().then(function () { renderCase(true); });
     }
 
     /* ---------- provenance ---------- */
