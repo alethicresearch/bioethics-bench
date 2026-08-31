@@ -31,12 +31,12 @@ Every case in that file has:
 
 - a concise version;
 - a detailed version;
-- policies;
-- at least one Public policy;
-- at least one Expert policy;
-- at least one Framework policy;
+- a set of policies;
+- a reviewed Public, Expert, or Framework type for each policy;
 - a sourcing label for every policy;
 - a link to the supporting research file.
+
+The number and mix of Public, Expert, and Framework policies vary naturally by case. Some cases do not currently contain all three types. Do not manufacture a missing Public, Expert, or Framework policy merely to make a case symmetrical.
 
 The case-and-policy research pass is complete. Remaining work is scholarly review and release work: source checking, policy-type checking, concise/detailed consistency, citation review, independent review, release statistics, and final freeze/versioning.
 
@@ -75,7 +75,9 @@ A user should be able to:
 3. search or filter the cases;
 4. choose concise or detailed wording;
 5. load the case;
-6. have its Public, Expert, and Framework policies appear in the evaluation setup.
+6. have its reviewed Public, Expert, and Framework policies appear in the evaluation setup.
+
+If one policy type is absent, SACRE should show that plainly and load the policies that are available. It must not create a missing type automatically. A complete three-type SACRE evaluation requires at least one Public, Expert, and Framework policy.
 
 SACRE should stay concise. Users who want source details, sourcing labels, fuller notes, or wider exploration should follow the link to the corresponding case on Bioethics Bench.
 
@@ -97,7 +99,7 @@ Confirm that the policies are serious, genuinely distinct, and stated at compara
 
 Confirm that Public / Expert / Framework accurately describes the kind of position represented.
 
-Do not infer policy type merely from the sourcing label.
+Do not infer policy type merely from the sourcing label. Do not add a policy just to fill a missing type.
 
 ### Sourcing
 
@@ -139,7 +141,7 @@ Historical batch notes, old release plans, old website versions, and older machi
 Complete in this order:
 
 1. review all policy sourcing;
-2. review Public / Expert / Framework assignments;
+2. review Public / Expert / Framework assignments without filling missing types artificially;
 3. check concise/detailed consistency;
 4. complete citation and source-locator checks;
 5. complete independent scholarly/domain review;
