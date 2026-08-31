@@ -51,5 +51,8 @@ if(errors.length){
 console.log(`Public case validation passed: ${resource.case_count} cases / ${resource.policy_count} policies.`);
 console.log(`Cases carrying each policy type: Public ${typeCoverage.public}/${resource.case_count}; Expert ${typeCoverage.expert}/${resource.case_count}; Framework ${typeCoverage.framework}/${resource.case_count}.`);
 console.log(`Every case carries all three policy types; ${written.length} are policies the Bench wrote for a case that recorded none of that type, each marked constructed.`);
-console.log(`Detailed policy forms written: ${resource.detailed_policy_count} of ${resource.policy_count}; the rest fall back to their concise wording.`);
+const missingDetail=resource.policy_count-resource.detailed_policy_count;
+console.log(missingDetail
+  ? `Detailed policy forms written: ${resource.detailed_policy_count} of ${resource.policy_count}; the rest fall back to their concise wording.`
+  : `Every policy has a detailed form as well as a concise one (${resource.policy_count}).`);
 console.log(`${(resource.cases||[]).filter(c=>c.case_file_objects_to_pool).length} of those cases record a case-file judgment that the evidence was too thin for such a pool, and say so on the case.`);

@@ -13,7 +13,7 @@ something else moved.
 warrant, and no scoring path branches on it. If that ever stops being true, the projection
 in the script must change with it.
 
-**38 commits since 2026-08-27. 17 execution-relevant, 21 provenance-only.**
+**37 commits since 2026-08-27. 16 execution-relevant, 21 provenance-only.**
 
 ## Execution-relevant changes
 
@@ -22,7 +22,6 @@ paper-facing result covering the affected families.
 
 | Commit | Date | Families | Change |
 |---|---|---|---|
-| `96b42703` | 2026-08-27 | **M005** | Add M005 detailed executable draft |
 | `8154ae9f` | 2026-08-27 | **M005** | Re-derive M005 fw1 as a disclosure-default rule, and record authored completion |
 | `caaca816` | 2026-08-28 | **M010** | Bind profiles to a construction lineage before transcription |
 | `f32eb822` | 2026-08-28 | **M010, M012, M018, M019, M020, M025, M028, M030, M031, M033, M034, M041, M042, M045, M050, M054, M056, M060, M075, M080, M094, M097, M102, M106, M123, M139, M141, M144** | Bioethics Bench candidate-field reconstruction — tranche 01 |

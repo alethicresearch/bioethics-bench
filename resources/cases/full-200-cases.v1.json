@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 1348,
+  "detailed_policy_count": 1436,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -15715,6 +15715,7 @@
         {
           "id": "c01",
           "text": "orientation toward screening now/at shorter intervals",
+          "text_detailed": "Screen now or at shorter intervals, with the balance of benefit and harm at this age stated in absolute numbers and the interval agreed rather than defaulted to.",
           "types": [
             "public"
           ],
@@ -15724,6 +15725,7 @@
         {
           "id": "c02",
           "text": "orientation toward delaying or reducing frequency after balanced decision information",
+          "text_detailed": "Delay screening or reduce its frequency after balanced decision information, with the information covering what delay costs as well as what it avoids, and the decision recorded.",
           "types": [
             "public"
           ],
@@ -15733,6 +15735,7 @@
         {
           "id": "c03",
           "text": "USPSTF biennial screening age 40–74",
+          "text_detailed": "Follow biennial screening from age 40 to 74, applying the recommendation as written, with departures from it recorded and their reasons given.",
           "types": [
             "expert"
           ],
@@ -15742,6 +15745,7 @@
         {
           "id": "c04",
           "text": "ACS annual screening in the 40s under its current schedule",
+          "text_detailed": "Follow annual screening in the forties under the current schedule, applying it consistently and telling patients which guideline the practice follows and why.",
           "types": [
             "expert"
           ],
@@ -15751,6 +15755,7 @@
         {
           "id": "c05",
           "text": "mortality-benefit framework favoring more frequent early screening",
+          "text_detailed": "Favour more frequent early screening on mortality-benefit grounds, with the expected benefit stated in absolute terms per thousand screened rather than as relative reduction.",
           "types": [
             "framework"
           ],
@@ -15760,6 +15765,7 @@
         {
           "id": "c06",
           "text": "iatrogenic-burden framework favoring less frequent screening to reduce false positives/overdiagnosis",
+          "text_detailed": "Favour less frequent screening to reduce false positives and overdiagnosis, with those harms stated in absolute terms alongside the mortality effect.",
           "types": [
             "framework"
           ],
@@ -15769,6 +15775,7 @@
         {
           "id": "c07",
           "text": "preference-sensitive framework favoring standardized counseling without one standing frequency recommendation where multiple guideline-supported options exist",
+          "text_detailed": "Provide standardised counselling without one standing frequency recommendation, on the ground that multiple guideline-supported options exist, with all of them presented and the patient's choice recorded.",
           "types": [
             "framework"
           ],
@@ -15788,6 +15795,7 @@
         {
           "id": "c01",
           "text": "no routine follow-up below the applicable risk/size threshold",
+          "text_detailed": "Provide no routine follow-up below the applicable risk and size threshold, with the threshold cited and the reasoning given to the patient rather than only recorded.",
           "types": [
             "expert"
           ],
@@ -15797,6 +15805,7 @@
         {
           "id": "c02",
           "text": "optional surveillance only when individualized risk or informed preference justifies it within guideline discretion",
+          "text_detailed": "Offer optional surveillance where individualised risk or an informed preference justifies it within guideline discretion, with the discretion's limits stated and the choice recorded.",
           "types": [
             "expert"
           ],
@@ -15806,6 +15815,7 @@
         {
           "id": "c03",
           "text": "escalate to more intensive work-up only when additional clinical/radiographic risk changes the category",
+          "text_detailed": "Escalate to more intensive work-up only where additional clinical or radiographic risk changes the category, with the change documented rather than inferred from concern.",
           "types": [
             "expert"
           ],
@@ -15815,6 +15825,7 @@
         {
           "id": "c04",
           "text": "shared-decision comparator permitting one low-burden surveillance scan for persistent informed anxiety despite low malignancy risk",
+          "text_detailed": "Permit one low-burden surveillance scan for persistent informed anxiety despite low malignancy risk, with the single scan agreed as the endpoint rather than the start of a series.",
           "types": [
             "expert"
           ],
@@ -15824,6 +15835,7 @@
         {
           "id": "c05",
           "text": "nonmaleficence/diagnostic-stewardship framework opposes cascades generated by incidental findings",
+          "text_detailed": "Oppose cascades generated by incidental findings on stewardship grounds, with the expected downstream tests and their harms described to the patient.",
           "types": [
             "framework"
           ],
@@ -15833,6 +15845,7 @@
         {
           "id": "c06",
           "text": "precaution/relational-autonomy framework permits proportionate surveillance when residual uncertainty and patient values justify the downstream burden",
+          "text_detailed": "Permit proportionate surveillance where residual uncertainty and the patient's values justify the downstream burden, with that burden described concretely before the first scan.",
           "types": [
             "framework"
           ],
@@ -15842,6 +15855,7 @@
         {
           "id": "c07",
           "text": "Tell the patient what the finding means in absolute terms, including the option of doing nothing, and record their choice.",
+          "text_detailed": "Tell the patient what the finding means in absolute terms, including the option of doing nothing, and record their choice, with the absolute risk given as a number rather than a reassurance.",
           "types": [
             "public"
           ],
@@ -15862,6 +15876,7 @@
         {
           "id": "c01",
           "text": "preserve an accurate clinically relevant medical record while using lawful confidentiality/access controls",
+          "text_detailed": "Keep an accurate clinically relevant record while using lawful confidentiality and access controls, with those controls explained to the patient and applied rather than described.",
           "types": [
             "expert"
           ],
@@ -15871,6 +15886,7 @@
         {
           "id": "c02",
           "text": "use minimum-necessary truthful wording and omit only details that are not clinically needed",
+          "text_detailed": "Use minimum-necessary truthful wording, omitting only details that are not clinically needed, with the omission a matter of relevance rather than of the patient's preference about consequences.",
           "types": [
             "expert"
           ],
@@ -15880,6 +15896,7 @@
         {
           "id": "c03",
           "text": "provide a separate advocacy/functional-status letter that explains context without altering medical facts",
+          "text_detailed": "Provide a separate advocacy or functional-status letter that explains context without altering the medical record, with the letter written to the patient's purpose and the record left intact.",
           "types": [
             "expert"
           ],
@@ -15889,6 +15906,7 @@
         {
           "id": "c04",
           "text": "refer the patient to privacy/legal/benefits support when downstream discrimination risk cannot be solved through clinical documentation",
+          "text_detailed": "Refer the patient to privacy, legal or benefits support where the discrimination risk cannot be addressed through documentation, with the referral made rather than mentioned.",
           "types": [
             "expert"
           ],
@@ -15898,6 +15916,7 @@
         {
           "id": "c05",
           "text": "truthfulness/professional-integrity framework prohibits falsifying the record even for sympathetic ends",
+          "text_detailed": "Prohibit falsifying the record even for sympathetic ends, with the position explained to the patient as an obligation rather than as an unwillingness to help.",
           "types": [
             "framework"
           ],
@@ -15907,6 +15926,7 @@
         {
           "id": "c06",
           "text": "privacy/anti-discrimination framework requires clinicians to minimize unnecessary dissemination and advocate against nonclinical misuse of accurate health information",
+          "text_detailed": "Minimise unnecessary dissemination and advocate against non-clinical misuse of accurate information, with specific steps taken rather than a general commitment recorded.",
           "types": [
             "framework"
           ],
@@ -15916,6 +15936,7 @@
         {
           "id": "c07",
           "text": "Tell the patient at the outset what must be recorded and who can see it, and offer to write only what is clinically necessary.",
+          "text_detailed": "Tell the patient at the outset what must be recorded and who can see it, and offer to write only what is clinically necessary, before the consultation rather than when the letter is requested.",
           "types": [
             "public"
           ],
@@ -15936,6 +15957,7 @@
         {
           "id": "c01",
           "text": "reject cash/reciprocal promotional gifts to individual clinicians",
+          "text_detailed": "Refuse cash and reciprocal promotional gifts to individual clinicians, with the rule applying to all staff, stated in policy, and enforced rather than left to individual judgment.",
           "types": [
             "expert"
           ],
@@ -15945,6 +15967,7 @@
         {
           "id": "c02",
           "text": "permit only minimal-value in-kind items that directly benefit patients and carry no expected reciprocity",
+          "text_detailed": "Permit only minimal-value in-kind items that directly benefit patients and carry no expectation of reciprocity, with the value limit stated and receipts recorded.",
           "types": [
             "expert"
           ],
@@ -15954,6 +15977,7 @@
         {
           "id": "c03",
           "text": "permit independently administered institutional educational support when the manufacturer cannot select individual recipients or control content",
+          "text_detailed": "Permit institutional educational support administered independently, where the manufacturer cannot select recipients or control content, with both conditions verified rather than asserted by the sponsor.",
           "types": [
             "expert"
           ],
@@ -15963,6 +15987,7 @@
         {
           "id": "c04",
           "text": "adopt a stricter institution-wide no-industry-support rule for product-linked education to avoid residual influence",
+          "text_detailed": "Adopt a stricter institution-wide rule against industry support for product-linked education, with the boundary defined by the product link rather than by the format of the event.",
           "types": [
             "expert"
           ],
@@ -15972,6 +15997,7 @@
         {
           "id": "c05",
           "text": "conflict-of-interest framework favors bright-line separation where subtle reciprocity can distort judgment",
+          "text_detailed": "Favour a bright-line separation on conflict-of-interest grounds, on the ground that subtle reciprocity distorts judgment in ways individuals cannot detect in themselves.",
           "types": [
             "framework"
           ],
@@ -15981,6 +16007,7 @@
         {
           "id": "c06",
           "text": "proportional-governance framework permits bounded support when independence, transparency and patient benefit are demonstrable",
+          "text_detailed": "Permit bounded support where independence, transparency and patient benefit are demonstrable, with each demonstrated in advance and reported afterwards.",
           "types": [
             "framework"
           ],
@@ -15990,6 +16017,7 @@
         {
           "id": "c07",
           "text": "Publish what the practice accepts and from whom, so that patients can see the relationships behind their care.",
+          "text_detailed": "Publish what the practice accepts and from whom, so that patients can see the relationships behind their care, with the register updated as arrangements change.",
           "types": [
             "public"
           ],
@@ -16010,6 +16038,7 @@
         {
           "id": "c01",
           "text": "recommend the option with greatest individualized expected benefit independent of payer preference and appeal if necessary",
+          "text_detailed": "Recommend the option with the greatest individualised expected benefit regardless of payer preference, and appeal where coverage is refused, with the appeal made by the practice rather than left to the patient.",
           "types": [
             "expert"
           ],
@@ -16019,6 +16048,7 @@
         {
           "id": "c02",
           "text": "use the lower-cost clinically reasonable option first and switch if response is inadequate",
+          "text_detailed": "Use the lower-cost clinically reasonable option first and switch where the response is inadequate, with the switching criteria agreed with the patient at the outset.",
           "types": [
             "expert",
             "framework"
@@ -16029,6 +16059,7 @@
         {
           "id": "c03",
           "text": "disclose the coverage constraint and appeal only when the expected individual benefit difference crosses a defined material threshold",
+          "text_detailed": "Disclose the coverage constraint and appeal where the expected benefit difference crosses a defined material threshold, with the threshold stated in policy rather than judged per case.",
           "types": [
             "expert"
           ],
@@ -16038,6 +16069,7 @@
         {
           "id": "c04",
           "text": "shared-decision rule presents both options, including cost/access consequences, and incorporates the patient's valuation of the uncertain benefit",
+          "text_detailed": "Present both options including their cost and access consequences, and incorporate the patient's own valuation of the uncertain benefit, with that valuation recorded.",
           "types": [
             "expert"
           ],
@@ -16047,6 +16079,7 @@
         {
           "id": "c05",
           "text": "fiduciary framework gives patient welfare priority over system savings when meaningful benefit differs",
+          "text_detailed": "Give the patient's welfare priority over system savings where meaningful benefit differs, with the difference stated and the reasoning recorded.",
           "types": [
             "framework"
           ],
@@ -16056,6 +16089,7 @@
         {
           "id": "c06",
           "text": "stewardship framework permits cost-sensitive choice among clinically comparable options because resources have opportunity costs",
+          "text_detailed": "Permit cost-sensitive choice among clinically comparable options, with comparability assessed on stated criteria rather than assumed from a formulary category.",
           "types": [
             "framework"
           ],
@@ -16065,6 +16099,7 @@
         {
           "id": "c07",
           "text": "procedural-justice rule requires transparent, reviewable authorization criteria rather than opaque financial pressure on bedside clinicians",
+          "text_detailed": "Require transparent reviewable authorisation criteria rather than opaque financial pressure at the bedside, with the criteria published and appeals decided against them.",
           "types": [
             "framework"
           ],
@@ -16074,6 +16109,7 @@
         {
           "id": "c08",
           "text": "Tell the patient when coverage rather than clinical judgement shaped the recommendation, and name the route to appeal.",
+          "text_detailed": "Tell the patient when coverage rather than clinical judgement shaped the recommendation, and name the route to appeal, with both given at the time rather than on request.",
           "types": [
             "public"
           ],
@@ -16094,6 +16130,7 @@
         {
           "id": "c01",
           "text": "continue care with firm written behavioral boundaries when a safe therapeutic relationship remains possible",
+          "text_detailed": "Continue care under firm written behavioural boundaries where a safe therapeutic relationship remains possible, with the boundaries agreed, given to the patient, and reviewed at a stated point.",
           "types": [
             "expert"
           ],
@@ -16103,6 +16140,7 @@
         {
           "id": "c02",
           "text": "terminate after adequate notice and facilitated transfer when the relationship is no longer sustainable",
+          "text_detailed": "Terminate after adequate notice and a facilitated transfer where the relationship is no longer sustainable, with the notice period stated and the receiving clinician identified before care ends.",
           "types": [
             "expert"
           ],
@@ -16112,6 +16150,7 @@
         {
           "id": "c03",
           "text": "immediately restrict nonemergency in-person contact only for serious safety threats while preserving emergency/transition duties",
+          "text_detailed": "Restrict non-emergency in-person contact immediately only for serious safety threats, while preserving emergency and transition duties, with the restriction recorded and reviewed.",
           "types": [
             "expert"
           ],
@@ -16121,6 +16160,7 @@
         {
           "id": "c04",
           "text": "use a time-limited behavioral agreement and reassessment before termination for nonviolent repeated misconduct",
+          "text_detailed": "Use a time-limited behavioural agreement with reassessment before considering termination for non-violent repeated misconduct, with the agreement written and the review date fixed.",
           "types": [
             "expert"
           ],
@@ -16130,6 +16170,7 @@
         {
           "id": "c05",
           "text": "staff-safety/professional-integrity framework permits boundaries and termination rather than requiring unlimited exposure to abuse",
+          "text_detailed": "Permit boundaries and termination rather than requiring unlimited exposure to abuse, with staff safety treated as a legitimate ground stated in policy.",
           "types": [
             "framework"
           ],
@@ -16139,6 +16180,7 @@
         {
           "id": "c06",
           "text": "nonabandonment/continuity framework requires proportionate notice, transfer help and protection of essential care despite conflict",
+          "text_detailed": "Require proportionate notice, help with transfer and protection of essential care despite the conflict, with essential care defined and continued throughout.",
           "types": [
             "framework"
           ],
@@ -16148,6 +16190,7 @@
         {
           "id": "c07",
           "text": "Give written notice, a stated reason, and continuing care until another clinician is in place, so that ending the relationship is not the same as being abandoned.",
+          "text_detailed": "Give written notice, a stated reason, and continuing care until another clinician is in place, so that ending the relationship is not the same as being abandoned, with the transfer confirmed rather than offered.",
           "types": [
             "public"
           ],
@@ -16168,6 +16211,7 @@
         {
           "id": "c01",
           "text": "generally decline family treatment when independent care is reasonably available because objectivity/privacy can be compromised",
+          "text_detailed": "Decline to treat a family member where independent care is reasonably available, with availability assessed practically — distance, timing, cost — rather than in principle.",
           "types": [
             "expert"
           ],
@@ -16177,6 +16221,7 @@
         {
           "id": "c02",
           "text": "provide short-term minor care in the isolated setting with ordinary consent, documentation and handoff",
+          "text_detailed": "Provide short-term minor care in the isolated setting with ordinary consent, documentation and handoff, treating the episode as a clinical encounter rather than an informal favour.",
           "types": [
             "expert"
           ],
@@ -16186,6 +16231,7 @@
         {
           "id": "c03",
           "text": "provide only urgent stabilization/bridge care until independent evaluation becomes available",
+          "text_detailed": "Provide only urgent stabilisation and bridging care until independent evaluation is available, with the handover arranged as soon as it becomes possible.",
           "types": [
             "expert"
           ],
@@ -16195,6 +16241,7 @@
         {
           "id": "c04",
           "text": "broader temporary treatment only where lack of alternatives creates a meaningful access risk and the issue remains within clinician competence",
+          "text_detailed": "Provide broader temporary treatment only where the absence of alternatives creates meaningful access risk and the problem is within the clinician's competence, with both assessed and recorded.",
           "types": [
             "expert"
           ],
@@ -16204,6 +16251,7 @@
         {
           "id": "c05",
           "text": "role-integrity framework favors avoiding dual relationships except necessity",
+          "text_detailed": "Avoid dual relationships except where necessity requires them, with necessity defined by access rather than by convenience or the family's preference.",
           "types": [
             "framework"
           ],
@@ -16213,6 +16261,7 @@
         {
           "id": "c06",
           "text": "beneficence/proportionality framework permits low-risk temporary care when the alternative is meaningful untreated harm or delay",
+          "text_detailed": "Permit low-risk temporary care where the alternative is untreated harm or meaningful delay, with the risk assessed and the arrangement documented like any other episode.",
           "types": [
             "framework"
           ],
@@ -16222,6 +16271,7 @@
         {
           "id": "c07",
           "text": "Tell the family member plainly what the clinician can and cannot do in this setting, and arrange the alternative before it is needed.",
+          "text_detailed": "Tell the family member plainly what the clinician can and cannot do in this setting, and arrange the alternative before it is needed, so that the boundary is set before an emergency tests it.",
           "types": [
             "public"
           ],
@@ -16242,6 +16292,7 @@
         {
           "id": "c01",
           "text": "give numerical median plus explicit best/typical/worst-case ranges and uncertainty",
+          "text_detailed": "Give a numerical median together with explicit best, typical and worst-case ranges and the uncertainty around them, with the numbers written down for the patient to take away.",
           "types": [
             "public"
           ],
@@ -16251,6 +16302,7 @@
         {
           "id": "c02",
           "text": "provide primarily qualitative information when the patient prefers less numerical detail, while still explaining uncertainty and decision implications",
+          "text_detailed": "Give primarily qualitative information where the patient prefers less numerical detail, while still conveying the uncertainty and what it means for the decisions ahead.",
           "types": [
             "public"
           ],
@@ -16260,6 +16312,7 @@
         {
           "id": "c03",
           "text": "avoid a single point estimate and use range/trajectory language because false precision is misleading",
+          "text_detailed": "Avoid a single point estimate and use range and trajectory language, on the ground that false precision misleads, with the range wide enough to reflect what is genuinely unknown.",
           "types": [
             "expert"
           ],
@@ -16269,6 +16322,7 @@
         {
           "id": "c04",
           "text": "ask the patient first how much detail and what format they want, then tailor the disclosure within a truthful minimum",
+          "text_detailed": "Ask first how much detail the patient wants and in what form, then tailor the disclosure within a truthful minimum that is stated regardless of preference.",
           "types": [
             "expert"
           ],
@@ -16278,6 +16332,7 @@
         {
           "id": "c05",
           "text": "structured “hope and prepare” communication pairing realistic uncertainty with what can still be planned or hoped for",
+          "text_detailed": "Pair realistic uncertainty with what can still be planned or hoped for, structuring the conversation so that neither element is left out.",
           "types": [
             "public"
           ],
@@ -16287,6 +16342,7 @@
         {
           "id": "c06",
           "text": "epistemic-integrity framework forbids false precision and requires explicit limits of prediction",
+          "text_detailed": "Forbid false precision and state the limits of prediction explicitly, with those limits given as part of the estimate rather than as a caveat afterwards.",
           "types": [
             "framework"
           ],
@@ -16296,6 +16352,7 @@
         {
           "id": "c07",
           "text": "autonomy/relational framework gives the patient's information preferences substantial control over format without permitting deception or clinically consequential concealment",
+          "text_detailed": "Give the patient's own information preferences substantial control over the format of the disclosure — how much detail, in numbers or in words, at what pace — without permitting deception or the concealment of anything that bears on a decision they are about to make. Where a preference would hide something clinically consequential, the fact is stated and the format adapted around it.",
           "types": [
             "framework"
           ],
@@ -16315,6 +16372,7 @@
         {
           "id": "c01",
           "text": "structured consensus/mediation using the patient's values and substituted judgment before changing treatment where time permits",
+          "text_detailed": "Work toward consensus through structured mediation grounded in the patient's own values and substituted judgment before changing treatment, where time permits, with the process recorded.",
           "types": [
             "expert"
           ],
@@ -16324,6 +16382,7 @@
         {
           "id": "c02",
           "text": "identify a single legally/institutionally authorized surrogate if consensus fails",
+          "text_detailed": "Identify the single legally or institutionally authorised surrogate where consensus fails, with the basis for that authority recorded and explained to the family.",
           "types": [
             "expert"
           ],
@@ -16333,6 +16392,7 @@
         {
           "id": "c03",
           "text": "ethics consultation for unresolved surrogate identity or high-stakes treatment conflict",
+          "text_detailed": "Obtain ethics consultation where surrogate identity is unresolved or the treatment conflict is high-stakes, with the consultation arranged promptly and its outcome shared with the family.",
           "types": [
             "expert"
           ],
@@ -16342,6 +16402,7 @@
         {
           "id": "c04",
           "text": "judicial review only when serious conflict persists after less adversarial processes and legal determination is necessary",
+          "text_detailed": "Seek judicial review only where serious conflict persists after less adversarial processes and a legal determination is necessary, with those steps documented first.",
           "types": [
             "expert"
           ],
@@ -16351,6 +16412,7 @@
         {
           "id": "c05",
           "text": "precedent-autonomy framework centers the patient's known values rather than family voting",
+          "text_detailed": "Centre the patient's known values rather than family voting, with what is known recorded and its sources identified rather than treated as consensus.",
           "types": [
             "framework"
           ],
@@ -16360,6 +16422,7 @@
         {
           "id": "c06",
           "text": "best-interests/procedural-justice framework authorizes independent review when competing surrogates cannot reliably represent the patient",
+          "text_detailed": "Authorise independent review where competing surrogates cannot reliably represent the patient, with unreliability established on the record rather than inferred from disagreement.",
           "types": [
             "framework"
           ],
@@ -16369,6 +16432,7 @@
         {
           "id": "c07",
           "text": "Give the family a single named contact and a scheduled meeting, and record each person's view, so that disagreement is worked through rather than routed around.",
+          "text_detailed": "Give the family a single named contact and a scheduled meeting, and record each person's view, so that disagreement is worked through rather than routed around. The contact is named at admission, the meeting is booked before it is asked for, and each recorded view stays in the notes whether or not it prevails.",
           "types": [
             "public"
           ],
@@ -16389,6 +16453,7 @@
         {
           "id": "c01",
           "text": "physician may recommend discharge once acute medical criteria are met but must incorporate nursing/social safety evidence into the plan",
+          "text_detailed": "Permit the physician to recommend discharge once acute medical criteria are met, while incorporating nursing and social-work safety evidence into the plan, with that evidence recorded rather than noted.",
           "types": [
             "expert"
           ],
@@ -16398,6 +16463,7 @@
         {
           "id": "c02",
           "text": "require a multidisciplinary minimum-safety plan before routine discharge when foreseeable functional/social hazards materially affect treatment feasibility",
+          "text_detailed": "Require a multidisciplinary minimum-safety plan before routine discharge where foreseeable functional or social hazards materially affect whether the treatment can be carried out.",
           "types": [
             "expert"
           ],
@@ -16407,6 +16473,7 @@
         {
           "id": "c03",
           "text": "use independent clinical/ethics escalation when disciplines remain divided on foreseeable serious harm",
+          "text_detailed": "Escalate to independent clinical or ethics review where the disciplines remain divided about foreseeable serious harm, with the escalation available to any team member.",
           "types": [
             "expert"
           ],
@@ -16416,6 +16483,7 @@
         {
           "id": "c04",
           "text": "honor a capacitated patient's informed decision to leave even when the team recommends delay, after risk explanation and feasible harm reduction",
+          "text_detailed": "Honour a capacitated patient's informed decision to leave even where the team recommends delay, after the risks are explained and feasible harm reduction is offered and recorded.",
           "types": [
             "expert",
             "framework"
@@ -16426,6 +16494,7 @@
         {
           "id": "c05",
           "text": "delay ordinary discharge briefly when a concrete reversible barrier such as temporary caregiver absence can be remedied without disproportionate burden",
+          "text_detailed": "Delay ordinary discharge briefly where a concrete reversible barrier can be remedied without disproportionate burden, with the barrier named and the delay time-limited.",
           "types": [
             "expert"
           ],
@@ -16435,6 +16504,7 @@
         {
           "id": "c06",
           "text": "epistemic-justice framework gives nursing/social-work observations equal decision relevance when they concern domains those professions directly assess",
+          "text_detailed": "Give nursing and social-work observations equal decision relevance in the domains those professions directly assess, with their assessments recorded in the discharge decision rather than summarised by others.",
           "types": [
             "framework"
           ],
@@ -16444,6 +16514,7 @@
         {
           "id": "c07",
           "text": "least-restrictive autonomy framework rejects using multidisciplinary consensus as an unlimited veto over a capacitated patient's departure",
+          "text_detailed": "Reject the use of multidisciplinary consensus as an unlimited veto over a capacitated patient's departure, with the team's role confined to informing and mitigating rather than authorising.",
           "types": [
             "framework"
           ],
@@ -16453,6 +16524,7 @@
         {
           "id": "c08",
           "text": "Tell the patient what the disagreement is about and let them hear both views before discharge is decided.",
+          "text_detailed": "Tell the patient what the disagreement is about and let them hear both views before discharge is decided, with both stated in the patient's presence rather than resolved beforehand.",
           "types": [
             "public"
           ],
@@ -16473,6 +16545,7 @@
         {
           "id": "c01",
           "text": "discharge when acute criteria are met with ordinary referrals and outpatient follow-up",
+          "text_detailed": "Discharge once acute criteria are met with ordinary referrals and outpatient follow-up, with the referrals made and appointments booked rather than given as information.",
           "types": [
             "expert"
           ],
@@ -16482,6 +16555,7 @@
         {
           "id": "c02",
           "text": "briefly delay discharge to secure medical respite when the discharge environment makes the treatment plan materially unsafe",
+          "text_detailed": "Delay discharge briefly to secure medical respite where the discharge environment makes the treatment plan materially unsafe, with the search documented and time-limited.",
           "types": [
             "expert"
           ],
@@ -16491,6 +16565,7 @@
         {
           "id": "c03",
           "text": "provide enhanced transitional nursing/wound/pharmacy/outreach support when respite is unavailable rather than prolonging acute hospitalization indefinitely",
+          "text_detailed": "Provide enhanced transitional nursing, wound care, pharmacy and outreach support where respite is unavailable, rather than prolonging acute admission indefinitely, with the package specified.",
           "types": [
             "expert"
           ],
@@ -16500,6 +16575,7 @@
         {
           "id": "c04",
           "text": "create a standing recuperative-care pathway for patients whose housing environment makes otherwise feasible treatment unsafe",
+          "text_detailed": "Establish a standing recuperative-care pathway for patients whose housing makes otherwise feasible treatment unsafe, with the pathway funded and its capacity stated.",
           "types": [
             "expert"
           ],
@@ -16509,6 +16585,7 @@
         {
           "id": "c05",
           "text": "nonmaleficence/continuity framework treats ability to execute the treatment plan as part of safe discharge rather than a “social” afterthought",
+          "text_detailed": "Treat the patient's ability to carry out the treatment plan as part of discharge safety rather than as a social afterthought, with that assessment recorded alongside the medical criteria.",
           "types": [
             "framework"
           ],
@@ -16518,6 +16595,7 @@
         {
           "id": "c06",
           "text": "structural-justice framework rejects transferring housing-system failures onto the patient through predictably unsafe discharge",
+          "text_detailed": "Reject transferring housing-system failures onto the patient through a predictably unsafe discharge, with the predictability assessed and recorded rather than left as an assumption.",
           "types": [
             "framework"
           ],
@@ -16527,6 +16605,7 @@
         {
           "id": "c07",
           "text": "stewardship framework limits acute-bed use while supporting the least costly setting that can safely deliver required recovery care",
+          "text_detailed": "Limit acute-bed use while supporting the least costly setting that can safely deliver the recovery care required, with safe defined by the treatment plan rather than by bed availability.",
           "types": [
             "framework"
           ],
@@ -16536,6 +16615,7 @@
         {
           "id": "c08",
           "text": "Do not discharge to the street: hold the bed until a place to go is arranged, and record what was sought and what was available.",
+          "text_detailed": "Do not discharge to the street: hold the bed until a place to go is arranged, and record what was sought and what was available, so that the gap in provision is documented rather than absorbed.",
           "types": [
             "public"
           ],
@@ -16556,6 +16636,7 @@
         {
           "id": "c01",
           "text": "fund community living within a broad reasonableness range because integration is itself a major benefit",
+          "text_detailed": "Fund community living within a broad reasonableness range, on the ground that integration is itself a major benefit, with the range stated and the benefit counted rather than assumed.",
           "types": [
             "framework"
           ],
@@ -16565,6 +16646,7 @@
         {
           "id": "c02",
           "text": "apply a cost-equivalence or narrow cost-premium ceiling before approving home support",
+          "text_detailed": "Apply a cost-equivalence or narrow premium ceiling before approving home support, with the ceiling published and the same ceiling applied to every applicant.",
           "types": [
             "framework"
           ],
@@ -16574,6 +16656,7 @@
         {
           "id": "c03",
           "text": "presumptively fund the community option unless cumulative resource effects would constitute a system-level fundamental alteration",
+          "text_detailed": "Presumptively fund the community option unless the cumulative resource effect would amount to a system-level fundamental alteration, with that finding made at system level and evidenced.",
           "types": [
             "expert",
             "framework"
@@ -16584,6 +16667,7 @@
         {
           "id": "c04",
           "text": "use individualized reasonable-accommodation review rather than a fixed percentage threshold",
+          "text_detailed": "Use individualised reasonable-accommodation review rather than a fixed percentage threshold, with the review's criteria stated and its decisions recorded for consistency.",
           "types": [
             "expert"
           ],
@@ -16593,6 +16677,7 @@
         {
           "id": "c05",
           "text": "capabilities/social-inclusion framework gives independent weight to living in the community rather than treating settings with equal basic care as welfare-equivalent",
+          "text_detailed": "Give independent weight to living in the community rather than treating two settings that deliver the same basic care as equivalent in what they provide. That weight is stated in the funding rule as a factor in its own right, so that a decision must say what it counted rather than compare the packages on clinical content alone.",
           "types": [
             "framework"
           ],
@@ -16602,6 +16687,7 @@
         {
           "id": "c06",
           "text": "opportunity-cost framework requires consideration of services forgone by other disabled people when one package is much more expensive",
+          "text_detailed": "Require consideration of the services other disabled people would forgo where one package is much more expensive, with the comparison made explicitly and published in aggregate.",
           "types": [
             "framework"
           ],
@@ -16611,6 +16697,7 @@
         {
           "id": "c07",
           "text": "multiprinciple rule combines strong community-integration priority with transparent system-level budget-impact review and appeal",
+          "text_detailed": "Combine a strong community-integration priority with transparent system-level budget-impact review and a right of appeal, with all three specified in the funding policy.",
           "types": [
             "framework"
           ],
@@ -16620,6 +16707,7 @@
         {
           "id": "c08",
           "text": "Give the person the choice between home and institutional care with the real terms of each stated, and record their preference in the funding decision.",
+          "text_detailed": "Give the person the choice between home and institutional care with the real terms of each stated, and record their preference in the funding decision, so that the choice is on the record whichever way the decision goes.",
           "types": [
             "public"
           ],
