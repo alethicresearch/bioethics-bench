@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 882,
+  "detailed_policy_count": 1043,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -5460,6 +5460,7 @@
         {
           "id": "c01",
           "text": "active-control only",
+          "text_detailed": "Compare against the established active treatment rather than placebo, accepting the larger sample this requires, with the comparator stated in the protocol and its adequacy assessed by the review committee.",
           "types": [
             "expert"
           ],
@@ -5469,6 +5470,7 @@
         {
           "id": "c02",
           "text": "placebo under narrow Helsinki/CIOMS exception",
+          "text_detailed": "Use placebo only under the narrow exception for compelling methodological necessity, with that necessity argued in the protocol, assessed independently, and the exception cited explicitly.",
           "types": [
             "expert"
           ],
@@ -5478,6 +5480,7 @@
         {
           "id": "c03",
           "text": "placebo with short duration/rescue/monitoring safeguards",
+          "text_detailed": "Use placebo with safeguards: the shortest washout consistent with the question, rescue treatment available immediately, and monitoring frequent enough to detect deterioration before harm.",
           "types": [
             "expert"
           ],
@@ -5487,6 +5490,7 @@
         {
           "id": "c04",
           "text": "equipoise/social-value framework favoring methodologically necessary placebo",
+          "text_detailed": "Permit methodologically necessary placebo where equipoise holds and social value is high, with both assessed by the review committee and the reasoning recorded rather than assumed from the design.",
           "types": [
             "framework"
           ],
@@ -5496,6 +5500,7 @@
         {
           "id": "c05",
           "text": "nonmaleficence framework favoring active control",
+          "text_detailed": "Require an active control on non-maleficence grounds, on the ground that withholding effective treatment from a consenting participant is still a harm the trial imposes.",
           "types": [
             "framework"
           ],
@@ -5505,6 +5510,7 @@
         {
           "id": "c06",
           "text": "participant-choice comparator permitting placebo only after unusually explicit consent where professional risk threshold is still satisfied",
+          "text_detailed": "Permit placebo only after unusually explicit consent and only where the professional risk threshold is still met, with the consent process documented and the threshold assessed independently of the participant's willingness.",
           "types": [
             "expert"
           ],
@@ -5514,6 +5520,7 @@
         {
           "id": "c07",
           "text": "Guarantee that anyone assigned placebo returns to effective treatment immediately on worsening, and say plainly at consent how long they may be without it.",
+          "text_detailed": "Guarantee that anyone assigned placebo returns to effective treatment immediately on worsening, and say plainly at consent how long they may be without it, with the rescue criteria written into the protocol.",
           "types": [
             "public"
           ],
@@ -5534,6 +5541,7 @@
         {
           "id": "c01",
           "text": "approve under full WHO criteria",
+          "text_detailed": "Approve under the full set of criteria for controlled human infection studies, with each criterion addressed in the protocol and the review body's assessment of each recorded.",
           "types": [
             "expert"
           ],
@@ -5543,6 +5551,7 @@
         {
           "id": "c02",
           "text": "require effective rescue treatment as additional condition",
+          "text_detailed": "Require effective rescue treatment as a further condition of approval, with the treatment available on site, its efficacy established, and the plan for using it specified.",
           "types": [
             "framework"
           ],
@@ -5552,6 +5561,7 @@
         {
           "id": "c03",
           "text": "reject above defined residual-risk/uncertainty threshold",
+          "text_detailed": "Reject the study where residual risk or uncertainty exceeds a defined threshold, with the threshold stated in advance so that it constrains approval rather than describing it.",
           "types": [
             "expert",
             "framework"
@@ -5562,6 +5572,7 @@
         {
           "id": "c04",
           "text": "permit without curative treatment only where severity is low, rescue/support excellent, and social value compelling",
+          "text_detailed": "Permit the study without curative treatment only where severity is low, rescue and supportive care are excellent, and social value is compelling, with all three established rather than argued in the aggregate.",
           "types": [
             "expert"
           ],
@@ -5571,6 +5582,7 @@
         {
           "id": "c05",
           "text": "participant-autonomy/high social-value permission",
+          "text_detailed": "Permit the study on grounds of participant autonomy and high social value, with the value stated concretely — what the study would settle — rather than as a general appeal to importance.",
           "types": [
             "framework"
           ],
@@ -5580,6 +5592,7 @@
         {
           "id": "c06",
           "text": "nonmaleficence precautionary restriction",
+          "text_detailed": "Restrict on precautionary non-maleficence grounds, with the uncertainty named and the restriction reviewable as the relevant evidence develops.",
           "types": [
             "framework"
           ],
@@ -5589,6 +5602,7 @@
         {
           "id": "c07",
           "text": "enhanced compensation/injury-care/community-engagement governance rule",
+          "text_detailed": "Require enhanced compensation, care for any injury, and community engagement as conditions of approval, with each specified, funded and in place before recruitment.",
           "types": [
             "expert"
           ],
@@ -5598,6 +5612,7 @@
         {
           "id": "c08",
           "text": "Fix compensation, treatment for any harm and long-term follow-up before recruitment opens, and publish those terms with the participant information.",
+          "text_detailed": "Fix compensation, treatment for any harm and long-term follow-up before recruitment opens, and publish those terms with the participant information, so that they are known rather than negotiated after an injury.",
           "types": [
             "public"
           ],
@@ -5618,6 +5633,7 @@
         {
           "id": "c01",
           "text": "EFIC under full regulatory/community safeguards",
+          "text_detailed": "Enrol under the exception from informed consent with the full regulatory and community safeguards, with community consultation and public disclosure completed and documented before enrolment begins.",
           "types": [
             "expert"
           ],
@@ -5627,6 +5643,7 @@
         {
           "id": "c02",
           "text": "surrogate consent only/no enrollment if unavailable",
+          "text_detailed": "Enrol only with surrogate consent, and do not enrol where no surrogate is available, accepting the resulting limits on the evidence the trial can produce.",
           "types": [
             "expert"
           ],
@@ -5636,6 +5653,7 @@
         {
           "id": "c03",
           "text": "deferred consent with immediate enrollment and later patient/surrogate authorization where legal",
+          "text_detailed": "Enrol immediately and seek authorisation from the patient or surrogate afterwards where the law permits, with the approach made as soon as practicable and withdrawal honoured including of data already collected.",
           "types": [
             "expert"
           ],
@@ -5645,6 +5663,7 @@
         {
           "id": "c04",
           "text": "consent waiver only when prospect of direct benefit and intervention window makes consent infeasible",
+          "text_detailed": "Waive consent only where there is a prospect of direct benefit and the intervention window makes consent infeasible, with both established in the protocol and reviewed independently.",
           "types": [
             "expert"
           ],
@@ -5654,6 +5673,7 @@
         {
           "id": "c05",
           "text": "autonomy framework favoring narrower exception",
+          "text_detailed": "Keep the exception narrow on autonomy grounds, requiring that no lesser departure from consent would allow the question to be answered.",
           "types": [
             "framework"
           ],
@@ -5663,6 +5683,7 @@
         {
           "id": "c06",
           "text": "emergency social-value/justice framework permitting EFIC to generate evidence for otherwise unresearchable lethal emergencies",
+          "text_detailed": "Permit the exception to generate evidence for lethal emergencies that could not otherwise be researched, with the alternative — continuing to treat without evidence — stated explicitly in the justification.",
           "types": [
             "framework"
           ],
@@ -5672,6 +5693,7 @@
         {
           "id": "c07",
           "text": "Consult the community the trial will enrol from before it begins and publish what was heard, so that people enrolled without consent were represented in the decision to allow it.",
+          "text_detailed": "Consult the community the trial will enrol from before it begins and publish what was heard, so that people enrolled without consent were represented in the decision to allow it, with objections recorded rather than summarised.",
           "types": [
             "public"
           ],
@@ -5692,6 +5714,7 @@
         {
           "id": "c01",
           "text": "global best-proven control",
+          "text_detailed": "Use the global best-proven treatment as the control, with the sponsor supplying it for the trial's duration and the arrangement stated in the protocol.",
           "types": [
             "expert",
             "framework"
@@ -5702,6 +5725,7 @@
         {
           "id": "c02",
           "text": "enhanced local standard plus responsiveness/fair benefits",
+          "text_detailed": "Use an enhanced local standard together with commitments on responsiveness and fair benefits, with the enhancement specified and the benefits agreed with the host before approval.",
           "types": [
             "expert"
           ],
@@ -5711,6 +5735,7 @@
         {
           "id": "c03",
           "text": "local standard only when scientifically necessary and avoidable harm remains within ethical threshold",
+          "text_detailed": "Use the local standard only where scientifically necessary and where the avoidable harm stays within an ethical threshold, with both assessed independently and the threshold stated.",
           "types": [
             "expert"
           ],
@@ -5720,6 +5745,7 @@
         {
           "id": "c04",
           "text": "local standard because it reflects realistic implementation context",
+          "text_detailed": "Use the local standard on the ground that it reflects the context in which the treatment would be implemented, with that implementation claim made explicit and tested against the host's own plans.",
           "types": [
             "expert"
           ],
@@ -5729,6 +5755,7 @@
         {
           "id": "c05",
           "text": "justice rule requiring sponsor-supported access to better standard during trial",
+          "text_detailed": "Require the sponsor to supply the better standard during the trial as a matter of justice, with the supply funded and its continuation after the trial addressed separately.",
           "types": [
             "framework"
           ],
@@ -5738,6 +5765,7 @@
         {
           "id": "c06",
           "text": "sustainable-host-benefit rule allowing contextual comparator if trial materially strengthens future access",
+          "text_detailed": "Permit a contextual comparator where the trial materially strengthens future access, with the strengthening specified as commitments rather than expectations and reported afterwards.",
           "types": [
             "framework"
           ],
@@ -5747,6 +5775,7 @@
         {
           "id": "c07",
           "text": "reject trial if comparator would exploit unjust background conditions",
+          "text_detailed": "Reject the trial where the comparator would exploit unjust background conditions, with that judgment made by the review committee and the reasoning recorded.",
           "types": [
             "framework"
           ],
@@ -5756,6 +5785,7 @@
         {
           "id": "c08",
           "text": "Commit in advance to what the host community gets if the treatment works, and publish that commitment with the protocol.",
+          "text_detailed": "Commit in advance to what the host community gets if the treatment works, and publish that commitment with the protocol, in terms specific enough to be enforced.",
           "types": [
             "public"
           ],
@@ -5776,6 +5806,7 @@
         {
           "id": "c01",
           "text": "bounded broad consent + governance",
+          "text_detailed": "Take bounded broad consent for named research categories under published governance, with the categories described concretely and the governance body's decisions available to participants.",
           "types": [
             "expert",
             "framework",
@@ -5787,6 +5818,7 @@
         {
           "id": "c02",
           "text": "dynamic/recontact consent for materially new categories",
+          "text_detailed": "Recontact for consent whenever a materially new category of use arises, with materiality defined in advance and the recontact route maintained rather than allowed to lapse.",
           "types": [
             "framework"
           ],
@@ -5796,6 +5828,7 @@
         {
           "id": "c03",
           "text": "specific consent for each use",
+          "text_detailed": "Take specific consent for each use, accepting the administrative burden, with the consent record linked to the sample so that use can be checked against it.",
           "types": [
             "framework",
             "public"
@@ -5806,6 +5839,7 @@
         {
           "id": "c04",
           "text": "broad consent with opt-out/withdrawal and transparency portal",
+          "text_detailed": "Take broad consent with a working opt-out and withdrawal and a transparency portal showing what has actually been done, with the portal maintained and current rather than nominal.",
           "types": [
             "expert"
           ],
@@ -5815,6 +5849,7 @@
         {
           "id": "c05",
           "text": "residual clinical samples under notice/opt-out where permitted",
+          "text_detailed": "Use residual clinical samples under notice and opt-out where the law permits, with the notice given where patients will see it and the opt-out effective for future use.",
           "types": [
             "expert"
           ],
@@ -5824,6 +5859,7 @@
         {
           "id": "c06",
           "text": "autonomy/right-to-control framework",
+          "text_detailed": "Favour granular control on autonomy grounds, with the choices offered in a form participants can revisit and change over time.",
           "types": [
             "framework"
           ],
@@ -5833,6 +5869,7 @@
         {
           "id": "c07",
           "text": "solidarity/social-value framework favoring broad governed reuse",
+          "text_detailed": "Favour broad governed reuse on solidarity and social-value grounds, with the value produced reported back to participants rather than assumed.",
           "types": [
             "framework"
           ],
@@ -5852,6 +5889,7 @@
         {
           "id": "c01",
           "text": "fair compensation for time/burden without arbitrary low cap",
+          "text_detailed": "Pay fairly for time and burden without an arbitrary cap, with the rate published, the basis for it stated, and the same rate applied across studies of similar demand.",
           "types": [
             "expert"
           ],
@@ -5861,6 +5899,7 @@
         {
           "id": "c02",
           "text": "conservative payment cap to reduce undue influence",
+          "text_detailed": "Cap payment conservatively to reduce undue influence, with the cap justified against local income and its effect on who enrols monitored and reported.",
           "types": [
             "expert"
           ],
@@ -5870,6 +5909,7 @@
         {
           "id": "c03",
           "text": "high payment allowed with enhanced consent/comprehension safeguards",
+          "text_detailed": "Permit high payment with enhanced consent and comprehension safeguards, with comprehension tested rather than assumed and the testing documented.",
           "types": [
             "expert"
           ],
@@ -5879,6 +5919,7 @@
         {
           "id": "c04",
           "text": "prorated earned payment preserving withdrawal",
+          "text_detailed": "Prorate payment so that it is earned as the study proceeds and withdrawal costs nothing already earned, with the schedule stated at consent and paid on withdrawal without delay.",
           "types": [
             "expert"
           ],
@@ -5888,6 +5929,7 @@
         {
           "id": "c05",
           "text": "labor/fairness framework favoring market-like compensation",
+          "text_detailed": "Pay market-like compensation on fairness grounds, treating participation as work that carries burden, with the rate set transparently and reviewed.",
           "types": [
             "framework"
           ],
@@ -5897,6 +5939,7 @@
         {
           "id": "c06",
           "text": "vulnerability/undue-influence framework favoring limits where payment predictably distorts judgment",
+          "text_detailed": "Limit payment where it predictably distorts judgment for particular participants, with the limit targeted at the distortion rather than applied uniformly, and its basis stated.",
           "types": [
             "framework"
           ],
@@ -5906,6 +5949,7 @@
         {
           "id": "c07",
           "text": "Pay for time and burden at a rate the participant can see and check, prorated so that leaving early costs nothing already earned.",
+          "text_detailed": "Pay for time and burden at a rate the participant can see and check, prorated so that leaving early costs nothing already earned, with the schedule given in writing before enrolment.",
           "types": [
             "public"
           ],
@@ -5926,6 +5970,7 @@
         {
           "id": "c01",
           "text": "minimal-risk only",
+          "text_detailed": "Permit only minimal-risk procedures where there is no prospect of direct benefit, with minimal risk defined against the ordinary experiences of the children concerned and assessed by the committee.",
           "types": [
             "expert"
           ],
@@ -5935,6 +5980,7 @@
         {
           "id": "c02",
           "text": "minor increase over minimal risk for compelling social value/necessity with permission/assent",
+          "text_detailed": "Permit a minor increase over minimal risk where social value and necessity are compelling, with parental permission and the child's assent, and each procedure classified explicitly in the protocol.",
           "types": [
             "expert"
           ],
@@ -5944,6 +5990,7 @@
         {
           "id": "c03",
           "text": "prohibit no-benefit procedures that exceed minor increase regardless of assent",
+          "text_detailed": "Prohibit no-benefit procedures exceeding a minor increase over minimal risk regardless of assent, with the prohibition applying to the procedure rather than to the study as a whole.",
           "types": [
             "expert",
             "framework"
@@ -5954,6 +6001,7 @@
         {
           "id": "c04",
           "text": "broader permission when mature adolescent assent is strong",
+          "text_detailed": "Permit broader participation where a mature adolescent's assent is strong and informed, with maturity assessed individually and the assent recorded in the young person's own words.",
           "types": [
             "public"
           ],
@@ -5963,6 +6011,7 @@
         {
           "id": "c05",
           "text": "child-protection framework",
+          "text_detailed": "Apply a child-protection standard, resolving uncertainty about risk against the study, with the reasoning recorded so that exclusion is a decision rather than a default.",
           "types": [
             "framework"
           ],
@@ -5972,6 +6021,7 @@
         {
           "id": "c06",
           "text": "pediatric-justice framework allowing carefully bounded burdens so children are not excluded from evidence generation",
+          "text_detailed": "Permit carefully bounded burdens so that children are not excluded from the evidence that would improve their care, with the bounds stated and the resulting evidence gap named if the study is refused.",
           "types": [
             "framework"
           ],
@@ -5991,6 +6041,7 @@
         {
           "id": "c01",
           "text": "presumptive inclusion with pregnancy-specific safeguards",
+          "text_detailed": "Include pregnant participants presumptively with pregnancy-specific safeguards, with exclusion requiring a stated justification rather than inclusion requiring one.",
           "types": [
             "expert"
           ],
@@ -6000,6 +6051,7 @@
         {
           "id": "c02",
           "text": "staged inclusion after adequate nonpregnant data",
+          "text_detailed": "Include after adequate data in non-pregnant participants, with the threshold for adequate stated in advance and the inclusion step planned rather than left to a future decision.",
           "types": [
             "expert"
           ],
@@ -6009,6 +6061,7 @@
         {
           "id": "c03",
           "text": "exclude when fetal uncertainty/risk exceeds threshold",
+          "text_detailed": "Exclude where fetal uncertainty or risk exceeds a stated threshold, with the threshold defined and the resulting evidence gap acknowledged in the protocol.",
           "types": [
             "expert"
           ],
@@ -6018,6 +6071,7 @@
         {
           "id": "c04",
           "text": "justice framework opposing routine exclusion/evidence gaps",
+          "text_detailed": "Oppose routine exclusion on justice grounds, on the ground that the evidence gap is itself a harm, with that harm stated for the specific condition under study.",
           "types": [
             "framework"
           ],
@@ -6027,6 +6081,7 @@
         {
           "id": "c05",
           "text": "precautionary maternal-fetal framework favoring staged evidence",
+          "text_detailed": "Stage evidence generation on precautionary maternal-fetal grounds, with each stage's entry criteria defined and the timetable committed to rather than open-ended.",
           "types": [
             "framework"
           ],
@@ -6036,6 +6091,7 @@
         {
           "id": "c06",
           "text": "participant-choice rule allowing capable pregnant participant to decide within independently acceptable risk limits",
+          "text_detailed": "Let a capable pregnant participant decide within independently acceptable risk limits, with those limits set by the committee and the decision left to the participant within them.",
           "types": [
             "framework"
           ],
@@ -6045,6 +6101,7 @@
         {
           "id": "c07",
           "text": "Offer pregnant patients the trial rather than deciding for them, with the uncertainty stated plainly and their own clinician involved in the decision.",
+          "text_detailed": "Offer pregnant patients the trial rather than deciding for them, with the uncertainty stated plainly and their own clinician involved in the decision, and the offer recorded either way.",
           "types": [
             "public"
           ],
@@ -6065,6 +6122,7 @@
         {
           "id": "c01",
           "text": "include prisoner-relevant research with enhanced protections/prisoner IRB representation",
+          "text_detailed": "Include research relevant to people in prison, with enhanced protections and prisoner representation on the review board, and the relevance established rather than asserted.",
           "types": [
             "expert"
           ],
@@ -6074,6 +6132,7 @@
         {
           "id": "c02",
           "text": "restrict nontherapeutic studies to minimal risk/defined categories",
+          "text_detailed": "Restrict non-therapeutic studies to minimal risk and to defined categories, with the categories stated in policy rather than judged for each protocol.",
           "types": [
             "expert"
           ],
@@ -6083,6 +6142,7 @@
         {
           "id": "c03",
           "text": "categorical exclusion from nonbeneficial research",
+          "text_detailed": "Exclude people in prison from non-beneficial research categorically, accepting that the resulting evidence gap affects their care and stating it.",
           "types": [
             "framework"
           ],
@@ -6092,6 +6152,7 @@
         {
           "id": "c04",
           "text": "include where exclusion itself creates evidence injustice and coercion safeguards are robust",
+          "text_detailed": "Include where exclusion would itself create an evidence injustice and coercion safeguards are robust, with both established and the safeguards audited during the study.",
           "types": [
             "framework"
           ],
@@ -6101,6 +6162,7 @@
         {
           "id": "c05",
           "text": "vulnerability/autonomy framework favoring heightened scrutiny not blanket exclusion",
+          "text_detailed": "Apply heightened scrutiny rather than blanket exclusion, on the ground that vulnerability calls for protection rather than exclusion from benefit.",
           "types": [
             "framework"
           ],
@@ -6110,6 +6172,7 @@
         {
           "id": "c06",
           "text": "anti-exploitation framework setting strict benefit/relevance thresholds",
+          "text_detailed": "Set strict benefit and relevance thresholds on anti-exploitation grounds, with the study required to address a condition or circumstance specific to imprisonment.",
           "types": [
             "framework"
           ],
@@ -6119,6 +6182,7 @@
         {
           "id": "c07",
           "text": "Let people in prison decide without their participation affecting parole, privileges or housing, and say so in writing at consent.",
+          "text_detailed": "Let people in prison decide without their participation affecting parole, privileges or housing, and say so in writing at consent, with the guarantee given by the institution rather than the researcher.",
           "types": [
             "public"
           ],
@@ -6139,6 +6203,7 @@
         {
           "id": "c01",
           "text": "guarantee continued access while medically needed",
+          "text_detailed": "Guarantee continued access to the intervention for as long as it is medically needed, with the commitment funded and stated in the protocol before enrolment.",
           "types": [
             "public"
           ],
@@ -6148,6 +6213,7 @@
         {
           "id": "c02",
           "text": "time-limited sponsor-funded transition to health-system access",
+          "text_detailed": "Fund a time-limited transition to health-system access, with the duration stated, the transition arranged rather than assumed, and participants told what happens at its end.",
           "types": [
             "public"
           ],
@@ -6157,6 +6223,7 @@
         {
           "id": "c03",
           "text": "pre-agreed fair-benefit plan with REC-approved exceptions",
+          "text_detailed": "Agree a fair-benefit plan before the trial with exceptions approved by the review committee, with the plan published and the exceptions recorded and justified.",
           "types": [
             "expert",
             "framework"
@@ -6167,6 +6234,7 @@
         {
           "id": "c04",
           "text": "no special post-trial entitlement beyond ordinary access once study ends",
+          "text_detailed": "Provide no special entitlement beyond ordinary access once the study ends, stating this plainly at consent so that participants are not left expecting otherwise.",
           "types": [
             "framework"
           ],
@@ -6176,6 +6244,7 @@
         {
           "id": "c05",
           "text": "reciprocity/nonabandonment framework favoring continued access",
+          "text_detailed": "Provide continued access on reciprocity and non-abandonment grounds, with the obligation running to the participants who bore the risk rather than to the population generally.",
           "types": [
             "framework"
           ],
@@ -6185,6 +6254,7 @@
         {
           "id": "c06",
           "text": "distributive/sustainability framework allowing bounded duration when indefinite sponsor responsibility would undermine research/access equity",
+          "text_detailed": "Bound the duration of sponsor responsibility where an indefinite obligation would undermine future research or access equity, with the bound stated in advance and its rationale published.",
           "types": [
             "framework"
           ],
@@ -6204,6 +6274,7 @@
         {
           "id": "c01",
           "text": "timely registry/public results for every completed human trial + publication when appropriate",
+          "text_detailed": "Post results to a public registry within a stated period for every completed human trial, and publish where appropriate, with compliance monitored rather than left to the sponsor.",
           "types": [
             "expert"
           ],
@@ -6213,6 +6284,7 @@
         {
           "id": "c02",
           "text": "full manuscript publication obligation for every scientifically interpretable trial",
+          "text_detailed": "Publish a full manuscript for every scientifically interpretable trial, with the obligation written into the funding or sponsorship agreement and enforced.",
           "types": [
             "expert"
           ],
@@ -6222,6 +6294,7 @@
         {
           "id": "c03",
           "text": "limited sponsor/investigator discretion over manuscript detail while public results remain mandatory",
+          "text_detailed": "Allow limited discretion over manuscript detail while keeping public results mandatory, with the discretion bounded and the registry entry complete regardless.",
           "types": [
             "expert"
           ],
@@ -6231,6 +6304,7 @@
         {
           "id": "c04",
           "text": "participant-right/social-value framework favoring full dissemination",
+          "text_detailed": "Require full dissemination on grounds of participants' contribution and social value, with the obligation stated to participants at enrolment.",
           "types": [
             "framework"
           ],
@@ -6240,6 +6314,7 @@
         {
           "id": "c05",
           "text": "proportional rule allowing concise public reporting when results are uninterpretable/redundant but never suppression",
+          "text_detailed": "Permit concise public reporting where results are uninterpretable or redundant, while prohibiting suppression outright, with the judgment recorded and reviewable.",
           "types": [
             "framework"
           ],
@@ -6249,6 +6324,7 @@
         {
           "id": "c06",
           "text": "Publish the result whatever it shows, within a stated period, and tell participants where to find it when they enrol.",
+          "text_detailed": "Publish the result whatever it shows, within a stated period, and tell participants where to find it when they enrol, with a reminder sent when it appears.",
           "types": [
             "public"
           ],
@@ -6269,6 +6345,7 @@
         {
           "id": "c01",
           "text": "individual consent + gatekeeper permission/community engagement",
+          "text_detailed": "Obtain individual consent together with gatekeeper permission and community engagement, with the gatekeeper's role defined so it does not substitute for individual consent.",
           "types": [
             "expert"
           ],
@@ -6278,6 +6355,7 @@
         {
           "id": "c02",
           "text": "waiver/opt-out for low-risk cluster intervention where consent infeasible",
+          "text_detailed": "Waive consent or use an opt-out for low-risk cluster interventions where individual consent is infeasible, with infeasibility established and the opt-out genuinely available to families.",
           "types": [
             "expert"
           ],
@@ -6287,6 +6365,7 @@
         {
           "id": "c03",
           "text": "individual consent wherever feasible with no gatekeeper proxy consent",
+          "text_detailed": "Obtain individual consent wherever feasible and permit no gatekeeper proxy consent, accepting the recruitment cost and stating it in the protocol.",
           "types": [
             "expert"
           ],
@@ -6296,6 +6375,7 @@
         {
           "id": "c04",
           "text": "community-authorization framework giving collective interests independent procedural weight",
+          "text_detailed": "Give collective interests independent procedural weight through community authorisation, with the authorising body identified and its decision recorded before randomisation.",
           "types": [
             "framework"
           ],
@@ -6305,6 +6385,7 @@
         {
           "id": "c05",
           "text": "individual-autonomy framework restricting waiver",
+          "text_detailed": "Restrict waiver on individual-autonomy grounds, requiring that the intervention could not otherwise be studied and that each individual can still decline.",
           "types": [
             "framework"
           ],
@@ -6314,6 +6395,7 @@
         {
           "id": "c06",
           "text": "stepped/layered model using community consultation plus individual opt-out for population-level low-risk interventions",
+          "text_detailed": "Use community consultation with individual opt-out for population-level low-risk interventions, with both layers specified and the opt-out effective at the individual level.",
           "types": [
             "expert"
           ],
@@ -6323,6 +6405,7 @@
         {
           "id": "c07",
           "text": "Consult the school communities before randomisation and publish what was decided, so that families whose children are covered by the change had a route to object.",
+          "text_detailed": "Consult the school communities before randomisation and publish what was decided, so that families whose children are covered by the change had a route to object before it applied.",
           "types": [
             "public"
           ],
@@ -6343,6 +6426,7 @@
         {
           "id": "c01",
           "text": "offer confirmed clinically actionable findings with informed choice",
+          "text_detailed": "Offer confirmed clinically actionable findings, with the participant choosing at enrolment whether to receive them, confirmation in an accredited laboratory, and a route to clinical follow-up arranged rather than suggested.",
           "types": [
             "expert",
             "public"
@@ -6353,6 +6437,7 @@
         {
           "id": "c02",
           "text": "offer broader valid findings according to participant categories/preferences",
+          "text_detailed": "Offer a broader set of valid findings according to categories the participant selects, with the categories described concretely at enrolment and the selection revisable.",
           "types": [
             "expert"
           ],
@@ -6362,6 +6447,7 @@
         {
           "id": "c03",
           "text": "restrict return to validity/actionability threshold",
+          "text_detailed": "Return only findings meeting a stated validity and actionability threshold, with the threshold published so that participants know in advance what they will and will not hear.",
           "types": [
             "expert"
           ],
@@ -6371,6 +6457,7 @@
         {
           "id": "c04",
           "text": "return urgent actionable findings even absent prior request when serious preventable harm is at stake",
+          "text_detailed": "Return urgent actionable findings even where the participant made no prior request, where serious preventable harm is at stake, with that exception stated at enrolment rather than applied unannounced.",
           "types": [
             "expert",
             "framework"
@@ -6381,6 +6468,7 @@
         {
           "id": "c05",
           "text": "right-not-to-know opt-out",
+          "text_detailed": "Honour a right not to know through an opt-out recorded at enrolment, applied to all categories the participant declines, and revisited only if the participant asks.",
           "types": [
             "framework"
           ],
@@ -6390,6 +6478,7 @@
         {
           "id": "c06",
           "text": "participant data-access/autonomy position favoring broader return",
+          "text_detailed": "Return more broadly on grounds of participants' access to their own data, with interpretation support provided so that returning a result is not merely transferring a burden.",
           "types": [
             "framework"
           ],
@@ -6399,6 +6488,7 @@
         {
           "id": "c07",
           "text": "do not return uncertain/unvalidated findings but permit future recontact after reclassification",
+          "text_detailed": "Do not return uncertain or unvalidated findings, while keeping a recontact route open should the finding later be reclassified, with the route maintained and participants told it exists.",
           "types": [
             "expert"
           ],
@@ -6418,6 +6508,7 @@
         {
           "id": "c01",
           "text": "investigator publication freedom with short sponsor review for confidential/IP material",
+          "text_detailed": "Preserve investigator publication freedom, subject to a short sponsor review confined to confidential or intellectual-property material, with the review period fixed and no veto over content.",
           "types": [
             "expert"
           ],
@@ -6427,6 +6518,7 @@
         {
           "id": "c02",
           "text": "fixed limited patent/coordination delay",
+          "text_detailed": "Permit a fixed limited delay for patent filing or multi-site coordination, with the maximum stated in the contract and no extension available by negotiation.",
           "types": [
             "expert"
           ],
@@ -6436,6 +6528,7 @@
         {
           "id": "c03",
           "text": "immediate publication absent narrowly defined confidential information",
+          "text_detailed": "Publish immediately except for narrowly defined confidential information, with that category listed in the contract rather than identified at the time of submission.",
           "types": [
             "expert"
           ],
@@ -6445,6 +6538,7 @@
         {
           "id": "c04",
           "text": "sponsor first-publication coordination within a hard deadline but no veto",
+          "text_detailed": "Allow the sponsor to coordinate first publication within a hard deadline while holding no veto, with the deadline stated and publication proceeding automatically once it passes.",
           "types": [
             "expert"
           ],
@@ -6454,6 +6548,7 @@
         {
           "id": "c05",
           "text": "scientific-independence framework versus legitimate IP/reliance framework",
+          "text_detailed": "Weigh scientific independence against legitimate intellectual-property reliance, and state in the agreement which consideration governs where they conflict.",
           "types": [
             "framework"
           ],
@@ -6463,6 +6558,7 @@
         {
           "id": "c06",
           "text": "Publish the contract terms governing publication alongside the trial registration, so that participants can see what the sponsor may withhold before enrolling.",
+          "text_detailed": "Publish the contract terms governing publication alongside the trial registration, so that participants can see what the sponsor may withhold before enrolling, with the terms summarised in the participant information.",
           "types": [
             "public"
           ],
@@ -6483,6 +6579,7 @@
         {
           "id": "c01",
           "text": "proceed in severe/no-alternative adults with enhanced oversight + staged dosing",
+          "text_detailed": "Proceed in adults with severe disease and no alternative, under enhanced oversight and staged dosing, with the oversight body independent and the staging rules fixed before the first participant.",
           "types": [
             "expert"
           ],
@@ -6492,6 +6589,7 @@
         {
           "id": "c02",
           "text": "require stronger preclinical threshold before first exposure",
+          "text_detailed": "Require a stronger preclinical threshold before first human exposure, with the threshold specified in terms of the studies to be completed and their results, rather than in general terms.",
           "types": [
             "expert",
             "framework"
@@ -6502,6 +6600,7 @@
         {
           "id": "c03",
           "text": "restrict initial enrollment to highest-need/lowest-alternative group",
+          "text_detailed": "Restrict initial enrolment to the group with the highest need and the fewest alternatives, with eligibility defined clinically and applied consistently rather than by referral order.",
           "types": [
             "expert"
           ],
@@ -6511,6 +6610,7 @@
         {
           "id": "c04",
           "text": "sentinel dosing/escalation with stopping rules",
+          "text_detailed": "Use sentinel dosing and escalation with stopping rules fixed in advance, with a mandatory observation interval between participants and escalation requiring independent sign-off.",
           "types": [
             "expert"
           ],
@@ -6520,6 +6620,7 @@
         {
           "id": "c05",
           "text": "rescue/innovation framework allowing carefully managed uncertainty for otherwise untreatable disease",
+          "text_detailed": "Permit carefully managed uncertainty for otherwise untreatable disease, with the management specified — monitoring, stopping, rescue — rather than asserted as careful.",
           "types": [
             "framework"
           ],
@@ -6529,6 +6630,7 @@
         {
           "id": "c06",
           "text": "precautionary nonmaleficence framework delaying human exposure",
+          "text_detailed": "Delay human exposure on precautionary grounds, naming what would have to be established first so that the delay has an end condition rather than deferring indefinitely.",
           "types": [
             "framework"
           ],
@@ -6538,6 +6640,7 @@
         {
           "id": "c07",
           "text": "justice rule preventing desperation from becoming a proxy for consent quality and ensuring long-term follow-up coverage",
+          "text_detailed": "Prevent desperation from standing in for consent quality and guarantee long-term follow-up coverage, with comprehension assessed independently and follow-up funded before enrolment.",
           "types": [
             "expert",
             "framework"
@@ -6548,6 +6651,7 @@
         {
           "id": "c08",
           "text": "Say plainly at consent that this is a first-in-human study and cannot be expected to treat the participant's own disease, and give the same care afterwards to those it does not help.",
+          "text_detailed": "Say plainly at consent that this is a first-in-human study and cannot be expected to treat the participant's own disease, and give the same care afterwards to those it does not help, with that care funded and arranged.",
           "types": [
             "public"
           ],
@@ -6568,6 +6672,7 @@
         {
           "id": "c01",
           "text": "prioritize trial supply to generate reliable evidence",
+          "text_detailed": "Direct supply to the trial to generate reliable evidence, with the reasoning published and the expected date by which the evidence would be available stated.",
           "types": [
             "expert"
           ],
@@ -6577,6 +6682,7 @@
         {
           "id": "c02",
           "text": "reserve transparent fraction for EA to otherwise trial-ineligible worst-off patients",
+          "text_detailed": "Reserve a stated fraction for expanded access to the worst-off patients ineligible for the trial, with the fraction fixed in advance and the eligibility criteria published.",
           "types": [
             "framework"
           ],
@@ -6586,6 +6692,7 @@
         {
           "id": "c03",
           "text": "trial-first with EA only from surplus/noninterfering supply",
+          "text_detailed": "Supply the trial first and permit expanded access only from surplus that does not interfere, with interference defined in terms of recruitment and timelines rather than judged case by case.",
           "types": [
             "expert"
           ],
@@ -6595,6 +6702,7 @@
         {
           "id": "c04",
           "text": "lottery within EA eligibility",
+          "text_detailed": "Allocate expanded access by lottery among eligible patients, with the eligibility criteria and the draw both public and the draw run outside the treating team.",
           "types": [
             "framework"
           ],
@@ -6604,6 +6712,7 @@
         {
           "id": "c05",
           "text": "urgency/worst-off prioritization within EA",
+          "text_detailed": "Prioritise within expanded access by urgency and worst-off status, with the criteria stated in advance and each allocation recorded against them.",
           "types": [
             "framework"
           ],
@@ -6613,6 +6722,7 @@
         {
           "id": "c06",
           "text": "evidence-generation social-value priority",
+          "text_detailed": "Give priority to evidence generation on social-value grounds, stating what the trial would establish and for how many future patients.",
           "types": [
             "framework"
           ],
@@ -6622,6 +6732,7 @@
         {
           "id": "c07",
           "text": "rescue/compassion priority for patients excluded from trial through no fault of their own",
+          "text_detailed": "Give priority to patients excluded from the trial through no fault of their own, with exclusion reasons recorded and the compassion route defined rather than ad hoc.",
           "types": [
             "framework"
           ],
@@ -6631,6 +6742,7 @@
         {
           "id": "c08",
           "text": "Publish the allocation rule and the numbers available, so that patients who receive nothing can see how the decision was made rather than suspecting it.",
+          "text_detailed": "Publish the allocation rule and the numbers available, so that patients who receive nothing can see how the decision was made rather than suspecting it, with the numbers updated as supply changes.",
           "types": [
             "public"
           ],
@@ -6651,6 +6763,7 @@
         {
           "id": "c01",
           "text": "allow sham only when scientifically necessary and incremental risk low",
+          "text_detailed": "Permit a sham control only where it is scientifically necessary and the incremental risk over the trial's other procedures is low, with both established in the protocol and assessed independently.",
           "types": [
             "expert"
           ],
@@ -6660,6 +6773,7 @@
         {
           "id": "c02",
           "text": "require active/usual-care control when sham risk exceeds threshold",
+          "text_detailed": "Require an active or usual-care control wherever sham risk exceeds a stated threshold, with the threshold defined by procedure rather than judged per study.",
           "types": [
             "expert",
             "framework"
@@ -6670,6 +6784,7 @@
         {
           "id": "c03",
           "text": "allow sham with enhanced consent/rescue/risk mitigation under equipoise",
+          "text_detailed": "Permit sham with enhanced consent, rescue provision and risk mitigation where equipoise holds, with each element specified and the equipoise judgment recorded.",
           "types": [
             "expert"
           ],
@@ -6679,6 +6794,7 @@
         {
           "id": "c04",
           "text": "participant-autonomy position permitting low-risk sham after transparent consent",
+          "text_detailed": "Permit low-risk sham after transparent consent on autonomy grounds, with the consent describing the sham procedure concretely rather than as a control condition.",
           "types": [
             "framework"
           ],
@@ -6688,6 +6804,7 @@
         {
           "id": "c05",
           "text": "nonmaleficence position rejecting nontherapeutic invasive procedures when less risky design can answer question",
+          "text_detailed": "Reject non-therapeutic invasive procedures where a less risky design could answer the question, with the alternative design considered explicitly and its rejection justified.",
           "types": [
             "framework"
           ],
@@ -6697,6 +6814,7 @@
         {
           "id": "c06",
           "text": "methodological-validity rule permitting sham where placebo effects/procedural components make blinded causal inference otherwise unreliable",
+          "text_detailed": "Permit sham where placebo and procedural effects would otherwise make blinded causal inference unreliable, with that methodological claim argued and reviewed rather than assumed.",
           "types": [
             "framework"
           ],
@@ -6706,6 +6824,7 @@
         {
           "id": "c07",
           "text": "Tell participants exactly what the sham involves and its risks, and guarantee the real procedure afterwards if the trial shows it works.",
+          "text_detailed": "Tell participants exactly what the sham involves and its risks, and guarantee the real procedure afterwards if the trial shows it works, with that guarantee funded and stated at consent.",
           "types": [
             "public"
           ],
@@ -6726,6 +6845,7 @@
         {
           "id": "c01",
           "text": "adaptive platform with prespecified independent oversight",
+          "text_detailed": "Run an adaptive platform with independent oversight and every adaptation rule prespecified, with the oversight body seeing unblinded data and the rules registered before the first participant.",
           "types": [
             "expert"
           ],
@@ -6735,6 +6855,7 @@
         {
           "id": "c02",
           "text": "separate fixed trials",
+          "text_detailed": "Run separate fixed trials, accepting slower learning in exchange for simpler inference and clearer accountability at each site.",
           "types": [
             "expert"
           ],
@@ -6744,6 +6865,7 @@
         {
           "id": "c03",
           "text": "adaptive only when emergency learning advantage justifies complexity",
+          "text_detailed": "Use an adaptive design only where the emergency learning advantage justifies the added complexity, with that advantage stated in the protocol and assessed by the review committee.",
           "types": [
             "expert"
           ],
@@ -6753,6 +6875,7 @@
         {
           "id": "c04",
           "text": "response-adaptive allocation favoring better-performing arms subject to inferential safeguards",
+          "text_detailed": "Use response-adaptive allocation toward better-performing arms, subject to inferential safeguards specified in advance, with the allocation rule registered and the safeguards independently reviewed.",
           "types": [
             "expert"
           ],
@@ -6762,6 +6885,7 @@
         {
           "id": "c05",
           "text": "learning-health/social-value framework favoring platform efficiency",
+          "text_detailed": "Favour platform efficiency on social-value grounds, with the expected gain in time-to-answer stated rather than assumed from the design.",
           "types": [
             "framework"
           ],
@@ -6771,6 +6895,7 @@
         {
           "id": "c06",
           "text": "transparency/autonomy framework favoring simpler fixed designs when adaptation impairs comprehensibility/local accountability",
+          "text_detailed": "Favour simpler fixed designs where adaptation would impair comprehensibility or local accountability, with that judgment made against the actual sites and populations involved.",
           "types": [
             "framework"
           ],
@@ -6780,6 +6905,7 @@
         {
           "id": "c07",
           "text": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
+          "text_detailed": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
           "types": [
             "public"
           ],
@@ -6800,6 +6926,7 @@
         {
           "id": "c01",
           "text": "maximize expected population health gain/disease burden",
+          "text_detailed": "Allocate to maximise expected population health gain against disease burden, with the burden measure and the modelling published and revisited each cycle.",
           "types": [
             "expert",
             "framework"
@@ -6810,6 +6937,7 @@
         {
           "id": "c02",
           "text": "prioritize neglected/worst-off populations",
+          "text_detailed": "Prioritise neglected conditions and worst-off populations, with neglect and disadvantage measured on stated indicators and the resulting portfolio published.",
           "types": [
             "framework"
           ],
@@ -6819,6 +6947,7 @@
         {
           "id": "c03",
           "text": "participatory multiprinciple portfolio",
+          "text_detailed": "Build the portfolio through a participatory multiprinciple process, with the principles, the participants and the resulting weights all published.",
           "types": [
             "expert"
           ],
@@ -6828,6 +6957,7 @@
         {
           "id": "c04",
           "text": "reserve a fraction for high-risk transformative research",
+          "text_detailed": "Reserve a stated fraction for high-risk transformative research, ring-fenced from the main allocation and assessed on different criteria, both published.",
           "types": [
             "framework"
           ],
@@ -6837,6 +6967,7 @@
         {
           "id": "c05",
           "text": "prioritize near-term implementation/scalability",
+          "text_detailed": "Prioritise near-term implementation and scalability, with those criteria defined and the trade-off against longer-term discovery stated rather than left implicit.",
           "types": [
             "expert"
           ],
@@ -6846,6 +6977,7 @@
         {
           "id": "c06",
           "text": "proportional disease-burden allocation with explicit equity weights",
+          "text_detailed": "Allocate proportionally to disease burden with explicit equity weights, publishing the weights so that the departure from pure proportionality is visible.",
           "types": [
             "framework"
           ],
@@ -6855,6 +6987,7 @@
         {
           "id": "c07",
           "text": "democratic public deliberation framework with periodic reevaluation",
+          "text_detailed": "Set the agenda through public deliberation with periodic re-evaluation, with the deliberation's composition and conclusions published and the re-evaluation on a fixed schedule.",
           "types": [
             "expert",
             "framework"
@@ -6865,6 +6998,7 @@
         {
           "id": "c08",
           "text": "Give patients and the public a standing role in setting the portfolio, with the reasoning for the final split published.",
+          "text_detailed": "Give patients and the public a standing role in setting the portfolio, with the reasoning for the final split published, and the role continuing between cycles rather than convened for each.",
           "types": [
             "public"
           ],
@@ -6885,6 +7019,7 @@
         {
           "id": "c01",
           "text": "layered individual consent + Tribal/community governance for secondary use",
+          "text_detailed": "Layer individual consent with Tribal or community governance for secondary use, with both required and neither treated as sufficient alone, and the governance route named in the agreement.",
           "types": [
             "expert",
             "public"
@@ -6895,6 +7030,7 @@
         {
           "id": "c02",
           "text": "community approval/control for specified uses with individual consent where applicable",
+          "text_detailed": "Require community approval for specified uses alongside individual consent where individual consent applies, with the specified uses listed and any addition requiring fresh approval.",
           "types": [
             "expert"
           ],
@@ -6904,6 +7040,7 @@
         {
           "id": "c03",
           "text": "new agreement/review for materially new secondary research",
+          "text_detailed": "Require a new agreement and review for materially new secondary research, with materiality defined by the community rather than by the researcher.",
           "types": [
             "expert",
             "public"
@@ -6914,6 +7051,7 @@
         {
           "id": "c04",
           "text": "individual consent alone",
+          "text_detailed": "Rely on individual consent alone, stating that position explicitly so that communities know what governance the study does and does not recognise.",
           "types": [
             "expert"
           ],
@@ -6923,6 +7061,7 @@
         {
           "id": "c05",
           "text": "collective-benefit/data-sovereignty framework",
+          "text_detailed": "Apply a collective-benefit and data-sovereignty standard, with the community controlling access, storage and future use, and the arrangement documented in a binding agreement.",
           "types": [
             "framework"
           ],
@@ -6932,6 +7071,7 @@
         {
           "id": "c06",
           "text": "individual-autonomy floor preventing community authorization from substituting for individual consent where person-level consent is ethically required",
+          "text_detailed": "Maintain an individual-consent floor so that community authorisation cannot substitute for personal consent where person-level consent is ethically required, with that floor stated in the agreement.",
           "types": [
             "framework"
           ],
@@ -6951,6 +7091,7 @@
         {
           "id": "c01",
           "text": "require lower-carbon design when validity/safety preserved",
+          "text_detailed": "Require the lower-carbon design wherever validity and participant safety are preserved, with the comparison documented in the protocol and reviewed by the committee.",
           "types": [
             "expert"
           ],
@@ -6960,6 +7101,7 @@
         {
           "id": "c02",
           "text": "proportional sustainability requirement based on avoidable emissions/cost",
+          "text_detailed": "Apply a proportional sustainability requirement based on avoidable emissions and the cost of avoiding them, with the threshold stated and applied consistently across protocols.",
           "types": [
             "expert"
           ],
@@ -6969,6 +7111,7 @@
         {
           "id": "c03",
           "text": "scientific/participant priorities first with voluntary mitigation",
+          "text_detailed": "Put scientific and participant priorities first with voluntary mitigation, stating what mitigation was considered and why it was or was not adopted.",
           "types": [
             "framework"
           ],
@@ -6978,6 +7121,7 @@
         {
           "id": "c04",
           "text": "climate-justice framework treating avoidable research emissions as health externalities",
+          "text_detailed": "Treat avoidable research emissions as health externalities that the trial imposes, with them estimated and reported alongside the trial's other burdens.",
           "types": [
             "framework"
           ],
@@ -6987,6 +7131,7 @@
         {
           "id": "c05",
           "text": "global-equity rule avoiding “green” design that shifts burden to LMIC participants/sites",
+          "text_detailed": "Avoid low-emission designs that shift burden to participants or sites in lower-resource settings, with the distribution of burden assessed explicitly before the design is fixed.",
           "types": [
             "expert",
             "framework"
@@ -6997,6 +7142,7 @@
         {
           "id": "c06",
           "text": "lifecycle reporting/carbon-accountability requirement even when lower-emission redesign is infeasible",
+          "text_detailed": "Require lifecycle reporting and carbon accountability even where a lower-emission redesign is infeasible, with the reporting published alongside the results.",
           "types": [
             "expert"
           ],
@@ -7006,6 +7152,7 @@
         {
           "id": "c07",
           "text": "Choose the design that reduces participant travel and time, and say what the trial asks of participants before asking them to join.",
+          "text_detailed": "Choose the design that reduces participant travel and time, and say what the trial asks of participants before asking them to join, with visit numbers and durations stated in the information sheet.",
           "types": [
             "public"
           ],
@@ -7026,6 +7173,7 @@
         {
           "id": "c01",
           "text": "proceed with layered biorisk assessment/mitigation/oversight",
+          "text_detailed": "Proceed with layered biorisk assessment, mitigation and oversight, with each layer specified, the residual risk stated, and the oversight continuing through the work rather than ending at approval.",
           "types": [
             "expert"
           ],
@@ -7035,6 +7183,7 @@
         {
           "id": "c02",
           "text": "modify aims/methods/information handling to reduce risk while preserving value",
+          "text_detailed": "Modify aims, methods or information handling to reduce risk while preserving value, with the modifications recorded and the residual risk reassessed after them.",
           "types": [
             "expert"
           ],
@@ -7044,6 +7193,7 @@
         {
           "id": "c03",
           "text": "do not conduct above defined unacceptable-risk threshold",
+          "text_detailed": "Do not conduct the work above a defined unacceptable-risk threshold, with the threshold stated in institutional policy rather than set for this proposal.",
           "types": [
             "expert",
             "framework"
@@ -7054,6 +7204,7 @@
         {
           "id": "c04",
           "text": "independent specialized review before initiation/continuation",
+          "text_detailed": "Require independent specialised review before initiation and again before continuation, with the reviewers' expertise specified and their decisions recorded.",
           "types": [
             "expert"
           ],
@@ -7063,6 +7214,7 @@
         {
           "id": "c05",
           "text": "scientific-freedom/social-value framework favoring managed research",
+          "text_detailed": "Favour managed research on grounds of scientific freedom and social value, with the value stated concretely and the management specified rather than promised.",
           "types": [
             "framework"
           ],
@@ -7072,6 +7224,7 @@
         {
           "id": "c06",
           "text": "precaution/biosecurity framework favoring nonperformance where low-probability catastrophic harm dominates",
+          "text_detailed": "Favour non-performance where low-probability catastrophic harm dominates the assessment, with that dominance argued explicitly rather than asserted.",
           "types": [
             "framework"
           ],
@@ -7081,6 +7234,7 @@
         {
           "id": "c07",
           "text": "Publish what oversight was applied and by whom, so that the public can see a decision was taken rather than assumed.",
+          "text_detailed": "Publish what oversight was applied and by whom, so that the public can see a decision was taken rather than assumed, including for work that was approved without modification.",
           "types": [
             "public"
           ],
@@ -7101,6 +7255,7 @@
         {
           "id": "c01",
           "text": "full publication when misuse risk is low",
+          "text_detailed": "Publish in full where misuse risk is low, with that assessment made by an independent reviewer and recorded rather than left to the authors.",
           "types": [
             "expert"
           ],
@@ -7110,6 +7265,7 @@
         {
           "id": "c02",
           "text": "publish conclusions/results but redact/controlled-access high-risk enabling detail",
+          "text_detailed": "Publish the conclusions and results while redacting high-risk enabling detail or placing it behind controlled access, with the access route functional and the redaction noted in the paper.",
           "types": [
             "expert"
           ],
@@ -7119,6 +7275,7 @@
         {
           "id": "c03",
           "text": "decline dissemination above unacceptable misuse threshold",
+          "text_detailed": "Decline dissemination above an unacceptable misuse threshold, with the threshold defined in advance and the decision made by a body other than the funder.",
           "types": [
             "expert",
             "framework"
@@ -7129,6 +7286,7 @@
         {
           "id": "c04",
           "text": "independent security/ethics review before restrictive publication decision",
+          "text_detailed": "Require independent security and ethics review before any restrictive publication decision, with the review's reasoning recorded and available to the authors.",
           "types": [
             "expert"
           ],
@@ -7138,6 +7296,7 @@
         {
           "id": "c05",
           "text": "open-science/reproducibility framework favoring maximal disclosure",
+          "text_detailed": "Favour maximal disclosure on open-science and reproducibility grounds, with any restriction required to show what specific harm it prevents.",
           "types": [
             "framework"
           ],
@@ -7147,6 +7306,7 @@
         {
           "id": "c06",
           "text": "harm-prevention framework favoring tiered access where marginal scientific value of open detail is low relative to misuse risk",
+          "text_detailed": "Favour tiered access where the marginal scientific value of open detail is low relative to misuse risk, with both sides of that comparison stated.",
           "types": [
             "framework"
           ],
@@ -7156,6 +7316,7 @@
         {
           "id": "c07",
           "text": "Say publicly that information has been withheld and on what grounds, so that restriction is visible and can be challenged.",
+          "text_detailed": "Say publicly that information has been withheld and on what grounds, so that restriction is visible and can be challenged, with a route for other researchers to request access.",
           "types": [
             "public"
           ],
