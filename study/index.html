@@ -123,6 +123,44 @@
     .inspector .why { margin-top: .55rem; color: var(--muted); }
     .closebtn { border: 0; background: none; font: inherit; font-size: .76rem; color: var(--muted); cursor: pointer; text-decoration: underline; }
 
+    /* Small multiples for the source-pair comparison. Identity comes from the labelled type pills,
+       not from fill: the site's own source colours (public blue, framework violet) are ΔE 0.3 apart
+       under deuteranopia and cannot carry meaning as marks. */
+    .panels { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+    .panel-head { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; margin-bottom: .25rem; }
+    .panel-stat { font-size: .74rem; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: .3rem; }
+    .panel-stat b { color: var(--ink); }
+    .mini { display: flex; align-items: flex-end; gap: 1px; height: 74px; }
+    .mini .b { flex: 1; background: var(--s-concise); border-radius: 3px 3px 0 0; }
+    .mini-axis { display: flex; justify-content: space-between; font-size: .62rem; color: #94a3b8; }
+
+    /* Every case as a point: mean across, polarisation up. */
+    .scatter-wrap { display: flex; gap: .5rem; }
+    .scatter-y { display: flex; flex-direction: column; justify-content: space-between; width: 2.2rem;
+      text-align: right; font-size: .66rem; color: #94a3b8; font-variant-numeric: tabular-nums; }
+    .scatter { position: relative; flex: 1; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .scatter .mid-v { position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px dashed var(--soft2); }
+    .scatter .mid-h { position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dashed var(--soft2); }
+    .dot {
+      position: absolute; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; padding: 0;
+      border: 0; border-radius: 50%; background: var(--s-concise); opacity: .55; cursor: pointer;
+      box-shadow: 0 0 0 2px #fff; transition: transform .1s;
+    }
+    .dot:hover { opacity: 1; transform: scale(1.8); }
+    .scatter-tip {
+      position: absolute; right: 0; top: 0; max-width: 17rem; pointer-events: none;
+      background: var(--ink); color: #fff; font-size: .72rem; padding: .35rem .5rem; border-radius: 6px;
+    }
+    .scatter-tip .sub { color: rgba(255,255,255,.7); font-variant-numeric: tabular-nums; }
+
+    /* Each policy against the rest: emphasis, not a second hue. Every bar is direct-labelled. */
+    .prof { display: flex; align-items: center; gap: .5rem; margin-bottom: .25rem; font-size: .74rem; }
+    .prof .track { flex: 1; height: 14px; background: var(--soft); border-radius: 4px; overflow: hidden; }
+    .prof .fill { height: 100%; border-radius: 4px; background: #cbd5e1; }
+    .prof .fill.out { background: var(--s-concise); }
+    .prof .val { width: 2rem; text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+    .prof .val.out { color: var(--ink); font-weight: 700; }
+
     .chips { display: flex; flex-wrap: wrap; gap: .3rem; }
     .chip {
       font-size: .72rem; font-variant-numeric: tabular-nums; color: #475569;
@@ -302,7 +340,8 @@
           'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-lite',
           'claude-opus-5', 'claude-sonnet-5', 'claude-haiku-4-5-20251001', 'claude-fable-5'
         ],
-        pairsPerCell: 6733
+        // A full cell is both representations over all 200 cases, calibration pairs included.
+        pairsPerCell: 7073
       },
       provisional: true
     }];
@@ -513,6 +552,126 @@
         '<div class="axis"><span>0</span><span>50</span><span>100</span></div>';
     }
 
+    /* ---------- the analytical views ---------- */
+
+    /**
+     * Within one case: each policy's mean convergence with everything it was compared against, and
+     * how far the lowest sits below the rest. This finds the policy no one agrees with, which is
+     * usually the most interesting object in a case.
+     */
+    function policyProfiles(scoped) {
+      var per = {};
+      scoped.forEach(function (p) {
+        if (p.identity) return;
+        (per[p.a] = per[p.a] || []).push(p.score);
+        (per[p.b] = per[p.b] || []).push(p.score);
+      });
+      var profiles = Object.keys(per).map(function (id) {
+        var xs = per[id];
+        return { id: id, type: typeOfPolicyId(id), n: xs.length,
+          mean: xs.reduce(function (a, b) { return a + b; }, 0) / xs.length };
+      }).sort(function (a, b) { return a.mean - b.mean; });
+      if (profiles.length < 2) return { profiles: profiles, outlier: null };
+      var rest = profiles.slice(1).reduce(function (a, p) { return a + p.mean; }, 0) / (profiles.length - 1);
+      var gap = rest - profiles[0].mean;
+      // Only called an outlier when meaningfully below the others, so an evenly scored case does
+      // not get one named arbitrarily.
+      return { profiles: profiles, outlier: gap >= 15 ? { id: profiles[0].id, mean: profiles[0].mean, gap: gap } : null };
+    }
+
+    function policyProfileBlock(scoped, textOf) {
+      var out = policyProfiles(scoped);
+      if (!out.profiles.length) return '';
+      var rows = out.profiles.map(function (p) {
+        var isOut = out.outlier && out.outlier.id === p.id;
+        return '<div class="prof"><span class="pill ' + esc(p.type || '') + '" style="width:3rem;text-align:center">' +
+          esc(p.id) + '</span><div class="track"><div class="fill' + (isOut ? ' out' : '') +
+          '" style="width:' + p.mean + '%" title="' + esc((textOf && textOf(p.id)) || '') + '"></div></div>' +
+          '<span class="val' + (isOut ? ' out' : '') + '">' + Math.round(p.mean) + '</span></div>';
+      }).join('');
+      return '<h3 class="sub-head">Each policy against the rest</h3>' +
+        '<p class="note" style="margin:0 0 .5rem;color:var(--muted);font-size:.84rem">A policy&rsquo;s mean convergence with every ' +
+        'cross-source policy it was compared against. ' +
+        (out.outlier
+          ? esc(out.outlier.id) + ' sits ' + Math.round(out.outlier.gap) + ' points below the others — the policy this case does not agree with.'
+          : 'No policy here is far out of step with the rest.') + '</p>' + rows;
+    }
+
+
+    var TYPE_PILL = function (t) { return '<span class="pill ' + esc(t) + '">' + esc(t) + '</span>'; };
+
+    /**
+     * Convergence by kind of source disagreement, as small multiples.
+     *
+     * Bars are the share of each group's pairs rather than the count: the three groups differ by
+     * nearly three to one, so a shared count scale flattens the two smaller panels into strips and
+     * the comparison being asked for - of shape - becomes unreadable.
+     */
+    function sourcePairBlock(report) {
+      var rows = report.bySourcePair || [];
+      if (rows.length < 2) return '';
+      var shares = rows.map(function (r) {
+        return r.histogram.map(function (c) { return r.n ? c / r.n : 0; });
+      });
+      var max = Math.max.apply(null, shares.reduce(function (a, b) { return a.concat(b); }, []));
+      var panels = rows.map(function (r, ri) {
+        var bars = r.histogram.map(function (c, i) {
+          var h = max ? Math.max(c ? 2 : 0, (shares[ri][i] / max) * 74) : 0;
+          return '<div class="b" style="height:' + h + 'px" title="' + (i * 10) + '–' + (i * 10 + 9) +
+            ': ' + n(c) + ' (' + Math.round(shares[ri][i] * 100) + '%)"></div>';
+        }).join('');
+        return '<div><div class="panel-head">' + TYPE_PILL(r.types[0]) +
+          '<span style="color:#94a3b8">×</span>' + TYPE_PILL(r.types[1]) + '</div>' +
+          '<div class="panel-stat">mean <b>' + f1(r.mean) + '</b> · sd ' + f1(r.sd) + ' · ' + n(r.n) + ' pairs</div>' +
+          '<div class="mini">' + bars + '</div>' +
+          '<div class="mini-axis"><span>0</span><span>100</span></div></div>';
+      }).join('');
+      return '<h3 class="sub-head">Which kinds of source disagree</h3>' +
+        '<p class="note" style="margin:0 0 .7rem;color:var(--muted);font-size:.84rem">Every pair is one policy from one kind of ' +
+        'source against one from another. Bars are the share of that group&rsquo;s pairs, on one scale ' +
+        'across the three, so the shapes are comparable even though the groups differ in size.</p>' +
+        '<div class="panels">' + panels + '</div>';
+    }
+
+    /**
+     * Every case as a point. Spread alone cannot separate a case whose sources genuinely split from
+     * one where everything landed mid-scale; read against the mean, polarisation does.
+     */
+    function caseScatterBlock(report) {
+      var profiles = report.caseProfiles || [];
+      if (profiles.length < 2) return '';
+      var dots = profiles.map(function (c) {
+        return '<button class="dot" data-scatter="' + esc(c.id) + '" style="left:' + c.mean + '%;top:' +
+          ((1 - c.polarisation) * 100) + '%" title="' + esc(c.id) + ': mean ' + Math.round(c.mean) + ', ' +
+          Math.round(c.polarisation * 100) + '% at an extreme"></button>';
+      }).join('');
+      return '<h3 class="sub-head">Every case, by what its scores mean</h3>' +
+        '<p class="note" style="margin:0 0 .7rem;color:var(--muted);font-size:.84rem">Across is mean convergence; up is the share ' +
+        'of a case&rsquo;s pairs at either extreme. A case low and high is <b>contested</b> — its sources ' +
+        'genuinely split. Low and flat is <b>uncertain</b> — everything landed mid-scale. Right and high ' +
+        'is <b>settled</b>. Click a point to open the case.</p>' +
+        '<div class="scatter-wrap">' +
+        '<div class="scatter-y" style="height:240px"><span>100%</span><span>50%</span><span>0%</span></div>' +
+        '<div class="scatter" id="scatter" style="height:240px"><div class="mid-v"></div><div class="mid-h"></div>' +
+        dots + '</div></div>' +
+        '<div class="mini-axis" style="padding-left:2.7rem"><span>0 — no convergence</span><span>mean convergence</span><span>100</span></div>' +
+        '<p class="note" style="padding-left:2.7rem;margin-top:.1rem">vertical: share of the case&rsquo;s pairs at either extreme (0–20 or 90–100)</p>';
+    }
+
+    /** The scorer's own floor: an identity pair should score 100, and one that does not is a bug. */
+    function calibrationBlock(report) {
+      var c = report.calibration;
+      if (!c) return '';
+      return '<h3 class="sub-head">Scorer calibration</h3>' +
+        '<p class="note" style="margin:0;color:var(--muted);font-size:.84rem">' + n(c.n) + ' pair(s) put a policy carrying two ' +
+        'source types against itself, where the expected score is 100. ' +
+        (c.intact
+          ? 'Every one scored 100, so the top of the scale is where it should be.'
+          : '<b>' + n(c.n - c.atExpected) + ' scored below it, as low as ' + c.min + '.</b> A policy that does ' +
+            'not fully converge with its own text is a problem with the scorer, not with the case.') +
+        '</p>';
+    }
+
     function granularityBlock(report) {
       var g = report.granularity;
       if (!g) return '';
@@ -607,24 +766,6 @@
         (list.length !== all.length ? ' matching (' + n(all.length) + ' in the study)' : '') + '.</p>';
     }
 
-    /** Pairs of one policy with itself, which a run made before they were excluded still contains. */
-    function selfPairSummary() {
-      if (!state.pairs || !state.cases) return null;
-      var maps = {}, self = 0, kept = [];
-      state.pairs.forEach(function (p) {
-        if (p.status !== 'done') return;
-        var k = parseKey(p.key, p);
-        var bc = state.cases[k.caseId];
-        if (!bc) { kept.push(p.score); return; }
-        if (!maps[k.caseId]) maps[k.caseId] = idMapFor(bc);
-        var m = maps[k.caseId];
-        if (m[k.a] && m[k.b] && m[k.a] === m[k.b]) self += 1; else kept.push(p.score);
-      });
-      if (!self) return null;
-      var mean = kept.reduce(function (a, b) { return a + b; }, 0) / (kept.length || 1);
-      return { count: self, of: self + kept.length, meanWithout: mean };
-    }
-
     function renderCorpus() {
       var report = state.report;
       var o = report.overall;
@@ -632,21 +773,16 @@
         ? Math.round((report.completeness.scored / report.completeness.planned) * 100) : null;
 
       $('results-title').textContent = 'Results — ' + (report.label || report.id);
+      // The by-representation table only appears when there are two to compare, so a run covering
+      // one would otherwise say nowhere which one it was — while the design above says "concise and
+      // detailed" whether or not the run reached both.
+      var repsRun = report.provenance.representations || report.representations || [];
       $('results-sub').innerHTML = esc((report.provenance.models || []).join(', ')) + ' · QCCS v1 · conv+' +
+        (repsRun.length ? ' · ' + esc(repsRun.join(' and ')) + (repsRun.length === 1 ? ' only' : '') : '') +
         (pct !== null ? ' · ' + pct + '% of this cell executed' : '') +
         (report.completeness.complete === false ? ' · <strong>incomplete</strong>' : '');
 
-      var warn = '';
-      var self = selfPairSummary();
-      if (self) {
-        warn = '<div class="callout" style="margin-bottom:1.1rem"><strong>' + n(self.count) + ' of ' + n(self.of) +
-          ' scored pairs are one policy against itself.</strong> 171 policies in the corpus carry two ' +
-          'types, so they appeared in two source buckets and were paired with their own text. Every ' +
-          'such pair scores 100. Excluding them, the mean is <b>' + f1(self.meanWithout) + '</b> rather than <b>' +
-          f1(o.mean) + '</b>. The runner no longer produces these; a re-run will not contain them.</div>';
-      }
-
-      $('results').innerHTML = warn +
+      $('results').innerHTML =
         '<div class="tiles">' +
         tile(n(o.n), 'pairs scored', 'cross-source') +
         tile(n(report.cases.length), 'cases covered', 'of ' + ((state.benchmark.design || {}).cases || '—')) +
@@ -654,6 +790,7 @@
         tile(f1(o.sd), 'spread (sd)', o.min + '–' + o.max) +
         tile(n(report.completeness.failed), 'failed calls', report.completeness.failed ? 'retryable' : 'none') +
         '</div><div style="margin-top:1.75rem">' + histogram(report) + '</div>' +
+        sourcePairBlock(report) + caseScatterBlock(report) + calibrationBlock(report) +
         granularityBlock(report) + modelTable(report) + repTable(report) +
         failureBlock(report) + caseTable(report) +
         (state.loadingDetail ? '<p class="note">Loading case detail…</p>' : '');
@@ -758,6 +895,7 @@
         'by design rather than missing. Click a cell for the call behind it.</p>' +
         '<div class="tbl-wrap"><table class="matrix">' + head + body + '</tbody></table></div>' +
         '<div id="inspector"></div>' +
+        policyProfileBlock(shown, textOf) +
         (crossRows
           ? '<h3 class="sub-head">This case across ' + (cells.length === 1 ? 'the model run' : cells.length + ' cells') + '</h3>' +
             '<div class="tbl-wrap"><table><thead><tr><th>model</th><th>form</th><th>pairs</th><th>mean</th><th>sd</th><th>range</th></tr></thead>' +
@@ -820,6 +958,9 @@
           if (again) { again.focus(); again.setSelectionRange(again.value.length, again.value.length); }
         });
       }
+      Array.prototype.forEach.call(document.querySelectorAll('[data-scatter]'), function (el) {
+        el.addEventListener('click', function () { openCase(el.getAttribute('data-scatter')); });
+      });
       Array.prototype.forEach.call(document.querySelectorAll('[data-case]'), function (el) {
         el.addEventListener('click', function (e) {
           e.preventDefault();
@@ -887,6 +1028,7 @@
       ];
       if (p) {
         rows.push(['Models run', (p.models || []).join(', ') || '—']);
+        rows.push(['Representations run', (p.representations || report.representations || []).join(', ') || '—']);
         if (p.library) {
           rows.push(['Library pin', (p.library.resource_version || '—') +
             (p.library.content_sha256 ? ' · content ' + String(p.library.content_sha256).slice(0, 12) : '')]);
