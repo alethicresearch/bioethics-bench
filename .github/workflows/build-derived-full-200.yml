@@ -6,6 +6,7 @@ on:
       - '.github/workflows/build-derived-full-200.yml'
       - 'scripts/build-rich-candidate-universes.mjs'
       - 'scripts/disposition-ledger.mjs'
+      - 'schemas/candidate-universe.schema.json'
       - 'docs/full-corpus/audit-v2/**'
       - 'docs/full-corpus/batch-*/M*-deep-case.md'
       - 'data/benchmark/**'
@@ -25,25 +26,30 @@ jobs:
       - run: npm ci
       - name: Build neutral Full-200 candidate universe
         run: node scripts/build-rich-candidate-universes.mjs --write
+      - name: Validate neutral Full-200 candidate universe
+        run: node scripts/validate-candidate-universe.mjs
       - name: Regenerate legacy source-grounded disposition ledger
         run: node scripts/disposition-ledger.mjs --write
       - name: Report identities
         run: |
-          sha256sum data/case-families/full-200-rich-candidate-universes.v1.json
+          sha256sum resources/case-families/full-200-rich-candidate-universes.v1.json
           sha256sum docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
-          node -e "const r=require('./data/case-families/full-200-rich-candidate-universes.v1.json'); const n=r.cases.reduce((s,c)=>s+c.candidate_count,0); console.log('cases='+r.case_count+' candidates='+n+' mean='+(n/r.case_count).toFixed(2))"
+          node -e "const r=require('./resources/case-families/full-200-rich-candidate-universes.v1.json'); const n=r.cases.reduce((s,c)=>s+c.candidate_count,0); console.log('cases='+r.case_count+' candidates='+n+' mean='+(n/r.case_count).toFixed(2))"
       - uses: actions/upload-artifact@v4
         with:
           name: full-200-derived-artifacts
           if-no-files-found: error
           path: |
-            data/case-families/full-200-rich-candidate-universes.v1.json
+            resources/case-families/full-200-rich-candidate-universes.v1.json
             docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
       - name: Persist deterministic derived files
         run: |
           git config user.name "bioethics-bench-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add data/case-families/full-200-rich-candidate-universes.v1.json docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
+          git add resources/case-families/full-200-rich-candidate-universes.v1.json docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
+          if git ls-files --error-unmatch data/case-families/full-200-rich-candidate-universes.v1.json >/dev/null 2>&1; then
+            git rm data/case-families/full-200-rich-candidate-universes.v1.json
+          fi
           if git diff --cached --quiet; then
             echo "Derived files already current."
           else
