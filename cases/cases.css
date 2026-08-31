@@ -16,3 +16,8 @@
 .srclist a{color:#64748b;text-decoration:underline;text-underline-offset:2px}
 .srclist a:hover{color:#0f766e}
 .searchmark{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:#94a3b8;border:1px solid #e2e8f0;border-radius:999px;padding:0 .35rem}
+
+.prov-srcs summary{display:flex;align-items:center;gap:.35rem}
+.prov-srcs summary .prov{cursor:pointer}
+.prov-srcs summary .src-count{color:#94a3b8;font-weight:600;font-size:.72rem}
+.src-lead{margin:.5rem 0 0;font-size:.75rem;line-height:1.5;color:#64748b}

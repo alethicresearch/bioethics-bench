@@ -73,6 +73,27 @@ function sourceBlock(list,label){
   if(!list||!list.length)return '';
   return `<details class="srcs"><summary>${esc(label)} · ${list.length}</summary>${sourceList(list)}</details>`;
 }
+// What each sourcing label means, said once where the label is opened rather than in a legend
+// the reader has to go back to.
+const SOURCE_NOTES={
+  direct:'A source states substantially this policy.',
+  inferred:'The Bench states this policy as an inference from what the source supports.',
+  constructed:'Written by the Bench as a comparison policy. No source states it; the material below is what the case was built from.'
+};
+/* The sourcing label opens the sources.
+   Only 22 of the 200 cases record sources per policy. Everywhere else the label used to sit
+   beside nothing, so a reader had no way from a policy to the material behind it. The label is
+   now the control: it opens the policy's own citations where they exist, and otherwise the
+   case's, said plainly to be the case's. */
+function policyProvenance(p,src){
+  const own=(src.policies||{})[p.id]||[];
+  const list=own.length?own:(src.sources||[]);
+  const badge=sourceBadge(p.sourcing);
+  if(!list.length)return badge;
+  const note=SOURCE_NOTES[p.sourcing];
+  const lead=own.length?'':'<p class="src-lead">The Bench records sources for this case rather than for each of its policies. What the case was built from:</p>';
+  return `<details class="srcs prov-srcs"><summary>${badge}${own.length?`<span class="src-count">· ${own.length}</span>`:''}</summary>${note?`<p class="src-lead">${esc(note)}</p>`:''}${lead}${sourceList(list)}</details>`;
+}
 function typeBadges(types){return (types||[]).map(t=>`<span class="ptype ${esc(t)}">${esc(TYPE_LABELS[t]||t)}</span>`).join('');}
 function sourceBadge(s){return `<span class="prov ${esc(s)}">${esc(SOURCE_LABELS[s]||s)}</span>`;}
 function sourceSummary(c){return Object.keys(SOURCE_LABELS).filter(k=>c.sourcing.has(k)).map(k=>sourceBadge(k)).join(' ');}
@@ -82,7 +103,7 @@ function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.se
 
 function renderDetail(c){
   const src=state.sources[c.id]||{sources:[],policies:{}};
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(state.rep==='detailed'&&p.text_detailed?p.text_detailed:p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${sourceBlock(src.policies[p.id],'Sources for this policy')}</div>`).join('');
+  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(state.rep==='detailed'&&p.text_detailed?p.text_detailed:p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${policyProvenance(p,src)}</div>`).join('');
   const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
   $('case-detail').innerHTML=`
     <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>
