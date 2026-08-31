@@ -35,9 +35,10 @@ const BASIS = {
   'synthetic-author-constructed-policy': 'constructed comparator',
 };
 
-const state = { cases: [], q: '', area: '', loaded: new Map() };
+const state = { cases: [], shown: [], current: null, q: '', area: '', loaded: new Map() };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+const $ = (id) => document.getElementById(id);
 
 /** A source is only useful if you can get to it. Prefer a real identifier; fall back to search. */
 function sourceLink(citation) {
@@ -85,30 +86,58 @@ function renderPositions(record) {
       const basis = BASIS[c.policy_basis] ? `<span class="basis">${esc(BASIS[c.policy_basis])}</span>` : '';
       return `<div class="pos"><p>${esc(c.text)}${basis}</p><div class="srcs">${srcs}</div></div>`;
     }).join('');
-    return `<div class="grp g-${pool}"><div class="grp-h">${esc(heading)} <span class="n">· ${list.length}</span></div>${items}</div>`;
+    return `<div class="grp"><div class="grp-h">${esc(heading)} <span class="n">· ${list.length}</span></div>${items}</div>`;
   }).join('');
 }
 
-function renderBody(record) {
+function renderDetail(record, entry) {
   const stips = (record.stipulations ?? []).map(stipulationText).filter(Boolean);
   const scenario = readableScenario(record.scenario, stips.length > 0);
   const assume = stips.length
     ? `<div class="assume"><b>Held fixed while this is decided</b><ul>${stips.map((s) => `<li>${esc(s)}</li>`).join('')}</ul></div>`
     : '';
   const counts = POOLS.map(([p]) => (record.candidate_pools?.[p] ?? []).length);
+  const i = state.shown.indexOf(entry);
+  const prev = i > 0 ? state.shown[i - 1] : null;
+  const next = i >= 0 && i < state.shown.length - 1 ? state.shown[i + 1] : null;
   return `
-    <div class="body">
-      <p class="q">${esc(record.decision_question)}</p>
-      <p class="scenario">${esc(scenario)}</p>
-      ${assume}
-      ${renderPositions(record)}
-      <div class="meta">
-        <span>${counts[0]} public · ${counts[1]} expert · ${counts[2]} framework</span>
-        <span>concise and detailed forms</span>
-        <span><code>${esc(record.case_id)}</code></span>
-        <span><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/data/benchmark/${esc(record.record_id)}.json" target="_blank" rel="noopener">full record, with every source ↗</a></span>
-      </div>
+    <div class="detail-head">
+      <span class="tag">${esc(AREAS[entry.area] ?? entry.area ?? '')}</span>
+      <h3>${esc(record.title)}</h3>
+    </div>
+    <p class="q">${esc(record.decision_question)}</p>
+    <p class="scenario">${esc(scenario)}</p>
+    ${assume}
+    ${renderPositions(record)}
+    <div class="meta">
+      <span>${counts[0]} public · ${counts[1]} expert · ${counts[2]} framework</span>
+      <span>concise and detailed forms</span>
+      <span><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(entry.path)}" target="_blank" rel="noopener">full record, with every source ↗</a></span>
+    </div>
+    <div class="stepper">
+      ${prev ? `<a href="#${esc(prev.id)}" class="step" data-id="${esc(prev.id)}">← ${esc(prev.title)}</a>` : '<span></span>'}
+      ${next ? `<a href="#${esc(next.id)}" class="step next" data-id="${esc(next.id)}">${esc(next.title)} →</a>` : '<span></span>'}
     </div>`;
+}
+
+async function show(id, { scroll = false } = {}) {
+  const entry = state.cases.find((c) => c.id === id);
+  const pane = $('detail');
+  if (!entry) { pane.innerHTML = '<p class="loading">Select a case from the list.</p>'; return; }
+  state.current = id;
+  if (location.hash.slice(1) !== id) history.replaceState(null, '', `#${id}`);
+  for (const el of document.querySelectorAll('.idx-item')) el.classList.toggle('on', el.dataset.id === id);
+  pane.innerHTML = '<p class="loading">Loading record…</p>';
+  try {
+    if (!state.loaded.has(id)) state.loaded.set(id, await (await fetch(`../${entry.path}`)).json());
+    if (state.current !== id) return;
+    pane.innerHTML = renderDetail(state.loaded.get(id), entry);
+  } catch {
+    pane.innerHTML = `<p class="loading">Could not load this record. <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(entry.path)}" target="_blank" rel="noopener">Open it on GitHub ↗</a></p>`;
+  }
+  if (scroll && window.matchMedia('(max-width:900px)').matches) {
+    pane.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 function matches(c) {
@@ -117,48 +146,45 @@ function matches(c) {
   return c.haystack.includes(state.q.toLowerCase());
 }
 
-function render() {
-  const list = document.getElementById('list');
-  const shown = state.cases.filter(matches);
-  document.getElementById('count').textContent =
-    shown.length === state.cases.length ? `${state.cases.length} cases` : `${shown.length} of ${state.cases.length} cases`;
+/* The index is the navigation: every case title visible at once, grouped by area, so a reader
+   can see the whole corpus and jump, instead of opening rows one at a time to find out what is in them. */
+function renderIndex() {
+  state.shown = state.cases.filter(matches);
+  $('count').textContent = state.shown.length === state.cases.length
+    ? `${state.cases.length} cases`
+    : `${state.shown.length} of ${state.cases.length}`;
 
-  if (!shown.length) {
-    list.className = '';
-    list.innerHTML = `<p class="loading">Nothing matches that. <a href="#" id="clear">Clear filters</a></p>`;
-    document.getElementById('clear').onclick = (e) => {
+  const idx = $('index');
+  if (!state.shown.length) {
+    idx.innerHTML = '<p class="idx-empty">Nothing matches. <a href="#" id="clear">Clear</a></p>';
+    $('clear').onclick = (e) => {
       e.preventDefault();
-      state.q = ''; state.area = '';
-      document.getElementById('q').value = ''; document.getElementById('dom').value = '';
-      render();
+      state.q = ''; state.area = ''; $('q').value = ''; $('dom').value = '';
+      renderIndex();
     };
     return;
   }
 
-  list.className = '';
-  list.innerHTML = shown.map((c) => `
-    <details class="case" data-id="${esc(c.id)}">
-      <summary><h3>${esc(c.title)}</h3><span class="tag">${esc(AREAS[c.area] ?? c.area ?? '')}</span></summary>
-      <div class="slot"><p class="loading" style="padding:16px 0 0">Loading…</p></div>
-    </details>`).join('');
+  const groups = new Map();
+  for (const c of state.shown) {
+    const key = AREAS[c.area] ?? c.area ?? 'Other';
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(c);
+  }
+  idx.innerHTML = [...groups.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([area, cases]) => `
+      <div class="idx-group">
+        <div class="idx-area">${esc(area)} <span>${cases.length}</span></div>
+        ${cases.map((c) => `<a class="idx-item${c.id === state.current ? ' on' : ''}" href="#${esc(c.id)}" data-id="${esc(c.id)}">${esc(c.title)}</a>`).join('')}
+      </div>`).join('');
 
-  list.querySelectorAll('details.case').forEach((el) => {
-    el.addEventListener('toggle', async () => {
-      if (!el.open || el.dataset.done) return;
-      const id = el.dataset.id;
-      const c = state.cases.find((x) => x.id === id);
-      try {
-        if (!state.loaded.has(id)) {
-          const r = await fetch(`../${c.path}`);
-          state.loaded.set(id, await r.json());
-        }
-        el.querySelector('.slot').innerHTML = renderBody(state.loaded.get(id));
-        el.dataset.done = '1';
-      } catch {
-        el.querySelector('.slot').innerHTML = `<div class="body"><p class="loading">Could not load this record. <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.path)}" target="_blank" rel="noopener">Open it on GitHub ↗</a></p></div>`;
-      }
-    });
-  });
+  if (!state.shown.some((c) => c.id === state.current)) show(state.shown[0].id);
+  else if (state.loaded.has(state.current)) {
+    // prev/next walk the filtered list; rebuild the open case so its stepper matches what is shown.
+    const entry = state.cases.find((c) => c.id === state.current);
+    $('detail').innerHTML = renderDetail(state.loaded.get(state.current), entry);
+  }
 }
 
 async function boot() {
@@ -166,8 +192,7 @@ async function boot() {
   try {
     manifest = await (await fetch(MANIFEST)).json();
   } catch {
-    document.getElementById('list').innerHTML =
-      '<p class="loading">Could not load the case list. <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/benchmark">Browse the records on GitHub ↗</a></p>';
+    $('index').innerHTML = '<p class="idx-empty">Could not load the case list. <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/benchmark">Records on GitHub ↗</a></p>';
     return;
   }
 
@@ -192,27 +217,41 @@ async function boot() {
   }).sort((a, b) => a.title.localeCompare(b.title));
 
   // The hero carries no counts of its own; fill them only if a page provides the slots.
-  const setStat = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  const setStat = (id, v) => { const el = $(id); if (el) el.textContent = v; };
   setStat('f-cases', state.cases.length);
   setStat('f-pos', positions);
 
   const areas = [...new Set(state.cases.map((c) => c.area).filter(Boolean))]
     .sort((a, b) => (AREAS[a] ?? a).localeCompare(AREAS[b] ?? b));
-  const sel = document.getElementById('dom');
   for (const a of areas) {
     const o = document.createElement('option');
     o.value = a; o.textContent = AREAS[a] ?? a;
-    sel.appendChild(o);
+    $('dom').appendChild(o);
   }
 
   let t;
-  document.getElementById('q').addEventListener('input', (e) => {
+  $('q').addEventListener('input', (e) => {
     clearTimeout(t);
-    t = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 120);
+    t = setTimeout(() => { state.q = e.target.value.trim(); renderIndex(); }, 120);
   });
-  sel.addEventListener('change', (e) => { state.area = e.target.value; render(); });
+  $('dom').addEventListener('change', (e) => { state.area = e.target.value; renderIndex(); });
 
-  render();
+  // Titles and the stepper are ordinary links, so the browser handles history and middle-click.
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('.idx-item, .step');
+    if (!a) return;
+    e.preventDefault();
+    show(a.dataset.id, { scroll: true });
+  });
+  window.addEventListener('hashchange', () => {
+    const id = location.hash.slice(1);
+    if (id && id !== state.current) show(id);
+  });
+
+  const opening = state.cases.find((c) => c.id === location.hash.slice(1));
+  state.current = opening?.id ?? null;
+  renderIndex();
+  show(opening?.id ?? state.cases[0].id);
 }
 
 boot();

@@ -15,7 +15,7 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--navy:#0c1445;--navy-dark:#080e30;--navy-mid:#162060;--teal:#10b981;--teal-light:#34d399;--white:#fff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-400:#94a3b8;--gray-500:#64748b;--gray-600:#475569;--gray-800:#1e293b;--gray-900:#0f172a;--font:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','Fira Code',monospace}
-    html{scroll-behavior:smooth}body{font-family:var(--font);color:var(--gray-800);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}
+    html{scroll-behavior:smooth;scroll-padding-top:76px}body{font-family:var(--font);color:var(--gray-800);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}
     nav{position:sticky;top:0;z-index:100;background:rgba(8,14,48,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);padding:0 2rem;height:58px;display:flex;align-items:center;justify-content:space-between}
     .nav-logo{font-size:.9375rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.02em;display:flex;gap:.125rem}.nav-logo em{font-style:normal;color:var(--teal)}
     .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}.nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.8125rem;font-weight:500;padding:.375rem .75rem;border-radius:6px;transition:.15s}.nav-links a:hover{color:#fff;background:rgba(255,255,255,.07)}.nav-links .nav-cta{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);color:var(--teal-light);margin-left:.5rem}
@@ -43,20 +43,27 @@
 
     /* ── CASES ── */
     .cases-bg{background:var(--off-white)}
-    .controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem}
+    .controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:2rem 0 1.5rem}
     .controls input,.controls select{font-family:var(--font);font-size:.9rem;padding:.65rem .9rem;border:1px solid var(--gray-200);border-radius:8px;background:#fff;color:var(--gray-800);outline:none}
-    .controls input{flex:1 1 280px}.controls input:focus,.controls select:focus{border-color:rgba(16,185,129,.55)}
+    .controls input{flex:1 1 300px}.controls input:focus,.controls select:focus{border-color:rgba(16,185,129,.55)}
     .count{font-family:var(--mono);font-size:.75rem;color:var(--gray-400);margin-left:auto}
-    .case{background:#fff;border:1px solid var(--gray-200);border-radius:12px;margin-bottom:.75rem;overflow:hidden;transition:.2s}
-    .case:hover{border-color:rgba(16,185,129,.4);box-shadow:0 3px 12px rgba(16,185,129,.08)}
-    .case[open]{border-color:rgba(16,185,129,.45);box-shadow:0 6px 22px rgba(0,0,0,.06)}
-    .case summary{list-style:none;cursor:pointer;padding:1.15rem 1.5rem;display:flex;gap:1rem;align-items:baseline}
-    .case summary::-webkit-details-marker{display:none}
-    .case h3{margin:0;font-size:.9375rem;font-weight:650;color:var(--gray-900);flex:1;letter-spacing:-.01em}
-    .tag{font-family:var(--mono);font-size:.63rem;text-transform:uppercase;letter-spacing:.07em;color:var(--gray-400);border:1px solid var(--gray-200);border-radius:100px;padding:.2rem .65rem;white-space:nowrap}
-    .body{padding:.25rem 1.5rem 1.5rem;border-top:1px solid var(--gray-100)}
-    .body .q,.body .scenario,.assume,.pos{max-width:78ch}
-    .q{font-size:1rem;font-weight:700;color:var(--gray-900);margin:1.25rem 0 .5rem;letter-spacing:-.015em;line-height:1.5}
+    .browser{display:grid;grid-template-columns:300px 1fr;gap:1.5rem;align-items:start}
+    /* Index */
+    .index{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:.5rem;position:sticky;top:74px;max-height:calc(100vh - 96px);overflow-y:auto}
+    .idx-group{padding:.35rem 0}
+    .idx-area{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;color:var(--gray-400);padding:.55rem .75rem .4rem;display:flex;justify-content:space-between}
+    .idx-area span{color:var(--gray-300)}
+    .idx-item{display:block;padding:.5rem .75rem;border-radius:7px;font-size:.83rem;line-height:1.4;color:var(--gray-600);text-decoration:none;border-left:2px solid transparent}
+    .idx-item:hover{background:var(--off-white);color:var(--gray-900)}
+    .idx-item.on{background:rgba(16,185,129,.08);border-left-color:var(--teal);color:var(--gray-900);font-weight:600}
+    .idx-empty{padding:1rem .75rem;font-size:.85rem;color:var(--gray-400)}
+    /* Detail */
+    .detail{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:1.75rem 2rem 1.5rem;min-height:420px}
+    .detail-head{margin-bottom:1.1rem}
+    .detail-head h3{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;color:var(--gray-900);margin:.5rem 0 0;line-height:1.25}
+    .tag{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;color:var(--teal)}
+    .detail .q,.detail .scenario,.assume,.pos{max-width:78ch}
+    .q{font-size:1rem;font-weight:700;color:var(--gray-900);margin:0 0 .6rem;letter-spacing:-.015em;line-height:1.5}
     .scenario{margin:0 0 1.25rem}
     .assume{background:var(--off-white);border:1px solid var(--gray-200);border-radius:10px;padding:.9rem 1.1rem;margin:0 0 1.5rem;font-size:.85rem;color:var(--gray-500)}
     .assume b{display:block;font-family:var(--mono);font-size:.63rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-400);font-weight:500;margin-bottom:.45rem}
@@ -70,16 +77,20 @@
     .basis{display:inline-block;font-size:.68rem;font-weight:600;color:var(--teal);background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.22);border-radius:100px;padding:.1rem .6rem;margin-left:.45rem;white-space:nowrap;vertical-align:1px}
     .srcs{font-size:.79rem;color:var(--gray-400);line-height:1.6}
     .srcs a{color:var(--gray-400);text-decoration:underline;text-underline-offset:2px}.srcs a:hover{color:var(--teal)}
-    .meta{display:flex;flex-wrap:wrap;gap:1.25rem;font-family:var(--mono);font-size:.68rem;color:var(--gray-400);border-top:1px solid var(--gray-100);padding-top:1rem;margin-top:1.25rem}
+    .meta{display:flex;flex-wrap:wrap;gap:1.25rem;font-family:var(--mono);font-size:.68rem;color:var(--gray-400);border-top:1px solid var(--gray-100);padding-top:1rem;margin-top:1.5rem}
     .meta a{color:var(--teal);text-decoration:none}.meta a:hover{text-decoration:underline}
-    .loading{color:var(--gray-400);padding:2rem 0;font-size:.9rem}
+    .stepper{display:flex;justify-content:space-between;gap:1rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--gray-100)}
+    .step{font-size:.8rem;color:var(--gray-500);text-decoration:none;max-width:46%;line-height:1.4}
+    .step:hover{color:var(--teal)}.step.next{text-align:right}
+    .loading{color:var(--gray-400);font-size:.9rem}
     /* ── EVALUATIONS ── */
     .modes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
     .mode-card{border-left:2px solid var(--teal);padding-left:1.5rem}
     .mode-num{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--teal);letter-spacing:.06em;margin-bottom:.6rem;text-transform:uppercase}
     .mode-stat{font-family:var(--mono);font-size:.7rem;color:var(--gray-400);margin-top:.9rem}
     @media(max-width:860px){.modes-grid{grid-template-columns:1fr}}
-    @media(max-width:640px){.case summary{flex-wrap:wrap;gap:.5rem;padding:1rem 1.1rem}.body{padding:.25rem 1.1rem 1.25rem}}
+    @media(max-width:900px){.browser{grid-template-columns:1fr}.index{position:static;max-height:340px}}
+    @media(max-width:640px){.detail{padding:1.25rem 1.15rem}.detail-head h3{font-size:1.15rem}}
   </style>
 </head>
 <body>
@@ -126,7 +137,10 @@
       <select id="dom" aria-label="Filter by area"><option value="">All areas</option></select>
       <span class="count" id="count"></span>
     </div>
-    <div id="list" class="loading">Loading cases…</div>
+    <div class="browser">
+      <aside class="index" id="index" aria-label="Case index"><p class="idx-empty">Loading…</p></aside>
+      <article class="detail" id="detail"><p class="loading">Loading record…</p></article>
+    </div>
   </div>
 </section>
 
