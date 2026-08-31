@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Study — Bioethics Bench</title>
-  <meta name="description" content="Provisional results of the Bioethics Bench convergence study: QCCS v1 conv+ scores over cross-source policy pairs, navigable from the whole corpus down to a single scored pair." />
+  <meta name="description" content="Provisional results of the benchmark studies run against Bioethics Bench: each design, how much of it has been executed, and results navigable from the whole corpus down to a single scored pair." />
   <meta property="og:title" content="Study — Bioethics Bench" />
-  <meta property="og:description" content="Provisional convergence-scoring results, reported against the full study design." />
+  <meta property="og:description" content="Provisional benchmark results, reported against the study design each was run for." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="../assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -199,7 +199,7 @@
   <header class="page-head">
     <div class="wrap">
       <span class="provisional">Provisional</span>
-      <h1>Convergence across the corpus</h1>
+      <h1>Benchmark studies</h1>
       <div class="caveat">
         <strong>This page reports what has actually been executed so far, against the design of the
         finished study.</strong> Nothing here is a completed benchmark result. The numbers will change
@@ -212,34 +212,28 @@
     <!-- The design comes first: a reader should know the shape of the finished study before seeing
          a partial slice of it, so the slice cannot be mistaken for the whole. -->
     <section class="panel">
-      <h2>The study design</h2>
+      <div id="benchmark-picker"></div>
+      <h2 id="design-title">The study design</h2>
+      <p class="sub" id="design-method" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;margin-bottom:.4rem"></p>
+      <p class="sub" id="design-summary"></p>
       <p class="sub">
         This is the target the study is being run against. It is fixed in advance so the results
         below can be read as a fraction of a known whole rather than as an open-ended collection of
         runs.
       </p>
-      <div class="tiles">
-        <div class="tile"><div class="v">200</div><div class="k">cases</div><div class="s">the full corpus</div></div>
-        <div class="tile"><div class="v">2</div><div class="k">representations</div><div class="s">concise · detailed</div></div>
-        <div class="tile"><div class="v">10</div><div class="k">models</div><div class="s">three providers</div></div>
-        <div class="tile"><div class="v">3</div><div class="k">repeats</div><div class="s">per model</div></div>
-        <div class="tile"><div class="v" id="design-pairs">—</div><div class="k">scored pairs at completion</div><div class="s">cross-source only</div></div>
-      </div>
-      <div class="callout" style="margin-top:1.2rem">
-        <strong>Why three repeats.</strong> A single pass confounds run-to-run variation with
+      <div class="tiles" id="design-tiles"></div>
+      <div class="callout" style="margin-top:1.2rem" id="repeats-note">
+        <strong>Why repeats.</strong> A single pass confounds run-to-run variation with
         model-to-model variation: if two models differ by four points on one execution each, that
-        difference is not separable from the noise of the scorer. Three executions per model make the
-        two sources of variation distinguishable. Until those repeats exist, every number on this
+        difference is not separable from the noise of the scorer. Several executions per model make
+        the two sources of variation distinguishable. Until those repeats exist, every number on this
         page is a single draw.
       </div>
     </section>
 
     <section class="panel">
       <h2>Completion</h2>
-      <p class="sub">
-        Each cell is one model's pass over the full corpus in both representations. The study is
-        finished when every cell is filled.
-      </p>
+      <p class="sub" id="completion-note"></p>
       <div class="tbl-wrap"><table class="design" id="matrix"></table></div>
       <div class="matrix-key">
         <span><span class="cell done">done</span>executed and published</span>
@@ -282,28 +276,40 @@
     var PREFIX = { public: 'pub', expert: 'exp', framework: 'fw' };
     var TYPES = ['public', 'expert', 'framework'];
 
-    // The full design. Cells are filled from published reports; a model with no report stays
-    // pending rather than disappearing, so the page always shows what is still outstanding.
-    var DESIGN = {
-      cases: 200, representations: 2, repeats: 3,
-      models: [
-        { id: 'gpt-5.6-sol', provider: 'OpenAI' },
-        { id: 'gpt-5.4', provider: 'OpenAI' },
-        { id: 'gpt-5-mini', provider: 'OpenAI' },
-        { id: 'gemini-2.5-pro', provider: 'Google' },
-        { id: 'gemini-2.5-flash', provider: 'Google' },
-        { id: 'gemini-2.5-flash-lite', provider: 'Google' },
-        { id: 'claude-opus-5', provider: 'Anthropic' },
-        { id: 'claude-sonnet-5', provider: 'Anthropic' },
-        { id: 'claude-haiku-4-5-20251001', provider: 'Anthropic' },
-        { id: 'claude-fable-5', provider: 'Anthropic' }
-      ],
-      // Cross-source pairs of two different policies. Both figures come from the runner's own
-      // enumerator, restated here so the completion matrix can show a fraction before anything is
-      // published. A cell is not simply twice the concise pass: 36 of the 200 cases have no
-      // detailed text distinct from their concise text, so there is nothing separate to score.
-      pairsPerRepresentation: 3685,
-      pairsPerCell: 6733
+    // A benchmark is a study design; a study is one execution against it. Until these were
+    // separated, every published run landed on this one page describing this one design, because
+    // the design was written into the page. Different questions want different designs — a
+    // reliability pass over one model is not a partial cross-model study — and nothing here assumes
+    // SACRE, so another system scoring the same corpus can be reported beside this one.
+    //
+    // Mirrors src/lib/bench/benchmarks.js in SACRE. A benchmark defined at publish time arrives
+    // from the API and is merged over these.
+    var DEFAULT_BENCHMARK_ID = 'sacre-qccs-v1-full';
+    var BUILT_IN = [{
+      id: DEFAULT_BENCHMARK_ID,
+      title: 'Convergence across the corpus',
+      method: 'SACRE · QCCS v1 · conv+',
+      summary: 'Every cross-source policy pair in every case, scored for how far the two policies '
+        + 'converge on what to do, across ten models and three repeats.',
+      corpus: 'Bioethics Bench, 200 cases',
+      design: {
+        cases: 200,
+        representations: ['concise', 'detailed'],
+        repeats: 3,
+        models: [
+          'gpt-5.6-sol', 'gpt-5.4', 'gpt-5-mini',
+          'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-lite',
+          'claude-opus-5', 'claude-sonnet-5', 'claude-haiku-4-5-20251001', 'claude-fable-5'
+        ],
+        pairsPerCell: 6733
+      },
+      provisional: true
+    }];
+    var PROVIDER_OF = function (m) {
+      if (m.indexOf('gpt') === 0) return 'OpenAI';
+      if (m.indexOf('gemini') === 0) return 'Google';
+      if (m.indexOf('claude') === 0) return 'Anthropic';
+      return '';
     };
 
     var $ = function (id) { return document.getElementById(id); };
@@ -352,6 +358,9 @@
 
     /* ---------- state ---------- */
     var state = {
+      benchmarks: BUILT_IN.slice(),
+      benchmark: BUILT_IN[0],
+      studies: [],
       report: null,      // the published summary
       pairs: null,       // pair-level scores, fetched on first drill-down
       cases: null,       // the local 200-case library, fetched on first drill-down
@@ -387,27 +396,82 @@
       return out;
     }
 
-    /* ---------- completion matrix ---------- */
-    function renderMatrix(reports) {
+    /* ---------- completion, per benchmark ---------- */
+    function benchmarkIdOf(study) { return study.benchmarkId || DEFAULT_BENCHMARK_ID; }
+
+    function studiesFor(benchmark) {
+      return state.studies.filter(function (s) { return benchmarkIdOf(s) === benchmark.id; });
+    }
+
+    function renderBenchmarkPicker() {
+      var el = $('benchmark-picker');
+      if (!el) return;
+      if (state.benchmarks.length < 2) { el.innerHTML = ''; return; }
+      el.innerHTML = '<div class="seg"><span class="seg-label">benchmark</span>' +
+        state.benchmarks.map(function (b) {
+          return '<button data-benchmark="' + esc(b.id) + '" aria-pressed="' +
+            (b.id === state.benchmark.id) + '">' + esc(b.title) + '</button>';
+        }).join('') + '</div>';
+      Array.prototype.forEach.call(el.querySelectorAll('[data-benchmark]'), function (btn) {
+        btn.addEventListener('click', function () {
+          var picked = state.benchmarks.filter(function (b) { return b.id === btn.getAttribute('data-benchmark'); })[0];
+          if (!picked) return;
+          state.benchmark = picked;
+          state.openCase = null; state.openPair = null; state.report = null; state.pairs = null;
+          location.hash = '';
+          renderDesign();
+          renderMatrix();
+          loadSelectedStudy();
+        });
+      });
+    }
+
+    function renderDesign() {
+      var b = state.benchmark;
+      var d = b.design || {};
+      $('design-title').textContent = b.title || b.id;
+      $('design-method').textContent = b.method || '';
+      $('design-summary').textContent = b.summary || '';
+      var total = (d.pairsPerCell && d.models && d.repeats)
+        ? d.pairsPerCell * d.models.length * d.repeats : null;
+      $('design-tiles').innerHTML =
+        tile(n(d.cases || '—'), 'cases', b.corpus || '') +
+        tile((d.representations || []).length || '—', 'representations', (d.representations || []).join(' · ')) +
+        tile((d.models || []).length || '—', 'models', '') +
+        tile(d.repeats || '—', 'repeats', 'per model') +
+        tile(total ? n(total) : '—', 'scored pairs at completion', total ? 'cross-source only' : 'not stated by this design');
+      $('repeats-note').style.display = (d.repeats && d.repeats > 1) ? '' : 'none';
+    }
+
+    function renderMatrix() {
+      var b = state.benchmark;
+      var d = b.design || {};
+      if (!d.models || !d.models.length) {
+        $('matrix').innerHTML = '';
+        $('completion-note').textContent = 'This benchmark does not state a model list, so there is no grid to fill.';
+        return;
+      }
+      $('completion-note').textContent = "Each cell is one model's pass over the corpus for this benchmark. It is finished when every cell is filled.";
       var byModel = {};
-      reports.forEach(function (r) {
-        (r.models || []).forEach(function (m) { (byModel[m] = byModel[m] || []).push(r); });
+      studiesFor(b).forEach(function (s) {
+        (s.models || []).forEach(function (m) { (byModel[m] = byModel[m] || []).push(s); });
       });
       var head = '<thead><tr><th class="model">model</th><th>provider</th>';
-      for (var i = 1; i <= DESIGN.repeats; i++) head += '<th>run ' + i + '</th>';
+      for (var i = 1; i <= (d.repeats || 1); i++) head += '<th>run ' + i + '</th>';
       head += '<th>pairs scored</th></tr></thead><tbody>';
       var body = '';
-      DESIGN.models.forEach(function (m) {
-        var reps = byModel[m.id] || [];
-        var scored = reps.reduce(function (a, r) { return a + (r.scored || 0); }, 0);
-        body += '<tr><th class="model">' + esc(m.id) + '</th>' +
-          '<td style="text-align:left;color:var(--muted);font-size:.78rem">' + esc(m.provider) + '</td>';
-        for (var i = 0; i < DESIGN.repeats; i++) {
-          var r = reps[i], cls, label;
-          if (r) {
-            var pct = Math.round((r.scored / DESIGN.pairsPerCell) * 100);
-            cls = pct >= 100 ? 'done' : 'partial';
-            label = pct >= 100 ? 'done' : pct + '%';
+      d.models.forEach(function (m) {
+        var reps = byModel[m] || [];
+        var scored = reps.reduce(function (a, s) { return a + (s.scored || 0); }, 0);
+        body += '<tr><th class="model">' + esc(m) + '</th>' +
+          '<td style="text-align:left;color:var(--muted);font-size:.78rem">' + esc(PROVIDER_OF(m)) + '</td>';
+        for (var i = 0; i < (d.repeats || 1); i++) {
+          var s = reps[i], cls, label;
+          if (s) {
+            var pct = d.pairsPerCell ? Math.round((s.scored / d.pairsPerCell) * 100) : null;
+            var complete = d.pairsPerCell ? s.scored >= d.pairsPerCell : s.complete === true;
+            cls = complete ? 'done' : 'partial';
+            label = complete ? 'done' : (pct === null ? 'partial' : pct + '%');
           } else { cls = 'pending'; label = 'pending'; }
           body += '<td><span class="cell ' + cls + '">' + label + '</span></td>';
         }
@@ -490,15 +554,29 @@
     }
 
     function failureBlock(report) {
-      var keys = Object.keys(report.errors || {});
-      if (!keys.length) return '';
-      var rows = keys.map(function (k) {
-        return '<tr><td class="id">' + esc(k) + '</td><td>' + n(report.errors[k]) + '</td></tr>';
+      var kinds = report.failureKinds || [];
+      var retried = report.retriedAway || 0;
+      if (!kinds.length && !retried) return '';
+      var rows = kinds.map(function (k) {
+        var models = Object.keys(k.byModel).map(function (m) { return esc(m) + ': ' + n(k.byModel[m]); }).join(' · ');
+        return '<tr><td>' + esc(k.label) + '</td>' +
+          '<td><span class="chip"' + (k.aboutTheModel ? ' style="background:#fef3c7;color:#92400e"' : '') + '>' +
+          (k.aboutTheModel ? 'about the model' : 'infrastructure') + '</span></td>' +
+          '<td>' + n(k.count) + '</td><td>' + n(k.attempts) + '</td>' +
+          '<td style="font-variant-numeric:normal;color:var(--muted)">' + models + '</td></tr>';
       }).join('');
       return '<h3 class="sub-head">Calls that failed</h3>' +
-        '<p class="note" style="margin:0 0 .5rem;color:var(--muted);font-size:.84rem">Every pair is an independent call, so a failure removes one ' +
-        'pair and is retryable on its own. Failed pairs are excluded from the statistics above and counted here instead.</p>' +
-        '<div class="tbl-wrap"><table><thead><tr><th>error</th><th>pairs</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+        '<p class="note" style="margin:0 0 .5rem;color:var(--muted);font-size:.84rem">Every pair is an independent call, retried ' +
+        'automatically while the error looks like the provider rather than the model. What is left ' +
+        'here survived those retries.' +
+        (retried ? ' ' + n(retried) + ' call(s) failed once and then succeeded; those are counted as scored.' : '') +
+        '</p>' +
+        (rows
+          ? '<div class="tbl-wrap"><table><thead><tr><th>kind</th><th>what it says</th><th>pairs</th><th>attempts</th><th>models</th></tr></thead>' +
+            '<tbody>' + rows + '</tbody></table></div>' +
+            '<p class="note">A refusal or an unusable answer will read the same however often it is ' +
+            'asked, and is a fact about the model on that prompt. A rate limit or a provider error is not.</p>'
+          : '<p class="note">No call failed outright.</p>');
     }
 
     function caseTable(report) {
@@ -570,7 +648,7 @@
       $('results').innerHTML = warn +
         '<div class="tiles">' +
         tile(n(o.n), 'pairs scored', 'cross-source') +
-        tile(n(report.cases.length), 'cases covered', 'of ' + DESIGN.cases) +
+        tile(n(report.cases.length), 'cases covered', 'of ' + ((state.benchmark.design || {}).cases || '—')) +
         tile(f1(o.mean), 'mean convergence', 'median ' + o.median) +
         tile(f1(o.sd), 'spread (sd)', o.min + '–' + o.max) +
         tile(n(report.completeness.failed), 'failed calls', report.completeness.failed ? 'retryable' : 'none') +
@@ -797,10 +875,14 @@
     function renderProvenance(report) {
       var p = report ? report.provenance : null;
       var rows = [
-        ['Protocol', 'QCCS v1 · conv+ · cross-source pairs only'],
-        ['Corpus', 'Bioethics Bench, ' + DESIGN.cases + ' cases, concise and detailed'],
+        ['Method', state.benchmark.method || '—'],
+        ['Benchmark', state.benchmark.title + ' (' + state.benchmark.id + ')'],
+        ['Corpus', state.benchmark.corpus || 'Bioethics Bench'],
         ['Executor', 'SACRE study runner'],
-        ['Design', DESIGN.models.length + ' models × ' + DESIGN.repeats + ' repeats × 2 representations']
+        ['Design', (state.benchmark.design && state.benchmark.design.models)
+          ? state.benchmark.design.models.length + ' models × ' + state.benchmark.design.repeats
+            + ' repeats × ' + (state.benchmark.design.representations || []).length + ' representations'
+          : 'not stated']
       ];
       if (p) {
         rows.push(['Models run', (p.models || []).join(', ') || '—']);
@@ -824,7 +906,6 @@
     }
 
     /* ---------- load ---------- */
-    $('design-pairs').textContent = n(DESIGN.pairsPerCell * DESIGN.models.length * DESIGN.repeats);
 
     function fail(message) {
       $('results-sub').textContent = '';
@@ -836,39 +917,64 @@
       return m ? decodeURIComponent(m[1]) : null;
     }
 
+    function loadSelectedStudy() {
+      var mine = studiesFor(state.benchmark);
+      if (!mine.length) {
+        $('results-title').textContent = 'Results';
+        fail('Nothing has been published against this benchmark yet. The design above is what will be reported here.');
+        renderProvenance(null);
+        return Promise.resolve();
+      }
+      var wanted = paramId();
+      var pick = (wanted && mine.filter(function (s) { return s.id === wanted; })[0]) || mine[0];
+      return fetch(API + '?id=' + encodeURIComponent(pick.id))
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (report) {
+          state.report = report;
+          renderProvenance(report);
+          if (!report.overall) { fail('That study has no scored pairs yet.'); return null; }
+          renderCorpus();
+          // Case detail is worth having ready: the corpus table wants case titles, and the
+          // self-pair check needs the library. Fetched after first paint so it costs no
+          // time-to-first-render, and the tables re-render once it lands.
+          return loadDetail().then(function () {
+            var deep = location.hash.slice(1);
+            if (deep && (state.cases || {})[deep]) openCase(deep);
+            else if (!state.openCase) renderCorpus();
+          });
+        });
+    }
+
     fetch(API, { headers: { Accept: 'application/json' } })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (body) {
-        var list = body.studies || [];
-        renderMatrix(list);
-        if (!list.length) {
-          $('results-title').textContent = 'Results';
-          fail('No study has been published yet. The design above is what will be reported here.');
-          renderProvenance(null);
-          return;
+        state.studies = body.studies || [];
+        // Benchmarks defined at publish time are merged over the built-in ones, so a design this
+        // page has never heard of still describes itself rather than appearing as a bare id.
+        var known = {};
+        BUILT_IN.forEach(function (b) { known[b.id] = b; });
+        (body.benchmarks || []).forEach(function (b) { if (b && b.id) known[b.id] = b; });
+        // A benchmark with nothing published still belongs in the list: its design is the statement
+        // of what has not been run. One named only by a study keeps its id as its title.
+        state.studies.forEach(function (s) {
+          var id = benchmarkIdOf(s);
+          if (!known[id]) known[id] = { id: id, title: id, design: null, provisional: true };
+        });
+        state.benchmarks = Object.keys(known).map(function (k) { return known[k]; });
+        var wantedBench = /[?&]benchmark=([^&]+)/.exec(window.location.search);
+        if (wantedBench && known[decodeURIComponent(wantedBench[1])]) {
+          state.benchmark = known[decodeURIComponent(wantedBench[1])];
+        } else {
+          state.benchmark = state.benchmarks[0];
         }
-        var wanted = paramId();
-        var pick = wanted ? list.filter(function (s) { return s.id === wanted; })[0] : list[0];
-        if (!pick) { fail('No published study with id "' + wanted + '".'); renderProvenance(null); return; }
-        return fetch(API + '?id=' + encodeURIComponent(pick.id))
-          .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-          .then(function (report) {
-            state.report = report;
-            renderProvenance(report);
-            if (!report.overall) { fail('That study has no scored pairs yet.'); return; }
-            renderCorpus();
-            // Case detail is worth having ready: the corpus table wants case titles, and the
-            // self-pair check needs the library. Fetched after first paint so it costs no
-            // time-to-first-render, and the tables re-render once it lands.
-            loadDetail().then(function () {
-              var deep = location.hash.slice(1);
-              if (deep && (state.cases || {})[deep]) openCase(deep);
-              else if (!state.openCase) renderCorpus();
-            });
-          });
+        renderBenchmarkPicker();
+        renderDesign();
+        renderMatrix();
+        return loadSelectedStudy();
       })
       .catch(function (e) {
-        renderMatrix([]);
+        renderDesign();
+        renderMatrix();
         fail('Could not load published results (' + e.message + '). The study design above still applies.');
         renderProvenance(null);
       });
