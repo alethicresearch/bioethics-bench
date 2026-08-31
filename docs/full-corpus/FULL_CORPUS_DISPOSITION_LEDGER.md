@@ -40,7 +40,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 
 | Family | Declared judgment | Declared geometry | Dossier lines | Records | v1 disposition |
 |---|---|---|---|---|---|
-| M001 | executable-2x2x2 | — | 118 | 0 | featured-only (F01) |
+| M001 | executable-2x2x2 | — | 121 | 0 | featured-only (F01) |
 | M002 | executable-other-profile | — | 152 | 2 | executable-v1 (record present) |
 | M003 | needs-additional-evidence | — | 118 | 0 | held-needs-evidence |
 | M004 | executable-other-profile | — | 149 | 2 | executable-v1 (record present) |

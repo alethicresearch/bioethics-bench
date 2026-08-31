@@ -13,7 +13,7 @@ something else moved.
 warrant, and no scoring path branches on it. If that ever stops being true, the projection
 in the script must change with it.
 
-**43 commits since 2026-08-27. 24 execution-relevant, 19 provenance-only.**
+**47 commits since 2026-08-27. 24 execution-relevant, 23 provenance-only.**
 
 ## Execution-relevant changes
 
@@ -73,4 +73,8 @@ when convenient; these never require a semantic rerun and must not gate executio
 | `1c47acd4` | 2026-08-29 | M012, M018, M019, M034, M080, M102, M106, M141 | Repair the author-only citations and close the PMCID hole in the gate |
 | `c90a1fb1` | 2026-08-29 | M045, M060 | Apply the deep-research re-sourcing, and fix two gaps it exposed in the gate |
 | `8b701b52` | 2026-08-29 | M054, M075, M139 | Hunt mode 3 deliberately on three families, and find it in all three |
+| `6e055deb` | 2026-08-30 | M012, M018, M019, M020, M025, M028, M030, M031, M033, M034, M041, M042, M045, M050, M054, M056, M060, M075, M080, M097, M102, M106, M123, M139, M141, M144, M189 | Enrich Full Corpus canonical source locators |
+| `e592394d` | 2026-08-30 | M012, M018, M019, M020, M028, M041, M045, M050, M054, M060, M075, M080, M094, M123, M141, M144, M146, M189 | Apply verified Full Corpus source locators |
+| `ade03264` | 2026-08-30 | M002, M004, M005, M010, M012, M018, M020, M030, M031, M033, M041, M042, M050, M054, M056, M075, M080, M094, M102, M106, M123, M129, M139, M141, M144, M146, M189 | Apply verified Full Corpus source locators |
+| `0a8317ba` | 2026-08-30 | M025 | Apply verified Full Corpus source locators |
 
