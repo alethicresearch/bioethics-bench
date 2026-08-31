@@ -1,5 +1,5 @@
 const RESOURCE='../../resources/cases/full-200-cases.v1.json';
-const SACRE='https://reflectiveequilibrium.ai/';
+const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
 const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
 const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
@@ -48,7 +48,7 @@ function sourceBadge(s){return `<span class="prov ${esc(s)}">${esc(SOURCE_LABELS
 function sourceSummary(c){return Object.keys(SOURCE_LABELS).filter(k=>c.sourcing.has(k)).map(k=>sourceBadge(k)).join(' ');}
 function typeSummary(c){return Object.keys(TYPE_LABELS).filter(k=>c.types.has(k)).map(k=>`<span class="ptype ${k}">${TYPE_LABELS[k]}</span>`).join(' ');}
 
-function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('benchCase',c.id);u.searchParams.set('form',state.rep);return u.toString();}
+function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.searchParams.set('form',state.rep);return u.toString();}
 
 function renderDetail(c){
   const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(p.text)}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}</div></div>`).join('');
