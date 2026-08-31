@@ -17,8 +17,8 @@ const CATEGORIES={
   everyday:'Everyday practice'
 };
 const CATEGORY_ORDER=Object.keys(CATEGORIES);
-const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',framework:'Ethical framework',constructed:'Constructed comparison'};
-const state={cases:[],shown:[],category:'',q:'',provenance:new Set(),current:null,rep:'concise',markdown:new Map()};
+const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
+const state={cases:[],shown:[],category:'',q:'',sourcing:new Set(),current:null,rep:'concise',markdown:new Map()};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -41,31 +41,33 @@ function categoryFor(inventoryId){
   return 'everyday';
 }
 
-function provenanceType(c){
-  const cls=String(c.provenance_class||'').toLowerCase();
-  const label=String(c.audit_provenance_label||'').toLowerCase();
-  if(cls==='direct-source')return 'direct';
-  if(cls==='framework-derived'||label.includes('framework-derived')||label.includes('ethical framework'))return 'framework';
+// Public / Expert / Framework describe what kind of policy a position is.
+// This function answers a different question: how was the policy sourced?
+function sourceType(policy){
+  const cls=String(policy.provenance_class||'').toLowerCase();
+  const label=String(policy.audit_provenance_label||'').toLowerCase();
+  if(cls==='direct-source'||label.includes('direct policy')||label.includes('direct professional')||label.includes('direct-source'))return 'direct';
   if(cls==='constructed-comparator'||label.includes('constructed')||label.includes('synthetic'))return 'constructed';
   return 'inferred';
 }
 
-function policyTypes(c){return new Set((c.candidate_universe||[]).map(provenanceType));}
+function sourceTypes(c){return new Set((c.candidate_universe||[]).map(sourceType));}
 function caseNumber(c){return String(c.inventory_id||'').replace(/^M/i,'');}
 
 function buildCases(raw){
   return (raw.cases||[]).map(c=>{
     const category=categoryFor(c.inventory_id);
-    const types=policyTypes(c);
-    const hay=[c.title,CATEGORIES[category],...(c.candidate_universe||[]).map(p=>p.text)].join(' ').toLowerCase();
-    return {...c,category,types,hay};
+    const sources=sourceTypes(c);
+    const policies=c.candidate_universe||[];
+    const hay=[c.title,CATEGORIES[category],...policies.map(p=>p.text)].join(' ').toLowerCase();
+    return {...c,category,sources,policies,hay};
   }).sort((a,b)=>Number(caseNumber(a))-Number(caseNumber(b)));
 }
 
 function matches(c){
   if(state.category&&c.category!==state.category)return false;
   if(state.q&&!c.hay.includes(state.q))return false;
-  for(const p of state.provenance)if(!c.types.has(p))return false;
+  for(const s of state.sourcing)if(!c.sources.has(s))return false;
   return true;
 }
 
@@ -87,12 +89,12 @@ function renderIndex(){
 }
 
 function sourceSummary(c){
-  return Object.keys(SOURCE_LABELS).filter(k=>c.types.has(k)).map(k=>`<span class="prov ${k}">${SOURCE_LABELS[k]}</span>`).join(' ');
+  return Object.keys(SOURCE_LABELS).filter(k=>c.sources.has(k)).map(k=>`<span class="prov ${k}">${SOURCE_LABELS[k]}</span>`).join(' ');
 }
 
 function renderDetail(c){
-  const policies=(c.candidate_universe||[]).map(p=>{
-    const t=provenanceType(p);
+  const policies=c.policies.map(p=>{
+    const t=sourceType(p);
     return `<div class="policy"><p>${esc(p.text)}</p><span class="prov ${t}">${esc(SOURCE_LABELS[t])}</span></div>`;
   }).join('');
   $('case-detail').innerHTML=`
@@ -104,7 +106,7 @@ function renderDetail(c){
     <div id="scenario" class="scenario-box"><span class="loading">Loading case description…</span></div>
     <div class="policies-head">Policy options</div>
     <div class="policy-list">${policies}</div>
-    <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.deep_case_path)}" target="_blank" rel="noopener">Research and sources ↗</a></div>`;
+    <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.deep_case_path)}" target="_blank" rel="noopener">Sources and further detail ↗</a></div>`;
   loadScenario(c);
 }
 
@@ -148,8 +150,8 @@ async function loadScenario(c){
     const md=await getMarkdown(c);
     if(state.current!==c.inventory_id)return;
     const text=extractSection(md,state.rep);
-    host.textContent=text||'Case description is available in the research file.';
-  }catch{host.textContent='Case description is available in the research file.';}
+    host.textContent=text||'Case description is available in the source file.';
+  }catch{host.textContent='Case description is available in the source file.';}
 }
 
 function markCurrent(){document.querySelectorAll('.idx-item').forEach(a=>a.classList.toggle('on',a.dataset.id===state.current));}
@@ -169,7 +171,7 @@ function applyUrlCategory(){
 }
 
 function clearFilters(){
-  state.q='';state.category='';state.provenance.clear();
+  state.q='';state.category='';state.sourcing.clear();
   $('search').value='';document.querySelectorAll('.check input').forEach(x=>x.checked=false);
   history.replaceState(null,'',location.pathname+(state.current?`#${state.current}`:''));
   renderCategories();renderIndex();
@@ -190,7 +192,7 @@ async function boot(){
 
 $('search').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();renderIndex();});
 $('categories').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;state.category=b.dataset.cat;renderCategories();renderIndex();});
-document.querySelectorAll('.check input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.provenance.add(e.target.value);else state.provenance.delete(e.target.value);renderIndex();}));
+document.querySelectorAll('.check input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.sourcing.add(e.target.value);else state.sourcing.delete(e.target.value);renderIndex();}));
 $('clear').addEventListener('click',clearFilters);
 $('case-index').addEventListener('click',e=>{const a=e.target.closest('.idx-item');if(!a)return;e.preventDefault();show(a.dataset.id);});
 $('case-detail').addEventListener('click',e=>{const b=e.target.closest('.rep-btn');if(!b)return;state.rep=b.dataset.rep;document.querySelectorAll('.rep-btn').forEach(x=>x.classList.toggle('on',x.dataset.rep===state.rep));const c=state.cases.find(x=>x.inventory_id===state.current);if(c)loadScenario(c);});
