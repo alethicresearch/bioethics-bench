@@ -16,9 +16,10 @@ should be reintroduced.
 | executable-v1, record present, dossier agrees | 34 |
 | executable-v1, record present, dossier judgment predates the audit — **reconcile** | 0 |
 | executable-candidate, dossier supports it but no record transcribed yet | 0 |
+| rich candidate universe ready; projection manifest/review pending | 2 |
 | Featured-only (M001 → F01) | 1 |
-| held — needs additional evidence | 82 |
-| held — research-complete, not executable | 71 |
+| held — needs additional evidence | 81 |
+| held — research-complete, not executable | 70 |
 | held — as duplicate | 0 |
 | held — candidate-audit target, audit not yet performed | 0 |
 | held — candidate audit performed, not executable | 12 |
@@ -85,7 +86,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M044 | research-complete-not-executable | — | 104 | 0 | held-not-executable |
 | M045 | executable-other-profile | — | 128 | 2 | executable-v1 (record present) |
 | M046 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
-| M047 | needs-additional-evidence | — | 103 | 0 | held-needs-evidence |
+| M047 | candidate-universe-ready | — | 113 | 0 | rich-universe-ready |
 | M048 | needs-additional-evidence | — | 102 | 0 | held-needs-evidence |
 | M049 | audit-complete-not-executable | — | 136 | 0 | held-audited-not-executable |
 | M050 | executable-2x2x2 | — | 137 | 2 | executable-v1 (record present) |
@@ -225,7 +226,7 @@ re-reading of the same sources, and not an assertion in a commit message.
 | M184 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M185 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M186 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
-| M187 | research-complete-not-executable | — | 21 | 0 | held-not-executable |
+| M187 | candidate-universe-ready | — | 111 | 0 | rich-universe-ready |
 | M188 | research-complete-not-executable | — | 26 | 0 | held-not-executable |
 | M189 | declared-canonical-frame | 2 public × 2 expert × 3 framework | 105 | 2 | executable-v1 (record present) |
 | M190 | research-complete-not-executable | — | 21 | 0 | held-not-executable |
