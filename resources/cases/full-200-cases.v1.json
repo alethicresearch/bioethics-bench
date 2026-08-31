@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 1183,
+  "detailed_policy_count": 1254,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -4845,6 +4845,7 @@
         {
           "id": "c01",
           "text": "reasonable compensation for time/risk/inconvenience plus independent legal/medical safeguards",
+          "text_detailed": "Pay reasonable compensation for time, risk and inconvenience, alongside independent legal and medical safeguards, with the amount set in advance, independent counsel paid for by the programme, and medical decisions left to the carrier.",
           "types": [
             "expert"
           ],
@@ -4854,6 +4855,7 @@
         {
           "id": "c02",
           "text": "reimbursement-only",
+          "text_detailed": "Reimburse actual expenses only, with the categories listed, receipts not required for predictable costs, and payment made promptly rather than after the pregnancy ends.",
           "types": [
             "framework"
           ],
@@ -4863,6 +4865,7 @@
         {
           "id": "c03",
           "text": "structured/capped compensation to reduce inducement while recognizing labor/risk",
+          "text_detailed": "Pay structured compensation within a cap that recognises time and risk while limiting inducement, with the cap set against local income and published rather than negotiated per arrangement.",
           "types": [
             "framework"
           ],
@@ -4872,6 +4875,7 @@
         {
           "id": "c04",
           "text": "unrestricted market-rate compensation subject to informed consent/noncontingency on healthy birth",
+          "text_detailed": "Permit market-rate compensation subject to informed consent and to payment not being contingent on a healthy birth, with the non-contingency written into the contract and enforceable.",
           "types": [
             "framework"
           ],
@@ -4881,6 +4885,7 @@
         {
           "id": "c05",
           "text": "carrier-autonomy rule making carrier sole medical decision-maker regardless of compensation",
+          "text_detailed": "Make the carrier the sole medical decision-maker throughout, regardless of the compensation agreed, with that term written into the contract and unwaivable.",
           "types": [
             "expert"
           ],
@@ -4890,6 +4895,7 @@
         {
           "id": "c06",
           "text": "exploitation/justice rule requiring insurance, escrow, independent counsel, and no outcome-contingent payment",
+          "text_detailed": "Require insurance, escrow, independent counsel and no outcome-contingent payment as conditions of any arrangement, with each verified before the transfer and audited by the programme.",
           "types": [
             "expert",
             "framework"
@@ -4900,6 +4906,7 @@
         {
           "id": "c07",
           "text": "Set compensation so the carrier is never out of pocket and is paid for time and risk, with terms fixed in advance and independent legal advice paid for by the programme.",
+          "text_detailed": "Set compensation so the carrier is never out of pocket and is paid for time and risk, with terms fixed in advance and independent legal advice paid for by the programme. Payment does not depend on the outcome, and the schedule is set out before any medical step begins.",
           "types": [
             "public"
           ],
@@ -4920,6 +4927,7 @@
         {
           "id": "c01",
           "text": "permit with enhanced independent counseling/consent",
+          "text_detailed": "Permit the arrangement with enhanced independent counselling and consent, conducted separately with each party and covering how roles will be described to the child and to the wider family.",
           "types": [
             "expert"
           ],
@@ -4929,6 +4937,7 @@
         {
           "id": "c02",
           "text": "prohibit consanguineous/incest-simulating arrangements",
+          "text_detailed": "Prohibit arrangements that would simulate consanguinity, with the prohibited relationships listed rather than assessed case by case.",
           "types": [
             "expert"
           ],
@@ -4938,6 +4947,7 @@
         {
           "id": "c03",
           "text": "require separate legal/psychological assessment for intergenerational or dependency-heavy arrangements",
+          "text_detailed": "Require separate legal and psychological assessment where the arrangement is intergenerational or involves financial or caregiving dependency, with the assessment conducted independently of the recipients.",
           "types": [
             "expert"
           ],
@@ -4947,6 +4957,7 @@
         {
           "id": "c04",
           "text": "broadly avoid intrafamilial arrangements because relational pressure is difficult to rule out",
+          "text_detailed": "Avoid intrafamilial arrangements broadly, on the ground that relational pressure is difficult to exclude, with exceptions requiring a documented finding that no such pressure exists.",
           "types": [
             "framework"
           ],
@@ -4956,6 +4967,7 @@
         {
           "id": "c05",
           "text": "relational-autonomy permission when family support is voluntary and role clarity is protected",
+          "text_detailed": "Permit where family support is genuinely voluntary and role clarity is protected, with both assessed independently and the intended roles recorded before treatment.",
           "types": [
             "framework"
           ],
@@ -4965,6 +4977,7 @@
         {
           "id": "c06",
           "text": "anti-coercion/child-family-role framework favoring stricter limits",
+          "text_detailed": "Set stricter limits on anti-coercion grounds and to protect the child's family relationships, with the limits stated in policy and applied without exception for willing families.",
           "types": [
             "framework"
           ],
@@ -4974,6 +4987,7 @@
         {
           "id": "c07",
           "text": "Give the donor a separate clinician and a private route to withdraw at any point, so that a family offer can be declined without the family learning why.",
+          "text_detailed": "Give the donor a separate clinician and a private route to withdraw at any point, so that a family offer can be declined without the family learning why. The withdrawal is communicated by the clinic as a clinical outcome, and no reason is recorded that could be traced back.",
           "types": [
             "public"
           ],
@@ -4994,6 +5008,7 @@
         {
           "id": "c01",
           "text": "categorical prohibition",
+          "text_detailed": "Prohibit reproductive cloning categorically, with the prohibition stated in law, applying to transfer rather than to technique, and enforced against providers.",
           "types": [
             "expert"
           ],
@@ -5003,6 +5018,7 @@
         {
           "id": "c02",
           "text": "future reconsideration only after safety + broad democratic authorization",
+          "text_detailed": "Reconsider only after safety is established and broad democratic authorisation obtained, with both required and neither sufficient alone, and the authorisation process specified.",
           "types": [
             "expert"
           ],
@@ -5012,6 +5028,7 @@
         {
           "id": "c03",
           "text": "permission if safety/identity concerns eventually become comparable to accepted ART",
+          "text_detailed": "Permit if safety and identity concerns eventually become comparable to accepted assisted reproduction, with the comparison made explicitly and the evidence for it published.",
           "types": [
             "framework"
           ],
@@ -5021,6 +5038,7 @@
         {
           "id": "c04",
           "text": "prohibition grounded in dignity/noninstrumentalization",
+          "text_detailed": "Prohibit on grounds of dignity and non-instrumentalisation, with the ground stated so that a later safety improvement does not by itself reopen the question.",
           "types": [
             "framework"
           ],
@@ -5030,6 +5048,7 @@
         {
           "id": "c05",
           "text": "limited research-only nuclear-transfer work without reproductive implantation",
+          "text_detailed": "Permit limited research-only nuclear-transfer work without reproductive implantation, with the boundary enforced by licence conditions and the work reported.",
           "types": [
             "expert"
           ],
@@ -5039,6 +5058,7 @@
         {
           "id": "c06",
           "text": "Consult broadly and publish the reasoning before any change of position, so that a prohibition is maintained or lifted by public decision rather than by the first laboratory to proceed.",
+          "text_detailed": "Consult broadly and publish the reasoning before any change of position, so that a prohibition is maintained or lifted by public decision rather than by the first laboratory to proceed. The consultation precedes any licensing decision and its outcome is published in full.",
           "types": [
             "public"
           ],
@@ -5060,6 +5080,7 @@
         {
           "id": "c01",
           "text": "offer as rescue option after parental consent when expected outcome exceeds conventional NICU",
+          "text_detailed": "Offer the technology as a rescue option after parental consent where the expected outcome exceeds conventional intensive care, with that expectation stated from the programme's own data rather than from projections.",
           "types": [
             "expert"
           ],
@@ -5069,6 +5090,7 @@
         {
           "id": "c02",
           "text": "restrict initially to trials/specified gestational thresholds",
+          "text_detailed": "Restrict initially to trials and to specified gestational thresholds, with the thresholds stated, the trial registered, and outcomes published as they accumulate.",
           "types": [
             "expert"
           ],
@@ -5078,6 +5100,7 @@
         {
           "id": "c03",
           "text": "require use when it clearly offers materially better survival/neurodevelopment than standard care",
+          "text_detailed": "Require use where it clearly offers materially better survival or neurodevelopment than standard care, with clearly and materially defined numerically rather than clinically judged.",
           "types": [
             "expert"
           ],
@@ -5087,6 +5110,7 @@
         {
           "id": "c04",
           "text": "allow parent choice between conventional NICU and AWT when equipoise exists",
+          "text_detailed": "Let parents choose between conventional intensive care and the new technology where equipoise exists, with equipoise stated explicitly and both options described in equal detail.",
           "types": [
             "framework"
           ],
@@ -5096,6 +5120,7 @@
         {
           "id": "c05",
           "text": "precautionary restriction due unknown long-term developmental effects",
+          "text_detailed": "Restrict on precautionary grounds because long-term developmental effects are unknown, with the follow-up that would resolve this specified and funded.",
           "types": [
             "framework"
           ],
@@ -5105,6 +5130,7 @@
         {
           "id": "c06",
           "text": "justice/access rule preventing AWT from becoming a resource available only to privileged centers/patients",
+          "text_detailed": "Prevent the technology from becoming available only at privileged centres or to privileged patients, with access monitored and reported by centre and by patient population.",
           "types": [
             "framework"
           ],
@@ -5114,6 +5140,7 @@
         {
           "id": "c07",
           "text": "Keep the conventional neonatal option available in full, with the same staffing and follow-up, so that choosing it is not the lesser path.",
+          "text_detailed": "Keep the conventional neonatal option available in full, with the same staffing and follow-up, so that choosing it is not the lesser path. Its resourcing is protected explicitly rather than allowed to erode as the new pathway grows.",
           "types": [
             "public"
           ],
@@ -5134,6 +5161,7 @@
         {
           "id": "c01",
           "text": "allow after alternatives exhausted and expected sibling benefit substantial",
+          "text_detailed": "Permit after alternatives have been exhausted and where the expected benefit to the sibling is substantial, with both established and recorded before treatment begins.",
           "types": [
             "expert"
           ],
@@ -5143,6 +5171,7 @@
         {
           "id": "c02",
           "text": "allow more broadly if new child is independently wanted and donation limited to cord blood/low-burden tissue",
+          "text_detailed": "Permit more broadly where the new child is independently wanted and donation is limited to cord blood or other low-burden tissue, with the limit written into the plan rather than left to later decision.",
           "types": [
             "framework"
           ],
@@ -5152,6 +5181,7 @@
         {
           "id": "c03",
           "text": "prohibit HLA selection for instrumental donation",
+          "text_detailed": "Prohibit selection for instrumental donation, with the prohibition applying to the selection rather than to the family's reasons for wanting another child.",
           "types": [
             "framework"
           ],
@@ -5161,6 +5191,7 @@
         {
           "id": "c04",
           "text": "permit low-burden donation but require later donor-child assent for any invasive donation",
+          "text_detailed": "Permit low-burden donation while requiring the donor child's own assent for anything invasive later, with the assent sought independently and a refusal respected.",
           "types": [
             "expert",
             "framework"
@@ -5171,6 +5202,7 @@
         {
           "id": "c05",
           "text": "child-welfare/open-future rule limiting cumulative donation burden",
+          "text_detailed": "Limit the cumulative donation burden the future child may carry, with the limit stated in advance and counted across all donations rather than assessed one at a time.",
           "types": [
             "framework"
           ],
@@ -5180,6 +5212,7 @@
         {
           "id": "c06",
           "text": "parental reproductive autonomy/rescue rule favoring access",
+          "text_detailed": "Favour access on parental reproductive-autonomy and rescue grounds, with the sibling's prognosis stated and the alternatives documented as exhausted.",
           "types": [
             "framework"
           ],
@@ -5189,6 +5222,7 @@
         {
           "id": "c07",
           "text": "independent ethics review to confirm no reasonable donor alternative and protect future child",
+          "text_detailed": "Require independent ethics review to confirm that no reasonable donor alternative exists and that the future child's interests are protected, with the review completed before treatment.",
           "types": [
             "expert"
           ],
@@ -5198,6 +5232,7 @@
         {
           "id": "c08",
           "text": "Give the future donor child their own clinician and record now what they will be told, so that a child conceived to donate learns their history from the family rather than by accident.",
+          "text_detailed": "Give the future donor child their own clinician and record now what they will be told, so that a child conceived to donate learns their history from the family rather than by accident. The record is made at conception and revisited as the child grows.",
           "types": [
             "public"
           ],
@@ -5218,6 +5253,7 @@
         {
           "id": "c01",
           "text": "offer actionable fetal/parental secondary findings with opt-out",
+          "text_detailed": "Offer actionable fetal and parental secondary findings with an opt-out, with the categories listed before sequencing and the opt-out recorded per category.",
           "types": [
             "expert"
           ],
@@ -5227,6 +5263,7 @@
         {
           "id": "c02",
           "text": "report only findings relevant to fetal/childhood management",
+          "text_detailed": "Report only findings relevant to fetal or childhood management, with the boundary stated in advance so that parents know what will not be reported.",
           "types": [
             "expert",
             "framework"
@@ -5237,6 +5274,7 @@
         {
           "id": "c03",
           "text": "allow opt-in to broader categories after counseling",
+          "text_detailed": "Allow opt-in to broader categories after counselling, with the counselling covering what each category could reveal about the parents as well as the fetus.",
           "types": [
             "public"
           ],
@@ -5246,6 +5284,7 @@
         {
           "id": "c04",
           "text": "defer adult-onset fetal findings to protect future autonomy",
+          "text_detailed": "Defer adult-onset fetal findings to protect the future child's own choice, with the finding retained and a recontact route explained to the parents.",
           "types": [
             "framework"
           ],
@@ -5255,6 +5294,7 @@
         {
           "id": "c05",
           "text": "return serious parental actionable findings separately with consent",
+          "text_detailed": "Return serious actionable parental findings separately and with their own consent, sought before sequencing rather than at the point of disclosure.",
           "types": [
             "expert"
           ],
@@ -5264,6 +5304,7 @@
         {
           "id": "c06",
           "text": "category-based preference menu",
+          "text_detailed": "Offer a category-based preference menu, with the categories described concretely and the choices recorded and revisable before results are issued.",
           "types": [
             "public"
           ],
@@ -5273,6 +5314,7 @@
         {
           "id": "c07",
           "text": "minimal-reporting rule limited to diagnostic indication unless immediate preventable harm would otherwise be missed",
+          "text_detailed": "Report only what the diagnostic indication requires, unless an immediate preventable harm would otherwise be missed, with that exception stated in advance and applied narrowly.",
           "types": [
             "expert"
           ],
@@ -5292,6 +5334,7 @@
         {
           "id": "c01",
           "text": "routinely offer established preservation with assent",
+          "text_detailed": "Offer established preservation routinely with the child's assent, with the offer made at diagnosis, the assent sought in the child's own terms, and a refusal recorded and respected.",
           "types": [
             "expert"
           ],
@@ -5301,6 +5344,7 @@
         {
           "id": "c02",
           "text": "allow parents to authorize low-burden tissue preservation when child cannot assent",
+          "text_detailed": "Permit parents to authorise low-burden tissue preservation where the child cannot assent, with the burden assessed and the child's later access to the decision recorded.",
           "types": [
             "expert"
           ],
@@ -5310,6 +5354,7 @@
         {
           "id": "c03",
           "text": "respect postpubertal minor objection",
+          "text_detailed": "Respect a postpubertal minor's objection, with the objection final for that procedure and the decision revisitable at the young person's own request.",
           "types": [
             "expert"
           ],
@@ -5319,6 +5364,7 @@
         {
           "id": "c04",
           "text": "defer invasive experimental preservation when delay/burden threatens cancer treatment",
+          "text_detailed": "Defer invasive experimental preservation where the delay or burden would threaten cancer treatment, with the oncology team's assessment recorded and the option revisited if the schedule changes.",
           "types": [
             "expert"
           ],
@@ -5328,6 +5374,7 @@
         {
           "id": "c05",
           "text": "future-autonomy framework favoring preservation of reproductive options",
+          "text_detailed": "Favour preserving reproductive options on future-autonomy grounds, with the future decision left to the child and the material stored accordingly.",
           "types": [
             "framework"
           ],
@@ -5337,6 +5384,7 @@
         {
           "id": "c06",
           "text": "present-welfare/nonmaleficence framework limiting experimental burden",
+          "text_detailed": "Limit experimental burden on present-welfare grounds, with the burden assessed against what the child is already undergoing rather than in isolation.",
           "types": [
             "framework"
           ],
@@ -5346,6 +5394,7 @@
         {
           "id": "c07",
           "text": "Offer the counselling and the procedure without delaying cancer therapy, and record the child's own view whatever their age.",
+          "text_detailed": "Offer the counselling and the procedure without delaying cancer therapy, and record the child's own view whatever their age. Where the schedule cannot accommodate both, the therapy proceeds and the reason is recorded for the child to read later.",
           "types": [
             "public"
           ],
@@ -5366,6 +5415,7 @@
         {
           "id": "c01",
           "text": "honor transfer for manageable condition after counseling",
+          "text_detailed": "Transfer the embryo for a manageable condition after counselling, with the condition's expected course described concretely and the counselling recorded.",
           "types": [
             "expert"
           ],
@@ -5375,6 +5425,7 @@
         {
           "id": "c02",
           "text": "decline transfer on child-welfare/nonmaleficence grounds",
+          "text_detailed": "Decline transfer on child-welfare grounds, with the threshold stated in clinic policy in advance rather than applied to this patient's embryo alone.",
           "types": [
             "expert"
           ],
@@ -5384,6 +5435,7 @@
         {
           "id": "c03",
           "text": "allow only when no unaffected embryo remains and severity is below defined harm threshold",
+          "text_detailed": "Transfer only where no unaffected embryo remains and severity falls below a defined harm threshold, with both conditions established and the threshold published.",
           "types": [
             "framework"
           ],
@@ -5393,6 +5445,7 @@
         {
           "id": "c04",
           "text": "reproductive-liberty framework favoring patient choice",
+          "text_detailed": "Favour patient choice on reproductive-liberty grounds, requiring any refusal to identify a harm to the future child rather than a preference about which lives should begin.",
           "types": [
             "framework"
           ],
@@ -5402,6 +5455,7 @@
         {
           "id": "c05",
           "text": "future-child welfare framework limiting transfer above severe-harm threshold",
+          "text_detailed": "Limit transfer above a severe-harm threshold on future-child welfare grounds, with the threshold defined by stated clinical criteria and applied consistently.",
           "types": [
             "framework"
           ],
@@ -5411,6 +5465,7 @@
         {
           "id": "c06",
           "text": "disability-justice rule rejecting assumptions that affected life is categorically not worth living",
+          "text_detailed": "Reject the assumption that a life with the condition is categorically not worth living, with any limit required to rest on the specific expected experience rather than on the diagnosis.",
           "types": [
             "framework"
           ],
@@ -5420,6 +5475,7 @@
         {
           "id": "c07",
           "text": "clinic-policy transparency/advance disclosure of transfer limits",
+          "text_detailed": "Publish the clinic's transfer limits in advance and disclose them before treatment, with the policy given in writing at the first consultation.",
           "types": [
             "expert"
           ],
@@ -5429,6 +5485,7 @@
         {
           "id": "c08",
           "text": "Tell patients the clinic's transfer policy before treatment begins, so that no one discovers a restriction after their embryos exist.",
+          "text_detailed": "Tell patients the clinic's transfer policy before treatment begins, so that no one discovers a restriction after their embryos exist. The policy is given in writing at the first consultation and any change applies only to treatment started afterwards.",
           "types": [
             "public"
           ],
@@ -5449,6 +5506,7 @@
         {
           "id": "c01",
           "text": "immediate disclosure of error/misdirection with ongoing updates",
+          "text_detailed": "Disclose the error or misdirection immediately, with what is known, what is not, and a commitment to updates on stated dates that happen whether or not there is news.",
           "types": [
             "expert"
           ],
@@ -5458,6 +5516,7 @@
         {
           "id": "c02",
           "text": "disclose known event promptly but stage uncertain causal details until verified",
+          "text_detailed": "Disclose the event promptly while staging uncertain causal details until they are verified, saying explicitly which details are being withheld and when they will be provided.",
           "types": [
             "expert"
           ],
@@ -5467,6 +5526,7 @@
         {
           "id": "c03",
           "text": "disclose even no-harm errors because genetic/reproductive information itself can matter",
+          "text_detailed": "Disclose even errors that caused no harm, on the ground that genetic and reproductive information matters in itself, with the disclosure made to the patient rather than logged internally.",
           "types": [
             "expert"
           ],
@@ -5476,6 +5536,7 @@
         {
           "id": "c04",
           "text": "do not disclose clearly harmless near misses unless system-learning/patient-interest threshold met",
+          "text_detailed": "Do not disclose clearly harmless near misses unless a system-learning or patient-interest threshold is met, with the threshold defined in advance and near misses recorded internally regardless.",
           "types": [
             "expert"
           ],
@@ -5485,6 +5546,7 @@
         {
           "id": "c05",
           "text": "transparency/accountability framework",
+          "text_detailed": "Disclose fully on transparency and accountability grounds, with the disclosure covering what went wrong, why, and what has changed as a result.",
           "types": [
             "framework"
           ],
@@ -5494,6 +5556,7 @@
         {
           "id": "c06",
           "text": "risk-managed delayed-consolidated account",
+          "text_detailed": "Provide a consolidated account once the facts are established, with an interim notification that an investigation is under way and a stated maximum period before the full account.",
           "types": [
             "expert",
             "framework"
@@ -5504,6 +5567,7 @@
         {
           "id": "c07",
           "text": "Tell the affected patient every laboratory error touching their material as soon as it is known, including errors the clinic judges harmless, and say what remains uncertain.",
+          "text_detailed": "Tell the affected patient every laboratory error touching their material as soon as it is known, including errors the clinic judges harmless, and say what remains uncertain. Each disclosure names who is investigating and when the patient will hear again.",
           "types": [
             "public"
           ],
@@ -5524,6 +5588,7 @@
         {
           "id": "c01",
           "text": "prioritize urgency/impending loss of eligibility",
+          "text_detailed": "Prioritise by urgency and by impending loss of eligibility, with the eligibility windows stated and applied uniformly rather than to whoever is referred first.",
           "types": [
             "expert",
             "framework"
@@ -5534,6 +5599,7 @@
         {
           "id": "c02",
           "text": "maximize expected benefit/safety",
+          "text_detailed": "Prioritise by expected benefit and safety, with the estimates stated, the model published, and its distributional effects reported.",
           "types": [
             "expert",
             "framework"
@@ -5544,6 +5610,7 @@
         {
           "id": "c03",
           "text": "lottery among clinically comparable tiers",
+          "text_detailed": "Allocate by lottery within clinically comparable tiers, with the tiers defined in advance and the draw conducted outside the treating team.",
           "types": [
             "framework"
           ],
@@ -5553,6 +5620,7 @@
         {
           "id": "c04",
           "text": "hybrid A4R rule combining disease prevalence, urgency, donor alternative and lottery",
+          "text_detailed": "Combine prevalence, urgency, availability of a donor alternative and a lottery under a published rule, with the weight of each stated and the resulting allocations recorded.",
           "types": [
             "framework"
           ],
@@ -5562,6 +5630,7 @@
         {
           "id": "c05",
           "text": "priority to historically underserved/high-burden communities to address structural inequity",
+          "text_detailed": "Give priority to historically underserved and high-burden communities to address structural inequity, with the criteria stated and the effect on access measured and published.",
           "types": [
             "framework"
           ],
@@ -5571,6 +5640,7 @@
         {
           "id": "c06",
           "text": "first-ready/operational sequencing subject to clinical minimums",
+          "text_detailed": "Sequence by operational readiness subject to clinical minimums, with the minimums defined and readiness assessed on stated criteria rather than by centre relationships.",
           "types": [
             "expert"
           ],
@@ -5580,6 +5650,7 @@
         {
           "id": "c07",
           "text": "patient-preference/severity-sensitive rule giving more weight to those willing to accept higher treatment risk under severe disease",
+          "text_detailed": "Give more weight to patients with severe disease who accept higher treatment risk, with the risk explained in full and the preference recorded in the patient's own words.",
           "types": [
             "public"
           ],
