@@ -23,100 +23,41 @@ const CATEGORIES = {
   everyday: 'Everyday practice',
 };
 
+// These are the small number of policies whose type is not explicit enough in the
+// existing audit/source label to infer safely. Public / Expert / Framework is the
+// policy type. It is deliberately separate from Direct / Inferred / Constructed sourcing.
 const TYPE_OVERRIDES = {
-  'M008:c04': ['expert'],
-  'M011:c06': ['framework'],
-  'M012:c06': ['framework'],
-  'M019:c06': ['expert'],
-  'M033:c07': ['expert'],
-  'M034:c03': ['expert'],
-  'M036:c04': ['framework'],
-  'M037:c04': ['expert'],
-  'M038:c02': ['public'],
-  'M040:c05': ['expert'],
-  'M041:c05': ['public'],
-  'M047:c04': ['expert'],
-  'M049:c01': ['public'],
-  'M049:c03': ['expert'],
-  'M054:c03': ['expert'],
-  'M054:c07': ['expert'],
-  'M055:c03': ['expert'],
-  'M055:c04': ['expert'],
-  'M058:c04': ['expert'],
-  'M059:c04': ['public'],
-  'M062:c04': ['framework'],
-  'M066:c06': ['public'],
-  'M066:c07': ['expert'],
-  'M070:c06': ['expert'],
-  'M073:c02': ['expert'],
-  'M074:c04': ['expert'],
-  'M077:c04': ['public'],
-  'M080:c04': ['framework'],
-  'M081:c02': ['expert'],
-  'M082:c06': ['expert'],
-  'M084:c03': ['expert'],
-  'M086:c02': ['framework'],
-  'M088:c02': ['expert'],
-  'M088:c04': ['expert'],
-  'M089:c04': ['framework'],
-  'M091:c03': ['framework'],
-  'M094:c04': ['expert'],
-  'M098:c06': ['expert'],
-  'M100:c06': ['expert'],
-  'M101:c01': ['public'],
-  'M101:c02': ['public'],
-  'M101:c03': ['expert'],
-  'M101:c04': ['framework'],
-  'M102:c05': ['expert'],
-  'M105:c03': ['framework'],
-  'M105:c04': ['expert'],
-  'M108:c02': ['framework'],
-  'M109:c03': ['framework'],
-  'M115:c03': ['framework'],
-  'M118:c01': ['expert'],
-  'M124:c04': ['framework'],
-  'M124:c07': ['expert'],
-  'M126:c04': ['expert'],
-  'M128:c03': ['framework'],
-  'M129:c04': ['framework'],
-  'M130:c04': ['expert'],
-  'M132:c03': ['framework'],
-  'M132:c07': ['expert'],
-  'M133:c06': ['public'],
-  'M143:c04': ['expert'],
-  'M144:c02': ['public'],
-  'M145:c03': ['expert'],
-  'M146:c02': ['public'],
-  'M147:c03': ['expert'],
-  'M148:c04': ['expert'],
-  'M149:c03': ['expert'],
-  'M150:c02': ['expert'],
-  'M150:c04': ['expert'],
-  'M151:c04': ['expert'],
-  'M153:c04': ['expert'],
-  'M155:c04': ['expert'],
-  'M157:c03': ['framework'],
-  'M158:c04': ['expert'],
-  'M159:c04': ['framework'],
-  'M161:c03': ['expert'],
-  'M164:c03': ['framework'],
-  'M164:c05': ['public'],
-  'M165:c03': ['framework'],
-  'M166:c03': ['framework'],
-  'M167:c03': ['framework'],
-  'M171:c04': ['framework'],
-  'M172:c06': ['framework'],
-  'M173:c03': ['framework'],
-  'M174:c07': ['framework'],
-  'M175:c04': ['framework'],
-  'M180:c04': ['expert'],
-  'M181:c02': ['public'],
-  'M185:c05': ['expert'],
-  'M187:c02': ['expert'],
-  'M191:c04': ['expert'],
-  'M194:c04': ['expert'],
-  'M196:c01': ['public'],
-  'M196:c05': ['public'],
+  'M008:c04': ['expert'], 'M011:c06': ['framework'], 'M012:c06': ['framework'],
+  'M019:c06': ['expert'], 'M033:c07': ['expert'], 'M034:c03': ['expert'],
+  'M036:c04': ['framework'], 'M037:c04': ['expert'], 'M038:c02': ['public'],
+  'M040:c05': ['expert'], 'M041:c05': ['public'], 'M047:c04': ['expert'],
+  'M049:c01': ['public'], 'M049:c03': ['expert'], 'M054:c03': ['expert'],
+  'M054:c07': ['expert'], 'M055:c03': ['expert'], 'M055:c04': ['expert'],
+  'M058:c04': ['expert'], 'M059:c04': ['public'], 'M062:c04': ['framework'],
+  'M066:c06': ['public'], 'M066:c07': ['expert'], 'M070:c06': ['expert'],
+  'M073:c02': ['expert'], 'M074:c04': ['expert'], 'M077:c04': ['public'],
+  'M080:c04': ['framework'], 'M081:c02': ['expert'], 'M082:c06': ['expert'],
+  'M084:c03': ['expert'], 'M086:c02': ['framework'], 'M088:c02': ['expert'],
+  'M088:c04': ['expert'], 'M089:c04': ['framework'], 'M091:c03': ['framework'],
+  'M094:c04': ['expert'], 'M098:c06': ['expert'], 'M100:c06': ['expert'],
+  'M101:c01': ['public'], 'M101:c02': ['public'], 'M101:c03': ['expert'],
+  'M101:c04': ['framework'], 'M102:c05': ['expert'], 'M105:c03': ['framework'],
+  'M105:c04': ['expert'], 'M108:c02': ['framework'], 'M109:c03': ['framework'],
+  'M115:c03': ['framework'], 'M118:c01': ['expert'], 'M124:c04': ['framework'],
+  'M124:c07': ['expert'], 'M126:c04': ['expert'], 'M128:c03': ['framework'],
+  'M129:c04': ['framework'], 'M130:c04': ['expert'], 'M132:c03': ['framework'],
+  'M132:c07': ['expert'], 'M133:c06': ['public'], 'M143:c04': ['expert'],
+  'M144:c02': ['public'], 'M145:c03': ['expert'], 'M146:c02': ['public'],
+  'M147:c03': ['expert'], 'M148:c04': ['expert'], 'M149:c03': ['expert'],
+  'M150:c02': ['expert'], 'M150:c04': ['expert'], 'M151:c04': ['expert'],
+  'M153:c04': ['expert'], 'M155:c04': ['expert'], 'M157:c03': ['framework'],
+  'M158:c04': ['expert'], 'M159:c04': ['framework'], 'M161:c03': ['expert'],
+  'M164:c03': ['framework'], 'M164:c05': ['public'], 'M165:c03': ['framework'],
+  'M166:c03': ['framework'], 'M167:c03': ['framework'], 'M171:c04': ['framework'],
+  'M172:c06': ['framework'], 'M173:c03': ['framework'], 'M174:c07': ['framework'],
+  'M175:c04': ['framework'], 'M180:c04': ['expert'], 'M181:c02': ['public'],
+  'M185:c05': ['expert'], 'M187:c02': ['expert'], 'M191:c04': ['expert'],
+  'M194:c04': ['expert'], 'M196:c01': ['public'], 'M196:c05': ['public'],
   'M198:c05': ['expert'],
 };
 
@@ -151,16 +92,51 @@ function stripMarkdown(text) {
     .trim();
 }
 
-function extractSection(markdown, label) {
-  const re = new RegExp(`^##\\s+(?:\\d+[.)]?\\s+)?${label}\\s*$`, 'im');
-  const match = re.exec(markdown);
-  if (!match) return '';
-  const rest = markdown.slice(match.index + match[0].length);
-  const next = rest.search(/^##\s+/m);
-  return stripMarkdown(next >= 0 ? rest.slice(0, next) : rest);
+function extractHeadingSection(markdown, labels) {
+  for (const label of labels) {
+    const re = new RegExp(`^##\\s+(?:\\d+[.)]?\\s+)?${label}\\s*$`, 'im');
+    const match = re.exec(markdown);
+    if (!match) continue;
+    const rest = markdown.slice(match.index + match[0].length);
+    const next = rest.search(/^##\s+/m);
+    const value = stripMarkdown(next >= 0 ? rest.slice(0, next) : rest);
+    if (value) return value;
+  }
+  return '';
 }
 
-function sourceKind(policy) {
+function extractScenarioPair(markdown, label, nextLabel) {
+  const start = new RegExp(`\\*\\*${label}:\\*\\*\\s*`, 'i').exec(markdown);
+  if (!start) return '';
+  const rest = markdown.slice(start.index + start[0].length);
+  const next = nextLabel ? new RegExp(`\\n\\s*\\*\\*${nextLabel}:\\*\\*`, 'i').exec(rest) : null;
+  const heading = /\n##\s+/.exec(rest);
+  let end = rest.length;
+  if (next) end = Math.min(end, next.index);
+  if (heading) end = Math.min(end, heading.index);
+  return stripMarkdown(rest.slice(0, end));
+}
+
+function extractDecisionQuestion(markdown, title) {
+  const match = /\*\*Decision question:\*\*\s*([^\n]+)/i.exec(markdown)
+    || /^Decision question:\s*([^\n]+)/im.exec(markdown);
+  if (match) return stripMarkdown(match[1]);
+  return title;
+}
+
+function caseTexts(markdown, title) {
+  let concise = extractHeadingSection(markdown, ['Concise representation', 'Concise scenario']);
+  let detailed = extractHeadingSection(markdown, ['Detailed representation', 'Detailed scenario']);
+  if (!concise) concise = extractScenarioPair(markdown, 'Concise', 'Detailed');
+  if (!detailed) detailed = extractScenarioPair(markdown, 'Detailed', null);
+  const fallback = extractDecisionQuestion(markdown, title);
+  return {
+    concise: concise || detailed || fallback,
+    detailed: detailed || concise || fallback,
+  };
+}
+
+function sourcing(policy) {
   const cls = String(policy.provenance_class || '').toLowerCase();
   const label = String(policy.audit_provenance_label || '').toLowerCase();
   if (cls === 'direct-source') return 'direct';
@@ -176,10 +152,9 @@ function loadReviewedTypes() {
   for (const name of fs.readdirSync(PROJECTION_DIR).filter((x) => x.endsWith('.json'))) {
     const file = JSON.parse(fs.readFileSync(path.join(PROJECTION_DIR, name), 'utf8'));
     const caseId = String(file.case_family_id || '').toUpperCase();
-    const inventoryId = caseId.replace(/^M/, 'M');
     for (const [type, ids] of Object.entries(file.role_assignments || {})) {
       for (const id of ids) {
-        const key = `${inventoryId}:${id}`;
+        const key = `${caseId}:${id}`;
         if (!result.has(key)) result.set(key, new Set());
         result.get(key).add(type);
       }
@@ -216,16 +191,14 @@ const reviewed = loadReviewedTypes();
 let policyCount = 0;
 const cases = source.cases.map((entry) => {
   const markdown = fs.readFileSync(path.join(ROOT, entry.deep_case_path), 'utf8');
-  const concise = extractSection(markdown, 'Concise representation');
-  const detailed = extractSection(markdown, 'Detailed representation');
-  if (!concise && !detailed) throw new Error(`No concise or detailed case text found for ${entry.inventory_id}`);
+  const { concise, detailed } = caseTexts(markdown, entry.title);
   const policies = entry.candidate_universe.map((policy) => {
     policyCount += 1;
     return {
       id: policy.candidate_id,
       text: policy.text,
       types: inferTypes(entry.inventory_id, policy, reviewed),
-      sourcing: sourceKind(policy),
+      sourcing: sourcing(policy),
       source_note: policy.audit_provenance_label,
       source_mark: policy.audit_source_mark === true,
     };
@@ -234,8 +207,8 @@ const cases = source.cases.map((entry) => {
     id: entry.inventory_id,
     title: entry.title,
     category: categoryFor(entry.inventory_id),
-    concise: concise || detailed,
-    detailed: detailed || concise,
+    concise,
+    detailed,
     policies,
     source_file: entry.deep_case_path,
   };
@@ -243,6 +216,12 @@ const cases = source.cases.map((entry) => {
 
 if (cases.length !== 200) throw new Error(`Expected 200 cases, found ${cases.length}`);
 if (policyCount !== 1298) throw new Error(`Expected 1298 policies, found ${policyCount}`);
+for (const benchCase of cases) {
+  if (!benchCase.concise || !benchCase.detailed) throw new Error(`Missing case text for ${benchCase.id}`);
+  for (const policy of benchCase.policies) {
+    if (!policy.types.length) throw new Error(`Untyped policy ${benchCase.id}:${policy.id}`);
+  }
+}
 
 const output = {
   resource_id: 'bioethics-bench-cases',
@@ -262,7 +241,6 @@ if (process.argv.includes('--write')) {
   console.log(`Wrote ${path.relative(ROOT, OUTPUT)}: ${cases.length} cases / ${policyCount} policies.`);
 } else {
   if (!fs.existsSync(OUTPUT)) throw new Error(`${path.relative(ROOT, OUTPUT)} is missing; run with --write`);
-  const current = fs.readFileSync(OUTPUT, 'utf8');
-  if (current !== rendered) throw new Error(`${path.relative(ROOT, OUTPUT)} is stale; run with --write`);
+  if (fs.readFileSync(OUTPUT, 'utf8') !== rendered) throw new Error(`${path.relative(ROOT, OUTPUT)} is stale; run with --write`);
   console.log(`Verified ${cases.length} cases / ${policyCount} policies.`);
 }
