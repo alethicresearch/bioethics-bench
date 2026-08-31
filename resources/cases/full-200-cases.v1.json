@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 765,
+  "detailed_policy_count": 882,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -12134,6 +12134,7 @@
         {
           "id": "c01",
           "text": "allow internal EHR prescreening under research/privacy governance before patient contact",
+          "text_detailed": "Permit internal prescreening of records under research and privacy governance before any patient contact, with the queries logged, the fields limited to what eligibility requires, and access confined to named staff.",
           "types": [
             "expert"
           ],
@@ -12143,6 +12144,7 @@
         {
           "id": "c02",
           "text": "require treating-clinician mediation before outreach",
+          "text_detailed": "Require the treating clinician to mediate before any outreach, so that the first approach comes from someone the patient knows, with the clinician free to decline on the patient's behalf.",
           "types": [
             "expert"
           ],
@@ -12152,6 +12154,7 @@
         {
           "id": "c03",
           "text": "direct research-team outreach after prescreening with transparent opt-out",
+          "text_detailed": "Allow the research team to make contact directly after prescreening, with a transparent opt-out offered in the first communication and honoured across all future studies.",
           "types": [
             "expert"
           ],
@@ -12161,6 +12164,7 @@
         {
           "id": "c04",
           "text": "explicit patient opt-in to research-search services before algorithmic screening",
+          "text_detailed": "Require explicit patient opt-in to research-search services before any algorithmic screening, with the choice offered at registration and revisable at any time.",
           "types": [
             "framework"
           ],
@@ -12170,6 +12174,7 @@
         {
           "id": "c05",
           "text": "bias/representativeness rule requiring subgroup audit before use",
+          "text_detailed": "Require a subgroup audit for bias and representativeness before the tool is used, with the audit repeated as the model or population changes and its results recorded with the protocol.",
           "types": [
             "expert",
             "framework"
@@ -12180,6 +12185,7 @@
         {
           "id": "c06",
           "text": "privacy framework minimizing data fields and logging every query",
+          "text_detailed": "Minimise the data fields queried and log every query, with the log auditable and the field list justified against the eligibility criteria rather than convenience.",
           "types": [
             "framework"
           ],
@@ -12189,6 +12195,7 @@
         {
           "id": "c07",
           "text": "access/justice framework favoring prescreening where it reduces arbitrary clinician gatekeeping and improves representative enrollment",
+          "text_detailed": "Favour prescreening where it reduces arbitrary clinician gatekeeping and improves representative enrolment, with enrolment demographics reported and compared against the eligible population.",
           "types": [
             "framework"
           ],
@@ -12198,6 +12205,7 @@
         {
           "id": "c08",
           "text": "Let patients say once whether they wish to be approached about research, and honour that setting, rather than requiring a decision at each contact.",
+          "text_detailed": "Let patients say once whether they wish to be approached about research, and honour that setting, rather than requiring a decision at each contact, with the setting visible to them and changeable.",
           "types": [
             "public"
           ],
@@ -12218,6 +12226,7 @@
         {
           "id": "c01",
           "text": "immediately encourage/route to human crisis/emergency support when credible acute risk is detected",
+          "text_detailed": "Route the user to human crisis or emergency support as soon as credible acute risk is detected, with the routing offered clearly and the detection thresholds set in advance and reviewed.",
           "types": [
             "expert"
           ],
@@ -12227,6 +12236,7 @@
         {
           "id": "c02",
           "text": "keep conversational support active while escalating, without presenting AI as substitute treatment",
+          "text_detailed": "Keep conversational support active while escalating, without presenting the system as a substitute for treatment, and state that limitation in the conversation rather than only in the terms of use.",
           "types": [
             "expert"
           ],
@@ -12236,6 +12246,7 @@
         {
           "id": "c03",
           "text": "require emergency-contact/location escalation only with prior consent or defined imminent-risk/legal threshold",
+          "text_detailed": "Escalate to an emergency contact or share location only with prior consent or where a defined imminent-risk or legal threshold is met, with the threshold stated to the user before it could apply.",
           "types": [
             "expert"
           ],
@@ -12245,6 +12256,7 @@
         {
           "id": "c04",
           "text": "stop ordinary therapeutic-style conversation and switch to crisis-safe minimal mode",
+          "text_detailed": "Stop ordinary therapeutic-style conversation and switch to a crisis-safe minimal mode, with what that mode does and does not do defined in advance and tested.",
           "types": [
             "expert"
           ],
@@ -12254,6 +12266,7 @@
         {
           "id": "c05",
           "text": "autonomy/privacy framework limiting covert escalation/data sharing",
+          "text_detailed": "Limit covert escalation and data sharing on autonomy and privacy grounds, so that nothing is disclosed the user was not told about before the conversation began.",
           "types": [
             "framework"
           ],
@@ -12263,6 +12276,7 @@
         {
           "id": "c06",
           "text": "beneficence/safety framework favoring proactive human escalation when risk is high",
+          "text_detailed": "Escalate proactively to a human where risk is high, on beneficence grounds, with the threshold set conservatively and its consequences explained to the user in advance.",
           "types": [
             "framework"
           ],
@@ -12272,6 +12286,7 @@
         {
           "id": "c07",
           "text": "Tell the user at the start what the system will do if they say they intend to harm themselves, and give them a way to reach a person immediately.",
+          "text_detailed": "Tell the user at the start what the system will do if they say they intend to harm themselves, and give them a way to reach a person immediately, with that route present in the interface throughout.",
           "types": [
             "public"
           ],
@@ -12292,6 +12307,7 @@
         {
           "id": "c01",
           "text": "use ML only as advisory input to transparent allocation rule",
+          "text_detailed": "Use the model only as advisory input to a transparent allocation rule, with the rule remaining the decision procedure and the model's contribution recorded for each case.",
           "types": [
             "expert",
             "framework"
@@ -12302,6 +12318,7 @@
         {
           "id": "c02",
           "text": "integrate validated ML prediction directly into declared score after subgroup/robustness audit",
+          "text_detailed": "Integrate the validated prediction directly into the declared score after subgroup and robustness audit, with the audit published and repeated on each model update.",
           "types": [
             "expert"
           ],
@@ -12311,6 +12328,7 @@
         {
           "id": "c03",
           "text": "prohibit black-box features that cannot be related to legitimate allocation principles",
+          "text_detailed": "Prohibit features that cannot be related to a legitimate allocation principle, with each feature justified in the published rule rather than retained because it improves fit.",
           "types": [
             "framework"
           ],
@@ -12320,6 +12338,7 @@
         {
           "id": "c04",
           "text": "human committee review for exceptions/outlier cases",
+          "text_detailed": "Route exceptions and outlier cases to a human committee, with the criteria for referral stated and the committee's reasoning recorded and reviewable.",
           "types": [
             "expert"
           ],
@@ -12329,6 +12348,7 @@
         {
           "id": "c05",
           "text": "utility framework favoring improved outcome prediction",
+          "text_detailed": "Favour improved outcome prediction on utility grounds, with the improvement measured against the existing rule and reported by subgroup rather than in aggregate alone.",
           "types": [
             "framework"
           ],
@@ -12338,6 +12358,7 @@
         {
           "id": "c06",
           "text": "procedural-legitimacy/equity framework limiting opaque algorithmic influence",
+          "text_detailed": "Limit opaque algorithmic influence on grounds of procedural legitimacy and equity, requiring that a candidate can be told why they were ranked as they were.",
           "types": [
             "framework"
           ],
@@ -12347,6 +12368,7 @@
         {
           "id": "c07",
           "text": "prospective silent evaluation before policy deployment with public reporting of subgroup impact",
+          "text_detailed": "Evaluate the model silently against the existing rule before any policy deployment, with subgroup impact reported publicly and deployment conditional on that report.",
           "types": [
             "expert"
           ],
@@ -12356,6 +12378,7 @@
         {
           "id": "c08",
           "text": "Publish the allocation rule and give every candidate the reason for their own priority in terms they can question.",
+          "text_detailed": "Publish the allocation rule and give every candidate the reason for their own priority in terms they can question, with a named route to challenge it.",
           "types": [
             "public"
           ],
@@ -12376,6 +12399,7 @@
         {
           "id": "c01",
           "text": "do not deploy until adequate local-population validation",
+          "text_detailed": "Do not deploy until validation on the local population is adequate, with adequacy defined by stated sample and performance criteria and the validation conducted locally rather than inferred.",
           "types": [
             "expert"
           ],
@@ -12385,6 +12409,7 @@
         {
           "id": "c02",
           "text": "monitored limited deployment with human confirmation while gathering local evidence",
+          "text_detailed": "Deploy in a limited monitored way with human confirmation while local evidence is gathered, with the monitoring plan, the confirmation requirement and the review date fixed at the start.",
           "types": [
             "expert"
           ],
@@ -12394,6 +12419,7 @@
         {
           "id": "c03",
           "text": "deploy broadly if model substantially improves access over current absence of care, with active monitoring/rollback",
+          "text_detailed": "Deploy broadly where the model substantially improves on the current absence of care, with active monitoring and a rollback threshold set in advance and acted on automatically.",
           "types": [
             "framework"
           ],
@@ -12403,6 +12429,7 @@
         {
           "id": "c04",
           "text": "restrict to tasks/subgroups where local performance has been verified",
+          "text_detailed": "Restrict use to the tasks and subgroups where local performance has been verified, with the restriction enforced in the tool rather than left to the user's judgment.",
           "types": [
             "expert"
           ],
@@ -12412,6 +12439,7 @@
         {
           "id": "c05",
           "text": "epistemic-justice framework requiring local expertise/data and governance",
+          "text_detailed": "Require local expertise, local data and local governance on epistemic-justice grounds, with the governance body constituted locally and able to withdraw the tool.",
           "types": [
             "expert",
             "framework"
@@ -12422,6 +12450,7 @@
         {
           "id": "c06",
           "text": "access/beneficence framework tolerating bounded uncertainty when alternative is no service",
+          "text_detailed": "Tolerate bounded uncertainty where the alternative is no service at all, with the bound stated, the alternative described honestly, and outcomes monitored against it.",
           "types": [
             "framework"
           ],
@@ -12431,6 +12460,7 @@
         {
           "id": "c07",
           "text": "equity rule requiring local subgroup performance and community oversight rather than importing data-rich-country averages",
+          "text_detailed": "Require local subgroup performance and community oversight rather than importing averages from data-rich countries, with both conditions met before deployment and reported afterwards.",
           "types": [
             "framework"
           ],
@@ -12440,6 +12470,7 @@
         {
           "id": "c08",
           "text": "Tell patients when a tool has not been validated in their population and offer the existing pathway alongside it.",
+          "text_detailed": "Tell patients when a tool has not been validated in their population and offer the existing pathway alongside it, with the offer made before the test rather than after a result.",
           "types": [
             "public"
           ],
@@ -12460,6 +12491,7 @@
         {
           "id": "c01",
           "text": "replace animal study when nonanimal method is scientifically adequate for the question",
+          "text_detailed": "Replace the animal study where a non-animal method is scientifically adequate for the question, with adequacy assessed against the specific question and the assessment recorded by the review committee.",
           "types": [
             "expert"
           ],
@@ -12469,6 +12501,7 @@
         {
           "id": "c02",
           "text": "use staged NAM-first design and animals only for residual questions not answerable otherwise",
+          "text_detailed": "Design non-animal methods first and use animals only for the residual questions those methods cannot answer, with the residual questions stated in the protocol before any animal work begins.",
           "types": [
             "expert"
           ],
@@ -12478,6 +12511,7 @@
         {
           "id": "c03",
           "text": "permit animal study when whole-organism evidence is materially necessary and harms minimized",
+          "text_detailed": "Permit the animal study where whole-organism evidence is materially necessary, with the necessity argued in the protocol and harms minimised through stated refinements.",
           "types": [
             "expert"
           ],
@@ -12487,6 +12521,7 @@
         {
           "id": "c04",
           "text": "require higher scientific-value threshold as animal harm severity rises",
+          "text_detailed": "Raise the scientific-value threshold as harm severity rises, with the severity classification made in advance and the corresponding threshold stated in the review criteria.",
           "types": [
             "expert",
             "framework"
@@ -12497,6 +12532,7 @@
         {
           "id": "c05",
           "text": "rights-based abolitionist position rejecting harmful non-beneficial animal experimentation",
+          "text_detailed": "Reject harmful non-beneficial animal experimentation on rights grounds, with the rejection applying to the procedure rather than to the field, and stated as a categorical limit.",
           "types": [
             "framework"
           ],
@@ -12506,6 +12542,7 @@
         {
           "id": "c06",
           "text": "welfare-utilitarian harm-benefit position allowing research when expected benefit and necessity justify burden",
+          "text_detailed": "Permit research where expected benefit and necessity justify the burden, with the harm-benefit assessment written out, quantified where possible, and available for review.",
           "types": [
             "framework"
           ],
@@ -12515,6 +12552,7 @@
         {
           "id": "c07",
           "text": "precautionary replacement rule favoring slower/costlier NAMs when they can answer most of the question and remaining uncertainty is not decision-critical",
+          "text_detailed": "Prefer slower or costlier non-animal methods where they can answer most of the question and the remaining uncertainty is not decision-critical, with that judgment recorded in the protocol.",
           "types": [
             "framework"
           ],
@@ -12524,6 +12562,7 @@
         {
           "id": "c08",
           "text": "Publish what was done to the animals and what the study found, so that the harm and its justification can be judged outside the review committee.",
+          "text_detailed": "Publish what was done to the animals and what the study found, so that the harm and its justification can be judged outside the review committee, including studies that produced no usable result.",
           "types": [
             "public"
           ],
@@ -12544,6 +12583,7 @@
         {
           "id": "c01",
           "text": "permit only when NHP model is scientifically necessary and no valid alternative can answer the question, under enhanced welfare/3Rs review",
+          "text_detailed": "Permit primate work only where the model is scientifically necessary and no valid alternative can answer the question, under enhanced welfare review, with each element established independently and recorded.",
           "types": [
             "expert"
           ],
@@ -12553,6 +12593,7 @@
         {
           "id": "c02",
           "text": "prohibit significant-harm NHP research even where scientifically useful because moral status/cognitive capacities impose a higher bar",
+          "text_detailed": "Prohibit significant-harm primate research even where scientifically useful, on the ground that cognitive capacities impose a higher bar, with the prohibition defined by severity rather than by species alone.",
           "types": [
             "framework"
           ],
@@ -12562,6 +12603,7 @@
         {
           "id": "c03",
           "text": "allow only low/moderate severity except exceptional life-saving objectives",
+          "text_detailed": "Permit only low or moderate severity, with exceptions confined to life-saving objectives defined in advance and approved by a body outside the institution.",
           "types": [
             "framework"
           ],
@@ -12571,6 +12613,7 @@
         {
           "id": "c04",
           "text": "phase out NHP use as alternatives mature through explicit replacement milestones",
+          "text_detailed": "Phase out primate use as alternatives mature, with explicit replacement milestones, dates, and public reporting of progress against them.",
           "types": [
             "framework"
           ],
@@ -12580,6 +12623,7 @@
         {
           "id": "c05",
           "text": "welfare-utilitarian position permitting case-by-case use with strong harm-benefit justification",
+          "text_detailed": "Permit case-by-case use with a strong harm-benefit justification, with the justification specific to the study rather than to the research programme, and reassessed on renewal.",
           "types": [
             "expert",
             "framework"
@@ -12590,6 +12634,7 @@
         {
           "id": "c06",
           "text": "rights/personhood-adjacent position rejecting instrumental harmful use of great apes/highly cognitively complex primates",
+          "text_detailed": "Reject instrumental harmful use of great apes and highly cognitively complex primates, with the covered species listed and the list revised as evidence about cognition develops.",
           "types": [
             "framework"
           ],
@@ -12599,6 +12644,7 @@
         {
           "id": "c07",
           "text": "independent species-specific ethics review + transparency/public reporting",
+          "text_detailed": "Require independent species-specific ethics review with public reporting, conducted by reviewers with relevant expertise and their decisions published in summary.",
           "types": [
             "expert"
           ],
@@ -12608,6 +12654,7 @@
         {
           "id": "c08",
           "text": "Require public reporting of severity and outcomes for every primate study, so that the case for continuing this work rests on what it has produced.",
+          "text_detailed": "Require public reporting of severity and outcomes for every primate study, so that the case for continuing this work rests on what it has produced rather than on what it promised.",
           "types": [
             "public"
           ],
@@ -12628,6 +12675,7 @@
         {
           "id": "c01",
           "text": "approve only when severe challenge is scientifically necessary and humane endpoint/minimization optimized",
+          "text_detailed": "Approve the severe challenge only where it is scientifically necessary and humane endpoints and minimisation are optimised, with the endpoints defined before approval and their application audited.",
           "types": [
             "expert"
           ],
@@ -12637,6 +12685,7 @@
         {
           "id": "c02",
           "text": "require lower-severity design even at reduced information yield when severe morbidity is not indispensable",
+          "text_detailed": "Require a lower-severity design even at reduced information yield where severe morbidity is not indispensable, with indispensability argued rather than asserted.",
           "types": [
             "framework"
           ],
@@ -12646,6 +12695,7 @@
         {
           "id": "c03",
           "text": "reject severe study above an absolute welfare ceiling",
+          "text_detailed": "Reject any study above an absolute welfare ceiling regardless of scientific value, with the ceiling stated in the institution's policy rather than judged per protocol.",
           "types": [
             "framework"
           ],
@@ -12655,6 +12705,7 @@
         {
           "id": "c04",
           "text": "staged pilot/escalation to determine whether lower challenge severity can answer the question",
+          "text_detailed": "Run a staged pilot to establish whether a lower challenge severity can answer the question, with escalation permitted only on the pilot's result and reviewed before it proceeds.",
           "types": [
             "expert"
           ],
@@ -12664,6 +12715,7 @@
         {
           "id": "c05",
           "text": "expected-benefit harm-benefit framework",
+          "text_detailed": "Weigh expected benefit against harm under a stated framework, with both quantified as far as possible and the assessment recorded for later comparison with what the study delivered.",
           "types": [
             "framework"
           ],
@@ -12673,6 +12725,7 @@
         {
           "id": "c06",
           "text": "animal-rights/anti-instrumentalization framework rejecting severe challenge",
+          "text_detailed": "Reject severe challenge on anti-instrumentalisation grounds, with the position stated as a limit on what may be done rather than as a factor to weigh.",
           "types": [
             "framework"
           ],
@@ -12682,6 +12735,7 @@
         {
           "id": "c07",
           "text": "replacement-first rule requiring nonanimal/in vitro evidence to exhaust uncertainty before severe challenge",
+          "text_detailed": "Require non-animal and in vitro evidence to exhaust the reducible uncertainty before any severe challenge, with that evidence presented in the protocol.",
           "types": [
             "framework"
           ],
@@ -12691,6 +12745,7 @@
         {
           "id": "c08",
           "text": "Publish the severity endpoints in advance and report what actually happened, so that the promised limits can be checked afterwards.",
+          "text_detailed": "Publish the severity endpoints in advance and report what actually happened, so that the promised limits can be checked afterwards, including where endpoints were exceeded.",
           "types": [
             "public"
           ],
@@ -12711,6 +12766,7 @@
         {
           "id": "c01",
           "text": "meet regulatory research-animal welfare minimums + veterinary care/IACUC",
+          "text_detailed": "Meet regulatory research-animal welfare minimums with veterinary care and committee oversight, with compliance documented and inspections recorded.",
           "types": [
             "expert"
           ],
@@ -12720,6 +12776,7 @@
         {
           "id": "c02",
           "text": "require enhanced species-specific welfare exceeding ordinary lab minimums because animals are bred/lived/killed as organ sources",
+          "text_detailed": "Require enhanced species-specific welfare beyond ordinary laboratory minimums, on the ground that these animals are bred, live and are killed as organ sources, with the standards written and audited.",
           "types": [
             "framework"
           ],
@@ -12729,6 +12786,7 @@
         {
           "id": "c03",
           "text": "prohibit program configurations causing chronic severe welfare impairment even if biosecurity improves",
+          "text_detailed": "Prohibit programme configurations that cause chronic severe welfare impairment even where they improve biosecurity, with the prohibited configurations named rather than assessed case by case.",
           "types": [
             "framework"
           ],
@@ -12738,6 +12796,7 @@
         {
           "id": "c04",
           "text": "enrich housing/social/behavioral opportunities to maximum compatible with pathogen control",
+          "text_detailed": "Provide housing, social contact and behavioural opportunity to the maximum compatible with pathogen control, with the trade-off documented for each restriction rather than assumed.",
           "types": [
             "framework"
           ],
@@ -12747,6 +12806,7 @@
         {
           "id": "c05",
           "text": "harm-benefit framework allowing source-animal use for major human benefit under stringent welfare",
+          "text_detailed": "Permit source-animal use for major human benefit under stringent welfare conditions, with those conditions specified, monitored and reported alongside transplant outcomes.",
           "types": [
             "framework"
           ],
@@ -12756,6 +12816,7 @@
         {
           "id": "c06",
           "text": "animal-rights position rejecting breeding/killing sentient animals as organ inventories",
+          "text_detailed": "Reject breeding and killing sentient animals as organ inventories, with the position stated as a limit on the programme rather than as a welfare standard within it.",
           "types": [
             "framework"
           ],
@@ -12765,6 +12826,7 @@
         {
           "id": "c07",
           "text": "independent welfare audit/public reporting + refinement benchmarks",
+          "text_detailed": "Require independent welfare audit, public reporting and refinement benchmarks, with the benchmarks improving over time and progress against them published.",
           "types": [
             "expert"
           ],
@@ -12774,6 +12836,7 @@
         {
           "id": "c08",
           "text": "Require independent inspection with published findings, so that welfare inside a closed facility can be verified rather than asserted.",
+          "text_detailed": "Require independent inspection with published findings, so that welfare inside a closed facility can be verified rather than asserted, including unannounced inspections.",
           "types": [
             "public"
           ],
@@ -12794,6 +12857,7 @@
         {
           "id": "c01",
           "text": "prohibit medically important antimicrobials for growth promotion/routine prevention without diagnosed disease",
+          "text_detailed": "Prohibit medically important antimicrobials for growth promotion and for routine prevention without diagnosed disease, with the prohibition enforced through prescribing rules and monitored through sales data.",
           "types": [
             "expert"
           ],
@@ -12803,6 +12867,7 @@
         {
           "id": "c02",
           "text": "allow therapeutic treatment of clinically ill animals under veterinary oversight",
+          "text_detailed": "Permit therapeutic treatment of clinically ill animals under veterinary oversight, with diagnosis recorded and treatment limited to the affected animals and the necessary course.",
           "types": [
             "expert"
           ],
@@ -12812,6 +12877,7 @@
         {
           "id": "c03",
           "text": "allow narrowly defined metaphylaxis/prevention in high-risk groups where husbandry alternatives insufficient",
+          "text_detailed": "Permit narrowly defined group prevention in high-risk groups where husbandry alternatives are insufficient, with the definition written, time-limited and reviewed against use data.",
           "types": [
             "expert"
           ],
@@ -12821,6 +12887,7 @@
         {
           "id": "c04",
           "text": "stricter prevention ban favoring husbandry/biosecurity instead",
+          "text_detailed": "Ban preventive use more strictly and require husbandry and biosecurity instead, with the transition period stated and the husbandry standards specified.",
           "types": [
             "framework"
           ],
@@ -12830,6 +12897,7 @@
         {
           "id": "c05",
           "text": "animal-welfare framework opposing restrictions that leave sick animals untreated",
+          "text_detailed": "Oppose restrictions that would leave sick animals untreated, on welfare grounds, with the concern addressed through diagnosis-based access rather than by relaxing the prohibition.",
           "types": [
             "framework"
           ],
@@ -12839,6 +12907,7 @@
         {
           "id": "c06",
           "text": "One Health stewardship framework prioritizing preservation of antimicrobial effectiveness",
+          "text_detailed": "Prioritise preserving antimicrobial effectiveness under a One Health standard, with the reduction targets stated, monitored and reported across sectors.",
           "types": [
             "framework"
           ],
@@ -12848,6 +12917,7 @@
         {
           "id": "c07",
           "text": "farm-transition support rule coupling restrictions with husbandry investment so costs do not incentivize undertreatment",
+          "text_detailed": "Couple restrictions with husbandry investment so that costs do not drive under-treatment, with the support funded and its uptake reported alongside use data.",
           "types": [
             "framework"
           ],
@@ -12857,6 +12927,7 @@
         {
           "id": "c08",
           "text": "Publish farm-level antimicrobial use so that buyers and the public can see what a producer actually uses.",
+          "text_detailed": "Publish farm-level antimicrobial use so that buyers and the public can see what a producer actually uses, with the data comparable across producers rather than self-described.",
           "types": [
             "public"
           ],
@@ -12877,6 +12948,7 @@
         {
           "id": "c01",
           "text": "rapid culling/movement control in infected premises plus surveillance/biosecurity",
+          "text_detailed": "Cull rapidly on infected premises with movement control, surveillance and biosecurity, with the criteria for culling defined in advance and the perimeter set by risk assessment.",
           "types": [
             "expert"
           ],
@@ -12886,6 +12958,7 @@
         {
           "id": "c02",
           "text": "vaccination as complementary control where risk analysis supports it",
+          "text_detailed": "Use vaccination as a complementary control where risk analysis supports it, with the analysis published and the vaccination programme monitored for effect on transmission.",
           "types": [
             "expert"
           ],
@@ -12895,6 +12968,7 @@
         {
           "id": "c03",
           "text": "targeted ring vaccination plus limited culling",
+          "text_detailed": "Use targeted ring vaccination with limited culling, with the ring size set by risk assessment and both interventions reported afterwards.",
           "types": [
             "expert"
           ],
@@ -12904,6 +12978,7 @@
         {
           "id": "c04",
           "text": "preventive vaccination in high-risk regions before outbreak expansion",
+          "text_detailed": "Vaccinate preventively in high-risk regions before outbreak expansion, with the regions identified on stated criteria and the programme reviewed against subsequent outbreaks.",
           "types": [
             "expert"
           ],
@@ -12913,6 +12988,7 @@
         {
           "id": "c05",
           "text": "animal-welfare framework minimizing killing while controlling transmission",
+          "text_detailed": "Minimise killing while controlling transmission, on welfare grounds, with the number of animals killed reported and alternatives documented for each decision.",
           "types": [
             "framework"
           ],
@@ -12922,6 +12998,7 @@
         {
           "id": "c06",
           "text": "public/animal-health consequentialist framework favoring fastest reliable eradication strategy",
+          "text_detailed": "Choose the fastest reliable eradication strategy on public and animal health grounds, with reliability assessed on evidence and the choice explained rather than defaulted to.",
           "types": [
             "framework"
           ],
@@ -12931,6 +13008,7 @@
         {
           "id": "c07",
           "text": "proportionality rule escalating from surveillance/biosecurity/vaccination to culling according to outbreak risk and vaccine constraints",
+          "text_detailed": "Escalate from surveillance and biosecurity through vaccination to culling according to outbreak risk and vaccine constraints, with the escalation criteria published in advance.",
           "types": [
             "expert",
             "framework"
@@ -12941,6 +13019,7 @@
         {
           "id": "c08",
           "text": "Compensate affected farmers promptly and in full, so that reporting an outbreak does not ruin the household that reports it.",
+          "text_detailed": "Compensate affected farmers promptly and in full, so that reporting an outbreak does not ruin the household that reports it, with payment timelines stated and met.",
           "types": [
             "public"
           ],
@@ -12961,6 +13040,7 @@
         {
           "id": "c01",
           "text": "targeted lethal control where necessary for major ecological benefit with humane methods",
+          "text_detailed": "Use targeted lethal control where necessary for major ecological benefit, with humane methods specified, operators trained, and welfare outcomes monitored and reported.",
           "types": [
             "expert"
           ],
@@ -12970,6 +13050,7 @@
         {
           "id": "c02",
           "text": "fertility control/nonlethal population management where effective",
+          "text_detailed": "Use fertility control or other non-lethal management where it is effective, with effectiveness assessed against the ecological objective and the method reviewed as evidence accumulates.",
           "types": [
             "expert"
           ],
@@ -12979,6 +13060,7 @@
         {
           "id": "c03",
           "text": "exclusion/habitat modification before direct killing",
+          "text_detailed": "Use exclusion and habitat modification before any direct killing, with those measures implemented and their results assessed before lethal control is considered.",
           "types": [
             "expert",
             "framework"
@@ -12989,6 +13071,7 @@
         {
           "id": "c04",
           "text": "no intervention where control harms exceed ecological benefit or repeated killing cannot achieve goals",
+          "text_detailed": "Do not intervene where the harms of control exceed the ecological benefit or where repeated killing cannot achieve the objective, with both assessed in advance and revisited.",
           "types": [
             "framework"
           ],
@@ -12998,6 +13081,7 @@
         {
           "id": "c05",
           "text": "conservation/ecosystem integrity framework favoring effective population reduction",
+          "text_detailed": "Favour effective population reduction on conservation grounds, with the ecological objective stated numerically and progress toward it reported.",
           "types": [
             "framework"
           ],
@@ -13007,6 +13091,7 @@
         {
           "id": "c06",
           "text": "animal-rights/welfare framework opposing lethal control when less harmful options exist",
+          "text_detailed": "Oppose lethal control where less harmful options exist, with those options identified specifically and their feasibility assessed rather than dismissed on cost alone.",
           "types": [
             "framework"
           ],
@@ -13016,6 +13101,7 @@
         {
           "id": "c07",
           "text": "integrated adaptive management with welfare monitoring and stop/review criteria",
+          "text_detailed": "Manage adaptively with welfare monitoring and stop-and-review criteria set in advance, with the programme paused when those criteria are met rather than continued to completion.",
           "types": [
             "expert"
           ],
@@ -13025,6 +13111,7 @@
         {
           "id": "c08",
           "text": "Decide with the island community and publish the method chosen, so that people living with the outcome chose it.",
+          "text_detailed": "Decide with the island community and publish the method chosen, so that people living with the outcome chose it, and report back on what it achieved.",
           "types": [
             "public"
           ],
@@ -13045,6 +13132,7 @@
         {
           "id": "c01",
           "text": "vaccinate/intervene when disease threatens public health or conservation and intervention is effective",
+          "text_detailed": "Vaccinate or otherwise intervene where the disease threatens public health or conservation and the intervention is effective, with effectiveness established and the programme monitored.",
           "types": [
             "expert"
           ],
@@ -13054,6 +13142,7 @@
         {
           "id": "c02",
           "text": "intervene specifically to reduce severe wild-animal suffering where ecological risk is low",
+          "text_detailed": "Intervene specifically to reduce severe wild-animal suffering where ecological risk is low, with the suffering documented and the ecological assessment made in advance.",
           "types": [
             "framework"
           ],
@@ -13063,6 +13152,7 @@
         {
           "id": "c03",
           "text": "nonintervention when ecological effects of manipulation are too uncertain",
+          "text_detailed": "Do not intervene where the ecological effects of manipulation are too uncertain, naming the uncertainty and what evidence would resolve it so the position can change.",
           "types": [
             "framework"
           ],
@@ -13072,6 +13162,7 @@
         {
           "id": "c04",
           "text": "targeted intervention in high-burden populations with monitoring rather than ecosystem-wide program",
+          "text_detailed": "Intervene in high-burden populations with monitoring rather than running an ecosystem-wide programme, with the boundary of the intervention stated and its effects tracked.",
           "types": [
             "framework"
           ],
@@ -13081,6 +13172,7 @@
         {
           "id": "c05",
           "text": "welfare framework favoring preventable suffering reduction",
+          "text_detailed": "Favour reducing preventable suffering on welfare grounds, with the scale of suffering estimated and the intervention's expected effect on it stated.",
           "types": [
             "framework"
           ],
@@ -13090,6 +13182,7 @@
         {
           "id": "c06",
           "text": "ecological integrity/wildness framework favoring restraint",
+          "text_detailed": "Favour restraint on grounds of ecological integrity and wildness, with the value being protected articulated rather than assumed, and exceptions defined narrowly.",
           "types": [
             "framework"
           ],
@@ -13099,6 +13192,7 @@
         {
           "id": "c07",
           "text": "One Health rule integrating animal welfare, ecosystem effects, and human disease risk",
+          "text_detailed": "Integrate animal welfare, ecosystem effects and human disease risk under a One Health rule, with all three assessed and the trade-offs recorded.",
           "types": [
             "expert",
             "framework"
@@ -13109,6 +13203,7 @@
         {
           "id": "c08",
           "text": "Publish the intervention plan and its results, so that people living alongside the population can see what is being done and why.",
+          "text_detailed": "Publish the intervention plan and its results, so that people living alongside the population can see what is being done and why, including where it did not work.",
           "types": [
             "public"
           ],
@@ -13129,6 +13224,7 @@
         {
           "id": "c01",
           "text": "plant-forward procurement with reduced animal products",
+          "text_detailed": "Procure plant-forward with reduced animal products, with the reduction expressed as a purchasing target, phased, and reported against.",
           "types": [
             "expert"
           ],
@@ -13138,6 +13234,7 @@
         {
           "id": "c02",
           "text": "require higher-welfare certified animal products where purchased",
+          "text_detailed": "Require higher-welfare certified animal products wherever animal products are purchased, with the certification named and supplier compliance audited.",
           "types": [
             "expert"
           ],
@@ -13147,6 +13244,7 @@
         {
           "id": "c03",
           "text": "lowest-cost nutritionally adequate procurement",
+          "text_detailed": "Procure the lowest-cost nutritionally adequate menu, stating that welfare and emissions are not among the criteria so the omission is visible rather than implicit.",
           "types": [
             "framework"
           ],
@@ -13156,6 +13254,7 @@
         {
           "id": "c04",
           "text": "greenhouse-gas/sustainable procurement threshold for vendors",
+          "text_detailed": "Set a greenhouse-gas or sustainability threshold for vendors, with the threshold stated in tender documents and compliance verified rather than self-declared.",
           "types": [
             "expert"
           ],
@@ -13165,6 +13264,7 @@
         {
           "id": "c05",
           "text": "patient/cultural choice rule preserving animal-product availability while shifting defaults",
+          "text_detailed": "Preserve animal-product availability for patient and cultural choice while shifting defaults, with the alternatives always available and no additional cost or delay attached.",
           "types": [
             "public"
           ],
@@ -13174,6 +13274,7 @@
         {
           "id": "c06",
           "text": "animal-welfare framework reducing demand for intensive-production products",
+          "text_detailed": "Reduce demand for intensive-production products on animal-welfare grounds, with the production systems being avoided defined and the shift measured in purchasing.",
           "types": [
             "framework"
           ],
@@ -13183,6 +13284,7 @@
         {
           "id": "c07",
           "text": "climate-health framework prioritizing lower-emission menus while protecting nutrition/access",
+          "text_detailed": "Prioritise lower-emission menus while protecting nutrition and access, with nutritional adequacy assessed for the populations served and access monitored after any change.",
           "types": [
             "framework"
           ],
@@ -13202,6 +13304,7 @@
         {
           "id": "c01",
           "text": "choose lower-carbon option when clinical quality/safety preserved",
+          "text_detailed": "Choose the lower-carbon option wherever clinical quality and safety are preserved, with that judgment made against stated clinical criteria and recorded in the procurement decision.",
           "types": [
             "expert"
           ],
@@ -13211,6 +13314,7 @@
         {
           "id": "c02",
           "text": "proportional carbon requirement using marginal cost/emissions threshold",
+          "text_detailed": "Apply a proportional carbon requirement using a stated marginal cost per tonne threshold, published so that decisions can be checked against it rather than justified afterwards.",
           "types": [
             "expert"
           ],
@@ -13220,6 +13324,7 @@
         {
           "id": "c03",
           "text": "prioritize direct clinical capacity and make decarbonization voluntary when budgets severely constrained",
+          "text_detailed": "Prioritise direct clinical capacity and make decarbonisation voluntary where budgets are severely constrained, with the constraint stated and the position reviewed as budgets change.",
           "types": [
             "framework"
           ],
@@ -13229,6 +13334,7 @@
         {
           "id": "c04",
           "text": "lifecycle procurement/carbon targets with supplier accountability",
+          "text_detailed": "Set lifecycle procurement and carbon targets with supplier accountability, with the targets written into contracts and supplier performance reported publicly.",
           "types": [
             "expert"
           ],
@@ -13238,6 +13344,7 @@
         {
           "id": "c05",
           "text": "climate-health duty framework favoring decarbonization because healthcare emissions cause health harm",
+          "text_detailed": "Treat decarbonisation as a health duty because healthcare emissions cause health harm, with that harm quantified for the system's own emissions rather than argued in general.",
           "types": [
             "framework"
           ],
@@ -13247,6 +13354,7 @@
         {
           "id": "c06",
           "text": "opportunity-cost framework requiring climate benefit justify displaced health services",
+          "text_detailed": "Require any climate spending to justify the health services it displaces, with the comparison made explicitly and published rather than left as an implicit trade-off.",
           "types": [
             "framework"
           ],
@@ -13256,6 +13364,7 @@
         {
           "id": "c07",
           "text": "Publish the health system's emissions and its reduction plan, so that patients and staff can hold it to what it has said.",
+          "text_detailed": "Publish the health system's emissions and its reduction plan, so that patients and staff can hold it to what it has said, with progress reported annually against the plan.",
           "types": [
             "public"
           ],
@@ -13276,6 +13385,7 @@
         {
           "id": "c01",
           "text": "maximize expected health loss averted",
+          "text_detailed": "Allocate to maximise expected health loss averted, with the estimates and their assumptions published and revisited as adaptation projects report outcomes.",
           "types": [
             "expert",
             "framework"
@@ -13286,6 +13396,7 @@
         {
           "id": "c02",
           "text": "prioritize most climate-vulnerable/worst-off populations",
+          "text_detailed": "Prioritise the most climate-vulnerable and worst-off populations, with vulnerability measured on stated indicators and the resulting allocation published.",
           "types": [
             "expert",
             "framework"
@@ -13296,6 +13407,7 @@
         {
           "id": "c03",
           "text": "geographic minimum floors to avoid abandonment of smaller regions",
+          "text_detailed": "Set geographic minimum floors so that smaller regions are not abandoned, with the floors fixed before allocation and protected from reallocation.",
           "types": [
             "framework"
           ],
@@ -13305,6 +13417,7 @@
         {
           "id": "c04",
           "text": "protect critical health-system infrastructure first",
+          "text_detailed": "Protect critical health-system infrastructure first, with the assets classified as critical listed in advance rather than identified after an event.",
           "types": [
             "expert"
           ],
@@ -13314,6 +13427,7 @@
         {
           "id": "c05",
           "text": "multiprinciple allocation combining vulnerability, health gain, feasibility, and equity",
+          "text_detailed": "Combine vulnerability, health gain, feasibility and equity under a published rule stating how much each contributes, applied consistently across rounds.",
           "types": [
             "expert"
           ],
@@ -13323,6 +13437,7 @@
         {
           "id": "c06",
           "text": "prioritarian climate-justice framework",
+          "text_detailed": "Prioritise the worst-off on climate-justice grounds, with the comparison made on stated measures and the allocation reported against them.",
           "types": [
             "framework"
           ],
@@ -13332,6 +13447,7 @@
         {
           "id": "c07",
           "text": "cost-effectiveness/robustness framework favoring scalable interventions with high benefit across scenarios",
+          "text_detailed": "Favour scalable interventions with high benefit across scenarios, with the scenarios stated and robustness reported rather than a single central estimate.",
           "types": [
             "framework"
           ],
@@ -13341,6 +13457,7 @@
         {
           "id": "c08",
           "text": "Give the communities most exposed a standing role in setting priorities, and publish where the money went.",
+          "text_detailed": "Give the communities most exposed a standing role in setting priorities, and publish where the money went, with the role continuing between funding rounds rather than convened for each.",
           "types": [
             "public"
           ],
