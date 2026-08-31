@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 488,
+  "detailed_policy_count": 578,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -7176,6 +7176,7 @@
         {
           "id": "c01",
           "text": "mandate with medical exemptions after necessity/proportionality threshold",
+          "text_detailed": "Mandate vaccination with medical exemptions once a necessity and proportionality threshold is met, with the threshold stated in advance, the mandate time-limited, and its continuation reviewed as transmission changes.",
           "types": [
             "expert"
           ],
@@ -7185,6 +7186,7 @@
         {
           "id": "c02",
           "text": "conditional mandate only after voluntary/access measures fail",
+          "text_detailed": "Mandate only after voluntary and access measures have been tried and shown insufficient, with what was tried and what it achieved published before the mandate takes effect.",
           "types": [
             "expert"
           ],
@@ -7194,6 +7196,7 @@
         {
           "id": "c03",
           "text": "remain voluntary with intensive access/education",
+          "text_detailed": "Remain voluntary while investing intensively in access and education — free vaccination, paid time off, outreach to under-served groups — with uptake reported and the strategy adjusted rather than abandoned.",
           "types": [
             "framework",
             "public"
@@ -7204,6 +7207,7 @@
         {
           "id": "c04",
           "text": "mandate-or-test/mask/alternative compliance where feasible",
+          "text_detailed": "Require vaccination or an alternative — testing, masking, reassignment — wherever an alternative is workable, with the alternatives specified and available in practice rather than nominally.",
           "types": [
             "expert"
           ],
@@ -7213,6 +7217,7 @@
         {
           "id": "c05",
           "text": "collective harm-prevention framework favoring mandate",
+          "text_detailed": "Mandate on collective harm-prevention grounds, with the harm quantified for this outbreak and the mandate ending when that harm falls below the stated threshold.",
           "types": [
             "framework"
           ],
@@ -7222,6 +7227,7 @@
         {
           "id": "c06",
           "text": "liberty/trust framework favoring voluntary measures unless extreme threshold",
+          "text_detailed": "Keep measures voluntary on liberty and trust grounds unless an extreme threshold is crossed, with the threshold defined in advance so that it constrains the decision rather than describing it afterwards.",
           "types": [
             "framework"
           ],
@@ -7231,6 +7237,7 @@
         {
           "id": "c07",
           "text": "equity/reciprocity rule requiring free access, paid time, adverse-event support, and nondiscriminatory exemptions before coercive policy",
+          "text_detailed": "Before any coercive policy, guarantee free vaccination, paid time to attend and recover, support for adverse events, and exemptions applied without discrimination, with each in place and reported rather than promised.",
           "types": [
             "expert",
             "framework"
@@ -7251,6 +7258,7 @@
         {
           "id": "c01",
           "text": "supported voluntary isolation first with compulsory backstop",
+          "text_detailed": "Support voluntary isolation first — accommodation, income, food, medical care — with compulsion available only as a backstop, and the support delivered before compulsion is considered rather than alongside it.",
           "types": [
             "expert"
           ],
@@ -7260,6 +7268,7 @@
         {
           "id": "c02",
           "text": "immediate compulsory isolation where transmission risk is high/imminent and delay materially endangers others",
+          "text_detailed": "Isolate compulsorily at once where transmission risk is high and imminent and delay would materially endanger others, with both conditions recorded at the time and reviewed within a stated period.",
           "types": [
             "expert",
             "framework"
@@ -7270,6 +7279,7 @@
         {
           "id": "c03",
           "text": "coercion only after least-restrictive alternatives fail",
+          "text_detailed": "Use coercion only after less restrictive alternatives have failed, with those alternatives named, offered, and their failure documented before any order is made.",
           "types": [
             "expert"
           ],
@@ -7279,6 +7289,7 @@
         {
           "id": "c04",
           "text": "time-limited compulsory isolation with due process/review and material support",
+          "text_detailed": "Impose compulsory isolation for a fixed period with due process, independent review and material support, with the period stated in the order and extension requiring fresh findings.",
           "types": [
             "expert"
           ],
@@ -7288,6 +7299,7 @@
         {
           "id": "c05",
           "text": "liberty framework demanding very high necessity threshold",
+          "text_detailed": "Apply a very high necessity threshold on liberty grounds, requiring that no lesser measure could achieve the objective and that the finding be reviewable by someone independent.",
           "types": [
             "framework"
           ],
@@ -7297,6 +7309,7 @@
         {
           "id": "c06",
           "text": "reciprocity/harm-prevention framework permitting restriction only with housing/income/medical supports",
+          "text_detailed": "Permit restriction only where housing, income and medical support are provided, on reciprocity grounds, with the supports arranged before the restriction begins rather than promised during it.",
           "types": [
             "framework"
           ],
@@ -7306,6 +7319,7 @@
         {
           "id": "c07",
           "text": "Provide income, housing, food and contact with family for the whole period, so that isolation does not cost a person their livelihood or their household.",
+          "text_detailed": "Provide income, housing, food and contact with family for the whole period, so that isolation does not cost a person their livelihood or their household, with each arranged before the period starts.",
           "types": [
             "public"
           ],
@@ -7326,6 +7340,7 @@
         {
           "id": "c01",
           "text": "add to universal panel after evidence/governance threshold",
+          "text_detailed": "Add the condition to the universal panel once evidence and governance thresholds are met, with both stated in advance, the decision published, and the panel reviewed as evidence accumulates.",
           "types": [
             "expert"
           ],
@@ -7335,6 +7350,7 @@
         {
           "id": "c02",
           "text": "pilot with data collection before universal expansion",
+          "text_detailed": "Pilot with structured data collection before universal expansion, with the outcomes to be measured, the duration, and the decision rule for expanding all fixed at the start.",
           "types": [
             "expert"
           ],
@@ -7344,6 +7360,7 @@
         {
           "id": "c03",
           "text": "defer until early-intervention evidence stronger",
+          "text_detailed": "Defer until the evidence for early intervention is stronger, naming what evidence is sought and what study would produce it, so that deferral has an end rather than becoming permanent.",
           "types": [
             "expert",
             "framework"
@@ -7354,6 +7371,7 @@
         {
           "id": "c04",
           "text": "add with parental opt-out rather than mandatory screening",
+          "text_detailed": "Add the condition with parental opt-out rather than as a mandatory screen, with the opt-out explained before the sample is taken and recorded without affecting other screening.",
           "types": [
             "framework"
           ],
@@ -7363,6 +7381,7 @@
         {
           "id": "c05",
           "text": "child-benefit/public-health framework favoring early detection under uncertainty",
+          "text_detailed": "Favour early detection under uncertainty on child-benefit grounds, accepting some false positives, with the follow-up pathway funded and in place before screening begins.",
           "types": [
             "framework"
           ],
@@ -7372,6 +7391,7 @@
         {
           "id": "c06",
           "text": "precaution/overdiagnosis framework resisting universalization until net benefit clearer",
+          "text_detailed": "Resist universal adoption until net benefit is clearer, on precautionary and overdiagnosis grounds, with the expected number of harmless findings stated rather than left implicit.",
           "types": [
             "framework"
           ],
@@ -7381,6 +7401,7 @@
         {
           "id": "c07",
           "text": "Give parents a plain account of what a positive result would and would not mean, including the chance of finding something that never causes harm, before the sample is taken.",
+          "text_detailed": "Give parents a plain account of what a positive result would and would not mean, including the chance of finding something that never causes harm, before the sample is taken and in writing.",
           "types": [
             "public"
           ],
@@ -7401,6 +7422,7 @@
         {
           "id": "c01",
           "text": "establish service as harm reduction",
+          "text_detailed": "Establish the service as harm reduction, with its objectives — overdose deaths, injecting-related infection, referrals — stated in advance and reported publicly against baseline.",
           "types": [
             "expert"
           ],
@@ -7410,6 +7432,7 @@
         {
           "id": "c02",
           "text": "do not establish and invest in treatment/prevention alternatives",
+          "text_detailed": "Do not establish the service and invest instead in treatment and prevention, with the alternative investment specified, funded, and its outcomes reported on the same terms.",
           "types": [
             "expert"
           ],
@@ -7419,6 +7442,7 @@
         {
           "id": "c03",
           "text": "time-limited evaluated pilot with predefined outcomes",
+          "text_detailed": "Run a time-limited evaluated pilot with outcomes defined before it opens and a decision rule for continuing, expanding or closing that is published at the outset.",
           "types": [
             "expert"
           ],
@@ -7428,6 +7452,7 @@
         {
           "id": "c04",
           "text": "integrate service with naloxone, treatment referral, wound care, housing/social support",
+          "text_detailed": "Integrate the service with naloxone distribution, treatment referral, wound care and housing and social support, so that a visit connects to those services rather than ending at the door.",
           "types": [
             "expert"
           ],
@@ -7437,6 +7462,7 @@
         {
           "id": "c05",
           "text": "neighborhood-impact safeguards/community engagement",
+          "text_detailed": "Put neighbourhood safeguards and continuing community engagement in place — siting, hours, waste management, a route for complaints — with the arrangements published and reviewed with residents.",
           "types": [
             "expert",
             "framework"
@@ -7447,6 +7473,7 @@
         {
           "id": "c06",
           "text": "autonomy/harm-reduction framework favoring service",
+          "text_detailed": "Favour the service on autonomy and harm-reduction grounds, treating people who use drugs as entitled to health care on the same terms as anyone else, with that stated in the service's terms.",
           "types": [
             "framework"
           ],
@@ -7456,6 +7483,7 @@
         {
           "id": "c07",
           "text": "concern about normalization/resource displacement/local externalities favoring alternative interventions",
+          "text_detailed": "Prefer alternative interventions on grounds of normalisation, resource displacement and local externalities, with each concern stated specifically and tested against evidence rather than asserted.",
           "types": [
             "framework"
           ],
@@ -7465,6 +7493,7 @@
         {
           "id": "c08",
           "text": "Involve residents and people who use drugs in siting and operating the service, and publish what was agreed, so that the arrangement is one the neighbourhood recognises.",
+          "text_detailed": "Involve residents and people who use drugs in siting and operating the service, and publish what was agreed, so that the arrangement is one the neighbourhood recognises and can hold the service to.",
           "types": [
             "public"
           ],
@@ -7485,6 +7514,7 @@
         {
           "id": "c01",
           "text": "maximize near-term survival/likelihood of benefit",
+          "text_detailed": "Allocate to maximise near-term survival, using a stated prognostic measure applied identically to every patient, with the measure published and reassessed as the surge evolves.",
           "types": [
             "expert"
           ],
@@ -7494,6 +7524,7 @@
         {
           "id": "c02",
           "text": "multiprinciple benefit + equity rule",
+          "text_detailed": "Combine expected benefit with an equity rule under a published multiprinciple standard, with the weight given to each stated and the resulting allocations audited.",
           "types": [
             "expert",
             "framework"
@@ -7504,6 +7535,7 @@
         {
           "id": "c03",
           "text": "lottery among clinically indistinguishable patients",
+          "text_detailed": "Allocate by lottery among clinically indistinguishable patients, with indistinguishability defined by stated criteria and the draw conducted and recorded by someone outside the treating team.",
           "types": [
             "framework"
           ],
@@ -7513,6 +7545,7 @@
         {
           "id": "c04",
           "text": "urgency/worst-off priority within a clinically meaningful band",
+          "text_detailed": "Give priority by urgency and to the worst-off within a clinically meaningful band, with the band defined so that priority does not extend to patients who cannot benefit.",
           "types": [
             "framework"
           ],
@@ -7522,6 +7555,7 @@
         {
           "id": "c05",
           "text": "weighted lottery after minimum clinical threshold",
+          "text_detailed": "Use a weighted lottery once a minimum clinical threshold is met, with the weights published in advance and the draw independently run.",
           "types": [
             "framework"
           ],
@@ -7531,6 +7565,7 @@
         {
           "id": "c06",
           "text": "first-come-first-served",
+          "text_detailed": "Allocate first-come first-served among eligible patients, with eligibility defined clinically and the ordering recorded so that it can be checked afterwards.",
           "types": [
             "expert"
           ],
@@ -7540,6 +7575,7 @@
         {
           "id": "c07",
           "text": "anti-discrimination rule excluding social worth/long-term disability and auditing structural bias",
+          "text_detailed": "Exclude social worth and long-term disability from the criteria and audit the rule for structural bias in how it operates, with the audit published and the rule amended where bias is found.",
           "types": [
             "framework"
           ],
@@ -7549,6 +7585,7 @@
         {
           "id": "c08",
           "text": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
+          "text_detailed": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
           "types": [
             "public"
           ],
@@ -7569,6 +7606,7 @@
         {
           "id": "c01",
           "text": "ordinary cost-effectiveness threshold",
+          "text_detailed": "Apply the ordinary cost-effectiveness threshold, with the calculation and its assumptions published so that a refusal can be examined rather than only received.",
           "types": [
             "expert"
           ],
@@ -7578,6 +7616,7 @@
         {
           "id": "c02",
           "text": "severity/rarity-weighted higher threshold",
+          "text_detailed": "Apply a higher threshold weighted for severity and rarity, with the weighting fixed in advance and applied to every comparable condition rather than to this one.",
           "types": [
             "expert"
           ],
@@ -7587,6 +7626,7 @@
         {
           "id": "c03",
           "text": "conditional coverage with evidence development",
+          "text_detailed": "Cover conditionally while evidence is developed, with the data to be collected, the review date and the consequence of failing to meet the endpoints written into the agreement.",
           "types": [
             "expert"
           ],
@@ -7596,6 +7636,7 @@
         {
           "id": "c04",
           "text": "negotiated price/budget-cap/outcomes-based access",
+          "text_detailed": "Negotiate price, a budget cap or outcomes-based access, with the terms published in enough detail that the effective price and what happens when outcomes fall short are both visible.",
           "types": [
             "expert"
           ],
@@ -7605,6 +7646,7 @@
         {
           "id": "c05",
           "text": "equal-right/rarity framework favoring substantial access despite opportunity cost",
+          "text_detailed": "Favour substantial access for rare severe conditions on equal-rights grounds despite the opportunity cost, stating what that cost is rather than leaving it unquantified.",
           "types": [
             "framework"
           ],
@@ -7614,6 +7656,7 @@
         {
           "id": "c06",
           "text": "utilitarian opportunity-cost rule favoring interventions generating more aggregate health",
+          "text_detailed": "Favour the interventions generating the most aggregate health, applying the rule consistently and reporting what the refused therapy would have delivered for the patients concerned.",
           "types": [
             "framework"
           ],
@@ -7623,6 +7666,7 @@
         {
           "id": "c07",
           "text": "severity/prioritarian framework giving extra weight to very severe disease independent of rarity",
+          "text_detailed": "Give extra weight to very severe disease independent of rarity, with severity measured on a stated scale so that rarity does not enter the decision under another name.",
           "types": [
             "framework"
           ],
@@ -7632,6 +7676,7 @@
         {
           "id": "c08",
           "text": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
+          "text_detailed": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
           "types": [
             "public"
           ],
@@ -7652,6 +7697,7 @@
         {
           "id": "c01",
           "text": "prioritize expected near-term benefit",
+          "text_detailed": "Prioritise expected near-term benefit, assessed on stated clinical criteria applied to every candidate at the same time, with the comparison recorded.",
           "types": [
             "expert"
           ],
@@ -7661,6 +7707,7 @@
         {
           "id": "c02",
           "text": "urgency/worst-off priority",
+          "text_detailed": "Give priority by urgency and to the worst-off, with the assessment made across all candidates together rather than as each is referred, and recorded for review.",
           "types": [
             "expert",
             "framework"
@@ -7671,6 +7718,7 @@
         {
           "id": "c03",
           "text": "time-limited ICU trial with reassessment when prognosis uncertain",
+          "text_detailed": "Admit for a time-limited trial where prognosis is uncertain, with the review point and the criteria for continuing agreed at admission and applied when they fall due.",
           "types": [
             "expert"
           ],
@@ -7680,6 +7728,7 @@
         {
           "id": "c04",
           "text": "lottery among similarly eligible patients",
+          "text_detailed": "Allocate by lottery among similarly eligible patients, with eligibility defined clinically, the draw run outside the treating team, and the outcome recorded.",
           "types": [
             "framework"
           ],
@@ -7689,6 +7738,7 @@
         {
           "id": "c05",
           "text": "multiprinciple score combining urgency, benefit, duration, and fair process",
+          "text_detailed": "Use a published score combining urgency, expected benefit, expected duration of need and fair process, applied by someone not treating the patients being compared.",
           "types": [
             "expert",
             "framework"
@@ -7699,6 +7749,7 @@
         {
           "id": "c06",
           "text": "first-come-first-served after clinical eligibility",
+          "text_detailed": "Admit first-come first-served among clinically eligible patients, with eligibility assessed in advance and the queue recorded so that the ordering can be checked.",
           "types": [
             "expert"
           ],
@@ -7708,6 +7759,7 @@
         {
           "id": "c07",
           "text": "reserve capacity for predictable emergencies rather than fill every bed by current queue",
+          "text_detailed": "Hold capacity in reserve for predictable emergencies rather than filling every bed from the current queue, with the reserve level set in advance and reviewed against actual demand.",
           "types": [
             "framework"
           ],
@@ -7717,6 +7769,7 @@
         {
           "id": "c08",
           "text": "Tell the patients and families not admitted that a bed was unavailable and what will happen instead, rather than presenting the decision as purely clinical.",
+          "text_detailed": "Tell the patients and families not admitted that a bed was unavailable and what will happen instead, rather than presenting the decision as purely clinical, and record what was said.",
           "types": [
             "public"
           ],
@@ -9402,6 +9455,7 @@
         {
           "id": "c01",
           "text": "voluntary supported adherence first, involuntary isolation only as last resort with due process/review",
+          "text_detailed": "Support voluntary adherence first, using involuntary isolation only as a last resort with due process and review, and record what support was provided before any order is sought.",
           "types": [
             "expert"
           ],
@@ -9411,6 +9465,7 @@
         {
           "id": "c02",
           "text": "immediate temporary isolation where risk is acute while voluntary alternatives are organized",
+          "text_detailed": "Isolate temporarily where the risk is acute, while voluntary alternatives are organised in parallel, with the temporary order limited to the time needed to put them in place.",
           "types": [
             "expert",
             "framework"
@@ -9421,6 +9476,7 @@
         {
           "id": "c03",
           "text": "community-based directly supported treatment/housing/income measures before detention",
+          "text_detailed": "Provide community-based directly supported treatment, housing and income measures before any detention, with each offered concretely and the offers recorded.",
           "types": [
             "expert"
           ],
@@ -9430,6 +9486,7 @@
         {
           "id": "c04",
           "text": "involuntary treatment not automatically permitted merely because isolation is justified",
+          "text_detailed": "Do not treat a justified isolation as authorising involuntary treatment: the two require separate findings, and consent to treatment is sought throughout the isolation.",
           "types": [
             "expert"
           ],
@@ -9439,6 +9496,7 @@
         {
           "id": "c05",
           "text": "liberty/least-restrictive framework",
+          "text_detailed": "Apply a least-restrictive standard on liberty grounds, requiring that no lesser measure would achieve the objective, with the finding reviewable and reviewed.",
           "types": [
             "framework"
           ],
@@ -9448,6 +9506,7 @@
         {
           "id": "c06",
           "text": "harm-prevention/reciprocity framework permitting time-limited detention only with material support and humane conditions",
+          "text_detailed": "Permit time-limited detention only where material support and humane conditions are provided, with both specified in the order and inspected during it.",
           "types": [
             "framework"
           ],
@@ -9457,6 +9516,7 @@
         {
           "id": "c07",
           "text": "Provide housing, income and treatment support first, and record what was offered before any compulsory measure is considered.",
+          "text_detailed": "Provide housing, income and treatment support first, and record what was offered before any compulsory measure is considered, so that the record shows what was tried.",
           "types": [
             "public"
           ],
@@ -9477,6 +9537,7 @@
         {
           "id": "c01",
           "text": "community-level infectious-disease/toxin surveillance without individual consent under transparency/governance",
+          "text_detailed": "Conduct community-level infectious-disease and toxin surveillance without individual consent, under published governance covering what is monitored, at what resolution, and who may see it.",
           "types": [
             "expert",
             "public"
@@ -9487,6 +9548,7 @@
         {
           "id": "c02",
           "text": "prohibit or require heightened authorization for lifestyle/mental-health/drug-use surveillance",
+          "text_detailed": "Prohibit lifestyle, mental-health and drug-use surveillance, or require heightened authorisation for it, with the authorising body independent and its decisions published.",
           "types": [
             "public"
           ],
@@ -9496,6 +9558,7 @@
         {
           "id": "c03",
           "text": "allow neighborhood-level surveillance only when public-health necessity justifies stigmatization/privacy risk",
+          "text_detailed": "Permit neighbourhood-level surveillance only where public-health necessity justifies the stigmatisation and privacy risk, with that judgment made in advance by a named body and recorded.",
           "types": [
             "framework"
           ],
@@ -9505,6 +9568,7 @@
         {
           "id": "c04",
           "text": "aggregate city/regional surveillance with no individual/household inference",
+          "text_detailed": "Aggregate to city or regional level with no household or individual inference possible, with the resolution limit stated technically and audited rather than left as policy.",
           "types": [
             "expert"
           ],
@@ -9514,6 +9578,7 @@
         {
           "id": "c05",
           "text": "community consultation/notice + independent use-review before new targets",
+          "text_detailed": "Consult the community and give notice before adding a new target, with independent review of the proposed use and the outcome published before sampling changes.",
           "types": [
             "expert"
           ],
@@ -9523,6 +9588,7 @@
         {
           "id": "c06",
           "text": "public-health-benefit framework favoring low-granularity disease surveillance",
+          "text_detailed": "Favour low-granularity disease surveillance on public-health-benefit grounds, keeping resolution at the lowest level that answers the question rather than the highest available.",
           "types": [
             "framework"
           ],
@@ -9532,6 +9598,7 @@
         {
           "id": "c07",
           "text": "privacy/anti-surveillance-creep framework restricting sensitive targets/small geographic resolution",
+          "text_detailed": "Restrict sensitive targets and small geographic resolutions to prevent surveillance creep, with the restriction written into the sampling design rather than into a use policy that can change.",
           "types": [
             "framework"
           ],
@@ -9551,6 +9618,7 @@
         {
           "id": "c01",
           "text": "rapid open sharing with standard attribution/privacy safeguards",
+          "text_detailed": "Share the sequence openly and immediately with standard attribution and privacy safeguards, with the deposit made to a public database rather than negotiated bilaterally.",
           "types": [
             "expert"
           ],
@@ -9560,6 +9628,7 @@
         {
           "id": "c02",
           "text": "rapid sharing conditional on predefined benefit-sharing/access mechanism",
+          "text_detailed": "Share rapidly on condition of a benefit-sharing and access mechanism defined in advance, so that the terms do not have to be negotiated while the sequence is held.",
           "types": [
             "expert"
           ],
@@ -9569,6 +9638,7 @@
         {
           "id": "c03",
           "text": "controlled platform sharing with access tiers and capacity support",
+          "text_detailed": "Share through a controlled platform with access tiers and capacity support, with the tiers published and support provided to laboratories that lack the capacity to use the data.",
           "types": [
             "expert"
           ],
@@ -9578,6 +9648,7 @@
         {
           "id": "c04",
           "text": "temporary withholding until fair-benefit terms are secured",
+          "text_detailed": "Withhold temporarily until fair-benefit terms are secured, with the maximum period stated and the withholding reported so that it is visible rather than silent.",
           "types": [
             "framework"
           ],
@@ -9587,6 +9658,7 @@
         {
           "id": "c05",
           "text": "global-solidarity framework favoring immediate sharing",
+          "text_detailed": "Share immediately on grounds of global solidarity, treating the sequence as a shared resource, and pursue benefit questions afterwards through the same mechanism each time.",
           "types": [
             "framework"
           ],
@@ -9596,6 +9668,7 @@
         {
           "id": "c06",
           "text": "reciprocity/justice framework conditioning use on equitable countermeasure access",
+          "text_detailed": "Condition use on equitable access to the countermeasures the data produce, with the condition written into the access terms and enforceable rather than aspirational.",
           "types": [
             "framework"
           ],
@@ -9605,6 +9678,7 @@
         {
           "id": "c07",
           "text": "staged rule requiring immediate minimal sequence/metadata sharing plus negotiated richer samples/data access",
+          "text_detailed": "Share minimal sequence and metadata immediately while negotiating access to richer samples and data, with the minimal set defined in advance so that immediate sharing is unambiguous.",
           "types": [
             "expert"
           ],
@@ -9614,6 +9688,7 @@
         {
           "id": "c08",
           "text": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
+          "text_detailed": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
           "types": [
             "public"
           ],
@@ -9634,6 +9709,7 @@
         {
           "id": "c01",
           "text": "voluntary assisted partner notification with patient choice and safety planning",
+          "text_detailed": "Offer voluntary assisted partner notification with the patient choosing the route and the timing, and with safety planning done first where there is any risk of violence.",
           "types": [
             "expert"
           ],
@@ -9643,6 +9719,7 @@
         {
           "id": "c02",
           "text": "provider-assisted notification without revealing index identity where feasible",
+          "text_detailed": "Notify through the service without revealing the index patient's identity where that is feasible, telling the patient in advance what will be said and what could still identify them.",
           "types": [
             "expert"
           ],
@@ -9652,6 +9729,7 @@
         {
           "id": "c03",
           "text": "narrow direct warning where serious preventable risk and law/ethics threshold are met after voluntary efforts fail",
+          "text_detailed": "Warn directly only where serious preventable risk and the legal and ethical threshold are both met and voluntary efforts have failed, with each element recorded before disclosure.",
           "types": [
             "expert"
           ],
@@ -9661,6 +9739,7 @@
         {
           "id": "c04",
           "text": "maintain confidentiality where notification would create serious violence/safety risk and alternative prevention is available",
+          "text_detailed": "Maintain confidentiality where notification would create a serious risk of violence and alternative prevention is available, with the risk assessed with the patient and the alternative arranged.",
           "types": [
             "expert",
             "framework"
@@ -9671,6 +9750,7 @@
         {
           "id": "c05",
           "text": "confidentiality/trust framework",
+          "text_detailed": "Protect confidentiality on trust grounds, on the ground that people who fear disclosure do not test, with any exception narrow, stated in advance and rare in practice.",
           "types": [
             "framework"
           ],
@@ -9680,6 +9760,7 @@
         {
           "id": "c06",
           "text": "duty-to-warn/harm-prevention framework with minimum-necessary disclosure",
+          "text_detailed": "Permit disclosure limited to the minimum necessary to prevent serious harm, disclosing only what the recipient needs to protect themselves and recording what was said.",
           "types": [
             "framework"
           ],
@@ -9689,6 +9770,7 @@
         {
           "id": "c07",
           "text": "Offer to notify the partner in a way that does not name the patient, and let the patient choose the route, before any provider-led notification.",
+          "text_detailed": "Offer to notify the partner in a way that does not name the patient, and let the patient choose the route, before any provider-led notification, with the choice recorded.",
           "types": [
             "public"
           ],
@@ -9709,6 +9791,7 @@
         {
           "id": "c01",
           "text": "voluntary testing with counseling unless narrow necessity threshold met",
+          "text_detailed": "Test voluntarily with counselling unless a narrow necessity threshold is met, with the threshold stated in advance and its application recorded case by case.",
           "types": [
             "expert"
           ],
@@ -9718,6 +9801,7 @@
         {
           "id": "c02",
           "text": "compulsory testing after high-risk exposure where results materially guide urgent prevention and less restrictive means fail",
+          "text_detailed": "Test compulsorily after high-risk exposure only where the result would materially guide urgent prevention and less restrictive means have failed, with both findings recorded.",
           "types": [
             "expert",
             "framework"
@@ -9728,6 +9812,7 @@
         {
           "id": "c03",
           "text": "routine named reporting of confirmed notifiable disease under public-health law with confidentiality safeguards",
+          "text_detailed": "Report confirmed notifiable disease by name under public-health law with confidentiality safeguards, stating who receives the report, what they may do with it, and how long it is kept.",
           "types": [
             "expert"
           ],
@@ -9737,6 +9822,7 @@
         {
           "id": "c04",
           "text": "deidentified/limited reporting where public-health objective can be met without names",
+          "text_detailed": "Report in de-identified or limited form wherever the public-health objective can be met without names, with the choice of form justified for each disease rather than set once.",
           "types": [
             "expert"
           ],
@@ -9746,6 +9832,7 @@
         {
           "id": "c05",
           "text": "harm-prevention framework favoring mandatory measures when necessary/proportionate",
+          "text_detailed": "Favour mandatory measures where they are necessary and proportionate, with both assessed against this outbreak and the measures ending when the assessment changes.",
           "types": [
             "framework"
           ],
@@ -9755,6 +9842,7 @@
         {
           "id": "c06",
           "text": "autonomy/privacy framework favoring voluntary testing and minimum data disclosure",
+          "text_detailed": "Favour voluntary testing and minimum data disclosure on autonomy and privacy grounds, with any mandatory element requiring a separate justification stated publicly.",
           "types": [
             "framework"
           ],
@@ -9764,6 +9852,7 @@
         {
           "id": "c07",
           "text": "reciprocity rule requiring treatment/support/protection from discrimination whenever coercive testing/reporting is imposed",
+          "text_detailed": "Wherever coercive testing or reporting is imposed, guarantee treatment, support and protection from discrimination, with those provisions in place before the coercive measure begins.",
           "types": [
             "framework"
           ],
@@ -9773,6 +9862,7 @@
         {
           "id": "c08",
           "text": "State exactly what is reported and to whom before testing, and guarantee treatment and support to anyone who tests positive.",
+          "text_detailed": "State exactly what is reported and to whom before testing, and guarantee treatment and support to anyone who tests positive, with both given in writing at the point of testing.",
           "types": [
             "public"
           ],
