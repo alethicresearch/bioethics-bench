@@ -33,6 +33,16 @@ for(const c of resource.cases||[]){
     else typeCoverage[type]+=1;
   }
 }
+// A detailed policy states the same policy with its conditions; it should not be shorter than
+// the concise form, and it should not be the concise text over again.
+for(const c of resource.cases||[]){
+  for(const p of c.policies||[]){
+    if(!p.text_detailed)continue;
+    if(p.text_detailed.trim()===p.text.trim())errors.push(`${c.id}:${p.id}: detailed text repeats the concise text`);
+    else if(p.text_detailed.length<=p.text.length)errors.push(`${c.id}:${p.id}: detailed text is not longer than the concise text`);
+  }
+}
+
 if(errors.length){
   console.error(`Public case validation failed (${errors.length} issue${errors.length===1?'':'s'}):`);
   for(const e of errors)console.error(`- ${e}`);
@@ -41,4 +51,5 @@ if(errors.length){
 console.log(`Public case validation passed: ${resource.case_count} cases / ${resource.policy_count} policies.`);
 console.log(`Cases carrying each policy type: Public ${typeCoverage.public}/${resource.case_count}; Expert ${typeCoverage.expert}/${resource.case_count}; Framework ${typeCoverage.framework}/${resource.case_count}.`);
 console.log(`Every case carries all three policy types; ${written.length} are policies the Bench wrote for a case that recorded none of that type, each marked constructed.`);
+console.log(`Detailed policy forms written: ${resource.detailed_policy_count} of ${resource.policy_count}; the rest fall back to their concise wording.`);
 console.log(`${(resource.cases||[]).filter(c=>c.case_file_objects_to_pool).length} of those cases record a case-file judgment that the evidence was too thin for such a pool, and say so on the case.`);

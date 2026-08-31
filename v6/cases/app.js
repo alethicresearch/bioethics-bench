@@ -79,7 +79,7 @@ function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.se
 
 function renderDetail(c){
   const src=state.sources[c.id]||{sources:[],policies:{}};
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${sourceBlock(src.policies[p.id],'Sources for this policy')}</div>`).join('');
+  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(state.rep==='detailed'&&p.text_detailed?p.text_detailed:p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${sourceBlock(src.policies[p.id],'Sources for this policy')}</div>`).join('');
   const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
   $('case-detail').innerHTML=`
     <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>

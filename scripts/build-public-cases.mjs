@@ -6,6 +6,7 @@ const SOURCE = path.join(ROOT, 'resources/case-families/full-200-rich-candidate-
 const PROJECTION_DIR = path.join(ROOT, 'resources/projections/source-grounded');
 const OUTPUT = path.join(ROOT, 'resources/cases/full-200-cases.v1.json');
 const CONSTRUCTED = path.join(ROOT, 'resources/cases/constructed-policies.v1.json');
+const DETAILED = path.join(ROOT, 'resources/cases/detailed-policies.v1.json');
 
 const CATEGORIES = {
   clinical: 'Clinical care',
@@ -197,6 +198,11 @@ const reviewed = loadReviewedTypes();
    evaluated across Public, Expert and Framework. It is published as sourcing "constructed", and
    where the case file judged the evidence insufficient to support such a pool, the case says so. */
 const constructed = JSON.parse(fs.readFileSync(CONSTRUCTED, 'utf8')).policies;
+/* A detailed case should put its policies in detail too. Where a detailed form is written it is
+   published as text_detailed; where it is not, the case's detailed view shows the concise policy,
+   which is the same position stated shorter rather than a different one. */
+const detailedPolicies = JSON.parse(fs.readFileSync(DETAILED, 'utf8')).policies;
+let detailedCount = 0;
 /* Two policies (M189 c01 and c02) open with the classification they were filed under —
    "public/source-informed orientation toward …". The type and sourcing fields now carry that,
    so the prefix repeats itself in the reader's own words and adds the audit vocabulary back.
@@ -211,9 +217,12 @@ const cases = source.cases.map((entry) => {
   const { concise, detailed } = caseTexts(markdown, entry.title);
   const policies = entry.candidate_universe.map((policy) => {
     policyCount += 1;
+    const detailedText = detailedPolicies[`${entry.inventory_id}:${policy.candidate_id}`];
+    if (detailedText) detailedCount += 1;
     return {
       id: policy.candidate_id,
       text: publicPolicyText(policy.text),
+      text_detailed: detailedText,
       types: inferTypes(entry.inventory_id, policy, reviewed),
       type_reviewed: reviewed.has(`${entry.inventory_id}:${policy.candidate_id}`),
       sourcing: sourcing(policy),
@@ -224,9 +233,13 @@ const cases = source.cases.map((entry) => {
     const present = new Set(policies.flatMap((p) => p.types));
     if (present.has(added.type)) throw new Error(`${entry.inventory_id} already records a ${added.type} policy`);
     policyCount += 1;
+    const addedId = `c${String(policies.length + 1).padStart(2, '0')}`;
+    const addedDetail = detailedPolicies[`${entry.inventory_id}:${addedId}`];
+    if (addedDetail) detailedCount += 1;
     policies.push({
-      id: `c${String(policies.length + 1).padStart(2, '0')}`,
+      id: addedId,
       text: added.text,
+      text_detailed: addedDetail,
       types: [added.type],
       type_reviewed: false,
       sourcing: 'constructed',
@@ -262,6 +275,7 @@ const output = {
   categories: CATEGORIES,
   policy_types: ['public', 'expert', 'framework'],
   sourcing_types: ['direct', 'inferred', 'constructed'],
+  detailed_policy_count: detailedCount,
   reviewed_policy_count: cases.reduce((n, c) => n + c.policies.filter((p) => p.type_reviewed).length, 0),
   cases,
 };

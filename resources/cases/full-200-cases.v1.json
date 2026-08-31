@@ -29,6 +29,7 @@
     "inferred",
     "constructed"
   ],
+  "detailed_policy_count": 132,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -41,6 +42,7 @@
         {
           "id": "c01",
           "text": "Proceed when informed refusal is documented and a patient-specific bloodless plan keeps residual operative risk within the team's defensible professional range",
+          "text_detailed": "Proceed when the refusal is documented after counselling and a patient-specific bloodless plan keeps residual operative risk within the range the team can defend. The plan names the conservation measures to be used, the point at which the operation would be abandoned, and who decides intraoperatively; if it cannot meet that range, the operation does not proceed under this policy.",
           "types": [
             "expert"
           ],
@@ -50,6 +52,7 @@
         {
           "id": "c02",
           "text": "Proceed only with enhanced safeguards: experienced bloodless team/center, explicit product-by-product preferences, blood-conservation protocol, contingency planning, and documented shared understanding of residual mortality risk",
+          "text_detailed": "Proceed only with enhanced safeguards in place: an experienced bloodless team or centre, product-by-product preferences recorded in writing, an agreed blood-conservation protocol, contingency planning for major bleeding, and a documented shared understanding of residual mortality risk. A safeguard that cannot be met is a reason to defer rather than to proceed with a weaker version of it.",
           "types": [
             "expert"
           ],
@@ -59,6 +62,7 @@
         {
           "id": "c03",
           "text": "Modify, postpone, or decline the elective procedure when the unavailability of transfusion makes residual risk exceed the clinician/institution's defensible threshold, while actively facilitating alternatives or referral",
+          "text_detailed": "Modify, postpone or decline the elective procedure when the unavailability of transfusion puts residual risk above the threshold the clinician or institution can defend, stating that threshold and the estimate it was applied to. Declining carries a duty to offer modification, alternative timing or referral to a centre that can meet the plan, arranged rather than suggested.",
           "types": [
             "expert"
           ],
@@ -68,6 +72,7 @@
         {
           "id": "c04",
           "text": "Treat the competent patient's informed refusal as controlling and do not make willingness to receive blood an independent condition of access when the operation otherwise remains professionally acceptable",
+          "text_detailed": "Treat the competent patient's informed refusal as controlling, and do not make willingness to receive blood an independent condition of access where the operation is otherwise professionally acceptable. Access may still turn on ordinary clinical criteria, but any decision to decline must name a reason that would apply equally to a patient who accepted transfusion.",
           "types": [
             "expert",
             "framework"
@@ -78,6 +83,7 @@
         {
           "id": "c05",
           "text": "Give the competent patient unusually broad authority to accept personal procedural risk; clinicians should proceed unless the operation falls outside accepted technical standards or imposes material risks on others",
+          "text_detailed": "Give the competent patient unusually broad authority to accept personal procedural risk: proceed unless the operation falls outside accepted technical standards or imposes material risk on others. Where the patient's own risk is high but the technique is standard, the patient's acceptance settles it, recorded after counselling that states the mortality estimate.",
           "types": [
             "framework"
           ],
@@ -87,6 +93,7 @@
         {
           "id": "c06",
           "text": "Permit an individual clinician to decline participation on professional-integrity grounds even when another competent team would regard the bloodless plan as acceptable, provided nonabandonment/referral duties are met",
+          "text_detailed": "Permit an individual clinician to decline participation on professional-integrity grounds even where another competent team would accept the bloodless plan, provided the patient is told at once, care continues until transfer, and an alternative clinician or centre is arranged rather than left to the patient to find.",
           "types": [
             "expert",
             "framework"
@@ -97,6 +104,7 @@
         {
           "id": "c07",
           "text": "Keep the operation available at the patient's own hospital rather than transferring or postponing, so that refusing transfusion does not cost a patient timely access to care others receive locally.",
+          "text_detailed": "Keep the operation available at the patient's own hospital rather than transferring or postponing, so that refusing transfusion does not cost timely access others receive locally. Where the local capability is genuinely absent, the hospital arranges the transfer, manages the delay clinically, and records what was unavailable and why.",
           "types": [
             "public"
           ],
@@ -117,6 +125,7 @@
         {
           "id": "c01",
           "text": "Individualize support to the patient's expressed preferences and reassess during the best available period before transferring authority",
+          "text_detailed": "Individualise support to the patient's expressed preferences and reassess during the best available period before transferring authority: adjust timing, setting, communication and symptom control first, and record what was tried. Authority transfers only after that support has been attempted and documented.",
           "types": [
             "framework",
             "public"
@@ -127,6 +136,7 @@
         {
           "id": "c02",
           "text": "Maximize supported exercise of the person's own will and preferences throughout the available decision window; where the person's will cannot be directly ascertained, use the best interpretation of will and preferences rather than transferring authority through substitute decision-making",
+          "text_detailed": "Maximise the supported exercise of the person's own will and preferences throughout the decision window, using their preferred communication, chosen supporters and best time of day. Where their will cannot be directly ascertained, act on the best interpretation of it drawn from what they have said and done, rather than transferring authority to a substitute decision-maker.",
           "types": [
             "expert"
           ],
@@ -136,6 +146,7 @@
         {
           "id": "c03",
           "text": "Provide reasonable support, make a decision-specific capacity assessment, and transition to an appropriate surrogate when the relevant capacity remains absent",
+          "text_detailed": "Provide reasonable support, make a capacity assessment specific to this decision rather than global, and move to an appropriate surrogate only where the relevant capacity remains absent after that support. The assessment records what was assessed, what support was given, and what the person could and could not do.",
           "types": [
             "expert"
           ],
@@ -145,6 +156,7 @@
         {
           "id": "c04",
           "text": "When the treatment window is closing and supported reassessment still shows inability to appreciate a grave consequence, permit a narrowly bounded protective/surrogate decision while continuing to involve the patient",
+          "text_detailed": "Where the treatment window is closing and supported reassessment still shows an inability to appreciate a grave consequence, permit a protective or surrogate decision bounded to that decision, for that period, while continuing to involve the patient. The bound is stated in advance and revisited when the window changes.",
           "types": [
             "framework"
           ],
@@ -154,6 +166,7 @@
         {
           "id": "c05",
           "text": "If the patient cannot presently decide, use substituted judgment anchored in the person's prior values and stable commitments rather than current welfare maximization",
+          "text_detailed": "If the patient cannot presently decide, use substituted judgment anchored in their prior values and stable commitments, drawn from recorded statements, documented conversations and their own long-standing choices rather than from a single recent remark or from what those around them prefer.",
           "types": [
             "framework"
           ],
@@ -163,6 +176,7 @@
         {
           "id": "c06",
           "text": "When prior values do not resolve the choice, use a best-interests standard focused on expected benefits, burdens, and preservation of future agency",
+          "text_detailed": "Where prior values do not resolve the choice, use a best-interests standard focused on expected benefits, burdens and the preservation of future agency, and record which of those considerations decided it so that the reasoning can be revisited when the person's situation changes.",
           "types": [
             "framework"
           ],
@@ -172,6 +186,7 @@
         {
           "id": "c07",
           "text": "If clinically safe, defer the irreversible choice and optimize communication/environment/acute symptoms before deciding that authority must transfer",
+          "text_detailed": "If it is clinically safe to do so, defer the irreversible choice and optimise communication, environment and acute symptoms before concluding that authority must transfer, setting a review point rather than an open-ended delay.",
           "types": [
             "expert"
           ],
@@ -191,6 +206,7 @@
         {
           "id": "c01",
           "text": "Begin the time-critical lifesaving intervention immediately under presumed consent while searching for prior wishes/surrogates in parallel and redirecting care if reliable contrary wishes emerge",
+          "text_detailed": "Begin the time-critical lifesaving intervention immediately under presumed consent, while records, registries and surrogates are checked in parallel by someone other than the treating team. If reliable contrary wishes emerge at any point, care is redirected then, not at the next convenient interval.",
           "types": [
             "expert",
             "public"
@@ -201,6 +217,7 @@
         {
           "id": "c02",
           "text": "Reserve a short predefined high-yield interval for record/surrogate checks before irreversible treatment, then proceed if no reliable contrary wishes are found",
+          "text_detailed": "Reserve a short predefined interval for the checks most likely to find prior wishes — the record, an accessible directive, a surrogate already present — before any irreversible treatment step, then proceed if nothing reliable is found. The interval is fixed in advance for the presentation rather than judged case by case under pressure.",
           "types": [
             "framework"
           ],
@@ -210,6 +227,7 @@
         {
           "id": "c03",
           "text": "Begin reversible stabilization immediately but defer the most irreversible treatment step for the maximum clinically tolerable preference-search interval",
+          "text_detailed": "Begin reversible stabilisation immediately, and defer the most irreversible step for the longest interval the clinical situation tolerates while preferences are sought. The deferral applies only to the irreversible step; everything reversible proceeds.",
           "types": [
             "framework"
           ],
@@ -219,6 +237,7 @@
         {
           "id": "c04",
           "text": "Treat absent contrary evidence as sufficient authorization for immediate emergency treatment; preference search should not consume a clinically meaningful fraction of the rescue window",
+          "text_detailed": "Treat the absence of contrary evidence as sufficient authorisation for immediate emergency treatment, and do not let the search for preferences consume a clinically meaningful part of the rescue window. Searching continues alongside treatment and changes it if something is found.",
           "types": [
             "expert",
             "framework"
@@ -229,6 +248,7 @@
         {
           "id": "c05",
           "text": "Give recovery of the patient's prior autonomous wishes priority even at a material reduction in expected rescue benefit when the proposed intervention would be highly invasive/irreversible",
+          "text_detailed": "Give recovery of the patient's prior autonomous wishes priority even at a material reduction in expected rescue benefit where the proposed intervention is highly invasive or irreversible, stating the reduction accepted and the point at which it becomes too large.",
           "types": [
             "framework"
           ],
@@ -238,6 +258,7 @@
         {
           "id": "c06",
           "text": "Use a proportional search rule: the stronger the reason to suspect a contrary prior wish and the lower the marginal cost of delay, the more search is required; otherwise treat while searching",
+          "text_detailed": "Scale the search to the case: the stronger the reason to suspect a contrary prior wish and the lower the cost of delay, the more searching is required before proceeding; otherwise treat while searching. What counts as a reason to suspect one — a document, a bracelet, a family member en route — is named in advance.",
           "types": [
             "framework"
           ],
@@ -257,6 +278,7 @@
         {
           "id": "c01",
           "text": "Protect confidential access to sensitive care for adolescents who can participate meaningfully, with disclosure limited to defined safety/mandatory-reporting exceptions",
+          "text_detailed": "Protect confidential access to sensitive care for adolescents who can participate meaningfully in the decision, with disclosure limited to defined safety and mandatory-reporting exceptions. Those exceptions are stated to the adolescent before care, and billing, portal and record routes are configured so that confidentiality is not lost through them.",
           "types": [
             "public"
           ],
@@ -266,6 +288,7 @@
         {
           "id": "c02",
           "text": "Preserve private clinical time but allow parents broader routine access to sensitive information except where law or a defined clinical reason protects confidentiality",
+          "text_detailed": "Preserve private clinical time with the adolescent, but allow parents broader routine access to sensitive information except where law or a defined clinical reason protects confidentiality. Which categories are protected is set in advance rather than decided visit by visit.",
           "types": [
             "public"
           ],
@@ -275,6 +298,7 @@
         {
           "id": "c03",
           "text": "Maintain confidentiality, explain its limits, and actively encourage—but do not compel—developmentally appropriate voluntary parent involvement",
+          "text_detailed": "Maintain confidentiality, explain its limits at the start of the visit, and actively encourage voluntary parental involvement in a developmentally appropriate way without making care conditional on it. Encouragement is recorded; refusal to involve a parent does not change what is offered.",
           "types": [
             "expert"
           ],
@@ -284,6 +308,7 @@
         {
           "id": "c04",
           "text": "Give the adolescent presumptive control over disclosure for the sensitive service because confidentiality is necessary for access, trust, and developing autonomy",
+          "text_detailed": "Give the adolescent presumptive control over disclosure for the sensitive service, on the ground that confidentiality is a condition of access, trust and developing autonomy. The presumption yields only to the stated safety exceptions, and the adolescent is told when it has.",
           "types": [
             "framework"
           ],
@@ -293,6 +318,7 @@
         {
           "id": "c05",
           "text": "Give parents a presumptive informational role while the patient is a minor, subject to a strong adolescent confidentiality exception where disclosure threatens welfare, access, or protected agency",
+          "text_detailed": "Give parents a presumptive informational role while the patient is a minor, subject to a strong adolescent-confidentiality exception where disclosure would threaten the adolescent's welfare, access to care, or protected agency. The exception is applied by the clinician and recorded, not left to the parent's agreement.",
           "types": [
             "framework"
           ],
@@ -302,6 +328,7 @@
         {
           "id": "c06",
           "text": "Use a graduated policy in which confidentiality authority increases with the adolescent's demonstrated understanding and the sensitivity of the service, while parental access increases as safety stakes rise",
+          "text_detailed": "Use a graduated policy: confidentiality authority increases with the adolescent's demonstrated understanding and with the sensitivity of the service, while parental access increases as safety stakes rise. The gradations are written down in advance so that two clinicians reach the same result for the same adolescent.",
           "types": [
             "framework"
           ],
@@ -321,6 +348,7 @@
         {
           "id": "c01",
           "text": "Tell the patient the diagnosis and material prognosis directly, involving family to the extent the patient chooses",
+          "text_detailed": "Tell the patient the diagnosis and material prognosis directly, involving family to whatever extent the patient chooses, and record that choice. Family involvement is arranged at the patient's request rather than assumed from their presence.",
           "types": [
             "expert",
             "public"
@@ -331,6 +359,7 @@
         {
           "id": "c02",
           "text": "First elicit the patient's information and family-involvement preferences, then tailor disclosure to those choices",
+          "text_detailed": "First elicit what the patient wants to know and who they want present, then tailor disclosure to those answers, revisiting them as the illness changes rather than treating the first answer as standing indefinitely.",
           "types": [
             "expert"
           ],
@@ -340,6 +369,7 @@
         {
           "id": "c03",
           "text": "When the patient affirmatively prefers it, route serious information through a chosen family member or relational mediator",
+          "text_detailed": "Where the patient affirmatively prefers it, route serious information through a family member or other mediator they name, recording the delegation and confirming it still holds before each major disclosure.",
           "types": [
             "expert"
           ],
@@ -349,6 +379,7 @@
         {
           "id": "c04",
           "text": "Use paced/gradual disclosure when the patient wants information but prefers it staged, with a definite route to all information the patient wishes to receive",
+          "text_detailed": "Where the patient wants information but prefers it staged, disclose gradually on a schedule agreed with them, with a definite route to all the information they wish to receive rather than an open-ended deferral.",
           "types": [
             "expert"
           ],
@@ -358,6 +389,7 @@
         {
           "id": "c05",
           "text": "Temporarily delay selected detail when immediate disclosure would create a narrowly evidenced, serious clinical harm, while preserving the capable patient's ultimate access and decision authority",
+          "text_detailed": "Temporarily delay selected detail where immediate disclosure would create a narrowly evidenced and serious clinical harm, naming that harm, setting a review date, and preserving the capable patient's ultimate access and decision authority.",
           "types": [
             "expert",
             "framework"
@@ -368,6 +400,7 @@
         {
           "id": "c06",
           "text": "Honor a family's request for nondisclosure until the clinician has assessed the patient's information preferences, but do not treat the family's request itself as authority for continuing concealment",
+          "text_detailed": "Honour a family's request for non-disclosure only until the clinician has assessed what the patient wants to know; the request itself is not authority to continue concealment, and the family is told at the outset that this is how it will be handled.",
           "types": [
             "framework"
           ],
@@ -377,6 +410,7 @@
         {
           "id": "c07",
           "text": "Permit family-requested concealment from a capable patient even without patient delegation when relatives reasonably believe disclosure will undermine hope or coping",
+          "text_detailed": "Permit family-requested concealment from a capable patient without that patient's delegation where relatives reasonably believe disclosure would undermine hope or coping, recording the belief, its basis, and the point at which concealment ends.",
           "types": [
             "expert",
             "public"
@@ -397,6 +431,7 @@
         {
           "id": "c01",
           "text": "Disclose the known error promptly, explain known consequences and uncertainty, apologize, describe current care, and commit to scheduled updates as investigation continues",
+          "text_detailed": "Disclose the known error promptly: what happened, its known consequences, what remains uncertain, an apology, the care now being given, and a commitment to scheduled updates as the investigation continues. The updates happen on the stated dates whether or not there is new information.",
           "types": [
             "expert",
             "public"
@@ -407,6 +442,7 @@
         {
           "id": "c02",
           "text": "Disclose the occurrence and known facts promptly but defer claims about preventability, individual responsibility, and long-term consequence until those facts are established",
+          "text_detailed": "Disclose the occurrence and the established facts promptly, and defer claims about preventability, individual responsibility and long-term consequence until those are established, saying explicitly which of the three is being deferred and when it will be answered.",
           "types": [
             "expert"
           ],
@@ -416,6 +452,7 @@
         {
           "id": "c03",
           "text": "Disclose the event and investigation promptly but withhold an apology/admission of responsibility until causation and institutional responsibility are confirmed",
+          "text_detailed": "Disclose the event and the fact of an investigation promptly, and withhold an apology or admission of responsibility until causation and institutional responsibility are confirmed, while stating plainly that the delay concerns responsibility rather than the facts of what happened.",
           "types": [
             "expert"
           ],
@@ -425,6 +462,7 @@
         {
           "id": "c04",
           "text": "Provide the fullest current causal account, including clearly labeled preliminary hypotheses, so the patient can participate immediately in decisions about follow-up and accountability",
+          "text_detailed": "Give the fullest current causal account, including preliminary hypotheses clearly labelled as such, so that the patient can take part immediately in decisions about follow-up and accountability. Each hypothesis is revisited in writing when the investigation settles it.",
           "types": [
             "expert"
           ],
@@ -434,6 +472,7 @@
         {
           "id": "c05",
           "text": "Delay substantive disclosure until the internal investigation can provide an accurate consolidated account, unless immediate information is needed for the patient's care",
+          "text_detailed": "Delay substantive disclosure until the internal investigation can give an accurate consolidated account, unless information is needed sooner for the patient's care, with a stated maximum period and an interim notification that an investigation is under way.",
           "types": [
             "expert"
           ],
@@ -443,6 +482,7 @@
         {
           "id": "c06",
           "text": "Separate clinical disclosure from compensation/accountability: disclose promptly, then use an independent resolution process for preventability, apology, and compensation once facts mature",
+          "text_detailed": "Separate the clinical disclosure from accountability: disclose promptly and fully, then route preventability, apology and compensation through an independent process once the facts have matured, telling the patient at the outset which route handles what.",
           "types": [
             "framework"
           ],
@@ -462,6 +502,7 @@
         {
           "id": "c01",
           "text": "Allow conscientious refusal to provide the service, but require accurate information, advance notice, and timely direct referral to a willing provider",
+          "text_detailed": "Allow conscientious refusal to provide the service, subject to accurate information, notice given early enough to preserve timing, and a direct referral to a willing provider that the objecting clinician arranges rather than describes.",
           "types": [
             "expert"
           ],
@@ -471,6 +512,7 @@
         {
           "id": "c02",
           "text": "Allow refusal of both provision and personal referral when referral is understood as moral complicity, but require the institution to supply an immediate neutral access pathway that does not shift navigation burden to the patient",
+          "text_detailed": "Allow refusal of both provision and personal referral where the clinician understands referral as complicity, on condition that the institution supplies an immediate neutral access route — a named service, contactable at once — so that no navigation burden falls on the patient.",
           "types": [
             "expert"
           ],
@@ -480,6 +522,7 @@
         {
           "id": "c03",
           "text": "Permit nonfacilitation so long as the clinician gives accurate neutral information and the patient can obtain timely alternative care through a transparent institutional process",
+          "text_detailed": "Permit non-facilitation provided the clinician gives accurate neutral information and the patient can obtain timely alternative care through a transparent institutional process, with timeliness defined against the clinical window rather than against convenience.",
           "types": [
             "expert"
           ],
@@ -489,6 +532,7 @@
         {
           "id": "c04",
           "text": "Require the objecting clinician to provide or directly facilitate care when refusal would cause material clinical harm or timely alternative access is unavailable",
+          "text_detailed": "Require the objecting clinician to provide or directly facilitate care where refusal would cause material clinical harm or where timely alternative access is unavailable, with the threshold defined in advance and assessed at the time of the request rather than afterwards.",
           "types": [
             "expert"
           ],
@@ -498,6 +542,7 @@
         {
           "id": "c05",
           "text": "Treat provision of lawful standard reproductive care as a professional-role obligation that should not be defeasible by individual conscience in patient-facing practice",
+          "text_detailed": "Treat provision of lawful standard reproductive care as an obligation of the professional role that individual conscience does not defeat in patient-facing practice, while leaving conscience its ordinary scope in choosing a field of practice.",
           "types": [
             "framework"
           ],
@@ -507,6 +552,7 @@
         {
           "id": "c06",
           "text": "Give conscience strong protection, including refusal to refer, provided the institution rather than the patient bears responsibility for maintaining equivalent timely access",
+          "text_detailed": "Give conscience strong protection, including refusal to refer, provided the institution rather than the patient carries responsibility for equivalent timely access, and provided that access is demonstrated in practice rather than asserted in policy.",
           "types": [
             "framework"
           ],
@@ -516,6 +562,7 @@
         {
           "id": "c07",
           "text": "Tell the patient at first contact who will provide the service and by when, so that a clinician's objection is never left as the patient's problem to solve.",
+          "text_detailed": "Tell the patient at first contact who will provide the service and by when, so that a clinician's objection is never left as the patient's problem to solve. The name and the date are recorded, and the institution follows up if the appointment does not happen.",
           "types": [
             "public"
           ],
@@ -536,6 +583,7 @@
         {
           "id": "c01",
           "text": "Disclose the minimum necessary information to people able to mitigate the serious threat once the defined probability/severity/identifiability threshold is met",
+          "text_detailed": "Disclose the minimum information necessary to those able to reduce the threat, once the defined probability, severity and identifiability threshold is met. The threshold is written down in advance, the disclosure is limited to what those recipients need to act, and what was said to whom is recorded.",
           "types": [
             "expert"
           ],
@@ -545,6 +593,7 @@
         {
           "id": "c02",
           "text": "First pursue voluntary warning, safety planning, treatment intensification, or other collaborative mitigation; breach confidentiality only if those measures fail or time does not permit them",
+          "text_detailed": "Pursue voluntary warning, safety planning, treatment intensification or other collaborative steps first, and breach confidentiality only where those fail or the time available does not allow them. What was attempted, and why it was insufficient, is recorded before any disclosure.",
           "types": [
             "expert",
             "framework"
@@ -555,6 +604,7 @@
         {
           "id": "c03",
           "text": "Maintain confidentiality unless the threat is imminent or highly certain, because overprediction and broad warning duties can damage trust and treatment",
+          "text_detailed": "Maintain confidentiality unless the threat is imminent or highly certain, on the ground that over-prediction and broad warning duties damage the trust and treatment that reduce risk in the first place. Uncertainty is resolved in favour of continued treatment rather than disclosure.",
           "types": [
             "expert",
             "framework"
@@ -565,6 +615,7 @@
         {
           "id": "c04",
           "text": "Warn the identifiable potential victim directly when doing so is the most effective minimum-necessary protective action",
+          "text_detailed": "Warn the identifiable person directly where that is the most effective minimum-necessary protective step, telling them what they need to protect themselves and no more, and telling the patient that the warning has been given unless doing so would itself increase the danger.",
           "types": [
             "expert"
           ],
@@ -574,6 +625,7 @@
         {
           "id": "c05",
           "text": "Notify an appropriate protective authority/clinical crisis pathway rather than the potential victim directly unless direct warning is necessary",
+          "text_detailed": "Notify a protective authority or clinical crisis pathway rather than the person at risk, unless direct warning is necessary because no pathway can act in time. The referral names the specific concern rather than the diagnosis, and the patient is told it has been made.",
           "types": [
             "expert"
           ],
@@ -583,6 +635,7 @@
         {
           "id": "c06",
           "text": "Preserve confidentiality and intensify treatment/containment when risk remains materially uncertain, reserving disclosure for a higher evidentiary threshold",
+          "text_detailed": "Preserve confidentiality and intensify treatment or containment while the risk remains materially uncertain, reserving disclosure for a higher evidentiary threshold that is stated in advance and reviewed at defined intervals rather than left open.",
           "types": [
             "expert"
           ],
@@ -592,6 +645,7 @@
         {
           "id": "c07",
           "text": "State at the start of care exactly what would be disclosed and to whom, and hold any disclosure to that stated limit, so people can seek help without learning the rules afterwards.",
+          "text_detailed": "State at the start of care exactly what would be disclosed and to whom, and hold any disclosure to that stated limit, so that people can seek help without learning the rules afterwards. The statement is given in writing and repeated when the treatment changes.",
           "types": [
             "public"
           ],
@@ -612,6 +666,7 @@
         {
           "id": "c01",
           "text": "Do not offer or provide CPR when it falls outside medically reasonable options; explain the judgment and use a fair conflict-resolution/second-opinion process",
+          "text_detailed": "Do not offer or provide CPR where it falls outside medically reasonable options, explain the judgment and its basis to the surrogate, and route disagreement through a fair conflict-resolution process with a second opinion. The judgment is recorded with the prognosis it rests on.",
           "types": [
             "expert"
           ],
@@ -621,6 +676,7 @@
         {
           "id": "c02",
           "text": "Make a strong recommendation against CPR and use informed nondissent: explain that clinicians will write a DNR order unless the patient/surrogate objects, then escalate disagreement through fair process",
+          "text_detailed": "Make a strong recommendation against CPR and use informed non-dissent: explain that a DNR order will be written unless the patient or surrogate objects, allow a stated period to object, and escalate any objection through fair process rather than treating silence as agreement.",
           "types": [
             "expert"
           ],
@@ -630,6 +686,7 @@
         {
           "id": "c03",
           "text": "Continue to offer CPR as an option when there remains any nonzero prospect of the outcome the patient values, allowing the informed patient/surrogate to decide after burdens and prognosis are explained",
+          "text_detailed": "Continue to offer CPR while any non-zero prospect of the outcome the patient values remains, and let the informed patient or surrogate decide once burdens and prognosis have been explained in terms of what recovery would look like rather than survival alone.",
           "types": [
             "framework"
           ],
@@ -639,6 +696,7 @@
         {
           "id": "c04",
           "text": "Maintain full-code status temporarily while a second opinion, ethics consultation, and structured goals-of-care process test whether disagreement reflects prognosis misunderstanding or a genuine value conflict",
+          "text_detailed": "Maintain full-code status temporarily while a second opinion, ethics consultation and a structured goals-of-care conversation establish whether the disagreement is about prognosis or about values, with a stated period after which the question is decided rather than left open.",
           "types": [
             "expert"
           ],
@@ -648,6 +706,7 @@
         {
           "id": "c05",
           "text": "Permit unilateral nonoffer when the probability of meaningful survival is extremely low and CPR cannot reverse the terminal process, because professional integrity and nonmaleficence set limits on requested intervention",
+          "text_detailed": "Permit unilateral non-offer where the probability of meaningful survival is extremely low and CPR cannot reverse the underlying process, on the ground that professional integrity and non-maleficence limit what may be demanded. The threshold is institutional and stated, not set by the individual clinician at the bedside.",
           "types": [
             "expert",
             "framework"
@@ -658,6 +717,7 @@
         {
           "id": "c06",
           "text": "Give a capable patient's prior specific CPR request or a surrogate's substituted judgment presumptive priority unless CPR is physiologically incapable of achieving circulation at all",
+          "text_detailed": "Give a capable patient's prior specific request for CPR, or a surrogate's substituted judgment, presumptive priority unless CPR could not restore circulation at all. Physiological futility is the only defeater, and it is documented as such.",
           "types": [
             "framework"
           ],
@@ -667,6 +727,7 @@
         {
           "id": "c07",
           "text": "Use a proportional rule: as expected benefit approaches zero and burdens rise, clinician authority to withhold increases; where benefit remains uncertain, shared decision authority remains stronger",
+          "text_detailed": "Scale clinician authority to the expected benefit: as benefit approaches zero and burdens rise, authority to withhold increases; where benefit remains genuinely uncertain, the decision stays shared. The point at which authority shifts is stated in advance rather than asserted afterwards.",
           "types": [
             "framework"
           ],
@@ -676,6 +737,7 @@
         {
           "id": "c08",
           "text": "Keep the surrogate's request in force until a documented conversation about what CPR would and would not achieve for this patient has happened, and record the family's view in the chart when the team decides otherwise.",
+          "text_detailed": "Keep the surrogate's request in force until a documented conversation about what CPR would and would not achieve for this patient has taken place, and record the family's view in the chart where the team decides otherwise, so that the disagreement is visible in the record.",
           "types": [
             "public"
           ],
@@ -696,6 +758,7 @@
         {
           "id": "c01",
           "text": "Allow the patient's chosen adult family member to interpret after a qualified interpreter is offered, no conflict is found, and understanding is verified",
+          "text_detailed": "Allow the patient's chosen adult family member to interpret once a qualified interpreter has been offered and declined, no conflict of interest is apparent, and the clinician has verified understanding by asking the patient to state the plan back. All three steps are recorded.",
           "types": [
             "public"
           ],
@@ -705,6 +768,7 @@
         {
           "id": "c02",
           "text": "Use a qualified medical interpreter for material consent while allowing the chosen family member to remain for relational/decisional support",
+          "text_detailed": "Use a qualified medical interpreter for the material parts of consent, while the chosen family member remains present for support. The division is explained to the patient in advance so that the family member's presence is not mistaken for their exclusion.",
           "types": [
             "public"
           ],
@@ -714,6 +778,7 @@
         {
           "id": "c03",
           "text": "Require qualified interpretation to remain part of the high-stakes consent discussion; family may support but not replace it",
+          "text_detailed": "Require qualified interpretation throughout the high-stakes consent discussion; family may support but not replace it, including where the family member is fluent and willing, because the record must show that the words consented to were accurately conveyed.",
           "types": [
             "expert"
           ],
@@ -723,6 +788,7 @@
         {
           "id": "c04",
           "text": "Permit family interpretation after a private, documented request with qualified interpreter present and clinician finding of appropriateness",
+          "text_detailed": "Permit family interpretation only after a private request made without the family member present, documented, with a qualified interpreter available and a clinician finding that the arrangement is appropriate for this decision.",
           "types": [
             "expert"
           ],
@@ -732,6 +798,7 @@
         {
           "id": "c05",
           "text": "Require qualified interpretation because informed consent and equitable language access require reliable comprehension",
+          "text_detailed": "Require qualified interpretation, on the ground that informed consent and equitable language access both depend on reliable comprehension, and that the burden of arranging it falls on the service rather than on the patient's family.",
           "types": [
             "framework"
           ],
@@ -741,6 +808,7 @@
         {
           "id": "c06",
           "text": "Respect the competent patient's choice of a trusted adult family interpreter after independent coercion/conflict screening and verification of understanding",
+          "text_detailed": "Respect the competent patient's choice of a trusted adult family interpreter, after independent screening for coercion and conflict conducted without that family member present, and after the clinician has verified understanding directly.",
           "types": [
             "framework"
           ],
@@ -760,6 +828,7 @@
         {
           "id": "c01",
           "text": "Pursue individual expanded access when regulatory criteria are met, the patient understands uncertainty, potential benefit plausibly justifies risk, and access will not materially interfere with trials or development",
+          "text_detailed": "Pursue individual expanded access where regulatory criteria are met, the patient understands the uncertainty, the potential benefit plausibly justifies the risk, and access will not materially interfere with trials or development. Each of those four is assessed and recorded before the request is made.",
           "types": [
             "expert"
           ],
@@ -769,6 +838,7 @@
         {
           "id": "c02",
           "text": "Require independent institutional/manufacturer review before access, including evidence threshold, safety monitoring, supply impact, and a plan for reporting outcomes",
+          "text_detailed": "Require independent institutional or manufacturer review before access, covering the evidence threshold, safety monitoring, the effect on supply, and a plan for reporting the outcome, with the review completed within a stated period so that the process does not become the refusal.",
           "types": [
             "expert"
           ],
@@ -778,6 +848,7 @@
         {
           "id": "c03",
           "text": "Decline individual access when evidence is too immature or the request would materially compromise a fair development program, even if the patient has no satisfactory alternative",
+          "text_detailed": "Decline individual access where the evidence is too immature or the request would materially compromise a fair development programme, even where the patient has no satisfactory alternative, stating which of the two grounds applies and what would change it.",
           "types": [
             "expert"
           ],
@@ -787,6 +858,7 @@
         {
           "id": "c04",
           "text": "Give strong priority to the identifiable patient's rescue interest once risk is tolerable, even when efficacy is highly uncertain and population-level evidence generation would be cleaner without access",
+          "text_detailed": "Give strong priority to the identifiable patient's rescue interest once risk is tolerable, even where efficacy is highly uncertain and evidence generation would be cleaner without access, provided the patient is told plainly that the intervention may not work.",
           "types": [
             "framework"
           ],
@@ -796,6 +868,7 @@
         {
           "id": "c05",
           "text": "Protect fair access by using transparent, consistent eligibility and allocation criteria rather than ad hoc influence, publicity, wealth, or clinician advocacy",
+          "text_detailed": "Protect fair access through transparent and consistently applied eligibility and allocation criteria, rather than through publicity, wealth or clinician advocacy. The criteria are published, and departures from them are recorded and reviewed.",
           "types": [
             "framework"
           ],
@@ -805,6 +878,7 @@
         {
           "id": "c06",
           "text": "Restrict use to trials except in exceptionally high-evidence or near-certain rescue circumstances, because premature individual access can undermine collective knowledge and expose vulnerable patients to false hope",
+          "text_detailed": "Restrict use to trials except in exceptionally high-evidence or near-certain rescue circumstances, on the ground that premature individual access undermines collective knowledge and exposes vulnerable patients to false hope. What counts as exceptional is defined in advance.",
           "types": [
             "framework"
           ],
@@ -814,6 +888,7 @@
         {
           "id": "c07",
           "text": "Publish the access criteria and the decision timeline at the point of request, so a patient who asks learns where they stand within days rather than through informal escalation.",
+          "text_detailed": "Publish the access criteria and the decision timeline at the point of request, so that a patient who asks learns where they stand within days rather than through informal escalation, and receives the decision in writing with its reason.",
           "types": [
             "public"
           ],
@@ -834,6 +909,7 @@
         {
           "id": "c01",
           "text": "Provide nonendorsement assistance—records, risk counseling, and follow-up planning—when a capable patient proceeds, so ordinary care is not withdrawn and avoidable harm is reduced",
+          "text_detailed": "Provide non-endorsement assistance — records, risk counselling and follow-up planning — where a capable patient proceeds, so that ordinary care is not withdrawn and avoidable harm is reduced. The assistance is documented as continuity of care, and the clinician's assessment of the evidence is recorded alongside it.",
           "types": [
             "public"
           ],
@@ -843,6 +919,7 @@
         {
           "id": "c02",
           "text": "Counsel clearly against the intervention and avoid assistance that could reasonably be interpreted as referral or endorsement, while continuing ordinary care if the patient proceeds independently",
+          "text_detailed": "Counsel clearly against the intervention and avoid any assistance that could reasonably read as referral or endorsement, while continuing ordinary care if the patient proceeds independently. What will and will not be provided is stated to the patient in advance.",
           "types": [
             "public"
           ],
@@ -852,6 +929,7 @@
         {
           "id": "c03",
           "text": "Do not refer to or certify the commercial intervention as clinically supported; provide accurate evidence/risk counseling, records, and necessary continuity care with explicit nonendorsement",
+          "text_detailed": "Do not refer to or certify the commercial intervention as clinically supported. Provide accurate evidence and risk counselling, release records, and give necessary continuity care, with the non-endorsement stated explicitly in any document that leaves the practice.",
           "types": [
             "expert"
           ],
@@ -861,6 +939,7 @@
         {
           "id": "c04",
           "text": "Respect competent risk-taking by supporting practical harm reduction and continuity so long as the clinician does not misrepresent evidentiary status",
+          "text_detailed": "Respect competent risk-taking by supporting practical harm reduction and continuity, so long as the clinician does not misrepresent the evidentiary status of the intervention in any record, letter or conversation.",
           "types": [
             "framework"
           ],
@@ -870,6 +949,7 @@
         {
           "id": "c05",
           "text": "Refuse referral, certification, or facilitation that lends professional legitimacy to a treatment whose meaningful benefit remains unestablished",
+          "text_detailed": "Refuse referral, certification or facilitation that would lend professional legitimacy to a treatment whose meaningful benefit is unestablished, while continuing to provide care unrelated to it and saying so clearly to the patient.",
           "types": [
             "framework"
           ],
@@ -879,6 +959,7 @@
         {
           "id": "c06",
           "text": "Decline all nonessential assistance connected to the commercial intervention beyond emergency/ordinary ongoing care, because even logistical help may predictably function as endorsement",
+          "text_detailed": "Decline all non-essential assistance connected to the commercial intervention beyond emergency and ordinary continuing care, on the ground that even logistical help predictably functions as endorsement. The boundary is stated to the patient before they travel.",
           "types": [
             "framework"
           ],
@@ -898,6 +979,7 @@
         {
           "id": "c01",
           "text": "Require explicit patient opt-in after disclosing the trainee's identity, training level, material procedural role, supervision, and the option to decline without penalty",
+          "text_detailed": "Require explicit opt-in after disclosing the trainee's identity, level, material role in the procedure, the supervision arrangements, and that declining carries no penalty. The disclosure happens before sedation and is recorded.",
           "types": [
             "expert",
             "public"
@@ -908,6 +990,7 @@
         {
           "id": "c02",
           "text": "Use a teaching-hospital consent architecture with explicit role disclosure and a clear opt-out, but do not require a separate affirmative signature for every supervised material step",
+          "text_detailed": "Use a teaching-hospital consent architecture with clear role disclosure and a real opt-out, without a separate signature for each supervised step. The opt-out is offered at a point where it can still be exercised and is recorded when taken.",
           "types": [
             "expert",
             "public"
@@ -918,6 +1001,7 @@
         {
           "id": "c03",
           "text": "Permit the attending to delegate ordinary supervised components within the care team after general informed consent, provided the trainee is introduced and the attending remains responsible",
+          "text_detailed": "Permit the attending to delegate ordinary supervised components within the team after general informed consent, provided the trainee is introduced by name and level and the attending remains present and responsible for the material steps.",
           "types": [
             "expert"
           ],
@@ -927,6 +1011,7 @@
         {
           "id": "c04",
           "text": "Scale consent specificity to materiality: observation/minor tasks require notification, while invasive or substantially independent trainee performance requires explicit authorization",
+          "text_detailed": "Scale the specificity of consent to what the trainee will do: observation and minor tasks require notification, while invasive or substantially independent performance requires explicit authorisation for that step. Which category applies is decided before the procedure, not during it.",
           "types": [
             "expert",
             "framework"
@@ -937,6 +1022,7 @@
         {
           "id": "c05",
           "text": "Give patient authorization priority even when refusal reduces training opportunities; educational benefit cannot substitute for consent to a material intervention",
+          "text_detailed": "Give patient authorisation priority even where refusal costs a training opportunity: educational benefit does not substitute for consent to a material intervention, and refusal is recorded without consequence for the patient's care.",
           "types": [
             "framework"
           ],
@@ -946,6 +1032,7 @@
         {
           "id": "c06",
           "text": "Presume supervised trainee participation in a teaching institution with meaningful opt-out because sustaining competent future clinicians is a shared social good, while prohibiting hidden or unsupervised participation",
+          "text_detailed": "Presume supervised trainee participation in a teaching institution with a meaningful opt-out, on the ground that training competent future clinicians is a shared good, while prohibiting hidden or unsupervised participation and making the presumption visible in advance.",
           "types": [
             "expert",
             "framework"
@@ -966,6 +1053,7 @@
         {
           "id": "c01",
           "text": "Respect the capable patient's refusal after informed counseling; pregnancy does not remove bodily decisional authority",
+          "text_detailed": "Respect the capable patient's refusal after informed counselling, on the ground that pregnancy does not remove bodily decisional authority. The counselling and the refusal are recorded, and the decision is revisited only if the patient asks or the clinical situation materially changes.",
           "types": [
             "expert"
           ],
@@ -975,6 +1063,7 @@
         {
           "id": "c02",
           "text": "Continue strong directive counseling, offer ethics/support consultation and alternatives, and revisit the decision while time permits, but do not coerce or seek forced treatment",
+          "text_detailed": "Continue strong directive counselling, offer ethics and support consultation and alternatives, and revisit the decision while time allows, without coercion and without seeking a court order. Each revisiting is at the patient's agreement rather than imposed.",
           "types": [
             "expert"
           ],
@@ -984,6 +1073,7 @@
         {
           "id": "c03",
           "text": "After refusal, shift to the safest acceptable maternal/fetal plan and preserve trust rather than making continued care conditional on compliance",
+          "text_detailed": "After refusal, move to the safest maternal and fetal plan the patient accepts, and keep the rest of care unchanged, so that continued attention is not conditional on compliance. The alternative plan is documented as the agreed plan rather than as a fallback.",
           "types": [
             "expert"
           ],
@@ -993,6 +1083,7 @@
         {
           "id": "c04",
           "text": "Treat bodily autonomy as a categorical bar to forced intervention in a capable pregnant patient even when fetal benefit is expected to be substantial",
+          "text_detailed": "Treat bodily autonomy as a categorical bar to forced intervention in a capable pregnant patient, even where the expected fetal benefit is substantial, and apply the bar without exception rather than as a strong presumption that could be outweighed.",
           "types": [
             "framework"
           ],
@@ -1002,6 +1093,7 @@
         {
           "id": "c05",
           "text": "Permit exceptional override or compulsory intervention when fetal benefit is extraordinarily large, maternal burden very small, and no less intrusive alternative exists",
+          "text_detailed": "Permit exceptional override only where the fetal benefit would be extraordinarily large, the maternal burden very small, and no less intrusive alternative exists — all three at once, established in advance and reviewed by someone outside the treating team.",
           "types": [
             "expert",
             "framework"
@@ -1012,6 +1104,7 @@
         {
           "id": "c06",
           "text": "Use a relational/shared process that invites partner/family/support participation only if the patient wants it, seeking a mutually acceptable plan without transferring authority away from the patient",
+          "text_detailed": "Use a shared process that invites the partner, family or other supporters in only if the patient wants them, seeking a plan everyone can accept while leaving the decision with the patient. The patient is asked privately who they want present.",
           "types": [
             "framework"
           ],
@@ -1021,6 +1114,7 @@
         {
           "id": "c07",
           "text": "Keep the refusal in force and continue full labour care unchanged, so that declining an intervention never costs a patient the rest of the team's attention.",
+          "text_detailed": "Keep the refusal in force and continue full labour care unchanged, so that declining an intervention never costs a patient the rest of the team's attention, with staffing and monitoring recorded as they would be for any other patient.",
           "types": [
             "public"
           ],
@@ -1041,6 +1135,7 @@
         {
           "id": "c01",
           "text": "Continue caring for the child, use evidence-based communication, revisit vaccination over time, and preserve the medical home despite parental refusal",
+          "text_detailed": "Continue caring for the child, use evidence-based communication, revisit vaccination at each visit rather than once, and keep the medical home in place despite parental refusal. Refusal is recorded without changing what the child is offered.",
           "types": [
             "expert"
           ],
@@ -1050,6 +1145,7 @@
         {
           "id": "c02",
           "text": "Permit dismissal/non-enrollment after repeated counseling when less restrictive strategies fail, with advance notice, equity/access review, and safe transfer/nonabandonment safeguards",
+          "text_detailed": "Permit dismissal or non-enrolment after repeated counselling where less restrictive strategies have failed, subject to written notice with a stated period, a review of what it would cost this family to find another practice, and care continuing until the transfer is complete.",
           "types": [
             "expert"
           ],
@@ -1059,6 +1155,7 @@
         {
           "id": "c03",
           "text": "Continue care but use infection-control and scheduling precautions for unvaccinated patients and apply outbreak-specific restrictions when warranted",
+          "text_detailed": "Continue care while using infection-control and scheduling precautions for unvaccinated patients, and apply tighter restrictions during a local outbreak. The precautions are set by the practice in advance and applied uniformly rather than negotiated per family.",
           "types": [
             "expert"
           ],
@@ -1068,6 +1165,7 @@
         {
           "id": "c04",
           "text": "Make routine vaccination a condition of ongoing elective enrollment except for recognized medical contraindications, because a practice may set collective-risk and professional-integrity boundaries",
+          "text_detailed": "Make routine vaccination a condition of continuing elective enrolment, except for recognised medical contraindications, on the ground that a practice may set collective-risk boundaries. The condition is stated at enrolment rather than introduced after a refusal.",
           "types": [
             "expert"
           ],
@@ -1077,6 +1175,7 @@
         {
           "id": "c05",
           "text": "Preserve care because the child has an independent interest in access to a trusted pediatric medical home and should not bear the full cost of parental refusal",
+          "text_detailed": "Preserve care because the child has an interest in a trusted medical home that is independent of the parents' decision, and should not carry the cost of it. Dismissal is not available under this policy even after repeated refusal.",
           "types": [
             "framework"
           ],
@@ -1086,6 +1185,7 @@
         {
           "id": "c06",
           "text": "Permit dismissal because the practice also owes duties to other vulnerable patients, staff, and the integrity of a preventive-care standard",
+          "text_detailed": "Permit dismissal on the ground that the practice also owes duties to other vulnerable patients, to staff, and to the integrity of a preventive standard, subject to notice, an alternative identified before discharge, and continuing care in the interim.",
           "types": [
             "expert",
             "framework"
@@ -1096,6 +1196,7 @@
         {
           "id": "c07",
           "text": "Keep the child in the practice and place scheduling and infection-control precautions on the practice rather than the family, so that refusal does not cost the child a regular clinician.",
+          "text_detailed": "Keep the child in the practice and place scheduling and infection-control precautions on the practice rather than the family, so that refusal does not cost the child a regular clinician. Where precautions restrict appointment times, the practice absorbs the inconvenience.",
           "types": [
             "public"
           ],
@@ -1116,6 +1217,7 @@
         {
           "id": "c01",
           "text": "Use intensive communication, support, second opinions, and a short clinically safe negotiation period before any coercive step",
+          "text_detailed": "Use intensive communication, support, second opinions and a short negotiation period that stays within the clinically safe window, before any coercive step. The window is defined by the oncology team in advance and its expiry is recorded.",
           "types": [
             "expert"
           ],
@@ -1125,6 +1227,7 @@
         {
           "id": "c02",
           "text": "Petition child-protection/court authority when refusal crosses a serious-harm threshold and effective treatment offers a high likelihood of major benefit after less intrusive efforts fail",
+          "text_detailed": "Petition child-protection or court authority where refusal crosses a serious-harm threshold and the treatment offers a high likelihood of major benefit, and only after less intrusive efforts have been tried and documented. The petition states the prognosis with and without treatment.",
           "types": [
             "expert"
           ],
@@ -1134,6 +1237,7 @@
         {
           "id": "c03",
           "text": "Set an explicit negotiation deadline tied to the point at which further delay materially lowers cure probability; if refusal persists, initiate protective intervention",
+          "text_detailed": "Set an explicit deadline tied to the point at which further delay materially lowers the chance of cure, tell the family that date at the outset, and initiate protective intervention if refusal persists past it.",
           "types": [
             "expert"
           ],
@@ -1143,6 +1247,7 @@
         {
           "id": "c04",
           "text": "Respect parental authority unless refusal creates imminent or near-certain catastrophic harm; high treatment burden and family integrity justify a very high threshold for state intervention",
+          "text_detailed": "Respect parental authority unless refusal creates imminent or near-certain catastrophic harm, on the ground that treatment burden and family integrity justify a very high threshold for state intervention. The threshold is applied to this child's prognosis rather than to the diagnosis in general.",
           "types": [
             "framework"
           ],
@@ -1152,6 +1257,7 @@
         {
           "id": "c05",
           "text": "Treat the child's basic interests and future autonomy as overriding parental refusal when a burdensome but established therapy offers a very high chance of cure",
+          "text_detailed": "Treat the child's basic interests and future autonomy as overriding parental refusal where a burdensome but established therapy offers a very high chance of cure, with the chance stated numerically and confirmed by a second opinion.",
           "types": [
             "framework"
           ],
@@ -1161,6 +1267,7 @@
         {
           "id": "c06",
           "text": "Require independent pediatric oncology and ethics review before state action to confirm prognosis, benefit/burden estimates, alternatives, and that mistrust or remediable barriers are not driving refusal",
+          "text_detailed": "Require independent paediatric oncology and ethics review before any state action, confirming the prognosis, the benefit and burden estimates, the alternatives considered, and that mistrust or a remediable practical barrier is not what is driving the refusal.",
           "types": [
             "framework"
           ],
@@ -1170,6 +1277,7 @@
         {
           "id": "c07",
           "text": "Offer a named second opinion and an independent family advocate before any child-protection step, so a family that disagrees is heard rather than only reported.",
+          "text_detailed": "Offer a named second opinion and an independent family advocate before any child-protection step, so that a family that disagrees is heard rather than only reported. Both are arranged by the hospital and available within the negotiation window.",
           "types": [
             "public"
           ],
@@ -1190,6 +1298,7 @@
         {
           "id": "c01",
           "text": "Permit immediate reserve-agent use when the patient's expected individual benefit meaningfully exceeds the alternative and the drug fits defined reserve-use criteria",
+          "text_detailed": "Permit immediate reserve-agent use where the patient's expected benefit meaningfully exceeds the alternative and the case fits defined reserve criteria, with the comparison recorded at the time rather than reconstructed later.",
           "types": [
             "expert"
           ],
@@ -1199,6 +1308,7 @@
         {
           "id": "c02",
           "text": "Require infectious-disease/stewardship preauthorization before reserve use, with rapid review so stewardship does not become clinically harmful delay",
+          "text_detailed": "Require infectious-disease or stewardship preauthorisation before reserve use, with a review turnaround short enough that stewardship does not become a clinically harmful delay, and an override available where the delay itself would cause harm.",
           "types": [
             "expert"
           ],
@@ -1208,6 +1318,7 @@
         {
           "id": "c03",
           "text": "Use the nonreserve alternative unless resistance/susceptibility, toxicity, or expected-outcome differences cross a predefined threshold justifying the reserve agent",
+          "text_detailed": "Use the non-reserve alternative unless susceptibility, toxicity or expected-outcome differences cross a threshold defined in advance for this drug and this infection, with the crossing documented.",
           "types": [
             "expert"
           ],
@@ -1217,6 +1328,7 @@
         {
           "id": "c04",
           "text": "Prioritize the identifiable current patient's expected health benefit when the reserve drug is meaningfully better; diffuse future resistance costs should not make the individual bear a disproportionate sacrifice",
+          "text_detailed": "Prioritise the identifiable present patient's expected benefit where the reserve drug is meaningfully better, on the ground that diffuse future resistance costs should not fall disproportionately on the patient in front of the team. Meaningfully better is defined against stated outcome differences.",
           "types": [
             "framework"
           ],
@@ -1226,6 +1338,7 @@
         {
           "id": "c05",
           "text": "Restrict reserve use more strongly because preserving antimicrobial effectiveness protects many future patients and one patient's modest incremental benefit does not automatically outweigh that collective interest",
+          "text_detailed": "Restrict reserve use more strongly, on the ground that preserving effectiveness protects many future patients and that one patient's modest incremental benefit does not automatically outweigh that. What counts as modest is set in the authorisation rule rather than at the bedside.",
           "types": [
             "framework"
           ],
@@ -1235,6 +1348,7 @@
         {
           "id": "c06",
           "text": "Use a transparent authorization rule that explicitly weighs individual benefit, alternative adequacy, resistance risk category, and exception/appeal criteria rather than relying on bedside discretion alone",
+          "text_detailed": "Use a written authorisation rule that weighs individual benefit, the adequacy of alternatives, the resistance-risk category of the drug, and the grounds for exception and appeal, applied consistently rather than through bedside discretion alone.",
           "types": [
             "expert",
             "framework"
@@ -1245,6 +1359,7 @@
         {
           "id": "c07",
           "text": "Tell the patient when a stewardship rule rather than their own clinical picture is the reason a drug is withheld, and give them a route to ask for that decision to be reviewed.",
+          "text_detailed": "Tell the patient when a stewardship rule rather than their own clinical picture is the reason a drug is withheld, and give them a named route to ask for that decision to be reviewed within a stated time.",
           "types": [
             "public"
           ],
@@ -1265,6 +1380,7 @@
         {
           "id": "c01",
           "text": "Immediate antibiotics after informed patient preference",
+          "text_detailed": "Prescribe antibiotics now, after explaining the expected benefit and the harms under this degree of diagnostic uncertainty and recording the patient's preference. The prescription is for a defined course with a review point rather than an open supply.",
           "types": [
             "public"
           ],
@@ -1274,6 +1390,7 @@
         {
           "id": "c02",
           "text": "Delayed/back-up prescription with activation criteria",
+          "text_detailed": "Issue a back-up prescription to be filled only if named criteria are met — symptoms persisting past a stated day, a fever above a stated point, or specified new features — with those criteria written on the prescription.",
           "types": [
             "public"
           ],
@@ -1283,6 +1400,7 @@
         {
           "id": "c03",
           "text": "No antibiotics now + symptomatic care/return precautions",
+          "text_detailed": "Give no antibiotic now, provide symptomatic care, and set explicit return precautions naming what should prompt reassessment and by when, with an appointment route that does not depend on the patient starting again.",
           "types": [
             "expert"
           ],
@@ -1292,6 +1410,7 @@
         {
           "id": "c04",
           "text": "Delayed prescription strategy",
+          "text_detailed": "Use the delayed-prescription strategy as the default for this presentation, so that the patient holds the prescription and the criteria decide whether it is used, rather than the decision being remade at a second visit.",
           "types": [
             "expert"
           ],
@@ -1301,6 +1420,7 @@
         {
           "id": "c05",
           "text": "No immediate antibiotic because low expected benefit does not justify individual/collective harms",
+          "text_detailed": "Give no immediate antibiotic, on the ground that the low expected benefit does not justify the individual harms of the drug or the collective cost of resistance, with the reasoning explained to the patient and a review offered if symptoms change.",
           "types": [
             "framework"
           ],
@@ -1310,6 +1430,7 @@
         {
           "id": "c06",
           "text": "Delayed prescription as option-preserving shared decision under uncertainty",
+          "text_detailed": "Use a delayed prescription as an option-preserving decision made with the patient under uncertainty: the patient decides whether the criteria have been met, having been told what they are and what to do if they are not sure.",
           "types": [
             "framework"
           ],
@@ -1329,6 +1450,7 @@
         {
           "id": "c01",
           "text": "Allow same-day video-first assessment when no emergency red flag is present, with explicit escalation instructions, to reduce travel and delay",
+          "text_detailed": "Allow a same-day video-first assessment where no emergency red flag is present, with escalation instructions given in writing and a named route to in-person care, so that reduced travel and delay do not become reduced access to examination.",
           "types": [
             "public"
           ],
@@ -1338,6 +1460,7 @@
         {
           "id": "c02",
           "text": "Require in-person assessment for a new injury when clinically relevant hands-on findings cannot be assessed reliably by video and the patient prioritizes diagnostic certainty",
+          "text_detailed": "Require in-person assessment for a new injury where hands-on findings cannot be assessed reliably by video and the patient prioritises diagnostic certainty, with the appointment arranged at the time rather than left to the patient to book.",
           "types": [
             "public"
           ],
@@ -1347,6 +1470,7 @@
         {
           "id": "c03",
           "text": "Use a risk-triggered hybrid rule: start remotely only when triage shows video can support a safe initial plan and require timely in-person assessment whenever missing findings could materially change management",
+          "text_detailed": "Start remotely only where triage shows video can support a safe initial plan, and require timely in-person assessment whenever a missing finding could materially change management. What counts as such a finding is listed for the presentation in advance.",
           "types": [
             "expert"
           ],
@@ -1356,6 +1480,7 @@
         {
           "id": "c04",
           "text": "Prefer remote-first care for low-risk presentations because access burdens are ethically material; escalate when expected diagnostic value of in-person examination justifies them",
+          "text_detailed": "Prefer remote-first care for low-risk presentations, on the ground that travel and time burdens are ethically material, and escalate where the expected diagnostic value of examination justifies them. The escalation threshold is stated rather than left to preference.",
           "types": [
             "framework"
           ],
@@ -1365,6 +1490,7 @@
         {
           "id": "c05",
           "text": "Require in-person assessment when hands-on findings can materially change management because diagnostic responsibility outweighs convenience",
+          "text_detailed": "Require in-person assessment wherever hands-on findings could materially change management, on the ground that diagnostic responsibility outweighs convenience, while the service absorbs the burden by offering local or out-of-hours slots.",
           "types": [
             "framework"
           ],
@@ -1374,6 +1500,7 @@
         {
           "id": "c06",
           "text": "Use remote assessment immediately plus a scheduled local/in-person reassessment if symptoms fail predefined improvement or uncertainty thresholds, preserving access without treating video as definitive",
+          "text_detailed": "Assess remotely at once and schedule an in-person reassessment that happens unless predefined improvement thresholds are met, so that video is a first step rather than the definitive assessment, and the reassessment is booked rather than offered.",
           "types": [
             "expert"
           ],
@@ -1393,6 +1520,7 @@
         {
           "id": "c01",
           "text": "Require fair outbreak assignments with narrow extraordinary-risk exemptions",
+          "text_detailed": "Assign outbreak work fairly across those qualified, with exemptions confined to extraordinary personal risk, defined in advance and decided by someone other than the assigning manager. The rota and the exemptions granted are visible to staff.",
           "types": [
             "public"
           ],
@@ -1402,6 +1530,7 @@
         {
           "id": "c02",
           "text": "Voluntary/broadly exemptible service for serious personal/household/caregiving vulnerability with reassignment/incentives",
+          "text_detailed": "Make outbreak service voluntary, with broad exemption for serious personal, household or caregiving vulnerability, and use reassignment and incentives to fill the rota rather than compulsion. Declining is recorded without consequence for the clinician's standing.",
           "types": [
             "public"
           ],
@@ -1411,6 +1540,7 @@
         {
           "id": "c03",
           "text": "Strong professional duty after adequate protection, with narrow individualized exemptions",
+          "text_detailed": "Hold clinicians to a strong professional duty once protection, training and monitoring are adequate, with narrow individualised exemptions assessed case by case. The institution must first demonstrate that the protective conditions are actually met.",
           "types": [
             "expert"
           ],
@@ -1420,6 +1550,7 @@
         {
           "id": "c04",
           "text": "Individualized risk-and-obligation threshold with broader reassignment/exemption for vulnerability",
+          "text_detailed": "Set the obligation individually against each clinician's own risk and circumstances, with reassignment and exemption available more broadly for vulnerability, and the assessment repeated as the outbreak and the person's situation change.",
           "types": [
             "expert"
           ],
@@ -1429,6 +1560,7 @@
         {
           "id": "c05",
           "text": "Fair mandatory rotation grounded in solidarity after institutional risk minimization",
+          "text_detailed": "Use a fair mandatory rotation grounded in shared obligation, entered only after the institution has minimised risk as far as it can, with the rotation published, the burden shared across seniority, and the risk reduction demonstrated rather than asserted.",
           "types": [
             "framework"
           ],
@@ -1438,6 +1570,7 @@
         {
           "id": "c06",
           "text": "Voluntary assignment/broad vulnerability exemptions grounded in duties to self/dependents and proportionality",
+          "text_detailed": "Make assignment voluntary with broad vulnerability exemptions, on the ground that clinicians have duties to themselves and their dependants and that what may be demanded is proportionate to the protection provided.",
           "types": [
             "framework"
           ],
