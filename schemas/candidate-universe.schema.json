@@ -99,7 +99,9 @@
           "minLength": 1
         },
         "demonstration_richness": {
-          "enum": ["VERY HIGH", "HIGH", "MEDIUM-HIGH", "MEDIUM", "LOW", "N/A"]
+          "type": "string",
+          "pattern": "^(VERY HIGH|HIGH|MEDIUM-HIGH|MEDIUM|LOW|N/A)(?:\\b.*)?$",
+          "description": "Audit-preserved demonstration-richness statement. The leading token is the controlled category; any following text is retained editorial explanation rather than a different category."
         },
         "action": {
           "type": "string",
