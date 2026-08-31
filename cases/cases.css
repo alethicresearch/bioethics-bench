@@ -21,3 +21,7 @@
 .prov-srcs summary .prov{cursor:pointer}
 .prov-srcs summary .src-count{color:#94a3b8;font-weight:600;font-size:.72rem}
 .src-lead{margin:.5rem 0 0;font-size:.75rem;line-height:1.5;color:#64748b}
+
+.src-note{margin:.4rem 0 0;padding-left:.7rem;border-left:2px solid #e2e8f0;color:#475569;font-size:.8rem;line-height:1.6}
+.src-note p{margin:0 0 .5rem}
+.src-note p:last-child{margin-bottom:0}

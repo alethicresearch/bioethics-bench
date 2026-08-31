@@ -18,3 +18,8 @@ jobs:
       - run: npm run validate
       # Demonstrate each guard on a deliberately broken non-Featured record or profile entry.
       - run: node scripts/validate-selftest.mjs
+      # The two files the website and SACRE read. The build scripts fail when the committed file
+      # no longer matches what the sources produce, so a hand-edited resource is caught here.
+      - run: node scripts/build-public-cases.mjs
+      - run: node scripts/build-case-sources.mjs
+      - run: node scripts/validate-public-cases.mjs

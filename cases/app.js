@@ -92,14 +92,18 @@ function policyProvenance(p,src){
   const layers=src.layers||{};
   const layer=[...new Map((p.types||[]).flatMap(t=>layers[t]||[]).map(x=>[x.citation,x])).values()];
   const list=own.length?own:(layer.length?layer:(src.sources||[]));
+  // Most case files record two citations and several sentences about the evidence behind each
+  // kind of position. The sentences say more than the list does, so they open with it.
+  const notes=(p.types||[]).map(t=>(src.layer_notes||{})[t]).filter(Boolean);
   const badge=sourceBadge(p.sourcing);
-  if(!list.length)return badge;
+  if(!list.length&&!notes.length)return badge;
   const note=SOURCE_NOTES[p.sourcing];
   const lead=own.length?''
     :`<p class="src-lead">${layer.length
       ? 'The Bench records these sources for the case, under the kind of position this policy represents:'
       : 'The Bench records sources for this case rather than for each of its policies. What the case was built from:'}</p>`;
-  return `<details class="srcs prov-srcs"><summary>${badge}${own.length?`<span class="src-count">· ${own.length}</span>`:''}</summary>${note?`<p class="src-lead">${esc(note)}</p>`:''}${lead}${sourceList(list)}</details>`;
+  const notesHtml=own.length?'':notes.map(n=>`<div class="src-note">${esc(n).replace(/\n{2,}/g,'</p><p>').replace(/\n/g,'<br>').replace(/^/,'<p>').replace(/$/,'</p>')}</div>`).join('');
+  return `<details class="srcs prov-srcs"><summary>${badge}${own.length?`<span class="src-count">· ${own.length}</span>`:''}</summary>${note?`<p class="src-lead">${esc(note)}</p>`:''}${notesHtml?`<p class="src-lead">What the case records about the evidence behind this kind of position:</p>${notesHtml}`:''}${list.length?`${lead}${sourceList(list)}`:''}</details>`;
 }
 function typeBadges(types){return (types||[]).map(t=>`<span class="ptype ${esc(t)}">${esc(TYPE_LABELS[t]||t)}</span>`).join('');}
 function sourceBadge(s){return `<span class="prov ${esc(s)}">${esc(SOURCE_LABELS[s]||s)}</span>`;}

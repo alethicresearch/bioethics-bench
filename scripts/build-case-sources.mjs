@@ -9,7 +9,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { referenceLines, referenceLayers } from './lib/case-references.mjs';
+import { referenceLines, referenceLayers, layerNotes } from './lib/case-references.mjs';
 
 /* Locators established by asking Crossref about a citation and accepting only an unambiguous
    answer (scripts/resolve-case-source-locators.mjs). A recorded locator beats a search link. */
@@ -46,6 +46,7 @@ let caseSourceCount = 0;
 let policySourceCount = 0;
 let casesWithPolicySources = 0;
 let casesWithLayers = 0;
+let casesWithLayerNotes = 0;
 
 for (const entry of inventory.cases) {
   const markdown = fs.readFileSync(path.join(ROOT, entry.deep_case_path), 'utf8');
@@ -59,7 +60,11 @@ for (const entry of inventory.cases) {
     if (citations.length) layers[layer] = citations.map((citation) => ({ citation, ...link(citation) }));
   }
   if (Object.keys(layers).length) casesWithLayers += 1;
-  cases[entry.inventory_id] = { sources, layers, policies: {} };
+  // What the case file itself says the evidence behind each kind of position is. Most case files
+  // record two citations and several sentences; the sentences are the more useful of the two.
+  const notes = layerNotes(markdown);
+  if (Object.keys(notes).length) casesWithLayerNotes += 1;
+  cases[entry.inventory_id] = { sources, layers, layer_notes: notes, policies: {} };
 }
 
 // Per-policy sources, where an approved crosswalk names the released record each policy matches.
@@ -101,15 +106,16 @@ const output = {
   policy_source_count: policySourceCount,
   cases_with_policy_sources: casesWithPolicySources,
   cases_with_layered_sources: casesWithLayers,
+  cases_with_layer_notes: casesWithLayerNotes,
   cases,
 };
 
 const rendered = `${JSON.stringify(output, null, 2)}\n`;
 if (process.argv.includes('--write')) {
   fs.writeFileSync(OUTPUT, rendered);
-  console.log(`Wrote ${path.relative(ROOT, OUTPUT)}: ${caseSourceCount} case sources (${casesWithLayers} cases grouped by evidence layer), ${policySourceCount} policy sources across ${casesWithPolicySources} cases.`);
+  console.log(`Wrote ${path.relative(ROOT, OUTPUT)}: ${caseSourceCount} case sources (${casesWithLayers} grouped by evidence layer, ${casesWithLayerNotes} with the case's own account of each layer), ${policySourceCount} policy sources across ${casesWithPolicySources} cases.`);
 } else {
   if (!fs.existsSync(OUTPUT)) throw new Error(`${path.relative(ROOT, OUTPUT)} is missing; run with --write`);
   if (fs.readFileSync(OUTPUT, 'utf8') !== rendered) throw new Error(`${path.relative(ROOT, OUTPUT)} is stale; run with --write`);
-  console.log(`Verified ${caseSourceCount} case sources / ${policySourceCount} policy sources / ${casesWithLayers} cases grouped by evidence layer.`);
+  console.log(`Verified ${caseSourceCount} case sources / ${policySourceCount} policy sources / ${casesWithLayers} layered / ${casesWithLayerNotes} with layer notes.`);
 }

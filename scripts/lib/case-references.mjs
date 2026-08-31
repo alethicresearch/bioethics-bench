@@ -106,3 +106,41 @@ export function allCaseFiles(root) {
 export function referenceLinesFor(file) {
   return referenceLines(fs.readFileSync(file, 'utf8'));
 }
+
+/* The case file's own account of the evidence behind each kind of position. These sections —
+   "Public / affected-community evidence", "Expert / professional recommendations", "Normative /
+   framework positions" — say what the case was built from in a way a two-line reference list
+   cannot, and 161 of the 200 files write at least one. The text is the file's, unchanged beyond
+   dropping markdown emphasis and bullet markers. */
+const SECTION_LAYERS = [
+  ['public', /^(public|affected)/i],
+  ['expert', /^(expert|professional)/i],
+  ['framework', /^(normative|framework)/i],
+];
+
+function tidyProse(body) {
+  return body
+    .split('\n')
+    .map((line) => line.replace(/^[-*]\s*/, '').replace(/\*\*/g, '').replace(/\*/g, '').replace(/`/g, '').trimEnd())
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+export function layerNotes(markdown) {
+  const headings = [...markdown.matchAll(/^##\s+(?:\d+[.)]?\s*)?(.+)$/gm)];
+  const notes = {};
+  for (let i = 0; i < headings.length; i += 1) {
+    const title = headings[i][1].trim();
+    // "Normative bridges" and the like are the reasoning, not a reference list; both belong here.
+    let layer = null;
+    for (const [name, pattern] of SECTION_LAYERS) if (pattern.test(title)) layer = name;
+    if (!layer) continue;
+    const from = headings[i].index + headings[i][0].length;
+    const to = i + 1 < headings.length ? headings[i + 1].index : markdown.length;
+    const body = tidyProse(markdown.slice(from, to));
+    if (body.length < 60) continue;
+    notes[layer] = notes[layer] ? `${notes[layer]}\n\n${body}` : body;
+  }
+  return notes;
+}

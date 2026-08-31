@@ -15,7 +15,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # main deploys to bioethicsbench.com on push, so the published resources are checked before the
+  # site goes out rather than after. A broken build stops the deploy instead of shipping it.
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run validate
+      - run: node scripts/build-public-cases.mjs
+      - run: node scripts/build-case-sources.mjs
+      - run: node scripts/validate-public-cases.mjs
+
   deploy:
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
