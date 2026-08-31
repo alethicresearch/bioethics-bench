@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -39,3 +39,14 @@ jobs:
           path: |
             data/case-families/full-200-rich-candidate-universes.v1.json
             docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
+      - name: Persist deterministic derived files
+        run: |
+          git config user.name "bioethics-bench-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/case-families/full-200-rich-candidate-universes.v1.json docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
+          if git diff --cached --quiet; then
+            echo "Derived files already current."
+          else
+            git commit -m "Regenerate Full-200 derived artifacts"
+            git push
+          fi
