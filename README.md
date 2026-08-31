@@ -39,9 +39,11 @@ A Framework policy, for example, may be directly sourced from a published framew
 
 The full research set contains **200 cases (M001–M200)** across clinical care, children and families, end-of-life care, reproduction and genetics, research ethics, public and global health, transplantation, mental health and disability, neuroethics, AI and health data, animals and One Health, climate and environment, and everyday clinical practice.
 
-The case-level research pass is complete. Each case has reviewed policy options with sourcing recorded for those policies. The machine-readable files are being prepared for final scholarly review and release.
+The case-level research pass is complete. Every case carries all three policy types and can be loaded into SACRE as it stands: **1,436 policies** across the 200 cases, each with a concise and a detailed form, and each labelled with how it was sourced.
 
-The current files used directly in SACRE contain the cases whose Public / Expert / Framework policy assignments have already been reviewed for that evaluation setup. The Bench website remains the fuller place to inspect the case, policies, and source material.
+Filling out the three types meant writing policies for the cases that lacked one. **138 of the 1,436 policies are Bench-written comparison policies**, marked as such wherever they appear. Twelve cases record their own judgement that the evidence did not support writing a pool of them; that judgement is kept with the case rather than overruled.
+
+Policy type is recorded for every policy, but it has been reviewed for 108 of them. The rest are assigned from the case record and are marked unreviewed, so a reader can tell a checked label from an inferred one. The website carries the case, its policies, their sources and the review state; the machine-readable files behind it are `resources/cases/full-200-cases.v1.json` (cases and policies) and `resources/cases/case-sources.v1.json` (662 case citations and 208 policy citations).
 
 ## Concise and detailed versions
 
@@ -50,7 +52,7 @@ A case may have:
 - a **concise** version for quick reading and evaluation;
 - a **detailed** version with more factual context.
 
-The policy options remain the same across the two versions when they are treated as matched versions of one case.
+The two versions describe one case and share its policies. Each policy is itself written twice, concise and detailed, so a detailed case is read against detailed policies rather than against summaries of them.
 
 ## Using Bioethics Bench with SACRE
 
@@ -99,6 +101,8 @@ Those questions belong to the planned validation studies and final release revie
 ├── scripts/                # Build, validation and review tools
 ├── releases/               # Versioned release material
 ├── analyses/               # Reproducible analyses when available
+├── cases/                  # The case browser published at bioethicsbench.com/cases/
+├── archive/                # Earlier versions of the site, kept at /archive/v1 … /archive/v6
 ├── CONTENT-LICENSE.md
 ├── CITATION.cff
 └── index.html

@@ -70,11 +70,11 @@ The full research set contains **200 cases (M001–M200)** across:
 - climate and environment;
 - everyday clinical and professional practice.
 
-The case-and-policy research pass is complete. The current machine-readable 200-case file contains **1,298 reviewed policies**. Final release work includes scholarly review of policy sourcing, Public / Expert / Framework assignments where cases will be used in SACRE, concise/detailed consistency, citations, and release checks.
+The case-and-policy research pass is complete. The current machine-readable 200-case file contains **1,436 policies**, each with a concise and a detailed form and a sourcing label. 138 of them are Bench-written comparison policies, marked as such, added so that every case carries all three policy types. Policy type has been reviewed for 108 policies; the rest are assigned from the case record and marked unreviewed. Final release work includes scholarly review of policy sourcing, the remaining Public / Expert / Framework assignments, concise/detailed consistency, citations, and release checks.
 
 ## 6. Cases currently loadable in SACRE
 
-SACRE currently includes the Bench cases whose Public / Expert / Framework assignments have already been represented in evaluation-ready records.
+SACRE can load any of the 200 cases; each supplies Public, Expert, and Framework policies.
 
 Loading one of these cases adds:
 

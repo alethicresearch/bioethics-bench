@@ -5,7 +5,7 @@
 
 ## 1. Current state
 
-Bioethics Bench contains **200 cases (M001–M200)** and **1,298 policies**.
+Bioethics Bench contains **200 cases (M001–M200)** and **1,436 policies**.
 
 Each case has:
 
@@ -14,15 +14,16 @@ Each case has:
 - a set of serious policies;
 - a current Public, Expert, or Framework type assignment for each policy (a policy may carry more than one type when it represents more than one role);
 - a sourcing label for each policy: **Direct source**, **Inferred from source**, or **Constructed**;
+- a concise and a detailed form of each policy;
 - a scholarly source file with supporting material and review notes.
 
-The number and mix of Public, Expert, and Framework policies may differ by case. A case does not need a policy of every type simply to complete a three-column pattern. Missing types should remain missing when the research does not support them.
+The number and mix of Public, Expert, and Framework policies differs by case, but every case now has at least one of each and so can be loaded into a complete evaluation. **138 of the 1,436 policies are Bench-written comparison policies** added to reach that, each labelled Constructed and marked as written by the Bench. A type is filled only by a position someone could actually hold in the case; twelve cases record their own judgement that the evidence did not support writing one, and that judgement is published with the case rather than overruled.
 
 The current machine-readable public file is:
 
 `resources/cases/full-200-cases.v1.json`
 
-`npm run validate` checks that all 200 cases and all 1,298 policies are present, that every policy has a valid current type assignment and sourcing label, and that the case data are structurally consistent. It does not require every case to contain all three policy types.
+`npm run validate` checks that all 200 cases and all 1,436 policies are present, that every case carries all three policy types, that 138 policies are marked as Bench-written, that every policy has a valid type assignment and sourcing label, and that each policy's detailed form is genuinely longer than its concise one rather than a repeat of it.
 
 The type assignments in this preview remain part of the release-review workload. Structural validation does not substitute for scholarly review of whether a policy is correctly classified as Public, Expert, or Framework.
 
@@ -111,7 +112,7 @@ For each policy, confirm:
 
 Confirm that Public / Expert / Framework accurately describes the role of each policy.
 
-Do not create a Public, Expert, or Framework policy merely to fill a missing type. If a case lacks one type after review, record that plainly.
+A missing type may be filled with a Bench-written comparison policy, labelled Constructed and marked as written by the Bench. It must be a position someone could hold in the case; a policy that exists only to complete a three-column pattern fails this review. Where the case file judges the evidence too thin to write one, record that plainly and leave it.
 
 ### 5.3 Policy-quality review
 
@@ -155,7 +156,7 @@ Loading a case adds:
 3. its currently assigned Expert policies, if present;
 4. its currently assigned Framework policies, if present.
 
-SACRE should show the available policies without inventing a missing type. A case that lacks one of the three policy types can still be loaded for inspection or editing; a complete three-type SACRE evaluation requires at least one policy in each type.
+Every Bench case supplies all three types, so the loader no longer warns about a missing one. A case from elsewhere that lacks a type can still be loaded for inspection or editing; SACRE should say so plainly rather than invent the missing type, and a complete three-type evaluation still requires at least one policy in each.
 
 Users who want source details, sourcing labels, or fuller research notes can open the same case on Bioethics Bench.
 
@@ -171,7 +172,7 @@ Each study should record exactly which policies it used. The underlying Bench ca
 
 ## 8. Unequal policy counts
 
-Cases do not need equal numbers of Public, Expert, and Framework policies, and some cases may lack one type entirely.
+Cases do not need equal numbers of Public, Expert, and Framework policies, and the counts vary widely across the 200.
 
 For an evaluation that contains all three types but unequal counts, use an aggregation rule that does not give a policy a numerical advantage simply because it has more cross-type comparison partners.
 
@@ -193,8 +194,8 @@ Known crosswalks to earlier Featured IDs should remain recorded so the same case
 The 200-case release can be frozen when:
 
 1. all 200 cases pass structural validation;
-2. all 1,298 policies have reviewed sourcing;
-3. Public / Expert / Framework assignments are reviewed without filling missing types artificially;
+2. all 1,436 policies have reviewed sourcing;
+3. Public / Expert / Framework assignments are reviewed — 108 are reviewed so far, and a Bench-written policy counts as a filled type only when it states a position someone could hold;
 4. concise and detailed versions are confirmed to match;
 5. citation and locator checks pass;
 6. rights and licensing checks pass;

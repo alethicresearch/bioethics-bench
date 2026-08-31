@@ -21,7 +21,7 @@ Some legacy filenames, JSON fields, scripts, archived records, and historical re
 
 ## Current Bench state
 
-Bioethics Bench contains **200 cases (M001–M200)** and **1,298 policies**.
+Bioethics Bench contains **200 cases (M001–M200)** and **1,436 policies**.
 
 The current public machine-readable case file is:
 
@@ -34,19 +34,20 @@ Every case in that file has:
 - a set of policies;
 - a current Public, Expert, or Framework type assignment for each policy;
 - a sourcing label for every policy;
+- a concise and a detailed form of every policy;
 - a link to the supporting research file.
 
-The current type assignments are a preview layer and remain subject to scholarly release review. The number and mix of Public, Expert, and Framework policies vary naturally by case. Some cases do not currently contain all three types. Do not manufacture a missing Public, Expert, or Framework policy merely to make a case symmetrical.
+Every case now carries all three policy types, so any case in the file can be loaded into a complete evaluation. Reaching that took **138 Bench-written comparison policies**, each labelled Constructed and marked as written by the Bench wherever it appears. A Bench-written policy is a stated comparison position, never a claim that a public group, professional body, or author holds it. Twelve cases record their own judgement that the available evidence did not support writing such a pool; that judgement stays in the case file rather than being overruled, and is published with the case.
+
+Type assignment has been reviewed for 108 policies. The rest are assigned from the case record and carry `type_reviewed: false`, which the website shows, so an inferred label is never read as a checked one. The mix of Public, Expert, and Framework policies still varies by case; only the presence of all three is now guaranteed.
 
 The case-and-policy research pass is complete. Remaining work is scholarly review and release work: source checking, policy-type checking, concise/detailed consistency, citation review, independent review, release statistics, and final freeze/versioning.
 
 ## Public website
 
-The current design candidate is `/v6/`.
+The site published at `bioethicsbench.com` is the former `/v6/`, promoted to the repository root. Earlier versions stay readable at `/archive/v1` … `/archive/v6`, each still loading its own data.
 
-Its public story is deliberately simple:
-
-> **200 cases in bioethics. Each case has policies. Policies are identified as Public, Expert, or Framework positions, and each policy is labeled by how it was sourced.**
+Its public story is deliberately simple: a case states a decision, its policies state the positions someone could take on it, each policy says what kind of position it is and where it came from. The page says that by showing a real case, not by announcing a count in the hero.
 
 The website should provide:
 
@@ -55,8 +56,7 @@ The website should provide:
 - a separate Cases page;
 - search;
 - category selectors;
-- Policy type filters: Public / Expert / Framework;
-- Sourcing filters: Direct source / Inferred from source / Constructed;
+- Sourcing filters: Direct source / Inferred from source / Constructed, read as "only these", so a mixed case matches only when every one of its sourcings is ticked;
 - concise / detailed case switching;
 - clear policy lists;
 - links to supporting source material;
@@ -77,7 +77,7 @@ A user should be able to:
 5. load the case;
 6. have its currently assigned Public, Expert, and Framework policies appear in the evaluation setup.
 
-If one policy type is absent, SACRE should show that plainly and load the policies that are available. It must not create a missing type automatically. A complete three-type SACRE evaluation requires at least one Public, Expert, and Framework policy.
+A complete three-type SACRE evaluation requires at least one Public, Expert, and Framework policy. Every Bench case now supplies all three, so the loader no longer warns about a missing type. If a case from elsewhere is missing one, SACRE should say so plainly and load what is there rather than inventing the missing type at load time.
 
 SACRE should stay concise. Users who want source details, sourcing labels, fuller notes, or wider exploration should follow the link to the corresponding case on Bioethics Bench.
 
@@ -99,7 +99,9 @@ Confirm that the policies are serious, genuinely distinct, and stated at compara
 
 Confirm that Public / Expert / Framework accurately describes the kind of position represented.
 
-Do not infer policy type merely from the sourcing label. Do not add a policy just to fill a missing type.
+Do not infer policy type merely from the sourcing label.
+
+A missing type may be filled with a Bench-written comparison policy, which must be labelled Constructed, marked as written by the Bench, and be a position someone could actually hold in the case — not a placeholder that exists to make the case symmetrical. Where the case file itself judges the evidence too thin for such a policy, that judgement stands and is published with the case.
 
 ### Sourcing
 
@@ -113,7 +115,7 @@ Never present an inferred or constructed policy as if a public group, profession
 
 ### Concise and detailed versions
 
-The two versions should describe the same case and retain the same policies, policy types, and sourcing. The detailed version may add context without changing the decision.
+The two versions should describe the same case and retain the same policies, policy types, and sourcing. The detailed version may add context without changing the decision. Each policy is written twice as well: the detailed form adds mechanism, scope, or safeguards, and must not repeat the concise form or merely restate it at greater length.
 
 ## Case identity rules
 
@@ -141,7 +143,7 @@ Historical batch notes, old release plans, old website versions, and older machi
 Complete in this order:
 
 1. review all policy sourcing;
-2. review Public / Expert / Framework assignments without filling missing types artificially;
+2. review Public / Expert / Framework assignments — 108 of 1,436 are reviewed, and a Bench-written comparison policy counts as filled only when it is a position someone could hold, not a placeholder;
 3. check concise/detailed consistency;
 4. complete citation and source-locator checks;
 5. complete independent scholarly/domain review;
