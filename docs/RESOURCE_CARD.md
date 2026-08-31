@@ -1,216 +1,210 @@
 # Bioethics Bench — Resource Card
 
 **Status:** development resource / manuscript submission snapshot in preparation  
-**Last updated:** 2026-08-30  
+**Last updated:** 2026-08-31  
 **Repository:** https://github.com/alethicresearch/bioethics-bench  
 **Project site:** https://bioethicsbench.com  
 **Standalone manuscript:** *Bioethics Bench: A Source-Grounded Research Infrastructure for Computational Bioethics*
 
 ## 1. What Bioethics Bench is
 
-Bioethics Bench is a source-grounded, versioned research infrastructure for computational bioethics. Its core object is not a moral answer label. It is a reconstructable normative research object containing a decision problem, represented policy candidates, source and warrant provenance, benchmark stipulations, controlled representation variants, version lineage, review state, and the metadata needed to project the resource into explicit computational tasks.
+Bioethics Bench is a versioned collection of **200 bioethics cases**. Each case states an ethical problem, identifies serious policy options, records how those policies were sourced, and links the policies to supporting material.
 
-The resource is designed so that three scientific objects remain separable:
+The resource is designed for computational and human studies in bioethics. It does not provide a moral answer key.
 
-1. **Resource** — the bioethical case family, representations, candidates, provenance, stipulations, geometry, versions, and review state.
-2. **Task** — a declared transformation or evaluation applied to resource objects. The first mature reference task is `sacre-qccs-v1`.
-3. **Evaluation condition** — model, human, ensemble, protocol, repetitions, perturbations, metrics, exclusions, and other execution conditions.
+A Bench case can be used on its own for reading and comparison, or loaded into an evaluation such as SACRE once the relevant policies have been assigned the appropriate **Public**, **Expert**, and **Framework** types.
 
-This separation is intended to prevent one computational procedure from becoming the ontology of the underlying bioethical resource.
+## 2. What a case contains
 
-## 2. Current corpus state
+A case can include:
 
-The current Full Corpus is the executable output of a 200-family research and disposition program rather than a preset target-sized sample.
+- a title and case ID;
+- a concise description;
+- a detailed description;
+- policy options;
+- the sourcing for each policy;
+- citations and source notes;
+- any assumptions needed to make the case clear enough to evaluate;
+- version, review, and rights information.
 
-| Disposition | Families |
-|---|---:|
-| Current Full Corpus executable | 34 |
-| Featured-only separate lineage | 1 |
-| Held — additional evidence needed | 82 |
-| Research complete but not executable under current source/decision structure | 71 |
-| Held after candidate audit | 12 |
-| Total research/disposition program | 200 |
+The concise and detailed descriptions are intended to present the same underlying ethical problem with different amounts of factual context.
 
-The 34 executable Full Corpus families contain:
+## 3. Policy type
 
-- **68 records** — one concise and one detailed representation per executable family;
-- **210 unique family-level candidates**;
-- current `sacre-qccs-v1` task roles: **69 Public, 55 Expert, 86 Framework** candidates;
-- current policy bases: Public 49 source-informed / 20 direct; Expert 49 direct / 6 source-informed; Framework 86 framework-derived;
-- current records remain `status: draft` and `reviewed_by_human: false`.
+When a case is prepared for SACRE, policies are assigned one of three types:
 
-The executable count is an output of evidence, action-distinctness, and source-to-policy eligibility constraints. Held families are not filled out merely to reach a target corpus size.
+- **Public** — a position representing public, patient, affected-community, or stakeholder views;
+- **Expert** — a position representing professional, scientific, clinical, legal, or governance guidance;
+- **Framework** — a position representing an ethical framework or principle.
 
-## 3. Unit of analysis
+These types describe the role a policy plays in an evaluation.
 
-A case family is a normative decision problem represented through one or more versioned frames. The current Full Corpus uses matched **concise** and **detailed** representations for each executable frame.
+## 4. How policies are sourced
 
-Each executable record includes or points to:
+Policy type is separate from sourcing. Bioethics Bench uses three plain sourcing labels in the public interface:
 
-- stable `case_id`, `record_id`, schema version, record version, and content hash;
-- title, decision question, jurisdiction/context fields, domains, and tags;
-- scenario text and explicit benchmark stipulations;
-- scenario provenance;
-- candidate pools and candidate identifiers;
-- candidate text, construction method, policy basis, source pool/task role, and provenance;
-- source references;
-- representation metadata and reciprocal companion identifiers;
-- benchmark/task profile metadata where applicable;
-- intended use, collection/exposure state, review state, and rights metadata.
+- **Direct source** — a source supports substantially the same policy;
+- **Inferred from source** — a source supports the underlying view, evidence, guidance, preference, or principle and the Bench states the policy as a careful inference;
+- **Constructed** — a serious policy option written by the Bench for comparison and clearly identified as constructed.
 
-The exact machine-readable contract is governed by the schemas under `schemas/` rather than this prose summary.
+A Framework policy can be directly sourced or inferred from a framework. Public and Expert policies can also be direct or inferred. A sourcing label must never be used to guess a policy's Public / Expert / Framework type.
 
-## 4. Candidate construction and warrant
+The repository retains more detailed scholarly notes behind these three public labels where a finer description is useful.
 
-The current executable corpus distinguishes three principal policy bases:
+## 5. Current 200-case resource
 
-- **direct-policy-evidence** — the cited source itself supports a sufficiently close policy recommendation;
-- **source-informed-policy-inference** — the source establishes an orientation, preference, principle, or empirical premise and the Bench discloses the bridge to an executable policy;
-- **framework-derived-policy** — the candidate is a Bench-authored operational derivation from a named normative framework or principle set.
+The full research set contains **200 cases (M001–M200)** across:
 
-Current source-review work shows that a future generic warrant representation needs more than a single relation label. The shadow ontology therefore separates source/document type, evidence function, translation mode, support direction, warrant scope, source assertion, Bench bridge, and relation-level review identity. That architecture is not yet a production v2 schema.
+- clinical care;
+- children and families;
+- end-of-life care;
+- reproduction and genetics;
+- research ethics;
+- public health and allocation;
+- transplantation and donation;
+- global health;
+- mental health and disability;
+- neuroethics;
+- AI and health data;
+- animals and One Health;
+- climate and environment;
+- everyday clinical and professional practice.
 
-## 5. Natural candidate geometry
+The case-and-policy research pass is complete. The current machine-readable 200-case file contains **1,298 reviewed policies**. Final release work includes scholarly review of policy sourcing, Public / Expert / Framework assignments where cases will be used in SACRE, concise/detailed consistency, citations, and release checks.
 
-Candidate counts are evidence-qualified rather than forced into a uniform grid. The 34 executable families occupy eight current geometries:
+## 6. Cases currently loadable in SACRE
 
-| Public × Expert × Framework | Families | Candidates/family | Cross-source pairs/representation |
-|---|---:|---:|---:|
-| 2×2×2 | 8 | 6 | 12 |
-| 1×2×2 | 1 | 5 | 8 |
-| 2×1×2 | 7 | 5 | 8 |
-| 2×1×3 | 7 | 6 | 11 |
-| 2×2×3 | 6 | 7 | 16 |
-| 2×3×3 | 1 | 8 | 21 |
-| 3×2×3 | 3 | 8 | 21 |
-| 1×2×3 | 1 | 6 | 11 |
+SACRE currently includes the Bench cases whose Public / Expert / Framework assignments have already been represented in evaluation-ready records.
 
-Only 8/34 families have the symmetric 2×2×2 shape. The current geometry implies **428 unordered cross-source pairs per representation** and **856 across one matched concise+detailed pass** under the `sacre-qccs-v1` reference task.
+Loading one of these cases adds:
 
-For asymmetric geometries, Mean aggregation is required where unequal partner counts would otherwise allow pool size to influence rankings mechanically.
+1. the case description;
+2. its Public policies;
+3. its Expert policies;
+4. its Framework policies.
 
-## 6. Stipulations as experimental controls
+The SACRE examples library keeps this presentation simple. Users can open Bioethics Bench for source details, sourcing labels, fuller case notes, and the broader 200-case collection.
 
-Benchmark stipulations are explicit constructed assumptions used to hold a case at a policy divergence, remove irrelevant factual uncertainty, or fix a dimension needed for controlled comparison. They are not empirical claims about the world.
+## 7. Number of policies and pairwise comparison
 
-The validator requires stipulated facts to be disclosed in executed scenario text. Internal scenario/action-divergence review has examined all 34 current executable families. That review is construction-quality evidence; it is not independent human source validation and does not establish that every candidate is warranted by its cited source.
+Cases do not need to contain the same number of Public, Expert, and Framework policies.
 
-## 7. Companion representation control
+If an evaluation contains:
 
-Concise and detailed records are controlled representations of the same underlying case frame. Current validation requires the pair to preserve the same decision question/profile, identical stipulations, byte-identical candidate pools, different scenario text, and reciprocal companion record identifiers.
+- `P` Public policies;
+- `E` Expert policies;
+- `F` Framework policies;
 
-This makes representation length/detail a manipulable experimental axis rather than an uncontrolled rewrite of the normative object.
-
-## 8. Source traceability and canonical locators
-
-The current Full Corpus contains **242 unique citations**. Of these, **130 carry a PMID and 130/130 currently resolve consistently against PubMed**. The remaining citations are policies, guidelines, statutes, books, reports, surveys, and other source types that are not uniformly PubMed-indexed.
-
-A corpus-wide canonical-locator repair has now been completed across all 68 Full Corpus records:
-
-- unresolved canonical locator residual: **0**;
-- traceable internal “research packet” placeholders were replaced with the underlying external literature rather than treated as external citations themselves;
-- DOI/PMID/URL recovery already encoded elsewhere in the records was propagated consistently;
-- additional policy/guideline/book/article locators were source-by-source verified and stored in explicit provenance registries;
-- false-positive fuzzy DOI matches discovered during development were corrected rather than accepted into the canonical resource.
-
-This establishes **traceability and identifier consistency**, not source-to-policy fidelity. A source can be correctly identified and still fail to warrant the policy translation attributed to it; that remains a substantive review question.
-
-## 9. First mature task projection: `sacre-qccs-v1`
-
-The first mature reference task maps the resource into SACRE/QCCS without making SACRE-specific fields intrinsic to the resource ontology.
-
-For `P` Public, `E` Expert, and `F` Framework candidates, the task generates all unordered cross-source pairs:
+then SACRE compares:
 
 `P×E + P×F + E×F`
 
-The current task contract uses QCCS v1.0.0 with the `conv+` operationalization, requires a complete matrix for official ranking, and requires Mean rather than Sum when partner counts differ.
+cross-type policy pairs.
 
-The current all-record adapter-equivalence gate covers the locator-enriched resource across **34 families / 68 records**. Because canonical source/provenance metadata is included in resource `content_hash`, the locator repair changed all **68/68** record hashes. Pre-repin verification found **0 execution/task-semantic differences** and classified the 68 hash changes as **provenance-only drift**. After SACRE re-vendoring/re-pinning, adapter projection and consumer payload are byte-for-byte identical and the Full Corpus regression suite passes **46/46**. No model/QCCS rerun was required or performed.
+When the three policy types contain different numbers of policies, Mean aggregation is used where necessary so a policy does not receive an automatic numerical advantage simply because it has more comparison partners.
 
-Current resource/pin references:
+Some legacy code and data fields call the three policy counts a `geometry`. Current explanatory prose should simply say **number of policies**, **policy counts**, or **evaluation setup**.
 
-- locator-enriched Bench resource commit: `0a8317ba8a2c5978f7a50bb5f13de875153b6782`;
-- SACRE re-pin merge (PR #22): `9fa908a45c2447aa97f0473754c434bdb874b19e`;
-- SACRE Full Corpus payload SHA-256: `82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`.
+## 8. Concise and detailed versions
 
-The earlier 36/68 hash-refresh event remains historical provenance rather than the current pin.
+Where a case has matched concise and detailed versions, the two versions should preserve:
 
-## 10. Validation and review state
+- the same ethical problem;
+- the same policy options;
+- the same sourcing;
+- the same stated assumptions.
 
-Bioethics Bench deliberately separates different validation claims.
+The detailed version adds context; it should not silently turn the case into a different decision.
 
-### Completed or currently available
+This allows studies to test whether additional context changes human or model judgments while holding the policies fixed.
 
-- machine-readable schema and content-hash validation;
-- profile/lineage, aggregation, provenance, representation-pair, and structural invariant checks;
-- complete current canonical locator coverage across the 68 Full Corpus records;
-- current PMID identifier-resolution checks: **130/130** PMID-bearing citations resolve consistently;
-- model-assisted reading of all current direct-policy-evidence candidates;
-- model-assisted bridge checks for all current source-informed policy inferences;
-- bounded whole-document omission review for five families;
-- all-record `sacre-qccs-v1` adapter equivalence, including the post-locator provenance re-pin.
+## 9. Stated assumptions
 
-### Not yet established
+Some cases include explicit assumptions that make a hypothetical decision sufficiently clear to evaluate. These assumptions are part of the case design and are not presented as empirical claims about the world.
 
-- independent corpus-wide human source-to-policy validation;
-- corpus-wide whole-document omission sensitivity;
-- QCCS reliability or construct validity;
-- human-model correspondence;
-- moral correctness of any provisional Final Policy;
-- method-neutrality across multiple mature task families;
-- a production generic v2 resource schema;
-- a frozen source-to-policy warrant benchmark task.
+Examples include a stipulated level of safety, a fixed resource constraint, or a future technology assumed to have reached a specified threshold.
 
-Independent source review is a quality/release layer. It is not a developmental-execution gate.
+Any such assumption should be visible in the case text rather than hidden in metadata.
 
-## 11. Intended uses
+## 10. Source traceability
 
-Appropriate current uses include:
+The current SACRE-ready records contain **242 unique citations**. The repository includes identifier and locator checks for journal articles, guidelines, statutes, reports, books, surveys, and other sources.
 
-- development and testing of computational-bioethics methods;
-- methodological work on provenance, representation, normative comparison, and benchmark design;
-- developmental model runs when the exact draft resource, task, and evaluation condition are pinned and reported;
-- paper illustrations and reproducibility studies;
-- protocol development for later confirmatory computational and human-comparison studies.
+For PMID-bearing citations, the current resource records 130 PMIDs, with 130/130 resolving consistently in the latest locator check.
 
-## 12. Uses that are not supported
+A correct citation or locator establishes that the source can be found. It does **not** by itself establish that the source supports every word of the associated policy. Source-to-policy review is therefore a separate scholarly task.
 
-The current resource should not be used as:
+## 11. SACRE / QCCS evaluation
 
-- a source of morally correct or clinically authoritative answers;
-- a substitute for jurisdiction-specific legal, clinical, or ethics advice;
-- a fully human-validated source-to-policy benchmark;
-- evidence that one model is morally superior because it agrees with a provisional task output;
-- a hidden training target presented later as an unexposed confirmatory benchmark.
+The first mature evaluation method used with the Bench is `sacre-qccs-v1`.
 
-## 13. Versioning, citation, and reproducibility
+SACRE compares Public, Expert, and Framework policies across policy types using QCCS v1.0.0 on the `conv+` scale. A complete set of required pairwise comparisons is needed before an official ranking is produced.
 
-A citation to a Bench record should include **record ID, version, and content hash**. A citation to a computational result should additionally identify the resource snapshot, task specification, and evaluation/execution condition.
+The technical task contract is in:
 
-The current equivalence-verified locator-enriched Bench→SACRE projection is associated with Bench resource commit:
+`docs/tasks/SACRE_QCCS_V1_TASK_CONTRACT.md`
 
-`0a8317ba8a2c5978f7a50bb5f13de875153b6782`
+The Bench itself remains useful independently of SACRE. A case, its policies, and their sources can be inspected without running any computational evaluation.
 
-and SACRE re-pin merge commit:
+## 12. Validation and review state
 
-`9fa908a45c2447aa97f0473754c434bdb874b19e`
+### Available now
 
-with vendored Full Corpus payload SHA-256:
+- machine-readable schema validation;
+- case and policy identifiers;
+- content hashes and version checks;
+- concise/detailed companion checks for evaluation-ready records;
+- citation and locator checks;
+- checks that required SACRE policy types are present in evaluation-ready records;
+- checks of pair counts and aggregation settings;
+- source and review notes for the 200-case research set.
 
-`82bb8abb93528ddc20e5c238826d34762d0d3aeb12eeabc7504dbf0181a74fec`
+### Still required for final scholarly release
 
-The repository's release-candidate manifest is under `releases/full-corpus-v1-completion-candidate/manifest.json`. It is a **release candidate**, not a declaration that the corpus has been independently validated or formally released.
+- independent source-to-policy review across the full 200-case resource;
+- final review of Direct / Inferred / Constructed sourcing labels;
+- final Public / Expert / Framework assignments for cases intended for direct SACRE loading;
+- final concise/detailed consistency review;
+- final release statistics and checksums;
+- independent scholarly/domain review.
 
-## 14. Rights and licensing
+These checks do not establish moral correctness of any policy or any SACRE result.
 
-Bench-authored case content is licensed **CC BY 4.0**, as specified in `CONTENT-LICENSE.md`. Third-party source material retains its own rights and is cited/summarized rather than relicensed.
+## 13. Appropriate uses
 
-The repository currently does **not** contain a finalized root software-license file for the validation/tooling code. A software-license decision is therefore a pre-archival-release action and must not be inferred from the content license.
+Bioethics Bench can support:
 
-## 15. Release status
+- comparison of ethical policies;
+- computational-bioethics method development;
+- human and model studies using the same cases and policies;
+- studies of source use and policy construction;
+- studies of concise versus detailed case descriptions;
+- repeated evaluations across models or people;
+- reproducibility and sensitivity analyses;
+- teaching and methodological illustration.
 
-The manuscript and resource may be submitted for peer review while the corpus remains transparently identified as draft/developmental. A paper-submission snapshot and a later public archival release are distinct objects.
+## 14. Uses that are not supported
 
-A formal public release should have an immutable repository tag/commit, machine-readable manifest and checksums, stable citation metadata, explicit software and content licensing, archived DOI-bearing deposit where feasible, and a recorded review/release state.
+Bioethics Bench should not be treated as:
 
-See `docs/ARCHIVAL_RELEASE_PLAN.md` and `docs/papers/PATTERNS_SUBMISSION_RELEASE_CHECKLIST.md`.
+- a set of morally correct answers;
+- clinical, legal, or ethics advice for a real individual case;
+- evidence that a model is morally superior because it agrees with one computational ranking;
+- a substitute for independent review of the cited sources;
+- a hidden answer key for later evaluation.
+
+## 15. Versioning and reproducibility
+
+A citation to a specific evaluation-ready Bench record should identify its record ID, version, and content hash. A computational result should also identify the case and policies that were evaluated, the QCCS version, the model or human condition, and the aggregation setting.
+
+Legacy machine-readable fields and filenames may still contain terms such as `case_family_id`, `candidate_universe`, `projection`, or `geometry`. They are retained where changing them would break existing hashes, scripts, or historical reproducibility. New documentation and interfaces should translate them into **case**, **policy**, **evaluation setup**, and **policy counts**.
+
+## 16. Rights and licensing
+
+Bench-authored case content is licensed **CC BY 4.0**, as specified in `CONTENT-LICENSE.md`. Third-party source material retains its own rights and is cited or summarized rather than relicensed.
+
+## 17. Release status
+
+The resource remains under final scholarly and release review. A formal release should identify an immutable repository commit or tag, machine-readable checksums, stable citation metadata, and the review state of the released files.
+
+See `docs/ARCHIVAL_RELEASE_PLAN.md` for the archival-release checklist.
