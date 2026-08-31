@@ -5,9 +5,11 @@
   "description": "Validation tooling for the Bioethics Bench corpus. The site itself is static.",
   "scripts": {
     "build:featured": "node scripts/build-featured-v1.mjs",
+    "build:case-families": "node scripts/build-rich-candidate-universes.mjs --write",
     "audit:granularity": "node scripts/audit-granularity.mjs",
+    "audit:rich-candidates": "node scripts/build-rich-candidate-universes.mjs",
     "verify:task-adapter": "node scripts/verify-sacre-qccs-v1-adapter.mjs",
-    "validate": "node scripts/build-featured-v1.mjs --check && node scripts/check-dossier-sync.mjs && node scripts/dossier-decision-sync.mjs && node scripts/disposition-ledger.mjs && node scripts/build-full-corpus-manifest.mjs && node scripts/fidelity-audit.mjs && node scripts/divergence-worksheet.mjs --check && node scripts/bridge-worksheet.mjs && node scripts/research-tasks.mjs && node scripts/research-handoff.mjs && node scripts/change-log.mjs && node scripts/ingest-research-verdicts.mjs && node scripts/verify-citations.mjs --offline && node scripts/validate.mjs && node scripts/verify-sacre-qccs-v1-adapter.mjs",
+    "validate": "node scripts/build-featured-v1.mjs --check && node scripts/check-dossier-sync.mjs && node scripts/dossier-decision-sync.mjs && node scripts/disposition-ledger.mjs && node scripts/build-rich-candidate-universes.mjs && node scripts/build-full-corpus-manifest.mjs && node scripts/fidelity-audit.mjs && node scripts/divergence-worksheet.mjs --check && node scripts/bridge-worksheet.mjs && node scripts/research-tasks.mjs && node scripts/research-handoff.mjs && node scripts/change-log.mjs && node scripts/ingest-research-verdicts.mjs && node scripts/verify-citations.mjs --offline && node scripts/validate.mjs && node scripts/verify-sacre-qccs-v1-adapter.mjs",
     "digest": "node scripts/substantive-digest.mjs"
   },
   "devDependencies": {
