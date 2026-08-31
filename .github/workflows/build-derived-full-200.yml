@@ -5,8 +5,10 @@ on:
     paths:
       - '.github/workflows/build-derived-full-200.yml'
       - 'scripts/build-rich-candidate-universes.mjs'
+      - 'scripts/build-rich-candidate-universes-v1-1.mjs'
       - 'scripts/validate-candidate-universe.mjs'
       - 'scripts/build-projection-crosswalk-worksheet.mjs'
+      - 'scripts/build-projection-review-input.mjs'
       - 'scripts/disposition-ledger.mjs'
       - 'schemas/candidate-universe.schema.json'
       - 'docs/full-corpus/audit-v2/**'
@@ -26,33 +28,43 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - name: Build neutral Full-200 candidate universe
+      - name: Build immutable neutral Full-200 v1.0 resource
         run: node scripts/build-rich-candidate-universes.mjs --write
-      - name: Validate neutral Full-200 candidate universe
-        run: node scripts/validate-candidate-universe.mjs
+      - name: Validate immutable neutral Full-200 v1.0 resource
+        run: node scripts/validate-candidate-universe.mjs resources/case-families/full-200-rich-candidate-universes.v1.json
+      - name: Build corrected neutral Full-200 v1.1 resource
+        run: node scripts/build-rich-candidate-universes-v1-1.mjs --write
+      - name: Validate corrected neutral Full-200 v1.1 resource
+        run: node scripts/validate-candidate-universe.mjs resources/case-families/full-200-rich-candidate-universes.v1.1.json
       - name: Regenerate legacy source-grounded disposition ledger
         run: node scripts/disposition-ledger.mjs --write
       - name: Build source-grounded crosswalk worksheet
         run: node scripts/build-projection-crosswalk-worksheet.mjs --write
+      - name: Build compact projection review input
+        run: node scripts/build-projection-review-input.mjs --write
       - name: Report identities
         run: |
           sha256sum resources/case-families/full-200-rich-candidate-universes.v1.json
+          sha256sum resources/case-families/full-200-rich-candidate-universes.v1.1.json
           sha256sum docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
           sha256sum docs/full-corpus/projections/SOURCE_GROUNDED_CROSSWALK_WORKSHEET.md
-          node -e "const r=require('./resources/case-families/full-200-rich-candidate-universes.v1.json'); const n=r.cases.reduce((s,c)=>s+c.candidate_count,0); console.log('cases='+r.case_count+' candidates='+n+' mean='+(n/r.case_count).toFixed(2))"
+          sha256sum docs/full-corpus/projections/SOURCE_GROUNDED_REVIEW_INPUT.v1.1.json
+          node -e "const r=require('./resources/case-families/full-200-rich-candidate-universes.v1.1.json'); const n=r.cases.reduce((s,c)=>s+c.candidate_count,0); console.log('version='+r.resource_version+' cases='+r.case_count+' candidates='+n+' mean='+(n/r.case_count).toFixed(2))"
       - uses: actions/upload-artifact@v4
         with:
           name: full-200-derived-artifacts
           if-no-files-found: error
           path: |
             resources/case-families/full-200-rich-candidate-universes.v1.json
+            resources/case-families/full-200-rich-candidate-universes.v1.1.json
             docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
             docs/full-corpus/projections/SOURCE_GROUNDED_CROSSWALK_WORKSHEET.md
+            docs/full-corpus/projections/SOURCE_GROUNDED_REVIEW_INPUT.v1.1.json
       - name: Persist deterministic derived files
         run: |
           git config user.name "bioethics-bench-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add resources/case-families/full-200-rich-candidate-universes.v1.json docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md docs/full-corpus/projections/SOURCE_GROUNDED_CROSSWALK_WORKSHEET.md
+          git add resources/case-families/full-200-rich-candidate-universes.v1.json resources/case-families/full-200-rich-candidate-universes.v1.1.json docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md docs/full-corpus/projections/SOURCE_GROUNDED_CROSSWALK_WORKSHEET.md docs/full-corpus/projections/SOURCE_GROUNDED_REVIEW_INPUT.v1.1.json
           if git ls-files --error-unmatch data/case-families/full-200-rich-candidate-universes.v1.json >/dev/null 2>&1; then
             git rm data/case-families/full-200-rich-candidate-universes.v1.json
           fi
