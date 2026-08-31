@@ -1,0 +1,41 @@
+name: Build Full-200 derived artifacts
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-derived-full-200.yml'
+      - 'scripts/build-rich-candidate-universes.mjs'
+      - 'scripts/disposition-ledger.mjs'
+      - 'docs/full-corpus/audit-v2/**'
+      - 'docs/full-corpus/batch-*/M*-deep-case.md'
+      - 'data/benchmark/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Build neutral Full-200 candidate universe
+        run: node scripts/build-rich-candidate-universes.mjs --write
+      - name: Regenerate legacy source-grounded disposition ledger
+        run: node scripts/disposition-ledger.mjs --write
+      - name: Report identities
+        run: |
+          sha256sum data/case-families/full-200-rich-candidate-universes.v1.json
+          sha256sum docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
+          node -e "const r=require('./data/case-families/full-200-rich-candidate-universes.v1.json'); const n=r.cases.reduce((s,c)=>s+c.candidate_count,0); console.log('cases='+r.case_count+' candidates='+n+' mean='+(n/r.case_count).toFixed(2))"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-200-derived-artifacts
+          if-no-files-found: error
+          path: |
+            data/case-families/full-200-rich-candidate-universes.v1.json
+            docs/full-corpus/FULL_CORPUS_DISPOSITION_LEDGER.md
