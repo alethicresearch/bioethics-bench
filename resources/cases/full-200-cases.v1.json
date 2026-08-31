@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 1043,
+  "detailed_policy_count": 1113,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -3210,6 +3210,7 @@
         {
           "id": "c01",
           "text": "prioritize expected live-birth effectiveness/prognosis",
+          "text_detailed": "Prioritise by expected live-birth rate, using a stated prognostic model applied identically to every applicant, with the model published and audited for whether it entrenches existing disadvantage.",
           "types": [
             "expert"
           ],
@@ -3219,6 +3220,7 @@
         {
           "id": "c02",
           "text": "lottery/equal chance after minimum eligibility",
+          "text_detailed": "Allocate by lottery among all who meet a minimum eligibility standard, with eligibility defined clinically, the draw run openly, and unsuccessful applicants told they may re-enter.",
           "types": [
             "expert",
             "framework",
@@ -3230,6 +3232,7 @@
         {
           "id": "c03",
           "text": "multifactor priority using urgency/time-sensitivity, prior access, and distributive criteria",
+          "text_detailed": "Combine urgency and time-sensitivity, prior access and distributive criteria under a published rule stating the weight of each, applied by a panel rather than at referral.",
           "types": [
             "expert",
             "framework",
@@ -3241,6 +3244,7 @@
         {
           "id": "c04",
           "text": "first-come/first-served",
+          "text_detailed": "Allocate first-come first-served among eligible applicants, with the queue recorded and the eligibility assessment made promptly so that referral speed does not decide access.",
           "types": [
             "expert"
           ],
@@ -3250,6 +3254,7 @@
         {
           "id": "c05",
           "text": "prioritize broader access over maximizing aggregate live births",
+          "text_detailed": "Fund more people at lower expected success rather than maximising total births, stating the trade-off in births foregone rather than presenting it as costless.",
           "types": [
             "public"
           ],
@@ -3259,6 +3264,7 @@
         {
           "id": "c06",
           "text": "equal-access framework rejecting family-status/social-worth exclusions",
+          "text_detailed": "Reject exclusions based on family status or social worth, with the eligibility criteria stated exhaustively so that no informal criterion can operate alongside them.",
           "types": [
             "framework"
           ],
@@ -3268,6 +3274,7 @@
         {
           "id": "c07",
           "text": "efficiency framework allocating where expected benefit per funded cycle is highest",
+          "text_detailed": "Allocate where expected benefit per funded cycle is highest, with the calculation published and its distributional effects reported alongside the efficiency gain.",
           "types": [
             "framework"
           ],
@@ -3287,6 +3294,7 @@
         {
           "id": "c01",
           "text": "routine universal NIPT offer with balanced condition/disability information",
+          "text_detailed": "Offer screening universally with balanced information about the condition and about living with it, prepared with disabled people and given before the test is booked.",
           "types": [
             "expert"
           ],
@@ -3296,6 +3304,7 @@
         {
           "id": "c02",
           "text": "explicit opt-in after values-oriented pretest counseling",
+          "text_detailed": "Require explicit opt-in after values-oriented counselling, with the counselling offered at a time that allows reflection and its content specified rather than left to the clinician.",
           "types": [
             "framework"
           ],
@@ -3305,6 +3314,7 @@
         {
           "id": "c03",
           "text": "narrower testing scope for serious health conditions, resisting routinized trait expansion",
+          "text_detailed": "Confine testing to serious health conditions and resist expansion to traits, with the boundary defined in the programme's policy and any addition requiring public justification.",
           "types": [
             "expert",
             "framework"
@@ -3315,6 +3325,7 @@
         {
           "id": "c04",
           "text": "disability-inclusive counseling with lived-experience/support information as a required component of informed choice",
+          "text_detailed": "Make disability-inclusive counselling, including lived-experience and support information, a required component of informed choice, with the materials co-produced and their use audited.",
           "types": [
             "framework",
             "public"
@@ -3325,6 +3336,7 @@
         {
           "id": "c05",
           "text": "non-directive availability emphasizing autonomous reproductive choice",
+          "text_detailed": "Make screening available non-directively, emphasising the patient's own reproductive choice, with the neutrality of the materials checked rather than assumed from their tone.",
           "types": [
             "framework"
           ],
@@ -3334,6 +3346,7 @@
         {
           "id": "c06",
           "text": "stronger program-level limits when routinization predictably increases stigma/service erosion",
+          "text_detailed": "Impose programme-level limits where routinisation would predictably increase stigma or erode services, with that prediction assessed on evidence and the limits reviewed as services change.",
           "types": [
             "framework"
           ],
@@ -3343,6 +3356,7 @@
         {
           "id": "c07",
           "text": "universal offer with standardized neutral information but no mandatory values session",
+          "text_detailed": "Offer universally with standardised neutral information and no mandatory values session, with the information reviewed for balance and a values conversation available on request.",
           "types": [
             "expert"
           ],
@@ -3362,6 +3376,7 @@
         {
           "id": "c01",
           "text": "provide nondirective counseling and access, respecting patient choice",
+          "text_detailed": "Provide non-directive counselling and access, with the decision left to the patient, the counselling covering continuation as fully as reduction, and no clinician preference recorded as advice.",
           "types": [
             "expert"
           ],
@@ -3371,6 +3386,7 @@
         {
           "id": "c02",
           "text": "strongly recommend reduction above a defined maternal/fetal risk threshold while leaving final choice to patient",
+          "text_detailed": "Recommend reduction strongly above a defined maternal or fetal risk threshold while leaving the final choice to the patient, with the threshold stated and the recommendation recorded as such.",
           "types": [
             "expert"
           ],
@@ -3380,6 +3396,7 @@
         {
           "id": "c03",
           "text": "continue pregnancy with intensive high-risk care when patient declines reduction",
+          "text_detailed": "Continue the pregnancy with intensive high-risk care where the patient declines reduction, with the care plan specified and resourced rather than framed as making the best of a refusal.",
           "types": [
             "expert"
           ],
@@ -3389,6 +3406,7 @@
         {
           "id": "c04",
           "text": "restrict reduction requested solely for nonmedical preference below a specified fetal number/risk threshold",
+          "text_detailed": "Restrict reduction requested solely for non-medical preference below a specified fetal number or risk threshold, with the threshold published so that patients know it before treatment begins.",
           "types": [
             "expert"
           ],
@@ -3398,6 +3416,7 @@
         {
           "id": "c05",
           "text": "autonomy framework favoring patient control",
+          "text_detailed": "Favour patient control on autonomy grounds, with any restriction required to identify a harm to someone other than the patient.",
           "types": [
             "framework"
           ],
@@ -3407,6 +3426,7 @@
         {
           "id": "c06",
           "text": "maternal/fetal beneficence framework favoring reduction when expected morbidity reduction is large",
+          "text_detailed": "Favour reduction where the expected reduction in morbidity is large, with that expectation stated numerically and the patient's own risk tolerance recorded.",
           "types": [
             "framework"
           ],
@@ -3416,6 +3436,7 @@
         {
           "id": "c07",
           "text": "Provide the counselling and, where chosen, the procedure at the centre already managing the pregnancy, so that acting on the decision does not require travel or repeating the history.",
+          "text_detailed": "Provide the counselling and, where chosen, the procedure at the centre already managing the pregnancy, so that acting on the decision does not require travel or repeating the history. Where the centre cannot provide it, the referral is arranged with the records transferred and the appointment booked before the patient leaves.",
           "types": [
             "public"
           ],
@@ -3436,6 +3457,7 @@
         {
           "id": "c01",
           "text": "offer routine-but-highly-specialized UTx to selected informed candidates meeting program criteria",
+          "text_detailed": "Offer the procedure to selected informed candidates meeting published programme criteria, with the criteria and the programme's own outcomes made available before assessment begins.",
           "types": [
             "expert"
           ],
@@ -3445,6 +3467,7 @@
         {
           "id": "c02",
           "text": "restrict UTx to prospective registry/research protocols and expert centers",
+          "text_detailed": "Restrict the procedure to prospective registry or research protocols at expert centres, with the registry mandatory, its data published, and the restriction reviewed against accumulating outcomes.",
           "types": [
             "expert"
           ],
@@ -3454,6 +3477,7 @@
         {
           "id": "c03",
           "text": "decline routine provision because transplant/donor/pregnancy burdens are disproportionate for a non-life-saving reproductive benefit",
+          "text_detailed": "Decline routine provision on the ground that the transplant, donor and pregnancy burdens are disproportionate for a benefit that is not life-saving, with that comparison stated rather than assumed.",
           "types": [
             "expert",
             "framework"
@@ -3464,6 +3488,7 @@
         {
           "id": "c04",
           "text": "prefer deceased-donor pathway where feasible to reduce living-donor harm",
+          "text_detailed": "Prefer the deceased-donor pathway wherever feasible to avoid living-donor harm, with feasibility assessed for each case and the preference stated in the programme's protocol.",
           "types": [
             "expert"
           ],
@@ -3473,6 +3498,7 @@
         {
           "id": "c05",
           "text": "reproductive-autonomy framework recognizing gestational parenthood as a substantial interest",
+          "text_detailed": "Recognise gestational parenthood as a substantial interest on reproductive-autonomy grounds, with the weight it carries stated rather than left implicit in the decision to offer.",
           "types": [
             "framework"
           ],
@@ -3482,6 +3508,7 @@
         {
           "id": "c06",
           "text": "nonmaleficence framework giving high weight to recipient/donor surgical and immunosuppression risks",
+          "text_detailed": "Give high weight to recipient and donor surgical and immunosuppression risks, with those risks quantified from the programme's own and published outcomes rather than described generally.",
           "types": [
             "framework"
           ],
@@ -3491,6 +3518,7 @@
         {
           "id": "c07",
           "text": "resource-justice rule requiring transparent comparison with other transplant/reproductive priorities rather than assuming infertility treatment is trivial or automatically equivalent to lifesaving transplantation",
+          "text_detailed": "Compare the programme transparently with other transplant and reproductive priorities, with the comparison published, rather than assuming infertility treatment is either trivial or equivalent to life-saving transplantation.",
           "types": [
             "framework"
           ],
@@ -3500,6 +3528,7 @@
         {
           "id": "c08",
           "text": "Publish what the programme offers, its outcomes so far and its selection criteria, so that patients can judge for themselves whether to seek it.",
+          "text_detailed": "Publish what the programme offers, its outcomes so far and its selection criteria, so that patients can judge for themselves whether to seek it, updated as the programme's results accumulate.",
           "types": [
             "public"
           ],
@@ -3520,6 +3549,7 @@
         {
           "id": "c01",
           "text": "written-authorization-only use",
+          "text_detailed": "Permit use only where the deceased gave written authorisation, with the authorisation specific to posthumous use and its terms followed as written.",
           "types": [
             "expert",
             "public"
@@ -3530,6 +3560,7 @@
         {
           "id": "c02",
           "text": "permit surviving spouse/partner use without written directive only when strong evidence shows deceased's reproductive wishes and no contrary evidence",
+          "text_detailed": "Permit a surviving spouse or partner to use the material without a written directive only where strong evidence shows the deceased's reproductive wishes and nothing contradicts them, with the evidence assessed independently.",
           "types": [
             "expert",
             "public"
@@ -3540,6 +3571,7 @@
         {
           "id": "c03",
           "text": "categorical nonuse absent explicit authorization",
+          "text_detailed": "Permit no use at all absent explicit authorisation, with the rule stated at the time of storage so that people know what happens if they do not record a decision.",
           "types": [
             "framework"
           ],
@@ -3549,6 +3581,7 @@
         {
           "id": "c04",
           "text": "honor a specific prior prohibition even if survivor wants use",
+          "text_detailed": "Honour a specific prior prohibition even where the survivor wants use, with the prohibition applied as written and not weighed against the survivor's circumstances.",
           "types": [
             "expert"
           ],
@@ -3558,6 +3591,7 @@
         {
           "id": "c05",
           "text": "precedent reproductive autonomy framework favoring deceased's prior intent",
+          "text_detailed": "Give the deceased's prior intent priority on precedent-autonomy grounds, with the intent established from what they recorded rather than from what those who knew them believe.",
           "types": [
             "framework"
           ],
@@ -3567,6 +3601,7 @@
         {
           "id": "c06",
           "text": "surviving partner/reliance framework allowing use where a jointly formed reproductive plan is strongly evidenced and no objection exists",
+          "text_detailed": "Permit use where a jointly formed reproductive plan is strongly evidenced and no objection exists, with the evidence documented and the absence of objection established rather than assumed.",
           "types": [
             "framework"
           ],
@@ -3587,6 +3622,7 @@
         {
           "id": "c01",
           "text": "broad in-system provision within clinical/legal limits",
+          "text_detailed": "Provide the service broadly within clinical and legal limits, with the limits stated publicly and provision resourced so that availability is real rather than nominal.",
           "types": [
             "expert"
           ],
@@ -3596,6 +3632,7 @@
         {
           "id": "c02",
           "text": "narrower direct provision plus guaranteed timely referral/transfer for services not offered",
+          "text_detailed": "Provide a narrower range directly while guaranteeing timely referral or transfer for what is not offered, with the receiving service named and the transfer arranged by the hospital.",
           "types": [
             "expert"
           ],
@@ -3605,6 +3642,7 @@
         {
           "id": "c03",
           "text": "referral-centered non-provision except urgent medically necessary care",
+          "text_detailed": "Provide only urgent medically necessary care and refer for the rest, with the referral pathway named, funded, and its timeliness monitored against the clinical window.",
           "types": [
             "expert"
           ],
@@ -3614,6 +3652,7 @@
         {
           "id": "c04",
           "text": "hospital-level conscience accommodation only if equivalent timely access is institutionally guaranteed",
+          "text_detailed": "Permit hospital-level conscience accommodation only where equivalent timely access is institutionally guaranteed, with the guarantee demonstrated in practice and audited.",
           "types": [
             "framework"
           ],
@@ -3623,6 +3662,7 @@
         {
           "id": "c05",
           "text": "access-justice/professional-duty framework favoring mainstream integrated provision",
+          "text_detailed": "Favour integrated mainstream provision on access-justice and professional-duty grounds, treating the service as part of ordinary care rather than as a specialised exception.",
           "types": [
             "expert",
             "framework"
@@ -3633,6 +3673,7 @@
         {
           "id": "c06",
           "text": "institutional pluralism framework permitting narrower service identity while imposing nonabandonment/access duties",
+          "text_detailed": "Permit a narrower service identity while imposing non-abandonment and access duties, with those duties specified and their fulfilment reported rather than assumed.",
           "types": [
             "framework"
           ],
@@ -3642,6 +3683,7 @@
         {
           "id": "c07",
           "text": "Publish what the hospital does and does not provide, so that a patient knows before arriving rather than at the point of need.",
+          "text_detailed": "Publish what the hospital does and does not provide, so that a patient knows before arriving rather than at the point of need, with the information given to referrers as well as patients.",
           "types": [
             "public"
           ],
@@ -3662,6 +3704,7 @@
         {
           "id": "c01",
           "text": "provide after ordinary nonjudgmental informed shared decision making with no age/parity veto",
+          "text_detailed": "Provide after ordinary non-judgmental shared decision-making, with no age or parity veto, and with the same process that would apply to any other elective procedure.",
           "types": [
             "expert"
           ],
@@ -3671,6 +3714,7 @@
         {
           "id": "c02",
           "text": "use longitudinal counseling or optional return visit to support sustained deliberation without making delay a categorical barrier",
+          "text_detailed": "Use longitudinal counselling or an optional return visit to support sustained deliberation, offered rather than required, so that delay is available to the patient without being imposed on them.",
           "types": [
             "expert"
           ],
@@ -3680,6 +3724,7 @@
         {
           "id": "c03",
           "text": "require independent second clinical review for unusually young/nulliparous requests",
+          "text_detailed": "Require an independent second clinical review for unusually young or nulliparous requests, with the trigger stated in policy and the review's role limited to confirming the process rather than the choice.",
           "types": [
             "expert"
           ],
@@ -3689,6 +3734,7 @@
         {
           "id": "c04",
           "text": "impose a uniform cooling-off interval before elective permanent contraception",
+          "text_detailed": "Apply a uniform cooling-off interval before elective permanent contraception, with the interval the same for every patient regardless of age or parity and its length stated in advance.",
           "types": [
             "expert"
           ],
@@ -3698,6 +3744,7 @@
         {
           "id": "c05",
           "text": "defer/decline below a defined age/parity threshold because of anticipated regret",
+          "text_detailed": "Defer or decline below a defined age or parity threshold on grounds of anticipated regret, with the threshold published and the evidence for the regret estimate stated.",
           "types": [
             "expert"
           ],
@@ -3707,6 +3754,7 @@
         {
           "id": "c06",
           "text": "reproductive-autonomy/reproductive-justice rule giving the competent patient's reproductive values primary authority while screening for coercion and demographic bias",
+          "text_detailed": "Give the competent patient's reproductive values primary authority while screening for coercion and for demographic bias in who is questioned, with that screening applied to the clinician's practice as well as the patient.",
           "types": [
             "expert",
             "framework"
@@ -3717,6 +3765,7 @@
         {
           "id": "c07",
           "text": "future-self/nonmaleficence rule permitting proportionate deliberative safeguards for irreversible decisions while rejecting permanent demographic vetoes",
+          "text_detailed": "Permit proportionate deliberative safeguards for an irreversible decision while rejecting permanent demographic vetoes, with the safeguards applied uniformly and their effect on access monitored.",
           "types": [
             "framework"
           ],
@@ -3726,6 +3775,7 @@
         {
           "id": "c08",
           "text": "Provide the procedure on the same terms as for any other adult, without an added waiting period, second review or parity threshold that would not apply to an older or parenting patient.",
+          "text_detailed": "Provide the procedure on the same terms as for any other adult, without an added waiting period, second review or parity threshold that would not apply to an older or parenting patient. Any safeguard the service does apply is written into policy and applied to every patient, so that it cannot be introduced for this one.",
           "types": [
             "public"
           ],
@@ -3746,6 +3796,7 @@
         {
           "id": "c01",
           "text": "contemporaneous mutual consent required for reproductive use",
+          "text_detailed": "Require the contemporaneous consent of both contributors for reproductive use, so that a prior agreement does not authorise use over a present objection.",
           "types": [
             "expert",
             "framework"
@@ -3756,6 +3807,7 @@
         {
           "id": "c02",
           "text": "enforce sufficiently specific prior disposition agreement unless both revise it",
+          "text_detailed": "Enforce a sufficiently specific prior disposition agreement unless both parties revise it, with specificity defined by whether the agreement addresses this circumstance.",
           "types": [
             "expert"
           ],
@@ -3765,6 +3817,7 @@
         {
           "id": "c03",
           "text": "default against reproductive use when either genetic contributor currently objects",
+          "text_detailed": "Default against reproductive use where either genetic contributor currently objects, with the default stated at storage so that both know it before creating embryos.",
           "types": [
             "framework"
           ],
@@ -3774,6 +3827,7 @@
         {
           "id": "c04",
           "text": "permit use by one former partner when prior agreement clearly authorized it and embryos are that person's only realistic path to genetic parenthood",
+          "text_detailed": "Permit use by one former partner where the prior agreement clearly authorised it and the embryos are that person's only realistic route to genetic parenthood, with both conditions established independently.",
           "types": [
             "expert"
           ],
@@ -3783,6 +3837,7 @@
         {
           "id": "c05",
           "text": "require advance choices plus periodic reconfirmation while both retain control",
+          "text_detailed": "Require advance choices with periodic reconfirmation while both retain control, with reconfirmation at each renewal and a stated consequence if one party does not respond.",
           "types": [
             "expert"
           ],
@@ -3792,6 +3847,7 @@
         {
           "id": "c06",
           "text": "resolve ambiguity through no reproductive use but permit mutually authorized discard/donation alternatives",
+          "text_detailed": "Resolve ambiguity by permitting no reproductive use, while allowing mutually authorised discard or donation, with the ambiguity identified explicitly rather than resolved in favour of the more insistent party.",
           "types": [
             "expert"
           ],
@@ -3801,6 +3857,7 @@
         {
           "id": "c07",
           "text": "Put the disposition agreement in front of both people again at each storage renewal, so that what happens on disagreement is settled while both still agree.",
+          "text_detailed": "Put the disposition agreement in front of both people again at each storage renewal, so that what happens on disagreement is settled while both still agree. Each renewal records both signatures and the current choice, and storage does not continue on the strength of an agreement neither has looked at for years.",
           "types": [
             "public"
           ],
@@ -3821,6 +3878,7 @@
         {
           "id": "c01",
           "text": "continue storage for a long defined period before any default disposal",
+          "text_detailed": "Continue storage for a long defined period before any default disposal, with the period stated at the outset and contact attempted at intervals throughout it.",
           "types": [
             "public"
           ],
@@ -3830,6 +3888,7 @@
         {
           "id": "c02",
           "text": "thaw/discard after a defined reasonable contact/notice period",
+          "text_detailed": "Thaw or discard after a defined contact and notice period, with the notice sent by stated means, the attempts recorded, and a final period allowed after the last attempt.",
           "types": [
             "expert"
           ],
@@ -3839,6 +3898,7 @@
         {
           "id": "c03",
           "text": "transfer storage responsibility/fees under a predefined contract before default disposition",
+          "text_detailed": "Transfer storage responsibility and fees under a contract agreed in advance, with the terms explained at storage rather than invoked when payment stops.",
           "types": [
             "expert"
           ],
@@ -3848,6 +3908,7 @@
         {
           "id": "c04",
           "text": "prohibit research/reproductive donation absent specific prior authorization",
+          "text_detailed": "Prohibit research or reproductive donation absent specific prior authorisation, with the prohibition applying to every use other than the disposition the contributors chose.",
           "types": [
             "expert"
           ],
@@ -3857,6 +3918,7 @@
         {
           "id": "c05",
           "text": "require prospective explicit default-disposition consent at storage initiation/renewal to minimize future unclaimed status",
+          "text_detailed": "Require an explicit default-disposition choice at storage and at each renewal, so that unclaimed status is prevented rather than resolved, with the choice recorded and confirmable.",
           "types": [
             "expert"
           ],
@@ -3866,6 +3928,7 @@
         {
           "id": "c06",
           "text": "Treat storage without instruction as a duty owed to the people who created the embryos: act only after the notice they were promised has genuinely been given, and follow the disposition they last recorded.",
+          "text_detailed": "Treat storage without instruction as a duty owed to the people who created the embryos: act only after the notice they were promised has genuinely been given, and follow the disposition they last recorded. What counts as genuine notice — the means, the number of attempts, the interval — is fixed at the outset rather than judged when fees stop.",
           "types": [
             "framework"
           ],
@@ -3886,6 +3949,7 @@
         {
           "id": "c01",
           "text": "open identity at adulthood",
+          "text_detailed": "Release donor identity to the donor-conceived person at adulthood as of right, with the arrangement stated to donors before donation and the register maintained to make it effective.",
           "types": [
             "expert"
           ],
@@ -3895,6 +3959,7 @@
         {
           "id": "c02",
           "text": "nonidentifying information plus mutual-consent identity/contact",
+          "text_detailed": "Provide non-identifying information as of right and identity or contact only where both parties consent, with the mutual-consent register maintained and both told it exists.",
           "types": [
             "public"
           ],
@@ -3904,6 +3969,7 @@
         {
           "id": "c03",
           "text": "preserve promised anonymity while warning that DNA technology makes practical secrecy unreliable",
+          "text_detailed": "Preserve anonymity as promised while telling donors and recipients plainly that consumer DNA testing makes practical secrecy unreliable, with that warning given before donation.",
           "types": [
             "expert"
           ],
@@ -3913,6 +3979,7 @@
         {
           "id": "c04",
           "text": "permanent medical/genetic update channel regardless of identity release",
+          "text_detailed": "Maintain a permanent channel for medical and genetic updates in both directions regardless of identity release, with the channel funded and the obligation to use it explained to donors.",
           "types": [
             "expert"
           ],
@@ -3922,6 +3989,7 @@
         {
           "id": "c05",
           "text": "donor-conceived right-to-know framework favoring mature access",
+          "text_detailed": "Favour access at maturity on the ground that donor-conceived people have an interest in their own origins, with support offered around the disclosure rather than only the record.",
           "types": [
             "framework"
           ],
@@ -3931,6 +3999,7 @@
         {
           "id": "c06",
           "text": "donor privacy/reliance framework protecting the terms under which donation occurred",
+          "text_detailed": "Protect the terms under which donation occurred, on reliance grounds, with any change applying prospectively and past donors told what has and has not changed.",
           "types": [
             "framework"
           ],
@@ -3940,6 +4009,7 @@
         {
           "id": "c07",
           "text": "tiered prospective choice among identifiable/mutual-consent/limited-information donation with clear downstream consequences",
+          "text_detailed": "Offer donors a prospective choice among identifiable, mutual-consent and limited-information donation, with the downstream consequences of each stated plainly before they choose.",
           "types": [
             "expert"
           ],
