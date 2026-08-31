@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioethicsbench.com/schemas/projection-manifest.schema.json",
+  "title": "Bioethics Bench SACRE projection manifest",
+  "description": "A declared analysis view over one neutral case-family candidate universe. Projection role assignment is deliberately separate from candidate provenance.",
+  "type": "object",
+  "required": [
+    "projection_id",
+    "projection_version",
+    "case_family_id",
+    "candidate_universe_resource",
+    "projection_type",
+    "claim_scope",
+    "role_assignments",
+    "aggregation"
+  ],
+  "properties": {
+    "projection_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "projection_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "case_family_id": {
+      "type": "string",
+      "pattern": "^m[0-9]{3}$"
+    },
+    "candidate_universe_resource": {
+      "type": "string",
+      "minLength": 1
+    },
+    "projection_type": {
+      "enum": [
+        "source-grounded",
+        "expanded",
+        "matched-study",
+        "demonstration",
+        "direct-grounding"
+      ]
+    },
+    "claim_scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What inferences results from this projection may support. Source-grounded and expanded projections must not share an undifferentiated claim scope."
+    },
+    "as_of_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "jurisdiction_context": {
+      "type": ["string", "null"]
+    },
+    "role_assignments": {
+      "type": "object",
+      "required": ["public", "expert", "framework"],
+      "properties": {
+        "public": { "$ref": "#/$defs/ids" },
+        "expert": { "$ref": "#/$defs/ids" },
+        "framework": { "$ref": "#/$defs/ids" }
+      },
+      "additionalProperties": false
+    },
+    "aggregation": {
+      "enum": ["sum", "mean"]
+    },
+    "source_record_ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+      "uniqueItems": true,
+      "description": "Optional lineage to existing executable record(s). A projection may be declared before a new represented record pair is authored."
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^c[0-9]{2}$" },
+      "uniqueItems": true
+    }
+  }
+}
