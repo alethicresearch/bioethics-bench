@@ -191,8 +191,10 @@ async function boot() {
     return { id: m.record_id.slice(0, 4), title: rec.title, area: (rec.domains ?? [])[0] ?? '', path: m.path, haystack: text };
   }).sort((a, b) => a.title.localeCompare(b.title));
 
-  document.getElementById('f-cases').textContent = state.cases.length;
-  document.getElementById('f-pos').textContent = positions;
+  // The hero carries no counts of its own; fill them only if a page provides the slots.
+  const setStat = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  setStat('f-cases', state.cases.length);
+  setStat('f-pos', positions);
 
   const areas = [...new Set(state.cases.map((c) => c.area).filter(Boolean))]
     .sort((a, b) => (AREAS[a] ?? a).localeCompare(AREAS[b] ?? b));
