@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bioethics Bench — A Benchmark for Computational Bioethics</title>
-  <meta name="description" content="A structured evaluation corpus for benchmarking AI performance in normative reasoning across clinical, research, public health, and other bioethical domains." />
+  <title>Bioethics Bench — 200 cases in bioethics</title>
+  <meta name="description" content="Explore 200 bioethics cases, their policy options, policy types, and how each policy was sourced." />
   <meta property="og:title" content="Bioethics Bench" />
-  <meta property="og:description" content="A structured evaluation corpus for benchmarking AI performance in bioethical reasoning." />
+  <meta property="og:description" content="200 bioethics cases with policy options and clear sourcing." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="../assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,8 +27,8 @@
   <header class="hero">
     <div class="hero-inner">
       <div class="badge"><i></i> Bioethics Bench</div>
-      <h1>A Benchmark for<br><em>Computational Bioethics</em></h1>
-      <p>Bioethics Bench is a structured evaluation corpus for testing, benchmarking, and improving AI performance in normative reasoning across clinical, research, public health, and other domains where ethical judgment matters most.</p>
+      <h1>200 cases in<br><em>bioethics</em></h1>
+      <p>Each case presents an ethical decision and a set of policies. Every policy shows its type — Public, Expert, or Framework — and how it was sourced — Direct, Inferred, or Constructed.</p>
       <div class="actions">
         <a class="btn btn-primary" href="cases/">Explore the cases</a>
         <a class="btn btn-ghost" href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">Open SACRE ↗</a>
@@ -54,27 +54,40 @@
         <a class="cat-card" href="cases/?category=neuro">Neuroethics<span>Brain technologies and neural data</span></a>
         <a class="cat-card" href="cases/?category=animals">Animals & One Health<span>Animal welfare and shared health</span></a>
         <a class="cat-card" href="cases/?category=environment">Climate & environment<span>Health, climate and planetary decisions</span></a>
-        <a class="cat-card" href="cases/?category=everyday">Everyday practice<span>Common clinical and professional dilemmas</span></a>
+        <a class="cat-card" href="cases/?category=everyday">Everyday practice<span>Common clinical and professional decisions</span></a>
       </div>
     </div>
   </section>
 
   <section class="plain-section">
     <div class="wrap">
-      <span class="section-label">Cases and policies</span>
-      <h2 class="section-title">See the policy options in each case</h2>
-      <p class="section-lead">Policies are organized as Public, Expert, or Framework positions. Each policy also shows how it was sourced: Direct source, Inferred from source, or Constructed.</p>
+      <span class="section-label">Policy type</span>
+      <h2 class="section-title">Public, Expert, and Framework</h2>
+      <p class="section-lead">Policy type tells you what kind of perspective the policy represents.</p>
+      <div class="source-grid source-grid-three">
+        <div class="source-card"><strong>Public</strong><p>Public, patient, participant, community, or other affected perspectives.</p></div>
+        <div class="source-card"><strong>Expert</strong><p>Professional, clinical, scientific, institutional, or governance judgments.</p></div>
+        <div class="source-card"><strong>Framework</strong><p>An identified ethical principle, theory, or framework.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plain-section" style="padding-top:0">
+    <div class="wrap">
+      <span class="section-label">Sourcing</span>
+      <h2 class="section-title">See how each policy was sourced</h2>
+      <p class="section-lead">Sourcing is separate from policy type. You can filter cases by either.</p>
       <div class="source-grid source-grid-three">
         <div class="source-card"><strong><span class="source-dot direct"></span>Direct source</strong><p>A source supports substantially the same policy.</p></div>
-        <div class="source-card"><strong><span class="source-dot inferred"></span>Inferred from source</strong><p>The policy is a careful inference from a source, including a source that supplies an underlying view, recommendation, or ethical principle.</p></div>
-        <div class="source-card"><strong><span class="source-dot constructed"></span>Constructed</strong><p>A serious comparison policy written by the Bench and clearly marked as constructed.</p></div>
+        <div class="source-card"><strong><span class="source-dot inferred"></span>Inferred from source</strong><p>The policy is a careful inference from a source.</p></div>
+        <div class="source-card"><strong><span class="source-dot constructed"></span>Constructed</strong><p>A serious comparison policy written for the case and clearly marked as constructed.</p></div>
       </div>
     </div>
   </section>
 
   <section class="cta">
     <h2>Explore the cases</h2>
-    <p>Search by topic, choose a category, filter policies by type and sourcing, and load a case directly into SACRE.</p>
+    <p>Search by topic, choose a category, filter by policy type or sourcing, and load a case into SACRE.</p>
     <a class="btn btn-primary" href="cases/">Browse all 200 cases</a>
   </section>
 
