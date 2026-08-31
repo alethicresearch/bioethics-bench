@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bioethicsbench.com/schemas/projection-manifest.schema.json",
   "title": "Bioethics Bench SACRE projection manifest",
-  "description": "A declared analysis view over one neutral case-family candidate universe. Projection role assignment is deliberately separate from candidate provenance.",
+  "description": "A declared analysis view over one neutral case-family candidate universe. Projection role assignment is separate from candidate provenance. Historical crosswalks additionally record how each represented source-role candidate maps to neutral Policy identity.",
   "type": "object",
   "required": [
     "projection_id",
@@ -69,7 +69,19 @@
       "type": "array",
       "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
       "uniqueItems": true,
-      "description": "Optional lineage to existing executable record(s). A projection may be declared before a new represented record pair is authored."
+      "description": "Optional lineage to existing executable record(s). A historical crosswalk pins the matched concise/detailed pair."
+    },
+    "source_candidate_crosswalk": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/crosswalk" },
+      "description": "Explicit mapping from each historical source-role candidate to neutral Policy identity. The same neutral Policy may appear in different evidence roles when independently supported; within one source role each historical candidate remains distinct."
+    },
+    "review_status": {
+      "enum": ["approved-editorial-crosswalk", "approved-new-projection"]
+    },
+    "reviewed_at": {
+      "type": ["string", "null"],
+      "format": "date"
     },
     "notes": {
       "type": ["string", "null"]
@@ -81,6 +93,18 @@
       "type": "array",
       "items": { "type": "string", "pattern": "^c[0-9]{2}$" },
       "uniqueItems": true
+    },
+    "crosswalk": {
+      "type": "object",
+      "required": ["source_role", "source_candidate_id", "neutral_candidate_id", "relation"],
+      "properties": {
+        "source_role": { "enum": ["public", "expert", "framework"] },
+        "source_candidate_id": { "type": "string", "pattern": "^(pub|exp|fw)[0-9]+$" },
+        "neutral_candidate_id": { "type": "string", "pattern": "^c[0-9]{2}$" },
+        "relation": { "const": "materially-equivalent" },
+        "note": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
     }
   }
 }
