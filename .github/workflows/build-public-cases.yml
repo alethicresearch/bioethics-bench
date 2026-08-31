@@ -6,8 +6,10 @@ on:
     paths:
       - 'resources/case-families/**'
       - 'resources/projections/source-grounded/**'
+      - 'resources/cases/**'
       - 'docs/full-corpus/batch-*/M*-deep-case.md'
       - 'scripts/build-public-cases.mjs'
+      - 'scripts/validate-public-cases.mjs'
       - '.github/workflows/build-public-cases.yml'
   workflow_dispatch:
 
@@ -29,6 +31,7 @@ jobs:
       - name: Check generated resource
         run: |
           node scripts/build-public-cases.mjs
+          node scripts/validate-public-cases.mjs
           git diff --check
       - name: Commit generated resource when changed
         run: |
