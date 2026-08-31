@@ -23,7 +23,10 @@ A competent adult needs elective surgery with a meaningful risk of major bleedin
 
 A competent adult is considering elective surgery that offers substantial expected benefit but carries a meaningful risk of major blood loss. The patient consistently refuses allogeneic blood transfusion for religious reasons after discussing the risk of severe anemia, disability, and death, but accepts specified blood-conservation techniques and nonblood alternatives. A multidisciplinary team can reduce, but not eliminate, the bleeding risk. Some surgeons are willing to operate under a documented bloodless-management plan; others believe the residual risk may exceed what they can responsibly accept for an elective procedure. Transfer to another experienced center is possible but would delay care. The hospital must decide whether to proceed and what risk threshold or safeguards should govern that decision.
 
-These are the released F01 representations and are reproduced here only to anchor the deep case file. They are not being revised.
+
+## Editorial note
+
+The representations above are the released F01 text, reproduced here to anchor this file. They are not being revised.
 
 ## Decision-critical facts
 

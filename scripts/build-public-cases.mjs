@@ -23,9 +23,13 @@ const CATEGORIES = {
   everyday: 'Everyday practice',
 };
 
-// These are the small number of policies whose type is not explicit enough in the
-// existing audit/source label to infer safely. Public / Expert / Framework is the
-// policy type. It is deliberately separate from Direct / Inferred / Constructed sourcing.
+// Public / Expert / Framework is the policy type; Direct / Inferred / Constructed is how the
+// policy was sourced. They are separate, and neither implies the other.
+//
+// Types come from a reviewed assignment where one exists, and otherwise from the wording of the
+// policy and its source note. Only the reviewed ones are marked reviewed in the published file;
+// the rest are a first pass, and the site says so rather than presenting them as settled.
+// The list below covers policies whose wording alone does not decide the type.
 const TYPE_OVERRIDES = {
   'M008:c04': ['expert'], 'M011:c06': ['framework'], 'M012:c06': ['framework'],
   'M019:c06': ['expert'], 'M033:c07': ['expert'], 'M034:c03': ['expert'],
@@ -188,6 +192,14 @@ function inferTypes(caseId, policy, reviewed) {
 
 const source = JSON.parse(fs.readFileSync(SOURCE, 'utf8'));
 const reviewed = loadReviewedTypes();
+/* Two policies (M189 c01 and c02) open with the classification they were filed under —
+   "public/source-informed orientation toward …". The type and sourcing fields now carry that,
+   so the prefix repeats itself in the reader's own words and adds the audit vocabulary back.
+   Drop it here; the underlying record keeps the original wording. */
+function publicPolicyText(text) {
+  return String(text || '').replace(/^(?:public|expert|framework)\/source-informed\s+/i, '');
+}
+
 let policyCount = 0;
 const cases = source.cases.map((entry) => {
   const markdown = fs.readFileSync(path.join(ROOT, entry.deep_case_path), 'utf8');
@@ -196,11 +208,10 @@ const cases = source.cases.map((entry) => {
     policyCount += 1;
     return {
       id: policy.candidate_id,
-      text: policy.text,
+      text: publicPolicyText(policy.text),
       types: inferTypes(entry.inventory_id, policy, reviewed),
+      type_reviewed: reviewed.has(`${entry.inventory_id}:${policy.candidate_id}`),
       sourcing: sourcing(policy),
-      source_note: policy.audit_provenance_label,
-      source_mark: policy.audit_source_mark === true,
     };
   });
   return {
@@ -231,6 +242,7 @@ const output = {
   categories: CATEGORIES,
   policy_types: ['public', 'expert', 'framework'],
   sourcing_types: ['direct', 'inferred', 'constructed'],
+  reviewed_policy_count: cases.reduce((n, c) => n + c.policies.filter((p) => p.type_reviewed).length, 0),
   cases,
 };
 

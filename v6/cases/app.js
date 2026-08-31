@@ -5,6 +5,9 @@ const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
 const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
 const state={cases:[],shown:[],category:'',q:'',types:new Set(),sourcing:new Set(),current:null,rep:'concise',categories:{}};
 const $=id=>document.getElementById(id);
+/* Policy texts are recorded as short phrases, often starting lower case. Capitalise the first
+   letter for display; the recorded text is unchanged. */
+const sentence=s=>{const t=String(s??'').trim();return t?t[0].toUpperCase()+t.slice(1):t;};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function buildCases(raw){
@@ -13,7 +16,7 @@ function buildCases(raw){
     const types=new Set();
     const sourcing=new Set();
     for(const p of c.policies||[]){for(const t of p.types||[])types.add(t);sourcing.add(p.sourcing);}
-    const hay=[c.id,c.title,state.categories[c.category],c.concise,c.detailed,...(c.policies||[]).flatMap(p=>[p.text,p.source_note,...(p.types||[])])].join(' ').toLowerCase();
+    const hay=[c.id,c.title,state.categories[c.category],c.concise,c.detailed,...(c.policies||[]).flatMap(p=>[p.text,...(p.types||[])])].join(' ').toLowerCase();
     return {...c,types,sourcing,hay};
   }).sort((a,b)=>Number(a.id.slice(1))-Number(b.id.slice(1)));
 }
@@ -51,7 +54,8 @@ function typeSummary(c){return Object.keys(TYPE_LABELS).filter(k=>c.types.has(k)
 function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.searchParams.set('form',state.rep);return u.toString();}
 
 function renderDetail(c){
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(p.text)}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}</div></div>`).join('');
+  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${sourceBadge(p.sourcing)}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div></div>`).join('');
+  const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
   $('case-detail').innerHTML=`
     <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>
     <h2>${esc(c.title)}</h2>
@@ -62,6 +66,7 @@ function renderDetail(c){
     <div class="case-actions"><a id="load-sacre" class="sacre-btn" href="${esc(sacreUrl(c))}" target="_blank" rel="noopener">Load in SACRE ↗</a><span>Loads this case and its Public, Expert, and Framework policies into a new evaluation.</span></div>
     <div class="policies-head">Policies</div>
     <div class="policy-list">${policies}</div>
+    ${unreviewed?'<p class="type-note">Policy types marked <span class="reviewed">reviewed</span> have been checked against the sources. The rest are a first pass and may change.</p>':''}
     <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.source_file)}" target="_blank" rel="noopener">Sources and further detail ↗</a></div>`;
 }
 
