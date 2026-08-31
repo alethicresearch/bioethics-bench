@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study — Bioethics Bench</title>
+  <meta name="description" content="Provisional results of the Bioethics Bench convergence study: QCCS v1 conv+ scores over cross-source policy pairs, reported against the full study design of every case, every model, three repeats." />
+  <meta property="og:title" content="Study — Bioethics Bench" />
+  <meta property="og:description" content="Provisional convergence-scoring results, reported against the full study design." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* Page-specific: the reporting components this page needs and no other page has. Everything
+       else - nav, page head, wrap, section labels, buttons, footer - comes from styles.css. */
+
+    /* The two data series. These are validated categorical steps, carried over unchanged from the
+       SACRE dashboard so the same study reads the same on both surfaces. They are data colours and
+       are deliberately not the site's chrome teal, which already means "Bench". */
+    :root { --s-concise: #0d9488; --s-detailed: #c2410c; }
+
+    .study-main { background: var(--soft); padding: 1.7rem 2rem 4rem; }
+    .panel {
+      max-width: 1080px; margin: 0 auto 1.1rem;
+      background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.6rem;
+      box-shadow: 0 1px 3px rgba(15,23,42,.05);
+    }
+    .panel > h2 { margin: 0 0 .35rem; font-size: 1.3rem; letter-spacing: -.02em; color: var(--ink); }
+    .panel > p.sub { margin: 0 0 1.2rem; color: var(--muted); font-size: .88rem; max-width: 76ch; }
+    h3.sub-head {
+      font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 .65rem;
+    }
+
+    .provisional {
+      display: inline-flex; align-items: center; gap: .45rem;
+      background: rgba(245,158,11,.14); border: 1px solid rgba(245,158,11,.4);
+      color: #fcd34d; border-radius: 999px; padding: .3rem .85rem;
+      font-size: .7rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .page-head .caveat {
+      margin-top: 1.35rem; padding: .85rem 1rem; max-width: 78ch;
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.13);
+      border-radius: 10px; font-size: .84rem; color: rgba(255,255,255,.82);
+    }
+    .page-head .caveat strong { color: #fff; }
+
+    /* A single number is a stat tile, not a chart. */
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(142px, 1fr)); gap: .7rem; }
+    .tile { border: 1px solid var(--line); border-radius: 10px; padding: .8rem .9rem; background: var(--soft); }
+    .tile .v { font-size: 1.5rem; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -.025em; line-height: 1.2; }
+    .tile .k { font-size: .76rem; color: var(--muted); }
+    .tile .s { font-size: .7rem; color: #94a3b8; font-variant-numeric: tabular-nums; }
+
+    .legend { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .78rem; color: #475569; margin-bottom: .7rem; }
+    .legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: .38rem; vertical-align: -1px; }
+    .chart { position: relative; display: flex; align-items: flex-end; gap: 4px; height: 190px; }
+    .chart .col { position: relative; flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 2px; height: 100%; }
+    .chart .bar { width: 100%; border-radius: 4px 4px 0 0; }
+    .chart .col:hover .bar { opacity: .82; }
+    .axis { display: flex; justify-content: space-between; font-size: .7rem; color: #94a3b8; margin-top: .35rem; }
+    .tip {
+      position: absolute; z-index: 20; pointer-events: none;
+      background: var(--ink); color: #fff; font-size: .72rem;
+      padding: .35rem .5rem; border-radius: 6px; white-space: nowrap;
+      transform: translate(-50%, -100%); box-shadow: 0 4px 12px rgba(15,23,42,.2);
+    }
+
+    .tbl-wrap { overflow-x: auto; }
+    .study-main table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+    .study-main th {
+      text-align: left; font-weight: 700; color: var(--muted); font-size: .74rem;
+      padding: .4rem .5rem; border-bottom: 1px solid var(--line); white-space: nowrap;
+    }
+    .study-main td { padding: .45rem .5rem; border-bottom: 1px solid var(--soft2); font-variant-numeric: tabular-nums; color: #334155; }
+    td.id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .76rem; color: var(--muted); }
+    .sw-cell { display: inline-block; width: 9px; height: 9px; border-radius: 3px; margin-right: .45rem; vertical-align: -1px; }
+
+    /* The completion matrix: the prospective shape of the finished study. */
+    table.matrix td { text-align: center; padding: .3rem .35rem; }
+    table.matrix th.model { text-align: left; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; color: #475569; font-weight: 500; }
+    .cell { display: inline-block; width: 100%; min-width: 56px; border-radius: 6px; font-size: .7rem; font-weight: 700; padding: .25rem .4rem; }
+    .cell.done    { background: #d1fae5; color: #047857; }
+    .cell.partial { background: #fef3c7; color: #92400e; }
+    .cell.pending { background: var(--soft2); color: #94a3b8; }
+    .matrix-key { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .78rem; color: var(--muted); margin-top: .85rem; }
+    .matrix-key .cell { width: auto; min-width: 0; margin-right: .35rem; }
+
+    .callout { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: .85rem 1rem; font-size: .84rem; color: #78350f; max-width: 82ch; }
+    .callout strong { color: #92400e; }
+    .note { font-size: .78rem; color: #94a3b8; margin: .5rem 0 0; max-width: 76ch; }
+    .empty { text-align: center; color: var(--muted); font-size: .88rem; padding: 2rem 1rem; }
+
+    .prov-table dl { display: grid; grid-template-columns: minmax(130px, max-content) 1fr; gap: .35rem 1.1rem; }
+    .prov-table dt { font-size: .78rem; font-weight: 700; color: var(--muted); }
+    .prov-table dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .76rem; color: #334155; overflow-wrap: anywhere; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.2rem; }
+    .btn-sm {
+      display: inline-flex; align-items: center; gap: .35rem; text-decoration: none;
+      font-size: .78rem; font-weight: 700; padding: .45rem .85rem; border-radius: 8px;
+      border: 1px solid #cbd5e1; color: #475569; background: #fff;
+    }
+    .btn-sm.primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+    @media (max-width: 580px) {
+      .study-main { padding: 1rem; }
+      .panel { padding: 1.1rem; }
+      .prov-table dl { grid-template-columns: 1fr; gap: .1rem; }
+      .prov-table dt { margin-top: .55rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../">Bioethics<em>Bench</em></a>
+    <div class="navlinks">
+      <a href="../">Overview</a>
+      <a href="../cases/">Cases</a>
+      <a class="active" href="./">Study</a>
+      <a class="github" href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <span class="provisional">Provisional</span>
+      <h1>Convergence across the corpus</h1>
+      <p>
+        Every case carries policy options drawn from three different kinds of source — public
+        deliberation, expert guidance, and normative frameworks. The study asks one question of each
+        cross-source pair: how far do these two policies converge on what to do? Scoring follows
+        QCCS v1 under the conv+ protocol, and every pair is an independent call, so the corpus can be
+        scored model by model.
+      </p>
+      <div class="caveat">
+        <strong>This page reports what has actually been executed so far, against the design of the
+        finished study.</strong> Nothing here is a completed benchmark result. The numbers will change
+        as further models and repeats are run, and a partial result should not be read as a finding.
+      </div>
+    </div>
+  </header>
+
+  <main class="study-main">
+    <!-- The design comes first: a reader should know the shape of the finished study before seeing
+         a partial slice of it, so the slice cannot be mistaken for the whole. -->
+    <section class="panel">
+      <h2>The study design</h2>
+      <p class="sub">
+        This is the target the study is being run against. It is fixed in advance so the results
+        below can be read as a fraction of a known whole rather than as an open-ended collection of
+        runs.
+      </p>
+      <div class="tiles">
+        <div class="tile"><div class="v">200</div><div class="k">cases</div><div class="s">the full corpus</div></div>
+        <div class="tile"><div class="v">2</div><div class="k">representations</div><div class="s">concise · detailed</div></div>
+        <div class="tile"><div class="v">10</div><div class="k">models</div><div class="s">three providers</div></div>
+        <div class="tile"><div class="v">3</div><div class="k">repeats</div><div class="s">per model</div></div>
+        <div class="tile"><div class="v" id="design-pairs">—</div><div class="k">scored pairs at completion</div><div class="s">cross-source only</div></div>
+      </div>
+      <div class="callout" style="margin-top:1.2rem">
+        <strong>Why three repeats.</strong> A single pass confounds run-to-run variation with
+        model-to-model variation: if two models differ by four points on one execution each, that
+        difference is not separable from the noise of the scorer. Three executions per model make the
+        two sources of variation distinguishable. Until those repeats exist, every number on this
+        page is a single draw.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Completion</h2>
+      <p class="sub">
+        Each cell is one model's pass over the full corpus in both representations. The study is
+        finished when every cell is filled.
+      </p>
+      <div class="tbl-wrap"><table class="matrix" id="matrix"></table></div>
+      <div class="matrix-key">
+        <span><span class="cell done">done</span>executed and published</span>
+        <span><span class="cell partial">partial</span>started, not complete</span>
+        <span><span class="cell pending">pending</span>not yet run</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 id="results-title">Results</h2>
+      <p class="sub" id="results-sub">Loading the published report…</p>
+      <div id="results"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Provenance</h2>
+      <p class="sub">What produced the numbers above, and how to get the data behind them.</p>
+      <div class="prov-table"><dl id="prov"></dl></div>
+      <div class="btn-row" id="downloads"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <span>Bioethics Bench · results produced by <a href="https://reflectiveequilibrium.ai" target="_blank" rel="noopener">SACRE</a></span>
+      <span><a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var API = 'https://sacre.reflectiveequilibrium.ai/api/studies';
+    var SERIES = {
+      concise:  { hex: 'var(--s-concise)',  label: 'Concise' },
+      detailed: { hex: 'var(--s-detailed)', label: 'Detailed' }
+    };
+
+    // The full design. Cells are filled in from whatever reports have actually been published; a
+    // model with no published report stays pending rather than disappearing from the table, so the
+    // page always shows how much of the study is still outstanding.
+    var DESIGN = {
+      cases: 200,
+      representations: 2,
+      repeats: 3,
+      models: [
+        { id: 'gpt-5.6-sol',              provider: 'OpenAI' },
+        { id: 'gpt-5.4',                  provider: 'OpenAI' },
+        { id: 'gpt-5-mini',               provider: 'OpenAI' },
+        { id: 'gemini-2.5-pro',           provider: 'Google' },
+        { id: 'gemini-2.5-flash',         provider: 'Google' },
+        { id: 'gemini-2.5-flash-lite',    provider: 'Google' },
+        { id: 'claude-opus-5',            provider: 'Anthropic' },
+        { id: 'claude-sonnet-5',          provider: 'Anthropic' },
+        { id: 'claude-haiku-4-5-20251001', provider: 'Anthropic' },
+        { id: 'claude-fable-5',           provider: 'Anthropic' }
+      ],
+      // The pair count for one model's pass over the corpus in both representations, from the
+      // corpus geometry rather than an assumed pairs-per-case: it is reported by the runner and
+      // restated here so the matrix can show a fraction even before anything is published.
+      pairsPerCell: 7073
+    };
+
+    var $ = function (id) { return document.getElementById(id); };
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c];
+    }); };
+    var n = function (x) { return Number(x).toLocaleString(); };
+    var f1 = function (x) { return Number(x).toFixed(1); };
+
+    function paramId() {
+      var m = /[?&]id=([^&]+)/.exec(window.location.search);
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+
+    /* ---------- completion matrix ---------- */
+
+    function renderMatrix(reports) {
+      // A report contributes to the cell for each model it names. Repeats are not yet distinguished
+      // in a published report, so run 1 is credited and the rest stay pending until repeat runs
+      // are published under their own study ids.
+      var byModel = {};
+      reports.forEach(function (r) {
+        (r.models || []).forEach(function (m) {
+          if (!byModel[m]) byModel[m] = [];
+          byModel[m].push(r);
+        });
+      });
+
+      var head = '<thead><tr><th class="model">model</th><th>provider</th>';
+      for (var i = 1; i <= DESIGN.repeats; i++) head += '<th>run ' + i + '</th>';
+      head += '<th>pairs scored</th></tr></thead>';
+
+      var body = '<tbody>';
+      DESIGN.models.forEach(function (m) {
+        var reps = byModel[m.id] || [];
+        var scored = reps.reduce(function (a, r) { return a + (r.scored || 0); }, 0);
+        body += '<tr><th class="model">' + esc(m.id) + '</th>' +
+          '<td style="text-align:left;color:var(--muted);font-size:.78rem">' + esc(m.provider) + '</td>';
+        for (var i = 0; i < DESIGN.repeats; i++) {
+          var r = reps[i];
+          var cls, label;
+          if (r) {
+            cls = r.complete ? 'done' : 'partial';
+            label = r.complete ? 'done' : Math.round((r.scored / DESIGN.pairsPerCell) * 100) + '%';
+          } else {
+            // Only two states are observable from published reports: a cell has one or it does
+            // not. Whether a model is currently runnable is a fact about credentials on the
+            // executing side, which this page cannot see and must not assert.
+            cls = 'pending'; label = 'pending';
+          }
+          body += '<td><span class="cell ' + cls + '">' + label + '</span></td>';
+        }
+        body += '<td>' + (scored ? n(scored) : '<span style="color:var(--gray-400)">—</span>') + '</td></tr>';
+      });
+      body += '</tbody>';
+      $('matrix').innerHTML = head + body;
+    }
+
+    /* ---------- dashboard ---------- */
+
+    function tile(v, k, s) {
+      return '<div class="tile"><div class="v">' + v + '</div><div class="k">' + k + '</div>' +
+        (s ? '<div class="s">' + s + '</div>' : '') + '</div>';
+    }
+
+    function histogram(report) {
+      var reps = report.representations || [];
+      if (!reps.length) return '';
+      var max = 0;
+      reps.forEach(function (r) {
+        (report.histogram[r] || []).forEach(function (c) { if (c > max) max = c; });
+      });
+
+      var legend = '<div class="legend">' + reps.map(function (r) {
+        return '<span><span class="sw" style="background:' + SERIES[r].hex + '"></span>' + SERIES[r].label + '</span>';
+      }).join('') + '</div>';
+
+      var cols = '';
+      for (var i = 0; i < report.bins; i++) {
+        var bars = reps.map(function (r) {
+          var c = report.histogram[r][i] || 0;
+          var h = max ? Math.max(c ? 2 : 0, (c / max) * 100) : 0;
+          return '<div class="bar" style="height:' + h + '%;background:' + SERIES[r].hex + '"></div>';
+        }).join('');
+        var label = reps.map(function (r) {
+          return SERIES[r].label + ' ' + n(report.histogram[r][i] || 0);
+        }).join(' · ');
+        cols += '<div class="col" data-bin="' + i + '" data-label="' + esc((i * 10) + '–' + (i * 10 + 9) + ': ' + label) + '">' + bars + '</div>';
+      }
+
+      // The bar heights are relative, so the tallest bin is named: without it a reader can compare
+      // shapes but cannot tell whether a peak is forty pairs or four thousand.
+      var scale = '<p class="note" style="margin:-0.35rem 0 0.6rem">Bars are counts of scored pairs; the tallest bin holds ' + n(max) + '.</p>';
+      return '<h3 class="sub-head">Convergence score distribution</h3>' + legend + scale +
+        '<div class="chart" id="chart">' + cols + '</div>' +
+        '<div class="axis"><span>0</span><span>50</span><span>100</span></div>';
+    }
+
+    function repTable(report) {
+      var reps = report.representations || [];
+      if (reps.length < 2) return '';
+      var rows = reps.map(function (r) {
+        var s = report.byRepresentation[r];
+        return '<tr><td><span class="sw-cell" style="background:' + SERIES[r].hex + '"></span>' + SERIES[r].label + '</td>' +
+          '<td>' + n(s.n) + '</td><td>' + f1(s.mean) + '</td><td>' + s.median + '</td><td>' + f1(s.sd) + '</td>' +
+          '<td>' + s.min + '–' + s.max + '</td></tr>';
+      }).join('');
+      return '<h3 class="sub-head" style="margin-top:1.75rem">By representation</h3>' +
+        '<div class="tbl-wrap"><table><thead><tr><th>form</th><th>pairs</th><th>mean</th><th>median</th><th>sd</th><th>range</th></tr></thead>' +
+        '<tbody>' + rows + '</tbody></table></div>' +
+        '<p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.5rem;max-width:76ch">' +
+        'One execution of each pair, so a difference between these rows is not yet a representation ' +
+        'effect: run-to-run variation is not separated from it without the repeats.</p>';
+    }
+
+    function caseTable(report) {
+      var rows = (report.cases || []).slice(0, 40).map(function (c) {
+        return '<tr><td class="id">' + esc(c.id) + '</td><td>' + n(c.n) + '</td><td>' + f1(c.mean) +
+          '</td><td>' + f1(c.sd) + '</td><td style="color:var(--gray-500)">' + c.min + '–' + c.max + '</td></tr>';
+      }).join('');
+      if (!rows) return '';
+      return '<h3 class="sub-head" style="margin-top:1.75rem">Cases with the widest spread</h3>' +
+        '<p style="font-size:0.8125rem;color:var(--gray-600);margin-bottom:0.625rem;max-width:76ch">' +
+        'The cases where cross-source policies pull furthest apart. A high spread is what makes a ' +
+        'case discriminating; a case where everything converges tells the benchmark little.</p>' +
+        '<div class="tbl-wrap"><table><thead><tr><th>case</th><th>pairs</th><th>mean</th><th>sd</th><th>range</th></tr></thead>' +
+        '<tbody>' + rows + '</tbody></table></div>' +
+        '<p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.5rem">Showing ' +
+        Math.min(40, report.cases.length) + ' of ' + n(report.cases.length) + ' cases.</p>';
+    }
+
+    function failures(report) {
+      var keys = Object.keys(report.errors || {});
+      if (!keys.length) return '';
+      var rows = keys.map(function (k) {
+        return '<tr><td class="id">' + esc(k) + '</td><td>' + n(report.errors[k]) + '</td></tr>';
+      }).join('');
+      return '<h3 class="sub-head" style="margin-top:1.75rem">Calls that failed</h3>' +
+        '<p style="font-size:0.8125rem;color:var(--gray-600);margin-bottom:0.625rem;max-width:76ch">' +
+        'Every pair is an independent call, so a failure removes one pair and is retryable on its ' +
+        'own. Failed pairs are excluded from the statistics above and counted here instead.</p>' +
+        '<div class="tbl-wrap"><table><thead><tr><th>error</th><th>pairs</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+    }
+
+    function renderResults(report) {
+      var o = report.overall;
+      var pct = report.completeness.planned
+        ? Math.round((report.completeness.scored / report.completeness.planned) * 100) : null;
+
+      $('results-title').textContent = 'Results — ' + (report.label || report.id);
+      $('results-sub').innerHTML =
+        esc((report.provenance.models || []).join(', ')) + ' · QCCS v1 · conv+' +
+        (pct != null ? ' · ' + pct + '% of this cell executed' : '') +
+        (report.completeness.complete === false ? ' · <strong>incomplete</strong>' : '');
+
+      var html = '<div class="tiles">' +
+        tile(n(o.n), 'pairs scored', 'cross-source') +
+        tile(n(report.cases.length), 'cases covered', 'of ' + DESIGN.cases) +
+        tile(f1(o.mean), 'mean convergence', 'median ' + o.median) +
+        tile(f1(o.sd), 'spread (sd)', o.min + '–' + o.max) +
+        tile(n(report.completeness.failed), 'failed calls', report.completeness.failed ? 'retryable' : 'none') +
+        '</div><div style="margin-top:1.75rem">' + histogram(report) + '</div>' +
+        repTable(report) + failures(report) + caseTable(report);
+
+      $('results').innerHTML = html;
+      attachHover();
+    }
+
+    function attachHover() {
+      var chart = $('chart');
+      if (!chart) return;
+      var tip = document.createElement('div');
+      tip.className = 'tip';
+      tip.style.display = 'none';
+      chart.appendChild(tip);
+      // The hit target is the whole column, not the bar, so a near-empty bin is still hoverable.
+      Array.prototype.forEach.call(chart.querySelectorAll('.col'), function (col) {
+        col.addEventListener('mouseenter', function () {
+          tip.textContent = col.getAttribute('data-label');
+          tip.style.display = 'block';
+          tip.style.left = (col.offsetLeft + col.offsetWidth / 2) + 'px';
+          tip.style.top = (col.offsetTop - 6) + 'px';
+        });
+        col.addEventListener('mouseleave', function () { tip.style.display = 'none'; });
+      });
+    }
+
+    function renderProvenance(report) {
+      var p = report ? report.provenance : null;
+      var rows = [
+        ['Protocol', 'QCCS v1 · conv+ · cross-source pairs only'],
+        ['Corpus', 'Bioethics Bench, ' + DESIGN.cases + ' cases, concise and detailed'],
+        ['Executor', 'SACRE study runner'],
+        ['Design', DESIGN.models.length + ' models × ' + DESIGN.repeats + ' repeats × 2 representations']
+      ];
+      if (p) {
+        rows.push(['Models run', (p.models || []).join(', ') || '—']);
+        if (p.library) {
+          rows.push(['Library pin', (p.library.resource_version || '—') +
+            (p.library.content_sha256 ? ' · content ' + String(p.library.content_sha256).slice(0, 12) : '')]);
+        }
+        rows.push(['Executed', p.runAt ? new Date(p.runAt).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—']);
+        rows.push(['Published', report.publishedAt ? new Date(report.publishedAt).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—']);
+        rows.push(['Repeats in this report', String(p.repeats != null ? p.repeats : 1)]);
+      }
+      $('prov').innerHTML = rows.map(function (r) {
+        return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>';
+      }).join('');
+
+      if (report) {
+        $('downloads').innerHTML =
+          '<a class="btn-sm primary" href="' + API + '?id=' + encodeURIComponent(report.id) + '">Report JSON</a>' +
+          '<a class="btn-sm" href="' + API + '?id=' + encodeURIComponent(report.id) + '&pairs=1">Pair-level scores JSON</a>' +
+          '<a class="btn-sm" href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">Corpus on GitHub ↗</a>';
+      }
+    }
+
+    /* ---------- load ---------- */
+
+    $('design-pairs').textContent =
+      n(DESIGN.pairsPerCell * DESIGN.models.length * DESIGN.repeats);
+
+    function fail(message) {
+      $('results-sub').textContent = '';
+      $('results').innerHTML = '<div class="empty">' + esc(message) + '</div>';
+    }
+
+    fetch(API, { headers: { Accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (body) {
+        var list = body.studies || [];
+        renderMatrix(list);
+        if (!list.length) {
+          $('results-title').textContent = 'Results';
+          fail('No study has been published yet. The design above is what will be reported here.');
+          renderProvenance(null);
+          return;
+        }
+        var wanted = paramId();
+        var pick = wanted ? list.filter(function (s) { return s.id === wanted; })[0] : list[0];
+        if (!pick) { fail('No published study with id "' + wanted + '".'); renderProvenance(null); return; }
+        return fetch(API + '?id=' + encodeURIComponent(pick.id))
+          .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+          .then(function (report) {
+            if (!report.overall) { fail('That study has no scored pairs yet.'); renderProvenance(report); return; }
+            renderResults(report);
+            renderProvenance(report);
+          });
+      })
+      .catch(function (e) {
+        renderMatrix([]);
+        fail('Could not load published results (' + e.message + '). The study design above still applies.');
+        renderProvenance(null);
+      });
+  })();
+  </script>
+</body>
+</html>
