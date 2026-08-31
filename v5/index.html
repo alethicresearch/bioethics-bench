@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bioethics Bench — real bioethics cases, with the positions and their sources</title>
+<meta name="description" content="A research corpus of bioethics cases. Each case states a decision, the serious positions people actually take on it, and where each position comes from." />
+<link rel="icon" href="../assets/alethic.png" />
+<style>
+  :root{
+    --ink:#12161c; --ink-2:#3d4654; --ink-3:#6b7686; --line:#e3e7ed;
+    --bg:#fff; --bg-2:#f7f8fa; --accent:#0f766e; --accent-soft:#e6f4f1;
+    --pub:#1d4ed8; --exp:#7c3aed; --fw:#b45309;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);z-index:20}
+  .top-in{display:flex;align-items:center;gap:24px;height:60px}
+  .brand{font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+  .brand em{font-style:normal;color:var(--accent)}
+  .top nav{margin-left:auto;display:flex;gap:20px;font-size:.9rem}
+  .top nav a{color:var(--ink-2);text-decoration:none}
+  .top nav a:hover{color:var(--accent)}
+
+  .hero{padding:56px 0 40px}
+  .hero h1{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;max-width:22ch}
+  .hero p{font-size:1.12rem;color:var(--ink-2);max-width:62ch;margin:0 0 14px}
+  .state{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:#0b5b55;
+    border-radius:999px;padding:5px 13px;font-size:.8rem;font-weight:600;margin-bottom:20px}
+  .state .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+  .facts{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:12px;margin:28px 0 0;overflow:hidden}
+  .fact{flex:1 1 160px;padding:16px 20px;border-right:1px solid var(--line)}
+  .fact:last-child{border-right:0}
+  .fact b{display:block;font-size:1.5rem;letter-spacing:-.02em}
+  .fact span{font-size:.83rem;color:var(--ink-3)}
+
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.45rem;letter-spacing:-.015em;margin:0 0 8px}
+  .sub{color:var(--ink-2);max-width:64ch;margin:0 0 26px}
+
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;align-items:center}
+  .controls input,.controls select{font:inherit;font-size:.92rem;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+  .controls input{flex:1 1 260px}
+  .count{font-size:.85rem;color:var(--ink-3);margin-left:auto}
+
+  .case{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;background:#fff}
+  .case[open]{border-color:#c9d3dd;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+  .case summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;gap:14px;align-items:baseline}
+  .case summary::-webkit-details-marker{display:none}
+  .case summary:hover{background:var(--bg-2)}
+  .case h3{margin:0;font-size:1.02rem;font-weight:600;letter-spacing:-.01em;flex:1}
+  .tag{font-size:.72rem;color:var(--ink-3);border:1px solid var(--line);border-radius:5px;padding:2px 7px;white-space:nowrap}
+  .body{padding:4px 18px 20px;border-top:1px solid var(--line)}
+  .body .q,.body .scenario,.assume,.pos{max-width:78ch}
+  .q{font-weight:600;margin:16px 0 6px}
+  .scenario{color:var(--ink-2);margin:0 0 18px}
+  .assume{background:var(--bg-2);border-radius:8px;padding:12px 14px;margin:0 0 18px;font-size:.9rem;color:var(--ink-2)}
+  .assume b{color:var(--ink);font-weight:600}
+  .assume ul{margin:6px 0 0;padding-left:18px}
+
+  .grp{margin-bottom:16px}
+  .grp-h{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+  .grp-h .n{font-weight:500;color:var(--ink-3);letter-spacing:0;text-transform:none}
+  .g-public .grp-h{color:var(--pub)} .g-expert .grp-h{color:var(--exp)} .g-framework .grp-h{color:var(--fw)}
+  .pos{border-left:3px solid var(--line);padding:0 0 0 14px;margin-bottom:12px}
+  .g-public .pos{border-color:var(--pub)} .g-expert .pos{border-color:var(--exp)} .g-framework .pos{border-color:var(--fw)}
+  .pos p{margin:0 0 5px}
+  .srcs{font-size:.84rem;color:var(--ink-3)}
+  .srcs a{color:var(--ink-3);text-decoration:underline;text-underline-offset:2px}
+  .srcs a:hover{color:var(--accent)}
+  .basis{font-size:.74rem;color:var(--ink-3);border:1px solid var(--line);border-radius:5px;padding:1px 6px;margin-left:6px;white-space:nowrap}
+
+  .meta{font-size:.82rem;color:var(--ink-3);border-top:1px solid var(--line);padding-top:12px;margin-top:16px;
+    display:flex;flex-wrap:wrap;gap:16px}
+  .meta code{font-family:var(--mono);font-size:.78rem}
+
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .card h3{margin:0 0 6px;font-size:1rem}
+  .card p{margin:0;color:var(--ink-2);font-size:.94rem}
+  .card .stat{font-size:.82rem;color:var(--ink-3);margin-top:10px;font-family:var(--mono)}
+  .warn{border-left:3px solid #d97706;background:#fffbeb;padding:14px 16px;border-radius:0 8px 8px 0;margin-top:22px;font-size:.94rem;color:#713f12}
+
+  footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--ink-3);font-size:.9rem}
+  footer a{color:var(--ink-2)}
+  .fl{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:14px}
+  .loading{color:var(--ink-3);padding:22px 0}
+  @media (max-width:640px){ .case summary{flex-wrap:wrap;gap:8px} .fact{flex-basis:50%} }
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./">Bioethics<em>Bench</em></a>
+  <nav>
+    <a href="#cases">Cases</a>
+    <a href="#evaluations">Evaluations</a>
+    <a href="#about">About</a>
+    <a href="https://github.com/alethicresearch/bioethics-bench">GitHub&nbsp;↗</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="state"><span class="dot"></span> Release candidate · under review</div>
+    <h1>Bioethics cases, with the positions people actually hold and where each one comes from.</h1>
+    <p>Every case sets out a decision someone really has to make — whether to keep a feeding tube, who gets a funded IVF cycle, when a clinician may refuse. Alongside it sit the serious positions on that decision: what surveyed publics want, what professional bodies recommend, and what ethical frameworks imply. Each position says which source it came from, and how directly.</p>
+    <p>It exists so that reasoning about these cases — by people or by machines — can be compared against something stable and checkable, instead of against an answer key nobody agrees on.</p>
+    <div class="facts">
+      <div class="fact"><b id="f-cases">34</b><span>cases ready to run</span></div>
+      <div class="fact"><b>200</b><span>researched and documented</span></div>
+      <div class="fact"><b id="f-pos">210</b><span>distinct positions</span></div>
+      <div class="fact"><b id="f-src">122</b><span>sources verified</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="cases"><div class="wrap">
+  <h2>Browse the cases</h2>
+  <p class="sub">Open any case to read the decision, the facts held fixed, and every position with its sources. This loads the released records directly — what you see here is what a study would run.</p>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search cases — try “consent”, “hospice”, “vaccination”" aria-label="Search cases" />
+    <select id="dom" aria-label="Filter by area"><option value="">All areas</option></select>
+    <span class="count" id="count"></span>
+  </div>
+  <div id="list" class="loading">Loading cases…</div>
+</div></section>
+
+<section id="evaluations"><div class="wrap">
+  <h2>Evaluations</h2>
+  <p class="sub">What has actually been run against these cases, and what has not. We keep these apart deliberately: showing a system a case and recording what it said is not the same as validating anything.</p>
+  <div class="cols">
+    <div class="card">
+      <h3>Run so far</h3>
+      <p>A development run over 8 cases in both their short and long forms, scoring how well each pair of positions hangs together. It checked that the machinery works across every shape of case.</p>
+      <div class="stat">216 comparisons · gpt-5.6-sol · Aug 2026</div>
+    </div>
+    <div class="card">
+      <h3>Next</h3>
+      <p>The same run across all 34 cases, to see how results move with case shape and with how much context a case gives. Repeats on the same cases, to see how stable a result is before anything is read into it.</p>
+      <div class="stat">planned</div>
+    </div>
+    <div class="card">
+      <h3>Later</h3>
+      <p>Comparison against human judgement on the same cases, and across different systems. This is the part that could support a claim about whether any of this tracks considered ethical reasoning.</p>
+      <div class="stat">not started</div>
+    </div>
+  </div>
+  <div class="warn"><b>What these runs do not show.</b> No result here says a position is correct. The runs so far were for development — checking the pipeline, not testing a hypothesis — and none has been repeated enough times to know how much a single result moves on its own. Nothing has been compared against human judgement yet.</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2>How a case is built</h2>
+  <p class="sub">Three things, kept separate on purpose.</p>
+  <div class="cols">
+    <div class="card">
+      <h3>The decision</h3>
+      <p>A real situation, with the facts that matter stated and held fixed — so that two people disagreeing are disagreeing about the ethics, not about what happened.</p>
+    </div>
+    <div class="card">
+      <h3>The positions</h3>
+      <p>The serious answers, not a spread of plausible-sounding options. Where a professional body and a surveyed public genuinely differ, both appear. Where they agree, we do not invent a disagreement.</p>
+    </div>
+    <div class="card">
+      <h3>The sources</h3>
+      <p>Each position names what it came from, and says whether the source states that policy outright or whether we drew it out — because those are not the same kind of claim.</p>
+    </div>
+  </div>
+  <div class="warn"><b>Where this currently stands.</b> The cases are a release candidate. Every source identifier has been checked, and every position claiming a source states its policy outright has been read against that source. What has not happened is independent review by someone outside the project. Until it does, treat these as carefully built research material rather than settled reference material — and the <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/full-corpus/review/README.md">review record</a> says exactly what has and has not been checked.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fl">
+    <a href="https://github.com/alethicresearch/bioethics-bench">Repository</a>
+    <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/full-corpus/review/README.md">Review record</a>
+    <a href="https://reflectiveequilibrium.ai">SACRE</a>
+    <a href="http://www.doingethicswithai.org">Doing Ethics with AI</a>
+    <a href="mailto:research@alethic.ai">Contact</a>
+  </div>
+  <p>Bioethics Bench — Alethic Research, with the Initiative for Medical AI, the Centre for Biomedical Ethics at NUS, and OpenTelemed. Case content CC BY 4.0; cited sources keep their own rights.</p>
+</div></footer>
+
+<script src="app.js"></script>
+</body>
+</html>
