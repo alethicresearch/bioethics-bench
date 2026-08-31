@@ -9,8 +9,12 @@ on:
       - 'scripts/validate-candidate-universe.mjs'
       - 'scripts/build-projection-crosswalk-worksheet.mjs'
       - 'scripts/build-projection-review-input.mjs'
+      - 'scripts/validate-projection-manifests.mjs'
       - 'scripts/disposition-ledger.mjs'
       - 'schemas/candidate-universe.schema.json'
+      - 'schemas/projection-manifest.schema.json'
+      - 'schemas/projection-crosswalk-hold.schema.json'
+      - 'resources/projections/**'
       - 'docs/full-corpus/audit-v2/**'
       - 'docs/full-corpus/batch-*/M*-deep-case.md'
       - 'data/benchmark/**'
@@ -42,6 +46,8 @@ jobs:
         run: node scripts/build-projection-crosswalk-worksheet.mjs --write
       - name: Build compact projection review input
         run: node scripts/build-projection-review-input.mjs --write
+      - name: Validate any committed projection review objects
+        run: node scripts/validate-projection-manifests.mjs
       - name: Report identities
         run: |
           sha256sum resources/case-families/full-200-rich-candidate-universes.v1.json
