@@ -1,0 +1,63 @@
+{
+  "projection_id": "m019-source-grounded-historical-crosswalk",
+  "projection_version": "1.0.0",
+  "case_family_id": "m019",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "projection_type": "source-grounded",
+  "claim_scope": "Source-grounded comparison among the represented Public, Expert, and Framework positions in the historical M019 Full Corpus v1 records; this crosswalk preserves represented source-role claims only and does not imply broader public, professional, or normative consensus.",
+  "as_of_date": "2026-08-30",
+  "jurisdiction_context": null,
+  "role_assignments": {
+    "public": [
+      "c01",
+      "c02"
+    ],
+    "expert": [
+      "c03"
+    ],
+    "framework": [
+      "c04",
+      "c05"
+    ]
+  },
+  "aggregation": "mean",
+  "source_record_ids": [
+    "m019-telemedicine-access-diagnostic-safety-concise-v1",
+    "m019-telemedicine-access-diagnostic-safety-detailed-v1"
+  ],
+  "source_candidate_crosswalk": [
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub1",
+      "neutral_candidate_id": "c01",
+      "relation": "materially-equivalent"
+    },
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub2",
+      "neutral_candidate_id": "c02",
+      "relation": "materially-equivalent"
+    },
+    {
+      "source_role": "expert",
+      "source_candidate_id": "exp1",
+      "neutral_candidate_id": "c03",
+      "relation": "materially-equivalent"
+    },
+    {
+      "source_role": "framework",
+      "source_candidate_id": "fw1",
+      "neutral_candidate_id": "c04",
+      "relation": "materially-equivalent"
+    },
+    {
+      "source_role": "framework",
+      "source_candidate_id": "fw2",
+      "neutral_candidate_id": "c05",
+      "relation": "materially-equivalent"
+    }
+  ],
+  "review_status": "approved-editorial-crosswalk",
+  "reviewed_at": "2026-08-30",
+  "notes": "Editorially reviewed against neutral resource v1.1.0 at operative Policy level. Cross-role reuse of a neutral Policy denotes independent evidential support, not duplicate Policy identity. Symmetric historical profiles use the sacre-qccs-v1 reference-task Sum baseline when no aggregation was explicitly required; asymmetric profiles preserve their required Mean aggregation."
+}

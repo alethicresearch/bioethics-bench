@@ -1,0 +1,47 @@
+{
+  "review_id": "m056-source-grounded-crosswalk-hold",
+  "review_version": "1.0.0",
+  "case_family_id": "m056",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "source_record_ids": [
+    "m056-fourteen-day-embryo-research-limit-natural-concise-v1",
+    "m056-fourteen-day-embryo-research-limit-natural-detailed-v1"
+  ],
+  "status": "hold",
+  "reason_codes": [
+    "combined-neutral-positions",
+    "granularity-mismatch"
+  ],
+  "issues": [
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub2",
+      "related_neutral_candidate_ids": [
+        "c03",
+        "c04"
+      ],
+      "explanation": "Combines project endpoints with high-value/no-alternative conditions."
+    },
+    {
+      "source_role": "expert",
+      "source_candidate_id": "exp1",
+      "related_neutral_candidate_ids": [
+        "c03",
+        "c04"
+      ],
+      "explanation": "Combines project-specific review with necessity/high-value criteria."
+    },
+    {
+      "source_role": "framework",
+      "source_candidate_id": "fw2",
+      "related_neutral_candidate_ids": [
+        "c03",
+        "c06"
+      ],
+      "explanation": "Combines project endpoints with research-benefit proportionality."
+    }
+  ],
+  "next_action": "Separate cutoff architecture from necessity/proportionality criteria.",
+  "reviewed_at": "2026-08-30",
+  "notes": "Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0."
+}

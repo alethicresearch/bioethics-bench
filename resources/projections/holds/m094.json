@@ -1,0 +1,38 @@
+{
+  "review_id": "m094-source-grounded-crosswalk-hold",
+  "review_version": "1.0.0",
+  "case_family_id": "m094",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "source_record_ids": [
+    "m094-high-risk-workforce-vaccination-mandate-natural-concise-v1",
+    "m094-high-risk-workforce-vaccination-mandate-natural-detailed-v1"
+  ],
+  "status": "hold",
+  "reason_codes": [
+    "source-role-mismatch",
+    "provenance-review-needed"
+  ],
+  "issues": [
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub1",
+      "related_neutral_candidate_ids": [
+        "c01",
+        "c04"
+      ],
+      "explanation": "Audit says direct fixed-scenario Public evidence is still needed."
+    },
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub2",
+      "related_neutral_candidate_ids": [
+        "c04",
+        "c06"
+      ],
+      "explanation": "Less-restrictive comparator lacks sufficient direct Public-role grounding."
+    }
+  ],
+  "next_action": "Obtain direct affected-worker/public policy evidence before a canonical Public projection.",
+  "reviewed_at": "2026-08-30",
+  "notes": "Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0."
+}

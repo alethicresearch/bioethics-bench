@@ -1,0 +1,29 @@
+{
+  "review_id": "m054-source-grounded-crosswalk-hold",
+  "review_version": "1.0.0",
+  "case_family_id": "m054",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "source_record_ids": [
+    "m054-secondary-findings-clinical-genomic-sequencing-natural-concise-v1",
+    "m054-secondary-findings-clinical-genomic-sequencing-natural-detailed-v1"
+  ],
+  "status": "hold",
+  "reason_codes": [
+    "candidate-not-represented",
+    "granularity-mismatch"
+  ],
+  "issues": [
+    {
+      "source_role": "expert",
+      "source_candidate_id": "exp2",
+      "related_neutral_candidate_ids": [
+        "c02",
+        "c03"
+      ],
+      "explanation": "Diagnostic-scope rule has no materially equivalent neutral candidate."
+    }
+  ],
+  "next_action": "Add/review a diagnostic-scope candidate in a future universe or use a successor projection.",
+  "reviewed_at": "2026-08-30",
+  "notes": "Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0."
+}

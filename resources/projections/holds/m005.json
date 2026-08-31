@@ -1,0 +1,48 @@
+{
+  "review_id": "m005-source-grounded-crosswalk-hold",
+  "review_version": "1.0.0",
+  "case_family_id": "m005",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "source_record_ids": [
+    "m005-family-nondisclosure-serious-diagnosis-concise-v1",
+    "m005-family-nondisclosure-serious-diagnosis-detailed-v1"
+  ],
+  "status": "hold",
+  "reason_codes": [
+    "combined-neutral-positions",
+    "candidate-not-represented"
+  ],
+  "issues": [
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub2",
+      "related_neutral_candidate_ids": [
+        "c03",
+        "c04"
+      ],
+      "explanation": "Combines family mediation and paced disclosure."
+    },
+    {
+      "source_role": "expert",
+      "source_candidate_id": "exp1",
+      "related_neutral_candidate_ids": [
+        "c02",
+        "c03",
+        "c04"
+      ],
+      "explanation": "Combines preference elicitation, mediation, and pacing."
+    },
+    {
+      "source_role": "framework",
+      "source_candidate_id": "fw2",
+      "related_neutral_candidate_ids": [
+        "c03",
+        "c04"
+      ],
+      "explanation": "Combines relational mediation and gradual disclosure."
+    }
+  ],
+  "next_action": "Author a successor v1.1 source-grounded projection; preserve historical records.",
+  "reviewed_at": "2026-08-30",
+  "notes": "Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0."
+}

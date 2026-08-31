@@ -1,0 +1,46 @@
+{
+  "review_id": "m139-source-grounded-crosswalk-hold",
+  "review_version": "1.0.0",
+  "case_family_id": "m139",
+  "candidate_universe_resource": "resources/case-families/full-200-rich-candidate-universes.v1.1.json",
+  "source_record_ids": [
+    "m139-secondary-use-health-records-consent-natural-concise-v1",
+    "m139-secondary-use-health-records-consent-natural-detailed-v1"
+  ],
+  "status": "hold",
+  "reason_codes": [
+    "combined-neutral-positions",
+    "candidate-not-represented"
+  ],
+  "issues": [
+    {
+      "source_role": "public",
+      "source_candidate_id": "pub3",
+      "related_neutral_candidate_ids": [
+        "c01",
+        "c02"
+      ],
+      "explanation": "Tiered opt-out/affirmative-permission rule spans two neutral branches."
+    },
+    {
+      "source_role": "expert",
+      "source_candidate_id": "exp2",
+      "related_neutral_candidate_ids": [
+        "c04"
+      ],
+      "explanation": "IRB/Privacy-Board waiver rule has no materially equivalent neutral candidate."
+    },
+    {
+      "source_role": "framework",
+      "source_candidate_id": "fw3",
+      "related_neutral_candidate_ids": [
+        "c01",
+        "c02"
+      ],
+      "explanation": "Tiered framework rule spans two neutral branches."
+    }
+  ],
+  "next_action": "Add/review a waiver Policy or build an explicitly tiered successor projection.",
+  "reviewed_at": "2026-08-30",
+  "notes": "Historical represented records remain unchanged. Hold applies only to claiming a one-to-one historical crosswalk onto neutral resource v1.1.0."
+}
