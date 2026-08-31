@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 132,
+  "detailed_policy_count": 198,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -1590,6 +1590,7 @@
         {
           "id": "c01",
           "text": "Continue intensive treatment while parents request it when meaningful benefit remains medically possible, with frequent reassessment",
+          "text_detailed": "Continue intensive treatment while the parents request it and meaningful benefit remains medically possible, with reassessment at defined intervals rather than on request. Each reassessment records what has changed and is shared with the parents at the time.",
           "types": [
             "expert"
           ],
@@ -1599,6 +1600,7 @@
         {
           "id": "c02",
           "text": "Use a time-limited trial with predefined clinical goals, then reassess with parents",
+          "text_detailed": "Agree a time-limited trial with clinical goals set before it begins — what would count as improvement, by when — then reassess with the parents against those goals rather than against how the team feels the child is doing.",
           "types": [
             "expert"
           ],
@@ -1608,6 +1610,7 @@
         {
           "id": "c03",
           "text": "Recommend transition to comfort care but preserve parental decision authority within a medically reasonable range",
+          "text_detailed": "Recommend transition to comfort care while leaving the decision with the parents anywhere within the medically reasonable range, stating clearly where that range ends and what lies outside it.",
           "types": [
             "expert"
           ],
@@ -1617,6 +1620,7 @@
         {
           "id": "c04",
           "text": "After second opinion, ethics review, transfer opportunity, and due process, permit forgoing treatment judged nonbeneficial despite persistent parental request",
+          "text_detailed": "Permit forgoing treatment judged non-beneficial despite a continuing parental request, but only after a second opinion, ethics review, a genuine opportunity to transfer, and a due-process interval the parents were told about in advance.",
           "types": [
             "expert"
           ],
@@ -1626,6 +1630,7 @@
         {
           "id": "c05",
           "text": "Give parents strong presumptive authority because they bear special responsibility for the newborn under uncertainty",
+          "text_detailed": "Give parents strong presumptive authority, on the ground that they carry special responsibility for the newborn and that the prognosis is uncertain. The presumption yields only to evidence that treatment has become harmful rather than merely burdensome.",
           "types": [
             "framework"
           ],
@@ -1635,6 +1640,7 @@
         {
           "id": "c06",
           "text": "Make the child's benefit/burden balance controlling once treatment mainly prolongs suffering or dying",
+          "text_detailed": "Make the child's balance of benefit and burden controlling once treatment mainly prolongs suffering or dying, with that judgment made explicitly, recorded, and confirmed by a clinician outside the treating team.",
           "types": [
             "framework"
           ],
@@ -1644,6 +1650,7 @@
         {
           "id": "c07",
           "text": "Require extended accommodation/transfer efforts before unilateral withdrawal because moral injury and uncertainty warrant institutional restraint",
+          "text_detailed": "Require extended accommodation and real transfer efforts before any unilateral withdrawal, on the ground that moral injury and prognostic uncertainty warrant institutional restraint. What counts as a real transfer effort is defined rather than left to judgment.",
           "types": [
             "expert"
           ],
@@ -1653,6 +1660,7 @@
         {
           "id": "c08",
           "text": "Continue treatment while the parents request it and their questions remain unanswered, with scheduled family meetings rather than an open-ended wait, so parents are not asked to decide before they understand the prognosis.",
+          "text_detailed": "Continue treatment while the parents request it and their questions remain unanswered, with family meetings scheduled at set intervals rather than an open-ended wait, so that parents are not asked to decide before they understand the prognosis.",
           "types": [
             "public"
           ],
@@ -1673,6 +1681,7 @@
         {
           "id": "c01",
           "text": "Shared gray-zone policy: balanced counseling, parent-guided choice among medically reasonable resuscitation and comfort care, with reassessment at birth",
+          "text_detailed": "Counsel in a balanced way across the gray zone and let the parents choose among the medically reasonable options, including comfort care, with the choice revisited at birth against the infant's actual condition rather than treated as fixed antenatally.",
           "types": [
             "expert"
           ],
@@ -1682,6 +1691,7 @@
         {
           "id": "c02",
           "text": "Presume active resuscitation when survival remains materially possible unless informed parents choose comfort care",
+          "text_detailed": "Presume active resuscitation wherever survival remains materially possible, unless informed parents choose comfort care, with the presumption stated in advance and the parents' choice recorded before delivery where time allows.",
           "types": [
             "framework"
           ],
@@ -1691,6 +1701,7 @@
         {
           "id": "c03",
           "text": "Presume comfort-focused care at the lowest viability range unless informed parents affirmatively request resuscitation",
+          "text_detailed": "Presume comfort-focused care at the lowest part of the viability range unless informed parents affirmatively request resuscitation, with the range defined by the unit in advance and the request recorded.",
           "types": [
             "framework"
           ],
@@ -1700,6 +1711,7 @@
         {
           "id": "c04",
           "text": "Begin a time-limited trial of resuscitation at birth and redirect according to actual condition/response",
+          "text_detailed": "Begin a time-limited trial of resuscitation at birth and redirect according to the infant's actual condition and response, with the assessment points and what would prompt redirection agreed with the parents beforehand.",
           "types": [
             "expert",
             "framework"
@@ -1710,6 +1722,7 @@
         {
           "id": "c05",
           "text": "Use gestational/clinical thresholds to narrow the preference-sensitive zone, with parental discretion only inside it",
+          "text_detailed": "Use gestational and clinical thresholds to narrow the preference-sensitive zone, leaving parental discretion only inside it, and publish the thresholds so that families and clinicians know before delivery where discretion begins and ends.",
           "types": [
             "expert"
           ],
@@ -1719,6 +1732,7 @@
         {
           "id": "c06",
           "text": "Give survival/vitality greater weight when parents prioritize the possibility of life despite disability/uncertainty",
+          "text_detailed": "Give survival and continued life greater weight where parents prioritise the possibility of life despite disability and uncertainty, with the disability outcomes described concretely rather than as a general warning.",
           "types": [
             "expert",
             "framework",
@@ -1730,6 +1744,7 @@
         {
           "id": "c07",
           "text": "Give avoidance of invasive suffering greater weight when parents prioritize comfort and burdens",
+          "text_detailed": "Give avoidance of invasive suffering greater weight where parents prioritise comfort, with the burdens of intensive care described concretely and comfort care offered as a full plan rather than as the absence of treatment.",
           "types": [
             "framework",
             "public"
@@ -1751,6 +1766,7 @@
         {
           "id": "c01",
           "text": "Pursue expanded access when regulatory criteria, monitoring, and benefit/risk threshold are met",
+          "text_detailed": "Pursue expanded access where the regulatory criteria are met, monitoring is in place, and the benefit-to-burden threshold is satisfied, with each of those three recorded before the request and reviewed if the child's condition changes.",
           "types": [
             "expert"
           ],
@@ -1760,6 +1776,7 @@
         {
           "id": "c02",
           "text": "Decline access when expected benefit is too low relative to burden or when access would undermine trial/development integrity",
+          "text_detailed": "Decline access where expected benefit is too low relative to burden, or where access would undermine the integrity of the trial or the development programme, stating which ground applies and what would change it.",
           "types": [
             "expert"
           ],
@@ -1769,6 +1786,7 @@
         {
           "id": "c03",
           "text": "Offer a time-limited monitored trial with stopping criteria when uncertainty is high but some benefit remains plausible",
+          "text_detailed": "Offer a time-limited monitored trial with stopping criteria set in advance, where uncertainty is high but some benefit remains plausible, and stop when those criteria are met rather than when the family is ready.",
           "types": [
             "framework"
           ],
@@ -1778,6 +1796,7 @@
         {
           "id": "c04",
           "text": "Give parents substantial rescue discretion after transparent counseling because no standard option remains",
+          "text_detailed": "Give parents substantial rescue discretion after transparent counselling, on the ground that no standard option remains, provided the counselling states plainly that the intervention may not work and may cause harm.",
           "types": [
             "framework"
           ],
@@ -1787,6 +1806,7 @@
         {
           "id": "c05",
           "text": "Protect the child's welfare from burdensome low-probability intervention when suffering is high and benefit speculative",
+          "text_detailed": "Protect the child from burdensome low-probability intervention where suffering is high and benefit speculative, with that judgment made by the treating team, recorded, and explained to the family with the alternative plan.",
           "types": [
             "framework"
           ],
@@ -1796,6 +1816,7 @@
         {
           "id": "c06",
           "text": "Require independent review for fairness, scientific plausibility, conflicts, and consistency across families before exceptional access",
+          "text_detailed": "Require independent review before exceptional access, covering fairness, scientific plausibility, conflicts of interest, and consistency with how other families' requests have been handled, with the review completed within a stated period.",
           "types": [
             "expert",
             "framework"
@@ -1806,6 +1827,7 @@
         {
           "id": "c07",
           "text": "Give the family a written answer with a named decision-maker and a date, so that a request for access is answered rather than absorbed into the treatment discussion.",
+          "text_detailed": "Give the family a written answer with a named decision-maker and a date, so that a request for access is answered rather than absorbed into the treatment discussion, and the answer states what would change a refusal.",
           "types": [
             "public"
           ],
@@ -1827,6 +1849,7 @@
         {
           "id": "c01",
           "text": "Permit puberty-related medical intervention after multidisciplinary assessment of persistence, capacity, comorbidity, benefits/harms, and informed adolescent/parent participation",
+          "text_detailed": "Permit puberty-related medical intervention after multidisciplinary assessment of persistence, capacity, co-occurring conditions and the balance of benefits and harms, with the young person and parents involved throughout and the reasoning recorded.",
           "types": [
             "expert"
           ],
@@ -1836,6 +1859,7 @@
         {
           "id": "c02",
           "text": "Restrict puberty suppression to research/specialist protocols while evidence uncertainty remains substantial",
+          "text_detailed": "Restrict puberty suppression to research or specialist protocols while the evidence remains substantially uncertain, with the protocol collecting outcomes and the restriction reviewed as evidence accumulates rather than standing indefinitely.",
           "types": [
             "expert"
           ],
@@ -1845,6 +1869,7 @@
         {
           "id": "c03",
           "text": "Defer nonreversible hormonal intervention until adulthood or a higher evidentiary threshold, while providing psychosocial and nonmedical support",
+          "text_detailed": "Defer non-reversible hormonal intervention until adulthood or a higher evidentiary threshold, while providing psychosocial and non-medical support throughout, so that deferral is a plan of care rather than a refusal of it.",
           "types": [
             "expert"
           ],
@@ -1854,6 +1879,7 @@
         {
           "id": "c04",
           "text": "Use individualized shared decision-making without categorical age/service bans, explicitly communicating low-certainty evidence and uncertainty",
+          "text_detailed": "Use individualised shared decision-making without categorical age or service bans, stating plainly that the evidence is low-certainty and what that means for this decision, and recording the young person's own account of their preference.",
           "types": [
             "expert",
             "framework"
@@ -1864,6 +1890,7 @@
         {
           "id": "c05",
           "text": "Apply a precautionary threshold: greater irreversibility and evidentiary uncertainty require stronger evidence before intervention",
+          "text_detailed": "Apply a precautionary threshold in which greater irreversibility and greater evidentiary uncertainty each require stronger evidence before proceeding, with the two dimensions assessed separately and the threshold written down.",
           "types": [
             "framework"
           ],
@@ -1873,6 +1900,7 @@
         {
           "id": "c06",
           "text": "Give substantial weight to adolescent autonomy and potential harms of unwanted pubertal development when capacity and sustained preference are established",
+          "text_detailed": "Give substantial weight to the adolescent's autonomy and to the harms of unwanted pubertal development where capacity and a sustained preference are established, with sustained meaning documented over a stated period rather than at one visit.",
           "types": [
             "framework"
           ],
@@ -1882,6 +1910,7 @@
         {
           "id": "c07",
           "text": "Use staged reversible support first with scheduled reassessment, escalating only as goals, capacity, and evidence justify",
+          "text_detailed": "Begin with reversible support and scheduled reassessment, escalating only as goals, capacity and evidence justify, with each step and its review date agreed in advance rather than decided at the point of escalation.",
           "types": [
             "framework"
           ],
@@ -1891,6 +1920,7 @@
         {
           "id": "c08",
           "text": "Keep the young person and their family in specialist care with scheduled review whatever is decided about medication, so that deferral is not experienced as discharge.",
+          "text_detailed": "Keep the young person and their family in specialist care with scheduled review whatever is decided about medication, so that deferral is not experienced as discharge, and the next appointment is booked before the decision is communicated.",
           "types": [
             "public"
           ],
@@ -1911,6 +1941,7 @@
         {
           "id": "c01",
           "text": "Respect informed parental deferral while guaranteeing fluent sign-language access and future audiologic reconsideration",
+          "text_detailed": "Respect informed parental deferral while guaranteeing fluent sign-language access from the outset and a scheduled audiological reconsideration, so that deferral does not become drift and language development is not delayed while the decision is open.",
           "types": [
             "public"
           ],
@@ -1920,6 +1951,7 @@
         {
           "id": "c02",
           "text": "Favor timely implantation when family goals prioritize auditory/spoken-language opportunity, while maintaining sign-language/developmental support",
+          "text_detailed": "Favour timely implantation where family goals prioritise auditory and spoken-language opportunity, while maintaining sign-language and developmental support alongside it rather than as a fallback if implantation disappoints.",
           "types": [
             "public"
           ],
@@ -1929,6 +1961,7 @@
         {
           "id": "c03",
           "text": "Use interdisciplinary family-centered candidacy assessment and recommend timely implantation when indicated, integrating family goals/language/development",
+          "text_detailed": "Use interdisciplinary family-centred candidacy assessment and recommend timely implantation where indicated, integrating the family's goals, the child's language exposure and developmental profile, with the recommendation and its basis given to the family in writing.",
           "types": [
             "expert"
           ],
@@ -1938,6 +1971,7 @@
         {
           "id": "c04",
           "text": "Respect Deaf cultural-linguistic parental authority absent serious harm",
+          "text_detailed": "Respect Deaf cultural and linguistic parental authority absent serious harm, with serious harm defined by the child's language and developmental outcomes rather than by hearing status, and reviewed against milestones.",
           "types": [
             "framework"
           ],
@@ -1947,6 +1981,7 @@
         {
           "id": "c05",
           "text": "Strongly favor timely implantation to preserve an open future/auditory option while also guaranteeing sign language",
+          "text_detailed": "Strongly favour timely implantation to preserve the child's future auditory option, while guaranteeing sign language in parallel, on the ground that keeping both open costs less than closing either.",
           "types": [
             "framework"
           ],
@@ -1956,6 +1991,7 @@
         {
           "id": "c06",
           "text": "Use milestone-based watchful waiting with explicit developmental/language criteria for reconsideration when parents remain uncertain",
+          "text_detailed": "Use milestone-based watchful waiting with explicit language and developmental criteria for reconsideration, agreed with parents who remain uncertain, so that the decision returns automatically at defined points rather than only if the family raises it.",
           "types": [
             "framework"
           ],
@@ -10218,6 +10254,7 @@
         {
           "id": "c01",
           "text": "explicit specific consent for secondary neural-data use",
+          "text_detailed": "Require explicit, specific consent for any secondary use of neural data, naming the purpose, who receives it and for how long, with a fresh consent for a new purpose rather than a general permission given once at enrolment.",
           "types": [
             "expert"
           ],
@@ -10227,6 +10264,7 @@
         {
           "id": "c02",
           "text": "prohibit sale/behavioral advertising or unrelated commercial profiling from neural data",
+          "text_detailed": "Prohibit sale, behavioural advertising and unrelated commercial profiling from neural data outright, as a term of the device contract that survives changes of ownership rather than as a policy the provider may revise.",
           "types": [
             "expert",
             "framework"
@@ -10237,6 +10275,7 @@
         {
           "id": "c03",
           "text": "permit bounded research reuse under strong deidentification/governance and opt-out",
+          "text_detailed": "Permit bounded research reuse under strong de-identification, governed access and a working opt-out, with the permitted purposes listed and the opt-out effective for future use without ending the person's clinical care.",
           "types": [
             "expert"
           ],
@@ -10246,6 +10285,7 @@
         {
           "id": "c04",
           "text": "allow participant-controlled data portability/access",
+          "text_detailed": "Allow the participant to obtain and move their own data in a usable form, on request and without charge, including the derived signals rather than only the raw recording.",
           "types": [
             "framework"
           ],
@@ -10255,6 +10295,7 @@
         {
           "id": "c05",
           "text": "mental-privacy framework treating inferred mental states as specially protected even when raw data are shared",
+          "text_detailed": "Treat inferred mental states as specially protected even where the raw signals are shared, so that a permission to share data is not a permission to infer and disclose what the person was thinking or feeling.",
           "types": [
             "framework"
           ],
@@ -10264,6 +10305,7 @@
         {
           "id": "c06",
           "text": "scientific-benefit framework permitting governed reuse where reidentification/inference risks are controlled",
+          "text_detailed": "Permit governed reuse where re-identification and inference risks are controlled and audited, with the controls specified, tested, and reported rather than asserted in the consent form.",
           "types": [
             "framework"
           ],
@@ -10273,6 +10315,7 @@
         {
           "id": "c07",
           "text": "delete/cease collection when user withdraws except narrowly justified safety/regulatory retention",
+          "text_detailed": "Delete data and stop collection when the user withdraws, retaining only what a named safety or regulatory obligation requires, with that retention stated at consent and its duration fixed.",
           "types": [
             "expert"
           ],
@@ -10282,6 +10325,7 @@
         {
           "id": "c08",
           "text": "Let the user see what is stored, take it with them, and stop collection, with those controls available in the device rather than on request.",
+          "text_detailed": "Let the user see what is stored, take it with them, and stop collection, with those controls present in the device interface rather than available on request through the provider.",
           "types": [
             "public"
           ],
@@ -10302,6 +10346,7 @@
         {
           "id": "c01",
           "text": "current competent patient's treatment preferences govern adjustment",
+          "text_detailed": "Let the current competent patient's treatment preferences govern stimulation adjustment, with capacity assessed for this decision at the time rather than inferred from the personality change itself.",
           "types": [
             "expert",
             "framework"
@@ -10312,6 +10357,7 @@
         {
           "id": "c02",
           "text": "use pre-treatment goals/values as strong interpretive evidence but not automatic veto over current competent wishes",
+          "text_detailed": "Use pre-treatment goals and values as strong evidence of what the patient wants, without letting them veto the current competent patient's wishes, and record where the two diverge so the divergence is visible rather than resolved silently.",
           "types": [
             "framework"
           ],
@@ -10321,6 +10367,7 @@
         {
           "id": "c03",
           "text": "trial parameter reduction/off-period to assess reversibility and patient valuation where clinically safe",
+          "text_detailed": "Where clinically safe, trial a parameter reduction or off-period to see whether the change reverses and how the patient values each state, agreeing the length and the questions to be answered before it starts.",
           "types": [
             "expert"
           ],
@@ -10330,6 +10377,7 @@
         {
           "id": "c04",
           "text": "give family observations evidentiary weight without transferring decisional authority",
+          "text_detailed": "Give family observations evidentiary weight as information about what has changed, without transferring any decisional authority to them, and tell the patient what the family has reported.",
           "types": [
             "expert"
           ],
@@ -10339,6 +10387,7 @@
         {
           "id": "c05",
           "text": "authenticity/continuity framework favoring pre-treatment commitments",
+          "text_detailed": "Favour the patient's pre-treatment commitments where the change conflicts with them, on the ground that continuity of the person's own long-standing values is what treatment was meant to serve.",
           "types": [
             "framework"
           ],
@@ -10348,6 +10397,7 @@
         {
           "id": "c06",
           "text": "current-self autonomy framework favoring present competent values",
+          "text_detailed": "Favour the present competent patient's values, on the ground that the person deciding now is the patient, and treat the earlier self's preferences as evidence rather than as a standing instruction.",
           "types": [
             "framework"
           ],
@@ -10357,6 +10407,7 @@
         {
           "id": "c07",
           "text": "relational-welfare framework using negotiated adjustment when changes materially harm relationships yet patient remains competent",
+          "text_detailed": "Where the change materially harms the patient's relationships but the patient remains competent, negotiate an adjustment with the patient and those affected, with the patient retaining the decision and the negotiation recorded.",
           "types": [
             "framework"
           ],
@@ -10386,6 +10437,7 @@
         {
           "id": "c01",
           "text": "permit competent adult enhancement under informed-consent/safety regulation",
+          "text_detailed": "Permit enhancement in competent adults under informed-consent and safety regulation, with the consent stating what is known about long-term effects and what is not, and post-market monitoring in place.",
           "types": [
             "framework",
             "public"
@@ -10396,6 +10448,7 @@
         {
           "id": "c02",
           "text": "restrict to therapeutic/restorative indications",
+          "text_detailed": "Restrict use to therapeutic and restorative indications, with the boundary defined by a stated clinical criterion rather than by the wording of a request, and reviewed as diagnostic categories change.",
           "types": [
             "expert",
             "framework"
@@ -10406,6 +10459,7 @@
         {
           "id": "c03",
           "text": "permit limited enhancement but prohibit coercive employer/school/military use",
+          "text_detailed": "Permit limited enhancement while prohibiting employer, school and military use that a person cannot refuse without cost, with the prohibition enforced against the institution rather than the individual.",
           "types": [
             "framework"
           ],
@@ -10415,6 +10469,7 @@
         {
           "id": "c04",
           "text": "prohibit enhancement where positional competition/inequality externalities are substantial",
+          "text_detailed": "Prohibit enhancement where the positional and inequality effects would be substantial, assessing those effects for the specific capacity and setting rather than for enhancement in general.",
           "types": [
             "framework"
           ],
@@ -10424,6 +10479,7 @@
         {
           "id": "c05",
           "text": "allow with equitable access and noncoercion safeguards",
+          "text_detailed": "Allow enhancement subject to equitable access and safeguards against pressure, so that availability does not depend on income and declining carries no penalty at work or in education.",
           "types": [
             "framework"
           ],
@@ -10433,6 +10489,7 @@
         {
           "id": "c06",
           "text": "precautionary moratorium for long-term neural/personality effects despite technical efficacy",
+          "text_detailed": "Hold a precautionary moratorium while long-term neural and personality effects are unknown, even where short-term efficacy is established, with the moratorium tied to named evidence gaps and reviewed on a stated schedule.",
           "types": [
             "framework"
           ],
@@ -10442,6 +10499,7 @@
         {
           "id": "c07",
           "text": "cognitive-liberty framework including both right to enhance and right not to be pressured",
+          "text_detailed": "Protect cognitive liberty in both directions: a right to enhance and a right not to be pressured into it, with the second enforced through employment and education rules rather than left to individual refusal.",
           "types": [
             "framework"
           ],
@@ -10461,6 +10519,7 @@
         {
           "id": "c01",
           "text": "ordinary/specialized oversight scaled to model complexity without assuming sentience",
+          "text_detailed": "Scale oversight to the complexity of the model without assuming sentience, using stated features to decide the level of review, and applying ordinary research governance below the threshold.",
           "types": [
             "expert"
           ],
@@ -10470,6 +10529,7 @@
         {
           "id": "c02",
           "text": "enhanced review when features plausibly associated with morally relevant neural function emerge",
+          "text_detailed": "Trigger enhanced review when features plausibly associated with morally relevant neural function emerge, with those features named in advance and monitoring in place to detect them rather than relying on investigator report.",
           "types": [
             "framework"
           ],
@@ -10479,6 +10539,7 @@
         {
           "id": "c03",
           "text": "prohibit specified integration/transplantation/endpoints above precautionary threshold",
+          "text_detailed": "Prohibit specified integration, transplantation and endpoints above a precautionary threshold, with the prohibited procedures listed rather than described in general terms, and the list revisited as capability changes.",
           "types": [
             "expert"
           ],
@@ -10488,6 +10549,7 @@
         {
           "id": "c04",
           "text": "allow research under anticipatory monitoring because current organoids lack evidence of sentience",
+          "text_detailed": "Permit the research under anticipatory monitoring, on the ground that current organoids show no evidence of sentience, with the monitoring designed to detect the indicators that would change that judgment.",
           "types": [
             "expert",
             "framework"
@@ -10498,6 +10560,7 @@
         {
           "id": "c05",
           "text": "precautionary moral-status framework favoring stronger safeguards before certainty",
+          "text_detailed": "Favour stronger safeguards before certainty, on the ground that the cost of over-protecting a non-sentient model is lower than the cost of under-protecting a sentient one, with the safeguards proportionate and reviewable.",
           "types": [
             "framework"
           ],
@@ -10507,6 +10570,7 @@
         {
           "id": "c06",
           "text": "scientific-value framework resisting embryo/person analogies absent relevant capacities",
+          "text_detailed": "Resist embryo or person analogies where the relevant capacities are absent, and require any restriction to name the capacity it is protecting rather than the resemblance it is responding to.",
           "types": [
             "framework"
           ],
@@ -10516,6 +10580,7 @@
         {
           "id": "c07",
           "text": "require public/stakeholder engagement and periodic capability-triggered governance revision",
+          "text_detailed": "Require public and stakeholder engagement and revisit the governance whenever a capability threshold is crossed, with the engagement conducted before the threshold rather than after, and its outcome published.",
           "types": [
             "expert"
           ],
@@ -10525,6 +10590,7 @@
         {
           "id": "c08",
           "text": "Publish what is being grown and what would trigger a stop, so that the limits are set in public before they are reached.",
+          "text_detailed": "Publish what is being grown and what would trigger a stop, so that the limits are set in public before they are reached, and report against them at stated intervals.",
           "types": [
             "public"
           ],
