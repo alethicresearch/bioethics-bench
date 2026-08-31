@@ -1,126 +1,102 @@
-# Bioethics Bench — Full Corpus Candidate-Universe Audit Ledger
+# Bioethics Bench — Full Corpus Scenario / Candidate-Universe Audit Ledger
 
-**Created:** 2026-08-30  
-**Status:** active completion ledger  
-**Scope:** M001–M200  
-**Governing standard:** `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`  
-**Calibration:** Featured v1 audit + source re-open documents
+**Updated:** 2026-08-30  
+**Status:** **case-level rich-candidate audit complete — 200/200**  
+**Governing standard:** `docs/CANDIDATE_POLICY_SPACE_AUDIT.md`
 
-## Purpose
+## Canonical completion objects
 
-This ledger tracks the mandatory all-200 audit before Full Corpus v1 freeze.
+The previous version of this file contained only M001–M010 and is preserved in Git history. It is superseded for completion tracking by:
 
-It is intentionally separate from `docs/FULL_CORPUS_PROGRESS.md`. The older progress file remains development history and records source packets, deep-case drafting, structural executable work, and prior eligibility judgments. A prior `executable`, source-audited, or schema-valid status does **not** count as passing this new audit.
+- **Full 200 case index:** `docs/full-corpus/audit-v2/FULL_200_RICH_CANDIDATE_INDEX.md`
+- **Detailed ten-case audits:** `docs/full-corpus/audit-v2/M001-M010-rich-candidate-audit.md` through `docs/full-corpus/audit-v2/M191-M200-rich-candidate-audit.md`
+- **M047 replacement audit:** `docs/full-corpus/audit-v2/M047-rich-candidate-audit-supersession.md`
 
-The new review asks whether each case has:
+The full index contains an explicit row for every M001–M200 case recording candidate-universe size, source-grounded projection status, expanded-projection status, demonstration richness, and disposition. Candidate-level provenance and Scenario reasoning remain in the corresponding ten-case audit.
 
-1. an adequate Scenario;
-2. an adequate **rich candidate universe**;
-3. correct candidate-level provenance/source marks;
-4. one or more defensible SACRE projections where useful.
+## Completion state
 
-No final resource freeze is permitted until **M001–M200** each have an explicit case-level disposition.
+The new review has been completed for **all 200 inventory cases**. Each case has been assessed for:
 
-## Audit row schema
+1. Scenario adequacy;
+2. rich Policy-candidate coverage;
+3. source/provenance honesty;
+4. source-grounded versus expanded SACRE projection availability;
+5. demonstration richness;
+6. case-level disposition.
 
-Each reviewed case must receive a row with:
+The resulting candidate universes range from **5 to 7 serious positions**, with a mean of **6.49**. This is an observed consequence of the audit, not a target geometry. Most cases required expansion because the older source-to-policy rule had compressed legitimate normative alternatives when empirical Public or professional policy evidence was not itself plural.
 
-| Field | Required value |
-|---|---|
-| Inventory ID | M001–M200 |
-| Featured crosswalk | Fxx or `—` |
-| Scenario adequacy | `PASS`, `REVIEW`, or `RECONSTRUCT` |
-| Candidate-universe adequacy | `PASS`, `REVIEW`, or `RECONSTRUCT` |
-| Total candidate count | integer |
-| ✓ Source count | integer |
-| Direct-source count | integer |
-| Source-informed count | integer |
-| Framework-derived count | integer |
-| Constructed-comparator count | integer |
-| Distinctness | `PASS` / `REVIEW` |
-| Provenance accuracy | `PASS` / `REVIEW` |
-| Concise/detailed invariance | `PASS` / `REVIEW` |
-| Stipulation leverage | `LOW`, `MATERIAL`, or `REVIEW` |
-| Available projection(s) | IDs/types or `NONE` |
-| Source-grounded projection | `YES`, `NO`, or `NEEDS-EVIDENCE` |
-| Expanded projection | `YES`, `NO`, or `NOT-NEEDED` |
-| Demonstration richness | `HIGH`, `MEDIUM`, `LOW`, or `N/A` |
-| Final disposition | `RETAIN`, `NEW-VERSION`, `EXPAND-UNIVERSE`, `HOLD`, or `RESEARCH-COMPLETE` |
-| Audit note | short rationale and path to adjudication |
+## Identity / ontology corrections
 
-`✓ Source` counts every candidate whose provenance is defensibly supported by an external empirical, professional, stakeholder, or normative-framework source. It does **not** mean that every sourced candidate is an observed Public preference or an Expert consensus. The provenance subtype remains authoritative.
+### M047
 
-## Mandatory questions
+The original M047 duplicated M007's abortion conscientious-objection/referral problem. M047 has been reconstructed as **Permanent contraception requested by a young childfree adult**. The old abortion-conscience dossier is historical provenance and crosswalks to M007.
 
-For every M001–M200 case, answer:
+Relevant files:
+- `docs/full-corpus/batch-e/M047-identity-replacement-2026-08-30.md`
+- `docs/full-corpus/batch-e/M047-deep-case.md`
+- `docs/full-corpus/audit-v2/M047-rich-candidate-audit-supersession.md`
 
-1. Does the Scenario hold the relevant factual, temporal, legal, and institutional state fixed without stipulating away the normative problem?
-2. What are the important serious Policy positions for this Scenario, regardless of whether each has direct source support?
-3. Is the candidate universe rich enough to preserve the main normative alternatives without becoming repetitive or theatrical?
-4. Which candidates genuinely earn ✓ Source?
-5. Which candidates are direct-source, source-informed, Framework-derived, or constructed comparators?
-6. Are any candidates near-paraphrases, nested variants, slot-filling constructions, merged positions, artificial extremes, or overtranslations from a concern into a Policy?
-7. Has an important position been omitted merely because direct source evidence was weak (`source-ceiling compression`)?
-8. Are sources and provenance being represented accurately, without a constructed candidate masquerading as a sourced position?
-9. Do concise and detailed forms represent the same Scenario and candidate universe for controlled-comparison purposes?
-10. Are benchmark stipulations necessary for interpretive consistency, and how much normative leverage do they exert?
-11. What SACRE projection(s) are useful for this case: source-grounded, expanded, matched-study, demonstration, direct-grounding, or none?
-12. What claims can each projection legitimately support?
-13. Is the case research-complete and is any projection especially demonstration-rich? Keep those judgments separate.
+### M187
+
+The original M187 duplicated M004's bedside adolescent-confidentiality family. M187 has been reconstructed as **Adolescent EHR and patient-portal confidentiality**, a distinct informatics/proxy-access governance case.
+
+Relevant files:
+- `docs/full-corpus/batch-s/M187-identity-replacement-2026-08-30.md`
+- `docs/full-corpus/batch-s/M187-deep-case.md`
+- `docs/full-corpus/audit-v2/M181-M190-rich-candidate-audit.md`
+
+### Featured crosswalks requiring final release-level identity resolution
+
+- M001 ↔ F01 — elective high-risk surgery under competent blood refusal; do not resurrect the stale emergency-transfusion description.
+- M101 ↔ F10 — age in organ allocation.
+- M138 ↔ F20 — neural organoids; determine underlying-family versus later-capability successor status.
+- M156 ↔ F17 — animal research/replacement; any successor should add the previously omitted abolitionist/right-based position without mutating Featured v1.
+- M160 ↔ F18 — food-animal antimicrobial stewardship.
+
+Released Featured v1 remains immutable.
+
+## Important stale-development correction
+
+M189's deep file and records contain a completed **2 Public × 2 Expert × 3 Framework** source-grounded audit. Older Batch-S text stating that the batch produced “0 new executable families” is development history and is no longer authoritative for M189. The audit-v2 file and current M189 deep case control.
+
+## What “200/200 complete” means
+
+It means the **research/editorial case-level reconstruction audit** is complete. It does **not** mean the final Full Corpus release is frozen or that 200 new machine-readable records have been published.
+
+A case may be complete at the Scenario/provenance/candidate-universe level while lacking a canonical empirical Public-role projection. That is no longer treated as a defect in the scholarly resource. It simply constrains which claims a source-grounded SACRE run may support.
+
+## Remaining release gates
+
+Before Full Corpus v1 freeze:
+
+1. transcribe the audited candidate universes and provenance into the machine-readable resource/schema;
+2. represent candidate provenance independently of run role;
+3. create explicit source-grounded and expanded projection manifests with exact candidate IDs, roles, geometry, aggregation, and claim type;
+4. resolve the remaining Featured crosswalk identities;
+5. conduct independent substantive/editorial review, including domain specialist review where each audit flags it;
+6. check candidate distinctness and remove near-paraphrase/nested variants that fail final review;
+7. verify concise/detailed Scenario invariance;
+8. verify citations/locators/provenance and source-mark accuracy;
+9. run schema validation, pair-count/aggregation validation, regression and release checks;
+10. generate final resource statistics from the reviewed machine-readable release object rather than this editorial ledger;
+11. freeze/version the final release only after those gates pass.
+
+## Research implication
+
+Bioethics Bench should now be treated as a **Scenario + rich candidate universe + declared analysis projection** resource. Source completeness is evidence metadata, not an ontology ceiling. A source-grounded projection can coexist with a broader expanded projection, and the claims made from each must remain distinct.
 
 ## Queue status
 
-| Queue | Inventory range | Status | Notes |
-|---|---|---|---|
-| Featured calibration | released F01–F20 + crosswalks | **REOPEN UNDER RICH-UNIVERSE MODEL** | The first record-level audit remains useful, but its source-only candidate-count assumptions are superseded. Priority cases F03/F04/F09/F17/F20 should now be reconsidered as candidate-universe/projection problems, not automatically as source-only reconstruction problems. |
-| Full Corpus A | M001–M050 | **IN PROGRESS — 10/50 audited** | M001–M010 complete under rich-universe model at `docs/full-corpus/audit-v2/M001-M010-rich-candidate-audit.md`. |
-| Full Corpus B | M051–M100 | PENDING all-case audit | Reopen source packets where provenance or universe audit finds a material issue. |
-| Full Corpus C | M101–M150 | PENDING all-case audit | Apply same standard regardless of prior geometry or schema validity. |
-| Full Corpus D | M151–M175 | PENDING all-case audit | Includes animal / One Health cases; explicitly audit missing serious normative positions and nonhuman representation. |
-| Full Corpus E | M176–M200 | PENDING all-case audit | Apply the same Scenario → candidate universe → projection model. |
+| Workstream | Status |
+|---|---|
+| M001–M200 case-level rich-candidate audit | **COMPLETE — 200/200** |
+| Duplicate ontology repair | **COMPLETE for M047 and M187** |
+| Featured crosswalk resolution | OPEN — M001/F01, M101/F10, M138/F20, M156/F17, M160/F18 |
+| Machine-readable candidate/provenance transcription | OPEN |
+| Projection-manifest construction | OPEN |
+| Independent substantive/domain review | OPEN |
+| Final validation + resource freeze | OPEN |
 
-## Case-level reviewed rows
-
-Add one row here as each underlying M-case completes the new audit. Do not bulk-mark a range complete without case-level adjudication.
-
-| Inventory | Featured | Scenario | Universe | Cand. n | ✓ Source | Direct | Inferred | Framework | Constructed | Distinct | Provenance | C/D | Stipulation | Projections | Source-grounded | Expanded | Demo | Disposition | Note |
-|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|---|---|---|
-| M001 | F01 | PASS | PASS | 6 | 5 | 0 | 3 | 2 | 1 | REVIEW | PASS | PASS | LOW | released F01 source-grounded + future expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Reconcile stale emergency-refusal packet with later M001/F01 elective-surgery identity; do not split blood-product heterogeneity into institutional policies. See `audit-v2/M001-M010-rich-candidate-audit.md`. |
-| M002 | — | PASS | PASS | 7 | 6 | 2 | 1 | 3 | 1 | PASS | PASS | PASS | MATERIAL | current 1×2×2 source-grounded + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Preserve existing asymmetric draft; add substituted-judgment, best-interests, and deferral/support positions to research universe. |
-| M003 | — | PASS | PASS | 6 | 4 | 1 | 0 | 3 | 2 | PASS | PASS | PASS | MATERIAL | expanded methodological; time-window perturbation | NO | YES | HIGH | EXPAND-UNIVERSE | Public treatment-preference data do not establish exact search-duration policy. Rich case remains useful without pretending a canonical Public-role policy exists. |
-| M004 | — | PASS | PASS | 6 | 5 | 1 | 2 | 2 | 1 | REVIEW | PASS | PASS | LOW | current 2×1×2 source-grounded + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Preserve current projection; maturity-sensitive graduated comparator requires final distinctness check. |
-| M005 | — | PASS | PASS | 7 | 7 | 2 | 3 | 2 | 0 | PASS | PASS | PASS | LOW | current 2×1×2 source-grounded + expanded stakeholder | YES | YES | HIGH | EXPAND-UNIVERSE | Caregiver nondisclosure position belongs in universe with stakeholder provenance, not as patient preference or professional standard. |
-| M006 | — | PASS | PASS | 6 | 3 | 2 | 1 | 0 | 3 | PASS | PASS | PASS | LOW | asymmetric source-grounded candidate + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Patient evidence is disclosure-dominant; compare prompt/staged/risk-managed transparency without manufacturing two Public policies. |
-| M007 | — | PASS | PASS | 6 | 5 | 2 | 1 | 2 | 1 | REVIEW | PASS | PASS | MATERIAL | source-grounded candidate + expanded | NEEDS-EVIDENCE | YES | HIGH | EXPAND-UNIVERSE | Referral/nonfacilitation/institutional-access positions are rich; exact empirical Public-role policy needs careful source labeling. |
-| M008 | — | PASS | PASS | 6 | 3 | 1 | 0 | 2 | 3 | REVIEW | PASS | PASS | MATERIAL | expanded threshold/channel projections | NO | YES | HIGH | EXPAND-UNIVERSE | Strong confidentiality/protection case; no need to omit serious positions because direct Public-policy evidence is sparse. |
-| M009 | — | PASS | PASS | 7 | 6 | 3 | 0 | 3 | 1 | PASS | PASS | PASS | MATERIAL | source-grounded candidate + expanded | YES | YES | HIGH | EXPAND-UNIVERSE | Keep fair-process, informed-nondissent, autonomy, and professional-integrity architectures separate. |
-| M010 | — | PASS | PASS | 6 | 6 | 2 | 2 | 2 | 0 | PASS | PASS | PASS | LOW | current 2×2×2 source-grounded | YES | NOT-NEEDED | HIGH | RETAIN | Existing six-candidate field is already rich; do not add a duplicative `use both` seventh candidate. |
-
-**Count note:** provenance counts are audit classifications of the proposed universe. Some candidates draw on both professional evidence and a framework; each is assigned one primary provenance subtype here to keep the columns additive. The candidate-level adjudication text is authoritative where a policy has mixed support.
-
-## Featured calibration relationship
-
-The released Featured records remain historical v1 objects and are not silently rewritten.
-
-The existing Featured audit and source re-open work should now be interpreted through the richer model:
-
-- a source-grounded record may remain valid even when the **candidate universe** should be expanded;
-- a source-only asymmetry does not necessarily imply the case lacks a useful expanded SACRE projection;
-- a major unsourced normative position can be represented honestly as a constructed comparator rather than omitted;
-- a source-grounded projection and an expanded projection may coexist for the same case;
-- a confirmed Scenario/provenance defect still requires a new explicit record version.
-
-## Completion gate
-
-This ledger is complete only when all 200 inventory cases have a case-level row containing:
-
-- reviewed Scenario result;
-- reviewed candidate-universe result;
-- candidate provenance/source counts;
-- candidate distinctness/provenance status;
-- available SACRE projection(s) and their claim type;
-- demonstration-richness classification;
-- final disposition;
-- short rationale or case-specific adjudication pointer.
-
-The final frozen Bench statistics must be generated from the reviewed machine-readable release object, not manually inferred from this editorial ledger.
+This ledger is the current coordination state for the Full Corpus audit. Do not revert to the older rule that a case is incomplete merely because a source class does not supply multiple institutional policies.
