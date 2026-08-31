@@ -6905,7 +6905,7 @@
         {
           "id": "c07",
           "text": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
-          "text_detailed": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
+          "text_detailed": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to. The rules are registered with the protocol, the explanation is given in the information sheet rather than on request, and any change to the rules is published before it takes effect.",
           "types": [
             "public"
           ],

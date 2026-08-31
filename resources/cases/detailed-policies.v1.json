@@ -396,7 +396,7 @@
     "M088:c04": "Use response-adaptive allocation toward better-performing arms, subject to inferential safeguards specified in advance, with the allocation rule registered and the safeguards independently reviewed.",
     "M088:c05": "Favour platform efficiency on social-value grounds, with the expected gain in time-to-answer stated rather than assumed from the design.",
     "M088:c06": "Favour simpler fixed designs where adaptation would impair comprehensibility or local accountability, with that judgment made against the actual sites and populations involved.",
-    "M088:c07": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to.",
+    "M088:c07": "Publish the adaptation rules before the trial starts and explain to each participant how their allocation may change, so that a moving design remains something they consented to. The rules are registered with the protocol, the explanation is given in the information sheet rather than on request, and any change to the rules is published before it takes effect.",
     "M089:c01": "Allocate to maximise expected population health gain against disease burden, with the burden measure and the modelling published and revisited each cycle.",
     "M089:c02": "Prioritise neglected conditions and worst-off populations, with neglect and disadvantage measured on stated indicators and the resulting portfolio published.",
     "M089:c03": "Build the portfolio through a participatory multiprinciple process, with the principles, the participants and the resulting weights all published.",
