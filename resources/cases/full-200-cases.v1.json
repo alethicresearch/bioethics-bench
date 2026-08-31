@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 578,
+  "detailed_policy_count": 668,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -7585,7 +7585,7 @@
         {
           "id": "c08",
           "text": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
-          "text_detailed": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them.",
+          "text_detailed": "Publish the triage rule before it is needed and tell patients and families when it is in force, so that no one learns the rule from the decision about them. The rule is displayed where patients arrive, its activation is announced publicly, and any change to it during the surge is published before it is applied.",
           "types": [
             "public"
           ],
@@ -7676,7 +7676,7 @@
         {
           "id": "c08",
           "text": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
-          "text_detailed": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested.",
+          "text_detailed": "Involve patients with the condition in the coverage decision and publish the reasoning, including what was given up, so that a refusal can be understood and contested. The involvement happens before the decision is drafted, and the published reasoning names the alternative uses of the money and the route to appeal.",
           "types": [
             "public"
           ],
@@ -7790,6 +7790,7 @@
         {
           "id": "c01",
           "text": "limited younger tie-break",
+          "text_detailed": "Use age as a limited tie-break in favour of the younger candidate only where the medical criteria leave the candidates equivalent, with the size of the tie-break fixed in the allocation rule and published.",
           "types": [
             "public"
           ],
@@ -7799,6 +7800,7 @@
         {
           "id": "c02",
           "text": "no independent age weight",
+          "text_detailed": "Give age no independent weight, allowing it to enter only through the clinical variables it predicts, with the allocation rule stating that age itself is not a criterion.",
           "types": [
             "public"
           ],
@@ -7808,6 +7810,7 @@
         {
           "id": "c03",
           "text": "prognosis-only use of age-related information",
+          "text_detailed": "Use age-related information only to the extent it improves the prognostic estimate, with the prognostic model published and audited for whether age is doing work beyond prediction.",
           "types": [
             "expert"
           ],
@@ -7817,6 +7820,7 @@
         {
           "id": "c04",
           "text": "neutral lottery when candidates are otherwise equivalent",
+          "text_detailed": "Allocate by neutral lottery where candidates are otherwise equivalent, with equivalence defined by stated criteria and the draw conducted outside the transplant team.",
           "types": [
             "framework"
           ],
@@ -7826,6 +7830,7 @@
         {
           "id": "c05",
           "text": "fair-innings priority",
+          "text_detailed": "Give priority on fair-innings grounds to the candidate who has had less life, with the principle stated openly in the allocation rule rather than embedded in a prognostic proxy.",
           "types": [
             "framework"
           ],
@@ -7835,6 +7840,7 @@
         {
           "id": "c06",
           "text": "equal-status reasoning rejecting age as independent moral worth",
+          "text_detailed": "Reject age as an index of moral worth, requiring any use of it to be justified as prediction and audited for whether it functions as a judgment about whose life matters.",
           "types": [
             "framework"
           ],
@@ -7854,6 +7860,7 @@
         {
           "id": "c01",
           "text": "deceased explicit/deemed consent prevails",
+          "text_detailed": "Let the deceased person's explicit or deemed consent prevail, with the family informed rather than asked, and the basis of the consent — registration or deemed — recorded and shown to them.",
           "types": [
             "expert",
             "framework"
@@ -7864,6 +7871,7 @@
         {
           "id": "c02",
           "text": "family veto despite deemed consent",
+          "text_detailed": "Allow the family to veto despite deemed consent, with the veto recorded and the deceased's registration status noted so that the effect of the policy on registered donors is visible.",
           "types": [
             "expert",
             "public"
@@ -7874,6 +7882,7 @@
         {
           "id": "c03",
           "text": "family consultation with rebuttable presumption for donation",
+          "text_detailed": "Consult the family with a rebuttable presumption in favour of donation, with what would rebut it defined in advance rather than settled by the strength of the objection.",
           "types": [
             "framework"
           ],
@@ -7883,6 +7892,7 @@
         {
           "id": "c04",
           "text": "veto only when credible evidence of deceased objection exists",
+          "text_detailed": "Allow a veto only where there is credible evidence that the deceased objected, with the evidence recorded and assessed by someone other than the requesting clinician.",
           "types": [
             "expert",
             "public"
@@ -7893,6 +7903,7 @@
         {
           "id": "c05",
           "text": "time-limited conflict/support process before recovery",
+          "text_detailed": "Run a time-limited conflict and support process before recovery, with the period stated, bereavement support provided throughout, and the outcome recorded either way.",
           "types": [
             "expert"
           ],
@@ -7902,6 +7913,7 @@
         {
           "id": "c06",
           "text": "donor-autonomy framework",
+          "text_detailed": "Treat the donor's own decision as controlling on autonomy grounds, with the register's status explained publicly so that people know what registering will and will not achieve.",
           "types": [
             "framework"
           ],
@@ -7911,6 +7923,7 @@
         {
           "id": "c07",
           "text": "relational/pluralism framework giving family a stronger role where wishes are unknown",
+          "text_detailed": "Give the family a stronger role where the deceased's wishes are unknown, on relational grounds, with the distinction between unknown and known-and-contrary applied consistently and recorded.",
           "types": [
             "framework"
           ],
@@ -7930,6 +7943,7 @@
         {
           "id": "c01",
           "text": "program sets upper risk ceiling despite donor willingness",
+          "text_detailed": "Set a programme-level upper risk ceiling that applies despite the donor's willingness, with the ceiling stated numerically, published, and applied by the programme rather than by the individual surgeon.",
           "types": [
             "expert"
           ],
@@ -7939,6 +7953,7 @@
         {
           "id": "c02",
           "text": "individualized risk-benefit assessment with independent donor advocate",
+          "text_detailed": "Assess risk and benefit individually with an independent donor advocate involved throughout, with the advocate reporting separately and having authority to pause the process.",
           "types": [
             "expert"
           ],
@@ -7948,6 +7963,7 @@
         {
           "id": "c03",
           "text": "allow unusually high risk when competent donor persistently accepts it and no coercion exists",
+          "text_detailed": "Permit unusually high risk where a competent donor persistently accepts it and no coercion is found, with persistence assessed over a stated period and the coercion screening conducted privately.",
           "types": [
             "framework"
           ],
@@ -7957,6 +7973,7 @@
         {
           "id": "c04",
           "text": "prohibit beyond threshold because clinicians cannot intentionally expose healthy donor to disproportionate harm",
+          "text_detailed": "Prohibit donation beyond a threshold on the ground that clinicians may not intentionally expose a healthy person to disproportionate harm, with the threshold institutional and the reasoning explained to the donor.",
           "types": [
             "framework"
           ],
@@ -7966,6 +7983,7 @@
         {
           "id": "c05",
           "text": "relational-benefit approach counting donor psychosocial value without treating it as unlimited",
+          "text_detailed": "Count the donor's psychosocial benefit in the assessment without treating it as unlimited, with the weight it may carry bounded in advance so that willingness cannot offset any level of risk.",
           "types": [
             "framework"
           ],
@@ -7975,6 +7993,7 @@
         {
           "id": "c06",
           "text": "enhanced independent review for exceptional-risk donation",
+          "text_detailed": "Require enhanced independent review for exceptional-risk donation, conducted by people outside the transplant programme, with their finding recorded and binding.",
           "types": [
             "expert"
           ],
@@ -7984,6 +8003,7 @@
         {
           "id": "c07",
           "text": "Give the donor an independent advocate, a private route to withdraw, and a plain account of the risk in their own terms, at every stage.",
+          "text_detailed": "Give the donor an independent advocate, a private route to withdraw, and a plain account of the risk in their own terms, at every stage rather than only at consent, with the withdrawal route usable without the recipient knowing.",
           "types": [
             "public"
           ],
@@ -8004,6 +8024,7 @@
         {
           "id": "c01",
           "text": "no moralized penalty; assess future clinical benefit/adherence like any candidate",
+          "text_detailed": "Assess future clinical benefit and expected adherence as for any candidate, with no penalty for the earlier record beyond what it predicts, and with the prediction stated and reviewable.",
           "types": [
             "expert"
           ],
@@ -8013,6 +8034,7 @@
         {
           "id": "c02",
           "text": "require barrier mitigation and evidence of current ability to adhere before relisting",
+          "text_detailed": "Require that the barriers be mitigated and current ability to adhere evidenced before relisting, with the barriers named, the support in place, and the evidence period stated in advance.",
           "types": [
             "expert"
           ],
@@ -8022,6 +8044,7 @@
         {
           "id": "c03",
           "text": "lower priority only when clinically meaningful modifiable recurrence risk remains",
+          "text_detailed": "Lower priority only where a clinically meaningful and modifiable recurrence risk remains, with the risk quantified and the modification attempted before priority is reduced.",
           "types": [
             "expert"
           ],
@@ -8031,6 +8054,7 @@
         {
           "id": "c04",
           "text": "equal-opportunity framework rejecting desert penalties",
+          "text_detailed": "Reject desert-based penalties on equal-opportunity grounds, requiring any weighting to be justified by prediction and audited for whether it is operating as punishment.",
           "types": [
             "framework"
           ],
@@ -8040,6 +8064,7 @@
         {
           "id": "c05",
           "text": "stewardship framework permitting clinically relevant recurrence-risk weighting",
+          "text_detailed": "Permit weighting for clinically relevant recurrence risk on stewardship grounds, with the weighting published and applied identically to all causes of graft loss.",
           "types": [
             "framework"
           ],
@@ -8049,6 +8074,7 @@
         {
           "id": "c06",
           "text": "restorative/time-limited eligibility plan with support milestones rather than permanent exclusion",
+          "text_detailed": "Use a restorative time-limited eligibility plan with support milestones rather than permanent exclusion, with the milestones agreed with the patient and relisting automatic on meeting them.",
           "types": [
             "expert"
           ],
@@ -8058,6 +8084,7 @@
         {
           "id": "c07",
           "text": "Address the barriers that caused the missed doses — cost, transport, housing, support — and count that response, rather than the earlier record alone, when deciding.",
+          "text_detailed": "Address the barriers that caused the missed doses — cost, transport, housing, support — and count that response, rather than the earlier record alone, when deciding, with what was provided recorded in the assessment.",
           "types": [
             "public"
           ],
@@ -8078,6 +8105,7 @@
         {
           "id": "c01",
           "text": "financial neutrality/full reimbursement only",
+          "text_detailed": "Reimburse all costs so that donation is financially neutral, covering lost income, travel, childcare and follow-up, with reimbursement prompt and not contingent on the transplant succeeding.",
           "types": [
             "expert"
           ],
@@ -8087,6 +8115,7 @@
         {
           "id": "c02",
           "text": "regulated fixed compensation plus safeguards",
+          "text_detailed": "Pay a regulated fixed amount with safeguards — independent assessment, a cooling-off period, medical follow-up — with the amount set publicly rather than negotiated.",
           "types": [
             "public"
           ],
@@ -8096,6 +8125,7 @@
         {
           "id": "c03",
           "text": "market-like compensation under strict screening",
+          "text_detailed": "Permit market-like compensation under strict screening, with the screening independent, the terms published, and outcomes for donors followed and reported.",
           "types": [
             "framework"
           ],
@@ -8105,6 +8135,7 @@
         {
           "id": "c04",
           "text": "compensation capped/structured to minimize undue inducement",
+          "text_detailed": "Cap and structure compensation to minimise undue inducement, with the cap set against local income so that it cannot function as an offer no one in poverty could refuse.",
           "types": [
             "expert"
           ],
@@ -8114,6 +8145,7 @@
         {
           "id": "c05",
           "text": "donor-welfare/anti-exploitation framework favoring neutrality",
+          "text_detailed": "Favour financial neutrality on donor-welfare and anti-exploitation grounds, with any payment beyond costs requiring separate justification and monitoring.",
           "types": [
             "framework"
           ],
@@ -8123,6 +8155,7 @@
         {
           "id": "c06",
           "text": "autonomy/fair-remuneration framework favoring regulated payment",
+          "text_detailed": "Favour regulated payment on autonomy and fair-remuneration grounds, treating donation as work that carries risk, with the rate set publicly and reviewed.",
           "types": [
             "framework"
           ],
@@ -8132,6 +8165,7 @@
         {
           "id": "c07",
           "text": "public-system compensation rather than recipient-paid market to reduce inequality",
+          "text_detailed": "Pay through the public system rather than by the recipient, so that access to a donor does not depend on the recipient's wealth, with the arrangement stated in the programme's terms.",
           "types": [
             "framework"
           ],
@@ -8151,6 +8185,7 @@
         {
           "id": "c01",
           "text": "no donor-registration priority",
+          "text_detailed": "Give no allocation priority for prior registration, with the register presented as a way of recording wishes rather than as a route to advantage.",
           "types": [
             "expert",
             "public"
@@ -8161,6 +8196,7 @@
         {
           "id": "c02",
           "text": "modest tie-break bonus for prior registration",
+          "text_detailed": "Give a modest tie-break for prior registration, applied only among clinically equivalent candidates, with its size fixed in the rule and published.",
           "types": [
             "public"
           ],
@@ -8170,6 +8206,7 @@
         {
           "id": "c03",
           "text": "stronger reciprocity priority after clinical criteria",
+          "text_detailed": "Give stronger reciprocity priority once clinical criteria are satisfied, with the weight stated in advance and its effect on waiting times monitored and published.",
           "types": [
             "expert",
             "framework"
@@ -8180,6 +8217,7 @@
         {
           "id": "c04",
           "text": "reciprocity only when registration was meaningfully accessible/informed",
+          "text_detailed": "Grant reciprocity only where registration was genuinely accessible and informed for the person concerned, with accessibility assessed rather than assumed for groups less likely to have registered.",
           "types": [
             "framework"
           ],
@@ -8189,6 +8227,7 @@
         {
           "id": "c05",
           "text": "equal-need framework rejecting reciprocity",
+          "text_detailed": "Reject reciprocity on equal-need grounds, allocating on clinical need alone and stating that prior conduct plays no part.",
           "types": [
             "framework"
           ],
@@ -8198,6 +8237,7 @@
         {
           "id": "c06",
           "text": "reciprocity/fair-contribution framework favoring priority",
+          "text_detailed": "Favour priority on fair-contribution grounds, with the contribution defined as registration rather than as actual donation, and the fairness of that definition examined and published.",
           "types": [
             "framework"
           ],
@@ -8217,6 +8257,7 @@
         {
           "id": "c01",
           "text": "permit NRP under standardized safeguards preventing unintended brain reperfusion + transparent consent/monitoring",
+          "text_detailed": "Permit normothermic regional perfusion under standardised safeguards that prevent unintended brain reperfusion, with the technique specified, monitored during the procedure, and the consent and monitoring records auditable.",
           "types": [
             "expert"
           ],
@@ -8226,6 +8267,7 @@
         {
           "id": "c02",
           "text": "restrict to protocol/research networks until safety/consistency mature",
+          "text_detailed": "Restrict the procedure to protocol or research networks until safety and consistency mature, with the criteria for general adoption stated and reviewed on a schedule.",
           "types": [
             "expert"
           ],
@@ -8235,6 +8277,7 @@
         {
           "id": "c03",
           "text": "prohibit because procedure threatens coherence of death determination/dead-donor rule",
+          "text_detailed": "Prohibit the procedure on the ground that it threatens the coherence of death determination and the dead-donor rule, with the prohibition stated publicly rather than left to local practice.",
           "types": [
             "expert",
             "framework"
@@ -8245,6 +8288,7 @@
         {
           "id": "c04",
           "text": "permit abdominal-only or otherwise more restrictive variants where ethically/technically justified",
+          "text_detailed": "Permit abdominal-only or otherwise more restrictive variants where they are ethically and technically justified, with the permitted variants listed and departures prohibited.",
           "types": [
             "expert"
           ],
@@ -8254,6 +8298,7 @@
         {
           "id": "c05",
           "text": "organ-benefit/donation framework favoring safeguarded NRP",
+          "text_detailed": "Favour safeguarded use on organ-benefit grounds, with the additional organs it yields reported alongside the safeguards applied.",
           "types": [
             "framework"
           ],
@@ -8263,6 +8308,7 @@
         {
           "id": "c06",
           "text": "public-trust/death-definition framework favoring restriction",
+          "text_detailed": "Favour restriction on public-trust and death-definition grounds, with the concern stated explicitly to donor families rather than resolved within the profession.",
           "types": [
             "framework"
           ],
@@ -8272,6 +8318,7 @@
         {
           "id": "c07",
           "text": "Tell donor families exactly what the procedure involves before authorisation, and let them decline it while still donating.",
+          "text_detailed": "Tell donor families exactly what the procedure involves before authorisation, and let them decline it while still donating, with the option recorded and the rest of the donation unaffected.",
           "types": [
             "public"
           ],
@@ -8292,6 +8339,7 @@
         {
           "id": "c01",
           "text": "require lifelong surveillance/specimen archiving as condition of xenotransplant",
+          "text_detailed": "Require lifelong surveillance and specimen archiving as a condition of the transplant, with the schedule, the samples and the duration stated at consent and the obligations of the programme stated alongside the recipient's.",
           "types": [
             "expert"
           ],
@@ -8301,6 +8349,7 @@
         {
           "id": "c02",
           "text": "allow withdrawal from routine follow-up unless risk crosses a public-health threshold, retaining targeted reporting duties",
+          "text_detailed": "Allow withdrawal from routine follow-up unless risk crosses a stated public-health threshold, retaining targeted reporting duties defined narrowly and explained at consent.",
           "types": [
             "framework"
           ],
@@ -8310,6 +8359,7 @@
         {
           "id": "c03",
           "text": "require enhanced restrictions/quarantine only when evidence shows high transmission risk",
+          "text_detailed": "Impose enhanced restrictions or quarantine only where evidence shows high transmission risk, with the evidence assessed independently and the restriction time-limited and reviewed.",
           "types": [
             "framework"
           ],
@@ -8319,6 +8369,7 @@
         {
           "id": "c04",
           "text": "prior consent creates durable special obligation to third parties",
+          "text_detailed": "Treat the prior consent as creating a durable obligation to third parties, with what that obligation covers written at consent so it is not extended afterwards.",
           "types": [
             "framework"
           ],
@@ -8328,6 +8379,7 @@
         {
           "id": "c05",
           "text": "autonomy/right-to-withdraw limits ongoing research-like surveillance",
+          "text_detailed": "Limit ongoing research-like surveillance by the recipient's right to withdraw, with the surveillance that survives withdrawal named specifically and justified by a public-health finding.",
           "types": [
             "framework"
           ],
@@ -8337,6 +8389,7 @@
         {
           "id": "c06",
           "text": "independent public-health review can escalate/de-escalate obligations as evidence changes",
+          "text_detailed": "Let an independent public-health body escalate or relax the obligations as evidence changes, with its criteria published and the recipient notified of any change and its basis.",
           "types": [
             "expert"
           ],
@@ -8346,6 +8399,7 @@
         {
           "id": "c07",
           "text": "Fix at consent what surveillance is required, for how long, and what happens if the recipient later declines, so that lifelong obligations are agreed rather than imposed afterwards.",
+          "text_detailed": "Fix at consent what surveillance is required, for how long, and what happens if the recipient later declines, so that lifelong obligations are agreed rather than imposed afterwards, with any later change requiring fresh consent or an independent finding.",
           "types": [
             "public"
           ],
@@ -8366,6 +8420,7 @@
         {
           "id": "c01",
           "text": "provide clinically necessary follow-up while refusing facilitation/financing of illicit transplantation",
+          "text_detailed": "Provide clinically necessary follow-up while refusing to facilitate or finance illicit transplantation, with the distinction stated to the patient and the care given on the same terms as for any other transplant recipient.",
           "types": [
             "expert"
           ],
@@ -8375,6 +8430,7 @@
         {
           "id": "c02",
           "text": "provide care plus traceability/reporting under lawful safeguards",
+          "text_detailed": "Provide care together with traceability and reporting under lawful safeguards, telling the patient what is reported and to whom before it happens.",
           "types": [
             "expert"
           ],
@@ -8384,6 +8440,7 @@
         {
           "id": "c03",
           "text": "limit nonurgent elective follow-up if it would materially facilitate ongoing illicit network",
+          "text_detailed": "Limit non-urgent elective follow-up where it would materially facilitate a continuing illicit network, with that finding made institutionally and the urgent care unaffected.",
           "types": [
             "framework"
           ],
@@ -8393,6 +8450,7 @@
         {
           "id": "c04",
           "text": "nonabandonment framework requiring equal treatment of post-transplant complications",
+          "text_detailed": "Treat post-transplant complications on the same terms as any other patient's on non-abandonment grounds, with the origin of the organ playing no part in clinical priority.",
           "types": [
             "framework"
           ],
@@ -8402,6 +8460,7 @@
         {
           "id": "c05",
           "text": "anti-complicity/accountability framework permitting reporting and refusal to facilitate repeat tourism",
+          "text_detailed": "Permit reporting and refusal to facilitate repeat tourism on anti-complicity grounds, with what is refused specified so that it does not extend to clinical care.",
           "types": [
             "framework"
           ],
@@ -8411,6 +8470,7 @@
         {
           "id": "c06",
           "text": "structured counseling/registry pathway separating patient care from investigation",
+          "text_detailed": "Use a structured counselling and registry pathway that keeps clinical care separate from any investigation, with the separation stated to the patient and maintained in the record.",
           "types": [
             "expert"
           ],
@@ -8420,6 +8480,7 @@
         {
           "id": "c07",
           "text": "Provide the same follow-up any other transplant patient would receive, and keep clinical care separate from any reporting the law requires.",
+          "text_detailed": "Provide the same follow-up any other transplant patient would receive, and keep clinical care separate from any reporting the law requires, telling the patient which is which at the first visit.",
           "types": [
             "public"
           ],
@@ -8440,6 +8501,7 @@
         {
           "id": "c01",
           "text": "immigration status alone irrelevant to candidacy/allocation",
+          "text_detailed": "Treat immigration status as irrelevant to candidacy and allocation, with the criteria stating so explicitly and the assessment recording no status information.",
           "types": [
             "expert"
           ],
@@ -8449,6 +8511,7 @@
         {
           "id": "c02",
           "text": "evaluate concrete follow-up/financial barriers individually rather than status proxy",
+          "text_detailed": "Assess concrete follow-up and financial barriers individually rather than using status as a proxy, with each barrier named and the support available to address it considered before any exclusion.",
           "types": [
             "expert"
           ],
@@ -8458,6 +8521,7 @@
         {
           "id": "c03",
           "text": "residents should have equitable access regardless citizenship",
+          "text_detailed": "Give residents equitable access regardless of citizenship, with residence defined by presence and duration rather than by documentation.",
           "types": [
             "expert"
           ],
@@ -8467,6 +8531,7 @@
         {
           "id": "c04",
           "text": "exclusion/priority for citizens under publicly financed scarcity",
+          "text_detailed": "Prioritise citizens under publicly financed scarcity, with the policy stated publicly, its effects on excluded residents reported, and emergency care unaffected.",
           "types": [
             "expert"
           ],
@@ -8476,6 +8541,7 @@
         {
           "id": "c05",
           "text": "equal moral status/anti-discrimination framework",
+          "text_detailed": "Apply an equal-status and anti-discrimination standard, requiring any distinction to be justified on clinical grounds that would apply to a citizen in the same position.",
           "types": [
             "framework"
           ],
@@ -8485,6 +8551,7 @@
         {
           "id": "c06",
           "text": "reciprocity/community-membership framework allowing some residence-based contribution criterion only if transparently justified and not citizenship proxy",
+          "text_detailed": "Permit a residence-based contribution criterion only where it is transparently justified and demonstrably not a proxy for citizenship, with the justification published and the criterion audited.",
           "types": [
             "framework"
           ],
@@ -8494,6 +8561,7 @@
         {
           "id": "c07",
           "text": "Keep clinical eligibility and immigration enquiry entirely separate, and say so publicly, so that seeking assessment carries no risk of exposure.",
+          "text_detailed": "Keep clinical eligibility and immigration enquiry entirely separate, and say so publicly, so that seeking assessment carries no risk of exposure, with the separation stated at the point of referral.",
           "types": [
             "public"
           ],
@@ -8514,6 +8582,7 @@
         {
           "id": "c01",
           "text": "permit donation to a named individual",
+          "text_detailed": "Permit donation directed to a named individual, with the named recipient assessed on ordinary clinical criteria and the direction recorded.",
           "types": [
             "expert",
             "framework"
@@ -8524,6 +8593,7 @@
         {
           "id": "c02",
           "text": "reject conditions directing organs to or excluding recipients by race/religion/gender/sexual orientation",
+          "text_detailed": "Reject any condition directing organs toward or away from recipients by race, religion, gender or sexual orientation, with the rule stated in the donation terms and applied without exception.",
           "types": [
             "expert"
           ],
@@ -8533,6 +8603,7 @@
         {
           "id": "c03",
           "text": "accept the donation but remove the discriminatory condition before allocation",
+          "text_detailed": "Accept the donation and remove the discriminatory condition before allocation, telling the donor or their family that the condition will not be applied.",
           "types": [
             "expert"
           ],
@@ -8542,6 +8613,7 @@
         {
           "id": "c04",
           "text": "refuse the donation entirely when the condition itself threatens public trust or dignitary equality",
+          "text_detailed": "Refuse the donation entirely where the condition itself threatens public trust or dignitary equality, with the refusal decided institutionally and the reasoning recorded.",
           "types": [
             "framework"
           ],
@@ -8551,6 +8623,7 @@
         {
           "id": "c05",
           "text": "donor-autonomy framework favoring wide control over a gratuitous gift",
+          "text_detailed": "Favour wide donor control over a gratuitous gift, with the limits on that control stated in advance so that donors know before donating what conditions will not be honoured.",
           "types": [
             "framework"
           ],
@@ -8560,6 +8633,7 @@
         {
           "id": "c06",
           "text": "equal-status/anti-discrimination framework limiting donor control once an organ enters the allocation system",
+          "text_detailed": "Limit donor control once an organ enters the allocation system, on equal-status grounds, with the point at which control ends defined and stated at the outset.",
           "types": [
             "framework"
           ],
@@ -8569,6 +8643,7 @@
         {
           "id": "c07",
           "text": "Refuse conditions the recipients themselves could not be told about, and tell donors this rule before donation rather than at the point of refusal.",
+          "text_detailed": "Refuse conditions the recipients themselves could not be told about, and tell donors this rule before donation rather than at the point of refusal, with the rule published in the donation information.",
           "types": [
             "public"
           ],
@@ -8589,6 +8664,7 @@
         {
           "id": "c01",
           "text": "preserve unconditional right to withdraw without penalty up to surgery",
+          "text_detailed": "Preserve an unconditional right to withdraw without penalty up to surgery, stated at enrolment and repeated before each step, with no financial or clinical consequence for withdrawing.",
           "types": [
             "expert"
           ],
@@ -8598,6 +8674,7 @@
         {
           "id": "c02",
           "text": "use scheduling/sequence design to reduce reliance on non-simultaneous promises",
+          "text_detailed": "Design the scheduling and sequence to reduce reliance on non-simultaneous promises, with simultaneity used where feasible and the residual exposure explained to each participant.",
           "types": [
             "expert"
           ],
@@ -8607,6 +8684,7 @@
         {
           "id": "c03",
           "text": "require explicit advance counseling about chain consequences while prohibiting pressure to continue",
+          "text_detailed": "Counsel every participant in advance about what withdrawal would mean for the chain, while prohibiting any pressure to continue, with the counselling documented and the prohibition applied to staff conduct.",
           "types": [
             "expert"
           ],
@@ -8616,6 +8694,7 @@
         {
           "id": "c04",
           "text": "allow confidential withdrawal reasons so donor need not bear interpersonal blame",
+          "text_detailed": "Allow withdrawal without giving reasons and keep the reasons confidential, so that a donor need not carry interpersonal blame, with the programme communicating the outcome rather than the donor.",
           "types": [
             "expert"
           ],
@@ -8625,6 +8704,7 @@
         {
           "id": "c05",
           "text": "autonomy framework treating withdrawal as nonwaivable",
+          "text_detailed": "Treat the right to withdraw as non-waivable, so that no advance commitment can be enforced, with that stated in every document a participant signs.",
           "types": [
             "framework"
           ],
@@ -8634,6 +8714,7 @@
         {
           "id": "c06",
           "text": "reliance/fairness framework supporting stronger moral—though not coercive—commitment once others have acted in reliance",
+          "text_detailed": "Recognise a stronger moral commitment once others have acted in reliance, expressed through counselling and support rather than any coercive mechanism, and never enforced against a withdrawing donor.",
           "types": [
             "framework"
           ],
@@ -8643,6 +8724,7 @@
         {
           "id": "c07",
           "text": "Keep withdrawal unconditional and private, and tell every participant at the outset what happens to the chain if someone withdraws.",
+          "text_detailed": "Keep withdrawal unconditional and private, and tell every participant at the outset what happens to the chain if someone withdraws, so that the risk is known before anyone joins.",
           "types": [
             "public"
           ],
@@ -8663,6 +8745,7 @@
         {
           "id": "c01",
           "text": "prioritize multi-organ candidate when combined transplant provides substantially greater survival benefit and organs are jointly necessary",
+          "text_detailed": "Prioritise the multi-organ candidate where the combined transplant offers substantially greater survival benefit and the organs are jointly necessary, with both established clinically and recorded.",
           "types": [
             "expert"
           ],
@@ -8672,6 +8755,7 @@
         {
           "id": "c02",
           "text": "protect single-organ access with explicit multi-organ eligibility/safety-net rules",
+          "text_detailed": "Protect single-organ access through explicit multi-organ eligibility and safety-net rules, with the rules published and the effect on single-organ waiting lists monitored.",
           "types": [
             "expert"
           ],
@@ -8681,6 +8765,7 @@
         {
           "id": "c03",
           "text": "allocate organs separately when expected aggregate benefit materially exceeds the combined transplant",
+          "text_detailed": "Allocate the organs separately where expected aggregate benefit materially exceeds that of the combined transplant, with the comparison made on stated measures and documented.",
           "types": [
             "framework"
           ],
@@ -8690,6 +8775,7 @@
         {
           "id": "c04",
           "text": "use a threshold rule requiring minimum incremental benefit for multi-organ allocation",
+          "text_detailed": "Require a minimum incremental benefit before multi-organ allocation, with the threshold stated numerically in the allocation rule rather than assessed case by case.",
           "types": [
             "expert"
           ],
@@ -8699,6 +8785,7 @@
         {
           "id": "c05",
           "text": "urgency/rescue framework favoring multi-organ candidate",
+          "text_detailed": "Favour the multi-organ candidate on urgency and rescue grounds, with the urgency defined clinically and the cost to single-organ candidates stated.",
           "types": [
             "framework"
           ],
@@ -8708,6 +8795,7 @@
         {
           "id": "c06",
           "text": "aggregate-benefit framework favoring separate recipients",
+          "text_detailed": "Favour separate recipients on aggregate-benefit grounds, applying the rule consistently and reporting what the multi-organ candidate's prospects were.",
           "types": [
             "framework"
           ],
@@ -8717,6 +8805,7 @@
         {
           "id": "c07",
           "text": "procedural justice rule requiring transparent nationally consistent criteria and audit of effects on single-organ waiting lists",
+          "text_detailed": "Require transparent nationally consistent criteria with audit of the effect on single-organ waiting lists, with the audit published and the criteria revised where the effect is inequitable.",
           "types": [
             "expert",
             "framework"
@@ -8727,6 +8816,7 @@
         {
           "id": "c08",
           "text": "Tell every candidate on the list how combined-organ decisions are made, so that a patient passed over knows the rule rather than suspecting one.",
+          "text_detailed": "Tell every candidate on the list how combined-organ decisions are made, so that a patient passed over knows the rule rather than suspecting one, with the rule given at listing and on request.",
           "types": [
             "public"
           ],
@@ -9688,7 +9778,7 @@
         {
           "id": "c08",
           "text": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
-          "text_detailed": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation.",
+          "text_detailed": "Share the sequence immediately and settle benefit terms in parallel, publishing what was agreed, so that people at risk do not wait on a negotiation. Immediate means on deposit rather than on agreement, and the parallel negotiation runs to a stated deadline so that it cannot become a delay by another route.",
           "types": [
             "public"
           ],
