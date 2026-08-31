@@ -29,7 +29,7 @@
     "inferred",
     "constructed"
   ],
-  "detailed_policy_count": 668,
+  "detailed_policy_count": 765,
   "reviewed_policy_count": 108,
   "cases": [
     {
@@ -11014,6 +11014,7 @@
         {
           "id": "c01",
           "text": "governed secondary research use with notice/opt-out",
+          "text_detailed": "Permit secondary research use under published governance with notice and a working opt-out, with the notice given where patients will see it and the opt-out effective for future use without affecting their care.",
           "types": [
             "expert",
             "public"
@@ -11024,6 +11025,7 @@
         {
           "id": "c02",
           "text": "specific/reconsent for materially new or sensitive uses",
+          "text_detailed": "Require fresh specific consent for materially new or sensitive uses, with what counts as material defined in advance so that the boundary is not set by whoever proposes the use.",
           "types": [
             "public"
           ],
@@ -11033,6 +11035,7 @@
         {
           "id": "c03",
           "text": "broad consent at collection for future categories",
+          "text_detailed": "Take broad consent at collection for named future categories, with those categories described concretely and a route for patients to see what has actually been done under them.",
           "types": [
             "expert"
           ],
@@ -11042,6 +11045,7 @@
         {
           "id": "c04",
           "text": "deidentified research use without reconsent under independent review",
+          "text_detailed": "Permit de-identified research use without re-consent under independent review, with the de-identification standard specified, tested against re-identification, and the review body's decisions published.",
           "types": [
             "expert",
             "framework"
@@ -11052,6 +11056,7 @@
         {
           "id": "c05",
           "text": "prohibit commercial secondary use without explicit consent or benefit-sharing",
+          "text_detailed": "Prohibit commercial secondary use without explicit consent or a benefit-sharing arrangement, with commercial defined by who profits rather than by the legal form of the recipient.",
           "types": [
             "framework",
             "public"
@@ -11062,6 +11067,7 @@
         {
           "id": "c06",
           "text": "solidarity/social-value framework favoring governed reuse",
+          "text_detailed": "Favour governed reuse on solidarity and social-value grounds, with the value that reuse produced reported back to patients rather than assumed.",
           "types": [
             "framework"
           ],
@@ -11071,6 +11077,7 @@
         {
           "id": "c07",
           "text": "privacy/control framework favoring granular authorization for identifiable/sensitive data",
+          "text_detailed": "Require granular authorisation for identifiable and sensitive data, with the categories and the choices presented in a form patients can actually use and revisit.",
           "types": [
             "framework"
           ],
@@ -11090,6 +11097,7 @@
         {
           "id": "c01",
           "text": "voluntary privacy-preserving app with informed participation",
+          "text_detailed": "Use a voluntary privacy-preserving app with informed participation, with what it collects and infers explained in plain terms before installation and no service conditioned on it.",
           "types": [
             "expert"
           ],
@@ -11099,6 +11107,7 @@
         {
           "id": "c02",
           "text": "voluntary system plus strong access/education/integration to maximize uptake",
+          "text_detailed": "Keep the system voluntary while investing in access, education and integration to raise uptake, with uptake reported by group so that gaps are visible rather than averaged away.",
           "types": [
             "expert"
           ],
@@ -11108,6 +11117,7 @@
         {
           "id": "c03",
           "text": "temporary mandatory use for a narrowly defined high-risk setting",
+          "text_detailed": "Require use temporarily in a narrowly defined high-risk setting, with the setting, the duration and the end condition stated in the order and the requirement lifted automatically at its end.",
           "types": [
             "expert"
           ],
@@ -11117,6 +11127,7 @@
         {
           "id": "c04",
           "text": "decentralized/minimum-data architecture",
+          "text_detailed": "Use a decentralised, minimum-data architecture in which matching happens on the device, with what leaves the phone specified technically and independently verified.",
           "types": [
             "framework"
           ],
@@ -11126,6 +11137,7 @@
         {
           "id": "c05",
           "text": "centralized public-health architecture with strict purpose/time limits when epidemiologically necessary",
+          "text_detailed": "Use a centralised architecture where epidemiologically necessary, with strict purpose and time limits written into law, the data deleted on schedule, and deletion audited.",
           "types": [
             "expert"
           ],
@@ -11135,6 +11147,7 @@
         {
           "id": "c06",
           "text": "public-health solidarity framework favoring participation",
+          "text_detailed": "Favour participation on solidarity grounds, framed as a contribution rather than an obligation, with no penalty of any kind for those who decline.",
           "types": [
             "framework"
           ],
@@ -11144,6 +11157,7 @@
         {
           "id": "c07",
           "text": "autonomy/privacy framework rejecting coercive or function-creeping tracing",
+          "text_detailed": "Reject coercive tracing and function creep, with the permitted purposes fixed at launch and any extension requiring fresh authorisation rather than a policy update.",
           "types": [
             "framework"
           ],
@@ -11153,6 +11167,7 @@
         {
           "id": "c08",
           "text": "Keep use voluntary and the data on the phone, and publish what the system does, so that a person can decline without losing access to testing or care.",
+          "text_detailed": "Keep use voluntary and the data on the phone, and publish what the system does, so that a person can decline without losing access to testing or care, with that guarantee stated at installation.",
           "types": [
             "public"
           ],
@@ -11173,6 +11188,7 @@
         {
           "id": "c01",
           "text": "governed partnership without individual reconsent for low-risk public-benefit analytics",
+          "text_detailed": "Permit a governed partnership without individual re-consent for low-risk analytics of public benefit, with the permitted analyses listed, the outputs reviewed, and the arrangement published.",
           "types": [
             "expert",
             "public"
@@ -11183,6 +11199,7 @@
         {
           "id": "c02",
           "text": "explicit opt-in for identifiable/commercial uses",
+          "text_detailed": "Require explicit opt-in for identifiable or commercial uses, with the opt-in specific to the use and not bundled with consent to treatment.",
           "types": [
             "public"
           ],
@@ -11192,6 +11209,7 @@
         {
           "id": "c03",
           "text": "opt-out with strong transparency/independent oversight",
+          "text_detailed": "Permit use with an opt-out, strong transparency and independent oversight, with the oversight body able to stop the arrangement and its findings published.",
           "types": [
             "expert",
             "public"
@@ -11202,6 +11220,7 @@
         {
           "id": "c04",
           "text": "benefit-sharing/reinvestment requirement where commercial value is generated",
+          "text_detailed": "Require benefit-sharing or reinvestment wherever commercial value is generated, with the mechanism and the amounts published rather than described in principle.",
           "types": [
             "framework"
           ],
@@ -11211,6 +11230,7 @@
         {
           "id": "c05",
           "text": "prohibit sale/exclusive commercial access without consent",
+          "text_detailed": "Prohibit sale or exclusive commercial access without consent, with exclusivity defined broadly enough to cover preferential access arrangements.",
           "types": [
             "framework"
           ],
@@ -11220,6 +11240,7 @@
         {
           "id": "c06",
           "text": "public-benefit framework allowing partnership where outputs improve care and access",
+          "text_detailed": "Permit partnership on public-benefit grounds where the outputs improve care and access, with the improvement measured and reported rather than asserted in the agreement.",
           "types": [
             "framework"
           ],
@@ -11229,6 +11250,7 @@
         {
           "id": "c07",
           "text": "data-trust/intermediary model separating health system from vendor and constraining downstream use",
+          "text_detailed": "Interpose a data trust or intermediary between the health system and the vendor, constraining downstream use, with the trust's duties owed to patients and its decisions published.",
           "types": [
             "expert"
           ],
@@ -11248,6 +11270,7 @@
         {
           "id": "c01",
           "text": "recalibrate/replace biased proxy before continued use",
+          "text_detailed": "Recalibrate or replace the biased proxy before continued use, with the replacement validated by subgroup and the interim arrangements stated rather than left to the model as it stands.",
           "types": [
             "expert"
           ],
@@ -11257,6 +11280,7 @@
         {
           "id": "c02",
           "text": "add equity constraints or direct need variables even at modest overall predictive cost",
+          "text_detailed": "Add equity constraints or direct need variables even at a modest cost in overall prediction, with the cost quantified and the resulting subgroup performance reported.",
           "types": [
             "expert",
             "framework"
@@ -11267,6 +11291,7 @@
         {
           "id": "c03",
           "text": "suspend use until subgroup performance meets threshold",
+          "text_detailed": "Suspend use until subgroup performance meets a stated threshold, with the threshold fixed in advance and the fallback pathway named so that suspension does not leave patients unranked.",
           "types": [
             "expert"
           ],
@@ -11276,6 +11301,7 @@
         {
           "id": "c04",
           "text": "continue temporarily with clinician review/manual equity correction while replacement is built",
+          "text_detailed": "Continue temporarily with clinician review and manual equity correction while a replacement is built, with the correction procedure specified, its use recorded, and a deadline for the replacement.",
           "types": [
             "expert"
           ],
@@ -11285,6 +11311,7 @@
         {
           "id": "c05",
           "text": "equal-performance framework favoring subgroup parity",
+          "text_detailed": "Require subgroup parity on equal-performance grounds, with parity defined on a stated metric and deployment conditional on meeting it.",
           "types": [
             "framework"
           ],
@@ -11294,6 +11321,7 @@
         {
           "id": "c06",
           "text": "clinical-benefit framework permitting some performance differences if outcomes improve for every group and no less discriminatory alternative exists",
+          "text_detailed": "Permit some performance difference where outcomes improve for every group and no less discriminatory alternative exists, with both conditions demonstrated and re-tested as the model updates.",
           "types": [
             "framework"
           ],
@@ -11303,6 +11331,7 @@
         {
           "id": "c07",
           "text": "continuous bias monitoring/audit + appeal pathway",
+          "text_detailed": "Monitor and audit for bias continuously and provide an appeal pathway, with the audit results published and the appeal available to patients rather than only to clinicians.",
           "types": [
             "expert"
           ],
@@ -11312,6 +11341,7 @@
         {
           "id": "c08",
           "text": "Tell patients that a ranking system is used, what it uses, and how to ask for review, so that someone missed by it has a route back.",
+          "text_detailed": "Tell patients that a ranking system is used, what it uses, and how to ask for review, so that someone missed by it has a route back, with the notice given at registration rather than on request.",
           "types": [
             "public"
           ],
@@ -11332,6 +11362,7 @@
         {
           "id": "c01",
           "text": "clinician may override with documented rationale and accountability",
+          "text_detailed": "Permit the clinician to override with a documented rationale and named accountability, with the rationale recorded at the time and reviewed in aggregate rather than case by case.",
           "types": [
             "expert"
           ],
@@ -11341,6 +11372,7 @@
         {
           "id": "c02",
           "text": "mandatory human review before high-stakes AI recommendation is acted on",
+          "text_detailed": "Require human review before any high-stakes recommendation is acted on, with the categories of high-stakes decision defined in advance and the review substantive rather than a confirmation click.",
           "types": [
             "expert"
           ],
@@ -11350,6 +11382,7 @@
         {
           "id": "c03",
           "text": "require second review when override conflicts with strongly validated model in high-risk case",
+          "text_detailed": "Require a second review where an override conflicts with a strongly validated model in a high-risk case, with the second reviewer independent and the outcome recorded either way.",
           "types": [
             "expert"
           ],
@@ -11359,6 +11392,7 @@
         {
           "id": "c04",
           "text": "model-default with human override for low-risk standardized tasks",
+          "text_detailed": "Let the model decide by default for low-risk standardised tasks with human override available, with the task list fixed and reviewed as performance data accumulate.",
           "types": [
             "expert"
           ],
@@ -11368,6 +11402,7 @@
         {
           "id": "c05",
           "text": "professional-responsibility framework preserving clinician authority",
+          "text_detailed": "Preserve clinician authority on professional-responsibility grounds, with the clinician accountable for the decision whether or not it follows the model.",
           "types": [
             "framework"
           ],
@@ -11377,6 +11412,7 @@
         {
           "id": "c06",
           "text": "consistency/decision-quality framework requiring structured justification for override to reduce arbitrary bias",
+          "text_detailed": "Require structured justification for any override to reduce arbitrary variation, with the structure specified and override patterns audited for bias rather than only for frequency.",
           "types": [
             "framework"
           ],
@@ -11386,6 +11422,7 @@
         {
           "id": "c07",
           "text": "Tell the patient when a recommendation came from a model and when the clinician departed from it, and record the reason in terms the patient can read.",
+          "text_detailed": "Tell the patient when a recommendation came from a model and when the clinician departed from it, and record the reason in terms the patient can read. The note says which decision the model informed, what it recommended, and why the clinician decided otherwise, in the record the patient can access rather than in a separate audit log.",
           "types": [
             "public"
           ],
@@ -11406,6 +11443,7 @@
         {
           "id": "c01",
           "text": "disclose any material AI role in clinical decision-making",
+          "text_detailed": "Disclose any material role played by an AI system in a clinical decision, with material defined in advance and the disclosure made at the time rather than in a general notice.",
           "types": [
             "framework",
             "public"
@@ -11416,6 +11454,7 @@
         {
           "id": "c02",
           "text": "disclose only when AI materially affects high-stakes decision or substitutes for human work",
+          "text_detailed": "Disclose only where the system materially affects a high-stakes decision or substitutes for human work, with both triggers defined and applied consistently rather than left to the clinician.",
           "types": [
             "public"
           ],
@@ -11425,6 +11464,7 @@
         {
           "id": "c03",
           "text": "routine general notice for low-risk ubiquitous tools plus encounter-specific disclosure for material uses",
+          "text_detailed": "Give a routine general notice for low-risk ubiquitous tools and an encounter-specific disclosure for material uses, with the boundary between the two published.",
           "types": [
             "expert",
             "framework",
@@ -11436,6 +11476,7 @@
         {
           "id": "c04",
           "text": "explicit consent for autonomous/high-impact AI",
+          "text_detailed": "Require explicit consent for autonomous or high-impact AI use, with the consent specific to that use and the alternative pathway available if it is declined.",
           "types": [
             "framework"
           ],
@@ -11445,6 +11486,7 @@
         {
           "id": "c05",
           "text": "transparency framework favoring meaningful explanation rather than boilerplate",
+          "text_detailed": "Require a meaningful explanation rather than boilerplate, stating what the system did and what it means for this decision, in terms the patient can act on.",
           "types": [
             "expert",
             "framework"
@@ -11455,6 +11497,7 @@
         {
           "id": "c06",
           "text": "burden/attention framework limiting repetitive disclosure where AI use is incidental",
+          "text_detailed": "Limit repetitive disclosure where AI use is incidental, on grounds of attention and burden, with the incidental category defined narrowly and reviewed.",
           "types": [
             "expert"
           ],
@@ -11464,6 +11507,7 @@
         {
           "id": "c07",
           "text": "patient-choice rule allowing request for human-only review where feasible",
+          "text_detailed": "Let a patient request human-only review where that is feasible, with the request honoured without penalty or delay and the availability stated in advance.",
           "types": [
             "framework"
           ],
@@ -11483,6 +11527,7 @@
         {
           "id": "c01",
           "text": "do not deploy until minimum subgroup-performance/equity threshold met",
+          "text_detailed": "Do not deploy until a minimum subgroup-performance threshold is met, with the threshold stated numerically, tested on local data, and published with the decision.",
           "types": [
             "expert"
           ],
@@ -11492,6 +11537,7 @@
         {
           "id": "c02",
           "text": "deploy with restricted indication excluding underperforming subgroup while collecting data/improving model",
+          "text_detailed": "Deploy with a restricted indication that excludes the underperforming subgroup, while collecting data and improving the model, with the exclusion stated in the labelling and the improvement plan dated.",
           "types": [
             "expert"
           ],
@@ -11501,6 +11547,7 @@
         {
           "id": "c03",
           "text": "deploy with mandatory human confirmation for underperforming subgroup",
+          "text_detailed": "Deploy with mandatory human confirmation for the underperforming subgroup, with the confirmation resourced so it does not become a formality and its effect on outcomes monitored.",
           "types": [
             "expert"
           ],
@@ -11510,6 +11557,7 @@
         {
           "id": "c04",
           "text": "deploy if every subgroup benefits versus current care despite unequal absolute performance, with monitoring and improvement plan",
+          "text_detailed": "Deploy where every subgroup benefits relative to current care despite unequal absolute performance, with the comparison made against actual local performance and monitoring in place.",
           "types": [
             "framework"
           ],
@@ -11519,6 +11567,7 @@
         {
           "id": "c05",
           "text": "equity framework favoring parity/anti-discrimination",
+          "text_detailed": "Require parity on equity and anti-discrimination grounds, with deployment conditional on it and the parity measure stated rather than chosen after the results are known.",
           "types": [
             "framework"
           ],
@@ -11528,6 +11577,7 @@
         {
           "id": "c06",
           "text": "aggregate-benefit framework allowing bounded disparity when no better alternative and net benefit positive",
+          "text_detailed": "Permit bounded disparity where no better alternative exists and net benefit is positive for all, with the bound stated numerically and breach triggering withdrawal.",
           "types": [
             "framework"
           ],
@@ -11537,6 +11587,7 @@
         {
           "id": "c07",
           "text": "postmarket subgroup monitoring + transparent labeling/appeal",
+          "text_detailed": "Monitor subgroup performance after deployment with transparent labelling and an appeal route, publishing the monitoring results rather than holding them internally.",
           "types": [
             "expert"
           ],
@@ -11546,6 +11597,7 @@
         {
           "id": "c08",
           "text": "Tell patients in the affected subgroup that the tool performs less well for them and offer the standard pathway instead, rather than deciding for them.",
+          "text_detailed": "Tell patients in the affected subgroup that the tool performs less well for them and offer the standard pathway instead, rather than deciding for them, with the offer recorded.",
           "types": [
             "public"
           ],
@@ -11566,6 +11618,7 @@
         {
           "id": "c01",
           "text": "encounter-level explicit opt-in consent",
+          "text_detailed": "Obtain explicit opt-in consent for each encounter, sought before the consultation begins and recorded, with the consultation proceeding normally if it is declined.",
           "types": [
             "public"
           ],
@@ -11575,6 +11628,7 @@
         {
           "id": "c02",
           "text": "well-disclosed default-on with easy opt-out where recordings are transient/minimized",
+          "text_detailed": "Use a well-disclosed default-on arrangement with an easy opt-out where recordings are transient and minimised, with the disclosure given before the encounter and the opt-out available during it.",
           "types": [
             "public"
           ],
@@ -11584,6 +11638,7 @@
         {
           "id": "c03",
           "text": "no persistent audio retention after note generation except separately authorized cases",
+          "text_detailed": "Retain no audio after the note is generated, except in separately authorised cases, with the retention period technically enforced rather than set by policy.",
           "types": [
             "framework"
           ],
@@ -11593,6 +11648,7 @@
         {
           "id": "c04",
           "text": "patient may pause/exclude sensitive portions at any time",
+          "text_detailed": "Let the patient pause the recording or exclude sensitive portions at any point, with the control available to the patient directly and its use carrying no consequence.",
           "types": [
             "framework"
           ],
@@ -11602,6 +11658,7 @@
         {
           "id": "c05",
           "text": "clinician may decline ambient tool where it impairs care/confidentiality",
+          "text_detailed": "Let the clinician decline the tool where it impairs care or confidentiality, with the decision recorded and no performance consequence attached to declining.",
           "types": [
             "expert"
           ],
@@ -11611,6 +11668,7 @@
         {
           "id": "c06",
           "text": "prohibit secondary model training without separate consent",
+          "text_detailed": "Prohibit use of the recordings for model training without separate consent, with the prohibition binding on the vendor and stated in the contract rather than the privacy notice.",
           "types": [
             "expert"
           ],
@@ -11620,6 +11678,7 @@
         {
           "id": "c07",
           "text": "transparency/benefit framework permitting routine use when documentation burden falls and patient acceptance is high under strong safeguards",
+          "text_detailed": "Permit routine use where documentation burden falls and patient acceptance is high, under safeguards that are specified, audited and reported rather than assumed from the vendor's description.",
           "types": [
             "framework"
           ],
@@ -11639,6 +11698,7 @@
         {
           "id": "c01",
           "text": "autonomous use for narrow low-risk validated task with clear escalation triggers",
+          "text_detailed": "Permit autonomous use for a narrow, low-risk, validated task with escalation triggers defined in advance, and the task boundary enforced by the system rather than by the operator.",
           "types": [
             "expert"
           ],
@@ -11648,6 +11708,7 @@
         {
           "id": "c02",
           "text": "mandatory clinician review for high-stakes diagnoses or uncertain outputs",
+          "text_detailed": "Require clinician review for high-stakes diagnoses and for uncertain outputs, with both categories defined by stated criteria and the review resourced to be real.",
           "types": [
             "expert"
           ],
@@ -11657,6 +11718,7 @@
         {
           "id": "c03",
           "text": "human review only for low-confidence/out-of-distribution cases",
+          "text_detailed": "Require human review only for low-confidence or out-of-distribution cases, with the thresholds stated, monitored, and adjusted as performance data accumulate.",
           "types": [
             "expert"
           ],
@@ -11666,6 +11728,7 @@
         {
           "id": "c04",
           "text": "patient option to request clinician review where practical",
+          "text_detailed": "Let the patient request clinician review where practical, with the request available before the result is acted on and honoured without extra cost.",
           "types": [
             "framework"
           ],
@@ -11675,6 +11738,7 @@
         {
           "id": "c05",
           "text": "safety/accountability framework favoring earlier human intervention as harm rises",
+          "text_detailed": "Bring human review in earlier as potential harm rises, with the relationship between harm and review stated as a rule rather than judged case by case.",
           "types": [
             "expert"
           ],
@@ -11684,6 +11748,7 @@
         {
           "id": "c06",
           "text": "access/efficiency framework allowing autonomy where human bottleneck materially reduces care and validation is strong",
+          "text_detailed": "Permit autonomy where the human bottleneck materially reduces access and validation is strong, with the access gain measured and the validation local rather than only external.",
           "types": [
             "framework"
           ],
@@ -11693,6 +11758,7 @@
         {
           "id": "c07",
           "text": "Let any patient ask for a clinician to look at the result, at no cost or delay, and say that this is available before the test.",
+          "text_detailed": "Let any patient ask for a clinician to look at the result, at no cost or delay, and say that this is available before the test rather than only in an appeals policy.",
           "types": [
             "public"
           ],
@@ -11713,6 +11779,7 @@
         {
           "id": "c01",
           "text": "automate approvals but require physician/human review for denials or material restrictions",
+          "text_detailed": "Automate approvals while requiring human review for every denial or material restriction, with the reviewer clinically qualified and named in the decision.",
           "types": [
             "expert"
           ],
@@ -11722,6 +11789,7 @@
         {
           "id": "c02",
           "text": "no autonomous adverse coverage decisions",
+          "text_detailed": "Make no adverse coverage decision autonomously, with every denial issued by a person who has considered the case and can be identified.",
           "types": [
             "expert"
           ],
@@ -11731,6 +11799,7 @@
         {
           "id": "c03",
           "text": "AI triage/prioritization with mandatory human final decision for adverse cases",
+          "text_detailed": "Use the system to triage and prioritise while a human makes the final decision in every adverse case, with the system's role stated in the decision letter.",
           "types": [
             "expert"
           ],
@@ -11740,6 +11809,7 @@
         {
           "id": "c04",
           "text": "fully automated determinations only for objective rule-based criteria with immediate appeal",
+          "text_detailed": "Automate determinations only where the criteria are objective and rule-based, with an immediate appeal route and the criteria published so that a decision can be checked.",
           "types": [
             "expert"
           ],
@@ -11749,6 +11819,7 @@
         {
           "id": "c05",
           "text": "due-process framework requiring explanation, timely appeal, and conflict-of-interest safeguards",
+          "text_detailed": "Require explanation, timely appeal and conflict-of-interest safeguards as a matter of due process, with the appeal timeline binding and the safeguards audited.",
           "types": [
             "framework"
           ],
@@ -11758,6 +11829,7 @@
         {
           "id": "c06",
           "text": "efficiency/access framework favoring automation when it shortens approval time without increasing wrongful denials",
+          "text_detailed": "Favour automation where it shortens approval time without increasing wrongful denials, with both measured, published, and the automation withdrawn if denials rise.",
           "types": [
             "framework"
           ],
@@ -11767,6 +11839,7 @@
         {
           "id": "c07",
           "text": "Give a plain-language reason and a named human reviewer with every denial, and publish how often automated denials are overturned.",
+          "text_detailed": "Give a plain-language reason and a named human reviewer with every denial, and publish how often automated denials are overturned, broken down by category.",
           "types": [
             "public"
           ],
@@ -11787,6 +11860,7 @@
         {
           "id": "c01",
           "text": "PCCP-bounded updates without full new authorization when validation/impact plan satisfied",
+          "text_detailed": "Permit updates within a predetermined change-control plan without fresh authorisation, provided the validation and impact conditions in that plan are met and documented for each release.",
           "types": [
             "expert"
           ],
@@ -11796,6 +11870,7 @@
         {
           "id": "c02",
           "text": "full revalidation/authorization for material out-of-scope changes",
+          "text_detailed": "Require full revalidation and authorisation for material changes outside the plan, with materiality defined in the plan itself rather than judged at release.",
           "types": [
             "expert"
           ],
@@ -11805,6 +11880,7 @@
         {
           "id": "c03",
           "text": "frozen periodic version releases with scheduled validation",
+          "text_detailed": "Release frozen versions periodically with scheduled validation, so that any result can be attributed to a named version, and keep prior versions available for that purpose.",
           "types": [
             "expert"
           ],
@@ -11814,6 +11890,7 @@
         {
           "id": "c04",
           "text": "continuous learning under real-time monitoring and rollback thresholds",
+          "text_detailed": "Permit continuous learning under real-time monitoring with rollback thresholds set in advance, and roll back automatically when a threshold is crossed rather than on review.",
           "types": [
             "expert"
           ],
@@ -11823,6 +11900,7 @@
         {
           "id": "c05",
           "text": "lifecycle-benefit framework favoring safe iterative improvement",
+          "text_detailed": "Favour safe iterative improvement on lifecycle-benefit grounds, with the safety case for each iteration recorded and the cumulative drift assessed rather than only each step.",
           "types": [
             "framework"
           ],
@@ -11832,6 +11910,7 @@
         {
           "id": "c06",
           "text": "precaution/traceability framework favoring slower versioned updates",
+          "text_detailed": "Favour slower versioned updates on precaution and traceability grounds, with each version's performance documented and the change history published.",
           "types": [
             "framework"
           ],
@@ -11841,6 +11920,7 @@
         {
           "id": "c07",
           "text": "user/patient transparency rule requiring meaningful notice when changes alter performance or intended use",
+          "text_detailed": "Give clinicians and patients meaningful notice whenever a change alters performance or intended use, stating what changed and what it means for decisions already made.",
           "types": [
             "expert"
           ],
@@ -11850,6 +11930,7 @@
         {
           "id": "c08",
           "text": "Tell clinicians and patients when the model has changed and what changed, so that a decision can be read against the version that produced it.",
+          "text_detailed": "Tell clinicians and patients when the model has changed and what changed, so that a decision can be read against the version that produced it, with the version recorded in the note.",
           "types": [
             "public"
           ],
@@ -11870,6 +11951,7 @@
         {
           "id": "c01",
           "text": "use synthetic data only after formal privacy and utility/fidelity testing",
+          "text_detailed": "Use synthetic data only after formal privacy and utility testing, with both tested against stated thresholds and the results published with the dataset.",
           "types": [
             "expert"
           ],
@@ -11879,6 +11961,7 @@
         {
           "id": "c02",
           "text": "prefer synthetic over real identifiable data where task performance and subgroup fidelity remain adequate",
+          "text_detailed": "Prefer synthetic over real identifiable data wherever task performance and subgroup fidelity remain adequate, with adequacy defined per task and re-tested rather than assumed.",
           "types": [
             "expert"
           ],
@@ -11888,6 +11971,7 @@
         {
           "id": "c03",
           "text": "use controlled real data instead when synthetic generation materially distorts minority/rare patterns",
+          "text_detailed": "Use controlled real data instead where synthetic generation materially distorts minority or rare patterns, with the distortion measured and the decision recorded per dataset.",
           "types": [
             "framework"
           ],
@@ -11897,6 +11981,7 @@
         {
           "id": "c04",
           "text": "hybrid synthetic + secure real-data validation",
+          "text_detailed": "Combine synthetic development with secure real-data validation, so that findings are confirmed against real records before they are relied on, with the validation step mandatory rather than optional.",
           "types": [
             "expert"
           ],
@@ -11906,6 +11991,7 @@
         {
           "id": "c05",
           "text": "minimum subgroup-fidelity thresholds before release/use",
+          "text_detailed": "Set minimum subgroup-fidelity thresholds before release or use, with the thresholds stated numerically and release blocked where they are not met.",
           "types": [
             "framework"
           ],
@@ -11915,6 +12001,7 @@
         {
           "id": "c06",
           "text": "privacy framework maximizing disclosure-risk reduction",
+          "text_detailed": "Maximise disclosure-risk reduction on privacy grounds, with the residual risk quantified and the cost in fidelity stated rather than left as a technical detail.",
           "types": [
             "framework"
           ],
@@ -11924,6 +12011,7 @@
         {
           "id": "c07",
           "text": "scientific-validity/equity framework rejecting privacy gains that erase clinically important minority structure",
+          "text_detailed": "Reject privacy gains that erase clinically important minority structure, with that structure defined in advance and its preservation tested before release.",
           "types": [
             "framework"
           ],
@@ -11933,6 +12021,7 @@
         {
           "id": "c08",
           "text": "Tell the communities whose data underlie the set where fidelity is poor, so that findings about them are not read as firmer than they are.",
+          "text_detailed": "Tell the communities whose data underlie the set where fidelity is poor, so that findings about them are not read as firmer than they are, with the fidelity report published alongside the data.",
           "types": [
             "public"
           ],
@@ -11953,6 +12042,7 @@
         {
           "id": "c01",
           "text": "stop all future use and exclude data from future model versions",
+          "text_detailed": "Stop all future use and exclude the data from future model versions, with the exclusion effective at the next training run and confirmed to the patient.",
           "types": [
             "expert",
             "framework"
@@ -11963,6 +12053,7 @@
         {
           "id": "c02",
           "text": "perform machine unlearning where technically feasible and validated not to create unsafe/fairness degradation",
+          "text_detailed": "Perform machine unlearning where it is technically feasible and validated not to degrade safety or fairness, with the validation run before the unlearned model is deployed.",
           "types": [
             "expert"
           ],
@@ -11972,6 +12063,7 @@
         {
           "id": "c03",
           "text": "do not alter already trained deployed model but stop future data use and document residual contribution",
+          "text_detailed": "Leave the deployed model unchanged while stopping future use of the data and documenting the residual contribution, with that contribution described honestly to the patient rather than characterised as removed.",
           "types": [
             "framework"
           ],
@@ -11981,6 +12073,7 @@
         {
           "id": "c04",
           "text": "retrain model without withdrawn data at next scheduled safe release",
+          "text_detailed": "Retrain without the withdrawn data at the next scheduled safe release, with the release date stated to the patient rather than left open.",
           "types": [
             "expert"
           ],
@@ -11990,6 +12083,7 @@
         {
           "id": "c05",
           "text": "patient-control framework favoring maximal removal",
+          "text_detailed": "Favour maximal removal on patient-control grounds, with the limits of what can be removed stated rather than described as complete deletion.",
           "types": [
             "framework"
           ],
@@ -11999,6 +12093,7 @@
         {
           "id": "c06",
           "text": "safety/fairness framework limiting retroactive alteration when deletion would degrade care for others",
+          "text_detailed": "Limit retroactive alteration where deletion would degrade care for others, with the degradation assessed and the assessment available to the patient who requested deletion.",
           "types": [
             "framework"
           ],
@@ -12008,6 +12103,7 @@
         {
           "id": "c07",
           "text": "transparent residual-data/model lineage + independent review of infeasible deletion requests",
+          "text_detailed": "Maintain transparent data and model lineage and route infeasible deletion requests to independent review, with the review's reasoning given to the patient.",
           "types": [
             "expert"
           ],
@@ -12017,6 +12113,7 @@
         {
           "id": "c08",
           "text": "Tell the patient plainly what withdrawal can and cannot undo, before consent, rather than describing deletion in terms the system cannot deliver.",
+          "text_detailed": "Tell the patient plainly what withdrawal can and cannot undo, before consent, rather than describing deletion in terms the system cannot deliver, and say what remains and why.",
           "types": [
             "public"
           ],
