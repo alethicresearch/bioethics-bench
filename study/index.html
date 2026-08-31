@@ -87,7 +87,6 @@
     .cell.done    { background: #d1fae5; color: #047857; }
     .cell.partial { background: #fef3c7; color: #92400e; }
     .cell.pending { background: var(--soft2); color: #94a3b8; }
-    .cell.blocked { background: #fee2e2; color: #991b1b; }
     .matrix-key { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .78rem; color: var(--muted); margin-top: .85rem; }
     .matrix-key .cell { width: auto; min-width: 0; margin-right: .35rem; }
 
@@ -182,7 +181,6 @@
         <span><span class="cell done">done</span>executed and published</span>
         <span><span class="cell partial">partial</span>started, not complete</span>
         <span><span class="cell pending">pending</span>not yet run</span>
-        <span><span class="cell blocked">blocked</span>no working credential in this deployment</span>
       </div>
     </section>
 
@@ -268,7 +266,7 @@
         });
       });
 
-      var head = '<thead><tr><th class="model">model</th>';
+      var head = '<thead><tr><th class="model">model</th><th>provider</th>';
       for (var i = 1; i <= DESIGN.repeats; i++) head += '<th>run ' + i + '</th>';
       head += '<th>pairs scored</th></tr></thead>';
 
@@ -276,17 +274,18 @@
       DESIGN.models.forEach(function (m) {
         var reps = byModel[m.id] || [];
         var scored = reps.reduce(function (a, r) { return a + (r.scored || 0); }, 0);
-        body += '<tr><th class="model">' + esc(m.id) + '</th>';
+        body += '<tr><th class="model">' + esc(m.id) + '</th>' +
+          '<td style="text-align:left;color:var(--muted);font-size:.78rem">' + esc(m.provider) + '</td>';
         for (var i = 0; i < DESIGN.repeats; i++) {
           var r = reps[i];
           var cls, label;
           if (r) {
             cls = r.complete ? 'done' : 'partial';
             label = r.complete ? 'done' : Math.round((r.scored / DESIGN.pairsPerCell) * 100) + '%';
-          } else if (m.provider === 'Anthropic') {
-            // Stated as a fact about this deployment's credentials, not about the models.
-            cls = 'blocked'; label = 'blocked';
           } else {
+            // Only two states are observable from published reports: a cell has one or it does
+            // not. Whether a model is currently runnable is a fact about credentials on the
+            // executing side, which this page cannot see and must not assert.
             cls = 'pending'; label = 'pending';
           }
           body += '<td><span class="cell ' + cls + '">' + label + '</span></td>';
