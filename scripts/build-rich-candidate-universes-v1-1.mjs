@@ -53,13 +53,20 @@ function parseM002(markdown) {
     };
   });
 
-  const scenarioMatch = markdown.match(/### Scenario audit\s+\n\n([\s\S]*?)(?=\n\n### )/);
-  const sourceMatch = markdown.match(/- \*\*Source-grounded:\*\*\s*([^\n]+)/);
-  const expandedMatch = markdown.match(/- \*\*Expanded:\*\*\s*([^\n]+)/);
-  const demoMatch = markdown.match(/\*\*Demonstration richness:\*\*\s*([^\n]+)/);
-  const actionMatch = markdown.match(/\*\*Action:\*\*\s*([^\n]+)/);
+  const scenarioMatch = markdown.match(/### Scenario audit\r?\n\r?\n([\s\S]*?)(?=\r?\n\r?\n### )/);
+  const sourceMatch = markdown.match(/^- \*\*Source-grounded:\*\*\s*([^\r\n]+)/m);
+  const expandedMatch = markdown.match(/^- \*\*Expanded:\*\*\s*([^\r\n]+)/m);
+  const demoMatch = markdown.match(/^\*\*Demonstration richness:\*\*\s*([^\r\n]+)/m);
+  const actionMatch = markdown.match(/^\*\*Action:\*\*\s*([^\r\n]+)/m);
   if (!scenarioMatch || !sourceMatch || !expandedMatch || !demoMatch || !actionMatch) {
-    throw new Error('M002 supersession is missing one or more required audit fields.');
+    const missing = [
+      ['scenario', scenarioMatch],
+      ['source-grounded', sourceMatch],
+      ['expanded', expandedMatch],
+      ['demonstration richness', demoMatch],
+      ['action', actionMatch],
+    ].filter(([, value]) => !value).map(([label]) => label);
+    throw new Error(`M002 supersession is missing parseable required field(s): ${missing.join(', ')}.`);
   }
 
   const scenario = clean(scenarioMatch[1].replace(/^\*\*PASS\.\*\*\s*/, '').replace(/\s+/g, ' '));
