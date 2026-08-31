@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Study — Bioethics Bench</title>
-  <meta name="description" content="Provisional results of the Bioethics Bench convergence study: QCCS v1 conv+ scores over cross-source policy pairs, reported against the full study design of every case, every model, three repeats." />
+  <meta name="description" content="Provisional results of the Bioethics Bench convergence study: QCCS v1 conv+ scores over cross-source policy pairs, navigable from the whole corpus down to a single scored pair." />
   <meta property="og:title" content="Study — Bioethics Bench" />
   <meta property="og:description" content="Provisional convergence-scoring results, reported against the full study design." />
   <meta property="og:type" content="website" />
@@ -17,9 +17,9 @@
     /* Page-specific: the reporting components this page needs and no other page has. Everything
        else - nav, page head, wrap, section labels, buttons, footer - comes from styles.css. */
 
-    /* The two data series. These are validated categorical steps, carried over unchanged from the
-       SACRE dashboard so the same study reads the same on both surfaces. They are data colours and
-       are deliberately not the site's chrome teal, which already means "Bench". */
+    /* The two representation series. Validated categorical steps, carried over unchanged from the
+       SACRE dashboard so the same study reads the same on both surfaces. Data colours, deliberately
+       not the site's chrome teal, which already means "Bench". */
     :root { --s-concise: #0d9488; --s-detailed: #c2410c; }
 
     .study-main { background: var(--soft); padding: 1.7rem 2rem 4rem; }
@@ -32,8 +32,9 @@
     .panel > p.sub { margin: 0 0 1.2rem; color: var(--muted); font-size: .88rem; max-width: 76ch; }
     h3.sub-head {
       font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
-      color: var(--muted); margin: 0 0 .65rem;
+      color: var(--muted); margin: 1.6rem 0 .65rem;
     }
+    h3.sub-head:first-child { margin-top: 0; }
 
     .provisional {
       display: inline-flex; align-items: center; gap: .45rem;
@@ -78,11 +79,80 @@
     }
     .study-main td { padding: .45rem .5rem; border-bottom: 1px solid var(--soft2); font-variant-numeric: tabular-nums; color: #334155; }
     td.id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .76rem; color: var(--muted); }
-    .sw-cell { display: inline-block; width: 9px; height: 9px; border-radius: 3px; margin-right: .45rem; vertical-align: -1px; }
+    tr.case-row { cursor: pointer; }
+    tr.case-row:hover { background: var(--soft); }
+    td.title { font-variant-numeric: normal; color: var(--muted); max-width: 26rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-    /* The completion matrix: the prospective shape of the finished study. */
-    table.matrix td { text-align: center; padding: .3rem .35rem; }
-    table.matrix th.model { text-align: left; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; color: #475569; font-weight: 500; }
+    /* Case and policy pills. Policy colours match the SACRE application's source colouring, so a
+       reader moving between the two surfaces sees one visual language. */
+    .pill {
+      display: inline-block; border: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: .7rem; font-weight: 700; padding: .18rem .45rem; border-radius: 5px;
+    }
+    button.pill { cursor: pointer; }
+    .pill.case { background: #ecfdf5; color: #047857; }
+    button.pill.case:hover { background: #a7f3d0; }
+    .pill.public { background: #dbeafe; color: #1d4ed8; }
+    .pill.expert { background: #d1fae5; color: #047857; }
+    .pill.framework { background: #ede9fe; color: #6d28d9; }
+
+    /* Convergence matrix. The colour ramp is the application's own heatmap palette, a diverging
+       rose - cream - teal centred on 50, so a study cell and a hand-run evaluation of the same case
+       are read the same way. */
+    table.matrix { border-collapse: separate; border-spacing: 2px; width: auto; }
+    table.matrix th, table.matrix td { border: 0; padding: 0; }
+    table.matrix th { padding: 0 .15rem .15rem; }
+    .cellbtn {
+      width: 46px; height: 32px; border: 0; border-radius: 5px; cursor: pointer;
+      font: inherit; font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums;
+      transition: transform .1s;
+    }
+    .cellbtn:hover { transform: scale(1.06); }
+    .cellbtn.blank { background: var(--soft2); cursor: default; }
+    .cellbtn.blank:hover { transform: none; }
+
+    .inspector { border: 1px solid #c4b5fd; background: #f5f3ff; border-radius: 10px; padding: .9rem; margin-top: 1rem; }
+    .inspector .row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+    .inspector .meta { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; color: var(--muted); }
+    .inspector .score { margin-left: auto; font-size: 1.35rem; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .inspector .texts { display: grid; gap: .55rem; grid-template-columns: 1fr 1fr; }
+    .inspector .texts div, .inspector .why {
+      background: #fff; border: 1px solid var(--line); border-radius: 8px;
+      padding: .6rem .7rem; font-size: .82rem; color: #334155; line-height: 1.55;
+    }
+    .inspector .why { margin-top: .55rem; color: var(--muted); }
+    .closebtn { border: 0; background: none; font: inherit; font-size: .76rem; color: var(--muted); cursor: pointer; text-decoration: underline; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: .3rem; }
+    .chip {
+      font-size: .72rem; font-variant-numeric: tabular-nums; color: #475569;
+      background: var(--soft2); border-radius: 5px; padding: .2rem .45rem;
+    }
+    .chip b { color: var(--ink); }
+    .chip span { color: #94a3b8; margin-left: .25rem; }
+
+    .toolbar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-bottom: .8rem; }
+    .toolbar input[type="search"] {
+      flex: 1 1 200px; min-width: 160px; padding: .45rem .6rem; font: inherit; font-size: .82rem;
+      border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
+    }
+    .seg { display: inline-flex; gap: .25rem; flex-wrap: wrap; }
+    .seg button {
+      border: 1px solid #cbd5e1; background: #fff; border-radius: 999px;
+      padding: .28rem .6rem; font: inherit; font-size: .74rem; font-weight: 700;
+      color: #475569; cursor: pointer;
+    }
+    .seg button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .seg .seg-label { font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #94a3b8; align-self: center; margin-right: .15rem; }
+
+    .backlink { border: 0; background: none; font: inherit; font-size: .8rem; font-weight: 700; color: #047857; cursor: pointer; padding: 0; margin-bottom: .5rem; }
+    .scenario { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: .75rem .85rem; font-size: .87rem; line-height: 1.6; color: #334155; max-width: 82ch; }
+    .case-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: .75rem; margin-bottom: .75rem; }
+    .case-head h4 { margin: .2rem 0 0; font-size: 1.1rem; letter-spacing: -.02em; color: var(--ink); }
+
+    /* Cells the study design has not filled yet. */
+    table.design td { text-align: center; padding: .3rem .35rem; }
+    table.design th.model { text-align: left; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; color: #475569; font-weight: 500; }
     .cell { display: inline-block; width: 100%; min-width: 56px; border-radius: 6px; font-size: .7rem; font-weight: 700; padding: .25rem .4rem; }
     .cell.done    { background: #d1fae5; color: #047857; }
     .cell.partial { background: #fef3c7; color: #92400e; }
@@ -92,7 +162,7 @@
 
     .callout { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: .85rem 1rem; font-size: .84rem; color: #78350f; max-width: 82ch; }
     .callout strong { color: #92400e; }
-    .note { font-size: .78rem; color: #94a3b8; margin: .5rem 0 0; max-width: 76ch; }
+    .note { font-size: .78rem; color: #94a3b8; margin: .5rem 0 0; max-width: 78ch; }
     .empty { text-align: center; color: var(--muted); font-size: .88rem; padding: 2rem 1rem; }
 
     .prov-table dl { display: grid; grid-template-columns: minmax(130px, max-content) 1fr; gap: .35rem 1.1rem; }
@@ -102,7 +172,7 @@
     .btn-sm {
       display: inline-flex; align-items: center; gap: .35rem; text-decoration: none;
       font-size: .78rem; font-weight: 700; padding: .45rem .85rem; border-radius: 8px;
-      border: 1px solid #cbd5e1; color: #475569; background: #fff;
+      border: 1px solid #cbd5e1; color: #475569; background: #fff; cursor: pointer;
     }
     .btn-sm.primary { background: var(--navy); border-color: var(--navy); color: #fff; }
 
@@ -111,6 +181,7 @@
       .panel { padding: 1.1rem; }
       .prov-table dl { grid-template-columns: 1fr; gap: .1rem; }
       .prov-table dt { margin-top: .55rem; }
+      .inspector .texts { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -129,13 +200,6 @@
     <div class="wrap">
       <span class="provisional">Provisional</span>
       <h1>Convergence across the corpus</h1>
-      <p>
-        Every case carries policy options drawn from three different kinds of source — public
-        deliberation, expert guidance, and normative frameworks. The study asks one question of each
-        cross-source pair: how far do these two policies converge on what to do? Scoring follows
-        QCCS v1 under the conv+ protocol, and every pair is an independent call, so the corpus can be
-        scored model by model.
-      </p>
       <div class="caveat">
         <strong>This page reports what has actually been executed so far, against the design of the
         finished study.</strong> Nothing here is a completed benchmark result. The numbers will change
@@ -176,7 +240,7 @@
         Each cell is one model's pass over the full corpus in both representations. The study is
         finished when every cell is filled.
       </p>
-      <div class="tbl-wrap"><table class="matrix" id="matrix"></table></div>
+      <div class="tbl-wrap"><table class="design" id="matrix"></table></div>
       <div class="matrix-key">
         <span><span class="cell done">done</span>executed and published</span>
         <span><span class="cell partial">partial</span>started, not complete</span>
@@ -210,94 +274,149 @@
     'use strict';
 
     var API = 'https://sacre.reflectiveequilibrium.ai/api/studies';
+    var CASES_URL = '../resources/cases/full-200-cases.v1.json';
     var SERIES = {
       concise:  { hex: 'var(--s-concise)',  label: 'Concise' },
       detailed: { hex: 'var(--s-detailed)', label: 'Detailed' }
     };
+    var PREFIX = { public: 'pub', expert: 'exp', framework: 'fw' };
+    var TYPES = ['public', 'expert', 'framework'];
 
-    // The full design. Cells are filled in from whatever reports have actually been published; a
-    // model with no published report stays pending rather than disappearing from the table, so the
-    // page always shows how much of the study is still outstanding.
+    // The full design. Cells are filled from published reports; a model with no report stays
+    // pending rather than disappearing, so the page always shows what is still outstanding.
     var DESIGN = {
-      cases: 200,
-      representations: 2,
-      repeats: 3,
+      cases: 200, representations: 2, repeats: 3,
       models: [
-        { id: 'gpt-5.6-sol',              provider: 'OpenAI' },
-        { id: 'gpt-5.4',                  provider: 'OpenAI' },
-        { id: 'gpt-5-mini',               provider: 'OpenAI' },
-        { id: 'gemini-2.5-pro',           provider: 'Google' },
-        { id: 'gemini-2.5-flash',         provider: 'Google' },
-        { id: 'gemini-2.5-flash-lite',    provider: 'Google' },
-        { id: 'claude-opus-5',            provider: 'Anthropic' },
-        { id: 'claude-sonnet-5',          provider: 'Anthropic' },
+        { id: 'gpt-5.6-sol', provider: 'OpenAI' },
+        { id: 'gpt-5.4', provider: 'OpenAI' },
+        { id: 'gpt-5-mini', provider: 'OpenAI' },
+        { id: 'gemini-2.5-pro', provider: 'Google' },
+        { id: 'gemini-2.5-flash', provider: 'Google' },
+        { id: 'gemini-2.5-flash-lite', provider: 'Google' },
+        { id: 'claude-opus-5', provider: 'Anthropic' },
+        { id: 'claude-sonnet-5', provider: 'Anthropic' },
         { id: 'claude-haiku-4-5-20251001', provider: 'Anthropic' },
-        { id: 'claude-fable-5',           provider: 'Anthropic' }
+        { id: 'claude-fable-5', provider: 'Anthropic' }
       ],
-      // The pair count for one model's pass over the corpus in both representations, from the
-      // corpus geometry rather than an assumed pairs-per-case: it is reported by the runner and
-      // restated here so the matrix can show a fraction even before anything is published.
-      pairsPerCell: 7073
+      // Cross-source pairs of two different policies. Both figures come from the runner's own
+      // enumerator, restated here so the completion matrix can show a fraction before anything is
+      // published. A cell is not simply twice the concise pass: 36 of the 200 cases have no
+      // detailed text distinct from their concise text, so there is nothing separate to score.
+      pairsPerRepresentation: 3685,
+      pairsPerCell: 6733
     };
 
     var $ = function (id) { return document.getElementById(id); };
-    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) {
-      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c];
-    }); };
-    var n = function (x) { return Number(x).toLocaleString(); };
+    var esc = function (s) {
+      return String(s === null || s === undefined ? '' : s)
+        .replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; });
+    };
+    var n = function (x) { return Number(x || 0).toLocaleString(); };
     var f1 = function (x) { return Number(x).toFixed(1); };
 
-    function paramId() {
-      var m = /[?&]id=([^&]+)/.exec(window.location.search);
-      return m ? decodeURIComponent(m[1]) : null;
+    /* ---------- the application's heatmap ramp ----------
+       Diverging rose - cream - teal centred on 50, the same five stops the SACRE application uses
+       for its Step 3 and Step 4 matrices. Carried over rather than re-chosen so a study cell and a
+       hand-run evaluation of the same case are read the same way. */
+    var HEAT_STOPS = [
+      { at: 0,   r: 190, g: 18,  b: 60  },
+      { at: 25,  r: 253, g: 195, b: 203 },
+      { at: 50,  r: 254, g: 249, b: 237 },
+      { at: 75,  r: 134, g: 239, b: 220 },
+      { at: 100, r: 15,  g: 118, b: 110 }
+    ];
+    function heatStyle(score) {
+      var v = Math.max(0, Math.min(100, Number(score)));
+      var lo = HEAT_STOPS[0], hi = HEAT_STOPS[HEAT_STOPS.length - 1];
+      for (var i = 0; i < HEAT_STOPS.length - 1; i++) {
+        if (v <= HEAT_STOPS[i + 1].at) { lo = HEAT_STOPS[i]; hi = HEAT_STOPS[i + 1]; break; }
+      }
+      var t = (v - lo.at) / ((hi.at - lo.at) || 1);
+      var r = Math.round(lo.r + (hi.r - lo.r) * t);
+      var g = Math.round(lo.g + (hi.g - lo.g) * t);
+      var b = Math.round(lo.b + (hi.b - lo.b) * t);
+      var luma = 0.299 * r + 0.587 * g + 0.114 * b;
+      return 'background:rgb(' + r + ',' + g + ',' + b + ');color:' + (luma < 160 ? '#fff' : '#1a1a1a');
+    }
+
+    function typeOfPolicyId(id) {
+      if (!id) return null;
+      if (id.indexOf('pub') === 0) return 'public';
+      if (id.indexOf('exp') === 0) return 'expert';
+      if (id.indexOf('fw') === 0) return 'framework';
+      return null;
+    }
+    function policyPill(id, title) {
+      return '<span class="pill ' + (typeOfPolicyId(id) || '') + '" title="' + esc(title || '') + '">' + esc(id) + '</span>';
+    }
+
+    /* ---------- state ---------- */
+    var state = {
+      report: null,      // the published summary
+      pairs: null,       // pair-level scores, fetched on first drill-down
+      cases: null,       // the local 200-case library, fetched on first drill-down
+      openCase: null,
+      openPair: null,
+      caseModel: null,
+      caseRep: null,
+      search: '',
+      loadingDetail: false
+    };
+
+    function parseKey(key, value) {
+      var parts = String(key).split('|');
+      var ab = parts[3] || '';
+      var d = ab.indexOf('-');
+      return {
+        cellId: (value && value.cellId) || parts[0] || null,
+        caseId: (value && value.caseId) || parts[1] || null,
+        representation: (value && value.representation) || parts[2] || null,
+        a: (value && value.a) || (d > 0 ? ab.slice(0, d) : null),
+        b: (value && value.b) || (d > 0 ? ab.slice(d + 1) : null)
+      };
+    }
+
+    /** The sacre id a case assigns each policy, and the policy behind it. */
+    function idMapFor(benchCase) {
+      var out = {};
+      TYPES.forEach(function (t) {
+        (benchCase.policies || []).filter(function (p) {
+          return (p.types || []).indexOf(t) >= 0;
+        }).forEach(function (p, i) { out[PREFIX[t] + (i + 1)] = p; });
+      });
+      return out;
     }
 
     /* ---------- completion matrix ---------- */
-
     function renderMatrix(reports) {
-      // A report contributes to the cell for each model it names. Repeats are not yet distinguished
-      // in a published report, so run 1 is credited and the rest stay pending until repeat runs
-      // are published under their own study ids.
       var byModel = {};
       reports.forEach(function (r) {
-        (r.models || []).forEach(function (m) {
-          if (!byModel[m]) byModel[m] = [];
-          byModel[m].push(r);
-        });
+        (r.models || []).forEach(function (m) { (byModel[m] = byModel[m] || []).push(r); });
       });
-
       var head = '<thead><tr><th class="model">model</th><th>provider</th>';
       for (var i = 1; i <= DESIGN.repeats; i++) head += '<th>run ' + i + '</th>';
-      head += '<th>pairs scored</th></tr></thead>';
-
-      var body = '<tbody>';
+      head += '<th>pairs scored</th></tr></thead><tbody>';
+      var body = '';
       DESIGN.models.forEach(function (m) {
         var reps = byModel[m.id] || [];
         var scored = reps.reduce(function (a, r) { return a + (r.scored || 0); }, 0);
         body += '<tr><th class="model">' + esc(m.id) + '</th>' +
           '<td style="text-align:left;color:var(--muted);font-size:.78rem">' + esc(m.provider) + '</td>';
         for (var i = 0; i < DESIGN.repeats; i++) {
-          var r = reps[i];
-          var cls, label;
+          var r = reps[i], cls, label;
           if (r) {
-            cls = r.complete ? 'done' : 'partial';
-            label = r.complete ? 'done' : Math.round((r.scored / DESIGN.pairsPerCell) * 100) + '%';
-          } else {
-            // Only two states are observable from published reports: a cell has one or it does
-            // not. Whether a model is currently runnable is a fact about credentials on the
-            // executing side, which this page cannot see and must not assert.
-            cls = 'pending'; label = 'pending';
-          }
+            var pct = Math.round((r.scored / DESIGN.pairsPerCell) * 100);
+            cls = pct >= 100 ? 'done' : 'partial';
+            label = pct >= 100 ? 'done' : pct + '%';
+          } else { cls = 'pending'; label = 'pending'; }
           body += '<td><span class="cell ' + cls + '">' + label + '</span></td>';
         }
-        body += '<td>' + (scored ? n(scored) : '<span style="color:var(--gray-400)">—</span>') + '</td></tr>';
+        body += '<td>' + (scored ? n(scored) : '<span style="color:#94a3b8">—</span>') + '</td></tr>';
       });
-      body += '</tbody>';
-      $('matrix').innerHTML = head + body;
+      $('matrix').innerHTML = head + body + '</tbody>';
     }
 
-    /* ---------- dashboard ---------- */
-
+    /* ---------- corpus level ---------- */
     function tile(v, k, s) {
       return '<div class="tile"><div class="v">' + v + '</div><div class="k">' + k + '</div>' +
         (s ? '<div class="s">' + s + '</div>' : '') + '</div>';
@@ -310,11 +429,9 @@
       reps.forEach(function (r) {
         (report.histogram[r] || []).forEach(function (c) { if (c > max) max = c; });
       });
-
       var legend = '<div class="legend">' + reps.map(function (r) {
         return '<span><span class="sw" style="background:' + SERIES[r].hex + '"></span>' + SERIES[r].label + '</span>';
       }).join('') + '</div>';
-
       var cols = '';
       for (var i = 0; i < report.bins; i++) {
         var bars = reps.map(function (r) {
@@ -322,18 +439,38 @@
           var h = max ? Math.max(c ? 2 : 0, (c / max) * 100) : 0;
           return '<div class="bar" style="height:' + h + '%;background:' + SERIES[r].hex + '"></div>';
         }).join('');
-        var label = reps.map(function (r) {
-          return SERIES[r].label + ' ' + n(report.histogram[r][i] || 0);
-        }).join(' · ');
-        cols += '<div class="col" data-bin="' + i + '" data-label="' + esc((i * 10) + '–' + (i * 10 + 9) + ': ' + label) + '">' + bars + '</div>';
+        var label = reps.map(function (r) { return SERIES[r].label + ' ' + n(report.histogram[r][i] || 0); }).join(' · ');
+        cols += '<div class="col" data-label="' + esc((i * 10) + '–' + (i * 10 + 9) + ': ' + label) + '">' + bars + '</div>';
       }
-
-      // The bar heights are relative, so the tallest bin is named: without it a reader can compare
-      // shapes but cannot tell whether a peak is forty pairs or four thousand.
-      var scale = '<p class="note" style="margin:-0.35rem 0 0.6rem">Bars are counts of scored pairs; the tallest bin holds ' + n(max) + '.</p>';
-      return '<h3 class="sub-head">Convergence score distribution</h3>' + legend + scale +
+      return '<h3 class="sub-head">Convergence score distribution</h3>' + legend +
+        '<p class="note" style="margin:-.35rem 0 .6rem">Bars are counts of scored pairs; the tallest bin holds ' + n(max) + '.</p>' +
         '<div class="chart" id="chart">' + cols + '</div>' +
         '<div class="axis"><span>0</span><span>50</span><span>100</span></div>';
+    }
+
+    function granularityBlock(report) {
+      var g = report.granularity;
+      if (!g) return '';
+      return '<h3 class="sub-head">Score resolution</h3>' +
+        '<p class="note" style="margin:0 0 .6rem;color:var(--muted);font-size:.84rem">The scale is 0–100, but the scorer used <b>' +
+        n(g.distinctValues) + '</b> distinct values, and ' + Math.round(g.multiplesOfTenShare * 100) +
+        '% of scores are multiples of ten. Differences finer than the step it actually uses are not differences it can express.</p>' +
+        '<div class="chips">' + g.topValues.map(function (v) {
+          return '<span class="chip"><b>' + v.value + '</b><span>×' + n(v.n) + '</span></span>';
+        }).join('') + '</div>';
+    }
+
+    function modelTable(report) {
+      var ms = report.models || [];
+      if (!ms.length) return '';
+      var rows = ms.map(function (m) {
+        return '<tr><td class="id">' + esc(m.model) + '</td><td>' + n(m.n) + '</td><td>' + f1(m.mean) +
+          '</td><td>' + m.median + '</td><td>' + f1(m.sd) + '</td><td>' + n(m.failed) + '</td></tr>';
+      }).join('');
+      return '<h3 class="sub-head">By model</h3><div class="tbl-wrap"><table>' +
+        '<thead><tr><th>model</th><th>pairs</th><th>mean</th><th>median</th><th>sd</th><th>failed</th></tr></thead>' +
+        '<tbody>' + rows + '</tbody></table></div>' +
+        (ms.length === 1 ? '<p class="note">One model so far, so nothing here is a between-model comparison.</p>' : '');
     }
 
     function repTable(report) {
@@ -341,71 +478,241 @@
       if (reps.length < 2) return '';
       var rows = reps.map(function (r) {
         var s = report.byRepresentation[r];
-        return '<tr><td><span class="sw-cell" style="background:' + SERIES[r].hex + '"></span>' + SERIES[r].label + '</td>' +
-          '<td>' + n(s.n) + '</td><td>' + f1(s.mean) + '</td><td>' + s.median + '</td><td>' + f1(s.sd) + '</td>' +
-          '<td>' + s.min + '–' + s.max + '</td></tr>';
+        return '<tr><td><span class="sw" style="display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:.45rem;background:' +
+          SERIES[r].hex + '"></span>' + SERIES[r].label + '</td><td>' + n(s.n) + '</td><td>' + f1(s.mean) +
+          '</td><td>' + s.median + '</td><td>' + f1(s.sd) + '</td><td>' + s.min + '–' + s.max + '</td></tr>';
       }).join('');
-      return '<h3 class="sub-head" style="margin-top:1.75rem">By representation</h3>' +
-        '<div class="tbl-wrap"><table><thead><tr><th>form</th><th>pairs</th><th>mean</th><th>median</th><th>sd</th><th>range</th></tr></thead>' +
+      return '<h3 class="sub-head">By representation</h3><div class="tbl-wrap"><table>' +
+        '<thead><tr><th>form</th><th>pairs</th><th>mean</th><th>median</th><th>sd</th><th>range</th></tr></thead>' +
         '<tbody>' + rows + '</tbody></table></div>' +
-        '<p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.5rem;max-width:76ch">' +
-        'One execution of each pair, so a difference between these rows is not yet a representation ' +
-        'effect: run-to-run variation is not separated from it without the repeats.</p>';
+        '<p class="note">One execution of each pair, so a difference between these rows is not yet a ' +
+        'representation effect: run-to-run variation is not separated from it without the repeats.</p>';
     }
 
-    function caseTable(report) {
-      var rows = (report.cases || []).slice(0, 40).map(function (c) {
-        return '<tr><td class="id">' + esc(c.id) + '</td><td>' + n(c.n) + '</td><td>' + f1(c.mean) +
-          '</td><td>' + f1(c.sd) + '</td><td style="color:var(--gray-500)">' + c.min + '–' + c.max + '</td></tr>';
-      }).join('');
-      if (!rows) return '';
-      return '<h3 class="sub-head" style="margin-top:1.75rem">Cases with the widest spread</h3>' +
-        '<p style="font-size:0.8125rem;color:var(--gray-600);margin-bottom:0.625rem;max-width:76ch">' +
-        'The cases where cross-source policies pull furthest apart. A high spread is what makes a ' +
-        'case discriminating; a case where everything converges tells the benchmark little.</p>' +
-        '<div class="tbl-wrap"><table><thead><tr><th>case</th><th>pairs</th><th>mean</th><th>sd</th><th>range</th></tr></thead>' +
-        '<tbody>' + rows + '</tbody></table></div>' +
-        '<p style="font-size:0.75rem;color:var(--gray-500);margin-top:0.5rem">Showing ' +
-        Math.min(40, report.cases.length) + ' of ' + n(report.cases.length) + ' cases.</p>';
-    }
-
-    function failures(report) {
+    function failureBlock(report) {
       var keys = Object.keys(report.errors || {});
       if (!keys.length) return '';
       var rows = keys.map(function (k) {
         return '<tr><td class="id">' + esc(k) + '</td><td>' + n(report.errors[k]) + '</td></tr>';
       }).join('');
-      return '<h3 class="sub-head" style="margin-top:1.75rem">Calls that failed</h3>' +
-        '<p style="font-size:0.8125rem;color:var(--gray-600);margin-bottom:0.625rem;max-width:76ch">' +
-        'Every pair is an independent call, so a failure removes one pair and is retryable on its ' +
-        'own. Failed pairs are excluded from the statistics above and counted here instead.</p>' +
+      return '<h3 class="sub-head">Calls that failed</h3>' +
+        '<p class="note" style="margin:0 0 .5rem;color:var(--muted);font-size:.84rem">Every pair is an independent call, so a failure removes one ' +
+        'pair and is retryable on its own. Failed pairs are excluded from the statistics above and counted here instead.</p>' +
         '<div class="tbl-wrap"><table><thead><tr><th>error</th><th>pairs</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
     }
 
-    function renderResults(report) {
+    function caseTable(report) {
+      var all = report.cases || [];
+      var q = state.search.trim().toLowerCase();
+      var lib = state.cases || {};
+      var list = !q ? all : all.filter(function (c) {
+        var bc = lib[c.id];
+        return c.id.toLowerCase().indexOf(q) >= 0 || (bc && String(bc.title || '').toLowerCase().indexOf(q) >= 0);
+      });
+      var rows = list.slice(0, 80).map(function (c) {
+        var bc = lib[c.id];
+        return '<tr class="case-row" data-case="' + esc(c.id) + '">' +
+          '<td><button class="pill case" data-case="' + esc(c.id) + '" title="' + esc(bc ? bc.concise : 'Open this case') + '">' + esc(c.id) + '</button></td>' +
+          '<td class="title" title="' + esc(bc ? bc.concise : '') + '">' + esc(bc ? bc.title : '') + '</td>' +
+          '<td>' + n(c.n) + '</td><td>' + f1(c.mean) + '</td><td>' + f1(c.sd) + '</td>' +
+          '<td style="color:var(--muted)">' + c.min + '–' + c.max + '</td></tr>';
+      }).join('');
+      return '<h3 class="sub-head">Cases — widest spread first</h3>' +
+        '<p class="note" style="margin:0 0 .6rem;color:var(--muted);font-size:.84rem">Where cross-source policies pull furthest apart. A high spread is ' +
+        'what makes a case discriminating; a case where everything converges tells the benchmark ' +
+        'little. Open a case for its convergence matrix and the calls behind it.</p>' +
+        '<div class="toolbar"><input type="search" id="case-search" placeholder="Filter by case id or title…" value="' + esc(state.search) + '" /></div>' +
+        '<div class="tbl-wrap"><table><thead><tr><th>case</th><th>title</th><th>pairs</th><th>mean</th><th>sd</th><th>range</th></tr></thead>' +
+        '<tbody>' + (rows || '<tr><td colspan="6" class="empty">No case matches that filter.</td></tr>') + '</tbody></table></div>' +
+        '<p class="note">Showing ' + Math.min(80, list.length) + ' of ' + n(list.length) +
+        (list.length !== all.length ? ' matching (' + n(all.length) + ' in the study)' : '') + '.</p>';
+    }
+
+    /** Pairs of one policy with itself, which a run made before they were excluded still contains. */
+    function selfPairSummary() {
+      if (!state.pairs || !state.cases) return null;
+      var maps = {}, self = 0, kept = [];
+      state.pairs.forEach(function (p) {
+        if (p.status !== 'done') return;
+        var k = parseKey(p.key, p);
+        var bc = state.cases[k.caseId];
+        if (!bc) { kept.push(p.score); return; }
+        if (!maps[k.caseId]) maps[k.caseId] = idMapFor(bc);
+        var m = maps[k.caseId];
+        if (m[k.a] && m[k.b] && m[k.a] === m[k.b]) self += 1; else kept.push(p.score);
+      });
+      if (!self) return null;
+      var mean = kept.reduce(function (a, b) { return a + b; }, 0) / (kept.length || 1);
+      return { count: self, of: self + kept.length, meanWithout: mean };
+    }
+
+    function renderCorpus() {
+      var report = state.report;
       var o = report.overall;
       var pct = report.completeness.planned
         ? Math.round((report.completeness.scored / report.completeness.planned) * 100) : null;
 
       $('results-title').textContent = 'Results — ' + (report.label || report.id);
-      $('results-sub').innerHTML =
-        esc((report.provenance.models || []).join(', ')) + ' · QCCS v1 · conv+' +
-        (pct != null ? ' · ' + pct + '% of this cell executed' : '') +
+      $('results-sub').innerHTML = esc((report.provenance.models || []).join(', ')) + ' · QCCS v1 · conv+' +
+        (pct !== null ? ' · ' + pct + '% of this cell executed' : '') +
         (report.completeness.complete === false ? ' · <strong>incomplete</strong>' : '');
 
-      var html = '<div class="tiles">' +
+      var warn = '';
+      var self = selfPairSummary();
+      if (self) {
+        warn = '<div class="callout" style="margin-bottom:1.1rem"><strong>' + n(self.count) + ' of ' + n(self.of) +
+          ' scored pairs are one policy against itself.</strong> 171 policies in the corpus carry two ' +
+          'types, so they appeared in two source buckets and were paired with their own text. Every ' +
+          'such pair scores 100. Excluding them, the mean is <b>' + f1(self.meanWithout) + '</b> rather than <b>' +
+          f1(o.mean) + '</b>. The runner no longer produces these; a re-run will not contain them.</div>';
+      }
+
+      $('results').innerHTML = warn +
+        '<div class="tiles">' +
         tile(n(o.n), 'pairs scored', 'cross-source') +
         tile(n(report.cases.length), 'cases covered', 'of ' + DESIGN.cases) +
         tile(f1(o.mean), 'mean convergence', 'median ' + o.median) +
         tile(f1(o.sd), 'spread (sd)', o.min + '–' + o.max) +
         tile(n(report.completeness.failed), 'failed calls', report.completeness.failed ? 'retryable' : 'none') +
         '</div><div style="margin-top:1.75rem">' + histogram(report) + '</div>' +
-        repTable(report) + failures(report) + caseTable(report);
+        granularityBlock(report) + modelTable(report) + repTable(report) +
+        failureBlock(report) + caseTable(report) +
+        (state.loadingDetail ? '<p class="note">Loading case detail…</p>' : '');
 
-      $('results').innerHTML = html;
       attachHover();
+      attachCaseHandlers();
     }
 
+    /* ---------- case level ---------- */
+    function renderCase() {
+      var id = state.openCase;
+      var bc = (state.cases || {})[id];
+      var all = (state.pairs || []).filter(function (p) {
+        return p.status === 'done' && parseKey(p.key, p).caseId === id;
+      }).map(function (p) { return Object.assign({}, p, parseKey(p.key, p)); });
+
+      var models = [], reps = [];
+      all.forEach(function (p) {
+        if (models.indexOf(p.model) < 0) models.push(p.model);
+        if (reps.indexOf(p.representation) < 0) reps.push(p.representation);
+      });
+      models.sort(); reps.sort();
+      var model = models.indexOf(state.caseModel) >= 0 ? state.caseModel : models[0];
+      var rep = reps.indexOf(state.caseRep) >= 0 ? state.caseRep : reps[0];
+      var shown = all.filter(function (p) { return p.model === model && p.representation === rep; });
+
+      var idMap = bc ? idMapFor(bc) : {};
+      var textOf = function (pid) {
+        var p = idMap[pid];
+        if (!p) return '';
+        return (rep === 'detailed' && p.text_detailed) ? p.text_detailed : p.text;
+      };
+
+      // Rows and columns are the ids that actually appear in this case's pairs, in source order.
+      // Derived from the pairs rather than the library, so a policy that was never scored does not
+      // get an empty row implying that it was.
+      var ids = [];
+      shown.forEach(function (p) {
+        if (ids.indexOf(p.a) < 0) ids.push(p.a);
+        if (ids.indexOf(p.b) < 0) ids.push(p.b);
+      });
+      var order = { public: 0, expert: 1, framework: 2 };
+      ids.sort(function (x, y) {
+        var d = (order[typeOfPolicyId(x)] !== undefined ? order[typeOfPolicyId(x)] : 9) -
+                (order[typeOfPolicyId(y)] !== undefined ? order[typeOfPolicyId(y)] : 9);
+        return d || x.localeCompare(y, undefined, { numeric: true });
+      });
+      var grid = {};
+      shown.forEach(function (p) { grid[p.a + '|' + p.b] = p; grid[p.b + '|' + p.a] = p; });
+
+      var head = '<thead><tr><th></th>' + ids.map(function (c) {
+        return '<th>' + policyPill(c, textOf(c)) + '</th>';
+      }).join('') + '</tr></thead><tbody>';
+      var body = ids.map(function (r) {
+        return '<tr><th style="text-align:right">' + policyPill(r, textOf(r)) + '</th>' + ids.map(function (c) {
+          var p = r === c ? null : grid[r + '|' + c];
+          if (!p) return '<td><span class="cellbtn blank"></span></td>';
+          return '<td><button class="cellbtn" data-key="' + esc(p.key) + '" style="' + heatStyle(p.score) +
+            '" title="' + esc(r + ' × ' + c + ': ' + p.score) + '">' + p.score + '</button></td>';
+        }).join('') + '</tr>';
+      }).join('');
+
+      var cells = (state.report.cells || []).filter(function (c) { return c.caseId === id; })
+        .sort(function (a, b) { return b.mean - a.mean; });
+      var crossRows = cells.length ? cells.map(function (c) {
+        return '<tr><td class="id">' + esc(c.model) + '</td><td style="text-transform:capitalize">' + esc(c.representation) +
+          '</td><td>' + n(c.n) + '</td><td>' + f1(c.mean) + '</td><td>' + f1(c.sd) + '</td>' +
+          '<td style="color:var(--muted)">' + c.min + '–' + c.max + '</td></tr>';
+      }).join('') : '';
+
+      var segs = '';
+      if (models.length > 1 || reps.length > 1) {
+        segs = '<div class="toolbar">';
+        if (models.length > 1) {
+          segs += '<div class="seg"><span class="seg-label">model</span>' + models.map(function (m) {
+            return '<button data-model="' + esc(m) + '" aria-pressed="' + (m === model) + '">' + esc(m) + '</button>';
+          }).join('') + '</div>';
+        }
+        if (reps.length > 1) {
+          segs += '<div class="seg"><span class="seg-label">form</span>' + reps.map(function (r) {
+            return '<button data-rep="' + esc(r) + '" aria-pressed="' + (r === rep) + '" style="text-transform:capitalize">' + esc(r) + '</button>';
+          }).join('') + '</div>';
+        }
+        segs += '</div>';
+      }
+
+      $('results-title').textContent = 'Case ' + id;
+      $('results-sub').innerHTML = esc(model) + ' · ' + esc(rep) + ' · ' + n(shown.length) + ' scored pairs';
+
+      $('results').innerHTML =
+        '<button class="backlink" id="back">← All cases</button>' +
+        '<div class="case-head"><div>' +
+          '<span class="pill case">' + esc(id) + '</span>' +
+          '<h4>' + esc(bc ? bc.title : 'Case') + '</h4>' +
+        '</div>' +
+        '<a class="btn-sm" href="../cases/#' + esc(id) + '">Case and sources ↗</a></div>' +
+        (bc ? '<div class="scenario">' + esc(rep === 'detailed' && bc.detailed ? bc.detailed : bc.concise) + '</div>' : '') +
+        segs +
+        '<h3 class="sub-head">Convergence matrix</h3>' +
+        '<p class="note" style="margin:0 0 .7rem;color:var(--muted);font-size:.84rem">Each cell is one QCCS call: how far these two policies ' +
+        'converge on what to do. Only cross-source pairs are scored, so same-source cells are blank ' +
+        'by design rather than missing. Click a cell for the call behind it.</p>' +
+        '<div class="tbl-wrap"><table class="matrix">' + head + body + '</tbody></table></div>' +
+        '<div id="inspector"></div>' +
+        (crossRows
+          ? '<h3 class="sub-head">This case across ' + (cells.length === 1 ? 'the model run' : cells.length + ' cells') + '</h3>' +
+            '<div class="tbl-wrap"><table><thead><tr><th>model</th><th>form</th><th>pairs</th><th>mean</th><th>sd</th><th>range</th></tr></thead>' +
+            '<tbody>' + crossRows + '</tbody></table></div>' +
+            (cells.length === 1 ? '<p class="note">One cell so far. A second model or repeat here is what makes this a comparison.</p>' : '')
+          : '<p class="note">Per-cell statistics are not in this report. Re-publishing the study from ' +
+            'SACRE adds them.</p>');
+
+      if (state.openPair) renderInspector(idMap, textOf);
+      attachCaseViewHandlers();
+    }
+
+    function renderInspector(idMap, textOf) {
+      var p = (state.pairs || []).filter(function (x) { return x.key === state.openPair; })[0];
+      if (!p) { $('inspector').innerHTML = ''; return; }
+      var k = parseKey(p.key, p);
+      $('inspector').innerHTML =
+        '<div class="inspector">' +
+          '<div class="row">' + policyPill(k.a) + '<span style="color:#94a3b8">×</span>' + policyPill(k.b) +
+          '<span class="meta">' + esc(k.caseId) + ' · ' + esc(p.model) + ' · ' + esc(k.representation) + '</span>' +
+          '<span class="score">' + p.score + '</span>' +
+          '<button class="closebtn" id="close-pair">close</button></div>' +
+          '<div class="texts"><div>' + (esc(textOf(k.a)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') +
+          '</div><div>' + (esc(textOf(k.b)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') + '</div></div>' +
+          '<div class="why">' + (p.why
+            ? esc(p.why)
+            : 'No stated reason was recorded for this call. Runs executed before justifications were ' +
+              'captured keep their scores but not the model’s reasoning; a re-run records both.') + '</div>' +
+        '</div>';
+      var close = $('close-pair');
+      if (close) close.addEventListener('click', function () { state.openPair = null; renderCase(); });
+    }
+
+    /* ---------- handlers ---------- */
     function attachHover() {
       var chart = $('chart');
       if (!chart) return;
@@ -413,7 +720,6 @@
       tip.className = 'tip';
       tip.style.display = 'none';
       chart.appendChild(tip);
-      // The hit target is the whole column, not the bar, so a near-empty bin is still hoverable.
       Array.prototype.forEach.call(chart.querySelectorAll('.col'), function (col) {
         col.addEventListener('mouseenter', function () {
           tip.textContent = col.getAttribute('data-label');
@@ -425,6 +731,69 @@
       });
     }
 
+    function attachCaseHandlers() {
+      var search = $('case-search');
+      if (search) {
+        search.addEventListener('input', function () {
+          state.search = search.value;
+          renderCorpus();
+          var again = $('case-search');
+          if (again) { again.focus(); again.setSelectionRange(again.value.length, again.value.length); }
+        });
+      }
+      Array.prototype.forEach.call(document.querySelectorAll('[data-case]'), function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          openCase(el.getAttribute('data-case'));
+        });
+      });
+    }
+
+    function attachCaseViewHandlers() {
+      var back = $('back');
+      if (back) back.addEventListener('click', function () {
+        state.openCase = null; state.openPair = null;
+        location.hash = '';
+        renderCorpus();
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('.cellbtn[data-key]'), function (el) {
+        el.addEventListener('click', function () { state.openPair = el.getAttribute('data-key'); renderCase(); });
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-model]'), function (el) {
+        el.addEventListener('click', function () { state.caseModel = el.getAttribute('data-model'); state.openPair = null; renderCase(); });
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-rep]'), function (el) {
+        el.addEventListener('click', function () { state.caseRep = el.getAttribute('data-rep'); state.openPair = null; renderCase(); });
+      });
+    }
+
+    /* ---------- drill-down data, fetched only when a reader asks for it ---------- */
+    function loadDetail() {
+      if (state.pairs && state.cases) return Promise.resolve();
+      state.loadingDetail = true;
+      return Promise.all([
+        state.pairs ? Promise.resolve(null) : fetch(API + '?id=' + encodeURIComponent(state.report.id) + '&pairs=1')
+          .then(function (r) { return r.ok ? r.json() : { pairs: [] }; })
+          .then(function (b) { state.pairs = b.pairs || []; }),
+        state.cases ? Promise.resolve(null) : fetch(CASES_URL)
+          .then(function (r) { return r.ok ? r.json() : { cases: [] }; })
+          .then(function (b) {
+            var map = {};
+            (b.cases || b || []).forEach(function (c) { map[c.id] = c; });
+            state.cases = map;
+          })
+      ]).then(function () { state.loadingDetail = false; });
+    }
+
+    function openCase(id) {
+      state.openCase = id; state.openPair = null;
+      location.hash = id;
+      if (state.pairs && state.cases) { renderCase(); return; }
+      $('results').innerHTML = '<div class="empty">Loading case detail…</div>';
+      loadDetail().then(renderCase);
+    }
+
+    /* ---------- provenance ---------- */
     function renderProvenance(report) {
       var p = report ? report.provenance : null;
       var rows = [
@@ -441,12 +810,11 @@
         }
         rows.push(['Executed', p.runAt ? new Date(p.runAt).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—']);
         rows.push(['Published', report.publishedAt ? new Date(report.publishedAt).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—']);
-        rows.push(['Repeats in this report', String(p.repeats != null ? p.repeats : 1)]);
+        rows.push(['Repeats in this report', String(p.repeats !== null && p.repeats !== undefined ? p.repeats : 1)]);
       }
       $('prov').innerHTML = rows.map(function (r) {
         return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>';
       }).join('');
-
       if (report) {
         $('downloads').innerHTML =
           '<a class="btn-sm primary" href="' + API + '?id=' + encodeURIComponent(report.id) + '">Report JSON</a>' +
@@ -456,13 +824,16 @@
     }
 
     /* ---------- load ---------- */
-
-    $('design-pairs').textContent =
-      n(DESIGN.pairsPerCell * DESIGN.models.length * DESIGN.repeats);
+    $('design-pairs').textContent = n(DESIGN.pairsPerCell * DESIGN.models.length * DESIGN.repeats);
 
     function fail(message) {
       $('results-sub').textContent = '';
       $('results').innerHTML = '<div class="empty">' + esc(message) + '</div>';
+    }
+
+    function paramId() {
+      var m = /[?&]id=([^&]+)/.exec(window.location.search);
+      return m ? decodeURIComponent(m[1]) : null;
     }
 
     fetch(API, { headers: { Accept: 'application/json' } })
@@ -482,9 +853,18 @@
         return fetch(API + '?id=' + encodeURIComponent(pick.id))
           .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
           .then(function (report) {
-            if (!report.overall) { fail('That study has no scored pairs yet.'); renderProvenance(report); return; }
-            renderResults(report);
+            state.report = report;
             renderProvenance(report);
+            if (!report.overall) { fail('That study has no scored pairs yet.'); return; }
+            renderCorpus();
+            // Case detail is worth having ready: the corpus table wants case titles, and the
+            // self-pair check needs the library. Fetched after first paint so it costs no
+            // time-to-first-render, and the tables re-render once it lands.
+            loadDetail().then(function () {
+              var deep = location.hash.slice(1);
+              if (deep && (state.cases || {})[deep]) openCase(deep);
+              else if (!state.openCase) renderCorpus();
+            });
           });
       })
       .catch(function (e) {
