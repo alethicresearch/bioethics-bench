@@ -28,6 +28,10 @@ Schema: `schemas/candidate-universe.schema.json`
 
 Builder: `scripts/build-rich-candidate-universes.mjs`
 
+Validator: `scripts/validate-candidate-universe.mjs`
+
+Canonical generated resource: `resources/case-families/full-200-rich-candidate-universes.v1.json`
+
 Canonical research source: `docs/full-corpus/audit-v2/`
 
 This object contains:
@@ -48,6 +52,8 @@ This object contains:
 It **does not assign Public, Expert, or Framework roles**.
 
 The audit's ✓ mark is intentionally not renamed `direct_source=true`. Some marked positions are framework-derived, governance-derived, source-informed, or otherwise anchored at different evidentiary levels. The exact annotation is retained so a coarse machine category cannot replace the scholarly provenance judgment.
+
+The neutral resource lives under `resources/`, not `data/`, because `data/` is the represented executable/result layer and is governed by the generic record validator. Keeping the neutral research object separate prevents it from being mistaken for an executable case while still subjecting it to its own schema and cross-family invariants.
 
 ### C. SACRE projection manifest
 
@@ -111,7 +117,7 @@ Instead:
 
 This protects Featured v1 and prevents version churn in current Full Corpus drafts.
 
-## 6. Builder behavior
+## 6. Builder and validation behavior
 
 `node scripts/build-rich-candidate-universes.mjs`
 
@@ -121,16 +127,18 @@ Validates that:
 - they cover exactly M001–M200 once;
 - M047 is replaced by its post-duplicate supersession audit;
 - every case has a Scenario audit, candidate universe, source-grounded status, expanded status, demonstration richness, and action;
-- every parsed candidate carries a terminal provenance annotation;
+- every parsed candidate carries a provenance annotation;
 - parsed candidate count equals the reviewed count.
 
 `--write` emits:
 
-`data/case-families/full-200-rich-candidate-universes.v1.json`
+`resources/case-families/full-200-rich-candidate-universes.v1.json`
 
 `--check` requires the committed generated object to equal the audits exactly.
 
-Until the generated object is independently reviewed and committed, the default validation mode checks the canonical audit source without pretending a final release object already exists.
+`node scripts/validate-candidate-universe.mjs` additionally validates the generated object against `schemas/candidate-universe.schema.json` and checks exact M001–M200 ordering, family identity, candidate-count agreement, sequential candidate IDs, conservative within-family text uniqueness, and existence of every linked audit/deep-case file.
+
+The generated object is now committed and standard CI requires both exact audit→resource regeneration and dedicated resource validation.
 
 ## 7. Projection mapping is deliberately not automatic
 
@@ -140,16 +148,15 @@ For existing executable families, the mapping should be reviewed against the cur
 
 ## 8. Release gate
 
-Before the Full Corpus is frozen:
+The Full-200 neutral candidate-universe resource is now machine-readable and CI-valid. It is **not yet a frozen release object**. Before Full Corpus release freeze:
 
-1. generate and commit the neutral candidate-universe resource;
-2. independently review every candidate/provenance line;
-3. resolve remaining Featured crosswalk identities;
-4. create reviewed source-grounded projection manifests where warranted;
-5. create expanded projection manifests only for prespecified study/demo purposes;
-6. update/create represented concise/detailed records only where the projection requires a new version;
-7. verify representation invariance, sources/locators, source badges, geometry, aggregation, and hashes;
-8. generate release statistics from the validated machine-readable objects;
-9. freeze/version the release.
+1. independently review every candidate/provenance line;
+2. resolve remaining Featured crosswalk identities;
+3. create reviewed source-grounded projection manifests where warranted;
+4. create expanded projection manifests only for prespecified study/demo purposes;
+5. update/create represented concise/detailed records only where the projection requires a new version;
+6. verify representation invariance, sources/locators, source badges, geometry, aggregation, and hashes;
+7. generate release statistics from the validated machine-readable objects;
+8. freeze/version the release.
 
 P3 confirmatory execution remains blocked until the resource/projection used by P3 is explicitly frozen and preregistered.
