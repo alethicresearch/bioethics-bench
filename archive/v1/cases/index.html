@@ -8,7 +8,7 @@
   <meta property="og:title" content="Featured Cases — Bioethics Bench" />
   <meta property="og:description" content="Twenty Featured case families, each with concise and detailed representations of one decision problem." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="../../assets/alethic.png" />
+  <link rel="icon" href="../../../assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -266,10 +266,10 @@
 <body>
 
   <nav>
-    <a href="../" class="nav-logo">Bioethics<em>Bench</em></a>
+    <a href="../../../" class="nav-logo">Bioethics<em>Bench</em></a>
     <ul class="nav-links">
-      <li><a href="../#domains">Domains</a></li>
-      <li><a href="../#evaluation">Evaluation</a></li>
+      <li><a href="../../index.html#domains">Domains</a></li>
+      <li><a href="../../index.html#evaluation">Evaluation</a></li>
       <li><a href="./">Featured Cases</a></li>
       <li><a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a></li>
     </ul>
@@ -328,7 +328,7 @@
       Bioethics Bench · Featured v1 corpus, editorial review ·
       <a href="https://github.com/alethicresearch/bioethics-bench/tree/main/data/featured">Records on GitHub</a> ·
       <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/CONTENT-LICENSE.md">Content license (CC BY 4.0)</a> ·
-      <a href="../#cite">How to cite</a>
+      <a href="../../index.html#cite">How to cite</a>
     </div>
   </footer>
 
@@ -382,7 +382,7 @@
 
     function fetchRecord(entry) {
       if (state.records[entry.record_id]) return Promise.resolve(state.records[entry.record_id]);
-      return fetch('../../' + entry.path).then(function (r) {
+      return fetch('../../../' + entry.path).then(function (r) {
         if (!r.ok) throw new Error('could not load ' + entry.record_id);
         return r.json();
       }).then(function (json) {
@@ -571,7 +571,7 @@
     document.getElementById('q').addEventListener('input', function () { state.q = this.value; render(); });
     document.getElementById('domain').addEventListener('change', function () { state.domain = this.value; render(); });
 
-    fetch('../../data/featured/index.json').then(function (r) {
+    fetch('../../../data/featured/index.json').then(function (r) {
       if (!r.ok) throw new Error('could not load the Featured corpus index');
       return r.json();
     }).then(function (index) {

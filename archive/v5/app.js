@@ -1,7 +1,7 @@
 /* Bioethics Bench /v5 — loads the released records directly, so the page cannot
    drift from the corpus. No hand-copied case text lives here. */
 
-const MANIFEST = '../releases/full-corpus-v1-completion-candidate/manifest.json';
+const MANIFEST = '../../releases/full-corpus-v1-completion-candidate/manifest.json';
 
 const AREAS = {
   'consent-capacity-refusal':'Consent & capacity',
@@ -129,7 +129,7 @@ async function show(id, { scroll = false } = {}) {
   for (const el of document.querySelectorAll('.idx-item')) el.classList.toggle('on', el.dataset.id === id);
   pane.innerHTML = '<p class="loading">Loading record…</p>';
   try {
-    if (!state.loaded.has(id)) state.loaded.set(id, await (await fetch(`../${entry.path}`)).json());
+    if (!state.loaded.has(id)) state.loaded.set(id, await (await fetch(`../../${entry.path}`)).json());
     if (state.current !== id) return;
     pane.innerHTML = renderDetail(state.loaded.get(id), entry);
   } catch {
@@ -204,7 +204,7 @@ async function boot() {
   }
 
   const records = await Promise.all([...byCase.values()].map(async (m) => {
-    try { return { m, rec: await (await fetch(`../${m.path}`)).json() }; }
+    try { return { m, rec: await (await fetch(`../../${m.path}`)).json() }; }
     catch { return null; }
   }));
 

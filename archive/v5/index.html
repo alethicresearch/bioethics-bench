@@ -8,14 +8,14 @@
   <meta property="og:title" content="Bioethics Bench" />
   <meta property="og:description" content="A shared research resource for computational bioethics." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="../assets/alethic.png" />
+  <link rel="icon" href="../../assets/alethic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--navy:#0c1445;--navy-dark:#080e30;--navy-mid:#162060;--teal:#10b981;--teal-light:#34d399;--white:#fff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-400:#94a3b8;--gray-500:#64748b;--gray-600:#475569;--gray-800:#1e293b;--gray-900:#0f172a;--font:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','Fira Code',monospace}
-    html{scroll-behavior:smooth}body{font-family:var(--font);color:var(--gray-800);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}
+    html{scroll-behavior:smooth;scroll-padding-top:76px}body{font-family:var(--font);color:var(--gray-800);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}
     nav{position:sticky;top:0;z-index:100;background:rgba(8,14,48,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);padding:0 2rem;height:58px;display:flex;align-items:center;justify-content:space-between}
     .nav-logo{font-size:.9375rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.02em;display:flex;gap:.125rem}.nav-logo em{font-style:normal;color:var(--teal)}
     .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}.nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.8125rem;font-weight:500;padding:.375rem .75rem;border-radius:6px;transition:.15s}.nav-links a:hover{color:#fff;background:rgba(255,255,255,.07)}.nav-links .nav-cta{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);color:var(--teal-light);margin-left:.5rem}
@@ -40,17 +40,65 @@
     footer{background:var(--gray-900);border-top:1px solid rgba(255,255,255,.05);padding:2.5rem 2rem}.footer-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}.footer-brand{font-size:.9375rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.02em}.footer-brand em{font-style:normal;color:var(--teal)}.footer-links{display:flex;gap:1.25rem}.footer-links a{font-size:.8rem;color:rgba(255,255,255,.35);text-decoration:none}
     @media(max-width:860px){.pipeline-track{grid-template-columns:1fr}.pipe-arrow{transform:rotate(90deg);padding:.5rem 0}.modes-grid,.candidate-grid{grid-template-columns:1fr}}
     @media(max-width:640px){nav{padding:0 1.25rem}.nav-links{display:none}section{padding:4rem 1.25rem}.hero{padding:5rem 1.25rem 4rem}.hero-provenance{gap:1.5rem}.record-row{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.sep{display:none}}
+
+    /* ── CASES ── */
+    .cases-bg{background:var(--off-white)}
+    .controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:2rem 0 1.5rem}
+    .controls input,.controls select{font-family:var(--font);font-size:.9rem;padding:.65rem .9rem;border:1px solid var(--gray-200);border-radius:8px;background:#fff;color:var(--gray-800);outline:none}
+    .controls input{flex:1 1 300px}.controls input:focus,.controls select:focus{border-color:rgba(16,185,129,.55)}
+    .count{font-family:var(--mono);font-size:.75rem;color:var(--gray-400);margin-left:auto}
+    .browser{display:grid;grid-template-columns:300px 1fr;gap:1.5rem;align-items:start}
+    /* Index */
+    .index{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:.5rem;position:sticky;top:74px;max-height:calc(100vh - 96px);overflow-y:auto}
+    .idx-group{padding:.35rem 0}
+    .idx-area{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;color:var(--gray-400);padding:.55rem .75rem .4rem;display:flex;justify-content:space-between}
+    .idx-area span{color:var(--gray-300)}
+    .idx-item{display:block;padding:.5rem .75rem;border-radius:7px;font-size:.83rem;line-height:1.4;color:var(--gray-600);text-decoration:none;border-left:2px solid transparent}
+    .idx-item:hover{background:var(--off-white);color:var(--gray-900)}
+    .idx-item.on{background:rgba(16,185,129,.08);border-left-color:var(--teal);color:var(--gray-900);font-weight:600}
+    .idx-empty{padding:1rem .75rem;font-size:.85rem;color:var(--gray-400)}
+    /* Detail */
+    .detail{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:1.75rem 2rem 1.5rem;min-height:420px}
+    .detail-head{margin-bottom:1.1rem}
+    .detail-head h3{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;color:var(--gray-900);margin:.5rem 0 0;line-height:1.25}
+    .tag{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.09em;color:var(--teal)}
+    .detail .q,.detail .scenario,.assume,.pos{max-width:78ch}
+    .q{font-size:1rem;font-weight:700;color:var(--gray-900);margin:0 0 .6rem;letter-spacing:-.015em;line-height:1.5}
+    .scenario{margin:0 0 1.25rem}
+    .assume{background:var(--off-white);border:1px solid var(--gray-200);border-radius:10px;padding:.9rem 1.1rem;margin:0 0 1.5rem;font-size:.85rem;color:var(--gray-500)}
+    .assume b{display:block;font-family:var(--mono);font-size:.63rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-400);font-weight:500;margin-bottom:.45rem}
+    .assume ul{margin:0;padding-left:1.1rem;line-height:1.6}
+    .grp{margin-bottom:1.4rem}
+    .grp-h{font-family:var(--mono);font-size:.63rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.7rem;font-weight:500}
+    .grp-h .n{color:var(--gray-400)}
+    .pos{border-left:2px solid var(--gray-200);padding-left:1.15rem;margin-bottom:1rem}
+    .pos:hover{border-left-color:var(--teal)}
+    .pos p{color:var(--gray-600);margin-bottom:.4rem}
+    .basis{display:inline-block;font-size:.68rem;font-weight:600;color:var(--teal);background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.22);border-radius:100px;padding:.1rem .6rem;margin-left:.45rem;white-space:nowrap;vertical-align:1px}
+    .srcs{font-size:.79rem;color:var(--gray-400);line-height:1.6}
+    .srcs a{color:var(--gray-400);text-decoration:underline;text-underline-offset:2px}.srcs a:hover{color:var(--teal)}
+    .meta{display:flex;flex-wrap:wrap;gap:1.25rem;font-family:var(--mono);font-size:.68rem;color:var(--gray-400);border-top:1px solid var(--gray-100);padding-top:1rem;margin-top:1.5rem}
+    .meta a{color:var(--teal);text-decoration:none}.meta a:hover{text-decoration:underline}
+    .stepper{display:flex;justify-content:space-between;gap:1rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--gray-100)}
+    .step{font-size:.8rem;color:var(--gray-500);text-decoration:none;max-width:46%;line-height:1.4}
+    .step:hover{color:var(--teal)}.step.next{text-align:right}
+    .loading{color:var(--gray-400);font-size:.9rem}
+    /* ── EVALUATIONS ── */
+    .modes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+    .mode-card{border-left:2px solid var(--teal);padding-left:1.5rem}
+    .mode-num{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--teal);letter-spacing:.06em;margin-bottom:.6rem;text-transform:uppercase}
+    .mode-stat{font-family:var(--mono);font-size:.7rem;color:var(--gray-400);margin-top:.9rem}
+    @media(max-width:860px){.modes-grid{grid-template-columns:1fr}}
+    @media(max-width:900px){.browser{grid-template-columns:1fr}.index{position:static;max-height:340px}}
+    @media(max-width:640px){.detail{padding:1.25rem 1.15rem}.detail-head h3{font-size:1.15rem}}
   </style>
 </head>
 <body>
 <nav>
   <a href="#" class="nav-logo">Bioethics<em>Bench</em></a>
   <ul class="nav-links">
-    <li><a href="#domains">Domains</a></li>
     <li><a href="#cases">Cases</a></li>
-    <li><a href="#framework">Framework</a></li>
-    <li><a href="#about">What It Provides</a></li>
-    <li><a href="#team">Team</a></li>
+    <li><a href="#evaluations">Evaluations</a></li>
     <li><a href="https://github.com/alethicresearch/bioethics-bench" class="nav-cta" target="_blank" rel="noopener">GitHub ↗</a></li>
   </ul>
 </nav>
@@ -61,7 +109,7 @@
     <h1>A Benchmark for<br /><em>Computational Bioethics</em></h1>
     <p class="hero-lead">Bioethics Bench is a shared research corpus of bioethical Scenarios and Policy candidates for studying normative reasoning across AI systems, computational methods, and human judgment.</p>
     <div class="hero-actions">
-      <a href="../cases/" class="btn btn-green">Explore Cases</a>
+      <a href="#cases" class="btn btn-green">Explore Cases</a>
       <a href="https://reflectiveequilibrium.ai/app" class="btn btn-ghost" target="_blank" rel="noopener">Open SACRE ↗</a>
       <a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
@@ -80,134 +128,50 @@
   </div>
 </header>
 
-<section class="domains-bg" id="domains">
+<section id="cases" class="cases-bg">
   <div class="container">
-    <span class="eyebrow">Coverage</span>
-    <h2>Bioethical domains</h2>
-    <p class="lead">The Bench spans bioethics in its clinical, research, public-health, technological, environmental, and multispecies dimensions.</p>
-    <div class="domains-grid">
-      <div class="domain-tile"><div class="domain-glyph">🏥</div><div><div class="domain-name">Clinical Bioethics</div><div class="domain-detail">Consent, capacity, end-of-life care, treatment refusal, professional duties</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🔬</div><div><div class="domain-name">Research Ethics</div><div class="domain-detail">Human and animal research, trial design, scientific justification, oversight</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🌍</div><div><div class="domain-name">Public Health Ethics</div><div class="domain-detail">Allocation, mandates, surveillance, scarcity, emergency response</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🧬</div><div><div class="domain-name">Genetics & Biotechnology</div><div class="domain-detail">Genome editing, reproduction, organoids, emerging biomedical technologies</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🐾</div><div><div class="domain-name">Animal & One Health Ethics</div><div class="domain-detail">Animal research, welfare, antimicrobial stewardship, multispecies obligations</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🌱</div><div><div class="domain-name">Environmental Bioethics</div><div class="domain-detail">Climate, conservation, biodiversity, health-system environmental trade-offs</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🌐</div><div><div class="domain-name">Global Health Ethics</div><div class="domain-detail">Health-worker migration, access, research partnerships, global distribution</div></div></div>
-      <div class="domain-tile"><div class="domain-glyph">🤖</div><div><div class="domain-name">Medical AI & Data</div><div class="domain-detail">Bias, subgroup performance, privacy, clinical deployment, algorithmic governance</div></div></div>
+    <span class="eyebrow">Full Corpus</span>
+    <h2>Cases</h2>
+    <div class="controls" style="margin-top:2rem">
+      <input id="q" type="search" placeholder="Search cases — try &ldquo;consent&rdquo;, &ldquo;hospice&rdquo;, &ldquo;vaccination&rdquo;" aria-label="Search cases" />
+      <select id="dom" aria-label="Filter by area"><option value="">All areas</option></select>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="browser">
+      <aside class="index" id="index" aria-label="Case index"><p class="idx-empty">Loading…</p></aside>
+      <article class="detail" id="detail"><p class="loading">Loading record…</p></article>
     </div>
   </div>
 </section>
 
-<section id="cases">
+<section id="evaluations">
   <div class="container">
-    <span class="eyebrow">Inside a Case</span>
-    <h2>Scenarios, candidates, and evidence</h2>
-    <p class="lead">Each case starts with a bounded bioethical Scenario and develops a richer set of serious Policy positions around it. Source grounding is shown rather than assumed.</p>
+    <span class="eyebrow">Execution</span>
+    <h2>Evaluations</h2>
     <div class="modes-grid">
-      <div class="mode-card"><div class="mode-num">01 · Scenario</div><h3>A stable normative problem</h3><p>Concise and detailed versions preserve the same load-bearing facts while varying the amount of context available to the evaluator.</p></div>
-      <div class="mode-card"><div class="mode-num">02 · Candidate Universe</div><h3>A richer field of Policy positions</h3><p>The Bench can preserve sourced positions, framework-derived positions, and serious constructed comparators without pretending they have identical evidential status.</p></div>
-      <div class="mode-card"><div class="mode-num">03 · Provenance</div><h3>Source status stays visible</h3><p>Candidates with defensible external grounding are marked <strong>✓ Source</strong>. Detailed provenance remains available for research and review.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="pipeline-bg" id="framework">
-  <div class="container">
-    <span class="eyebrow">Research Framework</span>
-    <h2>From a bioethical case to a computable analysis</h2>
-    <p class="lead">The Bench preserves a reusable research object. Individual studies can then select a declared set of candidates for SACRE, human comparison, robustness analysis, or iteration.</p>
-    <div class="pipeline-track">
-      <div class="pipe-node"><div class="pipe-num">01 · Case</div><div class="pipe-title">Scenario</div><div class="pipe-desc">A bounded normative situation with the facts and assumptions needed to understand what is at stake.</div></div>
-      <div class="pipe-arrow">→</div>
-      <div class="pipe-node highlight"><div class="pipe-num">02 · Research Object</div><div class="pipe-title">Candidate Universe</div><div class="pipe-desc">A rich set of serious Policy positions with source and provenance status kept visible.</div><span class="pipe-tag">Bioethics Bench</span></div>
-      <div class="pipe-arrow">→</div>
-      <div class="pipe-node"><div class="pipe-num">03 · Analysis Set</div><div class="pipe-title">SACRE</div><div class="pipe-desc">A declared selection of candidates is represented in Public, Expert, and Framework roles for convergence and coherence analysis.</div></div>
-      <div class="pipe-arrow">→</div>
-      <div class="pipe-node"><div class="pipe-num">04 · Study</div><div class="pipe-title">Compare & Iterate</div><div class="pipe-desc">Repeat across models, humans, representations, candidate sets, and RE-Iteration conditions while preserving lineage.</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <span class="eyebrow">What It Provides</span>
-    <h2>A shared infrastructure for normative research</h2>
-    <p class="lead">The Bench is designed to make bioethical reasoning reusable, comparable, and inspectable without reducing ethics to a single answer key.</p>
-    <div class="cards-grid">
-      <div class="card"><div class="card-icon">📚</div><h3>Large-Scale Corpus</h3><p>A planned 200-case scholarly resource spanning clinical, research, public-health, technology, animal, and global-health ethics.</p></div>
-      <div class="card"><div class="card-icon">🧭</div><h3>Rich Candidate Spaces</h3><p>Cases preserve important Policy alternatives rather than compressing every debate into a small fixed geometry.</p></div>
-      <div class="card"><div class="card-icon">✓</div><h3>Visible Source Grounding</h3><p>Source-backed candidates are marked clearly; inferred and constructed positions remain distinguishable in detailed provenance.</p></div>
-      <div class="card"><div class="card-icon">↔</div><h3>Controlled Representations</h3><p>Concise and detailed forms support representation-sensitivity studies while preserving the same normative object.</p></div>
-      <div class="card"><div class="card-icon">⚙</div><h3>Reusable Analysis Sets</h3><p>Different studies can select source-grounded, expanded, matched, or demonstration sets from the same researched case.</p></div>
-      <div class="card"><div class="card-icon">◎</div><h3>Human & Model Comparison</h3><p>The resource supports repeated computational runs, human comparison, robustness analysis, and future empirical validation.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="example-bg" id="example">
-  <div class="container">
-    <span class="eyebrow">Example</span>
-    <h2>Age as an organ-allocation criterion</h2>
-    <p class="lead">A current public case shows how one Scenario can contain several distinct positions across public preferences, professional policy, and Ethical Frameworks.</p>
-    <div class="record">
-      <div class="record-row"><div class="record-key">Scenario</div><div class="record-val">Two transplant candidates have similar urgency and expected graft benefit but differ substantially in age. The allocation system must decide what role, if any, chronological age should play.</div></div>
-      <div class="record-row"><div class="record-key">Domain</div><div class="record-val"><span class="chip">Allocation & Transplantation</span></div></div>
-      <div class="candidate-grid">
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Public</div><div class="source-check">✓ Source</div></div><div class="candidate-text">Use younger age only as a limited tie-breaker when candidates are otherwise closely matched.</div></div>
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Public</div><div class="source-check">✓ Source</div></div><div class="candidate-text">Do not give chronological age independent weight; use urgency, expected benefit, and other declared criteria.</div></div>
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Expert</div><div class="source-check">✓ Source</div></div><div class="candidate-text">Use age only when it contributes to a validated estimate of medically relevant outcomes.</div></div>
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Expert</div><div class="source-check">✓ Source</div></div><div class="candidate-text">When clinical criteria leave candidates tied, use a transparent neutral tie-break such as lottery.</div></div>
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Framework</div><div class="source-check">✓ Source</div></div><div class="candidate-text">Allow a modest life-cycle tie-break because a younger person has had less opportunity to pass through life's stages.</div></div>
-        <div class="candidate"><div class="candidate-head"><div class="candidate-src">Framework</div><div class="source-check">✓ Source</div></div><div class="candidate-text">Give persons equal moral status regardless of age; priority should track relevant need or benefit instead.</div></div>
+      <div class="mode-card">
+        <div class="mode-num">01 · Executed</div>
+        <h3>Development run</h3>
+        <p>Eight cases run in both their concise and detailed forms, scoring every cross-source pair of positions for convergence. Developmental: it tested that the pipeline runs, and no score reports that a position is correct.</p>
+        <div class="mode-stat">216 scored comparisons · gpt-5.6-sol · Aug 2026</div>
       </div>
-      <div class="record-actions"><a href="../cases/" target="_blank" rel="noopener">Browse released cases →</a><a href="https://reflectiveequilibrium.ai/app?bench=f10-age-as-organ-allocation-criterion-concise-v1" target="_blank" rel="noopener">Open this case in SACRE →</a></div>
-    </div>
-    <p class="example-note">Candidate wording is shortened here for display. The released record contains full provenance and source details.</p>
-  </div>
-</section>
-
-<section class="team-bg" id="team">
-  <div class="container">
-    <span class="eyebrow">Research Team</span>
-    <div class="team-grid">
-      <div class="person-card"><div class="initials">SG</div></div>
-      <div class="person-card"><div class="initials">PS</div></div>
-      <div class="person-card"><div class="initials">JS</div></div>
-      <div class="person-card"><div class="initials">IH</div></div>
-      <div class="person-card"><div class="initials">RS</div></div>
-      <div class="person-card"><div class="initials">DW</div></div>
-      <div class="person-card"><div class="initials">KR</div></div>
-      <div class="person-card"><div class="initials">NI</div></div>
+      <div class="mode-card">
+        <div class="mode-num">02 · Planned</div>
+        <h3>Full corpus and repeats</h3>
+        <p>The same procedure across all 34 cases, reporting how far a result moves when the same decision is presented in a longer form. Repeat executions on identical records report how far it moves when nothing changes at all.</p>
+        <div class="mode-stat">planned</div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-num">03 · Not started</div>
+        <h3>Human and cross-model comparison</h3>
+        <p>People asked the same pairwise question a model is asked, and the same cases run across models and providers. Comparison of that kind is what would support a claim about whether these scores track considered ethical reasoning.</p>
+        <div class="mode-stat">not started</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="container-sm">
-    <span class="eyebrow">Explore the Project</span>
-    <h2>Use the cases. Inspect the sources. Run the analysis.</h2>
-    <p class="lead">Bioethics Bench is being developed as an open research resource for computational bioethics, normative computation, and comparative human/model study.</p>
-    <div class="cta-actions"><a href="../cases/" class="btn btn-green">Explore Cases</a><a href="https://github.com/alethicresearch/bioethics-bench" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repository ↗</a><a href="https://reflectiveequilibrium.ai" class="btn btn-ghost" target="_blank" rel="noopener">ReflectiveEquilibrium.AI ↗</a></div>
-    <p class="cta-contact">Questions or collaboration: <a href="mailto:research@alethic.ai">research@alethic.ai</a></p>
-  </div>
-</section>
-
-<section class="cite-bg" id="cite">
-  <div class="container-sm">
-    <span class="eyebrow">Citation</span>
-    <h2>How to cite</h2>
-    <p class="lead">For the SACRE methodology and the program introducing Bioethics Bench, cite the corresponding research paper.</p>
-    <div class="bibtex-wrap"><button class="copy-btn" id="copy-bib" type="button">Copy</button><pre class="bibtex" id="bibtex">@article{ghose2026doingethics,
-  title  = {Doing Ethics with AI},
-  author = {Ghose, Sankalpa and Rasaee, Kasra and Singer, Peter and Savulescu, Julian},
-  year   = {2026}
-}</pre></div>
-  </div>
-</section>
-
-<footer><div class="footer-inner"><a href="#" class="footer-brand">Bioethics<em>Bench</em></a><div class="footer-links"><a href="../">Current site</a><a href="mailto:research@alethic.ai">Contact</a></div></div></footer>
-<script>
-  var copyBtn=document.getElementById('copy-bib');if(copyBtn){copyBtn.addEventListener('click',function(){var text=document.getElementById('bibtex').innerText;navigator.clipboard.writeText(text).then(function(){copyBtn.textContent='Copied';setTimeout(function(){copyBtn.textContent='Copy'},1600)})})}
-</script>
+<footer><div class="footer-inner"><a href="./" class="footer-brand">Bioethics<em>Bench</em></a><div class="footer-links"><a href="../">Current site</a><a href="mailto:research@alethic.ai">Contact</a></div></div></footer>
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const MANIFEST = '../../releases/full-corpus-v1-completion-candidate/manifest.json';
+const MANIFEST = '../../../releases/full-corpus-v1-completion-candidate/manifest.json';
 const DOMAIN_LABELS = {
   'consent-capacity-refusal':'Consent, capacity & refusal',
   'pediatric-neonatal':'Pediatric & neonatal',
@@ -53,7 +53,7 @@ function sourceLink(s) {
 }
 async function getEntry(entry) {
   if (state.cache[entry.record_id]) return state.cache[entry.record_id];
-  const r = await fetch('../../' + entry.path);
+  const r = await fetch('../../../' + entry.path);
   if (!r.ok) throw new Error('Could not load ' + entry.record_id);
   const j = await r.json();
   state.cache[entry.record_id] = j;

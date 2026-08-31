@@ -4,7 +4,7 @@ const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
 const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
 const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
-const state={cases:[],sources:{},shown:[],category:'',q:'',types:new Set(),sourcing:new Set(),current:null,rep:'concise',categories:{}};
+const state={cases:[],sources:{},shown:[],category:'',q:'',sourcing:new Set(),current:null,rep:'concise',categories:{}};
 const $=id=>document.getElementById(id);
 /* Policy texts are recorded as short phrases, often starting lower case. Capitalise the first
    letter for display; the recorded text is unchanged. */
@@ -17,6 +17,8 @@ function buildCases(raw){
     const types=new Set();
     const sourcing=new Set();
     for(const p of c.policies||[]){for(const t of p.types||[])types.add(t);sourcing.add(p.sourcing);}
+    // types is kept for the badges on a case; it is no longer a filter, because every case
+    // carries all three and a selection could only return all 200 cases or none.
     const hay=[c.id,c.title,state.categories[c.category],c.concise,c.detailed,...(c.policies||[]).flatMap(p=>[p.text,...(p.types||[])])].join(' ').toLowerCase();
     return {...c,types,sourcing,hay};
   }).sort((a,b)=>Number(a.id.slice(1))-Number(b.id.slice(1)));
@@ -35,7 +37,6 @@ function sameSet(selected,present){
 function matches(c){
   if(state.category&&c.category!==state.category)return false;
   if(state.q&&!c.hay.includes(state.q))return false;
-  if(!sameSet(state.types,c.types))return false;
   if(!sameSet(state.sourcing,c.sourcing))return false;
   return true;
 }
@@ -110,7 +111,7 @@ function show(id,scroll=true){
 
 function applyUrlCategory(){const value=new URLSearchParams(location.search).get('category');if(value&&state.categories[value])state.category=value;}
 function clearFilters(){
-  state.q='';state.category='';state.types.clear();state.sourcing.clear();
+  state.q='';state.category='';state.sourcing.clear();
   $('search').value='';document.querySelectorAll('.check input').forEach(x=>x.checked=false);
   history.replaceState(null,'',location.pathname+(state.current?`#${state.current}`:''));
   renderCategories();renderIndex();
@@ -128,7 +129,6 @@ async function boot(){
 
 $('search').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();renderIndex();});
 $('categories').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;state.category=b.dataset.cat;renderCategories();renderIndex();});
-document.querySelectorAll('.type-public input,.type-expert input,.type-framework input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.types.add(e.target.value);else state.types.delete(e.target.value);renderIndex();}));
 document.querySelectorAll('.direct input,.inferred input,.constructed input').forEach(input=>input.addEventListener('change',e=>{if(e.target.checked)state.sourcing.add(e.target.value);else state.sourcing.delete(e.target.value);renderIndex();}));
 $('clear').addEventListener('click',clearFilters);
 
