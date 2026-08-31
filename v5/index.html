@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Bioethics Bench — real bioethics cases, with the positions and their sources</title>
-<meta name="description" content="A research corpus of bioethics cases. Each case states a decision, the serious positions people actually take on it, and where each position comes from." />
+<title>Bioethics Bench — cases, the positions taken on them, and their sources</title>
+<meta name="description" content="A versioned research corpus of bioethical decisions. Each case records the decision, the positions seriously taken on it, and the survey, guideline or framework behind each position." />
 <link rel="icon" href="../assets/alethic.png" />
 <style>
   :root{
@@ -28,7 +28,7 @@
   .top nav a:hover{color:var(--accent)}
 
   .hero{padding:56px 0 40px}
-  .hero h1{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;max-width:22ch}
+  .hero h1{font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.2;letter-spacing:-.02em;margin:0 0 20px;max-width:34ch}
   .hero p{font-size:1.12rem;color:var(--ink-2);max-width:62ch;margin:0 0 14px}
   .state{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:#0b5b55;
     border-radius:999px;padding:5px 13px;font-size:.8rem;font-weight:600;margin-bottom:20px}
@@ -109,21 +109,21 @@
 <div class="wrap">
   <div class="hero">
     <div class="state"><span class="dot"></span> Release candidate · under review</div>
-    <h1>Bioethics cases, with the positions people actually hold and where each one comes from.</h1>
-    <p>Every case sets out a decision someone really has to make — whether to keep a feeding tube, who gets a funded IVF cycle, when a clinician may refuse. Alongside it sit the serious positions on that decision: what surveyed publics want, what professional bodies recommend, and what ethical frameworks imply. Each position says which source it came from, and how directly.</p>
-    <p>It exists so that reasoning about these cases — by people or by machines — can be compared against something stable and checkable, instead of against an answer key nobody agrees on.</p>
+    <h1>Serious disagreement about a bioethical decision is documented, and it can be represented precisely enough to compute over.</h1>
+    <p>A 72-year-old with advanced dementia can no longer eat safely, and the care team must decide whether to place a feeding tube. Professional guidance advises against it in advanced dementia; surveyed families often want intervention continued; a principlist reading weighs autonomy against net harm. Each of those positions belongs to someone, was written down somewhere, and can be traced back to the survey, statement or framework it came from.</p>
+    <p>A case here records that decision, the positions taken on it, and the source behind each position, in a form stable enough to be executed and re-executed. Evaluating ethical reasoning usually founders on the absence of an answer key; recording the documented positions and their sources removes the need for one, because a model or a person can be asked how those positions relate to one another and the answer read against the sources.</p>
     <div class="facts">
-      <div class="fact"><b id="f-cases">34</b><span>cases ready to run</span></div>
-      <div class="fact"><b>200</b><span>researched and documented</span></div>
-      <div class="fact"><b id="f-pos">210</b><span>distinct positions</span></div>
-      <div class="fact"><b id="f-src">122</b><span>sources verified</span></div>
+      <div class="fact"><b id="f-cases">34</b><span>executable cases</span></div>
+      <div class="fact"><b>200</b><span>researched decision problems</span></div>
+      <div class="fact"><b id="f-pos">210</b><span>recorded positions</span></div>
+      <div class="fact"><b id="f-src">122</b><span>source identifiers resolved</span></div>
     </div>
   </div>
 </div>
 
 <section id="cases"><div class="wrap">
   <h2>Browse the cases</h2>
-  <p class="sub">Open any case to read the decision, the facts held fixed, and every position with its sources. This loads the released records directly — what you see here is what a study would run.</p>
+  <p class="sub">Opening a case shows the question being decided, the facts held fixed while it is decided, and every recorded position with the sources behind it. The page reads the released record files directly, so the text shown here is the text an evaluation runs on.</p>
   <div class="controls">
     <input id="q" type="search" placeholder="Search cases — try “consent”, “hospice”, “vaccination”" aria-label="Search cases" />
     <select id="dom" aria-label="Filter by area"><option value="">All areas</option></select>
@@ -134,45 +134,45 @@
 
 <section id="evaluations"><div class="wrap">
   <h2>Evaluations</h2>
-  <p class="sub">What has actually been run against these cases, and what has not. We keep these apart deliberately: showing a system a case and recording what it said is not the same as validating anything.</p>
+  <p class="sub">Executing a case means putting its positions to a system in pairs and scoring how far each pair converges. What follows is what has been executed, and on how much.</p>
   <div class="cols">
     <div class="card">
-      <h3>Run so far</h3>
-      <p>A development run over 8 cases in both their short and long forms, scoring how well each pair of positions hangs together. It checked that the machinery works across every shape of case.</p>
-      <div class="stat">216 comparisons · gpt-5.6-sol · Aug 2026</div>
+      <h3>Executed</h3>
+      <p>Eight cases have been run in both their concise and detailed forms, scoring every cross-source pair of positions for convergence. The run was built to exercise the machinery across each shape of candidate pool the corpus contains, and every shape executed.</p>
+      <div class="stat">216 scored comparisons · gpt-5.6-sol · Aug 2026</div>
     </div>
     <div class="card">
-      <h3>Next</h3>
-      <p>The same run across all 34 cases, to see how results move with case shape and with how much context a case gives. Repeats on the same cases, to see how stable a result is before anything is read into it.</p>
+      <h3>Planned</h3>
+      <p>The same procedure across all 34 cases, which reports how far a result moves when the same decision is presented in a longer form. Repeat executions on identical records report how far it moves when nothing changes at all.</p>
       <div class="stat">planned</div>
     </div>
     <div class="card">
-      <h3>Later</h3>
-      <p>Comparison against human judgement on the same cases, and across different systems. This is the part that could support a claim about whether any of this tracks considered ethical reasoning.</p>
+      <h3>Not started</h3>
+      <p>People asked the same pairwise question a model is asked, and the same cases run across models and providers. Comparison of that kind is what would support a claim about whether these scores track considered ethical reasoning.</p>
       <div class="stat">not started</div>
     </div>
   </div>
-  <div class="warn"><b>What these runs do not show.</b> No result here says a position is correct. The runs so far were for development — checking the pipeline, not testing a hypothesis — and none has been repeated enough times to know how much a single result moves on its own. Nothing has been compared against human judgement yet.</div>
+  <div class="warn">The executed run was developmental: it tested that the pipeline runs, and its scores were never repeated often enough to distinguish a result from the variation of the instrument producing it. No score here reports that a position is correct.</div>
 </div></section>
 
 <section id="about"><div class="wrap">
   <h2>How a case is built</h2>
-  <p class="sub">Three things, kept separate on purpose.</p>
+  <p class="sub">Three parts, kept separate so that each can be checked on its own.</p>
   <div class="cols">
     <div class="card">
       <h3>The decision</h3>
-      <p>A real situation, with the facts that matter stated and held fixed — so that two people disagreeing are disagreeing about the ethics, not about what happened.</p>
+      <p>Each case states a situation and the question actually being decided, with the facts that would otherwise be argued over held fixed and listed openly. Two evaluators who then disagree are disagreeing about the ethics rather than about what happened.</p>
     </div>
     <div class="card">
       <h3>The positions</h3>
-      <p>The serious answers, not a spread of plausible-sounding options. Where a professional body and a surveyed public genuinely differ, both appear. Where they agree, we do not invent a disagreement.</p>
+      <p>The positions recorded are the ones seriously held. Where a professional body and a surveyed public diverge, both appear with their own sources; where they converge, no disagreement is manufactured to fill out a pool, which is why cases carry different numbers of positions.</p>
     </div>
     <div class="card">
       <h3>The sources</h3>
-      <p>Each position names what it came from, and says whether the source states that policy outright or whether we drew it out — because those are not the same kind of claim.</p>
+      <p>Every position names the survey, guideline, statement or framework behind it and declares how it stands to that source: stated outright, inferred from what the source establishes, or derived from a framework's commitments. A position whose text does not express its source measures a different object from the one the case claims to represent.</p>
     </div>
   </div>
-  <div class="warn"><b>Where this currently stands.</b> The cases are a release candidate. Every source identifier has been checked, and every position claiming a source states its policy outright has been read against that source. What has not happened is independent review by someone outside the project. Until it does, treat these as carefully built research material rather than settled reference material — and the <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/full-corpus/review/README.md">review record</a> says exactly what has and has not been checked.</div>
+  <p class="sub" style="margin-top:22px">Every source identifier in the corpus resolves, and every position declaring that its source states the policy outright has been read against that source. Review from outside the project has not happened, and whole-document reading for what a source omits covers a small subset of the families. The <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/full-corpus/review/README.md">review record</a> states which checks have been run and what each one covers.</p>
 </div></section>
 
 <footer><div class="wrap">

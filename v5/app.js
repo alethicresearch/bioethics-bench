@@ -22,14 +22,15 @@ const AREAS = {
   'biosecurity-dual-use':'Biosecurity',
 };
 const POOLS = [
-  ['public', 'What surveyed publics and affected people want'],
-  ['expert', 'What professional bodies and regulators say'],
-  ['framework', 'What ethical frameworks imply'],
+  ['public', 'Public preference'],
+  ['expert', 'Expert judgment'],
+  ['framework', 'Ethical framework'],
 ];
-// The four-basis taxonomy, said in words a reader can use.
+/* Each position declares how it stands to the source it names. The record stores that
+   relation under four identifiers; the page shows what each one asserts. */
 const BASIS = {
-  'direct-policy-evidence': 'source states this',
-  'source-informed-policy-inference': 'drawn from the source',
+  'direct-policy-evidence': 'stated in the source',
+  'source-informed-policy-inference': 'inferred from the source',
   'framework-derived-policy': 'derived from the framework',
   'synthetic-author-constructed-policy': 'constructed comparator',
 };
@@ -92,7 +93,7 @@ function renderBody(record) {
   const stips = (record.stipulations ?? []).map(stipulationText).filter(Boolean);
   const scenario = readableScenario(record.scenario, stips.length > 0);
   const assume = stips.length
-    ? `<div class="assume"><b>Held fixed for this case:</b><ul>${stips.map((s) => `<li>${esc(s)}</li>`).join('')}</ul></div>`
+    ? `<div class="assume"><b>Held fixed while this is decided</b><ul>${stips.map((s) => `<li>${esc(s)}</li>`).join('')}</ul></div>`
     : '';
   const counts = POOLS.map(([p]) => (record.candidate_pools?.[p] ?? []).length);
   return `
@@ -103,9 +104,9 @@ function renderBody(record) {
       ${renderPositions(record)}
       <div class="meta">
         <span>${counts[0]} public · ${counts[1]} expert · ${counts[2]} framework</span>
-        <span>short and long versions available</span>
+        <span>concise and detailed forms</span>
         <span><code>${esc(record.case_id)}</code></span>
-        <span><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/data/benchmark/${esc(record.record_id)}.json" target="_blank" rel="noopener">full record with all provenance ↗</a></span>
+        <span><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/data/benchmark/${esc(record.record_id)}.json" target="_blank" rel="noopener">full record, with every source ↗</a></span>
       </div>
     </div>`;
 }
