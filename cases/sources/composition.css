@@ -52,3 +52,6 @@ table.figures .swatch{display:inline-block;width:9px;height:9px;border-radius:3p
   .row{grid-template-columns:1fr;gap:.25rem}
   .row-label{text-align:left}
 }
+
+.note .inline-link{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+.note .inline-link:hover{color:#065f46}

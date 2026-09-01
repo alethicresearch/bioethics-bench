@@ -29,6 +29,7 @@ jobs:
       - run: node scripts/build-public-cases.mjs
       - run: node scripts/build-case-sources.mjs
       - run: node scripts/build-composition.mjs
+      - run: node scripts/build-source-index.mjs
       - run: node scripts/validate-public-cases.mjs
       - run: node scripts/check-docs.mjs
 

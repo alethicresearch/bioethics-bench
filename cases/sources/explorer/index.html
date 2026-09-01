@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Source explorer — Bioethics Bench</title>
+  <meta name="description" content="Every source the Bioethics Bench cases rest on, searchable, with the cases each one supports." />
+  <link rel="icon" href="../../../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../composition.css" />
+  <link rel="stylesheet" href="explorer.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../../../">Bioethics<em>Bench</em></a>
+    <div class="navlinks">
+      <a href="../../../">Overview</a>
+      <a href="../../">Cases</a>
+      <a class="active" href="../">Sourcing</a>
+      <a href="../../../study/">Study</a>
+      <a class="github" href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <h1>Source explorer</h1>
+      <p>Every source the cases rest on, read the other way round: search the bibliography, see what
+         kind of source each one is, and go to the cases that draw on it.</p>
+    </div>
+  </header>
+
+  <section class="filters" id="filters">
+    <div class="filter-wrap">
+      <div class="filter-top">
+        <input id="q" class="search" type="search" placeholder="Search citations and case titles…" autocomplete="off" />
+        <span class="count" id="count">Loading…</span>
+      </div>
+      <div class="filter-row">
+        <span class="filter-name">Kind</span>
+        <div class="pills" id="kinds"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-name">Shows</span>
+        <div class="checks">
+          <span class="check"><input type="checkbox" id="f-resolved" /><label for="f-resolved">Has a canonical link</label></span>
+          <span class="check"><input type="checkbox" id="f-shared" /><label for="f-shared">Used by more than one case</label></span>
+          <span class="check"><input type="checkbox" id="f-policy" /><label for="f-policy">Cited by a policy, not just a case</label></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="explorer">
+    <div class="wrap">
+      <div class="tiles" id="tiles"></div>
+      <div id="list"><p class="loading">Loading the bibliography…</p></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <span>Bioethics Bench · Alethic Research</span>
+      <span><a href="../">How the collection is sourced</a> · <a href="../../">Browse the cases</a></span>
+    </div>
+  </footer>
+
+  <script src="explorer.js"></script>
+</body>
+</html>

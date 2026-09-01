@@ -1,0 +1,30 @@
+/* The bibliography as a list: one row per source, the cases it supports beside it. Rows are plain
+   and dense — the reader is scanning for a citation, not comparing quantities — and the only
+   colour is the sourcing ramp on the kind chip and the teal of a link. */
+.explorer{background:var(--soft);padding:1.6rem 2rem 4rem;min-height:60vh}
+.explorer .wrap{max-width:1080px}
+
+.src-row{background:#fff;border:1px solid var(--line);border-radius:11px;padding:.95rem 1.1rem;margin-bottom:.6rem}
+.src-main{display:flex;align-items:flex-start;gap:.7rem}
+.src-cite{flex:1 1 auto;min-width:0;color:#334155;font-size:.9rem;line-height:1.55}
+.src-cite a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+.src-cite a:hover{color:#065f46}
+.kind{flex:0 0 auto;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#7c2d12;background:#fff1e6;border:1px solid #fcd9bd;border-radius:999px;padding:.16rem .5rem}
+.searchonly{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:#94a3b8;border:1px solid #e2e8f0;border-radius:999px;padding:0 .35rem;margin-left:.35rem}
+.src-cases{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem}
+.case-chip{display:inline-flex;align-items:center;gap:.35rem;font-size:.74rem;color:#475569;background:var(--soft2);border:1px solid var(--line);border-radius:999px;padding:.2rem .6rem;text-decoration:none}
+.case-chip:hover{border-color:var(--teal);color:#065f46;background:#ecfdf5}
+.case-chip b{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.66rem;font-weight:700;color:#94a3b8}
+.case-chip:hover b{color:#047857}
+.case-chip .pol{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.62rem;color:#0f766e}
+.src-empty{background:#fff;border:1px dashed #cbd5e1;border-radius:11px;padding:1.4rem;color:var(--muted)}
+.more{display:block;width:100%;margin:.8rem 0 0;padding:.7rem;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;font-size:.85rem;font-weight:700;color:#0f766e;cursor:pointer}
+.more:hover{border-color:var(--teal)}
+
+@media(max-width:640px){
+  .explorer{padding:1.2rem 1.1rem 3rem}
+  .src-main{flex-direction:column;gap:.4rem}
+}
+
+.pill-btn .kind-count{margin-left:.4rem;font-weight:600;color:#94a3b8}
+.pill-btn.on .kind-count{color:rgba(255,255,255,.6)}

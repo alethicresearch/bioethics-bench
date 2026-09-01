@@ -2,7 +2,7 @@
   "resource_id": "bioethics-bench-case-sources",
   "resource_version": "1.0.0",
   "case_count": 200,
-  "case_source_count": 662,
+  "case_source_count": 651,
   "policy_source_count": 208,
   "cases_with_policy_sources": 22,
   "cases_with_layered_sources": 23,
@@ -549,11 +549,6 @@
           "resolved": true
         },
         {
-          "citation": "Professional / empirical expert",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20empirical%20expert",
-          "resolved": false
-        },
-        {
           "citation": "ACOG Committee on Ethics. The Limits of Conscientious Refusal in Reproductive Medicine. Committee Opinion No. 385.",
           "url": "https://scholar.google.com/scholar?q=ACOG%20Committee%20on%20Ethics.%20The%20Limits%20of%20Conscientious%20Refusal%20in%20Reproductive%20Medicine.%20Committee%20Opinion%20No.%20385.",
           "resolved": false
@@ -691,11 +686,6 @@
           "citation": "ICU patient/surrogate communication and preference literature, PMID 24606839.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/24606839/",
           "resolved": true
-        },
-        {
-          "citation": "Professional / empirical expert",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20empirical%20expert",
-          "resolved": false
         },
         {
           "citation": "American Heart Association. 2025 CPR & ECC Guidelines — Part 3: Ethics.",
@@ -863,11 +853,6 @@
           "resolved": true
         },
         {
-          "citation": "Professional / regulatory",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20regulatory",
-          "resolved": false
-        },
-        {
           "citation": "US Food and Drug Administration. Expanded Access. Current program guidance and patient/physician/industry pages, accessed 2026-08-27.",
           "url": "https://scholar.google.com/scholar?q=US%20Food%20and%20Drug%20Administration.%20Expanded%20Access.%20Current%20program%20guidance%20and%20patient%2Fphysician%2Findustry%20pages%2C%20accessed%202026-08-27.",
           "resolved": false
@@ -947,11 +932,6 @@
           "citation": "Master Z et al. (Mis)trust among patients seeking unproven stem cell therapies: a qualitative analysis. 2026. PMID 42210947.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42210947/",
           "resolved": true
-        },
-        {
-          "citation": "Professional / regulatory",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20regulatory",
-          "resolved": false
         },
         {
           "citation": "International Society for Stem Cell Research. Guidelines for Stem Cell Research and Clinical Translation, version 1.2, August 2025, especially §§3.5 and 4.3.",
@@ -1211,11 +1191,6 @@
           "resolved": false
         },
         {
-          "citation": "Professional-practice evidence",
-          "url": "https://scholar.google.com/scholar?q=Professional-practice%20evidence",
-          "resolved": false
-        },
-        {
           "citation": "Flanagan-Klygis EA, Sharp L, Frader JE. Dismissing the family who refuses vaccines: a study of pediatrician attitudes. Arch Pediatr Adolesc Med. 2005;159:929–934. PMID 16203937.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/16203937/",
           "resolved": true
@@ -1297,11 +1272,6 @@
     "M016": {
       "sources": [
         {
-          "citation": "Professional / normative threshold",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20normative%20threshold",
-          "resolved": false
-        },
-        {
           "citation": "American Academy of Pediatrics. Pediatric Decision Making: Consensus Recommendations. Pediatrics. 2023;152:e2023061832.",
           "url": "https://scholar.google.com/scholar?q=American%20Academy%20of%20Pediatrics.%20Pediatric%20Decision%20Making%3A%20Consensus%20Recommendations.%20Pediatrics.%202023%3B152%3Ae2023061832.",
           "resolved": false
@@ -1310,11 +1280,6 @@
           "citation": "Diekema DS. Parental refusals of medical treatment: the harm principle as threshold for state intervention. Theor Med Bioeth. 2004. PMID 15637945.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/15637945/",
           "resolved": true
-        },
-        {
-          "citation": "Professional-practice / empirical",
-          "url": "https://scholar.google.com/scholar?q=Professional-practice%20%2F%20empirical",
-          "resolved": false
         },
         {
           "citation": "Weaver MS et al. Family Refusal of Chemotherapy for Pediatric Cancer Patients: A National Survey of Oncologists. J Pediatr Hematol Oncol. 2015. PMID 25411868.",
@@ -1383,11 +1348,6 @@
     "M017": {
       "sources": [
         {
-          "citation": "Professional / stewardship",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20stewardship",
-          "resolved": false
-        },
-        {
           "citation": "World Health Organization. The WHO AWaRe (Access, Watch, Reserve) antibiotic book / classification, including 2025 classification update.",
           "url": "https://scholar.google.com/scholar?q=World%20Health%20Organization.%20The%20WHO%20AWaRe%20(Access%2C%20Watch%2C%20Reserve)%20antibiotic%20book%20%2F%20classification%2C%20including%202025%20classification%20update.",
           "resolved": false
@@ -1453,11 +1413,6 @@
     },
     "M018": {
       "sources": [
-        {
-          "citation": "Professional / evidence synthesis",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20evidence%20synthesis",
-          "resolved": false
-        },
         {
           "citation": "CDC. Core Elements of Outpatient Antibiotic Stewardship, current materials updated 2026; foundational MMWR 2016 framework.",
           "url": "https://scholar.google.com/scholar?q=CDC.%20Core%20Elements%20of%20Outpatient%20Antibiotic%20Stewardship%2C%20current%20materials%20updated%202026%3B%20foundational%20MMWR%202016%20framework.",
@@ -1719,11 +1674,6 @@
     },
     "M020": {
       "sources": [
-        {
-          "citation": "Professional / occupational guidance",
-          "url": "https://scholar.google.com/scholar?q=Professional%20%2F%20occupational%20guidance",
-          "resolved": false
-        },
         {
           "citation": "American Medical Association. Current pandemic-duty ethics guidance, including Council on Ethical and Judicial Affairs discussion of physicians’ duty to treat during pandemics.",
           "url": "https://scholar.google.com/scholar?q=American%20Medical%20Association.%20Current%20pandemic-duty%20ethics%20guidance%2C%20including%20Council%20on%20Ethical%20and%20Judicial%20Affairs%20discussion%20of%20physicians%E2%80%99%20duty%20to%20treat%20during%20pandemics.",
@@ -2469,11 +2419,6 @@
           "citation": "How patients with advanced cancer and family caregivers accommodate one another in decision-making. PMID 38756049.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38756049/",
           "resolved": true
-        },
-        {
-          "citation": "Policy / professional evidence",
-          "url": "https://scholar.google.com/scholar?q=Policy%20%2F%20professional%20evidence",
-          "resolved": false
         },
         {
           "citation": "Centers for Medicare & Medicaid Services. Hospice coverage/payment materials, current 2026.",

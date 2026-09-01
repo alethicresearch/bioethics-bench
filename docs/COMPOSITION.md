@@ -65,7 +65,7 @@ review starts there.
 
 ## Sources
 
-253 of the 662 citations recorded across the cases resolve to a canonical locator; the
+253 of the 651 citations recorded across the cases resolve to a canonical locator; the
 rest resolve to a scholarly search. 89 cases rest on two citations or fewer.
 22 cases record citations policy by policy, and 161 carry the case file's account of the
 evidence behind each kind of position.

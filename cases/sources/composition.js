@@ -144,7 +144,8 @@ function render(d) {
       ${n(d.citations.cases_with_two_or_fewer)} cases rest on two citations or fewer.</p>
     <p class="note">${n(d.citations.policy_level_cases)} cases record citations policy by policy. ${n(d.citations.cases_with_layer_notes)} carry the case file's account
       of the evidence behind each kind of position, which a policy shows where it has no citation
-      of its own.</p>
+      of its own. The <a href="explorer/" class="inline-link">source explorer</a> reads the same
+      record the other way round: every source, and the cases that draw on it.</p>
     ${table(['Citations', 'Count'], [
       ['Recorded across all cases', n(d.citations.total)],
       ['Resolving to a canonical locator', n(d.citations.resolved)],
@@ -158,6 +159,7 @@ function render(d) {
     <h2>Read next</h2>
     <p class="note">These figures are generated from the published files and change with them.</p>
     <div class="readnext">
+      <a href="explorer/">Open the source explorer →</a>
       <a href="../">Browse the cases →</a>
       <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/COMPOSITION.md" target="_blank" rel="noopener">The same figures as a document ↗</a>
       <a href="https://github.com/alethicresearch/bioethics-bench/blob/main/docs/REVIEW_QUEUE.md" target="_blank" rel="noopener">What is left to review ↗</a>

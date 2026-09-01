@@ -18,6 +18,11 @@ export function isCitation(line) {
   if (line.length < 25 || line.startsWith('|')) return false;
   if (line.endsWith(':')) return false;
   if (/^(affected|public|expert|framework|normative|evidence|sources?|references?)\b[^.]*$/i.test(line)) return false;
+  /* A layer sub-heading written without its bold markers — "Professional / regulatory",
+     "Policy / professional evidence" — is the group a citation belongs to, not a citation.
+     Eleven of them were being published as sources with a search link to nowhere. */
+  if (/^(professional|policy|practice|clinical|empirical|regulatory|guidance)\b/i.test(line)
+      && line.split(/\s+/).length <= 6 && !/[.,;]$/.test(line) && !/\b(19|20)\d{2}\b/.test(line)) return false;
   const identified = /PMID|doi|https?:\/\//i.test(line);
   if (identified) return true;
   if (/\b(literature|scholarship|arguments?|reasoning|debate)\b/i.test(line) && !/\b(19|20)\d{2}\b/.test(line)) return false;
