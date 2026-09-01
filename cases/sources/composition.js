@@ -10,21 +10,26 @@ const DATA = '../../resources/cases/composition.v1.json';
 /* The same colours the case browser gives these labels, so a Framework policy is the same violet
    on both pages. Validated for colour-vision separation against a white surface; the sourcing set
    sits below 3:1 contrast, which is why every segment is labelled and repeated in a table. */
+/* Sourcing is an order, not three identities: direct, then inferred from a source, then written
+   without one. It takes one hue in three steps, which leaves the categorical hues to policy type —
+   Expert and Direct source were both green, and read as the same label twice. */
 const SOURCING = [
-  { id: 'direct', label: 'Direct source', color: '#10b981', note: 'A source states substantially this policy.' },
-  { id: 'inferred', label: 'Inferred from source', color: '#3b82f6', note: 'The Bench states the policy as an inference from what a source supports.' },
-  { id: 'constructed', label: 'Constructed', color: '#f59e0b', note: 'A comparison policy written for the case rather than drawn from a source.' },
+  { id: 'direct', label: 'Direct source', color: '#7c2d12', note: 'A source states substantially this policy.' },
+  { id: 'inferred', label: 'Inferred from source', color: '#c2410c', note: 'The Bench states the policy as an inference from what a source supports.' },
+  { id: 'constructed', label: 'Constructed', color: '#fb923c', note: 'A comparison policy written for the case rather than drawn from a source.' },
 ];
 const TYPES = [
   { id: 'public', label: 'Public', color: '#2563eb' },
   { id: 'expert', label: 'Expert', color: '#059669' },
   { id: 'framework', label: 'Framework', color: '#7c3aed' },
 ];
+/* The routes are an order too — how far each label is from having been checked — so they take a
+   neutral ramp rather than a fourth set of hues competing with type and sourcing. */
 const ROUTES = [
-  { id: 'reviewed', label: 'Confirmed in an approved crosswalk', color: '#0f766e' },
-  { id: 'case-record', label: 'Carried over from the case record', color: '#3b82f6' },
-  { id: 'wording', label: 'Read from the policy wording', color: '#f59e0b' },
-  { id: 'authored', label: 'Assigned when the policy was written', color: '#94a3b8' },
+  { id: 'reviewed', label: 'Confirmed in an approved crosswalk', color: '#0f172a' },
+  { id: 'case-record', label: 'Carried over from the case record', color: '#475569' },
+  { id: 'wording', label: 'Read from the policy wording', color: '#94a3b8' },
+  { id: 'authored', label: 'Assigned when the policy was written', color: '#cbd5e1' },
 ];
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));

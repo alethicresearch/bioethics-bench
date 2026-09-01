@@ -25,3 +25,73 @@
 .src-note{margin:.4rem 0 0;padding-left:.7rem;border-left:2px solid #e2e8f0;color:#475569;font-size:.8rem;line-height:1.6}
 .src-note p{margin:0 0 .5rem}
 .src-note p:last-child{margin-bottom:0}
+
+
+.case-detail{background:var(--ink);border-color:#1e293b;padding:0;overflow:hidden}
+.case-detail .loading{color:rgba(255,255,255,.5);padding:1.4rem}
+
+.record{margin:0;background:transparent;border:0;border-radius:0}
+.record-row{grid-template-columns:118px minmax(0,1fr);padding:1.15rem 1.5rem}
+.record-row:last-child{border-bottom:0}
+.record-val .chip-id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(255,255,255,.07);color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.14)}
+.rec-scenario{margin:.55rem 0 0;color:rgba(255,255,255,.8);line-height:1.72}
+
+.rec-tools .pills{gap:.3rem}
+.rec-tools .pill-btn{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.62);padding:.28rem .62rem;font-size:.7rem}
+.rec-tools .pill-btn:hover{border-color:rgba(255,255,255,.3);color:#fff}
+.rec-tools .pill-btn.on{background:var(--teal);border-color:var(--teal);color:#06231a}
+
+/* The policies, one column each, wrapping rather than squeezing to three on a narrow record. */
+.record-policies{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.rec-policy{padding:1.15rem 1.3rem}
+.rec-policy-text{color:rgba(255,255,255,.82);line-height:1.6}
+.rec-policy-meta{gap:.35rem;align-items:center}
+/* Sourcing is one quiet chip whose dot carries the step, on this surface as on the light one, so
+   it can never be read as the same scale as the policy-type colours. */
+.case-detail .prov{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.66)}
+.case-detail .prov.direct::before{background:#fdba74}
+.case-detail .prov.inferred::before{background:#fb923c}
+.case-detail .prov.constructed::before{background:#f97316}
+.rec-policy-meta .ptype.public{background:rgba(37,99,235,.18);color:#93c5fd}
+.rec-policy-meta .ptype.expert{background:rgba(5,150,105,.18);color:#6ee7b7}
+.rec-policy-meta .ptype.framework{background:rgba(124,58,237,.2);color:#c4b5fd}
+.rec-policy-meta .bench-written{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.3);color:#fcd34d}
+.rec-policy-meta .reviewed{background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.3);color:#6ee7b7}
+
+/* The source disclosures, on the dark surface. */
+.case-detail .srcs summary{color:rgba(255,255,255,.55)}
+.case-detail .srcs summary::before{color:rgba(255,255,255,.35)}
+.case-detail .srcs summary:hover{color:#fff}
+.case-detail .srclist{color:rgba(255,255,255,.6)}
+.case-detail .srclist a{color:rgba(255,255,255,.72)}
+.case-detail .srclist a:hover{color:var(--teal-light)}
+.case-detail .searchmark{color:rgba(255,255,255,.4);border-color:rgba(255,255,255,.16)}
+.case-detail .src-lead{color:rgba(255,255,255,.5)}
+.case-detail .src-note{color:rgba(255,255,255,.66);border-left-color:rgba(255,255,255,.14)}
+.case-detail .src-count{color:rgba(255,255,255,.4)}
+.case-detail .prov-srcs summary .prov{cursor:pointer}
+.rec-note{margin:.7rem 0 0;font-size:.78rem;line-height:1.6;color:rgba(255,255,255,.45)}
+.rec-note .reviewed{margin:0 .15rem}
+
+/* The actions close the card, so they take the padding the record rows have. */
+.case-actions{margin:0;padding:1.15rem 1.5rem .4rem}
+.case-actions span{color:rgba(255,255,255,.45)}
+.case-actions .sacre-btn{background:var(--teal);color:#06231a}
+.case-actions .sacre-btn:hover{background:var(--teal-light)}
+.detail-links{border-top:0;margin:0;padding:0 1.5rem 1.3rem}
+.detail-links a{color:var(--teal-light)}
+
+@media(max-width:760px){
+  .record-row{grid-template-columns:1fr;gap:.3rem;padding:1rem 1.15rem}
+  .record-policies{grid-template-columns:1fr}
+}
+
+/* Popping the record out: the case list and the handle step aside and the record takes the page. */
+.browser.wide{grid-template-columns:minmax(0,1fr)}
+.browser.wide .case-index,.browser.wide .col-handle{display:none}
+.browser.wide .case-detail{margin-left:0}
+
+.record{position:relative}
+.pop-out{position:absolute;top:.75rem;right:.85rem;z-index:2;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:rgba(255,255,255,.55);font:inherit;font-size:.82rem;line-height:1;cursor:pointer}
+.pop-out:hover{background:rgba(255,255,255,.11);color:#fff;border-color:rgba(255,255,255,.28)}
+.pop-out:focus-visible{outline:2px solid var(--teal);outline-offset:2px}

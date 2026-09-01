@@ -4,7 +4,7 @@ const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
 const TYPE_LABELS={public:'Public',expert:'Expert',framework:'Framework'};
 const SOURCE_LABELS={direct:'Direct source',inferred:'Inferred from source',constructed:'Constructed'};
-const state={cases:[],sources:{},shown:[],category:'',q:'',sourcing:new Set(),current:null,rep:'concise',categories:{}};
+const state={cases:[],sources:{},shown:[],category:'',q:'',sourcing:new Set(),current:null,rep:'concise',categories:{},wide:false};
 const $=id=>document.getElementById(id);
 /* Policy texts are recorded as short phrases, often starting lower case. Capitalise the first
    letter for display; the recorded text is unchanged. */
@@ -114,22 +114,41 @@ function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.se
 
 function renderDetail(c){
   const src=state.sources[c.id]||{sources:[],policies:{}};
-  const policies=(c.policies||[]).map(p=>`<div class="policy"><p>${esc(sentence(state.rep==='detailed'&&p.text_detailed?p.text_detailed:p.text))}</p><div class="policy-meta">${typeBadges(p.types)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>${policyProvenance(p,src)}</div>`).join('');
   const unreviewed=(c.policies||[]).some(p=>!p.type_reviewed);
+  const policies=(c.policies||[]).map(p=>`<div class="rec-policy">
+      <div class="rec-policy-text">${esc(sentence(state.rep==='detailed'&&p.text_detailed?p.text_detailed:p.text))}</div>
+      <div class="rec-policy-meta">${typeBadges(p.types)}${p.written_by_bench?'<span class="bench-written" title="Written by Bioethics Bench for this case">written by the Bench</span>':''}${p.type_reviewed?'<span class="reviewed" title="This policy type has been reviewed">reviewed</span>':''}</div>
+      ${policyProvenance(p,src)}
+    </div>`).join('');
   $('case-detail').innerHTML=`
-    <div class="detail-top"><span class="case-id">${esc(c.id)}</span><span class="topic">${esc(state.categories[c.category]||c.category)}</span></div>
-    <h2>${esc(c.title)}</h2>
-    <div class="policy-count">${c.policies.length} policies</div>
-    <div class="source-summary">${typeSummary(c)}${sourceSummary(c)}</div>
-    <div class="scenario-tools"><span class="scenario-label">Case</span><div class="pills"><button class="pill-btn rep-btn ${state.rep==='concise'?'on':''}" data-rep="concise">Concise</button><button class="pill-btn rep-btn ${state.rep==='detailed'?'on':''}" data-rep="detailed">Detailed</button></div></div>
-    <div id="scenario" class="scenario-box">${esc(c[state.rep])}</div>
-    ${sourceBlock(src.sources,'Sources for this case')}
-    <div class="case-actions"><a id="load-sacre" class="sacre-btn" href="${esc(sacreUrl(c))}" target="_blank" rel="noopener">Load in SACRE ↗</a><span>Loads this case and its Public, Expert, and Framework policies into a new evaluation.</span></div>
-    <div class="policies-head">Policies</div>
-    <div class="policy-list">${policies}</div>
-    ${unreviewed?'<p class="type-note">Policy types marked <span class="reviewed">reviewed</span> have been checked against the sources. The rest are a first pass and may change.</p>':''}
-    ${c.case_file_objects_to_pool?`<p class="type-note">No ${esc(TYPE_LABELS[c.case_file_objects_to_pool]||'')} policy here comes from a source: this case's file judged the available evidence too thin to support one, so the ${esc((TYPE_LABELS[c.case_file_objects_to_pool]||'').toLowerCase())} policy was written by the Bench as a comparison.</p>`:''}
-    <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.source_file)}" target="_blank" rel="noopener">Sources and further detail ↗</a></div>`;
+    <div class="record">
+      <button id="pop-out" class="pop-out" type="button" aria-pressed="${state.wide}" title="${state.wide?'Show the case list again':'Widen the record to the full page'}" aria-label="${state.wide?'Show the case list again':'Widen the record to the full page'}">${state.wide?'\u21f2':'\u21f1'}</button>
+      <div class="record-row">
+        <div class="record-key">Case</div>
+        <div class="record-val">${esc(c.title)} <span class="chip">${esc(state.categories[c.category]||c.category)}</span> <span class="chip chip-id">${esc(c.id)}</span></div>
+      </div>
+      <div class="record-row">
+        <div class="record-key">Decision</div>
+        <div class="record-val">
+          <div class="rec-tools"><div class="pills"><button class="pill-btn rep-btn ${state.rep==='concise'?'on':''}" data-rep="concise">Concise</button><button class="pill-btn rep-btn ${state.rep==='detailed'?'on':''}" data-rep="detailed">Detailed</button></div></div>
+          <p id="scenario" class="rec-scenario">${esc(c[state.rep])}</p>
+        </div>
+      </div>
+      <div class="record-row">
+        <div class="record-key">Policies</div>
+        <div class="record-val">${c.policies.length} recorded, each with its type and how it was sourced. ${sourceBlock(src.sources,'Sources for this case')}</div>
+      </div>
+      <div class="record-policies">${policies}</div>
+      <div class="record-row">
+        <div class="record-key">Also recorded</div>
+        <div class="record-val">Concise and detailed versions of the case and of every policy · the sources behind the case, and behind a policy where the Bench records them · whether each policy type has been reviewed
+          ${unreviewed?'<p class="rec-note">Policy types marked <span class="reviewed">reviewed</span> have been checked against the sources. The rest are a first pass and may change.</p>':''}
+          ${c.case_file_objects_to_pool?`<p class="rec-note">No ${esc(TYPE_LABELS[c.case_file_objects_to_pool]||'')} policy here comes from a source: this case's file judged the available evidence too thin to support one, so the ${esc((TYPE_LABELS[c.case_file_objects_to_pool]||'').toLowerCase())} policy was written by the Bench as a comparison.</p>`:''}
+        </div>
+      </div>
+    </div>
+    <div class="case-actions"><a id="load-sacre" class="sacre-btn" href="${esc(sacreUrl(c))}" target="_blank" rel="noopener">Load in SACRE \u2197</a><span>Loads this case and its Public, Expert, and Framework policies into a new evaluation.</span></div>
+    <div class="detail-links"><a href="https://github.com/alethicresearch/bioethics-bench/blob/main/${esc(c.source_file)}" target="_blank" rel="noopener">Sources and further detail \u2197</a></div>`;
 }
 
 function markCurrent(){document.querySelectorAll('.idx-item').forEach(a=>a.classList.toggle('on',a.dataset.id===state.current));}
@@ -205,7 +224,7 @@ $('clear').addEventListener('click',clearFilters);
 (function columnResize(){
   const browser=$('browser'), handle=$('col-handle');
   if(!browser||!handle)return;
-  const MIN=220, MAX=620, DEFAULT=330;
+  const MIN=200, MAX=560, DEFAULT=260;
   const set=(w,save=true)=>{
     const width=Math.round(Math.min(MAX,Math.max(MIN,w)));
     browser.style.setProperty('--index-w',`${width}px`);
@@ -242,5 +261,15 @@ $('clear').addEventListener('click',clearFilters);
 })();
 $('case-index').addEventListener('click',e=>{const a=e.target.closest('.idx-item');if(!a)return;e.preventDefault();show(a.dataset.id);});
 $('case-detail').addEventListener('click',e=>{const b=e.target.closest('.rep-btn');if(!b)return;state.rep=b.dataset.rep;const c=state.cases.find(x=>x.id===state.current);if(c)renderDetail(c);});
+/* Popping the record out gives it the whole page: the case list and the drag handle step aside
+   until it is put back. The choice is remembered, the way the column width is. */
+$('case-detail').addEventListener('click',e=>{
+  if(!e.target.closest('#pop-out'))return;
+  state.wide=!state.wide;
+  document.getElementById('browser').classList.toggle('wide',state.wide);
+  try{localStorage.setItem('bench-record-wide',state.wide?'1':'0');}catch{}
+  const c=state.cases.find(x=>x.id===state.current);if(c)renderDetail(c);
+});
+try{if(localStorage.getItem('bench-record-wide')==='1'){state.wide=true;document.getElementById('browser').classList.add('wide');}}catch{}
 window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(id&&id!==state.current)show(id,false);});
 boot();
