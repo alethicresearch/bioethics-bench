@@ -9,7 +9,7 @@
 .src-cite{flex:1 1 auto;min-width:0;color:#334155;font-size:.9rem;line-height:1.55}
 .src-cite a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
 .src-cite a:hover{color:#065f46}
-.kind{flex:0 0 auto;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#7c2d12;background:#fff1e6;border:1px solid #fcd9bd;border-radius:999px;padding:.16rem .5rem}
+.kind{flex:0 0 auto;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#475569;background:var(--soft2);border:1px solid var(--line);border-radius:999px;padding:.16rem .5rem}
 .searchonly{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:#94a3b8;border:1px solid #e2e8f0;border-radius:999px;padding:0 .35rem;margin-left:.35rem}
 .src-cases{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem}
 .case-chip{display:inline-flex;align-items:center;gap:.35rem;font-size:.74rem;color:#475569;background:var(--soft2);border:1px solid var(--line);border-radius:999px;padding:.2rem .6rem;text-decoration:none}

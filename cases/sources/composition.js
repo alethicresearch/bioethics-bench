@@ -14,9 +14,9 @@ const DATA = '../../resources/cases/composition.v1.json';
    without one. It takes one hue in three steps, which leaves the categorical hues to policy type —
    Expert and Direct source were both green, and read as the same label twice. */
 const SOURCING = [
-  { id: 'direct', label: 'Direct source', color: '#7c2d12', note: 'A source states substantially this policy.' },
-  { id: 'inferred', label: 'Inferred from source', color: '#c2410c', note: 'The Bench states the policy as an inference from what a source supports.' },
-  { id: 'constructed', label: 'Constructed', color: '#fb923c', note: 'A comparison policy written for the case rather than drawn from a source.' },
+  { id: 'direct', label: 'Direct source', color: '#334155', note: 'A source states substantially this policy.' },
+  { id: 'inferred', label: 'Inferred from source', color: '#94a3b8', note: 'The Bench states the policy as an inference from what a source supports.' },
+  { id: 'constructed', label: 'Constructed', color: '#cbd5e1', note: 'A comparison policy written for the case rather than drawn from a source.' },
 ];
 const TYPES = [
   { id: 'public', label: 'Public', color: '#2563eb' },
@@ -26,12 +26,18 @@ const TYPES = [
 /* The routes are an order too — how far each label is from having been checked — so they take a
    neutral ramp rather than a fourth set of hues competing with type and sourcing. */
 const ROUTES = [
-  { id: 'reviewed', label: 'Confirmed in an approved crosswalk', color: '#0f172a' },
-  { id: 'case-record', label: 'Carried over from the case record', color: '#475569' },
-  { id: 'wording', label: 'Read from the policy wording', color: '#94a3b8' },
-  { id: 'authored', label: 'Assigned when the policy was written', color: '#cbd5e1' },
+  { id: 'reviewed', label: 'Confirmed in an approved crosswalk', color: '#92400e' },
+  { id: 'case-record', label: 'Carried over from the case record', color: '#d97706' },
+  { id: 'wording', label: 'Read from the policy wording', color: '#f59e0b' },
+  { id: 'authored', label: 'Assigned when the policy was written', color: '#fcd34d' },
 ];
 
+/* White reads on the dark end of a ramp and disappears on the light end, so the label takes its
+   colour from the step it sits on rather than from a single rule for the whole bar. */
+const ink = (hex) => {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+  return (0.299 * r + 0.587 * g + 0.114 * b) < 150 ? '#ffffff' : '#1f2937';
+};
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const n = (x) => Number(x).toLocaleString('en-US');
 const pct = (x, of) => `${((x / of) * 100).toFixed(1)}%`;
@@ -46,7 +52,7 @@ function pbar(parts, total, minLabelShare = 0.09) {
       ? `<div class="seg track" style="flex:${p.value};background:${p.color}"></div>`
       : `<div class="seg" style="flex:${p.value};background:${p.color}"
            data-tip="${esc(p.label)}|${n(p.value)} · ${pct(p.value, total)}${p.note ? `|${esc(p.note)}` : ''}">
-          ${p.value / total >= minLabelShare ? `<em>${n(p.value)}</em>` : ''}
+          ${p.value / total >= minLabelShare ? `<em style="color:${ink(p.color)};text-shadow:none">${n(p.value)}</em>` : ''}
         </div>`
   )).join('')}</div>`;
 }

@@ -49,9 +49,9 @@
 /* Sourcing is one quiet chip whose dot carries the step, on this surface as on the light one, so
    it can never be read as the same scale as the policy-type colours. */
 .case-detail .prov{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.66)}
-.case-detail .prov.direct::before{background:#fdba74}
-.case-detail .prov.inferred::before{background:#fb923c}
-.case-detail .prov.constructed::before{background:#f97316}
+.case-detail .prov.direct::before{background:#e2e8f0}
+.case-detail .prov.inferred::before{background:#94a3b8}
+.case-detail .prov.constructed::before{background:#64748b}
 .rec-policy-meta .ptype.public{background:rgba(37,99,235,.18);color:#93c5fd}
 .rec-policy-meta .ptype.expert{background:rgba(5,150,105,.18);color:#6ee7b7}
 .rec-policy-meta .ptype.framework{background:rgba(124,58,237,.2);color:#c4b5fd}
