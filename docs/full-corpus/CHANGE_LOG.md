@@ -13,7 +13,7 @@ something else moved.
 warrant, and no scoring path branches on it. If that ever stops being true, the projection
 in the script must change with it.
 
-**37 commits since 2026-08-27. 16 execution-relevant, 21 provenance-only.**
+**47 commits since 2026-08-27. 24 execution-relevant, 23 provenance-only.**
 
 ## Execution-relevant changes
 
@@ -22,6 +22,14 @@ paper-facing result covering the affected families.
 
 | Commit | Date | Families | Change |
 |---|---|---|---|
+| `27cfd128` | 2026-08-27 | **M010** | Draft M010 concise executable record |
+| `9c0caa67` | 2026-08-27 | **M010** | Draft M010 detailed executable record |
+| `8a5c1431` | 2026-08-27 | **M002** | Add M002 concise executable draft |
+| `5e6cd81f` | 2026-08-27 | **M002** | Add M002 detailed executable draft |
+| `26386ec5` | 2026-08-27 | **M004** | Add M004 concise executable draft |
+| `c07533d3` | 2026-08-27 | **M004** | Add M004 detailed executable draft |
+| `6e64bf7d` | 2026-08-27 | **M005** | Add M005 concise executable draft |
+| `96b42703` | 2026-08-27 | **M005** | Add M005 detailed executable draft |
 | `8154ae9f` | 2026-08-27 | **M005** | Re-derive M005 fw1 as a disclosure-default rule, and record authored completion |
 | `caaca816` | 2026-08-28 | **M010** | Bind profiles to a construction lineage before transcription |
 | `f32eb822` | 2026-08-28 | **M010, M012, M018, M019, M020, M025, M028, M030, M031, M033, M034, M041, M042, M045, M050, M054, M056, M060, M075, M080, M094, M097, M102, M106, M123, M139, M141, M144** | Bioethics Bench candidate-field reconstruction — tranche 01 |
@@ -46,6 +54,8 @@ when convenient; these never require a semantic rerun and must not gate executio
 
 | Commit | Date | Families | Change |
 |---|---|---|---|
+| `46dd8fe1` | 2026-08-27 | M010 | Write canonical hash for M010 concise |
+| `60f4290e` | 2026-08-27 | M010 | Write canonical hash for M010 detailed |
 | `bd31639c` | 2026-08-28 | M002, M004, M005, M010 | Add candidate policy_basis and relax the strict Full Corpus gate |
 | `d80ee4e6` | 2026-08-29 | M019 | Verify the corpus PMIDs, and repair the one citation that was wrong |
 | `4c0fe673` | 2026-08-29 | M004, M020, M030 | Resolve the five ambiguous citations and repair M030 pub1's stated warrant |

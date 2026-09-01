@@ -1,0 +1,27 @@
+# The pages, in a browser. Two failures reached the published site without any other check
+# noticing: a stylesheet that was never linked, and a renderer handed its data under the wrong
+# name. Both parse and deploy cleanly; only a browser sees them.
+name: Site smoke tests
+
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'cases/**', 'study/**', 'styles.css', 'resources/cases/**', 'tests/**', '.github/workflows/site-smoke.yml']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - run: npm run test:site

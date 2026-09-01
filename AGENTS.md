@@ -82,7 +82,13 @@ way once.
 `docs/README.md` says which documents govern current work and which record work already done.
 Read a dated batch note as provenance, never as an instruction.
 
-`npm run check:docs` enforces three things: every file in `docs/` is placed in one of those two
-lists, the counts the current documents quote match the published resources, and those documents
-use the current terminology. It runs on every push and before every deploy. Place a new document
+**The manuscript quotes these files; it does not restate them.** Every figure about the collection
+— how policies were sourced, how the types are distributed, how each type label was arrived at —
+comes from `docs/COMPOSITION.md`, which is generated. When a manuscript draft lands in this
+repository, add it to `CURRENT_FILES` in `scripts/check-docs.mjs` so the same guard covers it;
+while it lives in Drive, re-read COMPOSITION.md before quoting a number into it.
+
+`npm run check:docs` enforces four things: every file in `docs/` is placed in one of those two
+lists, the counts the current documents quote match the published resources, the shares they state
+in prose round to what the files give, and those documents use the current terminology. It runs on every push and before every deploy. Place a new document
 in the index in the same commit.

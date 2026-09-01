@@ -107,8 +107,6 @@ function policyProvenance(p,src){
 }
 function typeBadges(types){return (types||[]).map(t=>`<span class="ptype ${esc(t)}">${esc(TYPE_LABELS[t]||t)}</span>`).join('');}
 function sourceBadge(s){return `<span class="prov ${esc(s)}">${esc(SOURCE_LABELS[s]||s)}</span>`;}
-function sourceSummary(c){return Object.keys(SOURCE_LABELS).filter(k=>c.sourcing.has(k)).map(k=>sourceBadge(k)).join(' ');}
-function typeSummary(c){return Object.keys(TYPE_LABELS).filter(k=>c.types.has(k)).map(k=>`<span class="ptype ${k}">${TYPE_LABELS[k]}</span>`).join(' ');}
 
 function sacreUrl(c){const u=new URL(SACRE);u.searchParams.set('case',c.id);u.searchParams.set('form',state.rep);return u.toString();}
 

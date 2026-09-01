@@ -19,10 +19,11 @@
  * not an input to QCCS, and no scoring path branches on it. If that ever changes, move it.
  */
 import { execFileSync } from 'node:child_process';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
 const OUT = 'docs/full-corpus/CHANGE_LOG.md';
 const SINCE = process.env.CHANGELOG_SINCE || '2026-08-27';
+const WRITE = process.argv.includes('--write');
 
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
 // A record that did not exist in the parent commit is a creation, not an error; git still writes
@@ -116,5 +117,42 @@ for (const r of rows.filter((x) => !x.execution.length)) {
   L.push(`| \`${r.sha.slice(0, 8)}\` | ${r.date.slice(0, 10)} | ${r.provenance.join(', ') || '—'} | ${r.subject} |`);
 }
 L.push('');
-writeFileSync(OUT, `${L.join('\n')}\n`);
-console.log(`✓ change log: ${rows.length} commits, ${execCommits.length} execution-relevant → ${OUT}`);
+const rendered = `${L.join('\n')}\n`;
+
+/*
+ * The log is derived from git history, so a clone that does not have the history derives a
+ * shorter one — and writing it then deletes commits that happened. That is exactly what a
+ * shallow checkout does, and `npm run validate` used to write this file on every run, so the
+ * loss arrived as an innocuous-looking diff in an unrelated commit. Validate now checks; only
+ * --write writes, and neither does anything on a clone that cannot see the whole window.
+ */
+const shallow = git('rev-parse', '--is-shallow-repository').trim() === 'true';
+/* A clone can report itself complete and still be missing the start of the window — a fetch that
+   deepened history later produced ten commits this file had never recorded. The reliable test is
+   whether the repository holds anything older than the window: if its history begins inside it,
+   the log derived here is short by however much is absent. */
+const olderThanWindow = git('log', '-1', '--format=%H', `--before=${SINCE}`).trim();
+if (shallow || !olderThanWindow) {
+  console.error(`! change log: this clone's history does not reach back past ${SINCE}, so a log derived here would be short.`);
+  console.error(`  Refusing to ${WRITE ? 'write' : 'check'} ${OUT}. Run: git fetch --unshallow (or fetch the full history) first.`);
+  process.exit(WRITE ? 1 : 0);
+}
+
+if (WRITE) {
+  writeFileSync(OUT, rendered);
+  console.log(`✓ change log: ${rows.length} commits, ${execCommits.length} execution-relevant → ${OUT}`);
+} else {
+  const current = existsSync(OUT) ? readFileSync(OUT, 'utf8') : null;
+  if (current === null) {
+    console.error(`! ${OUT} is missing; run: node scripts/change-log.mjs --write`);
+    process.exit(1);
+  }
+  if (current !== rendered) {
+    const was = current.split('\n').filter((l) => l.startsWith('| `')).length;
+    const now = rendered.split('\n').filter((l) => l.startsWith('| `')).length;
+    console.error(`! ${OUT} is stale: it records ${was} commit row(s), the history gives ${now}.`);
+    console.error('  Run: node scripts/change-log.mjs --write');
+    process.exit(1);
+  }
+  console.log(`✓ change log current: ${rows.length} commits, ${execCommits.length} execution-relevant.`);
+}

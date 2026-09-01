@@ -14,10 +14,13 @@
     "digest": "node scripts/substantive-digest.mjs",
     "check:docs": "node scripts/check-docs.mjs",
     "build:composition": "node scripts/build-composition.mjs --write",
-    "build:source-index": "node scripts/build-source-index.mjs --write"
+    "build:source-index": "node scripts/build-source-index.mjs --write",
+    "build:change-log": "node scripts/change-log.mjs --write",
+    "test:site": "node --test tests/site.smoke.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "playwright": "^1.49.0"
   }
 }

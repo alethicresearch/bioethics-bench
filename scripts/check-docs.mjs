@@ -85,7 +85,30 @@ for (const file of CURRENT_FILES) {
   }
 }
 
-// 3. The shorthand the terminology rule retires, in documents that state current practice.
+/* 3. Rounded shares. The paper-facing documents say "7% of policies are directly sourced" rather
+   than quoting a count, and a share drifts silently when the denominator moves: 104 of 1,436 is
+   7%, but the same 104 of 1,298 was 8%. Every percentage a current document states about
+   sourcing is checked against the published files. */
+const composition = JSON.parse(fs.readFileSync(path.join(ROOT, 'resources/cases/composition.v1.json'), 'utf8'));
+const SHARES = [
+  { key: 'direct', pattern: /(\d{1,2})%\s+of\s+policies\s+are\s+directly/i },
+];
+for (const file of CURRENT_FILES) {
+  const full = path.join(ROOT, file);
+  if (!fs.existsSync(full)) continue;
+  const text = fs.readFileSync(full, 'utf8');
+  for (const share of SHARES) {
+    const match = text.match(share.pattern);
+    if (!match) continue;
+    const stated = Number(match[1]);
+    const actual = Math.round((composition.sourcing[share.key] / composition.policies) * 100);
+    if (stated !== actual) {
+      problems.push(`${file} says ${stated}% of policies are ${share.key}ly sourced; the published files give ${actual}%.`);
+    }
+  }
+}
+
+// 4. The shorthand the terminology rule retires, in documents that state current practice.
 const RETIRED = /\b(candidate universe|candidate geometry|normative research object|source ecology|executable geometry|projection manifest)\b/i;
 for (const file of CURRENT_FILES) {
   if (!fs.existsSync(path.join(ROOT, file))) continue;
