@@ -147,7 +147,10 @@
 
     /* Every case as a point: mean across, polarisation up. */
     .scatter-wrap { display: flex; gap: .5rem; }
-    .scatter-y { display: flex; flex-direction: column; justify-content: space-between; width: 2.2rem;
+    .scatter-lead { margin: 0; color: var(--muted); font-size: .84rem; }
+    .scatter-key { margin: .3rem 0 .55rem; padding-left: 1.1rem; color: var(--muted); font-size: .84rem; line-height: 1.5; }
+    .scatter-y .axis-name { font-variant-numeric: normal; line-height: 1.15; }
+    .scatter-y { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; width: 3.6rem;
       text-align: right; font-size: .66rem; color: #94a3b8; font-variant-numeric: tabular-nums; }
     .scatter { position: relative; flex: 1; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .scatter .mid-v { position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px dashed var(--soft2); }
@@ -657,16 +660,28 @@
           Math.round(c.polarisation * 100) + '% at an extreme"></button>';
       }).join('');
       return '<h3 class="sub-head">Every case, by what its scores mean</h3>' +
-        '<p class="note" style="margin:0 0 .7rem;color:var(--muted);font-size:.84rem">Across is mean convergence; up is the share ' +
-        'of a case&rsquo;s pairs at either extreme. A case low and high is <b>contested</b> — its sources ' +
-        'genuinely split. Low and flat is <b>uncertain</b> — everything landed mid-scale. Right and high ' +
-        'is <b>settled</b>. Click a point to open the case.</p>' +
+        // Each quadrant names both axes in the same two words, in the same order. The previous
+        // wording mixed values with directions — "low and high", then "low and flat", then "right
+        // and high" — so a reader had to work out which axis each half meant before the chart
+        // could be read.
+        '<p class="note scatter-lead"><b>Across:</b> the case&rsquo;s mean convergence. ' +
+        '<b>Up:</b> the share of its pairs that landed at an extreme &mdash; 0&ndash;20 or ' +
+        '90&ndash;100 &mdash; rather than mid-scale.</p>' +
+        '<ul class="scatter-key">' +
+        '<li>Low mean, high extremes &mdash; <b>contested</b>: the sources genuinely split.</li>' +
+        '<li>Low mean, low extremes &mdash; <b>uncertain</b>: everything landed mid-scale.</li>' +
+        '<li>High mean, high extremes &mdash; <b>settled</b>: they agree, and decisively.</li>' +
+        '</ul>' +
+        '<p class="note scatter-lead" style="margin-bottom:.7rem">Click a point to open the case.</p>' +
+        // Each axis says what it is, on the axis. The direction was given twice before — once in
+        // the paragraph above and again in a prose line below, in different words — so a reader had
+        // to reconcile the two before the chart could be read at all.
         '<div class="scatter-wrap">' +
-        '<div class="scatter-y" style="height:240px"><span>100%</span><span>50%</span><span>0%</span></div>' +
+        '<div class="scatter-y" style="height:240px"><span>100%</span>' +
+        '<span class="axis-name">at an<br>extreme</span><span>0%</span></div>' +
         '<div class="scatter" id="scatter" style="height:240px"><div class="mid-v"></div><div class="mid-h"></div>' +
         dots + '</div></div>' +
-        '<div class="mini-axis" style="padding-left:2.7rem"><span>0 — no convergence</span><span>mean convergence</span><span>100</span></div>' +
-        '<p class="note" style="padding-left:2.7rem;margin-top:.1rem">vertical: share of the case&rsquo;s pairs at either extreme (0–20 or 90–100)</p>';
+        '<div class="mini-axis" style="padding-left:4rem"><span>0</span><span>mean convergence</span><span>100</span></div>';
     }
 
     /** The scorer's own floor: an identity pair should score 100, and one that does not is a bug. */
