@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cases (v2 preview) — Bioethics Bench</title>
+  <meta name="description" content="Browse 200 bioethics cases by topic, policy type, and how each policy was sourced." />
+  <link rel="icon" href="../../assets/alethic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <!-- The case browser's own styles. Without this the source disclosures, the reviewed and
+       Bench-written chips and the case scenario box fall back to browser defaults. -->
+  <link rel="stylesheet" href="../cases.css" />
+  <link rel="stylesheet" href="v2.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../../">Bioethics<em>Bench</em></a>
+    <div class="navlinks">
+      <a href="../../">Overview</a>
+      <a class="active" href="../">Cases</a>
+      <a href="../sources/">Sourcing</a>
+      <a href="../../study/">Study</a>
+      <a class="github" href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <h1>Explore the cases</h1>
+      <p>Search by topic, choose a category, or filter the cases by policy type and how the policies were sourced.</p>
+    </div>
+  </header>
+
+  <section class="filters" aria-label="Case filters">
+    <div class="filter-wrap">
+      <div class="filter-top">
+        <input id="search" class="search" type="search" placeholder="Search cases and policies…" aria-label="Search cases and policies" />
+        <div class="filter-actions">
+          <span id="count" class="count">Loading cases…</span>
+          <button id="clear" class="clear" type="button">Clear filters</button>
+          <button id="toggle-filters" class="toggle-filters" type="button" aria-expanded="true" aria-controls="filter-body">Hide filters</button>
+        </div>
+      </div>
+      <div id="filter-body">
+      <div class="filter-row">
+        <span class="filter-name">Category</span>
+        <div id="categories" class="pills" aria-label="Category selector"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-name">Sourcing</span>
+        <div class="checks" aria-label="Policy sourcing filters">
+          <span class="check direct"><input id="prov-direct" type="checkbox" value="direct"><label for="prov-direct">Direct source</label></span>
+          <span class="check inferred"><input id="prov-inferred" type="checkbox" value="inferred"><label for="prov-inferred">Inferred from source</label></span>
+          <span class="check constructed"><input id="prov-constructed" type="checkbox" value="constructed"><label for="prov-constructed">Constructed</label></span>
+        </div>
+      </div>
+      <p class="legend-note">Every case carries Public, Expert and Framework policies. Direct / Inferred / Constructed describes how each policy was sourced, and a selection matches cases sourced in exactly those ways, so tick every one a mixed case should have.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="case-main">
+    <div class="browser" id="browser">
+      <aside class="case-index" aria-label="Case list">
+        <div class="index-head"><span>Cases</span><span id="index-count" class="index-count"></span></div>
+        <div id="case-index" class="index-scroll"><p class="loading">Loading cases…</p></div>
+      </aside>
+      <div class="col-handle" id="col-handle" role="separator" aria-orientation="vertical" tabindex="0"
+           aria-label="Drag to resize the case list, or double-click to reset" title="Drag to resize · double-click to reset"></div>
+      <article id="case-detail" class="case-detail"><p class="loading">Loading cases…</p></article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot"><span>Bioethics Bench</span><span><a href="../../">Overview</a> · <a href="https://github.com/alethicresearch/bioethics-bench" target="_blank" rel="noopener">GitHub</a></span></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
