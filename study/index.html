@@ -111,6 +111,24 @@
     .cellbtn.blank { background: var(--soft2); cursor: default; }
     .cellbtn.blank:hover { transform: none; }
 
+    /* The call behind a cell opens over the matrix, anchored to the cell that was clicked, rather
+       than in a panel further down the page: the reader's eye is on the cell, and a section below
+       the fold made them hunt for what they had just asked to see. */
+        /* Above the sticky nav, which sits at 50: a backdrop the site header punches through is not a
+       backdrop, and the nav stayed clickable underneath it. */
+    .pairpop-backdrop { position: fixed; inset: 0; z-index: 60; background: rgba(15, 23, 42, .28); }
+    .pairpop {
+      position: fixed; z-index: 61; width: max-content;
+      min-width: 20rem; max-width: min(34rem, calc(100vw - 1.5rem));
+      max-height: 72vh; overflow-y: auto;
+      background: #fff; border: 1px solid #c4b5fd; border-radius: 12px; padding: .9rem;
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .22);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .pairpop { animation: pairpop-in .12s ease-out; }
+      @keyframes pairpop-in { from { opacity: 0; transform: translateY(3px); } }
+    }
+
     .inspector { border: 1px solid #c4b5fd; background: #f5f3ff; border-radius: 10px; padding: .9rem; margin-top: 1rem; }
     .inspector .row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: .6rem; }
     .inspector .meta { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; color: var(--muted); }
@@ -894,7 +912,6 @@
         'converge on what to do. Only cross-source pairs are scored, so same-source cells are blank ' +
         'by design rather than missing. Click a cell for the call behind it.</p>' +
         '<div class="tbl-wrap"><table class="matrix">' + head + body + '</tbody></table></div>' +
-        '<div id="inspector"></div>' +
         policyProfileBlock(shown, textOf) +
         (crossRows
           ? '<h3 class="sub-head">This case across ' + (cells.length === 1 ? 'the model run' : cells.length + ' cells') + '</h3>' +
@@ -904,8 +921,10 @@
           : '<p class="note">Per-cell statistics are not in this report. Re-publishing the study from ' +
             'SACRE adds them.</p>');
 
-      if (state.openPair) renderInspector(idMap, textOf);
-      attachCaseViewHandlers();
+      // The popup lives at the top level and is closed on any re-render of the case: switching
+      // model or form changes which pairs exist, so a pinned call may no longer be one of them.
+      closePair();
+      attachCaseViewHandlers(idMap, textOf);
       // The corpus view is several screens tall and the case view is not, so the browser keeps a
       // scroll offset that lands the reader partway down the case — usually below the heatmap,
       // with nothing to say the page changed. Only on opening a case, not on every re-render:
@@ -916,25 +935,89 @@
       }
     }
 
-    function renderInspector(idMap, textOf) {
-      var p = (state.pairs || []).filter(function (x) { return x.key === state.openPair; })[0];
-      if (!p) { $('inspector').innerHTML = ''; return; }
+    /* ---------- the call behind one cell, over the matrix ---------- */
+    var pairPop = { el: null, backdrop: null, anchor: null, onKey: null, onMove: null };
+
+    function closePair(returnFocus) {
+      if (pairPop.onKey) document.removeEventListener('keydown', pairPop.onKey);
+      if (pairPop.onMove) {
+        window.removeEventListener('resize', pairPop.onMove);
+        window.removeEventListener('scroll', pairPop.onMove, true);
+      }
+      if (pairPop.el && pairPop.el.parentNode) pairPop.el.parentNode.removeChild(pairPop.el);
+      if (pairPop.backdrop && pairPop.backdrop.parentNode) pairPop.backdrop.parentNode.removeChild(pairPop.backdrop);
+      var anchor = pairPop.anchor;
+      pairPop = { el: null, backdrop: null, anchor: null, onKey: null, onMove: null };
+      state.openPair = null;
+      if (returnFocus && anchor && anchor.focus) anchor.focus();
+    }
+
+    // Anchored to the cell, then nudged back inside the viewport. Below the cell when there is
+    // room and above it when there is not, so the popup never covers the thing it explains.
+    function placePair() {
+      if (!pairPop.el || !pairPop.anchor) return;
+      var cell = pairPop.anchor.getBoundingClientRect();
+      var box = pairPop.el.getBoundingClientRect();
+      var M = 10;
+      var below = cell.bottom + 8 + box.height <= window.innerHeight - M;
+      var top = below ? cell.bottom + 8 : cell.top - 8 - box.height;
+      if (top < M) top = M;
+      if (top + box.height > window.innerHeight - M) top = Math.max(M, window.innerHeight - M - box.height);
+      var left = cell.left + cell.width / 2 - box.width / 2;
+      if (left < M) left = M;
+      if (left + box.width > window.innerWidth - M) left = Math.max(M, window.innerWidth - M - box.width);
+      pairPop.el.style.top = top + 'px';
+      pairPop.el.style.left = left + 'px';
+    }
+
+    function openPair(key, anchor, idMap, textOf) {
+      closePair();
+      var p = (state.pairs || []).filter(function (x) { return x.key === key; })[0];
+      if (!p) return;
+      state.openPair = key;
       var k = parseKey(p.key, p);
-      $('inspector').innerHTML =
-        '<div class="inspector">' +
-          '<div class="row">' + policyPill(k.a) + '<span style="color:#94a3b8">×</span>' + policyPill(k.b) +
-          '<span class="meta">' + esc(k.caseId) + ' · ' + esc(p.model) + ' · ' + esc(k.representation) + '</span>' +
-          '<span class="score">' + p.score + '</span>' +
-          '<button class="closebtn" id="close-pair">close</button></div>' +
-          '<div class="texts"><div>' + (esc(textOf(k.a)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') +
-          '</div><div>' + (esc(textOf(k.b)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') + '</div></div>' +
-          '<div class="why">' + (p.why
-            ? esc(p.why)
-            : 'No stated reason was recorded for this call. Runs executed before justifications were ' +
-              'captured keep their scores but not the model’s reasoning; a re-run records both.') + '</div>' +
-        '</div>';
+
+      var backdrop = document.createElement('div');
+      backdrop.className = 'pairpop-backdrop';
+      backdrop.addEventListener('click', function () { closePair(true); });
+
+      var el = document.createElement('div');
+      el.className = 'pairpop inspector';
+      el.setAttribute('role', 'dialog');
+      el.setAttribute('aria-modal', 'true');
+      el.setAttribute('aria-label', 'Convergence call: ' + k.a + ' by ' + k.b);
+      el.innerHTML =
+        '<div class="row">' + policyPill(k.a) + '<span style="color:#94a3b8">×</span>' + policyPill(k.b) +
+        '<span class="meta">' + esc(k.caseId) + ' · ' + esc(p.model) + ' · ' + esc(k.representation) + '</span>' +
+        '<span class="score">' + p.score + '</span>' +
+        '<button class="closebtn" id="close-pair">close</button></div>' +
+        '<div class="texts"><div>' + (esc(textOf(k.a)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') +
+        '</div><div>' + (esc(textOf(k.b)) || '<span style="color:#94a3b8">Policy text unavailable.</span>') + '</div></div>' +
+        '<div class="why">' + (p.why
+          ? esc(p.why)
+          : 'No stated reason was recorded for this call. Runs executed before justifications were ' +
+            'captured keep their scores but not the model’s reasoning; a re-run records both.') + '</div>';
+
+      document.body.appendChild(backdrop);
+      document.body.appendChild(el);
+      pairPop.el = el;
+      pairPop.backdrop = backdrop;
+      pairPop.anchor = anchor || null;
+
+      // A click inside must not reach the backdrop, or reading the justification would close it.
+      el.addEventListener('click', function (e) { e.stopPropagation(); });
       var close = $('close-pair');
-      if (close) close.addEventListener('click', function () { state.openPair = null; renderCase(); });
+      if (close) close.addEventListener('click', function () { closePair(true); });
+
+      pairPop.onKey = function (e) { if (e.key === 'Escape') closePair(true); };
+      document.addEventListener('keydown', pairPop.onKey);
+      // Anchored to a cell in a horizontally scrolling table, so it follows rather than detaches.
+      pairPop.onMove = placePair;
+      window.addEventListener('resize', pairPop.onMove);
+      window.addEventListener('scroll', pairPop.onMove, true);
+
+      placePair();
+      if (close && close.focus) close.focus();
     }
 
     /* ---------- handlers ---------- */
@@ -977,15 +1060,21 @@
       });
     }
 
-    function attachCaseViewHandlers() {
+    function attachCaseViewHandlers(idMap, textOf) {
       var back = $('back');
       if (back) back.addEventListener('click', function () {
-        state.openCase = null; state.openPair = null;
+        closePair();
+        state.openCase = null;
         location.hash = '';
         renderCorpus();
       });
+      // Opening a call no longer re-renders the case. Rebuilding the whole view to show one cell
+      // meant the matrix was destroyed and rebuilt under the reader's cursor, and the answer
+      // appeared below the fold; it now opens over the cell that was clicked.
       Array.prototype.forEach.call(document.querySelectorAll('.cellbtn[data-key]'), function (el) {
-        el.addEventListener('click', function () { state.openPair = el.getAttribute('data-key'); renderCase(); });
+        el.addEventListener('click', function () {
+          openPair(el.getAttribute('data-key'), el, idMap, textOf);
+        });
       });
       Array.prototype.forEach.call(document.querySelectorAll('[data-model]'), function (el) {
         el.addEventListener('click', function () { state.caseModel = el.getAttribute('data-model'); state.openPair = null; renderCase(); });
