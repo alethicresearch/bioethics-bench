@@ -6,7 +6,7 @@ name: Site smoke tests
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'cases/**', 'study/**', 'styles.css', 'resources/cases/**', 'tests/**', '.github/workflows/site-smoke.yml']
+    paths: ['index.html', 'cases/**', 'study/**', 'styles.css', 'resources/cases/**', 'tests/**', 'package.json', 'package-lock.json', '.github/workflows/site-smoke.yml']
   pull_request:
   workflow_dispatch:
 
