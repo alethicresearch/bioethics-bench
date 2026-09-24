@@ -15,8 +15,10 @@ const SOURCE = path.join(ROOT, 'resources/cases/full-200-cases.v1.json');
 const OUTPUT = path.join(ROOT, 'resources/cases/full-200-cases.v2.json');
 const AUDIT = path.join(ROOT, 'resources/cases/full-200-cases.v2.audit.json');
 const EXCLUDED_CASE = 'M056';
+const F08_RECORD = path.join(ROOT, 'data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json');
 
 const source = JSON.parse(fs.readFileSync(SOURCE, 'utf8'));
+const f08 = JSON.parse(fs.readFileSync(F08_RECORD, 'utf8'));
 const output = structuredClone(source);
 output.resource_version = '2.0.0';
 output.derived_from = {
@@ -51,9 +53,31 @@ for (let i = 0; i < output.cases.length; i += 1) {
   const beforeCase = source.cases[i];
   const benchCase = output.cases[i];
   if (benchCase.id === EXCLUDED_CASE) {
-    if (JSON.stringify(beforeCase) !== JSON.stringify(benchCase)) {
-      throw new Error(`${EXCLUDED_CASE}: excluded case changed`);
-    }
+    // Preserve the exact evaluation-facing F08 wording used by the historical worked example.
+    // The 200-case library identity stays M056, but its v2 scenario/policies use the frozen
+    // Featured F08 Detailed record so the continuity case is genuinely unchanged.
+    benchCase.title = f08.title;
+    benchCase.concise = f08.scenario;
+    benchCase.detailed = f08.scenario;
+    const featuredPolicies = [
+      ...(f08.candidate_pools?.public || []),
+      ...(f08.candidate_pools?.expert || []),
+      ...(f08.candidate_pools?.framework || []),
+    ];
+    benchCase.policies = featuredPolicies.map((p) => ({
+      id: p.id,
+      text: p.text,
+      text_detailed: p.text,
+      types: p.source_pool ? [p.source_pool] : (
+        (f08.candidate_pools?.public || []).some((x) => x.id === p.id) ? ['public'] :
+        (f08.candidate_pools?.expert || []).some((x) => x.id === p.id) ? ['expert'] : ['framework']
+      ),
+      type_reviewed: true,
+      type_route: 'featured-v1-preserved',
+      sourcing: p.provenance?.construction_method === 'extracted-from-evidence' ? 'direct'
+        : p.provenance?.construction_method === 'adapted-from-source' ? 'inferred'
+        : 'constructed',
+    }));
     continue;
   }
   benchCase.concise = normalize(benchCase.concise, `${benchCase.id}.concise`, benchCase.id);
@@ -106,11 +130,14 @@ const audit = {
   output_resource_version: output.resource_version,
   cases: output.cases.length,
   excluded_case: EXCLUDED_CASE,
+  f08_source_record: f08.record_id,
+  f08_source_content_hash: f08.content_hash,
   changed_fields: changedFields,
   removed_semicolons: removedSemicolons,
   cases_changed: Object.keys(perCase).length,
   per_case_removed_semicolons: Object.fromEntries(Object.entries(perCase).sort()),
-  lexical_content_preserved: true,
+  lexical_content_preserved_for_199_normalized_cases: true,
+  f08_preserved_from_featured_v1: true,
 };
 
 if (process.argv.includes('--check')) {
