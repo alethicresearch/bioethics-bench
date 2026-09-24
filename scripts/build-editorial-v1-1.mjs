@@ -12,8 +12,10 @@ const out = structuredClone(source);
 out.resource_version = '1.1.0';
 
 const changes = [];
+const reviewedCaseIds = [];
 for (const benchCase of out.cases || []) {
   if (EXCLUDED.has(benchCase.id)) continue;
+  reviewedCaseIds.push(benchCase.id);
   for (const field of ['concise', 'detailed']) {
     const before = benchCase[field];
     const after = normalizeEditorialProse(before);
@@ -40,8 +42,12 @@ writeFileSync(changesPath, JSON.stringify({
   to_resource: 'full-200-cases.v1.1.json',
   excluded_case_ids: [...EXCLUDED],
   scope: 'punctuation/readability only; substantive content preserved',
+  reviewed_case_count: reviewedCaseIds.length,
+  reviewed_case_ids: reviewedCaseIds,
   change_count: changes.length,
+  cases_changed: new Set(changes.map((x) => x.case_id)).size,
+  cases_unchanged_under_rule: reviewedCaseIds.filter((id) => !changes.some((x) => x.case_id === id)),
   changes,
 }, null, 2) + '\n');
 
-console.log(`✓ wrote ${outputPath} with ${changes.length} editorial field changes; M056 unchanged`);
+console.log(`✓ reviewed ${reviewedCaseIds.length} cases; wrote ${outputPath} with ${changes.length} editorial field changes; M056 unchanged`);
