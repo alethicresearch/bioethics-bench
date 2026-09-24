@@ -12,8 +12,8 @@ import { canonicalContentHash } from './hash-case.mjs';
 import { normalizeEditorialProse } from './editorial-prose-normalize.mjs';
 
 const SRC = 'data/featured';
-const OUTPUT = 'resources/cases/featured20-prestudy-v2.json';
-const CHANGES = 'resources/cases/featured20-prestudy-v2.changes.json';
+const OUTPUT = 'resources/cases/featured-20.v2.json';
+const CHANGES = 'resources/cases/featured-20.v2.changes.json';
 const EXCLUDED_CASE = 'f08-fourteen-day-embryo-research-limit';
 const EDIT_KEYS = new Set([
   'short_description',
@@ -83,7 +83,7 @@ if (JSON.stringify(f08Source) !== JSON.stringify(f08Output)) {
 }
 
 const resource = {
-  resource_id: 'bioethics-bench-featured20-prestudy',
+  resource_id: 'bioethics-bench-featured-v2',
   resource_version: '2.0.0',
   derived_from: 'featured-v1',
   editorial_scope: 'punctuation/readability only; substantive content preserved',
