@@ -6,7 +6,7 @@
  * normalization; F08 is copied byte-for-byte at the record-content level so continuity with the
  * historical worked example is preserved.
  */
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { canonicalContentHash } from './hash-case.mjs';
 import { normalizeEditorialProse } from './editorial-prose-normalize.mjs';
@@ -93,8 +93,7 @@ const resource = {
   records,
 };
 
-writeFileSync(OUTPUT, JSON.stringify(resource, null, 2) + '\n');
-writeFileSync(CHANGES, JSON.stringify({
+const changesPayload = {
   schema: 'bioethics-bench-featured20-prestudy-editorial-changes/1',
   from_release: 'featured-v1',
   to_resource: resource.resource_id,
@@ -103,9 +102,26 @@ writeFileSync(CHANGES, JSON.stringify({
   change_count: changes.length,
   cases_changed: new Set(changes.map((x) => x.case_id)).size,
   changes,
-}, null, 2) + '\n');
+};
+const rendered = JSON.stringify(resource, null, 2) + '\n';
+const renderedChanges = JSON.stringify(changesPayload, null, 2) + '\n';
 
-console.log(
-  `✓ wrote ${OUTPUT}: ${records.length} records, ${changes.length} changed fields across `
-  + `${new Set(changes.map((x) => x.case_id)).size} families; F08 preserved exactly`,
-);
+if (process.argv.includes('--check')) {
+  if (!existsSync(OUTPUT) || readFileSync(OUTPUT, 'utf8') !== rendered) {
+    throw new Error(`${OUTPUT} is stale; run node scripts/build-featured-v2.mjs`);
+  }
+  if (!existsSync(CHANGES) || readFileSync(CHANGES, 'utf8') !== renderedChanges) {
+    throw new Error(`${CHANGES} is stale; run node scripts/build-featured-v2.mjs`);
+  }
+  console.log(
+    `✓ verified ${OUTPUT}: ${records.length} records, ${changes.length} changed fields across `
+    + `${new Set(changes.map((x) => x.case_id)).size} families; F08 preserved exactly`,
+  );
+} else {
+  writeFileSync(OUTPUT, rendered);
+  writeFileSync(CHANGES, renderedChanges);
+  console.log(
+    `✓ wrote ${OUTPUT}: ${records.length} records, ${changes.length} changed fields across `
+    + `${new Set(changes.map((x) => x.case_id)).size} families; F08 preserved exactly`,
+  );
+}
