@@ -1,169 +1,143 @@
 #!/usr/bin/env node
 /**
- * Build Bioethics Bench 200-case language-normalized v2 from the published v1 resource.
+ * Build Bioethics Bench v2 from the published 200-case v1 resource.
  *
- * M056 is excluded because it is the Full Corpus counterpart of the preserved F08 worked example.
- * All other changes are punctuation/capitalization/whitespace only and are checked by lexical
- * signature before writing.
+ * The v2 editorial pass covers all 199 cases other than M056/F08. It changes punctuation and
+ * readability only, preserving the lexical content, case identities, policy identities, policy
+ * types, sourcing labels, and 1,436-policy structure. M056 is carried forward unchanged.
  */
 import fs from 'node:fs';
-import path from 'node:path';
-import { normalizeField, lexicalSignature } from './language-normalization-v2.mjs';
+import { normalizeEditorialProse } from './editorial-prose-normalize.mjs';
 
-const ROOT = process.cwd();
-const SOURCE = path.join(ROOT, 'resources/cases/full-200-cases.v1.json');
-const OUTPUT = path.join(ROOT, 'resources/cases/full-200-cases.v2.json');
-const AUDIT = path.join(ROOT, 'resources/cases/full-200-cases.v2.audit.json');
-const EXCLUDED_CASE = 'M056';
-const F08_RECORD = path.join(ROOT, 'data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json');
+const INPUT = 'resources/cases/full-200-cases.v1.json';
+const OUTPUT = 'resources/cases/full-200-cases.v2.json';
+const AUDIT = 'resources/cases/full-200-cases.v2.audit.json';
+const EXCLUDED = new Set(['M056']);
 
-const source = JSON.parse(fs.readFileSync(SOURCE, 'utf8'));
-const f08 = JSON.parse(fs.readFileSync(F08_RECORD, 'utf8'));
-const output = structuredClone(source);
-output.resource_version = '2.0.0';
-output.derived_from = {
+const source = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
+const out = JSON.parse(JSON.stringify(source));
+out.resource_version = '2.0.0';
+out.derived_from = {
   resource_id: source.resource_id,
   resource_version: source.resource_version,
 };
-output.editorial_normalization = {
-  scope: 'evaluation-facing prose',
-  rule: 'semicolon-linked clauses normalized to sentences or ordinary coordination; punctuation, capitalization, and whitespace only',
-  excluded_case: EXCLUDED_CASE,
-  reason: 'M056 is the Full Corpus counterpart of the preserved Featured F08 worked example',
+out.editorial_normalization = {
+  scope: 'punctuation/readability only; substantive content preserved',
+  excluded_case_ids: [...EXCLUDED],
+  excluded_case_reason: 'M056 corresponds to the preserved F08 continuity case and is carried forward unchanged',
 };
 
-let changedFields = 0;
-let removedSemicolons = 0;
-const perCase = {};
-
-function normalize(value, label, caseId) {
-  if (typeof value !== 'string') return value;
-  const before = (value.match(/;/g) || []).length;
-  const afterValue = normalizeField(value, label);
-  const after = (afterValue.match(/;/g) || []).length;
-  if (before !== after) {
-    changedFields += 1;
-    removedSemicolons += before - after;
-    perCase[caseId] = (perCase[caseId] || 0) + (before - after);
-  }
-  return afterValue;
+function lexicalSignature(text) {
+  return String(text ?? '')
+    .toLocaleLowerCase('en-US')
+    .match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu)?.join(' ') || '';
 }
 
-for (let i = 0; i < output.cases.length; i += 1) {
-  const benchCase = output.cases[i];
-  if (benchCase.id === EXCLUDED_CASE) {
-    // Preserve the exact evaluation-facing F08 wording used by the historical worked example.
-    // The 200-case library identity stays M056, but its v2 scenario/policies use the frozen
-    // Featured F08 Detailed record so the continuity case is genuinely unchanged.
-    benchCase.title = f08.title;
-    benchCase.concise = f08.scenario;
-    benchCase.detailed = f08.scenario;
-    benchCase.source_file = 'data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json';
-    benchCase.preserved_featured_record = { record_id: f08.record_id, version: f08.version, content_hash: f08.content_hash };
-    const featuredPolicies = [
-      ...(f08.candidate_pools?.public || []),
-      ...(f08.candidate_pools?.expert || []),
-      ...(f08.candidate_pools?.framework || []),
-    ];
-    benchCase.policies = featuredPolicies.map((p) => ({
-      id: p.id,
-      text: p.text,
-      text_detailed: p.text,
-      types: p.source_pool ? [p.source_pool] : (
-        (f08.candidate_pools?.public || []).some((x) => x.id === p.id) ? ['public'] :
-        (f08.candidate_pools?.expert || []).some((x) => x.id === p.id) ? ['expert'] : ['framework']
-      ),
-      type_reviewed: true,
-      type_route: 'featured-v1-preserved',
-      sourcing: p.provenance?.construction_method === 'extracted-from-evidence' ? 'direct'
-        : p.provenance?.construction_method === 'adapted-from-source' ? 'inferred'
-        : 'constructed',
-    }));
-    continue;
-  }
-  benchCase.concise = normalize(benchCase.concise, `${benchCase.id}.concise`, benchCase.id);
-  benchCase.detailed = normalize(benchCase.detailed, `${benchCase.id}.detailed`, benchCase.id);
-  for (const policy of benchCase.policies || []) {
-    policy.text = normalize(policy.text, `${benchCase.id}.${policy.id}.text`, benchCase.id);
-    policy.text_detailed = normalize(policy.text_detailed, `${benchCase.id}.${policy.id}.text_detailed`, benchCase.id);
-  }
-}
+const changes = [];
+const reviewedCaseIds = [];
+for (let index = 0; index < out.cases.length; index += 1) {
+  const benchCase = out.cases[index];
+  const sourceCase = source.cases[index];
 
-// Structural identity and lexical content must be unchanged for the 199 normalized cases.
-// M056 is the one declared exception: it carries the exact historical Featured F08 setup.
-if (output.cases.length !== source.cases.length) throw new Error('case count changed');
-for (let i = 0; i < source.cases.length; i += 1) {
-  const a = source.cases[i], b = output.cases[i];
-  if (b.id === EXCLUDED_CASE) {
-    if (b.title !== f08.title || b.concise !== f08.scenario || b.detailed !== f08.scenario) {
-      throw new Error(`${EXCLUDED_CASE}: preserved F08 scenario drifted`);
-    }
-    const expectedIds = ['pub1','pub2','exp1','exp2','fw1','fw2'];
-    if (JSON.stringify((b.policies || []).map((p) => p.id)) !== JSON.stringify(expectedIds)) {
-      throw new Error(`${EXCLUDED_CASE}: preserved F08 candidate field drifted`);
+  if (EXCLUDED.has(benchCase.id)) {
+    if (JSON.stringify(benchCase) !== JSON.stringify(sourceCase)) {
+      throw new Error(`${benchCase.id}: excluded case changed`);
     }
     continue;
   }
-  if (a.id !== b.id || a.title !== b.title || a.category !== b.category || a.source_file !== b.source_file) {
-    throw new Error(`${a.id}: structural identity changed`);
-  }
-  if ((a.policies || []).length !== (b.policies || []).length) throw new Error(`${a.id}: policy count changed`);
-  for (let j = 0; j < (a.policies || []).length; j += 1) {
-    const p = a.policies[j], q = b.policies[j];
-    for (const key of ['id','types','type_reviewed','type_route','sourcing','written_by_bench']) {
-      if (JSON.stringify(p[key]) !== JSON.stringify(q[key])) throw new Error(`${a.id}:${p.id} ${key} changed`);
+
+  reviewedCaseIds.push(benchCase.id);
+  for (const field of ['concise', 'detailed']) {
+    const before = benchCase[field];
+    const after = normalizeEditorialProse(before);
+    if (lexicalSignature(before) !== lexicalSignature(after)) {
+      throw new Error(`${benchCase.id}.${field}: lexical content changed`);
     }
-    for (const key of ['text','text_detailed']) {
-      if (typeof p[key] === 'string' && lexicalSignature(p[key]) !== lexicalSignature(q[key])) {
-        throw new Error(`${a.id}:${p.id} ${key} changed lexical content`);
+    if (after !== before) {
+      changes.push({ case_id: benchCase.id, field, before, after });
+      benchCase[field] = after;
+    }
+  }
+
+  if ((benchCase.policies || []).length !== (sourceCase.policies || []).length) {
+    throw new Error(`${benchCase.id}: policy count changed`);
+  }
+  for (let pIndex = 0; pIndex < (benchCase.policies || []).length; pIndex += 1) {
+    const policy = benchCase.policies[pIndex];
+    const sourcePolicy = sourceCase.policies[pIndex];
+    if (policy.id !== sourcePolicy.id
+        || JSON.stringify(policy.types) !== JSON.stringify(sourcePolicy.types)
+        || policy.type_reviewed !== sourcePolicy.type_reviewed
+        || policy.type_route !== sourcePolicy.type_route
+        || policy.sourcing !== sourcePolicy.sourcing) {
+      throw new Error(`${benchCase.id}:${policy.id}: policy metadata changed`);
+    }
+    for (const field of ['text', 'text_detailed']) {
+      const before = policy[field];
+      const after = normalizeEditorialProse(before);
+      if (lexicalSignature(before) !== lexicalSignature(after)) {
+        throw new Error(`${benchCase.id}:${policy.id}.${field}: lexical content changed`);
+      }
+      if (after !== before) {
+        changes.push({ case_id: benchCase.id, policy_id: policy.id, field, before, after });
+        policy[field] = after;
       }
     }
   }
 }
 
-const remaining = [];
-for (const benchCase of output.cases) {
-  if (benchCase.id === EXCLUDED_CASE) continue;
-  for (const [label, value] of [['concise', benchCase.concise], ['detailed', benchCase.detailed]]) {
-    if (typeof value === 'string' && value.includes(';')) remaining.push(`${benchCase.id}.${label}`);
-  }
-  for (const policy of benchCase.policies || []) {
-    for (const key of ['text','text_detailed']) {
-      if (typeof policy[key] === 'string' && policy[key].includes(';')) remaining.push(`${benchCase.id}.${policy.id}.${key}`);
-    }
-  }
+if (out.cases.length !== 200) throw new Error(`expected 200 cases, found ${out.cases.length}`);
+if (out.policy_count !== source.policy_count || out.policy_count !== 1436) {
+  throw new Error(`policy count changed: ${source.policy_count} -> ${out.policy_count}`);
 }
-if (remaining.length) throw new Error(`semicolon normalization incomplete: ${remaining.slice(0, 10).join(', ')}`);
 
-const rendered = `${JSON.stringify(output, null, 2)}\n`;
 const audit = {
-  schema: 'bioethics-bench-language-normalization-audit/1',
+  schema: 'bioethics-bench-v2-editorial-changes/1',
+  from_resource: INPUT,
+  to_resource: OUTPUT,
   source_resource_version: source.resource_version,
-  output_resource_version: output.resource_version,
-  cases: output.cases.length,
-  excluded_case: EXCLUDED_CASE,
-  f08_source_record: f08.record_id,
-  f08_source_content_hash: f08.content_hash,
-  changed_fields: changedFields,
-  removed_semicolons: removedSemicolons,
-  cases_changed: Object.keys(perCase).length,
-  per_case_removed_semicolons: Object.fromEntries(Object.entries(perCase).sort()),
-  lexical_content_preserved_for_199_normalized_cases: true,
-  f08_preserved_from_featured_v1: true,
+  output_resource_version: out.resource_version,
+  scope: out.editorial_normalization.scope,
+  excluded_case_ids: [...EXCLUDED],
+  reviewed_case_count: reviewedCaseIds.length,
+  reviewed_case_ids: reviewedCaseIds,
+  change_count: changes.length,
+  cases_changed: new Set(changes.map((change) => change.case_id)).size,
+  cases_unchanged_under_rule: reviewedCaseIds.filter(
+    (id) => !changes.some((change) => change.case_id === id),
+  ),
+  lexical_content_preserved: true,
+  case_structure_preserved: true,
+  policy_count_preserved: true,
+  changes,
 };
 
-if (process.argv.includes('--check')) {
-  if (!fs.existsSync(OUTPUT) || fs.readFileSync(OUTPUT, 'utf8') !== rendered) {
-    throw new Error('full-200-cases.v2.json is stale; run node scripts/build-public-cases-v2.mjs --write');
-  }
-  if (!fs.existsSync(AUDIT) || fs.readFileSync(AUDIT, 'utf8') !== `${JSON.stringify(audit, null, 2)}\n`) {
-    throw new Error('full-200-cases.v2.audit.json is stale');
-  }
-  console.log(`✓ v2 verified: ${changedFields} fields, ${removedSemicolons} semicolons removed across 199 cases; F08 preserved from ${f08.record_id}.`);
-} else if (process.argv.includes('--write')) {
+const rendered = JSON.stringify(out, null, 2) + '\n';
+const auditRendered = JSON.stringify(audit, null, 2) + '\n';
+
+if (process.argv.includes('--write')) {
   fs.writeFileSync(OUTPUT, rendered);
-  fs.writeFileSync(AUDIT, `${JSON.stringify(audit, null, 2)}\n`);
-  console.log(`✓ wrote v2: ${changedFields} fields, ${removedSemicolons} semicolons removed across 199 cases; F08 preserved from ${f08.record_id}.`);
+  fs.writeFileSync(AUDIT, auditRendered);
+  console.log(
+    `✓ wrote Bioethics Bench v2: ${reviewedCaseIds.length} cases reviewed, `
+    + `${changes.length} editorial field changes across ${audit.cases_changed} cases; M056 unchanged`,
+  );
+} else if (process.argv.includes('--check')) {
+  if (!fs.existsSync(OUTPUT) || fs.readFileSync(OUTPUT, 'utf8') !== rendered) {
+    throw new Error(`${OUTPUT} is stale; run node scripts/build-public-cases-v2.mjs --write`);
+  }
+  if (!fs.existsSync(AUDIT) || fs.readFileSync(AUDIT, 'utf8') !== auditRendered) {
+    throw new Error(`${AUDIT} is stale; run node scripts/build-public-cases-v2.mjs --write`);
+  }
+  console.log(
+    `✓ Bioethics Bench v2 verified: ${reviewedCaseIds.length} cases reviewed, `
+    + `${changes.length} editorial field changes across ${audit.cases_changed} cases; M056 unchanged`,
+  );
 } else {
-  console.log(JSON.stringify(audit, null, 2));
+  console.log(JSON.stringify({
+    reviewed_case_count: reviewedCaseIds.length,
+    change_count: changes.length,
+    cases_changed: audit.cases_changed,
+    excluded_case_ids: audit.excluded_case_ids,
+  }, null, 2));
 }
