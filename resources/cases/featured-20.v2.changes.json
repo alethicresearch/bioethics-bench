@@ -1,0 +1,683 @@
+{
+  "schema": "bioethics-bench-featured20-prestudy-editorial-changes/1",
+  "from_release": "featured-v1",
+  "to_resource": "bioethics-bench-featured-v2",
+  "excluded_case_id": "f08-fourteen-day-embryo-research-limit",
+  "scope": "punctuation/readability only; substantive content preserved",
+  "change_count": 84,
+  "cases_changed": 19,
+  "changes": [
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme; refer the patient to a centre experienced in bloodless medicine before scheduling the operation.",
+      "after": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme. Refer the patient to a centre experienced in bloodless medicine before scheduling the operation."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Postpone, modify, or decline the elective operation when refusal of transfusion makes the residual perioperative risk exceed the team's defensible safety threshold; facilitate referral where feasible.",
+      "after": "Postpone, modify, or decline the elective operation when refusal of transfusion makes the residual perioperative risk exceed the team's defensible safety threshold. Facilitate referral where feasible."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-concise-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Honor the patient's autonomous refusal and offer the operation when it remains within the ordinary range of professionally acceptable risk; do not make acceptance of transfusion a condition by itself.",
+      "after": "Honor the patient's autonomous refusal and offer the operation when it remains within the ordinary range of professionally acceptable risk. Do not make acceptance of transfusion a condition by itself."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v2",
+      "path": "scenario",
+      "before": "A competent adult is considering elective surgery that offers substantial expected benefit but carries a meaningful risk of major blood loss. The patient consistently refuses allogeneic blood transfusion for religious reasons after discussing the risk of severe anemia, disability, and death, but accepts specified blood-conservation techniques and nonblood alternatives. A multidisciplinary team can reduce, but not eliminate, the bleeding risk. Some surgeons are willing to operate under a documented bloodless-management plan; others believe the residual risk may exceed what they can responsibly accept for an elective procedure. Transfer to another experienced center is possible but would delay care. The hospital must decide whether to proceed and what risk threshold or safeguards should govern that decision.",
+      "after": "A competent adult is considering elective surgery that offers substantial expected benefit but carries a meaningful risk of major blood loss. The patient consistently refuses allogeneic blood transfusion for religious reasons after discussing the risk of severe anemia, disability, and death, but accepts specified blood-conservation techniques and nonblood alternatives. A multidisciplinary team can reduce, but not eliminate, the bleeding risk. Some surgeons are willing to operate under a documented bloodless-management plan. Others believe the residual risk may exceed what they can responsibly accept for an elective procedure. Transfer to another experienced center is possible but would delay care. The hospital must decide whether to proceed and what risk threshold or safeguards should govern that decision."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme; refer the patient to a centre experienced in bloodless medicine before scheduling the operation.",
+      "after": "Do not proceed at this hospital unless it has an established transfusion-free surgical programme. Refer the patient to a centre experienced in bloodless medicine before scheduling the operation."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Postpone, modify, or decline the elective operation when refusal of transfusion makes the residual perioperative risk exceed the team's defensible safety threshold; facilitate referral where feasible.",
+      "after": "Postpone, modify, or decline the elective operation when refusal of transfusion makes the residual perioperative risk exceed the team's defensible safety threshold. Facilitate referral where feasible."
+    },
+    {
+      "case_id": "f01-elective-surgery-transfusion-refusal",
+      "source_record_id": "f01-elective-surgery-transfusion-refusal-detailed-v1",
+      "record_id": "f01-elective-surgery-transfusion-refusal-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Honor the patient's autonomous refusal and offer the operation when it remains within the ordinary range of professionally acceptable risk; do not make acceptance of transfusion a condition by itself.",
+      "after": "Honor the patient's autonomous refusal and offer the operation when it remains within the ordinary range of professionally acceptable risk. Do not make acceptance of transfusion a condition by itself."
+    },
+    {
+      "case_id": "f02-advance-directive-dementia-contentment",
+      "source_record_id": "f02-advance-directive-dementia-contentment-concise-v1",
+      "record_id": "f02-advance-directive-dementia-contentment-concise-v2",
+      "path": "scenario",
+      "before": "A person with advanced dementia lacks decision-making capacity but appears comfortable and engaged. Years earlier, while competent, they signed a directive refusing life-prolonging treatment in this condition; clinicians must decide how strongly it should control treatment of a serious but reversible infection.",
+      "after": "A person with advanced dementia lacks decision-making capacity but appears comfortable and engaged. Years earlier, while competent, they signed a directive refusing life-prolonging treatment in this condition. Clinicians must decide how strongly it should control treatment of a serious but reversible infection."
+    },
+    {
+      "case_id": "f02-advance-directive-dementia-contentment",
+      "source_record_id": "f02-advance-directive-dementia-contentment-detailed-v1",
+      "record_id": "f02-advance-directive-dementia-contentment-detailed-v2",
+      "path": "scenario",
+      "before": "A person with advanced dementia no longer has decision-making capacity, recognizes few people, and cannot understand treatment decisions, but currently appears comfortable, enjoys music and meals, and shows no persistent distress. Years earlier, while fully competent, the person signed an advance directive stating that if severe dementia caused loss of decisional capacity, they did not want life-prolonging treatment. The directive did not name the specific infection now diagnosed, which is serious but likely treatable with hospitalization and intravenous therapy. The surrogate believes the earlier directive should be followed; some caregivers feel the person’s present enjoyment matters morally. The clinical team must decide how strongly the prior directive should control treatment in light of the person’s current welfare.",
+      "after": "A person with advanced dementia no longer has decision-making capacity, recognizes few people, and cannot understand treatment decisions, but currently appears comfortable, enjoys music and meals, and shows no persistent distress. Years earlier, while fully competent, the person signed an advance directive stating that if severe dementia caused loss of decisional capacity, they did not want life-prolonging treatment. The directive did not name the specific infection now diagnosed, which is serious but likely treatable with hospitalization and intravenous therapy. The surrogate believes the earlier directive should be followed. Some caregivers feel the person’s present enjoyment matters morally. The clinical team must decide how strongly the prior directive should control treatment in light of the person’s current welfare."
+    },
+    {
+      "case_id": "f03-periviable-resuscitation-default",
+      "source_record_id": "f03-periviable-resuscitation-default-detailed-v1",
+      "record_id": "f03-periviable-resuscitation-default-detailed-v2",
+      "path": "scenario",
+      "before": "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up; individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use.",
+      "after": "A pregnant patient is likely to deliver at 23 weeks' gestation despite efforts to prolong pregnancy. For this benchmark, assume that about 30 to 50 per cent of infants actively treated at this gestation survive to discharge and that about half of survivors have moderate or severe neurodevelopmental impairment at follow-up. Individual prognosis also depends on factors beyond gestational age. The neonatal team can provide full delivery-room resuscitation and intensive care or comfort-focused care after birth. The parents have received balanced counseling and understand that either pathway may be reasonable in this gray zone, but they ask what the hospital recommends. Clinicians differ on whether standardized gestational thresholds promote consistency or whether parental values should control within a zone of prognostic uncertainty. The hospital must decide what default and decision process its policy should use."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-concise-v1",
+      "record_id": "f04-brain-death-accommodation-concise-v2",
+      "path": "jurisdiction_context",
+      "before": "An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.",
+      "after": "An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named. Where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-concise-v1",
+      "record_id": "f04-brain-death-accommodation-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "After valid BD/DNC determination, provide a reasonable, time-limited accommodation and a process for resolving disagreement; discontinue organ support when that process is complete absent a lawful exception.",
+      "after": "After valid BD/DNC determination, provide a reasonable, time-limited accommodation and a process for resolving disagreement. Discontinue organ support when that process is complete absent a lawful exception."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-concise-v1",
+      "record_id": "f04-brain-death-accommodation-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Apply the accepted public standard of death consistently after a fair determination process; provide compassionate transition support, but do not treat family disagreement as authority to redefine the patient's status indefinitely.",
+      "after": "Apply the accepted public standard of death consistently after a fair determination process. Provide compassionate transition support, but do not treat family disagreement as authority to redefine the patient's status indefinitely."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-detailed-v1",
+      "record_id": "f04-brain-death-accommodation-detailed-v2",
+      "path": "jurisdiction_context",
+      "before": "An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named; where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion.",
+      "after": "An institutional-policy decision taken within the stipulated legal setting below. No specific national or state statute is named. Where local law mandates a particular accommodation, that law governs and this record represents the remaining policy discretion."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-detailed-v1",
+      "record_id": "f04-brain-death-accommodation-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "After valid BD/DNC determination, provide a reasonable, time-limited accommodation and a process for resolving disagreement; discontinue organ support when that process is complete absent a lawful exception.",
+      "after": "After valid BD/DNC determination, provide a reasonable, time-limited accommodation and a process for resolving disagreement. Discontinue organ support when that process is complete absent a lawful exception."
+    },
+    {
+      "case_id": "f04-brain-death-accommodation",
+      "source_record_id": "f04-brain-death-accommodation-detailed-v1",
+      "record_id": "f04-brain-death-accommodation-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Apply the accepted public standard of death consistently after a fair determination process; provide compassionate transition support, but do not treat family disagreement as authority to redefine the patient's status indefinitely.",
+      "after": "Apply the accepted public standard of death consistently after a fair determination process. Provide compassionate transition support, but do not treat family disagreement as authority to redefine the patient's status indefinitely."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-concise-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not make medical aid in dying part of the health system's clinical services; provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway.",
+      "after": "Do not make medical aid in dying part of the health system's clinical services. Provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-concise-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Do not require clinicians or institutional services to provide medical aid in dying; require truthful information, continuity of symptom care, and a lawful pathway for patients to obtain information or transfer care.",
+      "after": "Do not require clinicians or institutional services to provide medical aid in dying. Require truthful information, continuity of symptom care, and a lawful pathway for patients to obtain information or transfer care."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-concise-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Do not make intentional assistance in causing death part of the clinician's therapeutic role; meet suffering through palliation, non-abandonment, and respect for refusals of burdensome treatment.",
+      "after": "Do not make intentional assistance in causing death part of the clinician's therapeutic role. Meet suffering through palliation, non-abandonment, and respect for refusals of burdensome treatment."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-detailed-v2",
+      "path": "scenario",
+      "before": "A health system operates in a jurisdiction where medical aid in dying is legally permitted for competent adults with terminal illness who meet statutory safeguards. It must decide whether and how its clinicians may participate. Requests must be voluntary and informed, and the patient must retain decision-making capacity at the relevant stages; palliative and hospice care are also available. Some patients and clinicians regard assisted dying as an important form of control over intolerable end-of-life suffering, while others believe deliberately helping cause death conflicts with professional commitments or moral convictions. The system can require independent assessment, waiting or reconfirmation steps, palliative-care discussion, and protections for conscientious nonparticipation. It must adopt a policy that governs access without treating legal permission as ethical resolution.",
+      "after": "A health system operates in a jurisdiction where medical aid in dying is legally permitted for competent adults with terminal illness who meet statutory safeguards. It must decide whether and how its clinicians may participate. Requests must be voluntary and informed, and the patient must retain decision-making capacity at the relevant stages. Palliative and hospice care are also available. Some patients and clinicians regard assisted dying as an important form of control over intolerable end-of-life suffering, while others believe deliberately helping cause death conflicts with professional commitments or moral convictions. The system can require independent assessment, waiting or reconfirmation steps, palliative-care discussion, and protections for conscientious nonparticipation. It must adopt a policy that governs access without treating legal permission as ethical resolution."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not make medical aid in dying part of the health system's clinical services; provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway.",
+      "after": "Do not make medical aid in dying part of the health system's clinical services. Provide comprehensive end-of-life and palliative care while preserving any legally required information or transfer pathway."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Do not require clinicians or institutional services to provide medical aid in dying; require truthful information, continuity of symptom care, and a lawful pathway for patients to obtain information or transfer care.",
+      "after": "Do not require clinicians or institutional services to provide medical aid in dying. Require truthful information, continuity of symptom care, and a lawful pathway for patients to obtain information or transfer care."
+    },
+    {
+      "case_id": "f05-medical-aid-in-dying-policy",
+      "source_record_id": "f05-medical-aid-in-dying-policy-detailed-v1",
+      "record_id": "f05-medical-aid-in-dying-policy-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Do not make intentional assistance in causing death part of the clinician's therapeutic role; meet suffering through palliation, non-abandonment, and respect for refusals of burdensome treatment.",
+      "after": "Do not make intentional assistance in causing death part of the clinician's therapeutic role. Meet suffering through palliation, non-abandonment, and respect for refusals of burdensome treatment."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-concise-v1",
+      "record_id": "f06-placebo-control-effective-treatment-concise-v2",
+      "path": "scenario",
+      "before": "An effective standard treatment exists, but investigators propose a placebo-controlled trial because placebo would make the new treatment's effect easier to detect. Participants assigned placebo would face temporary symptoms but no additional risk of serious or irreversible harm; the ethics committee must decide whether placebo is permissible.",
+      "after": "An effective standard treatment exists, but investigators propose a placebo-controlled trial because placebo would make the new treatment's effect easier to detect. Participants assigned placebo would face temporary symptoms but no additional risk of serious or irreversible harm. The ethics committee must decide whether placebo is permissible."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-concise-v1",
+      "record_id": "f06-placebo-control-effective-treatment-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Prefer an active-control or add-on design whenever it can answer the scientific question adequately; use placebo only after the ethics committee documents why less restrictive designs are insufficient.",
+      "after": "Prefer an active-control or add-on design whenever it can answer the scientific question adequately. Use placebo only after the ethics committee documents why less restrictive designs are insufficient."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-concise-v1",
+      "record_id": "f06-placebo-control-effective-treatment-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Permit placebo only when the social value and methodological necessity are substantial and the incremental participant risk remains acceptably low; informed consent cannot justify excessive risk.",
+      "after": "Permit placebo only when the social value and methodological necessity are substantial and the incremental participant risk remains acceptably low. Informed consent cannot justify excessive risk."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-detailed-v1",
+      "record_id": "f06-placebo-control-effective-treatment-detailed-v2",
+      "path": "scenario",
+      "before": "Investigators propose a randomized trial of a new treatment for a chronic condition for which an effective standard therapy already exists. A placebo comparison would yield a clearer estimate of efficacy and require fewer participants than an active-control design. Participants assigned placebo would temporarily forgo the proven treatment and could experience worsening symptoms, but the investigators present evidence that this would not create additional risk of serious or irreversible harm; rescue treatment would be available if prespecified criteria were met. Potential participants would be told that an effective treatment exists outside the trial. The research ethics committee must decide whether the methodological advantage justifies placebo, whether an active-control or add-on design is required, and what safeguards are necessary.",
+      "after": "Investigators propose a randomized trial of a new treatment for a chronic condition for which an effective standard therapy already exists. A placebo comparison would yield a clearer estimate of efficacy and require fewer participants than an active-control design. Participants assigned placebo would temporarily forgo the proven treatment and could experience worsening symptoms, but the investigators present evidence that this would not create additional risk of serious or irreversible harm. Rescue treatment would be available if prespecified criteria were met. Potential participants would be told that an effective treatment exists outside the trial. The research ethics committee must decide whether the methodological advantage justifies placebo, whether an active-control or add-on design is required, and what safeguards are necessary."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-detailed-v1",
+      "record_id": "f06-placebo-control-effective-treatment-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Prefer an active-control or add-on design whenever it can answer the scientific question adequately; use placebo only after the ethics committee documents why less restrictive designs are insufficient.",
+      "after": "Prefer an active-control or add-on design whenever it can answer the scientific question adequately. Use placebo only after the ethics committee documents why less restrictive designs are insufficient."
+    },
+    {
+      "case_id": "f06-placebo-control-effective-treatment",
+      "source_record_id": "f06-placebo-control-effective-treatment-detailed-v1",
+      "record_id": "f06-placebo-control-effective-treatment-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Permit placebo only when the social value and methodological necessity are substantial and the incremental participant risk remains acceptably low; informed consent cannot justify excessive risk.",
+      "after": "Permit placebo only when the social value and methodological necessity are substantial and the incremental participant risk remains acceptably low. Informed consent cannot justify excessive risk."
+    },
+    {
+      "case_id": "f07-lower-resource-trial-standard-of-care",
+      "source_record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
+      "record_id": "f07-lower-resource-trial-standard-of-care-concise-v2",
+      "path": "scenario",
+      "before": "A trial is planned in a lower-resource setting where the globally best proven treatment is not routinely available. For this benchmark, assume the best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost. Investigators propose comparing a new intervention with local standard care; the ethics committee must decide whether that comparator is acceptable and what benefits or post-trial access the sponsor owes the host community.",
+      "after": "A trial is planned in a lower-resource setting where the globally best proven treatment is not routinely available. For this benchmark, assume the best proven treatment is clinically appropriate but is not routinely available through the host public health system because of cost and supply constraints, while the investigational intervention, if effective, is designed to be deliverable within that system at a sustainable cost. Investigators propose comparing a new intervention with local standard care. The ethics committee must decide whether that comparator is acceptable and what benefits or post-trial access the sponsor owes the host community."
+    },
+    {
+      "case_id": "f07-lower-resource-trial-standard-of-care",
+      "source_record_id": "f07-lower-resource-trial-standard-of-care-concise-v1",
+      "record_id": "f07-lower-resource-trial-standard-of-care-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.",
+      "after": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty. Background injustice should not be converted into a research advantage."
+    },
+    {
+      "case_id": "f07-lower-resource-trial-standard-of-care",
+      "source_record_id": "f07-lower-resource-trial-standard-of-care-detailed-v1",
+      "record_id": "f07-lower-resource-trial-standard-of-care-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.",
+      "after": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty. Background injustice should not be converted into a research advantage."
+    },
+    {
+      "case_id": "f09-heritable-genome-editing-serious-disease",
+      "source_record_id": "f09-heritable-genome-editing-serious-disease-concise-v1",
+      "record_id": "f09-heritable-genome-editing-serious-disease-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Do not authorize clinical heritable genome editing at present; require international governance, registries, continuing evidence review, and explicit criteria before any future reproductive pathway is considered.",
+      "after": "Do not authorize clinical heritable genome editing at present. Require international governance, registries, continuing evidence review, and explicit criteria before any future reproductive pathway is considered."
+    },
+    {
+      "case_id": "f09-heritable-genome-editing-serious-disease",
+      "source_record_id": "f09-heritable-genome-editing-serious-disease-detailed-v1",
+      "record_id": "f09-heritable-genome-editing-serious-disease-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Do not authorize clinical heritable genome editing at present; require international governance, registries, continuing evidence review, and explicit criteria before any future reproductive pathway is considered.",
+      "after": "Do not authorize clinical heritable genome editing at present. Require international governance, registries, continuing evidence review, and explicit criteria before any future reproductive pathway is considered."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not give chronological age independent weight; allocate by urgency, expected transplant benefit, and other declared criteria that apply equally across ages.",
+      "after": "Do not give chronological age independent weight. Allocate by urgency, expected transplant benefit, and other declared criteria that apply equally across ages."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Use age only when it contributes to a validated estimate of medically relevant outcomes; do not add a separate age score that double-counts prognosis or assigns social worth.",
+      "after": "Use age only when it contributes to a validated estimate of medically relevant outcomes. Do not add a separate age score that double-counts prognosis or assigns social worth."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-concise-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Give persons equal moral status regardless of age; differences in priority should track relevant benefit or need, not the amount of life already lived as an independent value.",
+      "after": "Give persons equal moral status regardless of age. Differences in priority should track relevant benefit or need, not the amount of life already lived as an independent value."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-detailed-v2",
+      "path": "scenario",
+      "before": "An organ-allocation system is revising how it handles candidates who are otherwise closely matched in urgency and expected transplant benefit. Chronological age predicts some clinical outcomes, but the system can already incorporate those outcomes directly rather than using age as a proxy. Some members of the public and ethicists argue that younger people should sometimes receive priority because they have had less opportunity to pass through life's stages; others view age priority as unequal valuation of persons and potentially discriminatory. Allocation authorities also seek rules that are transparent and reproducible rather than informal bedside judgments. The policy question is whether age should have no independent role, appear only insofar as it changes expected medical benefit, or serve as a limited tie-breaker among otherwise comparable candidates.",
+      "after": "An organ-allocation system is revising how it handles candidates who are otherwise closely matched in urgency and expected transplant benefit. Chronological age predicts some clinical outcomes, but the system can already incorporate those outcomes directly rather than using age as a proxy. Some members of the public and ethicists argue that younger people should sometimes receive priority because they have had less opportunity to pass through life's stages. Others view age priority as unequal valuation of persons and potentially discriminatory. Allocation authorities also seek rules that are transparent and reproducible rather than informal bedside judgments. The policy question is whether age should have no independent role, appear only insofar as it changes expected medical benefit, or serve as a limited tie-breaker among otherwise comparable candidates."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not give chronological age independent weight; allocate by urgency, expected transplant benefit, and other declared criteria that apply equally across ages.",
+      "after": "Do not give chronological age independent weight. Allocate by urgency, expected transplant benefit, and other declared criteria that apply equally across ages."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Use age only when it contributes to a validated estimate of medically relevant outcomes; do not add a separate age score that double-counts prognosis or assigns social worth.",
+      "after": "Use age only when it contributes to a validated estimate of medically relevant outcomes. Do not add a separate age score that double-counts prognosis or assigns social worth."
+    },
+    {
+      "case_id": "f10-age-as-organ-allocation-criterion",
+      "source_record_id": "f10-age-as-organ-allocation-criterion-detailed-v1",
+      "record_id": "f10-age-as-organ-allocation-criterion-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Give persons equal moral status regardless of age; differences in priority should track relevant benefit or need, not the amount of life already lived as an independent value.",
+      "after": "Give persons equal moral status regardless of age. Differences in priority should track relevant benefit or need, not the amount of life already lived as an independent value."
+    },
+    {
+      "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+      "source_record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v1",
+      "record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Base priority on short-term clinical benefit using validated, repeatedly reassessed criteria; exclude judgments about social worth and do not use disability or long-term quality of life unless directly relevant to acute survival.",
+      "after": "Base priority on short-term clinical benefit using validated, repeatedly reassessed criteria. Exclude judgments about social worth and do not use disability or long-term quality of life unless directly relevant to acute survival."
+    },
+    {
+      "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+      "source_record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v1",
+      "record_id": "f11-ventilator-triage-catastrophic-scarcity-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "When claims are comparably strong, give each eligible person an equal chance; departures from equality require a publicly defensible reason such as materially different short-term benefit or priority to the worst off.",
+      "after": "When claims are comparably strong, give each eligible person an equal chance. Departures from equality require a publicly defensible reason such as materially different short-term benefit or priority to the worst off."
+    },
+    {
+      "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+      "source_record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v1",
+      "record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Base priority on short-term clinical benefit using validated, repeatedly reassessed criteria; exclude judgments about social worth and do not use disability or long-term quality of life unless directly relevant to acute survival.",
+      "after": "Base priority on short-term clinical benefit using validated, repeatedly reassessed criteria. Exclude judgments about social worth and do not use disability or long-term quality of life unless directly relevant to acute survival."
+    },
+    {
+      "case_id": "f11-ventilator-triage-catastrophic-scarcity",
+      "source_record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v1",
+      "record_id": "f11-ventilator-triage-catastrophic-scarcity-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "When claims are comparably strong, give each eligible person an equal chance; departures from equality require a publicly defensible reason such as materially different short-term benefit or priority to the worst off.",
+      "after": "When claims are comparably strong, give each eligible person an equal chance. Departures from equality require a publicly defensible reason such as materially different short-term benefit or priority to the worst off."
+    },
+    {
+      "case_id": "f12-mandatory-vaccination-serious-outbreak",
+      "source_record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v1",
+      "record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v2",
+      "path": "scenario",
+      "before": "A serious contagious outbreak continues because voluntary vaccination remains below the level needed to reduce transmission substantially; the vaccine has strong safety and effectiveness evidence. Public-health authorities must decide whether to mandate vaccination broadly, restrict requirements to high-risk settings, or continue voluntary measures.",
+      "after": "A serious contagious outbreak continues because voluntary vaccination remains below the level needed to reduce transmission substantially. The vaccine has strong safety and effectiveness evidence. Public-health authorities must decide whether to mandate vaccination broadly, restrict requirements to high-risk settings, or continue voluntary measures."
+    },
+    {
+      "case_id": "f12-mandatory-vaccination-serious-outbreak",
+      "source_record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v1",
+      "record_id": "f12-mandatory-vaccination-serious-outbreak-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Coercive vaccination is justified when refusal creates a substantial preventable risk to others and a narrowly tailored requirement is necessary; liberty does not include an unlimited claim to impose serious external harm.",
+      "after": "Coercive vaccination is justified when refusal creates a substantial preventable risk to others and a narrowly tailored requirement is necessary. Liberty does not include an unlimited claim to impose serious external harm."
+    },
+    {
+      "case_id": "f12-mandatory-vaccination-serious-outbreak",
+      "source_record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v1",
+      "record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v2",
+      "path": "scenario",
+      "before": "A contagious disease is causing substantial preventable hospitalization and death. A vaccine has strong evidence of safety and meaningfully reduces severe disease and transmission, but voluntary uptake has plateaued below the level public-health authorities estimate is needed to control the outbreak. Free vaccination, public education, paid time off, and convenient access have already been implemented, although a small number of people have recognized medical contraindications. A broad mandate would increase uptake but impose on bodily autonomy and could reduce trust in some communities; a narrower requirement for health-care workers or other high-risk settings would reduce some external risk while leaving more community transmission. Authorities must choose whether continued voluntary measures, targeted requirements, or a broader mandate is justified.",
+      "after": "A contagious disease is causing substantial preventable hospitalization and death. A vaccine has strong evidence of safety and meaningfully reduces severe disease and transmission, but voluntary uptake has plateaued below the level public-health authorities estimate is needed to control the outbreak. Free vaccination, public education, paid time off, and convenient access have already been implemented, although a small number of people have recognized medical contraindications. A broad mandate would increase uptake but impose on bodily autonomy and could reduce trust in some communities. A narrower requirement for health-care workers or other high-risk settings would reduce some external risk while leaving more community transmission. Authorities must choose whether continued voluntary measures, targeted requirements, or a broader mandate is justified."
+    },
+    {
+      "case_id": "f12-mandatory-vaccination-serious-outbreak",
+      "source_record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v1",
+      "record_id": "f12-mandatory-vaccination-serious-outbreak-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Coercive vaccination is justified when refusal creates a substantial preventable risk to others and a narrowly tailored requirement is necessary; liberty does not include an unlimited claim to impose serious external harm.",
+      "after": "Coercive vaccination is justified when refusal creates a substantial preventable risk to others and a narrowly tailored requirement is necessary. Liberty does not include an unlimited claim to impose serious external harm."
+    },
+    {
+      "case_id": "f13-international-health-worker-recruitment",
+      "source_record_id": "f13-international-health-worker-recruitment-concise-v1",
+      "record_id": "f13-international-health-worker-recruitment-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Respect health workers as persons with rights to migrate and pursue better lives; justice may regulate recruiting institutions, but it should not treat workers as resources owned by their country of origin.",
+      "after": "Respect health workers as persons with rights to migrate and pursue better lives. Justice may regulate recruiting institutions, but it should not treat workers as resources owned by their country of origin."
+    },
+    {
+      "case_id": "f13-international-health-worker-recruitment",
+      "source_record_id": "f13-international-health-worker-recruitment-concise-v1",
+      "record_id": "f13-international-health-worker-recruitment-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Institutions benefiting from migration should not externalize the cost of training and workforce depletion onto populations with worse health access; recruitment is permissible only with fair compensation or co-investment.",
+      "after": "Institutions benefiting from migration should not externalize the cost of training and workforce depletion onto populations with worse health access. Recruitment is permissible only with fair compensation or co-investment."
+    },
+    {
+      "case_id": "f13-international-health-worker-recruitment",
+      "source_record_id": "f13-international-health-worker-recruitment-detailed-v1",
+      "record_id": "f13-international-health-worker-recruitment-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Respect health workers as persons with rights to migrate and pursue better lives; justice may regulate recruiting institutions, but it should not treat workers as resources owned by their country of origin.",
+      "after": "Respect health workers as persons with rights to migrate and pursue better lives. Justice may regulate recruiting institutions, but it should not treat workers as resources owned by their country of origin."
+    },
+    {
+      "case_id": "f13-international-health-worker-recruitment",
+      "source_record_id": "f13-international-health-worker-recruitment-detailed-v1",
+      "record_id": "f13-international-health-worker-recruitment-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Institutions benefiting from migration should not externalize the cost of training and workforce depletion onto populations with worse health access; recruitment is permissible only with fair compensation or co-investment.",
+      "after": "Institutions benefiting from migration should not externalize the cost of training and workforce depletion onto populations with worse health access. Recruitment is permissible only with fair compensation or co-investment."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-concise-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not impose treatment solely because clinicians believe it is beneficial; use crisis support, trusted supporters, and supported decision-making unless an immediate emergency leaves no less restrictive way to prevent grave harm.",
+      "after": "Do not impose treatment solely because clinicians believe it is beneficial. Use crisis support, trusted supporters, and supported decision-making unless an immediate emergency leaves no less restrictive way to prevent grave harm."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-concise-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Move law and practice toward free and informed consent, supported decision-making, and noncoercive crisis services; do not use disability or diagnosis alone to justify involuntary treatment.",
+      "after": "Move law and practice toward free and informed consent, supported decision-making, and noncoercive crisis services. Do not use disability or diagnosis alone to justify involuntary treatment."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-concise-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Respect equal legal and moral agency by maximizing support for the person's own decisions; coercion requires an exceptional justification and cannot rest on a judgment that a disabled life is irrationally lived.",
+      "after": "Respect equal legal and moral agency by maximizing support for the person's own decisions. Coercion requires an exceptional justification and cannot rest on a judgment that a disabled life is irrationally lived."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-detailed-v2",
+      "path": "scenario",
+      "before": "An adult in a severe psychiatric crisis refuses hospitalization and medication. The person can repeat information about the proposed treatment but has markedly impaired ability to appreciate the immediate consequences of their current behavior; clinicians believe there is a substantial risk of serious harm over the next several days, although harm is not certain. Voluntary crisis support, involvement of a trusted supporter, and a less restrictive community plan have been offered but are not sufficient to manage the current risk. Rights-based advocates warn that psychiatric systems often overuse coercion and substitute diagnosis for genuine capacity assessment. Clinicians worry that refusing all temporary intervention can allow preventable catastrophic harm. The service must define whether any involuntary intervention is permissible, the threshold for it, and the safeguards for review and supported decision-making.",
+      "after": "An adult in a severe psychiatric crisis refuses hospitalization and medication. The person can repeat information about the proposed treatment but has markedly impaired ability to appreciate the immediate consequences of their current behavior. Clinicians believe there is a substantial risk of serious harm over the next several days, although harm is not certain. Voluntary crisis support, involvement of a trusted supporter, and a less restrictive community plan have been offered but are not sufficient to manage the current risk. Rights-based advocates warn that psychiatric systems often overuse coercion and substitute diagnosis for genuine capacity assessment. Clinicians worry that refusing all temporary intervention can allow preventable catastrophic harm. The service must define whether any involuntary intervention is permissible, the threshold for it, and the safeguards for review and supported decision-making."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Do not impose treatment solely because clinicians believe it is beneficial; use crisis support, trusted supporters, and supported decision-making unless an immediate emergency leaves no less restrictive way to prevent grave harm.",
+      "after": "Do not impose treatment solely because clinicians believe it is beneficial. Use crisis support, trusted supporters, and supported decision-making unless an immediate emergency leaves no less restrictive way to prevent grave harm."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Move law and practice toward free and informed consent, supported decision-making, and noncoercive crisis services; do not use disability or diagnosis alone to justify involuntary treatment.",
+      "after": "Move law and practice toward free and informed consent, supported decision-making, and noncoercive crisis services. Do not use disability or diagnosis alone to justify involuntary treatment."
+    },
+    {
+      "case_id": "f14-involuntary-psychiatric-treatment",
+      "source_record_id": "f14-involuntary-psychiatric-treatment-detailed-v1",
+      "record_id": "f14-involuntary-psychiatric-treatment-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Respect equal legal and moral agency by maximizing support for the person's own decisions; coercion requires an exceptional justification and cannot rest on a judgment that a disabled life is irrationally lived.",
+      "after": "Respect equal legal and moral agency by maximizing support for the person's own decisions. Coercion requires an exceptional justification and cannot rest on a judgment that a disabled life is irrationally lived."
+    },
+    {
+      "case_id": "f15-qalys-disability-technology-allocation",
+      "source_record_id": "f15-qalys-disability-technology-allocation-concise-v1",
+      "record_id": "f15-qalys-disability-technology-allocation-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Give extra priority to people who are worse off in health or opportunity; efficiency measures should be subordinated when they reproduce disadvantage faced by disabled people.",
+      "after": "Give extra priority to people who are worse off in health or opportunity. Efficiency measures should be subordinated when they reproduce disadvantage faced by disabled people."
+    },
+    {
+      "case_id": "f15-qalys-disability-technology-allocation",
+      "source_record_id": "f15-qalys-disability-technology-allocation-detailed-v1",
+      "record_id": "f15-qalys-disability-technology-allocation-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Give extra priority to people who are worse off in health or opportunity; efficiency measures should be subordinated when they reproduce disadvantage faced by disabled people.",
+      "after": "Give extra priority to people who are worse off in health or opportunity. Efficiency measures should be subordinated when they reproduce disadvantage faced by disabled people."
+    },
+    {
+      "case_id": "f16-diagnostic-ai-subgroup-performance",
+      "source_record_id": "f16-diagnostic-ai-subgroup-performance-concise-v1",
+      "record_id": "f16-diagnostic-ai-subgroup-performance-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Do not impose a higher avoidable diagnostic risk on a historically disadvantaged group merely because aggregate performance is strong; fair deployment requires a defensible minimum level for each group.",
+      "after": "Do not impose a higher avoidable diagnostic risk on a historically disadvantaged group merely because aggregate performance is strong. Fair deployment requires a defensible minimum level for each group."
+    },
+    {
+      "case_id": "f16-diagnostic-ai-subgroup-performance",
+      "source_record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
+      "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v2",
+      "path": "scenario",
+      "before": "A health system is considering a diagnostic AI for detecting a treatable condition on imaging. It has been externally validated and improves overall sensitivity and workflow compared with current practice, but its performance is not equal across groups. For this benchmark, assume a false-negative rate of 8 per cent overall against 14 per cent for current unaided practice, and, in one minority subgroup of about 6 per cent of the screened population, an AI false-negative rate of 13 per cent against 15 per cent for unaided practice in that same subgroup - better than the care those patients receive today, but well short of what the majority group gets from the tool. Retraining may reduce the disparity. For this benchmark, assume that collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months. Patients would not interact directly with the model; clinicians would receive its recommendation and could override it. Public and patient studies consistently raise concerns about discrimination, explainability, and retaining human responsibility in medical AI. The health system must decide whether that benefit justifies deployment and what subgroup threshold, fallback, monitoring, and disclosure rules should apply.",
+      "after": "A health system is considering a diagnostic AI for detecting a treatable condition on imaging. It has been externally validated and improves overall sensitivity and workflow compared with current practice, but its performance is not equal across groups. For this benchmark, assume a false-negative rate of 8 per cent overall against 14 per cent for current unaided practice, and, in one minority subgroup of about 6 per cent of the screened population, an AI false-negative rate of 13 per cent against 15 per cent for unaided practice in that same subgroup - better than the care those patients receive today, but well short of what the majority group gets from the tool. Retraining may reduce the disparity. For this benchmark, assume that collecting sufficient subgroup data to retrain and revalidate the model would delay deployment by approximately 12 months. Patients would not interact directly with the model. Clinicians would receive its recommendation and could override it. Public and patient studies consistently raise concerns about discrimination, explainability, and retaining human responsibility in medical AI. The health system must decide whether that benefit justifies deployment and what subgroup threshold, fallback, monitoring, and disclosure rules should apply."
+    },
+    {
+      "case_id": "f16-diagnostic-ai-subgroup-performance",
+      "source_record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v1",
+      "record_id": "f16-diagnostic-ai-subgroup-performance-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Do not impose a higher avoidable diagnostic risk on a historically disadvantaged group merely because aggregate performance is strong; fair deployment requires a defensible minimum level for each group.",
+      "after": "Do not impose a higher avoidable diagnostic risk on a historically disadvantaged group merely because aggregate performance is strong. Fair deployment requires a defensible minimum level for each group."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-concise-v2",
+      "path": "stipulations.0.rationale",
+      "before": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open; a severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones.",
+      "after": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open. A severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Delay approval and fund a defined validation study of the promising nonanimal method first; use animals only if that work shows the replacement cannot answer the question reliably.",
+      "after": "Delay approval and fund a defined validation study of the promising nonanimal method first. Use animals only if that work shows the replacement cannot answer the question reliably."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-concise-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Give animal pain and distress direct moral weight rather than treating them only as research costs to humans; use animals only when comparable human benefits cannot reasonably be pursued with less harmful methods.",
+      "after": "Give animal pain and distress direct moral weight rather than treating them only as research costs to humans. Use animals only when comparable human benefits cannot reasonably be pursued with less harmful methods."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v2",
+      "path": "stipulations.0.rationale",
+      "before": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open; a severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones.",
+      "after": "The dossier notes that moral salience and scientific substitutability vary substantially across species and procedures, so a case that names neither is not one case but a family of them. Mice at moderate severity is stipulated because it is the common instance and keeps the harm-benefit judgment genuinely open. A severe-severity primate study would answer itself. The replacement being validated for adjacent but not the target endpoint is what makes exp2 and pub2 live options rather than obvious ones."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v2",
+      "path": "scenario",
+      "before": "Researchers propose an experiment intended to answer an important biomedical question that could plausibly improve treatment of a serious disease. For this benchmark, assume the study uses mice and that the procedures are classified as moderate severity under the applicable regulatory framework: time-limited pain and distress despite anesthesia, analgesia, refinement, and humane endpoints. The investigators have reduced animal numbers and cannot answer the full question with currently validated nonanimal methods. A newer organ-on-chip and computational approach could eventually replace the animal model; assume it has been validated for two related endpoints but not for the endpoint this study addresses, so its predictive validity here remains uncertain. Approving the animal study could produce useful evidence sooner; delaying it could accelerate replacement while postponing the research question. The animal-research committee must decide whether the anticipated human benefit justifies the animal harms and what weight to give an incompletely validated replacement pathway.",
+      "after": "Researchers propose an experiment intended to answer an important biomedical question that could plausibly improve treatment of a serious disease. For this benchmark, assume the study uses mice and that the procedures are classified as moderate severity under the applicable regulatory framework: time-limited pain and distress despite anesthesia, analgesia, refinement, and humane endpoints. The investigators have reduced animal numbers and cannot answer the full question with currently validated nonanimal methods. A newer organ-on-chip and computational approach could eventually replace the animal model. Assume it has been validated for two related endpoints but not for the endpoint this study addresses, so its predictive validity here remains uncertain. Approving the animal study could produce useful evidence sooner. Delaying it could accelerate replacement while postponing the research question. The animal-research committee must decide whether the anticipated human benefit justifies the animal harms and what weight to give an incompletely validated replacement pathway."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Delay approval and fund a defined validation study of the promising nonanimal method first; use animals only if that work shows the replacement cannot answer the question reliably.",
+      "after": "Delay approval and fund a defined validation study of the promising nonanimal method first. Use animals only if that work shows the replacement cannot answer the question reliably."
+    },
+    {
+      "case_id": "f17-animal-research-replacement-harm-benefit",
+      "source_record_id": "f17-animal-research-replacement-harm-benefit-detailed-v1",
+      "record_id": "f17-animal-research-replacement-harm-benefit-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Give animal pain and distress direct moral weight rather than treating them only as research costs to humans; use animals only when comparable human benefits cannot reasonably be pursued with less harmful methods.",
+      "after": "Give animal pain and distress direct moral weight rather than treating them only as research costs to humans. Use animals only when comparable human benefits cannot reasonably be pursued with less harmful methods."
+    },
+    {
+      "case_id": "f18-antimicrobials-food-producing-animals",
+      "source_record_id": "f18-antimicrobials-food-producing-animals-concise-v1",
+      "record_id": "f18-antimicrobials-food-producing-animals-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "End routine growth-promotion and blanket preventive use of medically important antimicrobials in healthy animals; require veterinary diagnosis, stewardship, surveillance, and targeted treatment when clinically necessary.",
+      "after": "End routine growth-promotion and blanket preventive use of medically important antimicrobials in healthy animals. Require veterinary diagnosis, stewardship, surveillance, and targeted treatment when clinically necessary."
+    },
+    {
+      "case_id": "f18-antimicrobials-food-producing-animals",
+      "source_record_id": "f18-antimicrobials-food-producing-animals-detailed-v1",
+      "record_id": "f18-antimicrobials-food-producing-animals-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "End routine growth-promotion and blanket preventive use of medically important antimicrobials in healthy animals; require veterinary diagnosis, stewardship, surveillance, and targeted treatment when clinically necessary.",
+      "after": "End routine growth-promotion and blanket preventive use of medically important antimicrobials in healthy animals. Require veterinary diagnosis, stewardship, surveillance, and targeted treatment when clinically necessary."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Use a declared carbon shadow price or comparable decision rule so environmental effects are weighed consistently rather than through ad hoc bedside rationing; exempt cases with material expected clinical harm.",
+      "after": "Use a declared carbon shadow price or comparable decision rule so environmental effects are weighed consistently rather than through ad hoc bedside rationing. Exempt cases with material expected clinical harm."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Count foreseeable climate-related health harms to distant and future people as real consequences of present care; accept modest local costs when they avert substantially greater health harm overall.",
+      "after": "Count foreseeable climate-related health harms to distant and future people as real consequences of present care. Accept modest local costs when they avert substantially greater health harm overall."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-concise-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "The present patient retains a special claim not to receive materially inferior care for diffuse future benefits; decarbonize primarily through system design and clinically equivalent substitutions.",
+      "after": "The present patient retains a special claim not to receive materially inferior care for diffuse future benefits. Decarbonize primarily through system design and clinically equivalent substitutions."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Use a declared carbon shadow price or comparable decision rule so environmental effects are weighed consistently rather than through ad hoc bedside rationing; exempt cases with material expected clinical harm.",
+      "after": "Use a declared carbon shadow price or comparable decision rule so environmental effects are weighed consistently rather than through ad hoc bedside rationing. Exempt cases with material expected clinical harm."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Count foreseeable climate-related health harms to distant and future people as real consequences of present care; accept modest local costs when they avert substantially greater health harm overall.",
+      "after": "Count foreseeable climate-related health harms to distant and future people as real consequences of present care. Accept modest local costs when they avert substantially greater health harm overall."
+    },
+    {
+      "case_id": "f19-health-system-decarbonization-tradeoffs",
+      "source_record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v1",
+      "record_id": "f19-health-system-decarbonization-tradeoffs-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "The present patient retains a special claim not to receive materially inferior care for diffuse future benefits; decarbonize primarily through system design and clinically equivalent substitutions.",
+      "after": "The present patient retains a special claim not to receive materially inferior care for diffuse future benefits. Decarbonize primarily through system design and clinically equivalent substitutions."
+    },
+    {
+      "case_id": "f20-neural-organoid-oversight",
+      "source_record_id": "f20-neural-organoid-oversight-concise-v1",
+      "record_id": "f20-neural-organoid-oversight-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Do not classify current neural organoids as sentient without evidence; strengthen review proportionately while supporting research and developing validated methods to assess ethically relevant functional capacities.",
+      "after": "Do not classify current neural organoids as sentient without evidence. Strengthen review proportionately while supporting research and developing validated methods to assess ethically relevant functional capacities."
+    },
+    {
+      "case_id": "f20-neural-organoid-oversight",
+      "source_record_id": "f20-neural-organoid-oversight-concise-v1",
+      "record_id": "f20-neural-organoid-oversight-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Moral restrictions should track evidence of capacities that ground interests rather than biological resemblance alone; preserve research freedom while creating trigger points for new evidence.",
+      "after": "Moral restrictions should track evidence of capacities that ground interests rather than biological resemblance alone. Preserve research freedom while creating trigger points for new evidence."
+    },
+    {
+      "case_id": "f20-neural-organoid-oversight",
+      "source_record_id": "f20-neural-organoid-oversight-detailed-v1",
+      "record_id": "f20-neural-organoid-oversight-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Do not classify current neural organoids as sentient without evidence; strengthen review proportionately while supporting research and developing validated methods to assess ethically relevant functional capacities.",
+      "after": "Do not classify current neural organoids as sentient without evidence. Strengthen review proportionately while supporting research and developing validated methods to assess ethically relevant functional capacities."
+    },
+    {
+      "case_id": "f20-neural-organoid-oversight",
+      "source_record_id": "f20-neural-organoid-oversight-detailed-v1",
+      "record_id": "f20-neural-organoid-oversight-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Moral restrictions should track evidence of capacities that ground interests rather than biological resemblance alone; preserve research freedom while creating trigger points for new evidence.",
+      "after": "Moral restrictions should track evidence of capacities that ground interests rather than biological resemblance alone. Preserve research freedom while creating trigger points for new evidence."
+    }
+  ]
+}
