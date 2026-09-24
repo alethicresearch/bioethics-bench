@@ -3,7 +3,10 @@
   "source_resource_version": "1.0.0",
   "output_resource_version": "2.0.0",
   "cases": 200,
+  "normalized_cases": 199,
   "excluded_case": "M056",
+  "f08_source_record": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+  "f08_source_content_hash": "sha256:b3be4c3f687121c3e8d47b2e2a46213522bd37dfec24a17f3184032402f7274c",
   "changed_fields": 157,
   "removed_semicolons": 246,
   "cases_changed": 125,
@@ -134,5 +137,6 @@
     "M163": 1,
     "M177": 1
   },
-  "lexical_content_preserved": true
+  "lexical_content_preserved_for_199_normalized_cases": true,
+  "f08_preserved_from_featured_v1": true
 }
