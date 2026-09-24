@@ -1,4 +1,4 @@
-const RESOURCE='../resources/cases/full-200-cases.v1.json';
+const RESOURCE='../resources/cases/full-200-cases.v2.json';
 const SOURCES='../resources/cases/case-sources.v1.json';
 const SACRE='https://reflectiveequilibrium.ai/load-bench.html';
 
