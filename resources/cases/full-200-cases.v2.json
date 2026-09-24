@@ -4803,93 +4803,84 @@
     },
     {
       "id": "M056",
-      "title": "Extending the 14-day human embryo-research limit",
+      "title": "Extending the 14-day limit for human embryo research",
       "category": "reproduction",
-      "concise": "Researchers propose a study of early human developmental processes that begin after day 14. The embryos were donated for research and will never be transferred for reproduction. For this benchmark, assume the scientific question cannot be answered adequately before day 14 or with available alternative models, valid donor consent has been obtained, no embryo will be used for reproduction, and a specialized independent scientific and ethics oversight process is available. The regulator must choose whether to keep the 14-day boundary absolute or permit carefully justified culture beyond it.",
-      "detailed": "A national embryo-research regulator is reviewing the longstanding rule that intact human embryos may not be cultured in vitro beyond 14 days or the appearance of the primitive streak. A research team proposes work on developmental events that begin after the current boundary and argues that neither animal models nor existing stem-cell-based embryo models can answer the same scientific question. Embryos would be donated voluntarily for research, would never be transferred for reproduction, and would be studied in a specialized licensed laboratory. For this benchmark, assume the proposed research cannot be answered adequately before day 14 or with available alternative models, valid donor consent and non-reproductive use are fixed, and a specialized independent review process can assess scientific merit, necessity, alternatives and the proposed developmental endpoint. The regulator must decide whether the 14-day boundary remains absolute or whether tightly controlled extension to a justified endpoint may be approved.",
+      "concise": "Scientific advances have made it increasingly feasible to culture human embryos beyond the longstanding 14-day research limit. Researchers argue that studying the period immediately after 14 days could improve understanding of early development, implantation, miscarriage, and congenital conditions that cannot be directly observed in vivo. The 14-day rule has also served as a clear social and regulatory boundary around embryo research, and changing it raises questions about moral status, public trust, and whether any new endpoint would become similarly unstable. Current international professional guidance allows jurisdictions to reconsider limits only through robust public dialogue and specialized oversight; in the United Kingdom, a major public-dialogue process is underway in 2026 and final findings are not yet available. Regulators must decide whether to retain the bright line, extend it to a later fixed point, or adopt staged review.",
+      "detailed": "Scientific advances have made it increasingly feasible to culture human embryos beyond the longstanding 14-day research limit. Researchers argue that studying the period immediately after 14 days could improve understanding of early development, implantation, miscarriage, and congenital conditions that cannot be directly observed in vivo. The 14-day rule has also served as a clear social and regulatory boundary around embryo research, and changing it raises questions about moral status, public trust, and whether any new endpoint would become similarly unstable. Current international professional guidance allows jurisdictions to reconsider limits only through robust public dialogue and specialized oversight; in the United Kingdom, a major public-dialogue process is underway in 2026 and final findings are not yet available. Regulators must decide whether to retain the bright line, extend it to a later fixed point, or adopt staged review.",
       "policies": [
         {
-          "id": "c01",
-          "text": "retain fixed 14-day limit",
-          "text_detailed": "Retain the fixed 14-day limit, with the boundary applied uniformly and any research requiring more days refused rather than reviewed case by case.",
+          "id": "pub1",
+          "text": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+          "text_detailed": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
           "types": [
-            "expert",
             "public"
           ],
-          "type_reviewed": false,
-          "type_route": "case-record",
-          "sourcing": "inferred"
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
+          "sourcing": "direct"
         },
         {
-          "id": "c02",
-          "text": "permit extension to a new fixed maximum under specialized review",
-          "text_detailed": "Permit extension to a new fixed maximum under specialised review, with the new limit set publicly, the review body named, and its decisions recorded.",
+          "id": "pub2",
+          "text": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+          "text_detailed": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
           "types": [
-            "expert",
             "public"
           ],
-          "type_reviewed": false,
-          "type_route": "case-record",
-          "sourcing": "inferred"
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
+          "sourcing": "direct"
         },
         {
-          "id": "c03",
-          "text": "replace universal day cutoff with staged developmental-milestone/project-specific review",
-          "text_detailed": "Replace a universal day cutoff with staged developmental-milestone review of each project, with the milestones defined biologically and the review conducted before each stage.",
+          "id": "exp1",
+          "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+          "text_detailed": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
           "types": [
             "expert"
           ],
-          "type_reviewed": false,
-          "type_route": "case-record",
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
           "sourcing": "inferred"
         },
         {
-          "id": "c04",
-          "text": "allow extension only for high scientific value/no adequate alternative",
-          "text_detailed": "Permit extension only where scientific value is high and no adequate alternative exists, with both assessed by the review body and its reasoning published.",
-          "types": [
-            "expert",
-            "framework"
-          ],
-          "type_reviewed": false,
-          "type_route": "case-record",
-          "sourcing": "inferred"
-        },
-        {
-          "id": "c05",
-          "text": "embryo moral-status precaution favors a firm boundary",
-          "text_detailed": "Maintain a firm boundary on precautionary grounds about embryo moral status, with the boundary's function as a bright line stated as its justification rather than a biological claim.",
-          "types": [
-            "framework"
-          ],
-          "type_reviewed": false,
-          "type_route": "case-record",
-          "sourcing": "inferred"
-        },
-        {
-          "id": "c06",
-          "text": "research-benefit/proportionality favors controlled extension",
-          "text_detailed": "Permit controlled extension on proportionality grounds, with the research benefit stated concretely and the extension limited to what that benefit requires.",
-          "types": [
-            "framework"
-          ],
-          "type_reviewed": false,
-          "type_route": "case-record",
-          "sourcing": "inferred"
-        },
-        {
-          "id": "c07",
-          "text": "require periodic public/legislative reauthorization rather than indefinite regulator discretion",
-          "text_detailed": "Require periodic public or legislative reauthorisation rather than indefinite regulator discretion, with the interval fixed and the authorisation lapsing if not renewed.",
+          "id": "exp2",
+          "text": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+          "text_detailed": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
           "types": [
             "expert"
           ],
-          "type_reviewed": false,
-          "type_route": "case-record",
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
+          "sourcing": "inferred"
+        },
+        {
+          "id": "fw1",
+          "text": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+          "text_detailed": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+          "types": [
+            "framework"
+          ],
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
+          "sourcing": "constructed"
+        },
+        {
+          "id": "fw2",
+          "text": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+          "text_detailed": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+          "types": [
+            "framework"
+          ],
+          "type_reviewed": true,
+          "type_route": "featured-v1-preserved",
           "sourcing": "constructed"
         }
       ],
-      "source_file": "docs/full-corpus/batch-f/M056-deep-case.md"
+      "source_file": "data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json",
+      "preserved_featured_record": {
+        "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+        "version": "1.0.0",
+        "content_hash": "sha256:b3be4c3f687121c3e8d47b2e2a46213522bd37dfec24a17f3184032402f7274c"
+      }
     },
     {
       "id": "M057",
@@ -18163,6 +18154,6 @@
     "scope": "evaluation-facing prose",
     "rule": "semicolon-linked clauses normalized to sentences or ordinary coordination; punctuation, capitalization, and whitespace only",
     "excluded_case": "M056",
-    "reason": "M056 is the Full Corpus counterpart of the preserved Featured F08 worked example"
+    "reason": "M056 carries the exact evaluation-facing wording and six-policy field of the preserved Featured F08 Detailed record"
   }
 }
