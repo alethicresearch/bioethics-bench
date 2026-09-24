@@ -10,7 +10,7 @@ const EXCLUDED_CASE = 'f08-fourteen-day-embryo-research-limit';
 const EDIT_KEYS = new Set(['short_description','decision_question','jurisdiction_context','scenario','text','statement','rationale']);
 
 function editRecord(record) {
-  if (record.case_id === EXCLUDED_CASE) return structuredClone(record);
+  if (record.case_id === EXCLUDED_CASE) return { record: structuredClone(record), changes: [] };
   const out = structuredClone(record);
   const changes = [];
   function walk(node, path = []) {
