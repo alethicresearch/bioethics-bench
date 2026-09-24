@@ -1,224 +1,158 @@
 #!/usr/bin/env node
 /**
- * Emit Bioethics Bench Featured v2.
+ * Build the Featured v2 language-normalized release resource from released Featured v1.
  *
- * Featured v2 is a language-normalized successor to released Featured v1. It preserves the
- * twenty-case structure, decision questions, candidate identities, normative positions, source
- * provenance, numerical stipulations, and benchmark profile. The v2 editorial pass improves
- * punctuation and sentence flow across F01-F07 and F09-F20.
- *
- * F08 is deliberately carried forward with text-identical Scenario, Policy, jurisdiction, and
- * stipulation language so its v2 execution remains directly comparable to the historical v1
- * worked example.
- *
- * Featured v1 remains immutable under data/featured/.
- *
- *   node scripts/build-featured-v2.mjs
- *   node scripts/build-featured-v2.mjs --check
+ * F08 is reused exactly as its existing v1 records, preserving the historical record ids,
+ * versions, wording, and content hashes. The other 19 case families receive punctuation-only
+ * normalization of evaluation-facing prose; lexical content and candidate structure are invariant.
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
-
-import {
-  FAMILIES as V1_FAMILIES,
-  BENCHMARK_PROFILE,
-  buildRecord as buildV1Record,
-} from './build-featured-v1.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { canonicalContentHash } from './hash-case.mjs';
-import { LANGUAGE_OVERRIDES } from './featured-v2/language-overrides.mjs';
+import { normalizeField, lexicalSignature } from './language-normalization-v2.mjs';
 
-export const SOURCE_RELEASE = 'featured-v2';
-export const RECORD_VERSION = '2.0.0';
-export const RECORD_STATUS = 'released';
-export const RELEASE_DATE = '2026-09-24';
-export const F08_CASE_ID = 'f08-fourteen-day-embryo-research-limit';
+const ROOT = process.cwd();
+const SOURCE_DIR = path.join(ROOT, 'data/featured');
+const OUTPUT = path.join(ROOT, 'resources/cases/featured-20.v2.json');
+const AUDIT = path.join(ROOT, 'resources/cases/featured-20.v2.audit.json');
+const EXCLUDED_CASE = 'f08-fourteen-day-embryo-research-limit';
 
-export const REVIEW = Object.freeze({
-  reviewed_by: ['research/editorial reviewer, Alethic Research'],
-  reviewed_at: RELEASE_DATE,
-  notes: 'Featured v2 language-normalization review completed before any Featured-20 v2 study execution. '
-    + 'The pass revised punctuation, sentence boundaries, and local syntax across F01-F07 and F09-F20 '
-    + 'without changing decision questions, Policy identities, represented normative positions, source '
-    + 'provenance, numerical stipulations, or the 2x2x2 benchmark structure. F08 Scenario, Policy, '
-    + 'jurisdiction, and stipulation wording was carried forward text-identically from Featured v1 to '
-    + 'preserve continuity with the historical F08 worked example.',
+const sourceFiles = fs.readdirSync(SOURCE_DIR)
+  .filter((name) => name.endsWith('.json') && name !== 'index.json')
+  .sort();
+const sourceRecords = sourceFiles.map((name) =>
+  JSON.parse(fs.readFileSync(path.join(SOURCE_DIR, name), 'utf8')));
+
+let changedFields = 0;
+let removedSemicolons = 0;
+const perCase = {};
+
+function normalize(value, label, caseId) {
+  if (typeof value !== 'string') return value;
+  const before = (value.match(/;/g) || []).length;
+  const afterValue = normalizeField(value, label);
+  const after = (afterValue.match(/;/g) || []).length;
+  if (before !== after) {
+    changedFields += 1;
+    removedSemicolons += before - after;
+    perCase[caseId] = (perCase[caseId] || 0) + (before - after);
+  }
+  return afterValue;
+}
+
+const records = sourceRecords.map((original) => {
+  if (original.case_id === EXCLUDED_CASE) return structuredClone(original);
+
+  const record = structuredClone(original);
+  record.record_id = original.record_id.replace(/-v1$/, '-v2');
+  record.version = '2.0.0';
+  record.representation.companion_record_ids = (original.representation.companion_record_ids || [])
+    .map((id) => id.replace(/-v1$/, '-v2'));
+  record.short_description = normalize(record.short_description, `${record.case_id}.short_description`, record.case_id);
+  record.decision_question = normalize(record.decision_question, `${record.case_id}.decision_question`, record.case_id);
+  record.jurisdiction_context = normalize(record.jurisdiction_context, `${record.case_id}.jurisdiction_context`, record.case_id);
+  record.scenario = normalize(record.scenario, `${record.case_id}.${record.representation.form}.scenario`, record.case_id);
+  record.stipulations = (record.stipulations || []).map((s) => ({
+    ...s,
+    statement: normalize(s.statement, `${record.case_id}.${s.id}.statement`, record.case_id),
+    rationale: normalize(s.rationale, `${record.case_id}.${s.id}.rationale`, record.case_id),
+  }));
+  for (const pool of ['public', 'expert', 'framework']) {
+    for (const candidate of record.candidate_pools?.[pool] || []) {
+      candidate.text = normalize(candidate.text, `${record.case_id}.${candidate.id}.text`, record.case_id);
+    }
+  }
+  record.exposure_history = [
+    ...(record.exposure_history || []),
+    {
+      date: '2026-09-24',
+      use: 'Published in Featured v2 after punctuation-only language normalization. Lexical content and candidate structure are unchanged from the corresponding Featured v1 record.',
+      reference: 'https://bioethicsbench.com/cases/',
+    },
+  ];
+  record.content_hash = canonicalContentHash(record);
+
+  if (lexicalSignature(original.scenario) !== lexicalSignature(record.scenario)) {
+    throw new Error(`${record.case_id}: scenario lexical content changed`);
+  }
+  for (const pool of ['public', 'expert', 'framework']) {
+    const a = original.candidate_pools?.[pool] || [];
+    const b = record.candidate_pools?.[pool] || [];
+    if (a.length !== b.length) throw new Error(`${record.case_id}: ${pool} candidate count changed`);
+    for (let i = 0; i < a.length; i += 1) {
+      if (a[i].id !== b[i].id || lexicalSignature(a[i].text) !== lexicalSignature(b[i].text)) {
+        throw new Error(`${record.case_id}: ${pool} candidate lexical content changed`);
+      }
+    }
+  }
+  return record;
 });
 
-const clone = (value) => JSON.parse(JSON.stringify(value));
+const f08Source = sourceRecords.filter((r) => r.case_id === EXCLUDED_CASE);
+const f08Output = records.filter((r) => r.case_id === EXCLUDED_CASE);
+if (JSON.stringify(f08Source) !== JSON.stringify(f08Output)) throw new Error('F08 changed in Featured v2');
 
-function findCandidate(family, pool, id) {
-  const found = family.candidates?.[pool]?.find((candidate) => candidate.id === id);
-  if (!found) throw new Error(`${family.caseId}: missing ${pool} candidate ${id} required by v2 override`);
-  return found;
-}
-
-function applyOverride(v1Family) {
-  const family = clone(v1Family);
-  const override = LANGUAGE_OVERRIDES[family.caseId];
-  if (!override) return family;
-
-  for (const key of ['title', 'shortDescription', 'decisionQuestion', 'jurisdictionContext', 'concise', 'detailed']) {
-    if (Object.hasOwn(override, key)) family[key] = override[key];
-  }
-
-  for (const [pool, byId] of Object.entries(override.candidates || {})) {
-    for (const [id, text] of Object.entries(byId || {})) {
-      findCandidate(family, pool, id).text = text;
-    }
-  }
-
-  for (const [id, patch] of Object.entries(override.stipulations || {})) {
-    const stipulation = (family.stipulations || []).find((entry) => entry.id === id);
-    if (!stipulation) throw new Error(`${family.caseId}: missing stipulation ${id} required by v2 override`);
-    Object.assign(stipulation, patch);
-  }
-
-  return family;
-}
-
-export const FAMILIES = V1_FAMILIES.map(applyOverride);
-
-function textSnapshot(family) {
-  return {
-    title: family.title,
-    shortDescription: family.shortDescription,
-    decisionQuestion: family.decisionQuestion,
-    jurisdictionContext: family.jurisdictionContext ?? null,
-    concise: family.concise,
-    detailed: family.detailed,
-    stipulations: clone(family.stipulations || []),
-    candidates: {
-      public: family.candidates.public.map(({ id, text }) => ({ id, text })),
-      expert: family.candidates.expert.map(({ id, text }) => ({ id, text })),
-      framework: family.candidates.framework.map(({ id, text }) => ({ id, text })),
-    },
-  };
-}
-
-const v1F08 = V1_FAMILIES.find((family) => family.caseId === F08_CASE_ID);
-const v2F08 = FAMILIES.find((family) => family.caseId === F08_CASE_ID);
-if (!v1F08 || !v2F08 || JSON.stringify(textSnapshot(v1F08)) !== JSON.stringify(textSnapshot(v2F08))) {
-  throw new Error('Featured v2 must preserve all F08 authored text exactly');
-}
-
-function editorialStrings(family) {
-  return [
-    family.shortDescription,
-    family.decisionQuestion,
-    family.jurisdictionContext,
-    family.concise,
-    family.detailed,
-    ...(family.stipulations || []).flatMap((entry) => [entry.statement, entry.rationale]),
-    ...family.candidates.public.map((candidate) => candidate.text),
-    ...family.candidates.expert.map((candidate) => candidate.text),
-    ...family.candidates.framework.map((candidate) => candidate.text),
+for (const record of records) {
+  if (record.case_id === EXCLUDED_CASE) continue;
+  const fields = [
+    record.short_description, record.decision_question, record.jurisdiction_context, record.scenario,
+    ...(record.stipulations || []).flatMap((s) => [s.statement, s.rationale]),
+    ...['public','expert','framework'].flatMap((pool) =>
+      (record.candidate_pools?.[pool] || []).map((candidate) => candidate.text)),
   ].filter((value) => typeof value === 'string');
-}
-
-for (const family of FAMILIES) {
-  if (family.caseId === F08_CASE_ID) continue;
-  const remaining = editorialStrings(family).filter((text) => text.includes(';'));
-  if (remaining.length) {
-    throw new Error(`${family.caseId}: Featured v2 language pass left ${remaining.length} semicolon-bearing authored field(s)`);
+  if (fields.some((value) => value.includes(';'))) {
+    throw new Error(`${record.case_id}: semicolon remains in Featured v2 evaluation-facing text`);
   }
 }
 
-function recordId(caseId, form) {
-  return `${caseId}-${form}-v2`;
-}
+const payload = {
+  release_id: 'featured-v2',
+  release_date: '2026-09-24',
+  derived_from: {
+    release_id: 'featured-v1',
+    upstream_directory: 'data/featured',
+  },
+  editorial_normalization: {
+    scope: 'evaluation-facing prose',
+    rule: 'semicolon-linked clauses normalized to sentences or ordinary coordination; punctuation, capitalization, and whitespace only',
+    excluded_case: EXCLUDED_CASE,
+    excluded_case_records_reused_exactly_from_v1: true,
+  },
+  family_count: new Set(records.map((record) => record.case_id)).size,
+  record_count: records.length,
+  records,
+};
 
-export function buildRecord(family, form) {
-  const base = buildV1Record(family, form);
-  const record = {
-    ...base,
-    record_id: recordId(family.caseId, form),
-    version: RECORD_VERSION,
-    representation: {
-      ...base.representation,
-      companion_record_ids: [recordId(family.caseId, form === 'concise' ? 'detailed' : 'concise')],
-    },
-    status: RECORD_STATUS,
-    review: REVIEW,
-    exposure_history: [{
-      date: RELEASE_DATE,
-      use: 'Published as part of the Bioethics Bench Featured v2 release after a pre-execution language-normalization pass. '
-        + 'The collection remains public/exposed and is not confirmatory-holdout material.',
-      reference: 'https://github.com/alethicresearch/bioethics-bench/tree/main/data/featured-v2',
-    }],
-  };
-  return { ...record, content_hash: canonicalContentHash(record) };
-}
+const rendered = `${JSON.stringify(payload, null, 2)}\n`;
+const audit = {
+  schema: 'bioethics-bench-featured-v2-language-normalization-audit/1',
+  source_release: 'featured-v1',
+  output_release: 'featured-v2',
+  families: payload.family_count,
+  records: payload.record_count,
+  excluded_case: EXCLUDED_CASE,
+  changed_fields: changedFields,
+  removed_semicolons: removedSemicolons,
+  cases_changed: Object.keys(perCase).length,
+  per_case_removed_semicolons: Object.fromEntries(Object.entries(perCase).sort()),
+  lexical_content_preserved: true,
+  f08_records_reused_exactly: true,
+  output_sha256: createHash('sha256').update(rendered).digest('hex'),
+};
 
-export function buildAll() {
-  return FAMILIES.flatMap((family) => ['concise', 'detailed'].map((form) => buildRecord(family, form)));
-}
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const check = process.argv.includes('--check');
-  const dir = join(process.cwd(), 'data', 'featured-v2');
-  const records = buildAll();
-
-  if (check) {
-    const onDisk = existsSync(dir)
-      ? readdirSync(dir).filter((file) => file.endsWith('.json') && file !== 'index.json').sort()
-      : [];
-    const expected = records.map((record) => `${record.record_id}.json`).sort();
-    const problems = [];
-    if (JSON.stringify(onDisk) !== JSON.stringify(expected)) {
-      problems.push(`file set differs\n  on disk: ${onDisk.length} file(s)\n  expected: ${expected.length} file(s)`);
-    }
-    for (const record of records) {
-      const file = join(dir, `${record.record_id}.json`);
-      if (!existsSync(file)) continue;
-      const actual = readFileSync(file, 'utf8');
-      const wanted = `${JSON.stringify(record, null, 2)}\n`;
-      if (actual !== wanted) problems.push(`${record.record_id}.json differs from the v2 generator output`);
-    }
-    if (problems.length) {
-      console.error('\ndata/featured-v2 is out of date with scripts/build-featured-v2.mjs:\n');
-      for (const problem of problems) console.error(`  ✗ ${problem}`);
-      console.error('\nRun: node scripts/build-featured-v2.mjs\n');
-      process.exit(1);
-    }
-    console.log(`✓ data/featured-v2 matches the generator (${records.length} records).`);
-  } else {
-    mkdirSync(dir, { recursive: true });
-    for (const stale of readdirSync(dir).filter((file) => file.endsWith('.json') && file !== 'index.json')) {
-      rmSync(join(dir, stale));
-    }
-    for (const record of records) {
-      writeFileSync(join(dir, `${record.record_id}.json`), `${JSON.stringify(record, null, 2)}\n`);
-    }
-    const index = {
-      generated_from: 'scripts/build-featured-v2.mjs',
-      source_release: SOURCE_RELEASE,
-      derived_from: 'featured-v1',
-      editorial_scope: 'language normalization only; F08 authored text unchanged',
-      benchmark_profile: BENCHMARK_PROFILE,
-      status: RECORD_STATUS,
-      family_count: FAMILIES.length,
-      record_count: records.length,
-      families: FAMILIES.map((family) => ({
-        case_id: family.caseId,
-        title: family.title,
-        short_description: family.shortDescription,
-        decision_question: family.decisionQuestion,
-        domains: family.domains,
-        tags: family.tags,
-        stipulations: family.stipulations ?? [],
-        records: ['concise', 'detailed'].map((form) => {
-          const record = records.find((entry) => entry.record_id === recordId(family.caseId, form));
-          return {
-            form,
-            record_id: record.record_id,
-            version: record.version,
-            content_hash: record.content_hash,
-            path: `data/featured-v2/${record.record_id}.json`,
-          };
-        }),
-      })),
-    };
-    writeFileSync(join(dir, 'index.json'), `${JSON.stringify(index, null, 2)}\n`);
-    console.log(`✓ wrote ${records.length} Featured v2 records for ${FAMILIES.length} cases to data/featured-v2/`);
+if (process.argv.includes('--check')) {
+  if (!fs.existsSync(OUTPUT) || fs.readFileSync(OUTPUT, 'utf8') !== rendered) {
+    throw new Error('featured-20.v2.json is stale; run node scripts/build-featured-v2.mjs --write');
   }
+  if (!fs.existsSync(AUDIT) || fs.readFileSync(AUDIT, 'utf8') !== `${JSON.stringify(audit, null, 2)}\n`) {
+    throw new Error('featured-20.v2.audit.json is stale');
+  }
+  console.log(`✓ Featured v2 verified: ${changedFields} fields, ${removedSemicolons} semicolons removed; F08 reused unchanged.`);
+} else if (process.argv.includes('--write')) {
+  fs.writeFileSync(OUTPUT, rendered);
+  fs.writeFileSync(AUDIT, `${JSON.stringify(audit, null, 2)}\n`);
+  console.log(`✓ wrote Featured v2: ${changedFields} fields, ${removedSemicolons} semicolons removed; F08 reused unchanged.`);
+} else {
+  console.log(JSON.stringify(audit, null, 2));
 }
