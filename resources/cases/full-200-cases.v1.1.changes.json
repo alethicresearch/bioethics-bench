@@ -7,7 +7,6 @@
   ],
   "scope": "punctuation/readability only; substantive content preserved",
   "change_count": 156,
-  "cases_changed": 125,
   "changes": [
     {
       "case_id": "M001",
