@@ -8,7 +8,6 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { createHash } from 'node:crypto';
 import { normalizeField, lexicalSignature } from './language-normalization-v2.mjs';
 
 const ROOT = process.cwd();
@@ -23,7 +22,6 @@ output.resource_version = '2.0.0';
 output.derived_from = {
   resource_id: source.resource_id,
   resource_version: source.resource_version,
-  sha256: createHash('sha256').update(fs.readFileSync(SOURCE)).digest('hex'),
 };
 output.editorial_normalization = {
   scope: 'evaluation-facing prose',
@@ -113,7 +111,6 @@ const audit = {
   cases_changed: Object.keys(perCase).length,
   per_case_removed_semicolons: Object.fromEntries(Object.entries(perCase).sort()),
   lexical_content_preserved: true,
-  output_sha256: createHash('sha256').update(rendered).digest('hex'),
 };
 
 if (process.argv.includes('--check')) {
