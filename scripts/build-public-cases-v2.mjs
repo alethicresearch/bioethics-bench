@@ -50,7 +50,6 @@ function normalize(value, label, caseId) {
 }
 
 for (let i = 0; i < output.cases.length; i += 1) {
-  const beforeCase = source.cases[i];
   const benchCase = output.cases[i];
   if (benchCase.id === EXCLUDED_CASE) {
     // Preserve the exact evaluation-facing F08 wording used by the historical worked example.
@@ -59,6 +58,8 @@ for (let i = 0; i < output.cases.length; i += 1) {
     benchCase.title = f08.title;
     benchCase.concise = f08.scenario;
     benchCase.detailed = f08.scenario;
+    benchCase.source_file = 'data/featured/f08-fourteen-day-embryo-research-limit-detailed-v1.json';
+    benchCase.preserved_featured_record = { record_id: f08.record_id, version: f08.version, content_hash: f08.content_hash };
     const featuredPolicies = [
       ...(f08.candidate_pools?.public || []),
       ...(f08.candidate_pools?.expert || []),
@@ -88,10 +89,21 @@ for (let i = 0; i < output.cases.length; i += 1) {
   }
 }
 
-// Structural identity must be unchanged.
+// Structural identity and lexical content must be unchanged for the 199 normalized cases.
+// M056 is the one declared exception: it carries the exact historical Featured F08 setup.
 if (output.cases.length !== source.cases.length) throw new Error('case count changed');
 for (let i = 0; i < source.cases.length; i += 1) {
   const a = source.cases[i], b = output.cases[i];
+  if (b.id === EXCLUDED_CASE) {
+    if (b.title !== f08.title || b.concise !== f08.scenario || b.detailed !== f08.scenario) {
+      throw new Error(`${EXCLUDED_CASE}: preserved F08 scenario drifted`);
+    }
+    const expectedIds = ['pub1','pub2','exp1','exp2','fw1','fw2'];
+    if (JSON.stringify((b.policies || []).map((p) => p.id)) !== JSON.stringify(expectedIds)) {
+      throw new Error(`${EXCLUDED_CASE}: preserved F08 candidate field drifted`);
+    }
+    continue;
+  }
   if (a.id !== b.id || a.title !== b.title || a.category !== b.category || a.source_file !== b.source_file) {
     throw new Error(`${a.id}: structural identity changed`);
   }
@@ -147,11 +159,11 @@ if (process.argv.includes('--check')) {
   if (!fs.existsSync(AUDIT) || fs.readFileSync(AUDIT, 'utf8') !== `${JSON.stringify(audit, null, 2)}\n`) {
     throw new Error('full-200-cases.v2.audit.json is stale');
   }
-  console.log(`✓ v2 language normalization verified: ${changedFields} fields, ${removedSemicolons} semicolons removed; ${EXCLUDED_CASE} unchanged.`);
+  console.log(`✓ v2 verified: ${changedFields} fields, ${removedSemicolons} semicolons removed across 199 cases; F08 preserved from ${f08.record_id}.`);
 } else if (process.argv.includes('--write')) {
   fs.writeFileSync(OUTPUT, rendered);
   fs.writeFileSync(AUDIT, `${JSON.stringify(audit, null, 2)}\n`);
-  console.log(`✓ wrote v2: ${changedFields} fields, ${removedSemicolons} semicolons removed; ${EXCLUDED_CASE} unchanged.`);
+  console.log(`✓ wrote v2: ${changedFields} fields, ${removedSemicolons} semicolons removed across 199 cases; F08 preserved from ${f08.record_id}.`);
 } else {
   console.log(JSON.stringify(audit, null, 2));
 }
