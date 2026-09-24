@@ -26,6 +26,7 @@ const sourceRecords = sourceFiles.map((name) =>
 
 let changedFields = 0;
 let removedSemicolons = 0;
+const changedCases = new Set();
 const perCase = {};
 
 function normalize(value, label, caseId) {
@@ -33,8 +34,11 @@ function normalize(value, label, caseId) {
   const before = (value.match(/;/g) || []).length;
   const afterValue = normalizeField(value, label);
   const after = (afterValue.match(/;/g) || []).length;
-  if (before !== after) {
+  if (afterValue !== value) {
     changedFields += 1;
+    changedCases.add(caseId);
+  }
+  if (before !== after) {
     removedSemicolons += before - after;
     perCase[caseId] = (perCase[caseId] || 0) + (before - after);
   }
@@ -134,7 +138,7 @@ const audit = {
   excluded_case: EXCLUDED_CASE,
   changed_fields: changedFields,
   removed_semicolons: removedSemicolons,
-  cases_changed: Object.keys(perCase).length,
+  cases_changed: changedCases.size,
   per_case_removed_semicolons: Object.fromEntries(Object.entries(perCase).sort()),
   lexical_content_preserved: true,
   f08_records_reused_exactly: true,
