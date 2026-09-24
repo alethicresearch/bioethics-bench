@@ -1,0 +1,45 @@
+name: Materialize canonical v2 release resources
+
+on:
+  push:
+    branches:
+      - featured-v2-release-20260924
+    paths:
+      - 'scripts/build-featured-v2-release.mjs'
+      - 'scripts/build-public-cases-v2.mjs'
+      - 'scripts/language-normalization-v2.mjs'
+      - 'resources/cases/full-200-cases.v1.json'
+      - 'data/featured/**'
+      - '.github/workflows/materialize-v2-release.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: featured-v2-release-20260924
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generate canonical v2 resources
+        run: |
+          node scripts/build-featured-v2-release.mjs --write
+          node scripts/build-public-cases-v2.mjs --write
+          git diff --check
+      - name: Commit generated resources
+        run: |
+          if [ -z "$(git status --porcelain -- resources/cases/featured-20.v2.json resources/cases/featured-20.v2.audit.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.audit.json)" ]; then
+            echo "Canonical v2 resources already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resources/cases/featured-20.v2.json resources/cases/featured-20.v2.audit.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.audit.json
+          git commit -m "build: refresh canonical v2 release resources"
+          git push origin HEAD:featured-v2-release-20260924
