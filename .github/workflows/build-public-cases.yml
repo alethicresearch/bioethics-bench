@@ -45,12 +45,12 @@ jobs:
           git diff --check
       - name: Commit generated resource when changed
         run: |
-          if [ -z "$(git status --porcelain -- resources/cases/full-200-cases.v1.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.changes.json resources/cases/featured20-prestudy-v2.json resources/cases/featured20-prestudy-v2.changes.json)" ]; then
+          if [ -z "$(git status --porcelain -- resources/cases/full-200-cases.v1.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.changes.json resources/cases/featured-20.v2.json resources/cases/featured-20.v2.changes.json)" ]; then
             echo 'Public case resource already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add resources/cases/full-200-cases.v1.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.changes.json resources/cases/featured20-prestudy-v2.json resources/cases/featured20-prestudy-v2.changes.json
+          git add resources/cases/full-200-cases.v1.json resources/cases/full-200-cases.v2.json resources/cases/full-200-cases.v2.changes.json resources/cases/featured-20.v2.json resources/cases/featured-20.v2.changes.json
           git commit -m 'build: refresh plain 200-case resource'
           git push
