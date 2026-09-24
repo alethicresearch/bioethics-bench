@@ -32,7 +32,7 @@ jobs:
         run: node scripts/build-public-cases.mjs --write
       - name: Build language-normalized v2
         run: node scripts/build-public-cases-v2.mjs --write
-      - name: Check generated resource
+      - name: Check generated resources
         run: |
           node scripts/build-public-cases.mjs
           node scripts/build-public-cases-v2.mjs --check

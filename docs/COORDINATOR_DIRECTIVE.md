@@ -25,9 +25,9 @@ Bioethics Bench contains **200 cases (M001–M200)** and **1,436 policies**.
 
 The current public machine-readable case file is:
 
-`resources/cases/full-200-cases.v1.json`
+`resources/cases/full-200-cases.v2.json`
 
-Every case in that file has:
+This v2 resource preserves the 200-case structure while applying the language-normalization pass to all cases except M056/F08, which is carried forward unchanged for continuity. Every case in that file has:
 
 - a concise version;
 - a detailed version;
