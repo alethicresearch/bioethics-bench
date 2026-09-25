@@ -3,6 +3,7 @@
   "resource_version": "2.0.0",
   "derived_from": "featured-v1",
   "editorial_scope": "Language-normalized Featured-20 study resource; F08 candidate wording additionally polished for clarity and parallel granularity while preserving the same six source-grounded normative positions",
+  "polished_case_id": "f08-fourteen-day-embryo-research-limit",
   "family_count": 20,
   "record_count": 40,
   "records": [
@@ -8666,6 +8667,5 @@
       "schema_version": "1.0.0",
       "content_hash": "sha256:3045a8a37b771f94bd2f8c39cc0b65c3781558e6c64b3a9d42223cfd2c6d2674"
     }
-  ],
-  "polished_case_id": "f08-fourteen-day-embryo-research-limit"
+  ]
 }
