@@ -6,7 +6,7 @@
  * F08 uses the separately reviewed polished v2 source records in data/featured. All output
  * records receive v3 record ids/version metadata so the frozen resource is internally uniform.
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { canonicalContentHash } from './hash-case.mjs';
 
 const SOURCE = 'resources/cases/featured20-prestudy-v2.json';
@@ -80,6 +80,19 @@ const audit = {
   }),
 };
 
-writeFileSync(OUTPUT, JSON.stringify(resource, null, 2) + '\n');
-writeFileSync(AUDIT, JSON.stringify(audit, null, 2) + '\n');
-console.log('✓ wrote Featured-20 v3: 40 records; only F08 candidate wording changed substantively from v2');
+const rendered = JSON.stringify(resource, null, 2) + '\n';
+const auditRendered = JSON.stringify(audit, null, 2) + '\n';
+
+if (process.argv.includes('--check')) {
+  if (!existsSync(OUTPUT) || readFileSync(OUTPUT, 'utf8') !== rendered) {
+    throw new Error('featured20-prestudy-v3.json is stale; run node scripts/build-featured-v3.mjs --write');
+  }
+  if (!existsSync(AUDIT) || readFileSync(AUDIT, 'utf8') !== auditRendered) {
+    throw new Error('featured20-prestudy-v3.audit.json is stale');
+  }
+  console.log('✓ Featured-20 v3 verified: 40 records; only F08 candidate wording changed substantively from v2');
+} else {
+  writeFileSync(OUTPUT, rendered);
+  writeFileSync(AUDIT, auditRendered);
+  console.log('✓ wrote Featured-20 v3: 40 records; only F08 candidate wording changed substantively from v2');
+}
