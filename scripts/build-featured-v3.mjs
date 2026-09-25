@@ -13,8 +13,8 @@ const SOURCE = 'resources/cases/featured20-prestudy-v2.json';
 const OUTPUT = 'resources/cases/featured20-prestudy-v3.json';
 const AUDIT = 'resources/cases/featured20-prestudy-v3.audit.json';
 const F08 = 'f08-fourteen-day-embryo-research-limit';
-const F08_CONCISE = 'data/featured-v3/f08-fourteen-day-embryo-research-limit-concise-v2.json';
-const F08_DETAILED = 'data/featured-v3/f08-fourteen-day-embryo-research-limit-detailed-v2.json';
+const F08_CONCISE = 'resources/cases/featured20-v3-source/f08-fourteen-day-embryo-research-limit-concise-v2.json';
+const F08_DETAILED = 'resources/cases/featured20-v3-source/f08-fourteen-day-embryo-research-limit-detailed-v2.json';
 
 const source = JSON.parse(readFileSync(SOURCE, 'utf8'));
 const f08ByForm = {
