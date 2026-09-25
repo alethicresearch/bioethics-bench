@@ -26,7 +26,7 @@ const EDIT_KEYS = new Set([
 ]);
 
 const sourceFiles = readdirSync(SRC)
-  .filter((f) => f.endsWith('.json') && f !== 'index.json')
+  .filter((f) => f.endsWith('-v1.json'))
   .sort();
 const sourceRecords = sourceFiles.map((f) => JSON.parse(readFileSync(join(SRC, f), 'utf8')));
 
