@@ -1,11 +1,11 @@
 {
-  "schema": "bioethics-bench-featured20-prestudy-editorial-changes/1",
+  "schema": "bioethics-bench-featured20-prestudy-v2-editorial-changes/1",
   "from_release": "featured-v1",
   "to_resource": "bioethics-bench-featured20-prestudy",
-  "excluded_case_id": "f08-fourteen-day-embryo-research-limit",
-  "scope": "punctuation/readability only; substantive content preserved",
-  "change_count": 84,
-  "cases_changed": 19,
+  "polished_case_id": "f08-fourteen-day-embryo-research-limit",
+  "scope": "Language-normalized Featured-20 study resource; F08 candidate wording additionally polished for clarity and parallel granularity while preserving the same six source-grounded normative positions",
+  "change_count": 96,
+  "cases_changed": 20,
   "changes": [
     {
       "case_id": "f01-elective-surgery-transfusion-refusal",
@@ -262,6 +262,102 @@
       "path": "candidate_pools.framework.0.text",
       "before": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty; background injustice should not be converted into a research advantage.",
       "after": "Require a control-care package the host community would accept if it were not deprived of access, rejecting any comparator whose justification is the population’s poverty. Background injustice should not be converted into a research advantage."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.public.0.text",
+      "before": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+      "after": "Retain the 14-day limit for now until public deliberation establishes sufficient social legitimacy and safeguards for any change."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+      "after": "Permit research beyond 14 days for serious health questions under a transparent later developmental limit, specialized oversight, and continuing public review."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+      "after": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification that the question cannot be answered using earlier embryos or alternative models."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+      "after": "Retain a clear statutory limit until a regulator adopts a nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+      "after": "Retain one publicly declared statutory developmental limit without case-by-case exceptions, because a stable bright line can govern morally contested research predictably despite reasonable disagreement about embryonic moral status."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+      "after": "Treat moral concern as increasing with embryonic development rather than turning absolutely on day 14; permit proportionate research under stronger oversight as developmental and moral stakes increase."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.public.0.text",
+      "before": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+      "after": "Retain the 14-day limit for now until public deliberation establishes sufficient social legitimacy and safeguards for any change."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.public.1.text",
+      "before": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+      "after": "Permit research beyond 14 days for serious health questions under a transparent later developmental limit, specialized oversight, and continuing public review."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.expert.0.text",
+      "before": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+      "after": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification that the question cannot be answered using earlier embryos or alternative models."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.expert.1.text",
+      "before": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+      "after": "Retain a clear statutory limit until a regulator adopts a nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.framework.0.text",
+      "before": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+      "after": "Retain one publicly declared statutory developmental limit without case-by-case exceptions, because a stable bright line can govern morally contested research predictably despite reasonable disagreement about embryonic moral status."
+    },
+    {
+      "case_id": "f08-fourteen-day-embryo-research-limit",
+      "source_record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
+      "path": "candidate_pools.framework.1.text",
+      "before": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+      "after": "Treat moral concern as increasing with embryonic development rather than turning absolutely on day 14; permit proportionate research under stronger oversight as developmental and moral stakes increase."
     },
     {
       "case_id": "f09-heritable-genome-editing-serious-disease",

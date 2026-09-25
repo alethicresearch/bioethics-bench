@@ -2,8 +2,8 @@
   "resource_id": "bioethics-bench-featured20-prestudy",
   "resource_version": "2.0.0",
   "derived_from": "featured-v1",
-  "editorial_scope": "punctuation/readability only; substantive content preserved",
-  "excluded_unchanged_case_id": "f08-fourteen-day-embryo-research-limit",
+  "editorial_scope": "Language-normalized Featured-20 study resource; F08 candidate wording additionally polished for clarity and parallel granularity while preserving the same six source-grounded normative positions",
+  "polished_case_id": "f08-fourteen-day-embryo-research-limit",
   "family_count": 20,
   "record_count": 40,
   "records": [
@@ -2974,16 +2974,16 @@
       "content_hash": "sha256:15728722a5c52d504c8e8ebd8913c17f0a5af24428354ef1fc7249cadc287fe6"
     },
     {
-      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-concise-v2",
       "case_id": "f08-fourteen-day-embryo-research-limit",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "title": "Extending the 14-day limit for human embryo research",
       "short_description": "Culturing human embryos beyond 14 days is now feasible. Regulators must decide whether to retain the bright-line limit, extend it to a new fixed point, or adopt staged case-by-case oversight.",
       "decision_question": "Should regulators retain the 14-day limit for human embryo research, extend it to a new fixed limit, or replace it with staged case-by-case oversight?",
       "representation": {
         "form": "concise",
         "companion_record_ids": [
-          "f08-fourteen-day-embryo-research-limit-detailed-v1"
+          "f08-fourteen-day-embryo-research-limit-detailed-v2"
         ],
         "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
       },
@@ -3024,7 +3024,7 @@
         "public": [
           {
             "id": "pub1",
-            "text": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+            "text": "Retain the 14-day limit for now until public deliberation establishes sufficient social legitimacy and safeguards for any change.",
             "source_pool": "public",
             "provenance": {
               "construction_method": "extracted-from-evidence",
@@ -3039,7 +3039,7 @@
           },
           {
             "id": "pub2",
-            "text": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+            "text": "Permit research beyond 14 days for serious health questions under a transparent later developmental limit, specialized oversight, and continuing public review.",
             "source_pool": "public",
             "provenance": {
               "construction_method": "extracted-from-evidence",
@@ -3060,7 +3060,7 @@
         "expert": [
           {
             "id": "exp1",
-            "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+            "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification that the question cannot be answered using earlier embryos or alternative models.",
             "source_pool": "expert",
             "provenance": {
               "construction_method": "adapted-from-source",
@@ -3076,7 +3076,7 @@
           },
           {
             "id": "exp2",
-            "text": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+            "text": "Retain a clear statutory limit until a regulator adopts a nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
             "source_pool": "expert",
             "provenance": {
               "construction_method": "adapted-from-source",
@@ -3099,7 +3099,7 @@
         "framework": [
           {
             "id": "fw1",
-            "text": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+            "text": "Retain one publicly declared statutory developmental limit without case-by-case exceptions, because a stable bright line can govern morally contested research predictably despite reasonable disagreement about embryonic moral status.",
             "source_pool": "framework",
             "provenance": {
               "construction_method": "derived-from-framework",
@@ -3114,7 +3114,7 @@
           },
           {
             "id": "fw2",
-            "text": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+            "text": "Treat moral concern as increasing with embryonic development rather than turning absolutely on day 14; permit proportionate research under stronger oversight as developmental and moral stakes increase.",
             "source_pool": "framework",
             "provenance": {
               "construction_method": "derived-from-framework",
@@ -3129,9 +3129,9 @@
           }
         ]
       },
-      "collection": "featured",
+      "collection": "featured20-prestudy-v2",
       "exposure": "public",
-      "status": "released",
+      "status": "reviewed",
       "intended_use": [
         "teaching",
         "application-demonstration",
@@ -3143,13 +3143,18 @@
         "reviewed_by": [
           "research/editorial reviewer, Alethic Research"
         ],
-        "reviewed_at": "2026-08-27",
-        "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+        "reviewed_at": "2026-09-24",
+        "notes": "F08 v2 editorial/source-fidelity revision for the prospective Featured-20 v2 study. The six candidate ids, source classes, provenance sources, and substantive policy directions are unchanged from F08 v1. Candidate wording was tightened and made more parallel in granularity and style, especially the framework candidates. This case was already public and had been used in protocol development, so the revised record remains exposed exploratory material rather than confirmatory holdout material."
       },
       "exposure_history": [
         {
           "date": "2026-08-27",
           "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+          "reference": "https://bioethicsbench.com/cases/"
+        },
+        {
+          "date": "2026-09-24",
+          "use": "Prepared as the polished F08 input for the prospective exploratory Featured-20 SACRE study. The case and its predecessor were already public and used in protocol development; this revision does not restore holdout status.",
           "reference": "https://bioethicsbench.com/cases/"
         }
       ],
@@ -3187,19 +3192,19 @@
         }
       ],
       "schema_version": "1.0.0",
-      "content_hash": "sha256:f2840368d1dbadff2348315f8b6e00da497e18d4a43e50d567040a087ccdc28a"
+      "content_hash": "sha256:de76a8ddcde47170ae35b6abc0e49bb25814eab0f8e7ffa7f83282bdfecb6005"
     },
     {
-      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v1",
+      "record_id": "f08-fourteen-day-embryo-research-limit-detailed-v2",
       "case_id": "f08-fourteen-day-embryo-research-limit",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "title": "Extending the 14-day limit for human embryo research",
       "short_description": "Culturing human embryos beyond 14 days is now feasible. Regulators must decide whether to retain the bright-line limit, extend it to a new fixed point, or adopt staged case-by-case oversight.",
       "decision_question": "Should regulators retain the 14-day limit for human embryo research, extend it to a new fixed limit, or replace it with staged case-by-case oversight?",
       "representation": {
         "form": "detailed",
         "companion_record_ids": [
-          "f08-fourteen-day-embryo-research-limit-concise-v1"
+          "f08-fourteen-day-embryo-research-limit-concise-v2"
         ],
         "notes": "Concise and detailed are companion representations of one case family. They share the decision question and the executable candidate set exactly; only scenario detail differs. Neither is the correct or superior representation of the case."
       },
@@ -3240,7 +3245,7 @@
         "public": [
           {
             "id": "pub1",
-            "text": "Retain the 14-day limit for now, reflecting substantial public caution and uncertainty until a change has clearer social legitimacy and safeguards.",
+            "text": "Retain the 14-day limit for now until public deliberation establishes sufficient social legitimacy and safeguards for any change.",
             "source_pool": "public",
             "provenance": {
               "construction_method": "extracted-from-evidence",
@@ -3255,7 +3260,7 @@
           },
           {
             "id": "pub2",
-            "text": "Permit conditional extension beyond 14 days for serious health research under transparent developmental limits, specialized oversight, and continuing public review.",
+            "text": "Permit research beyond 14 days for serious health questions under a transparent later developmental limit, specialized oversight, and continuing public review.",
             "source_pool": "public",
             "provenance": {
               "construction_method": "extracted-from-evidence",
@@ -3276,7 +3281,7 @@
         "expert": [
           {
             "id": "exp1",
-            "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification of why the question cannot be answered using earlier embryos or alternative models.",
+            "text": "Allow research beyond 14 days only under specialized scientific and ethics review, with transparent justification that the question cannot be answered using earlier embryos or alternative models.",
             "source_pool": "expert",
             "provenance": {
               "construction_method": "adapted-from-source",
@@ -3292,7 +3297,7 @@
           },
           {
             "id": "exp2",
-            "text": "Retain a clear statutory limit until a regulator defines a new nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
+            "text": "Retain a clear statutory limit until a regulator adopts a nationally accountable framework through evidence review, public engagement, licensing criteria, and enforceable developmental endpoints.",
             "source_pool": "expert",
             "provenance": {
               "construction_method": "adapted-from-source",
@@ -3315,7 +3320,7 @@
         "framework": [
           {
             "id": "fw1",
-            "text": "Retain a fixed statutory limit at a single publicly declared developmental point and do not grant case-by-case exceptions, because a bright line is justified as a public rule that limits morally contested research predictably even when reasonable people disagree about the embryo's precise moral status.",
+            "text": "Retain one publicly declared statutory developmental limit without case-by-case exceptions, because a stable bright line can govern morally contested research predictably despite reasonable disagreement about embryonic moral status.",
             "source_pool": "framework",
             "provenance": {
               "construction_method": "derived-from-framework",
@@ -3330,7 +3335,7 @@
           },
           {
             "id": "fw2",
-            "text": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
+            "text": "Treat moral concern as increasing with embryonic development rather than turning absolutely on day 14; permit proportionate research under stronger oversight as developmental and moral stakes increase.",
             "source_pool": "framework",
             "provenance": {
               "construction_method": "derived-from-framework",
@@ -3345,9 +3350,9 @@
           }
         ]
       },
-      "collection": "featured",
+      "collection": "featured20-prestudy-v2",
       "exposure": "public",
-      "status": "released",
+      "status": "reviewed",
       "intended_use": [
         "teaching",
         "application-demonstration",
@@ -3359,13 +3364,18 @@
         "reviewed_by": [
           "research/editorial reviewer, Alethic Research"
         ],
-        "reviewed_at": "2026-08-27",
-        "notes": "Featured v1 editorial review across three iterations: case-by-case source review against SOURCE_LEDGER.md; scenario and decision-question review; candidate source-class and provenance review, including replacement of the F05 public pair with legalization policy-attitude evidence and correction of near-entailing pairs in F01 and F04; a matched-policy-granularity audit across all twenty families; and the addition of provenance-marked benchmark stipulations to six families. Deterministic checks at review: generator parity, dossier/record sync across 180 fields, schema, content hashes, Featured companion invariants, and 1040 corpus pipeline checks. No model execution formed part of this review: no QCCS results existed for these records at the time it was given, and the review concerns the represented objects, not any measurement of them."
+        "reviewed_at": "2026-09-24",
+        "notes": "F08 v2 editorial/source-fidelity revision for the prospective Featured-20 v2 study. The six candidate ids, source classes, provenance sources, and substantive policy directions are unchanged from F08 v1. Candidate wording was tightened and made more parallel in granularity and style, especially the framework candidates. This case was already public and had been used in protocol development, so the revised record remains exposed exploratory material rather than confirmatory holdout material."
       },
       "exposure_history": [
         {
           "date": "2026-08-27",
           "use": "Published as part of the Bioethics Bench Featured v1 release: browsable at bioethicsbench.com/cases/ and loadable in the SACRE application. Public from this date, and therefore permanently ineligible as confirmatory-holdout material.",
+          "reference": "https://bioethicsbench.com/cases/"
+        },
+        {
+          "date": "2026-09-24",
+          "use": "Prepared as the polished F08 input for the prospective exploratory Featured-20 SACRE study. The case and its predecessor were already public and used in protocol development; this revision does not restore holdout status.",
           "reference": "https://bioethicsbench.com/cases/"
         }
       ],
@@ -3403,7 +3413,7 @@
         }
       ],
       "schema_version": "1.0.0",
-      "content_hash": "sha256:b3be4c3f687121c3e8d47b2e2a46213522bd37dfec24a17f3184032402f7274c"
+      "content_hash": "sha256:796062e9fedc3528719ceaaacf25bace8a65e7a3b4feb73a1b96e2fec5b2982e"
     },
     {
       "record_id": "f09-heritable-genome-editing-serious-disease-concise-v2",

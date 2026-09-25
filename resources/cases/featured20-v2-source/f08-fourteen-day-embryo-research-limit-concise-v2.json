@@ -154,7 +154,7 @@
       }
     ]
   },
-  "collection": "featured",
+  "collection": "featured20-prestudy-v2",
   "exposure": "public",
   "status": "reviewed",
   "intended_use": [
@@ -169,7 +169,7 @@
       "research/editorial reviewer, Alethic Research"
     ],
     "reviewed_at": "2026-09-24",
-    "notes": "F08 v2 editorial/source-fidelity revision for the prospective Featured-20 study. The six candidate ids, source classes, provenance sources, and substantive policy directions are unchanged from F08 v1. Candidate wording was tightened and made more parallel in granularity and style, especially the framework candidates. This case was already public and had been used in protocol development, so the revised record remains exposed exploratory material rather than confirmatory holdout material."
+    "notes": "F08 v2 editorial/source-fidelity revision for the prospective Featured-20 v2 study. The six candidate ids, source classes, provenance sources, and substantive policy directions are unchanged from F08 v1. Candidate wording was tightened and made more parallel in granularity and style, especially the framework candidates. This case was already public and had been used in protocol development, so the revised record remains exposed exploratory material rather than confirmatory holdout material."
   },
   "exposure_history": [
     {
@@ -217,5 +217,5 @@
     }
   ],
   "schema_version": "1.0.0",
-  "content_hash": "sha256:ea1336e184cd2c807107f23dc1b3bd0b84827f43473405098e7b6a098c7934a5"
+  "content_hash": "sha256:de76a8ddcde47170ae35b6abc0e49bb25814eab0f8e7ffa7f83282bdfecb6005"
 }
