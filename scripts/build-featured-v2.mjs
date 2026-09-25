@@ -6,7 +6,7 @@
  * normalization; F08 is copied byte-for-byte at the record-content level so continuity with the
  * historical worked example is preserved.
  */
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { canonicalContentHash } from './hash-case.mjs';
 import { normalizeEditorialProse } from './editorial-prose-normalize.mjs';
@@ -26,7 +26,7 @@ const EDIT_KEYS = new Set([
 ]);
 
 const sourceFiles = readdirSync(SRC)
-  .filter((f) => f.endsWith('.json') && f !== 'index.json')
+  .filter((f) => f.endsWith('-v1.json'))
   .sort();
 const sourceRecords = sourceFiles.map((f) => JSON.parse(readFileSync(join(SRC, f), 'utf8')));
 
@@ -93,8 +93,8 @@ const resource = {
   records,
 };
 
-writeFileSync(OUTPUT, JSON.stringify(resource, null, 2) + '\n');
-writeFileSync(CHANGES, JSON.stringify({
+const rendered = JSON.stringify(resource, null, 2) + '\n';
+const audit = {
   schema: 'bioethics-bench-featured20-prestudy-editorial-changes/1',
   from_release: 'featured-v1',
   to_resource: resource.resource_id,
@@ -103,9 +103,22 @@ writeFileSync(CHANGES, JSON.stringify({
   change_count: changes.length,
   cases_changed: new Set(changes.map((x) => x.case_id)).size,
   changes,
-}, null, 2) + '\n');
+};
+const auditRendered = JSON.stringify(audit, null, 2) + '\n';
 
-console.log(
-  `✓ wrote ${OUTPUT}: ${records.length} records, ${changes.length} changed fields across `
-  + `${new Set(changes.map((x) => x.case_id)).size} families; F08 preserved exactly`,
-);
+if (process.argv.includes('--check')) {
+  if (!existsSync(OUTPUT) || readFileSync(OUTPUT, 'utf8') !== rendered) {
+    throw new Error('featured20-prestudy-v2.json is stale');
+  }
+  if (!existsSync(CHANGES) || readFileSync(CHANGES, 'utf8') !== auditRendered) {
+    throw new Error('featured20-prestudy-v2.changes.json is stale');
+  }
+  console.log(`✓ verified ${OUTPUT}: ${records.length} records; F08 preserved exactly`);
+} else {
+  writeFileSync(OUTPUT, rendered);
+  writeFileSync(CHANGES, auditRendered);
+  console.log(
+    `✓ wrote ${OUTPUT}: ${records.length} records, ${changes.length} changed fields across `
+    + `${new Set(changes.map((x) => x.case_id)).size} families; F08 preserved exactly`,
+  );
+}
