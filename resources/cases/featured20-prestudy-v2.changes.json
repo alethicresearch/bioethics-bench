@@ -2,6 +2,7 @@
   "schema": "bioethics-bench-featured20-prestudy-v2-editorial-changes/1",
   "from_release": "featured-v1",
   "to_resource": "bioethics-bench-featured20-prestudy",
+  "polished_case_id": "f08-fourteen-day-embryo-research-limit",
   "scope": "Language-normalized Featured-20 study resource; F08 candidate wording additionally polished for clarity and parallel granularity while preserving the same six source-grounded normative positions",
   "change_count": 96,
   "cases_changed": 20,
@@ -774,6 +775,5 @@
       "before": "Moral concern can increase with embryonic development without requiring 14 days to be an absolute threshold; permit proportionate research as potential value and moral stakes increase under stronger oversight.",
       "after": "Treat moral concern as increasing with embryonic development rather than turning absolutely on day 14; permit proportionate research under stronger oversight as developmental and moral stakes increase."
     }
-  ],
-  "polished_case_id": "f08-fourteen-day-embryo-research-limit"
+  ]
 }
